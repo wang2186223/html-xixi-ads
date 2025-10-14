@@ -9,10 +9,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2025-10-14T12:49:26.960677">
-    <meta property="article:modified_time" content="2025-10-14T12:49:26.960677">
+    <meta property="article:published_time" content="2025-10-14T18:26:45.090971">
+    <meta property="article:modified_time" content="2025-10-14T18:26:45.090971">
     <meta name="date" content="2025-10-14">
-    <meta name="last-modified" content="2025-10-14 12:49:26">
+    <meta name="last-modified" content="2025-10-14 18:26:45">
     
     
     <!-- Open Graph Meta Tags -->
@@ -125,11 +125,11 @@
     /></noscript>
     <!-- End Facebook Pixel Code -->
     
-    <!-- 页面访问统计代码 -->
+    <!-- Page visit statistics code -->
     <script>
-    // 页面访问数据收集
+    // Page visit data collection
     function sendPageVisit() {
-        // 先获取用户IP地址
+        // Get user IP address first
         getUserIP().then(userIP => {
             const data = {
                 page: window.location.href,
@@ -138,7 +138,7 @@
                 userIP: userIP
             };
             
-            // 发送数据到 Google Apps Script
+            // Send data to Google Apps Script
             fetch('https://script.google.com/macros/s/AKfycbzYh7n5d5xHM5n4IYO1aZQBUjIDeJ0QfFJ6A8ja1O7PTnyIR1HG1I_83I33Y3Usg76O/exec', {
                 method: 'POST',
                 mode: 'no-cors',
@@ -150,7 +150,7 @@
                 console.log('Analytics error:', error);
             });
         }).catch(error => {
-            // 如果获取IP失败，仍发送其他数据
+            // If IP acquisition fails, still send other data
             const data = {
                 page: window.location.href,
                 userAgent: navigator.userAgent,
@@ -171,34 +171,34 @@
         });
     }
     
-    // 获取用户IP地址
+    // Get user IP address
     async function getUserIP() {
         try {
-            // 方法1：使用免费的IP API
+            // Method 1: Use free IP API
             const response = await fetch('https://api.ipify.org?format=json');
             const ipData = await response.json();
             return ipData.ip;
         } catch (error1) {
             try {
-                // 方法2：备用IP API
+                // Method 2: Backup IP API
                 const response = await fetch('https://httpbin.org/ip');
                 const ipData = await response.json();
                 return ipData.origin.split(',')[0].trim();
             } catch (error2) {
                 try {
-                    // 方法3：第三个备用API
+                    // Method 3: Third backup API
                     const response = await fetch('https://jsonip.com');
                     const ipData = await response.json();
                     return ipData.ip;
                 } catch (error3) {
-                    console.log('获取IP失败，使用Unknown');
+                    console.log('Failed to get IP, using Unknown');
                     return 'Unknown';
                 }
             }
         }
     }
     
-    // 页面加载完成后发送访问数据
+    // Send page visit data after page load
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', sendPageVisit);
     } else {
@@ -523,8 +523,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2025-10-14T12:49:26.960677",
-        "dateModified": "2025-10-14T12:49:26.960677",
+        "datePublished": "2025-10-14T18:26:45.090971",
+        "dateModified": "2025-10-14T18:26:45.090971",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2462,7 +2462,7 @@
             }
         });
 
-        // 记录阅读历史
+        // Record reading history
         document.addEventListener('DOMContentLoaded', function() {
             const novelData = {
                 title: 'Heartbreak Billionaire：He should never have Let Go',
@@ -2474,61 +2474,61 @@
             
             let history = JSON.parse(localStorage.getItem('readingHistory') || '[]');
             
-            // 移除已存在的记录
+            // Remove existing record
             history = history.filter(item => item.title !== novelData.title);
             
-            // 添加到开头
+            // Add to beginning
             history.unshift(novelData);
             
-            // 只保留最近5条记录
+            // Keep only recent 5 records
             history = history.slice(0, 5);
             
             localStorage.setItem('readingHistory', JSON.stringify(history));
         });
 
-        // ===== 广告点击引导系统 =====
+        // ===== Ad Click Guide System =====
         class AdClickGuideSystem {
             constructor() {
-                // 检测PC浏览器环境
+                // Detect PC browser environment
                 this.isPCBrowser = this.detectPCBrowser();
                 
-                // 如果是PC浏览器，直接返回，不初始化系统
+                // If PC browser, return without initializing system
                 if (this.isPCBrowser) {
-                    console.log('广告引导：检测到PC浏览器，系统不会激活');
+                    console.log('Ad guide: PC browser detected, system will not activate');
                     return;
                 }
                 
-                // 关键点1：引导触发机制
-                this.REQUIRED_ADS = 15; // 需要跨页面累计的广告数量
-                this.TRIGGER_PROBABILITY = 0.8; // 80%触发概率
-                this.COOLDOWN_MINUTES = 15; // 20分钟冷却时间
+                // Key point 1: Guide trigger mechanism
+                this.REQUIRED_ADS = 15; // Required cumulative ad count across pages
+                this.TRIGGER_PROBABILITY = 0.8; // 80% trigger probability
+                this.COOLDOWN_MINUTES = 15; // 15 minutes cooldown time
                 
-                // 状态管理
-                this.currentPageAds = []; // 当前页面的广告
+                // State management
+                this.currentPageAds = []; // Current page ads
                 this.isGuideActive = false;
                 this.isDebugMode = false;
                 this.observer = null;
                 this.debugPanel = null;
                 
-                // 跨页面累计数据
+                // Cross-page cumulative data
                 this.totalAdsSeen = this.getTotalAdsSeen();
                 
-                // 引导期间的滚动监控
+                // Scroll monitoring during guide
                 this.scrollMonitorInterval = null;
                 this.targetScrollPosition = null;
                 
-                // 关键点5：调试模式相关
+                // Key point 5: Debug mode related
                 this.themeClickCount = 0;
                 this.themeClickTimer = null;
                 
                 this.init();
             }
 
-            // 检测PC浏览器环境
+            // Detect PC browser environment
             detectPCBrowser() {
                 const userAgent = navigator.userAgent.toLowerCase();
                 
-                // 检测移动设备标识
+                // Detect mobile device keywords
                 const mobileKeywords = [
                     'mobile', 'android', 'iphone', 'ipad', 'ipod',
                     'blackberry', 'iemobile', 'opera mini', 'webos'
@@ -2536,16 +2536,16 @@
                 
                 const isMobile = mobileKeywords.some(keyword => userAgent.includes(keyword));
                 
-                // 检测触摸屏支持
+                // Detect touch screen support
                 const hasTouchScreen = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
                 
-                // 检测屏幕尺寸（小于1024px宽度通常是移动设备）
+                // Detect screen size (less than 1024px width usually means mobile device)
                 const isSmallScreen = window.screen.width < 1024;
                 
-                // 如果是移动设备或有触摸屏或小屏幕，则不是PC浏览器
+                // If mobile device or has touch screen or small screen, not PC browser
                 const isPCBrowser = !isMobile && !hasTouchScreen && !isSmallScreen;
                 
-                console.log('广告引导：浏览器环境检测', {
+                console.log('Ad guide: Browser environment detection', {
                     userAgent: userAgent,
                     isMobile: isMobile,
                     hasTouchScreen: hasTouchScreen,
@@ -2557,20 +2557,20 @@
                 return isPCBrowser;
             }
 
-            // 获取跨页面累计广告数量
+            // Get cross-page cumulative ad count
             getTotalAdsSeen() {
                 const stored = localStorage.getItem('adGuideTotalSeen');
                 return stored ? parseInt(stored) : 0;
             }
 
-            // 保存跨页面累计广告数量
+            // Save cross-page cumulative ad count
             saveTotalAdsSeen() {
                 localStorage.setItem('adGuideTotalSeen', this.totalAdsSeen.toString());
             }
 
-            // 关键点1：引导触发机制实现
+            // Key point 1: Guide trigger mechanism implementation
             init() {
-                // 如果是PC浏览器，不执行初始化
+                // If PC browser, do not execute initialization
                 if (this.isPCBrowser) return;
                 
                 this.setupAdObserver();
@@ -2591,7 +2591,7 @@
                     rootMargin: '50px'
                 });
 
-                // 监控所有AdSense广告容器
+                // Monitor all AdSense ad containers
                 this.startAdMonitoring();
             }
 
@@ -2606,18 +2606,18 @@
                     });
                 };
 
-                // 立即检查一次
+                // Check immediately once
                 checkForAds();
                 
-                // 定期检查新广告
+                // Check for new ads periodically
                 setInterval(checkForAds, 2000);
             }
 
             checkAdValidity(adElement) {
-                // 如果是PC浏览器，不执行广告检测
+                // If PC browser, do not execute ad detection
                 if (this.isPCBrowser) return;
                 
-                // 检查广告是否有效：高度>100px且<=650px且已填充
+                // Check if ad is valid: height > 100px and <= 650px and filled
                 const rect = adElement.getBoundingClientRect();
                 const isValidHeight = rect.height > 100 && rect.height <= 650;
                 const isFilled = adElement.dataset.adStatus === 'filled' || 
@@ -2627,14 +2627,14 @@
                 if (isValidHeight && isFilled && !this.currentPageAds.includes(adElement)) {
                     this.currentPageAds.push(adElement);
                     
-                    // 累计总广告数量（跨页面）
+                    // Accumulate total ad count (cross-page)
                     this.totalAdsSeen++;
                     this.saveTotalAdsSeen();
                     
-                    console.log(`广告引导：发现新广告，当前页面: ${this.currentPageAds.length}, 累计总数: ${this.totalAdsSeen}`);
+                    console.log(`Ad guide: New ad detected, current page: ${this.currentPageAds.length}, total count: ${this.totalAdsSeen}`);
                     this.updateDebugInfo();
                     
-                    // 检查是否达到触发条件（基于累计数量）
+                    // Check if trigger condition is met (based on cumulative count)
                     if (this.totalAdsSeen >= this.REQUIRED_ADS) {
                         this.considerTriggeringGuide();
                     }
@@ -2642,21 +2642,21 @@
             }
 
             considerTriggeringGuide() {
-                // 检查冷却时间
+                // Check cooldown time
                 if (!this.canTrigger()) {
-                    console.log('广告引导：仍在冷却期内');
+                    console.log('Ad guide: Still in cooldown period');
                     return;
                 }
 
-                // 概率控制：80%触发，20%不触发
+                // Probability control: 80% trigger, 20% skip
                 const shouldTrigger = Math.random() < this.TRIGGER_PROBABILITY;
                 if (!shouldTrigger) {
-                    console.log('广告引导：概率控制跳过');
+                    console.log('Ad guide: Probability control skip');
                     this.recordTriggerAttempt();
                     return;
                 }
 
-                // 触发引导
+                // Trigger guide
                 this.triggerGuide();
             }
 
@@ -2673,9 +2673,9 @@
                 localStorage.setItem('adGuideLastTrigger', Date.now().toString());
             }
 
-            // 关键点2：引导交互流程实现
+            // Key point 2: Guide interaction flow implementation
             triggerGuide() {
-                // 如果是PC浏览器，不触发引导
+                // If PC browser, do not trigger guide
                 if (this.isPCBrowser) return;
                 
                 if (this.isGuideActive) return;
@@ -2683,21 +2683,21 @@
                 this.isGuideActive = true;
                 this.recordTriggerAttempt();
                 
-                // 选择当前页面最后一个有效广告作为目标
+                // Select the last valid ad on current page as target
                 const targetAd = this.currentPageAds[this.currentPageAds.length - 1];
                 if (!targetAd) {
-                    console.error('广告引导：当前页面找不到目标广告');
+                    console.error('Ad guide: Cannot find target ad on current page');
                     return;
                 }
 
-                // 视图定位：滚动到广告中央
+                // View positioning: scroll to ad center
                 this.scrollToAdCenter(targetAd);
                 
-                // 等待滚动完成后显示引导
+                // Wait for scroll completion then show guide
                 setTimeout(() => {
                     this.showGuideOverlay(targetAd);
                     this.restrictUserInteraction();
-                    // 开始滚动监控，防止用户因bug滚动离开目标位置
+                    // Start scroll monitoring to prevent user from scrolling away due to bugs
                     this.startScrollMonitoring();
                 }, 500);
             }
@@ -2713,7 +2713,7 @@
                 });
             }
 
-            // 开始监控滚动位置，确保用户停留在目标位置
+            // Start monitoring scroll position to ensure user stays at target position
             startScrollMonitoring() {
                 if (this.scrollMonitorInterval) {
                     clearInterval(this.scrollMonitorInterval);
@@ -2721,38 +2721,38 @@
                 
                 this.scrollMonitorInterval = setInterval(() => {
                     if (!this.isGuideActive) {
-                        // 引导已结束，立即停止监控
+                        // Guide has ended, stop monitoring immediately
                         this.stopScrollMonitoring();
                         return;
                     }
                     
                     if (this.targetScrollPosition !== null) {
                         const currentScroll = window.scrollY;
-                        const tolerance = 50; // 允许50px的误差
+                        const tolerance = 50; // Allow 50px tolerance
                         
                         if (Math.abs(currentScroll - this.targetScrollPosition) > tolerance) {
-                            console.log('广告引导：检测到用户滚动偏移，重新定位到目标位置');
+                            console.log('Ad guide: User scroll offset detected, repositioning to target');
                             window.scrollTo({
                                 top: this.targetScrollPosition,
                                 behavior: 'smooth'
                             });
                         }
                     }
-                }, 1000); // 每1秒检查一次
+                }, 1000); // Check every 1 second
             }
 
-            // 停止滚动监控
+            // Stop scroll monitoring
             stopScrollMonitoring() {
                 if (this.scrollMonitorInterval) {
                     clearInterval(this.scrollMonitorInterval);
                     this.scrollMonitorInterval = null;
                     this.targetScrollPosition = null;
-                    console.log('广告引导：滚动监控已停止');
+                    console.log('Ad guide: Scroll monitoring stopped');
                 }
             }
 
             showGuideOverlay(targetAd) {
-                // 创建高亮效果容器
+                // Create highlight effect container
                 const overlay = document.createElement('div');
                 overlay.id = 'ad-guide-overlay';
                 overlay.style.cssText = `
@@ -2765,12 +2765,12 @@
                     pointer-events: none;
                 `;
 
-                // 获取广告相对于文档的位置
+                // Get ad position relative to document
                 const rect = targetAd.getBoundingClientRect();
                 const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
                 const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
                 
-                // 创建高亮区域 - 使用绝对定位相对于文档
+                // Create highlight area - using absolute positioning relative to document
                 const highlight = document.createElement('div');
                 highlight.style.cssText = `
                     position: absolute;
@@ -2786,7 +2786,7 @@
                     z-index: 14000;
                 `;
 
-                // 创建提示信息 - 使用绝对定位相对于文档
+                // Create tooltip - using absolute positioning relative to document
                 const tooltip = document.createElement('div');
                 tooltip.style.cssText = `
                     position: absolute;
@@ -2805,7 +2805,7 @@
                 `;
                 tooltip.textContent = 'Please click an AD and watch it for 10s to keep reading. Thank you!👇👇👇 👇👇👇 👇👇👇';
 
-                // 添加CSS动画
+                // Add CSS animation
                 if (!document.getElementById('guide-animation-styles')) {
                     const style = document.createElement('style');
                     style.id = 'guide-animation-styles';
@@ -2823,12 +2823,12 @@
                 overlay.appendChild(tooltip);
                 document.body.appendChild(overlay);
 
-                // 确保广告区域可以被点击（设置合适的z-index）
+                // Ensure ad area can be clicked (set appropriate z-index)
                 targetAd.style.position = 'relative';
-                targetAd.style.zIndex = '15000'; // 低于提示弹窗但高于其他元素
+                targetAd.style.zIndex = '15000'; // Below tooltip but above other elements
                 targetAd.style.pointerEvents = 'auto';
 
-                // 监听滚动事件，更新提示弹窗位置
+                // Listen for scroll events, update tooltip position
                 this.updateOverlayPosition = () => {
                     if (!overlay || !overlay.parentNode) return;
                     
@@ -2836,46 +2836,46 @@
                     const newScrollTop = window.pageYOffset || document.documentElement.scrollTop;
                     const newScrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
                     
-                    // 更新高亮区域位置
+                    // Update highlight area position
                     highlight.style.top = `${newRect.top + newScrollTop - 10}px`;
                     highlight.style.left = `${newRect.left + newScrollLeft - 10}px`;
                     
-                    // 更新提示信息位置
+                    // Update tooltip position
                     tooltip.style.top = `${newRect.top + newScrollTop - 80}px`;
                     tooltip.style.left = `${newRect.left + newScrollLeft}px`;
                 };
                 
-                // 使用被动监听器，避免干扰滚动监控逻辑
+                // Use passive listeners to avoid interfering with scroll monitoring logic
                 window.addEventListener('scroll', this.updateOverlayPosition, { passive: true });
                 window.addEventListener('resize', this.updateOverlayPosition, { passive: true });
 
-                // 允许点击目标广告
+                // Allow clicking target ad
                 this.enableAdClick(targetAd);
             }
 
             enableAdClick(targetAd) {
                 const clickHandler = () => {
-                    console.log('广告引导：用户点击了广告');
+                    console.log('Ad guide: User clicked ad');
                     this.endGuide();
                 };
 
                 targetAd.addEventListener('click', clickHandler, { once: true });
 
-                // 200秒后自动结束引导（备用方案）
+                // Auto end guide after 200 seconds (backup plan)
                 setTimeout(() => {
                     if (this.isGuideActive) {
-                        console.log('广告引导：超时自动结束（200秒）');
+                        console.log('Ad guide: Auto end due to timeout (200 seconds)');
                         this.endGuide();
                     }
-                }, 200000); // 200秒 = 200000毫秒
+                }, 200000); // 200 seconds = 200000 milliseconds
             }
 
-            // 关键点3：交互状态管理实现
+            // Key point 3: Interaction state management implementation
             restrictUserInteraction() {
-                // 不禁用页面滚动，而是阻止用户的滚动手势
-                // document.body.style.overflow = 'hidden'; // 注释掉这行
+                // Do not disable page scrolling, but prevent user scroll gestures
+                // document.body.style.overflow = 'hidden'; // Commented out this line
                 
-                // 创建交互拦截层
+                // Create interaction blocking layer
                 const interactionBlocker = document.createElement('div');
                 interactionBlocker.id = 'interaction-blocker';
                 interactionBlocker.style.cssText = `
@@ -2888,16 +2888,16 @@
                     background: transparent;
                 `;
                 
-                // 阻止用户滚动但允许程序化滚动
+                // Prevent user scrolling but allow programmatic scrolling
                 this.preventUserScroll = (e) => {
-                    // 阻止鼠标滚轮和触摸滚动
+                    // Prevent mouse wheel and touch scrolling
                     if (e.type === 'wheel' || e.type === 'touchmove') {
                         e.preventDefault();
                         e.stopPropagation();
                     }
                 };
                 
-                // 添加滚动阻止事件监听器
+                // Add scroll prevention event listeners
                 document.addEventListener('wheel', this.preventUserScroll, { passive: false });
                 document.addEventListener('touchmove', this.preventUserScroll, { passive: false });
                 document.addEventListener('keydown', this.preventUserScroll, { passive: false });
@@ -2906,10 +2906,10 @@
             }
 
             restoreUserInteraction() {
-                // 恢复页面滚动
+                // Restore page scrolling
                 document.body.style.overflow = '';
                 
-                // 移除滚动阻止事件监听器
+                // Remove scroll prevention event listeners
                 if (this.preventUserScroll) {
                     document.removeEventListener('wheel', this.preventUserScroll);
                     document.removeEventListener('touchmove', this.preventUserScroll);
@@ -2917,7 +2917,7 @@
                     this.preventUserScroll = null;
                 }
                 
-                // 移除交互拦截层
+                // Remove interaction blocking layer
                 const blocker = document.getElementById('interaction-blocker');
                 if (blocker) {
                     blocker.remove();
@@ -2927,36 +2927,36 @@
             endGuide() {
                 this.isGuideActive = false;
                 
-                // 立即停止滚动监控（关键：必须在最开始就停止）
+                // Stop scroll monitoring immediately (critical: must stop at the beginning)
                 this.stopScrollMonitoring();
                 
-                // 移除滚动事件监听器
+                // Remove scroll event listeners
                 if (this.updateOverlayPosition) {
                     window.removeEventListener('scroll', this.updateOverlayPosition);
                     window.removeEventListener('resize', this.updateOverlayPosition);
                     this.updateOverlayPosition = null;
                 }
                 
-                // 移除引导覆盖层
+                // Remove guide overlay
                 const overlay = document.getElementById('ad-guide-overlay');
                 if (overlay) {
                     overlay.remove();
                 }
                 
-                // 恢复广告元素的原始样式
+                // Restore original styles of ad elements
                 this.currentPageAds.forEach(ad => {
                     ad.style.position = '';
                     ad.style.zIndex = '';
                     ad.style.pointerEvents = '';
                 });
                 
-                // 恢复用户交互
+                // Restore user interaction
                 this.restoreUserInteraction();
                 
-                console.log('广告引导：引导结束');
+                console.log('Ad guide: Guide ended');
             }
 
-            // 关键点4：引导退出条件实现
+            // Key point 4: Guide exit conditions implementation
             setupPageVisibilityHandler() {
                 let pageHiddenTime = null;
                 
@@ -2968,16 +2968,16 @@
                             const hiddenDuration = Date.now() - pageHiddenTime;
                             
                             if (hiddenDuration <= 10000) {
-                                // 离开时间小于10秒，显示提示弹窗
+                                // Leave time less than 10 seconds, show notification popup
                                 this.showShortLeaveNotification();
                             } else if (hiddenDuration > 10000) {
                                 if (this.isGuideActive) {
-                                    // 引导激活中且离开超过10秒，关闭引导并显示感谢弹窗
-                                    console.log('广告引导：用户离开页面超过10秒，自动关闭引导');
+                                    // Guide active and leave over 10 seconds, close guide and show thank you popup
+                                    console.log('Ad guide: User left page over 10 seconds, auto close guide');
                                     this.endGuide();
                                     this.showThankYouNotification();
                                 } else {
-                                    // 引导未激活但之前可能有过引导，仍显示感谢弹窗
+                                    // Guide not active but may have had guide before, still show thank you popup
                                     this.showThankYouNotification();
                                 }
                             }
@@ -2987,9 +2987,9 @@
                 });
             }
 
-            // 显示短暂离开提示弹窗
+            // Show short leave notification popup
             showShortLeaveNotification() {
-                // 避免重复弹窗
+                // Avoid duplicate popups
                 if (document.getElementById('short-leave-notification')) {
                     return;
                 }
@@ -3014,7 +3014,7 @@
                 `;
                 notification.textContent = 'Less than 10 seconds';
 
-                // 添加动画样式
+                // Add animation styles
                 if (!document.getElementById('notification-animation-styles')) {
                     const style = document.createElement('style');
                     style.id = 'notification-animation-styles';
@@ -3045,7 +3045,7 @@
 
                 document.body.appendChild(notification);
 
-                // 2秒后自动关闭
+                // Auto close after 2 seconds
                 setTimeout(() => {
                     if (notification && notification.parentNode) {
                         notification.style.animation = 'fadeOutScale 0.3s ease-out';
@@ -3057,12 +3057,12 @@
                     }
                 }, 2000);
 
-                console.log('显示短暂离开提示：Less than 10 seconds');
+                console.log('Show short leave notification: Less than 10 seconds');
             }
 
-            // 显示感谢广告浏览弹窗
+            // Show thank you for ad browsing popup
             showThankYouNotification() {
-                // 避免重复弹窗
+                // Avoid duplicate popups
                 if (document.getElementById('thank-you-notification')) {
                     return;
                 }
@@ -3088,7 +3088,7 @@
                 `;
                 notification.textContent = 'Thank you for your AD browsing';
 
-                // 确保动画样式已添加
+                // Ensure animation styles are added
                 if (!document.getElementById('notification-animation-styles')) {
                     const style = document.createElement('style');
                     style.id = 'notification-animation-styles';
@@ -3119,7 +3119,7 @@
 
                 document.body.appendChild(notification);
 
-                // 3秒后自动关闭
+                // Auto close after 3 seconds
                 setTimeout(() => {
                     if (notification && notification.parentNode) {
                         notification.style.animation = 'fadeOutScale 0.4s ease-out';
@@ -3131,10 +3131,10 @@
                     }
                 }, 3000);
 
-                console.log('显示感谢广告浏览提示：Thank you for your AD browsing');
+                console.log('Show thank you for ad browsing: Thank you for your AD browsing');
             }
 
-            // 关键点5：调试模式实现
+            // Key point 5: Debug mode implementation
             setupDebugMode() {
                 const themeBtn = document.getElementById('theme-btn');
                 if (!themeBtn) return;
@@ -3162,10 +3162,10 @@
                 
                 if (this.isDebugMode) {
                     this.showDebugPanel();
-                    console.log('广告引导：调试模式已激活');
+                    console.log('Ad guide: Debug mode activated');
                 } else {
                     this.hideDebugPanel();
-                    console.log('广告引导：调试模式已关闭');
+                    console.log('Ad guide: Debug mode closed');
                 }
             }
 
@@ -3191,7 +3191,7 @@
                 document.body.appendChild(this.debugPanel);
                 this.updateDebugInfo();
                 
-                // 定期更新调试信息
+                // Regularly update debug information
                 this.debugUpdateInterval = setInterval(() => {
                     this.updateDebugInfo();
                 }, 1000);
@@ -3226,13 +3226,13 @@
                 const seconds = Math.floor((timeUntilReset % 60000) / 1000);
                 
                 this.debugPanel.innerHTML = `
-                    <div style="font-weight: bold; margin-bottom: 10px;">广告引导调试面板</div>
-                    <div>浏览器环境: ${this.isPCBrowser ? 'PC浏览器(已禁用)' : '移动设备'}</div>
-                    <div>当前页面广告: ${this.currentPageAds ? this.currentPageAds.length : 0}</div>
-                    <div>累计广告总数: ${this.totalAdsSeen || 0}</div>
-                    <div>距离触发还需: ${Math.max(0, this.REQUIRED_ADS - (this.totalAdsSeen || 0))} 个广告</div>
-                    <div>重置倒计时: ${minutes}:${seconds.toString().padStart(2, '0')}</div>
-                    <div>引导状态: ${this.isGuideActive ? '激活中' : '待机'}</div>
+                    <div style="font-weight: bold; margin-bottom: 10px;">Ad Guide Debug Panel</div>
+                    <div>Browser Environment: ${this.isPCBrowser ? 'PC Browser (Disabled)' : 'Mobile Device'}</div>
+                    <div>Current Page Ads: ${this.currentPageAds ? this.currentPageAds.length : 0}</div>
+                    <div>Total Ads Seen: ${this.totalAdsSeen || 0}</div>
+                    <div>Ads Needed for Trigger: ${Math.max(0, this.REQUIRED_ADS - (this.totalAdsSeen || 0))} more ads</div>
+                    <div>Countdown to Reset: ${minutes}:${seconds.toString().padStart(2, '0')}</div>
+                    <div>Guide Status: ${this.isGuideActive ? 'Active' : 'Standby'}</div>
                     <button onclick="adGuideSystem.resetAllData()" style="
                         margin-top: 10px;
                         padding: 5px 10px;
@@ -3242,7 +3242,7 @@
                         border-radius: 4px;
                         cursor: pointer;
                         font-size: 11px;
-                    ">立即重置</button>
+                    ">Reset All</button>
                 `;
             }
 
@@ -3254,14 +3254,14 @@
                 if (this.isGuideActive) {
                     this.endGuide();
                 }
-                // 确保停止滚动监控
+                // Ensure scroll monitoring is stopped
                 this.stopScrollMonitoring();
-                console.log('广告引导：所有数据已重置（包括跨页面累计数据）');
+                console.log('Ad guide: All data reset (including cross-page cumulative data)');
                 this.updateDebugInfo();
             }
 
             startPeriodicCheck() {
-                // 每5秒检查一次广告状态
+                // Check ad status every 5 seconds
                 setInterval(() => {
                     this.currentPageAds = this.currentPageAds.filter(ad => {
                         const rect = ad.getBoundingClientRect();
@@ -3272,12 +3272,12 @@
             }
         }
 
-        // 初始化广告引导系统
+        // Initialize ad guide system
         let adGuideSystem;
         document.addEventListener('DOMContentLoaded', function() {
             adGuideSystem = new AdClickGuideSystem();
             
-            // 将实例暴露到全局，供调试使用
+            // Expose instance globally for debugging
             window.adGuideSystem = adGuideSystem;
         });
     </script>
