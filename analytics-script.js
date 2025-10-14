@@ -52,6 +52,7 @@ function doPost(e) {
     if (Math.random() < 0.01) { // 1%概率执行统计更新
       updateDashboard(spreadsheet, dateString);
       cleanupOldSheets(spreadsheet);
+      updateStatisticsTable(spreadsheet); // 更新统计汇总表
     }
     
     return ContentService
@@ -254,4 +255,228 @@ function doGet(e) {
   return ContentService
     .createTextOutput('Analytics endpoint is working!')
     .setMimeType(ContentService.MimeType.TEXT);
+}
+
+// ==================== 统计汇总表功能 ====================
+
+// 更新统计汇总表
+function updateStatisticsTable(spreadsheet) {
+  try {
+    // 获取或创建统计表
+    let statsSheet = spreadsheet.getSheetByName('📈统计汇总表');
+    if (!statsSheet) {
+      statsSheet = spreadsheet.insertSheet('📈统计汇总表', 1); // 插入到第二位
+      initializeStatisticsTable(statsSheet);
+    }
+    
+    // 生成今日统计数据
+    const today = new Date().toLocaleDateString('zh-CN', {
+      timeZone: 'Asia/Shanghai',
+      month: 'numeric',
+      day: 'numeric'
+    });
+    const todayLabel = `${today.split('/')[0]}月${today.split('/')[1]}日`;
+    
+    const todayStats = generateDailyStatistics(spreadsheet, todayLabel);
+    
+    // 更新统计表
+    updateStatsInTable(statsSheet, todayStats, todayLabel);
+    
+    console.log('统计汇总表更新完成');
+    
+  } catch (error) {
+    console.error('更新统计汇总表失败:', error);
+  }
+}
+
+// 初始化统计汇总表
+function initializeStatisticsTable(sheet) {
+  // 设置标题
+  sheet.getRange(1, 1, 1, 5).merge();
+  sheet.getRange(1, 1).setValue('📈 网站访问统计汇总表');
+  
+  // 设置表头
+  const headers = [
+    ['时间', '域名来源（不记录后缀）', '书籍名称', '累计章节（含chapter的url）', '累计ip数量（去重）']
+  ];
+  
+  sheet.getRange(2, 1, 1, 5).setValues(headers);
+  
+  // 格式化标题和表头
+  sheet.getRange(1, 1).setBackground('#1a73e8').setFontColor('white').setFontSize(14).setFontWeight('bold');
+  sheet.getRange(2, 1, 1, 5).setBackground('#4285f4').setFontColor('white').setFontWeight('bold');
+  
+  // 设置列宽
+  sheet.setColumnWidth(1, 100);  // 时间
+  sheet.setColumnWidth(2, 200);  // 域名来源
+  sheet.setColumnWidth(3, 300);  // 书籍名称
+  sheet.setColumnWidth(4, 150);  // 累计章节
+  sheet.setColumnWidth(5, 120);  // 累计IP数量
+  
+  console.log('统计汇总表初始化完成');
+}
+
+// 生成每日统计数据
+function generateDailyStatistics(spreadsheet, dateLabel) {
+  const sheets = spreadsheet.getSheets();
+  const stats = {};
+  
+  // 获取今日数据表
+  const todayDateString = new Date().toLocaleDateString('zh-CN', {
+    timeZone: 'Asia/Shanghai',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).replace(/\//g, '-');
+  
+  const todaySheetName = `详细-${todayDateString}`;
+  const todaySheet = spreadsheet.getSheetByName(todaySheetName);
+  
+  if (!todaySheet) {
+    console.log('未找到今日数据表:', todaySheetName);
+    return {};
+  }
+  
+  // 读取今日数据
+  const dataRange = todaySheet.getDataRange();
+  const values = dataRange.getValues();
+  
+  // 跳过标题行
+  for (let i = 1; i < values.length; i++) {
+    const row = values[i];
+    const pageUrl = row[1] || '';    // 访问页面
+    const userIP = row[4] || '';     // IP地址
+    
+    if (!pageUrl || !userIP) continue;
+    
+    // 解析URL获取域名和书籍信息
+    const urlInfo = parsePageUrl(pageUrl);
+    if (!urlInfo) continue;
+    
+    const { domain, bookName, isChapter } = urlInfo;
+    
+    // 构建统计键
+    const key = `${domain}|${bookName}`;
+    
+    if (!stats[key]) {
+      stats[key] = {
+        domain: domain,
+        bookName: bookName,
+        chapterCount: 0,
+        ipSet: new Set()
+      };
+    }
+    
+    // 累计章节访问
+    if (isChapter) {
+      stats[key].chapterCount++;
+    }
+    
+    // 累计IP（去重）
+    if (userIP && userIP !== 'Unknown' && userIP !== 'Error') {
+      stats[key].ipSet.add(userIP);
+    }
+  }
+  
+  // 转换为数组格式
+  const result = [];
+  for (const key in stats) {
+    const stat = stats[key];
+    result.push([
+      dateLabel,                    // 时间
+      stat.domain,                  // 域名来源
+      stat.bookName,                // 书籍名称
+      stat.chapterCount,            // 累计章节
+      stat.ipSet.size              // 累计IP数量（去重）
+    ]);
+  }
+  
+  return result;
+}
+
+// 解析页面URL
+function parsePageUrl(url) {
+  try {
+    const urlObj = new URL(url);
+    const domain = urlObj.hostname;
+    const path = urlObj.pathname;
+    
+    // 检查是否是小说相关页面
+    const novelMatch = path.match(/\/novels\/([^\/]+)/);
+    if (!novelMatch) return null;
+    
+    const bookName = novelMatch[1];
+    const isChapter = path.includes('/chapter-');
+    
+    return {
+      domain: domain,
+      bookName: bookName,
+      isChapter: isChapter
+    };
+    
+  } catch (error) {
+    console.error('URL解析失败:', url, error);
+    return null;
+  }
+}
+
+// 更新统计表中的数据
+function updateStatsInTable(sheet, newStats, dateLabel) {
+  if (!newStats || newStats.length === 0) {
+    console.log('没有新的统计数据需要更新');
+    return;
+  }
+  
+  // 获取现有数据
+  const dataRange = sheet.getDataRange();
+  const existingData = dataRange.getNumRows() > 2 ? dataRange.getValues().slice(2) : [];
+  
+  // 过滤掉今日的旧数据（覆盖更新）
+  const nonTodayData = existingData.filter(row => row[0] !== dateLabel);
+  
+  // 合并数据：非今日数据 + 今日新数据
+  const allData = [...nonTodayData, ...newStats];
+  
+  // 清除现有数据（保留标题）
+  if (dataRange.getNumRows() > 2) {
+    sheet.getRange(3, 1, dataRange.getNumRows() - 2, 5).clear();
+  }
+  
+  // 写入新数据
+  if (allData.length > 0) {
+    sheet.getRange(3, 1, allData.length, 5).setValues(allData);
+  }
+  
+  // 更新时间戳
+  const updateTime = new Date().toLocaleString('zh-CN', {
+    timeZone: 'Asia/Shanghai'
+  });
+  
+  // 在表格底部添加更新时间
+  const lastRow = sheet.getLastRow() + 2;
+  sheet.getRange(lastRow, 1, 1, 5).merge();
+  sheet.getRange(lastRow, 1).setValue(`最后更新时间: ${updateTime}`);
+  sheet.getRange(lastRow, 1).setFontStyle('italic').setFontColor('#666666');
+  
+  console.log(`统计表更新完成，共 ${allData.length} 条记录`);
+}
+
+// 每小时统计更新函数（用于定时触发器）
+function hourlyStatisticsUpdate() {
+  const spreadsheetId = '1kEvOkFHVQ92HK0y7I1-8qEjfzYrwt0DFQWEiVNTqXS4';
+  const spreadsheet = SpreadsheetApp.openById(spreadsheetId);
+  
+  updateStatisticsTable(spreadsheet);
+  
+  return '每小时统计更新完成';
+}
+
+// 手动触发统计更新（测试用）
+function manualStatisticsUpdate() {
+  const spreadsheetId = '1kEvOkFHVQ92HK0y7I1-8qEjfzYrwt0DFQWEiVNTqXS4';
+  const spreadsheet = SpreadsheetApp.openById(spreadsheetId);
+  
+  updateStatisticsTable(spreadsheet);
+  
+  return '手动统计更新完成';
 }
