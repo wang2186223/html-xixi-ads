@@ -9,10 +9,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2025-10-15T15:11:09.690061">
-    <meta property="article:modified_time" content="2025-10-15T15:11:09.690061">
+    <meta property="article:published_time" content="2025-10-15T15:54:39.373178">
+    <meta property="article:modified_time" content="2025-10-15T15:54:39.373178">
     <meta name="date" content="2025-10-15">
-    <meta name="last-modified" content="2025-10-15 15:11:09">
+    <meta name="last-modified" content="2025-10-15 15:54:39">
     
     
     <!-- Open Graph Meta Tags -->
@@ -139,7 +139,7 @@
             };
             
             // Send data to Google Apps Script
-            fetch('https://script.google.com/macros/s/AKfycbwN4VtAruFfwBLVm2EuEV5RtC3Rn3s5Pnz-cJCUBH2_Ez1tp4vVFd-AFkwWiwDyyHA3/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbz3-2NEzFAiD9L6HCvXtRRdwm-jYBJoCN9PYrIwL_W3Utr2QlXtDhlEMQBSEgxNPIqf/exec', {
                 method: 'POST',
                 mode: 'no-cors',
                 headers: {
@@ -158,7 +158,7 @@
                 userIP: 'Unknown'
             };
             
-            fetch('https://script.google.com/macros/s/AKfycbwN4VtAruFfwBLVm2EuEV5RtC3Rn3s5Pnz-cJCUBH2_Ez1tp4vVFd-AFkwWiwDyyHA3/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbz3-2NEzFAiD9L6HCvXtRRdwm-jYBJoCN9PYrIwL_W3Utr2QlXtDhlEMQBSEgxNPIqf/exec', {
                 method: 'POST',
                 mode: 'no-cors',
                 headers: {
@@ -220,7 +220,7 @@
             console.log('Ad guide: Sending data to Google Apps Script:', data);
             
             // Send data to Google Apps Script
-            fetch('https://script.google.com/macros/s/AKfycbwN4VtAruFfwBLVm2EuEV5RtC3Rn3s5Pnz-cJCUBH2_Ez1tp4vVFd-AFkwWiwDyyHA3/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbz3-2NEzFAiD9L6HCvXtRRdwm-jYBJoCN9PYrIwL_W3Utr2QlXtDhlEMQBSEgxNPIqf/exec', {
                 method: 'POST',
                 mode: 'no-cors',
                 headers: {
@@ -251,7 +251,7 @@
             
             console.log('Ad guide: Sending data with Unknown IP:', data);
             
-            fetch('https://script.google.com/macros/s/AKfycbwN4VtAruFfwBLVm2EuEV5RtC3Rn3s5Pnz-cJCUBH2_Ez1tp4vVFd-AFkwWiwDyyHA3/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbz3-2NEzFAiD9L6HCvXtRRdwm-jYBJoCN9PYrIwL_W3Utr2QlXtDhlEMQBSEgxNPIqf/exec', {
                 method: 'POST',
                 mode: 'no-cors',
                 headers: {
@@ -262,6 +262,78 @@
                 console.log('Ad guide: Data sent successfully (no-cors mode, Unknown IP)');
             }).catch(error => {
                 console.error('Ad guide analytics error:', error);
+            });
+        });
+    }
+
+    // Send ad guide absence skip event (first trigger after long absence with 0% probability)
+    function sendAdGuideAbsenceSkip(eventData) {
+        console.log('Ad guide absence skip: Preparing to send event data:', eventData);
+        
+        // Get user IP address first
+        getUserIP().then(userIP => {
+            const data = {
+                eventType: 'ad_guide_absence_skip',
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                referrer: document.referrer || 'direct',
+                userIP: userIP,
+                totalAdsSeen: eventData.totalAdsSeen || 0,
+                currentPageAds: eventData.currentPageAds || 0,
+                triggerCount: eventData.triggerCount || 0,
+                maxTriggers: eventData.maxTriggers || 3,
+                absenceProbability: eventData.absenceProbability || 0,
+                absenceThresholdMinutes: eventData.absenceThresholdMinutes || 60,
+                timestamp: new Date().toISOString()
+            };
+            
+            console.log('Ad guide absence skip: Sending data to Google Apps Script:', data);
+            
+            // Send data to Google Apps Script
+            fetch('https://script.google.com/macros/s/AKfycbz3-2NEzFAiD9L6HCvXtRRdwm-jYBJoCN9PYrIwL_W3Utr2QlXtDhlEMQBSEgxNPIqf/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).then(() => {
+                console.log('Ad guide absence skip: Data sent successfully (no-cors mode)');
+            }).catch(error => {
+                console.error('Ad guide absence skip analytics error:', error);
+            });
+        }).catch(error => {
+            console.warn('Ad guide absence skip: IP acquisition failed, sending with Unknown IP');
+            
+            // If IP acquisition fails, still send other data
+            const data = {
+                eventType: 'ad_guide_absence_skip',
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                referrer: document.referrer || 'direct',
+                userIP: 'Unknown',
+                totalAdsSeen: eventData.totalAdsSeen || 0,
+                currentPageAds: eventData.currentPageAds || 0,
+                triggerCount: eventData.triggerCount || 0,
+                maxTriggers: eventData.maxTriggers || 3,
+                absenceProbability: eventData.absenceProbability || 0,
+                absenceThresholdMinutes: eventData.absenceThresholdMinutes || 60,
+                timestamp: new Date().toISOString()
+            };
+            
+            console.log('Ad guide absence skip: Sending data with Unknown IP:', data);
+            
+            fetch('https://script.google.com/macros/s/AKfycbz3-2NEzFAiD9L6HCvXtRRdwm-jYBJoCN9PYrIwL_W3Utr2QlXtDhlEMQBSEgxNPIqf/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).then(() => {
+                console.log('Ad guide absence skip: Data sent successfully (no-cors mode, Unknown IP)');
+            }).catch(error => {
+                console.error('Ad guide absence skip analytics error:', error);
             });
         });
     }
@@ -591,8 +663,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2025-10-15T15:11:09.690061",
-        "dateModified": "2025-10-15T15:11:09.690061",
+        "datePublished": "2025-10-15T15:54:39.373178",
+        "dateModified": "2025-10-15T15:54:39.373178",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -3111,6 +3183,10 @@
                 this.MAX_TRIGGERS = 3; // Maximum trigger count limit
                 this.TRIGGER_COOLDOWN_HOURS = 2; // 2 hours cooldown after reaching max triggers
                 
+                // New: Long absence mechanism
+                this.LONG_ABSENCE_MINUTES = 60; // 60 minutes absence threshold
+                this.FIRST_TRIGGER_AFTER_ABSENCE_PROBABILITY = 0.0; // 0% probability for first trigger after long absence
+                
                 // State management
                 this.currentPageAds = []; // Current page ads
                 this.isGuideActive = false;
@@ -3121,6 +3197,10 @@
                 // Cross-page cumulative data
                 this.totalAdsSeen = this.getTotalAdsSeen();
                 this.triggerCount = this.getTriggerCount();
+                
+                // Long absence tracking
+                this.lastVisitTime = this.getLastVisitTime();
+                this.isFirstTriggerAfterAbsence = false;
                 
                 // Scroll monitoring during guide
                 this.scrollMonitorInterval = null;
@@ -3199,10 +3279,41 @@
                 localStorage.setItem('adGuideTriggerCooldownReset', timestamp.toString());
             }
 
+            // Get last visit time
+            getLastVisitTime() {
+                const stored = localStorage.getItem('adGuideLastVisitTime');
+                return stored ? parseInt(stored) : Date.now();
+            }
+
+            // Save current visit time
+            saveLastVisitTime() {
+                localStorage.setItem('adGuideLastVisitTime', Date.now().toString());
+            }
+
+            // Check if this is first trigger after long absence
+            checkLongAbsence() {
+                const now = Date.now();
+                const absenceMs = now - this.lastVisitTime;
+                const absenceThresholdMs = this.LONG_ABSENCE_MINUTES * 60 * 1000;
+                
+                if (absenceMs > absenceThresholdMs) {
+                    console.log(`Ad guide: Long absence detected (${Math.round(absenceMs / 60000)} minutes). First trigger will use ${this.FIRST_TRIGGER_AFTER_ABSENCE_PROBABILITY * 100}% probability.`);
+                    this.isFirstTriggerAfterAbsence = true;
+                } else {
+                    this.isFirstTriggerAfterAbsence = false;
+                }
+                
+                // Update last visit time
+                this.saveLastVisitTime();
+            }
+
             // Key point 1: Guide trigger mechanism implementation
             init() {
                 // If PC browser, do not execute initialization
                 if (this.isPCBrowser) return;
+                
+                // Check for long absence
+                this.checkLongAbsence();
                 
                 this.setupAdObserver();
                 this.setupDebugMode();
@@ -3288,12 +3399,35 @@
                     return;
                 }
 
-                // Probability control: 78% trigger, 22% skip
-                const shouldTrigger = Math.random() < this.TRIGGER_PROBABILITY;
+                // Determine trigger probability
+                let effectiveProbability = this.TRIGGER_PROBABILITY;
+                let isFirstAfterAbsence = false;
+                
+                if (this.isFirstTriggerAfterAbsence) {
+                    effectiveProbability = this.FIRST_TRIGGER_AFTER_ABSENCE_PROBABILITY;
+                    isFirstAfterAbsence = true;
+                    console.log(`Ad guide: First trigger after long absence, using ${effectiveProbability * 100}% probability`);
+                }
+
+                // Probability control
+                const shouldTrigger = Math.random() < effectiveProbability;
+                
                 if (!shouldTrigger) {
-                    console.log('Ad guide: Probability control skip');
+                    console.log(`Ad guide: Probability control skip (probability: ${effectiveProbability * 100}%)`);
                     this.recordTriggerAttempt();
+                    
+                    // If this was the first trigger after absence with 0% probability, report it
+                    if (isFirstAfterAbsence) {
+                        this.reportFirstTriggerAfterAbsenceSkipped();
+                        this.isFirstTriggerAfterAbsence = false; // Reset flag for next time
+                    }
+                    
                     return;
+                }
+
+                // Reset the absence flag before triggering
+                if (isFirstAfterAbsence) {
+                    this.isFirstTriggerAfterAbsence = false;
                 }
 
                 // Trigger guide
@@ -3453,6 +3587,44 @@
                     currentPageAds: this.currentPageAds.length,
                     triggerCount: this.triggerCount,
                     maxTriggers: this.MAX_TRIGGERS,
+                    timestamp: new Date().toISOString()
+                });
+            }
+
+            // Report first trigger after long absence skipped (0% probability)
+            reportFirstTriggerAfterAbsenceSkipped() {
+                // Google Analytics 4 event reporting
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'ad_guide_absence_skip', {
+                        'event_category': 'Ad Guide',
+                        'event_label': 'First Trigger After Long Absence Skipped',
+                        'total_ads_seen': this.totalAdsSeen,
+                        'current_page_ads': this.currentPageAds.length,
+                        'trigger_count': this.triggerCount,
+                        'absence_probability': this.FIRST_TRIGGER_AFTER_ABSENCE_PROBABILITY * 100,
+                        'absence_threshold_minutes': this.LONG_ABSENCE_MINUTES,
+                        'value': 1
+                    });
+                }
+                
+                // Send to Google Apps Script
+                if (typeof sendAdGuideAbsenceSkip === 'function') {
+                    sendAdGuideAbsenceSkip({
+                        totalAdsSeen: this.totalAdsSeen,
+                        currentPageAds: this.currentPageAds.length,
+                        triggerCount: this.triggerCount,
+                        maxTriggers: this.MAX_TRIGGERS,
+                        absenceProbability: this.FIRST_TRIGGER_AFTER_ABSENCE_PROBABILITY,
+                        absenceThresholdMinutes: this.LONG_ABSENCE_MINUTES
+                    });
+                }
+                
+                console.log('Ad guide: First trigger after long absence skipped', {
+                    totalAdsSeen: this.totalAdsSeen,
+                    currentPageAds: this.currentPageAds.length,
+                    triggerCount: this.triggerCount,
+                    absenceProbability: this.FIRST_TRIGGER_AFTER_ABSENCE_PROBABILITY,
+                    absenceThresholdMinutes: this.LONG_ABSENCE_MINUTES,
                     timestamp: new Date().toISOString()
                 });
             }
@@ -3951,6 +4123,19 @@
                     triggerCooldownStatus = `<div>Trigger Count: ${this.triggerCount}/${this.MAX_TRIGGERS}</div>`;
                 }
                 
+                // Check long absence status
+                const absenceMs = now - this.lastVisitTime;
+                const absenceMinutes = Math.floor(absenceMs / 60000);
+                let absenceStatus = '';
+                
+                if (this.isFirstTriggerAfterAbsence) {
+                    absenceStatus = `<div style="color: #FF9500; font-weight: bold;">⚠️ First Trigger After Absence: ${this.FIRST_TRIGGER_AFTER_ABSENCE_PROBABILITY * 100}%</div>`;
+                } else if (absenceMinutes >= this.LONG_ABSENCE_MINUTES) {
+                    absenceStatus = `<div style="color: #FF9500;">Absence: ${absenceMinutes} min (>${this.LONG_ABSENCE_MINUTES} min threshold)</div>`;
+                } else {
+                    absenceStatus = `<div>Last Visit: ${absenceMinutes} min ago</div>`;
+                }
+                
                 this.debugPanel.innerHTML = `
                     <div style="font-weight: bold; margin-bottom: 10px;">Ad Guide Debug Panel</div>
                     <div>Browser Environment: ${this.isPCBrowser ? 'PC Browser (Disabled)' : 'Mobile Device'}</div>
@@ -3958,6 +4143,7 @@
                     <div>Total Ads Seen: ${this.totalAdsSeen || 0}</div>
                     <div>Ads Needed for Trigger: ${Math.max(0, this.REQUIRED_ADS - (this.totalAdsSeen || 0))} more ads</div>
                     ${triggerCooldownStatus}
+                    ${absenceStatus}
                     <div>15-Min Cooldown: ${minutes}:${seconds.toString().padStart(2, '0')}</div>
                     <div>Guide Status: ${this.isGuideActive ? 'Active' : 'Standby'}</div>
                     <button onclick="adGuideSystem.resetAllData()" style="
@@ -3978,15 +4164,18 @@
                 localStorage.removeItem('adGuideTotalSeen');
                 localStorage.removeItem('adGuideTriggerCount');
                 localStorage.removeItem('adGuideTriggerCooldownReset');
+                localStorage.removeItem('adGuideLastVisitTime');
                 this.totalAdsSeen = 0;
                 this.triggerCount = 0;
                 this.currentPageAds = [];
+                this.lastVisitTime = Date.now();
+                this.isFirstTriggerAfterAbsence = false;
                 if (this.isGuideActive) {
                     this.endGuide();
                 }
                 // Ensure scroll monitoring is stopped
                 this.stopScrollMonitoring();
-                console.log('Ad guide: All data reset (including cross-page cumulative data and trigger count)');
+                console.log('Ad guide: All data reset (including cross-page cumulative data, trigger count, and visit time)');
                 this.updateDebugInfo();
             }
 
