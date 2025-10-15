@@ -524,3 +524,35 @@ function testAdGuideEvent() {
     return '测试失败: ' + error.toString();
   }
 }
+
+function testAdGuideAbsenceSkipEvent() {
+  console.log('=== 开始测试广告引导长时间离开跳过事件 ===');
+  
+  const spreadsheet = SpreadsheetApp.openById('1kEvOkFHVQ92HK0y7I1-8qEjfzYrwt0DFQWEiVNTqXS4');
+  
+  const testData = {
+    eventType: 'ad_guide_absence_skip',
+    page: 'https://re.cankalp.com/novels/test/chapter-5',
+    userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15',
+    referrer: 'https://re.cankalp.com/novels/test/chapter-4',
+    userIP: '192.168.1.100',
+    totalAdsSeen: 15,
+    currentPageAds: 3,
+    triggerCount: 1,
+    maxTriggers: 3,
+    absenceProbability: 0.0,
+    absenceThresholdMinutes: 60,
+    timestamp: new Date().toISOString()
+  };
+  
+  console.log('测试数据:', JSON.stringify(testData));
+  
+  try {
+    handleAdGuideAbsenceSkipEvent(spreadsheet, testData);
+    console.log('✅ 测试成功！');
+    return '测试成功 - 请检查 Google Sheets 中的"广告引导离开跳过-' + getDateString() + '"表格（橙色表头）';
+  } catch (error) {
+    console.error('❌ 测试失败:', error);
+    return '测试失败: ' + error.toString();
+  }
+}
