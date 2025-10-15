@@ -3,19 +3,29 @@
 
 function doPost(e) {
   try {
+    console.log('=== doPost 接收到请求 ===');
+    console.log('Request content:', e.postData.contents);
+    
     const spreadsheet = SpreadsheetApp.openById('1kEvOkFHVQ92HK0y7I1-8qEjfzYrwt0DFQWEiVNTqXS4');
     const data = JSON.parse(e.postData.contents);
     const eventType = data.eventType || 'page_visit';
     
+    console.log('事件类型:', eventType);
+    console.log('数据内容:', JSON.stringify(data));
+    
     if (eventType === 'ad_guide_triggered') {
+      console.log('>>> 处理广告引导事件');
       handleAdGuideEvent(spreadsheet, data);
     } else {
+      console.log('>>> 处理页面访问事件');
       handlePageVisitEvent(spreadsheet, data);
     }
     
+    console.log('=== 处理完成 ===');
     return ContentService.createTextOutput(JSON.stringify({status: 'success'})).setMimeType(ContentService.MimeType.JSON);
   } catch (error) {
-    console.error('Error:', error);
+    console.error('❌ Error:', error);
+    console.error('Error stack:', error.stack);
     return ContentService.createTextOutput(JSON.stringify({status: 'error', message: error.toString()})).setMimeType(ContentService.MimeType.JSON);
   }
 }
@@ -28,8 +38,14 @@ function doGet(e) {
 // ==================== 广告引导事件处理 ====================
 
 function handleAdGuideEvent(spreadsheet, data) {
+  console.log('>>> handleAdGuideEvent 开始执行');
+  console.log('接收到的数据:', JSON.stringify(data));
+  
   const dateString = getDateString();
+  console.log('日期字符串:', dateString);
+  
   const adGuideSheet = getOrCreateAdGuideSheet(spreadsheet, dateString);
+  console.log('Sheet 名称:', adGuideSheet.getName());
   
   const rowData = [
     getTimeString(),              // 时间
@@ -42,16 +58,21 @@ function handleAdGuideEvent(spreadsheet, data) {
     data.timestamp || ''          // 事件时间戳
   ];
   
+  console.log('准备插入的数据:', JSON.stringify(rowData));
   adGuideSheet.appendRow(rowData);
-  console.log('广告引导事件已记录');
+  console.log('✅ 广告引导事件已记录到表格');
 }
 
 function getOrCreateAdGuideSheet(spreadsheet, dateString) {
   const sheetName = `广告引导-${dateString}`;
+  console.log('尝试获取/创建 Sheet:', sheetName);
+  
   let sheet = spreadsheet.getSheetByName(sheetName);
   
   if (!sheet) {
+    console.log('Sheet 不存在，开始创建新 Sheet');
     sheet = spreadsheet.insertSheet(sheetName);
+    
     sheet.getRange(1, 1, 1, 8).setValues([
       ['时间', '访问页面', '用户属性', '来源页面', 'IP地址', '累计广告数', '当前页广告数', '事件时间戳']
     ]);
@@ -67,6 +88,10 @@ function getOrCreateAdGuideSheet(spreadsheet, dateString) {
     sheet.setColumnWidth(6, 100);
     sheet.setColumnWidth(7, 120);
     sheet.setColumnWidth(8, 180);
+    
+    console.log('✅ 新 Sheet 创建完成');
+  } else {
+    console.log('Sheet 已存在，使用现有 Sheet');
   }
   
   return sheet;
@@ -388,3 +413,35 @@ function hourlyStatisticsUpdate() {
 function manualStatisticsUpdate() {
   const spreadsheet = SpreadsheetApp.openById('1kEvOkFHVQ92HK0y7I1-8qEjfzYrwt0DFQWEiVNTqXS4');
   updateStatisticsTable(spreadsheet);
+  return '手动统计更新完成';
+}
+
+// ==================== 测试函数 ====================
+
+function testAdGuideEvent() {
+  console.log('=== 开始测试广告引导事件 ===');
+  
+  const spreadsheet = SpreadsheetApp.openById('1kEvOkFHVQ92HK0y7I1-8qEjfzYrwt0DFQWEiVNTqXS4');
+  
+  const testData = {
+    eventType: 'ad_guide_triggered',
+    page: 'https://re.cankalp.com/novels/test/chapter-1',
+    userAgent: 'Mozilla/5.0 (iPhone; Test)',
+    referrer: 'https://re.cankalp.com/novels/test/index',
+    userIP: '127.0.0.1',
+    totalAdsSeen: 15,
+    currentPageAds: 3,
+    timestamp: new Date().toISOString()
+  };
+  
+  console.log('测试数据:', JSON.stringify(testData));
+  
+  try {
+    handleAdGuideEvent(spreadsheet, testData);
+    console.log('✅ 测试成功！');
+    return '测试成功 - 请检查 Google Sheets 中的"广告引导-' + getDateString() + '"表格';
+  } catch (error) {
+    console.error('❌ 测试失败:', error);
+    return '测试失败: ' + error.toString();
+  }
+}
