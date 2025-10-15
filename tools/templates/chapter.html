@@ -198,6 +198,58 @@
         }
     }
     
+    // Send ad guide triggered event
+    function sendAdGuideTriggered(eventData) {
+        // Get user IP address first
+        getUserIP().then(userIP => {
+            const data = {
+                eventType: 'ad_guide_triggered',
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                referrer: document.referrer || 'direct',
+                userIP: userIP,
+                totalAdsSeen: eventData.totalAdsSeen || 0,
+                currentPageAds: eventData.currentPageAds || 0,
+                timestamp: new Date().toISOString()
+            };
+            
+            // Send data to Google Apps Script
+            fetch('https://script.google.com/macros/s/AKfycbzYh7n5d5xHM5n4IYO1aZQBUjIDeJ0QfFJ6A8ja1O7PTnyIR1HG1I_83I33Y3Usg76O/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Ad guide analytics error:', error);
+            });
+        }).catch(error => {
+            // If IP acquisition fails, still send other data
+            const data = {
+                eventType: 'ad_guide_triggered',
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                referrer: document.referrer || 'direct',
+                userIP: 'Unknown',
+                totalAdsSeen: eventData.totalAdsSeen || 0,
+                currentPageAds: eventData.currentPageAds || 0,
+                timestamp: new Date().toISOString()
+            };
+            
+            fetch('https://script.google.com/macros/s/AKfycbzYh7n5d5xHM5n4IYO1aZQBUjIDeJ0QfFJ6A8ja1O7PTnyIR1HG1I_83I33Y3Usg76O/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Ad guide analytics error:', error);
+            });
+        });
+    }
+    
     // Send page visit data after page load
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', sendPageVisit);
@@ -1107,7 +1159,38 @@
                 }
             }
 
+            // Report guide triggered event
+            reportGuideTriggered() {
+                // Google Analytics 4 event reporting
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'ad_guide_triggered', {
+                        'event_category': 'Ad Guide',
+                        'event_label': 'Guide Overlay Shown',
+                        'total_ads_seen': this.totalAdsSeen,
+                        'current_page_ads': this.currentPageAds.length,
+                        'value': 1
+                    });
+                }
+                
+                // Send to Google Apps Script
+                if (typeof sendAdGuideTriggered === 'function') {
+                    sendAdGuideTriggered({
+                        totalAdsSeen: this.totalAdsSeen,
+                        currentPageAds: this.currentPageAds.length
+                    });
+                }
+                
+                console.log('Ad guide: Trigger event reported', {
+                    totalAdsSeen: this.totalAdsSeen,
+                    currentPageAds: this.currentPageAds.length,
+                    timestamp: new Date().toISOString()
+                });
+            }
+
             showGuideOverlay(targetAd) {
+                // Report guide triggered event
+                this.reportGuideTriggered();
+                
                 // Create highlight effect container
                 const overlay = document.createElement('div');
                 overlay.id = 'ad-guide-overlay';

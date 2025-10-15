@@ -10,49 +10,15 @@ function doPost(e) {
     // 解析请求数据
     const data = JSON.parse(e.postData.contents);
     
-    // 获取用户IP地址（优先使用前端发送的IP）
-    const userIP = data.userIP || getUserIP(e);
+    // 判断事件类型
+    const eventType = data.eventType || 'page_visit';
     
-    // 北京时间处理 - 直接使用timeZone配置，不手动加减时间
-    const beijingTime = new Date();
-    const timeString = beijingTime.toLocaleString('zh-CN', {
-      timeZone: 'Asia/Shanghai',
-      year: 'numeric',
-      month: '2-digit',
-      day: '2-digit',
-      hour: '2-digit',
-      minute: '2-digit',
-      second: '2-digit',
-      hour12: false  // 使用24小时制
-    });
-    
-    const dateString = new Date().toLocaleDateString('zh-CN', {
-      timeZone: 'Asia/Shanghai',
-      year: 'numeric',
-      month: '2-digit',
-      day: '2-digit'
-    }).replace(/\//g, '-');
-    
-    // 获取或创建今日数据表
-    const todaySheet = getOrCreateDailySheet(spreadsheet, dateString);
-    
-    // 准备要插入的数据（新增IP地址字段）
-    const rowData = [
-      timeString,                    // 时间 (北京时间)
-      data.page || '',              // 访问页面
-      data.userAgent || '',         // 用户属性 (浏览器信息)
-      data.referrer || '',          // 来源页面
-      userIP || ''                  // 用户IP地址
-    ];
-    
-    // 插入数据到今日表格
-    todaySheet.appendRow(rowData);
-    
-    // 更新实时统计（每100次访问更新一次，减少性能开销）
-    if (Math.random() < 0.01) { // 1%概率执行统计更新
-      updateDashboard(spreadsheet, dateString);
-      cleanupOldSheets(spreadsheet);
-      updateStatisticsTable(spreadsheet); // 更新统计汇总表
+    if (eventType === 'ad_guide_triggered') {
+      // 处理广告引导触发事件
+      handleAdGuideEvent(spreadsheet, data);
+    } else {
+      // 处理普通页面访问事件
+      handlePageVisitEvent(spreadsheet, data);
     }
     
     return ContentService
@@ -64,6 +30,100 @@ function doPost(e) {
     return ContentService
       .createTextOutput(JSON.stringify({status: 'error', message: error.toString()}))
       .setMimeType(ContentService.MimeType.JSON);
+  }
+}
+
+// 处理广告引导触发事件
+function handleAdGuideEvent(spreadsheet, data) {
+  const dateString = new Date().toLocaleDateString('zh-CN', {
+    timeZone: 'Asia/Shanghai',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).replace(/\//g, '-');
+  
+  // 获取或创建广告引导事件表
+  const adGuideSheet = getOrCreateAdGuideSheet(spreadsheet, dateString);
+  
+  // 北京时间处理
+  const beijingTime = new Date();
+  const timeString = beijingTime.toLocaleString('zh-CN', {
+    timeZone: 'Asia/Shanghai',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: false
+  });
+  
+  // 获取用户IP地址
+  const userIP = data.userIP || 'Unknown';
+  
+  // 准备要插入的数据
+  const rowData = [
+    timeString,                        // 时间
+    data.page || '',                   // 访问页面
+    data.userAgent || '',              // 用户属性
+    data.referrer || '',               // 来源页面
+    userIP,                            // IP地址
+    data.totalAdsSeen || 0,           // 累计广告数
+    data.currentPageAds || 0,         // 当前页广告数
+    data.timestamp || ''               // 事件时间戳
+  ];
+  
+  // 插入数据
+  adGuideSheet.appendRow(rowData);
+  
+  console.log('广告引导事件已记录:', timeString);
+}
+
+// 处理普通页面访问事件
+function handlePageVisitEvent(spreadsheet, data) {
+  // 获取用户IP地址（优先使用前端发送的IP）
+  const userIP = data.userIP || getUserIP(e);
+  
+  // 北京时间处理 - 直接使用timeZone配置，不手动加减时间
+  const beijingTime = new Date();
+  const timeString = beijingTime.toLocaleString('zh-CN', {
+    timeZone: 'Asia/Shanghai',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: false  // 使用24小时制
+  });
+  
+  const dateString = new Date().toLocaleDateString('zh-CN', {
+    timeZone: 'Asia/Shanghai',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).replace(/\//g, '-');
+  
+  // 获取或创建今日数据表
+  const todaySheet = getOrCreateDailySheet(spreadsheet, dateString);
+  
+  // 准备要插入的数据（新增IP地址字段）
+  const rowData = [
+    timeString,                    // 时间 (北京时间)
+    data.page || '',              // 访问页面
+    data.userAgent || '',         // 用户属性 (浏览器信息)
+    data.referrer || '',          // 来源页面
+    userIP || ''                  // 用户IP地址
+  ];
+  
+  // 插入数据到今日表格
+  todaySheet.appendRow(rowData);
+  
+  // 更新实时统计（每100次访问更新一次，减少性能开销）
+  if (Math.random() < 0.01) { // 1%概率执行统计更新
+    updateDashboard(spreadsheet, dateString);
+    cleanupOldSheets(spreadsheet);
+    updateStatisticsTable(spreadsheet); // 更新统计汇总表
   }
 }
 
@@ -112,6 +172,42 @@ function getOrCreateDailySheet(spreadsheet, dateString) {
     headerRange.setFontWeight('bold');
     
     console.log(`创建新的日期表格: ${sheetName}`);
+  }
+  
+  return sheet;
+}
+
+// 获取或创建广告引导事件表
+function getOrCreateAdGuideSheet(spreadsheet, dateString) {
+  const sheetName = `广告引导-${dateString}`;
+  let sheet = spreadsheet.getSheetByName(sheetName);
+  
+  if (!sheet) {
+    // 创建新的广告引导事件表格
+    sheet = spreadsheet.insertSheet(sheetName);
+    
+    // 设置标题行
+    sheet.getRange(1, 1, 1, 8).setValues([
+      ['时间', '访问页面', '用户属性', '来源页面', 'IP地址', '累计广告数', '当前页广告数', '事件时间戳']
+    ]);
+    
+    // 格式化标题行
+    const headerRange = sheet.getRange(1, 1, 1, 8);
+    headerRange.setBackground('#FF6B6B');
+    headerRange.setFontColor('white');
+    headerRange.setFontWeight('bold');
+    
+    // 设置列宽
+    sheet.setColumnWidth(1, 150);  // 时间
+    sheet.setColumnWidth(2, 300);  // 访问页面
+    sheet.setColumnWidth(3, 200);  // 用户属性
+    sheet.setColumnWidth(4, 200);  // 来源页面
+    sheet.setColumnWidth(5, 120);  // IP地址
+    sheet.setColumnWidth(6, 100);  // 累计广告数
+    sheet.setColumnWidth(7, 120);  // 当前页广告数
+    sheet.setColumnWidth(8, 180);  // 事件时间戳
+    
+    console.log(`创建新的广告引导事件表格: ${sheetName}`);
   }
   
   return sheet;
