@@ -9,10 +9,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2025-10-15T14:16:40.626825">
-    <meta property="article:modified_time" content="2025-10-15T14:16:40.626825">
+    <meta property="article:published_time" content="2025-10-15T15:11:10.400988">
+    <meta property="article:modified_time" content="2025-10-15T15:11:10.400988">
     <meta name="date" content="2025-10-15">
-    <meta name="last-modified" content="2025-10-15 14:16:40">
+    <meta name="last-modified" content="2025-10-15 15:11:10">
     
     
     <!-- Open Graph Meta Tags -->
@@ -139,7 +139,7 @@
             };
             
             // Send data to Google Apps Script
-            fetch('https://script.google.com/macros/s/AKfycbzj9i7Ce4vmHDDDZRsE0C4VlYB_rzYVGuWd9wNKYXG3UvhBR-bEsr89q8uWJLQC9TxY/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbwN4VtAruFfwBLVm2EuEV5RtC3Rn3s5Pnz-cJCUBH2_Ez1tp4vVFd-AFkwWiwDyyHA3/exec', {
                 method: 'POST',
                 mode: 'no-cors',
                 headers: {
@@ -158,7 +158,7 @@
                 userIP: 'Unknown'
             };
             
-            fetch('https://script.google.com/macros/s/AKfycbzj9i7Ce4vmHDDDZRsE0C4VlYB_rzYVGuWd9wNKYXG3UvhBR-bEsr89q8uWJLQC9TxY/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbwN4VtAruFfwBLVm2EuEV5RtC3Rn3s5Pnz-cJCUBH2_Ez1tp4vVFd-AFkwWiwDyyHA3/exec', {
                 method: 'POST',
                 mode: 'no-cors',
                 headers: {
@@ -212,13 +212,15 @@
                 userIP: userIP,
                 totalAdsSeen: eventData.totalAdsSeen || 0,
                 currentPageAds: eventData.currentPageAds || 0,
+                triggerCount: eventData.triggerCount || 0,
+                maxTriggers: eventData.maxTriggers || 3,
                 timestamp: new Date().toISOString()
             };
             
             console.log('Ad guide: Sending data to Google Apps Script:', data);
             
             // Send data to Google Apps Script
-            fetch('https://script.google.com/macros/s/AKfycbzj9i7Ce4vmHDDDZRsE0C4VlYB_rzYVGuWd9wNKYXG3UvhBR-bEsr89q8uWJLQC9TxY/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbwN4VtAruFfwBLVm2EuEV5RtC3Rn3s5Pnz-cJCUBH2_Ez1tp4vVFd-AFkwWiwDyyHA3/exec', {
                 method: 'POST',
                 mode: 'no-cors',
                 headers: {
@@ -242,12 +244,14 @@
                 userIP: 'Unknown',
                 totalAdsSeen: eventData.totalAdsSeen || 0,
                 currentPageAds: eventData.currentPageAds || 0,
+                triggerCount: eventData.triggerCount || 0,
+                maxTriggers: eventData.maxTriggers || 3,
                 timestamp: new Date().toISOString()
             };
             
             console.log('Ad guide: Sending data with Unknown IP:', data);
             
-            fetch('https://script.google.com/macros/s/AKfycbzj9i7Ce4vmHDDDZRsE0C4VlYB_rzYVGuWd9wNKYXG3UvhBR-bEsr89q8uWJLQC9TxY/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbwN4VtAruFfwBLVm2EuEV5RtC3Rn3s5Pnz-cJCUBH2_Ez1tp4vVFd-AFkwWiwDyyHA3/exec', {
                 method: 'POST',
                 mode: 'no-cors',
                 headers: {
@@ -587,8 +591,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2025-10-15T14:16:40.626825",
-        "dateModified": "2025-10-15T14:16:40.626825",
+        "datePublished": "2025-10-15T15:11:10.400988",
+        "dateModified": "2025-10-15T15:11:10.400988",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -3227,6 +3231,10 @@
                 this.TRIGGER_PROBABILITY = 0.78; // 78%% trigger probability
                 this.COOLDOWN_MINUTES = 15; // 15 minutes cooldown time
                 
+                // New: Trigger count limit mechanism
+                this.MAX_TRIGGERS = 3; // Maximum trigger count limit
+                this.TRIGGER_COOLDOWN_HOURS = 2; // 2 hours cooldown after reaching max triggers
+                
                 // State management
                 this.currentPageAds = []; // Current page ads
                 this.isGuideActive = false;
@@ -3236,6 +3244,7 @@
                 
                 // Cross-page cumulative data
                 this.totalAdsSeen = this.getTotalAdsSeen();
+                this.triggerCount = this.getTriggerCount();
                 
                 // Scroll monitoring during guide
                 this.scrollMonitorInterval = null;
@@ -3290,6 +3299,28 @@
             // Save cross-page cumulative ad count
             saveTotalAdsSeen() {
                 localStorage.setItem('adGuideTotalSeen', this.totalAdsSeen.toString());
+            }
+
+            // Get trigger count
+            getTriggerCount() {
+                const stored = localStorage.getItem('adGuideTriggerCount');
+                return stored ? parseInt(stored) : 0;
+            }
+
+            // Save trigger count
+            saveTriggerCount() {
+                localStorage.setItem('adGuideTriggerCount', this.triggerCount.toString());
+            }
+
+            // Get trigger cooldown reset time
+            getTriggerCooldownReset() {
+                const stored = localStorage.getItem('adGuideTriggerCooldownReset');
+                return stored ? parseInt(stored) : 0;
+            }
+
+            // Save trigger cooldown reset time
+            saveTriggerCooldownReset(timestamp) {
+                localStorage.setItem('adGuideTriggerCooldownReset', timestamp.toString());
             }
 
             // Key point 1: Guide trigger mechanism implementation
@@ -3366,13 +3397,22 @@
             }
 
             considerTriggeringGuide() {
-                // Check cooldown time
-                if (!this.canTrigger()) {
-                    console.log('Ad guide: Still in cooldown period');
+                // Check if in trigger count cooldown (2 hours)
+                if (!this.canTriggerByCount()) {
+                    const resetTime = this.getTriggerCooldownReset();
+                    const remainingMs = resetTime - Date.now();
+                    const remainingMinutes = Math.ceil(remainingMs / 60000);
+                    console.log(`Ad guide: Trigger count limit reached (${this.triggerCount}/${this.MAX_TRIGGERS}), in 2-hour cooldown. Remaining: ${remainingMinutes} minutes`);
                     return;
                 }
 
-                // Probability control: 80% trigger, 20% skip
+                // Check regular cooldown time (15 minutes)
+                if (!this.canTrigger()) {
+                    console.log('Ad guide: Still in regular cooldown period (15 minutes)');
+                    return;
+                }
+
+                // Probability control: 78% trigger, 22% skip
                 const shouldTrigger = Math.random() < this.TRIGGER_PROBABILITY;
                 if (!shouldTrigger) {
                     console.log('Ad guide: Probability control skip');
@@ -3382,6 +3422,26 @@
 
                 // Trigger guide
                 this.triggerGuide();
+            }
+
+            canTriggerByCount() {
+                // Check if trigger count has reached limit
+                if (this.triggerCount < this.MAX_TRIGGERS) {
+                    return true;
+                }
+
+                // Check if 2-hour cooldown has expired
+                const resetTime = this.getTriggerCooldownReset();
+                if (Date.now() >= resetTime) {
+                    // Cooldown expired, reset trigger count
+                    console.log('Ad guide: 2-hour cooldown expired, resetting trigger count');
+                    this.triggerCount = 0;
+                    this.saveTriggerCount();
+                    this.saveTriggerCooldownReset(0);
+                    return true;
+                }
+
+                return false;
             }
 
             canTrigger() {
@@ -3406,6 +3466,18 @@
                 
                 this.isGuideActive = true;
                 this.recordTriggerAttempt();
+                
+                // Increment trigger count
+                this.triggerCount++;
+                this.saveTriggerCount();
+                console.log(`Ad guide: Trigger count incremented: ${this.triggerCount}/${this.MAX_TRIGGERS}`);
+                
+                // If trigger count reaches limit, set 2-hour cooldown
+                if (this.triggerCount >= this.MAX_TRIGGERS) {
+                    const cooldownEndTime = Date.now() + (this.TRIGGER_COOLDOWN_HOURS * 60 * 60 * 1000);
+                    this.saveTriggerCooldownReset(cooldownEndTime);
+                    console.log(`Ad guide: Trigger count limit reached (${this.MAX_TRIGGERS}), entering 2-hour cooldown`);
+                }
                 
                 // Select the last valid ad on current page as target
                 const targetAd = this.currentPageAds[this.currentPageAds.length - 1];
@@ -3484,6 +3556,8 @@
                         'event_label': 'Guide Overlay Shown',
                         'total_ads_seen': this.totalAdsSeen,
                         'current_page_ads': this.currentPageAds.length,
+                        'trigger_count': this.triggerCount,
+                        'max_triggers': this.MAX_TRIGGERS,
                         'value': 1
                     });
                 }
@@ -3492,13 +3566,17 @@
                 if (typeof sendAdGuideTriggered === 'function') {
                     sendAdGuideTriggered({
                         totalAdsSeen: this.totalAdsSeen,
-                        currentPageAds: this.currentPageAds.length
+                        currentPageAds: this.currentPageAds.length,
+                        triggerCount: this.triggerCount,
+                        maxTriggers: this.MAX_TRIGGERS
                     });
                 }
                 
                 console.log('Ad guide: Trigger event reported', {
                     totalAdsSeen: this.totalAdsSeen,
                     currentPageAds: this.currentPageAds.length,
+                    triggerCount: this.triggerCount,
+                    maxTriggers: this.MAX_TRIGGERS,
                     timestamp: new Date().toISOString()
                 });
             }
@@ -3971,6 +4049,7 @@
                 const cooldownMs = this.COOLDOWN_MINUTES * 60 * 1000;
                 const now = Date.now();
                 
+                // Regular 15-minute cooldown
                 let timeUntilReset = 0;
                 if (lastTrigger) {
                     const timeSinceLastTrigger = now - parseInt(lastTrigger);
@@ -3980,13 +4059,30 @@
                 const minutes = Math.floor(timeUntilReset / 60000);
                 const seconds = Math.floor((timeUntilReset % 60000) / 1000);
                 
+                // Trigger count cooldown (2 hours)
+                const triggerCooldownReset = this.getTriggerCooldownReset();
+                let triggerCooldownRemaining = 0;
+                let triggerCooldownStatus = '';
+                
+                if (this.triggerCount >= this.MAX_TRIGGERS && triggerCooldownReset > now) {
+                    triggerCooldownRemaining = triggerCooldownReset - now;
+                    const hours = Math.floor(triggerCooldownRemaining / 3600000);
+                    const mins = Math.floor((triggerCooldownRemaining % 3600000) / 60000);
+                    triggerCooldownStatus = `<div style="color: #FF6B6B; font-weight: bold;">🚫 2-Hour Cooldown: ${hours}h ${mins}m</div>`;
+                } else if (this.triggerCount >= this.MAX_TRIGGERS) {
+                    triggerCooldownStatus = '<div style="color: #4CD964;">✅ Cooldown Expired (will reset on next trigger)</div>';
+                } else {
+                    triggerCooldownStatus = `<div>Trigger Count: ${this.triggerCount}/${this.MAX_TRIGGERS}</div>`;
+                }
+                
                 this.debugPanel.innerHTML = `
                     <div style="font-weight: bold; margin-bottom: 10px;">Ad Guide Debug Panel</div>
                     <div>Browser Environment: ${this.isPCBrowser ? 'PC Browser (Disabled)' : 'Mobile Device'}</div>
                     <div>Current Page Ads: ${this.currentPageAds ? this.currentPageAds.length : 0}</div>
                     <div>Total Ads Seen: ${this.totalAdsSeen || 0}</div>
                     <div>Ads Needed for Trigger: ${Math.max(0, this.REQUIRED_ADS - (this.totalAdsSeen || 0))} more ads</div>
-                    <div>Countdown to Reset: ${minutes}:${seconds.toString().padStart(2, '0')}</div>
+                    ${triggerCooldownStatus}
+                    <div>15-Min Cooldown: ${minutes}:${seconds.toString().padStart(2, '0')}</div>
                     <div>Guide Status: ${this.isGuideActive ? 'Active' : 'Standby'}</div>
                     <button onclick="adGuideSystem.resetAllData()" style="
                         margin-top: 10px;
@@ -4004,14 +4100,17 @@
             resetAllData() {
                 localStorage.removeItem('adGuideLastTrigger');
                 localStorage.removeItem('adGuideTotalSeen');
+                localStorage.removeItem('adGuideTriggerCount');
+                localStorage.removeItem('adGuideTriggerCooldownReset');
                 this.totalAdsSeen = 0;
+                this.triggerCount = 0;
                 this.currentPageAds = [];
                 if (this.isGuideActive) {
                     this.endGuide();
                 }
                 // Ensure scroll monitoring is stopped
                 this.stopScrollMonitoring();
-                console.log('Ad guide: All data reset (including cross-page cumulative data)');
+                console.log('Ad guide: All data reset (including cross-page cumulative data and trigger count)');
                 this.updateDebugInfo();
             }
 

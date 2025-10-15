@@ -55,6 +55,8 @@ function handleAdGuideEvent(spreadsheet, data) {
     data.userIP || 'Unknown',     // IP地址
     data.totalAdsSeen || 0,       // 累计广告数
     data.currentPageAds || 0,     // 当前页广告数
+    data.triggerCount || 0,       // 触发次数
+    data.maxTriggers || 3,        // 最大触发次数
     data.timestamp || ''          // 事件时间戳
   ];
   
@@ -73,11 +75,11 @@ function getOrCreateAdGuideSheet(spreadsheet, dateString) {
     console.log('Sheet 不存在，开始创建新 Sheet');
     sheet = spreadsheet.insertSheet(sheetName);
     
-    sheet.getRange(1, 1, 1, 8).setValues([
-      ['时间', '访问页面', '用户属性', '来源页面', 'IP地址', '累计广告数', '当前页广告数', '事件时间戳']
+    sheet.getRange(1, 1, 1, 10).setValues([
+      ['时间', '访问页面', '用户属性', '来源页面', 'IP地址', '累计广告数', '当前页广告数', '触发次数', '最大触发次数', '事件时间戳']
     ]);
     
-    const headerRange = sheet.getRange(1, 1, 1, 8);
+    const headerRange = sheet.getRange(1, 1, 1, 10);
     headerRange.setBackground('#FF6B6B').setFontColor('white').setFontWeight('bold');
     
     sheet.setColumnWidth(1, 150);
@@ -87,7 +89,9 @@ function getOrCreateAdGuideSheet(spreadsheet, dateString) {
     sheet.setColumnWidth(5, 120);
     sheet.setColumnWidth(6, 100);
     sheet.setColumnWidth(7, 120);
-    sheet.setColumnWidth(8, 180);
+    sheet.setColumnWidth(8, 100);
+    sheet.setColumnWidth(9, 120);
+    sheet.setColumnWidth(10, 180);
     
     console.log('✅ 新 Sheet 创建完成');
   } else {
@@ -431,6 +435,8 @@ function testAdGuideEvent() {
     userIP: '127.0.0.1',
     totalAdsSeen: 15,
     currentPageAds: 3,
+    triggerCount: 2,
+    maxTriggers: 3,
     timestamp: new Date().toISOString()
   };
   
