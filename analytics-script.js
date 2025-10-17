@@ -16,9 +16,6 @@ function doPost(e) {
     if (eventType === 'ad_guide_triggered') {
       console.log('>>> 处理广告引导事件');
       handleAdGuideEvent(spreadsheet, data);
-    } else if (eventType === 'ad_guide_absence_skip') {
-      console.log('>>> 处理广告引导长时间离开跳过事件');
-      handleAdGuideAbsenceSkipEvent(spreadsheet, data);
     } else {
       console.log('>>> 处理页面访问事件');
       handlePageVisitEvent(spreadsheet, data);
@@ -95,76 +92,6 @@ function getOrCreateAdGuideSheet(spreadsheet, dateString) {
     sheet.setColumnWidth(8, 100);
     sheet.setColumnWidth(9, 120);
     sheet.setColumnWidth(10, 180);
-    
-    console.log('✅ 新 Sheet 创建完成');
-  } else {
-    console.log('Sheet 已存在，使用现有 Sheet');
-  }
-  
-  return sheet;
-}
-
-// ==================== 广告引导长时间离开跳过事件处理 ====================
-
-function handleAdGuideAbsenceSkipEvent(spreadsheet, data) {
-  console.log('>>> handleAdGuideAbsenceSkipEvent 开始执行');
-  console.log('接收到的数据:', JSON.stringify(data));
-  
-  const dateString = getDateString();
-  console.log('日期字符串:', dateString);
-  
-  const absenceSheet = getOrCreateAdGuideAbsenceSkipSheet(spreadsheet, dateString);
-  console.log('Sheet 名称:', absenceSheet.getName());
-  
-  const rowData = [
-    getTimeString(),              // 时间
-    data.page || '',              // 访问页面
-    data.userAgent || '',         // 用户属性
-    data.referrer || '',          // 来源页面
-    data.userIP || 'Unknown',     // IP地址
-    data.totalAdsSeen || 0,       // 累计广告数
-    data.currentPageAds || 0,     // 当前页广告数
-    data.triggerCount || 0,       // 触发次数
-    data.maxTriggers || 3,        // 最大触发次数
-    data.absenceProbability || 0, // 离开后触发概率
-    data.absenceThresholdMinutes || 60, // 离开阈值(分钟)
-    data.timestamp || ''          // 事件时间戳
-  ];
-  
-  console.log('准备插入的数据:', JSON.stringify(rowData));
-  absenceSheet.appendRow(rowData);
-  console.log('✅ 广告引导长时间离开跳过事件已记录到表格');
-}
-
-function getOrCreateAdGuideAbsenceSkipSheet(spreadsheet, dateString) {
-  const sheetName = `广告引导离开跳过-${dateString}`;
-  console.log('尝试获取/创建 Sheet:', sheetName);
-  
-  let sheet = spreadsheet.getSheetByName(sheetName);
-  
-  if (!sheet) {
-    console.log('Sheet 不存在，开始创建新 Sheet');
-    sheet = spreadsheet.insertSheet(sheetName);
-    
-    sheet.getRange(1, 1, 1, 12).setValues([
-      ['时间', '访问页面', '用户属性', '来源页面', 'IP地址', '累计广告数', '当前页广告数', '触发次数', '最大触发次数', '离开后触发概率', '离开阈值(分钟)', '事件时间戳']
-    ]);
-    
-    const headerRange = sheet.getRange(1, 1, 1, 12);
-    headerRange.setBackground('#FF9500').setFontColor('white').setFontWeight('bold');
-    
-    sheet.setColumnWidth(1, 150);
-    sheet.setColumnWidth(2, 300);
-    sheet.setColumnWidth(3, 200);
-    sheet.setColumnWidth(4, 200);
-    sheet.setColumnWidth(5, 120);
-    sheet.setColumnWidth(6, 100);
-    sheet.setColumnWidth(7, 120);
-    sheet.setColumnWidth(8, 100);
-    sheet.setColumnWidth(9, 120);
-    sheet.setColumnWidth(10, 120);
-    sheet.setColumnWidth(11, 130);
-    sheet.setColumnWidth(12, 180);
     
     console.log('✅ 新 Sheet 创建完成');
   } else {
@@ -519,38 +446,6 @@ function testAdGuideEvent() {
     handleAdGuideEvent(spreadsheet, testData);
     console.log('✅ 测试成功！');
     return '测试成功 - 请检查 Google Sheets 中的"广告引导-' + getDateString() + '"表格';
-  } catch (error) {
-    console.error('❌ 测试失败:', error);
-    return '测试失败: ' + error.toString();
-  }
-}
-
-function testAdGuideAbsenceSkipEvent() {
-  console.log('=== 开始测试广告引导长时间离开跳过事件 ===');
-  
-  const spreadsheet = SpreadsheetApp.openById('1kEvOkFHVQ92HK0y7I1-8qEjfzYrwt0DFQWEiVNTqXS4');
-  
-  const testData = {
-    eventType: 'ad_guide_absence_skip',
-    page: 'https://re.cankalp.com/novels/test/chapter-5',
-    userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15',
-    referrer: 'https://re.cankalp.com/novels/test/chapter-4',
-    userIP: '192.168.1.100',
-    totalAdsSeen: 15,
-    currentPageAds: 3,
-    triggerCount: 1,
-    maxTriggers: 3,
-    absenceProbability: 0.0,
-    absenceThresholdMinutes: 60,
-    timestamp: new Date().toISOString()
-  };
-  
-  console.log('测试数据:', JSON.stringify(testData));
-  
-  try {
-    handleAdGuideAbsenceSkipEvent(spreadsheet, testData);
-    console.log('✅ 测试成功！');
-    return '测试成功 - 请检查 Google Sheets 中的"广告引导离开跳过-' + getDateString() + '"表格（橙色表头）';
   } catch (error) {
     console.error('❌ 测试失败:', error);
     return '测试失败: ' + error.toString();
