@@ -1531,13 +1531,13 @@
                         if (pageHiddenTime) {
                             const hiddenDuration = Date.now() - pageHiddenTime;
                             
-                            if (hiddenDuration <= 15000) {
-                                // Leave time less than 15 seconds, show notification popup
+                            if (hiddenDuration <= 11000) {
+                                // Leave time less than 11 seconds, show notification popup
                                 this.showShortLeaveNotification();
-                            } else if (hiddenDuration > 15000) {
+                            } else if (hiddenDuration > 11000) {
                                 if (this.isGuideActive) {
-                                    // Guide active and leave over 15 seconds, close guide and show thank you popup
-                                    console.log('Ad guide: User left page over 15 seconds, auto close guide');
+                                    // Guide active and leave over 11 seconds, close guide and show thank you popup
+                                    console.log('Ad guide: User left page over 11 seconds, auto close guide');
                                     this.endGuide();
                                     this.showThankYouNotification();
                                 } else {
