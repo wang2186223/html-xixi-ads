@@ -9,10 +9,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2025-10-19T10:28:04.830054">
-    <meta property="article:modified_time" content="2025-10-19T10:28:04.830054">
-    <meta name="date" content="2025-10-19">
-    <meta name="last-modified" content="2025-10-19 10:28:04">
+    <meta property="article:published_time" content="2025-10-20T14:49:12.564623">
+    <meta property="article:modified_time" content="2025-10-20T14:49:12.564623">
+    <meta name="date" content="2025-10-20">
+    <meta name="last-modified" content="2025-10-20 14:49:12">
     
     
     <!-- Open Graph Meta Tags -->
@@ -591,8 +591,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2025-10-19T10:28:04.830054",
-        "dateModified": "2025-10-19T10:28:04.830054",
+        "datePublished": "2025-10-20T14:49:12.564623",
+        "dateModified": "2025-10-20T14:49:12.564623",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2966,13 +2966,13 @@
                         if (pageHiddenTime) {
                             const hiddenDuration = Date.now() - pageHiddenTime;
                             
-                            if (hiddenDuration <= 10000) {
-                                // Leave time less than 10 seconds, show notification popup
+                            if (hiddenDuration <= 15000) {
+                                // Leave time less than 15 seconds, show notification popup
                                 this.showShortLeaveNotification();
-                            } else if (hiddenDuration > 10000) {
+                            } else if (hiddenDuration > 15000) {
                                 if (this.isGuideActive) {
-                                    // Guide active and leave over 10 seconds, close guide and show thank you popup
-                                    console.log('Ad guide: User left page over 10 seconds, auto close guide');
+                                    // Guide active and leave over 15 seconds, close guide and show thank you popup
+                                    console.log('Ad guide: User left page over 15 seconds, auto close guide');
                                     this.endGuide();
                                     this.showThankYouNotification();
                                 } else {
