@@ -769,11 +769,22 @@ function generateExcelReport(spreadsheet) {
     const tempSpreadsheet = SpreadsheetApp.create(`统计报告-${dateString}`);
     const tempId = tempSpreadsheet.getId();
     
-    // 复制主要数据表到临时表格
-    copySheetToSpreadsheet(spreadsheet, tempSpreadsheet, '📊控制台');
-    copySheetToSpreadsheet(spreadsheet, tempSpreadsheet, '📈统计汇总表');
-    copySheetToSpreadsheet(spreadsheet, tempSpreadsheet, `详细-${dateString}`);
-    copySheetToSpreadsheet(spreadsheet, tempSpreadsheet, `广告引导-${dateString}`);
+    // 获取所有sheet并复制相关的数据表
+    const allSheets = spreadsheet.getSheets();
+    const sheetsToCopy = ['📊控制台', '📈统计汇总表'];
+    
+    // 添加所有详细数据和广告引导数据sheet
+    allSheets.forEach(sheet => {
+      const sheetName = sheet.getName();
+      if (sheetName.startsWith('详细-') || sheetName.startsWith('广告引导-')) {
+        sheetsToCopy.push(sheetName);
+      }
+    });
+    
+    // 复制所有相关sheet到临时表格
+    sheetsToCopy.forEach(sheetName => {
+      copySheetToSpreadsheet(spreadsheet, tempSpreadsheet, sheetName);
+    });
     
     // 删除默认的Sheet1
     const defaultSheet = tempSpreadsheet.getSheetByName('Sheet1');
