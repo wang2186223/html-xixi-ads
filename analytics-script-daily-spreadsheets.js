@@ -35,6 +35,11 @@ function doPost(e) {
       updateMainDashboard();
     }
     
+    // 0.5%概率自动清理重复索引（平均每200次请求清理一次）
+    if (Math.random() < 0.005) {
+      cleanupDuplicateIndexRecords();
+    }
+    
     return ContentService.createTextOutput(JSON.stringify({status: 'success'})).setMimeType(ContentService.MimeType.JSON);
   } catch (error) {
     console.error('Error:', error);
@@ -85,14 +90,14 @@ function getOrCreateDailySpreadsheet(dateString) {
       }
     }
     
-    // 3. 搜索文件夹中是否存在同名表格
+    // 3. 搜索文件夹中是否存在同名表格（关键：防止创建重复文件）
     const folder = getOrCreateDataFolder();
     const files = folder.getFilesByName(spreadsheetName);
     
     if (files.hasNext()) {
       const file = files.next();
       const spreadsheet = SpreadsheetApp.openById(file.getId());
-      // 在锁内添加到索引（防止并发重复添加）
+      // 找到文件后添加到索引（允许重复索引，不影响数据）
       addToIndex(indexSheet, dateString, file.getId(), file.getUrl());
       lock.releaseLock();
       return spreadsheet;
@@ -109,7 +114,7 @@ function getOrCreateDailySpreadsheet(dateString) {
     // 初始化表格结构
     initializeDailySpreadsheet(newSpreadsheet, dateString);
     
-    // 在锁内添加到索引（防止并发重复添加）
+    // 添加到索引（允许重复索引，不影响数据）
     addToIndex(indexSheet, dateString, newSpreadsheet.getId(), newSpreadsheet.getUrl());
     
     lock.releaseLock();
@@ -248,18 +253,11 @@ function findSpreadsheetIdFromIndex(indexSheet, dateString) {
 }
 
 /**
- * 添加表格到索引（防止重复）
+ * 添加表格到索引（简单添加，允许重复）
  */
 function addToIndex(indexSheet, dateString, spreadsheetId, spreadsheetUrl) {
-  // 检查是否已存在（任何ID都不能重复添加）
-  const existingId = findSpreadsheetIdFromIndex(indexSheet, dateString);
-  if (existingId) {
-    // 已经有这个日期的记录了，不管ID是否相同都不再添加
-    console.log(`日期 ${dateString} 已存在索引，跳过添加`);
-    return;
-  }
-  
-  // 添加新记录
+  // 简单添加，不做复杂检查
+  // 重复索引不影响数据收集，只是显示上有重复，可以定期清理
   const newRow = [
     dateString,
     spreadsheetId,
@@ -268,7 +266,7 @@ function addToIndex(indexSheet, dateString, spreadsheetId, spreadsheetUrl) {
   ];
   
   indexSheet.appendRow(newRow);
-  console.log(`成功添加索引: ${dateString} -> ${spreadsheetId}`);
+  console.log(`添加索引: ${dateString} -> ${spreadsheetId}`);
 }
 
 // ==================== 数据写入函数 ====================
@@ -496,6 +494,58 @@ function testCreateDailySpreadsheet() {
 function manualUpdateDashboard() {
   updateMainDashboard();
   return '主控制台更新完成';
+}
+
+/**
+ * 定期清理索引中的重复记录（每个日期只保留第一条）
+ * 自动运行：0.5%概率（平均每200次请求清理一次）
+ */
+function cleanupDuplicateIndexRecords() {
+  try {
+    const mainSpreadsheet = SpreadsheetApp.openById(MAIN_SPREADSHEET_ID);
+    const indexSheet = mainSpreadsheet.getSheetByName('📑表格索引');
+    
+    if (!indexSheet) {
+      console.log('找不到索引表');
+      return '找不到索引表';
+    }
+    
+    const data = indexSheet.getDataRange().getValues();
+    const seen = new Map(); // 日期 -> 第一次出现的行号
+    const rowsToDelete = [];
+    
+    // 从第2行开始（跳过表头）
+    for (let i = 1; i < data.length; i++) {
+      const dateString = data[i][0];
+      
+      if (!dateString) {
+        rowsToDelete.push(i + 1);
+        continue;
+      }
+      
+      if (seen.has(dateString)) {
+        // 已经有这个日期了，标记删除
+        rowsToDelete.push(i + 1);
+      } else {
+        // 第一次见到这个日期，保留
+        seen.set(dateString, i + 1);
+      }
+    }
+    
+    // 从后往前删除（避免行号变化）
+    rowsToDelete.reverse();
+    for (const row of rowsToDelete) {
+      indexSheet.deleteRow(row);
+    }
+    
+    const message = `清理完成！删除了 ${rowsToDelete.length} 条重复索引，保留了 ${seen.size} 条唯一记录`;
+    console.log(message);
+    return message;
+    
+  } catch (error) {
+    console.error('清理索引失败:', error);
+    return '清理失败: ' + error.toString();
+  }
 }
 
 function testPageVisit() {
