@@ -514,9 +514,14 @@ function cleanupDuplicateIndexRecords() {
     const seen = new Map(); // 日期 -> 第一次出现的行号
     const rowsToDelete = [];
     
-    // 从第2行开始（跳过表头）
-    for (let i = 1; i < data.length; i++) {
+    // 从第1行开始检查（兼容有无表头的情况）
+    for (let i = 0; i < data.length; i++) {
       const dateString = data[i][0];
+      
+      // 跳过表头行（包含"日期"文字的）
+      if (dateString === '日期' || dateString === 'Date') {
+        continue;
+      }
       
       if (!dateString) {
         rowsToDelete.push(i + 1);
@@ -526,6 +531,7 @@ function cleanupDuplicateIndexRecords() {
       if (seen.has(dateString)) {
         // 已经有这个日期了，标记删除
         rowsToDelete.push(i + 1);
+        console.log(`发现重复: ${dateString} (行${i + 1})`);
       } else {
         // 第一次见到这个日期，保留
         seen.set(dateString, i + 1);
@@ -534,11 +540,17 @@ function cleanupDuplicateIndexRecords() {
     
     // 从后往前删除（避免行号变化）
     rowsToDelete.reverse();
+    let deletedCount = 0;
     for (const row of rowsToDelete) {
-      indexSheet.deleteRow(row);
+      try {
+        indexSheet.deleteRow(row);
+        deletedCount++;
+      } catch (e) {
+        console.error(`删除行${row}失败:`, e);
+      }
     }
     
-    const message = `清理完成！删除了 ${rowsToDelete.length} 条重复索引，保留了 ${seen.size} 条唯一记录`;
+    const message = `清理完成！删除了 ${deletedCount} 条重复索引，保留了 ${seen.size} 条唯一记录`;
     console.log(message);
     return message;
     
@@ -546,6 +558,13 @@ function cleanupDuplicateIndexRecords() {
     console.error('清理索引失败:', error);
     return '清理失败: ' + error.toString();
   }
+}
+
+/**
+ * 手动立即清理重复索引（处理大量重复时使用）
+ */
+function manualCleanupDuplicates() {
+  return cleanupDuplicateIndexRecords();
 }
 
 function testPageVisit() {
