@@ -92,6 +92,7 @@ function getOrCreateDailySpreadsheet(dateString) {
     if (files.hasNext()) {
       const file = files.next();
       const spreadsheet = SpreadsheetApp.openById(file.getId());
+      // 在锁内添加到索引（防止并发重复添加）
       addToIndex(indexSheet, dateString, file.getId(), file.getUrl());
       lock.releaseLock();
       return spreadsheet;
@@ -108,7 +109,7 @@ function getOrCreateDailySpreadsheet(dateString) {
     // 初始化表格结构
     initializeDailySpreadsheet(newSpreadsheet, dateString);
     
-    // 添加到索引
+    // 在锁内添加到索引（防止并发重复添加）
     addToIndex(indexSheet, dateString, newSpreadsheet.getId(), newSpreadsheet.getUrl());
     
     lock.releaseLock();
@@ -247,12 +248,14 @@ function findSpreadsheetIdFromIndex(indexSheet, dateString) {
 }
 
 /**
- * 添加表格到索引
+ * 添加表格到索引（防止重复）
  */
 function addToIndex(indexSheet, dateString, spreadsheetId, spreadsheetUrl) {
-  // 检查是否已存在
+  // 检查是否已存在（任何ID都不能重复添加）
   const existingId = findSpreadsheetIdFromIndex(indexSheet, dateString);
-  if (existingId === spreadsheetId) {
+  if (existingId) {
+    // 已经有这个日期的记录了，不管ID是否相同都不再添加
+    console.log(`日期 ${dateString} 已存在索引，跳过添加`);
     return;
   }
   
@@ -265,6 +268,7 @@ function addToIndex(indexSheet, dateString, spreadsheetId, spreadsheetUrl) {
   ];
   
   indexSheet.appendRow(newRow);
+  console.log(`成功添加索引: ${dateString} -> ${spreadsheetId}`);
 }
 
 // ==================== 数据写入函数 ====================
