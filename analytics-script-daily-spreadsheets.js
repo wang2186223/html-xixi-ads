@@ -497,7 +497,7 @@ function manualUpdateDashboard() {
 }
 
 /**
- * 定期清理索引中的重复记录（每个日期只保留第一条）
+ * 定期清理索引中的重复记录（按表格ID去重，每个表格ID只保留第一条）
  * 自动运行：0.5%概率（平均每200次请求清理一次）
  */
 function cleanupDuplicateIndexRecords() {
@@ -511,30 +511,32 @@ function cleanupDuplicateIndexRecords() {
     }
     
     const data = indexSheet.getDataRange().getValues();
-    const seen = new Map(); // 日期 -> 第一次出现的行号
+    const seen = new Map(); // 表格ID -> 第一次出现的行号
     const rowsToDelete = [];
     
     // 从第1行开始检查（兼容有无表头的情况）
     for (let i = 0; i < data.length; i++) {
       const dateString = data[i][0];
+      const spreadsheetId = data[i][1]; // 第2列是表格ID
       
-      // 跳过表头行（包含"日期"文字的）
-      if (dateString === '日期' || dateString === 'Date') {
+      // 跳过表头行（包含"日期"或"表格ID"文字的）
+      if (dateString === '日期' || dateString === 'Date' || spreadsheetId === '表格ID') {
         continue;
       }
       
-      if (!dateString) {
+      // 跳过空行
+      if (!spreadsheetId) {
         rowsToDelete.push(i + 1);
         continue;
       }
       
-      if (seen.has(dateString)) {
-        // 已经有这个日期了，标记删除
+      if (seen.has(spreadsheetId)) {
+        // 已经有这个表格ID了，标记删除
         rowsToDelete.push(i + 1);
-        console.log(`发现重复: ${dateString} (行${i + 1})`);
+        console.log(`发现重复表格ID: ${spreadsheetId} (日期:${dateString}, 行${i + 1})`);
       } else {
-        // 第一次见到这个日期，保留
-        seen.set(dateString, i + 1);
+        // 第一次见到这个表格ID，保留
+        seen.set(spreadsheetId, i + 1);
       }
     }
     
@@ -550,7 +552,7 @@ function cleanupDuplicateIndexRecords() {
       }
     }
     
-    const message = `清理完成！删除了 ${deletedCount} 条重复索引，保留了 ${seen.size} 条唯一记录`;
+    const message = `清理完成！删除了 ${deletedCount} 条重复索引（按表格ID去重），保留了 ${seen.size} 条唯一表格`;
     console.log(message);
     return message;
     
