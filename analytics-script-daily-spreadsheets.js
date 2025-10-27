@@ -49,52 +49,81 @@ function doGet(e) {
 // ==================== 表格管理核心函数 ====================
 
 /**
- * 获取或创建每日独立表格
+ * 获取或创建每日独立表格（带并发锁保护）
  * @param {string} dateString - 日期字符串（格式：2025-01-15）
  * @return {Spreadsheet} 每日表格对象
  */
 function getOrCreateDailySpreadsheet(dateString) {
   const spreadsheetName = SPREADSHEET_PREFIX + dateString;
   
-  // 1. 先从主表格的索引中查找
+  // 1. 先快速查找索引（无锁）
   const mainSpreadsheet = SpreadsheetApp.openById(MAIN_SPREADSHEET_ID);
   const indexSheet = getOrCreateIndexSheet(mainSpreadsheet);
-  const spreadsheetId = findSpreadsheetIdFromIndex(indexSheet, dateString);
+  let spreadsheetId = findSpreadsheetIdFromIndex(indexSheet, dateString);
   
   if (spreadsheetId) {
     try {
       return SpreadsheetApp.openById(spreadsheetId);
     } catch (e) {
-      console.log('索引中的表格ID无效，将创建新表格');
+      console.log('索引中的表格ID无效，将重新查找');
     }
   }
   
-  // 2. 搜索文件夹中是否存在同名表格
-  const folder = getOrCreateDataFolder();
-  const files = folder.getFilesByName(spreadsheetName);
-  
-  if (files.hasNext()) {
-    const file = files.next();
-    const spreadsheet = SpreadsheetApp.openById(file.getId());
-    addToIndex(indexSheet, dateString, file.getId(), file.getUrl());
-    return spreadsheet;
+  // 2. 获取锁，防止并发创建（最多等待10秒）
+  const lock = LockService.getScriptLock();
+  try {
+    lock.waitLock(10000);
+    
+    // 再次检查索引（可能其他线程已创建）
+    spreadsheetId = findSpreadsheetIdFromIndex(indexSheet, dateString);
+    if (spreadsheetId) {
+      try {
+        lock.releaseLock();
+        return SpreadsheetApp.openById(spreadsheetId);
+      } catch (e) {
+        console.log('索引中的表格ID无效');
+      }
+    }
+    
+    // 3. 搜索文件夹中是否存在同名表格
+    const folder = getOrCreateDataFolder();
+    const files = folder.getFilesByName(spreadsheetName);
+    
+    if (files.hasNext()) {
+      const file = files.next();
+      const spreadsheet = SpreadsheetApp.openById(file.getId());
+      addToIndex(indexSheet, dateString, file.getId(), file.getUrl());
+      lock.releaseLock();
+      return spreadsheet;
+    }
+    
+    // 4. 创建新的每日表格
+    const newSpreadsheet = SpreadsheetApp.create(spreadsheetName);
+    const newFile = DriveApp.getFileById(newSpreadsheet.getId());
+    
+    // 移动到指定文件夹
+    folder.addFile(newFile);
+    DriveApp.getRootFolder().removeFile(newFile);
+    
+    // 初始化表格结构
+    initializeDailySpreadsheet(newSpreadsheet, dateString);
+    
+    // 添加到索引
+    addToIndex(indexSheet, dateString, newSpreadsheet.getId(), newSpreadsheet.getUrl());
+    
+    lock.releaseLock();
+    return newSpreadsheet;
+    
+  } catch (e) {
+    console.error('获取锁失败:', e);
+    // 如果获取锁失败，尝试直接从文件夹查找
+    const folder = getOrCreateDataFolder();
+    const files = folder.getFilesByName(spreadsheetName);
+    if (files.hasNext()) {
+      return SpreadsheetApp.openById(files.next().getId());
+    }
+    throw new Error('无法创建或获取每日表格');
   }
-  
-  // 3. 创建新的每日表格
-  const newSpreadsheet = SpreadsheetApp.create(spreadsheetName);
-  const newFile = DriveApp.getFileById(newSpreadsheet.getId());
-  
-  // 移动到指定文件夹
-  folder.addFile(newFile);
-  DriveApp.getRootFolder().removeFile(newFile);
-  
-  // 初始化表格结构
-  initializeDailySpreadsheet(newSpreadsheet, dateString);
-  
-  // 添加到索引
-  addToIndex(indexSheet, dateString, newSpreadsheet.getId(), newSpreadsheet.getUrl());
-  
-  return newSpreadsheet;
 }
 
 /**
