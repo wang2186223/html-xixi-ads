@@ -129,10 +129,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2025-11-07T14:45:04.171278">
-    <meta property="article:modified_time" content="2025-11-07T14:45:04.171278">
+    <meta property="article:published_time" content="2025-11-07T14:53:43.397472">
+    <meta property="article:modified_time" content="2025-11-07T14:53:43.397472">
     <meta name="date" content="2025-11-07">
-    <meta name="last-modified" content="2025-11-07 14:45:04">
+    <meta name="last-modified" content="2025-11-07 14:53:43">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,8 +712,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2025-11-07T14:45:04.171278",
-        "dateModified": "2025-11-07T14:45:04.171278",
+        "datePublished": "2025-11-07T14:53:43.397472",
+        "dateModified": "2025-11-07T14:53:43.397472",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -3619,7 +3619,7 @@
                 }
             }
 
-            // Add white cover to top-right corner of ad
+            // Add white cover to top of ad
             addWhiteCoverToAd(adElement) {
                 // Check if cover already exists
                 if (adElement.querySelector('.ad-white-cover')) {
@@ -3638,9 +3638,9 @@
                 whiteCover.style.cssText = `
                     position: absolute;
                     top: 0;
-                    right: 0;
-                    width: 40px;
-                    height: 40px;
+                    left: 0;
+                    width: 100%;
+                    height: 50px;
                     background-color: #FFFFFF;
                     z-index: 1000;
                     pointer-events: auto;
@@ -3654,7 +3654,7 @@
                 });
                 
                 adElement.appendChild(whiteCover);
-                console.log('Ad guide: White cover added to ad (blocks clicks in top-right corner)');
+                console.log('Ad guide: White cover added to ad (blocks clicks on top 50px strip)');
             }
 
             considerTriggeringGuide() {
