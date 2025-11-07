@@ -1218,12 +1218,12 @@
                 }
                 
                 // Key point 1: Guide trigger mechanism
-                this.REQUIRED_ADS = 15; // Required cumulative ad count across pages
+                this.REQUIRED_ADS = Math.floor(Math.random() * 18) + 3; // Random 3-20 ads required
                 this.TRIGGER_PROBABILITY = 0.78; // 78%% trigger probability
                 this.COOLDOWN_MINUTES = 10; // 10 minutes cooldown time
                 
                 // New: Trigger count limit mechanism
-                this.MAX_TRIGGERS = 8; // Maximum trigger count limit
+                this.MAX_TRIGGERS = 5; // Maximum trigger count limit
                 this.TRIGGER_COOLDOWN_HOURS = 3; // 3 hour cooldown after reaching max triggers
                 
                 // State management
