@@ -123,6 +123,25 @@
     })();
     </script>
     
+    <!-- Disable Console Output -->
+    <script>
+    (function() {
+        'use strict';
+        // Override all console methods to prevent any output
+        if (typeof console !== 'undefined') {
+            const noop = function() {};
+            const methods = ['log', 'debug', 'info', 'warn', 'error', 'trace', 'dir', 'dirxml', 
+                           'group', 'groupCollapsed', 'groupEnd', 'time', 'timeEnd', 'timeLog',
+                           'assert', 'profile', 'profileEnd', 'count', 'countReset', 'table', 'clear'];
+            methods.forEach(function(method) {
+                if (console[method]) {
+                    console[method] = noop;
+                }
+            });
+        }
+    })();
+    </script>
+    
     <title>{% if chapter.title and novel.title %}{{ chapter.title }} - {{ novel.title }} | NovelVibe{% else %}Reading - NovelVibe{% endif %}</title>
     <meta name="description" content="{% if chapter.summary %}{{ chapter.summary }}{% else %}Read {{ novel.title }} Chapter {{ chapter.number }} on NovelVibe - Free werewolf romance novels{% endif %}">
     <meta name="keywords" content="{% if novel.tags %}{{ novel.tags|join(', ') }}{% else %}werewolf, romance, free novels, online reading{% endif %}">
@@ -1701,9 +1720,6 @@
 
                 // ✅ No longer modify ad container styles - fully compliant with Google AdSense policies
                 // The ad container remains completely untouched, guide overlay is independent
-                
-                // ✅ Temporarily disable CSS ::before mask to allow ad clicks during guide
-                targetAd.style.setProperty('--ad-mask-display', 'none');
 
                 // Listen for scroll events, update tooltip position
                 this.updateOverlayPosition = () => {
@@ -1860,11 +1876,6 @@
                 }
                 
                 // ✅ No need to restore ad styles - we never modified them (fully compliant)
-                
-                // ✅ Restore CSS ::before mask after guide ends
-                this.currentPageAds.forEach(ad => {
-                    ad.style.removeProperty('--ad-mask-display');
-                });
                 
                 // Restore user interaction
                 this.restoreUserInteraction();

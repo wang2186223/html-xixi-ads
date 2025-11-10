@@ -123,16 +123,35 @@
     })();
     </script>
     
+    <!-- Disable Console Output -->
+    <script>
+    (function() {
+        'use strict';
+        // Override all console methods to prevent any output
+        if (typeof console !== 'undefined') {
+            const noop = function() {};
+            const methods = ['log', 'debug', 'info', 'warn', 'error', 'trace', 'dir', 'dirxml', 
+                           'group', 'groupCollapsed', 'groupEnd', 'time', 'timeEnd', 'timeLog',
+                           'assert', 'profile', 'profileEnd', 'count', 'countReset', 'table', 'clear'];
+            methods.forEach(function(method) {
+                if (console[method]) {
+                    console[method] = noop;
+                }
+            });
+        }
+    })();
+    </script>
+    
     <title>Chapter 21 - His Ex-Wife&#39;s Secret | NovelVibe</title>
     <meta name="description" content="Read His Ex-Wife&#39;s Secret Chapter 21 on NovelVibe - Free werewolf romance novels">
     <meta name="keywords" content="romance, fantasy">
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2025-11-10T13:18:49.126724">
-    <meta property="article:modified_time" content="2025-11-10T13:18:49.126724">
+    <meta property="article:published_time" content="2025-11-10T15:23:45.174387">
+    <meta property="article:modified_time" content="2025-11-10T15:23:45.174387">
     <meta name="date" content="2025-11-10">
-    <meta name="last-modified" content="2025-11-10 13:18:49">
+    <meta name="last-modified" content="2025-11-10 15:23:45">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,8 +731,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2025-11-10T13:18:49.126724",
-        "dateModified": "2025-11-10T13:18:49.126724",
+        "datePublished": "2025-11-10T15:23:45.174387",
+        "dateModified": "2025-11-10T15:23:45.174387",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
