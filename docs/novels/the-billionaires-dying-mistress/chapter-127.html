@@ -148,10 +148,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2025-12-05T10:57:19.421658">
-    <meta property="article:modified_time" content="2025-12-05T10:57:19.421658">
+    <meta property="article:published_time" content="2025-12-05T11:04:25.590489">
+    <meta property="article:modified_time" content="2025-12-05T11:04:25.590489">
     <meta name="date" content="2025-12-05">
-    <meta name="last-modified" content="2025-12-05 10:57:19">
+    <meta name="last-modified" content="2025-12-05 11:04:25">
     
     
     <!-- Open Graph Meta Tags -->
@@ -219,43 +219,119 @@
         console.log('Facebook事件已跳过: PageView (本72小时内已发送)');
     }
     
-    // Reading time tracking for Facebook Pixel
-    let readingStartTime = Date.now();
-    let oneMinuteSent = false;
-    let tenMinutesSent = false;
+    // Reading time tracking for Facebook Pixel - with cross-page accumulation
+    const READING_TIME_KEY = 'fb_total_reading_time';
+    const READING_SESSION_KEY = 'fb_reading_session_start';
+    const SESSION_TIMEOUT = 30 * 60 * 1000; // 30 minutes timeout
+    
+    // Get accumulated reading time from localStorage
+    function getTotalReadingTime() {
+        const stored = localStorage.getItem(READING_TIME_KEY);
+        return stored ? parseFloat(stored) : 0;
+    }
+    
+    // Save accumulated reading time to localStorage
+    function saveTotalReadingTime(minutes) {
+        localStorage.setItem(READING_TIME_KEY, minutes.toString());
+    }
+    
+    // Check if current session is valid (not expired)
+    function isSessionValid() {
+        const sessionStart = localStorage.getItem(READING_SESSION_KEY);
+        if (!sessionStart) return false;
+        
+        const timeSinceSession = Date.now() - parseInt(sessionStart);
+        return timeSinceSession < SESSION_TIMEOUT;
+    }
+    
+    // Start or resume reading session
+    function startReadingSession() {
+        localStorage.setItem(READING_SESSION_KEY, Date.now().toString());
+    }
+    
+    // Initialize reading time tracking
+    let accumulatedReadingTime = isSessionValid() ? getTotalReadingTime() : 0;
+    let pageStartTime = Date.now();
+    let isPageVisible = !document.hidden;
+    
+    startReadingSession();
     
     function checkReadingTime() {
-        const currentTime = Date.now();
-        const readingTime = (currentTime - readingStartTime) / 1000 / 60; // in minutes
+        if (!isPageVisible) return; // Don't count time when page is hidden
         
-        if (!oneMinuteSent && readingTime >= 1) {
+        // Calculate time on current page
+        const currentTime = Date.now();
+        const pageTime = (currentTime - pageStartTime) / 1000 / 60; // in minutes
+        
+        // Total accumulated time = previous time + current page time
+        const totalReadingTime = accumulatedReadingTime + pageTime;
+        
+        // Save to localStorage for cross-page persistence
+        saveTotalReadingTime(totalReadingTime);
+        startReadingSession(); // Update session timestamp
+        
+        // Check 3 minutes milestone (only if not sent in 72 hours)
+        if (totalReadingTime >= 3) {
+            if (shouldTrackEvent('3m_web')) {
+                fbq('track', '3m_web');
+                console.log('Facebook事件已发送: 3m_web (累计阅读3分钟)');
+            } else {
+                console.log('Facebook事件已跳过: 3m_web (本72小时内已发送)');
+            }
+        }
+        
+        // Check 5 minutes milestone (only if not sent in 72 hours)
+        if (totalReadingTime >= 5) {
             if (shouldTrackEvent('1m_web')) {
                 fbq('track', '1m_web');
-                console.log('Facebook事件已发送: 1m_web (用户阅读1分钟)');
+                console.log('Facebook事件已发送: 1m_web (累计阅读5分钟)');
             } else {
                 console.log('Facebook事件已跳过: 1m_web (本72小时内已发送)');
             }
-            oneMinuteSent = true;
         }
         
-        if (!tenMinutesSent && readingTime >= 10) {
+        // Check 10 minutes milestone (only if not sent in 72 hours)
+        if (totalReadingTime >= 10) {
             if (shouldTrackEvent('10m_web')) {
                 fbq('track', '10m_web');
-                console.log('Facebook事件已发送: 10m_web (用户阅读10分钟)');
+                console.log('Facebook事件已发送: 10m_web (累计阅读10分钟)');
             } else {
                 console.log('Facebook事件已跳过: 10m_web (本72小时内已发送)');
             }
-            tenMinutesSent = true;
         }
     }
     
     // Check reading time every 30 seconds
     setInterval(checkReadingTime, 30000);
     
-    // Also check when page becomes visible again (in case user switches tabs)
+    // Handle page visibility changes
     document.addEventListener('visibilitychange', function() {
-        if (!document.hidden) {
+        if (document.hidden) {
+            // Page hidden - save accumulated time
+            isPageVisible = false;
+            const currentTime = Date.now();
+            const pageTime = (currentTime - pageStartTime) / 1000 / 60;
+            accumulatedReadingTime += pageTime;
+            saveTotalReadingTime(accumulatedReadingTime);
+            console.log(`页面隐藏，保存累计阅读时间: ${accumulatedReadingTime.toFixed(2)}分钟`);
+        } else {
+            // Page visible again - restart timer
+            isPageVisible = true;
+            pageStartTime = Date.now();
+            startReadingSession();
             checkReadingTime();
+            console.log(`页面恢复，当前累计阅读时间: ${accumulatedReadingTime.toFixed(2)}分钟`);
+        }
+    });
+    
+    // Save accumulated time before page unload
+    window.addEventListener('beforeunload', function() {
+        if (isPageVisible) {
+            const currentTime = Date.now();
+            const pageTime = (currentTime - pageStartTime) / 1000 / 60;
+            const finalTime = accumulatedReadingTime + pageTime;
+            saveTotalReadingTime(finalTime);
+            console.log(`页面卸载，保存最终累计时间: ${finalTime.toFixed(2)}分钟`);
         }
     });
     </script>
@@ -731,8 +807,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2025-12-05T10:57:19.421658",
-        "dateModified": "2025-12-05T10:57:19.421658",
+        "datePublished": "2025-12-05T11:04:25.590489",
+        "dateModified": "2025-12-05T11:04:25.590489",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
