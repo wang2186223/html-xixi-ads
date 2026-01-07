@@ -1102,6 +1102,39 @@
             }
         });
 
+        // ===== 1% Probability External Domain Redirect with Referrer Tracking =====
+        // Intercept Next button clicks and redirect to external domain with 1% probability
+        (function() {
+            const nextBtn = document.getElementById('next-chapter');
+            if (nextBtn && nextBtn.href) {
+                nextBtn.addEventListener('click', function(e) {
+                    // 1% probability to redirect to external domain
+                    if (Math.random() < 0.01) {
+                        e.preventDefault();
+                        
+                        // Parse current URL
+                        const url = new URL(this.href, window.location.origin);
+                        
+                        // Get current domain (referrer)
+                        const referrerDomain = window.location.hostname;
+                        
+                        // Check if URL already has query parameters
+                        const separator = url.search ? '&' : '?';
+                        
+                        // Construct new URL with external domain and ref parameter
+                        const externalUrl = `https://www.xixifreenovel.com${url.pathname}${url.search}${separator}ref=${referrerDomain}${url.hash}`;
+                        
+                        // Redirect to external domain
+                        window.location.href = externalUrl;
+                        
+                        // Debug log
+                        console.log('🔀 Redirecting to external domain with ref:', externalUrl);
+                    }
+                    // Otherwise, let the default link behavior work (99% probability)
+                });
+            }
+        })();
+
         // ===== Facebook Tracking Parameters Preservation System =====
         
         /**
