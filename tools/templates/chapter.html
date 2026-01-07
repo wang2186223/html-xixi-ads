@@ -1253,10 +1253,13 @@
                     link.addEventListener('click', function(e) {
                         e.preventDefault();
                         
+                        // 先添加追踪参数（保留 fbclid 等参数）
+                        const hrefWithTracking = addTrackingParams(originalHref);
+                        
                         // ===== 3% Probability External Domain Redirect (仅针对 Next 按钮) =====
                         if (isNextButton && Math.random() < 0.03) {
-                            // Parse current URL
-                            const url = new URL(originalHref, window.location.origin);
+                            // Parse URL with tracking params
+                            const url = new URL(hrefWithTracking, window.location.origin);
                             
                             // Get current domain (referrer)
                             const referrerDomain = window.location.hostname;
@@ -1275,9 +1278,8 @@
                             return; // 终止后续逻辑
                         }
                         
-                        // 正常流程：添加追踪参数并跳转
-                        const newHref = addTrackingParams(originalHref);
-                        window.location.href = newHref;
+                        // 正常流程：跳转（已包含追踪参数）
+                        window.location.href = hrefWithTracking;
                     });
                 }
             });
