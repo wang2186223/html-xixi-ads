@@ -148,10 +148,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-01-11T12:00:14.639095">
-    <meta property="article:modified_time" content="2026-01-11T12:00:14.639095">
-    <meta name="date" content="2026-01-11">
-    <meta name="last-modified" content="2026-01-11 12:00:14">
+    <meta property="article:published_time" content="2026-01-14T13:56:11.971835">
+    <meta property="article:modified_time" content="2026-01-14T13:56:11.971835">
+    <meta name="date" content="2026-01-14">
+    <meta name="last-modified" content="2026-01-14 13:56:11">
     
     
     <!-- Open Graph Meta Tags -->
@@ -222,7 +222,20 @@
     // Reading time tracking for Facebook Pixel - with cross-page accumulation
     const READING_TIME_KEY = 'fb_total_reading_time';
     const READING_SESSION_KEY = 'fb_reading_session_start';
+    const READING_PERIOD_KEY = 'fb_reading_period'; // Track which 72h period the reading time belongs to
     const SESSION_TIMEOUT = 30 * 60 * 1000; // 30 minutes timeout
+    
+    // Milestone tracking to prevent duplicate events in same session
+    let milestonesSent = {
+        '3m': false,
+        '5m': false,
+        '10m': false
+    };
+    
+    // Get current 72-hour period
+    function getCurrentPeriod() {
+        return Math.floor(Date.now() / (3 * 24 * 60 * 60 * 1000));
+    }
     
     // Get accumulated reading time from localStorage
     function getTotalReadingTime() {
@@ -233,6 +246,7 @@
     // Save accumulated reading time to localStorage
     function saveTotalReadingTime(minutes) {
         localStorage.setItem(READING_TIME_KEY, minutes.toString());
+        localStorage.setItem(READING_PERIOD_KEY, getCurrentPeriod().toString());
     }
     
     // Check if current session is valid (not expired)
@@ -244,17 +258,38 @@
         return timeSinceSession < SESSION_TIMEOUT;
     }
     
+    // Check if reading time belongs to current 72-hour period
+    function isReadingTimeValid() {
+        const storedPeriod = localStorage.getItem(READING_PERIOD_KEY);
+        if (!storedPeriod) return false;
+        
+        return parseInt(storedPeriod) === getCurrentPeriod();
+    }
+    
     // Start or resume reading session
     function startReadingSession() {
         localStorage.setItem(READING_SESSION_KEY, Date.now().toString());
     }
     
     // Initialize reading time tracking
-    let accumulatedReadingTime = isSessionValid() ? getTotalReadingTime() : 0;
+    // Reset if either: 1) session expired, or 2) entered new 72-hour period
+    let accumulatedReadingTime = (isSessionValid() && isReadingTimeValid()) ? getTotalReadingTime() : 0;
     let pageStartTime = Date.now();
     let isPageVisible = !document.hidden;
     
     startReadingSession();
+    
+    // Check which milestones have already been reached
+    if (accumulatedReadingTime >= 10) {
+        milestonesSent['3m'] = true;
+        milestonesSent['5m'] = true;
+        milestonesSent['10m'] = true;
+    } else if (accumulatedReadingTime >= 5) {
+        milestonesSent['3m'] = true;
+        milestonesSent['5m'] = true;
+    } else if (accumulatedReadingTime >= 3) {
+        milestonesSent['3m'] = true;
+    }
     
     function checkReadingTime() {
         if (!isPageVisible) return; // Don't count time when page is hidden
@@ -270,33 +305,39 @@
         saveTotalReadingTime(totalReadingTime);
         startReadingSession(); // Update session timestamp
         
-        // Check 3 minutes milestone (only if not sent in 72 hours)
-        if (totalReadingTime >= 3) {
+        // Check 3 minutes milestone (only once and if not sent in 72 hours)
+        if (totalReadingTime >= 3 && !milestonesSent['3m']) {
             if (shouldTrackEvent('3m_web')) {
                 fbq('track', '3m_web');
                 console.log('Facebook事件已发送: 3m_web (累计阅读3分钟)');
+                milestonesSent['3m'] = true;
             } else {
                 console.log('Facebook事件已跳过: 3m_web (本72小时内已发送)');
+                milestonesSent['3m'] = true; // Mark as sent to prevent retry
             }
         }
         
-        // Check 5 minutes milestone (only if not sent in 72 hours)
-        if (totalReadingTime >= 5) {
+        // Check 5 minutes milestone (only once and if not sent in 72 hours)
+        if (totalReadingTime >= 5 && !milestonesSent['5m']) {
             if (shouldTrackEvent('1m_web')) {
                 fbq('track', '1m_web');
                 console.log('Facebook事件已发送: 1m_web (累计阅读5分钟)');
+                milestonesSent['5m'] = true;
             } else {
                 console.log('Facebook事件已跳过: 1m_web (本72小时内已发送)');
+                milestonesSent['5m'] = true; // Mark as sent to prevent retry
             }
         }
         
-        // Check 10 minutes milestone (only if not sent in 72 hours)
-        if (totalReadingTime >= 10) {
+        // Check 10 minutes milestone (only once and if not sent in 72 hours)
+        if (totalReadingTime >= 10 && !milestonesSent['10m']) {
             if (shouldTrackEvent('10m_web')) {
                 fbq('track', '10m_web');
                 console.log('Facebook事件已发送: 10m_web (累计阅读10分钟)');
+                milestonesSent['10m'] = true;
             } else {
                 console.log('Facebook事件已跳过: 10m_web (本72小时内已发送)');
+                milestonesSent['10m'] = true; // Mark as sent to prevent retry
             }
         }
     }
@@ -319,7 +360,7 @@
             isPageVisible = true;
             pageStartTime = Date.now();
             startReadingSession();
-            checkReadingTime();
+            // No need to check immediately, will check in next interval
             console.log(`页面恢复，当前累计阅读时间: ${accumulatedReadingTime.toFixed(2)}分钟`);
         }
     });
@@ -807,8 +848,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-01-11T12:00:14.639095",
-        "dateModified": "2026-01-11T12:00:14.639095",
+        "datePublished": "2026-01-14T13:56:11.971835",
+        "dateModified": "2026-01-14T13:56:11.971835",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
