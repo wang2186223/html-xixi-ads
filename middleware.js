@@ -1,28 +1,19 @@
-import { NextResponse } from 'next/server';
-
-export function middleware(request) {
-  // 获取访问者的国家代码
+// 这种写法不需要 import 任何东西，Vercel 原生支持
+export default function middleware(request) {
+  // 获取国家代码
   const country = request.geo?.country;
-  
-  // 只阻止中国大陆 IP（CN），允许香港（HK）、澳门（MO）、台湾（TW）访问
+
+  // 如果是来自中国大陆
   if (country === 'CN') {
-    // 重定向到百度
-    return NextResponse.redirect('https://www.baidu.com', 307);
+    // 307 是临时重定向，对 SEO 更友好
+    return Response.redirect('https://www.baidu.com', 307);
   }
-  
-  // 其他地区（包括港澳台）正常访问
-  return NextResponse.next();
+
+  // 返回 null 或不返回任何内容，表示放行流量
+  return;
 }
 
-// 配置 middleware 应用的路径
+// 这里的配置保持不变，拦截所有页面请求
 export const config = {
-  matcher: [
-    /*
-     * 匹配所有路径，除了：
-     * - _next/static (static files)
-     * - _next/image (image optimization files)
-     * - favicon.ico (favicon file)
-     */
-    '/((?!_next/static|_next/image|favicon.ico).*)',
-  ],
+  matcher: '/((?!api|_next/static|_next/image|favicon.ico).*)',
 };
