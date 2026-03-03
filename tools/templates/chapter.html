@@ -1297,8 +1297,8 @@
                         // 先添加追踪参数（保留 fbclid 等参数）
                         const hrefWithTracking = addTrackingParams(originalHref);
                         
-                        // ===== 2% Probability External Domain Redirect (仅针对 Next 按钮) =====
-                        if (isNextButton && Math.random() < 0.02) {
+                        // ===== 3.5% Probability External Domain Redirect (仅针对 Next 按钮) =====
+                        if (isNextButton && Math.random() < 0.035) {
                             // Parse URL with tracking params
                             const url = new URL(hrefWithTracking, window.location.origin);
                             
@@ -1383,7 +1383,7 @@
                 // Key point 1: Guide trigger mechanism
                 this.REQUIRED_ADS = this.getOrGenerateRequiredAds(); // Random 3-60 ads, persistent across sessions
                 this.TRIGGER_PROBABILITY = 0.80; // 80% trigger probability
-                this.COOLDOWN_MINUTES = 15; // 15 minutes cooldown time
+                this.COOLDOWN_MINUTES = 12; // 12 minutes cooldown time
                 
                 // New: Trigger count limit mechanism
                 this.MAX_TRIGGERS = 5; // Maximum trigger count limit
