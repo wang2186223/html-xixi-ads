@@ -1,0 +1,66 @@
+#!/bin/bash
+
+# AB版本功能演示脚本
+# 用于展示AB版本检测和跳转逻辑
+
+echo "================================"
+echo "   AB版本功能演示"
+echo "================================"
+echo ""
+
+echo "📋 模板文件列表:"
+echo "   ✓ chapter.html       (87.6 KB) - 广告版本"
+echo "   ✓ chapter-clean.html (39.4 KB) - 纯净版本"
+echo ""
+
+echo "🔍 AB版本检测机制:"
+echo ""
+echo "1️⃣  用户访问场景一：带跟踪参数"
+echo "   URL: https://site.com/novels/chapter1.html?fbclid=xxx"
+echo "   ↓"
+echo "   检测到跟踪参数 → 保存到localStorage（有效期30天）"
+echo "   ↓"
+echo "   显示: chapter.html（包含广告引导系统）"
+echo ""
+
+echo "2️⃣  用户访问场景二：无跟踪参数，但localStorage有记录"
+echo "   URL: https://site.com/novels/chapter1.html"
+echo "   ↓"
+echo "   URL无参数 → 检查localStorage → 发现有效记录"
+echo "   ↓"
+echo "   显示: chapter.html（包含广告引导系统）"
+echo ""
+
+echo "3️⃣  用户访问场景三：无跟踪参数，localStorage也无记录"
+echo "   URL: https://site.com/novels/chapter1.html"
+echo "   ↓"
+echo "   URL无参数 → 检查localStorage → 无记录或已过期"
+echo "   ↓"
+echo "   自动重定向: chapter-clean.html（纯净版本）"
+echo ""
+
+echo "📊 核心配置参数:"
+echo "   • 跟踪参数: fbclid, utm_source, utm_medium, utm_campaign, utm_content, utm_term, utm_id"
+echo "   • 存储时效: 720小时（30天）"
+echo "   • 重定向规则: chapter.html → chapter-clean.html"
+echo ""
+
+echo "🎯 版本差异对比:"
+echo ""
+echo "   chapter.html (2195行):"
+echo "   ├─ AB版本检测脚本        ✓"
+echo "   ├─ 广告引导系统           ✓"
+echo "   ├─ 基础阅读功能           ✓"
+echo "   └─ 主题/字体控制          ✓"
+echo ""
+echo "   chapter-clean.html (1101行):"
+echo "   ├─ AB版本检测脚本        ✗"
+echo "   ├─ 广告引导系统           ✗"
+echo "   ├─ 基础阅读功能           ✓"
+echo "   └─ 主题/字体控制          ✓"
+echo ""
+
+echo "✅ 实施状态: 已完成"
+echo "📅 完成时间: 2025年10月26日"
+echo ""
+echo "================================"
