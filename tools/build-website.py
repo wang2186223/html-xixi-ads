@@ -252,7 +252,7 @@ class WebsiteBuilder:
         """生成章节页面（AB版本：同时生成广告版和纯净版）"""
         # 加载两个模板
         template_ads = self.env.get_template('chapter.html')  # 广告版本
-        template_clean = self.env.get_template('chapter-clean.html')  # 纯净版本
+        # template_clean = self.env.get_template('chapter-clean.html')  # 纯净版本 - 已禁用
         chapters = novel_data['chapters']
         
         for i, chapter in enumerate(chapters):
@@ -316,15 +316,15 @@ class WebsiteBuilder:
             with open(output_file_ads, 'w', encoding='utf-8') as f:
                 f.write(html_content_ads)
             
-            # 渲染并保存纯净版本（chapter-clean.html）
-            html_content_clean = template_clean.render(**render_data)
-            output_file_clean = novel_dir / f"chapter-{chapter['number']}-clean.html"
-            with open(output_file_clean, 'w', encoding='utf-8') as f:
-                f.write(html_content_clean)
+            # # 渲染并保存纯净版本（chapter-clean.html）- 已禁用
+            # html_content_clean = template_clean.render(**render_data)
+            # output_file_clean = novel_dir / f"chapter-{chapter['number']}-clean.html"
+            # with open(output_file_clean, 'w', encoding='utf-8') as f:
+            #     f.write(html_content_clean)
             
             # 显示进度（每10章或最后一章显示一次）
             if (i + 1) % 10 == 0 or (i + 1) == len(chapters):
-                print(f"     进度: {i + 1}/{len(chapters)} 章 (已生成 {(i + 1) * 2} 个文件)")
+                print(f"     进度: {i + 1}/{len(chapters)} 章 (已生成 {i + 1} 个文件)")
                 
     def build_homepage(self, novels: Dict):
         """生成首页"""
