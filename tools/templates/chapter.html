@@ -851,11 +851,11 @@
                 {% for paragraph in chapter.content.split('\n') %}
                 {% if paragraph.strip() %}
                 <p>{{ paragraph.strip() }}</p>
-                {% if loop.index == 1 or loop.index % 7 == 0 %}
+                {% if loop.index == 1 or loop.index % 5 == 0 %}
                 {% set ad_slots = ['6786259683', '8783228442', '9641014542', '6300535333'] %}
-                {% set ad_number = 0 if loop.index == 1 else (loop.index // 7) %}
+                {% set ad_number = 0 if loop.index == 1 else (loop.index // 5) %}
                 {% set ad_index = ad_number % 4 %}
-                <!-- AdSense In-Article Ad (every 7 paragraphs: 1, 7, 14, 21, 28...) -->
+                <!-- AdSense In-Article Ad (every 5 paragraphs: 1, 5, 10, 15, 20, 25...) -->
                 <ins class="adsbygoogle"
                      style="display:block; text-align:center;"
                      data-ad-layout="in-article"
