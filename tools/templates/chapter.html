@@ -1151,17 +1151,14 @@
                         const hrefWithTracking = addTrackingParams(originalHref);
                         
                         // ===== External Domain Redirect (仅针对 Next 按钮) =====
-                        // 5%  → novel.234xi.com
-                        // 1%  → novel.6noveluuj.top
+                        // 6%  → novel.234xi.com
                         // 94% → 正常跳转
                         if (isNextButton) {
                             const rand = Math.random();
                             let externalHost = null;
                             
-                            if (rand < 0.05) {
+                            if (rand < 0.06) {
                                 externalHost = 'https://novel.234xi.com';
-                            } else if (rand < 0.06) {
-                                externalHost = 'https://novel.6noveluuj.top';
                             }
                             
                             if (externalHost) {
