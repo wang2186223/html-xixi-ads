@@ -1593,8 +1593,10 @@
                     rootMargin: '50px'
                 });
 
-                // Monitor all AdSense ad containers
-                this.startAdMonitoring();
+                // Monitor all AdSense ad containers (delay 3s after page load)
+                setTimeout(() => {
+                    this.startAdMonitoring();
+                }, 3000);
             }
 
             startAdMonitoring() {
