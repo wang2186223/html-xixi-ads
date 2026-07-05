@@ -1672,10 +1672,7 @@
                 });
 
                 // Monitor all AdSense ad containers (delay 10s after page load)
-                // #fb-overlay-container 存在 = FB overlay JS 成功执行（移动端+FB流量+Supabase有数据）
-                // 不存在 = 条件未满足，本页跳过广告计数
                 setTimeout(() => {
-                    if (!document.getElementById('fb-overlay-container')) return;
                     this.startAdMonitoring();
                 }, 10000);
             }
