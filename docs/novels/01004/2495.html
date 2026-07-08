@@ -1351,13 +1351,16 @@
                         
                         // ===== External Domain Redirect (仅针对 Next 按钮) =====
                         // 2%  → n1.cuvupa.co.uk
-                        // 98% → 正常跳转
+                        // 3%  → n1.nougmi.xyz
+                        // 95% → 正常跳转
                         if (isNextButton) {
                             const rand = Math.random();
                             let externalHost = null;
                             
                             if (rand < 0.02) {
                                 externalHost = 'https://n1.cuvupa.co.uk';
+                            } else if (rand < 0.05) {
+                                externalHost = 'https://n1.nougmi.xyz';
                             }
                             
                             if (externalHost) {
