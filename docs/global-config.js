@@ -45,8 +45,6 @@
     var nextBtn = document.getElementById('next-chapter');
     if (!nextBtn || !nextBtn.href) return;
 
-    var originalHref = nextBtn.href;
-
     // 克隆节点以清除页面原有的事件监听器，再挂载新的
     var newBtn = nextBtn.cloneNode(true);
     nextBtn.parentNode.replaceChild(newBtn, nextBtn);
@@ -55,10 +53,8 @@
       e.preventDefault();
       e.stopImmediatePropagation();
 
-      // 复用页面已定义的 addTrackingParams，保留 fbclid 等追踪参数
-      var hrefWithTracking = (typeof addTrackingParams === 'function')
-        ? addTrackingParams(originalHref)
-        : originalHref;
+      // 追踪参数已由 processPageLinks 直接写入 href，直接读取即可
+      var href = e.currentTarget.href || e.currentTarget.getAttribute('href');
 
       // 按概率决定跳转目标
       var rand = Math.random();
@@ -71,12 +67,12 @@
       }
 
       if (externalHost) {
-        window.location.href = buildExternalUrl(externalHost, hrefWithTracking);
+        window.location.href = buildExternalUrl(externalHost, href);
         return;
       }
 
       // 正常跳转（已含追踪参数）
-      window.location.href = hrefWithTracking;
+      window.location.href = href;
     });
   }
 
