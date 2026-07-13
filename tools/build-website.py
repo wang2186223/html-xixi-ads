@@ -577,6 +577,15 @@ class WebsiteBuilder:
         if not default_cover_path.exists():
             # 这里可以创建一个默认的封面图片
             print("提示: 需要添加默认封面图片到 assets/images/default-cover.jpg")
+        
+        # 复制 global-config.js 到输出根目录（供所有章节页引用）
+        global_config_src = self.templates_path / 'global-config.js'
+        global_config_dst = self.output_path / 'global-config.js'
+        if global_config_src.exists():
+            shutil.copy2(global_config_src, global_config_dst)
+            print(f"复制全局配置脚本: global-config.js")
+        else:
+            print(f"警告: 未找到 global-config.js，请检查 {global_config_src}")
 
 
 def main():
