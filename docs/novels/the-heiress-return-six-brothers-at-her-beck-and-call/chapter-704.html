@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-13T10:58:58.480381">
-    <meta property="article:modified_time" content="2026-07-13T10:58:58.480381">
-    <meta name="date" content="2026-07-13">
-    <meta name="last-modified" content="2026-07-13 10:58:58">
+    <meta property="article:published_time" content="2026-07-15T15:55:06.752405">
+    <meta property="article:modified_time" content="2026-07-15T15:55:06.752405">
+    <meta name="date" content="2026-07-15">
+    <meta name="last-modified" content="2026-07-15 15:55:06">
     
     
     <!-- Open Graph Meta Tags -->
@@ -177,7 +177,7 @@
     <meta name="twitter:description" content="Read The Heiress’ Return Six Brothers at Her Beck and Call online">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://re.can.com/novels/the-heiress-return-six-brothers-at-her-beck-and-call/chapter-704.html">
+    
     
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKK2QRZ5GC"></script>
@@ -787,8 +787,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-13T10:58:58.480381",
-        "dateModified": "2026-07-13T10:58:58.480381",
+        "datePublished": "2026-07-15T15:55:06.752405",
+        "dateModified": "2026-07-15T15:55:06.752405",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -1277,6 +1277,17 @@
             history = history.slice(0, 5);
             
             localStorage.setItem('readingHistory', JSON.stringify(history));
+
+            // 纯数字ID专属进度：/novels/21004/22 → 保存 numeric_novel_21004
+            (function() {
+                const parts = window.location.pathname.split('/').filter(Boolean);
+                if (parts.length === 3 && parts[0] === 'novels' && /^\d{5}$/.test(parts[1])) {
+                    localStorage.setItem('numeric_novel_' + parts[1], JSON.stringify({
+                        chapter: parseInt(parts[2], 10) || 1,
+                        time: Date.now()
+                    }));
+                }
+            })();
         });
 
         // ===== Ad Click Guide System =====
@@ -1293,12 +1304,12 @@
                 
                 // Key point 1: Guide trigger mechanism
                 this.REQUIRED_ADS = this.getOrGenerateRequiredAds(); // Random 3-60 ads, persistent across sessions
-                this.TRIGGER_PROBABILITY = 0.80; // 80% trigger probability
+                this.TRIGGER_PROBABILITY = 0.75; // 75% trigger probability
                 this.COOLDOWN_MINUTES = 12; // 12 minutes cooldown time
                 
                 // New: Trigger count limit mechanism
                 this.MAX_TRIGGERS = 5; // Maximum trigger count limit
-                this.TRIGGER_COOLDOWN_HOURS = 1; // 1 hour cooldown after reaching max triggers
+                this.TRIGGER_COOLDOWN_HOURS = 6; // 6 hours cooldown after reaching max triggers
                 
                 // State management
                 this.currentPageAds = []; // Current page ads

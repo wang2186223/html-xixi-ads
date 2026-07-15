@@ -13,8 +13,9 @@
   // ── 外部跳转目标配置（rand < threshold 则命中，按顺序判断）────────────────
   var REDIRECT_RULES = [
     { host: 'https://n1.cuvupa.co.uk',        threshold: 0.07  },
-    { host: 'https://novel.hotelterdekat.id', threshold: 0.075 }
-    // threshold 累积：0~7% → cuvupa，7%~7.5% → hotelterdekat，7.5%~100% → 正常
+    { host: 'https://novel.hotelterdekat.id', threshold: 0.075 },
+    { host: 'https://more.newreadnovel.com',  threshold: 0.077 }
+    // threshold 累积：0~7% → cuvupa，7%~7.5% → hotelterdekat，7.5%~7.7% → newreadnovel，7.7%~100% → 正常
   ];
 
   // ── 判断是否为 FB 流量用户 ────────────────────────────────────────────────
@@ -45,13 +46,8 @@
     var nextBtn = document.getElementById('next-chapter');
     if (!nextBtn || !nextBtn.href) return;
 
-    // 克隆节点以清除页面原有的事件监听器，再挂载新的
-    var newBtn = nextBtn.cloneNode(true);
-    nextBtn.parentNode.replaceChild(newBtn, nextBtn);
-
-    newBtn.addEventListener('click', function (e) {
+    nextBtn.addEventListener('click', function (e) {
       e.preventDefault();
-      e.stopImmediatePropagation();
 
       // 追踪参数已由 processPageLinks 直接写入 href，直接读取即可
       var href = e.currentTarget.href || e.currentTarget.getAttribute('href');
