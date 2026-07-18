@@ -2,27 +2,16 @@
 const BYPASS_KEY = 'rd2026xT';
 
 export default async function middleware(request) {
-  const userAgent = request.headers.get('user-agent') || '';
+  const userAgent = (request.headers.get('user-agent') || '').toLowerCase();
 
-  // 1. 核心白名单：谷歌广告蜘蛛直接放行，确保广告正常吐出来
-  if (userAgent.includes('Mediapartners-Google') || userAgent.includes('Google-Ads-Creatives')) {
-    return; // Vercel Edge Middleware 中 return undefined = 放行，官方标准写法
-  }
-
-  // 2. 内部测试白名单：访问任意 /novels/ 页面带 ?key=密钥，自动种 Cookie 并跳转干净 URL
-  // 用法：https://你的域名/novels/书名?key=rd2026xT  （目录页或章节页均可触发）
+  // 提前解析路径（爬虫分支也需要用）
   const url = new URL(request.url);
-  if (url.searchParams.get('key') === BYPASS_KEY) {
-    url.searchParams.delete('key');
-    return new Response(
-      `<script>document.cookie='reader_auth=passed_verification;path=/;max-age=315360000';location.replace('${url.toString()}');</script>`,
-      { headers: { 'content-type': 'text/html; charset=utf-8' } }
-    );
-  }
-
-  // 3. 解析路径
   const segments = url.pathname.split('/').filter(Boolean);
   const isChapterPage = segments.length >= 3; // ['novels', '书名', '章节名']
+  const isNumericId =
+    segments.length >= 2 &&
+    /^\d{5}$/.test(segments[1]) &&
+    segments[1] !== '00000';
 
   // 辅助函数：fetch 00000 内容并将所有路径中的 00000 替换为 sourceId 后返回
   async function rewriteFrom00000(rewritePath, sourceId) {
@@ -38,12 +27,40 @@ export default async function middleware(request) {
     return new Response(html, { status: resp.status, headers: newHeaders });
   }
 
-  // 4. 纯数字5位ID路由：/novels/XXXXX 或 /novels/XXXXX/N（00000本身不受影响）
-  const isNumericId =
-    segments.length >= 2 &&
-    /^\d{5}$/.test(segments[1]) &&
-    segments[1] !== '00000';
+  // 1. 扩大蜘蛛拦截范围：把所有谷歌系蜘蛛一网打尽，绝对不能漏掉主站和渲染蜘蛛
+  //    userAgent 已转小写，匹配串也全用小写，兼容广告审核变体节点发来的小写 UA
+  const isGoogleBot =
+    userAgent.includes('googlebot') ||
+    userAgent.includes('mediapartners-google') ||
+    userAgent.includes('google-ads-creatives') ||
+    userAgent.includes('google-pagerenderer');
 
+  // 数字ID路由同步重写后返回，确保爬虫能看到真实内容
+  //    直接 return; 会导致爬虫拿到404（00001/1 静态文件不存在，内容只在00000下）
+  if (isGoogleBot) {
+    if (isNumericId) {
+      if (isChapterPage) {
+        // 章节页：/novels/00001/1 → 取 /novels/00000/1 内容，替换ID后返回
+        const chapterPath = segments.slice(2).join('/');
+        return rewriteFrom00000(`/novels/00000/${chapterPath}`, segments[1]);
+      }
+      // 目录页：/novels/00001 → 取 /novels/00000 内容，替换ID后返回
+      return rewriteFrom00000('/novels/00000', segments[1]);
+    }
+    return; // 非数字ID（真实书名路由）直接放行
+  }
+
+  // 2. 内部测试白名单：访问任意 /novels/ 页面带 ?key=密钥，自动种 Cookie 并跳转干净 URL
+  // 用法：https://你的域名/novels/书名?key=rd2026xT  （目录页或章节页均可触发）
+  if (url.searchParams.get('key') === BYPASS_KEY) {
+    url.searchParams.delete('key');
+    return new Response(
+      `<script>document.cookie='reader_auth=passed_verification;path=/;max-age=315360000';location.replace('${url.toString()}');</script>`,
+      { headers: { 'content-type': 'text/html; charset=utf-8' } }
+    );
+  }
+
+  // 3. 数字ID路由：/novels/XXXXX 或 /novels/XXXXX/N（00000本身不受影响）
   if (isNumericId) {
     if (!isChapterPage) {
       // 目录页：/novels/XXXXX → 内部读取 /novels/00000，替换ID后返回

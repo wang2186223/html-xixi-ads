@@ -853,12 +853,6 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 960</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 
@@ -2380,6 +2374,8 @@
   var _u = 'https://czqmqnvqkugzpgwfmyth.supabase.co';
   var _k = 'sb_publishable_FF8-Z6gbAyjvHK77w4QfGw_02nCOhaw';
 
+  /* ─── helpers ─── */
+
   function parsePageIds() {
     var parts = window.location.pathname.split('/');
     var novelId = parts[2] || '';
@@ -2394,7 +2390,6 @@
     /* 双重判断：必须同时满足 FB 参数 AND fb_user 标记 */
     var hasFbUser = localStorage.getItem('fb_user') === '1';
     if (!hasFbUser) return false;
-
     var p = new URLSearchParams(window.location.search);
     if (p.has('fbclid') || p.get('utm_source') === 'facebook') return true;
     try {
@@ -2404,9 +2399,12 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function isMobile() {
+    var ua = navigator.userAgent.toLowerCase();
+    return /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(ua)
+      || 'ontouchstart' in window
+      || navigator.maxTouchPoints > 0
+      || window.screen.width < 1024;
   }
 
   function fetchChapter(nId, cId) {
@@ -2424,168 +2422,8 @@
       });
   }
 
-  /* canvas 放在铺满 body 的 position:absolute 容器内
-     与 AdClickGuide 高亮框同一原理：
-     · 容器：position:absolute; top:0; left:0; width:100%; height:100%
-     · canvas：position:absolute; top = rect.top + scrollY（文档绝对坐标）
-     · 滚动时 body absolute 随文档走，无需 scroll listener，零延迟     */
-  function applyOverlay(paras) {
-    var blocks  = Array.from(document.querySelectorAll('.text-block'));
-    var NUM     = 7;
-    var groups  = [];
-
-    if (paras.length >= NUM) {
-      /* 先每组保底 1 段，再把剩余段均分（不会出现空组） */
-      var base = Math.floor(paras.length / NUM);
-      var remainder = paras.length % NUM;
-      var s = 0;
-      for (var g = 0; g < NUM; g++) {
-        var size = base + (g < remainder ? 1 : 0);
-        groups.push(paras.slice(s, s + size));
-        s += size;
-      }
-    } else {
-      /* 段落不足 7 段：打散成单词，按词平分到 7 块 */
-      var allWords = [];
-      paras.forEach(function (p) {
-        p.trim().split(/\s+/).forEach(function (w) { if (w) allWords.push(w); });
-      });
-      /* 词数不足 7 时，用空格补足 */
-      while (allWords.length < NUM) allWords.push(' ');
-
-      var wPerGrp = Math.ceil(allWords.length / NUM);
-      for (var g = 0; g < NUM; g++) {
-        var s = g * wPerGrp, e = Math.min(s + wPerGrp, allWords.length);
-        groups.push([ s < allWords.length ? allWords.slice(s, e).join(' ') : ' ' ]);
-      }
-    }
-
-    /* 与 AdGuide overlay 完全相同的结构：
-       body 层级 position:absolute 容器，canvas 用文档绝对坐标定位
-       容器随文档滚动，零延迟，与 AdSense 无任何层级关系          */
-    var container = document.createElement('div');
-    container.id  = 'fb-overlay-container';
-    container.style.cssText = [
-      'position:absolute', 'top:0', 'left:0',
-      'width:100%', 'height:100%',
-      'pointer-events:none', 'z-index:50'
-    ].join(';');
-    document.body.appendChild(container);
-
-    blocks.forEach(function (block, i) {
-      var group = groups[i];
-      if (!group || !group.length) return;
-
-      var rect    = block.getBoundingClientRect();
-      var docTop  = rect.top  + window.scrollY;
-      var docLeft = rect.left + window.scrollX;
-      var maxW    = rect.width;
-      var blockH  = rect.height;
-
-      var canvas = document.createElement('canvas');
-      canvas.className = 'fb-ov';
-      canvas.style.cssText = [
-        'position:absolute', 'pointer-events:none', 'display:block',
-        'top:'  + docTop  + 'px',
-        'left:' + docLeft + 'px',
-        'width:' + maxW + 'px'
-      ].join(';');
-      container.appendChild(canvas);
-
-      var isDark  = document.body.classList.contains('dark-mode');
-      var bgColor = isDark ? '#1C1C1E' : '#FFFFFF';
-      var txColor = isDark ? '#E5E5EA' : '#333333';
-      var st      = window.getComputedStyle(block);
-      var fs      = parseFloat(st.fontSize);
-      var lhRaw   = st.lineHeight;
-      var lineH   = (lhRaw === 'normal') ? fs * 1.6 : parseFloat(lhRaw);
-      var pGap    = 20;
-      var curDpr  = window.devicePixelRatio || 1;
-      var font    = 'normal ' + fs + 'px ' + st.fontFamily;
-
-      var mCtx = document.createElement('canvas').getContext('2d');
-      mCtx.font = font;
-
-      var lines = [];
-      group.forEach(function (para, pi) {
-        var words = para.trim().split(' '), cur = '', ls = [];
-        words.forEach(function (w) {
-          if (!w) return;
-          var test = cur ? cur + ' ' + w : w;
-          if (cur && mCtx.measureText(test).width > maxW) { ls.push(cur); cur = w; }
-          else { cur = test; }
-        });
-        if (cur) ls.push(cur);
-        ls.forEach(function (ln, li) {
-          var last = li === ls.length - 1;
-          lines.push({ text: ln, lastInPara: last, gap: last && pi < group.length - 1 });
-        });
-      });
-
-      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
-      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-      var canvasH = Math.ceil(textH + lineH + pGap);
-
-      /* ② 等比缩放文字块（放大或缩小），使高度与 canvas 精准配平 */
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
-      /* canvas 高度 = block 高度 = canvasH，精准配平完成 */
-
-      canvas.width        = Math.ceil(maxW     * curDpr);
-      canvas.height       = Math.ceil(canvasH  * curDpr);
-      canvas.style.height = canvasH + 'px';
-
-      var ctx = canvas.getContext('2d');
-      ctx.setTransform(curDpr, 0, 0, curDpr, 0, 0);
-      ctx.fillStyle = bgColor;
-      ctx.fillRect(0, 0, maxW, canvasH);
-      ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
-
-      var y = 1;
-      lines.forEach(function (l) {
-        var ws = l.text.split(' ');
-        if (!l.lastInPara && ws.length > 1) {
-          var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
-          var gap = (maxW - wW) / (ws.length - 1), x = 0;
-          ws.forEach(function (w) { ctx.fillText(w, x, y); x += ctx.measureText(w).width + gap; });
-        } else { ctx.fillText(l.text, 0, y); }
-        y += lineH;
-        if (l.gap) y += pGap;
-      });
-    });
-
-    /* 同步所有 canvas 到对应 block 的最新文档坐标 */
-    function syncCanvasPositions() {
-      var canvases = container.querySelectorAll('canvas.fb-ov');
-      blocks.forEach(function (block, i) {
-        var cv = canvases[i]; if (!cv) return;
-        var r = block.getBoundingClientRect();
-        cv.style.top  = (r.top  + window.scrollY) + 'px';
-        cv.style.left = (r.left + window.scrollX) + 'px';
-      });
-    }
-
-    /* 被动监听：.content 高度变化时（广告加载撑开页面）立即同步 */
-    var contentEl = document.querySelector('.content');
-    if (contentEl) {
-      new ResizeObserver(syncCanvasPositions).observe(contentEl);
-    }
-
-    /* 主动监听：每 5 秒强制同步一次，防止任何漏网的位置偏移 */
-    setInterval(syncCanvasPositions, 5000);
-  }
-
-  /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
-  /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
-    // 放开全局阻断，允许发送广告请求
     (window.adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 0;
-    // 手动逐个推入未初始化的广告位触发渲染
     var ads = document.querySelectorAll('ins.adsbygoogle');
     ads.forEach(function (ad) {
       if (!ad.hasAttribute('data-adsbygoogle-status')) {
@@ -2594,28 +2432,300 @@
     });
   }
 
-  setTimeout(function () {
-    /* 强制只在移动端触发，PC 环境直接移除占位块并退出 */
-    var _ua = navigator.userAgent.toLowerCase();
-    var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
-    var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-    var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+  /* ─── canvas state ─── */
+  var _container   = null;   /* absolute div covering the whole body */
+  var _items       = [];     /* [{ block, canvas, cssW, cssH }] — 7 main canvases */
+  var _extraCanvas = null;   /* 8th canvas for overflow content */
+  var _extraSpacer = null;   /* spacer div below 8th canvas */
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+  /* ─────────────────────────────────────────────────────────────
+     STEP 1  Immediately create "Protecting content…" canvases
+             sized exactly to each .text-block (runs on DOM ready)
+  ───────────────────────────────────────────────────────────── */
+  function createPlaceholders() {
+    var blocks = Array.from(document.querySelectorAll('.text-block'));
+    if (!blocks.length) return;
 
-    var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    _container = document.createElement('div');
+    _container.id = 'fb-overlay-container';
+    _container.style.cssText = [
+      'position:absolute', 'top:0', 'left:0',
+      'width:100%', 'height:100%',
+      'pointer-events:none', 'z-index:50'
+    ].join(';');
+    document.body.appendChild(_container);
 
-    fetchChapter(ids.novelId, ids.chapterId)
-      .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
-        applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
-      })
-      .catch(function () { removePlaceholder(); loadAds(); });
-  }, 2000);
+    var dpr = window.devicePixelRatio || 1;
+
+    blocks.forEach(function (block) {
+      var r    = block.getBoundingClientRect();
+      var cssW = r.width;
+      var cssH = r.height;
+      if (cssW <= 0 || cssH <= 0) return;  /* skip zero-size blocks */
+
+      var docTop  = r.top  + window.scrollY;
+      var docLeft = r.left + window.scrollX;
+
+      var cv = document.createElement('canvas');
+      cv.className = 'fb-ov';
+      cv.style.cssText = [
+        'position:absolute', 'pointer-events:none', 'display:block',
+        'top:'    + docTop  + 'px',
+        'left:'   + docLeft + 'px',
+        'width:'  + cssW    + 'px',
+        'height:' + cssH    + 'px'
+      ].join(';');
+      cv.width  = Math.ceil(cssW * dpr);
+      cv.height = Math.ceil(cssH * dpr);
+      _container.appendChild(cv);
+
+      /* Draw placeholder text */
+      var dark = document.body.classList.contains('dark-mode');
+      var ctx  = cv.getContext('2d');
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.fillStyle = dark ? '#1C1C1E' : '#FFFFFF';
+      ctx.fillRect(0, 0, cssW, cssH);
+      ctx.fillStyle    = '#999999';
+      ctx.font         = '15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+      ctx.textBaseline = 'middle';
+      ctx.textAlign    = 'center';
+      ctx.fillText('Protecting content, please wait...', cssW / 2, cssH / 2);
+
+      _items.push({ block: block, canvas: cv, cssW: cssW, cssH: cssH });
+    });
+
+    setupPositionSync();
+  }
+
+  /* Keep canvases aligned with their blocks as ads load and shift layout */
+  function setupPositionSync() {
+    function sync() {
+      _items.forEach(function (item) {
+        var r = item.block.getBoundingClientRect();
+        item.canvas.style.top  = (r.top  + window.scrollY) + 'px';
+        item.canvas.style.left = (r.left + window.scrollX) + 'px';
+      });
+      syncExtraCanvas();
+    }
+    var contentEl = document.querySelector('.content');
+    if (contentEl) new ResizeObserver(sync).observe(contentEl);
+    setInterval(sync, 5000);
+  }
+
+  /* Reposition 8th canvas to stay below the last ad after ads load */
+  function syncExtraCanvas() {
+    if (!_extraCanvas) return;
+    var ads = document.querySelectorAll('ins.adsbygoogle');
+    if (!ads.length) return;
+    var r = ads[ads.length - 1].getBoundingClientRect();
+    _extraCanvas.style.top = (r.bottom + window.scrollY + 10) + 'px';
+  }
+
+  /* ─── Remove all canvases — show original content ─── */
+  function removeAll() {
+    if (_container && _container.parentNode) { _container.remove(); _container = null; }
+    if (_extraSpacer && _extraSpacer.parentNode) { _extraSpacer.remove(); _extraSpacer = null; }
+    _items = []; _extraCanvas = null;
+  }
+
+  /* ─────────────────────────────────────────────────────────────
+     STEP 3  Redraw canvases with actual Supabase content
+  ───────────────────────────────────────────────────────────── */
+
+  /* Word-wrap one paragraph into display lines that fit inside maxW px */
+  function wrapPara(para, mCtx, maxW) {
+    var words = para.trim().split(/\s+/), lines = [], cur = '';
+    words.forEach(function (word) {
+      if (!word) return;
+      var test = cur ? cur + ' ' + word : word;
+      if (cur && mCtx.measureText(test).width > maxW) { lines.push(cur); cur = word; }
+      else { cur = test; }
+    });
+    if (cur) lines.push(cur);
+    return lines;
+  }
+
+  /*
+   * Draw paragraphs onto an existing canvas at 1 : 1 font/lineHeight scale.
+   * Canvas height is NEVER changed — content that doesn't fit leaves blank space.
+   *
+   * Returns the slice of paras starting at the first paragraph whose
+   * first line could NOT be drawn (empty array when everything fitted).
+   */
+  function drawParasOnCanvas(cv, paras, cssW, cssH, blockEl) {
+    var dpr   = window.devicePixelRatio || 1;
+    var dark  = document.body.classList.contains('dark-mode');
+    var st    = window.getComputedStyle(blockEl);
+    var fs    = parseFloat(st.fontSize);
+    var lhRaw = st.lineHeight;
+    var lineH = (lhRaw === 'normal') ? fs * 1.6 : parseFloat(lhRaw);
+    var pGap  = 20;
+    var font  = 'normal ' + fs + 'px ' + st.fontFamily;
+
+    var mCtx = document.createElement('canvas').getContext('2d');
+    mCtx.font = font;
+
+    var ctx = cv.getContext('2d');
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.fillStyle = dark ? '#1C1C1E' : '#FFFFFF';
+    ctx.fillRect(0, 0, cssW, cssH);
+    ctx.font         = font;
+    ctx.fillStyle    = dark ? '#E5E5EA' : '#333333';
+    ctx.textBaseline = 'top';
+
+    var y = 1;
+
+    for (var pi = 0; pi < paras.length; pi++) {
+      var lines = wrapPara(paras[pi], mCtx, cssW);
+      if (!lines.length) continue;
+
+      /* First line of this paragraph doesn't fit → overflow starts here */
+      if (y + lineH > cssH) return paras.slice(pi);
+
+      for (var li = 0; li < lines.length; li++) {
+        if (y + lineH > cssH) break;   /* cut paragraph mid-way; blank space remains */
+
+        var ln = lines[li], isLast = (li === lines.length - 1);
+        var ws = ln.split(' ');
+
+        if (!isLast && ws.length > 1) {
+          /* Justify non-last lines */
+          var wW = ws.reduce(function (acc, w) { return acc + mCtx.measureText(w).width; }, 0);
+          var gap = (cssW - wW) / (ws.length - 1), x = 0;
+          ws.forEach(function (w) { ctx.fillText(w, x, y); x += mCtx.measureText(w).width + gap; });
+        } else {
+          ctx.fillText(ln, 0, y);
+        }
+        y += lineH;
+      }
+
+      if (pi < paras.length - 1) y += pGap;  /* paragraph gap */
+    }
+
+    return [];  /* all paragraphs fitted */
+  }
+
+  /* Create 8th canvas for overflow content — positioned after the last ad */
+  function createOverflowCanvas(overflowParas) {
+    if (!overflowParas.length || !_items.length || !_container) return;
+
+    var refItem = _items[_items.length - 1];
+    var cssW    = refItem.cssW;
+    var dpr     = window.devicePixelRatio || 1;
+    var st      = window.getComputedStyle(refItem.block);
+    var fs      = parseFloat(st.fontSize);
+    var lhRaw   = st.lineHeight;
+    var lineH   = (lhRaw === 'normal') ? fs * 1.6 : parseFloat(lhRaw);
+    var pGap    = 20;
+    var font    = 'normal ' + fs + 'px ' + st.fontFamily;
+
+    var mCtx = document.createElement('canvas').getContext('2d');
+    mCtx.font = font;
+
+    /* Calculate total height required for overflow content */
+    var totalH = 1;
+    overflowParas.forEach(function (para, pi) {
+      totalH += wrapPara(para, mCtx, cssW).length * lineH;
+      if (pi < overflowParas.length - 1) totalH += pGap;
+    });
+    totalH = Math.ceil(totalH + lineH);   /* small buffer */
+
+    /* Anchor position: bottom of the last adsbygoogle element */
+    var ads    = document.querySelectorAll('ins.adsbygoogle');
+    var anchor = ads.length ? ads[ads.length - 1] : refItem.block;
+    var aRect  = anchor.getBoundingClientRect();
+    var docTop  = aRect.bottom + window.scrollY + 10;
+    var docLeft = parseFloat(refItem.canvas.style.left) || (aRect.left + window.scrollX);
+
+    var cv = document.createElement('canvas');
+    cv.className = 'fb-ov fb-ov-extra';
+    cv.style.cssText = [
+      'position:absolute', 'pointer-events:none', 'display:block',
+      'top:'    + docTop  + 'px',
+      'left:'   + docLeft + 'px',
+      'width:'  + cssW    + 'px',
+      'height:' + totalH  + 'px'
+    ].join(';');
+    cv.width  = Math.ceil(cssW   * dpr);
+    cv.height = Math.ceil(totalH * dpr);
+    _container.appendChild(cv);
+    _extraCanvas = cv;
+
+    drawParasOnCanvas(cv, overflowParas, cssW, totalH, refItem.block);
+
+    /* Spacer: push footer down so the 8th canvas is fully visible */
+    var spacer = document.createElement('div');
+    spacer.id  = 'fb-overflow-spacer';
+    spacer.style.cssText = 'height:' + (totalH + 20) + 'px;pointer-events:none';
+    _extraSpacer = spacer;
+    var footer = document.querySelector('footer');
+    if (footer) footer.parentNode.insertBefore(spacer, footer.nextSibling);
+    else document.body.appendChild(spacer);
+  }
+
+  /* Distribute paragraphs across 7 canvases (≥ 1 each) and handle overflow */
+  function redrawWithContent(paras) {
+    var NUM  = _items.length;
+    var base = Math.floor(paras.length / NUM);
+    var rem  = paras.length % NUM;
+    var groups = [], s = 0;
+    for (var g = 0; g < NUM; g++) {
+      var size = base + (g < rem ? 1 : 0);
+      groups.push(paras.slice(s, s + size));
+      s += size;
+    }
+
+    var overflow = [];
+    _items.forEach(function (item, i) {
+      var leftover = drawParasOnCanvas(
+        item.canvas, groups[i], item.cssW, item.cssH, item.block
+      );
+      if (leftover.length) overflow = overflow.concat(leftover);
+    });
+
+    if (overflow.length) createOverflowCanvas(overflow);
+  }
+
+  /* ─────────────────────────────────────────────────────────────
+     MAIN — runs on DOMContentLoaded
+     Step 1 (immediate) and Step 2 (setTimeout) run concurrently.
+  ───────────────────────────────────────────────────────────── */
+  function main() {
+    /* Step 1 — immediately show "Protecting content…" on all text-blocks */
+    createPlaceholders();
+
+    /* Step 2 — concurrently wait, then check conditions + fetch */
+    setTimeout(function () {
+      /* PC browser → no protection needed */
+      if (!isMobile())    { removeAll(); loadAds(); return; }
+      /* Non-FB traffic → no protection needed */
+      if (!isFBTraffic()) { removeAll(); loadAds(); return; }
+      /* Can't parse novel/chapter IDs → no protection possible */
+      var ids = parsePageIds();
+      if (!ids)           { removeAll(); loadAds(); return; }
+
+      /* All conditions met → fetch Supabase content */
+      fetchChapter(ids.novelId, ids.chapterId)
+        .then(function (paras) {
+          if (!paras || paras.length < 7) {
+            /* Step 3a — fewer than 7 paragraphs: abort, show original content */
+            removeAll();
+          } else {
+            /* Step 3b — ≥ 7 paragraphs: redraw canvases with real content */
+            redrawWithContent(paras);
+          }
+          /* Step 4 — load ads AFTER canvas drawing is fully complete */
+          loadAds();
+        })
+        .catch(function () { removeAll(); loadAds(); });
+    }, 2000);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', main);
+  } else {
+    main();
+  }
 
 })();
 </script>
