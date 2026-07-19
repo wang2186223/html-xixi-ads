@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Dominic answered to hear a polite staff member&#39;s voice. &#34;Good evening, Mr. Sinclair. We&#39;re offering an exclusive buffet service in the restaurant beneath your Seabreeze Villa. The space has been reserved solely for your party, and our executive chef is prepared to craft any dishes you desire.&#34;</p>
-                    
-                    <p>&#34;Excellent.&#34; Dominic&#39;s face lit up with smug satisfaction as he hung up. He shot Audrey a triumphant look. &#34;See? The universe provides. Think of food, and dinner appears.&#34;</p>
-                    
-                    <p>In the private dining room</p>
-                    
-                    <p>The group arrived freshly showered and changed, only to be assaulted by the pungent aroma of chili peppers. The table groaned under the weight of fiery dishes—spicy lobster, Szechuan chicken, and an array of tongue-numbing specialties that promised tears.</p>
-                    
-                    <p>Dominic wrinkled his nose. &#34;Can we get some milder options? This is practically inedible.&#34;</p>
-                    
-                    <p>Adrian&#39;s gaze flickered briefly toward Vivian.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Dominic answered to hear a polite staff member&#39;s voice. &#34;Good evening, Mr. Sinclair. We&#39;re offering an exclusive buffet service in the restaurant beneath your Seabreeze Villa. The space has been reserved solely for your party, and our executive chef is prepared to craft any dishes you desire.&#34;</p>
+                        
+                        <p>&#34;Excellent.&#34; Dominic&#39;s face lit up with smug satisfaction as he hung up. He shot Audrey a triumphant look. &#34;See? The universe provides. Think of food, and dinner appears.&#34;</p>
+                        
+                        <p>In the private dining room</p>
+                        
+                        <p>The group arrived freshly showered and changed, only to be assaulted by the pungent aroma of chili peppers. The table groaned under the weight of fiery dishes—spicy lobster, Szechuan chicken, and an array of tongue-numbing specialties that promised tears.</p>
+                        
+                        <p>Dominic wrinkled his nose. &#34;Can we get some milder options? This is practically inedible.&#34;</p>
+                        
+                        <p>Adrian&#39;s gaze flickered briefly toward Vivian.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Audrey, never one for subtlety, gasped dramatically. &#34;Viv! These are all your favorites!&#34; She linked arms with her friend, eyes sparkling with mischief. &#34;Your mysterious admirer must have arranged this.&#34;</p>
-                    
-                    <p>Noticing the storm clouds gathering in Adrian&#39;s expression, Dominic quickly interjected. &#34;Enough standing around. I could eat a horse. Let&#39;s sit.&#34;</p>
-                    
-                    <p>They took their seats beneath Adrian&#39;s simmering glare.</p>
-                    
-                    <p>Vivian selected a fork and passed another to Audrey. A plate of chili-glazed beef strips shimmered before her. She took a careful bite. &#34;It&#39;s... decent.&#34;</p>
-                    
-                    <p>Adrian speared a piece, tasted it, then deposited it in the discard bowl with a look of utter disdain. &#34;Overcooked. Chewy. The spices didn&#39;t penetrate properly.&#34; His critique dripped with contempt.</p>
-                    
-                    <p>Only then did Vivian remember the exquisite version of this dish Adrian had prepared in their home kitchen. Sensing his growing irritation, she sought to diffuse the tension.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Audrey, never one for subtlety, gasped dramatically. &#34;Viv! These are all your favorites!&#34; She linked arms with her friend, eyes sparkling with mischief. &#34;Your mysterious admirer must have arranged this.&#34;</p>
+                        
+                        <p>Noticing the storm clouds gathering in Adrian&#39;s expression, Dominic quickly interjected. &#34;Enough standing around. I could eat a horse. Let&#39;s sit.&#34;</p>
+                        
+                        <p>They took their seats beneath Adrian&#39;s simmering glare.</p>
+                        
+                        <p>Vivian selected a fork and passed another to Audrey. A plate of chili-glazed beef strips shimmered before her. She took a careful bite. &#34;It&#39;s... decent.&#34;</p>
+                        
+                        <p>Adrian speared a piece, tasted it, then deposited it in the discard bowl with a look of utter disdain. &#34;Overcooked. Chewy. The spices didn&#39;t penetrate properly.&#34; His critique dripped with contempt.</p>
+                        
+                        <p>Only then did Vivian remember the exquisite version of this dish Adrian had prepared in their home kitchen. Sensing his growing irritation, she sought to diffuse the tension.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Meeting his stormy gaze, she offered softly, &#34;Yours was definitely better.&#34; It wasn&#39;t empty flattery—Adrian excelled at everything he put his mind to, cooking included.</p>
-                    
-                    <p>Adrian&#39;s stern expression softened slightly as he turned to the waiter. &#34;A bottle of sparkling water, please.&#34;</p>
-                    
-                    <p>&#34;Adrian, how could you—&#34; Dominic started, but was immediately silenced by Adrian&#39;s icy glare.</p>
-                    
-                    <p>Audrey raised her hand with a bright smile. &#34;I&#39;ll have mango juice.&#34;</p>
-                    
-                    <p>&#34;Same here,&#34; Dominic chimed in, flashing a grin.</p>
-                    
-                    <p>She rolled her eyes dramatically. &#34;Really? Copying my order now?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Meeting his stormy gaze, she offered softly, &#34;Yours was definitely better.&#34; It wasn&#39;t empty flattery—Adrian excelled at everything he put his mind to, cooking included.</p>
+                        
+                        <p>Adrian&#39;s stern expression softened slightly as he turned to the waiter. &#34;A bottle of sparkling water, please.&#34;</p>
+                        
+                        <p>&#34;Adrian, how could you—&#34; Dominic started, but was immediately silenced by Adrian&#39;s icy glare.</p>
+                        
+                        <p>Audrey raised her hand with a bright smile. &#34;I&#39;ll have mango juice.&#34;</p>
+                        
+                        <p>&#34;Same here,&#34; Dominic chimed in, flashing a grin.</p>
+                        
+                        <p>She rolled her eyes dramatically. &#34;Really? Copying my order now?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Copying? Hardly. I just happen to love mangoes,&#34; Dominic countered, leaning back in his chair.</p>
-                    
-                    <p>Vivian massaged her temples. These two could turn even the simplest conversation into a battlefield.</p>
-                    
-                    <p>The waiter turned to her expectantly. &#34;And for you, Miss?&#34;</p>
-                    
-                    <p>&#34;Iced Americano,&#34; she replied calmly.</p>
-                    
-                    <p>She caught Adrian giving her an unreadable look before the waiter quietly retreated to place their orders.</p>
-                    
-                    <p>The vibration of her phone shattered the momentary silence. The screen displayed a message from Ivory Phoenix Productions: &#34;Are you available right now?&#34; The unusually formal tone from her normally direct contact made her pause. Vivian quickly typed back, &#34;I&#39;m on holiday in my hometown. The script will be delivered as soon as I return—it won&#39;t affect the schedule.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Copying? Hardly. I just happen to love mangoes,&#34; Dominic countered, leaning back in his chair.</p>
+                        
+                        <p>Vivian massaged her temples. These two could turn even the simplest conversation into a battlefield.</p>
+                        
+                        <p>The waiter turned to her expectantly. &#34;And for you, Miss?&#34;</p>
+                        
+                        <p>&#34;Iced Americano,&#34; she replied calmly.</p>
+                        
+                        <p>She caught Adrian giving her an unreadable look before the waiter quietly retreated to place their orders.</p>
+                        
+                        <p>The vibration of her phone shattered the momentary silence. The screen displayed a message from Ivory Phoenix Productions: &#34;Are you available right now?&#34; The unusually formal tone from her normally direct contact made her pause. Vivian quickly typed back, &#34;I&#39;m on holiday in my hometown. The script will be delivered as soon as I return—it won&#39;t affect the schedule.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;There are some complications on our end. Please hold off on completing the script for now.&#34;</p>
-                    
-                    <p>&#34;What kind of complications?&#34; Vivian frowned. Her scripts always met expectations when given clear direction. This vague response hinted at deeper trouble.</p>
-                    
-                    <p>The reply took painfully long to arrive: &#34;We&#39;re still finalizing details with the client. We&#39;ll update you when we know more.&#34;</p>
-                    
-                    <p>Vivian&#39;s frown deepened. Everything had been progressing smoothly until this sudden roadblock. The promise of easy earnings seemed to be evaporating like morning dew.</p>
-                    
-                    <p>Before she could dwell further, Audrey slapped a hand over her phone. &#34;Why are you glued to your screen when we&#39;re supposed to be enjoying ourselves? You&#39;re sucking all the fun out of this gathering!&#34;</p>
-                    
-                    <p>&#34;Alright, alright,&#34; Vivian surrendered, locking her phone and tucking it away. &#34;The client&#39;s being difficult. Hopefully they won&#39;t demand rewrites. Besides filming, I&#39;ve got several events lined up.&#34; She clasped her hands in mock prayer.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;There are some complications on our end. Please hold off on completing the script for now.&#34;</p>
+                        
+                        <p>&#34;What kind of complications?&#34; Vivian frowned. Her scripts always met expectations when given clear direction. This vague response hinted at deeper trouble.</p>
+                        
+                        <p>The reply took painfully long to arrive: &#34;We&#39;re still finalizing details with the client. We&#39;ll update you when we know more.&#34;</p>
+                        
+                        <p>Vivian&#39;s frown deepened. Everything had been progressing smoothly until this sudden roadblock. The promise of easy earnings seemed to be evaporating like morning dew.</p>
+                        
+                        <p>Before she could dwell further, Audrey slapped a hand over her phone. &#34;Why are you glued to your screen when we&#39;re supposed to be enjoying ourselves? You&#39;re sucking all the fun out of this gathering!&#34;</p>
+                        
+                        <p>&#34;Alright, alright,&#34; Vivian surrendered, locking her phone and tucking it away. &#34;The client&#39;s being difficult. Hopefully they won&#39;t demand rewrites. Besides filming, I&#39;ve got several events lined up.&#34; She clasped her hands in mock prayer.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Audrey shot Adrian a pointed look. &#34;You&#39;ve got more money than you could spend in three lifetimes, yet you&#39;re letting Vivian struggle after the divorce? She&#39;s working herself to the bone with filming and still needs side gigs to pay bills?&#34;</p>
-                    
-                    <p>Dominic, who&#39;d been lounging with one leg crossed over the other, nearly toppled from his chair. He righted himself hastily, beads of sweat forming on his forehead. &#34;Eat your food,&#34; he urged, piling more onto Audrey&#39;s plate with his fork.</p>
-                    
-                    <p>Audrey pushed the plate away in disgust. &#34;What am I, your pet pig? How am I supposed to eat with this mountain of food?&#34; She glared at Dominic before turning back to Adrian. &#34;What&#39;s really going on here? What aren&#39;t you telling us? He&#39;s been parading around with Serena, which—let&#39;s be honest—is practically emotional infidelity! He&#39;s the one at fault here. It&#39;s already generous not to demand half his assets. Why should Vivian walk away with nothing? She&#39;s being gracious by staying quiet, but you&#39;re just taking advantage. Isn&#39;t that just bullying?&#34;</p>
-                    
-                    <p>Adrian, who had just retrieved a cigarette, slowly set it back down. His response came measured and cold: &#34;First, I never mentioned divorce, nor did I agree when she brought it up. Second, I&#39;ve never withheld anything from her. If she chooses to earn her own money, she must accept the challenges that come with it. Adults don&#39;t get to make choices without accepting the consequences.&#34;</p>
-                    
-                    <p>Vivian remained unfazed by his clinical tone. He spoke less like a husband and more like a CEO analyzing a corporate merger—his words precise, logical, and utterly devoid of warmth. Her emotional reserves for him had long since run dry.</p>
-                    
-                    <p>Vivian responded with measured composure, &#34;Mr. Blackwood is correct. I chose this path, so I&#39;ll handle both the rewards and consequences that follow.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Audrey shot Adrian a pointed look. &#34;You&#39;ve got more money than you could spend in three lifetimes, yet you&#39;re letting Vivian struggle after the divorce? She&#39;s working herself to the bone with filming and still needs side gigs to pay bills?&#34;</p>
+                        
+                        <p>Dominic, who&#39;d been lounging with one leg crossed over the other, nearly toppled from his chair. He righted himself hastily, beads of sweat forming on his forehead. &#34;Eat your food,&#34; he urged, piling more onto Audrey&#39;s plate with his fork.</p>
+                        
+                        <p>Audrey pushed the plate away in disgust. &#34;What am I, your pet pig? How am I supposed to eat with this mountain of food?&#34; She glared at Dominic before turning back to Adrian. &#34;What&#39;s really going on here? What aren&#39;t you telling us? He&#39;s been parading around with Serena, which—let&#39;s be honest—is practically emotional infidelity! He&#39;s the one at fault here. It&#39;s already generous not to demand half his assets. Why should Vivian walk away with nothing? She&#39;s being gracious by staying quiet, but you&#39;re just taking advantage. Isn&#39;t that just bullying?&#34;</p>
+                        
+                        <p>Adrian, who had just retrieved a cigarette, slowly set it back down. His response came measured and cold: &#34;First, I never mentioned divorce, nor did I agree when she brought it up. Second, I&#39;ve never withheld anything from her. If she chooses to earn her own money, she must accept the challenges that come with it. Adults don&#39;t get to make choices without accepting the consequences.&#34;</p>
+                        
+                        <p>Vivian remained unfazed by his clinical tone. He spoke less like a husband and more like a CEO analyzing a corporate merger—his words precise, logical, and utterly devoid of warmth. Her emotional reserves for him had long since run dry.</p>
+                        
+                        <p>Vivian responded with measured composure, &#34;Mr. Blackwood is correct. I chose this path, so I&#39;ll handle both the rewards and consequences that follow.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Adrian drummed his fingers against the polished mahogany table, releasing a humorless laugh. Her agreement unsettled him more than their usual heated exchanges ever could.</p>
-                    
-                    <p>Yet her flawless rebuttal left no opening for counterattack. It was like swinging at mist - his frustration only grew as his arguments dissipated into nothingness.</p>
-                    
-                    <p>As the tension between them dissolved into uncomfortable silence, a server approached bearing a silver tray of beverages. With practiced precision, he placed each drink before them, finally setting a sparkling soda in front of Vivian. &#34;Miss Hartley, this is our signature house blend. The carbonation fades quickly, so I recommend enjoying it immediately.&#34;</p>
-                    
-                    <p>Though she hadn&#39;t planned to drink it right away, the server&#39;s insistence prompted Vivian to take a small sip. The man watched her throat move as she swallowed before adding, &#34;Do finish it while it&#39;s still at its best.&#34; He departed with an odd gleam in his eye that neither noticed.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Adrian drummed his fingers against the polished mahogany table, releasing a humorless laugh. Her agreement unsettled him more than their usual heated exchanges ever could.</p>
+                        
+                        <p>Yet her flawless rebuttal left no opening for counterattack. It was like swinging at mist - his frustration only grew as his arguments dissipated into nothingness.</p>
+                        
+                        <p>As the tension between them dissolved into uncomfortable silence, a server approached bearing a silver tray of beverages. With practiced precision, he placed each drink before them, finally setting a sparkling soda in front of Vivian. &#34;Miss Hartley, this is our signature house blend. The carbonation fades quickly, so I recommend enjoying it immediately.&#34;</p>
+                        
+                        <p>Though she hadn&#39;t planned to drink it right away, the server&#39;s insistence prompted Vivian to take a small sip. The man watched her throat move as she swallowed before adding, &#34;Do finish it while it&#39;s still at its best.&#34; He departed with an odd gleam in his eye that neither noticed.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

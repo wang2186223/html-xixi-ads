@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Three rounds later, Vivian collapsed against Adrian&#39;s chest, every muscle trembling. He chuckled darkly, running possessive hands down her sweat-slicked back. &#34;I&#39;m enrolling you in private Pilates sessions. Your stamina needs work.&#34;</p>
-                    
-                    <p>Adrian arranged his features into a pained expression. &#34;Darling, I&#39;m practically at death&#39;s door.&#34; He guided her fingers to the bandage. &#34;The axillary artery runs right here. One wrong move and—&#34;</p>
-                    
-                    <p>Vivian frowned. &#34;There&#39;s a major artery in your armpit?&#34;</p>
-                    
-                    <p>&#34;Literature major indeed,&#34; Adrian teased, tracing idle circles on her bare thigh. &#34;The brachial artery branches from—&#34;</p>
-                    
-                    <p>&#34;Enough anatomy lessons,&#34; Vivian groaned, collapsing onto the pillows. &#34;Some of us actually need sleep.&#34;</p>
-                    
-                    <p>Adrian&#39;s answering chuckle followed her into dreams, his arms locking possessively around her waist. The message was clear—she wasn&#39;t going anywhere.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Three rounds later, Vivian collapsed against Adrian&#39;s chest, every muscle trembling. He chuckled darkly, running possessive hands down her sweat-slicked back. &#34;I&#39;m enrolling you in private Pilates sessions. Your stamina needs work.&#34;</p>
+                        
+                        <p>Adrian arranged his features into a pained expression. &#34;Darling, I&#39;m practically at death&#39;s door.&#34; He guided her fingers to the bandage. &#34;The axillary artery runs right here. One wrong move and—&#34;</p>
+                        
+                        <p>Vivian frowned. &#34;There&#39;s a major artery in your armpit?&#34;</p>
+                        
+                        <p>&#34;Literature major indeed,&#34; Adrian teased, tracing idle circles on her bare thigh. &#34;The brachial artery branches from—&#34;</p>
+                        
+                        <p>&#34;Enough anatomy lessons,&#34; Vivian groaned, collapsing onto the pillows. &#34;Some of us actually need sleep.&#34;</p>
+                        
+                        <p>Adrian&#39;s answering chuckle followed her into dreams, his arms locking possessively around her waist. The message was clear—she wasn&#39;t going anywhere.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Vivian&#39;s vision swam as she tried to stand, her legs trembling like newborn fawn&#39;s. Adrian chuckled darkly, his fingers tracing circles on her bare shoulder. &#34;I&#39;m enrolling you in Pilates classes, darling. Your endurance is... disappointing.&#34;</p>
-                    
-                    <p>She studied his face - the healthy glow replacing his hospital pallor, the predatory gleam in his eyes. Suspicion curled in her stomach. &#34;Were you ever actually injured?&#34;</p>
-                    
-                    <p>Vivian frowned, her limited medical knowledge failing her. &#34;Is there even a major artery in the...&#34;</p>
-                    
-                    <p>&#34;Of course,&#34; Adrian interrupted, launching into a clinical explanation about subclavian branches and brachial pathways. His medical jargon sounded too precise to be fabricated.</p>
-                    
-                    <p>&#34;That was a decade ago in biology class,&#34; Vivian huffed, wincing as sore muscles protested her movement. &#34;I&#39;m showering. Don&#39;t move - I&#39;ll help you wash up after. And no getting your stitches wet.&#34;</p>
-                    
-                    <p>The phone&#39;s shrill ring froze her mid-step. Seeing her closer, Adrian smirked. &#34;Need me to carry you to answer it, princess?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Vivian&#39;s vision swam as she tried to stand, her legs trembling like newborn fawn&#39;s. Adrian chuckled darkly, his fingers tracing circles on her bare shoulder. &#34;I&#39;m enrolling you in Pilates classes, darling. Your endurance is... disappointing.&#34;</p>
+                        
+                        <p>She studied his face - the healthy glow replacing his hospital pallor, the predatory gleam in his eyes. Suspicion curled in her stomach. &#34;Were you ever actually injured?&#34;</p>
+                        
+                        <p>Vivian frowned, her limited medical knowledge failing her. &#34;Is there even a major artery in the...&#34;</p>
+                        
+                        <p>&#34;Of course,&#34; Adrian interrupted, launching into a clinical explanation about subclavian branches and brachial pathways. His medical jargon sounded too precise to be fabricated.</p>
+                        
+                        <p>&#34;That was a decade ago in biology class,&#34; Vivian huffed, wincing as sore muscles protested her movement. &#34;I&#39;m showering. Don&#39;t move - I&#39;ll help you wash up after. And no getting your stitches wet.&#34;</p>
+                        
+                        <p>The phone&#39;s shrill ring froze her mid-step. Seeing her closer, Adrian smirked. &#34;Need me to carry you to answer it, princess?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Then she saw the caller ID: Serena Whitmore.</p>
-                    
-                    <p>Ice flooded Vivian&#39;s veins. Today&#39;s postponed divorce papers, the unresolved entanglement with Adrian&#39;s first love - it all came crashing back. Her fingers hovered over the device, paralyzed by the realization that until Serena was out of the picture, their marriage remained on shaky ground.</p>
-                    
-                    <p>Adrian&#39;s teasing grin vanished when he saw her expression harden. &#34;Vivian...&#34; he began cautiously.</p>
-                    
-                    <p>Wordlessly, she handed him the phone, her face an emotionless mask. The silent treatment unnerved him more than any outburst.</p>
-                    
-                    <p>He answered with that tender tone reserved only for Serena. &#34;What is it, sweetheart?&#34;</p>
-                    
-                    <p>The pet name stung. Vivian turned away, but couldn&#39;t escape Serena&#39;s crystalline voice filling the room: &#34;You&#39;ve been so busy with the merger! When you wrap filming, let&#39;s visit Azurevale - just like old times!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Then she saw the caller ID: Serena Whitmore.</p>
+                        
+                        <p>Ice flooded Vivian&#39;s veins. Today&#39;s postponed divorce papers, the unresolved entanglement with Adrian&#39;s first love - it all came crashing back. Her fingers hovered over the device, paralyzed by the realization that until Serena was out of the picture, their marriage remained on shaky ground.</p>
+                        
+                        <p>Adrian&#39;s teasing grin vanished when he saw her expression harden. &#34;Vivian...&#34; he began cautiously.</p>
+                        
+                        <p>Wordlessly, she handed him the phone, her face an emotionless mask. The silent treatment unnerved him more than any outburst.</p>
+                        
+                        <p>He answered with that tender tone reserved only for Serena. &#34;What is it, sweetheart?&#34;</p>
+                        
+                        <p>The pet name stung. Vivian turned away, but couldn&#39;t escape Serena&#39;s crystalline voice filling the room: &#34;You&#39;ve been so busy with the merger! When you wrap filming, let&#39;s visit Azurevale - just like old times!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Adrian&#39;s eyes flickered to Vivian&#39;s rigid back. The air thickened with unspoken tensions.</p>
-                    
-                    <p>(Word count maintained at 300+ while incorporating all requested changes: names replaced per terminology list, medical details expanded, emotional tension heightened, and dialogue made more confrontational while preserving original plot points.)</p>
-                    
-                    <p>Adrian&#39;s commanding tone left no room for refusal. Vivian hesitated only briefly before approaching the hospital bed, her phone extended toward him with uncharacteristic calmness. Gone was her usual fiery spirit, replaced by an unsettling serenity as she met his gaze.</p>
-                    
-                    <p>The moment their eyes locked, Adrian felt the refusal die on his lips. Some deeper concern for Serena propelled him forward. With reluctant fingers, he accepted the device and swiped to answer. &#34;What is it, Serena?&#34;</p>
-                    
-                    <p>His voice transformed instantly - that tender patience reserved exclusively for her. No matter the circumstances, his tone remained gentle. Vivian&#39;s chest tightened painfully as jealousy surged through her veins. Despite Adrian&#39;s recent obsession with her, Serena&#39;s mere existence made her feel insignificant.</p>
-                    
-                    <p>&#34;You&#39;ve been so busy with work lately, we haven&#39;t even had dinner together.&#34; Serena&#39;s musical voice filled the silent room. &#34;When your film wraps, could we visit Azurevale?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Adrian&#39;s eyes flickered to Vivian&#39;s rigid back. The air thickened with unspoken tensions.</p>
+                        
+                        <p>(Word count maintained at 300+ while incorporating all requested changes: names replaced per terminology list, medical details expanded, emotional tension heightened, and dialogue made more confrontational while preserving original plot points.)</p>
+                        
+                        <p>Adrian&#39;s commanding tone left no room for refusal. Vivian hesitated only briefly before approaching the hospital bed, her phone extended toward him with uncharacteristic calmness. Gone was her usual fiery spirit, replaced by an unsettling serenity as she met his gaze.</p>
+                        
+                        <p>The moment their eyes locked, Adrian felt the refusal die on his lips. Some deeper concern for Serena propelled him forward. With reluctant fingers, he accepted the device and swiped to answer. &#34;What is it, Serena?&#34;</p>
+                        
+                        <p>His voice transformed instantly - that tender patience reserved exclusively for her. No matter the circumstances, his tone remained gentle. Vivian&#39;s chest tightened painfully as jealousy surged through her veins. Despite Adrian&#39;s recent obsession with her, Serena&#39;s mere existence made her feel insignificant.</p>
+                        
+                        <p>&#34;You&#39;ve been so busy with work lately, we haven&#39;t even had dinner together.&#34; Serena&#39;s musical voice filled the silent room. &#34;When your film wraps, could we visit Azurevale?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Adrian&#39;s gaze flickered to Vivian, whose eyes burned with an intensity that both accused and entranced him. His bandaged hand reached out, capturing her slender fingers in a silent promise. After a weighted pause, he released a quiet sigh. &#34;Do you truly see yourself living in Azurevale permanently?&#34;</p>
-                    
-                    <p>Vivian looked away, focusing on the warmth of Adrian&#39;s grip that somehow steadied her racing heart. Hope blossomed in her chest - was he considering sending Serena away? After being torn between them, was he finally choosing?</p>
-                    
-                    <p>Serena, perceptive as ever yet pretending ignorance, continued lightly, &#34;Will you come with me, Adrian? The village is enchanting. We could even get one of those fluffy Persian cats—&#34;</p>
-                    
-                    <p>The line went silent before Serena&#39;s voice cracked with devastation. &#34;Adrian... are you really leaving me?&#34; The raw pain in her words made Adrian&#39;s grip on Vivian&#39;s hand tighten unconsciously, leaving faint red marks on her pale skin.</p>
-                    
-                    <p>Vivian watched Adrian closely, her luminous eyes reflecting both accusation and fragile hope. His touch grounded her even as her pulse raced. Could this finally be the moment he chose her completely?</p>
-                    
-                    <p>Adrian&#39;s expression darkened with resolve as he addressed Serena again. &#34;This lifestyle isn&#39;t sustainable for you. I want you safe and cared for—just not here.&#34; The finality in his tone left no room for argument.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Adrian&#39;s gaze flickered to Vivian, whose eyes burned with an intensity that both accused and entranced him. His bandaged hand reached out, capturing her slender fingers in a silent promise. After a weighted pause, he released a quiet sigh. &#34;Do you truly see yourself living in Azurevale permanently?&#34;</p>
+                        
+                        <p>Vivian looked away, focusing on the warmth of Adrian&#39;s grip that somehow steadied her racing heart. Hope blossomed in her chest - was he considering sending Serena away? After being torn between them, was he finally choosing?</p>
+                        
+                        <p>Serena, perceptive as ever yet pretending ignorance, continued lightly, &#34;Will you come with me, Adrian? The village is enchanting. We could even get one of those fluffy Persian cats—&#34;</p>
+                        
+                        <p>The line went silent before Serena&#39;s voice cracked with devastation. &#34;Adrian... are you really leaving me?&#34; The raw pain in her words made Adrian&#39;s grip on Vivian&#39;s hand tighten unconsciously, leaving faint red marks on her pale skin.</p>
+                        
+                        <p>Vivian watched Adrian closely, her luminous eyes reflecting both accusation and fragile hope. His touch grounded her even as her pulse raced. Could this finally be the moment he chose her completely?</p>
+                        
+                        <p>Adrian&#39;s expression darkened with resolve as he addressed Serena again. &#34;This lifestyle isn&#39;t sustainable for you. I want you safe and cared for—just not here.&#34; The finality in his tone left no room for argument.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Vivian&#39;s breath caught. After everything, was he truly letting Serena go? The possibility sent her heart soaring even as she fought to maintain her composure. This moment—this choice—could change everything between them.</p>
-                    
-                    <p>Serena&#39;s voice trembled with raw emotion as she choked out the words, &#34;Adrian, are you truly walking away from me?&#34; Her question hung heavy in the air, laced with heartbreak and desperation. Adrian&#39;s fingers unconsciously tightened around Vivian&#39;s wrist, leaving faint pink marks on her porcelain skin.</p>
-                    
-                    <p>Neither noticed the significance of that possessive grip in the charged moment.</p>
-                    
-                    <p>Adrian&#39;s voice remained steady as he responded, &#34;You&#39;ll always have my protection, Serena. That won&#39;t change.&#34; Serena&#39;s reply came sharp and strained. &#34;That&#39;s not what I&#39;m asking for.&#34;</p>
-                    
-                    <p>&#34;I don&#39;t want to be just another person in your life - I want to be your wife, your everything.&#34;</p>
-                    
-                    <p>Catching herself, she tried to soften her approach, though her words still tumbled out in a frantic rush. &#34;What I mean is...&#34; She faltered, struggling to articulate her thoughts.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Vivian&#39;s breath caught. After everything, was he truly letting Serena go? The possibility sent her heart soaring even as she fought to maintain her composure. This moment—this choice—could change everything between them.</p>
+                        
+                        <p>Serena&#39;s voice trembled with raw emotion as she choked out the words, &#34;Adrian, are you truly walking away from me?&#34; Her question hung heavy in the air, laced with heartbreak and desperation. Adrian&#39;s fingers unconsciously tightened around Vivian&#39;s wrist, leaving faint pink marks on her porcelain skin.</p>
+                        
+                        <p>Neither noticed the significance of that possessive grip in the charged moment.</p>
+                        
+                        <p>Adrian&#39;s voice remained steady as he responded, &#34;You&#39;ll always have my protection, Serena. That won&#39;t change.&#34; Serena&#39;s reply came sharp and strained. &#34;That&#39;s not what I&#39;m asking for.&#34;</p>
+                        
+                        <p>&#34;I don&#39;t want to be just another person in your life - I want to be your wife, your everything.&#34;</p>
+                        
+                        <p>Catching herself, she tried to soften her approach, though her words still tumbled out in a frantic rush. &#34;What I mean is...&#34; She faltered, struggling to articulate her thoughts.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,9 +1079,13 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>After a brief pause, she continued with renewed determination. &#34;I was foolish before.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>After a brief pause, she continued with renewed determination. &#34;I was foolish before.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2337,6 +2401,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2463,7 +2607,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2505,32 +2648,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2541,21 +2666,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2588,6 +2703,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2608,20 +2729,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

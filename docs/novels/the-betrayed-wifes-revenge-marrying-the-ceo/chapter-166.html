@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.402289">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.402289">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.404323">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.404323">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.402289",
-        "dateModified": "2026-07-19T02:47:23.402289",
+        "datePublished": "2026-07-19T13:03:18.404323",
+        "dateModified": "2026-07-19T13:03:18.404323",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,25 +893,29 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Annie&#39;s POV</p>
-                    
-                    <p>Lucy woke before me quietly studying my face as I slept. When I opened my eyes. I found her lying on her side, watching me with a brilliant smile.</p>
-                    
-                    <p>&#34;You&#39;re awake?&#34; I asked, somewhat surprised.</p>
-                    
-                    <p>&#34;Yes,&#34; Lucy replied, her perfect white teeth showing as she grinned.</p>
-                    
-                    <p>I cupped her rosy cheeks in my hands and gave her a gentle good morning kiss. Lucy mimicked my action, kissing my cheek in return.Then she wrapped her small arms around me and nestled silently against me for a moment before reluctantly lifting her head.</p>
-                    
-                    <p>&#34;Mom. I should get up now,&#34; she said in her soft, sweet voice,a hint of reluctance in her tone.</p>
-                    
-                    <p>I stroked her golden hair and answered, &#34;Go ahead.&#34;</p>
-                    
-                    <p>Lucy carefully climbed out of bed, slipped on her little slippers,and headed toward the bathroom, looking back at me several times as she went.</p>
-                    
-                    <p>I watched her retreating figure with a mixture of pride and melancholy.Despite her young age, she was already quite independent-capable of getting up, washing, and dressing herself without adult assistance. It was hard to believe she was growing up so quickly. While I felt proud of her development, I couldn&#39;t help feeling a touch of sadness, knowing that one day she would be completely independent, making her own way in the world.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Annie&#39;s POV</p>
+                        
+                        <p>Lucy woke before me quietly studying my face as I slept. When I opened my eyes. I found her lying on her side, watching me with a brilliant smile.</p>
+                        
+                        <p>&#34;You&#39;re awake?&#34; I asked, somewhat surprised.</p>
+                        
+                        <p>&#34;Yes,&#34; Lucy replied, her perfect white teeth showing as she grinned.</p>
+                        
+                        <p>I cupped her rosy cheeks in my hands and gave her a gentle good morning kiss. Lucy mimicked my action, kissing my cheek in return.Then she wrapped her small arms around me and nestled silently against me for a moment before reluctantly lifting her head.</p>
+                        
+                        <p>&#34;Mom. I should get up now,&#34; she said in her soft, sweet voice,a hint of reluctance in her tone.</p>
+                        
+                        <p>I stroked her golden hair and answered, &#34;Go ahead.&#34;</p>
+                        
+                        <p>Lucy carefully climbed out of bed, slipped on her little slippers,and headed toward the bathroom, looking back at me several times as she went.</p>
+                        
+                        <p>I watched her retreating figure with a mixture of pride and melancholy.Despite her young age, she was already quite independent-capable of getting up, washing, and dressing herself without adult assistance. It was hard to believe she was growing up so quickly. While I felt proud of her development, I couldn&#39;t help feeling a touch of sadness, knowing that one day she would be completely independent, making her own way in the world.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -890,25 +930,29 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Hiding my momentary melancholy, I also got up,saying,′′need to freshen up too.&#34; Lucy immediately poked her head out of the bathroom, her blue eyes sparkling with joy. &#34;Then T&#39;ll wait for you downstairs!&#34;</p>
-                    
-                    <p>&#34;All right!&#34; I responded warmly.</p>
-                    
-                    <p>When Lucy first entered my life, due to her selective mutism, she would cling to me constantly, afraid I might silently leave her. Now, through our time together, we had built genuine trust. She knew I loved her and wouldn&#39;t abandon her, so she no longer panicked when I needed to be temporarily away from her side.</p>
-                    
-                    <p>I smiled as I left her bedroom, carefully closing the door behind me.Looking up. I saw Howard standing across the hall, a slightly forlorn expression on his face.</p>
-                    
-                    <p>&#34;You can be so heartless sometimes,&#34; Howard said, a teasing accusation in his voice.</p>
-                    
-                    <p>&#34;Hmm?&#34; I responded, not understanding his meaning.</p>
-                    
-                    <p>&#34;I waited for you for a long time last night,&#34; Howard said softly as we walked side by side down the hallway, his voice deliberately lowered with a suggestive complaint, &#34;I was hoping to spend a wonderful evening with you,but you fell asleep with Lucy instead.&#34;</p>
-                    
-                    <p>I couldn&#39;t help but laugh. &#34;Are you complaining that I didn&#39;t come back to our room to keep you company?&#34;</p>
-                    
-                    <p>Howard didn&#39;t answer directly. Instead, he leaned close to my ear, his deep gray eyes twinkling with mischief, his tone a mixture of flirtation and disappointment. &#34;I guess I&#39;ve grown accustomed to our intimate moments together each night. When that expectation is suddenly taken away, the entire evening becomes unbearable.&#34; Hearing these words. I took Howard&#39;s hand and teased. &#34;Should I start refusing Lucy&#39;s requests for me to sleepin her room? I could spend all my time with you instead. How does that sound?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Hiding my momentary melancholy, I also got up,saying,′′need to freshen up too.&#34; Lucy immediately poked her head out of the bathroom, her blue eyes sparkling with joy. &#34;Then T&#39;ll wait for you downstairs!&#34;</p>
+                        
+                        <p>&#34;All right!&#34; I responded warmly.</p>
+                        
+                        <p>When Lucy first entered my life, due to her selective mutism, she would cling to me constantly, afraid I might silently leave her. Now, through our time together, we had built genuine trust. She knew I loved her and wouldn&#39;t abandon her, so she no longer panicked when I needed to be temporarily away from her side.</p>
+                        
+                        <p>I smiled as I left her bedroom, carefully closing the door behind me.Looking up. I saw Howard standing across the hall, a slightly forlorn expression on his face.</p>
+                        
+                        <p>&#34;You can be so heartless sometimes,&#34; Howard said, a teasing accusation in his voice.</p>
+                        
+                        <p>&#34;Hmm?&#34; I responded, not understanding his meaning.</p>
+                        
+                        <p>&#34;I waited for you for a long time last night,&#34; Howard said softly as we walked side by side down the hallway, his voice deliberately lowered with a suggestive complaint, &#34;I was hoping to spend a wonderful evening with you,but you fell asleep with Lucy instead.&#34;</p>
+                        
+                        <p>I couldn&#39;t help but laugh. &#34;Are you complaining that I didn&#39;t come back to our room to keep you company?&#34;</p>
+                        
+                        <p>Howard didn&#39;t answer directly. Instead, he leaned close to my ear, his deep gray eyes twinkling with mischief, his tone a mixture of flirtation and disappointment. &#34;I guess I&#39;ve grown accustomed to our intimate moments together each night. When that expectation is suddenly taken away, the entire evening becomes unbearable.&#34; Hearing these words. I took Howard&#39;s hand and teased. &#34;Should I start refusing Lucy&#39;s requests for me to sleepin her room? I could spend all my time with you instead. How does that sound?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -923,25 +967,29 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Howard seemed momentarily tempted but ultimately shook his head.&#34;No.that&#39;s not necessary. Annie, knowing I have a place in your heart is enough.&#34;</p>
-                    
-                    <p>My lips curved upward involuntarily. &#34;Don&#39;t worry, Howard. As long as you never betray me, you ll always have a place in my heart.&#34;</p>
-                    
-                    <p>Howard pulled me into his arms. &#34;I&#39;m not foolish like Philip. You can trust me completely. I will never betray you and will always treat you well.</p>
-                    
-                    <p>I returned his embrace, then released him and returned to our bedroom to prepare for the day ahead.</p>
-                    
-                    <p>After completing my morning preparations, we met in the dining room for breakfast. Lucy skillfully cut the fruit pancakes on her plate, showing no trace of the shy, introverted little girl from just a few months ago.Seeing her bright, cheerful smile filled me with pride-my daughter was thriving.</p>
-                    
-                    <p>At the table, Lucy&#39;s grandfather Edward Parker added a spoonful of blueberries to her plate and casually mentioned, &#34;This Saturday and Sunday, we&#39;re planning to take Lucy and her friend Penny to the Hamptons for a couple of days.&#34;</p>
-                    
-                    <p>I turned to Lucy and asked. &#34;Would you like to go?&#34;</p>
-                    
-                    <p>Lucy nodded excitedly.′′Yes!′′</p>
-                    
-                    <p>&#34;Then you should go,&#34; I said, then looked toward Edward.&#34;Would you like me to come along? Taking care of two children might be exhausting.&#34; Edward was getting older. and I worried about him becoming too tired.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Howard seemed momentarily tempted but ultimately shook his head.&#34;No.that&#39;s not necessary. Annie, knowing I have a place in your heart is enough.&#34;</p>
+                        
+                        <p>My lips curved upward involuntarily. &#34;Don&#39;t worry, Howard. As long as you never betray me, you ll always have a place in my heart.&#34;</p>
+                        
+                        <p>Howard pulled me into his arms. &#34;I&#39;m not foolish like Philip. You can trust me completely. I will never betray you and will always treat you well.</p>
+                        
+                        <p>I returned his embrace, then released him and returned to our bedroom to prepare for the day ahead.</p>
+                        
+                        <p>After completing my morning preparations, we met in the dining room for breakfast. Lucy skillfully cut the fruit pancakes on her plate, showing no trace of the shy, introverted little girl from just a few months ago.Seeing her bright, cheerful smile filled me with pride-my daughter was thriving.</p>
+                        
+                        <p>At the table, Lucy&#39;s grandfather Edward Parker added a spoonful of blueberries to her plate and casually mentioned, &#34;This Saturday and Sunday, we&#39;re planning to take Lucy and her friend Penny to the Hamptons for a couple of days.&#34;</p>
+                        
+                        <p>I turned to Lucy and asked. &#34;Would you like to go?&#34;</p>
+                        
+                        <p>Lucy nodded excitedly.′′Yes!′′</p>
+                        
+                        <p>&#34;Then you should go,&#34; I said, then looked toward Edward.&#34;Would you like me to come along? Taking care of two children might be exhausting.&#34; Edward was getting older. and I worried about him becoming too tired.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -956,25 +1004,29 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Before Edward could decline, Lucy quickly interjected, &#34;That won&#39;t be necessary. Mom. You should stay home and rest properly.&#34;</p>
-                    
-                    <p>She took my hand, speaking with wisdom beyond her years. &#34;Recently.your body and mind have been under a lot of pressure. You need time to recover properly.&#34;</p>
-                    
-                    <p>&#34;As for Grandpa and Grandma.&#34; Lucy continued solemnly, &#34;you don&#39;t need to worry about them. When Penny and I play, we&#39;ll be careful not to tire them out too much!&#34;</p>
-                    
-                    <p>I looked uncertainly at Edward.</p>
-                    
-                    <p>&#34;Don&#39;t worry, we&#39;ll be fine,&#34; Edward reassured me, his gentle manner exuding an elegant gentility that made it easy to imagine that Lucy&#39;s mother must have been a woman of exceptional grace when she was alive.</p>
-                    
-                    <p>Eleanor added, &#34;Think of it as our opportunity for exercise.&#34;</p>
-                    
-                    <p>&#34;All right,&#34; I conceded, looking over at Howard.</p>
-                    
-                    <p>Under the table, Howard squeezed my hand, his tone filled with amusement. &#34;It seems Lucy has become quite considerate, already understanding the need to give her parents some time to nurture their relationship.&#34;</p>
-                    
-                    <p>I lightly tapped his hand, signaling him to be careful with his words in front of Lucy&#39;s grandparents.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Before Edward could decline, Lucy quickly interjected, &#34;That won&#39;t be necessary. Mom. You should stay home and rest properly.&#34;</p>
+                        
+                        <p>She took my hand, speaking with wisdom beyond her years. &#34;Recently.your body and mind have been under a lot of pressure. You need time to recover properly.&#34;</p>
+                        
+                        <p>&#34;As for Grandpa and Grandma.&#34; Lucy continued solemnly, &#34;you don&#39;t need to worry about them. When Penny and I play, we&#39;ll be careful not to tire them out too much!&#34;</p>
+                        
+                        <p>I looked uncertainly at Edward.</p>
+                        
+                        <p>&#34;Don&#39;t worry, we&#39;ll be fine,&#34; Edward reassured me, his gentle manner exuding an elegant gentility that made it easy to imagine that Lucy&#39;s mother must have been a woman of exceptional grace when she was alive.</p>
+                        
+                        <p>Eleanor added, &#34;Think of it as our opportunity for exercise.&#34;</p>
+                        
+                        <p>&#34;All right,&#34; I conceded, looking over at Howard.</p>
+                        
+                        <p>Under the table, Howard squeezed my hand, his tone filled with amusement. &#34;It seems Lucy has become quite considerate, already understanding the need to give her parents some time to nurture their relationship.&#34;</p>
+                        
+                        <p>I lightly tapped his hand, signaling him to be careful with his words in front of Lucy&#39;s grandparents.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -989,25 +1041,29 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Howard&#39;s eyes crinkled with a smile as he nodded his understanding. &#34;Let&#39;s eat.&#34; Since I needed to go to the printing factory in Brooklyn later. Howard arranged for his driver to take us first to Lucy&#39;s Upper East Side private preschool. I watched as she took Penny&#39;s hand and walked into the preschool building before returning to the car.</p>
-                    
-                    <p>&#34;We can head to the printing factory now,&#34; I told Howard.</p>
-                    
-                    <p>Howard gently took my hand, his gaze lingering tenderly on me. &#34;Don&#39;t be nervous. Your book signing will be a success.&#34;</p>
-                    
-                    <p>The driver glanced at us in the rearview mirror, then quickly looked away,barely suppressing a smile. The intimate atmosphere clearly made him a bit uncomfortable.</p>
-                    
-                    <p>When we arrived at the printing factory in Brooklyn, representatives from the publishing house were already waiting at the entrance. They led us to a small building filled with stacks of books, many already opened, waiting for my signature.</p>
-                    
-                    <p>Taking a deep breath, I sat at the table and began diligently signing the illustrations in my children&#39;s books.</p>
-                    
-                    <p>After signing each book, someone would take it away, and another person would place a new book in front of me. I looked at them in surprise.</p>
-                    
-                    <p>&#34;Why have you stopped signing?&#34; they asked, puzzled by my hesitation.</p>
-                    
-                    <p>&#34;This is the first time I&#39;ve experienced this kind of treatment,&#34; I explained,referring to the efficient system they had established where I only needed to focus on signing. &#34;It feels a bit surreal.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Howard&#39;s eyes crinkled with a smile as he nodded his understanding. &#34;Let&#39;s eat.&#34; Since I needed to go to the printing factory in Brooklyn later. Howard arranged for his driver to take us first to Lucy&#39;s Upper East Side private preschool. I watched as she took Penny&#39;s hand and walked into the preschool building before returning to the car.</p>
+                        
+                        <p>&#34;We can head to the printing factory now,&#34; I told Howard.</p>
+                        
+                        <p>Howard gently took my hand, his gaze lingering tenderly on me. &#34;Don&#39;t be nervous. Your book signing will be a success.&#34;</p>
+                        
+                        <p>The driver glanced at us in the rearview mirror, then quickly looked away,barely suppressing a smile. The intimate atmosphere clearly made him a bit uncomfortable.</p>
+                        
+                        <p>When we arrived at the printing factory in Brooklyn, representatives from the publishing house were already waiting at the entrance. They led us to a small building filled with stacks of books, many already opened, waiting for my signature.</p>
+                        
+                        <p>Taking a deep breath, I sat at the table and began diligently signing the illustrations in my children&#39;s books.</p>
+                        
+                        <p>After signing each book, someone would take it away, and another person would place a new book in front of me. I looked at them in surprise.</p>
+                        
+                        <p>&#34;Why have you stopped signing?&#34; they asked, puzzled by my hesitation.</p>
+                        
+                        <p>&#34;This is the first time I&#39;ve experienced this kind of treatment,&#34; I explained,referring to the efficient system they had established where I only needed to focus on signing. &#34;It feels a bit surreal.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1022,25 +1078,29 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>The publishing house staff shrugged it off. &#34;There are many books to sign today. If we didn&#39;t help you and left you to sign them all by yourself,you might not finish until next year!&#34;Another staff member added. &#34;The market has been terrible for the past few years with the cconomic downturn. We weren&#39;t sure if our publishing house would survive until the end of this year..&#34;</p>
-                    
-                    <p>&#34;Then your comic suddenly appeared!&#34;</p>
-                    
-                    <p>&#34;In just a few days, it sold hundreds of thousands of copies!&#34;</p>
-                    
-                    <p>&#34;Thanks to you, our publishing house can continue operating!&#34;</p>
-                    
-                    <p>Having been a housewife for so many years, I never imagined I could have such an impact, that I could truly help others in this way. &#34;That&#39;s wonderful.&#34; I said sincerely.</p>
-                    
-                    <p>&#34;It really is!&#34; they replied in unison.</p>
-                    
-                    <p>I continued signing the books. As one person took away each signed book,another placed a new one in front of me.</p>
-                    
-                    <p>Listening to their cheerful conversation, I gradually relaxed. Even the intimidating piles of books filling the room didn&#39;t seem so scary anymore.As we fell into a smooth, efficient rhythm, my signing speed increased.</p>
-                    
-                    <p>When we reached the last few books, my hand felt like it was about to fall off, and the two staff members were visibly tired as well. I suggested,&#34;Should we take a break?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>The publishing house staff shrugged it off. &#34;There are many books to sign today. If we didn&#39;t help you and left you to sign them all by yourself,you might not finish until next year!&#34;Another staff member added. &#34;The market has been terrible for the past few years with the cconomic downturn. We weren&#39;t sure if our publishing house would survive until the end of this year..&#34;</p>
+                        
+                        <p>&#34;Then your comic suddenly appeared!&#34;</p>
+                        
+                        <p>&#34;In just a few days, it sold hundreds of thousands of copies!&#34;</p>
+                        
+                        <p>&#34;Thanks to you, our publishing house can continue operating!&#34;</p>
+                        
+                        <p>Having been a housewife for so many years, I never imagined I could have such an impact, that I could truly help others in this way. &#34;That&#39;s wonderful.&#34; I said sincerely.</p>
+                        
+                        <p>&#34;It really is!&#34; they replied in unison.</p>
+                        
+                        <p>I continued signing the books. As one person took away each signed book,another placed a new one in front of me.</p>
+                        
+                        <p>Listening to their cheerful conversation, I gradually relaxed. Even the intimidating piles of books filling the room didn&#39;t seem so scary anymore.As we fell into a smooth, efficient rhythm, my signing speed increased.</p>
+                        
+                        <p>When we reached the last few books, my hand felt like it was about to fall off, and the two staff members were visibly tired as well. I suggested,&#34;Should we take a break?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1055,17 +1115,21 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>A female staff member checked her watch. &#34;It&#39;s already lunchtime. Let&#39;s eat first to regain our energy.&#34;</p>
-                    
-                    <p>&#34;There&#39;s a nice Italian restaurant down the street where we could have lunch together,&#34; I proposed, flexing my fingers that had stiffened from the extended signing session. &#34;To be honest. I&#39;d prefer to finish the signing work as quickly as possible,&#34;another staff member said hesitantly. &#34;If we go to a restaurant now,the round trip might take too long. I actuaally want to finish work early as I have a date this afternoon...&#34;</p>
-                    
-                    <p>Her colleague smiled and added, &#34;We usually just eat simple sandwiches or something to save more time.&#34;</p>
-                    
-                    <p>Looking at their enthusiasm and dedication to work efficiency, I couldn&#39;t help but smile. Youth is such a beautiful thing.</p>
-                    
-                    <p>&#34;There&#39;s no need to push yourselves,&#34; a familiar voice came from the doorway, drawing our attention.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>A female staff member checked her watch. &#34;It&#39;s already lunchtime. Let&#39;s eat first to regain our energy.&#34;</p>
+                        
+                        <p>&#34;There&#39;s a nice Italian restaurant down the street where we could have lunch together,&#34; I proposed, flexing my fingers that had stiffened from the extended signing session. &#34;To be honest. I&#39;d prefer to finish the signing work as quickly as possible,&#34;another staff member said hesitantly. &#34;If we go to a restaurant now,the round trip might take too long. I actuaally want to finish work early as I have a date this afternoon...&#34;</p>
+                        
+                        <p>Her colleague smiled and added, &#34;We usually just eat simple sandwiches or something to save more time.&#34;</p>
+                        
+                        <p>Looking at their enthusiasm and dedication to work efficiency, I couldn&#39;t help but smile. Youth is such a beautiful thing.</p>
+                        
+                        <p>&#34;There&#39;s no need to push yourselves,&#34; a familiar voice came from the doorway, drawing our attention.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2381,6 +2445,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2507,7 +2651,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2549,32 +2692,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2585,21 +2710,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2632,6 +2747,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2652,20 +2773,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

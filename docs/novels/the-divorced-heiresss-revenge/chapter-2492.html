@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:18.789128">
-    <meta property="article:modified_time" content="2026-07-19T02:47:18.789128">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.083646">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.083646">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:18">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:18.789128",
-        "dateModified": "2026-07-19T02:47:18.789128",
+        "datePublished": "2026-07-19T13:03:14.083646",
+        "dateModified": "2026-07-19T13:03:14.083646",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,17 +893,21 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter2492</p>
-                    
-                    <p>&#34;Mr. Salvador.&#34; Ian walked up to him with a worried expression.</p>
-                    
-                    <p>Justin quickly pulled back the emotions hidden in his shimmering eyes and forced himself to appear indifferent. &#34;The signing ceremony went very well.&#34;</p>
-                    
-                    <p>lan looked at the big screen, seeing the young madam looking radiant and graceful as she shook hands with Grant. They were the focus of everyone&#39;s attention.</p>
-                    
-                    <p>A mix of emotions surged in his heart. “It&#39;s just a pity that the person standing opposite the young madam isn&#39;t you...&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter2492</p>
+                        
+                        <p>&#34;Mr. Salvador.&#34; Ian walked up to him with a worried expression.</p>
+                        
+                        <p>Justin quickly pulled back the emotions hidden in his shimmering eyes and forced himself to appear indifferent. &#34;The signing ceremony went very well.&#34;</p>
+                        
+                        <p>lan looked at the big screen, seeing the young madam looking radiant and graceful as she shook hands with Grant. They were the focus of everyone&#39;s attention.</p>
+                        
+                        <p>A mix of emotions surged in his heart. “It&#39;s just a pity that the person standing opposite the young madam isn&#39;t you...&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -882,17 +922,21 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Justin&#39;s long lashes trembled. His thin lips parted dryly. “As long as it benefits the Salvador Corporation, and the signing succeeds, it isn&#39;t important who signs with Ms. Thompson.&#34;</p>
-                    
-                    <p>&#34;Is it really not important?&#34; lan asked.</p>
-                    
-                    <p>“Mm.” Justin&#39;s Adam&#39;s apple bobbed. His voice was hoarse. “It&#39;s not important.&#34;</p>
-                    
-                    <p>lan sighed helplessly, thinking that his boss sure was stubborn. &#34;Mr. Salvador, didn&#39;t you say you wouldn&#39;t come today? Why did you suddenly change your mind?&#34;</p>
-                    
-                    <p>Justin withdrew his gaze and turned away expressionlessly. “No special reason. I was just bored, so I came to join the fun.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Justin&#39;s long lashes trembled. His thin lips parted dryly. “As long as it benefits the Salvador Corporation, and the signing succeeds, it isn&#39;t important who signs with Ms. Thompson.&#34;</p>
+                        
+                        <p>&#34;Is it really not important?&#34; lan asked.</p>
+                        
+                        <p>“Mm.” Justin&#39;s Adam&#39;s apple bobbed. His voice was hoarse. “It&#39;s not important.&#34;</p>
+                        
+                        <p>lan sighed helplessly, thinking that his boss sure was stubborn. &#34;Mr. Salvador, didn&#39;t you say you wouldn&#39;t come today? Why did you suddenly change your mind?&#34;</p>
+                        
+                        <p>Justin withdrew his gaze and turned away expressionlessly. “No special reason. I was just bored, so I came to join the fun.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -907,17 +951,21 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>lan ground his teeth. “Mhmm, of course. Even though you&#39;re no longer in charge, you still have to show up in front of Grant and wave your presence around just to repulse him, right?&#34;</p>
-                    
-                    <p>Justin cast him a faint glance. &#34;Do I look that repulsive?&#34;</p>
-                    
-                    <p>lan was speechless.</p>
-                    
-                    <p>In truth, Justin came this time because he couldn&#39;t stop worrying about Bella. This signing was important, as it was her first major project that she had completed independently after leaving him.</p>
-                    
-                    <p>He remembered that in the past, at moments like this, he was always there beside her, shielding her from any trouble and harm. Now, their relationship was no longer what it used to be, but old habits die hard. They were always awakened at critical moments, as if nothing had ever changed.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>lan ground his teeth. “Mhmm, of course. Even though you&#39;re no longer in charge, you still have to show up in front of Grant and wave your presence around just to repulse him, right?&#34;</p>
+                        
+                        <p>Justin cast him a faint glance. &#34;Do I look that repulsive?&#34;</p>
+                        
+                        <p>lan was speechless.</p>
+                        
+                        <p>In truth, Justin came this time because he couldn&#39;t stop worrying about Bella. This signing was important, as it was her first major project that she had completed independently after leaving him.</p>
+                        
+                        <p>He remembered that in the past, at moments like this, he was always there beside her, shielding her from any trouble and harm. Now, their relationship was no longer what it used to be, but old habits die hard. They were always awakened at critical moments, as if nothing had ever changed.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -932,17 +980,21 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>After the signing ceremony ended successfully, and after a short rest, Bella would be attending the celebration banquet Grant had prepared. It would be held in the grandest ballroom of the Salvador Hotel.</p>
-                    
-                    <p>In truth, Bella was already exhausted, so she did not want to go. But she and Grant were the stars of this signing, and distinguished guests from both the political and business circles of Savrow would attend.</p>
-                    
-                    <p>If Bella did not show up, it would be improper and impolite.</p>
-                    
-                    <p>Besides, she and Grant were currently riding the momentum. If she suddenly did not show up, all the goodwill gestures she had made earlier would become meaningless.</p>
-                    
-                    <p>&#34;Ms. Thompson, are you alright?&#34; Inside the hotel room, Steven handed Bella a cup of warm coffee looking worriedly at her slightly pale complexion. There are still two hours left. Why don&#39;t you take a short nap?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>After the signing ceremony ended successfully, and after a short rest, Bella would be attending the celebration banquet Grant had prepared. It would be held in the grandest ballroom of the Salvador Hotel.</p>
+                        
+                        <p>In truth, Bella was already exhausted, so she did not want to go. But she and Grant were the stars of this signing, and distinguished guests from both the political and business circles of Savrow would attend.</p>
+                        
+                        <p>If Bella did not show up, it would be improper and impolite.</p>
+                        
+                        <p>Besides, she and Grant were currently riding the momentum. If she suddenly did not show up, all the goodwill gestures she had made earlier would become meaningless.</p>
+                        
+                        <p>&#34;Ms. Thompson, are you alright?&#34; Inside the hotel room, Steven handed Bella a cup of warm coffee looking worriedly at her slightly pale complexion. There are still two hours left. Why don&#39;t you take a short nap?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -957,17 +1009,21 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;It&#39;s alright, I&#39;m not sleepy.&#34; Bella rubbed her aching temples.</p>
-                    
-                    <p>She let out a helpless, bitter smile. &#34;Honestly, finally understand my father now. I get how often he was forced into corners and how much of his life wasn&#39;t up to him because he needed to navigate between the political and business circles for the company.&#34;</p>
-                    
-                    <p>Steven nodded solemnly. &#34;Yes, Chairman Thompson really had it tough. Half of Hatchbay&#39;s GDP comes from him Many people. see his success and glory, but they don&#39;t know how difficult it was for him to get to where he is.&#34;</p>
-                    
-                    <p>Bella could not resist teasing. “They also see that he has a bunch of wives.”</p>
-                    
-                    <p>&#34;Young Miss, you&#39;re still so sharp-tongued.&#34; Steven laughed helplessly.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;It&#39;s alright, I&#39;m not sleepy.&#34; Bella rubbed her aching temples.</p>
+                        
+                        <p>She let out a helpless, bitter smile. &#34;Honestly, finally understand my father now. I get how often he was forced into corners and how much of his life wasn&#39;t up to him because he needed to navigate between the political and business circles for the company.&#34;</p>
+                        
+                        <p>Steven nodded solemnly. &#34;Yes, Chairman Thompson really had it tough. Half of Hatchbay&#39;s GDP comes from him Many people. see his success and glory, but they don&#39;t know how difficult it was for him to get to where he is.&#34;</p>
+                        
+                        <p>Bella could not resist teasing. “They also see that he has a bunch of wives.”</p>
+                        
+                        <p>&#34;Young Miss, you&#39;re still so sharp-tongued.&#34; Steven laughed helplessly.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -982,15 +1038,19 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Suddenly, he remembered something and said with delight, “Oh, when I sent you upstairs earlier, I think I saw Justin!&#34;</p>
-                    
-                    <p>Bella&#39;s beautiful eyes widened slightly. Her heart trembled, but she forced herself into a disinterested expression. “Today&#39;s signing has nothing to do with him. What is he doing here?&#34;</p>
-                    
-                    <p>&#34;What else could he be doing? Of course, he&#39;s worried about you!&#34; Steven knelt on one knee beside Bella, looking up at her with eyes full of joy. “I&#39;m certain that you&#39;ve slowly melted his ice-cold heart!&#34;</p>
-                    
-                    <p>The Novel will be updated first on this website. Come back and continue reading tomorrow, everyone!</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Suddenly, he remembered something and said with delight, “Oh, when I sent you upstairs earlier, I think I saw Justin!&#34;</p>
+                        
+                        <p>Bella&#39;s beautiful eyes widened slightly. Her heart trembled, but she forced herself into a disinterested expression. “Today&#39;s signing has nothing to do with him. What is he doing here?&#34;</p>
+                        
+                        <p>&#34;What else could he be doing? Of course, he&#39;s worried about you!&#34; Steven knelt on one knee beside Bella, looking up at her with eyes full of joy. “I&#39;m certain that you&#39;ve slowly melted his ice-cold heart!&#34;</p>
+                        
+                        <p>The Novel will be updated first on this website. Come back and continue reading tomorrow, everyone!</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -2308,6 +2368,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2434,7 +2574,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2476,32 +2615,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2512,21 +2633,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2559,6 +2670,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2579,20 +2696,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

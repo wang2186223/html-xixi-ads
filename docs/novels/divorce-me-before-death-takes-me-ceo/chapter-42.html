@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:18.813113">
-    <meta property="article:modified_time" content="2026-07-19T02:47:18.813113">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.105178">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.105178">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:18">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:18.813113",
-        "dateModified": "2026-07-19T02:47:18.813113",
+        "datePublished": "2026-07-19T13:03:14.105178",
+        "dateModified": "2026-07-19T13:03:14.105178",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,23 +893,27 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>The first thing I noticed was the steady beeping of hospital monitors,followed by the antiseptic smell that seemed embedded in Mayo Clinic&#39;s walls. My eyes felt heavy as I tried to open them, and that&#39;s when I became aware of the warmth around my hand.</p>
-                    
-                    <p>James Collins sat beside my bed, his usually impeccable appearance showing clear signs of having spent the night in that uncomfortable hospital chair. His suit jacket was draped over the back, his sleeves rolled up. and his tie loosened - a rare sight for someone who maintained such careful composure.</p>
-                    
-                    <p>&#34;Audrey, for god&#39;s sake, you&#39;re finally awake.&#34; Relief flooded his voice.&#34;How are you feeling?&#34;</p>
-                    
-                    <p>I tried to shift position, but even that small movement sent a dull ache through my body. James&#39;s grip on my hand tightened slightly.</p>
-                    
-                    <p>&#34;Is your stomach still hurting? Any other discomfort?&#34; His brown eyes were intense with concern. &#34;Do you have any idea how worried I was last night? The doctor said if I hadn&#39;t gotten you here when I did...&#34;</p>
-                    
-                    <p>&#34;Then I&#39;m glad you came in time,&#34; I managed softly, attempting to withdraw my hand from his grip. But my body felt too weak to manage even that simple movement. &#34;I&#39;m much better now.&#34;</p>
-                    
-                    <p>Maybe sensing my movement, James tightened his hold on my hand even more and moved closer to me. The moment I saw this, I subconsciously frowned.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>The first thing I noticed was the steady beeping of hospital monitors,followed by the antiseptic smell that seemed embedded in Mayo Clinic&#39;s walls. My eyes felt heavy as I tried to open them, and that&#39;s when I became aware of the warmth around my hand.</p>
+                        
+                        <p>James Collins sat beside my bed, his usually impeccable appearance showing clear signs of having spent the night in that uncomfortable hospital chair. His suit jacket was draped over the back, his sleeves rolled up. and his tie loosened - a rare sight for someone who maintained such careful composure.</p>
+                        
+                        <p>&#34;Audrey, for god&#39;s sake, you&#39;re finally awake.&#34; Relief flooded his voice.&#34;How are you feeling?&#34;</p>
+                        
+                        <p>I tried to shift position, but even that small movement sent a dull ache through my body. James&#39;s grip on my hand tightened slightly.</p>
+                        
+                        <p>&#34;Is your stomach still hurting? Any other discomfort?&#34; His brown eyes were intense with concern. &#34;Do you have any idea how worried I was last night? The doctor said if I hadn&#39;t gotten you here when I did...&#34;</p>
+                        
+                        <p>&#34;Then I&#39;m glad you came in time,&#34; I managed softly, attempting to withdraw my hand from his grip. But my body felt too weak to manage even that simple movement. &#34;I&#39;m much better now.&#34;</p>
+                        
+                        <p>Maybe sensing my movement, James tightened his hold on my hand even more and moved closer to me. The moment I saw this, I subconsciously frowned.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -888,23 +928,27 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Audrey.&#34; His voice took on a serious tone I rarely heard from him. &#34;You know, while waiting during your emergency treament last night, I made a decision.&#34;</p>
-                    
-                    <p>&#34;James, please..,&#34; I could see where this was going, and a different kind of pain bloomed in my chest.</p>
-                    
-                    <p>&#34;Let me finish.&#34; He took a deep breath. &#34;I want to be more than just friends. Audrey. I want to be with you.&#34;</p>
-                    
-                    <p>My body tensed involuntarily at his words, sending fresh waves of discomfort through my stomach. But the physical pain was nothing compared to the ache of having to hurt someone I cared about.</p>
-                    
-                    <p>&#34;James, don&#39;t joke about this.&#34; I forced the words out, trying to keep my voice steady. &#34;I&#39;ve told you I&#39;m not looking for a relationship.&#34;</p>
-                    
-                    <p>&#34;Plus, you know about my condition, I just have...&#34;</p>
-                    
-                    <p>&#34;I know!&#34; His voice cracked slightly. &#34;I don&#39;t care how much time you have left. I want to be there for you!&#34;</p>
-                    
-                    <p>Using what little strength I had, I finally managed to pull my hand free from his grip. The effort left me breathless, and I had to lean back against the pillows,fighting a wave of dizziness.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Audrey.&#34; His voice took on a serious tone I rarely heard from him. &#34;You know, while waiting during your emergency treament last night, I made a decision.&#34;</p>
+                        
+                        <p>&#34;James, please..,&#34; I could see where this was going, and a different kind of pain bloomed in my chest.</p>
+                        
+                        <p>&#34;Let me finish.&#34; He took a deep breath. &#34;I want to be more than just friends. Audrey. I want to be with you.&#34;</p>
+                        
+                        <p>My body tensed involuntarily at his words, sending fresh waves of discomfort through my stomach. But the physical pain was nothing compared to the ache of having to hurt someone I cared about.</p>
+                        
+                        <p>&#34;James, don&#39;t joke about this.&#34; I forced the words out, trying to keep my voice steady. &#34;I&#39;ve told you I&#39;m not looking for a relationship.&#34;</p>
+                        
+                        <p>&#34;Plus, you know about my condition, I just have...&#34;</p>
+                        
+                        <p>&#34;I know!&#34; His voice cracked slightly. &#34;I don&#39;t care how much time you have left. I want to be there for you!&#34;</p>
+                        
+                        <p>Using what little strength I had, I finally managed to pull my hand free from his grip. The effort left me breathless, and I had to lean back against the pillows,fighting a wave of dizziness.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -919,23 +963,27 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>James still wanted to reach out and grab my hand,but when he saw the red marks on my hand caused by his tight grip just now, he withdrew his outstretched hand awkwardly.</p>
-                    
-                    <p>&#34;I&#39;m sorry,&#34; He ran,a hand through his disheveled hair. &#34;I shouldn&#39;t have...</p>
-                    
-                    <p>&#34;It&#39;s fine,&#34; I cut him off, my voice soft but firm. &#34;Let&#39;s pretend this never</p>
-                    
-                    <p>happened.&#34;</p>
-                    
-                    <p>The silence that followed was heavy with unspoken words. The steady beeping of the heart monitor seemed unnaturally loud in the quiet room.</p>
-                    
-                    <p>He clenched his fists, staring at me. &#34;But Audrey.I...&#34;</p>
-                    
-                    <p>&#34;James,&#34; I immediately cut him off, choosing my words carefully.&#34;Among my friends, you&#39;re the only one who knows about my condition. That&#39;s why I called you last night.&#34;</p>
-                    
-                    <p>I met his gaze directly. &#34;Please don&#39;t make me regret that trust. Don&#39;t make me lose the one person I can turn to in emergencies.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>James still wanted to reach out and grab my hand,but when he saw the red marks on my hand caused by his tight grip just now, he withdrew his outstretched hand awkwardly.</p>
+                        
+                        <p>&#34;I&#39;m sorry,&#34; He ran,a hand through his disheveled hair. &#34;I shouldn&#39;t have...</p>
+                        
+                        <p>&#34;It&#39;s fine,&#34; I cut him off, my voice soft but firm. &#34;Let&#39;s pretend this never</p>
+                        
+                        <p>happened.&#34;</p>
+                        
+                        <p>The silence that followed was heavy with unspoken words. The steady beeping of the heart monitor seemed unnaturally loud in the quiet room.</p>
+                        
+                        <p>He clenched his fists, staring at me. &#34;But Audrey.I...&#34;</p>
+                        
+                        <p>&#34;James,&#34; I immediately cut him off, choosing my words carefully.&#34;Among my friends, you&#39;re the only one who knows about my condition. That&#39;s why I called you last night.&#34;</p>
+                        
+                        <p>I met his gaze directly. &#34;Please don&#39;t make me regret that trust. Don&#39;t make me lose the one person I can turn to in emergencies.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -950,23 +998,27 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>I guessed that he had grasped the underlying meaning in my words-if he persisted in wanting to be with me, there was a high chance that we couldn&#39;t even stay friends. That was why he fell silent and gradually lowered his head.</p>
-                    
-                    <p>Moments later, he raised his head, understanding dawned in his eyes,followed by resignation. &#34;Alright,&#34; he said. &#34;But next time something happens, call me directly. Don&#39;t try Blake first.&#34;</p>
-                    
-                    <p>&#34;It was just... force of habit.&#34; The admission tasted bitter on my tongue.</p>
-                    
-                    <p>James shifted in his chair, his expression growing careful. &#34;I ran into Blake at the restaurant last night,&#34; he said slowly. &#34;He said... he said to tell you to stop calling him without speaking. He said it was childish.&#34;</p>
-                    
-                    <p>The words hit like a physical blow. My heart contracted painfully, and for a moment, I couldn&#39;t tell which hurt more - the cancer eating away at my body or the casual cruelty of Blake&#39;s dismissal. Of course he would see my desperate call for help as mere attention-seeking. His returned call probably wasn&#39;t even concern - he&#39;d likely just wanted to berate me for</p>
-                    
-                    <p>bothering him.</p>
-                    
-                    <p>A knock at the door interrupted my spiraling thoughts. Dr. Evans entered,her presence bringing a welcome distraction from the emotional tension in the room.</p>
-                    
-                    <p>&#34;Miss Sinclair, how are you feeling nowv?&#34; she asked, checking my vitals with professional efficiency.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>I guessed that he had grasped the underlying meaning in my words-if he persisted in wanting to be with me, there was a high chance that we couldn&#39;t even stay friends. That was why he fell silent and gradually lowered his head.</p>
+                        
+                        <p>Moments later, he raised his head, understanding dawned in his eyes,followed by resignation. &#34;Alright,&#34; he said. &#34;But next time something happens, call me directly. Don&#39;t try Blake first.&#34;</p>
+                        
+                        <p>&#34;It was just... force of habit.&#34; The admission tasted bitter on my tongue.</p>
+                        
+                        <p>James shifted in his chair, his expression growing careful. &#34;I ran into Blake at the restaurant last night,&#34; he said slowly. &#34;He said... he said to tell you to stop calling him without speaking. He said it was childish.&#34;</p>
+                        
+                        <p>The words hit like a physical blow. My heart contracted painfully, and for a moment, I couldn&#39;t tell which hurt more - the cancer eating away at my body or the casual cruelty of Blake&#39;s dismissal. Of course he would see my desperate call for help as mere attention-seeking. His returned call probably wasn&#39;t even concern - he&#39;d likely just wanted to berate me for</p>
+                        
+                        <p>bothering him.</p>
+                        
+                        <p>A knock at the door interrupted my spiraling thoughts. Dr. Evans entered,her presence bringing a welcome distraction from the emotional tension in the room.</p>
+                        
+                        <p>&#34;Miss Sinclair, how are you feeling nowv?&#34; she asked, checking my vitals with professional efficiency.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -981,23 +1033,27 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;Can she eat something?&#34; James straightened in his chair. &#34;I could get breakfast.&#34;</p>
-                    
-                    <p>&#34;Not yet.&#34; Dr. Evans cautioned, making notes on my chart.Her eyes flickered between James and me, a small smile playing at her lips. &#34;You&#39;ve found yourself a good one here.&#34;</p>
-                    
-                    <p>&#34;You have no idea how worried he was about you last night! When I asked him to go back and get the log of your medication intake, he did it right away. And he stayed outside the emergency room the whole time,not sleeping a wink all night!&#34;</p>
-                    
-                    <p>&#34;He&#39;s a friend from college, nothing more,&#34; I corrected firmly,perhaps more sharply than necessary. From the corner of my eye, I saw James&#39;s shoulders tense slíghtly.</p>
-                    
-                    <p>&#34;Well, okay then. My bad,&#34;</p>
-                    
-                    <p>Watching her check my vitals, Iasked the question that had been nagging at me. &#34;How serious was last night?&#34;</p>
-                    
-                    <p>Dr. Evans&#39;s expression hardened. &#34;You lost consciousness from the pain,and you&#39;re asking how serious it was?&#34; She fixed me with a pointed look.&#34;With your condition, spicy food is practically suicidal. Don&#39;t try them,or you won&#39;t even make it three months.&#34;</p>
-                    
-                    <p>She paused, checking my charts. &#34;We were fortunate, actuaally. The dose you agreed to share yesterday- the patient ended up declining it at the last minute.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;Can she eat something?&#34; James straightened in his chair. &#34;I could get breakfast.&#34;</p>
+                        
+                        <p>&#34;Not yet.&#34; Dr. Evans cautioned, making notes on my chart.Her eyes flickered between James and me, a small smile playing at her lips. &#34;You&#39;ve found yourself a good one here.&#34;</p>
+                        
+                        <p>&#34;You have no idea how worried he was about you last night! When I asked him to go back and get the log of your medication intake, he did it right away. And he stayed outside the emergency room the whole time,not sleeping a wink all night!&#34;</p>
+                        
+                        <p>&#34;He&#39;s a friend from college, nothing more,&#34; I corrected firmly,perhaps more sharply than necessary. From the corner of my eye, I saw James&#39;s shoulders tense slíghtly.</p>
+                        
+                        <p>&#34;Well, okay then. My bad,&#34;</p>
+                        
+                        <p>Watching her check my vitals, Iasked the question that had been nagging at me. &#34;How serious was last night?&#34;</p>
+                        
+                        <p>Dr. Evans&#39;s expression hardened. &#34;You lost consciousness from the pain,and you&#39;re asking how serious it was?&#34; She fixed me with a pointed look.&#34;With your condition, spicy food is practically suicidal. Don&#39;t try them,or you won&#39;t even make it three months.&#34;</p>
+                        
+                        <p>She paused, checking my charts. &#34;We were fortunate, actuaally. The dose you agreed to share yesterday- the patient ended up declining it at the last minute.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1012,23 +1068,27 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Her words made me frown. &#34;The one who asked for fifty million?&#34;</p>
-                    
-                    <p>Dr. Evans sighed, setting down her pen. &#34;Yes. Everything was prepared,but when she arrived at the hospital, she suddenly declined the treatment.So.you&#39;re quite lucky.&#34;</p>
-                    
-                    <p>She rubbed her temples, looking troubled. &#34;One more thing, her lawyers want to meet with you this week to discuss a collaboration.&#34;</p>
-                    
-                    <p>&#34;Collaboration? Seriously?&#34; I just found this concept absurd. Both of us were cancer patients. What kind of collaboration could we need?</p>
-                    
-                    <p>&#34;I don&#39;t know all the details,&#34; Dr. Evans admitted, running a hand through her hair in frustration. &#34;You&#39;ll understand everything when you meet with her legal representative. What I do know is that this could be good for you. Her boyfriend has considerable resources - he might be able to find even more effective treatments.&#34;</p>
-                    
-                    <p>As she turned back to making notes in my chart, I reached for my phone on the bedside table. The moment I turned on my phone, multiple messages from Astrid lit up the screen:</p>
-                    
-                    <p>*Girl, I&#39;m at your place - are you at the courthouse already?*</p>
-                    
-                    <p>*It&#39;s D-Day with Blake! Make sure you look amazing - make that jerk regret everything!*</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Her words made me frown. &#34;The one who asked for fifty million?&#34;</p>
+                        
+                        <p>Dr. Evans sighed, setting down her pen. &#34;Yes. Everything was prepared,but when she arrived at the hospital, she suddenly declined the treatment.So.you&#39;re quite lucky.&#34;</p>
+                        
+                        <p>She rubbed her temples, looking troubled. &#34;One more thing, her lawyers want to meet with you this week to discuss a collaboration.&#34;</p>
+                        
+                        <p>&#34;Collaboration? Seriously?&#34; I just found this concept absurd. Both of us were cancer patients. What kind of collaboration could we need?</p>
+                        
+                        <p>&#34;I don&#39;t know all the details,&#34; Dr. Evans admitted, running a hand through her hair in frustration. &#34;You&#39;ll understand everything when you meet with her legal representative. What I do know is that this could be good for you. Her boyfriend has considerable resources - he might be able to find even more effective treatments.&#34;</p>
+                        
+                        <p>As she turned back to making notes in my chart, I reached for my phone on the bedside table. The moment I turned on my phone, multiple messages from Astrid lit up the screen:</p>
+                        
+                        <p>*Girl, I&#39;m at your place - are you at the courthouse already?*</p>
+                        
+                        <p>*It&#39;s D-Day with Blake! Make sure you look amazing - make that jerk regret everything!*</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1043,15 +1103,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>*Why aren&#39;t you picking up? What&#39;s happening at the court?*</p>
-                    
-                    <p>*Did that jerk cause any troubles? And is that bitch there with him?*</p>
-                    
-                    <p>Seeing these messages. I widened my eyes. The divors paeeedings fn all the chass of last night. I&#39;d complerely forgoren.Checking dhe time-9 AM -sent a tah of pank through me</p>
-                    
-                    <p>&#34;Can I. te discharged now?&#34; I asked atready rying ts posh myself up.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>*Why aren&#39;t you picking up? What&#39;s happening at the court?*</p>
+                        
+                        <p>*Did that jerk cause any troubles? And is that bitch there with him?*</p>
+                        
+                        <p>Seeing these messages. I widened my eyes. The divors paeeedings fn all the chass of last night. I&#39;d complerely forgoren.Checking dhe time-9 AM -sent a tah of pank through me</p>
+                        
+                        <p>&#34;Can I. te discharged now?&#34; I asked atready rying ts posh myself up.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2367,6 +2431,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2493,7 +2637,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2535,32 +2678,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2571,21 +2696,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2618,6 +2733,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2638,20 +2759,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

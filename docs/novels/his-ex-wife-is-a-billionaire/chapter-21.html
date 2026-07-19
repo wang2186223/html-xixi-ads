@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.296453">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.296453">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.296219">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.296219">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.296453",
-        "dateModified": "2026-07-19T02:47:23.296453",
+        "datePublished": "2026-07-19T13:03:18.296219",
+        "dateModified": "2026-07-19T13:03:18.296219",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,23 +893,27 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>“Ugh ugh Mr. Thaddeus. I really can’t walk anymore!” The hotel floors were high and the stairs were plenty. By the time we reached the eighth floor, Gordon was already panting and his legs wobbling. He was about to copse.</p>
-                    
-                    <p>“Just two more floors, hurry up.” Thaddeus urged, continuing to climb up the stairs without any difficulty.</p>
-                    
-                    <p>He was thirty years old, two years older than Gordon. But because of his early years in the peacekeeping forces and his persistent fitness and boxing after retiring, he was physically superior to most people. What’s the big deal about climbing another twenty floors? Back in the day, he had to run thirtyps a night in the army!</p>
-                    
-                    <p>Finally reaching the fortieth floor, Gordon sat on the stairs, gasping for air. Thaddeus looked at him coldly, shaking his head in disappointment.</p>
-                    
-                    <p>“Mr. Thaddeus, nice to meet you.” Thaddeus turned around at the sound of the voice, seeing a man with a polite smile walking over. He was handsome, bright-eyed, the kind of cute young man women often talk about. His age was hard to guess.</p>
-                    
-                    <p>“My name is Jason, Ms. Evadne’s secretary. Ms. Evadne has been waiting for you for a while. Please follow me.”</p>
-                    
-                    <p>What the hell? Was he implying that they were too slow?! Thaddeus was fuming, his face darkening, “My legs can’t move faster than the elevator. Ms. Evadne will have to bear with us.”</p>
-                    
-                    <p>Jason didn’t respond, just turned around and kept walking.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>“Ugh ugh Mr. Thaddeus. I really can’t walk anymore!” The hotel floors were high and the stairs were plenty. By the time we reached the eighth floor, Gordon was already panting and his legs wobbling. He was about to copse.</p>
+                        
+                        <p>“Just two more floors, hurry up.” Thaddeus urged, continuing to climb up the stairs without any difficulty.</p>
+                        
+                        <p>He was thirty years old, two years older than Gordon. But because of his early years in the peacekeeping forces and his persistent fitness and boxing after retiring, he was physically superior to most people. What’s the big deal about climbing another twenty floors? Back in the day, he had to run thirtyps a night in the army!</p>
+                        
+                        <p>Finally reaching the fortieth floor, Gordon sat on the stairs, gasping for air. Thaddeus looked at him coldly, shaking his head in disappointment.</p>
+                        
+                        <p>“Mr. Thaddeus, nice to meet you.” Thaddeus turned around at the sound of the voice, seeing a man with a polite smile walking over. He was handsome, bright-eyed, the kind of cute young man women often talk about. His age was hard to guess.</p>
+                        
+                        <p>“My name is Jason, Ms. Evadne’s secretary. Ms. Evadne has been waiting for you for a while. Please follow me.”</p>
+                        
+                        <p>What the hell? Was he implying that they were too slow?! Thaddeus was fuming, his face darkening, “My legs can’t move faster than the elevator. Ms. Evadne will have to bear with us.”</p>
+                        
+                        <p>Jason didn’t respond, just turned around and kept walking.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -888,23 +928,27 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>How rude.</p>
-                    
-                    <p>“Humph… such attitude!”</p>
-                    
-                    <p>Gordon had recovered a bit, wanted to re up, but was stopped by Thaddeus. “Wait here for me.”</p>
-                    
-                    <p>Thaddeus followed Jason to the CEO’s office. He took a deep breath. For some reason, despite having been through many storms, he started to feel nervous about meeting Ms. Evadne.</p>
-                    
-                    <p>After a knock on the door, a female voice came.</p>
-                    
-                    <p>“Come in.” Jason opened the door, making a ‘please’ gesture.</p>
-                    
-                    <p>Thaddeus swallowed, straightened his back, and walked into the office. Meanwhile, in the next room, Evadne was watching the scene while eating chocte and looking at herputer screen.</p>
-                    
-                    <p>A young woman sat at the back of the desk, elegantly dressed, long hair draped over her shoulders, very pretty. Was she the troublemaker Evadne? Thaddeus was somewhat disappointed. He had imagined Evadne to be aristocratic, with an air of authority.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>How rude.</p>
+                        
+                        <p>“Humph… such attitude!”</p>
+                        
+                        <p>Gordon had recovered a bit, wanted to re up, but was stopped by Thaddeus. “Wait here for me.”</p>
+                        
+                        <p>Thaddeus followed Jason to the CEO’s office. He took a deep breath. For some reason, despite having been through many storms, he started to feel nervous about meeting Ms. Evadne.</p>
+                        
+                        <p>After a knock on the door, a female voice came.</p>
+                        
+                        <p>“Come in.” Jason opened the door, making a ‘please’ gesture.</p>
+                        
+                        <p>Thaddeus swallowed, straightened his back, and walked into the office. Meanwhile, in the next room, Evadne was watching the scene while eating chocte and looking at herputer screen.</p>
+                        
+                        <p>A young woman sat at the back of the desk, elegantly dressed, long hair draped over her shoulders, very pretty. Was she the troublemaker Evadne? Thaddeus was somewhat disappointed. He had imagined Evadne to be aristocratic, with an air of authority.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -919,23 +963,27 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>“Mr. Thaddeus, you must be tired. Please have a seat.”</p>
-                    
-                    <p>Evadne gave themand through her Bluetooth headset. Her “a**istant” immediately did as told, but not as gracefully as Evadne, his expression a bit stiff.</p>
-                    
-                    <p>Thaddeus sat on the sofa, casually looking around.</p>
-                    
-                    <p>The office was elegantly decorated, with a ck piano in the corner. The marble desk was trendy, and the vintage leather sofa was stately. But what caught his eye the most was the poster hanging behind Evadne, it read –</p>
-                    
-                    <p>A wise man keeps his knowledge to himself, waiting for the right moment to act.</p>
-                    
-                    <p>Thaddeus couldn’t help but praise.</p>
-                    
-                    <p>Evadne, who was eating chocte, paused at the corner of her mouth, her heart shaking a bit. In her memory, this was the first time Thaddeus hadplimented her. Despite being his wife for three years and taking care of his daily life, she could never win a word of praise from this man.</p>
-                    
-                    <p>Unexpectedly, she finally heard it this time. But, she was no longer expecting.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“Mr. Thaddeus, you must be tired. Please have a seat.”</p>
+                        
+                        <p>Evadne gave themand through her Bluetooth headset. Her “a**istant” immediately did as told, but not as gracefully as Evadne, his expression a bit stiff.</p>
+                        
+                        <p>Thaddeus sat on the sofa, casually looking around.</p>
+                        
+                        <p>The office was elegantly decorated, with a ck piano in the corner. The marble desk was trendy, and the vintage leather sofa was stately. But what caught his eye the most was the poster hanging behind Evadne, it read –</p>
+                        
+                        <p>A wise man keeps his knowledge to himself, waiting for the right moment to act.</p>
+                        
+                        <p>Thaddeus couldn’t help but praise.</p>
+                        
+                        <p>Evadne, who was eating chocte, paused at the corner of her mouth, her heart shaking a bit. In her memory, this was the first time Thaddeus hadplimented her. Despite being his wife for three years and taking care of his daily life, she could never win a word of praise from this man.</p>
+                        
+                        <p>Unexpectedly, she finally heard it this time. But, she was no longer expecting.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -950,23 +998,27 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>“Mr. Thaddeus, do you like it?” Evadne asked with a smile.</p>
-                    
-                    <p>“Very good.” Thaddeus answered briefly.</p>
-                    
-                    <p>“If you like it, take it with you when you leave. Consider it a gift from me to you.”</p>
-                    
-                    <p>“No need, this poster is a masterpiece. I can’t just take it.” Thaddeus refused calmly.</p>
-                    
-                    <p>“Hahaha…” Evadneughed, the waitress could only follow suit.</p>
-                    
-                    <p>Thaddeus frowned.</p>
-                    
-                    <p>“Mr. Thaddeus, your praise is appreciated. But it doesn’t matter, because I can make hundreds of these a day. It’s okay to take it.” Evadne’sughter was tinged with mockery. Thaddeus’ face stiffened, his fist slightly clenched.</p>
-                    
-                    <p>“Mr. Thaddeus, I’m sure you’re not here to admire my design, so let’s get right down to business.” Evadne didn’t feel like beating around the</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“Mr. Thaddeus, do you like it?” Evadne asked with a smile.</p>
+                        
+                        <p>“Very good.” Thaddeus answered briefly.</p>
+                        
+                        <p>“If you like it, take it with you when you leave. Consider it a gift from me to you.”</p>
+                        
+                        <p>“No need, this poster is a masterpiece. I can’t just take it.” Thaddeus refused calmly.</p>
+                        
+                        <p>“Hahaha…” Evadneughed, the waitress could only follow suit.</p>
+                        
+                        <p>Thaddeus frowned.</p>
+                        
+                        <p>“Mr. Thaddeus, your praise is appreciated. But it doesn’t matter, because I can make hundreds of these a day. It’s okay to take it.” Evadne’sughter was tinged with mockery. Thaddeus’ face stiffened, his fist slightly clenched.</p>
+                        
+                        <p>“Mr. Thaddeus, I’m sure you’re not here to admire my design, so let’s get right down to business.” Evadne didn’t feel like beating around the</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -981,23 +1033,27 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>11:58</p>
-                    
-                    <p>bush and spoke her mind.</p>
-                    
-                    <p>“To be honest, I’m here about the Stirling group. I hope you can stop pressuring the Stirling group. We can negotiate terms.” Thaddeus spoke in a low voice, his gaze full of pressure. “After all, in Elmsworth, working with our Abernathy group would be very beneficial to you, Ms. Evadne.”</p>
-                    
-                    <p>“Mr. Thaddeus, do you think I’m pressuring the Stirling group?” Evadneughed. “I think I’m just making a legitimate report, exposing some businesses that only care about profits and ignore the bottom line, reminding our peers in the Industry not to follow in our footsteps. It’s hard toin when you buy inferior goods.”</p>
-                    
-                    <p>“Problems are inevitable in the production process. Many car brands with a hundred years of history are still recalled for various issues.” Thaddeus continued to defend the Stirling group. “Ms. Evadne could have contacted the manufacturer for a refund or recement. There’s no need to damage the Stirling group’s image by spreading negative news. Using the power of the Ashbourne group to pressure a medium-sized enterprise, so ruthless and ungrateful. I’m afraid no one would dare to cooperate with the Ashbourne group in Elmsworth in the future.”</p>
-                    
-                    <p>Evadne stared coldly at Thaddeus, crushing the chocte in her hand. Thaddeus was clearly throwing threats, telling her that if she didn’t let the Stirling group off the h ook, the Ashbourne group would face obstacles from the Abernathy group in Elmsworth.</p>
-                    
-                    <p>Daring to threaten her? Did he think she, Evadne, was a pushover?!</p>
-                    
-                    <p>“Mr. Thaddeus, you’re really something, protecting your sweetheart with all your heart and running around for your fiancée. I’m moved. But business and personal matters can’t be mixed up. You’vee to me time and again, even withstanding rejection, all for love. But I can’t let the Stirling group off the h ook just because of your love, even if you are the influential Thaddeus in Elmsworth.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>11:58</p>
+                        
+                        <p>bush and spoke her mind.</p>
+                        
+                        <p>“To be honest, I’m here about the Stirling group. I hope you can stop pressuring the Stirling group. We can negotiate terms.” Thaddeus spoke in a low voice, his gaze full of pressure. “After all, in Elmsworth, working with our Abernathy group would be very beneficial to you, Ms. Evadne.”</p>
+                        
+                        <p>“Mr. Thaddeus, do you think I’m pressuring the Stirling group?” Evadneughed. “I think I’m just making a legitimate report, exposing some businesses that only care about profits and ignore the bottom line, reminding our peers in the Industry not to follow in our footsteps. It’s hard toin when you buy inferior goods.”</p>
+                        
+                        <p>“Problems are inevitable in the production process. Many car brands with a hundred years of history are still recalled for various issues.” Thaddeus continued to defend the Stirling group. “Ms. Evadne could have contacted the manufacturer for a refund or recement. There’s no need to damage the Stirling group’s image by spreading negative news. Using the power of the Ashbourne group to pressure a medium-sized enterprise, so ruthless and ungrateful. I’m afraid no one would dare to cooperate with the Ashbourne group in Elmsworth in the future.”</p>
+                        
+                        <p>Evadne stared coldly at Thaddeus, crushing the chocte in her hand. Thaddeus was clearly throwing threats, telling her that if she didn’t let the Stirling group off the h ook, the Ashbourne group would face obstacles from the Abernathy group in Elmsworth.</p>
+                        
+                        <p>Daring to threaten her? Did he think she, Evadne, was a pushover?!</p>
+                        
+                        <p>“Mr. Thaddeus, you’re really something, protecting your sweetheart with all your heart and running around for your fiancée. I’m moved. But business and personal matters can’t be mixed up. You’vee to me time and again, even withstanding rejection, all for love. But I can’t let the Stirling group off the h ook just because of your love, even if you are the influential Thaddeus in Elmsworth.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1012,23 +1068,27 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Thaddeus’ face hardened with displeasure, but he couldn’t argue against Evadne’s words. He usually wouldn’t deal with such a mess personally, but this time he was indeed doing it for Acacia.</p>
-                    
-                    <p>Looking at the man’s stiff face on the screen, Evadne felt a sense of triumph. “Seems like we’re not going to reach an agreement. I’ve got a grasp of your stance today. If there’s any offence in the future when we meet in the business field, do forgive me, Ms. Evadne.”</p>
-                    
-                    <p>Thaddeus rose elegantly, despite being rejected. He still maintained his dignity, standing straight like a pine tree, a soldier’s resolve.</p>
-                    
-                    <p>Just as he was about to walk away, a voice rang out behind him.</p>
-                    
-                    <p>-“Ms. Evadne, I was wrong! I made a mistake in a moment of impulse! Please…please give me a way out! If this gets out, I won’t be able to hold my head up in all of Elmsworth!”</p>
-                    
-                    <p>-“This was Mr. Ives’s idea. I thought all mattresses were about the same, so I didn’t think much about it and just went along with his idea!”</p>
-                    
-                    <p>Thaddeus turned around in shock, his head buzzing as if it had been hit by a bomb!</p>
-                    
-                    <p>After ying the recording, Evadne elegantly lifted her beautiful leg, watching the man’s face turn from white to red and back to white again. She felt extremely satisfied.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Thaddeus’ face hardened with displeasure, but he couldn’t argue against Evadne’s words. He usually wouldn’t deal with such a mess personally, but this time he was indeed doing it for Acacia.</p>
+                        
+                        <p>Looking at the man’s stiff face on the screen, Evadne felt a sense of triumph. “Seems like we’re not going to reach an agreement. I’ve got a grasp of your stance today. If there’s any offence in the future when we meet in the business field, do forgive me, Ms. Evadne.”</p>
+                        
+                        <p>Thaddeus rose elegantly, despite being rejected. He still maintained his dignity, standing straight like a pine tree, a soldier’s resolve.</p>
+                        
+                        <p>Just as he was about to walk away, a voice rang out behind him.</p>
+                        
+                        <p>-“Ms. Evadne, I was wrong! I made a mistake in a moment of impulse! Please…please give me a way out! If this gets out, I won’t be able to hold my head up in all of Elmsworth!”</p>
+                        
+                        <p>-“This was Mr. Ives’s idea. I thought all mattresses were about the same, so I didn’t think much about it and just went along with his idea!”</p>
+                        
+                        <p>Thaddeus turned around in shock, his head buzzing as if it had been hit by a bomb!</p>
+                        
+                        <p>After ying the recording, Evadne elegantly lifted her beautiful leg, watching the man’s face turn from white to red and back to white again. She felt extremely satisfied.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1043,23 +1103,27 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>“If it’s a good small or medium business, my Ashbourne group is willing to help them. But if someone is harming the collective interest, and it’s affecting my Ashbourne group, then I’m willing to y the dragon like a brave warrior, no mercy.” Evadne gave a slight smile, “I’ve remembered your words, Mr. Thaddeus. Further talk is pointless, see you in the business field.”</p>
-                    
-                    <p>Thaddeus didn’t know how he walked out of the office, feeling every nerve trembling, his b*dy cold as if he was in a cold storage.</p>
-                    
-                    <p>“Mr. Thaddeus! How did it go? Did that Evadne give you a hard time? Did she agree to your request? Mr. Thaddeus?” Gordon quickly came up to ask, noticing his pale face.</p>
-                    
-                    <p>“I’m fine, we’ll talkter.” Thaddeus walked forward heavily, his head starting to ache again, but it didn’t stop him from reying every word of Evadne’s in his mind.</p>
-                    
-                    <p>When the recording started ying, he felt like a joke. He had originally thought the Stirling group was innocent, only retaliated against by the Ashbourne group due to leaked engagement news, indirectly pressuring their Abernathy group. Turns out, he was the blind one, helping a viin!</p>
-                    
-                    <p>Thaddeus yanked off his tie, but his breathing didn’t get any better. Suddenly, he heard the familiar sound of high heels behind him.</p>
-                    
-                    <p>Was it na?</p>
-                    
-                    <p>Thaddeus’ heart clenched in anxiety, he whipped around. The corridor was already empty.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>“If it’s a good small or medium business, my Ashbourne group is willing to help them. But if someone is harming the collective interest, and it’s affecting my Ashbourne group, then I’m willing to y the dragon like a brave warrior, no mercy.” Evadne gave a slight smile, “I’ve remembered your words, Mr. Thaddeus. Further talk is pointless, see you in the business field.”</p>
+                        
+                        <p>Thaddeus didn’t know how he walked out of the office, feeling every nerve trembling, his b*dy cold as if he was in a cold storage.</p>
+                        
+                        <p>“Mr. Thaddeus! How did it go? Did that Evadne give you a hard time? Did she agree to your request? Mr. Thaddeus?” Gordon quickly came up to ask, noticing his pale face.</p>
+                        
+                        <p>“I’m fine, we’ll talkter.” Thaddeus walked forward heavily, his head starting to ache again, but it didn’t stop him from reying every word of Evadne’s in his mind.</p>
+                        
+                        <p>When the recording started ying, he felt like a joke. He had originally thought the Stirling group was innocent, only retaliated against by the Ashbourne group due to leaked engagement news, indirectly pressuring their Abernathy group. Turns out, he was the blind one, helping a viin!</p>
+                        
+                        <p>Thaddeus yanked off his tie, but his breathing didn’t get any better. Suddenly, he heard the familiar sound of high heels behind him.</p>
+                        
+                        <p>Was it na?</p>
+                        
+                        <p>Thaddeus’ heart clenched in anxiety, he whipped around. The corridor was already empty.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2375,6 +2439,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2501,7 +2645,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2543,32 +2686,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2579,21 +2704,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2626,6 +2741,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2646,20 +2767,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

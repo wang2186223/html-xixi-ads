@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.403434">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.403434">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.405500">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.405500">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.403434",
-        "dateModified": "2026-07-19T02:47:23.403434",
+        "datePublished": "2026-07-19T13:03:18.405500",
+        "dateModified": "2026-07-19T13:03:18.405500",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,25 +893,29 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Howard&#39;s POV</p>
-                    
-                    <p>I had just returned to my office after lunch when Robert Johnson walked in. His demeanor had changed significantly since his family&#39;s financial collapse-the arrogant heir was now replaced by a man humbled by circumstance. As he handed mne a folder containing his project proposal.I noticed his slightly nervous posture.</p>
-                    
-                    <p>I quickly reviewed the documents, noting both the promising concept and the overly cautious implementation strategy.</p>
-                    
-                    <p>&#34;Did you prepare these yourself?&#34; I asked calmly, placing the folder on my desk.</p>
-                    
-                    <p>Robert nodded, meeting my gaze directly. &#34;Yes, I did everything myself.&#34;</p>
-                    
-                    <p>&#34;The progress is too slow,&#34; I stated matter-of-factly.&#34;Your project&#39;s greatest advantage is speed-being first to market. If you can&#39;t develop it in the shortest time possible, and someone else has the same idea and starts working on it...&#34; I paused deliberately, making sure my point was clear,&#34;then you have no advantage at all. Do you understand?&#34;</p>
-                    
-                    <p>Robert nodded solemnly. &#34;I understand, but I just didn&#39;t want to waste your money.&#34;</p>
-                    
-                    <p>I could see the transformation in him. Since his family&#39;s investment company went bankrupt, he was no longer the privileged heir to a fortune.He had learned firsthand how difficult it was to get anyone in New York&#39;s brutal business environment to lend him money or invest in his ideas.That&#39;s why he was trying to save me expenses. &#34;T&#39;m not short on money.&#34; I replied expressionlessly.&#34;If you want to make a comeback in this industry, you need to be more generous,not hesitant about spending.&#34;</p>
-                    
-                    <p>Robert focused intently on me. &#34;I see that now.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Howard&#39;s POV</p>
+                        
+                        <p>I had just returned to my office after lunch when Robert Johnson walked in. His demeanor had changed significantly since his family&#39;s financial collapse-the arrogant heir was now replaced by a man humbled by circumstance. As he handed mne a folder containing his project proposal.I noticed his slightly nervous posture.</p>
+                        
+                        <p>I quickly reviewed the documents, noting both the promising concept and the overly cautious implementation strategy.</p>
+                        
+                        <p>&#34;Did you prepare these yourself?&#34; I asked calmly, placing the folder on my desk.</p>
+                        
+                        <p>Robert nodded, meeting my gaze directly. &#34;Yes, I did everything myself.&#34;</p>
+                        
+                        <p>&#34;The progress is too slow,&#34; I stated matter-of-factly.&#34;Your project&#39;s greatest advantage is speed-being first to market. If you can&#39;t develop it in the shortest time possible, and someone else has the same idea and starts working on it...&#34; I paused deliberately, making sure my point was clear,&#34;then you have no advantage at all. Do you understand?&#34;</p>
+                        
+                        <p>Robert nodded solemnly. &#34;I understand, but I just didn&#39;t want to waste your money.&#34;</p>
+                        
+                        <p>I could see the transformation in him. Since his family&#39;s investment company went bankrupt, he was no longer the privileged heir to a fortune.He had learned firsthand how difficult it was to get anyone in New York&#39;s brutal business environment to lend him money or invest in his ideas.That&#39;s why he was trying to save me expenses. &#34;T&#39;m not short on money.&#34; I replied expressionlessly.&#34;If you want to make a comeback in this industry, you need to be more generous,not hesitant about spending.&#34;</p>
+                        
+                        <p>Robert focused intently on me. &#34;I see that now.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -890,25 +930,29 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Good.&#34; Satisfied with his response, I posinted out several potential issues in the project implementation process, drawing on my years of experience in the tech industry.</p>
-                    
-                    <p>Robert carefully noted everything down, marking up the project documentation, clearly intending to make the changes as soon as he returned to his workspace.</p>
-                    
-                    <p>I nodded with satisfaction, then took out my phone and called the head of Human Resources, asking him to come to my office.</p>
-                    
-                    <p>The HR manager arrived promptly. &#34;You wanted to see me, Mr.Thompson?&#34; he inquired.</p>
-                    
-                    <p>&#34;Yes,&#34; I stood up and introduced Robert. &#34;This is Robert Johnson. He has a new project and needs to hire some staff. Could you understand his requirements and help with the recruitment?&#34;</p>
-                    
-                    <p>The manager immediately turned to Robert. &#34;Approximately how many people do you need? What kind of talent are you looking for?&#34;</p>
-                    
-                    <p>Robert looked back at me, clearly still uncertain about making major decisions without my explicit approval.</p>
-                    
-                    <p>I nodded encouragingly, wanting him to take ownership of his project.</p>
-                    
-                    <p>Only then did Robert explain his requirements to the manager,gradually gaining confidence as he outlined the specific skills and experience needed. After listening, the HR manager confirmed his understanding and said.&#34;T Il bring you good news soon.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Good.&#34; Satisfied with his response, I posinted out several potential issues in the project implementation process, drawing on my years of experience in the tech industry.</p>
+                        
+                        <p>Robert carefully noted everything down, marking up the project documentation, clearly intending to make the changes as soon as he returned to his workspace.</p>
+                        
+                        <p>I nodded with satisfaction, then took out my phone and called the head of Human Resources, asking him to come to my office.</p>
+                        
+                        <p>The HR manager arrived promptly. &#34;You wanted to see me, Mr.Thompson?&#34; he inquired.</p>
+                        
+                        <p>&#34;Yes,&#34; I stood up and introduced Robert. &#34;This is Robert Johnson. He has a new project and needs to hire some staff. Could you understand his requirements and help with the recruitment?&#34;</p>
+                        
+                        <p>The manager immediately turned to Robert. &#34;Approximately how many people do you need? What kind of talent are you looking for?&#34;</p>
+                        
+                        <p>Robert looked back at me, clearly still uncertain about making major decisions without my explicit approval.</p>
+                        
+                        <p>I nodded encouragingly, wanting him to take ownership of his project.</p>
+                        
+                        <p>Only then did Robert explain his requirements to the manager,gradually gaining confidence as he outlined the specific skills and experience needed. After listening, the HR manager confirmed his understanding and said.&#34;T Il bring you good news soon.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -923,25 +967,29 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;Thank you,&#34; Robent replied, with more authority in his voice than I had heard in months.</p>
-                    
-                    <p>Having reached an agreement, the two men bid me farewell and walked toward the door.</p>
-                    
-                    <p>I calmly nodded in acknowledgment, then sat back in my chair.1considered my plan-helping Robert rebuild his career while redirecting Sarah&#39;s attention back to him. If Sarah became busy pursuing Robert or his business ventures, she would have less time to cause trouble for Annie.</p>
-                    
-                    <p>Although Robert had seen through Sarah&#39;s facade and recognized that she didn&#39;t truly love him, but merely used him as a tool for social climbing.How Robert would handle Sarah&#39;s entanglement was his own business. My only goal was to divert Sarah&#39;s attention away from Annie.</p>
-                    
-                    <p>&#34;Knock,knock.&#34;</p>
-                    
-                    <p>Hearing someone at the door, I said, &#34;Come in.&#34;</p>
-                    
-                    <p>Catherine Morgan pushed open the office door and walked in. She looked around, her expression immediately turning confused.</p>
-                    
-                    <p>&#34;Where&#39;s Annie?&#34; she asked, her gaze lingering on the spot where Annie usually worked.</p>
-                    
-                    <p>&#34;She went to sign books at the printing factory in Brooklyn,&#34; I answvered.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;Thank you,&#34; Robent replied, with more authority in his voice than I had heard in months.</p>
+                        
+                        <p>Having reached an agreement, the two men bid me farewell and walked toward the door.</p>
+                        
+                        <p>I calmly nodded in acknowledgment, then sat back in my chair.1considered my plan-helping Robert rebuild his career while redirecting Sarah&#39;s attention back to him. If Sarah became busy pursuing Robert or his business ventures, she would have less time to cause trouble for Annie.</p>
+                        
+                        <p>Although Robert had seen through Sarah&#39;s facade and recognized that she didn&#39;t truly love him, but merely used him as a tool for social climbing.How Robert would handle Sarah&#39;s entanglement was his own business. My only goal was to divert Sarah&#39;s attention away from Annie.</p>
+                        
+                        <p>&#34;Knock,knock.&#34;</p>
+                        
+                        <p>Hearing someone at the door, I said, &#34;Come in.&#34;</p>
+                        
+                        <p>Catherine Morgan pushed open the office door and walked in. She looked around, her expression immediately turning confused.</p>
+                        
+                        <p>&#34;Where&#39;s Annie?&#34; she asked, her gaze lingering on the spot where Annie usually worked.</p>
+                        
+                        <p>&#34;She went to sign books at the printing factory in Brooklyn,&#34; I answvered.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -956,25 +1004,29 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Catherine&#39;s shoulders visibly slumped, her mouth turning downward.&#34;</p>
-                    
-                    <p>Why didn&#39;t you tell me earlier?&#34; Her tone carried a hint of reproach Rather than answering directly. I countered. &#34;If I had told you,would you have believed me?&#34;</p>
-                    
-                    <p>Catherine looked at me and shook her head without hesitation.&#34;Of course not.&#34;</p>
-                    
-                    <p>&#34;Then why would I waste the effort?&#34; I replied calmly.</p>
-                    
-                    <p>I noticed Catherine&#39;s brow furrow slightly before smoothing out again.evidently weighing my logic. After a few seconds, she pouted but didn&#39;t argue.</p>
-                    
-                    <p>&#34;What did you need her for?&#34; I asked.</p>
-                    
-                    <p>Catherine lifted her chin slightly. &#34;I&#39;ll talk to her when she gets back.&#34;With that, she turned toward the office door, her high heels making sharp sounds against the floor.</p>
-                    
-                    <p>After pulling the door open, she didn&#39;t immediately close it, and I saw Susan standing outside with a stack of files in her hands. The two women stood in the doorway, apparently unaware that I could hear their conversation.</p>
-                    
-                    <p>&#34;Any new gossip?&#34; Susan&#39;s voice was lowered, but still clearly audible in the quiet office. Her eyes sparkled with excitement.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Catherine&#39;s shoulders visibly slumped, her mouth turning downward.&#34;</p>
+                        
+                        <p>Why didn&#39;t you tell me earlier?&#34; Her tone carried a hint of reproach Rather than answering directly. I countered. &#34;If I had told you,would you have believed me?&#34;</p>
+                        
+                        <p>Catherine looked at me and shook her head without hesitation.&#34;Of course not.&#34;</p>
+                        
+                        <p>&#34;Then why would I waste the effort?&#34; I replied calmly.</p>
+                        
+                        <p>I noticed Catherine&#39;s brow furrow slightly before smoothing out again.evidently weighing my logic. After a few seconds, she pouted but didn&#39;t argue.</p>
+                        
+                        <p>&#34;What did you need her for?&#34; I asked.</p>
+                        
+                        <p>Catherine lifted her chin slightly. &#34;I&#39;ll talk to her when she gets back.&#34;With that, she turned toward the office door, her high heels making sharp sounds against the floor.</p>
+                        
+                        <p>After pulling the door open, she didn&#39;t immediately close it, and I saw Susan standing outside with a stack of files in her hands. The two women stood in the doorway, apparently unaware that I could hear their conversation.</p>
+                        
+                        <p>&#34;Any new gossip?&#34; Susan&#39;s voice was lowered, but still clearly audible in the quiet office. Her eyes sparkled with excitement.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -989,25 +1041,29 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;Yes!&#34; Catherine responded in an equally hushed tone, stepping a few paces outside the door. &#34;I&#39;ve been dying to share it with someone.&#34;</p>
-                    
-                    <p>I watched as Susan leaned closer to Catherine, whispering, &#34;Wait for me after work. We&#39;ll find somewhere to chat properly!&#34;</p>
-                    
-                    <p>&#34;Deal!&#34; Catherine answered,looking quite pleased. I shook my head slightly.somewhat amused by the scene.</p>
-                    
-                    <p>The office gossip network probably operated more efficiently than any of our business projects. Catherine&#39;s marketing team had just completed their quarterly project, so it seemed she indeed had some spare time to collect and spread company anecdotes.</p>
-                    
-                    <p>Perhaps it was time to assign her some new tasks-after all,idle employees easily directed their energy to unnecessary places. I looked forward to seeing her new ideas for market expansion at the next department meeting.</p>
-                    
-                    <p>The two women hadn&#39;t realized I was observing all this. After making their arrangement, Catherine left, and Susan turned to enter my office.closing the door behind her.</p>
-                    
-                    <p>&#34;Mr. Thompson,&#34; she resumed her professional demeanor and asked.&#34;Previously when you needed to hire staff, you always had me arrange it.Why not today?&#34;</p>
-                    
-                    <p>&#34;You&#39;re too busy,&#34; I explained. I knew she was already responsible for Annie&#39;s comics and handling other administrative matters,with her work hours already fully scheduled.</p>
-                    
-                    <p>Susan seemed dissatisfied. &#34;But that&#39;s part of my job responsibilities. When you do this, it makes me wonder if I&#39;m not performing well enough.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;Yes!&#34; Catherine responded in an equally hushed tone, stepping a few paces outside the door. &#34;I&#39;ve been dying to share it with someone.&#34;</p>
+                        
+                        <p>I watched as Susan leaned closer to Catherine, whispering, &#34;Wait for me after work. We&#39;ll find somewhere to chat properly!&#34;</p>
+                        
+                        <p>&#34;Deal!&#34; Catherine answered,looking quite pleased. I shook my head slightly.somewhat amused by the scene.</p>
+                        
+                        <p>The office gossip network probably operated more efficiently than any of our business projects. Catherine&#39;s marketing team had just completed their quarterly project, so it seemed she indeed had some spare time to collect and spread company anecdotes.</p>
+                        
+                        <p>Perhaps it was time to assign her some new tasks-after all,idle employees easily directed their energy to unnecessary places. I looked forward to seeing her new ideas for market expansion at the next department meeting.</p>
+                        
+                        <p>The two women hadn&#39;t realized I was observing all this. After making their arrangement, Catherine left, and Susan turned to enter my office.closing the door behind her.</p>
+                        
+                        <p>&#34;Mr. Thompson,&#34; she resumed her professional demeanor and asked.&#34;Previously when you needed to hire staff, you always had me arrange it.Why not today?&#34;</p>
+                        
+                        <p>&#34;You&#39;re too busy,&#34; I explained. I knew she was already responsible for Annie&#39;s comics and handling other administrative matters,with her work hours already fully scheduled.</p>
+                        
+                        <p>Susan seemed dissatisfied. &#34;But that&#39;s part of my job responsibilities. When you do this, it makes me wonder if I&#39;m not performing well enough.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1022,25 +1078,29 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;Not at all.&#34; I assured her. &#34;You&#39;ve been doing excellently.&#34;</p>
-                    
-                    <p>Susan smiled. &#34;Then in the future,please tell me about anything directly,and Ill arrange it for you?&#34;</p>
-                    
-                    <p>Seeing her willingness to take on these tasks, I agreed.∘Alright. Susan began her report: &#34;The foreign publishers have completed the publishing process for Annie&#39;s comic, but they&#39;re planning to print only one batch of books initially, without immediate sales. They want to produce a movie first, then launch merchandise and books when it&#39;s globally released, which is expected to generate explosive sales.However.they&#39;re asking if we&#39;re willing to invest upfront.&#34;</p>
-                    
-                    <p>I didn&#39;t respond immediately, carefully considering the proposal.</p>
-                    
-                    <p>&#34;If the box office performance is good, we&#39;ll certainly make a substantial profit,&#34; Susan added, with slight excitement in her voice.</p>
-                    
-                    <p>&#34;But have you considered what would happen if the box office performance is poor?&#34; I asked.</p>
-                    
-                    <p>Susan blinked,looking slightly confused,obviously having not thought of this. &#34;So your idea is not to invest,just give them operational rights?&#34;</p>
-                    
-                    <p>&#34;That&#39;s not my style,&#34; I replied. &#34;If wwe&#39;re going to invest, according to their plan, there must be one critical element-we must ensure absolute decision-making authority over this project. Otherwise, they&#39;ll produce a terrible movie,claim it was made according to our requirements, and swallow our investment. If the box office is poor, we suffer significant losses.&#34;</p>
-                    
-                    <p>Susan&#39;s expression changed immediately. She sat up straight, her fingers unconsciously tightening for a moment before relaxing. &#34;I&#39;m sorry, Mr.Thompson. I didn&#39;t initially consider these factors.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;Not at all.&#34; I assured her. &#34;You&#39;ve been doing excellently.&#34;</p>
+                        
+                        <p>Susan smiled. &#34;Then in the future,please tell me about anything directly,and Ill arrange it for you?&#34;</p>
+                        
+                        <p>Seeing her willingness to take on these tasks, I agreed.∘Alright. Susan began her report: &#34;The foreign publishers have completed the publishing process for Annie&#39;s comic, but they&#39;re planning to print only one batch of books initially, without immediate sales. They want to produce a movie first, then launch merchandise and books when it&#39;s globally released, which is expected to generate explosive sales.However.they&#39;re asking if we&#39;re willing to invest upfront.&#34;</p>
+                        
+                        <p>I didn&#39;t respond immediately, carefully considering the proposal.</p>
+                        
+                        <p>&#34;If the box office performance is good, we&#39;ll certainly make a substantial profit,&#34; Susan added, with slight excitement in her voice.</p>
+                        
+                        <p>&#34;But have you considered what would happen if the box office performance is poor?&#34; I asked.</p>
+                        
+                        <p>Susan blinked,looking slightly confused,obviously having not thought of this. &#34;So your idea is not to invest,just give them operational rights?&#34;</p>
+                        
+                        <p>&#34;That&#39;s not my style,&#34; I replied. &#34;If wwe&#39;re going to invest, according to their plan, there must be one critical element-we must ensure absolute decision-making authority over this project. Otherwise, they&#39;ll produce a terrible movie,claim it was made according to our requirements, and swallow our investment. If the box office is poor, we suffer significant losses.&#34;</p>
+                        
+                        <p>Susan&#39;s expression changed immediately. She sat up straight, her fingers unconsciously tightening for a moment before relaxing. &#34;I&#39;m sorry, Mr.Thompson. I didn&#39;t initially consider these factors.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1055,23 +1115,27 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;It&#39;s fine. We can invest because we&#39;re not short on money,but what&#39;s important is...&#34; I paused for emphasis, &#34;we cannot be taken advantage of.Since we&#39;re investing. we have the right to oversee the fiIm content.We can negotiate with them to reach a mutually beneficial outcome, but the minimum requirement is that the movie must b e engaging.&#34; &#34;I understand. Should I communicate with them now?&#34; Susan nodded.already picking up her notebook.</p>
-                    
-                    <p>&#34;Not so fast. let me finish. The film production cycle typically ranges from three months to a year before official release. If we want to maximize the film&#39;s value, we must have our animation department staf create as much animated content from the comics as possible during this time.&#34;</p>
-                    
-                    <p>Susan&#39;s brow furrowed slightly, seemingly trying to grasp my reasoning.</p>
-                    
-                    <p>&#34;This way, when the film is officially released and people are paying attention to this work, they&#39;ll search for related information. The film&#39;s viral success will increase awareness of the work. What we want to do is extend the comic&#39;s influence for as long as possible, so both Annie and we can benefit more.&#34;</p>
-                    
-                    <p>Susan&#39;s eyes brightened, and she quickly jotted something in her notebook,occasionally nodding. &#34;I completely understand, Mr. Thompson.&#34;</p>
-                    
-                    <p>&#34;Now you can contact the publishers,&#34; I said.</p>
-                    
-                    <p>&#34;Yes,sir,&#34; she replied,closing her notebook and promptly leaving my office.</p>
-                    
-                    <p>My thoughts drifted to Annie, wondering how her day at the printing factory was going, and looking forward to seeing her soon at Lucy&#39;s school.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;It&#39;s fine. We can invest because we&#39;re not short on money,but what&#39;s important is...&#34; I paused for emphasis, &#34;we cannot be taken advantage of.Since we&#39;re investing. we have the right to oversee the fiIm content.We can negotiate with them to reach a mutually beneficial outcome, but the minimum requirement is that the movie must b e engaging.&#34; &#34;I understand. Should I communicate with them now?&#34; Susan nodded.already picking up her notebook.</p>
+                        
+                        <p>&#34;Not so fast. let me finish. The film production cycle typically ranges from three months to a year before official release. If we want to maximize the film&#39;s value, we must have our animation department staf create as much animated content from the comics as possible during this time.&#34;</p>
+                        
+                        <p>Susan&#39;s brow furrowed slightly, seemingly trying to grasp my reasoning.</p>
+                        
+                        <p>&#34;This way, when the film is officially released and people are paying attention to this work, they&#39;ll search for related information. The film&#39;s viral success will increase awareness of the work. What we want to do is extend the comic&#39;s influence for as long as possible, so both Annie and we can benefit more.&#34;</p>
+                        
+                        <p>Susan&#39;s eyes brightened, and she quickly jotted something in her notebook,occasionally nodding. &#34;I completely understand, Mr. Thompson.&#34;</p>
+                        
+                        <p>&#34;Now you can contact the publishers,&#34; I said.</p>
+                        
+                        <p>&#34;Yes,sir,&#34; she replied,closing her notebook and promptly leaving my office.</p>
+                        
+                        <p>My thoughts drifted to Annie, wondering how her day at the printing factory was going, and looking forward to seeing her soon at Lucy&#39;s school.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2387,6 +2451,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2513,7 +2657,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2555,32 +2698,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2591,21 +2716,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2638,6 +2753,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2658,20 +2779,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

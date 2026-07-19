@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.297716">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.297716">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.297523">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.297523">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.297716",
-        "dateModified": "2026-07-19T02:47:23.297716",
+        "datePublished": "2026-07-19T13:03:18.297523",
+        "dateModified": "2026-07-19T13:03:18.297523",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,27 +893,31 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Jareth arrived at the hotel’s restaurant with his femalepanion.</p>
-                    
-                    <p>The moment the food hit the table, his date started snapping photos like crazy. Jareth was irritated by this. “What are you doing? Never seen food before?”</p>
-                    
-                    <p>She awkwardly put away her phone and started eating in silence.</p>
-                    
-                    <p>After they finished, the restaurant manager came over with a courteous smile. “Mr. Jareth, were our dishes to your liking?”</p>
-                    
-                    <p>“Very good. The meat had a nice bite to it. I’m very pleased.”</p>
-                    
-                    <p>Although Jareth’s personal life was somewhatplicated, he was, after all, from a wealthy family, and his manners and demeanor were still quite refined.</p>
-                    
-                    <p>“What’s this? It’s just tough meat. It tastes awful.” She rudely mmed the cutlery on the table, making a loud sound.</p>
-                    
-                    <p>Jareth’s face darkened instantly, his eyes zing with anger.</p>
-                    
-                    <p>“We will take your feedback to heart and improve. We are truly sorry for your unpleasant experience.” The manager’s attitude was impable, and he bowed deeply.</p>
-                    
-                    <p>“Don’t listen to her. She forgot to wear her dentures today. She wouldn’t be able to chew marshmellow, let alone meat.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Jareth arrived at the hotel’s restaurant with his femalepanion.</p>
+                        
+                        <p>The moment the food hit the table, his date started snapping photos like crazy. Jareth was irritated by this. “What are you doing? Never seen food before?”</p>
+                        
+                        <p>She awkwardly put away her phone and started eating in silence.</p>
+                        
+                        <p>After they finished, the restaurant manager came over with a courteous smile. “Mr. Jareth, were our dishes to your liking?”</p>
+                        
+                        <p>“Very good. The meat had a nice bite to it. I’m very pleased.”</p>
+                        
+                        <p>Although Jareth’s personal life was somewhatplicated, he was, after all, from a wealthy family, and his manners and demeanor were still quite refined.</p>
+                        
+                        <p>“What’s this? It’s just tough meat. It tastes awful.” She rudely mmed the cutlery on the table, making a loud sound.</p>
+                        
+                        <p>Jareth’s face darkened instantly, his eyes zing with anger.</p>
+                        
+                        <p>“We will take your feedback to heart and improve. We are truly sorry for your unpleasant experience.” The manager’s attitude was impable, and he bowed deeply.</p>
+                        
+                        <p>“Don’t listen to her. She forgot to wear her dentures today. She wouldn’t be able to chew marshmellow, let alone meat.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -892,27 +932,31 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Her face froze. She didn’t dare to retort to Jareth’s mocking.</p>
-                    
-                    <p>Jareth pulled out his wallet, took out a w ad of cash, and ced it before the manager. While everyone else had moved onto digital payments, he was still carrying around cold hard cash.</p>
-                    
-                    <p>“This is a tip for you. By the way, do you have a staff member named na?” Jareth’s hand was propping up his chin, his eyes full of longing.</p>
-                    
-                    <p>“Mr. Jareth, our service philosophy is ‘you reap what you sow.’ We don’t ept tips from customers. Also, we don’t have an employee named na.”</p>
-                    
-                    <p>“What? No way!” Jareth was flustered. “I saw her unloading stuff at the back door when I arrived. How can you say there’s no such person? Go and check.”</p>
-                    
-                    <p>“I’m sorry, Mr. Jareth, there’s no need to check. I’ve been working here for fifteen years. I know all the staff, and there’s no one by that name.” The manager left after finishing his sentence.</p>
-                    
-                    <p>As Jareth was pondering this, a beautiful figure caught his eye. Evadne gracefully strolled into the restaurant alone.</p>
-                    
-                    <p>She saw Jareth and was slightly surprised, but her expression remained calm. She had been married to Thaddeus for three years, and he never took her out or introduced her to his friends.</p>
-                    
-                    <p>Still, Evadne knew Thaddeus’s best buddy was Jareth. Their personalities were pr opposites, but she knew their bond was tight. They were best buddies.</p>
-                    
-                    <p>Luckily, there were no other staff in the restaurant at this time. It would have been a disaster if someone had called her ‘CEO’.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Her face froze. She didn’t dare to retort to Jareth’s mocking.</p>
+                        
+                        <p>Jareth pulled out his wallet, took out a w ad of cash, and ced it before the manager. While everyone else had moved onto digital payments, he was still carrying around cold hard cash.</p>
+                        
+                        <p>“This is a tip for you. By the way, do you have a staff member named na?” Jareth’s hand was propping up his chin, his eyes full of longing.</p>
+                        
+                        <p>“Mr. Jareth, our service philosophy is ‘you reap what you sow.’ We don’t ept tips from customers. Also, we don’t have an employee named na.”</p>
+                        
+                        <p>“What? No way!” Jareth was flustered. “I saw her unloading stuff at the back door when I arrived. How can you say there’s no such person? Go and check.”</p>
+                        
+                        <p>“I’m sorry, Mr. Jareth, there’s no need to check. I’ve been working here for fifteen years. I know all the staff, and there’s no one by that name.” The manager left after finishing his sentence.</p>
+                        
+                        <p>As Jareth was pondering this, a beautiful figure caught his eye. Evadne gracefully strolled into the restaurant alone.</p>
+                        
+                        <p>She saw Jareth and was slightly surprised, but her expression remained calm. She had been married to Thaddeus for three years, and he never took her out or introduced her to his friends.</p>
+                        
+                        <p>Still, Evadne knew Thaddeus’s best buddy was Jareth. Their personalities were pr opposites, but she knew their bond was tight. They were best buddies.</p>
+                        
+                        <p>Luckily, there were no other staff in the restaurant at this time. It would have been a disaster if someone had called her ‘CEO’.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -927,27 +971,31 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Jareth’s eyes were glued to “na”, his eyes practically popping out of his head.</p>
-                    
-                    <p>His date saw that Jareth had set his sights on a new target and was fuming with jealousy. The way Jareth looked at this woman was different, like he was experiencing first love. She was burning with envy.</p>
-                    
-                    <p>Evadne ordered a cup of coffee from the waiter and sat down to check her phone.</p>
-                    
-                    <p>“Ms. na, what a coincidence. You’re here too?”</p>
-                    
-                    <p>Evadne raised her eyes coldly. There was no emotion in her gaze when she saw Jareth.</p>
-                    
-                    <p>“I’m just taking a break. I work here.”</p>
-                    
-                    <p>Jareth raised an eyebrow. He knew she worked here all along, but he had asked out of respect. This woman was so straightforward and not vain. His liking for her grew even stronger.</p>
-                    
-                    <p>“Sigh, Cas sius doesn’t know how to treat a woman. You’re such a great woman, he should treat you well. How could he let you work here? He really doesn’t know how to take care of girls.” Jareth’s palm was propping his chin, his fingers gently rubbing his cheek.</p>
-                    
-                    <p>“Treat me well?”</p>
-                    
-                    <p>Evadneughed coldly, “I was confined at home by Thaddeus for three years. I’ve had enough of that isted life. Jareth, you actually want me to experience that again?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Jareth’s eyes were glued to “na”, his eyes practically popping out of his head.</p>
+                        
+                        <p>His date saw that Jareth had set his sights on a new target and was fuming with jealousy. The way Jareth looked at this woman was different, like he was experiencing first love. She was burning with envy.</p>
+                        
+                        <p>Evadne ordered a cup of coffee from the waiter and sat down to check her phone.</p>
+                        
+                        <p>“Ms. na, what a coincidence. You’re here too?”</p>
+                        
+                        <p>Evadne raised her eyes coldly. There was no emotion in her gaze when she saw Jareth.</p>
+                        
+                        <p>“I’m just taking a break. I work here.”</p>
+                        
+                        <p>Jareth raised an eyebrow. He knew she worked here all along, but he had asked out of respect. This woman was so straightforward and not vain. His liking for her grew even stronger.</p>
+                        
+                        <p>“Sigh, Cas sius doesn’t know how to treat a woman. You’re such a great woman, he should treat you well. How could he let you work here? He really doesn’t know how to take care of girls.” Jareth’s palm was propping his chin, his fingers gently rubbing his cheek.</p>
+                        
+                        <p>“Treat me well?”</p>
+                        
+                        <p>Evadneughed coldly, “I was confined at home by Thaddeus for three years. I’ve had enough of that isted life. Jareth, you actually want me to experience that again?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -962,27 +1010,31 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Jareth was taken aback. The woman’s smile carried a chilling murderous intent, stabbing a pain in the bottom of his eyes.</p>
-                    
-                    <p>“After leaving Thaddeus, I vowed to be an independent woman. I won’t be looked down upon by anyone, even if it’s tough and hard, I’m willing to work for it. President Ashbourne gave me the opportunity to improve myself, and I’m grateful to him. He’s always respected my choices, so please don’t badmouth him.”</p>
-                    
-                    <p>Jareth was left speechless by Evadne’s words, his smile bing awkward.</p>
-                    
-                    <p>“Mr. Jareth, your girlfriend is waiting for you over there. It’s not nice to flirt with other women, Is it?” Evadne started to rush him impatiently. “Just because we had dinner doesn’t make her my girlfriend. Does a k*ss mean we’re engaged?” Jareth’s eyes sparkled with an enticing. glimmer. “I’ll pick you up tonight for dinner. What do you want to eat? I’ll make the reservation.”</p>
-                    
-                    <p>“I already have a boyfriend, Mr. Jareth.” Evadne’s tone was impatient.</p>
-                    
-                    <p>“I don’t care if you have an ex-husband or a boyfriend.” Jareth never yed by the rules when it came to romance. He only considered his feelings and didn’t care if it was appropriate. “If you’re scared, we can go to my private vi. It’s very secluded, and my chef is Michelin three-star rated. I’ll have them prepare in advance.”</p>
-                    
-                    <p>Evadne’s brows furrowed, thinking when would her coffee arrive? Once it arrived, she’d give Jareth a wake-up call.</p>
-                    
-                    <p>Just then, Jareth’s phone rang. He took it out and saw that it was Thaddeus.</p>
-                    
-                    <p>“I need to take a call. My apologies.”</p>
-                    
-                    <p>Jareth temporarily excused himself, and her coffee finally arrived. Before Evadne could even take a sip, Jareth’s date strutted over arrogantly. She hadn’t heard their conversation clearly, but she knew this woman was the staff Jareth had asked about earlier.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Jareth was taken aback. The woman’s smile carried a chilling murderous intent, stabbing a pain in the bottom of his eyes.</p>
+                        
+                        <p>“After leaving Thaddeus, I vowed to be an independent woman. I won’t be looked down upon by anyone, even if it’s tough and hard, I’m willing to work for it. President Ashbourne gave me the opportunity to improve myself, and I’m grateful to him. He’s always respected my choices, so please don’t badmouth him.”</p>
+                        
+                        <p>Jareth was left speechless by Evadne’s words, his smile bing awkward.</p>
+                        
+                        <p>“Mr. Jareth, your girlfriend is waiting for you over there. It’s not nice to flirt with other women, Is it?” Evadne started to rush him impatiently. “Just because we had dinner doesn’t make her my girlfriend. Does a k*ss mean we’re engaged?” Jareth’s eyes sparkled with an enticing. glimmer. “I’ll pick you up tonight for dinner. What do you want to eat? I’ll make the reservation.”</p>
+                        
+                        <p>“I already have a boyfriend, Mr. Jareth.” Evadne’s tone was impatient.</p>
+                        
+                        <p>“I don’t care if you have an ex-husband or a boyfriend.” Jareth never yed by the rules when it came to romance. He only considered his feelings and didn’t care if it was appropriate. “If you’re scared, we can go to my private vi. It’s very secluded, and my chef is Michelin three-star rated. I’ll have them prepare in advance.”</p>
+                        
+                        <p>Evadne’s brows furrowed, thinking when would her coffee arrive? Once it arrived, she’d give Jareth a wake-up call.</p>
+                        
+                        <p>Just then, Jareth’s phone rang. He took it out and saw that it was Thaddeus.</p>
+                        
+                        <p>“I need to take a call. My apologies.”</p>
+                        
+                        <p>Jareth temporarily excused himself, and her coffee finally arrived. Before Evadne could even take a sip, Jareth’s date strutted over arrogantly. She hadn’t heard their conversation clearly, but she knew this woman was the staff Jareth had asked about earlier.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -997,27 +1049,31 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Amon employee dared to flirt with her boyfriend? She needed to teach her a lesson.</p>
-                    
-                    <p>“Hey, I’m warning you. If you want to keep your job here, stay away from Mr. Jareth.” She red at Evadne, her eyes seemingly spitting fire.</p>
-                    
-                    <p>Evadne furrowed her delicate eyebrows and waved her hand in front of her nose. The overpowering perfume was giving her a headache. She wasn’t sure if Jareth also found the perfume too overpowering.</p>
-                    
-                    <p>“So what if I don’t do as you say?” Evadne asked nonchntly, not even bothering to look up.</p>
-                    
-                    <p>“I’ll file aint and get you fired.”</p>
-                    
-                    <p>“Comin about me? Because you’re not happy that Jareth is talking to me?”</p>
-                    
-                    <p>“You!” The other woman’s face turned crimson with anger.</p>
-                    
-                    <p>“Well then, go ahead andin. You can take it up with our President Ashbourne. He’ll probably just tell you that you’re out of your mind.” “You wench!”</p>
-                    
-                    <p>The woman was uncontroble with rage, reaching for the coffee on the table to teach this more beautiful woman a lesson.</p>
-                    
-                    <p>But in the next moment, “Ah!” Evadne quickly grabbed the coffee cup and sshed the entire contents onto her face.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Amon employee dared to flirt with her boyfriend? She needed to teach her a lesson.</p>
+                        
+                        <p>“Hey, I’m warning you. If you want to keep your job here, stay away from Mr. Jareth.” She red at Evadne, her eyes seemingly spitting fire.</p>
+                        
+                        <p>Evadne furrowed her delicate eyebrows and waved her hand in front of her nose. The overpowering perfume was giving her a headache. She wasn’t sure if Jareth also found the perfume too overpowering.</p>
+                        
+                        <p>“So what if I don’t do as you say?” Evadne asked nonchntly, not even bothering to look up.</p>
+                        
+                        <p>“I’ll file aint and get you fired.”</p>
+                        
+                        <p>“Comin about me? Because you’re not happy that Jareth is talking to me?”</p>
+                        
+                        <p>“You!” The other woman’s face turned crimson with anger.</p>
+                        
+                        <p>“Well then, go ahead andin. You can take it up with our President Ashbourne. He’ll probably just tell you that you’re out of your mind.” “You wench!”</p>
+                        
+                        <p>The woman was uncontroble with rage, reaching for the coffee on the table to teach this more beautiful woman a lesson.</p>
+                        
+                        <p>But in the next moment, “Ah!” Evadne quickly grabbed the coffee cup and sshed the entire contents onto her face.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1032,27 +1088,31 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>The woman’s makeup was ruined, and her brand-new designer dress had been stained. Her l*ps trembled, and she was on the verge of tears, utterly devastated.</p>
-                    
-                    <p>Evadne picked up a napkin and gently wiped away a drop of coffee that had sshed onto her hand. Her red l*ps curled into a smile as</p>
-                    
-                    <p>radiant as a flower.</p>
-                    
-                    <p>“Between you and me, one of us was bound to get hurt, and it certainly wasn’t going to be me.”</p>
-                    
-                    <p>In the hallway, Jareth picked up a phone call.</p>
-                    
-                    <p>“Hey, Thad, what’s up?”</p>
-                    
-                    <p>“Mrs. Jareth’s birthday is the day after tomorrow. Come with me to pick out a gift tonight, I’m clueless.”</p>
-                    
-                    <p>“Ohe on, my mom treats you like her own son, she’d cherish even a de of gra** from you. Just pick something.”</p>
-                    
-                    <p>“No, you have toe with me tonight.”</p>
-                    
-                    <p>“Can’t do tonight, how about tomorrow? I have a date tonight.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>The woman’s makeup was ruined, and her brand-new designer dress had been stained. Her l*ps trembled, and she was on the verge of tears, utterly devastated.</p>
+                        
+                        <p>Evadne picked up a napkin and gently wiped away a drop of coffee that had sshed onto her hand. Her red l*ps curled into a smile as</p>
+                        
+                        <p>radiant as a flower.</p>
+                        
+                        <p>“Between you and me, one of us was bound to get hurt, and it certainly wasn’t going to be me.”</p>
+                        
+                        <p>In the hallway, Jareth picked up a phone call.</p>
+                        
+                        <p>“Hey, Thad, what’s up?”</p>
+                        
+                        <p>“Mrs. Jareth’s birthday is the day after tomorrow. Come with me to pick out a gift tonight, I’m clueless.”</p>
+                        
+                        <p>“Ohe on, my mom treats you like her own son, she’d cherish even a de of gra** from you. Just pick something.”</p>
+                        
+                        <p>“No, you have toe with me tonight.”</p>
+                        
+                        <p>“Can’t do tonight, how about tomorrow? I have a date tonight.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1067,21 +1127,25 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>“Cancel it.”</p>
-                    
-                    <p>“I’ve already promised her dinner, how can I stand her up? That’s just not gentlemanly.”</p>
-                    
-                    <p>Jareth tapped his cheek with his tongue, took a moment to think, and realized that friendship shouldn’t be too selfish. While he might not be</p>
-                    
-                    <p>a gentleman, he certainly wasn’t the type to do something bad behind a friend’s back.</p>
-                    
-                    <p>If he were to do something, he would do it openly. So he cleared his throat, and said seriously, “Just so you know, my date tonight is with your ex-wife.”</p>
-                    
-                    <p>Suddenly, silence fell on the other end of the phone. “Hello, are you there?” Jareth checked his phone screen to make sure he hadn’t been hung up on.</p>
-                    
-                    <p>After a moment, Thaddeus’s cold voice came through the speaker, sounding as harsh as a gunshot. “Are you with na now?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>“Cancel it.”</p>
+                        
+                        <p>“I’ve already promised her dinner, how can I stand her up? That’s just not gentlemanly.”</p>
+                        
+                        <p>Jareth tapped his cheek with his tongue, took a moment to think, and realized that friendship shouldn’t be too selfish. While he might not be</p>
+                        
+                        <p>a gentleman, he certainly wasn’t the type to do something bad behind a friend’s back.</p>
+                        
+                        <p>If he were to do something, he would do it openly. So he cleared his throat, and said seriously, “Just so you know, my date tonight is with your ex-wife.”</p>
+                        
+                        <p>Suddenly, silence fell on the other end of the phone. “Hello, are you there?” Jareth checked his phone screen to make sure he hadn’t been hung up on.</p>
+                        
+                        <p>After a moment, Thaddeus’s cold voice came through the speaker, sounding as harsh as a gunshot. “Are you with na now?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2397,6 +2461,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2523,7 +2667,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2565,32 +2708,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2601,21 +2726,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2648,6 +2763,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2668,20 +2789,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

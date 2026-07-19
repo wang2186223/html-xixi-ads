@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.008107">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.008107">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.186168">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.186168">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.008107",
-        "dateModified": "2026-07-19T02:47:19.008107",
+        "datePublished": "2026-07-19T13:03:14.186168",
+        "dateModified": "2026-07-19T13:03:14.186168",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,33 +893,37 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV</p>
-                    
-                    <p>My eyes widened. &#34;You this is...&#34;</p>
-                    
-                    <p>&#34;I&#39;m moving in with you,&#34; Astrid announced,setting the suitcase down,her tone matter-of-fact as she straightened up.</p>
-                    
-                    <p>She patted my shoulder. &#34;I told my parents about your stomach cancer.They totally agree I should be here looking after you.&#34;</p>
-                    
-                    <p>&#34;Starting today, I&#39;ll be living under the same roof, keeping an eye on you 24/7!&#34;</p>
-                    
-                    <p>She took a breath, her voice dropping. &#34;I&#39;ve been thinking... we need to be realistic.&#34;</p>
-                    
-                    <p>&#34;If they can&#39;t cure you...&#34; she paused,&#34;atleast I&#39;ll be with you through the end.&#34;</p>
-                    
-                    <p>Her words caught me off guard. My eyes burned unexpectedly.</p>
-                    
-                    <p>I sniffed and turned away. &#34;Going to wash my face.&#34;</p>
-                    
-                    <p>In the bathroom, I tred to pull myself together. I splashed cold water on my face, fighting against the lump forming in my throat.</p>
-                    
-                    <p>Astrid leaned against the doorframe as I dried my face, &#34;So how&#39;s the company situation?&#34;</p>
-                    
-                    <p>My hands paused. &#34;Not great.&#34;</p>
-                    
-                    <p>I sniffed. &#34;The partner company&#39;s boss is Blake Parker. And you know.Laurel&#39;s always with him, she messed everything up. We&#39;ll have to</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV</p>
+                        
+                        <p>My eyes widened. &#34;You this is...&#34;</p>
+                        
+                        <p>&#34;I&#39;m moving in with you,&#34; Astrid announced,setting the suitcase down,her tone matter-of-fact as she straightened up.</p>
+                        
+                        <p>She patted my shoulder. &#34;I told my parents about your stomach cancer.They totally agree I should be here looking after you.&#34;</p>
+                        
+                        <p>&#34;Starting today, I&#39;ll be living under the same roof, keeping an eye on you 24/7!&#34;</p>
+                        
+                        <p>She took a breath, her voice dropping. &#34;I&#39;ve been thinking... we need to be realistic.&#34;</p>
+                        
+                        <p>&#34;If they can&#39;t cure you...&#34; she paused,&#34;atleast I&#39;ll be with you through the end.&#34;</p>
+                        
+                        <p>Her words caught me off guard. My eyes burned unexpectedly.</p>
+                        
+                        <p>I sniffed and turned away. &#34;Going to wash my face.&#34;</p>
+                        
+                        <p>In the bathroom, I tred to pull myself together. I splashed cold water on my face, fighting against the lump forming in my throat.</p>
+                        
+                        <p>Astrid leaned against the doorframe as I dried my face, &#34;So how&#39;s the company situation?&#34;</p>
+                        
+                        <p>My hands paused. &#34;Not great.&#34;</p>
+                        
+                        <p>I sniffed. &#34;The partner company&#39;s boss is Blake Parker. And you know.Laurel&#39;s always with him, she messed everything up. We&#39;ll have to</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -898,33 +938,37 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>reschedule.&#34;</p>
-                    
-                    <p>Astrid rolled her eyes. &#34;That woman...&#34;</p>
-                    
-                    <p>&#34;Audrey, what does Blake see in her?&#34;</p>
-                    
-                    <p>&#34;I seriously don&#39;t get why Blake, who couldn&#39;t appreciate you,fell for someone like her.&#34;</p>
-                    
-                    <p>&#34;Did she save his life or something? He does whatever she wants.&#34;</p>
-                    
-                    <p>I laughed dryly.&#34;Who knows.&#34;</p>
-                    
-                    <p>I wiped my face with a towel. &#34;Maybe Blake sees something in Laurel that we can&#39;t.&#34;</p>
-                    
-                    <p>Astrid rolled her eyes harder. &#34;What could anyone possibly see in her?&#34;</p>
-                    
-                    <p>&#34;The moment I met her, I knew she was trouble. Guess I was right.&#34;</p>
-                    
-                    <p>Astrid waved her hand. &#34;Let&#39;s drop this.&#34;</p>
-                    
-                    <p>&#34;Audrey, before everything happened two days ago, the phone you got...&#34;</p>
-                    
-                    <p>&#34;Did you look through it? Is it really Rachel&#39;s?&#34;</p>
-                    
-                    <p>I bit my lip, then nodded. &#34;It is.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>reschedule.&#34;</p>
+                        
+                        <p>Astrid rolled her eyes. &#34;That woman...&#34;</p>
+                        
+                        <p>&#34;Audrey, what does Blake see in her?&#34;</p>
+                        
+                        <p>&#34;I seriously don&#39;t get why Blake, who couldn&#39;t appreciate you,fell for someone like her.&#34;</p>
+                        
+                        <p>&#34;Did she save his life or something? He does whatever she wants.&#34;</p>
+                        
+                        <p>I laughed dryly.&#34;Who knows.&#34;</p>
+                        
+                        <p>I wiped my face with a towel. &#34;Maybe Blake sees something in Laurel that we can&#39;t.&#34;</p>
+                        
+                        <p>Astrid rolled her eyes harder. &#34;What could anyone possibly see in her?&#34;</p>
+                        
+                        <p>&#34;The moment I met her, I knew she was trouble. Guess I was right.&#34;</p>
+                        
+                        <p>Astrid waved her hand. &#34;Let&#39;s drop this.&#34;</p>
+                        
+                        <p>&#34;Audrey, before everything happened two days ago, the phone you got...&#34;</p>
+                        
+                        <p>&#34;Did you look through it? Is it really Rachel&#39;s?&#34;</p>
+                        
+                        <p>I bit my lip, then nodded. &#34;It is.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -939,33 +983,37 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;There are pictures of us together on it.&#34;</p>
-                    
-                    <p>Astrid&#39;s eyes lit up immediately. &#34;So we might actually find the Hayes family and see Rachel?&#34;</p>
-                    
-                    <p>I nodded quietly.</p>
-                    
-                    <p>&#34;That&#39;s amazing!&#34; Astrid practically yelled. &#34;We&#39;re going to see Rachel</p>
-                    
-                    <p>again!&#34;</p>
-                    
-                    <p>&#34;It&#39;s been four years! Wonder if she&#39;s gotten any better. Maybe she&#39;ll wake up like Blake did and make her own miracle!&#34;</p>
-                    
-                    <p>I managed a smile. &#34;I&#39;m curious too.&#34;</p>
-                    
-                    <p>I wasn&#39;t ready to tell Astrid that the Rose family was Rachel&#39;s family.With her temper, she&#39;d probably march straight to Twilight Mansion. I needed more time to understand what happened to Rachel first.</p>
-                    
-                    <p>&#34;Hey, check this out,&#34; Astrid said, handing me a newspaper. &#34;Look at the article about the murder.&#34;</p>
-                    
-                    <p>I took it, scanning the page with a frown.</p>
-                    
-                    <p>&#34;Keep reading. The woman who was killed - her name is Jennifer Carson.&#34;</p>
-                    
-                    <p>I stopped cold, looking up at Astrid.</p>
-                    
-                    <p>She nodded. &#34;Yeah, it&#39;s Laurel&#39;s agent. The one you had arrested.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;There are pictures of us together on it.&#34;</p>
+                        
+                        <p>Astrid&#39;s eyes lit up immediately. &#34;So we might actually find the Hayes family and see Rachel?&#34;</p>
+                        
+                        <p>I nodded quietly.</p>
+                        
+                        <p>&#34;That&#39;s amazing!&#34; Astrid practically yelled. &#34;We&#39;re going to see Rachel</p>
+                        
+                        <p>again!&#34;</p>
+                        
+                        <p>&#34;It&#39;s been four years! Wonder if she&#39;s gotten any better. Maybe she&#39;ll wake up like Blake did and make her own miracle!&#34;</p>
+                        
+                        <p>I managed a smile. &#34;I&#39;m curious too.&#34;</p>
+                        
+                        <p>I wasn&#39;t ready to tell Astrid that the Rose family was Rachel&#39;s family.With her temper, she&#39;d probably march straight to Twilight Mansion. I needed more time to understand what happened to Rachel first.</p>
+                        
+                        <p>&#34;Hey, check this out,&#34; Astrid said, handing me a newspaper. &#34;Look at the article about the murder.&#34;</p>
+                        
+                        <p>I took it, scanning the page with a frown.</p>
+                        
+                        <p>&#34;Keep reading. The woman who was killed - her name is Jennifer Carson.&#34;</p>
+                        
+                        <p>I stopped cold, looking up at Astrid.</p>
+                        
+                        <p>She nodded. &#34;Yeah, it&#39;s Laurel&#39;s agent. The one you had arrested.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -980,33 +1028,37 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Why was she still locked up?&#34; I asked, confused.</p>
-                    
-                    <p>Astrid sighed. &#34;You don&#39;t know? When you withdrew your charges, that only cleared her of theft and assault.&#34;</p>
-                    
-                    <p>&#34;Someone else pressed charges for the kidnapping plot and car crash conspiracy.She never got out.&#34;</p>
-                    
-                    <p>&#34;She died in custody early this morning.&#34;</p>
-                    
-                    <p>&#34;People are saying Laurel had her silenced,&#34; Astrid continued. &#34;Jennifer worked for her for years - she must&#39;ve known all LaureI&#39;s secrets.&#34;</p>
-                    
-                    <p>&#34;Laurel probablythought having you drop your charges would free her.When that didn&#39;t work...&#34;</p>
-                    
-                    <p>She shook her head. &#34;It&#39;s cold-blooded. Jennifer worked for her for years!Even with those charges, her sentence wouldn&#39;t have been that severe -nobody got seriously hurt.&#34;</p>
-                    
-                    <p>&#34;I can&#39;t believe Laurel would do this to someone so loyal,&#34; Astrid said.&#34;Audrey,what does Blake see in her?&#34;</p>
-                    
-                    <p>I put the newspaper down. &#34;I don&#39;t know. And I don&#39;t want to know.&#34;</p>
-                    
-                    <p>The news left me uneasy. Despite everything Jennifer did to me, I never wanted her dead. The thought that Laurel might have had her killed was chilling.</p>
-                    
-                    <p>Astrid insisted on cooking dinner, worried I hadn&#39;t eaten all day. After sunset, we finished our meal and decided to walk in the nearby park.</p>
-                    
-                    <p>The evening air carried the scent of trees and grass. With each step, the frustration from my confrontation at Twilight Mansion seemed to fade away.</p>
-                    
-                    <p>We circled the park several times, pointing out flowers and cloud shapes.It was simple and exactly what I needed.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Why was she still locked up?&#34; I asked, confused.</p>
+                        
+                        <p>Astrid sighed. &#34;You don&#39;t know? When you withdrew your charges, that only cleared her of theft and assault.&#34;</p>
+                        
+                        <p>&#34;Someone else pressed charges for the kidnapping plot and car crash conspiracy.She never got out.&#34;</p>
+                        
+                        <p>&#34;She died in custody early this morning.&#34;</p>
+                        
+                        <p>&#34;People are saying Laurel had her silenced,&#34; Astrid continued. &#34;Jennifer worked for her for years - she must&#39;ve known all LaureI&#39;s secrets.&#34;</p>
+                        
+                        <p>&#34;Laurel probablythought having you drop your charges would free her.When that didn&#39;t work...&#34;</p>
+                        
+                        <p>She shook her head. &#34;It&#39;s cold-blooded. Jennifer worked for her for years!Even with those charges, her sentence wouldn&#39;t have been that severe -nobody got seriously hurt.&#34;</p>
+                        
+                        <p>&#34;I can&#39;t believe Laurel would do this to someone so loyal,&#34; Astrid said.&#34;Audrey,what does Blake see in her?&#34;</p>
+                        
+                        <p>I put the newspaper down. &#34;I don&#39;t know. And I don&#39;t want to know.&#34;</p>
+                        
+                        <p>The news left me uneasy. Despite everything Jennifer did to me, I never wanted her dead. The thought that Laurel might have had her killed was chilling.</p>
+                        
+                        <p>Astrid insisted on cooking dinner, worried I hadn&#39;t eaten all day. After sunset, we finished our meal and decided to walk in the nearby park.</p>
+                        
+                        <p>The evening air carried the scent of trees and grass. With each step, the frustration from my confrontation at Twilight Mansion seemed to fade away.</p>
+                        
+                        <p>We circled the park several times, pointing out flowers and cloud shapes.It was simple and exactly what I needed.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1021,33 +1073,37 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>*If Astrid hadn&#39;t come over, I&#39;d probably be sitting alone in my apartment brooding.&#34;</p>
-                    
-                    <p>As we headed back, I felt lighter than I had in months.</p>
-                    
-                    <p>That feeling vanished when we approached my building.</p>
-                    
-                    <p>Blake Parker stood by his car, smoking. Seelng us, he straightened up and</p>
-                    
-                    <p>put out his cigarette.</p>
-                    
-                    <p>&#34;You&#39;re back?&#34; he asked hoarsely.</p>
-                    
-                    <p>I noticed the ground near Blake&#39;s feet was littered with cigarette butts. At least twenty or thirty. He must have been waiting for hours.</p>
-                    
-                    <p>I asked. &#34;Mr. Parker? Shouldn&#39;t you be at the hospital with your emotionally fragile Miss Rose? What are you doing here?&#34;</p>
-                    
-                    <p>Blake frowned. &#34;Audrey Sinclair, we need to talk.&#34;</p>
-                    
-                    <p>&#34;Business or personal?&#34; I asked flatly.</p>
-                    
-                    <p>His dark eyes just studied me silently.</p>
-                    
-                    <p>&#34;If it&#39;s business, I&#39;ll call James right now.&#34;</p>
-                    
-                    <p>&#34;If it&#39;s personal, I don&#39;t have time to waste. We&#39;re divorced,remember?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>*If Astrid hadn&#39;t come over, I&#39;d probably be sitting alone in my apartment brooding.&#34;</p>
+                        
+                        <p>As we headed back, I felt lighter than I had in months.</p>
+                        
+                        <p>That feeling vanished when we approached my building.</p>
+                        
+                        <p>Blake Parker stood by his car, smoking. Seelng us, he straightened up and</p>
+                        
+                        <p>put out his cigarette.</p>
+                        
+                        <p>&#34;You&#39;re back?&#34; he asked hoarsely.</p>
+                        
+                        <p>I noticed the ground near Blake&#39;s feet was littered with cigarette butts. At least twenty or thirty. He must have been waiting for hours.</p>
+                        
+                        <p>I asked. &#34;Mr. Parker? Shouldn&#39;t you be at the hospital with your emotionally fragile Miss Rose? What are you doing here?&#34;</p>
+                        
+                        <p>Blake frowned. &#34;Audrey Sinclair, we need to talk.&#34;</p>
+                        
+                        <p>&#34;Business or personal?&#34; I asked flatly.</p>
+                        
+                        <p>His dark eyes just studied me silently.</p>
+                        
+                        <p>&#34;If it&#39;s business, I&#39;ll call James right now.&#34;</p>
+                        
+                        <p>&#34;If it&#39;s personal, I don&#39;t have time to waste. We&#39;re divorced,remember?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1062,33 +1118,37 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Astrid gave him a cold look. &#34;Just go. She doesn&#39;t want to talk to you.&#34;</p>
-                    
-                    <p>I walked past him toward the entrance, Astrid&#39;s arm linked through mine.</p>
-                    
-                    <p>We&#39;d almost reached the door when I heard quick footsteps behind us.</p>
-                    
-                    <p>Blake grabbed my arm, his grip painfully tight.</p>
-                    
-                    <p>I winced, forced to stop. &#34;Let go!&#34;</p>
-                    
-                    <p>He held on, keeping pace as I tried to move forward. &#34;Audrey Sinclair, I want to talk to you... about Rachel Hayes.&#34;</p>
-                    
-                    <p>That name made me stop in my tracks.</p>
-                    
-                    <p>&#34;What about her?&#34; I asked, turning to face him.</p>
-                    
-                    <p>Blake&#39;s eyes flicked to Astrid. &#34;Can we talk privately?&#34;</p>
-                    
-                    <p>&#34;Hell no.&#34; Astrid snapped. &#34;I&#39;m not leaving her alone with you.&#34;</p>
-                    
-                    <p>Blake laughed, the sound harsh in the quiet street. &#34;You really think you could stop me if I wanted to do something?&#34;</p>
-                    
-                    <p>Astrid tensed. &#34;You arrogant-&#34;</p>
-                    
-                    <p>&#34;Astrid,&#34; I cut in.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Astrid gave him a cold look. &#34;Just go. She doesn&#39;t want to talk to you.&#34;</p>
+                        
+                        <p>I walked past him toward the entrance, Astrid&#39;s arm linked through mine.</p>
+                        
+                        <p>We&#39;d almost reached the door when I heard quick footsteps behind us.</p>
+                        
+                        <p>Blake grabbed my arm, his grip painfully tight.</p>
+                        
+                        <p>I winced, forced to stop. &#34;Let go!&#34;</p>
+                        
+                        <p>He held on, keeping pace as I tried to move forward. &#34;Audrey Sinclair, I want to talk to you... about Rachel Hayes.&#34;</p>
+                        
+                        <p>That name made me stop in my tracks.</p>
+                        
+                        <p>&#34;What about her?&#34; I asked, turning to face him.</p>
+                        
+                        <p>Blake&#39;s eyes flicked to Astrid. &#34;Can we talk privately?&#34;</p>
+                        
+                        <p>&#34;Hell no.&#34; Astrid snapped. &#34;I&#39;m not leaving her alone with you.&#34;</p>
+                        
+                        <p>Blake laughed, the sound harsh in the quiet street. &#34;You really think you could stop me if I wanted to do something?&#34;</p>
+                        
+                        <p>Astrid tensed. &#34;You arrogant-&#34;</p>
+                        
+                        <p>&#34;Astrid,&#34; I cut in.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1103,23 +1163,27 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>I touched Astrid&#39;s arm, my eyes fixed on Blake. &#34;Answer one question and I&#39;ll talk to you alone.&#34;</p>
-                    
-                    <p>&#34;Fine.&#34;</p>
-                    
-                    <p>I pulled up the news article about Jennifer on my phone and held it out.&#34;Was this you?&#34;</p>
-                    
-                    <p>As he read, his expression shifted from confusion to shock.</p>
-                    
-                    <p>&#34;Jennifer&#39;s dead?&#34; He handed back my phone, genuinely surprised.</p>
-                    
-                    <p>&#34;Yes,&#34; I watched his face carefully. &#34;The police mentioned someone reported her for orchestrating the kidnapping and car crash.&#34;</p>
-                    
-                    <p>&#34;I was there for both incidents, but I didn&#39;t file those reports.&#34;</p>
-                    
-                    <p>I studied him, keeping my voice level. &#34;So the person who made sure Jennifer stayed locked up... was it you?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>I touched Astrid&#39;s arm, my eyes fixed on Blake. &#34;Answer one question and I&#39;ll talk to you alone.&#34;</p>
+                        
+                        <p>&#34;Fine.&#34;</p>
+                        
+                        <p>I pulled up the news article about Jennifer on my phone and held it out.&#34;Was this you?&#34;</p>
+                        
+                        <p>As he read, his expression shifted from confusion to shock.</p>
+                        
+                        <p>&#34;Jennifer&#39;s dead?&#34; He handed back my phone, genuinely surprised.</p>
+                        
+                        <p>&#34;Yes,&#34; I watched his face carefully. &#34;The police mentioned someone reported her for orchestrating the kidnapping and car crash.&#34;</p>
+                        
+                        <p>&#34;I was there for both incidents, but I didn&#39;t file those reports.&#34;</p>
+                        
+                        <p>I studied him, keeping my voice level. &#34;So the person who made sure Jennifer stayed locked up... was it you?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2435,6 +2499,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2561,7 +2705,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2603,32 +2746,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2639,21 +2764,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2686,6 +2801,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2706,20 +2827,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

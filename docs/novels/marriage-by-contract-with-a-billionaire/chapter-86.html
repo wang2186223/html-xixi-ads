@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:29.762379">
-    <meta property="article:modified_time" content="2026-07-19T02:47:29.762379">
+    <meta property="article:published_time" content="2026-07-19T13:03:24.143371">
+    <meta property="article:modified_time" content="2026-07-19T13:03:24.143371">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:29">
+    <meta name="last-modified" content="2026-07-19 13:03:24">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:29.762379",
-        "dateModified": "2026-07-19T02:47:29.762379",
+        "datePublished": "2026-07-19T13:03:24.143371",
+        "dateModified": "2026-07-19T13:03:24.143371",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,27 +893,31 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>The entire news media, both on television and online,was abuzz with the story of Viola&#39;s abduction, making it the day&#39;s top headline. Picturesof Viola and her kidnapper, Harlord, were everywhere, accompanied by a generous reward offer for anyone who could provide information leading to their capture. The disappearance of Viola quickly became the concern of not just the city but also surrounding areas.</p>
-                    
-                    <p>People were shocked and wondered who would have the audacity to kidnap Alexander Kane&#39;s daughter. They were confident, however, that whoever was behind it would be caught, given Alexander&#39;s extensive influence.</p>
-                    
-                    <p>In a concealed hideout on the outskirts of the city, a woman sat in a chair.watching the news coverage with a smug expression.</p>
-                    
-                    <p>&#34;Tsk, tsk,&#34; she muttered, glancing over at Viola, who was fast asleep on a nearby bed.“Your parents are going out of their minds searching for you,little princess. If only they knew they won&#39;t find you unless we decide otherwise,&#34; she said with a chuckle.</p>
-                    
-                    <p>The sedative they had given Viola kept her in a deep sleep, and she wouldn&#39;t wake until the mnorning. The woman was pleased with how their plan was unfolding. By morning, Alexander and Lilly would be fraintic.and soon enough, they would understand exactly who they were dealing with. This scheme had been in the works for two years, and everything was going according to plan.</p>
-                    
-                    <p>Night had fallen, but no one had left the school where Viola was last seen.Everyone stayed close to Lilly, who had been crying and refusing to leave the cold floor. Peter watched his daughter with growing concern.</p>
-                    
-                    <p>As soon as Alexander landed, he rushed to the school.</p>
-                    
-                    <p>“Alexander, you&#39;re here at last,&#34; Ethan said upon seeing him.</p>
-                    
-                    <p>&#34;Where&#39;s Lilly?&#34; Alexander asked, his eyes searching the area.</p>
-                    
-                    <p>“She&#39;s in Viola&#39;s classroom. She hasn&#39;t left the floor since it happened.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>The entire news media, both on television and online,was abuzz with the story of Viola&#39;s abduction, making it the day&#39;s top headline. Picturesof Viola and her kidnapper, Harlord, were everywhere, accompanied by a generous reward offer for anyone who could provide information leading to their capture. The disappearance of Viola quickly became the concern of not just the city but also surrounding areas.</p>
+                        
+                        <p>People were shocked and wondered who would have the audacity to kidnap Alexander Kane&#39;s daughter. They were confident, however, that whoever was behind it would be caught, given Alexander&#39;s extensive influence.</p>
+                        
+                        <p>In a concealed hideout on the outskirts of the city, a woman sat in a chair.watching the news coverage with a smug expression.</p>
+                        
+                        <p>&#34;Tsk, tsk,&#34; she muttered, glancing over at Viola, who was fast asleep on a nearby bed.“Your parents are going out of their minds searching for you,little princess. If only they knew they won&#39;t find you unless we decide otherwise,&#34; she said with a chuckle.</p>
+                        
+                        <p>The sedative they had given Viola kept her in a deep sleep, and she wouldn&#39;t wake until the mnorning. The woman was pleased with how their plan was unfolding. By morning, Alexander and Lilly would be fraintic.and soon enough, they would understand exactly who they were dealing with. This scheme had been in the works for two years, and everything was going according to plan.</p>
+                        
+                        <p>Night had fallen, but no one had left the school where Viola was last seen.Everyone stayed close to Lilly, who had been crying and refusing to leave the cold floor. Peter watched his daughter with growing concern.</p>
+                        
+                        <p>As soon as Alexander landed, he rushed to the school.</p>
+                        
+                        <p>“Alexander, you&#39;re here at last,&#34; Ethan said upon seeing him.</p>
+                        
+                        <p>&#34;Where&#39;s Lilly?&#34; Alexander asked, his eyes searching the area.</p>
+                        
+                        <p>“She&#39;s in Viola&#39;s classroom. She hasn&#39;t left the floor since it happened.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -892,27 +932,31 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Alexander hurried into the school building and made his way to Viola&#39;s classroom, where he found Lilly sitting on the cold floor, crying.</p>
-                    
-                    <p>Seeing her like this broke his heart. He knew one of them had to be strong.and it had to be him. As much as Viola&#39;s kidnapping tore him apart, he knew he had to hold it together for both of them.</p>
-                    
-                    <p>0</p>
-                    
-                    <p>Alexander walked over to her and sat down beside her on the floor.</p>
-                    
-                    <p>Lilly looked up and saw that it was Alexander.</p>
-                    
-                    <p>“Alexander,&#34; she whispered.</p>
-                    
-                    <p>He pulled her into his-arms, gently rubbing her back. “I promise you, I will find her,&#34; he vowed.</p>
-                    
-                    <p>“But what if they hurt her? I won&#39;t be able to bear it,&#34; she said through her tears.</p>
-                    
-                    <p>“They won&#39;t dare. They&#39;ve kidnapped her, which means they have a purpose. Sooner or later, they&#39;ll make contact, and we&#39;ll trace them.&#34; “But what if they&#39;re somewhere you can&#39;t trace?&#34; Lilly asked, recalling how she once hid from him, and he couldn&#39;t find her. Alexander understood what she meant. “This time, I will find them. I&#39;ll track them down no matter where they are in the world, I promise. I have a contact,someone who can locate anyone, anywhere. I almost called him when you disappeared, but I didn&#39;t when I realized you were just hiding.But this time, I will use every resource at my disposal to find them,&#34; he assured her.</p>
-                    
-                    <p>Lilly nodded and hugged him back, seeking warmth from his embrace.though her tears continued to fall.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Alexander hurried into the school building and made his way to Viola&#39;s classroom, where he found Lilly sitting on the cold floor, crying.</p>
+                        
+                        <p>Seeing her like this broke his heart. He knew one of them had to be strong.and it had to be him. As much as Viola&#39;s kidnapping tore him apart, he knew he had to hold it together for both of them.</p>
+                        
+                        <p>0</p>
+                        
+                        <p>Alexander walked over to her and sat down beside her on the floor.</p>
+                        
+                        <p>Lilly looked up and saw that it was Alexander.</p>
+                        
+                        <p>“Alexander,&#34; she whispered.</p>
+                        
+                        <p>He pulled her into his-arms, gently rubbing her back. “I promise you, I will find her,&#34; he vowed.</p>
+                        
+                        <p>“But what if they hurt her? I won&#39;t be able to bear it,&#34; she said through her tears.</p>
+                        
+                        <p>“They won&#39;t dare. They&#39;ve kidnapped her, which means they have a purpose. Sooner or later, they&#39;ll make contact, and we&#39;ll trace them.&#34; “But what if they&#39;re somewhere you can&#39;t trace?&#34; Lilly asked, recalling how she once hid from him, and he couldn&#39;t find her. Alexander understood what she meant. “This time, I will find them. I&#39;ll track them down no matter where they are in the world, I promise. I have a contact,someone who can locate anyone, anywhere. I almost called him when you disappeared, but I didn&#39;t when I realized you were just hiding.But this time, I will use every resource at my disposal to find them,&#34; he assured her.</p>
+                        
+                        <p>Lilly nodded and hugged him back, seeking warmth from his embrace.though her tears continued to fall.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -927,27 +971,31 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;The floor is cold, my love. You&#39;ll get sick,Alexander said gently.</p>
-                    
-                    <p>&#34;I don&#39;t care.&#34;</p>
-                    
-                    <p>&#34;If you get sick, how will you help look for Viola? She won&#39;t be happy to return to a mother who&#39;s unwell.”</p>
-                    
-                    <p>Hearing this, Lilly immediately stood up. Alexander was right-Viola would be heartbroken to come back to a sick mother.</p>
-                    
-                    <p>Alexander sighed in relief when she finally stood. Her grandfather and everyone else had been trying to get her off the floor, but she had refused,insisting she would stay there until Viola was found.</p>
-                    
-                    <p>“Let&#39;s go home and rest,&#34; Alexander suggested.</p>
-                    
-                    <p>&#34;No,&#34; Lilly shook her head. &#34;I can&#39;t go home, not while Viola is missing.&#34;</p>
-                    
-                    <p>Alexander knew he couldn&#39;t convince her to go home, but he had to get her out of the cold. &#34;Alright, let&#39;s at least get into the car so you can warm up.”</p>
-                    
-                    <p>Lilly resisted, insisting on staying, but Alexander gently picked her up,noticing she was barefoot, and carried her to the car. Despite her protests, he placed her inside and joined her.</p>
-                    
-                    <p>&#34;Let me out, Alexander,&#34; she pleaded, but he shook his head.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;The floor is cold, my love. You&#39;ll get sick,Alexander said gently.</p>
+                        
+                        <p>&#34;I don&#39;t care.&#34;</p>
+                        
+                        <p>&#34;If you get sick, how will you help look for Viola? She won&#39;t be happy to return to a mother who&#39;s unwell.”</p>
+                        
+                        <p>Hearing this, Lilly immediately stood up. Alexander was right-Viola would be heartbroken to come back to a sick mother.</p>
+                        
+                        <p>Alexander sighed in relief when she finally stood. Her grandfather and everyone else had been trying to get her off the floor, but she had refused,insisting she would stay there until Viola was found.</p>
+                        
+                        <p>“Let&#39;s go home and rest,&#34; Alexander suggested.</p>
+                        
+                        <p>&#34;No,&#34; Lilly shook her head. &#34;I can&#39;t go home, not while Viola is missing.&#34;</p>
+                        
+                        <p>Alexander knew he couldn&#39;t convince her to go home, but he had to get her out of the cold. &#34;Alright, let&#39;s at least get into the car so you can warm up.”</p>
+                        
+                        <p>Lilly resisted, insisting on staying, but Alexander gently picked her up,noticing she was barefoot, and carried her to the car. Despite her protests, he placed her inside and joined her.</p>
+                        
+                        <p>&#34;Let me out, Alexander,&#34; she pleaded, but he shook his head.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -962,27 +1010,31 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;No,you&#39;re freezing. You need to warm up,&#34; he said softly.He knew he had to stay composed to take care of her.</p>
-                    
-                    <p>&#34;Drive to the other estate,&#34; he instructed the chauffeur.</p>
-                    
-                    <p>As the car drove away from the school, those who had stayed behind were relieved that Alexander had managed to get Lilly to leave.</p>
-                    
-                    <p>Caleb, feeling the weight of the situation, decided to head to the police station.“Take me to the station,&#34; he instructed James, who quickly got the car ready.</p>
-                    
-                    <p>Peter, sensing his father&#39;s determinatioń, insisted on going with him.“I&#39;m coming with you,&#34; he said, knowing they were headed to interrogate the school staff.</p>
-                    
-                    <p>Caleb nodded, and they both got into the car and left.</p>
-                    
-                    <p>Grandma Helen, whose health had been deteriorating, had already gone home.</p>
-                    
-                    <p>Outside the school, reporters wereeager to cover the story. As Alexander&#39;s car drove out, they rushed to get a statement, but the tinted windows concealed who was inside. Alexander directed the chauffeur to drive to one of their newer estates,a futuristic development constructed by his company. The estate&#39;s design featured sleek lines and bold geometric shapes, creating a visually striking aesthetic inspired by nature, technology, and contemporary art. The car stopped in front of the largest mansion in the estate, set apart from the others. Alexander got out first and then carried Lilly inside. As they approached the front door, the lights automatically illuminated, and Alexander used his fingerprint to unlock the door.</p>
-                    
-                    <p>Lilly rested her head on Alexander&#39;s chest, her thoughts consumed by worry for Viola. Was her daughter okay? Were they treating her well? Was she cold? She was only three years old, and the thought of her daughter suffering broke Lilly&#39;s heart.</p>
-                    
-                    <p>Alexander had planned to bring both Viola and Lilly to this house,but now he was glad he&#39;d decided to bring Lilly here first. He used the elevator to take them to the second floor, where the calming atmosphere of the room might help her relax.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;No,you&#39;re freezing. You need to warm up,&#34; he said softly.He knew he had to stay composed to take care of her.</p>
+                        
+                        <p>&#34;Drive to the other estate,&#34; he instructed the chauffeur.</p>
+                        
+                        <p>As the car drove away from the school, those who had stayed behind were relieved that Alexander had managed to get Lilly to leave.</p>
+                        
+                        <p>Caleb, feeling the weight of the situation, decided to head to the police station.“Take me to the station,&#34; he instructed James, who quickly got the car ready.</p>
+                        
+                        <p>Peter, sensing his father&#39;s determinatioń, insisted on going with him.“I&#39;m coming with you,&#34; he said, knowing they were headed to interrogate the school staff.</p>
+                        
+                        <p>Caleb nodded, and they both got into the car and left.</p>
+                        
+                        <p>Grandma Helen, whose health had been deteriorating, had already gone home.</p>
+                        
+                        <p>Outside the school, reporters wereeager to cover the story. As Alexander&#39;s car drove out, they rushed to get a statement, but the tinted windows concealed who was inside. Alexander directed the chauffeur to drive to one of their newer estates,a futuristic development constructed by his company. The estate&#39;s design featured sleek lines and bold geometric shapes, creating a visually striking aesthetic inspired by nature, technology, and contemporary art. The car stopped in front of the largest mansion in the estate, set apart from the others. Alexander got out first and then carried Lilly inside. As they approached the front door, the lights automatically illuminated, and Alexander used his fingerprint to unlock the door.</p>
+                        
+                        <p>Lilly rested her head on Alexander&#39;s chest, her thoughts consumed by worry for Viola. Was her daughter okay? Were they treating her well? Was she cold? She was only three years old, and the thought of her daughter suffering broke Lilly&#39;s heart.</p>
+                        
+                        <p>Alexander had planned to bring both Viola and Lilly to this house,but now he was glad he&#39;d decided to bring Lilly here first. He used the elevator to take them to the second floor, where the calming atmosphere of the room might help her relax.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -997,27 +1049,31 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>He placed Lilly on the bed and lay down beside her, wrapping his arms around her. The room was warm, thanks to the heater, and Alexander hoped it would provide some comfort.</p>
-                    
-                    <p>&#34;We can&#39;t just stay here, Alexander. Viola is missing. We should be out there looking for her,&#34; Lilly protested.</p>
-                    
-                    <p>&#34;We aren&#39;t just sitting idle. We&#39;re waiting for news from the hackers who are trying to trace the kidnapper,” Alexander reassured her. “You&#39;re freezing. I want you to warm up and eat something.&#34;</p>
-                    
-                    <p>“No,&#34; she shook her head. &#34;I need to be out there searching for Viola.&#34;</p>
-                    
-                    <p>&#34;And we will,&#34; Alexander promised. Lilly moved away from his embrace and looked at him with determination. “Promise me that when you find them, you&#39;ll let me be there, and you&#39;ll let me take care of them myself,&#34; she demanded. Alexander didn&#39;t want her to take such a dark path, but he knew she wouldn&#39;t relent. He couldn&#39;t deny her now, even though he didn&#39;t want her to follow through with it.</p>
-                    
-                    <p>“Lilly,&#34; he began, but she interrupted him.</p>
-                    
-                    <p>&#34;No, Alexander. Promise me,&#34; she insisted.</p>
-                    
-                    <p>Seeing the pain in her eyes, Alexander reluctantly nodded. &#34;I promise,&#34;he said, knowing it was a promise he would struggle to keep.</p>
-                    
-                    <p>Satisfied,Lilly snuggled back into his arms, resting her head on his chest. “You need to eat something,&#34; he urged again.</p>
-                    
-                    <p>Lilly nodded, realizing she needed to stay strong for her daughter, even if she didn&#39;t feel like eating.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>He placed Lilly on the bed and lay down beside her, wrapping his arms around her. The room was warm, thanks to the heater, and Alexander hoped it would provide some comfort.</p>
+                        
+                        <p>&#34;We can&#39;t just stay here, Alexander. Viola is missing. We should be out there looking for her,&#34; Lilly protested.</p>
+                        
+                        <p>&#34;We aren&#39;t just sitting idle. We&#39;re waiting for news from the hackers who are trying to trace the kidnapper,” Alexander reassured her. “You&#39;re freezing. I want you to warm up and eat something.&#34;</p>
+                        
+                        <p>“No,&#34; she shook her head. &#34;I need to be out there searching for Viola.&#34;</p>
+                        
+                        <p>&#34;And we will,&#34; Alexander promised. Lilly moved away from his embrace and looked at him with determination. “Promise me that when you find them, you&#39;ll let me be there, and you&#39;ll let me take care of them myself,&#34; she demanded. Alexander didn&#39;t want her to take such a dark path, but he knew she wouldn&#39;t relent. He couldn&#39;t deny her now, even though he didn&#39;t want her to follow through with it.</p>
+                        
+                        <p>“Lilly,&#34; he began, but she interrupted him.</p>
+                        
+                        <p>&#34;No, Alexander. Promise me,&#34; she insisted.</p>
+                        
+                        <p>Seeing the pain in her eyes, Alexander reluctantly nodded. &#34;I promise,&#34;he said, knowing it was a promise he would struggle to keep.</p>
+                        
+                        <p>Satisfied,Lilly snuggled back into his arms, resting her head on his chest. “You need to eat something,&#34; he urged again.</p>
+                        
+                        <p>Lilly nodded, realizing she needed to stay strong for her daughter, even if she didn&#39;t feel like eating.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1032,27 +1088,31 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Alexander stood up. &#34;Stay here, okay?&#34;he said.</p>
-                    
-                    <p>Lilly agreed, and Alexander left the room to go to the kitchen downstairs.He had made sure the fridge was stocked before they arrived. Alexander quíckly prepared some porridge and was about to head back upstairs when his phone rang.</p>
-                    
-                    <p>Seeing that it was James, he answered immediately. “Any news?”</p>
-                    
-                    <p>&#34;Yes,boss,&#34; James replied.&#34;We found out that Harlord served five years in prison before being released two years ago. During her time in prison,she was cellmates with Kate, and they were very close.&#34;“Kate?” Alexander repeated, surprised. He had kept a close watch on Kate and her mother since they were imprisoned. Two years ago,he had them separated,placing Kate in one prison and her mother in a more secure facility. “Yes,boss,&#34;James confirmed.</p>
-                    
-                    <p>Alexander was stunned. Could Kate have orchestrated this from prison?But how? There had been no reports of her escaping.</p>
-                    
-                    <p>&#34;I want you to verify if Kate is still in prison and to find out if she&#39;s had any significant outside contact,&#34; Alexander ordered.</p>
-                    
-                    <p>“Right away, boss.&#34;James replied.</p>
-                    
-                    <p>Alexander ended the call and turned around, only to fnd Lilly standing there with raised eyebrows. She must have overheard part of the conversation, and the last thing he wanted was for her to worry about Kate as well.</p>
-                    
-                    <p>“Did I hear you mention Kate?” Lilly asked, her tone sharp.</p>
-                    
-                    <p>Alexander couldn&#39;t deny it. “Yes,” he admitted.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Alexander stood up. &#34;Stay here, okay?&#34;he said.</p>
+                        
+                        <p>Lilly agreed, and Alexander left the room to go to the kitchen downstairs.He had made sure the fridge was stocked before they arrived. Alexander quíckly prepared some porridge and was about to head back upstairs when his phone rang.</p>
+                        
+                        <p>Seeing that it was James, he answered immediately. “Any news?”</p>
+                        
+                        <p>&#34;Yes,boss,&#34; James replied.&#34;We found out that Harlord served five years in prison before being released two years ago. During her time in prison,she was cellmates with Kate, and they were very close.&#34;“Kate?” Alexander repeated, surprised. He had kept a close watch on Kate and her mother since they were imprisoned. Two years ago,he had them separated,placing Kate in one prison and her mother in a more secure facility. “Yes,boss,&#34;James confirmed.</p>
+                        
+                        <p>Alexander was stunned. Could Kate have orchestrated this from prison?But how? There had been no reports of her escaping.</p>
+                        
+                        <p>&#34;I want you to verify if Kate is still in prison and to find out if she&#39;s had any significant outside contact,&#34; Alexander ordered.</p>
+                        
+                        <p>“Right away, boss.&#34;James replied.</p>
+                        
+                        <p>Alexander ended the call and turned around, only to fnd Lilly standing there with raised eyebrows. She must have overheard part of the conversation, and the last thing he wanted was for her to worry about Kate as well.</p>
+                        
+                        <p>“Did I hear you mention Kate?” Lilly asked, her tone sharp.</p>
+                        
+                        <p>Alexander couldn&#39;t deny it. “Yes,” he admitted.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1067,15 +1127,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Lilly walked closer, her expression hardening. “Is she involved in this? If she is, I&#39;ll handle her myself.”</p>
-                    
-                    <p>&#34;We don&#39;t know yet, but we&#39;re looking into it,” Alexander replied cautiously.</p>
-                    
-                    <p>Lilly wasn&#39;t going to take any chances.</p>
-                    
-                    <p>“Let me handle her,&#34; she demanded. “No,” Alexander said firmly. “This is my fighat, and I won&#39;t let you get involved.” But Lilly refused to back down. “This is about our daughter, and I will handle whoever is involved in her kidnapping.” The steel in her voice made it clear that she wouldn&#39;t be swayed.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Lilly walked closer, her expression hardening. “Is she involved in this? If she is, I&#39;ll handle her myself.”</p>
+                        
+                        <p>&#34;We don&#39;t know yet, but we&#39;re looking into it,” Alexander replied cautiously.</p>
+                        
+                        <p>Lilly wasn&#39;t going to take any chances.</p>
+                        
+                        <p>“Let me handle her,&#34; she demanded. “No,” Alexander said firmly. “This is my fighat, and I won&#39;t let you get involved.” But Lilly refused to back down. “This is about our daughter, and I will handle whoever is involved in her kidnapping.” The steel in her voice made it clear that she wouldn&#39;t be swayed.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2391,6 +2455,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2517,7 +2661,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2559,32 +2702,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2595,21 +2720,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2642,6 +2757,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2662,20 +2783,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

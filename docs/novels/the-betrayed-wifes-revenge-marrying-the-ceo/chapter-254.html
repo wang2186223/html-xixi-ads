@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.450765">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.450765">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.438912">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.438912">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.450765",
-        "dateModified": "2026-07-19T02:47:23.450765",
+        "datePublished": "2026-07-19T13:03:18.438912",
+        "dateModified": "2026-07-19T13:03:18.438912",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,17 +893,21 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Annie&#39;s POV</p>
-                    
-                    <p>Sarah&#39;s cold threat echoed in my mind as I drove through the darkening streets of New York toward Brooklyn: &#34;You and Howard need to split up now. You go to the abandoned factory on Fifth Street in Brooklyn, and Howard goes to the old pier in northern Long Island. Remember, don&#39;t tell anyone, and don&#39;t call the police. or... I can&#39;t guarantee what will happen to these children.&#34;</p>
-                    
-                    <p>My hands gripped the steering wheel so tightly my knuckles turned white.Outside the window, city lights blurred as tears threatened to cloud my vision. I blinked them away, forcing myself to focus on the road. I couldn&#39;t afford to break down now-Lucy and Brian needed me.</p>
-                    
-                    <p>The image of the empty playground from hours earlier haunted me-Lucy&#39;s favorite swing still gently swaying in the evening breeze, void of children&#39;s laughter. If only I hadn&#39;t stayedlate at the office. If only I&#39;d picked Lucy up on time. Self-recrimination gnawed at me with each mile I drove.</p>
-                    
-                    <p>A red light forced me to stop, my fingers anxiously tapping against the steering wheel. I glanced at my watch-time was slipping away, bringing Sarah&#39;s deadline ever closer. Howard was right-this was almost certainly a trap. But when I closed my eyes, all I could see was Lucy curledI in my arms,her tiny body trembling from nightmares, gradually calming under my touch.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Annie&#39;s POV</p>
+                        
+                        <p>Sarah&#39;s cold threat echoed in my mind as I drove through the darkening streets of New York toward Brooklyn: &#34;You and Howard need to split up now. You go to the abandoned factory on Fifth Street in Brooklyn, and Howard goes to the old pier in northern Long Island. Remember, don&#39;t tell anyone, and don&#39;t call the police. or... I can&#39;t guarantee what will happen to these children.&#34;</p>
+                        
+                        <p>My hands gripped the steering wheel so tightly my knuckles turned white.Outside the window, city lights blurred as tears threatened to cloud my vision. I blinked them away, forcing myself to focus on the road. I couldn&#39;t afford to break down now-Lucy and Brian needed me.</p>
+                        
+                        <p>The image of the empty playground from hours earlier haunted me-Lucy&#39;s favorite swing still gently swaying in the evening breeze, void of children&#39;s laughter. If only I hadn&#39;t stayedlate at the office. If only I&#39;d picked Lucy up on time. Self-recrimination gnawed at me with each mile I drove.</p>
+                        
+                        <p>A red light forced me to stop, my fingers anxiously tapping against the steering wheel. I glanced at my watch-time was slipping away, bringing Sarah&#39;s deadline ever closer. Howard was right-this was almost certainly a trap. But when I closed my eyes, all I could see was Lucy curledI in my arms,her tiny body trembling from nightmares, gradually calming under my touch.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -882,17 +922,21 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Lucy&#39;s safety comes first,&#34; I whispered to myself, determination hardening my resolve. &#34;I can&#39;t let her get hurt again.&#34;</p>
-                    
-                    <p>My mind drifted to our recent conversation about marriage. Lucy&#39;s innocent worry about being forgotten if Howard and I hadour own child.</p>
-                    
-                    <p>The irony stung-I might never even get the chance to prove to her how wrong she was. I thought of Howard too, imagining him driving to the pier, perhaps facing similar danger. Our family, so recently formed, now threatened from all sides.</p>
-                    
-                    <p>The light turned green, and I pressed forward, street by street getting closer to Brooklyn&#39;s industrial distriet. &#34;Lucy, mommy&#39;s coming to save you,&#34;I promised silently. &#34;Brian, even if you hate me. I won&#39;t abandon you.&#34;</p>
-                    
-                    <p>When I finally reached Fifth Street, the abandoned factory loomed before me like something from a nightmare-a hulking silhouette against the twilight sky. I parked carefully and stepped out, the cool evening air raising goosebumps on my skin. Broken windows gaped like dark, vacant eyes across the factory&#39;s facade. Several rust-streaked buildings stood in eerie silence, with only distant car horns reminding me that civilization still existed beyond this desolate place.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Lucy&#39;s safety comes first,&#34; I whispered to myself, determination hardening my resolve. &#34;I can&#39;t let her get hurt again.&#34;</p>
+                        
+                        <p>My mind drifted to our recent conversation about marriage. Lucy&#39;s innocent worry about being forgotten if Howard and I hadour own child.</p>
+                        
+                        <p>The irony stung-I might never even get the chance to prove to her how wrong she was. I thought of Howard too, imagining him driving to the pier, perhaps facing similar danger. Our family, so recently formed, now threatened from all sides.</p>
+                        
+                        <p>The light turned green, and I pressed forward, street by street getting closer to Brooklyn&#39;s industrial distriet. &#34;Lucy, mommy&#39;s coming to save you,&#34;I promised silently. &#34;Brian, even if you hate me. I won&#39;t abandon you.&#34;</p>
+                        
+                        <p>When I finally reached Fifth Street, the abandoned factory loomed before me like something from a nightmare-a hulking silhouette against the twilight sky. I parked carefully and stepped out, the cool evening air raising goosebumps on my skin. Broken windows gaped like dark, vacant eyes across the factory&#39;s facade. Several rust-streaked buildings stood in eerie silence, with only distant car horns reminding me that civilization still existed beyond this desolate place.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -907,17 +951,21 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>The setting sun cast long shadows across the cracked concrete, creating an eerie tableau that sent chills down my spine. I&#39;d driven through this industrial area before but had never noticed this particular complex-how long had it been abandoned? Decades, judging by the deterioration. A perfect place for Sarah&#39;s scheme, whatever it might be.</p>
-                    
-                    <p>My hand lingered over my phone. Should I text Howard? But Sarah&#39;s threat immediately resurfaced in my mind. I couldn&#39;t risk the children&#39;s safety.Sliding the phone back into my pocket, I gathered my courage and approached the decrepit structure, my heart pounding against my ribs.</p>
-                    
-                    <p>The main entrance stood partially open, rusted hinges creaking in the gentle breeze. I pushed the door wider, wincing at the metal&#39;s protest. The air inside was thick with moisture and decay,mingled with the acrid scent</p>
-                    
-                    <p>of rusted metal. A small animal-a rat, probably-scurried across my path and disappeared into the darkness.</p>
-                    
-                    <p>&#34;Lucy? Brian?&#34; I called softly, my voice echoing through the cavernous space.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>The setting sun cast long shadows across the cracked concrete, creating an eerie tableau that sent chills down my spine. I&#39;d driven through this industrial area before but had never noticed this particular complex-how long had it been abandoned? Decades, judging by the deterioration. A perfect place for Sarah&#39;s scheme, whatever it might be.</p>
+                        
+                        <p>My hand lingered over my phone. Should I text Howard? But Sarah&#39;s threat immediately resurfaced in my mind. I couldn&#39;t risk the children&#39;s safety.Sliding the phone back into my pocket, I gathered my courage and approached the decrepit structure, my heart pounding against my ribs.</p>
+                        
+                        <p>The main entrance stood partially open, rusted hinges creaking in the gentle breeze. I pushed the door wider, wincing at the metal&#39;s protest. The air inside was thick with moisture and decay,mingled with the acrid scent</p>
+                        
+                        <p>of rusted metal. A small animal-a rat, probably-scurried across my path and disappeared into the darkness.</p>
+                        
+                        <p>&#34;Lucy? Brian?&#34; I called softly, my voice echoing through the cavernous space.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -932,17 +980,21 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Silence answered me.</p>
-                    
-                    <p>Only my footsteps on the concrete floor broke the stillness as I ventured deeper. Unease twisted my stomach into knots. I pulled out my phone,activating the flashlight to illuminate my path through the darkness. The beam caught dust particles dancing in the air, a surreal sight that only heightened my sense of dread.</p>
-                    
-                    <p>As I moved further into the factory, my light revealed dust-covered floors and scattered debris. With each step, my pulse quickened. Abandoned machinery and empty cardboard boxes created bizarre shadows on the walls,shapes that seemed to shift when I wasn&#39;t looking directly at them.Water dripped somewhere in the distance, each drop echoing like a clock counting down.</p>
-                    
-                    <p>I passed through what must have been a production area,my flashlight revealing conveyor belts frozen in time, covered in decades of grime. Old desks were overturned, filing cabinets emptied, their contents long since looted or destroyed. I tried to imagine what this place had once been-full of workers,humming with activity-but now it felt like a tomb.</p>
-                    
-                    <p>Suddenly,a faint voice reached my ears: &#34;Help... Mommy... save me...&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Silence answered me.</p>
+                        
+                        <p>Only my footsteps on the concrete floor broke the stillness as I ventured deeper. Unease twisted my stomach into knots. I pulled out my phone,activating the flashlight to illuminate my path through the darkness. The beam caught dust particles dancing in the air, a surreal sight that only heightened my sense of dread.</p>
+                        
+                        <p>As I moved further into the factory, my light revealed dust-covered floors and scattered debris. With each step, my pulse quickened. Abandoned machinery and empty cardboard boxes created bizarre shadows on the walls,shapes that seemed to shift when I wasn&#39;t looking directly at them.Water dripped somewhere in the distance, each drop echoing like a clock counting down.</p>
+                        
+                        <p>I passed through what must have been a production area,my flashlight revealing conveyor belts frozen in time, covered in decades of grime. Old desks were overturned, filing cabinets emptied, their contents long since looted or destroyed. I tried to imagine what this place had once been-full of workers,humming with activity-but now it felt like a tomb.</p>
+                        
+                        <p>Suddenly,a faint voice reached my ears: &#34;Help... Mommy... save me...&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -957,17 +1009,21 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>My heart nearly stopped. &#34;Lucy!&#34; I rushed toward the sound, pushing open a half-closed door at the corridor&#39;s end, nearly stumbling in my haste.</p>
-                    
-                    <p>Inside was a sparse room containing only a bed, a video camera on a</p>
-                    
-                    <p>tripod, and a table with a tape recorder-the source of Lucy&#39;s pleading voice. The terrible realization washed over me like ice water. This was a trap. The recording continued playing. Lucy&#39;s frightened voice a cruel mockery of my hopes.</p>
-                    
-                    <p>Just as the thought formed, footsteps sounded behind me. I whirled around to see Philip standing in the doorway, his expression unnervingly blank.</p>
-                    
-                    <p>&#34;Philip?&#34; I gasped, disbelief and fear colliding in my chest. &#34;What are you doing here? Where are Lucy and Brian?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>My heart nearly stopped. &#34;Lucy!&#34; I rushed toward the sound, pushing open a half-closed door at the corridor&#39;s end, nearly stumbling in my haste.</p>
+                        
+                        <p>Inside was a sparse room containing only a bed, a video camera on a</p>
+                        
+                        <p>tripod, and a table with a tape recorder-the source of Lucy&#39;s pleading voice. The terrible realization washed over me like ice water. This was a trap. The recording continued playing. Lucy&#39;s frightened voice a cruel mockery of my hopes.</p>
+                        
+                        <p>Just as the thought formed, footsteps sounded behind me. I whirled around to see Philip standing in the doorway, his expression unnervingly blank.</p>
+                        
+                        <p>&#34;Philip?&#34; I gasped, disbelief and fear colliding in my chest. &#34;What are you doing here? Where are Lucy and Brian?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -982,17 +1038,21 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>He stepped into the room, deliberately closing the door behind him. &#34;I&#39;m sorry, Annie,&#34; he said with disturbing calmness, &#34;but this is the only way.&#34;</p>
-                    
-                    <p>&#34;What way? Philip, tell me where the children are!&#34; My voice rose with panic and anger. &#34;Did you work with Sarah on this? How could you?&#34;</p>
-                    
-                    <p>His eyes,once warm and familiar, now looked foreign in the dim light. &#34;Sarah?&#34; He laughed softly, the sound devoid of humor. &#34;Sarah was just a tool, a convenient distraction. This was always between you, me,and Howard.&#34;</p>
-                    
-                    <p>&#34;If I can&#39;t have you,&#34; he said quietly, his eyes darkening, &#34;then Howard can&#39;t either.&#34;</p>
-                    
-                    <p>Before I could react, Philip lunged forward, pressing a cloth over my nose and mouth. I instinctively held my breath, struggling against his grip.My nails clawed at his arms, but his strength overwhelmed mine. I fought desperately, kicking and twisting, but couldn&#39;t break free. My mind flashed to Lucy and Brian-were they really in danger, or had that been another lie?</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>He stepped into the room, deliberately closing the door behind him. &#34;I&#39;m sorry, Annie,&#34; he said with disturbing calmness, &#34;but this is the only way.&#34;</p>
+                        
+                        <p>&#34;What way? Philip, tell me where the children are!&#34; My voice rose with panic and anger. &#34;Did you work with Sarah on this? How could you?&#34;</p>
+                        
+                        <p>His eyes,once warm and familiar, now looked foreign in the dim light. &#34;Sarah?&#34; He laughed softly, the sound devoid of humor. &#34;Sarah was just a tool, a convenient distraction. This was always between you, me,and Howard.&#34;</p>
+                        
+                        <p>&#34;If I can&#39;t have you,&#34; he said quietly, his eyes darkening, &#34;then Howard can&#39;t either.&#34;</p>
+                        
+                        <p>Before I could react, Philip lunged forward, pressing a cloth over my nose and mouth. I instinctively held my breath, struggling against his grip.My nails clawed at his arms, but his strength overwhelmed mine. I fought desperately, kicking and twisting, but couldn&#39;t break free. My mind flashed to Lucy and Brian-were they really in danger, or had that been another lie?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1007,15 +1067,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Don&#39;t fight it. Annie.&#34; Philip whispered in my ear, his voice sickly gentle,&#34;it will be over soon.&#34;</p>
-                    
-                    <p>I continued holding my breath, my mind racing for any possible escape.The drug began seeping through my skin, making the room spin. My limbs grew heavy, but consciousness stubbornly clung on, refusing to surrender completely to darkness.</p>
-                    
-                    <p>Feeling my resistance weaken. Philip loosened his hold, assuming the drug had taken full effect. He pulled out rope, beginning to bind my wrists and ankles. Though my body felt leaden and unresponsive, my mind remained hazily aware. I could feel the rope tightening around my wrists but lacked the strength to resist.</p>
-                    
-                    <p>Through the fog descending over my thoughts, one terrifying clarity emerged-this wasn&#39;t just a trap; it was a meticulously planned revenge.Philip, the man I had once loved, had become a stranger capable of unimaginable cruelty. Fear and despair washed over me as darkness began to claim the edges of my vision.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Don&#39;t fight it. Annie.&#34; Philip whispered in my ear, his voice sickly gentle,&#34;it will be over soon.&#34;</p>
+                        
+                        <p>I continued holding my breath, my mind racing for any possible escape.The drug began seeping through my skin, making the room spin. My limbs grew heavy, but consciousness stubbornly clung on, refusing to surrender completely to darkness.</p>
+                        
+                        <p>Feeling my resistance weaken. Philip loosened his hold, assuming the drug had taken full effect. He pulled out rope, beginning to bind my wrists and ankles. Though my body felt leaden and unresponsive, my mind remained hazily aware. I could feel the rope tightening around my wrists but lacked the strength to resist.</p>
+                        
+                        <p>Through the fog descending over my thoughts, one terrifying clarity emerged-this wasn&#39;t just a trap; it was a meticulously planned revenge.Philip, the man I had once loved, had become a stranger capable of unimaginable cruelty. Fear and despair washed over me as darkness began to claim the edges of my vision.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2331,6 +2395,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2457,7 +2601,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2499,32 +2642,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2535,21 +2660,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2582,6 +2697,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2602,20 +2723,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

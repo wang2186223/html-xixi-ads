@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>After typing a brief reply, he turned off the screen and began tracing the phone&#39;s edges, his expression unreadable.</p>
-                    
-                    <p>Serena, seated across from him, turned her attention toward the decorative lattice partition. Through the intricate carvings, she spotted Ethan approaching with two women. One was unmistakably Vivian, radiating quiet elegance. The other, dressed in bold, statement-making attire, was Vivian&#39;s friend.</p>
-                    
-                    <p>A spark of calculation ignited in Serena&#39;s eyes. Fortune was favoring her today. She&#39;d only intended to &#34;accidentally&#34; bump into Adrian at Blackwood Group headquarters. But when she spotted his car outside Opal Galleria, she couldn&#39;t resist following him inside. Now, not only was Adrian here, but Vivian had appeared as well.</p>
-                    
-                    <p>With Vivian as her unintended audience, Serena knew her performance needed to be Oscar-worthy. She wasn&#39;t just playing for Adrian&#39;s sympathy - she wanted Vivian to witness firsthand who Adrian would always choose.</p>
-                    
-                    <p>Originally, Serena had planned to use the show as her stage to publicly reclaim her position as the future Mrs. Blackwood, especially in front of Vivian. When Adrian had shockingly announced his marriage to Vivian on air, it had been a devastating blow.</p>
-                    
-                    <p>Serena had always viewed Adrian as untouchable, a man above such mundane emotions as love. The idea that she could ever capture his heart had seemed impossible.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>After typing a brief reply, he turned off the screen and began tracing the phone&#39;s edges, his expression unreadable.</p>
+                        
+                        <p>Serena, seated across from him, turned her attention toward the decorative lattice partition. Through the intricate carvings, she spotted Ethan approaching with two women. One was unmistakably Vivian, radiating quiet elegance. The other, dressed in bold, statement-making attire, was Vivian&#39;s friend.</p>
+                        
+                        <p>A spark of calculation ignited in Serena&#39;s eyes. Fortune was favoring her today. She&#39;d only intended to &#34;accidentally&#34; bump into Adrian at Blackwood Group headquarters. But when she spotted his car outside Opal Galleria, she couldn&#39;t resist following him inside. Now, not only was Adrian here, but Vivian had appeared as well.</p>
+                        
+                        <p>With Vivian as her unintended audience, Serena knew her performance needed to be Oscar-worthy. She wasn&#39;t just playing for Adrian&#39;s sympathy - she wanted Vivian to witness firsthand who Adrian would always choose.</p>
+                        
+                        <p>Originally, Serena had planned to use the show as her stage to publicly reclaim her position as the future Mrs. Blackwood, especially in front of Vivian. When Adrian had shockingly announced his marriage to Vivian on air, it had been a devastating blow.</p>
+                        
+                        <p>Serena had always viewed Adrian as untouchable, a man above such mundane emotions as love. The idea that she could ever capture his heart had seemed impossible.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>When Vivian married Adrian, Serena hadn&#39;t been concerned. Without family connections or influence, how could some nobody possibly maintain her position as Mrs. Blackwood? In fact, Vivian&#39;s arrival had played perfectly into Serena&#39;s hands - creating a modern Cinderella story that would make her own eventual triumph seem inevitable.</p>
-                    
-                    <p>But she never anticipated Adrian would actually fall for Vivian - to the point of abandoning his years of devotion to Serena. Tears welled in Serena&#39;s eyes as she fixed Adrian with a gaze brimming with longing. Her voice trembled with carefully measured emotion.</p>
-                    
-                    <p>&#34;Adrian, do you know true terror?&#34; she whispered. &#34;It&#39;s not living in darkness. It&#39;s being shown the light, having the colors of the world revealed to you... only to be cast back into the abyss.&#34;</p>
-                    
-                    <p>Adrian&#39;s response was cool, detached. &#34;I never said I&#39;d abandon you, Serena. I promised you wouldn&#39;t return to your former life, and I intend to honor that. Your lifestyle will be maintained - even enhanced. I can transfer shares from several Azurevale companies into your name. That way, you&#39;ll—&#34;</p>
-                    
-                    <p>The words tore from her throat, raw and broken. &#34;It was never about the money, Adrian! It&#39;s about how you made me feel.&#34;</p>
-                    
-                    <p>His voice remained unnervingly calm. &#34;The way I treated you then is exactly how I&#39;ll treat you now.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>When Vivian married Adrian, Serena hadn&#39;t been concerned. Without family connections or influence, how could some nobody possibly maintain her position as Mrs. Blackwood? In fact, Vivian&#39;s arrival had played perfectly into Serena&#39;s hands - creating a modern Cinderella story that would make her own eventual triumph seem inevitable.</p>
+                        
+                        <p>But she never anticipated Adrian would actually fall for Vivian - to the point of abandoning his years of devotion to Serena. Tears welled in Serena&#39;s eyes as she fixed Adrian with a gaze brimming with longing. Her voice trembled with carefully measured emotion.</p>
+                        
+                        <p>&#34;Adrian, do you know true terror?&#34; she whispered. &#34;It&#39;s not living in darkness. It&#39;s being shown the light, having the colors of the world revealed to you... only to be cast back into the abyss.&#34;</p>
+                        
+                        <p>Adrian&#39;s response was cool, detached. &#34;I never said I&#39;d abandon you, Serena. I promised you wouldn&#39;t return to your former life, and I intend to honor that. Your lifestyle will be maintained - even enhanced. I can transfer shares from several Azurevale companies into your name. That way, you&#39;ll—&#34;</p>
+                        
+                        <p>The words tore from her throat, raw and broken. &#34;It was never about the money, Adrian! It&#39;s about how you made me feel.&#34;</p>
+                        
+                        <p>His voice remained unnervingly calm. &#34;The way I treated you then is exactly how I&#39;ll treat you now.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Serena&#39;s lips curved into a ghost of a smile that never touched her stormy eyes. Beneath the fragile facade, her gaze shattered like broken glass, the pain radiating through every fractured piece.</p>
-                    
-                    <p>&#34;I was your everything once,&#34; she whispered, the words barely audible. &#34;Your chosen bride. Am I still that woman?&#34;</p>
-                    
-                    <p>A flicker of desperate hope danced in her eyes, fragile as a moth&#39;s wing against a hurricane&#39;s force.</p>
-                    
-                    <p>Adrian hesitated. For the first time, shadows crossed his usually impassive features. His silence spoke volumes.</p>
-                    
-                    <p>The air grew thick with unspoken words, and the fragile light in Serena&#39;s eyes dimmed to nothing. In a sudden burst of desperation, her fingers clutched at the fine wool of his tailored sleeve.</p>
-                    
-                    <p>&#34;Adrian,&#34; she begged, her voice trembling like autumn leaves. &#34;Since you reunited with Vivian, I&#39;ve kept my distance. Not a single call, not one text - I couldn&#39;t risk her misunderstanding. I&#39;ve already lost you... I can&#39;t lose my career too.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Serena&#39;s lips curved into a ghost of a smile that never touched her stormy eyes. Beneath the fragile facade, her gaze shattered like broken glass, the pain radiating through every fractured piece.</p>
+                        
+                        <p>&#34;I was your everything once,&#34; she whispered, the words barely audible. &#34;Your chosen bride. Am I still that woman?&#34;</p>
+                        
+                        <p>A flicker of desperate hope danced in her eyes, fragile as a moth&#39;s wing against a hurricane&#39;s force.</p>
+                        
+                        <p>Adrian hesitated. For the first time, shadows crossed his usually impassive features. His silence spoke volumes.</p>
+                        
+                        <p>The air grew thick with unspoken words, and the fragile light in Serena&#39;s eyes dimmed to nothing. In a sudden burst of desperation, her fingers clutched at the fine wool of his tailored sleeve.</p>
+                        
+                        <p>&#34;Adrian,&#34; she begged, her voice trembling like autumn leaves. &#34;Since you reunited with Vivian, I&#39;ve kept my distance. Not a single call, not one text - I couldn&#39;t risk her misunderstanding. I&#39;ve already lost you... I can&#39;t lose my career too.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Tears spilled down her cheeks like liquid silver as she continued, &#34;Vivian only lost a reality show spot. With you behind her, the entire industry will bow at her feet. But for me... this could be the end of everything I&#39;ve worked for.&#34;</p>
-                    
-                    <p>There was a time when her tears would have shattered Adrian&#39;s resolve instantly. Now, uncertainty flickered across his face as he weighed his words with uncharacteristic caution.</p>
-                    
-                    <p>Serena pressed her advantage, her voice softening to a vulnerable whisper. &#34;Maybe... you could keep her identity as Mrs. Blackwood secret? Just to spare me the humiliation? As long as no one knows she&#39;s your wife, I won&#39;t become the industry&#39;s laughingstock.&#34;</p>
-                    
-                    <p>Adrian&#39;s response was carefully measured, his tone deceptively warm. &#34;Serena, you could never be a joke to me. You&#39;ll always hold a special place in my life.&#34;</p>
-                    
-                    <p>Once, those words would have made her feel like the center of his universe. Now they rang hollow, their meaning twisted beyond recognition. To Serena, they sounded less like devotion and more like a carefully constructed lie.</p>
-                    
-                    <p>Her gaze drifted past Adrian, locking onto the restaurant entrance where Vivian entered with Ethan. After a weighted pause, Serena spoke with quiet determination. &#34;Help me this one last time, and I&#39;ll leave Crestwood by New Year&#39;s. I&#39;ll return to Azurevale, focus on my treatment, and disappear from your life forever.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Tears spilled down her cheeks like liquid silver as she continued, &#34;Vivian only lost a reality show spot. With you behind her, the entire industry will bow at her feet. But for me... this could be the end of everything I&#39;ve worked for.&#34;</p>
+                        
+                        <p>There was a time when her tears would have shattered Adrian&#39;s resolve instantly. Now, uncertainty flickered across his face as he weighed his words with uncharacteristic caution.</p>
+                        
+                        <p>Serena pressed her advantage, her voice softening to a vulnerable whisper. &#34;Maybe... you could keep her identity as Mrs. Blackwood secret? Just to spare me the humiliation? As long as no one knows she&#39;s your wife, I won&#39;t become the industry&#39;s laughingstock.&#34;</p>
+                        
+                        <p>Adrian&#39;s response was carefully measured, his tone deceptively warm. &#34;Serena, you could never be a joke to me. You&#39;ll always hold a special place in my life.&#34;</p>
+                        
+                        <p>Once, those words would have made her feel like the center of his universe. Now they rang hollow, their meaning twisted beyond recognition. To Serena, they sounded less like devotion and more like a carefully constructed lie.</p>
+                        
+                        <p>Her gaze drifted past Adrian, locking onto the restaurant entrance where Vivian entered with Ethan. After a weighted pause, Serena spoke with quiet determination. &#34;Help me this one last time, and I&#39;ll leave Crestwood by New Year&#39;s. I&#39;ll return to Azurevale, focus on my treatment, and disappear from your life forever.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Adrian&#39;s fingers stilled abruptly, his expression hardening with sudden decision. &#34;Fine.&#34;</p>
-                    
-                    <p>&#34;I&#39;ll make sure Vivian withdraws from that reality show.&#34; The private room door swung open at that precise moment, revealing Vivian in the doorway. Her icy gaze pinned Adrian in place. &#34;Since when do you make career decisions for me?&#34;</p>
-                    
-                    <p>Adrian turned toward her, his composure cracking as panic flashed in his eyes. &#34;Vivian, what are you doing here?&#34; His accusing glare shifted to Ethan, who stood frozen behind her.</p>
-                    
-                    <p>Ethan pressed his lips into a tight line, beads of sweat forming at his temples. How could he have anticipated Serena&#39;s sudden appearance here?</p>
-                    
-                    <p>Vivian&#39;s lips curled into an icy smile, her words laced with razor-sharp precision. &#34;How amusing. Ethan claimed you came here to fetch me, yet now you&#39;re interrogating my presence. So tell me, which one of you is spinning fairy tales?&#34;</p>
-                    
-                    <p>The air grew thick with tension as Adrian and Vivian engaged in a silent battle of wills. Ethan stood trapped between them like a tightrope walker, his collar suddenly too tight against his throat. Normally composed around Adrian, this confrontation left him paralyzed.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Adrian&#39;s fingers stilled abruptly, his expression hardening with sudden decision. &#34;Fine.&#34;</p>
+                        
+                        <p>&#34;I&#39;ll make sure Vivian withdraws from that reality show.&#34; The private room door swung open at that precise moment, revealing Vivian in the doorway. Her icy gaze pinned Adrian in place. &#34;Since when do you make career decisions for me?&#34;</p>
+                        
+                        <p>Adrian turned toward her, his composure cracking as panic flashed in his eyes. &#34;Vivian, what are you doing here?&#34; His accusing glare shifted to Ethan, who stood frozen behind her.</p>
+                        
+                        <p>Ethan pressed his lips into a tight line, beads of sweat forming at his temples. How could he have anticipated Serena&#39;s sudden appearance here?</p>
+                        
+                        <p>Vivian&#39;s lips curled into an icy smile, her words laced with razor-sharp precision. &#34;How amusing. Ethan claimed you came here to fetch me, yet now you&#39;re interrogating my presence. So tell me, which one of you is spinning fairy tales?&#34;</p>
+                        
+                        <p>The air grew thick with tension as Adrian and Vivian engaged in a silent battle of wills. Ethan stood trapped between them like a tightrope walker, his collar suddenly too tight against his throat. Normally composed around Adrian, this confrontation left him paralyzed.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Audrey, usually Vivian&#39;s most vocal defender, hovered near the doorway, her conflicted gaze shifting between them. Since beginning her relationship with Dominic, Audrey had developed a more measured approach, her once-fiery impulses tempered by love. She knew intervening now would only escalate tensions between Vivian and Adrian, giving Serena—always the opportunist—the perfect opening.</p>
-                    
-                    <p>Serena shattered the silence with practiced innocence. &#34;Ms. Hartley, please don&#39;t blame Adrian. He wasn&#39;t hiding anything. I simply stopped by for lunch and we happened to cross paths.&#34; Her hand fluttered toward her purse. &#34;I can show you my schedule—I just finished a commercial shoot.&#34;</p>
-                    
-                    <p>Vivian remained unmoved, her polite smile never reaching her eyes. &#34;Ms. Whitmore, whatever disagreement exists between my husband and me is private. Even my dearest friend hasn&#39;t intervened, so an outsider certainly shouldn&#39;t. Boundaries matter, don&#39;t you agree?&#34;</p>
-                    
-                    <p>Serena&#39;s hand froze mid-air, color flooding her cheeks. After an awkward pause, she returned her phone to her bag, murmuring, &#34;I meant no offense.&#34;</p>
-                    
-                    <p>Vivian strode to Adrian&#39;s table, deliberately pulling out a chair. Audrey followed, practically throwing herself into the seat beside her friend. Her silent presence spoke volumes.</p>
-                    
-                    <p>Adrian broke the silence first. &#34;I came to pick you up,&#34; he said evenly, though his fingers betrayed him with restless tapping. &#34;I didn&#39;t expect you with Ethan. Serena was... coincidental.&#34; The words rang true, yet carried an undercurrent of something indefinable.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Audrey, usually Vivian&#39;s most vocal defender, hovered near the doorway, her conflicted gaze shifting between them. Since beginning her relationship with Dominic, Audrey had developed a more measured approach, her once-fiery impulses tempered by love. She knew intervening now would only escalate tensions between Vivian and Adrian, giving Serena—always the opportunist—the perfect opening.</p>
+                        
+                        <p>Serena shattered the silence with practiced innocence. &#34;Ms. Hartley, please don&#39;t blame Adrian. He wasn&#39;t hiding anything. I simply stopped by for lunch and we happened to cross paths.&#34; Her hand fluttered toward her purse. &#34;I can show you my schedule—I just finished a commercial shoot.&#34;</p>
+                        
+                        <p>Vivian remained unmoved, her polite smile never reaching her eyes. &#34;Ms. Whitmore, whatever disagreement exists between my husband and me is private. Even my dearest friend hasn&#39;t intervened, so an outsider certainly shouldn&#39;t. Boundaries matter, don&#39;t you agree?&#34;</p>
+                        
+                        <p>Serena&#39;s hand froze mid-air, color flooding her cheeks. After an awkward pause, she returned her phone to her bag, murmuring, &#34;I meant no offense.&#34;</p>
+                        
+                        <p>Vivian strode to Adrian&#39;s table, deliberately pulling out a chair. Audrey followed, practically throwing herself into the seat beside her friend. Her silent presence spoke volumes.</p>
+                        
+                        <p>Adrian broke the silence first. &#34;I came to pick you up,&#34; he said evenly, though his fingers betrayed him with restless tapping. &#34;I didn&#39;t expect you with Ethan. Serena was... coincidental.&#34; The words rang true, yet carried an undercurrent of something indefinable.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Vivian nodded, her assessing gaze never wavering. After a beat, she asked, &#34;Which show did you decide I wouldn&#39;t be doing?&#34;</p>
-                    
-                    <p>Adrian&#39;s brow furrowed in genuine confusion. &#34;What show?&#34; He turned to Serena. &#34;Serena, what&#39;s this about?&#34;</p>
-                    
-                    <p>A cold laugh escaped Vivian&#39;s lips. She reached for Adrian&#39;s water glass, took a deliberate sip, then set it down with a sharp clink. &#34;How fascinating,&#34; she drawled. &#34;You made decisions about my career without even knowing the details.&#34;</p>
-                    
-                    <p>Serena&#39;s smile faltered when Adrian, without hesitation, picked up the glass Vivian had just used and drank from it. The act was shocking—Adrian&#39;s notorious germaphobia was legendary. In all their years together, he&#39;d never shared utensils, let alone drank after her. Their physical contact had always been carefully controlled—brief handholds, the occasional hug when she was ill.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Vivian nodded, her assessing gaze never wavering. After a beat, she asked, &#34;Which show did you decide I wouldn&#39;t be doing?&#34;</p>
+                        
+                        <p>Adrian&#39;s brow furrowed in genuine confusion. &#34;What show?&#34; He turned to Serena. &#34;Serena, what&#39;s this about?&#34;</p>
+                        
+                        <p>A cold laugh escaped Vivian&#39;s lips. She reached for Adrian&#39;s water glass, took a deliberate sip, then set it down with a sharp clink. &#34;How fascinating,&#34; she drawled. &#34;You made decisions about my career without even knowing the details.&#34;</p>
+                        
+                        <p>Serena&#39;s smile faltered when Adrian, without hesitation, picked up the glass Vivian had just used and drank from it. The act was shocking—Adrian&#39;s notorious germaphobia was legendary. In all their years together, he&#39;d never shared utensils, let alone drank after her. Their physical contact had always been carefully controlled—brief handholds, the occasional hug when she was ill.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

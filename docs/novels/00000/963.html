@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Julian&#39;s eyes darkened with disbelief. &#34;You&#39;re rewriting reality to justify him.&#34;</p>
-                    
-                    <p>A slow headshake. &#34;Not justification. Perspective. You see this as an outsider while I&#39;m in the arena.&#34; Her fingers twisted the napkin in her lap. &#34;We&#39;re cut from the same cloth, Adrian and I. Different upbringings shape how we love—sometimes badly. Ask me as his wife, and I&#39;d tell you he&#39;s a good man.&#34; She met his gaze squarely. &#34;You&#39;re dear to me, Julian. But whether as my oldest friend or his associate, this conversation crosses lines.&#34;</p>
-                    
-                    <p>Her typically animated features had gone solemn, the unfamiliar formality making Julian shift uncomfortably. He&#39;d known her longer than Adrian had—this tension between them felt wrong.</p>
-                    
-                    <p>Julian&#39;s expression softened, his voice dropping to a murmur. &#34;I overstepped.&#34;</p>
-                    
-                    <p>The silence that followed was thick with unsaid words, neither knowing how to mend the rift.</p>
-                    
-                    <p>Sensing Vivian&#39;s discomfort, Julian didn&#39;t press further. Instead, he quietly replenished her plate with perfectly grilled morsels, letting the quiet stretch between them like twilight shadows.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Julian&#39;s eyes darkened with disbelief. &#34;You&#39;re rewriting reality to justify him.&#34;</p>
+                        
+                        <p>A slow headshake. &#34;Not justification. Perspective. You see this as an outsider while I&#39;m in the arena.&#34; Her fingers twisted the napkin in her lap. &#34;We&#39;re cut from the same cloth, Adrian and I. Different upbringings shape how we love—sometimes badly. Ask me as his wife, and I&#39;d tell you he&#39;s a good man.&#34; She met his gaze squarely. &#34;You&#39;re dear to me, Julian. But whether as my oldest friend or his associate, this conversation crosses lines.&#34;</p>
+                        
+                        <p>Her typically animated features had gone solemn, the unfamiliar formality making Julian shift uncomfortably. He&#39;d known her longer than Adrian had—this tension between them felt wrong.</p>
+                        
+                        <p>Julian&#39;s expression softened, his voice dropping to a murmur. &#34;I overstepped.&#34;</p>
+                        
+                        <p>The silence that followed was thick with unsaid words, neither knowing how to mend the rift.</p>
+                        
+                        <p>Sensing Vivian&#39;s discomfort, Julian didn&#39;t press further. Instead, he quietly replenished her plate with perfectly grilled morsels, letting the quiet stretch between them like twilight shadows.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>The barbecue&#39;s smoke curled upward, carrying with it the scent of something precious burning away.</p>
-                    
-                    <p>The dinner unfolded in an electric silence, punctuated only by the occasional crackle from the grill between them. Each sound felt like a carefully choreographed movement in their unspoken dance.</p>
-                    
-                    <p>As Adrian pulled up to Seabreeze Villa, Vivian&#39;s breath caught. Golden light spilled from the windows of her home, an unexpected sight that sent her pulse racing.</p>
-                    
-                    <p>She mentally retraced her steps. She&#39;d left in broad daylight—there was no way she&#39;d forgotten to turn off the lights. The gated community&#39;s tight security ruled out intruders, yet the mystery remained.</p>
-                    
-                    <p>Then the front door swung open, revealing a familiar broad-shouldered silhouette that instantly solved the puzzle.</p>
-                    
-                    <p>Adrian leaned against the doorframe, a shopping bag dangling from his fingers. His usually impeccable suit showed signs of travel, the first two buttons of his shirt undone.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>The barbecue&#39;s smoke curled upward, carrying with it the scent of something precious burning away.</p>
+                        
+                        <p>The dinner unfolded in an electric silence, punctuated only by the occasional crackle from the grill between them. Each sound felt like a carefully choreographed movement in their unspoken dance.</p>
+                        
+                        <p>As Adrian pulled up to Seabreeze Villa, Vivian&#39;s breath caught. Golden light spilled from the windows of her home, an unexpected sight that sent her pulse racing.</p>
+                        
+                        <p>She mentally retraced her steps. She&#39;d left in broad daylight—there was no way she&#39;d forgotten to turn off the lights. The gated community&#39;s tight security ruled out intruders, yet the mystery remained.</p>
+                        
+                        <p>Then the front door swung open, revealing a familiar broad-shouldered silhouette that instantly solved the puzzle.</p>
+                        
+                        <p>Adrian leaned against the doorframe, a shopping bag dangling from his fingers. His usually impeccable suit showed signs of travel, the first two buttons of his shirt undone.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;Welcome home,&#34; he murmured as Vivian stepped out of Julian&#39;s car, his gaze flickering between them.</p>
-                    
-                    <p>Vivian barely had time to thank Julian before Adrian&#39;s arm claimed her shoulders with possessive ease. In one fluid motion, he extended the bag toward Julian.</p>
-                    
-                    <p>Only then did Vivian recognize the distinctive Sterling &amp; Co logo—the very fountain pen they&#39;d selected together days earlier.</p>
-                    
-                    <p>Julian&#39;s fingers twitched but didn&#39;t reach for the offering.</p>
-                    
-                    <p>&#34;Please take it,&#34; Vivian urged, her voice softer than intended. &#34;When I saw it, I immediately thought of you. Consider it an early birthday gift.&#34;</p>
-                    
-                    <p>The words tasted like ash. She hadn&#39;t known today was his birthday until their dinner conversation, and the realization now made her skin prickle with discomfort.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;Welcome home,&#34; he murmured as Vivian stepped out of Julian&#39;s car, his gaze flickering between them.</p>
+                        
+                        <p>Vivian barely had time to thank Julian before Adrian&#39;s arm claimed her shoulders with possessive ease. In one fluid motion, he extended the bag toward Julian.</p>
+                        
+                        <p>Only then did Vivian recognize the distinctive Sterling &amp; Co logo—the very fountain pen they&#39;d selected together days earlier.</p>
+                        
+                        <p>Julian&#39;s fingers twitched but didn&#39;t reach for the offering.</p>
+                        
+                        <p>&#34;Please take it,&#34; Vivian urged, her voice softer than intended. &#34;When I saw it, I immediately thought of you. Consider it an early birthday gift.&#34;</p>
+                        
+                        <p>The words tasted like ash. She hadn&#39;t known today was his birthday until their dinner conversation, and the realization now made her skin prickle with discomfort.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>After a beat, Julian accepted the package, his eyes holding hers with quiet intensity. &#34;Thank you,&#34; he said, the words weighted with unspoken meaning.</p>
-                    
-                    <p>Adrian&#39;s grip tightened imperceptibly. &#34;Now that my wife&#39;s safely home and you&#39;ve got your present, I believe we&#39;re done here.&#34; He steered Vivian toward the house with unmistakable finality.</p>
-                    
-                    <p>Vivian threw Julian an apologetic glance over her shoulder. &#34;It&#39;s late. You should—&#34;</p>
-                    
-                    <p>&#34;Really, darling,&#34; Adrian cut in, his breath warm against her ear as he pulled her closer, &#34;must we drag this out?&#34;</p>
-                    
-                    <p>Julian watched them disappear inside, their effortless intimacy a stark contrast to the explosive argument he&#39;d witnessed mere hours earlier. He&#39;d expected days of tension, not this seamless reconciliation.</p>
-                    
-                    <p>Back in his car, Julian flicked on the dome light. The white fountain pen gleamed in its velvet nest—elegant, pristine, untouched. Just like the version of himself he&#39;d always shown Vivian.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>After a beat, Julian accepted the package, his eyes holding hers with quiet intensity. &#34;Thank you,&#34; he said, the words weighted with unspoken meaning.</p>
+                        
+                        <p>Adrian&#39;s grip tightened imperceptibly. &#34;Now that my wife&#39;s safely home and you&#39;ve got your present, I believe we&#39;re done here.&#34; He steered Vivian toward the house with unmistakable finality.</p>
+                        
+                        <p>Vivian threw Julian an apologetic glance over her shoulder. &#34;It&#39;s late. You should—&#34;</p>
+                        
+                        <p>&#34;Really, darling,&#34; Adrian cut in, his breath warm against her ear as he pulled her closer, &#34;must we drag this out?&#34;</p>
+                        
+                        <p>Julian watched them disappear inside, their effortless intimacy a stark contrast to the explosive argument he&#39;d witnessed mere hours earlier. He&#39;d expected days of tension, not this seamless reconciliation.</p>
+                        
+                        <p>Back in his car, Julian flicked on the dome light. The white fountain pen gleamed in its velvet nest—elegant, pristine, untouched. Just like the version of himself he&#39;d always shown Vivian.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>If only he&#39;d known she preferred storms to still waters, he might have let her see the tempest beneath his calm surface. The realization settled like lead in his chest as he started the engine.</p>
-                    
-                    <p>The fleeting thought vanished as quickly as it came. Adrian gave a slight shake of his head. Someone like Vivian belonged in her pristine world, a gilded cage that should never be disturbed.</p>
-                    
-                    <p>He snapped the pen case shut and sped into the night, the darkness consuming his car whole.</p>
-                    
-                    <p>Meanwhile, Vivian followed Adrian into the living quarters. The moment the door clicked shut, she withdrew her hand from his grasp and took two deliberate steps back.</p>
-                    
-                    <p>Her voice carried winter&#39;s chill. &#34;What brings you back?&#34;</p>
-                    
-                    <p>&#34;I came because I wanted to.&#34; Adrian recaptured her wrist, guiding her toward the plush sofa. He sat first, then pulled her onto his lap effortlessly. His hands slipped beneath her blouse, fingertips tracing lazy circles along her waistline.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>If only he&#39;d known she preferred storms to still waters, he might have let her see the tempest beneath his calm surface. The realization settled like lead in his chest as he started the engine.</p>
+                        
+                        <p>The fleeting thought vanished as quickly as it came. Adrian gave a slight shake of his head. Someone like Vivian belonged in her pristine world, a gilded cage that should never be disturbed.</p>
+                        
+                        <p>He snapped the pen case shut and sped into the night, the darkness consuming his car whole.</p>
+                        
+                        <p>Meanwhile, Vivian followed Adrian into the living quarters. The moment the door clicked shut, she withdrew her hand from his grasp and took two deliberate steps back.</p>
+                        
+                        <p>Her voice carried winter&#39;s chill. &#34;What brings you back?&#34;</p>
+                        
+                        <p>&#34;I came because I wanted to.&#34; Adrian recaptured her wrist, guiding her toward the plush sofa. He sat first, then pulled her onto his lap effortlessly. His hands slipped beneath her blouse, fingertips tracing lazy circles along her waistline.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>The hours melted away, her earlier fury dissipating like morning mist.</p>
-                    
-                    <p>Vivian broke the silence casually. &#34;Did you sign those documents?&#34;</p>
-                    
-                    <p>Adrian merely shrugged. &#34;Left it to my associates.&#34; He nuzzled her shoulder, amusement coloring his tone. &#34;My wife nearly eloped with another man. You think I&#39;d care about paperwork?&#34;</p>
-                    
-                    <p>Her expression turned glacial. &#34;Even if I ran,&#34; she said with razor-sharp sarcasm, &#34;it wouldn&#39;t be with your cousin. That&#39;s not my taste. If all men vanished tomorrow, I&#39;d still avoid every Blackwood.&#34;</p>
-                    
-                    <p>Adrian pinched her side playfully. &#34;Still holding a grudge?&#34; His chuckle vibrated against her skin. &#34;The jet was shaking, I&#39;d been drafting contracts for hours, my mind was elsewhere. Didn&#39;t mean anything by it.&#34;</p>
-                    
-                    <p>Seeing his concession, Vivian relented. With a smirk, she countered, &#34;If Mr. Blackwood can&#39;t control his tongue, perhaps he should donate it to medical science.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>The hours melted away, her earlier fury dissipating like morning mist.</p>
+                        
+                        <p>Vivian broke the silence casually. &#34;Did you sign those documents?&#34;</p>
+                        
+                        <p>Adrian merely shrugged. &#34;Left it to my associates.&#34; He nuzzled her shoulder, amusement coloring his tone. &#34;My wife nearly eloped with another man. You think I&#39;d care about paperwork?&#34;</p>
+                        
+                        <p>Her expression turned glacial. &#34;Even if I ran,&#34; she said with razor-sharp sarcasm, &#34;it wouldn&#39;t be with your cousin. That&#39;s not my taste. If all men vanished tomorrow, I&#39;d still avoid every Blackwood.&#34;</p>
+                        
+                        <p>Adrian pinched her side playfully. &#34;Still holding a grudge?&#34; His chuckle vibrated against her skin. &#34;The jet was shaking, I&#39;d been drafting contracts for hours, my mind was elsewhere. Didn&#39;t mean anything by it.&#34;</p>
+                        
+                        <p>Seeing his concession, Vivian relented. With a smirk, she countered, &#34;If Mr. Blackwood can&#39;t control his tongue, perhaps he should donate it to medical science.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;I&#39;ll donate it to you,&#34; Adrian murmured, his voice dropping an octave. Cradling the back of her head, he claimed her lips in a searing kiss that left them both breathless.</p>
-                    
-                    <p>The contact only stoked his hunger. He lifted her effortlessly, grinning. &#34;Perhaps there&#39;s something else I&#39;d rather give you... say, a daughter?&#34;</p>
-                    
-                    <p>Vivian mock-punched his shoulder. &#34;Why not a son?&#34;</p>
-                    
-                    <p>&#34;Either would be perfection.&#34; His obsidian eyes burned with devotion. &#34;I&#39;ll cherish whatever gift you give me.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;I&#39;ll donate it to you,&#34; Adrian murmured, his voice dropping an octave. Cradling the back of her head, he claimed her lips in a searing kiss that left them both breathless.</p>
+                        
+                        <p>The contact only stoked his hunger. He lifted her effortlessly, grinning. &#34;Perhaps there&#39;s something else I&#39;d rather give you... say, a daughter?&#34;</p>
+                        
+                        <p>Vivian mock-punched his shoulder. &#34;Why not a son?&#34;</p>
+                        
+                        <p>&#34;Either would be perfection.&#34; His obsidian eyes burned with devotion. &#34;I&#39;ll cherish whatever gift you give me.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:18.805863">
-    <meta property="article:modified_time" content="2026-07-19T02:47:18.805863">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.099065">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.099065">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:18">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:18.805863",
-        "dateModified": "2026-07-19T02:47:18.805863",
+        "datePublished": "2026-07-19T13:03:14.099065",
+        "dateModified": "2026-07-19T13:03:14.099065",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,25 +893,29 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>Crouching by the roadside, I absentmindedly pulled at the grass growing between the flowers in the garden bed while listening to Astrid&#39;s lecture through the phone. After what felt like an eternity, my legs grew tired and I stood up with a weary stretch.</p>
-                    
-                    <p>&#34;I&#39;ve been waiting forever,&#34; I said into the phone. &#34;When are you getting here?&#34;</p>
-                    
-                    <p>Through the phone, I could hear someone&#39;s voice: &#34;Astrid, can you take a look at this proposal? Does this revision work?&#34;</p>
-                    
-                    <p>&#34;Yeah, that works,&#34; Astrid responded to her colleague before returning to our conversation with an apologetic tone. &#34;Sorry Audrey...&#34;</p>
-                    
-                    <p>&#34;It&#39;s fine,&#34; I said gently. &#34;You focus on your work. I&#39;m not in a hurry.&#34;</p>
-                    
-                    <p>&#34;I really am swamped right now,&#34; Astrid sighed, &#34;but I&#39;ve arranged for a handsome guy to pick you up. He should be there any minute!&#34;</p>
-                    
-                    <p>&#34;Handsome guy? Your new boyfriend?&#34; I couldn&#39;t help bout tease.</p>
-                    
-                    <p>&#34;Don&#39;t joke about that!&#34; Astrid&#39;s voice turned serious. &#34;This guy doesn&#39;t have the slightest interest in me! You can&#39;t make jokes like that!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>Crouching by the roadside, I absentmindedly pulled at the grass growing between the flowers in the garden bed while listening to Astrid&#39;s lecture through the phone. After what felt like an eternity, my legs grew tired and I stood up with a weary stretch.</p>
+                        
+                        <p>&#34;I&#39;ve been waiting forever,&#34; I said into the phone. &#34;When are you getting here?&#34;</p>
+                        
+                        <p>Through the phone, I could hear someone&#39;s voice: &#34;Astrid, can you take a look at this proposal? Does this revision work?&#34;</p>
+                        
+                        <p>&#34;Yeah, that works,&#34; Astrid responded to her colleague before returning to our conversation with an apologetic tone. &#34;Sorry Audrey...&#34;</p>
+                        
+                        <p>&#34;It&#39;s fine,&#34; I said gently. &#34;You focus on your work. I&#39;m not in a hurry.&#34;</p>
+                        
+                        <p>&#34;I really am swamped right now,&#34; Astrid sighed, &#34;but I&#39;ve arranged for a handsome guy to pick you up. He should be there any minute!&#34;</p>
+                        
+                        <p>&#34;Handsome guy? Your new boyfriend?&#34; I couldn&#39;t help bout tease.</p>
+                        
+                        <p>&#34;Don&#39;t joke about that!&#34; Astrid&#39;s voice turned serious. &#34;This guy doesn&#39;t have the slightest interest in me! You can&#39;t make jokes like that!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -890,25 +930,29 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Just as she finished speaking, a luxury sedan pulled up to the mansion&#39;s circular driveway, The driver&#39;s window rolled down, and I froze slightly as James Collins&#39; face appeared behind the glass.</p>
-                    
-                    <p>&#34;Looks like he&#39;s arrived,&#34; Astrid&#39;s voice took on a teasing lilt.&#34;Now you</p>
-                    
-                    <p>understand what I meant. Go on, spend some time catching up with him.You missed your chance three years ago - don&#39;t let this opportunity slip away now!&#34;</p>
-                    
-                    <p>Before I could protest, she had already hung up, leaving me to face this carefully orchestrated situation alone. My stomach churned uncomfortably,and this time it wasn&#39;t just from the illness. Trust Astrid to turn even this moment into an attempted matchmaking opportunity.</p>
-                    
-                    <p>James stepped out of the car, looking every bit the successful jewelry executive in his tailored suit. &#34;Good morning, Audrey.&#34;</p>
-                    
-                    <p>I managed a poite smile, grateful that my discomfort wasn&#39;t visible. &#34;James.You didn&#39;t have to come all this way.&#34;</p>
-                    
-                    <p>&#34;I wanted to.&#34; His voice carried that same warmth it always had, the kind that used to make my heart skip back in college. Now it just made everything more complicated. &#34;Shall we?&#34;</p>
-                    
-                    <p>As we pulled away from the mansion, I found myself staring out the window,watching the palatial homes of the Hamptons elite roll past. I was immersed in my thoughts, remembering how I spent those boring days here.</p>
-                    
-                    <p>&#34;So,&#34; James broke the silence as we merged onto the highway. &#34;You really told them you want a divorce?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Just as she finished speaking, a luxury sedan pulled up to the mansion&#39;s circular driveway, The driver&#39;s window rolled down, and I froze slightly as James Collins&#39; face appeared behind the glass.</p>
+                        
+                        <p>&#34;Looks like he&#39;s arrived,&#34; Astrid&#39;s voice took on a teasing lilt.&#34;Now you</p>
+                        
+                        <p>understand what I meant. Go on, spend some time catching up with him.You missed your chance three years ago - don&#39;t let this opportunity slip away now!&#34;</p>
+                        
+                        <p>Before I could protest, she had already hung up, leaving me to face this carefully orchestrated situation alone. My stomach churned uncomfortably,and this time it wasn&#39;t just from the illness. Trust Astrid to turn even this moment into an attempted matchmaking opportunity.</p>
+                        
+                        <p>James stepped out of the car, looking every bit the successful jewelry executive in his tailored suit. &#34;Good morning, Audrey.&#34;</p>
+                        
+                        <p>I managed a poite smile, grateful that my discomfort wasn&#39;t visible. &#34;James.You didn&#39;t have to come all this way.&#34;</p>
+                        
+                        <p>&#34;I wanted to.&#34; His voice carried that same warmth it always had, the kind that used to make my heart skip back in college. Now it just made everything more complicated. &#34;Shall we?&#34;</p>
+                        
+                        <p>As we pulled away from the mansion, I found myself staring out the window,watching the palatial homes of the Hamptons elite roll past. I was immersed in my thoughts, remembering how I spent those boring days here.</p>
+                        
+                        <p>&#34;So,&#34; James broke the silence as we merged onto the highway. &#34;You really told them you want a divorce?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -923,25 +967,29 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>I nodded, keeping my eyes on the passing seenery. &#34;I had to explain everything to William this morning. He deserved to hear it from me directly.&#34;</p>
-                    
-                    <p>&#34;William Parker...&#34; James&#39;s voice softened slightly. &#34;He&#39;s always been kind to you,hasn&#39;t he? Unlike the rest of them,&#34;</p>
-                    
-                    <p>&#34;He has.&#34; The memory of William&#39;s face this morning - the hurt, the understanding, the resignation - made my chest ache. &#34;That&#39;s why I needed to explain properly. Whatever happens with Blake and me,William will always have my respect.&#34;</p>
-                    
-                    <p>James&#39;s hands tightened on the steering wheel. &#34;And Blake? Did he even bother to make sure you had a way back to the city? Or was he too busy with his precious Laurel Rose?&#34;</p>
-                    
-                    <p>The bitterness in his voice surprised me. &#34;James...&#34;</p>
-                    
-                    <p>&#34;I&#39;m serious. Audrey.&#34; His usually gentle tone had an edge I&#39;d never heard before. &#34;The entire Parker family was there - not one of them thought about how you&#39;d get back? If it had been Larel stranded out here, would Blake have just driven off and left her to figure it out herself?&#34;</p>
-                    
-                    <p>&#34;Tell me the truth, Audrey. Do you still have feelings for Blake, that jerk?&#34;</p>
-                    
-                    <p>&#34;I no longer have feelings for him.&#34; The words came out with a calm that surprised even me. Maybe it was true what they said about reaching a point where you just couldn&#39;t hurt anymore.</p>
-                    
-                    <p>James cleared his throat. &#34;Well then, we should celebrate once the divorce is final. Let me...”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>I nodded, keeping my eyes on the passing seenery. &#34;I had to explain everything to William this morning. He deserved to hear it from me directly.&#34;</p>
+                        
+                        <p>&#34;William Parker...&#34; James&#39;s voice softened slightly. &#34;He&#39;s always been kind to you,hasn&#39;t he? Unlike the rest of them,&#34;</p>
+                        
+                        <p>&#34;He has.&#34; The memory of William&#39;s face this morning - the hurt, the understanding, the resignation - made my chest ache. &#34;That&#39;s why I needed to explain properly. Whatever happens with Blake and me,William will always have my respect.&#34;</p>
+                        
+                        <p>James&#39;s hands tightened on the steering wheel. &#34;And Blake? Did he even bother to make sure you had a way back to the city? Or was he too busy with his precious Laurel Rose?&#34;</p>
+                        
+                        <p>The bitterness in his voice surprised me. &#34;James...&#34;</p>
+                        
+                        <p>&#34;I&#39;m serious. Audrey.&#34; His usually gentle tone had an edge I&#39;d never heard before. &#34;The entire Parker family was there - not one of them thought about how you&#39;d get back? If it had been Larel stranded out here, would Blake have just driven off and left her to figure it out herself?&#34;</p>
+                        
+                        <p>&#34;Tell me the truth, Audrey. Do you still have feelings for Blake, that jerk?&#34;</p>
+                        
+                        <p>&#34;I no longer have feelings for him.&#34; The words came out with a calm that surprised even me. Maybe it was true what they said about reaching a point where you just couldn&#39;t hurt anymore.</p>
+                        
+                        <p>James cleared his throat. &#34;Well then, we should celebrate once the divorce is final. Let me...”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -956,25 +1004,29 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>I turned to study his profile, my expression sharpening. &#34;What exactly did Astrid tell you when she asked for this favor?&#34;</p>
-                    
-                    <p>He hesitated, caught off guard by my directness. &#34;Just that she was swamped at work, needed someone to help...&#34;</p>
-                    
-                    <p>&#34;It&#39;s the middle of a workday, James. Don&#39;t you have your own responsibilities?&#34;</p>
-                    
-                    <p>Taking a deep breath, I pushed forward. &#34;Look, I appreciate your concern.but we were just senior and junior at Parsons. That doesn&#39;t warrant dropping everything to rescue me. My marriage, my divorce- those are my battles to fight.&#34;</p>
-                    
-                    <p>&#34;I don&#39;t need commentary from the sidelines.&#34;</p>
-                    
-                    <p>Silence filled the car. James sat frozen, looking like I&#39;d slapped him.</p>
-                    
-                    <p>&#34;When the divorce is final,&#34; I added, softer now, &#34;I&#39;m taking at least six months. No dating, no relationships, no complications.&#34;</p>
-                    
-                    <p>&#34;We need to keep our distance. For both our sakes.&#34;</p>
-                    
-                    <p>I&#39;d tried being subtle before, not wanting to hurt him when his feelings seemed genuine. But his earlier comments had crossed a line I couldn&#39;t ignore.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>I turned to study his profile, my expression sharpening. &#34;What exactly did Astrid tell you when she asked for this favor?&#34;</p>
+                        
+                        <p>He hesitated, caught off guard by my directness. &#34;Just that she was swamped at work, needed someone to help...&#34;</p>
+                        
+                        <p>&#34;It&#39;s the middle of a workday, James. Don&#39;t you have your own responsibilities?&#34;</p>
+                        
+                        <p>Taking a deep breath, I pushed forward. &#34;Look, I appreciate your concern.but we were just senior and junior at Parsons. That doesn&#39;t warrant dropping everything to rescue me. My marriage, my divorce- those are my battles to fight.&#34;</p>
+                        
+                        <p>&#34;I don&#39;t need commentary from the sidelines.&#34;</p>
+                        
+                        <p>Silence filled the car. James sat frozen, looking like I&#39;d slapped him.</p>
+                        
+                        <p>&#34;When the divorce is final,&#34; I added, softer now, &#34;I&#39;m taking at least six months. No dating, no relationships, no complications.&#34;</p>
+                        
+                        <p>&#34;We need to keep our distance. For both our sakes.&#34;</p>
+                        
+                        <p>I&#39;d tried being subtle before, not wanting to hurt him when his feelings seemed genuine. But his earlier comments had crossed a line I couldn&#39;t ignore.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -989,25 +1041,29 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>The color drained from his face, but after a long moment, he just nodded. &#34;</p>
-                    
-                    <p>I understand. I&#39;m sorry,Audrey.&#34;</p>
-                    
-                    <p>Something shiftedin James&#39;s expression - not quite hurt, but a sort of resigned understanding.</p>
-                    
-                    <p>After a moment, he reached into his briefcase and retrieved a sleek leather portfolio. &#34;Actually, meeting you today isn&#39;t just a favor for Astrid - it&#39;s actually my job.&#34;</p>
-                    
-                    <p>I raised an eyebrow, confused,&#34;What?&#34;</p>
-                    
-                    <p>&#34;Remember those jewelry designs you submitted through Astrid?&#34; He tapped the portfolio. &#34;They landed on my boss&#39;s desk this morning. The firm&#39;s interested, but they need some market-oriented adjustments.&#34; His smile widened slightly, &#34;Imagine my surprise when I realized who the</p>
-                    
-                    <p>designer was.&#34;</p>
-                    
-                    <p>The portfolio felt heavy in my hands as I flipped it open. These were definitely my sketches - the ones I&#39;d asked Astrid to help distribute through her industry connections. After my marriage to Blake, I&#39;d lost touch with the jewelry world, too focuised on being the decent Parker wife.Astrid, with her extensive modeling network, understood the current market far better than I did.</p>
-                    
-                    <p>I almost laughed at the irony. All this time, I&#39;d been assuming James had some ulterior motive in picking me up, when really...</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>The color drained from his face, but after a long moment, he just nodded. &#34;</p>
+                        
+                        <p>I understand. I&#39;m sorry,Audrey.&#34;</p>
+                        
+                        <p>Something shiftedin James&#39;s expression - not quite hurt, but a sort of resigned understanding.</p>
+                        
+                        <p>After a moment, he reached into his briefcase and retrieved a sleek leather portfolio. &#34;Actually, meeting you today isn&#39;t just a favor for Astrid - it&#39;s actually my job.&#34;</p>
+                        
+                        <p>I raised an eyebrow, confused,&#34;What?&#34;</p>
+                        
+                        <p>&#34;Remember those jewelry designs you submitted through Astrid?&#34; He tapped the portfolio. &#34;They landed on my boss&#39;s desk this morning. The firm&#39;s interested, but they need some market-oriented adjustments.&#34; His smile widened slightly, &#34;Imagine my surprise when I realized who the</p>
+                        
+                        <p>designer was.&#34;</p>
+                        
+                        <p>The portfolio felt heavy in my hands as I flipped it open. These were definitely my sketches - the ones I&#39;d asked Astrid to help distribute through her industry connections. After my marriage to Blake, I&#39;d lost touch with the jewelry world, too focuised on being the decent Parker wife.Astrid, with her extensive modeling network, understood the current market far better than I did.</p>
+                        
+                        <p>I almost laughed at the irony. All this time, I&#39;d been assuming James had some ulterior motive in picking me up, when really...</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1022,25 +1078,29 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;Just business,&#34; James said, reading my expression. &#34;The review board was impressed, and that&#39;s why I&#39;m here.&#34;</p>
-                    
-                    <p>Heat crept into my cheeks as I remembered my earlier assumptions. &#34;James,I-&#34;</p>
-                    
-                    <p>&#34;Don&#39;t apologize,&#34; he cut in smoothly. &#34;Did I have my own hopes in offering to pick you up? Sure. But you&#39;ve made your position clear,and I respect that.&#34; His tone turned purely professional. &#34;Let&#39;s not let personal history get in the way of what could be a solid professional partnership.&#34;</p>
-                    
-                    <p>His candor made me feel small. I bit my lip, studying the portfolio&#39;s contents more closely.</p>
-                    
-                    <p>&#34;We&#39;re a design studio,&#34; James continued after a moment. &#34;Pure creative work, no production. Would that interest you?&#34;</p>
-                    
-                    <p>&#34;It&#39;s perfect, actually.&#34; I nodded. A design studio meant connections,expertise- everything I needed to get my work to market quickly.With my limited time...</p>
-                    
-                    <p>James pulled out another document. &#34;Good, here&#39;s to a successful</p>
-                    
-                    <p>partnership. And here&#39;s your compensation package Take a look, let me know if-&#34;</p>
-                    
-                    <p>&#34;I accept,&#34; I said, barely glancing at the numbers. &#34;Just one condition.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;Just business,&#34; James said, reading my expression. &#34;The review board was impressed, and that&#39;s why I&#39;m here.&#34;</p>
+                        
+                        <p>Heat crept into my cheeks as I remembered my earlier assumptions. &#34;James,I-&#34;</p>
+                        
+                        <p>&#34;Don&#39;t apologize,&#34; he cut in smoothly. &#34;Did I have my own hopes in offering to pick you up? Sure. But you&#39;ve made your position clear,and I respect that.&#34; His tone turned purely professional. &#34;Let&#39;s not let personal history get in the way of what could be a solid professional partnership.&#34;</p>
+                        
+                        <p>His candor made me feel small. I bit my lip, studying the portfolio&#39;s contents more closely.</p>
+                        
+                        <p>&#34;We&#39;re a design studio,&#34; James continued after a moment. &#34;Pure creative work, no production. Would that interest you?&#34;</p>
+                        
+                        <p>&#34;It&#39;s perfect, actually.&#34; I nodded. A design studio meant connections,expertise- everything I needed to get my work to market quickly.With my limited time...</p>
+                        
+                        <p>James pulled out another document. &#34;Good, here&#39;s to a successful</p>
+                        
+                        <p>partnership. And here&#39;s your compensation package Take a look, let me know if-&#34;</p>
+                        
+                        <p>&#34;I accept,&#34; I said, barely glancing at the numbers. &#34;Just one condition.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1055,15 +1115,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Three months.&#34; I met his questioning look. &#34;I need mny designs on the market withinthree months.&#34;</p>
-                    
-                    <p>&#34;This timeline...&#34; James frowned. &#34;It&#39;s not impossible, but it won&#39;t be easy.Jewelry production and refinement takes considerable time, especially with high-end pieces.&#34;</p>
-                    
-                    <p>&#34;The board might need some convincing, but... &#34;</p>
-                    
-                    <p>&#34;Wait!&#34; He widened his eyes. &#34;Three months? Is that all the time you have left?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Three months.&#34; I met his questioning look. &#34;I need mny designs on the market withinthree months.&#34;</p>
+                        
+                        <p>&#34;This timeline...&#34; James frowned. &#34;It&#39;s not impossible, but it won&#39;t be easy.Jewelry production and refinement takes considerable time, especially with high-end pieces.&#34;</p>
+                        
+                        <p>&#34;The board might need some convincing, but... &#34;</p>
+                        
+                        <p>&#34;Wait!&#34; He widened his eyes. &#34;Three months? Is that all the time you have left?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2379,6 +2443,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2505,7 +2649,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2547,32 +2690,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2583,21 +2708,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2630,6 +2745,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2650,20 +2771,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

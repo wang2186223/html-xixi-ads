@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.401885">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.401885">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.403893">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.403893">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.401885",
-        "dateModified": "2026-07-19T02:47:23.401885",
+        "datePublished": "2026-07-19T13:03:18.403893",
+        "dateModified": "2026-07-19T13:03:18.403893",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,27 +893,31 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Brian&#39;s POV</p>
-                    
-                    <p>&#34;Oh, what a beautiful morning, oh what a beautiful day...&#34;</p>
-                    
-                    <p>I woke up to Grandma Ruth&#39;s soft singing. She always sings this song from Oklahomal, which Mom says was her favorite musical when she was young. The familiar melody made me feel safe, like everything was going to be okay for another day.</p>
-                    
-                    <p>I got dressed and walked into the kitchen where Grandma Ruth was frying bacon. Ms. Taylor and Mitchell seemed to be out, but they&#39;d probably be back soon.</p>
-                    
-                    <p>&#34;Good morning, sleepyhead,&#34; Grandma Ruth smiled at me, the wrinkles around her eyes crinkling in that warm way. &#34;Hungry?&#34;</p>
-                    
-                    <p>I nodded and sat down in my spot. Grandma&#39;s breakfasts always smell amazing.</p>
-                    
-                    <p>&#34;Eat up,&#34; Grandma Ruth put scrambled eggs and bacon on my plate and poured me a glass of orange juice. &#34;What is the plan at school today?&#34;</p>
-                    
-                    <p>I was about to tell her about the performance rehearsal when the doorbell rang, the harsh sound cutting through our peaceful morning.</p>
-                    
-                    <p>Grandma Ruth set down her spatula and went to answer the door while I continued eating my breakfast. From where I sat at the table, I could see toward the entrance. The visitor was Grandma Betty, her mouth set in a tight line and her eyebrows drawn together. &#34;I&#39;m here to see Brian,&#34; she announced as soon as she entered,her voice full of that grown-up bossiness.</p>
-                    
-                    <p>Grandma Ruth replied calmly: &#34;He&#39;s having breakfast.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Brian&#39;s POV</p>
+                        
+                        <p>&#34;Oh, what a beautiful morning, oh what a beautiful day...&#34;</p>
+                        
+                        <p>I woke up to Grandma Ruth&#39;s soft singing. She always sings this song from Oklahomal, which Mom says was her favorite musical when she was young. The familiar melody made me feel safe, like everything was going to be okay for another day.</p>
+                        
+                        <p>I got dressed and walked into the kitchen where Grandma Ruth was frying bacon. Ms. Taylor and Mitchell seemed to be out, but they&#39;d probably be back soon.</p>
+                        
+                        <p>&#34;Good morning, sleepyhead,&#34; Grandma Ruth smiled at me, the wrinkles around her eyes crinkling in that warm way. &#34;Hungry?&#34;</p>
+                        
+                        <p>I nodded and sat down in my spot. Grandma&#39;s breakfasts always smell amazing.</p>
+                        
+                        <p>&#34;Eat up,&#34; Grandma Ruth put scrambled eggs and bacon on my plate and poured me a glass of orange juice. &#34;What is the plan at school today?&#34;</p>
+                        
+                        <p>I was about to tell her about the performance rehearsal when the doorbell rang, the harsh sound cutting through our peaceful morning.</p>
+                        
+                        <p>Grandma Ruth set down her spatula and went to answer the door while I continued eating my breakfast. From where I sat at the table, I could see toward the entrance. The visitor was Grandma Betty, her mouth set in a tight line and her eyebrows drawn together. &#34;I&#39;m here to see Brian,&#34; she announced as soon as she entered,her voice full of that grown-up bossiness.</p>
+                        
+                        <p>Grandma Ruth replied calmly: &#34;He&#39;s having breakfast.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -892,27 +932,31 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Grandma Betty walked straight into the dining room, forcing a smile when she saw me: &#34;Brian, it&#39;s been a long time.”.</p>
-                    
-                    <p>I looked up at her: &#34;Good morning. Grandma Betty.&#34;</p>
-                    
-                    <p>&#34;Is that all?&#34; Her smile disappeared, eyebrows pinching together. &#34;After not seeing me for so long, that&#39;s all you have to say? Is that what that Thompson girl&#39;s child has taught you about treating family?&#34;</p>
-                    
-                    <p>I put down my fork, feeling a tightness in my chest. Ever since Mom and Dad got divorced, Grandma Betty had taken Dad and Sarah&#39;s side and barely contacted me. I didn&#39;t understand why she suddenly showed up today.</p>
-                    
-                    <p>&#34;Brian,what kind of attitude is this?&#34; Grandma Betty&#39;s voice turned sharp,her cheeks starting to flush. &#34;I asked you a question. Why aren&#39;t you answering me?&#34;</p>
-                    
-                    <p>&#34;If you came to have a normal conversation, I&#39;d be happy to answer,&#34; I said. &#34;But you look like you&#39;re angry.&#34;</p>
-                    
-                    <p>Grandma Betty&#39;s face turned bright red, her eyes wide: &#34;How dare you speak to me that way?&#34;</p>
-                    
-                    <p>&#34;Betty!&#34; Grandma Ruth walked over and stood beside me. Her voice was firm but not loud. &#34;Did you come here toyell at a child?&#34;</p>
-                    
-                    <p>Grandma Betty turned to Grandma Ruth, looking her up and down with her lip curled: &#34;When did they let an old woman from the Boston slums move in here? Look at those outdated clothes-people in the Upper East Side would cross the street to avoid you.&#34;</p>
-                    
-                    <p>&#34;She&#39;s my grandmother,&#34; I put down my silverware, feeling a wave of anger but trying to keep my voice steady. &#34;She takes care of me.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Grandma Betty walked straight into the dining room, forcing a smile when she saw me: &#34;Brian, it&#39;s been a long time.”.</p>
+                        
+                        <p>I looked up at her: &#34;Good morning. Grandma Betty.&#34;</p>
+                        
+                        <p>&#34;Is that all?&#34; Her smile disappeared, eyebrows pinching together. &#34;After not seeing me for so long, that&#39;s all you have to say? Is that what that Thompson girl&#39;s child has taught you about treating family?&#34;</p>
+                        
+                        <p>I put down my fork, feeling a tightness in my chest. Ever since Mom and Dad got divorced, Grandma Betty had taken Dad and Sarah&#39;s side and barely contacted me. I didn&#39;t understand why she suddenly showed up today.</p>
+                        
+                        <p>&#34;Brian,what kind of attitude is this?&#34; Grandma Betty&#39;s voice turned sharp,her cheeks starting to flush. &#34;I asked you a question. Why aren&#39;t you answering me?&#34;</p>
+                        
+                        <p>&#34;If you came to have a normal conversation, I&#39;d be happy to answer,&#34; I said. &#34;But you look like you&#39;re angry.&#34;</p>
+                        
+                        <p>Grandma Betty&#39;s face turned bright red, her eyes wide: &#34;How dare you speak to me that way?&#34;</p>
+                        
+                        <p>&#34;Betty!&#34; Grandma Ruth walked over and stood beside me. Her voice was firm but not loud. &#34;Did you come here toyell at a child?&#34;</p>
+                        
+                        <p>Grandma Betty turned to Grandma Ruth, looking her up and down with her lip curled: &#34;When did they let an old woman from the Boston slums move in here? Look at those outdated clothes-people in the Upper East Side would cross the street to avoid you.&#34;</p>
+                        
+                        <p>&#34;She&#39;s my grandmother,&#34; I put down my silverware, feeling a wave of anger but trying to keep my voice steady. &#34;She takes care of me.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -927,27 +971,31 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Grandma Betty&#39;s mouth twitched: &#34;Look how she&#39;s raised you. These types of people, once they get in the door, they take over everything.&#34;</p>
-                    
-                    <p>&#34;Grandma Betty,&#34; I took a deep breath, &#34;we aren&#39;t family anymore. Now you&#39;re family with Dad and Sarah. I like living with Grandmà Ruth because she&#39;s good to me. You can&#39;t interfere with that.&#34;</p>
-                    
-                    <p>Grandma Betty&#39;s mnouth fell open at my words, her expression changing from surprise to fury. A five-year-old child speaking to her this way completely wounded her pride.</p>
-                    
-                    <p>Grandma Betty looked like she couldn&#39;t believe what she&#39;d just heard.</p>
-                    
-                    <p>Grandma Ruth gently ruffled my hair and turned to Grandma Betty: &#34;I can see you&#39;ve been saying bad things about me to Brian. That&#39;s why he was sometimes distant with me before. If you continue doing this,I won&#39;t be so polite.&#34;</p>
-                    
-                    <p>Grandma Betty lifted her chin, eyes flashing with anger: &#34;Are you threatening me? A woman living on welfare? My son&#39;s wealth has supported your entire family!&#34;</p>
-                    
-                    <p>&#34;What did I say that was wrong?&#34; Grandma Betty shot back.&#34;You and your daughter had nothing, not a penny to your names,completely dependent on my son for support!&#34;</p>
-                    
-                    <p>Grandma Ruth&#39;s expression turned serious: &#34;First of all, when my daughter married your son, his investment firm barely had a reputation, and his ex- girlfriend had already left him. Annie never looked down on him.Now that his business is successful. he dumped her and found Sarah.&#34;</p>
-                    
-                    <p>Grandma Betty&#39;s face stiffened for a moment before she quickly countered:&#34;That&#39;s perfectly normal,isn&#39;t it?&#34;</p>
-                    
-                    <p>&#34;Yes, very normal,&#34; Grandma Ruth&#39;s smile was cold. &#34;Now Annie has left.just as you wanted. Aren&#39;t you satisfied yet?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Grandma Betty&#39;s mouth twitched: &#34;Look how she&#39;s raised you. These types of people, once they get in the door, they take over everything.&#34;</p>
+                        
+                        <p>&#34;Grandma Betty,&#34; I took a deep breath, &#34;we aren&#39;t family anymore. Now you&#39;re family with Dad and Sarah. I like living with Grandmà Ruth because she&#39;s good to me. You can&#39;t interfere with that.&#34;</p>
+                        
+                        <p>Grandma Betty&#39;s mnouth fell open at my words, her expression changing from surprise to fury. A five-year-old child speaking to her this way completely wounded her pride.</p>
+                        
+                        <p>Grandma Betty looked like she couldn&#39;t believe what she&#39;d just heard.</p>
+                        
+                        <p>Grandma Ruth gently ruffled my hair and turned to Grandma Betty: &#34;I can see you&#39;ve been saying bad things about me to Brian. That&#39;s why he was sometimes distant with me before. If you continue doing this,I won&#39;t be so polite.&#34;</p>
+                        
+                        <p>Grandma Betty lifted her chin, eyes flashing with anger: &#34;Are you threatening me? A woman living on welfare? My son&#39;s wealth has supported your entire family!&#34;</p>
+                        
+                        <p>&#34;What did I say that was wrong?&#34; Grandma Betty shot back.&#34;You and your daughter had nothing, not a penny to your names,completely dependent on my son for support!&#34;</p>
+                        
+                        <p>Grandma Ruth&#39;s expression turned serious: &#34;First of all, when my daughter married your son, his investment firm barely had a reputation, and his ex- girlfriend had already left him. Annie never looked down on him.Now that his business is successful. he dumped her and found Sarah.&#34;</p>
+                        
+                        <p>Grandma Betty&#39;s face stiffened for a moment before she quickly countered:&#34;That&#39;s perfectly normal,isn&#39;t it?&#34;</p>
+                        
+                        <p>&#34;Yes, very normal,&#34; Grandma Ruth&#39;s smile was cold. &#34;Now Annie has left.just as you wanted. Aren&#39;t you satisfied yet?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -962,27 +1010,31 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Grandma Betty pressed her lips together,not answering.</p>
-                    
-                    <p>Grandma Ruth continued: &#34;You gave up on Brian long ago. Why suddenly come looking for him today? To take out your frustrations? I won&#39;t let you bully him.&#34;</p>
-                    
-                    <p>&#34;You&#39;re only living with him to get money from my son,&#34; Grandma Betty&#39;s voice turned shrill. &#34;Stop pretending.&#34;</p>
-                    
-                    <p>&#34;Didn&#39;t your son tell you?&#34; Grandma Ruth raised an eyebrow. &#34;He stopped paying child support for Brian a long time ago. We don&#39;t take a penny from him.&#34;</p>
-                    
-                    <p>&#34;Impossible!&#34; Grandma Betty&#39;s eyes widened.</p>
-                    
-                    <p>&#34;If you don&#39;t believe me, call and ask him,&#34; Grandma Ruth crossed her arms,standing between me and Grandma Betty.</p>
-                    
-                    <p>Grandma Betty hesitated, then took out her phone and dialed a number. I could see her gripping the phone so tightly her knuckles turned white.</p>
-                    
-                    <p>&#34;Philip,&#34; she said quickly, her voice tense, &#34;are you no longer covering Brian&#39;s living expenses?&#34;</p>
-                    
-                    <p>I couldn&#39;t hear what Dad said on the phone, but I saw Grandma Betty&#39;s face turn pale.</p>
-                    
-                    <p>&#34;You&#39;re not joking, are you?&#34; her voice became unsteady.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Grandma Betty pressed her lips together,not answering.</p>
+                        
+                        <p>Grandma Ruth continued: &#34;You gave up on Brian long ago. Why suddenly come looking for him today? To take out your frustrations? I won&#39;t let you bully him.&#34;</p>
+                        
+                        <p>&#34;You&#39;re only living with him to get money from my son,&#34; Grandma Betty&#39;s voice turned shrill. &#34;Stop pretending.&#34;</p>
+                        
+                        <p>&#34;Didn&#39;t your son tell you?&#34; Grandma Ruth raised an eyebrow. &#34;He stopped paying child support for Brian a long time ago. We don&#39;t take a penny from him.&#34;</p>
+                        
+                        <p>&#34;Impossible!&#34; Grandma Betty&#39;s eyes widened.</p>
+                        
+                        <p>&#34;If you don&#39;t believe me, call and ask him,&#34; Grandma Ruth crossed her arms,standing between me and Grandma Betty.</p>
+                        
+                        <p>Grandma Betty hesitated, then took out her phone and dialed a number. I could see her gripping the phone so tightly her knuckles turned white.</p>
+                        
+                        <p>&#34;Philip,&#34; she said quickly, her voice tense, &#34;are you no longer covering Brian&#39;s living expenses?&#34;</p>
+                        
+                        <p>I couldn&#39;t hear what Dad said on the phone, but I saw Grandma Betty&#39;s face turn pale.</p>
+                        
+                        <p>&#34;You&#39;re not joking, are you?&#34; her voice became unsteady.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -997,27 +1049,31 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Dad said something else I couldn&#39;t hear.</p>
-                    
-                    <p>&#34;I told you to... but I didn&#39;t think...&#34; Grandma Betty paused, then hung up the phone.</p>
-                    
-                    <p>She stood there, her lips trembling slightly, clearly shocked.</p>
-                    
-                    <p>&#34;So,&#34; Grandma Ruth&#39;s voice was calm, &#34;&#39;confirmed?&#34;</p>
-                    
-                    <p>Grandma Betty just stared at Grandma Ruth, something in her eyes I&#39;d never seen before.</p>
-                    
-                    <p>&#34;You and your son are both heartless,&#34; Grandma Ruth said. &#34;When Sarah got pregnant. Philip abandoned Brian. And when you&#39;re angry about something, you come to take it out on an innocent&#39;child. He&#39;s just a child-what did he do wrong?&#34;</p>
-                    
-                    <p>Grandma Betty&#39;s jaw tightened: &#34;Because I&#39;m his grandmother!&#34;</p>
-                    
-                    <p>&#34;Are you worthy of being a grandmother?&#34; Grandma Ruth&#39;s voice was low but powerful. &#34;Brian has nothing to do with your family anymore. If you come to harass him again, don&#39;t blame me for being impolite.&#34;</p>
-                    
-                    <p>Grandma Ruth pushed Grandma Betty toward the door and closed it behind her.</p>
-                    
-                    <p>&#34;How dare you speak to me like that!&#34; Grandma Betty&#39;s shouts came through the door.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Dad said something else I couldn&#39;t hear.</p>
+                        
+                        <p>&#34;I told you to... but I didn&#39;t think...&#34; Grandma Betty paused, then hung up the phone.</p>
+                        
+                        <p>She stood there, her lips trembling slightly, clearly shocked.</p>
+                        
+                        <p>&#34;So,&#34; Grandma Ruth&#39;s voice was calm, &#34;&#39;confirmed?&#34;</p>
+                        
+                        <p>Grandma Betty just stared at Grandma Ruth, something in her eyes I&#39;d never seen before.</p>
+                        
+                        <p>&#34;You and your son are both heartless,&#34; Grandma Ruth said. &#34;When Sarah got pregnant. Philip abandoned Brian. And when you&#39;re angry about something, you come to take it out on an innocent&#39;child. He&#39;s just a child-what did he do wrong?&#34;</p>
+                        
+                        <p>Grandma Betty&#39;s jaw tightened: &#34;Because I&#39;m his grandmother!&#34;</p>
+                        
+                        <p>&#34;Are you worthy of being a grandmother?&#34; Grandma Ruth&#39;s voice was low but powerful. &#34;Brian has nothing to do with your family anymore. If you come to harass him again, don&#39;t blame me for being impolite.&#34;</p>
+                        
+                        <p>Grandma Ruth pushed Grandma Betty toward the door and closed it behind her.</p>
+                        
+                        <p>&#34;How dare you speak to me like that!&#34; Grandma Betty&#39;s shouts came through the door.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1032,27 +1088,31 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Grandma Ruth opened the door again: &#34;What wouldn&#39;t I dare to do?&#34; &#34;It&#39;s all because of your daughter!&#34; Grandma Betty&#39;s eyes flashed with rage</p>
-                    
-                    <p>&#34;They&#39;re already divorced. but she&#39;s still harassing Sarah.I went to help Sarah, and she called the police on me!</p>
-                    
-                    <p>Grandma Ruth laughed, the kind of laugh that scared mne a little: &#34;If the police took you away, it means you did something wrong, doesn&#39;t it? You say my daughter is harassing Sarah? That&#39;s ridiculous! Look at what kind of people you and Sarah are! An old woman who can&#39;t tell right from wrong and a woman who interfered in someone else&#39;s marriage! After the divorce. Annie just wanted to live quietly on her own, but you kept causing trouble! Of course she had to protect herself.&#34;</p>
-                    
-                    <p>I&#39;d never seen Grandma this angry before. Though her voice wasn&#39;t loud,each word was as sharp as a knife. Mom never told me about her divorce from Dad,but seeing Grandma&#39;s reaction now, I guessed she must have been through a lot of unfair treatment.</p>
-                    
-                    <p>&#34;You&#39;re all terrible people, yet you blame my daughter!&#34; Grandma Ruth&#39;s voice finally rose as she walked toward the door. &#34;I&#39;ll make sure you can&#39;t show your face in New York again!&#34;</p>
-                    
-                    <p>&#34;Crazy woman!&#34; Grandma Betty turned and ran.</p>
-                    
-                    <p>&#34;Don&#39;t run away if you&#39;re so brave!&#34; Grandma Ruth chased after her.I instinctively walked to the door.</p>
-                    
-                    <p>Grandma Betty ran into the elevator, frantically pressing the close button.Before the doors closed, I heard Grandma Ruth shout: &#34;Come back again and see what I&#39;ll do to you!&#34;</p>
-                    
-                    <p>A few moments later, Grandma Ruth returned, her face still slightly flushed. She saw me standing at the door, let out a breath, and her expressi on suddenly turned worried&#34;Brian...&#34; she began, her voice returning to its usual gentleness.</p>
-                    
-                    <p>&#34;Grandma,you were awesome!&#34; I couldn&#39;t help but smile.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Grandma Ruth opened the door again: &#34;What wouldn&#39;t I dare to do?&#34; &#34;It&#39;s all because of your daughter!&#34; Grandma Betty&#39;s eyes flashed with rage</p>
+                        
+                        <p>&#34;They&#39;re already divorced. but she&#39;s still harassing Sarah.I went to help Sarah, and she called the police on me!</p>
+                        
+                        <p>Grandma Ruth laughed, the kind of laugh that scared mne a little: &#34;If the police took you away, it means you did something wrong, doesn&#39;t it? You say my daughter is harassing Sarah? That&#39;s ridiculous! Look at what kind of people you and Sarah are! An old woman who can&#39;t tell right from wrong and a woman who interfered in someone else&#39;s marriage! After the divorce. Annie just wanted to live quietly on her own, but you kept causing trouble! Of course she had to protect herself.&#34;</p>
+                        
+                        <p>I&#39;d never seen Grandma this angry before. Though her voice wasn&#39;t loud,each word was as sharp as a knife. Mom never told me about her divorce from Dad,but seeing Grandma&#39;s reaction now, I guessed she must have been through a lot of unfair treatment.</p>
+                        
+                        <p>&#34;You&#39;re all terrible people, yet you blame my daughter!&#34; Grandma Ruth&#39;s voice finally rose as she walked toward the door. &#34;I&#39;ll make sure you can&#39;t show your face in New York again!&#34;</p>
+                        
+                        <p>&#34;Crazy woman!&#34; Grandma Betty turned and ran.</p>
+                        
+                        <p>&#34;Don&#39;t run away if you&#39;re so brave!&#34; Grandma Ruth chased after her.I instinctively walked to the door.</p>
+                        
+                        <p>Grandma Betty ran into the elevator, frantically pressing the close button.Before the doors closed, I heard Grandma Ruth shout: &#34;Come back again and see what I&#39;ll do to you!&#34;</p>
+                        
+                        <p>A few moments later, Grandma Ruth returned, her face still slightly flushed. She saw me standing at the door, let out a breath, and her expressi on suddenly turned worried&#34;Brian...&#34; she began, her voice returning to its usual gentleness.</p>
+                        
+                        <p>&#34;Grandma,you were awesome!&#34; I couldn&#39;t help but smile.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1067,25 +1127,29 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;You&#39;re not afraid of me?&#34; Grandma Ruth looked surprised, her eyebrows raised high.</p>
-                    
-                    <p>&#34;A little bit.&#34; I walked over and took her hand.&#34;But you were protecting me, and that makes me happy.&#34;</p>
-                    
-                    <p>Grandma Ruth looked surprised, her expression softening: &#34;That&#39;s good,then.&#34;</p>
-                    
-                    <p>She led me back to the living room: &#34;The food is still warm. Eat something before Mitchell takes you to school.&#34;</p>
-                    
-                    <p>Back at the table, my mind kept replaying everything that had just happened. I&#39;d never seen adults fight like that, especially not over me.Watching Grandma Ruth stand up to Grandma Betty was both scary and exciting.</p>
-                    
-                    <p>I felt a strange mixture of emotions that I didn&#39;t fully understand. On one hand,knowing that Dad had really given up on me made me a little sad.He and Sarah must be very happy together. But on the other hand,I felt proud that Grandma Ruth didn&#39;t care about any of that. She just wanted me.</p>
-                    
-                    <p>&#34;Grandma...&#34; I asked quietly while chewing a piece of bacon, &#34;Will Dad abandon me,like forever?&#34;</p>
-                    
-                    <p>She paused, then nodded: &#34;No. Maybe, I don&#39;t know. Adults sometimes make complicated choices, but that doesn&#39;t mean you&#39;re not important.&#34;</p>
-                    
-                    <p>I nodded, though I wasn&#39;t sure I really understood.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;You&#39;re not afraid of me?&#34; Grandma Ruth looked surprised, her eyebrows raised high.</p>
+                        
+                        <p>&#34;A little bit.&#34; I walked over and took her hand.&#34;But you were protecting me, and that makes me happy.&#34;</p>
+                        
+                        <p>Grandma Ruth looked surprised, her expression softening: &#34;That&#39;s good,then.&#34;</p>
+                        
+                        <p>She led me back to the living room: &#34;The food is still warm. Eat something before Mitchell takes you to school.&#34;</p>
+                        
+                        <p>Back at the table, my mind kept replaying everything that had just happened. I&#39;d never seen adults fight like that, especially not over me.Watching Grandma Ruth stand up to Grandma Betty was both scary and exciting.</p>
+                        
+                        <p>I felt a strange mixture of emotions that I didn&#39;t fully understand. On one hand,knowing that Dad had really given up on me made me a little sad.He and Sarah must be very happy together. But on the other hand,I felt proud that Grandma Ruth didn&#39;t care about any of that. She just wanted me.</p>
+                        
+                        <p>&#34;Grandma...&#34; I asked quietly while chewing a piece of bacon, &#34;Will Dad abandon me,like forever?&#34;</p>
+                        
+                        <p>She paused, then nodded: &#34;No. Maybe, I don&#39;t know. Adults sometimes make complicated choices, but that doesn&#39;t mean you&#39;re not important.&#34;</p>
+                        
+                        <p>I nodded, though I wasn&#39;t sure I really understood.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2401,6 +2465,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2527,7 +2671,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2569,32 +2712,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2605,21 +2730,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2652,6 +2767,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2672,20 +2793,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

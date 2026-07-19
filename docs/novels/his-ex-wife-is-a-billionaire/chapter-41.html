@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.303223">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.303223">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.302757">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.302757">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.303223",
-        "dateModified": "2026-07-19T02:47:23.303223",
+        "datePublished": "2026-07-19T13:03:18.302757",
+        "dateModified": "2026-07-19T13:03:18.302757",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,41 +893,45 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Thaddeus’ face darkened even further, his l*ps drawn tight.</p>
-                    
-                    <p>Already bidding up to nine hundred grand, so a million was definitely not a big deal.</p>
-                    
-                    <p>na suddenly stopped bidding. Not because she couldn’t afford it, but because she chose to give up. She did it on purpose!</p>
-                    
-                    <p>But he couldn’t say a thing. After all, nob*dy forced Acacia to spend big bucks on this painting. It was her choice.</p>
-                    
-                    <p>In the following auctions, Evadne kept her cool and didn’t make a move.</p>
-                    
-                    <p>Thaddeus only wanted to win the Dante Chair, so he too didn’t make a move.</p>
-                    
-                    <p>Next up for auction was a Victorian antique tablemp donated by Elspeth on behalf of the Abernathy group. Starting bid: two hundred grand.</p>
-                    
-                    <p>Evadne snorted lightly and shook her head in disdain.</p>
-                    
-                    <p>She’d rather buy the first knockoff than spend a fortune on this piece of junk. She figured whoever bought it was a suc ker.</p>
-                    
-                    <p>As expected, the bidding was thin. Despite the auctioneer’s best efforts, it only sold for two hundred and sixty grand.</p>
-                    
-                    <p>The smile on Elspeth’s face gradually faded.</p>
-                    
-                    <p>She was just thankful the price didn’t go below two hundred and fifty grand.</p>
-                    
-                    <p>Thaddeus, however, appeared utterly calm.</p>
-                    
-                    <p>After all, whatever Elspeth did, the one losing face could only be Frederic. Although they were father and son, spouses were one entity.</p>
-                    
-                    <p>“Next up for auction is a 17th-century European royal silver conch cup, donated by Suri Bright Ashbourne from the K Group!”</p>
-                    
-                    <p>All the collectors’ interests were instantly piqued!</p>
-                    
-                    <p>Evadne was taken aback and quickly turned around.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Thaddeus’ face darkened even further, his l*ps drawn tight.</p>
+                        
+                        <p>Already bidding up to nine hundred grand, so a million was definitely not a big deal.</p>
+                        
+                        <p>na suddenly stopped bidding. Not because she couldn’t afford it, but because she chose to give up. She did it on purpose!</p>
+                        
+                        <p>But he couldn’t say a thing. After all, nob*dy forced Acacia to spend big bucks on this painting. It was her choice.</p>
+                        
+                        <p>In the following auctions, Evadne kept her cool and didn’t make a move.</p>
+                        
+                        <p>Thaddeus only wanted to win the Dante Chair, so he too didn’t make a move.</p>
+                        
+                        <p>Next up for auction was a Victorian antique tablemp donated by Elspeth on behalf of the Abernathy group. Starting bid: two hundred grand.</p>
+                        
+                        <p>Evadne snorted lightly and shook her head in disdain.</p>
+                        
+                        <p>She’d rather buy the first knockoff than spend a fortune on this piece of junk. She figured whoever bought it was a suc ker.</p>
+                        
+                        <p>As expected, the bidding was thin. Despite the auctioneer’s best efforts, it only sold for two hundred and sixty grand.</p>
+                        
+                        <p>The smile on Elspeth’s face gradually faded.</p>
+                        
+                        <p>She was just thankful the price didn’t go below two hundred and fifty grand.</p>
+                        
+                        <p>Thaddeus, however, appeared utterly calm.</p>
+                        
+                        <p>After all, whatever Elspeth did, the one losing face could only be Frederic. Although they were father and son, spouses were one entity.</p>
+                        
+                        <p>“Next up for auction is a 17th-century European royal silver conch cup, donated by Suri Bright Ashbourne from the K Group!”</p>
+                        
+                        <p>All the collectors’ interests were instantly piqued!</p>
+                        
+                        <p>Evadne was taken aback and quickly turned around.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -906,41 +946,45 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Finally, she spotted Suri’s elegant figure in the back rows.</p>
-                    
-                    <p>[Suri’s here? Why didn’t you give me a heads-up?]</p>
-                    
-                    <p>Evadne nervously texted Jason.</p>
-                    
-                    <p>Jason replied. (I just found out too! It might be Chairman Emeric who sent Suri here at thest minute.]</p>
-                    
-                    <p>Evadne felt a bit flustered.</p>
-                    
-                    <p>Almost all of the Abernathy family was here at today’s event so she was really scared of revealing her true identity if she didn’t handle things well.</p>
-                    
-                    <p>Just then, she noticed Suri giving her an “ok” gesture, filled with an understanding only besties share.</p>
-                    
-                    <p>A warm feeling spread through Evadne, and she immediately understood.</p>
-                    
-                    <p>Suri was really clever!</p>
-                    
-                    <p>Everyone was eager to bid on this item from the K Group.</p>
-                    
-                    <p>People praised the Ashbourne Group’s generosity, showing the status of a big corporation.</p>
-                    
-                    <p>Inparison, the Abernathy Group’s performance wasckluster. The two items they donated were even less valuable than the decorations in their foyer.</p>
-                    
-                    <p>People began to question Elspeth’s taste.</p>
-                    
-                    <p>Elspeth felt incredibly awkward. She felt like she was on pins and needles.</p>
-                    
-                    <p>The collection she brought was worlds apart from Suri’s. Inparison, her taste seemed even more narrow-minded so it was embarra**ing!</p>
-                    
-                    <p>Up until now, there had finally been a spark of interest in Thaddeus’ eyes as he twirled his bidding paddle.</p>
-                    
-                    <p>“This is a good piece.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Finally, she spotted Suri’s elegant figure in the back rows.</p>
+                        
+                        <p>[Suri’s here? Why didn’t you give me a heads-up?]</p>
+                        
+                        <p>Evadne nervously texted Jason.</p>
+                        
+                        <p>Jason replied. (I just found out too! It might be Chairman Emeric who sent Suri here at thest minute.]</p>
+                        
+                        <p>Evadne felt a bit flustered.</p>
+                        
+                        <p>Almost all of the Abernathy family was here at today’s event so she was really scared of revealing her true identity if she didn’t handle things well.</p>
+                        
+                        <p>Just then, she noticed Suri giving her an “ok” gesture, filled with an understanding only besties share.</p>
+                        
+                        <p>A warm feeling spread through Evadne, and she immediately understood.</p>
+                        
+                        <p>Suri was really clever!</p>
+                        
+                        <p>Everyone was eager to bid on this item from the K Group.</p>
+                        
+                        <p>People praised the Ashbourne Group’s generosity, showing the status of a big corporation.</p>
+                        
+                        <p>Inparison, the Abernathy Group’s performance wasckluster. The two items they donated were even less valuable than the decorations in their foyer.</p>
+                        
+                        <p>People began to question Elspeth’s taste.</p>
+                        
+                        <p>Elspeth felt incredibly awkward. She felt like she was on pins and needles.</p>
+                        
+                        <p>The collection she brought was worlds apart from Suri’s. Inparison, her taste seemed even more narrow-minded so it was embarra**ing!</p>
+                        
+                        <p>Up until now, there had finally been a spark of interest in Thaddeus’ eyes as he twirled his bidding paddle.</p>
+                        
+                        <p>“This is a good piece.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -955,41 +999,45 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>“The color of the sky after the rain probably described the color of this cup.”</p>
-                    
-                    <p>When Thaddeus heard Evadne say this, he couldn’t help but turn his head and look at her with a hint of surprise.</p>
-                    
-                    <p>Evadne was immersed in the charm of the antique. Her skin was extremely delicate, and under the light, it seemed even more enchanting, beautiful enough to take one’s breath</p>
-                    
-                    <p>away.</p>
-                    
-                    <p>Although na was very beautiful, he never paid much attention to her beauty because he already had someone he liked.</p>
-                    
-                    <p>So sometimes, Thaddeus even felt that na following him was a waste of her life, wasting her beauty.</p>
-                    
-                    <p>Thaddeus’s gaze unconsciously slid down, finally stopping on Evadne’s wrist.</p>
-                    
-                    <p>Sure enough, she was still wearing the bracelet his grandfather gave her. Despite it not matching her outfit today, she still couldn’t bear to take it off. It seemed she really liked</p>
-                    
-                    <p>it.</p>
-                    
-                    <p>Thaddeus squinted, and his heart jumped involuntarily.</p>
-                    
-                    <p>The silver conch cup sparked a fierce bidding war, and the auctioneer was swamped!</p>
-                    
-                    <p>“One million!”</p>
-                    
-                    <p>“Two and a half million!”</p>
-                    
-                    <p>“Two point seven million!”</p>
-                    
-                    <p>“Four million.”</p>
-                    
-                    <p>Thaddeus gracefully raised his paddle, nonchntly calling out the highest number in the room.</p>
-                    
-                    <p>Everyone was amazed.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“The color of the sky after the rain probably described the color of this cup.”</p>
+                        
+                        <p>When Thaddeus heard Evadne say this, he couldn’t help but turn his head and look at her with a hint of surprise.</p>
+                        
+                        <p>Evadne was immersed in the charm of the antique. Her skin was extremely delicate, and under the light, it seemed even more enchanting, beautiful enough to take one’s breath</p>
+                        
+                        <p>away.</p>
+                        
+                        <p>Although na was very beautiful, he never paid much attention to her beauty because he already had someone he liked.</p>
+                        
+                        <p>So sometimes, Thaddeus even felt that na following him was a waste of her life, wasting her beauty.</p>
+                        
+                        <p>Thaddeus’s gaze unconsciously slid down, finally stopping on Evadne’s wrist.</p>
+                        
+                        <p>Sure enough, she was still wearing the bracelet his grandfather gave her. Despite it not matching her outfit today, she still couldn’t bear to take it off. It seemed she really liked</p>
+                        
+                        <p>it.</p>
+                        
+                        <p>Thaddeus squinted, and his heart jumped involuntarily.</p>
+                        
+                        <p>The silver conch cup sparked a fierce bidding war, and the auctioneer was swamped!</p>
+                        
+                        <p>“One million!”</p>
+                        
+                        <p>“Two and a half million!”</p>
+                        
+                        <p>“Two point seven million!”</p>
+                        
+                        <p>“Four million.”</p>
+                        
+                        <p>Thaddeus gracefully raised his paddle, nonchntly calling out the highest number in the room.</p>
+                        
+                        <p>Everyone was amazed.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -1004,41 +1052,45 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Evadne was taken aback and instinctively looked at Thaddeus.</p>
-                    
-                    <p>It seemed this man, who wasn’t picky about women, had a good eye for antiques.</p>
-                    
-                    <p>Thaddeus felt her gaze. He moved his eyes slightly, meeting her gaze.</p>
-                    
-                    <p>In an instant, the man was pric ked by her overly rational and cold eyes, and his heart tightened.</p>
-                    
-                    <p>Evadne quickly withdrew her gaze, avoiding his stare.</p>
-                    
-                    <p>In the end, Mr. Thaddeus sessfully won the bid for the cup, drawing envious nces from everyone.</p>
-                    
-                    <p>“Next time Ie over for a drink, you should serve me with this cup! It’s a price that matches my status.” Jareth joked.</p>
-                    
-                    <p>“This cup is too small and it’s not enough for you. I have a bigger one, more suitable for your status.” Thaddeus replied coldly.</p>
-                    
-                    <p>“Do you have something good to show me?”</p>
-                    
-                    <p>“A toilet.”</p>
-                    
-                    <p>Jareth was speechless. “Go d, you’re heartless!”</p>
-                    
-                    <p>Evadne overheard and burst outughing.</p>
-                    
-                    <p>Acacia was regretting it too. After spending so much on a lousy cup, what on earth was Thad thinking? Wouldn’t it be better to spend it on a new house?</p>
-                    
-                    <p>She wasn’t even married to Thaddeus yet, and she was already worrying about the Abernathy family’s finances.</p>
-                    
-                    <p>“The next object for auction is of special significance, which is a fifty-year’s personal collection of a gentleman who wishes to remain anonymous, the Renaissance-era Dante Chair!”</p>
-                    
-                    <p>The auctioneer announced it enthusiastically. The Dante Chair was carefully protected by a ** cover and carried onto the stage by four staff members wearing white gloves.</p>
-                    
-                    <p>“It’s here, it’s here!” Jareth tapped Thaddeus excitedly.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Evadne was taken aback and instinctively looked at Thaddeus.</p>
+                        
+                        <p>It seemed this man, who wasn’t picky about women, had a good eye for antiques.</p>
+                        
+                        <p>Thaddeus felt her gaze. He moved his eyes slightly, meeting her gaze.</p>
+                        
+                        <p>In an instant, the man was pric ked by her overly rational and cold eyes, and his heart tightened.</p>
+                        
+                        <p>Evadne quickly withdrew her gaze, avoiding his stare.</p>
+                        
+                        <p>In the end, Mr. Thaddeus sessfully won the bid for the cup, drawing envious nces from everyone.</p>
+                        
+                        <p>“Next time Ie over for a drink, you should serve me with this cup! It’s a price that matches my status.” Jareth joked.</p>
+                        
+                        <p>“This cup is too small and it’s not enough for you. I have a bigger one, more suitable for your status.” Thaddeus replied coldly.</p>
+                        
+                        <p>“Do you have something good to show me?”</p>
+                        
+                        <p>“A toilet.”</p>
+                        
+                        <p>Jareth was speechless. “Go d, you’re heartless!”</p>
+                        
+                        <p>Evadne overheard and burst outughing.</p>
+                        
+                        <p>Acacia was regretting it too. After spending so much on a lousy cup, what on earth was Thad thinking? Wouldn’t it be better to spend it on a new house?</p>
+                        
+                        <p>She wasn’t even married to Thaddeus yet, and she was already worrying about the Abernathy family’s finances.</p>
+                        
+                        <p>“The next object for auction is of special significance, which is a fifty-year’s personal collection of a gentleman who wishes to remain anonymous, the Renaissance-era Dante Chair!”</p>
+                        
+                        <p>The auctioneer announced it enthusiastically. The Dante Chair was carefully protected by a ** cover and carried onto the stage by four staff members wearing white gloves.</p>
+                        
+                        <p>“It’s here, it’s here!” Jareth tapped Thaddeus excitedly.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1053,41 +1105,45 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>The next second, he saw Thaddeus and Evadne, like someone had hit the start button, both lean forward simultaneously, their movements perfectly in sync.</p>
-                    
-                    <p>They were both ready and determined to win it!</p>
-                    
-                    <p>“Starting bid, three million! Let’s get this show on the road!”</p>
-                    
-                    <p>All the bigwigs and power brokers started raising their paddles. The auctioneer was calling out the bids non-stop. Thepetition was fierce.</p>
-                    
-                    <p>Three million was the highest starting bid of the night!</p>
-                    
-                    <p>Elspeth and Glynnis, who loved to steal the spotlight, were having second thoughts after hearing this price.</p>
-                    
-                    <p>Acacia and her mom had already bowed out and were watching from the sidelines, as quiet as church mice.</p>
-                    
-                    <p>Just then, a hand gracefully went up, her red l*ps parted, and she calmly called out a number.</p>
-                    
-                    <p>“Six million.”</p>
-                    
-                    <p>Everyone was stunned and turned their heads towards the bidder, Evadne!</p>
-                    
-                    <p>This mysterious beauty, with her show-stopping moves, was leaving asting impression on everyone.</p>
-                    
-                    <p>“Mom, I didn’t hear wrong, did I?”</p>
-                    
-                    <p>Glynnis was shocked and said incredulously, “That country girl, she actually bid six million? How dare she go so high?! Is she just putting on airs?”</p>
-                    
-                    <p>Elspeth didn’t say a word, her cold eyes glued to Evadne’s back.</p>
-                    
-                    <p>Suddenly, Elspeth seemed to remember something and her gaze shifted towards Suri, then a sneer crept into her heart.</p>
-                    
-                    <p>Did she think she can be a princess, huh? It’s even harder for her to handle the high and mighty Ashbourne family!</p>
-                    
-                    <p>“Seven million.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>The next second, he saw Thaddeus and Evadne, like someone had hit the start button, both lean forward simultaneously, their movements perfectly in sync.</p>
+                        
+                        <p>They were both ready and determined to win it!</p>
+                        
+                        <p>“Starting bid, three million! Let’s get this show on the road!”</p>
+                        
+                        <p>All the bigwigs and power brokers started raising their paddles. The auctioneer was calling out the bids non-stop. Thepetition was fierce.</p>
+                        
+                        <p>Three million was the highest starting bid of the night!</p>
+                        
+                        <p>Elspeth and Glynnis, who loved to steal the spotlight, were having second thoughts after hearing this price.</p>
+                        
+                        <p>Acacia and her mom had already bowed out and were watching from the sidelines, as quiet as church mice.</p>
+                        
+                        <p>Just then, a hand gracefully went up, her red l*ps parted, and she calmly called out a number.</p>
+                        
+                        <p>“Six million.”</p>
+                        
+                        <p>Everyone was stunned and turned their heads towards the bidder, Evadne!</p>
+                        
+                        <p>This mysterious beauty, with her show-stopping moves, was leaving asting impression on everyone.</p>
+                        
+                        <p>“Mom, I didn’t hear wrong, did I?”</p>
+                        
+                        <p>Glynnis was shocked and said incredulously, “That country girl, she actually bid six million? How dare she go so high?! Is she just putting on airs?”</p>
+                        
+                        <p>Elspeth didn’t say a word, her cold eyes glued to Evadne’s back.</p>
+                        
+                        <p>Suddenly, Elspeth seemed to remember something and her gaze shifted towards Suri, then a sneer crept into her heart.</p>
+                        
+                        <p>Did she think she can be a princess, huh? It’s even harder for her to handle the high and mighty Ashbourne family!</p>
+                        
+                        <p>“Seven million.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1102,41 +1158,45 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Thaddeus’s l*ps parted slightly, and he slowly raised his hand. The light was shining on his tall figure, casting a golden silhouette that was downright dazzling.</p>
-                    
-                    <p>He directly took the price to a new high, leaving the others in the dust.</p>
-                    
-                    <p>“Seven and a half million.”</p>
-                    
-                    <p>Evadne was still calm and, without hesitation, raised her paddle again.</p>
-                    
-                    <p>Everyone gasped once more!</p>
-                    
-                    <p>Even worldly-wise Jareth didn’t dare to speak.</p>
-                    
-                    <p>He felt like he was watching a duel between two masters, with their powerful auras shing, and any second now, sparks would fly and the earth would shake.</p>
-                    
-                    <p>“Eight million.” Thaddeus was calm, but there was a hint of irritation in his eyes.</p>
-                    
-                    <p>She was really going all out to help Cas sius win this bid!</p>
-                    
-                    <p>Evadne bit her l*p, anger burning in her heart.</p>
-                    
-                    <p>Even if she didn’t need Cas sius to reimburse her, her own stash was more than enough to take on Thaddeus.</p>
-                    
-                    <p>But she knew when to cut her losses and weigh the pros and cons.</p>
-                    
-                    <p>Antiques indeed had high value due to their historical significance, but she had a price limit in mind. Eight million was the max. Anything more would be just a pis sing contest. and that was pointless.</p>
-                    
-                    <p>“Thad, with your high IQ, did you spend it all on EQ?”</p>
-                    
-                    <p>Jareth saw Evadne looking unhappy and hurriedly whispered in his ear, “Ms. na clearly wants that chair. Can’t you just let her have it? Besides, you guys were married before. Ms. na is a girl; isn’t it a bit rude topete with her in front of so many people?”</p>
-                    
-                    <p>“She’s sitting there, representing Cas sius. It’s Cas sius I’mpeting with. What does she have to do with it?” Thaddeus looked straight ahead, his eyes cold and emotionless.</p>
-                    
-                    <p>Jareth took a sharp breath and gave him a thumbs-up, saying, “No problem, man!”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Thaddeus’s l*ps parted slightly, and he slowly raised his hand. The light was shining on his tall figure, casting a golden silhouette that was downright dazzling.</p>
+                        
+                        <p>He directly took the price to a new high, leaving the others in the dust.</p>
+                        
+                        <p>“Seven and a half million.”</p>
+                        
+                        <p>Evadne was still calm and, without hesitation, raised her paddle again.</p>
+                        
+                        <p>Everyone gasped once more!</p>
+                        
+                        <p>Even worldly-wise Jareth didn’t dare to speak.</p>
+                        
+                        <p>He felt like he was watching a duel between two masters, with their powerful auras shing, and any second now, sparks would fly and the earth would shake.</p>
+                        
+                        <p>“Eight million.” Thaddeus was calm, but there was a hint of irritation in his eyes.</p>
+                        
+                        <p>She was really going all out to help Cas sius win this bid!</p>
+                        
+                        <p>Evadne bit her l*p, anger burning in her heart.</p>
+                        
+                        <p>Even if she didn’t need Cas sius to reimburse her, her own stash was more than enough to take on Thaddeus.</p>
+                        
+                        <p>But she knew when to cut her losses and weigh the pros and cons.</p>
+                        
+                        <p>Antiques indeed had high value due to their historical significance, but she had a price limit in mind. Eight million was the max. Anything more would be just a pis sing contest. and that was pointless.</p>
+                        
+                        <p>“Thad, with your high IQ, did you spend it all on EQ?”</p>
+                        
+                        <p>Jareth saw Evadne looking unhappy and hurriedly whispered in his ear, “Ms. na clearly wants that chair. Can’t you just let her have it? Besides, you guys were married before. Ms. na is a girl; isn’t it a bit rude topete with her in front of so many people?”</p>
+                        
+                        <p>“She’s sitting there, representing Cas sius. It’s Cas sius I’mpeting with. What does she have to do with it?” Thaddeus looked straight ahead, his eyes cold and emotionless.</p>
+                        
+                        <p>Jareth took a sharp breath and gave him a thumbs-up, saying, “No problem, man!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1151,31 +1211,35 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>“Eight million going once! Eight million going twice!”</p>
-                    
-                    <p>12:38</p>
-                    
-                    <p>Wow!</p>
-                    
-                    <p>A crisp voice came from the back, like water hitting ice. Thaddeus raised an eyebrow but didn’t turn around.</p>
-                    
-                    <p>Everyone’s eyes were on the beautifuldy who had bid, it was Suri!</p>
-                    
-                    <p>Evadne’s eyes twin kled, and she suddenly understood why Suri was here.</p>
-                    
-                    <p>Emeric must have sent her because he was worried that Cas sius wouldn’t want to spend a lot of money, so she was here to make sure he got the item!</p>
-                    
-                    <p>Thaddeus’s eyes were hazy. He hesitated for a moment and then didn’t bid again.</p>
-                    
-                    <p>Not that he couldn’t afford it, but to keep bidding would seem ungentlemanly.</p>
-                    
-                    <p>In the end, the Dante Chair was sessfully won by the K Group. The apuse was deafening.</p>
-                    
-                    <p>Just as everyone thought the auction was about to end, the auctioneer suddenly smiled and said, “Next up is our final item for tonight’s charity auction, donated by the K Group! This is a top-tier jewel, ‘Ruby Enigma,’ created by a renowned jewelry designer and crafted over a month!”</p>
-                    
-                    <p>At this point, Thaddeus’s pupils contracted sharply. His heart felt like it had been shot, and it stopped beating.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>“Eight million going once! Eight million going twice!”</p>
+                        
+                        <p>12:38</p>
+                        
+                        <p>Wow!</p>
+                        
+                        <p>A crisp voice came from the back, like water hitting ice. Thaddeus raised an eyebrow but didn’t turn around.</p>
+                        
+                        <p>Everyone’s eyes were on the beautifuldy who had bid, it was Suri!</p>
+                        
+                        <p>Evadne’s eyes twin kled, and she suddenly understood why Suri was here.</p>
+                        
+                        <p>Emeric must have sent her because he was worried that Cas sius wouldn’t want to spend a lot of money, so she was here to make sure he got the item!</p>
+                        
+                        <p>Thaddeus’s eyes were hazy. He hesitated for a moment and then didn’t bid again.</p>
+                        
+                        <p>Not that he couldn’t afford it, but to keep bidding would seem ungentlemanly.</p>
+                        
+                        <p>In the end, the Dante Chair was sessfully won by the K Group. The apuse was deafening.</p>
+                        
+                        <p>Just as everyone thought the auction was about to end, the auctioneer suddenly smiled and said, “Next up is our final item for tonight’s charity auction, donated by the K Group! This is a top-tier jewel, ‘Ruby Enigma,’ created by a renowned jewelry designer and crafted over a month!”</p>
+                        
+                        <p>At this point, Thaddeus’s pupils contracted sharply. His heart felt like it had been shot, and it stopped beating.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2491,6 +2555,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2617,7 +2761,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2659,32 +2802,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2695,21 +2820,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2742,6 +2857,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2762,20 +2883,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

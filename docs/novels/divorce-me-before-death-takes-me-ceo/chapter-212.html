@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.037706">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.037706">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.231230">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.231230">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.037706",
-        "dateModified": "2026-07-19T02:47:19.037706",
+        "datePublished": "2026-07-19T13:03:14.231230",
+        "dateModified": "2026-07-19T13:03:14.231230",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,27 +893,31 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Blake&#39;s POV**</p>
-                    
-                    <p>I sat in the back seat, Laurel&#39;s head against my shoulder, her tears soaking my shirt. My thoughts kept drifting to Audrey - still leaning against that wall when I walked out.</p>
-                    
-                    <p>*Why hadn&#39;t she gotten up? Had she... completely given up on me?* The thought made my chest tighten.</p>
-                    
-                    <p>While Laurel sniffled beside me, I discreetly pulled out my phone and texted Michael: *&#34;LLift security at Lunar Mansion. Let Astrid Wilson in to check on Audrey.&#34;*</p>
-                    
-                    <p>With Astrid by her side, she&#39;d feel better. Once everything was resolved.I&#39;d explain my actions. Audrey would understand -she always did.</p>
-                    
-                    <p>&#34;Blake, where are we going?&#34; Laurel finally noticed the unfamiliar scenery outside. &#34;This isn&#39;t the way to Mayo Clinic...&#34;</p>
-                    
-                    <p>I snapped back from my thoughts. &#34;We&#39;re going to the harbor.&#34;</p>
-                    
-                    <p>&#34;But weren&#39;t you taking me to a hospital?&#34;</p>
-                    
-                    <p>&#34;That&#39;s right. There&#39;s an island near New York. Dr. Clarke&#39;s team is there -I&#39;m taking you to them.&#34;</p>
-                    
-                    <p>Laurel bit her lip, suddenly nervous. &#34;I&#39;m really fine. Audrey only made me drink some toilet water. I don&#39;t think we need to bother with -&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Blake&#39;s POV**</p>
+                        
+                        <p>I sat in the back seat, Laurel&#39;s head against my shoulder, her tears soaking my shirt. My thoughts kept drifting to Audrey - still leaning against that wall when I walked out.</p>
+                        
+                        <p>*Why hadn&#39;t she gotten up? Had she... completely given up on me?* The thought made my chest tighten.</p>
+                        
+                        <p>While Laurel sniffled beside me, I discreetly pulled out my phone and texted Michael: *&#34;LLift security at Lunar Mansion. Let Astrid Wilson in to check on Audrey.&#34;*</p>
+                        
+                        <p>With Astrid by her side, she&#39;d feel better. Once everything was resolved.I&#39;d explain my actions. Audrey would understand -she always did.</p>
+                        
+                        <p>&#34;Blake, where are we going?&#34; Laurel finally noticed the unfamiliar scenery outside. &#34;This isn&#39;t the way to Mayo Clinic...&#34;</p>
+                        
+                        <p>I snapped back from my thoughts. &#34;We&#39;re going to the harbor.&#34;</p>
+                        
+                        <p>&#34;But weren&#39;t you taking me to a hospital?&#34;</p>
+                        
+                        <p>&#34;That&#39;s right. There&#39;s an island near New York. Dr. Clarke&#39;s team is there -I&#39;m taking you to them.&#34;</p>
+                        
+                        <p>Laurel bit her lip, suddenly nervous. &#34;I&#39;m really fine. Audrey only made me drink some toilet water. I don&#39;t think we need to bother with -&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -892,27 +932,31 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;What&#39;s bothering about it?&#34; I cut her off. &#34;I&#39;ve always said I&#39;d find the best doctors for your treatment. Dr. Clarke&#39;s team is precisely who l brought to the country for you.&#34;</p>
-                    
-                    <p>&#34;But-&#34;</p>
-                    
-                    <p>&#34;No buts. Your health comes first.&#34;</p>
-                    
-                    <p>Thalia and Olivia burst into laughter from the front seats.</p>
-                    
-                    <p>&#34;Aww, how sweet!&#34; Thalia giggled.&#34;You&#39;re this devoted before marriage-what&#39;ll it be like after? A couple kids within three years?&#34;</p>
-                    
-                    <p>I ignored them, watching Laurel instead. Her eyes darted around like a trapped animal&#39;s. The desperation in them confirmed what I already suspected.</p>
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>I didn&#39;t want to die like ths - on a bathroom floor with blood matting my hair.</p>
-                    
-                    <p>Snow found me first. My fluffy white cat padded in, meowing softly before lying beside my head. His rough tongue licked my fingers, the tiny barbs creating just enough pain to keep me from slipping away completely.</p>
-                    
-                    <p>&#34;Audrey-!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;What&#39;s bothering about it?&#34; I cut her off. &#34;I&#39;ve always said I&#39;d find the best doctors for your treatment. Dr. Clarke&#39;s team is precisely who l brought to the country for you.&#34;</p>
+                        
+                        <p>&#34;But-&#34;</p>
+                        
+                        <p>&#34;No buts. Your health comes first.&#34;</p>
+                        
+                        <p>Thalia and Olivia burst into laughter from the front seats.</p>
+                        
+                        <p>&#34;Aww, how sweet!&#34; Thalia giggled.&#34;You&#39;re this devoted before marriage-what&#39;ll it be like after? A couple kids within three years?&#34;</p>
+                        
+                        <p>I ignored them, watching Laurel instead. Her eyes darted around like a trapped animal&#39;s. The desperation in them confirmed what I already suspected.</p>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>I didn&#39;t want to die like ths - on a bathroom floor with blood matting my hair.</p>
+                        
+                        <p>Snow found me first. My fluffy white cat padded in, meowing softly before lying beside my head. His rough tongue licked my fingers, the tiny barbs creating just enough pain to keep me from slipping away completely.</p>
+                        
+                        <p>&#34;Audrey-!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -927,27 +971,31 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Astrid burst through the door. I heard her ankle twist as her heels gave way beneath her, but she didn&#39;t even flinch. She dropped to her knees.gathering me into her arms.</p>
-                    
-                    <p>&#34;Audrey, what happened? Wake up! Didn&#39;t your illness still give you two months?&#34;</p>
-                    
-                    <p>I wanted to comfort her but couldn&#39;t form words. Behind her, James stood in the doorway, his lace going white as he noticed the nail on the wall.</p>
-                    
-                    <p>&#34;T&#39;here&#39;s a nail on that wall,&#34; he said, &#34;Someone pushed her head against it.</p>
-                    
-                    <p>Astrid looked at the bloody evidence and screamed. &#34;Who would do this to her? She only has two months left!&#34;</p>
-                    
-                    <p>Ethan appeared in the doorway, quickly assessing the situation before crouching beside me. His fingers found my pulse.</p>
-                    
-                    <p>&#34;She can still be saved,&#34; he said. &#34;Let&#39;s get her to the hospital. Now.&#34;</p>
-                    
-                    <p>He slid his arms beneath me and lifted me from the floor. James helped Astrid.</p>
-                    
-                    <p>&#34;Come on,&#34; Astrid whispered, scooping up Snow. &#34;Let&#39;s go take care of your mommy.&#34;</p>
-                    
-                    <p>As Ethan carried me out, the world blurred.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Astrid burst through the door. I heard her ankle twist as her heels gave way beneath her, but she didn&#39;t even flinch. She dropped to her knees.gathering me into her arms.</p>
+                        
+                        <p>&#34;Audrey, what happened? Wake up! Didn&#39;t your illness still give you two months?&#34;</p>
+                        
+                        <p>I wanted to comfort her but couldn&#39;t form words. Behind her, James stood in the doorway, his lace going white as he noticed the nail on the wall.</p>
+                        
+                        <p>&#34;T&#39;here&#39;s a nail on that wall,&#34; he said, &#34;Someone pushed her head against it.</p>
+                        
+                        <p>Astrid looked at the bloody evidence and screamed. &#34;Who would do this to her? She only has two months left!&#34;</p>
+                        
+                        <p>Ethan appeared in the doorway, quickly assessing the situation before crouching beside me. His fingers found my pulse.</p>
+                        
+                        <p>&#34;She can still be saved,&#34; he said. &#34;Let&#39;s get her to the hospital. Now.&#34;</p>
+                        
+                        <p>He slid his arms beneath me and lifted me from the floor. James helped Astrid.</p>
+                        
+                        <p>&#34;Come on,&#34; Astrid whispered, scooping up Snow. &#34;Let&#39;s go take care of your mommy.&#34;</p>
+                        
+                        <p>As Ethan carried me out, the world blurred.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -962,27 +1010,31 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>**Blake&#39;s POV**</p>
-                    
-                    <p>At the dock, Laurel stared at the yacht with obvious reluctance. Each step she took seemed to require enormous effort. When she reached the edge of the floating dock, she looked back at me.</p>
-                    
-                    <p>&#34;Blake, I just remembered I haven&#39;t told my parents where I&#39;m going.Could I-&#34;</p>
-                    
-                    <p>&#34;Don&#39;t worry,&#34; I smiled slightly. &#34;I&#39;ll arrange for them to join us on Long Island. I&#39;m sure Dr. Clarke&#39;s team will find a way to treat your late-stage cancer. Your parents will be thrilled.&#34;</p>
-                    
-                    <p>Without giving her time to respond, I picked her up and strode toward the yacht. I wasn&#39;t particularly enjoying carrying her, but I couldn&#39;t risk her jumping into the water out of desperation.</p>
-                    
-                    <p>Minutes later, we were at sea. Laurel sat beside me, stealing nervous glances when she thought I wasn&#39;t looking.</p>
-                    
-                    <p>&#34;Blake...&#34; she said finally, &#34;if I told you I&#39;ve been keeping things from you.deceiving you...what would you do?&#34;</p>
-                    
-                    <p>I turned toward her, my smile not reaching my eyes. &#34;What things specifically?&#34;</p>
-                    
-                    <p>&#34;Just... hypothetically speaking.&#34;</p>
-                    
-                    <p>&#34;You wouldn&#39;t lie to me,&#34; I laughed lightly. &#34;Remember what I told you five years ago? I said I despise people who lie with false emotions.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>**Blake&#39;s POV**</p>
+                        
+                        <p>At the dock, Laurel stared at the yacht with obvious reluctance. Each step she took seemed to require enormous effort. When she reached the edge of the floating dock, she looked back at me.</p>
+                        
+                        <p>&#34;Blake, I just remembered I haven&#39;t told my parents where I&#39;m going.Could I-&#34;</p>
+                        
+                        <p>&#34;Don&#39;t worry,&#34; I smiled slightly. &#34;I&#39;ll arrange for them to join us on Long Island. I&#39;m sure Dr. Clarke&#39;s team will find a way to treat your late-stage cancer. Your parents will be thrilled.&#34;</p>
+                        
+                        <p>Without giving her time to respond, I picked her up and strode toward the yacht. I wasn&#39;t particularly enjoying carrying her, but I couldn&#39;t risk her jumping into the water out of desperation.</p>
+                        
+                        <p>Minutes later, we were at sea. Laurel sat beside me, stealing nervous glances when she thought I wasn&#39;t looking.</p>
+                        
+                        <p>&#34;Blake...&#34; she said finally, &#34;if I told you I&#39;ve been keeping things from you.deceiving you...what would you do?&#34;</p>
+                        
+                        <p>I turned toward her, my smile not reaching my eyes. &#34;What things specifically?&#34;</p>
+                        
+                        <p>&#34;Just... hypothetically speaking.&#34;</p>
+                        
+                        <p>&#34;You wouldn&#39;t lie to me,&#34; I laughed lightly. &#34;Remember what I told you five years ago? I said I despise people who lie with false emotions.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -997,27 +1049,31 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;I haven&#39;t forgotten,&#34; she replied with an awkward laugh.</p>
-                    
-                    <p>Five years ago, I never said anything like that.</p>
-                    
-                    <p>Three hours later, I carried Laurel onto Long Island. I&#39;d kept her in my arms the entire journey, preventing any escape attempts. Thalia and Olivia followed, chattering about the scenery.</p>
-                    
-                    <p>&#34;This place is gorgeous!&#34; Thalia exclaimed.</p>
-                    
-                    <p>Normally not talkative, today I made an exception.′′Wshould build a villa here someday.&#34;</p>
-                    
-                    <p>Laurel looked up, surprised by my chattiness.</p>
-                    
-                    <p>&#34;In the future, I want to hold our wedding right here,&#34; I continued,watching her reaction.</p>
-                    
-                    <p>&#34;Look at him,&#34; Olivia whispered louadly. &#34;Now that he&#39;s found his true love,he can&#39;t stop talkíng!&#34;</p>
-                    
-                    <p>Laurel grew increasingly uneasy in my arms. She tried to speak several times.but I strategically interrupted each attempt with more talk about our supposed future.</p>
-                    
-                    <p>So she could feel fear after all. Pretending to be my savior from five years ago,faking an illness - she&#39;d been so bold when lying, but now her mask was slipping.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;I haven&#39;t forgotten,&#34; she replied with an awkward laugh.</p>
+                        
+                        <p>Five years ago, I never said anything like that.</p>
+                        
+                        <p>Three hours later, I carried Laurel onto Long Island. I&#39;d kept her in my arms the entire journey, preventing any escape attempts. Thalia and Olivia followed, chattering about the scenery.</p>
+                        
+                        <p>&#34;This place is gorgeous!&#34; Thalia exclaimed.</p>
+                        
+                        <p>Normally not talkative, today I made an exception.′′Wshould build a villa here someday.&#34;</p>
+                        
+                        <p>Laurel looked up, surprised by my chattiness.</p>
+                        
+                        <p>&#34;In the future, I want to hold our wedding right here,&#34; I continued,watching her reaction.</p>
+                        
+                        <p>&#34;Look at him,&#34; Olivia whispered louadly. &#34;Now that he&#39;s found his true love,he can&#39;t stop talkíng!&#34;</p>
+                        
+                        <p>Laurel grew increasingly uneasy in my arms. She tried to speak several times.but I strategically interrupted each attempt with more talk about our supposed future.</p>
+                        
+                        <p>So she could feel fear after all. Pretending to be my savior from five years ago,faking an illness - she&#39;d been so bold when lying, but now her mask was slipping.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1032,27 +1088,31 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>The medical facility appeared ahead, a modern building among palm trees.I strode through the doors, still carrying Laurel, and headed for reception.Staff guided us to an examination room where I finally set her down on a hospital bed.</p>
-                    
-                    <p>&#34;My fiancée has late-stage gastric cancer,&#34; I told the doctor with practiced concern.&#34;She only has about two months left. Please examine her thoroughly.&#34;</p>
-                    
-                    <p>The doctor nodded with a knowing smile. &#34;Don&#39;t worry, Mr. Parker. We have specialists in late-stage gastric cancer. We&#39;ll do our best to diagnose and treat your fiancée!&#34;</p>
-                    
-                    <p>Before Laurel could protest, a group of doctors and nurses surrounded her,holding her firmly as they began wheeling her away for &#34;examination.&#34;Her panicked eyes met mine one last time before she disappeared down the corridor.</p>
-                    
-                    <p>Thalia rushed to my side. &#34;You&#39;re amazing, Blake. With you taking care of her, she&#39;ll definitely get better.&#34;</p>
-                    
-                    <p>&#34;Totally,&#34; Olivia nodded eagerly. &#34;Poor Laurel. I&#39;m praying for my future sister-in-law&#39;s recovery...&#34;</p>
-                    
-                    <p>I dropped the act. The show was over.</p>
-                    
-                    <p>&#34;Sister-in-law?&#34; I turned, ice replacing the warmth in my voice. &#34;When exactly did that happen?&#34;</p>
-                    
-                    <p>&#34;Did I marry her while I wasn&#39;t looking? DDid we even finish the engagement?&#34;</p>
-                    
-                    <p>Olivia backed away like she&#39;d touched a live wire. Thalia&#39;s smile faltered.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>The medical facility appeared ahead, a modern building among palm trees.I strode through the doors, still carrying Laurel, and headed for reception.Staff guided us to an examination room where I finally set her down on a hospital bed.</p>
+                        
+                        <p>&#34;My fiancée has late-stage gastric cancer,&#34; I told the doctor with practiced concern.&#34;She only has about two months left. Please examine her thoroughly.&#34;</p>
+                        
+                        <p>The doctor nodded with a knowing smile. &#34;Don&#39;t worry, Mr. Parker. We have specialists in late-stage gastric cancer. We&#39;ll do our best to diagnose and treat your fiancée!&#34;</p>
+                        
+                        <p>Before Laurel could protest, a group of doctors and nurses surrounded her,holding her firmly as they began wheeling her away for &#34;examination.&#34;Her panicked eyes met mine one last time before she disappeared down the corridor.</p>
+                        
+                        <p>Thalia rushed to my side. &#34;You&#39;re amazing, Blake. With you taking care of her, she&#39;ll definitely get better.&#34;</p>
+                        
+                        <p>&#34;Totally,&#34; Olivia nodded eagerly. &#34;Poor Laurel. I&#39;m praying for my future sister-in-law&#39;s recovery...&#34;</p>
+                        
+                        <p>I dropped the act. The show was over.</p>
+                        
+                        <p>&#34;Sister-in-law?&#34; I turned, ice replacing the warmth in my voice. &#34;When exactly did that happen?&#34;</p>
+                        
+                        <p>&#34;Did I marry her while I wasn&#39;t looking? DDid we even finish the engagement?&#34;</p>
+                        
+                        <p>Olivia backed away like she&#39;d touched a live wire. Thalia&#39;s smile faltered.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1067,17 +1127,21 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;What&#39;s going on?&#34; Thalia asked, her confidence cracking. &#34;I thought you two were-&#34;</p>
-                    
-                    <p>&#34;Were what?&#34; I cut her off. &#34;In love? She&#39;s been playing me for four goddamn years. You think I&#39;d actually have feelings for someone like that?&#34;</p>
-                    
-                    <p>I stepped closer, watching them both shrink back. &#34;And you two...&#34;</p>
-                    
-                    <p>My voice dropped to barely above a whisper. &#34;Last time wasn&#39;t enough of a warning, was it? Since you&#39;re such big fans of Laurel, maybe you&#39;d like to join her when she&#39;s locked up. I could arrange that.&#34;</p>
-                    
-                    <p>The color drained from Thalia&#39;s face. &#34;Locked up? What are you talking about? Laurel was... lying to you?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;What&#39;s going on?&#34; Thalia asked, her confidence cracking. &#34;I thought you two were-&#34;</p>
+                        
+                        <p>&#34;Were what?&#34; I cut her off. &#34;In love? She&#39;s been playing me for four goddamn years. You think I&#39;d actually have feelings for someone like that?&#34;</p>
+                        
+                        <p>I stepped closer, watching them both shrink back. &#34;And you two...&#34;</p>
+                        
+                        <p>My voice dropped to barely above a whisper. &#34;Last time wasn&#39;t enough of a warning, was it? Since you&#39;re such big fans of Laurel, maybe you&#39;d like to join her when she&#39;s locked up. I could arrange that.&#34;</p>
+                        
+                        <p>The color drained from Thalia&#39;s face. &#34;Locked up? What are you talking about? Laurel was... lying to you?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2393,6 +2457,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2519,7 +2663,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2561,32 +2704,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2597,21 +2722,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2644,6 +2759,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2664,20 +2785,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

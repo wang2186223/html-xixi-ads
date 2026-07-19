@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.029174">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.029174">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.223136">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.223136">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.029174",
-        "dateModified": "2026-07-19T02:47:19.029174",
+        "datePublished": "2026-07-19T13:03:14.223136",
+        "dateModified": "2026-07-19T13:03:14.223136",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,29 +893,33 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>Dr. Evans adjusted the surgical mask over my face, her fingers gentle but hurried.</p>
-                    
-                    <p>&#34;Are you alright?&#34; she whispered.</p>
-                    
-                    <p>I nodded, though it was obviously a lie.</p>
-                    
-                    <p>&#34;The medication will mask your symptoms temporarily,&#34; she said, &#34;but emotional stress depletes it faster. Do you have enough strength left?&#34;</p>
-                    
-                    <p>&#34;I can manage,&#34; I said, my voice barely audible.</p>
-                    
-                    <p>Dr. Evans sighed. &#34;I should&#39;ve asked Dr. Clarke for more pills. I only prepared one dose...&#34;</p>
-                    
-                    <p>&#34;It&#39;s fine,&#34; I cut her off. Every second we lingered increased our chances of being caught. &#34;We need to go.&#34;</p>
-                    
-                    <p>*If we wait any longer, I won&#39;t be able to walk out of here.*</p>
-                    
-                    <p>Dr. Evans motioned to one of her students, who quickly approached and placed a medical tray in my hands.</p>
-                    
-                    <p>I clutched the tray, grateful for the prop. The gauze and bandages on top gave me a reason to keep my eyes lowered. With one last squeeze of William&#39;s hand, I followed Dr. Evans toward the door.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>Dr. Evans adjusted the surgical mask over my face, her fingers gentle but hurried.</p>
+                        
+                        <p>&#34;Are you alright?&#34; she whispered.</p>
+                        
+                        <p>I nodded, though it was obviously a lie.</p>
+                        
+                        <p>&#34;The medication will mask your symptoms temporarily,&#34; she said, &#34;but emotional stress depletes it faster. Do you have enough strength left?&#34;</p>
+                        
+                        <p>&#34;I can manage,&#34; I said, my voice barely audible.</p>
+                        
+                        <p>Dr. Evans sighed. &#34;I should&#39;ve asked Dr. Clarke for more pills. I only prepared one dose...&#34;</p>
+                        
+                        <p>&#34;It&#39;s fine,&#34; I cut her off. Every second we lingered increased our chances of being caught. &#34;We need to go.&#34;</p>
+                        
+                        <p>*If we wait any longer, I won&#39;t be able to walk out of here.*</p>
+                        
+                        <p>Dr. Evans motioned to one of her students, who quickly approached and placed a medical tray in my hands.</p>
+                        
+                        <p>I clutched the tray, grateful for the prop. The gauze and bandages on top gave me a reason to keep my eyes lowered. With one last squeeze of William&#39;s hand, I followed Dr. Evans toward the door.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -894,29 +934,33 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>The hallway was tensed. Blake&#39;s voice cut through the space, sharp with anger,</p>
-                    
-                    <p>&#34;What do you mean there&#39;s nothing you can do?&#34; he demanded.l</p>
-                    
-                    <p>glimpsed him gripping a doctor&#39;s coat. &#34;His condition was lmproving days ago!&#34;</p>
-                    
-                    <p>I kept close to Dr. Evans as we navigated around the confrontation.</p>
-                    
-                    <p>&#34;The emotional shock was too much for his heart,&#34; the doctor was explaining. &#34;We&#39;re doing everything possible, but I must be honest - the outlook isn&#39;t promising.&#34;</p>
-                    
-                    <p>&#34;That&#39;s not good enough,&#34; Blake snapped.</p>
-                    
-                    <p>Elizabeth&#39;s voice broke through. &#34;Blake, control yourself.&#34;</p>
-                    
-                    <p>I risked a quick glance and saw her setting aside what looked like legal documents, her expression completely unmoved by her father&#39;s critical condition.</p>
-                    
-                    <p>&#34;This isn&#39;t the doctor&#39;s fault,&#34; she said coolly. &#34;Father was already fragile.News about Audrey pushed him over the edge.&#34;</p>
-                    
-                    <p>&#34;William left sixty percent of his assets to Audrey,&#34; Elizabeth continued,&#34;while we have to split the remaining forty. That shows you his priorities.&#34;</p>
-                    
-                    <p>&#34;Given his attachment to her,&#34; Elizabeth added, &#34;is it surprising this news hit him so hard?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>The hallway was tensed. Blake&#39;s voice cut through the space, sharp with anger,</p>
+                        
+                        <p>&#34;What do you mean there&#39;s nothing you can do?&#34; he demanded.l</p>
+                        
+                        <p>glimpsed him gripping a doctor&#39;s coat. &#34;His condition was lmproving days ago!&#34;</p>
+                        
+                        <p>I kept close to Dr. Evans as we navigated around the confrontation.</p>
+                        
+                        <p>&#34;The emotional shock was too much for his heart,&#34; the doctor was explaining. &#34;We&#39;re doing everything possible, but I must be honest - the outlook isn&#39;t promising.&#34;</p>
+                        
+                        <p>&#34;That&#39;s not good enough,&#34; Blake snapped.</p>
+                        
+                        <p>Elizabeth&#39;s voice broke through. &#34;Blake, control yourself.&#34;</p>
+                        
+                        <p>I risked a quick glance and saw her setting aside what looked like legal documents, her expression completely unmoved by her father&#39;s critical condition.</p>
+                        
+                        <p>&#34;This isn&#39;t the doctor&#39;s fault,&#34; she said coolly. &#34;Father was already fragile.News about Audrey pushed him over the edge.&#34;</p>
+                        
+                        <p>&#34;William left sixty percent of his assets to Audrey,&#34; Elizabeth continued,&#34;while we have to split the remaining forty. That shows you his priorities.&#34;</p>
+                        
+                        <p>&#34;Given his attachment to her,&#34; Elizabeth added, &#34;is it surprising this news hit him so hard?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -931,29 +975,33 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Rebecca jumped in. &#34;Right. That girl somehow convinced your grandfather she was more important than his own family.&#34;</p>
-                    
-                    <p>&#34;But fate has a way of balancing things,&#34; Rebecca continued. &#34;Someone from nothing shouldn&#39;t get such blessings. God wouldn&#39;t allow her to take what Isn&#39;t hers.&#34;</p>
-                    
-                    <p>Her voice turned smug. &#34;Who would have thought she&#39;d die before</p>
-                    
-                    <p>William? Now that she&#39;s gone-&#34;</p>
-                    
-                    <p>&#34;Stop it!&#34; Blake&#39;s voice thundered, startling everyone.</p>
-                    
-                    <p>&#34;Who told you Audrey is dead?&#34; he demanded. &#34;She was just in an accident. That doesn&#39;t mean she&#39;s dead. Have you seen her body? How dare you talk about her like that!&#34;</p>
-                    
-                    <p>I nearly laughed at the irony. For three years, I&#39;d endured Rebecca&#39;s insults while Blake stood by silently. Now that I was &#34;dead,&#34; he finally defended me.</p>
-                    
-                    <p>Rebecca stared at her son, momentarily speechless. &#34;Blake! I am your mother!&#34;</p>
-                    
-                    <p>&#34;Audrey is dead! The car was crushed and sank in the river. What more proof do you need? Her body was probably swept away by the current or eaten by sharks!&#34;</p>
-                    
-                    <p>She stepped closer to Blake. &#34;And if she were still alive, wouldn&#39;t she be here? Your grandfather is dying, and she supposedly cared for him. Where is she?&#34;</p>
-                    
-                    <p>I watched as the color drained from Blake&#39;s face, his anger suddenly extinguished.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Rebecca jumped in. &#34;Right. That girl somehow convinced your grandfather she was more important than his own family.&#34;</p>
+                        
+                        <p>&#34;But fate has a way of balancing things,&#34; Rebecca continued. &#34;Someone from nothing shouldn&#39;t get such blessings. God wouldn&#39;t allow her to take what Isn&#39;t hers.&#34;</p>
+                        
+                        <p>Her voice turned smug. &#34;Who would have thought she&#39;d die before</p>
+                        
+                        <p>William? Now that she&#39;s gone-&#34;</p>
+                        
+                        <p>&#34;Stop it!&#34; Blake&#39;s voice thundered, startling everyone.</p>
+                        
+                        <p>&#34;Who told you Audrey is dead?&#34; he demanded. &#34;She was just in an accident. That doesn&#39;t mean she&#39;s dead. Have you seen her body? How dare you talk about her like that!&#34;</p>
+                        
+                        <p>I nearly laughed at the irony. For three years, I&#39;d endured Rebecca&#39;s insults while Blake stood by silently. Now that I was &#34;dead,&#34; he finally defended me.</p>
+                        
+                        <p>Rebecca stared at her son, momentarily speechless. &#34;Blake! I am your mother!&#34;</p>
+                        
+                        <p>&#34;Audrey is dead! The car was crushed and sank in the river. What more proof do you need? Her body was probably swept away by the current or eaten by sharks!&#34;</p>
+                        
+                        <p>She stepped closer to Blake. &#34;And if she were still alive, wouldn&#39;t she be here? Your grandfather is dying, and she supposedly cared for him. Where is she?&#34;</p>
+                        
+                        <p>I watched as the color drained from Blake&#39;s face, his anger suddenly extinguished.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -968,29 +1016,33 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Dr. Evans tugged my sleeve, reminding me to keep moving. We edged along the wall, nearly reaching the elevator when a familiar voice stopped us.</p>
-                    
-                    <p>&#34;Dr. Evans? What a surprise!&#34;</p>
-                    
-                    <p>Laurel stood directly in our path, false sweetness plastered across her face.</p>
-                    
-                    <p>Before Dr. Evans could answer, Laurel called out. &#34;Blake darling! Look who&#39;s here-Dr. Evans!&#34;</p>
-                    
-                    <p>My stomach dropped as Blake&#39;s attention shifted toward us.</p>
-                    
-                    <p>&#34;I just saw her coming out of William&#39;s room,&#34; Laurel continued. &#34;Maybe she can tell us about his condition?&#34;</p>
-                    
-                    <p>I felt multiple gazes turn our way. Sweat beaded on my forehead as I kept my face down, praying my disguise would hold.</p>
-                    
-                    <p>*Blake may recognize me!*</p>
-                    
-                    <p>&#34;Dr. Evans,&#34; Blake called. &#34;What can you tell us about my grandfather?&#34;</p>
-                    
-                    <p>Dr. Evans positioned herself between us. &#34;Regarding what Miss Rose mentioned-&#34;</p>
-                    
-                    <p>But Blake&#39;s focus had already shifted to me. I could feel his gaze like a physical touch.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Dr. Evans tugged my sleeve, reminding me to keep moving. We edged along the wall, nearly reaching the elevator when a familiar voice stopped us.</p>
+                        
+                        <p>&#34;Dr. Evans? What a surprise!&#34;</p>
+                        
+                        <p>Laurel stood directly in our path, false sweetness plastered across her face.</p>
+                        
+                        <p>Before Dr. Evans could answer, Laurel called out. &#34;Blake darling! Look who&#39;s here-Dr. Evans!&#34;</p>
+                        
+                        <p>My stomach dropped as Blake&#39;s attention shifted toward us.</p>
+                        
+                        <p>&#34;I just saw her coming out of William&#39;s room,&#34; Laurel continued. &#34;Maybe she can tell us about his condition?&#34;</p>
+                        
+                        <p>I felt multiple gazes turn our way. Sweat beaded on my forehead as I kept my face down, praying my disguise would hold.</p>
+                        
+                        <p>*Blake may recognize me!*</p>
+                        
+                        <p>&#34;Dr. Evans,&#34; Blake called. &#34;What can you tell us about my grandfather?&#34;</p>
+                        
+                        <p>Dr. Evans positioned herself between us. &#34;Regarding what Miss Rose mentioned-&#34;</p>
+                        
+                        <p>But Blake&#39;s focus had already shifted to me. I could feel his gaze like a physical touch.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1005,29 +1057,33 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;Why are you trembling?&#34; he asked, suddenly closer.</p>
-                    
-                    <p>My hands were shaking so badly the instruments on my tray rattled. Pain and fear had overwhelmed me, making my entire body visibly tremble.</p>
-                    
-                    <p>I didn&#39;t answer. I couldn&#39;t risk him recognizing my voice.</p>
-                    
-                    <p>&#34;I asked you a question,&#34; Blake said, his tone hardening. &#34;Answer me.&#34;</p>
-                    
-                    <p>Dr. Evans blocked his path. &#34;Mr. Parker, this is my new apprentice.She&#39;s not used to intense situations or someone with your...presence.Her nervousness is understandable.&#34;</p>
-                    
-                    <p>She offered a tight smile. &#34;I know you&#39;re upset, but there&#39;s no need to</p>
-                    
-                    <p>intimidate a young nurse.&#34;</p>
-                    
-                    <p>Before Blake could respond, the emergency room door opened. A nurse looked around the hallway.</p>
-                    
-                    <p>&#34;Is Blake Parker here? Mr. William Parker is asking for his grandson.He&#39;s refusing treatment until he sees you.&#34;</p>
-                    
-                    <p>&#34;That&#39;s me,&#34; Blake said, attention momentarily diverted.</p>
-                    
-                    <p>&#34;I&#39;ll be right there,&#34; he told the nurse, then took one last look at me before following her into the emergency room.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;Why are you trembling?&#34; he asked, suddenly closer.</p>
+                        
+                        <p>My hands were shaking so badly the instruments on my tray rattled. Pain and fear had overwhelmed me, making my entire body visibly tremble.</p>
+                        
+                        <p>I didn&#39;t answer. I couldn&#39;t risk him recognizing my voice.</p>
+                        
+                        <p>&#34;I asked you a question,&#34; Blake said, his tone hardening. &#34;Answer me.&#34;</p>
+                        
+                        <p>Dr. Evans blocked his path. &#34;Mr. Parker, this is my new apprentice.She&#39;s not used to intense situations or someone with your...presence.Her nervousness is understandable.&#34;</p>
+                        
+                        <p>She offered a tight smile. &#34;I know you&#39;re upset, but there&#39;s no need to</p>
+                        
+                        <p>intimidate a young nurse.&#34;</p>
+                        
+                        <p>Before Blake could respond, the emergency room door opened. A nurse looked around the hallway.</p>
+                        
+                        <p>&#34;Is Blake Parker here? Mr. William Parker is asking for his grandson.He&#39;s refusing treatment until he sees you.&#34;</p>
+                        
+                        <p>&#34;That&#39;s me,&#34; Blake said, attention momentarily diverted.</p>
+                        
+                        <p>&#34;I&#39;ll be right there,&#34; he told the nurse, then took one last look at me before following her into the emergency room.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1042,29 +1098,33 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>When the door closed, my legs nearly gave out. Dr. Evans quickly steadied me.</p>
-                    
-                    <p>&#34;That was close,&#34; I whispered, voice as shaky as my hands.</p>
-                    
-                    <p>&#34;Let&#39;s go before he returns,&#34; Dr. Evans said, guiding me toward the elevator.</p>
-                    
-                    <p>We&#39;d taken only a few steps when a hand grabbed my wrist. I turned to find Laurel staring at me, eyes narrowed.</p>
-                    
-                    <p>&#34;Wait,&#34; she said, her voice carrying a clear threat despite its softness.</p>
-                    
-                    <p>Laurel&#39;s move made my body lock up instantly. Dr. Evans looked like she might faint.</p>
-                    
-                    <p>&#34;Miss Rose...&#34; Dr. Evans started. barely above a whisper.</p>
-                    
-                    <p>&#34;Miss,&#34; Laurel cut in, smiling at me. &#34;That man is my fiancé. He just lost his ex-wife, so he&#39;s not in the best mood. Don&#39;t take it personally.&#34;</p>
-                    
-                    <p>&#34;If he offended you, I&#39;m sorry on his behalf.&#34;</p>
-                    
-                    <p>It took me a second to catch on. Laurel thought Blake was interested in me- this random nurse. She wasn&#39;t trying to expose me; she was marking her territory.</p>
-                    
-                    <p>I almost laughed.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>When the door closed, my legs nearly gave out. Dr. Evans quickly steadied me.</p>
+                        
+                        <p>&#34;That was close,&#34; I whispered, voice as shaky as my hands.</p>
+                        
+                        <p>&#34;Let&#39;s go before he returns,&#34; Dr. Evans said, guiding me toward the elevator.</p>
+                        
+                        <p>We&#39;d taken only a few steps when a hand grabbed my wrist. I turned to find Laurel staring at me, eyes narrowed.</p>
+                        
+                        <p>&#34;Wait,&#34; she said, her voice carrying a clear threat despite its softness.</p>
+                        
+                        <p>Laurel&#39;s move made my body lock up instantly. Dr. Evans looked like she might faint.</p>
+                        
+                        <p>&#34;Miss Rose...&#34; Dr. Evans started. barely above a whisper.</p>
+                        
+                        <p>&#34;Miss,&#34; Laurel cut in, smiling at me. &#34;That man is my fiancé. He just lost his ex-wife, so he&#39;s not in the best mood. Don&#39;t take it personally.&#34;</p>
+                        
+                        <p>&#34;If he offended you, I&#39;m sorry on his behalf.&#34;</p>
+                        
+                        <p>It took me a second to catch on. Laurel thought Blake was interested in me- this random nurse. She wasn&#39;t trying to expose me; she was marking her territory.</p>
+                        
+                        <p>I almost laughed.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1079,27 +1139,31 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;It&#39;s okay,&#34; I mumbled. &#34;I wasn&#39;t offended. Having you as his fiancée is lucky. HIe should appreciate that.&#34;</p>
-                    
-                    <p>&#34;I hope you two are happy together.&#34;</p>
-                    
-                    <p>My blessing seemed to satisfy her. Her face relaxed into a real smile.&#34;Thanks.We will be.&#34;</p>
-                    
-                    <p>&#34;We need to go now,&#34; Dr. Evans jumped in, grabbing my arm. She nodded quickly to Laurel before pulling me away.</p>
-                    
-                    <p>As we headed toward the elevator, Thalia&#39;s voice drifted after us.</p>
-                    
-                    <p>&#34;Seriously, Laurel?&#34; she scoffed. &#34;Why worry about some scared little nurse? Blake would never look twice at someone that pathetic.&#34;</p>
-                    
-                    <p>&#34;You never know,&#34; Laurel answered, dropping her voice. &#34;I&#39;m not dealing with another Audrey Sinclair now that we finally got rid of the first one.&#34;</p>
-                    
-                    <p>The moment we reached Dr. Evans&#39; office and the door closed. my strength vanished. My legs gave out completely. If Dr. Evans&#39; students hadn&#39;t caught me, I would&#39;ve crashed to the floor.</p>
-                    
-                    <p>Dr. Evans looked at my half-conscious body and sighed. &#34;Get her to the private room.&#34;</p>
-                    
-                    <p>Through the fog closing in around me, I heard her phone call. &#34;Dr. Clarke?That patient I mentioned... can you see her?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;It&#39;s okay,&#34; I mumbled. &#34;I wasn&#39;t offended. Having you as his fiancée is lucky. HIe should appreciate that.&#34;</p>
+                        
+                        <p>&#34;I hope you two are happy together.&#34;</p>
+                        
+                        <p>My blessing seemed to satisfy her. Her face relaxed into a real smile.&#34;Thanks.We will be.&#34;</p>
+                        
+                        <p>&#34;We need to go now,&#34; Dr. Evans jumped in, grabbing my arm. She nodded quickly to Laurel before pulling me away.</p>
+                        
+                        <p>As we headed toward the elevator, Thalia&#39;s voice drifted after us.</p>
+                        
+                        <p>&#34;Seriously, Laurel?&#34; she scoffed. &#34;Why worry about some scared little nurse? Blake would never look twice at someone that pathetic.&#34;</p>
+                        
+                        <p>&#34;You never know,&#34; Laurel answered, dropping her voice. &#34;I&#39;m not dealing with another Audrey Sinclair now that we finally got rid of the first one.&#34;</p>
+                        
+                        <p>The moment we reached Dr. Evans&#39; office and the door closed. my strength vanished. My legs gave out completely. If Dr. Evans&#39; students hadn&#39;t caught me, I would&#39;ve crashed to the floor.</p>
+                        
+                        <p>Dr. Evans looked at my half-conscious body and sighed. &#34;Get her to the private room.&#34;</p>
+                        
+                        <p>Through the fog closing in around me, I heard her phone call. &#34;Dr. Clarke?That patient I mentioned... can you see her?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2415,6 +2479,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2541,7 +2685,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2583,32 +2726,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2619,21 +2744,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2666,6 +2781,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2686,20 +2807,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

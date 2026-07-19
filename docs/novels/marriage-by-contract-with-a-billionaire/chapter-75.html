@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:29.756307">
-    <meta property="article:modified_time" content="2026-07-19T02:47:29.756307">
+    <meta property="article:published_time" content="2026-07-19T13:03:24.139178">
+    <meta property="article:modified_time" content="2026-07-19T13:03:24.139178">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:29">
+    <meta name="last-modified" content="2026-07-19 13:03:24">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:29.756307",
-        "dateModified": "2026-07-19T02:47:29.756307",
+        "datePublished": "2026-07-19T13:03:24.139178",
+        "dateModified": "2026-07-19T13:03:24.139178",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,33 +893,37 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>&#34;Why don&#39;t you want me to accompany you?&#34; he asked, his brow furrowed. He couldn&#39;t grasp why she suddenly wanted to go to G City,and the idea of her going unsettled him.</p>
-                    
-                    <p>&#34;You really don&#39;t need to come along. You have work here, and who will take care of Viola?&#34;</p>
-                    
-                    <p>&#34;She can come with us.&#34;</p>
-                    
-                    <p>&#34;And miss school?&#34;</p>
-                    
-                    <p>&#34;Missing a few days of school isn&#39;t a big deal.&#34;</p>
-                    
-                    <p>&#34;It is when her exams are around the corner, and an eight-hour flight to a different time zone would be too tiring for her.&#34;</p>
-                    
-                    <p>G City and Aurora City were in different time zones, with Aurora City being four hours ahead.</p>
-                    
-                    <p>Alexander fell silent, searching for reasons to keep her from going. &#34;I can ask Sophia to take care of her. She&#39;ll make sure she gets to school every day. Besides, we could use some time alone, don&#39;t you think?&#34;</p>
-                    
-                    <p>Lily shook her head. &#34;You still haven&#39;t made up with Richard after your argument, and you don&#39;t have the best relationship with my friends, so no,I&#39;m going alone on Saturday to G City, and I&#39;ll be back on Tuesday.&#34; She freed herself from his embrace and took her seat in the executive chair.Alexander turned and stared at her, then walked over, leaned in, and kissed her. &#34;Alright, you can go.&#34;Lily smiled, wrapping her arms around him and kissing him again. Alexander pulled her up to deepen the kiss. &#34;You&#39;ve got a lot of making up to do tonight since you&#39;ll be gone for a few days.&#34;</p>
-                    
-                    <p>Lily giggled, understanding his meaning, and kissed him back. &#34;And I&#39;ll make sure to make up for it.&#34;</p>
-                    
-                    <p>Alexander smirked. &#34;My father wants to have dinner with us tonight.&#34;</p>
-                    
-                    <p>&#34;Dinner?&#34;</p>
-                    
-                    <p>She nodded. &#34;All three of us.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>&#34;Why don&#39;t you want me to accompany you?&#34; he asked, his brow furrowed. He couldn&#39;t grasp why she suddenly wanted to go to G City,and the idea of her going unsettled him.</p>
+                        
+                        <p>&#34;You really don&#39;t need to come along. You have work here, and who will take care of Viola?&#34;</p>
+                        
+                        <p>&#34;She can come with us.&#34;</p>
+                        
+                        <p>&#34;And miss school?&#34;</p>
+                        
+                        <p>&#34;Missing a few days of school isn&#39;t a big deal.&#34;</p>
+                        
+                        <p>&#34;It is when her exams are around the corner, and an eight-hour flight to a different time zone would be too tiring for her.&#34;</p>
+                        
+                        <p>G City and Aurora City were in different time zones, with Aurora City being four hours ahead.</p>
+                        
+                        <p>Alexander fell silent, searching for reasons to keep her from going. &#34;I can ask Sophia to take care of her. She&#39;ll make sure she gets to school every day. Besides, we could use some time alone, don&#39;t you think?&#34;</p>
+                        
+                        <p>Lily shook her head. &#34;You still haven&#39;t made up with Richard after your argument, and you don&#39;t have the best relationship with my friends, so no,I&#39;m going alone on Saturday to G City, and I&#39;ll be back on Tuesday.&#34; She freed herself from his embrace and took her seat in the executive chair.Alexander turned and stared at her, then walked over, leaned in, and kissed her. &#34;Alright, you can go.&#34;Lily smiled, wrapping her arms around him and kissing him again. Alexander pulled her up to deepen the kiss. &#34;You&#39;ve got a lot of making up to do tonight since you&#39;ll be gone for a few days.&#34;</p>
+                        
+                        <p>Lily giggled, understanding his meaning, and kissed him back. &#34;And I&#39;ll make sure to make up for it.&#34;</p>
+                        
+                        <p>Alexander smirked. &#34;My father wants to have dinner with us tonight.&#34;</p>
+                        
+                        <p>&#34;Dinner?&#34;</p>
+                        
+                        <p>She nodded. &#34;All three of us.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -898,33 +938,37 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Viola too?&#34;</p>
-                    
-                    <p>&#34;Yes.&#34;</p>
-                    
-                    <p>He thought for a moment before replying. &#34;Okay, what time and where?&#34;</p>
-                    
-                    <p>She gave him the details, and he nodded.</p>
-                    
-                    <p>&#34;Come, let&#39;s go for lunch. Viola is waiting for us.&#34;</p>
-                    
-                    <p>&#34;But I have work to finish.&#34;</p>
-                    
-                    <p>&#34;You can finish it when you get back.&#34;</p>
-                    
-                    <p>After the family had lunch together, Alexander returned to work, and</p>
-                    
-                    <p>Viola went with her mother to the office. She was excited to watch her mother at work since it had been a while. Viola sat on the couch, watching her mother work, dreaming of becoming a boss like her someday. Her father had told her that when she grew up,she would take over from him. Later that evening, they headed to the restaurant for dinner with Lily&#39;s</p>
-                    
-                    <p>father. When they arrived, they found her father and Alexander already seated and talking.</p>
-                    
-                    <p>&#34;Grandpa!&#34; Viola rushed over to her grandfather and hugged him.</p>
-                    
-                    <p>&#34;My brilliant granddaughter. Grandpa missed you so much,&#34; he said,hugging and kissing her forehead.</p>
-                    
-                    <p>&#34;And I missed you too.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Viola too?&#34;</p>
+                        
+                        <p>&#34;Yes.&#34;</p>
+                        
+                        <p>He thought for a moment before replying. &#34;Okay, what time and where?&#34;</p>
+                        
+                        <p>She gave him the details, and he nodded.</p>
+                        
+                        <p>&#34;Come, let&#39;s go for lunch. Viola is waiting for us.&#34;</p>
+                        
+                        <p>&#34;But I have work to finish.&#34;</p>
+                        
+                        <p>&#34;You can finish it when you get back.&#34;</p>
+                        
+                        <p>After the family had lunch together, Alexander returned to work, and</p>
+                        
+                        <p>Viola went with her mother to the office. She was excited to watch her mother at work since it had been a while. Viola sat on the couch, watching her mother work, dreaming of becoming a boss like her someday. Her father had told her that when she grew up,she would take over from him. Later that evening, they headed to the restaurant for dinner with Lily&#39;s</p>
+                        
+                        <p>father. When they arrived, they found her father and Alexander already seated and talking.</p>
+                        
+                        <p>&#34;Grandpa!&#34; Viola rushed over to her grandfather and hugged him.</p>
+                        
+                        <p>&#34;My brilliant granddaughter. Grandpa missed you so much,&#34; he said,hugging and kissing her forehead.</p>
+                        
+                        <p>&#34;And I missed you too.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -939,33 +983,37 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Lily sat beside Alexander and pecked his cheek. &#34;You got here early.&#34;</p>
-                    
-                    <p>&#34;Yes, I finished work on time.&#34;</p>
-                    
-                    <p>&#34;Are you two getting along?&#34;</p>
-                    
-                    <p>&#34;Yes,since you&#39;ve made up with him, it&#39;s only right that I get along with him. If you hadn&#39;t, I wouldn&#39;t have either.&#34;</p>
-                    
-                    <p>His words made her think of his mother. She was going to G City to see her behind his back, without his knowledge. If he found out, Alexander would be furious. She shuddered at the thought.</p>
-                    
-                    <p>&#34;What&#39;s wrong?&#34; he asked, noticing her hands were warm and slightly damp.</p>
-                    
-                    <p>&#34;Nothing,I&#39;m fine.&#34;</p>
-                    
-                    <p>Alexander studied her briefly before nodding.</p>
-                    
-                    <p>&#34;We should order before it gets too late,&#34;Peter said. &#34;I want chicken,Grandpa.&#34; The adults laughed at her straightforwardness. &#34;Of course, I&#39;ll make sure they bring you some chicken.&#34;</p>
-                    
-                    <p>&#34;Thanks,Grandpa.&#34;</p>
-                    
-                    <p>&#34;Anything for my granddaughter.&#34;</p>
-                    
-                    <p>The family of four enjoyed dinner together, anad after a few hours,they headed home. Viola fell asleep in her father&#39;s arms, while Lily rested her head on Alexander&#39;s shoulder as they drove home.</p>
-                    
-                    <p>Alexander kissed her forehead, then kissed their daughter&#39;s. They were the most important people in his life, and he would do anything to protect them.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Lily sat beside Alexander and pecked his cheek. &#34;You got here early.&#34;</p>
+                        
+                        <p>&#34;Yes, I finished work on time.&#34;</p>
+                        
+                        <p>&#34;Are you two getting along?&#34;</p>
+                        
+                        <p>&#34;Yes,since you&#39;ve made up with him, it&#39;s only right that I get along with him. If you hadn&#39;t, I wouldn&#39;t have either.&#34;</p>
+                        
+                        <p>His words made her think of his mother. She was going to G City to see her behind his back, without his knowledge. If he found out, Alexander would be furious. She shuddered at the thought.</p>
+                        
+                        <p>&#34;What&#39;s wrong?&#34; he asked, noticing her hands were warm and slightly damp.</p>
+                        
+                        <p>&#34;Nothing,I&#39;m fine.&#34;</p>
+                        
+                        <p>Alexander studied her briefly before nodding.</p>
+                        
+                        <p>&#34;We should order before it gets too late,&#34;Peter said. &#34;I want chicken,Grandpa.&#34; The adults laughed at her straightforwardness. &#34;Of course, I&#39;ll make sure they bring you some chicken.&#34;</p>
+                        
+                        <p>&#34;Thanks,Grandpa.&#34;</p>
+                        
+                        <p>&#34;Anything for my granddaughter.&#34;</p>
+                        
+                        <p>The family of four enjoyed dinner together, anad after a few hours,they headed home. Viola fell asleep in her father&#39;s arms, while Lily rested her head on Alexander&#39;s shoulder as they drove home.</p>
+                        
+                        <p>Alexander kissed her forehead, then kissed their daughter&#39;s. They were the most important people in his life, and he would do anything to protect them.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -980,33 +1028,37 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>On Saturday, Lily packed her things and headed downstairs. Her flight was in two hours.</p>
-                    
-                    <p>0</p>
-                    
-                    <p>Viola pouted when she saw her mother with a suitcase.</p>
-                    
-                    <p>&#34;Take the luggage to the car,&#34; Lily instructed one of the guards.</p>
-                    
-                    <p>&#34;Yes, ma&#39;am.&#34;</p>
-                    
-                    <p>Lily picked up her daughter and showered her with kisses all over her face.</p>
-                    
-                    <p>&#34;I&#39;ll miss you, Mommy,&#34; Viola said, kissing her mother&#39;s cheek with her tiny lips.</p>
-                    
-                    <p>Lily smiled. &#34;Mommy will only be gone for a few days,okay?&#34;</p>
-                    
-                    <p>Viola nodded firmly. &#34;Okay, Mommy.&#34; Lily kissed her forehead again. &#34;I&#39;ll be going now.&#34; &#34;Okay,Mommy.&#34; Lily set her down. &#34;Take good care of her,&#34; she told the nanny.</p>
-                    
-                    <p>&#34;I will, ma&#39;am,&#34; the nanny replied.</p>
-                    
-                    <p>She glanced at her daughter onelast time before stepping outside. She was surprised to see Alexander&#39;s car still parked there. She thought he had left for workafter saying goodbye.</p>
-                    
-                    <p>She knocked on the window, and he rolled it down. &#34;You haven&#39;t left yet?&#34;</p>
-                    
-                    <p>&#34;Get in. I want to drop you off at the airport.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>On Saturday, Lily packed her things and headed downstairs. Her flight was in two hours.</p>
+                        
+                        <p>0</p>
+                        
+                        <p>Viola pouted when she saw her mother with a suitcase.</p>
+                        
+                        <p>&#34;Take the luggage to the car,&#34; Lily instructed one of the guards.</p>
+                        
+                        <p>&#34;Yes, ma&#39;am.&#34;</p>
+                        
+                        <p>Lily picked up her daughter and showered her with kisses all over her face.</p>
+                        
+                        <p>&#34;I&#39;ll miss you, Mommy,&#34; Viola said, kissing her mother&#39;s cheek with her tiny lips.</p>
+                        
+                        <p>Lily smiled. &#34;Mommy will only be gone for a few days,okay?&#34;</p>
+                        
+                        <p>Viola nodded firmly. &#34;Okay, Mommy.&#34; Lily kissed her forehead again. &#34;I&#39;ll be going now.&#34; &#34;Okay,Mommy.&#34; Lily set her down. &#34;Take good care of her,&#34; she told the nanny.</p>
+                        
+                        <p>&#34;I will, ma&#39;am,&#34; the nanny replied.</p>
+                        
+                        <p>She glanced at her daughter onelast time before stepping outside. She was surprised to see Alexander&#39;s car still parked there. She thought he had left for workafter saying goodbye.</p>
+                        
+                        <p>She knocked on the window, and he rolled it down. &#34;You haven&#39;t left yet?&#34;</p>
+                        
+                        <p>&#34;Get in. I want to drop you off at the airport.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1021,33 +1073,37 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;Aren&#39;t you going to be late for your meeting?&#34;</p>
-                    
-                    <p>&#34;I&#39;m the boss. I can&#39;t be late.&#34;</p>
-                    
-                    <p>Lily got in the car, and soon they were on their way to the airport. After a 40-minute drive, they arrived.</p>
-                    
-                    <p>&#34;I&#39;ll be leaving now. I&#39;ll miss you,&#34; she said to him.</p>
-                    
-                    <p>Alexander leaned in and kissed her,his tongue exploring her mouth as he kissed her passionately. Lily responded in kind, losing her breath until he finally pulled away.</p>
-                    
-                    <p>The bodyguards in the front seats respectfully looked away,giving the couple some privacy.</p>
-                    
-                    <p>Lily&#39;s cheeks flushed.</p>
-                    
-                    <p>Alexander smiled at her rosy face. &#34;I&#39;ll miss you,&#34; &#34;Me too.&#34; &#34;Make sure you come back by Tuesday, or I&#39;ll come to get you myself.&#34; &#34;I promise I&#39;ll be back by Tuesday.&#34;</p>
-                    
-                    <p>&#34;Good girl,&#34; he said, gently brushing her hair like she was a child.</p>
-                    
-                    <p>&#34;I&#39;ll be going now.&#34;</p>
-                    
-                    <p>&#34;Wait.&#34;</p>
-                    
-                    <p>She paused, waiting for him to speak.</p>
-                    
-                    <p>&#34;Don&#39;t do anything behind my back. I&#39;ll find out if you do,&#34; he warned,his tone serious.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;Aren&#39;t you going to be late for your meeting?&#34;</p>
+                        
+                        <p>&#34;I&#39;m the boss. I can&#39;t be late.&#34;</p>
+                        
+                        <p>Lily got in the car, and soon they were on their way to the airport. After a 40-minute drive, they arrived.</p>
+                        
+                        <p>&#34;I&#39;ll be leaving now. I&#39;ll miss you,&#34; she said to him.</p>
+                        
+                        <p>Alexander leaned in and kissed her,his tongue exploring her mouth as he kissed her passionately. Lily responded in kind, losing her breath until he finally pulled away.</p>
+                        
+                        <p>The bodyguards in the front seats respectfully looked away,giving the couple some privacy.</p>
+                        
+                        <p>Lily&#39;s cheeks flushed.</p>
+                        
+                        <p>Alexander smiled at her rosy face. &#34;I&#39;ll miss you,&#34; &#34;Me too.&#34; &#34;Make sure you come back by Tuesday, or I&#39;ll come to get you myself.&#34; &#34;I promise I&#39;ll be back by Tuesday.&#34;</p>
+                        
+                        <p>&#34;Good girl,&#34; he said, gently brushing her hair like she was a child.</p>
+                        
+                        <p>&#34;I&#39;ll be going now.&#34;</p>
+                        
+                        <p>&#34;Wait.&#34;</p>
+                        
+                        <p>She paused, waiting for him to speak.</p>
+                        
+                        <p>&#34;Don&#39;t do anything behind my back. I&#39;ll find out if you do,&#34; he warned,his tone serious.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1062,33 +1118,37 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Lily smiled and nodded.</p>
-                    
-                    <p>&#34;Goodbye, my love,&#34; Alexander said.</p>
-                    
-                    <p>&#34;Goodbye.&#34;</p>
-                    
-                    <p>She got out of the car and swallowed hard. She was going to be in big trouble when he found out what she was planning.</p>
-                    
-                    <p>She took her suitcase from the guards and walked into the airport.</p>
-                    
-                    <p>She met Michael and Jacob there, and soon they were on their way to G City. After a nine-hour journey, they finally arrived in the evening.</p>
-                    
-                    <p>The aerial view of G City was breathtaking; it was beautiful. Although Aurora City was more stunning, the difference between the two was that Aurora City was a business hub, while G City had a more civil and military vibe. Sarah was waiting for them at the airport. She smiled when she saw Michael and Jacob, but when she spotted Lily, she screamed and rushed to hug her. &#34;Oh my God! This is such a surprise! I had no idea you were coming!&#34;Sarah had no clue that Lily was joining them.</p>
-                    
-                    <p>&#34;This is the best surprise I&#39;ve had in months.&#34;</p>
-                    
-                    <p>Lily smiled and hugged her back. &#34;I&#39;ve missed you,Sarah.&#34;</p>
-                    
-                    <p>&#34;I&#39;ve missed you more.&#34;</p>
-                    
-                    <p>&#34;Are we invisible now?&#34; Jacob said with a sigh.</p>
-                    
-                    <p>&#34;We&#39;re always invisible when these two get together,&#34; Michael added.</p>
-                    
-                    <p>The women walked ahead.chatting, while the men trailed behind like bodyguards.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Lily smiled and nodded.</p>
+                        
+                        <p>&#34;Goodbye, my love,&#34; Alexander said.</p>
+                        
+                        <p>&#34;Goodbye.&#34;</p>
+                        
+                        <p>She got out of the car and swallowed hard. She was going to be in big trouble when he found out what she was planning.</p>
+                        
+                        <p>She took her suitcase from the guards and walked into the airport.</p>
+                        
+                        <p>She met Michael and Jacob there, and soon they were on their way to G City. After a nine-hour journey, they finally arrived in the evening.</p>
+                        
+                        <p>The aerial view of G City was breathtaking; it was beautiful. Although Aurora City was more stunning, the difference between the two was that Aurora City was a business hub, while G City had a more civil and military vibe. Sarah was waiting for them at the airport. She smiled when she saw Michael and Jacob, but when she spotted Lily, she screamed and rushed to hug her. &#34;Oh my God! This is such a surprise! I had no idea you were coming!&#34;Sarah had no clue that Lily was joining them.</p>
+                        
+                        <p>&#34;This is the best surprise I&#39;ve had in months.&#34;</p>
+                        
+                        <p>Lily smiled and hugged her back. &#34;I&#39;ve missed you,Sarah.&#34;</p>
+                        
+                        <p>&#34;I&#39;ve missed you more.&#34;</p>
+                        
+                        <p>&#34;Are we invisible now?&#34; Jacob said with a sigh.</p>
+                        
+                        <p>&#34;We&#39;re always invisible when these two get together,&#34; Michael added.</p>
+                        
+                        <p>The women walked ahead.chatting, while the men trailed behind like bodyguards.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1103,27 +1163,31 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;This city is so beautiful and peaceful,&#34; Lily remarked.</p>
-                    
-                    <p>&#34;It&#39;s only quiet during the day. You should see it at night.&#34;</p>
-                    
-                    <p>&#34;Really? It seems to be the opposite of Aurora City. Aurora is buzzing during the day, with everyone rushing to work, including me.&#34;</p>
-                    
-                    <p>Sarah smiled. &#34;I miss Viola. Did she ask about her godmother?&#34;</p>
-                    
-                    <p>&#34;She did. She told me to give you lots of kisses.&#34;</p>
-                    
-                    <p>&#34;Awww, so sweet. I wish she were here.&#34;</p>
-                    
-                    <p>&#34;I don&#39;t.&#34; Sarah raised an eyebrow. &#34;What do you mean you don&#39;t? You don&#39;t want her to be with her godmother?&#34; sheasked,frowning. &#34;That&#39;s not it. I didn&#39;t come here just for fun, Sarah. While I&#39;m using this chance to see you, I&#39;m actually here in G City for another reason.&#34; Sarah stopped walking and faced her. The serious look on Lily&#39;s face told her something was up. &#34;Why are you really here?&#34;</p>
-                    
-                    <p>Lily glanced around and saw Michael and Jacob approaching.&#34;I&#39;ll tell you when we&#39;re alone.&#34;</p>
-                    
-                    <p>&#34;They don&#39;t know why you&#39;re really here?&#34;</p>
-                    
-                    <p>&#34;Nobody knows, but you&#39;ll be the first I tell because I need your help with a plan.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;This city is so beautiful and peaceful,&#34; Lily remarked.</p>
+                        
+                        <p>&#34;It&#39;s only quiet during the day. You should see it at night.&#34;</p>
+                        
+                        <p>&#34;Really? It seems to be the opposite of Aurora City. Aurora is buzzing during the day, with everyone rushing to work, including me.&#34;</p>
+                        
+                        <p>Sarah smiled. &#34;I miss Viola. Did she ask about her godmother?&#34;</p>
+                        
+                        <p>&#34;She did. She told me to give you lots of kisses.&#34;</p>
+                        
+                        <p>&#34;Awww, so sweet. I wish she were here.&#34;</p>
+                        
+                        <p>&#34;I don&#39;t.&#34; Sarah raised an eyebrow. &#34;What do you mean you don&#39;t? You don&#39;t want her to be with her godmother?&#34; sheasked,frowning. &#34;That&#39;s not it. I didn&#39;t come here just for fun, Sarah. While I&#39;m using this chance to see you, I&#39;m actually here in G City for another reason.&#34; Sarah stopped walking and faced her. The serious look on Lily&#39;s face told her something was up. &#34;Why are you really here?&#34;</p>
+                        
+                        <p>Lily glanced around and saw Michael and Jacob approaching.&#34;I&#39;ll tell you when we&#39;re alone.&#34;</p>
+                        
+                        <p>&#34;They don&#39;t know why you&#39;re really here?&#34;</p>
+                        
+                        <p>&#34;Nobody knows, but you&#39;ll be the first I tell because I need your help with a plan.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2439,6 +2503,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2565,7 +2709,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2607,32 +2750,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2643,21 +2768,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2690,6 +2805,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2710,20 +2831,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

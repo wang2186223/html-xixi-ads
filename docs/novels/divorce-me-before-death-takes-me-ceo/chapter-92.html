@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:18.839997">
-    <meta property="article:modified_time" content="2026-07-19T02:47:18.839997">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.134514">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.134514">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:18">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:18.839997",
-        "dateModified": "2026-07-19T02:47:18.839997",
+        "datePublished": "2026-07-19T13:03:14.134514",
+        "dateModified": "2026-07-19T13:03:14.134514",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,29 +893,33 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>Wind whipped through my hair as I pushed the red sports car around the coastal road. Astrid and I drove for hours,stopping occasionally at overlooks before finally heading back to Manhattan as darkness fell.</p>
-                    
-                    <p>The restaurant Astrid chose was tucked in a quiet corner of the Upper East Side -elegant but not showy, with soft lighting and privacy.</p>
-                    
-                    <p>&#34;If I didn&#39;t have to drive this borrowed car back tonight,I&#39;d definitely have a proper drink with you,&#34; Astrid said, watching me as she poured our tea.&#34;You have no idea how upset I&#39;ve been seeing all that crap online about you lately.&#34;</p>
-                    
-                    <p>&#34;Being in the modeling industry, I know exactly how brutal online trolls can be.&#34; Her fingers tightened around her cup. &#34;I was terrified that all this negativity would be too much for you to handle.&#34;</p>
-                    
-                    <p>&#34;But instead of letting the internet drama crush you, you actually used it to your advantage and finally divorced Blake!&#34; Her eyes lit up. &#34;I still can&#39;t believe you did it with all those cameras rolling.&#34;</p>
-                    
-                    <p>I took a sip, and smiled, &#34;I guess something good came from all this mess after all.&#34;</p>
-                    
-                    <p>&#34;Even though you&#39;ve divorced Blake, people are still attacking you online,&#34;Astrid frowned. &#34;Want me to get my agency&#39;s PR team to handle it? They&#39;re experts at cleaning up messes.&#34;</p>
-                    
-                    <p>&#34;Don&#39;t bother. Let them keep talking.&#34; I met her gaze directly. &#34;If they stop now, there won&#39;t be enough recent evidence when I collect everything</p>
-                    
-                    <p>for my lawsuit.&#34;</p>
-                    
-                    <p>Astrid&#39;s eyes widened before her face split into a grin. She waved to the server. &#34;Your best bottle of red!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>Wind whipped through my hair as I pushed the red sports car around the coastal road. Astrid and I drove for hours,stopping occasionally at overlooks before finally heading back to Manhattan as darkness fell.</p>
+                        
+                        <p>The restaurant Astrid chose was tucked in a quiet corner of the Upper East Side -elegant but not showy, with soft lighting and privacy.</p>
+                        
+                        <p>&#34;If I didn&#39;t have to drive this borrowed car back tonight,I&#39;d definitely have a proper drink with you,&#34; Astrid said, watching me as she poured our tea.&#34;You have no idea how upset I&#39;ve been seeing all that crap online about you lately.&#34;</p>
+                        
+                        <p>&#34;Being in the modeling industry, I know exactly how brutal online trolls can be.&#34; Her fingers tightened around her cup. &#34;I was terrified that all this negativity would be too much for you to handle.&#34;</p>
+                        
+                        <p>&#34;But instead of letting the internet drama crush you, you actually used it to your advantage and finally divorced Blake!&#34; Her eyes lit up. &#34;I still can&#39;t believe you did it with all those cameras rolling.&#34;</p>
+                        
+                        <p>I took a sip, and smiled, &#34;I guess something good came from all this mess after all.&#34;</p>
+                        
+                        <p>&#34;Even though you&#39;ve divorced Blake, people are still attacking you online,&#34;Astrid frowned. &#34;Want me to get my agency&#39;s PR team to handle it? They&#39;re experts at cleaning up messes.&#34;</p>
+                        
+                        <p>&#34;Don&#39;t bother. Let them keep talking.&#34; I met her gaze directly. &#34;If they stop now, there won&#39;t be enough recent evidence when I collect everything</p>
+                        
+                        <p>for my lawsuit.&#34;</p>
+                        
+                        <p>Astrid&#39;s eyes widened before her face split into a grin. She waved to the server. &#34;Your best bottle of red!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -894,29 +934,33 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Then she leaned forward. &#34;Yout&#39;re really suing those trolls?&#34;</p>
-                    
-                    <p>&#34;T&#39;ve spent years holding back for the sake of being Mrs. Parker.They all thought I was born to be pushed around.&#34; I straightened my shoulders.&#34;</p>
-                    
-                    <p>Now that I&#39;m divorced, I don&#39;t need to save anyone&#39;s face anymore.&#34;</p>
-                    
-                    <p>The server returned with wine, pouring a glass for Astrid.</p>
-                    
-                    <p>&#34;Audrey, I&#39;m so happy!&#34; Astrid&#39;s eyes suddenly glistened. &#34;You&#39;re really...back!&#34;</p>
-                    
-                    <p>I watched her take a big sip of wine. &#34;I thought you weren&#39;t drinking?&#34;</p>
-                    
-                    <p>&#34;Can&#39;t help it!&#34; She grinned. &#34;Besides, you can&#39;t drink anyway because of your health, so you can drive when we return the car. My boss only said I had to return it personally - never specified I had to drive it.&#34;</p>
-                    
-                    <p>As she continued drinking, her emotions became more pronounced.</p>
-                    
-                    <p>&#34;After Rachel disappeared,you were the only close friend I had left, but you got so wrapped up in Blake, that jerk.&#34; She took another drink. &#34;For him, you quit racing, stopped designing jewelry, quit having fun...&#34;</p>
-                    
-                    <p>&#34;Watching you change for that man, putting up with his family&#39;s crap...&#34;She set her glass down firmly. &#34;It killed me, and I felt so useless - I couldn&#39;t protect Rachel, couldn&#39;t help you...&#34;</p>
-                    
-                    <p>Her teary eyes met mine. &#34;When you came after your miscarriage saying you were done with him, I didn&#39;t believe it. I thought you&#39;d go back and</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Then she leaned forward. &#34;Yout&#39;re really suing those trolls?&#34;</p>
+                        
+                        <p>&#34;T&#39;ve spent years holding back for the sake of being Mrs. Parker.They all thought I was born to be pushed around.&#34; I straightened my shoulders.&#34;</p>
+                        
+                        <p>Now that I&#39;m divorced, I don&#39;t need to save anyone&#39;s face anymore.&#34;</p>
+                        
+                        <p>The server returned with wine, pouring a glass for Astrid.</p>
+                        
+                        <p>&#34;Audrey, I&#39;m so happy!&#34; Astrid&#39;s eyes suddenly glistened. &#34;You&#39;re really...back!&#34;</p>
+                        
+                        <p>I watched her take a big sip of wine. &#34;I thought you weren&#39;t drinking?&#34;</p>
+                        
+                        <p>&#34;Can&#39;t help it!&#34; She grinned. &#34;Besides, you can&#39;t drink anyway because of your health, so you can drive when we return the car. My boss only said I had to return it personally - never specified I had to drive it.&#34;</p>
+                        
+                        <p>As she continued drinking, her emotions became more pronounced.</p>
+                        
+                        <p>&#34;After Rachel disappeared,you were the only close friend I had left, but you got so wrapped up in Blake, that jerk.&#34; She took another drink. &#34;For him, you quit racing, stopped designing jewelry, quit having fun...&#34;</p>
+                        
+                        <p>&#34;Watching you change for that man, putting up with his family&#39;s crap...&#34;She set her glass down firmly. &#34;It killed me, and I felt so useless - I couldn&#39;t protect Rachel, couldn&#39;t help you...&#34;</p>
+                        
+                        <p>Her teary eyes met mine. &#34;When you came after your miscarriage saying you were done with him, I didn&#39;t believe it. I thought you&#39;d go back and</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -931,29 +975,33 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>break my heart all over again. Now you&#39;re finally free, and I can breathe!&#34;</p>
-                    
-                    <p>My chest tightened. I&#39;d never realized how my marriage had affected her too.</p>
-                    
-                    <p>&#34;Anyway, from today on, there&#39;s no more MMrs. Parker - just my friend Audrey Sinclair!&#34; she declared, raising her glass. &#34;We&#39;ll look after each other, and when we retire, we&#39;ll travel everywhere together!&#34;</p>
-                    
-                    <p>The future she imagined - retirement, travel, years of friendship - was something I couldn&#39;t promise her.</p>
-                    
-                    <p>&#34;Why wait until then?&#34; I asked, looking away. &#34;Do you have time soon?Let&#39;s go traveling now.&#34;</p>
-                    
-                    <p>Astrid set her glass down, surprised. &#34;No need to rush. I&#39;ve got a major runway show coming up and need to train the junior models. I won&#39;t have free time for at least a month or two... After the show, I&#39;ll take some time off and we can really enjoy ourselves!&#34;</p>
-                    
-                    <p>I sighed quietly. *I probably won&#39;t live long enough for &#39;someday.*</p>
-                    
-                    <p>&#34;Fine, I&#39;ll wait for you,&#34; I lied.</p>
-                    
-                    <p>By the time we left, Astrid was thoroughly drunk, leaning against me as we reached her family&#39;s home.</p>
-                    
-                    <p>Mrs. Wilson opened the door, concern on her face. Two staff members waited behind her.</p>
-                    
-                    <p>&#34;Mom!&#34; Astrid waved, nearly falling, &#34;Look who I brought!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>break my heart all over again. Now you&#39;re finally free, and I can breathe!&#34;</p>
+                        
+                        <p>My chest tightened. I&#39;d never realized how my marriage had affected her too.</p>
+                        
+                        <p>&#34;Anyway, from today on, there&#39;s no more MMrs. Parker - just my friend Audrey Sinclair!&#34; she declared, raising her glass. &#34;We&#39;ll look after each other, and when we retire, we&#39;ll travel everywhere together!&#34;</p>
+                        
+                        <p>The future she imagined - retirement, travel, years of friendship - was something I couldn&#39;t promise her.</p>
+                        
+                        <p>&#34;Why wait until then?&#34; I asked, looking away. &#34;Do you have time soon?Let&#39;s go traveling now.&#34;</p>
+                        
+                        <p>Astrid set her glass down, surprised. &#34;No need to rush. I&#39;ve got a major runway show coming up and need to train the junior models. I won&#39;t have free time for at least a month or two... After the show, I&#39;ll take some time off and we can really enjoy ourselves!&#34;</p>
+                        
+                        <p>I sighed quietly. *I probably won&#39;t live long enough for &#39;someday.*</p>
+                        
+                        <p>&#34;Fine, I&#39;ll wait for you,&#34; I lied.</p>
+                        
+                        <p>By the time we left, Astrid was thoroughly drunk, leaning against me as we reached her family&#39;s home.</p>
+                        
+                        <p>Mrs. Wilson opened the door, concern on her face. Two staff members waited behind her.</p>
+                        
+                        <p>&#34;Mom!&#34; Astrid waved, nearly falling, &#34;Look who I brought!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -968,29 +1016,33 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Mrs. Wilson&#39;s eyes moved from her daughter to me. &#34;So drunk!&#34;</p>
-                    
-                    <p>Her face softened, &#34;She must have been celebrating your divorce today.&#34;</p>
-                    
-                    <p>&#34;Yes, she&#39;s happy for me.&#34;</p>
-                    
-                    <p>The staff helped Astrid inside. Mrs. Wilson took my hand. &#34;Audrey.Congratulations on your freedom.&#34;</p>
-                    
-                    <p>Her simple words caught me off guard - genuine, understanding what this divorce truly meant.</p>
-                    
-                    <p>&#34;Thank you, Mrs. Wilson,&#34; I smiled.</p>
-                    
-                    <p>&#34;Audrey...&#34; Astrid called from the stairs. &#34;Don&#39;t forget the car...&#34;</p>
-                    
-                    <p>Even drunk, she remembered her responsibilities.</p>
-                    
-                    <p>&#34;Don&#39;t worry!&#34; I called back.</p>
-                    
-                    <p>Back in the car, I messaged the owner as instructed. The response came immediately - a location pin.</p>
-                    
-                    <p>I stared at it, frowning. The Underground.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Mrs. Wilson&#39;s eyes moved from her daughter to me. &#34;So drunk!&#34;</p>
+                        
+                        <p>Her face softened, &#34;She must have been celebrating your divorce today.&#34;</p>
+                        
+                        <p>&#34;Yes, she&#39;s happy for me.&#34;</p>
+                        
+                        <p>The staff helped Astrid inside. Mrs. Wilson took my hand. &#34;Audrey.Congratulations on your freedom.&#34;</p>
+                        
+                        <p>Her simple words caught me off guard - genuine, understanding what this divorce truly meant.</p>
+                        
+                        <p>&#34;Thank you, Mrs. Wilson,&#34; I smiled.</p>
+                        
+                        <p>&#34;Audrey...&#34; Astrid called from the stairs. &#34;Don&#39;t forget the car...&#34;</p>
+                        
+                        <p>Even drunk, she remembered her responsibilities.</p>
+                        
+                        <p>&#34;Don&#39;t worry!&#34; I called back.</p>
+                        
+                        <p>Back in the car, I messaged the owner as instructed. The response came immediately - a location pin.</p>
+                        
+                        <p>I stared at it, frowning. The Underground.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1005,29 +1057,33 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Blake rented that club tonight to celebrate our divorce. The car owner was probably among his guests.</p>
-                    
-                    <p>I hesitated, finger hovering over the ignition. I didn&#39;t want to encounter anyone connected to Blake or have people know I went near his divorce party.</p>
-                    
-                    <p>But I can&#39;t let Astrid down. If I&#39;m quick - drop off the car and leave immediately - I might not even run into any Parkers.</p>
-                    
-                    <p>Decision made, I started the car and headed toward The Underground.</p>
-                    
-                    <p>The neon lights of The Underground cast a blue glow across the sidewalk as I parked. Music pulsed from within, muffled by the doors but still</p>
-                    
-                    <p>vibrating through the pavement.</p>
-                    
-                    <p>I texted:*&#34;I&#39;ve arrived.&#34;*</p>
-                    
-                    <p>The response came quickly: *&#34;Wait a moment, I&#39;ll be right out.&#34;*</p>
-                    
-                    <p>*&#34;Okay.&#34;*</p>
-                    
-                    <p>I got out, keys in hand, and waited. The club doors swung open,and three women emerged.</p>
-                    
-                    <p>Before I could turn away, a familiar voice called out: &#34;Well, look who it is!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Blake rented that club tonight to celebrate our divorce. The car owner was probably among his guests.</p>
+                        
+                        <p>I hesitated, finger hovering over the ignition. I didn&#39;t want to encounter anyone connected to Blake or have people know I went near his divorce party.</p>
+                        
+                        <p>But I can&#39;t let Astrid down. If I&#39;m quick - drop off the car and leave immediately - I might not even run into any Parkers.</p>
+                        
+                        <p>Decision made, I started the car and headed toward The Underground.</p>
+                        
+                        <p>The neon lights of The Underground cast a blue glow across the sidewalk as I parked. Music pulsed from within, muffled by the doors but still</p>
+                        
+                        <p>vibrating through the pavement.</p>
+                        
+                        <p>I texted:*&#34;I&#39;ve arrived.&#34;*</p>
+                        
+                        <p>The response came quickly: *&#34;Wait a moment, I&#39;ll be right out.&#34;*</p>
+                        
+                        <p>*&#34;Okay.&#34;*</p>
+                        
+                        <p>I got out, keys in hand, and waited. The club doors swung open,and three women emerged.</p>
+                        
+                        <p>Before I could turn away, a familiar voice called out: &#34;Well, look who it is!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1042,29 +1098,33 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>*Thalia Parker*. Blake&#39;s sister and my most vocal critic.</p>
-                    
-                    <p>&#34;What a coincidence,&#34; she added.</p>
-                    
-                    <p>&#34;Who is it?&#34; asked Olivia, her ever-present sidekick.</p>
-                    
-                    <p>&#34;I don&#39;t recognize her,&#34; said Laurel Rose, her voice measured. &#34;If Thalia knows her, let&#39;s say hello.&#34;</p>
-                    
-                    <p>My back stiffened. I took a deep breath before turning to face them.</p>
-                    
-                    <p>&#34;Quite a coincidence indeed,&#34; I said with a forced smile.</p>
-                    
-                    <p>Olivia&#39;s eyes widened. &#34;Audrey Sinclair!? What are you doing here?&#34;</p>
-                    
-                    <p>&#34;She&#39;s here to ruin everyone&#39;s good time,&#34; Thalia crossed her arms. &#34;She must have found out Blake rented this place to celebraté, so she came to spoil everything.&#34;</p>
-                    
-                    <p>I stayed silent,letting her continue.</p>
-                    
-                    <p>&#34;I suggest you leave before my brother sees you,&#34; she warned.&#34;He&#39;s in a great mood tonight and drinking more than usual. If you ruin his night...</p>
-                    
-                    <p>I won&#39;t let you get away with it!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>*Thalia Parker*. Blake&#39;s sister and my most vocal critic.</p>
+                        
+                        <p>&#34;What a coincidence,&#34; she added.</p>
+                        
+                        <p>&#34;Who is it?&#34; asked Olivia, her ever-present sidekick.</p>
+                        
+                        <p>&#34;I don&#39;t recognize her,&#34; said Laurel Rose, her voice measured. &#34;If Thalia knows her, let&#39;s say hello.&#34;</p>
+                        
+                        <p>My back stiffened. I took a deep breath before turning to face them.</p>
+                        
+                        <p>&#34;Quite a coincidence indeed,&#34; I said with a forced smile.</p>
+                        
+                        <p>Olivia&#39;s eyes widened. &#34;Audrey Sinclair!? What are you doing here?&#34;</p>
+                        
+                        <p>&#34;She&#39;s here to ruin everyone&#39;s good time,&#34; Thalia crossed her arms. &#34;She must have found out Blake rented this place to celebraté, so she came to spoil everything.&#34;</p>
+                        
+                        <p>I stayed silent,letting her continue.</p>
+                        
+                        <p>&#34;I suggest you leave before my brother sees you,&#34; she warned.&#34;He&#39;s in a great mood tonight and drinking more than usual. If you ruin his night...</p>
+                        
+                        <p>I won&#39;t let you get away with it!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1079,17 +1139,21 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Three years ago, those words would have intimidated me. Three years of Parker disapproval had taught me to back down, apologize, make myself smaller.</p>
-                    
-                    <p>Not anymore.</p>
-                    
-                    <p>I crossed my arms and met her gaze coldly. &#34;You and your brother may have rented The Underground, but did you also buy the sidewalk outside?&#34;</p>
-                    
-                    <p>I stepped forward. &#34;Have you forgotten that I&#39;m no longer part of the Parker family?&#34;</p>
-                    
-                    <p>Looking directly into her shocked eyes, I added, &#34;Your threats...mean nothing to me now.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Three years ago, those words would have intimidated me. Three years of Parker disapproval had taught me to back down, apologize, make myself smaller.</p>
+                        
+                        <p>Not anymore.</p>
+                        
+                        <p>I crossed my arms and met her gaze coldly. &#34;You and your brother may have rented The Underground, but did you also buy the sidewalk outside?&#34;</p>
+                        
+                        <p>I stepped forward. &#34;Have you forgotten that I&#39;m no longer part of the Parker family?&#34;</p>
+                        
+                        <p>Looking directly into her shocked eyes, I added, &#34;Your threats...mean nothing to me now.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2405,6 +2469,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2531,7 +2675,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2573,32 +2716,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2609,21 +2734,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2656,6 +2771,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2676,20 +2797,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

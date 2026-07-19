@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:26.712284">
-    <meta property="article:modified_time" content="2026-07-19T02:47:26.712284">
+    <meta property="article:published_time" content="2026-07-19T13:03:21.305347">
+    <meta property="article:modified_time" content="2026-07-19T13:03:21.305347">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:26">
+    <meta name="last-modified" content="2026-07-19 13:03:21">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:26.712284",
-        "dateModified": "2026-07-19T02:47:26.712284",
+        "datePublished": "2026-07-19T13:03:21.305347",
+        "dateModified": "2026-07-19T13:03:21.305347",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,25 +893,29 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter1000</p>
-                    
-                    <p>All at once, every gambler at the table shot him furious looks, their eyes practically setting him on fire. You could almost feel them wishing they could tear him apart right there.</p>
-                    
-                    <p>One guy leaned in, voice sharp. &#34;Kid, are you just here to mess with us?&#34;</p>
-                    
-                    <p>Another shouted, &#34;Do you even know how much we&#39;ve lost? This round has to be big!&#34;</p>
-                    
-                    <p>&#34;That&#39;s right, it has to be big!&#34; someone else echoed.</p>
-                    
-                    <p>Sweet Potato looked awkward, rubbing the back of his head, a little regret written all over his face. &#34;Sorry, everyone. Honestly, my family&#39;s barely scraping by. I&#39;ve got a baby at home who needs formula.&#34;</p>
-                    
-                    <p>A woman across from him gave a cold snort. &#34;You? You look young and healthy. Doesn&#39;t seem like you&#39;re hurting for money.&#34;</p>
-                    
-                    <p>Sweet Potato tried to explain, his voice sincere. &#34;I swear, it&#39;s rough for me right now.&#34;</p>
-                    
-                    <p>&#34;You better not be here just to stir trouble,&#34; another gambler warned.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter1000</p>
+                        
+                        <p>All at once, every gambler at the table shot him furious looks, their eyes practically setting him on fire. You could almost feel them wishing they could tear him apart right there.</p>
+                        
+                        <p>One guy leaned in, voice sharp. &#34;Kid, are you just here to mess with us?&#34;</p>
+                        
+                        <p>Another shouted, &#34;Do you even know how much we&#39;ve lost? This round has to be big!&#34;</p>
+                        
+                        <p>&#34;That&#39;s right, it has to be big!&#34; someone else echoed.</p>
+                        
+                        <p>Sweet Potato looked awkward, rubbing the back of his head, a little regret written all over his face. &#34;Sorry, everyone. Honestly, my family&#39;s barely scraping by. I&#39;ve got a baby at home who needs formula.&#34;</p>
+                        
+                        <p>A woman across from him gave a cold snort. &#34;You? You look young and healthy. Doesn&#39;t seem like you&#39;re hurting for money.&#34;</p>
+                        
+                        <p>Sweet Potato tried to explain, his voice sincere. &#34;I swear, it&#39;s rough for me right now.&#34;</p>
+                        
+                        <p>&#34;You better not be here just to stir trouble,&#34; another gambler warned.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -890,25 +930,29 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Yeah, enough talk. Let&#39;s stick with big!&#34;</p>
-                    
-                    <p>&#34;Big! Big! Big!&#34; The chant picked up steam, everyone turning back to the table, their voices wild and desperate, like they were locked in a battle with fate itself.</p>
-                    
-                    <p>The dealer swept his gaze over the crowd, then slowly lifted the dice cup, almost as if he was revealing fate&#39;s final answer.</p>
-                    
-                    <p>&#34;Small.&#34; The dealer&#39;s voice was cold and steady, and the room seemed to explode with emotion.</p>
-                    
-                    <p>Sweet Potato let out a whoop. &#34;Yes! It&#39;s small! Small again!&#34;</p>
-                    
-                    <p>The people who had bet on big just stood there, stunned. Their eyes looked empty, hands clutching their crumpled bills like they&#39;d just lost a piece of their soul.</p>
-                    
-                    <p>Four smalls in a row. It felt impossible, but here it was.</p>
-                    
-                    <p>&#34;How is this even happening? Four in a row?&#34;</p>
-                    
-                    <p>&#34;Yeah, damn it, I&#39;ve lost everything but my underwear!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Yeah, enough talk. Let&#39;s stick with big!&#34;</p>
+                        
+                        <p>&#34;Big! Big! Big!&#34; The chant picked up steam, everyone turning back to the table, their voices wild and desperate, like they were locked in a battle with fate itself.</p>
+                        
+                        <p>The dealer swept his gaze over the crowd, then slowly lifted the dice cup, almost as if he was revealing fate&#39;s final answer.</p>
+                        
+                        <p>&#34;Small.&#34; The dealer&#39;s voice was cold and steady, and the room seemed to explode with emotion.</p>
+                        
+                        <p>Sweet Potato let out a whoop. &#34;Yes! It&#39;s small! Small again!&#34;</p>
+                        
+                        <p>The people who had bet on big just stood there, stunned. Their eyes looked empty, hands clutching their crumpled bills like they&#39;d just lost a piece of their soul.</p>
+                        
+                        <p>Four smalls in a row. It felt impossible, but here it was.</p>
+                        
+                        <p>&#34;How is this even happening? Four in a row?&#34;</p>
+                        
+                        <p>&#34;Yeah, damn it, I&#39;ve lost everything but my underwear!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -923,25 +967,29 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;I&#39;m down three million. I refuse to believe I can&#39;t win once! Screw it, I&#39;m betting big again!&#34; With that, he shoved two fat stacks of cash onto the big section.</p>
-                    
-                    <p>Some gamblers glanced at their flat wallets, suddenly feeling a little sympathy for Sweet Potato. When you&#39;re broke, a thousand is real money.</p>
-                    
-                    <p>Just then, Lydia pulled out two neat stacks from her purse and placed them on small. Her voice was cool and calm. &#34;Small.&#34;</p>
-                    
-                    <p>The guy betting big grumbled and turned to her. &#34;Hey there, do your family even know you snuck into a casino?&#34;</p>
-                    
-                    <p>Before Lydia could say a word, Connor, tall and stone-faced beside her, answered, &#34;They know. They&#39;re fine with it.&#34;</p>
-                    
-                    <p>The man took one look at Connor and decided to keep quiet.</p>
-                    
-                    <p>Sweet Potato, beaming with excitement, put his own two thousand down on small. &#34;I&#39;m sticking with small too,&#34; he said, barely containing his joy.</p>
-                    
-                    <p>The crowd hesitated, torn. Four smalls in a row... Could it really come up small again? No way, right?</p>
-                    
-                    <p>&#34;Forget it, I&#39;m not backing down. I&#39;m betting big!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;I&#39;m down three million. I refuse to believe I can&#39;t win once! Screw it, I&#39;m betting big again!&#34; With that, he shoved two fat stacks of cash onto the big section.</p>
+                        
+                        <p>Some gamblers glanced at their flat wallets, suddenly feeling a little sympathy for Sweet Potato. When you&#39;re broke, a thousand is real money.</p>
+                        
+                        <p>Just then, Lydia pulled out two neat stacks from her purse and placed them on small. Her voice was cool and calm. &#34;Small.&#34;</p>
+                        
+                        <p>The guy betting big grumbled and turned to her. &#34;Hey there, do your family even know you snuck into a casino?&#34;</p>
+                        
+                        <p>Before Lydia could say a word, Connor, tall and stone-faced beside her, answered, &#34;They know. They&#39;re fine with it.&#34;</p>
+                        
+                        <p>The man took one look at Connor and decided to keep quiet.</p>
+                        
+                        <p>Sweet Potato, beaming with excitement, put his own two thousand down on small. &#34;I&#39;m sticking with small too,&#34; he said, barely containing his joy.</p>
+                        
+                        <p>The crowd hesitated, torn. Four smalls in a row... Could it really come up small again? No way, right?</p>
+                        
+                        <p>&#34;Forget it, I&#39;m not backing down. I&#39;m betting big!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -956,25 +1004,29 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;I... I think this kid&#39;s got luck on his side. I&#39;m with him. Small!&#34; A woman tossed her chips onto small.</p>
-                    
-                    <p>Just like that, the table was split. But if you counted, there was still more money riding on big.</p>
-                    
-                    <p>The dealer glanced around and called, &#34;Bets are closed.&#34;</p>
-                    
-                    <p>He spun the dice cup with practiced, steady hands. The big bettors were shouting themselves hoarse.</p>
-                    
-                    <p>&#34;Big! Big! Big!&#34;</p>
-                    
-                    <p>The dealer called out, &#34;Three, two, two. Small!&#34;</p>
-                    
-                    <p>The moment the words left his mouth, the big bettors groaned in agony. Meanwhile, those who- followedydia and Sweet Potato were so excited they jumped out of their seats.</p>
-                    
-                    <p>&#34;Finally! After four losses, I finally won one!&#34;</p>
-                    
-                    <p>&#34;Kid, I didn&#39;t expect you to be this lucky!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;I... I think this kid&#39;s got luck on his side. I&#39;m with him. Small!&#34; A woman tossed her chips onto small.</p>
+                        
+                        <p>Just like that, the table was split. But if you counted, there was still more money riding on big.</p>
+                        
+                        <p>The dealer glanced around and called, &#34;Bets are closed.&#34;</p>
+                        
+                        <p>He spun the dice cup with practiced, steady hands. The big bettors were shouting themselves hoarse.</p>
+                        
+                        <p>&#34;Big! Big! Big!&#34;</p>
+                        
+                        <p>The dealer called out, &#34;Three, two, two. Small!&#34;</p>
+                        
+                        <p>The moment the words left his mouth, the big bettors groaned in agony. Meanwhile, those who- followedydia and Sweet Potato were so excited they jumped out of their seats.</p>
+                        
+                        <p>&#34;Finally! After four losses, I finally won one!&#34;</p>
+                        
+                        <p>&#34;Kid, I didn&#39;t expect you to be this lucky!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -989,25 +1041,29 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;Yeah, what are you betting next? I&#39;m following you.&#34; The woman grinned at Sweet Potato.</p>
-                    
-                    <p>Sweet Potato grinned shyly.   Just lucky, I guess. At least now I can buy a can of formula.&#34;</p>
-                    
-                    <p>&#34;Don&#39;t stop now, kid. Win a little more, buy a whole case!&#34; someone teased.</p>
-                    
-                    <p>He laughed.   Alright, maybe I&#39;ll go for one more round.</p>
-                    
-                    <p>So what&#39;s the play this time?&#34; the woman asked, eyes on him.</p>
-                    
-                    <p>Sweet Potato glanced over at Lydia.</p>
-                    
-                    <p>Without a word, Lydia pushed all her winnings and her original bet onto big.</p>
-                    
-                    <p>The room fell silent. They&#39;d all just lost three or four rounds betting big, watching small come up every time.</p>
-                    
-                    <p>Sweet Potato gave a little chuckle. &#34;It&#39;s been small five times straight. Luck&#39;s gotta turn around sometime. I&#39;m putting all my formula money on big!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;Yeah, what are you betting next? I&#39;m following you.&#34; The woman grinned at Sweet Potato.</p>
+                        
+                        <p>Sweet Potato grinned shyly.   Just lucky, I guess. At least now I can buy a can of formula.&#34;</p>
+                        
+                        <p>&#34;Don&#39;t stop now, kid. Win a little more, buy a whole case!&#34; someone teased.</p>
+                        
+                        <p>He laughed.   Alright, maybe I&#39;ll go for one more round.</p>
+                        
+                        <p>So what&#39;s the play this time?&#34; the woman asked, eyes on him.</p>
+                        
+                        <p>Sweet Potato glanced over at Lydia.</p>
+                        
+                        <p>Without a word, Lydia pushed all her winnings and her original bet onto big.</p>
+                        
+                        <p>The room fell silent. They&#39;d all just lost three or four rounds betting big, watching small come up every time.</p>
+                        
+                        <p>Sweet Potato gave a little chuckle. &#34;It&#39;s been small five times straight. Luck&#39;s gotta turn around sometime. I&#39;m putting all my formula money on big!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1022,25 +1078,29 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>The big bettors who&#39;d been losing hard looked haunted. They wanted to walk away, but they just couldn&#39;t stand the thought of not winning back what they&#39;d lost.</p>
-                    
-                    <p>&#34;I&#39;m betting...&#34; A guy who&#39;d lost millions started to slide his chips onto small, but halfway there, he stopped, grit his teeth, and shoved everything onto big. &#34;Big it is if it&#39;s</p>
-                    
-                    <p>small again, I&#39;ll eat my hat! Confent</p>
-                    
-                    <p>A few others, convinced luck was twisted tonight, decided to stick with small one</p>
-                    
-                    <p>more time and see what happened.</p>
-                    
-                    <p>The dealer looked over the table,</p>
-                    
-                    <p>completely calm, then began shaking the dice cup with the same smooth, confident rhythm as before. His expression said he thought he had it all under control.</p>
-                    
-                    <p>The cup hit the table with a sharp thud. No one breathed. Every eye in the room was</p>
-                    
-                    <p>glued to it.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>The big bettors who&#39;d been losing hard looked haunted. They wanted to walk away, but they just couldn&#39;t stand the thought of not winning back what they&#39;d lost.</p>
+                        
+                        <p>&#34;I&#39;m betting...&#34; A guy who&#39;d lost millions started to slide his chips onto small, but halfway there, he stopped, grit his teeth, and shoved everything onto big. &#34;Big it is if it&#39;s</p>
+                        
+                        <p>small again, I&#39;ll eat my hat! Confent</p>
+                        
+                        <p>A few others, convinced luck was twisted tonight, decided to stick with small one</p>
+                        
+                        <p>more time and see what happened.</p>
+                        
+                        <p>The dealer looked over the table,</p>
+                        
+                        <p>completely calm, then began shaking the dice cup with the same smooth, confident rhythm as before. His expression said he thought he had it all under control.</p>
+                        
+                        <p>The cup hit the table with a sharp thud. No one breathed. Every eye in the room was</p>
+                        
+                        <p>glued to it.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1055,15 +1115,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Big! Big! Come on already! It&#39;s been small all night. It&#39;s time for big!&#34; the crowd shouted.</p>
-                    
-                    <p>A quick flash of mockery crossed the dealer&#39;s face. Suckers, he thought, but he just gave a little smirk and lifted the cup.</p>
-                    
-                    <p>But when he saw the dice, his confident look vanished and his eyes widened in shock.</p>
-                    
-                    <p>Someone in the crowd was already screaming, &#34;Five, six, six! It&#39;s big!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Big! Big! Come on already! It&#39;s been small all night. It&#39;s time for big!&#34; the crowd shouted.</p>
+                        
+                        <p>A quick flash of mockery crossed the dealer&#39;s face. Suckers, he thought, but he just gave a little smirk and lifted the cup.</p>
+                        
+                        <p>But when he saw the dice, his confident look vanished and his eyes widened in shock.</p>
+                        
+                        <p>Someone in the crowd was already screaming, &#34;Five, six, six! It&#39;s big!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2379,6 +2443,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2505,7 +2649,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2547,32 +2690,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2583,21 +2708,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2630,6 +2745,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2650,20 +2771,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

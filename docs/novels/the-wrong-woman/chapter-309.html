@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:44.188801">
-    <meta property="article:modified_time" content="2026-07-19T02:47:44.188801">
+    <meta property="article:published_time" content="2026-07-19T13:03:37.349925">
+    <meta property="article:modified_time" content="2026-07-19T13:03:37.349925">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:44">
+    <meta name="last-modified" content="2026-07-19 13:03:37">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:44.188801",
-        "dateModified": "2026-07-19T02:47:44.188801",
+        "datePublished": "2026-07-19T13:03:37.349925",
+        "dateModified": "2026-07-19T13:03:37.349925",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,17 +893,21 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter309</p>
-                    
-                    <p>Mila and Phoebe squeezed in as the next elevator arrived. Most of the people on this elevator were the top experts from Norvania, who were here to deal with the aftermath of the explosion. Whispers filled the air in the elevator.</p>
-                    
-                    <p>“Exactly what are these purple particles? It’s the first time I’ve seen this phenomenon.”</p>
-                    
-                    <p>“I’ve heard it was caused by an accident while developing the hydronium missiles.”</p>
-                    
-                    <p>“Hydronium? Hasn’t the researcher who developed hydronium already died? How is this possible?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter309</p>
+                        
+                        <p>Mila and Phoebe squeezed in as the next elevator arrived. Most of the people on this elevator were the top experts from Norvania, who were here to deal with the aftermath of the explosion. Whispers filled the air in the elevator.</p>
+                        
+                        <p>“Exactly what are these purple particles? It’s the first time I’ve seen this phenomenon.”</p>
+                        
+                        <p>“I’ve heard it was caused by an accident while developing the hydronium missiles.”</p>
+                        
+                        <p>“Hydronium? Hasn’t the researcher who developed hydronium already died? How is this possible?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -882,17 +922,21 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>“There were two bottles left, but they’re probably gone by now.”</p>
-                    
-                    <p>“Are those purple particles the result of hydronium’s reaction with something? The explosion had been terrifying. It felt like half the earth shook. Many continents were affected. There were earthquakes and even tsunamis-”</p>
-                    
-                    <p>“Shh, we’re here. Be quiet.”</p>
-                    
-                    <p>The elevator chimed, and everyone got off. Mila and Phoebe shared a glance. They followed the others out of the elevator and into a large conference room.</p>
-                    
-                    <p>In the conference room, Mila saw the top brass of the military base, as well as top engineers and chemical researchers from various fields. Joe and Alan, whom Mila had met before, were also there. Everyone had a serious look on their faces as they discussed disaster relief and</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>“There were two bottles left, but they’re probably gone by now.”</p>
+                        
+                        <p>“Are those purple particles the result of hydronium’s reaction with something? The explosion had been terrifying. It felt like half the earth shook. Many continents were affected. There were earthquakes and even tsunamis-”</p>
+                        
+                        <p>“Shh, we’re here. Be quiet.”</p>
+                        
+                        <p>The elevator chimed, and everyone got off. Mila and Phoebe shared a glance. They followed the others out of the elevator and into a large conference room.</p>
+                        
+                        <p>In the conference room, Mila saw the top brass of the military base, as well as top engineers and chemical researchers from various fields. Joe and Alan, whom Mila had met before, were also there. Everyone had a serious look on their faces as they discussed disaster relief and</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -907,17 +951,21 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>reconstruction.</p>
-                    
-                    <p>Due to the size of the crowd, those with less experience were standing on the sidelines. Mila and Phoebe stood in a corner, listening to their discussion. Nathan was so busy that he completely forgot that Mila was there.</p>
-                    
-                    <p>Alan opened a PowerPoint presentation, explaining the reasons for the experiment’s failure, the damage caused by the explosion, and how to deal with the pollutants in the air. Mila looked grim after hearing their proposed solutions.</p>
-                    
-                    <p>“General Morrison, this is the quickest and most effective way to reduce the pollution based on the research we have done,” Alan said.</p>
-                    
-                    <p>“How long will it take?” Nathan asked.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>reconstruction.</p>
+                        
+                        <p>Due to the size of the crowd, those with less experience were standing on the sidelines. Mila and Phoebe stood in a corner, listening to their discussion. Nathan was so busy that he completely forgot that Mila was there.</p>
+                        
+                        <p>Alan opened a PowerPoint presentation, explaining the reasons for the experiment’s failure, the damage caused by the explosion, and how to deal with the pollutants in the air. Mila looked grim after hearing their proposed solutions.</p>
+                        
+                        <p>“General Morrison, this is the quickest and most effective way to reduce the pollution based on the research we have done,” Alan said.</p>
+                        
+                        <p>“How long will it take?” Nathan asked.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -932,17 +980,21 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>“It will take about a week to reduce air pollution. The filtration for water pollution will take about sixty days. In the meantime, it’s best to evacuate residents who live nearby.”</p>
-                    
-                    <p>Voices of skepticism began to rise.</p>
-                    
-                    <p>“There are tens of thousands of people at our base, let alone all of our armories and gear. Are</p>
-                    
-                    <p>we supposed to move all that ?”</p>
-                    
-                    <p>“Exactly, that isn’t feasible.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“It will take about a week to reduce air pollution. The filtration for water pollution will take about sixty days. In the meantime, it’s best to evacuate residents who live nearby.”</p>
+                        
+                        <p>Voices of skepticism began to rise.</p>
+                        
+                        <p>“There are tens of thousands of people at our base, let alone all of our armories and gear. Are</p>
+                        
+                        <p>we supposed to move all that ?”</p>
+                        
+                        <p>“Exactly, that isn’t feasible.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -957,17 +1009,21 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>“There may not be many people living nearby, but there are still at least ten thousand people scattered arcund. How do we evacuate them?”</p>
-                    
-                    <p>Nathan scanned the room and asked, “Any other solutions?”</p>
-                    
-                    <p>The other professors were desperately searching through the data, hoping to find a solution in the mountain of information.</p>
-                    
-                    <p>“Nate, why don’t we call in some specialized researchers from Sunterland to help us?” Fennal suggested.</p>
-                    
-                    <p>A shadow seemed to pass over Nathan’s eyes, and he fell silent.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>“There may not be many people living nearby, but there are still at least ten thousand people scattered arcund. How do we evacuate them?”</p>
+                        
+                        <p>Nathan scanned the room and asked, “Any other solutions?”</p>
+                        
+                        <p>The other professors were desperately searching through the data, hoping to find a solution in the mountain of information.</p>
+                        
+                        <p>“Nate, why don’t we call in some specialized researchers from Sunterland to help us?” Fennal suggested.</p>
+                        
+                        <p>A shadow seemed to pass over Nathan’s eyes, and he fell silent.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -982,17 +1038,21 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>“Ms. Hudson, you may not know this, but we’ve already spoken to Sunterland. They said a researcher once simulated experiments on hydronium missile explosions, but the data was lost. The researcher who experimented is dead as well,” said the secretary–general.</p>
-                    
-                    <p>“So, Dr. Howard’s suggestion is the only possible solution?” Fenna asked nervously.</p>
-                    
-                    <p>“For the time being, yes,” the other professors confirmed.</p>
-                    
-                    <p>Phoebe approached Mila anxiously. “Mila, don’t you know how to solve this?”</p>
-                    
-                    <p>Mila hesitated. She had no idea how she could help Nathan without revealing her identity. The discussion continued fervently, but there was no better solution in sight.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>“Ms. Hudson, you may not know this, but we’ve already spoken to Sunterland. They said a researcher once simulated experiments on hydronium missile explosions, but the data was lost. The researcher who experimented is dead as well,” said the secretary–general.</p>
+                        
+                        <p>“So, Dr. Howard’s suggestion is the only possible solution?” Fenna asked nervously.</p>
+                        
+                        <p>“For the time being, yes,” the other professors confirmed.</p>
+                        
+                        <p>Phoebe approached Mila anxiously. “Mila, don’t you know how to solve this?”</p>
+                        
+                        <p>Mila hesitated. She had no idea how she could help Nathan without revealing her identity. The discussion continued fervently, but there was no better solution in sight.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1007,13 +1067,17 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Just as Nathan was about to agree and move on to the next item on the agenda, Mila stepped out of the crowd. “Wait.”</p>
-                    
-                    <p>All eyes turned toward her. The tension in Nathan’s eyes gave way to a gentle warmth.</p>
-                    
-                    <p>Fenna huffed disapprovingly. “Ms. York, why did you follow us here? You’re not supposed to be here.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Just as Nathan was about to agree and move on to the next item on the agenda, Mila stepped out of the crowd. “Wait.”</p>
+                        
+                        <p>All eyes turned toward her. The tension in Nathan’s eyes gave way to a gentle warmth.</p>
+                        
+                        <p>Fenna huffed disapprovingly. “Ms. York, why did you follow us here? You’re not supposed to be here.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2329,6 +2393,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2455,7 +2599,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2497,32 +2640,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2533,21 +2658,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2580,6 +2695,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2600,20 +2721,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

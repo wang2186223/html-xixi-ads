@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:43.220961">
-    <meta property="article:modified_time" content="2026-07-19T02:47:43.220961">
+    <meta property="article:published_time" content="2026-07-19T13:03:36.325325">
+    <meta property="article:modified_time" content="2026-07-19T13:03:36.325325">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:43">
+    <meta name="last-modified" content="2026-07-19 13:03:36">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:43.220961",
-        "dateModified": "2026-07-19T02:47:43.220961",
+        "datePublished": "2026-07-19T13:03:36.325325",
+        "dateModified": "2026-07-19T13:03:36.325325",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,21 +893,25 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Madisyn saw the words on the form and immediately asked, “What’s wrong?”</p>
-                    
-                    <p>Susan looked startled. Panic flooded through her as her eyes landed on Madisyn. She quickly hid the surgery form behind her back, unsure how to explain. Tears began to slip down her cheeks.</p>
-                    
-                    <p>Madisyn embraced her, her heart weighed down with sadness. “I’m here.” She gave Susan’s shoulder a reassuring pat. The warmth of the hug only made Susan’s tears fall harder, her heart aching with a sorrow too heavy to bear. Through her sobs, she choked out, “I’m pregnant.”</p>
-                    
-                    <p>Madisyn froze, caught off guard. “Isn’t that a good thing?” she asked, her voice uncertain.</p>
-                    
-                    <p>“But I don’t know who the father is,” Susan replied, her eyes swollen from crying. Madisyn was utterly shocked. The Susan she knew wasn’t the type to get caught up in something like this.</p>
-                    
-                    <p>Susan then opened up to Madisyn about Onyx, sharing the deep emotional pain that weighed heavy on her heart. After hearing the story, Madisyn felt even more sympathy for Susan and wrapped her in a tight embrace. “Don’t worry, even if my brother finds out, he’ll forgive you.”</p>
-                    
-                    <p>“But he’ll be so hurt. I don’t want him to suffer,” Susan cried, her voice thick with anguish.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Madisyn saw the words on the form and immediately asked, “What’s wrong?”</p>
+                        
+                        <p>Susan looked startled. Panic flooded through her as her eyes landed on Madisyn. She quickly hid the surgery form behind her back, unsure how to explain. Tears began to slip down her cheeks.</p>
+                        
+                        <p>Madisyn embraced her, her heart weighed down with sadness. “I’m here.” She gave Susan’s shoulder a reassuring pat. The warmth of the hug only made Susan’s tears fall harder, her heart aching with a sorrow too heavy to bear. Through her sobs, she choked out, “I’m pregnant.”</p>
+                        
+                        <p>Madisyn froze, caught off guard. “Isn’t that a good thing?” she asked, her voice uncertain.</p>
+                        
+                        <p>“But I don’t know who the father is,” Susan replied, her eyes swollen from crying. Madisyn was utterly shocked. The Susan she knew wasn’t the type to get caught up in something like this.</p>
+                        
+                        <p>Susan then opened up to Madisyn about Onyx, sharing the deep emotional pain that weighed heavy on her heart. After hearing the story, Madisyn felt even more sympathy for Susan and wrapped her in a tight embrace. “Don’t worry, even if my brother finds out, he’ll forgive you.”</p>
+                        
+                        <p>“But he’ll be so hurt. I don’t want him to suffer,” Susan cried, her voice thick with anguish.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -886,21 +926,25 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Madisyn could see the exhaustion etched on Susan’s face. This secret had been buried in her heart for so long; she must have been carrying immense pain.</p>
-                    
-                    <p>Madisyn gently wiped away her tears, her voice soft and soothing. “Susan, maybe it’s not as bad as you think. Let’s go back and take some time to think it through. We can do a test later. What if the child is mine?”</p>
-                    
-                    <p>“I can’t take that chance,” Susan replied, her distress clear in every word.</p>
-                    
-                    <p>“An abortion can be really harmful to your health. Let’s go back and think it over, okay?” Madisyn suggested softly. But Susan had already made up her mind. She had thought about it for a while and had finally found the chance to go through with it while Onyx was away on a business trip.</p>
-                    
-                    <p>“Susan, have you ever considered that maybe nothing happened that night?”</p>
-                    
-                    <p>“Impossible…” Susan was in despair.</p>
-                    
-                    <p>“You said you were drugged and unconscious. So, really, you don’t know what happened, do you?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Madisyn could see the exhaustion etched on Susan’s face. This secret had been buried in her heart for so long; she must have been carrying immense pain.</p>
+                        
+                        <p>Madisyn gently wiped away her tears, her voice soft and soothing. “Susan, maybe it’s not as bad as you think. Let’s go back and take some time to think it through. We can do a test later. What if the child is mine?”</p>
+                        
+                        <p>“I can’t take that chance,” Susan replied, her distress clear in every word.</p>
+                        
+                        <p>“An abortion can be really harmful to your health. Let’s go back and think it over, okay?” Madisyn suggested softly. But Susan had already made up her mind. She had thought about it for a while and had finally found the chance to go through with it while Onyx was away on a business trip.</p>
+                        
+                        <p>“Susan, have you ever considered that maybe nothing happened that night?”</p>
+                        
+                        <p>“Impossible…” Susan was in despair.</p>
+                        
+                        <p>“You said you were drugged and unconscious. So, really, you don’t know what happened, do you?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -915,21 +959,25 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>“I don’t…”</p>
-                    
-                    <p>“Then why do we always assume the worst? What if nothing actually happened between you two?” Madisyn asked.</p>
-                    
-                    <p>Susan lowered her head, the thought sinking in. Could that really be possible? But if it wasn’t true, both she and Dane would suffer deeply.</p>
-                    
-                    <p>Madisyn said softly and reassuringly, “Let’s go back first, okay? Maybe it’s not as bad as you think.” Susan, deeply moved, followed Madisyn back.</p>
-                    
-                    <p>“Can you promise not to tell your brother about this?” she asked, her eyes filled with hope.</p>
-                    
-                    <p>Madisyn assured her gently, “Don’t worry, I won’t say a word. Go back and rest. Try not to worry so much. For now, just think of the child as Dane’s. We can do a test.”</p>
-                    
-                    <p>Susan nodded, her mood momentarily easing. More than anyone, she hoped the child was Dane’s.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“I don’t…”</p>
+                        
+                        <p>“Then why do we always assume the worst? What if nothing actually happened between you two?” Madisyn asked.</p>
+                        
+                        <p>Susan lowered her head, the thought sinking in. Could that really be possible? But if it wasn’t true, both she and Dane would suffer deeply.</p>
+                        
+                        <p>Madisyn said softly and reassuringly, “Let’s go back first, okay? Maybe it’s not as bad as you think.” Susan, deeply moved, followed Madisyn back.</p>
+                        
+                        <p>“Can you promise not to tell your brother about this?” she asked, her eyes filled with hope.</p>
+                        
+                        <p>Madisyn assured her gently, “Don’t worry, I won’t say a word. Go back and rest. Try not to worry so much. For now, just think of the child as Dane’s. We can do a test.”</p>
+                        
+                        <p>Susan nodded, her mood momentarily easing. More than anyone, she hoped the child was Dane’s.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -944,21 +992,25 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>“Oh, by the way, aren’t you about to compete in that perfume-making competition? Jada seems really confident!” Madisyn remarked.</p>
-                    
-                    <p>At those words, a spark ignited in Susan’s eyes. “If I lose…”</p>
-                    
-                    <p>“Good luck! I believe in you,” Madisyn replied, her smile radiating warmth. “I’ll be there to cheer you on!”</p>
-                    
-                    <p>Susan nodded, her gratitude shining through her smile as she looked at Madisyn. “Madisyn, thank you for always being by my side.”</p>
-                    
-                    <p>“Because you’ve always stood by me too!” Madisyn beamed back.</p>
-                    
-                    <p>After soothing Susan, Madisyn made her way to the office. Their science fiction film was in the midst of filming, and she frequently checked in on the progress. Thankfully, with Maxine’s remarkable acting skills, everything was going smoothly.</p>
-                    
-                    <p>Tatiana would share behind-the-scenes footage, showcasing breathtaking special effects that had drawn a wave of eager fans. People who had once been indifferent to science fiction films were now eagerly anticipating it.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“Oh, by the way, aren’t you about to compete in that perfume-making competition? Jada seems really confident!” Madisyn remarked.</p>
+                        
+                        <p>At those words, a spark ignited in Susan’s eyes. “If I lose…”</p>
+                        
+                        <p>“Good luck! I believe in you,” Madisyn replied, her smile radiating warmth. “I’ll be there to cheer you on!”</p>
+                        
+                        <p>Susan nodded, her gratitude shining through her smile as she looked at Madisyn. “Madisyn, thank you for always being by my side.”</p>
+                        
+                        <p>“Because you’ve always stood by me too!” Madisyn beamed back.</p>
+                        
+                        <p>After soothing Susan, Madisyn made her way to the office. Their science fiction film was in the midst of filming, and she frequently checked in on the progress. Thankfully, with Maxine’s remarkable acting skills, everything was going smoothly.</p>
+                        
+                        <p>Tatiana would share behind-the-scenes footage, showcasing breathtaking special effects that had drawn a wave of eager fans. People who had once been indifferent to science fiction films were now eagerly anticipating it.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -973,21 +1025,25 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>“I hope this film is great!”</p>
-                    
-                    <p>“Absolutely! I really hope Tatiana won’t disappoint us this time.”</p>
-                    
-                    <p>“Can’t wait! The special effects look amazing!”</p>
-                    
-                    <p>Madisyn brushed off the online comments, knowing that until the movie was released, they were merely speculation. She believed in letting the results speak for themselves.</p>
-                    
-                    <p>Meanwhile, whenever she had the chance, Madisyn would eavesdrop on Tatiana and Hector’s conversations. Most of their chats were just casual exchanges.</p>
-                    
-                    <p>While Madisyn was working, she suddenly caught Tatiana exclaiming to Hector, “Hector, they’re heading to that location to shoot today! I’m so excited!”</p>
-                    
-                    <p>Excited? What could possibly be so exciting about that? Madisyn furrowed her brow.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>“I hope this film is great!”</p>
+                        
+                        <p>“Absolutely! I really hope Tatiana won’t disappoint us this time.”</p>
+                        
+                        <p>“Can’t wait! The special effects look amazing!”</p>
+                        
+                        <p>Madisyn brushed off the online comments, knowing that until the movie was released, they were merely speculation. She believed in letting the results speak for themselves.</p>
+                        
+                        <p>Meanwhile, whenever she had the chance, Madisyn would eavesdrop on Tatiana and Hector’s conversations. Most of their chats were just casual exchanges.</p>
+                        
+                        <p>While Madisyn was working, she suddenly caught Tatiana exclaiming to Hector, “Hector, they’re heading to that location to shoot today! I’m so excited!”</p>
+                        
+                        <p>Excited? What could possibly be so exciting about that? Madisyn furrowed her brow.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1002,21 +1058,25 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Hector replied, a smile evident in his voice, “Just wait and see. I’ve already had people prepare the location. I’ve also coordinated with the director; he’ll lead them straight into the trap we set. By then, they’ll die.”</p>
-                    
-                    <p>Madisyn’s eyes widened in shock. Tatiana continued, “Hector, you’re so clever. By getting rid of them, we’ll have no future troubles.”</p>
-                    
-                    <p>“Exactly.”</p>
-                    
-                    <p>What exactly were these people plotting?</p>
-                    
-                    <p>Madisyn quickly glanced at her crew’s shooting schedule for today. Recently, the snow had fallen thick, and today they were heading to a mountain in the suburbs to shoot. The landscape was blanketed in white, creating a breathtaking scene that felt straight out of a science fiction dream.</p>
-                    
-                    <p>Had Sewell been bribed by them?</p>
-                    
-                    <p>Madisyn dialed Sewell’s number, but there was no answer. She tried calling Maxine, only to be met with silence again. A wave of panic washed over her. Could it be that something had already happened to them?</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Hector replied, a smile evident in his voice, “Just wait and see. I’ve already had people prepare the location. I’ve also coordinated with the director; he’ll lead them straight into the trap we set. By then, they’ll die.”</p>
+                        
+                        <p>Madisyn’s eyes widened in shock. Tatiana continued, “Hector, you’re so clever. By getting rid of them, we’ll have no future troubles.”</p>
+                        
+                        <p>“Exactly.”</p>
+                        
+                        <p>What exactly were these people plotting?</p>
+                        
+                        <p>Madisyn quickly glanced at her crew’s shooting schedule for today. Recently, the snow had fallen thick, and today they were heading to a mountain in the suburbs to shoot. The landscape was blanketed in white, creating a breathtaking scene that felt straight out of a science fiction dream.</p>
+                        
+                        <p>Had Sewell been bribed by them?</p>
+                        
+                        <p>Madisyn dialed Sewell’s number, but there was no answer. She tried calling Maxine, only to be met with silence again. A wave of panic washed over her. Could it be that something had already happened to them?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1031,21 +1091,25 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>“Andrew, can I borrow your helicopter?” Madisyn hurriedly called Andrew.</p>
-                    
-                    <p>Andrew replied immediately, not bothering to ask why. The helicopter touched down on the rooftop. As Madisyn stepped aboard, she spotted Andrew already waiting inside. She quickly provided the address, and the helicopter surged into the air, heading straight for their destination.</p>
-                    
-                    <p>Andrew then turned to her and asked, “What’s going on?”</p>
-                    
-                    <p>“Maxine and the others in the crew might be in danger,” Madisyn replied, her tone grave and resolute.</p>
-                    
-                    <p>.</p>
-                    
-                    <p>.</p>
-                    
-                    <p>.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>“Andrew, can I borrow your helicopter?” Madisyn hurriedly called Andrew.</p>
+                        
+                        <p>Andrew replied immediately, not bothering to ask why. The helicopter touched down on the rooftop. As Madisyn stepped aboard, she spotted Andrew already waiting inside. She quickly provided the address, and the helicopter surged into the air, heading straight for their destination.</p>
+                        
+                        <p>Andrew then turned to her and asked, “What’s going on?”</p>
+                        
+                        <p>“Maxine and the others in the crew might be in danger,” Madisyn replied, her tone grave and resolute.</p>
+                        
+                        <p>.</p>
+                        
+                        <p>.</p>
+                        
+                        <p>.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2361,6 +2425,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2487,7 +2631,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2529,32 +2672,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2565,21 +2690,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2612,6 +2727,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2632,20 +2753,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

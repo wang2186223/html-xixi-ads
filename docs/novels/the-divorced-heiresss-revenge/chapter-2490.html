@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:18.786565">
-    <meta property="article:modified_time" content="2026-07-19T02:47:18.786565">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.080678">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.080678">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:18">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:18.786565",
-        "dateModified": "2026-07-19T02:47:18.786565",
+        "datePublished": "2026-07-19T13:03:14.080678",
+        "dateModified": "2026-07-19T13:03:14.080678",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,25 +893,29 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter2490</p>
-                    
-                    <p>In that instant, Arnold felt a chill seep down his spine. Though he stood amid a noisy crowd, it was as if he were trapped inside a vacuum jar, utterly silent.</p>
-                    
-                    <p>Elio said, &#34;Mr. Salvador is a man who values talent. He admires you greatly. When he learned that you and I had this little connection, he specifically asked me to come find you to have a proper talk.&#34;</p>
-                    
-                    <p>Elio gestured to the bartender for another drink, his eyes dark as he slowly slid the glass toward Arnold.</p>
-                    
-                    <p>&#34;Mr. Salvador has his own research institute in Meridan. Now that he&#39;s returned to Savrow, he intends to establish the largest and most advanced medical research institute in the nation, dedicated to advancing the cause of human medicine and gathering the brightest minds under one roof. He admires you deeply, Dr. Larson, so he sincerely hopes you&#39;ll join his cause. With Mr. Salvador&#39;s support, your lab&#39;s funding problems will be solved, but you could also—&#34;</p>
-                    
-                    <p>Before he could finish, Arnold suddenly grabbed the glass on the table and flung its contents straight into Elio&#39;s face.</p>
-                    
-                    <p>Elio froze, his face pale, his hand gripping the table, and his jaw clenching with fury.</p>
-                    
-                    <p>&#34;I know perfectly well what Mr. Salvador is scheming,&#34; Arnold said coldly.</p>
-                    
-                    <p>His foxlike eyes narrowed as he sneered. &#34;He saw me fall out with Asher and thought he could reel me onto his pirate ship. He wants to use me as a pawn to drive a wedge between me and the Thompson family, right? That&#39;s almost funny. It looks like Grant isn&#39;t just evil. He&#39;s also delusional.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter2490</p>
+                        
+                        <p>In that instant, Arnold felt a chill seep down his spine. Though he stood amid a noisy crowd, it was as if he were trapped inside a vacuum jar, utterly silent.</p>
+                        
+                        <p>Elio said, &#34;Mr. Salvador is a man who values talent. He admires you greatly. When he learned that you and I had this little connection, he specifically asked me to come find you to have a proper talk.&#34;</p>
+                        
+                        <p>Elio gestured to the bartender for another drink, his eyes dark as he slowly slid the glass toward Arnold.</p>
+                        
+                        <p>&#34;Mr. Salvador has his own research institute in Meridan. Now that he&#39;s returned to Savrow, he intends to establish the largest and most advanced medical research institute in the nation, dedicated to advancing the cause of human medicine and gathering the brightest minds under one roof. He admires you deeply, Dr. Larson, so he sincerely hopes you&#39;ll join his cause. With Mr. Salvador&#39;s support, your lab&#39;s funding problems will be solved, but you could also—&#34;</p>
+                        
+                        <p>Before he could finish, Arnold suddenly grabbed the glass on the table and flung its contents straight into Elio&#39;s face.</p>
+                        
+                        <p>Elio froze, his face pale, his hand gripping the table, and his jaw clenching with fury.</p>
+                        
+                        <p>&#34;I know perfectly well what Mr. Salvador is scheming,&#34; Arnold said coldly.</p>
+                        
+                        <p>His foxlike eyes narrowed as he sneered. &#34;He saw me fall out with Asher and thought he could reel me onto his pirate ship. He wants to use me as a pawn to drive a wedge between me and the Thompson family, right? That&#39;s almost funny. It looks like Grant isn&#39;t just evil. He&#39;s also delusional.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -890,25 +930,29 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;That drink&#39;s on me. Now, get the hell out of my sight. Can&#39;t you tell how sick I am of seeing you?&#34;</p>
-                    
-                    <p>With that, Arnold left the bar counter, walking away without a backward glance, cool and unbothered.</p>
-                    
-                    <p>Elio&#39;s eyes darkened as he stared at the man&#39;s retreating back. With a sharp crack, he crushed the glass in his bare hand.</p>
-                    
-                    <p>&#34;Arnold, I gave you a chance, but you didn&#39;t take it. So you have no one but yourself to blame!&#34;</p>
-                    
-                    <p>Arnold walked absentmindedly out of the bar with Elio&#39;s words echoing in his mind. His brows furrowed tighter.</p>
-                    
-                    <p>Whether that man had been lying or not, he knew one thing for certain: Grant had eyes on him.</p>
-                    
-                    <p>This was not a good sign.</p>
-                    
-                    <p>It seemed he would have to leave Savrow as soon as possible.</p>
-                    
-                    <p>Just then, his phone rang again.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;That drink&#39;s on me. Now, get the hell out of my sight. Can&#39;t you tell how sick I am of seeing you?&#34;</p>
+                        
+                        <p>With that, Arnold left the bar counter, walking away without a backward glance, cool and unbothered.</p>
+                        
+                        <p>Elio&#39;s eyes darkened as he stared at the man&#39;s retreating back. With a sharp crack, he crushed the glass in his bare hand.</p>
+                        
+                        <p>&#34;Arnold, I gave you a chance, but you didn&#39;t take it. So you have no one but yourself to blame!&#34;</p>
+                        
+                        <p>Arnold walked absentmindedly out of the bar with Elio&#39;s words echoing in his mind. His brows furrowed tighter.</p>
+                        
+                        <p>Whether that man had been lying or not, he knew one thing for certain: Grant had eyes on him.</p>
+                        
+                        <p>This was not a good sign.</p>
+                        
+                        <p>It seemed he would have to leave Savrow as soon as possible.</p>
+                        
+                        <p>Just then, his phone rang again.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -923,25 +967,29 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Standing in the biting winter gale, Arnold hunched his shoulders, reached into his</p>
-                    
-                    <p>coat, and pulled out his phone to check the screen.</p>
-                    
-                    <p>It was Asher again. Each ring struck at his heart like a drumbeat.</p>
-                    
-                    <p>The phone rang for a long while, with no sign of stopping.</p>
-                    
-                    <p>Arnold&#39;s thumb hovered over the screen. He pressed his lips together and hesitated for several seconds before finally answering, &#34;What is it?&#34;</p>
-                    
-                    <p>His voice carried no warmth.</p>
-                    
-                    <p>&#34;Dr. Larson, is this a good time? I hope I&#39;m not disturbing you.&#34; Asher&#39;s gentle voice brushed faintly against his ear.</p>
-                    
-                    <p>But the way Asher called him &#34;Dr. Larson&#34; was so proper and distant.</p>
-                    
-                    <p>A sharp pain pricked Arnold&#39;s chest. Bitter bile rose in his mouth as he spat, &#34;What do you want? Get to the point.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Standing in the biting winter gale, Arnold hunched his shoulders, reached into his</p>
+                        
+                        <p>coat, and pulled out his phone to check the screen.</p>
+                        
+                        <p>It was Asher again. Each ring struck at his heart like a drumbeat.</p>
+                        
+                        <p>The phone rang for a long while, with no sign of stopping.</p>
+                        
+                        <p>Arnold&#39;s thumb hovered over the screen. He pressed his lips together and hesitated for several seconds before finally answering, &#34;What is it?&#34;</p>
+                        
+                        <p>His voice carried no warmth.</p>
+                        
+                        <p>&#34;Dr. Larson, is this a good time? I hope I&#39;m not disturbing you.&#34; Asher&#39;s gentle voice brushed faintly against his ear.</p>
+                        
+                        <p>But the way Asher called him &#34;Dr. Larson&#34; was so proper and distant.</p>
+                        
+                        <p>A sharp pain pricked Arnold&#39;s chest. Bitter bile rose in his mouth as he spat, &#34;What do you want? Get to the point.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -956,25 +1004,29 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;I&#39;m sorry. I wouldn&#39;t call unless it was truly urgent.&#34; Asher&#39;s tone was courteous, almost humble. &#34;My father is ill. He&#39;s in the hospital right now, still in a coma.&#34;</p>
-                    
-                    <p>Arnold&#39;s face tightened with concern. &#34;I know. My aunt mentioned it to me.&#34;</p>
-                    
-                    <p>Asher explained, &#34;The other day,</p>
-                    
-                    <p>Grant came to the hospital and gave Bella a box of new medicine, claiming it could help with my father&#39;s condition. It can&#39;t cure him, but it might help him survive th critical phase and perhaps even wake up sooner. As you know, the longer the coma lasts, the higher the</p>
-                    
-                    <p>risk of brain necrosis or him</p>
-                    
-                    <p>becoming a vegetative state.&#34;</p>
-                    
-                    <p>&#34;You actually dared to use medicine from Grant? Aren&#39;t you afraid he&#39;s poisoned</p>
-                    
-                    <p>it? You people really are grasping at straws!&#34; Arnold said helplessly while pinching the bridge of his nose.</p>
-                    
-                    <p>&#34;We&#39;ve already tested the medicine. It&#39;s not poisonous. But we don&#39;t know whether long-term use might have any side effects on my father&#39;s body.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;I&#39;m sorry. I wouldn&#39;t call unless it was truly urgent.&#34; Asher&#39;s tone was courteous, almost humble. &#34;My father is ill. He&#39;s in the hospital right now, still in a coma.&#34;</p>
+                        
+                        <p>Arnold&#39;s face tightened with concern. &#34;I know. My aunt mentioned it to me.&#34;</p>
+                        
+                        <p>Asher explained, &#34;The other day,</p>
+                        
+                        <p>Grant came to the hospital and gave Bella a box of new medicine, claiming it could help with my father&#39;s condition. It can&#39;t cure him, but it might help him survive th critical phase and perhaps even wake up sooner. As you know, the longer the coma lasts, the higher the</p>
+                        
+                        <p>risk of brain necrosis or him</p>
+                        
+                        <p>becoming a vegetative state.&#34;</p>
+                        
+                        <p>&#34;You actually dared to use medicine from Grant? Aren&#39;t you afraid he&#39;s poisoned</p>
+                        
+                        <p>it? You people really are grasping at straws!&#34; Arnold said helplessly while pinching the bridge of his nose.</p>
+                        
+                        <p>&#34;We&#39;ve already tested the medicine. It&#39;s not poisonous. But we don&#39;t know whether long-term use might have any side effects on my father&#39;s body.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -989,25 +1041,29 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Asher sighed softly, his voice hoarse and heavy with exhaustion. &#34;That&#39;s why I wanted to ask if you could help us analyze it to find out exactly what it is and whether it can cure my father.&#34;</p>
-                    
-                    <p>&#34;Alright,&#34; Arnold replied after a pause, his tone flat. &#34;Give it to Bella. Have her pass</p>
-                    
-                    <p>it to me in the next couple of days.&#34;</p>
-                    
-                    <p>That roundabout request was merely because Arnold still could not bring himself to see Asher in person.</p>
-                    
-                    <p>Asher was silent for a moment, then murmured, &#34;Alright.&#34;</p>
-                    
-                    <p>&#34;Is that all? I&#39;m hanging up,&#34; Arnold said impatiently.</p>
-                    
-                    <p>&#34;Wait!&#34; Asher called out, a hint of panic in his voice.</p>
-                    
-                    <p>Arnold said nothing and just waited quietly.</p>
-                    
-                    <p>&#34;I can hear a strong gust from your end. Are you outdoors?&#34; Asher asked</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Asher sighed softly, his voice hoarse and heavy with exhaustion. &#34;That&#39;s why I wanted to ask if you could help us analyze it to find out exactly what it is and whether it can cure my father.&#34;</p>
+                        
+                        <p>&#34;Alright,&#34; Arnold replied after a pause, his tone flat. &#34;Give it to Bella. Have her pass</p>
+                        
+                        <p>it to me in the next couple of days.&#34;</p>
+                        
+                        <p>That roundabout request was merely because Arnold still could not bring himself to see Asher in person.</p>
+                        
+                        <p>Asher was silent for a moment, then murmured, &#34;Alright.&#34;</p>
+                        
+                        <p>&#34;Is that all? I&#39;m hanging up,&#34; Arnold said impatiently.</p>
+                        
+                        <p>&#34;Wait!&#34; Asher called out, a hint of panic in his voice.</p>
+                        
+                        <p>Arnold said nothing and just waited quietly.</p>
+                        
+                        <p>&#34;I can hear a strong gust from your end. Are you outdoors?&#34; Asher asked</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1022,25 +1078,29 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>tentatively, cautious as if treading on glass.</p>
-                    
-                    <p>&#34;Yeah. Why?&#34; Arnold&#39;s tone remained indifferent.</p>
-                    
-                    <p>Asher said, “The weather forecast says there will be strong winds and a drop in temperature tonight. You&#39;ve always hated the cold, so don&#39;t stay out for long. Go home early.&#34;</p>
-                    
-                    <p>As if realizing he had overstepped, Asher hurriedly added, &#34;I mean, it&#39;s fine if you don&#39;t want to go home. Just make sure you dress warmly, okay?&#34;</p>
-                    
-                    <p>The moment those words left Asher&#39;s lips, Arnold could no longer hold himself together and quickly hung up the call.</p>
-                    
-                    <p>Arnold&#39;s eyes slowly reddened as he stared at the darkened screen, a soft blur of tears forming over them.</p>
-                    
-                    <p>He remembered that Asher would always hold him close in weather like this back then. He would be</p>
-                    
-                    <p>wrapped in that warm embrace net</p>
-                    
-                    <p>their fingers laced together inside his coat pocket or pressed against Asher&#39;s chest.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>tentatively, cautious as if treading on glass.</p>
+                        
+                        <p>&#34;Yeah. Why?&#34; Arnold&#39;s tone remained indifferent.</p>
+                        
+                        <p>Asher said, “The weather forecast says there will be strong winds and a drop in temperature tonight. You&#39;ve always hated the cold, so don&#39;t stay out for long. Go home early.&#34;</p>
+                        
+                        <p>As if realizing he had overstepped, Asher hurriedly added, &#34;I mean, it&#39;s fine if you don&#39;t want to go home. Just make sure you dress warmly, okay?&#34;</p>
+                        
+                        <p>The moment those words left Asher&#39;s lips, Arnold could no longer hold himself together and quickly hung up the call.</p>
+                        
+                        <p>Arnold&#39;s eyes slowly reddened as he stared at the darkened screen, a soft blur of tears forming over them.</p>
+                        
+                        <p>He remembered that Asher would always hold him close in weather like this back then. He would be</p>
+                        
+                        <p>wrapped in that warm embrace net</p>
+                        
+                        <p>their fingers laced together inside his coat pocket or pressed against Asher&#39;s chest.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1055,13 +1115,17 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Too bad... Those days are gone.&#34; Arnold sighed.</p>
-                    
-                    <p>A bitter laugh escaped him. He tilted his head back, forcing his tears back. Then,</p>
-                    
-                    <p>he took a long stride forward, vanishing swiftly into the cold, endless night.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Too bad... Those days are gone.&#34; Arnold sighed.</p>
+                        
+                        <p>A bitter laugh escaped him. He tilted his head back, forcing his tears back. Then,</p>
+                        
+                        <p>he took a long stride forward, vanishing swiftly into the cold, endless night.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2377,6 +2441,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2503,7 +2647,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2545,32 +2688,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2581,21 +2706,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2628,6 +2743,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2648,20 +2769,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

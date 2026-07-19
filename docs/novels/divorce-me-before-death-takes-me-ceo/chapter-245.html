@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.061652">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.061652">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.258255">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.258255">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.061652",
-        "dateModified": "2026-07-19T02:47:19.061652",
+        "datePublished": "2026-07-19T13:03:14.258255",
+        "dateModified": "2026-07-19T13:03:14.258255",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,33 +893,37 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>I closed my eyes.</p>
-                    
-                    <p>William Parker wasn&#39;t just Blake&#39;s grandfather to me. He&#39;d shown me more genuine care than my biological and adoptive parents combined.</p>
-                    
-                    <p>When I discovered my cancer diagnosis, my greatest regret was knowing I might not see his next birthday. And that celebration had ended in disaster anyway.</p>
-                    
-                    <p>William had even tried to make me the primary beneficiary in his will.</p>
-                    
-                    <p>Now he was dying, with one final wish: to see Blake and me together again.</p>
-                    
-                    <p>*But I&#39;m supposed to be dead. And Blake is marrying Rachel.&#34;</p>
-                    
-                    <p>&#34;Audrey? You still there?&#34; Astrid&#39;s voice snapped me back.</p>
-                    
-                    <p>I touched my cheek. &#34;Yeah, just... processing.&#34;</p>
-                    
-                    <p>&#34;I know Willlam means a lot to you. That&#39;s why I thought you should know.&#34;</p>
-                    
-                    <p>I sniffed.&#34;Do you know any more about his condition?&#34;</p>
-                    
-                    <p>&#34;Had to pull some strings at Mayo to get even this much,&#34; she replied.&#34;Best case, he makes it a week.&#34;</p>
-                    
-                    <p>&#34;Worst case? Three or four days.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>I closed my eyes.</p>
+                        
+                        <p>William Parker wasn&#39;t just Blake&#39;s grandfather to me. He&#39;d shown me more genuine care than my biological and adoptive parents combined.</p>
+                        
+                        <p>When I discovered my cancer diagnosis, my greatest regret was knowing I might not see his next birthday. And that celebration had ended in disaster anyway.</p>
+                        
+                        <p>William had even tried to make me the primary beneficiary in his will.</p>
+                        
+                        <p>Now he was dying, with one final wish: to see Blake and me together again.</p>
+                        
+                        <p>*But I&#39;m supposed to be dead. And Blake is marrying Rachel.&#34;</p>
+                        
+                        <p>&#34;Audrey? You still there?&#34; Astrid&#39;s voice snapped me back.</p>
+                        
+                        <p>I touched my cheek. &#34;Yeah, just... processing.&#34;</p>
+                        
+                        <p>&#34;I know Willlam means a lot to you. That&#39;s why I thought you should know.&#34;</p>
+                        
+                        <p>I sniffed.&#34;Do you know any more about his condition?&#34;</p>
+                        
+                        <p>&#34;Had to pull some strings at Mayo to get even this much,&#34; she replied.&#34;Best case, he makes it a week.&#34;</p>
+                        
+                        <p>&#34;Worst case? Three or four days.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -898,33 +938,37 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>*Blake and Rachel&#39;s wedding is in three days.&#34;</p>
-                    
-                    <p>&#34;Audrey, I know you don&#39;t want to go back to New York or deal with the Parkers again... but I&#39;m wondering if you&#39;re coming back.&#34;</p>
-                    
-                    <p>I bit my lip hard enough to taste blood. &#34;I&#39;ll think about it.&#34;</p>
-                    
-                    <p>After hanging up, I stared through my office window. Going back would be risky as hell. My encounter with Blake on Long Island had nearly exposed me. It took months for him to stop suspecting who I really was.</p>
-                    
-                    <p>And that was just Blake and Rachel. Going back meant facing everyone -Thalia,Rebecca, Elizabeth, maybe even the Sinclairs. The thought made my stomach twist.</p>
-                    
-                    <p>But this was William. The one person who&#39;d loved me unconditionally in that cold,calculating family.</p>
-                    
-                    <p>Could I really stay away just because I was scared of Blake figuring out who I was? Because I didn&#39;t want to see people I disliked?</p>
-                    
-                    <p>Would I let William die without saying goodbye, all to protect my new identity?</p>
-                    
-                    <p>What kind of person would that make me?</p>
-                    
-                    <p>That evening at dinner, I told Adrian and his parents about William&#39;s condition.</p>
-                    
-                    <p>&#34;I see.&#34; Eleanor said, putting down her fork. &#34;And you want to visit him?&#34;</p>
-                    
-                    <p>&#34;Yes,&#34; I admitted. &#34;He means a lot to me.&#34;</p>
-                    
-                    <p>&#34;We understand. If you want to go, we won&#39;t stop you.&#34; She exchanged looks with Jeffrey. &#34;But think carefully about what you&#39;re walking into.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>*Blake and Rachel&#39;s wedding is in three days.&#34;</p>
+                        
+                        <p>&#34;Audrey, I know you don&#39;t want to go back to New York or deal with the Parkers again... but I&#39;m wondering if you&#39;re coming back.&#34;</p>
+                        
+                        <p>I bit my lip hard enough to taste blood. &#34;I&#39;ll think about it.&#34;</p>
+                        
+                        <p>After hanging up, I stared through my office window. Going back would be risky as hell. My encounter with Blake on Long Island had nearly exposed me. It took months for him to stop suspecting who I really was.</p>
+                        
+                        <p>And that was just Blake and Rachel. Going back meant facing everyone -Thalia,Rebecca, Elizabeth, maybe even the Sinclairs. The thought made my stomach twist.</p>
+                        
+                        <p>But this was William. The one person who&#39;d loved me unconditionally in that cold,calculating family.</p>
+                        
+                        <p>Could I really stay away just because I was scared of Blake figuring out who I was? Because I didn&#39;t want to see people I disliked?</p>
+                        
+                        <p>Would I let William die without saying goodbye, all to protect my new identity?</p>
+                        
+                        <p>What kind of person would that make me?</p>
+                        
+                        <p>That evening at dinner, I told Adrian and his parents about William&#39;s condition.</p>
+                        
+                        <p>&#34;I see.&#34; Eleanor said, putting down her fork. &#34;And you want to visit him?&#34;</p>
+                        
+                        <p>&#34;Yes,&#34; I admitted. &#34;He means a lot to me.&#34;</p>
+                        
+                        <p>&#34;We understand. If you want to go, we won&#39;t stop you.&#34; She exchanged looks with Jeffrey. &#34;But think carefully about what you&#39;re walking into.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -939,33 +983,37 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Her eyes showed genuine concern. &#34;They&#39;ll question who you are. They&#39;ll</p>
-                    
-                    <p>test you. Especially since you&#39;re visiting someone who matters so much to Audrey Sinclair.&#34;</p>
-                    
-                    <p>I nodded, understanding the risk.</p>
-                    
-                    <p>&#34;Her identity will come out eventually,&#34; Jeffrey said. &#34;When we rescued you,we actually wanted you to fully become Evelyn. But these past months have shown me that despite your similarities, you and my daughter are different people.&#34;</p>
-                    
-                    <p>&#34;If William Parker&#39;s kindness is something you can&#39;t forget, we accept that you need closure. Even if your identity is exposed, we&#39;ll handle it.&#34;</p>
-                    
-                    <p>&#34;But our agreement stands. No matter what happens in New York,Jeffrey and Eleanor are your only parents. Adrian and Emma are your only husband and daughter.&#34;</p>
-                    
-                    <p>I frowned slightly but nodded. &#34;I understand.&#34;</p>
-                    
-                    <p>Eleanor turned to Adrian, who&#39;d been quiet throughout. &#34;What do you think?&#34;</p>
-                    
-                    <p>He glanced up from his phone.′′It′Ss Evelyn&#39;s call.&#34;</p>
-                    
-                    <p>&#34;As long as she&#39;s not going back to rekindle things with Blake Parker, I don&#39;t care.&#34;</p>
-                    
-                    <p>&#34;Knox Corporation has business in New York anyway. I&#39;ll go with her.&#34;His eyes narrowed. &#34;You don&#39;t mind, right?&#34;</p>
-                    
-                    <p>Something in his tone made me uneasy. Like he suspected I had other motives for visiting William.</p>
-                    
-                    <p>&#34;Of course not,&#34; I forced a smile. &#34;You&#39;re my husband now. William might</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Her eyes showed genuine concern. &#34;They&#39;ll question who you are. They&#39;ll</p>
+                        
+                        <p>test you. Especially since you&#39;re visiting someone who matters so much to Audrey Sinclair.&#34;</p>
+                        
+                        <p>I nodded, understanding the risk.</p>
+                        
+                        <p>&#34;Her identity will come out eventually,&#34; Jeffrey said. &#34;When we rescued you,we actually wanted you to fully become Evelyn. But these past months have shown me that despite your similarities, you and my daughter are different people.&#34;</p>
+                        
+                        <p>&#34;If William Parker&#39;s kindness is something you can&#39;t forget, we accept that you need closure. Even if your identity is exposed, we&#39;ll handle it.&#34;</p>
+                        
+                        <p>&#34;But our agreement stands. No matter what happens in New York,Jeffrey and Eleanor are your only parents. Adrian and Emma are your only husband and daughter.&#34;</p>
+                        
+                        <p>I frowned slightly but nodded. &#34;I understand.&#34;</p>
+                        
+                        <p>Eleanor turned to Adrian, who&#39;d been quiet throughout. &#34;What do you think?&#34;</p>
+                        
+                        <p>He glanced up from his phone.′′It′Ss Evelyn&#39;s call.&#34;</p>
+                        
+                        <p>&#34;As long as she&#39;s not going back to rekindle things with Blake Parker, I don&#39;t care.&#34;</p>
+                        
+                        <p>&#34;Knox Corporation has business in New York anyway. I&#39;ll go with her.&#34;His eyes narrowed. &#34;You don&#39;t mind, right?&#34;</p>
+                        
+                        <p>Something in his tone made me uneasy. Like he suspected I had other motives for visiting William.</p>
+                        
+                        <p>&#34;Of course not,&#34; I forced a smile. &#34;You&#39;re my husband now. William might</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -980,33 +1028,37 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>even like to meet you.&#34;</p>
-                    
-                    <p>Adrian set his phone down. &#34;But I&#39;ve heard William&#39;s dying wish is to see you and Blake back together.&#34;</p>
-                    
-                    <p>&#34;Would you pretend to reconcile withBlake for his sake?&#34; he asked coldly.</p>
-                    
-                    <p>The table went silent.</p>
-                    
-                    <p>&#34;No,&#34; I said firmly.</p>
-                    
-                    <p>Adrian laughed without humor and showed me his phone. &#34;Then explain this.&#34;</p>
-                    
-                    <p>I looked at the screen and felt like I&#39;d been punched in the gut.</p>
-                    
-                    <p>It was a wedding invitation with my name and Blake&#39;s, happening in three days. There was even a photo of us in wedding clothes.</p>
-                    
-                    <p>I stared at it,completely confused. Blake and I had married while he was still avegetative patient. We never took wedding photos.Later,when William suggested a proper ceremony with pictures, Blake refused.</p>
-                    
-                    <p>The image was clearly photoshopped - and badly. Anyone with basic skills could spot it immediately.</p>
-                    
-                    <p>*What the hell?*</p>
-                    
-                    <p>Astrid had sent me Blake and Rachel&#39;s invitation this afternoon. It had their names and pictures, with a note explaining the rushed circumstances.</p>
-                    
-                    <p>This invitation made no sense at all.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>even like to meet you.&#34;</p>
+                        
+                        <p>Adrian set his phone down. &#34;But I&#39;ve heard William&#39;s dying wish is to see you and Blake back together.&#34;</p>
+                        
+                        <p>&#34;Would you pretend to reconcile withBlake for his sake?&#34; he asked coldly.</p>
+                        
+                        <p>The table went silent.</p>
+                        
+                        <p>&#34;No,&#34; I said firmly.</p>
+                        
+                        <p>Adrian laughed without humor and showed me his phone. &#34;Then explain this.&#34;</p>
+                        
+                        <p>I looked at the screen and felt like I&#39;d been punched in the gut.</p>
+                        
+                        <p>It was a wedding invitation with my name and Blake&#39;s, happening in three days. There was even a photo of us in wedding clothes.</p>
+                        
+                        <p>I stared at it,completely confused. Blake and I had married while he was still avegetative patient. We never took wedding photos.Later,when William suggested a proper ceremony with pictures, Blake refused.</p>
+                        
+                        <p>The image was clearly photoshopped - and badly. Anyone with basic skills could spot it immediately.</p>
+                        
+                        <p>*What the hell?*</p>
+                        
+                        <p>Astrid had sent me Blake and Rachel&#39;s invitation this afternoon. It had their names and pictures, with a note explaining the rushed circumstances.</p>
+                        
+                        <p>This invitation made no sense at all.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1021,33 +1073,37 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Eleanor took the phone from my hands. When she saw the screen,her eyes widened.</p>
-                    
-                    <p>&#34;What is this?&#34; she looked at me,confused.&#34;Why is there a wedding invitation with you and Blake Parker?&#34;</p>
-                    
-                    <p>Jeffrey&#39;s face darkened. &#34;Are you going to see William, or to reconnect with Blake?&#34;</p>
-                    
-                    <p>&#34;I-&#34; I began, but Eleanor cut me off.</p>
-                    
-                    <p>&#34;Evelyn.&#34; she took my hand. &#34;We know how emotional you are. Given your history with Blake...&#34;</p>
-                    
-                    <p>&#34;You think I can&#39;t let go of the past?&#34; I pulled my hand away. &#34;That I&#39;ll crawl back to Blake with zero self-respect?&#34;</p>
-                    
-                    <p>I took a step back. &#34;I already died once because of him. I&#39;m not making that mistake again.&#34;</p>
-                    
-                    <p>&#34;I&#39;ve been saying this for months. Have I contacted the Parkers even once since waking up? You know I haven&#39;t.&#34;</p>
-                    
-                    <p>I pointed at the phone. &#34;Blake and I never took wedding photos in three years of marriage. That picture is fake, and so is the invitation.&#34;</p>
-                    
-                    <p>&#34;I don&#39;t get why you&#39;d doubt me over this obvious forgery after living with me·for months.&#34;</p>
-                    
-                    <p>I lifted my chin. &#34;Either way, I&#39;m going. I have to.&#34;</p>
-                    
-                    <p>I turned to Emma with a forced smile. &#34;Ready for bath time, sweetle?&#34;</p>
-                    
-                    <p>Emma ran to me, wrapping her arms around my legs. &#34;Yesl Mommy, bath time!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Eleanor took the phone from my hands. When she saw the screen,her eyes widened.</p>
+                        
+                        <p>&#34;What is this?&#34; she looked at me,confused.&#34;Why is there a wedding invitation with you and Blake Parker?&#34;</p>
+                        
+                        <p>Jeffrey&#39;s face darkened. &#34;Are you going to see William, or to reconnect with Blake?&#34;</p>
+                        
+                        <p>&#34;I-&#34; I began, but Eleanor cut me off.</p>
+                        
+                        <p>&#34;Evelyn.&#34; she took my hand. &#34;We know how emotional you are. Given your history with Blake...&#34;</p>
+                        
+                        <p>&#34;You think I can&#39;t let go of the past?&#34; I pulled my hand away. &#34;That I&#39;ll crawl back to Blake with zero self-respect?&#34;</p>
+                        
+                        <p>I took a step back. &#34;I already died once because of him. I&#39;m not making that mistake again.&#34;</p>
+                        
+                        <p>&#34;I&#39;ve been saying this for months. Have I contacted the Parkers even once since waking up? You know I haven&#39;t.&#34;</p>
+                        
+                        <p>I pointed at the phone. &#34;Blake and I never took wedding photos in three years of marriage. That picture is fake, and so is the invitation.&#34;</p>
+                        
+                        <p>&#34;I don&#39;t get why you&#39;d doubt me over this obvious forgery after living with me·for months.&#34;</p>
+                        
+                        <p>I lifted my chin. &#34;Either way, I&#39;m going. I have to.&#34;</p>
+                        
+                        <p>I turned to Emma with a forced smile. &#34;Ready for bath time, sweetle?&#34;</p>
+                        
+                        <p>Emma ran to me, wrapping her arms around my legs. &#34;Yesl Mommy, bath time!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1062,33 +1118,37 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>I knelt to pick her up. and she kissed my cheek.</p>
-                    
-                    <p>&#34;Mommyl&#34; she said clearly. &#34;Grandpa, Grandma, and Daddy don&#39;t believe you,but Emma and Snow do! My mommy is the best mommy ever, and she&#39;d never leave Emma for some mean man!&#34;</p>
-                    
-                    <p>I froze,stunned that she&#39;d understood our adult conversation. At just four years old, she showed a maturity that broke my heart.</p>
-                    
-                    <p>&#34;You&#39;re right,&#34; I whispered, hugging her tight. &#34;Mommy will never leave you.&#34;</p>
-                    
-                    <p>I carried her upstairs, away from the tension below:</p>
-                    
-                    <p>**Adrian&#39;s POV**</p>
-                    
-                    <p>I watched Audrey leave with Emma, my eyes narrowing slightly.</p>
-                    
-                    <p>Once I heard their bedroom door close, Eleanor turned to me. &#34;Adrian,</p>
-                    
-                    <p>what&#39;s going on?&#34;</p>
-                    
-                    <p>Jeffrey approached, looking at my phone. &#34;Where did you get this</p>
-                    
-                    <p>invitation?&#34;</p>
-                    
-                    <p>&#34;From New York,&#34; I said casually. &#34;Parker didn&#39;t make it.&#34;</p>
-                    
-                    <p>Eleanor frowned. &#34;If Blake didn&#39;t make it, why did you - &#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>I knelt to pick her up. and she kissed my cheek.</p>
+                        
+                        <p>&#34;Mommyl&#34; she said clearly. &#34;Grandpa, Grandma, and Daddy don&#39;t believe you,but Emma and Snow do! My mommy is the best mommy ever, and she&#39;d never leave Emma for some mean man!&#34;</p>
+                        
+                        <p>I froze,stunned that she&#39;d understood our adult conversation. At just four years old, she showed a maturity that broke my heart.</p>
+                        
+                        <p>&#34;You&#39;re right,&#34; I whispered, hugging her tight. &#34;Mommy will never leave you.&#34;</p>
+                        
+                        <p>I carried her upstairs, away from the tension below:</p>
+                        
+                        <p>**Adrian&#39;s POV**</p>
+                        
+                        <p>I watched Audrey leave with Emma, my eyes narrowing slightly.</p>
+                        
+                        <p>Once I heard their bedroom door close, Eleanor turned to me. &#34;Adrian,</p>
+                        
+                        <p>what&#39;s going on?&#34;</p>
+                        
+                        <p>Jeffrey approached, looking at my phone. &#34;Where did you get this</p>
+                        
+                        <p>invitation?&#34;</p>
+                        
+                        <p>&#34;From New York,&#34; I said casually. &#34;Parker didn&#39;t make it.&#34;</p>
+                        
+                        <p>Eleanor frowned. &#34;If Blake didn&#39;t make it, why did you - &#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1103,27 +1163,31 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;I wanted to test her,&#34; I admitted. &#34;I&#39;ve been trying to get closer to her this month, but she just avoided me. She needs to become my Evelyn completely.&#34;</p>
-                    
-                    <p>&#34;I&#39;ve aIready lost Evelyn once. I won&#39;t lose her again.&#34;</p>
-                    
-                    <p>Something in my gut told me that if Audrey returned to New York now,everything would be out of control.</p>
-                    
-                    <p>Eleanor looked annoyed. &#34;Why didn&#39;t you say so earlier? I thought the invitation was actually connected to her.&#34;</p>
-                    
-                    <p>She sighed. &#34;She probably thinks we don&#39;t trust her now.&#34;</p>
-                    
-                    <p>I smiled sardonically. &#34;We don&#39;t trust her,Mother.&#34;</p>
-                    
-                    <p>&#34;If you trusted her like you trusted the real Evelyn, you wouldn&#39;t have reacted that way to some random invitation.&#34; I looked at Jeffrey. &#34;You either,Father.&#34;</p>
-                    
-                    <p>Their expressions soured.</p>
-                    
-                    <p>I stretched and stood up. &#34;I&#39;ll talk to her.&#34;</p>
-                    
-                    <p>I headed for the stairs. &#34;If she really wants to go... I&#39;ll go with her.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;I wanted to test her,&#34; I admitted. &#34;I&#39;ve been trying to get closer to her this month, but she just avoided me. She needs to become my Evelyn completely.&#34;</p>
+                        
+                        <p>&#34;I&#39;ve aIready lost Evelyn once. I won&#39;t lose her again.&#34;</p>
+                        
+                        <p>Something in my gut told me that if Audrey returned to New York now,everything would be out of control.</p>
+                        
+                        <p>Eleanor looked annoyed. &#34;Why didn&#39;t you say so earlier? I thought the invitation was actually connected to her.&#34;</p>
+                        
+                        <p>She sighed. &#34;She probably thinks we don&#39;t trust her now.&#34;</p>
+                        
+                        <p>I smiled sardonically. &#34;We don&#39;t trust her,Mother.&#34;</p>
+                        
+                        <p>&#34;If you trusted her like you trusted the real Evelyn, you wouldn&#39;t have reacted that way to some random invitation.&#34; I looked at Jeffrey. &#34;You either,Father.&#34;</p>
+                        
+                        <p>Their expressions soured.</p>
+                        
+                        <p>I stretched and stood up. &#34;I&#39;ll talk to her.&#34;</p>
+                        
+                        <p>I headed for the stairs. &#34;If she really wants to go... I&#39;ll go with her.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2439,6 +2503,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2565,7 +2709,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2607,32 +2750,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2643,21 +2768,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2690,6 +2805,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2710,20 +2831,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

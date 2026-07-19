@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:18.831545">
-    <meta property="article:modified_time" content="2026-07-19T02:47:18.831545">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.127781">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.127781">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:18">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:18.831545",
-        "dateModified": "2026-07-19T02:47:18.831545",
+        "datePublished": "2026-07-19T13:03:14.127781",
+        "dateModified": "2026-07-19T13:03:14.127781",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,27 +893,31 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>The cold laugh that escaped my lips wouldn&#39;t stop. This whole situation was just too absurd! My mind flashed back to the message Ethan Davies had sent me just minutes ago:</p>
-                    
-                    <p>*&#34;Found something. The online attacks? Coming from &#39;Parker-Rose Studio.&#39;Got confirmation from someone in their troll farm.&#34;*</p>
-                    
-                    <p>Parker-Rose Studio. The name said it all. A joint venture between Blake and Laurel, created to serve their interests. So the vicious rumors claiming I&#39;d cheated on Blake and terminated a pregnancy that wasn&#39;t his-all of it came directly from them.</p>
-                    
-                    <p>I leaned against the wall outside William&#39;s emergency room, the fluorescent lights casting lights on us. Blake stood a few feet away,pretending to look concerned about the very online gossip he&#39;d orchestrated.</p>
-                    
-                    <p>When he caught me watching him, he lowered his voice. &#34;The day you miscarried...besides the hospital staff, did anyone else know aboutit?&#34;</p>
-                    
-                    <p>The audacity nearly took my breath away.</p>
-                    
-                    <p>&#34;Why do you ask?&#34; I kept my voice even.</p>
-                    
-                    <p>&#34;I&#39;ve been investigating,&#34; he said. &#34;Mayo Clinic has strict privacy protocols.</p>
-                    
-                    <p>That surgical record shouldn&#39;t have leaked from inside.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>The cold laugh that escaped my lips wouldn&#39;t stop. This whole situation was just too absurd! My mind flashed back to the message Ethan Davies had sent me just minutes ago:</p>
+                        
+                        <p>*&#34;Found something. The online attacks? Coming from &#39;Parker-Rose Studio.&#39;Got confirmation from someone in their troll farm.&#34;*</p>
+                        
+                        <p>Parker-Rose Studio. The name said it all. A joint venture between Blake and Laurel, created to serve their interests. So the vicious rumors claiming I&#39;d cheated on Blake and terminated a pregnancy that wasn&#39;t his-all of it came directly from them.</p>
+                        
+                        <p>I leaned against the wall outside William&#39;s emergency room, the fluorescent lights casting lights on us. Blake stood a few feet away,pretending to look concerned about the very online gossip he&#39;d orchestrated.</p>
+                        
+                        <p>When he caught me watching him, he lowered his voice. &#34;The day you miscarried...besides the hospital staff, did anyone else know aboutit?&#34;</p>
+                        
+                        <p>The audacity nearly took my breath away.</p>
+                        
+                        <p>&#34;Why do you ask?&#34; I kept my voice even.</p>
+                        
+                        <p>&#34;I&#39;ve been investigating,&#34; he said. &#34;Mayo Clinic has strict privacy protocols.</p>
+                        
+                        <p>That surgical record shouldn&#39;t have leaked from inside.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -892,27 +932,31 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>He leaned closer. &#34;Tell me who knew about the miscarriage. I&#39;ll help track</p>
-                    
-                    <p>down whoever&#39;s spreading these rumors.&#34;</p>
-                    
-                    <p>I studied his face, searching for any hint of the man I thought I&#39;d married.Nothing.</p>
-                    
-                    <p>Had this calculatig side always been there, hiding beneath the surface? I&#39;d never caught it before.</p>
-                    
-                    <p>The studio name might have told everything, yet here he stood,playing concerned husband. I wondered who his audience was supposed to be.</p>
-                    
-                    <p>Blake&#39;s expression darkened at my silence, his brow furrowing with irritation. &#34;What are you staring at? Say something!&#34;</p>
-                    
-                    <p>&#34;You asked who knew about my miscarriage that day, besides hospital staff,&#34;I finally said.</p>
-                    
-                    <p>He nodded impatiently.</p>
-                    
-                    <p>&#34;Okay, I tell you. Only you, Mr. Parker, and your Miss Rose.&#34;</p>
-                    
-                    <p>His composure slipped for just a second.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>He leaned closer. &#34;Tell me who knew about the miscarriage. I&#39;ll help track</p>
+                        
+                        <p>down whoever&#39;s spreading these rumors.&#34;</p>
+                        
+                        <p>I studied his face, searching for any hint of the man I thought I&#39;d married.Nothing.</p>
+                        
+                        <p>Had this calculatig side always been there, hiding beneath the surface? I&#39;d never caught it before.</p>
+                        
+                        <p>The studio name might have told everything, yet here he stood,playing concerned husband. I wondered who his audience was supposed to be.</p>
+                        
+                        <p>Blake&#39;s expression darkened at my silence, his brow furrowing with irritation. &#34;What are you staring at? Say something!&#34;</p>
+                        
+                        <p>&#34;You asked who knew about my miscarriage that day, besides hospital staff,&#34;I finally said.</p>
+                        
+                        <p>He nodded impatiently.</p>
+                        
+                        <p>&#34;Okay, I tell you. Only you, Mr. Parker, and your Miss Rose.&#34;</p>
+                        
+                        <p>His composure slipped for just a second.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -927,27 +971,31 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;So are you offering to investigate yourself, or Miss Rose?&#34; I asked.</p>
-                    
-                    <p>&#34;Audrey, I&#39;m not joking!&#34; His voice hardened.</p>
-                    
-                    <p>&#34;Neither am I,&#34; I replied. &#34;I didn&#39;t tell anyone about the miscarriage. Not even Astrid knew until that evening. The only people I saw at the hospital were you and Laurel.&#34;</p>
-                    
-                    <p>I tilted my head slightly. &#34;Since you&#39;re so sure it wasn&#39;t hospital staff, that leaves just you two. So who goes first in your investigation?&#34;</p>
-                    
-                    <p>The mask he always wore finally cracked. He stared at me, face paling</p>
-                    
-                    <p>before anger flooded in. He turned away sharply.</p>
-                    
-                    <p>&#34;You&#39;re completely out of your mind!&#34; he snapped.</p>
-                    
-                    <p>The hallway fell silent.</p>
-                    
-                    <p>I glanced sideways and noticed Felix Thompson staring at us with undisguised shock. When our eyes met. I noticed something else in his expression-a glimmer of admiration.</p>
-                    
-                    <p>I smiled slightly. This was probably the first time he&#39;d seen anyone make Blake Parker speechless. Everyone in New York&#39;s social circles thought of me as Blake&#39;s doormat-the woman who forgave everything because she loved him too much. The woman who would always choose peace over conflict, forgiveness over justice.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;So are you offering to investigate yourself, or Miss Rose?&#34; I asked.</p>
+                        
+                        <p>&#34;Audrey, I&#39;m not joking!&#34; His voice hardened.</p>
+                        
+                        <p>&#34;Neither am I,&#34; I replied. &#34;I didn&#39;t tell anyone about the miscarriage. Not even Astrid knew until that evening. The only people I saw at the hospital were you and Laurel.&#34;</p>
+                        
+                        <p>I tilted my head slightly. &#34;Since you&#39;re so sure it wasn&#39;t hospital staff, that leaves just you two. So who goes first in your investigation?&#34;</p>
+                        
+                        <p>The mask he always wore finally cracked. He stared at me, face paling</p>
+                        
+                        <p>before anger flooded in. He turned away sharply.</p>
+                        
+                        <p>&#34;You&#39;re completely out of your mind!&#34; he snapped.</p>
+                        
+                        <p>The hallway fell silent.</p>
+                        
+                        <p>I glanced sideways and noticed Felix Thompson staring at us with undisguised shock. When our eyes met. I noticed something else in his expression-a glimmer of admiration.</p>
+                        
+                        <p>I smiled slightly. This was probably the first time he&#39;d seen anyone make Blake Parker speechless. Everyone in New York&#39;s social circles thought of me as Blake&#39;s doormat-the woman who forgave everything because she loved him too much. The woman who would always choose peace over conflict, forgiveness over justice.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -962,27 +1010,31 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>At that moment, the emergency room doors swung open. A doctor emerged,wiping sweat from his forehead.</p>
-                    
-                    <p>&#34;Doctor, how is he?&#34; We all asked together.</p>
-                    
-                    <p>The doctor sighed, tucking his handkerchief away. &#34;He&#39;s stable now. But be careful with him. A man his age can&#39;t handle this kind of stress.&#34;</p>
-                    
-                    <p>Relief washed through me. William would be okay.</p>
-                    
-                    <p>The elevator doors opened with a soft ping, and ThaliaParker rushed out,face flushed.</p>
-                    
-                    <p>&#34;How&#39;s my grandfather?&#34; she demanded.</p>
-                    
-                    <p>The doctor frowned at her volume. &#34;Miss, you-&#34;</p>
-                    
-                    <p>Thalia&#39;s gaze found me, and her expression transformed instantly.</p>
-                    
-                    <p>&#34;Audrey Sinclair! You bitch!&#34; She lunged at me, hand raised.</p>
-                    
-                    <p>I stepped back, but knew I couldn&#39;t move fast enough. My body,weakened from cancer and still bruised from my fall down the stairs,wouldn&#39;t respond quickly enough.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>At that moment, the emergency room doors swung open. A doctor emerged,wiping sweat from his forehead.</p>
+                        
+                        <p>&#34;Doctor, how is he?&#34; We all asked together.</p>
+                        
+                        <p>The doctor sighed, tucking his handkerchief away. &#34;He&#39;s stable now. But be careful with him. A man his age can&#39;t handle this kind of stress.&#34;</p>
+                        
+                        <p>Relief washed through me. William would be okay.</p>
+                        
+                        <p>The elevator doors opened with a soft ping, and ThaliaParker rushed out,face flushed.</p>
+                        
+                        <p>&#34;How&#39;s my grandfather?&#34; she demanded.</p>
+                        
+                        <p>The doctor frowned at her volume. &#34;Miss, you-&#34;</p>
+                        
+                        <p>Thalia&#39;s gaze found me, and her expression transformed instantly.</p>
+                        
+                        <p>&#34;Audrey Sinclair! You bitch!&#34; She lunged at me, hand raised.</p>
+                        
+                        <p>I stepped back, but knew I couldn&#39;t move fast enough. My body,weakened from cancer and still bruised from my fall down the stairs,wouldn&#39;t respond quickly enough.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -997,27 +1049,31 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Before Thalia could reach me, Blake grabbed her wrist mid-air. At the same moment, Felix stepped between us.</p>
-                    
-                    <p>&#34;Thalia! What are you doing?&#34; Blake&#39;s voice was sharp.</p>
-                    
-                    <p>&#34;Miss Parker, show some respect,&#34; Felix added firmly.</p>
-                    
-                    <p>Thalia&#39;s eyes darted to Felix, hurt flashing across her face. &#34;Felix? How can you take her side? I cared about you so much!&#34;</p>
-                    
-                    <p>Felix&#39;s expression remained unmoved. &#34;Your past feelings for me aren&#39;t relevant,Miss Parker.&#34;</p>
-                    
-                    <p>Rage flooded Thalia&#39;s face. She jerked violently against Blake&#39;s grip, trying to break free. &#34;I&#39;ll kill her! I saw everything online! She didn&#39;t miscarry by accident-she terminated because the baby wasn&#39;t yours!&#34;</p>
-                    
-                    <p>Her eyes blazed at Blake. &#34;Aren&#39;t you angry? She cheated on you!&#34;</p>
-                    
-                    <p>&#34;She didn&#39;t!&#34; Blake cut her off. &#34;Everything online is just rumors. The baby was mine!&#34;</p>
-                    
-                    <p>His words hung in the air, surprising everyone. I stared at his back,genuinely confused. After creating a studio specifically to spread lies about me,why contradict his own narrative?</p>
-                    
-                    <p>Thalia&#39;s mouth opened and closed. &#34;Blake, you&#39;re still defending her? If she was carrying your child, why terminate it?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Before Thalia could reach me, Blake grabbed her wrist mid-air. At the same moment, Felix stepped between us.</p>
+                        
+                        <p>&#34;Thalia! What are you doing?&#34; Blake&#39;s voice was sharp.</p>
+                        
+                        <p>&#34;Miss Parker, show some respect,&#34; Felix added firmly.</p>
+                        
+                        <p>Thalia&#39;s eyes darted to Felix, hurt flashing across her face. &#34;Felix? How can you take her side? I cared about you so much!&#34;</p>
+                        
+                        <p>Felix&#39;s expression remained unmoved. &#34;Your past feelings for me aren&#39;t relevant,Miss Parker.&#34;</p>
+                        
+                        <p>Rage flooded Thalia&#39;s face. She jerked violently against Blake&#39;s grip, trying to break free. &#34;I&#39;ll kill her! I saw everything online! She didn&#39;t miscarry by accident-she terminated because the baby wasn&#39;t yours!&#34;</p>
+                        
+                        <p>Her eyes blazed at Blake. &#34;Aren&#39;t you angry? She cheated on you!&#34;</p>
+                        
+                        <p>&#34;She didn&#39;t!&#34; Blake cut her off. &#34;Everything online is just rumors. The baby was mine!&#34;</p>
+                        
+                        <p>His words hung in the air, surprising everyone. I stared at his back,genuinely confused. After creating a studio specifically to spread lies about me,why contradict his own narrative?</p>
+                        
+                        <p>Thalia&#39;s mouth opened and closed. &#34;Blake, you&#39;re still defending her? If she was carrying your child, why terminate it?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1032,27 +1088,31 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Her voice echoed down the corridor. &#34;Everyone knows she loves you enough to have no self-respect. If she could have your baby,she&#39;d be happier than anyone-why would she get rid of it?&#34;</p>
-                    
-                    <p>I felt heat rising in my face. She had no idea aboutthe complications,about how the pregnancy was already failing when I discoveredit.About how I&#39;d been alone in that hospital room while Blake was out with Laurel.</p>
-                    
-                    <p>&#34;You cheated on him,&#34; Thalia continued, glaring at me. &#34;I&#39;ll find the best lawyers in New York to make sure you leave the Parker family with nothing!&#34;</p>
-                    
-                    <p>I was about to respond when commotion erupted from the emergency room.</p>
-                    
-                    <p>&#34;Mr. Parker! Quick,oxygen!&#34; A nurse called urgently.</p>
-                    
-                    <p>&#34;William!&#34; I moved toward the doors but the doctor blocked my path.</p>
-                    
-                    <p>&#34;Please wait,&#34; he said,rushing back inside.</p>
-                    
-                    <p>We stood frozen, the argument forgotten as we listened to the flurry of activity within. Finally, the doctor reappeared.</p>
-                    
-                    <p>&#34;You can come in now, but stay calm,&#34; he instructed firmly. &#34;No raised voices.&#34;</p>
-                    
-                    <p>Blake turned to Thalia. &#34;If anything happens to grandfather because of your outburst, I&#39;ll cut off your allowance.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Her voice echoed down the corridor. &#34;Everyone knows she loves you enough to have no self-respect. If she could have your baby,she&#39;d be happier than anyone-why would she get rid of it?&#34;</p>
+                        
+                        <p>I felt heat rising in my face. She had no idea aboutthe complications,about how the pregnancy was already failing when I discoveredit.About how I&#39;d been alone in that hospital room while Blake was out with Laurel.</p>
+                        
+                        <p>&#34;You cheated on him,&#34; Thalia continued, glaring at me. &#34;I&#39;ll find the best lawyers in New York to make sure you leave the Parker family with nothing!&#34;</p>
+                        
+                        <p>I was about to respond when commotion erupted from the emergency room.</p>
+                        
+                        <p>&#34;Mr. Parker! Quick,oxygen!&#34; A nurse called urgently.</p>
+                        
+                        <p>&#34;William!&#34; I moved toward the doors but the doctor blocked my path.</p>
+                        
+                        <p>&#34;Please wait,&#34; he said,rushing back inside.</p>
+                        
+                        <p>We stood frozen, the argument forgotten as we listened to the flurry of activity within. Finally, the doctor reappeared.</p>
+                        
+                        <p>&#34;You can come in now, but stay calm,&#34; he instructed firmly. &#34;No raised voices.&#34;</p>
+                        
+                        <p>Blake turned to Thalia. &#34;If anything happens to grandfather because of your outburst, I&#39;ll cut off your allowance.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1067,25 +1127,29 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Thalia rubbed her wrist, scowling. &#34;If anything happens to grandfather, it&#39;s because of her, not me.&#34;</p>
-                    
-                    <p>Inside, William lay with an oxygen mask covering his face, monitors</p>
-                    
-                    <p>beeping steadily beside him. Despite his age, he&#39;d always seemed indestructible to me. Seeing him vulnerable against the white sheets was jarring.</p>
-                    
-                    <p>I rushed to his side and took his hand. &#34;William, it&#39;s me, Audrey. I&#39;m here.</p>
-                    
-                    <p>His eyes opened slowly, finding mine with surprising clarity. He squeezed my hand, his other hand lifting shakily toward my face.</p>
-                    
-                    <p>&#34;Audrey,&#34; he said, voice raspy through the mask, &#34;marrying into our Parker family... I&#39;m so sorry. The way they&#39;ve treated you is shameful.&#34;</p>
-                    
-                    <p>The unexpected words caught me off guard. Of everything he could have said after regaining consciousness, this was the last thing I expected.</p>
-                    
-                    <p>&#34;William, it&#39;s not that bad, I actually-&#34; I began.</p>
-                    
-                    <p>&#34;What does she have to complain about?&#34; Thalia interrupted sharply from behind me.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Thalia rubbed her wrist, scowling. &#34;If anything happens to grandfather, it&#39;s because of her, not me.&#34;</p>
+                        
+                        <p>Inside, William lay with an oxygen mask covering his face, monitors</p>
+                        
+                        <p>beeping steadily beside him. Despite his age, he&#39;d always seemed indestructible to me. Seeing him vulnerable against the white sheets was jarring.</p>
+                        
+                        <p>I rushed to his side and took his hand. &#34;William, it&#39;s me, Audrey. I&#39;m here.</p>
+                        
+                        <p>His eyes opened slowly, finding mine with surprising clarity. He squeezed my hand, his other hand lifting shakily toward my face.</p>
+                        
+                        <p>&#34;Audrey,&#34; he said, voice raspy through the mask, &#34;marrying into our Parker family... I&#39;m so sorry. The way they&#39;ve treated you is shameful.&#34;</p>
+                        
+                        <p>The unexpected words caught me off guard. Of everything he could have said after regaining consciousness, this was the last thing I expected.</p>
+                        
+                        <p>&#34;William, it&#39;s not that bad, I actually-&#34; I began.</p>
+                        
+                        <p>&#34;What does she have to complain about?&#34; Thalia interrupted sharply from behind me.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2401,6 +2465,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2527,7 +2671,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2569,32 +2712,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2605,21 +2730,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2652,6 +2767,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2672,20 +2793,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

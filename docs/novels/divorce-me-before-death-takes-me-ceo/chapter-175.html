@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.015963">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.015963">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.202036">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.202036">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.015963",
-        "dateModified": "2026-07-19T02:47:19.015963",
+        "datePublished": "2026-07-19T13:03:14.202036",
+        "dateModified": "2026-07-19T13:03:14.202036",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,29 +893,33 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Michael&#39;s POV**</p>
-                    
-                    <p>&#34;Mr. Parker was following you?&#34; I couldn&#39;t hide my surprise.</p>
-                    
-                    <p>&#34;Yeah.&#34; Audrey sighed, looking out the window. &#34;All the way to Pinehaven Village.&#34;</p>
-                    
-                    <p>&#34;Pinehaven Village? That abandoned place?&#34; I frowned, keeping my eyes on the road as Manhattan&#39;s lights flashed by.′′Did you go there knowing he&#39;d follow?&#34;</p>
-                    
-                    <p>&#34;I&#39;m not that petty,&#34; she said with a short laugh.′′was visiting the old clinic, remembering a friend.&#34;</p>
-                    
-                    <p>I nodded, thinking about the coincidence. &#34;You know, Mr. Parker does something similar. He takes Miss Rose to a hospital on the other side of town to remember someone.&#34;</p>
-                    
-                    <p>I glanced at her reflection in the rearview mirror, watching for a reaction.</p>
-                    
-                    <p>&#34;That area was almost a ghost town until Mr. Parker started visiting.Now it&#39;s practically a landmark,&#34; I continued. &#34;The hospital&#39;s been completely renovated. When Miss Rose was abroad, he&#39;d still go on certain days and stay for hours.&#34;</p>
-                    
-                    <p>I paused. &#34;You knew about this, right?&#34;</p>
-                    
-                    <p>&#34;No.&#34; she said simply. &#34;I didn&#39;t.&#34;</p>
-                    
-                    <p>&#34;You didn&#39;t?&#34;The surprise in my voice was genuine.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Michael&#39;s POV**</p>
+                        
+                        <p>&#34;Mr. Parker was following you?&#34; I couldn&#39;t hide my surprise.</p>
+                        
+                        <p>&#34;Yeah.&#34; Audrey sighed, looking out the window. &#34;All the way to Pinehaven Village.&#34;</p>
+                        
+                        <p>&#34;Pinehaven Village? That abandoned place?&#34; I frowned, keeping my eyes on the road as Manhattan&#39;s lights flashed by.′′Did you go there knowing he&#39;d follow?&#34;</p>
+                        
+                        <p>&#34;I&#39;m not that petty,&#34; she said with a short laugh.′′was visiting the old clinic, remembering a friend.&#34;</p>
+                        
+                        <p>I nodded, thinking about the coincidence. &#34;You know, Mr. Parker does something similar. He takes Miss Rose to a hospital on the other side of town to remember someone.&#34;</p>
+                        
+                        <p>I glanced at her reflection in the rearview mirror, watching for a reaction.</p>
+                        
+                        <p>&#34;That area was almost a ghost town until Mr. Parker started visiting.Now it&#39;s practically a landmark,&#34; I continued. &#34;The hospital&#39;s been completely renovated. When Miss Rose was abroad, he&#39;d still go on certain days and stay for hours.&#34;</p>
+                        
+                        <p>I paused. &#34;You knew about this, right?&#34;</p>
+                        
+                        <p>&#34;No.&#34; she said simply. &#34;I didn&#39;t.&#34;</p>
+                        
+                        <p>&#34;You didn&#39;t?&#34;The surprise in my voice was genuine.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -894,29 +934,33 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Audrey&#39;s lips curved into something between a smile and a grimace. &#34;If</p>
-                    
-                    <p>Blake spent those days visiting a hospital with Laurel four years ago, then for the past three years, he&#39;s probably been going there to remember her.&#34;</p>
-                    
-                    <p>Her voice turned bitter.&#34;Why would he tell me about that?&#34;</p>
-                    
-                    <p>We pulled up to her apartment building. The streets were nearly empty at this hour.</p>
-                    
-                    <p>&#34;You can stop here,&#34; she said, taking a deep breath. &#34;I&#39;ll walk from here. It&#39;s late - you should get some rest.&#34;</p>
-                    
-                    <p>I pulled over without arguing. Something in her tone made it clear the conversation was over.</p>
-                    
-                    <p>&#34;Thanks,&#34; she said, offering me a small smile as she opened the door.&#34;Drive safe.&#34;</p>
-                    
-                    <p>I watched her wak toward the building, thinking about how different she was from Miss Rose. When I drove Laurel home late, she never cared if I was tired. If she wanted a ride, I had to provide one, and she wouldn&#39;t walk an extra step if she could help it.</p>
-                    
-                    <p>I know it&#39;s my job to cater to my boss&#39;s needs, but someone like Audrey who thinks about others is just easier to like.</p>
-                    
-                    <p>I closed my eyes, thinking about what she&#39;d said about not knowing Mr.Parker&#39;s hospital visits. Suddenly, it hit me.</p>
-                    
-                    <p>She didn&#39;t know because whenever he went, she was also gone.Every single time.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Audrey&#39;s lips curved into something between a smile and a grimace. &#34;If</p>
+                        
+                        <p>Blake spent those days visiting a hospital with Laurel four years ago, then for the past three years, he&#39;s probably been going there to remember her.&#34;</p>
+                        
+                        <p>Her voice turned bitter.&#34;Why would he tell me about that?&#34;</p>
+                        
+                        <p>We pulled up to her apartment building. The streets were nearly empty at this hour.</p>
+                        
+                        <p>&#34;You can stop here,&#34; she said, taking a deep breath. &#34;I&#39;ll walk from here. It&#39;s late - you should get some rest.&#34;</p>
+                        
+                        <p>I pulled over without arguing. Something in her tone made it clear the conversation was over.</p>
+                        
+                        <p>&#34;Thanks,&#34; she said, offering me a small smile as she opened the door.&#34;Drive safe.&#34;</p>
+                        
+                        <p>I watched her wak toward the building, thinking about how different she was from Miss Rose. When I drove Laurel home late, she never cared if I was tired. If she wanted a ride, I had to provide one, and she wouldn&#39;t walk an extra step if she could help it.</p>
+                        
+                        <p>I know it&#39;s my job to cater to my boss&#39;s needs, but someone like Audrey who thinks about others is just easier to like.</p>
+                        
+                        <p>I closed my eyes, thinking about what she&#39;d said about not knowing Mr.Parker&#39;s hospital visits. Suddenly, it hit me.</p>
+                        
+                        <p>She didn&#39;t know because whenever he went, she was also gone.Every single time.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -931,29 +975,33 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>My eyes snapped open. If both Mr. Parker and Audrey commemorated their &#34;friends&#34; on exactly the same dates...</p>
-                    
-                    <p>Could they possibly be remembering the same person?</p>
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>When I got home, Astrid was still awake, half-dozing on the sofa with Snow in her lap.</p>
-                    
-                    <p>&#34;Audrey!&#34; She jerked upright when she heard the door, almost sending my cat flying.</p>
-                    
-                    <p>&#34;You&#39;re still up?&#34; I asked, surprised to see her.</p>
-                    
-                    <p>&#34;How could I sleep with you missing?&#34; She put Snow down and rushed over, grabbing my arms. &#34;Where were you? Your phone was off! I called like fifty times!&#34;</p>
-                    
-                    <p>Her eyes were wide with worry. &#34;Another hour and I was calling the cops!&#34;</p>
-                    
-                    <p>Something warm settled in my chest seeing how much she cared.</p>
-                    
-                    <p>&#34;I&#39;m fine,&#34; I said quietly.</p>
-                    
-                    <p>&#34;You&#39;ve got cancer, Audrey! Of course I panic when you disappear for hours!&#34; She bit her lip, looking at me accusingly. &#34;Spill it. Where were you?Battery die?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>My eyes snapped open. If both Mr. Parker and Audrey commemorated their &#34;friends&#34; on exactly the same dates...</p>
+                        
+                        <p>Could they possibly be remembering the same person?</p>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>When I got home, Astrid was still awake, half-dozing on the sofa with Snow in her lap.</p>
+                        
+                        <p>&#34;Audrey!&#34; She jerked upright when she heard the door, almost sending my cat flying.</p>
+                        
+                        <p>&#34;You&#39;re still up?&#34; I asked, surprised to see her.</p>
+                        
+                        <p>&#34;How could I sleep with you missing?&#34; She put Snow down and rushed over, grabbing my arms. &#34;Where were you? Your phone was off! I called like fifty times!&#34;</p>
+                        
+                        <p>Her eyes were wide with worry. &#34;Another hour and I was calling the cops!&#34;</p>
+                        
+                        <p>Something warm settled in my chest seeing how much she cared.</p>
+                        
+                        <p>&#34;I&#39;m fine,&#34; I said quietly.</p>
+                        
+                        <p>&#34;You&#39;ve got cancer, Audrey! Of course I panic when you disappear for hours!&#34; She bit her lip, looking at me accusingly. &#34;Spill it. Where were you?Battery die?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -968,29 +1016,33 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Just airplane mode,&#34; I answered, heading to my room.</p>
-                    
-                    <p>I grabbed my laptop and opened the phone tracking software. Soon I&#39;d know exactly where Rachel was hidden. My heart raced at the thought of seeing her again after so long: If I&#39;d known she was in New York all this tíme, I would&#39;ve found her years ago.</p>
-                    
-                    <p>&#34;What are you doing?&#34; Astrid peered over my shoulder at the screen,confusion written all over her fnce.</p>
-                    
-                    <p>I explained my plan quietly.</p>
-                    
-                    <p>&#34;Holy shit!&#34; Astrid&#39;s eyes nearly bulged out of her head. &#34;Rachel&#39;s been in New York this whole time? The Roses are next-level secret-keepers!&#34;</p>
-                    
-                    <p>She shook her head ina disbelief. &#34;If Blake hadn&#39;t followed you tonight and gotten that call from Laurel while you were together. we might never have known!&#34;</p>
-                    
-                    <p>I studied the moving dot on the screen. &#34;Look at his route. Is that Twilight Mansion?&#34;</p>
-                    
-                    <p>&#34;Definitely looks like it,&#34; Astrid confirmed, squinting at the green marker.&#34;No wonder Mr. Rose never bothered denying those rumors about his wife having a boy toy there.&#34;</p>
-                    
-                    <p>She snorted. &#34;They were hiding Rachel Hayes the whole time!&#34;</p>
-                    
-                    <p>But something wasn&#39;t right. I frowned at the screen. &#34;Wait, why&#39;s he turning around? That&#39;s not the way to Twilight.&#34;</p>
-                    
-                    <p>&#34;You&#39;re right,&#34; Astrid said, leaning closer. &#34;He&#39;s... coming back this way?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Just airplane mode,&#34; I answered, heading to my room.</p>
+                        
+                        <p>I grabbed my laptop and opened the phone tracking software. Soon I&#39;d know exactly where Rachel was hidden. My heart raced at the thought of seeing her again after so long: If I&#39;d known she was in New York all this tíme, I would&#39;ve found her years ago.</p>
+                        
+                        <p>&#34;What are you doing?&#34; Astrid peered over my shoulder at the screen,confusion written all over her fnce.</p>
+                        
+                        <p>I explained my plan quietly.</p>
+                        
+                        <p>&#34;Holy shit!&#34; Astrid&#39;s eyes nearly bulged out of her head. &#34;Rachel&#39;s been in New York this whole time? The Roses are next-level secret-keepers!&#34;</p>
+                        
+                        <p>She shook her head ina disbelief. &#34;If Blake hadn&#39;t followed you tonight and gotten that call from Laurel while you were together. we might never have known!&#34;</p>
+                        
+                        <p>I studied the moving dot on the screen. &#34;Look at his route. Is that Twilight Mansion?&#34;</p>
+                        
+                        <p>&#34;Definitely looks like it,&#34; Astrid confirmed, squinting at the green marker.&#34;No wonder Mr. Rose never bothered denying those rumors about his wife having a boy toy there.&#34;</p>
+                        
+                        <p>She snorted. &#34;They were hiding Rachel Hayes the whole time!&#34;</p>
+                        
+                        <p>But something wasn&#39;t right. I frowned at the screen. &#34;Wait, why&#39;s he turning around? That&#39;s not the way to Twilight.&#34;</p>
+                        
+                        <p>&#34;You&#39;re right,&#34; Astrid said, leaning closer. &#34;He&#39;s... coming back this way?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1005,29 +1057,33 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>A knot formed in my stomach as I watched the marker change direction.</p>
-                    
-                    <p>&#34;That looks like he&#39;s heading...&#34; I trailed off.</p>
-                    
-                    <p>Straight toward us.</p>
-                    
-                    <p>Within minutes, the green dot had reached my apartment complex.</p>
-                    
-                    <p>&#34;No way,&#34; Astrid gasped.&#39;&#34;Why&#39;s he here? Rachel can&#39;t be in this building!&#34;</p>
-                    
-                    <p>She looked at me nervously. &#34;Audrey...&#34;</p>
-                    
-                    <p>&#34;He caught me,&#34; I said, closing my eyes.</p>
-                    
-                    <p>Right on cue, Astrid&#39;s phone rang. Blake Parker&#39;s name lit up the screen.</p>
-                    
-                    <p>&#34;Answer it?&#34; Astrid whispered, holding the phone like it might bite her.</p>
-                    
-                    <p>I nodded and took it from her. No point pretending now.</p>
-                    
-                    <p>&#34;Michael&#39;s bringing your phone back,&#34; Blake&#39;s cool voice came through immediately. &#34;Go downstairs.and get it.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>A knot formed in my stomach as I watched the marker change direction.</p>
+                        
+                        <p>&#34;That looks like he&#39;s heading...&#34; I trailed off.</p>
+                        
+                        <p>Straight toward us.</p>
+                        
+                        <p>Within minutes, the green dot had reached my apartment complex.</p>
+                        
+                        <p>&#34;No way,&#34; Astrid gasped.&#39;&#34;Why&#39;s he here? Rachel can&#39;t be in this building!&#34;</p>
+                        
+                        <p>She looked at me nervously. &#34;Audrey...&#34;</p>
+                        
+                        <p>&#34;He caught me,&#34; I said, closing my eyes.</p>
+                        
+                        <p>Right on cue, Astrid&#39;s phone rang. Blake Parker&#39;s name lit up the screen.</p>
+                        
+                        <p>&#34;Answer it?&#34; Astrid whispered, holding the phone like it might bite her.</p>
+                        
+                        <p>I nodded and took it from her. No point pretending now.</p>
+                        
+                        <p>&#34;Michael&#39;s bringing your phone back,&#34; Blake&#39;s cool voice came through immediately. &#34;Go downstairs.and get it.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1042,29 +1098,33 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Despite expecting this, the defeat still stung.</p>
-                    
-                    <p>&#34;How did you know?&#34; I asked quietly.</p>
-                    
-                    <p>&#34;I called and you didn&#39;t answer.&#34; I could picture him leaning back in his car, tapping the steering wheel with those long fingers of his.&#34;Someone as desperate for information about Rachel Hayes as you wouldn&#39;t just turn off her phone after talking to me.&#34;</p>
-                    
-                    <p>&#34;I figured you&#39;d activated tracking and put it in airplane mode. So I searched the car.&#34;</p>
-                    
-                    <p>I closed my eyes. &#34;Is Rachel at Twilight Mansion?&#34;</p>
-                    
-                    <p>&#34;That&#39;s none of your business.&#34; His voice was ice. &#34;Give up, Audrey. After tonight, Laurel will increase security around Rachel. You won&#39;t get near her.&#34;</p>
-                    
-                    <p>The last bit of hope died. I gripped the phone tighter.′′Ijust want to see her once.&#34;</p>
-                    
-                    <p>&#34;Why won&#39;t you let me -&#34;</p>
-                    
-                    <p>&#34;If you want to see her, go through proper channels,&#34; he cut me off. &#34;Don&#39;t</p>
-                    
-                    <p>sneak around.&#34;</p>
-                    
-                    <p>He paused. &#34;The Roses are powerful. If you break in and they claim you stole something,how would you explain yourself?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Despite expecting this, the defeat still stung.</p>
+                        
+                        <p>&#34;How did you know?&#34; I asked quietly.</p>
+                        
+                        <p>&#34;I called and you didn&#39;t answer.&#34; I could picture him leaning back in his car, tapping the steering wheel with those long fingers of his.&#34;Someone as desperate for information about Rachel Hayes as you wouldn&#39;t just turn off her phone after talking to me.&#34;</p>
+                        
+                        <p>&#34;I figured you&#39;d activated tracking and put it in airplane mode. So I searched the car.&#34;</p>
+                        
+                        <p>I closed my eyes. &#34;Is Rachel at Twilight Mansion?&#34;</p>
+                        
+                        <p>&#34;That&#39;s none of your business.&#34; His voice was ice. &#34;Give up, Audrey. After tonight, Laurel will increase security around Rachel. You won&#39;t get near her.&#34;</p>
+                        
+                        <p>The last bit of hope died. I gripped the phone tighter.′′Ijust want to see her once.&#34;</p>
+                        
+                        <p>&#34;Why won&#39;t you let me -&#34;</p>
+                        
+                        <p>&#34;If you want to see her, go through proper channels,&#34; he cut me off. &#34;Don&#39;t</p>
+                        
+                        <p>sneak around.&#34;</p>
+                        
+                        <p>He paused. &#34;The Roses are powerful. If you break in and they claim you stole something,how would you explain yourself?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1079,19 +1139,23 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Don&#39;t make things worse for yourself,&#34; he said, then hung up.</p>
-                    
-                    <p>I stared at the phone, listening to the dial tone.</p>
-                    
-                    <p>&#34;Audrey...&#34; Astrid said hesitantly. &#34;Blake might have a point.&#34;</p>
-                    
-                    <p>She watched me carefully. &#34;If Laurel hates you that much and you try sneaking in to see Rachel...&#34;</p>
-                    
-                    <p>&#34;The Roses could easily claimn you broke in or were trespassing.&#34;</p>
-                    
-                    <p>&#34;You&#39;d have no defense.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Don&#39;t make things worse for yourself,&#34; he said, then hung up.</p>
+                        
+                        <p>I stared at the phone, listening to the dial tone.</p>
+                        
+                        <p>&#34;Audrey...&#34; Astrid said hesitantly. &#34;Blake might have a point.&#34;</p>
+                        
+                        <p>She watched me carefully. &#34;If Laurel hates you that much and you try sneaking in to see Rachel...&#34;</p>
+                        
+                        <p>&#34;The Roses could easily claimn you broke in or were trespassing.&#34;</p>
+                        
+                        <p>&#34;You&#39;d have no defense.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2407,6 +2471,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2533,7 +2677,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2575,32 +2718,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2611,21 +2736,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2658,6 +2773,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2678,20 +2799,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

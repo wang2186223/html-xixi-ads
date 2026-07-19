@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.339246">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.339246">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.347329">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.347329">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.339246",
-        "dateModified": "2026-07-19T02:47:23.339246",
+        "datePublished": "2026-07-19T13:03:18.347329",
+        "dateModified": "2026-07-19T13:03:18.347329",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Howard&#39;s POV</p>
-                    
-                    <p>The private dining room&#39;s muted lighting did nothing to improve my mood. Catherine Morgan sat across from me, maintaining perfect posture as the maitre d&#39;presented our menus. Myeyes fell on a familiar dish - one I&#39;d ordered countless times during business dinners here.</p>
-                    
-                    <p>Just as I was about to speak, Catherine smiled with quiet confidence.&#34;The seared foie gras for Mr. Thompson. It&#39;s his usual choice here.&#34;</p>
-                    
-                    <p>&#34;The sea bass,&#34; I stated quietly, my tone carrying just enough authority to discourage further discussion. &#34;With the seasonal vegetables.&#34;</p>
-                    
-                    <p>Catherine&#39;s smile faltered for just a moment before she recovered with practiced grace.</p>
-                    
-                    <p>&#34;You should have been at the Met Gala last month,&#34; she began,swirling her wine with elegant precision. Her diamond bracelet caught the light with each practiced motion. &#34;The Vanderbilts hosted the most extraordinary after-party. Charlotte - you know Charles Vanderbilt&#39;s daughter?- she had this absolutely scandalous moment with the son of that tech mogul from Silicon Valley...&#34; I made a noncommittal sound, finding more interest in the condensation gathering on my water glass than her carefully curated society gossip.My thoughts kept drifting to Annie&#39;s genuine laugh, so different from the artificial tinkling sound Catherine was making now. &#34;And then there was that charity auction at the Plaza,&#34; Catherine continued,leaning forward slightly in what I assumed was meant to be an enticing manner. &#34;Mother insisted I bid on this ghastly modern art piece-all splashes and circles, really - but apparently the artist is the next big thing.Cost a fortune, but that&#39;s what tax write-offs are for, right?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Howard&#39;s POV</p>
+                        
+                        <p>The private dining room&#39;s muted lighting did nothing to improve my mood. Catherine Morgan sat across from me, maintaining perfect posture as the maitre d&#39;presented our menus. Myeyes fell on a familiar dish - one I&#39;d ordered countless times during business dinners here.</p>
+                        
+                        <p>Just as I was about to speak, Catherine smiled with quiet confidence.&#34;The seared foie gras for Mr. Thompson. It&#39;s his usual choice here.&#34;</p>
+                        
+                        <p>&#34;The sea bass,&#34; I stated quietly, my tone carrying just enough authority to discourage further discussion. &#34;With the seasonal vegetables.&#34;</p>
+                        
+                        <p>Catherine&#39;s smile faltered for just a moment before she recovered with practiced grace.</p>
+                        
+                        <p>&#34;You should have been at the Met Gala last month,&#34; she began,swirling her wine with elegant precision. Her diamond bracelet caught the light with each practiced motion. &#34;The Vanderbilts hosted the most extraordinary after-party. Charlotte - you know Charles Vanderbilt&#39;s daughter?- she had this absolutely scandalous moment with the son of that tech mogul from Silicon Valley...&#34; I made a noncommittal sound, finding more interest in the condensation gathering on my water glass than her carefully curated society gossip.My thoughts kept drifting to Annie&#39;s genuine laugh, so different from the artificial tinkling sound Catherine was making now. &#34;And then there was that charity auction at the Plaza,&#34; Catherine continued,leaning forward slightly in what I assumed was meant to be an enticing manner. &#34;Mother insisted I bid on this ghastly modern art piece-all splashes and circles, really - but apparently the artist is the next big thing.Cost a fortune, but that&#39;s what tax write-offs are for, right?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Indeed.&#34; I checked my phone under the table, hoping for a message that could provide an excuse to end this charade early. The screen remained stubbornly empty.</p>
-                    
-                    <p>&#34;Oh, and you&#39;ll never believe who I ran into at the Morgan Stanley dinner last week.&#34; Catherine&#39;s laugh echoed like expensive crystal against fine china. &#34;Remember Jonathan Pierce? From Harvard Business School? He&#39;s still trying to make that ridiculous startup of his work. Something about sustainable energy- as if that hasn&#39;t been done to death. His mother keeps trying to set us up, can you imagine?&#34;</p>
-                    
-                    <p>She paused, clearly expecting some sign of jealousy. I merely signaled the waiter for more water, remembering how Annie could convey more genuine emotion in a single glance than Catherine managed in this entire performance.</p>
-                    
-                    <p>&#34;Though speaking of arrangements,&#34; her tone shifted subtly,becoming more purposeful, &#34;you should see the list Mother&#39;s compiled. All these eligible bachelors from &#39;suitable&#39; families.&#34; She rolled her eyes with calculated charm. &#34;Half of them I&#39;ve already met through these tedious matchmaking dinners. Like last month, there was this absolutely dreadful evening with the youngest Sullivan heir...&#34; I let her words fade into background noise, my mind drifting to Annie-how she would have filled this stilted silence with genuine warmth instead of practiced small talk, how her eyes would have sparkled with real humor rather than social calculation. Even Lucy&#39;s selective mutism felt more authentic than this carefully choreographed performance. &#34;Don&#39;t you agree?&#34; Catherine&#39;s expectant voice pulled me back to the present.</p>
-                    
-                    <p>&#34;My apologies,&#34; I said, not bothering to fake interest. &#34;You were saying?&#34;</p>
-                    
-                    <p>I maintained my polite mask, offering minimal responses. The evening stretched ahead like an overlong board meeting, each moment measured in careful sips of wine and perfectly crafted small talk.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Indeed.&#34; I checked my phone under the table, hoping for a message that could provide an excuse to end this charade early. The screen remained stubbornly empty.</p>
+                        
+                        <p>&#34;Oh, and you&#39;ll never believe who I ran into at the Morgan Stanley dinner last week.&#34; Catherine&#39;s laugh echoed like expensive crystal against fine china. &#34;Remember Jonathan Pierce? From Harvard Business School? He&#39;s still trying to make that ridiculous startup of his work. Something about sustainable energy- as if that hasn&#39;t been done to death. His mother keeps trying to set us up, can you imagine?&#34;</p>
+                        
+                        <p>She paused, clearly expecting some sign of jealousy. I merely signaled the waiter for more water, remembering how Annie could convey more genuine emotion in a single glance than Catherine managed in this entire performance.</p>
+                        
+                        <p>&#34;Though speaking of arrangements,&#34; her tone shifted subtly,becoming more purposeful, &#34;you should see the list Mother&#39;s compiled. All these eligible bachelors from &#39;suitable&#39; families.&#34; She rolled her eyes with calculated charm. &#34;Half of them I&#39;ve already met through these tedious matchmaking dinners. Like last month, there was this absolutely dreadful evening with the youngest Sullivan heir...&#34; I let her words fade into background noise, my mind drifting to Annie-how she would have filled this stilted silence with genuine warmth instead of practiced small talk, how her eyes would have sparkled with real humor rather than social calculation. Even Lucy&#39;s selective mutism felt more authentic than this carefully choreographed performance. &#34;Don&#39;t you agree?&#34; Catherine&#39;s expectant voice pulled me back to the present.</p>
+                        
+                        <p>&#34;My apologies,&#34; I said, not bothering to fake interest. &#34;You were saying?&#34;</p>
+                        
+                        <p>I maintained my polite mask, offering minimal responses. The evening stretched ahead like an overlong board meeting, each moment measured in careful sips of wine and perfectly crafted small talk.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>When the food arrived, my attention caught on the herb garnish-arranged exactly as Annie often did for Lucy&#39;s breakfast. I realized with a start that despite all our time together, Annie and I had never gone on a proper date. No quiet dinners, no evening walks, no moments that were just ours.</p>
-                    
-                    <p>&#34;I attended the most fascinating exhibition last week,&#34; Catherine offered.&#34;The artist-James Morrison? I remember you wrote that paper about his early works in college.&#34;</p>
-                    
-                    <p>&#34;He&#39;s talented,&#34; I acknowledged simply. He was an artist I admired. Then,my mind had already drifted to Annie&#39;s illustrations - how she captured emotion with such simple, elegant lines. My hand slipped into my pocket,fingers brushing against the forgotten lace there.</p>
-                    
-                    <p>Yes, I brought a woman&#39;s underwear to a fancy restaurant.</p>
-                    
-                    <p>And the touch brought back the memories when I returned home today. We&#39;d just returned home with Lucy when we found Thomas Anderson,Lucy&#39;s gymnastics coach, waiting in the front yard,looking slightly uncomfortable in the heat. &#34;Should Alfred have shown him inside?&#34; I asked our butler quietly. &#34;I requested to wait outside,&#34; Thomas Anderson explained quickly. &#34;To get a feel for the space.&#34;</p>
-                    
-                    <p>&#34;It&#39;s too hot out here,&#34; I observed calmly. &#34;We usually return around this time. In the future,please wait inside.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>When the food arrived, my attention caught on the herb garnish-arranged exactly as Annie often did for Lucy&#39;s breakfast. I realized with a start that despite all our time together, Annie and I had never gone on a proper date. No quiet dinners, no evening walks, no moments that were just ours.</p>
+                        
+                        <p>&#34;I attended the most fascinating exhibition last week,&#34; Catherine offered.&#34;The artist-James Morrison? I remember you wrote that paper about his early works in college.&#34;</p>
+                        
+                        <p>&#34;He&#39;s talented,&#34; I acknowledged simply. He was an artist I admired. Then,my mind had already drifted to Annie&#39;s illustrations - how she captured emotion with such simple, elegant lines. My hand slipped into my pocket,fingers brushing against the forgotten lace there.</p>
+                        
+                        <p>Yes, I brought a woman&#39;s underwear to a fancy restaurant.</p>
+                        
+                        <p>And the touch brought back the memories when I returned home today. We&#39;d just returned home with Lucy when we found Thomas Anderson,Lucy&#39;s gymnastics coach, waiting in the front yard,looking slightly uncomfortable in the heat. &#34;Should Alfred have shown him inside?&#34; I asked our butler quietly. &#34;I requested to wait outside,&#34; Thomas Anderson explained quickly. &#34;To get a feel for the space.&#34;</p>
+                        
+                        <p>&#34;It&#39;s too hot out here,&#34; I observed calmly. &#34;We usually return around this time. In the future,please wait inside.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Thank you,&#34; Thomas Anderson nodded, understanding the statement wasn&#39;t mere politeness. &#34;When would you like to begin?&#34;</p>
-                    
-                    <p>I looked to Lucy, who was clutching Annie&#39;s sleeve.</p>
-                    
-                    <p>Annie knelt beside her. &#34;What is it, sweetheart?&#34;</p>
-                    
-                    <p>Lucy whispered something in Annie&#39;s ear.</p>
-                    
-                    <p>&#34;She&#39;d like to start now,&#34; Annie explained to Thomas Anderson. &#34;But I should mention - Lucy is a bit special. She prefers not to speak to others.&#34;</p>
-                    
-                    <p>Thomas Anderson nodded understandingly and knelt to Lucy&#39;s level. &#34;I&#39;m Thomas Anderson. And you are...?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Thank you,&#34; Thomas Anderson nodded, understanding the statement wasn&#39;t mere politeness. &#34;When would you like to begin?&#34;</p>
+                        
+                        <p>I looked to Lucy, who was clutching Annie&#39;s sleeve.</p>
+                        
+                        <p>Annie knelt beside her. &#34;What is it, sweetheart?&#34;</p>
+                        
+                        <p>Lucy whispered something in Annie&#39;s ear.</p>
+                        
+                        <p>&#34;She&#39;d like to start now,&#34; Annie explained to Thomas Anderson. &#34;But I should mention - Lucy is a bit special. She prefers not to speak to others.&#34;</p>
+                        
+                        <p>Thomas Anderson nodded understandingly and knelt to Lucy&#39;s level. &#34;I&#39;m Thomas Anderson. And you are...?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Lucy darted behind Annie before he could finish.</p>
-                    
-                    <p>&#34;I&#39;m sorry,&#34; Thomas Anderson apologized. &#34;I forgot...&#34;</p>
-                    
-                    <p>&#34;It&#39;s alright,&#34; Annie smiled. &#34;Lucy, would you like me to stay with you?&#34;</p>
-                    
-                    <p>A vigorous nod.</p>
-                    
-                    <p>&#34;Where should we train?&#34; Annie asked, looking to me. &#34;I&#39;ve had a room prepared on the first floor,&#34; I replied evenly, leading the way. The training space was large, with floor-to-ceiling windows and a spacious baleony. Thomas Anderson began with basie movements, but Lucy&#39;s stamina quickly flagged. When he tried to ask about her comfort level,she remained silent.</p>
-                    
-                    <p>&#34;For the first month. I&#39;d recommend focusing on building her endurance through running,&#34; he told me. &#34;Then we can progress to actual techniques.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Lucy darted behind Annie before he could finish.</p>
+                        
+                        <p>&#34;I&#39;m sorry,&#34; Thomas Anderson apologized. &#34;I forgot...&#34;</p>
+                        
+                        <p>&#34;It&#39;s alright,&#34; Annie smiled. &#34;Lucy, would you like me to stay with you?&#34;</p>
+                        
+                        <p>A vigorous nod.</p>
+                        
+                        <p>&#34;Where should we train?&#34; Annie asked, looking to me. &#34;I&#39;ve had a room prepared on the first floor,&#34; I replied evenly, leading the way. The training space was large, with floor-to-ceiling windows and a spacious baleony. Thomas Anderson began with basie movements, but Lucy&#39;s stamina quickly flagged. When he tried to ask about her comfort level,she remained silent.</p>
+                        
+                        <p>&#34;For the first month. I&#39;d recommend focusing on building her endurance through running,&#34; he told me. &#34;Then we can progress to actual techniques.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>I nodded. &#34;You&#39;re the expert here. Make whatever adjustments you feel necessary to the training plan. No need to consult me.&#34;</p>
-                    
-                    <p>After concluding the business call, I made my way downstairs,only to pause at the doorway. Thomas Anderson was leading both Annie and Lucy through warm-up exercises, but my gaze was immediately drawn to Annie.</p>
-                    
-                    <p>She moved with an endearing lack of polish that was so quintessentially her-none of the affectedI grace Mother&#39;s society friends would display.Her brow furrowed in concentration, tongue caught between her teeth as she struggled to mirror the instructor&#39;s stance. The sight stirred something in my chest - how she threw herself into everything with such genuine enthusiasm, completely unconcerned with looking perfectly poised. Even in her slight awkwardness, she possessed a natural grace that I found charming. My fingers traced the lace in my pocket asI returned to the present moment, thinking of how Annie would soon bemore involved in both my work and personal life. A smile crossed my face, realizing my hasty proposal had been premature. We had time. &#34;The Giants really dominated last weekend&#39;s game,&#34; Catherine was saying.her eyes lighting up at my smile. &#34;What did you think of their defensive strategy?&#34;</p>
-                    
-                    <p>Lost in pleasant thoughts of Annie, I replied absently, &#34;Very good.&#34;</p>
-                    
-                    <p>&#34;We should do this again,&#34; Catherine said eagerly.</p>
-                    
-                    <p>Her words snapped me back to reality. &#34;No,&#34; I said firmly. &#34;I&#39;m sorry, but I haven&#39;t followed football since college. That was just a phase, Catherine.And for future reference? Don&#39;t rely on my mother&#39;s outdated briefing about my interests. I&#39;m not the son she thinks she knows anymore.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>I nodded. &#34;You&#39;re the expert here. Make whatever adjustments you feel necessary to the training plan. No need to consult me.&#34;</p>
+                        
+                        <p>After concluding the business call, I made my way downstairs,only to pause at the doorway. Thomas Anderson was leading both Annie and Lucy through warm-up exercises, but my gaze was immediately drawn to Annie.</p>
+                        
+                        <p>She moved with an endearing lack of polish that was so quintessentially her-none of the affectedI grace Mother&#39;s society friends would display.Her brow furrowed in concentration, tongue caught between her teeth as she struggled to mirror the instructor&#39;s stance. The sight stirred something in my chest - how she threw herself into everything with such genuine enthusiasm, completely unconcerned with looking perfectly poised. Even in her slight awkwardness, she possessed a natural grace that I found charming. My fingers traced the lace in my pocket asI returned to the present moment, thinking of how Annie would soon bemore involved in both my work and personal life. A smile crossed my face, realizing my hasty proposal had been premature. We had time. &#34;The Giants really dominated last weekend&#39;s game,&#34; Catherine was saying.her eyes lighting up at my smile. &#34;What did you think of their defensive strategy?&#34;</p>
+                        
+                        <p>Lost in pleasant thoughts of Annie, I replied absently, &#34;Very good.&#34;</p>
+                        
+                        <p>&#34;We should do this again,&#34; Catherine said eagerly.</p>
+                        
+                        <p>Her words snapped me back to reality. &#34;No,&#34; I said firmly. &#34;I&#39;m sorry, but I haven&#39;t followed football since college. That was just a phase, Catherine.And for future reference? Don&#39;t rely on my mother&#39;s outdated briefing about my interests. I&#39;m not the son she thinks she knows anymore.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,9 +1079,13 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Without waiting for her response, I paid the bill and stood. The lace in my pocket reminded me of where I&#39;d rather be.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Without waiting for her response, I paid the bill and stood. The lace in my pocket reminded me of where I&#39;d rather be.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2337,6 +2401,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2463,7 +2607,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2505,32 +2648,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2541,21 +2666,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2588,6 +2703,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2608,20 +2729,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

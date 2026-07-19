@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.051414">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.051414">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.248184">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.248184">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.051414",
-        "dateModified": "2026-07-19T02:47:19.051414",
+        "datePublished": "2026-07-19T13:03:14.248184",
+        "dateModified": "2026-07-19T13:03:14.248184",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,25 +893,29 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Blake&#39;s POV**</p>
-                    
-                    <p>&#34;I don&#39;t just want Astrid to know about Snow,&#34; I said, watching the landscape blur past the car window. &#34;I want her and Ethan to meet this Mrs. Knox in person.&#34;</p>
-                    
-                    <p>If that woman truly was Audrey, she might fool me or Rachel, but her closest friends? No chance. Astrid and Ethan would recognize her instantly.</p>
-                    
-                    <p>Rachel handed back my phone with a sigh. &#34;Fine. I&#39;ll contact Thalia when we get back.&#34;</p>
-                    
-                    <p>She hesitated before continuing. &#34;Look, I get you want to make things right with Audrey. But if this doesn&#39;t pan out... you need to stop.&#34;</p>
-                    
-                    <p>&#34;This woman has a family, Blake. We can&#39;t keep disrupting their lives on a hunch.&#34;</p>
-                    
-                    <p>I raised an eyebrow. &#34;Family? You call that a family? They don&#39;t even sleep in the same room.&#34;</p>
-                    
-                    <p>&#34;What kind of husband doesn&#39;t know his wife&#39;s basic habits? Their whole setup is off.&#34;</p>
-                    
-                    <p>&#34;Legally, they&#39;re married,&#34; Rachel countered, leaning forward. &#34;Blake.promise me something. If Astrid and Ethan meet her and confirm she&#39;s not Audrey...you&#39;ll back off.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Blake&#39;s POV**</p>
+                        
+                        <p>&#34;I don&#39;t just want Astrid to know about Snow,&#34; I said, watching the landscape blur past the car window. &#34;I want her and Ethan to meet this Mrs. Knox in person.&#34;</p>
+                        
+                        <p>If that woman truly was Audrey, she might fool me or Rachel, but her closest friends? No chance. Astrid and Ethan would recognize her instantly.</p>
+                        
+                        <p>Rachel handed back my phone with a sigh. &#34;Fine. I&#39;ll contact Thalia when we get back.&#34;</p>
+                        
+                        <p>She hesitated before continuing. &#34;Look, I get you want to make things right with Audrey. But if this doesn&#39;t pan out... you need to stop.&#34;</p>
+                        
+                        <p>&#34;This woman has a family, Blake. We can&#39;t keep disrupting their lives on a hunch.&#34;</p>
+                        
+                        <p>I raised an eyebrow. &#34;Family? You call that a family? They don&#39;t even sleep in the same room.&#34;</p>
+                        
+                        <p>&#34;What kind of husband doesn&#39;t know his wife&#39;s basic habits? Their whole setup is off.&#34;</p>
+                        
+                        <p>&#34;Legally, they&#39;re married,&#34; Rachel countered, leaning forward. &#34;Blake.promise me something. If Astrid and Ethan meet her and confirm she&#39;s not Audrey...you&#39;ll back off.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -890,25 +930,29 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Her voice hardened. &#34;Promise me that, and I&#39;ll help. Otherwise,I&#39;ll do evorything I can to stop you.&#34;</p>
-                    
-                    <p>I stured at her. &#34;Are you threatening me?&#34;</p>
-                    
-                    <p>&#34;Yes,&#34; she said simply. &#34;That&#39;s exactly what I&#39;m doing.&#34;</p>
-                    
-                    <p>&#34;Sometimes I wonder if you ever considered Audrey a friend,&#34; I said. &#34;She did everything for you. When she was dying, she still found a way to get you away from the Rose family.&#34;</p>
-                    
-                    <p>I clenched my fist. &#34;If she meant anything to you, you&#39;d want her back just as much as I do.&#34;</p>
-                    
-                    <p>Rachel let out a short, pained laugh. &#34;Blake, Audrey is dead. No amount of wishful thinking changes that.&#34;</p>
-                    
-                    <p>Her voice shook slightly. &#34;Do you think I don&#39;t wish she were alive? That I wouldn&#39;t give anything to have my friend back?&#34;</p>
-                    
-                    <p>&#34;Look at the evidence. Evelyn&#39;s records are all there - childhood photos,school records, marriage certificate. She even has a child with Adrian!&#34;</p>
-                    
-                    <p>I couldn&#39;t deny the facts. Evelyn Knox had a documented life in Australia that never overlapped with Audrey&#39;s American upbringing.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Her voice hardened. &#34;Promise me that, and I&#39;ll help. Otherwise,I&#39;ll do evorything I can to stop you.&#34;</p>
+                        
+                        <p>I stured at her. &#34;Are you threatening me?&#34;</p>
+                        
+                        <p>&#34;Yes,&#34; she said simply. &#34;That&#39;s exactly what I&#39;m doing.&#34;</p>
+                        
+                        <p>&#34;Sometimes I wonder if you ever considered Audrey a friend,&#34; I said. &#34;She did everything for you. When she was dying, she still found a way to get you away from the Rose family.&#34;</p>
+                        
+                        <p>I clenched my fist. &#34;If she meant anything to you, you&#39;d want her back just as much as I do.&#34;</p>
+                        
+                        <p>Rachel let out a short, pained laugh. &#34;Blake, Audrey is dead. No amount of wishful thinking changes that.&#34;</p>
+                        
+                        <p>Her voice shook slightly. &#34;Do you think I don&#39;t wish she were alive? That I wouldn&#39;t give anything to have my friend back?&#34;</p>
+                        
+                        <p>&#34;Look at the evidence. Evelyn&#39;s records are all there - childhood photos,school records, marriage certificate. She even has a child with Adrian!&#34;</p>
+                        
+                        <p>I couldn&#39;t deny the facts. Evelyn Knox had a documented life in Australia that never overlapped with Audrey&#39;s American upbringing.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -923,25 +967,29 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>But something in me still refused to accept it. Two women with identical faces? That couldn&#39;t be coincidence.</p>
-                    
-                    <p>Rachel wiped away a tear. &#34;Audrey was my best friend. Of course I&#39;d be overjoyed if she were alive.&#34;</p>
-                    
-                    <p>She took a shaky breath. &#34;But she&#39;s gone, Blake. And she wouldn&#39;t want you harassing some stranger just because they look alikce.&#34;</p>
-                    
-                    <p>I stayed quiet for a long time, watching the road ahead. Finally, I had to ask, &#34;You really don&#39;t think she&#39;s Audrey?&#34;</p>
-                    
-                    <p>&#34;No,&#34; Rachel said. &#34;I don&#39;t.&#34;</p>
-                    
-                    <p>She straightened in her seat. &#34;Astrid handled her cremation. If Audrey were somehow alive, Astrid would know.&#34;</p>
-                    
-                    <p>&#34;Think about it. Would Astrid have spent months grieving if Audrey were still out there somewhere?&#34;</p>
-                    
-                    <p>Her words sank in, heavy and cold. After a long moment, I nodded.</p>
-                    
-                    <p>&#34;Fine. I promise.&#34; My voice sounded distant to my own ears. &#34;If Astrid confirms she&#39;s not Audrey, I&#39;ll drop it.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>But something in me still refused to accept it. Two women with identical faces? That couldn&#39;t be coincidence.</p>
+                        
+                        <p>Rachel wiped away a tear. &#34;Audrey was my best friend. Of course I&#39;d be overjoyed if she were alive.&#34;</p>
+                        
+                        <p>She took a shaky breath. &#34;But she&#39;s gone, Blake. And she wouldn&#39;t want you harassing some stranger just because they look alikce.&#34;</p>
+                        
+                        <p>I stayed quiet for a long time, watching the road ahead. Finally, I had to ask, &#34;You really don&#39;t think she&#39;s Audrey?&#34;</p>
+                        
+                        <p>&#34;No,&#34; Rachel said. &#34;I don&#39;t.&#34;</p>
+                        
+                        <p>She straightened in her seat. &#34;Astrid handled her cremation. If Audrey were somehow alive, Astrid would know.&#34;</p>
+                        
+                        <p>&#34;Think about it. Would Astrid have spent months grieving if Audrey were still out there somewhere?&#34;</p>
+                        
+                        <p>Her words sank in, heavy and cold. After a long moment, I nodded.</p>
+                        
+                        <p>&#34;Fine. I promise.&#34; My voice sounded distant to my own ears. &#34;If Astrid confirms she&#39;s not Audrey, I&#39;ll drop it.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -956,25 +1004,29 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>**Rachel&#39;s POV**</p>
-                    
-                    <p>&#34;I hope you&#39;ll keep that promise,&#34; I said, watching the hotel come into view.</p>
-                    
-                    <p>As the car stopped, I gave Blake one last look before getting out. My feelings were a mess - relief that he&#39;d agreed, worry that he might not follow through, and that persistent, painful hope that maybe, just maybe,he was right.</p>
-                    
-                    <p>Back in my room, I sat on the edge of the bed, staring at my phone.Finally, I found Thalia&#39;s number and hit dial.</p>
-                    
-                    <p>&#34;Rachel.&#34; Thalia&#39;s voice came through immediately.</p>
-                    
-                    <p>&#34;Is the cat taken care of?&#34; she asked.</p>
-                    
-                    <p>My hand tightened around the phone. &#34;Yes. I found someone to take her.&#34;</p>
-                    
-                    <p>&#34;Good,&#34; she replied, sounding pleased.</p>
-                    
-                    <p>**Thalia&#39;s POV**</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>**Rachel&#39;s POV**</p>
+                        
+                        <p>&#34;I hope you&#39;ll keep that promise,&#34; I said, watching the hotel come into view.</p>
+                        
+                        <p>As the car stopped, I gave Blake one last look before getting out. My feelings were a mess - relief that he&#39;d agreed, worry that he might not follow through, and that persistent, painful hope that maybe, just maybe,he was right.</p>
+                        
+                        <p>Back in my room, I sat on the edge of the bed, staring at my phone.Finally, I found Thalia&#39;s number and hit dial.</p>
+                        
+                        <p>&#34;Rachel.&#34; Thalia&#39;s voice came through immediately.</p>
+                        
+                        <p>&#34;Is the cat taken care of?&#34; she asked.</p>
+                        
+                        <p>My hand tightened around the phone. &#34;Yes. I found someone to take her.&#34;</p>
+                        
+                        <p>&#34;Good,&#34; she replied, sounding pleased.</p>
+                        
+                        <p>**Thalia&#39;s POV**</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -989,25 +1041,29 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>I shifted in the makeup chair, careful not to disturb the artist applying my</p>
-                    
-                    <p>false eyelashes.</p>
-                    
-                    <p>&#34;My brother&#39;s been carrying that cat everywhere,&#34; I said. &#34;It&#39;s disgusting.&#34;</p>
-                    
-                    <p>Every time I saw that white furball, I couldn&#39;t help but think of Audrey Sinclair. And thinking of her always led back to that boarding school Blake sent us to.</p>
-                    
-                    <p>My fingers dug into the armrest. That place wasn&#39;t a school - it was prison.</p>
-                    
-                    <p>The &#34;teachers&#34; forced us to stand in freezing rain for hours. They made us run laps at 3 AM. They called us worthless, pathetic,spoiled.</p>
-                    
-                    <p>And they hit us. Actually hit us.</p>
-                    
-                    <p>How were Olivia and I supposed to handle that? We called our mothers daily,begging them to convince Blake to let us come home.</p>
-                    
-                    <p>I can still hear hiscold response: &#34;I sent them there because of their status.Prison wouldn&#39;t give them what they deserve.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>I shifted in the makeup chair, careful not to disturb the artist applying my</p>
+                        
+                        <p>false eyelashes.</p>
+                        
+                        <p>&#34;My brother&#39;s been carrying that cat everywhere,&#34; I said. &#34;It&#39;s disgusting.&#34;</p>
+                        
+                        <p>Every time I saw that white furball, I couldn&#39;t help but think of Audrey Sinclair. And thinking of her always led back to that boarding school Blake sent us to.</p>
+                        
+                        <p>My fingers dug into the armrest. That place wasn&#39;t a school - it was prison.</p>
+                        
+                        <p>The &#34;teachers&#34; forced us to stand in freezing rain for hours. They made us run laps at 3 AM. They called us worthless, pathetic,spoiled.</p>
+                        
+                        <p>And they hit us. Actually hit us.</p>
+                        
+                        <p>How were Olivia and I supposed to handle that? We called our mothers daily,begging them to convince Blake to let us come home.</p>
+                        
+                        <p>I can still hear hiscold response: &#34;I sent them there because of their status.Prison wouldn&#39;t give them what they deserve.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1022,25 +1078,29 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;Everything those teachers are doing has my approval.&#34;</p>
-                    
-                    <p>&#34;I need them to experience at school ten times all the grievances Audrey endured over those three years!&#34;</p>
-                    
-                    <p>Blake actually had to spell it out before Olivia and I got it. Everything those teachers did to us matched what we&#39;d done to Audrey.</p>
-                    
-                    <p>Those months at that school broke us. And Blake made it worse by hiring doctors to patch us up each night so we&#39;d be ready for more &#34;discipline&#34;the next day.</p>
-                    
-                    <p>If my grandfather hadn&#39;t nearly died last month, forcing Blake to bring everyone back to New York, we&#39;d still be trapped there for the full five</p>
-                    
-                    <p>years.</p>
-                    
-                    <p>All because of Audrey.</p>
-                    
-                    <p>That&#39;s why seeing Blake with that cat drove me crazy. He sent his own sister away, but couldn&#39;t part with a dead woman&#39;s pet. The CEO of Parker Group carrying around a cat to board meetings like some grieving widower.</p>
-                    
-                    <p>I tried to get rid of that cat once. Rachel caught me. Before we came to Long Island, she pulled me aside, telling me she would handle the cat.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;Everything those teachers are doing has my approval.&#34;</p>
+                        
+                        <p>&#34;I need them to experience at school ten times all the grievances Audrey endured over those three years!&#34;</p>
+                        
+                        <p>Blake actually had to spell it out before Olivia and I got it. Everything those teachers did to us matched what we&#39;d done to Audrey.</p>
+                        
+                        <p>Those months at that school broke us. And Blake made it worse by hiring doctors to patch us up each night so we&#39;d be ready for more &#34;discipline&#34;the next day.</p>
+                        
+                        <p>If my grandfather hadn&#39;t nearly died last month, forcing Blake to bring everyone back to New York, we&#39;d still be trapped there for the full five</p>
+                        
+                        <p>years.</p>
+                        
+                        <p>All because of Audrey.</p>
+                        
+                        <p>That&#39;s why seeing Blake with that cat drove me crazy. He sent his own sister away, but couldn&#39;t part with a dead woman&#39;s pet. The CEO of Parker Group carrying around a cat to board meetings like some grieving widower.</p>
+                        
+                        <p>I tried to get rid of that cat once. Rachel caught me. Before we came to Long Island, she pulled me aside, telling me she would handle the cat.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1055,19 +1115,23 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Through the phone, Rachel&#39;s voice came through, &#34;Relax,Blake won&#39;t keep the cat any more.&#34;</p>
-                    
-                    <p>Then she mentioned something useful. &#34;Astrid Wilson will probably be at tonight&#39;s gala.&#34;</p>
-                    
-                    <p>&#34;Don&#39;t mention Blake giving away the cat to her. She cares about it as much as he does.&#34;</p>
-                    
-                    <p>That got my attention. Astrid cared abouIt the cat?</p>
-                    
-                    <p>&#34;I won&#39;t say a word,&#34; I promised.</p>
-                    
-                    <p>As if. Perfect chance to mess with Audrey&#39;s bestie? I wouldn&#39;t miss it for the world.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Through the phone, Rachel&#39;s voice came through, &#34;Relax,Blake won&#39;t keep the cat any more.&#34;</p>
+                        
+                        <p>Then she mentioned something useful. &#34;Astrid Wilson will probably be at tonight&#39;s gala.&#34;</p>
+                        
+                        <p>&#34;Don&#39;t mention Blake giving away the cat to her. She cares about it as much as he does.&#34;</p>
+                        
+                        <p>That got my attention. Astrid cared abouIt the cat?</p>
+                        
+                        <p>&#34;I won&#39;t say a word,&#34; I promised.</p>
+                        
+                        <p>As if. Perfect chance to mess with Audrey&#39;s bestie? I wouldn&#39;t miss it for the world.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2383,6 +2447,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2509,7 +2653,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2551,32 +2694,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2587,21 +2712,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2634,6 +2749,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2654,20 +2775,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

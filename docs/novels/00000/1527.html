@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>&#34;I was there during the first round of auditions supporting other hopefuls when I saw Vivian Hartley in person. She&#39;s absolutely luminous - a rare gem that outshines all these so-called A-list actresses. Let&#39;s be honest, Serena can&#39;t hold a candle to her!&#34;</p>
-                    
-                    <p>&#34;Serena&#39;s acting range has plateaued since her debut. Every role since has been a carbon copy of the last - safe, predictable, and utterly uninspired. It&#39;s obvious she&#39;s coasting on industry connections rather than talent. No wonder she lost the role to someone fresh.&#34;</p>
-                    
-                    <p>But Serena&#39;s loyalists swiftly mobilized to silence dissent. They circulated &#34;proof&#34; that Vivian - an unknown newcomer - couldn&#39;t possibly have beaten an established star like Serena without powerful backers pulling strings.</p>
-                    
-                    <p>The entertainment world knew Serena&#39;s credentials were impeccable, her reputation built through years of careful cultivation. Yet here was Vivian, seemingly emerging from nowhere to challenge her - exactly the scenario Serena&#39;s fans painted of a pretty face propped up by some wealthy benefactor. Vivian&#39;s striking beauty only reinforced their narrative, making even neutral observers nod in reluctant agreement.</p>
-                    
-                    <p>Human nature struggles to believe extraordinary beauty comes without hidden patronage. Overnight, Vivian&#39;s rising star imploded before she could even enjoy her breakthrough, her reputation in freefall.</p>
-                    
-                    <p>In her sterile hospital suite, Serena scrolled through the social media storm with predatory satisfaction. A venomous smile curled her lips as she absorbed the vitriol directed at Vivian. The transformation was startling - where hours earlier she&#39;d appeared wan and fragile during her confrontation with Adrian, now she radiated malicious vitality.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>&#34;I was there during the first round of auditions supporting other hopefuls when I saw Vivian Hartley in person. She&#39;s absolutely luminous - a rare gem that outshines all these so-called A-list actresses. Let&#39;s be honest, Serena can&#39;t hold a candle to her!&#34;</p>
+                        
+                        <p>&#34;Serena&#39;s acting range has plateaued since her debut. Every role since has been a carbon copy of the last - safe, predictable, and utterly uninspired. It&#39;s obvious she&#39;s coasting on industry connections rather than talent. No wonder she lost the role to someone fresh.&#34;</p>
+                        
+                        <p>But Serena&#39;s loyalists swiftly mobilized to silence dissent. They circulated &#34;proof&#34; that Vivian - an unknown newcomer - couldn&#39;t possibly have beaten an established star like Serena without powerful backers pulling strings.</p>
+                        
+                        <p>The entertainment world knew Serena&#39;s credentials were impeccable, her reputation built through years of careful cultivation. Yet here was Vivian, seemingly emerging from nowhere to challenge her - exactly the scenario Serena&#39;s fans painted of a pretty face propped up by some wealthy benefactor. Vivian&#39;s striking beauty only reinforced their narrative, making even neutral observers nod in reluctant agreement.</p>
+                        
+                        <p>Human nature struggles to believe extraordinary beauty comes without hidden patronage. Overnight, Vivian&#39;s rising star imploded before she could even enjoy her breakthrough, her reputation in freefall.</p>
+                        
+                        <p>In her sterile hospital suite, Serena scrolled through the social media storm with predatory satisfaction. A venomous smile curled her lips as she absorbed the vitriol directed at Vivian. The transformation was startling - where hours earlier she&#39;d appeared wan and fragile during her confrontation with Adrian, now she radiated malicious vitality.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Meanwhile, Lydia&#39;s voice remained an island of calm in the tempest. &#34;Don&#39;t waste energy worrying about the trending drama,&#34; she assured Vivian with unshakable confidence. &#34;I&#39;ll handle the fallout. You just focus on resting at home.&#34;</p>
-                    
-                    <p>After Vivian&#39;s grateful nod, Lydia hurried off. Alone in her spacious 90-square-meter loft, Vivian felt the weight of helplessness press down. The apartment, meticulously cleaned by Lydia, offered sanctuary with its minimalist white palette warmed by golden lighting and crisp new linens.</p>
-                    
-                    <p>After a quick shower and change into pajamas, Vivian sank into the plush mattress, her exhausted body melting into the comfort. But sleep eluded her as the social media maelstrom pulled at her thoughts. How had she, a complete unknown, become overnight fodder for public debate alongside an established star like Serena? The surreal situation reeked of orchestration.</p>
-                    
-                    <p>The more Vivian analyzed, the clearer it became - Serena&#39;s powerful connections were likely engineering this spectacle. Rather than reacting impulsively, Vivian resolved to consult her most well-connected friend: Audrey Winslow.</p>
-                    
-                    <p>Audrey wasn&#39;t just any friend. As the daughter of an entertainment titan, she moved through celebrity circles with insider knowledge most could only dream of. Her wealth and connections gave her unparalleled access to stars, paparazzi, and media power players, making her a walking encyclopedia of industry secrets.</p>
-                    
-                    <p>Over the years, Audrey had shared countless verified celebrity scoops with Vivian. Now, Vivian texted her the entire situation. Audrey&#39;s reply came swiftly: &#34;Do we even need to investigate? This has Serena&#39;s fingerprints all over it!&#34; Yet true to form, she immediately began verifying her suspicions.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Meanwhile, Lydia&#39;s voice remained an island of calm in the tempest. &#34;Don&#39;t waste energy worrying about the trending drama,&#34; she assured Vivian with unshakable confidence. &#34;I&#39;ll handle the fallout. You just focus on resting at home.&#34;</p>
+                        
+                        <p>After Vivian&#39;s grateful nod, Lydia hurried off. Alone in her spacious 90-square-meter loft, Vivian felt the weight of helplessness press down. The apartment, meticulously cleaned by Lydia, offered sanctuary with its minimalist white palette warmed by golden lighting and crisp new linens.</p>
+                        
+                        <p>After a quick shower and change into pajamas, Vivian sank into the plush mattress, her exhausted body melting into the comfort. But sleep eluded her as the social media maelstrom pulled at her thoughts. How had she, a complete unknown, become overnight fodder for public debate alongside an established star like Serena? The surreal situation reeked of orchestration.</p>
+                        
+                        <p>The more Vivian analyzed, the clearer it became - Serena&#39;s powerful connections were likely engineering this spectacle. Rather than reacting impulsively, Vivian resolved to consult her most well-connected friend: Audrey Winslow.</p>
+                        
+                        <p>Audrey wasn&#39;t just any friend. As the daughter of an entertainment titan, she moved through celebrity circles with insider knowledge most could only dream of. Her wealth and connections gave her unparalleled access to stars, paparazzi, and media power players, making her a walking encyclopedia of industry secrets.</p>
+                        
+                        <p>Over the years, Audrey had shared countless verified celebrity scoops with Vivian. Now, Vivian texted her the entire situation. Audrey&#39;s reply came swiftly: &#34;Do we even need to investigate? This has Serena&#39;s fingerprints all over it!&#34; Yet true to form, she immediately began verifying her suspicions.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>[To be continued...]</p>
-                    
-                    <p>Audrey&#39;s message exploded in Vivian&#39;s inbox like a grenade—a damning screenshot that validated her darkest fears. Without hesitation, Vivian forwarded the smoking gun to Lydia.</p>
-                    
-                    <p>Lydia, who&#39;d been struggling to contain the PR nightmare, unleashed a torrent of voice messages. &#34;Now we&#39;ve got the ammunition to expose the mastermind behind this circus. Remember those unaired audition tapes? I&#39;m tracking them down. Once we leak those clips, that snake will finally get what&#39;s coming to her.&#34;</p>
-                    
-                    <p>&#34;Seriously though, what&#39;s her obsession with destroying you? From your first day in this industry, Serena&#39;s been sabotaging your every move. Now this? She&#39;s practically trying to erase you from Hollywood! Probably thinks she&#39;s untouchable with Adrian Blackwood backing her. But mark my words—this time, she&#39;s going down. No more playing nice.&#34;</p>
-                    
-                    <p>The second audition&#39;s shady circumstances—only two candidates and questionable financial arrangements—had convinced the director to skip proper documentation. Exactly as Serena had planned, leaving Vivian defenseless.</p>
-                    
-                    <p>When Vivian shared this detail, Lydia&#39;s lips curled into a predatory smile. &#34;Then let&#39;s dig up Serena&#39;s disastrous first audition. Even with twenty actresses competing, her mediocre performance somehow landed the lead role. Imagine the scandal if that footage surfaces. Might even inspire someone to... handle the problem for us.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>[To be continued...]</p>
+                        
+                        <p>Audrey&#39;s message exploded in Vivian&#39;s inbox like a grenade—a damning screenshot that validated her darkest fears. Without hesitation, Vivian forwarded the smoking gun to Lydia.</p>
+                        
+                        <p>Lydia, who&#39;d been struggling to contain the PR nightmare, unleashed a torrent of voice messages. &#34;Now we&#39;ve got the ammunition to expose the mastermind behind this circus. Remember those unaired audition tapes? I&#39;m tracking them down. Once we leak those clips, that snake will finally get what&#39;s coming to her.&#34;</p>
+                        
+                        <p>&#34;Seriously though, what&#39;s her obsession with destroying you? From your first day in this industry, Serena&#39;s been sabotaging your every move. Now this? She&#39;s practically trying to erase you from Hollywood! Probably thinks she&#39;s untouchable with Adrian Blackwood backing her. But mark my words—this time, she&#39;s going down. No more playing nice.&#34;</p>
+                        
+                        <p>The second audition&#39;s shady circumstances—only two candidates and questionable financial arrangements—had convinced the director to skip proper documentation. Exactly as Serena had planned, leaving Vivian defenseless.</p>
+                        
+                        <p>When Vivian shared this detail, Lydia&#39;s lips curled into a predatory smile. &#34;Then let&#39;s dig up Serena&#39;s disastrous first audition. Even with twenty actresses competing, her mediocre performance somehow landed the lead role. Imagine the scandal if that footage surfaces. Might even inspire someone to... handle the problem for us.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Vivian trusted Lydia&#39;s strategic brilliance implicitly. As she was about to respond, her phone buzzed with an unexpected message from her entertainment lawyer handling her screenplay contracts. &#34;Ms. Hartley, are you awake?&#34;</p>
-                    
-                    <p>The deal had closed weeks ago. Vivian frowned at the odd timing. &#34;I&#39;m up. What&#39;s wrong?&#34;</p>
-                    
-                    <p>The lawyer sounded both excited and cautious. &#34;Ivory Phoenix Productions wants an in-person meeting regarding your screenplay.&#34;</p>
-                    
-                    <p>Vivian&#39;s grip tightened on her phone. &#34;Why?&#34; She&#39;d deliberately avoided direct contact with buyers, preferring to let her legal team handle negotiations. This sudden request set off alarm bells.</p>
-                    
-                    <p>&#34;They&#39;re extremely passionate about your script. Apparently they&#39;re rushing production to compete with &#39;Blazing Horizon&#39;—which Serena Whitmore just signed onto as lead. With most A-list actresses already committed to other projects, they&#39;re considering open auditions. They want your input as the writer during casting.&#34;</p>
-                    
-                    <p>The realization struck Vivian like lightning.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Vivian trusted Lydia&#39;s strategic brilliance implicitly. As she was about to respond, her phone buzzed with an unexpected message from her entertainment lawyer handling her screenplay contracts. &#34;Ms. Hartley, are you awake?&#34;</p>
+                        
+                        <p>The deal had closed weeks ago. Vivian frowned at the odd timing. &#34;I&#39;m up. What&#39;s wrong?&#34;</p>
+                        
+                        <p>The lawyer sounded both excited and cautious. &#34;Ivory Phoenix Productions wants an in-person meeting regarding your screenplay.&#34;</p>
+                        
+                        <p>Vivian&#39;s grip tightened on her phone. &#34;Why?&#34; She&#39;d deliberately avoided direct contact with buyers, preferring to let her legal team handle negotiations. This sudden request set off alarm bells.</p>
+                        
+                        <p>&#34;They&#39;re extremely passionate about your script. Apparently they&#39;re rushing production to compete with &#39;Blazing Horizon&#39;—which Serena Whitmore just signed onto as lead. With most A-list actresses already committed to other projects, they&#39;re considering open auditions. They want your input as the writer during casting.&#34;</p>
+                        
+                        <p>The realization struck Vivian like lightning.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>The protagonist in her script was essentially her fictional doppelgänger—no one could play that role better than herself. Serena had stolen not just her fiancé but now her dream role, all while orchestrating this smear campaign. The message was clear: Serena wanted her erased from the industry.</p>
-                    
-                    <p>But Vivian had reached her breaking point. As opportunities dwindled, fate had just handed her a loaded gun.</p>
-                    
-                    <p>Her fingers flew across the screen. &#34;No need for auditions. I already have the perfect lead. Set up the meeting.&#34;</p>
-                    
-                    <p>Meanwhile, as twilight painted the sky, the Blackwood Group headquarters stood mostly dark—except for one illuminated corner office. Adrian sat behind his mahogany desk, fingers drumming an impatient rhythm. His assistant Ethan entered with the latest social media analytics report.</p>
-                    
-                    <p>The numbers were catastrophic.</p>
-                    
-                    <p>Adrian&#39;s jaw clenched as he scanned the trending hashtags—all variations of #VivianHartleyIsOver. His phone buzzed with Serena&#39;s tenth call of the evening. He silenced it without looking.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>The protagonist in her script was essentially her fictional doppelgänger—no one could play that role better than herself. Serena had stolen not just her fiancé but now her dream role, all while orchestrating this smear campaign. The message was clear: Serena wanted her erased from the industry.</p>
+                        
+                        <p>But Vivian had reached her breaking point. As opportunities dwindled, fate had just handed her a loaded gun.</p>
+                        
+                        <p>Her fingers flew across the screen. &#34;No need for auditions. I already have the perfect lead. Set up the meeting.&#34;</p>
+                        
+                        <p>Meanwhile, as twilight painted the sky, the Blackwood Group headquarters stood mostly dark—except for one illuminated corner office. Adrian sat behind his mahogany desk, fingers drumming an impatient rhythm. His assistant Ethan entered with the latest social media analytics report.</p>
+                        
+                        <p>The numbers were catastrophic.</p>
+                        
+                        <p>Adrian&#39;s jaw clenched as he scanned the trending hashtags—all variations of #VivianHartleyIsOver. His phone buzzed with Serena&#39;s tenth call of the evening. He silenced it without looking.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Something wasn&#39;t adding up. The timing was too perfect, the backlash too coordinated. Someone had orchestrated this takedown, and Adrian had a sinking suspicion he knew exactly who.</p>
-                    
-                    <p>Ethan cleared his throat. &#34;Sir, the board is demanding—&#34;</p>
-                    
-                    <p>&#34;Tell them to wait,&#34; Adrian snapped, pulling up Vivian&#39;s contact. His thumb hovered over the call button. Three years of silence between them. Would she even answer?</p>
-                    
-                    <p>Across town, Vivian stood before her floor-to-ceiling windows, watching the same sunset paint the skyline crimson. Her phone vibrated with an unknown number. Something—instinct, perhaps—made her answer.</p>
-                    
-                    <p>&#34;Vivian Hartley.&#34; Her professional tone belied the storm of emotions.</p>
-                    
-                    <p>A beat of silence. Then that voice—the one that still haunted her dreams—whispered through the receiver: &#34;We need to talk.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Something wasn&#39;t adding up. The timing was too perfect, the backlash too coordinated. Someone had orchestrated this takedown, and Adrian had a sinking suspicion he knew exactly who.</p>
+                        
+                        <p>Ethan cleared his throat. &#34;Sir, the board is demanding—&#34;</p>
+                        
+                        <p>&#34;Tell them to wait,&#34; Adrian snapped, pulling up Vivian&#39;s contact. His thumb hovered over the call button. Three years of silence between them. Would she even answer?</p>
+                        
+                        <p>Across town, Vivian stood before her floor-to-ceiling windows, watching the same sunset paint the skyline crimson. Her phone vibrated with an unknown number. Something—instinct, perhaps—made her answer.</p>
+                        
+                        <p>&#34;Vivian Hartley.&#34; Her professional tone belied the storm of emotions.</p>
+                        
+                        <p>A beat of silence. Then that voice—the one that still haunted her dreams—whispered through the receiver: &#34;We need to talk.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>The digital storm surrounding Vivian Hartley showed no signs of abating. &#34;The online backlash against Mrs. Blackwood is intensifying. Should I intervene and suppress the trending hashtags?&#34; Ethan Caldwell inquired cautiously, watching Adrian Blackwood&#39;s reaction closely. The recent tension between Vivian and Adrian had created an atmosphere thick with unspoken words, making Ethan hesitant to act without explicit instructions.</p>
-                    
-                    <p>&#34;Let it be,&#34; Adrian commanded, his fingers stilling abruptly on the mahogany desk. His obsidian eyes darkened as they caught sight of the faint teeth marks on his wrist, his lips curling into a sardonic smirk. &#34;If Vivian believes she can make it on her own, let her weather this storm alone. If a mere social media frenzy breaks her, how will she survive the viper&#39;s nest of Hollywood?&#34;</p>
-                    
-                    <p>&#34;Understood, Mr. Blackwood,&#34; Ethan replied, relief coloring his tone at having sought clarification. As he turned to leave, Adrian&#39;s voice stopped him mid-step. &#34;Ensure Serena remains untouched by this mess. Her constitution is delicate, and unnecessary stress could trigger another episode. Monitor the comment sections - I won&#39;t have her dragged into this circus.&#34;</p>
-                    
-                    <p>Ethan&#39;s eyebrows shot up in surprise at the unexpected directive. He opened his mouth to respond but thought better of it when he saw the icy detachment in Adrian&#39;s gaze. With a silent nod, he retreated from the office. Adrian noted his assistant&#39;s hesitation but remained unmoved, watching the door click shut behind him.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>The digital storm surrounding Vivian Hartley showed no signs of abating. &#34;The online backlash against Mrs. Blackwood is intensifying. Should I intervene and suppress the trending hashtags?&#34; Ethan Caldwell inquired cautiously, watching Adrian Blackwood&#39;s reaction closely. The recent tension between Vivian and Adrian had created an atmosphere thick with unspoken words, making Ethan hesitant to act without explicit instructions.</p>
+                        
+                        <p>&#34;Let it be,&#34; Adrian commanded, his fingers stilling abruptly on the mahogany desk. His obsidian eyes darkened as they caught sight of the faint teeth marks on his wrist, his lips curling into a sardonic smirk. &#34;If Vivian believes she can make it on her own, let her weather this storm alone. If a mere social media frenzy breaks her, how will she survive the viper&#39;s nest of Hollywood?&#34;</p>
+                        
+                        <p>&#34;Understood, Mr. Blackwood,&#34; Ethan replied, relief coloring his tone at having sought clarification. As he turned to leave, Adrian&#39;s voice stopped him mid-step. &#34;Ensure Serena remains untouched by this mess. Her constitution is delicate, and unnecessary stress could trigger another episode. Monitor the comment sections - I won&#39;t have her dragged into this circus.&#34;</p>
+                        
+                        <p>Ethan&#39;s eyebrows shot up in surprise at the unexpected directive. He opened his mouth to respond but thought better of it when he saw the icy detachment in Adrian&#39;s gaze. With a silent nod, he retreated from the office. Adrian noted his assistant&#39;s hesitation but remained unmoved, watching the door click shut behind him.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

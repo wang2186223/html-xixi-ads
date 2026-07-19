@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.351564">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.351564">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.358763">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.358763">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.351564",
-        "dateModified": "2026-07-19T02:47:23.351564",
+        "datePublished": "2026-07-19T13:03:18.358763",
+        "dateModified": "2026-07-19T13:03:18.358763",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,21 +893,25 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Philip&#39;s POV</p>
-                    
-                    <p>My finger hovered over the &#34;approve&#34; button for another acquisition deal when Sarah&#39;s ringtone interrupted-that pretentious classical piece she&#39;d insisted on setting herself. I caught myself hoping it would go to voicemail.a new reaction that made me pause. When had I started dreading her calls?</p>
-                    
-                    <p>&#34;Philip?&#34; Her voice trembled with carefully crafted vulnerability.&#34;Something terrible happened this morning.&#34;</p>
-                    
-                    <p>I pinched the bridge of my nose, exhaustion seeping into my bones.&#34;What is it now,Sarah?&#34;</p>
-                    
-                    <p>&#34;Your mother-Betty-she came to my apartment this morning.&#34; Sarah&#39;s voice cracked perfectly on cue. &#34;She just started attacking me, saying the most horrible things about how I&#39;m poisoning Brian against his family.&#34;</p>
-                    
-                    <p>My fingers drummed against the mahogany desk, a habit I&#39;d developed during particularly trying board meetings. &#34;What exactly did she say?&#34;</p>
-                    
-                    <p>&#34;She threatened me, Philip! Said I needed to stay away from Brian,that I was a bad influence.&#34; Sarah&#39;s sob caught in her throat. &#34;I&#39;m in such a fragile state right now... what if this affects my relationship with the children?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Philip&#39;s POV</p>
+                        
+                        <p>My finger hovered over the &#34;approve&#34; button for another acquisition deal when Sarah&#39;s ringtone interrupted-that pretentious classical piece she&#39;d insisted on setting herself. I caught myself hoping it would go to voicemail.a new reaction that made me pause. When had I started dreading her calls?</p>
+                        
+                        <p>&#34;Philip?&#34; Her voice trembled with carefully crafted vulnerability.&#34;Something terrible happened this morning.&#34;</p>
+                        
+                        <p>I pinched the bridge of my nose, exhaustion seeping into my bones.&#34;What is it now,Sarah?&#34;</p>
+                        
+                        <p>&#34;Your mother-Betty-she came to my apartment this morning.&#34; Sarah&#39;s voice cracked perfectly on cue. &#34;She just started attacking me, saying the most horrible things about how I&#39;m poisoning Brian against his family.&#34;</p>
+                        
+                        <p>My fingers drummed against the mahogany desk, a habit I&#39;d developed during particularly trying board meetings. &#34;What exactly did she say?&#34;</p>
+                        
+                        <p>&#34;She threatened me, Philip! Said I needed to stay away from Brian,that I was a bad influence.&#34; Sarah&#39;s sob caught in her throat. &#34;I&#39;m in such a fragile state right now... what if this affects my relationship with the children?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -886,21 +926,25 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>The word &#39;fragile&#39; grated against my nerves. Before, Annie had managed our entire household while supporting my startup dreams, never once claiming fragility despite the genuine struggleswe faced.</p>
-                    
-                    <p>&#34;I&#39;ll talk to my mother,&#34; I replied mechanically, already drafting a mental script for that conversation.</p>
-                    
-                    <p>&#34;You don&#39;t understand how hard this is for me,&#34; Sarah pressed, her voice taking on that particular wheedling tone that had once seemed charming.&#34;With Robert&#39;s continued harassment, and now your mother...&#34;</p>
-                    
-                    <p>&#34;I said I&#39;ll handle it.&#34; The words came out sharper than intended.</p>
-                    
-                    <p>After ending the call, I sank into the leather couch by the window,letting my head fall back against the cool material. When had Sarah&#39;s voice become so... grating? The realization struck me: it wasn&#39;t her voice that had changed, but my perception of it.</p>
-                    
-                    <p>Every conversation now followed the same pattern-Sarah encountering some crisis, requiring my intervention, leading to family tension that I needed to smooth over. The cycle was exhausting, yet somehow familiar.Then it hit me: this was exactly what Annie had accused me of during our divorce-creating constant drama that required her emotional labor to resolve.</p>
-                    
-                    <p>I found myself absently straightening the family photo on my desk-the one from six years ago, with Annie and Brian at his kindergarten graduation. A habit I thought I&#39;d broken. The sight of Annie&#39;s genuine smile in that photo twisted something in my chest. She&#39;d never needed an audience for her devotion to our family, never turned every minor incident into a three-act drama requiring my intervention.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>The word &#39;fragile&#39; grated against my nerves. Before, Annie had managed our entire household while supporting my startup dreams, never once claiming fragility despite the genuine struggleswe faced.</p>
+                        
+                        <p>&#34;I&#39;ll talk to my mother,&#34; I replied mechanically, already drafting a mental script for that conversation.</p>
+                        
+                        <p>&#34;You don&#39;t understand how hard this is for me,&#34; Sarah pressed, her voice taking on that particular wheedling tone that had once seemed charming.&#34;With Robert&#39;s continued harassment, and now your mother...&#34;</p>
+                        
+                        <p>&#34;I said I&#39;ll handle it.&#34; The words came out sharper than intended.</p>
+                        
+                        <p>After ending the call, I sank into the leather couch by the window,letting my head fall back against the cool material. When had Sarah&#39;s voice become so... grating? The realization struck me: it wasn&#39;t her voice that had changed, but my perception of it.</p>
+                        
+                        <p>Every conversation now followed the same pattern-Sarah encountering some crisis, requiring my intervention, leading to family tension that I needed to smooth over. The cycle was exhausting, yet somehow familiar.Then it hit me: this was exactly what Annie had accused me of during our divorce-creating constant drama that required her emotional labor to resolve.</p>
+                        
+                        <p>I found myself absently straightening the family photo on my desk-the one from six years ago, with Annie and Brian at his kindergarten graduation. A habit I thought I&#39;d broken. The sight of Annie&#39;s genuine smile in that photo twisted something in my chest. She&#39;d never needed an audience for her devotion to our family, never turned every minor incident into a three-act drama requiring my intervention.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -915,21 +959,25 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Even during our worst arguments, she&#39;d maintained her dignity. She&#39;d never weaponized tears or manipulation, never played the victim. The contrast with Sarah&#39;s behavior this morning was stark and uncomfortable.</p>
-                    
-                    <p>The intercom buzzed, my secret&#39;s voice cutting through my reverie.&#34;Mr.Baker, your mother is on line one.&#34;</p>
-                    
-                    <p>I reached for the phone, bracing myself. &#34;Mother.&#34;</p>
-                    
-                    <p>&#34;Philip.&#34; Betty&#39;s voice carried that particular tone of disappointment she&#39;d perfected over the years. &#34;I assume Sarah&#39;s already given you her version of events?&#34;</p>
-                    
-                    <p>&#34;She said you confronted her at her apartment-&#34;</p>
-                    
-                    <p>&#34;Confronted?&#34; Betty&#39;s laugh was sharp. &#34;I simply expressed concern about Brian&#39;s recent behavior. That woman has him parroting the most awful things about Annie.&#34;</p>
-                    
-                    <p>I shifted in my chair. &#34;Sarah&#39;s going through a difficult time-&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Even during our worst arguments, she&#39;d maintained her dignity. She&#39;d never weaponized tears or manipulation, never played the victim. The contrast with Sarah&#39;s behavior this morning was stark and uncomfortable.</p>
+                        
+                        <p>The intercom buzzed, my secret&#39;s voice cutting through my reverie.&#34;Mr.Baker, your mother is on line one.&#34;</p>
+                        
+                        <p>I reached for the phone, bracing myself. &#34;Mother.&#34;</p>
+                        
+                        <p>&#34;Philip.&#34; Betty&#39;s voice carried that particular tone of disappointment she&#39;d perfected over the years. &#34;I assume Sarah&#39;s already given you her version of events?&#34;</p>
+                        
+                        <p>&#34;She said you confronted her at her apartment-&#34;</p>
+                        
+                        <p>&#34;Confronted?&#34; Betty&#39;s laugh was sharp. &#34;I simply expressed concern about Brian&#39;s recent behavior. That woman has him parroting the most awful things about Annie.&#34;</p>
+                        
+                        <p>I shifted in my chair. &#34;Sarah&#39;s going through a difficult time-&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -944,21 +992,25 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Oh, spare me.&#34; Betty&#39;s patience clearly had its limits. &#34;Sarah&#39;s &#39;difficult time&#39; seems to consist mainly of shopping sprees and manipulating my grandson. Meanwhile, Brian is the one truly suffering.&#34;</p>
-                    
-                    <p>&#34;Mother-&#34;</p>
-                    
-                    <p>&#34;No, you listen to me, Philip. Brian is your *son*. Your actual, flesh-and-blood child.&#34; Betty&#39;s voice softened slightly. &#34;You know, I never truly appreciated Annie until she was gone. She never complained, never tried to come between you and Brian. Do you remember how she used to make those special healthy snacks he loved, even when you were barely breaking even with the company?&#34;</p>
-                    
-                    <p>The memory hit hard-Annie in our tiny kitchen, carefully preparing Brian&#39;s allergy-safe treats while I worked late into the night. She&#39;d never once mentioned how tight our budget was, never complained about the sacrifices she made.</p>
-                    
-                    <p>&#34;I&#39;ll talk to Sarah,&#34; I promised weakly.</p>
-                    
-                    <p>&#34;That&#39;s not enough anymore, Philip.&#34; Betty&#39;s sigh carried years of maternal concern. &#34;You need to really think about what&#39;s best for Brian. And for yourself.&#34; The credit card statements landed on my desk with the weight of an accusation. Each page I turned revealed another of Sarah&#39;s extravagant purchases-designer bags,jewelry, furniture. The total made my throat tight:nearly two million dollars in three months. The same amount Annie had once suggested we invest in Brian&#39;s education fund.</p>
-                    
-                    <p>My hands shook as I reviewed the charges. Designer boutiques,jewelry stores,high-end furniture-a steady stream of extravagant purchases that dwarfed our household expenses during my entire marriage to Annie.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Oh, spare me.&#34; Betty&#39;s patience clearly had its limits. &#34;Sarah&#39;s &#39;difficult time&#39; seems to consist mainly of shopping sprees and manipulating my grandson. Meanwhile, Brian is the one truly suffering.&#34;</p>
+                        
+                        <p>&#34;Mother-&#34;</p>
+                        
+                        <p>&#34;No, you listen to me, Philip. Brian is your *son*. Your actual, flesh-and-blood child.&#34; Betty&#39;s voice softened slightly. &#34;You know, I never truly appreciated Annie until she was gone. She never complained, never tried to come between you and Brian. Do you remember how she used to make those special healthy snacks he loved, even when you were barely breaking even with the company?&#34;</p>
+                        
+                        <p>The memory hit hard-Annie in our tiny kitchen, carefully preparing Brian&#39;s allergy-safe treats while I worked late into the night. She&#39;d never once mentioned how tight our budget was, never complained about the sacrifices she made.</p>
+                        
+                        <p>&#34;I&#39;ll talk to Sarah,&#34; I promised weakly.</p>
+                        
+                        <p>&#34;That&#39;s not enough anymore, Philip.&#34; Betty&#39;s sigh carried years of maternal concern. &#34;You need to really think about what&#39;s best for Brian. And for yourself.&#34; The credit card statements landed on my desk with the weight of an accusation. Each page I turned revealed another of Sarah&#39;s extravagant purchases-designer bags,jewelry, furniture. The total made my throat tight:nearly two million dollars in three months. The same amount Annie had once suggested we invest in Brian&#39;s education fund.</p>
+                        
+                        <p>My hands shook as I reviewed the charges. Designer boutiques,jewelry stores,high-end furniture-a steady stream of extravagant purchases that dwarfed our household expenses during my entire marriage to Annie.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -973,21 +1025,25 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Annie, who had furnished our first apartment with carefully chosen second-hand pieces. Who had insisted on saving for Brian&#39;s education before buying herself new clothes. Who hadsupported every one of my business ventures without ever demanding compensation for her sacrifices.</p>
-                    
-                    <p>The contrast was nauseating. While Annie had helped build our life from nothing, Sarah was systematically draining resources without contributing anything of value. The realization hit me with the force of a physical blow:I had traded substance for shadow, reality for illusion.</p>
-                    
-                    <p>My fingers were already dialing Annie&#39;s number before I fully processed the decision.</p>
-                    
-                    <p>Twenty minutes later, I sat at an upscale café downtown. I&#39;d chosen it for its exclusivity, the kind of place I thought would impress Annie. But watching her walk in-steps measured, head high, that familiar hint of jasmine in her wake-I realized how little I truly understood her. She&#39;d never cared for pretense, had she?</p>
-                    
-                    <p>I pushed a menu toward her. &#34;They have excellent coffee-&#34;</p>
-                    
-                    <p>&#34;I don&#39;t drink coffee anymore.&#34; Annie&#39;s voice was neutral. &#34;The caffeine interferes with my creative work.&#34;</p>
-                    
-                    <p>The simple statement hit like a sledgehammer. After six years of marriage, I couldn&#39;t even remember such a basic preference. Had I ever really known her at all?</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Annie, who had furnished our first apartment with carefully chosen second-hand pieces. Who had insisted on saving for Brian&#39;s education before buying herself new clothes. Who hadsupported every one of my business ventures without ever demanding compensation for her sacrifices.</p>
+                        
+                        <p>The contrast was nauseating. While Annie had helped build our life from nothing, Sarah was systematically draining resources without contributing anything of value. The realization hit me with the force of a physical blow:I had traded substance for shadow, reality for illusion.</p>
+                        
+                        <p>My fingers were already dialing Annie&#39;s number before I fully processed the decision.</p>
+                        
+                        <p>Twenty minutes later, I sat at an upscale café downtown. I&#39;d chosen it for its exclusivity, the kind of place I thought would impress Annie. But watching her walk in-steps measured, head high, that familiar hint of jasmine in her wake-I realized how little I truly understood her. She&#39;d never cared for pretense, had she?</p>
+                        
+                        <p>I pushed a menu toward her. &#34;They have excellent coffee-&#34;</p>
+                        
+                        <p>&#34;I don&#39;t drink coffee anymore.&#34; Annie&#39;s voice was neutral. &#34;The caffeine interferes with my creative work.&#34;</p>
+                        
+                        <p>The simple statement hit like a sledgehammer. After six years of marriage, I couldn&#39;t even remember such a basic preference. Had I ever really known her at all?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1002,21 +1058,25 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;I made a mistake,&#34; I bluarted out. &#34;Divorcing you. I see that now.&#34;</p>
-                    
-                    <p>Annie&#39;s laugh held no humor. &#34;Really? You&#39;re only realizing this after Sarah&#39;s shown her true colors?&#34;</p>
-                    
-                    <p>&#34;It&#39;s not about Sarah-&#34;</p>
-                    
-                    <p>&#34;No, it&#39;s about you.&#34; Annie&#39;s eyes met mine directly. &#34;You&#39;re an abuser,Philip. A sophisticated one, but an abuser nonetheless. You didn&#39;t hit me or scream at me. You just slowly, systematically destroyed every part of me that didn&#39;t fit your ideal image.&#34;</p>
-                    
-                    <p>&#34;That&#39;s not-&#34;</p>
-                    
-                    <p>&#34;You undermined my confidence, dismissed my art as a hobby, isolated me from friends who might have helped me see the truth.&#34; Annie&#39;s voice remained steady. &#34;And now that your new relationship isn&#39;t providing the comfort and validation you crave, you think you can just come back?&#34;</p>
-                    
-                    <p>I stared at her, truly seeing her for perhaps the first time.&#34;Annie-&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;I made a mistake,&#34; I bluarted out. &#34;Divorcing you. I see that now.&#34;</p>
+                        
+                        <p>Annie&#39;s laugh held no humor. &#34;Really? You&#39;re only realizing this after Sarah&#39;s shown her true colors?&#34;</p>
+                        
+                        <p>&#34;It&#39;s not about Sarah-&#34;</p>
+                        
+                        <p>&#34;No, it&#39;s about you.&#34; Annie&#39;s eyes met mine directly. &#34;You&#39;re an abuser,Philip. A sophisticated one, but an abuser nonetheless. You didn&#39;t hit me or scream at me. You just slowly, systematically destroyed every part of me that didn&#39;t fit your ideal image.&#34;</p>
+                        
+                        <p>&#34;That&#39;s not-&#34;</p>
+                        
+                        <p>&#34;You undermined my confidence, dismissed my art as a hobby, isolated me from friends who might have helped me see the truth.&#34; Annie&#39;s voice remained steady. &#34;And now that your new relationship isn&#39;t providing the comfort and validation you crave, you think you can just come back?&#34;</p>
+                        
+                        <p>I stared at her, truly seeing her for perhaps the first time.&#34;Annie-&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1031,19 +1091,23 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;I have a good life now,&#34; she continued. &#34;I have work that fulfills me,people who value me, and most importantly, I finally understand my own worth. I wouldn&#39;t trade that for anything, least of all your belated regrets.&#34;</p>
-                    
-                    <p>&#34;I have a good life now,&#34; she said firmly. &#34;I agreed to meet today because I want to be clear: stop reaching out to me. I&#39;m not interested in your regrets or explanations.&#34;</p>
-                    
-                    <p>She stood, gathering her bag. &#34;You know what&#39;s ironic? You&#39;re not actually missing me - you&#39;re missing having someone who would sacrifice everything to make your life easier. But I&#39;m not that person anymore.&#34;I have a good life now,&#34; she said firmly. &#34;I agreed to meet today because I want to be clear: stop reaching out to me. I&#39;m not interested in your regrets or explanations.&#34;</p>
-                    
-                    <p>She stood,reaching for her wallet. &#34;You know what&#39;s ironic? You&#39;re not actually missing me - you&#39;re missing having someone who would sacrifice everything to make your life easier. But I&#39;m not that person anymore.&#34;She placed several bills on the table, more than enough to cover both drinks.&#34;Consider this the last transaction between us.&#34;</p>
-                    
-                    <p>I watched her walk away, somehing ugly and desperate clawing at my chest. The truth of her words burned like acid: I hadn&#39;t been thinking about Annie&#39;s happiness or growth, only about reclaiming what I&#39;d carelessly thrown away.</p>
-                    
-                    <p>The bills she&#39;d left seemed to mock me - a final, stinging reminder that she no longer needed anything from me, not even the hollow gesture of paying for her coffee.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;I have a good life now,&#34; she continued. &#34;I have work that fulfills me,people who value me, and most importantly, I finally understand my own worth. I wouldn&#39;t trade that for anything, least of all your belated regrets.&#34;</p>
+                        
+                        <p>&#34;I have a good life now,&#34; she said firmly. &#34;I agreed to meet today because I want to be clear: stop reaching out to me. I&#39;m not interested in your regrets or explanations.&#34;</p>
+                        
+                        <p>She stood, gathering her bag. &#34;You know what&#39;s ironic? You&#39;re not actually missing me - you&#39;re missing having someone who would sacrifice everything to make your life easier. But I&#39;m not that person anymore.&#34;I have a good life now,&#34; she said firmly. &#34;I agreed to meet today because I want to be clear: stop reaching out to me. I&#39;m not interested in your regrets or explanations.&#34;</p>
+                        
+                        <p>She stood,reaching for her wallet. &#34;You know what&#39;s ironic? You&#39;re not actually missing me - you&#39;re missing having someone who would sacrifice everything to make your life easier. But I&#39;m not that person anymore.&#34;She placed several bills on the table, more than enough to cover both drinks.&#34;Consider this the last transaction between us.&#34;</p>
+                        
+                        <p>I watched her walk away, somehing ugly and desperate clawing at my chest. The truth of her words burned like acid: I hadn&#39;t been thinking about Annie&#39;s happiness or growth, only about reclaiming what I&#39;d carelessly thrown away.</p>
+                        
+                        <p>The bills she&#39;d left seemed to mock me - a final, stinging reminder that she no longer needed anything from me, not even the hollow gesture of paying for her coffee.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2359,6 +2423,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2485,7 +2629,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2527,32 +2670,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2563,21 +2688,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2610,6 +2725,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2630,20 +2751,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

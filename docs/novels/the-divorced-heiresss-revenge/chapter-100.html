@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:15.513379">
-    <meta property="article:modified_time" content="2026-07-19T02:47:15.513379">
+    <meta property="article:published_time" content="2026-07-19T13:03:10.849026">
+    <meta property="article:modified_time" content="2026-07-19T13:03:10.849026">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:15">
+    <meta name="last-modified" content="2026-07-19 13:03:10">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:15.513379",
-        "dateModified": "2026-07-19T02:47:15.513379",
+        "datePublished": "2026-07-19T13:03:10.849026",
+        "dateModified": "2026-07-19T13:03:10.849026",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter100</p>
-                    
-                    <p>Wilma said, “Young Master, you’re not lucky enough to keep the young madam.”</p>
-                    
-                    <p>Justin felt that he was in a trance. He could see Anna’s clear and innocent eyes with a hint of grievance.</p>
-                    
-                    <p>He would never receive such care from her again, and it would be a lie to say that he was not disappointed.</p>
-                    
-                    <p>“Anna is not my blessing. She’s my downfall.”</p>
-                    
-                    <p>Justin returned to the bedroom with a gloomy face and saw a box on the coffee table.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter100</p>
+                        
+                        <p>Wilma said, “Young Master, you’re not lucky enough to keep the young madam.”</p>
+                        
+                        <p>Justin felt that he was in a trance. He could see Anna’s clear and innocent eyes with a hint of grievance.</p>
+                        
+                        <p>He would never receive such care from her again, and it would be a lie to say that he was not disappointed.</p>
+                        
+                        <p>“Anna is not my blessing. She’s my downfall.”</p>
+                        
+                        <p>Justin returned to the bedroom with a gloomy face and saw a box on the coffee table.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>He recognized it as the box from the tailor’s shop. He thought that the suit must have been repaired, so he hurriedly stepped forward to unwrap it.</p>
-                    
-                    <p>The high-quality suit was lying in the box.</p>
-                    
-                    <p>The lining was redone. At first glance, there were almost no stitches visible on the surface. It was indeed good workmanship.</p>
-                    
-                    <p>Justin smiled with satisfaction.</p>
-                    
-                    <p>“Young Master, you still have feelings for the young madam, right?” Wilma asked happily when she saw that he was so focused on the suit.”</p>
-                    
-                    <p>“It’s a nice suit, so I don’t want it to go to waste,” Justin replied while stroking the smooth and crisp collar.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>He recognized it as the box from the tailor’s shop. He thought that the suit must have been repaired, so he hurriedly stepped forward to unwrap it.</p>
+                        
+                        <p>The high-quality suit was lying in the box.</p>
+                        
+                        <p>The lining was redone. At first glance, there were almost no stitches visible on the surface. It was indeed good workmanship.</p>
+                        
+                        <p>Justin smiled with satisfaction.</p>
+                        
+                        <p>“Young Master, you still have feelings for the young madam, right?” Wilma asked happily when she saw that he was so focused on the suit.”</p>
+                        
+                        <p>“It’s a nice suit, so I don’t want it to go to waste,” Justin replied while stroking the smooth and crisp collar.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>“The young madam has spent more time and energy on you, and not just with this suit.”</p>
-                    
-                    <p>Wilma sighed. Her eyes were downcast. “Come with me, Young Master.”</p>
-                    
-                    <p>They went to the room where Anna once lived.</p>
-                    
-                    <p>Wilma opened the closet door in a corner and said, “Young Master, look.”</p>
-                    
-                    <p>Justin saw various boxes of different sizes and colors neatly arranged on the wardrobe shelves.</p>
-                    
-                    <p>He was stunned. “This is…”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“The young madam has spent more time and energy on you, and not just with this suit.”</p>
+                        
+                        <p>Wilma sighed. Her eyes were downcast. “Come with me, Young Master.”</p>
+                        
+                        <p>They went to the room where Anna once lived.</p>
+                        
+                        <p>Wilma opened the closet door in a corner and said, “Young Master, look.”</p>
+                        
+                        <p>Justin saw various boxes of different sizes and colors neatly arranged on the wardrobe shelves.</p>
+                        
+                        <p>He was stunned. “This is…”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>“These are the gifts that the young madam has prepared for you in the past three years.”</p>
-                    
-                    <p>Justin felt as if he had been struck by lightning. His broad shoulders were shaken.</p>
-                    
-                    <p>“These are your birthday gifts, Valentine’s Day gifts, wedding anniversary gifts, and so many more. The young madam also said that she prepared gifts for the anniversary of your first meeting. Even if it was an insignificant day, she would prepare a gift as long as it was related to you. Even though she knew that you had always dismissed her, she still insisted on preparing them carefully, as if she wanted to prove something to herself.”</p>
-                    
-                    <p>Justin felt his pupils shrink. His chest felt sore and stuffy.</p>
-                    
-                    <p>“I don’t know how sincere Ms. Gold is to you, but I know that the young madam loves you to the core. Don’t say that I’m being partial. I will only recognize the young madam, and I won’t accept any other mistresses.”</p>
-                    
-                    <p>Wilma was furious when she thought of Rosalind’s duplicitous attitude. “Young Master, although I’m just a servant, I still heard that Ms. Gold sold off the necklace that you gave her at the auction. How could they just sell it when you put so much effort into making that necklace? Why didn’t Ms. Gold stop them?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“These are the gifts that the young madam has prepared for you in the past three years.”</p>
+                        
+                        <p>Justin felt as if he had been struck by lightning. His broad shoulders were shaken.</p>
+                        
+                        <p>“These are your birthday gifts, Valentine’s Day gifts, wedding anniversary gifts, and so many more. The young madam also said that she prepared gifts for the anniversary of your first meeting. Even if it was an insignificant day, she would prepare a gift as long as it was related to you. Even though she knew that you had always dismissed her, she still insisted on preparing them carefully, as if she wanted to prove something to herself.”</p>
+                        
+                        <p>Justin felt his pupils shrink. His chest felt sore and stuffy.</p>
+                        
+                        <p>“I don’t know how sincere Ms. Gold is to you, but I know that the young madam loves you to the core. Don’t say that I’m being partial. I will only recognize the young madam, and I won’t accept any other mistresses.”</p>
+                        
+                        <p>Wilma was furious when she thought of Rosalind’s duplicitous attitude. “Young Master, although I’m just a servant, I still heard that Ms. Gold sold off the necklace that you gave her at the auction. How could they just sell it when you put so much effort into making that necklace? Why didn’t Ms. Gold stop them?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>“Wilma, please don’t mention this again, okay?” Justin said in a deep voice to interrupt her.</p>
-                    
-                    <p>“Do you know how much the young madam likes that necklace? Do you know how envious she was when she heard that you were going to give that necklace to Ms. Gold? She even cried!” Wilma whispered in a trembling voice. She could not help but speak for Anna.</p>
-                    
-                    <p>Justin was startled. He clenched his fists tightly.</p>
-                    
-                    <p>‘She cried? That woman actually cried secretly because she couldn’t get a necklace?’</p>
-                    
-                    <p>Wilma took out an exquisite brocade box from the cabinet and opened it in front of him.</p>
-                    
-                    <p>In an instant, Justin felt that his body was drained of blood. He stared at the box in shock.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>“Wilma, please don’t mention this again, okay?” Justin said in a deep voice to interrupt her.</p>
+                        
+                        <p>“Do you know how much the young madam likes that necklace? Do you know how envious she was when she heard that you were going to give that necklace to Ms. Gold? She even cried!” Wilma whispered in a trembling voice. She could not help but speak for Anna.</p>
+                        
+                        <p>Justin was startled. He clenched his fists tightly.</p>
+                        
+                        <p>‘She cried? That woman actually cried secretly because she couldn’t get a necklace?’</p>
+                        
+                        <p>Wilma took out an exquisite brocade box from the cabinet and opened it in front of him.</p>
+                        
+                        <p>In an instant, Justin felt that his body was drained of blood. He stared at the box in shock.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Everything inside that box belonged to him. He did not even remember some of them.</p>
-                    
-                    <p>The crystal cufflinks he accidentally lost, the tie he no longer wanted, the lighter he left aside for too long-all of these were carefully collected in this box.</p>
-                    
-                    <p>“If it were the young madam, she would never sell your gifts. She even kept the tie you discarded. She would never do anything to hurt your feelings!”</p>
-                    
-                    <p>“Rose didn’t know about the necklace being sold. If she knew, she would never allow her family to do this.” Justin clenched his fists tightly. His chest was filled with bitterness which spread to his throat.</p>
-                    
-                    <p>Justin could not tell whether he was making excuses for himself or Rosalind.</p>
-                    
-                    <p>“Hah! Well, there’s a saying where I come from that we can never wake a person who is pretending to sleep.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Everything inside that box belonged to him. He did not even remember some of them.</p>
+                        
+                        <p>The crystal cufflinks he accidentally lost, the tie he no longer wanted, the lighter he left aside for too long-all of these were carefully collected in this box.</p>
+                        
+                        <p>“If it were the young madam, she would never sell your gifts. She even kept the tie you discarded. She would never do anything to hurt your feelings!”</p>
+                        
+                        <p>“Rose didn’t know about the necklace being sold. If she knew, she would never allow her family to do this.” Justin clenched his fists tightly. His chest was filled with bitterness which spread to his throat.</p>
+                        
+                        <p>Justin could not tell whether he was making excuses for himself or Rosalind.</p>
+                        
+                        <p>“Hah! Well, there’s a saying where I come from that we can never wake a person who is pretending to sleep.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,19 +1079,23 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Wilma shook her head in despair and left with a sigh.</p>
-                    
-                    <p>Justin found himself frozen there, with mixed feelings in his heart.</p>
-                    
-                    <p>It turned out that during the three years Anna was married to him, she was pretending to be virtuous, kind, and generous. She had a temper, and she got jealous, but she just gritted her teeth and endured</p>
-                    
-                    <p>it anyway.</p>
-                    
-                    <p>But if she once cared so much about him, how did she become so cold to him?</p>
-                    
-                    <p>Justin gritted his teeth. His jaw was tense, and his cold eyes were unconvinced.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Wilma shook her head in despair and left with a sigh.</p>
+                        
+                        <p>Justin found himself frozen there, with mixed feelings in his heart.</p>
+                        
+                        <p>It turned out that during the three years Anna was married to him, she was pretending to be virtuous, kind, and generous. She had a temper, and she got jealous, but she just gritted her teeth and endured</p>
+                        
+                        <p>it anyway.</p>
+                        
+                        <p>But if she once cared so much about him, how did she become so cold to him?</p>
+                        
+                        <p>Justin gritted his teeth. His jaw was tense, and his cold eyes were unconvinced.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2347,6 +2411,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2473,7 +2617,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2515,32 +2658,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2551,21 +2676,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2598,6 +2713,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2618,20 +2739,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

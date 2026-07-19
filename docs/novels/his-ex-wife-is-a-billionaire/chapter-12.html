@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.292517">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.292517">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.292968">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.292968">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.292517",
-        "dateModified": "2026-07-19T02:47:23.292517",
+        "datePublished": "2026-07-19T13:03:18.292968",
+        "dateModified": "2026-07-19T13:03:18.292968",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,31 +893,35 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Evadne shot Jason a look.</p>
-                    
-                    <p>Jason got the hint and went to open the door.</p>
-                    
-                    <p>“President Ashbourne! President Ashbourne!”</p>
-                    
-                    <p>Keith, the Vice President who had messed up yesterday, barged in through the door. He was too quick for Jason to stop him.</p>
-                    
-                    <p>Evadne frowned as Keith lunged towards her desk.</p>
-                    
-                    <p>“Mr. Keith, why are you still here? Your resignation has been approved. You should be seeking new job opportunities.”</p>
-                    
-                    <p>“President Ashbourne! You can’t treat me like this! I’ve been working at this hotel for nearly twenty years! I’ve given my all to this hotel, even to the point of getting sick. Chairman Emeric wouldn’t just fire me so casually, how can you just let me resign?” Keith protested loudly, his face red and his forehead sweaty.</p>
-                    
-                    <p>“I’ve reviewed the files of all the hotel’s senior staff. You do have a disease, fatty liver and galldder polyps. Seems like you’ve made quite a bit of money from the hotel to get such diseases.” Evadne chuckled coldly, sending chills down the spine.</p>
-                    
-                    <p>Keith, trembling with fear, caught the sarcasm in her words. “I had no idea that Vintage Elegance was selling us substandard bedding! They’ve been our partner for three years, their prices were reasonable, and they had a good reputation in Elmsworth, so I…”</p>
-                    
-                    <p>Before he could finish, Evadne threw a file at Keith’s feet.</p>
-                    
-                    <p>“These are all the transactions between the hotel and Vintage Elegance over the past three years. As the supervisor of the Finance Department, you didn’t notice anything wrong with these financial statements?”</p>
-                    
-                    <p>Keith, frightened, picked up the file to examine it. The pages in his hand felt as hot as glowing coals!</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Evadne shot Jason a look.</p>
+                        
+                        <p>Jason got the hint and went to open the door.</p>
+                        
+                        <p>“President Ashbourne! President Ashbourne!”</p>
+                        
+                        <p>Keith, the Vice President who had messed up yesterday, barged in through the door. He was too quick for Jason to stop him.</p>
+                        
+                        <p>Evadne frowned as Keith lunged towards her desk.</p>
+                        
+                        <p>“Mr. Keith, why are you still here? Your resignation has been approved. You should be seeking new job opportunities.”</p>
+                        
+                        <p>“President Ashbourne! You can’t treat me like this! I’ve been working at this hotel for nearly twenty years! I’ve given my all to this hotel, even to the point of getting sick. Chairman Emeric wouldn’t just fire me so casually, how can you just let me resign?” Keith protested loudly, his face red and his forehead sweaty.</p>
+                        
+                        <p>“I’ve reviewed the files of all the hotel’s senior staff. You do have a disease, fatty liver and galldder polyps. Seems like you’ve made quite a bit of money from the hotel to get such diseases.” Evadne chuckled coldly, sending chills down the spine.</p>
+                        
+                        <p>Keith, trembling with fear, caught the sarcasm in her words. “I had no idea that Vintage Elegance was selling us substandard bedding! They’ve been our partner for three years, their prices were reasonable, and they had a good reputation in Elmsworth, so I…”</p>
+                        
+                        <p>Before he could finish, Evadne threw a file at Keith’s feet.</p>
+                        
+                        <p>“These are all the transactions between the hotel and Vintage Elegance over the past three years. As the supervisor of the Finance Department, you didn’t notice anything wrong with these financial statements?”</p>
+                        
+                        <p>Keith, frightened, picked up the file to examine it. The pages in his hand felt as hot as glowing coals!</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -896,31 +936,35 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>“I also received an anonymous tip.”</p>
-                    
-                    <p>Evadne picked up her coffee cup and took a leisurely sip, her eyes gleaming with a cold light. “Someone reported that your rtionship with Vintage Elegance has been too close, suggesting you received hefty kickbacks, which is why you approved the purchase of their substandard bedding.”</p>
-                    
-                    <p>Keith was so scared his teeth were chattering, and he could barely stand up.</p>
-                    
-                    <p>“I don’t fire people without evidence. But if I do have evidence, I won’t let anyone off the</p>
-                    
-                    <p>h ook. If Mr. Keith, you have any objections, we can settle this matter through legal channels.”</p>
-                    
-                    <p>“President Ashbourne, I know I was wrong! I acted impulsively and made a wrong decision! Please… please spare me! If this gets out, I won’t be able to hold my head up in Elmsworth!”</p>
-                    
-                    <p>Keith, pale with fear, pleaded with Evadne, almost getting down on his knees. “It was Vintage Elegance who approached me initially, offering me a money-making opportunity! All the ideas were from Mr. Ives. I thought all mattresses were of simr quality, so I didn’t think too much about it, and that’s how I got duped by him!”</p>
-                    
-                    <p>Evadneughed at this.</p>
-                    
-                    <p>A vice president who’d been in the hotel industry for twenty years, trying to y dumb to protect himself.</p>
-                    
-                    <p>“Alright, you know exactly what happened, Mr. Keith. You should go home and send out some more resumes. That’s more useful than talking to me here. Mr. Jason, please show him out.”</p>
-                    
-                    <p>Keith, ashen-faced, was threw out by Jason like a dog with its tail between its legs.</p>
-                    
-                    <p>Outside the office, Keith instantly changed his expression, spitting angrily.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>“I also received an anonymous tip.”</p>
+                        
+                        <p>Evadne picked up her coffee cup and took a leisurely sip, her eyes gleaming with a cold light. “Someone reported that your rtionship with Vintage Elegance has been too close, suggesting you received hefty kickbacks, which is why you approved the purchase of their substandard bedding.”</p>
+                        
+                        <p>Keith was so scared his teeth were chattering, and he could barely stand up.</p>
+                        
+                        <p>“I don’t fire people without evidence. But if I do have evidence, I won’t let anyone off the</p>
+                        
+                        <p>h ook. If Mr. Keith, you have any objections, we can settle this matter through legal channels.”</p>
+                        
+                        <p>“President Ashbourne, I know I was wrong! I acted impulsively and made a wrong decision! Please… please spare me! If this gets out, I won’t be able to hold my head up in Elmsworth!”</p>
+                        
+                        <p>Keith, pale with fear, pleaded with Evadne, almost getting down on his knees. “It was Vintage Elegance who approached me initially, offering me a money-making opportunity! All the ideas were from Mr. Ives. I thought all mattresses were of simr quality, so I didn’t think too much about it, and that’s how I got duped by him!”</p>
+                        
+                        <p>Evadneughed at this.</p>
+                        
+                        <p>A vice president who’d been in the hotel industry for twenty years, trying to y dumb to protect himself.</p>
+                        
+                        <p>“Alright, you know exactly what happened, Mr. Keith. You should go home and send out some more resumes. That’s more useful than talking to me here. Mr. Jason, please show him out.”</p>
+                        
+                        <p>Keith, ashen-faced, was threw out by Jason like a dog with its tail between its legs.</p>
+                        
+                        <p>Outside the office, Keith instantly changed his expression, spitting angrily.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -935,31 +979,35 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>*Just you wait! I won’t let this go!”</p>
-                    
-                    <p>Although Evadne was tolerant, she was now full of resentment because of the corruption and ipetence in the hotel.</p>
-                    
-                    <p>“Seems like Mr. Keith’s bad reputation in the hotel is well-known. As soon as you decided to deal with him, someone reported him!” Jason was eager for revenge, his face full of excitement.</p>
-                    
-                    <p>“No one reported him.”</p>
-                    
-                    <p>“What?! Were you… testing him?!”</p>
-                    
-                    <p>“Yeah.”</p>
-                    
-                    <p>Evadne responded nonchntly, opening up a game to vent her frustration. “People should have a conscience. If they do bad things, they should be punished. They can’t even wait for their punishment, they confess as soon as I put a little pressure on them.”</p>
-                    
-                    <p>Jason couldn’t help but apud Evadne’s clever tactics. “Keith has been working with Vintage Elegance for three years and must have embezzled a lot of money. They should be dealt with seriously, and all the money they’ve taken should be returned!”</p>
-                    
-                    <p>“We have to leave room for future face-to-face interactions. If I’m too harsh, I’m afraid the other senior staff in the hotel might resent me and</p>
-                    
-                    <p>11:29</p>
-                    
-                    <p>Chapter</p>
-                    
-                    <p>even stab me in the back. Also, Keith was promoted by my father, so I don’t want to hurt his pride too much.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>*Just you wait! I won’t let this go!”</p>
+                        
+                        <p>Although Evadne was tolerant, she was now full of resentment because of the corruption and ipetence in the hotel.</p>
+                        
+                        <p>“Seems like Mr. Keith’s bad reputation in the hotel is well-known. As soon as you decided to deal with him, someone reported him!” Jason was eager for revenge, his face full of excitement.</p>
+                        
+                        <p>“No one reported him.”</p>
+                        
+                        <p>“What?! Were you… testing him?!”</p>
+                        
+                        <p>“Yeah.”</p>
+                        
+                        <p>Evadne responded nonchntly, opening up a game to vent her frustration. “People should have a conscience. If they do bad things, they should be punished. They can’t even wait for their punishment, they confess as soon as I put a little pressure on them.”</p>
+                        
+                        <p>Jason couldn’t help but apud Evadne’s clever tactics. “Keith has been working with Vintage Elegance for three years and must have embezzled a lot of money. They should be dealt with seriously, and all the money they’ve taken should be returned!”</p>
+                        
+                        <p>“We have to leave room for future face-to-face interactions. If I’m too harsh, I’m afraid the other senior staff in the hotel might resent me and</p>
+                        
+                        <p>11:29</p>
+                        
+                        <p>Chapter</p>
+                        
+                        <p>even stab me in the back. Also, Keith was promoted by my father, so I don’t want to hurt his pride too much.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -974,31 +1022,35 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Evadne spokezily, chasing opponents in her game. “Keep a close eye on Keith in theing days. If he contacts Acacia’s brother again, let me know immediately.”</p>
-                    
-                    <p>“Yes, Miss!”</p>
-                    
-                    <p>Just then, Evadne’s phone kept ringing, bombarded with messages from a chat group.</p>
-                    
-                    <p>“Jason, I’m busy right now. Can you check who’s sending these messages?” Evadne was engrossed in her game.</p>
-                    
-                    <p>Jason hurried over to check her phone. “Ah, it’s from a group called ‘Secrecy Bureau of Ashbourne’. Someone just sent you a message.”</p>
-                    
-                    <p>The group was created by Evadne’s second older brother, Arnold. It included Evadne and her four biological brothers. The group name, Secrecy Bureau of Ashbourne, implied their agreement to keep Evadne and Thaddeus’ marriage a secret, not to be leaked out.</p>
-                    
-                    <p>Evadne was startled and quickly grabbed her phone, forgetting about her game.</p>
-                    
-                    <p>After all, Jason still has no clue that she’s been married and divorced, the less people know about it, the better. If this gets to her old man, it’s gonna be a big mess!</p>
-                    
-                    <p>Arnold: “I can’t stand it! Is this Thaddeus tram pling on human decency? He’s way out of line!”</p>
-                    
-                    <p>Bet: “I’ll dig up some dirt on the Abernathy group, try to bankrupt them within a month.”</p>
-                    
-                    <p>Elvis: “Give me a week, I’ll make Thaddeus pay.”</p>
-                    
-                    <p>Cas sius: “Amen,”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Evadne spokezily, chasing opponents in her game. “Keep a close eye on Keith in theing days. If he contacts Acacia’s brother again, let me know immediately.”</p>
+                        
+                        <p>“Yes, Miss!”</p>
+                        
+                        <p>Just then, Evadne’s phone kept ringing, bombarded with messages from a chat group.</p>
+                        
+                        <p>“Jason, I’m busy right now. Can you check who’s sending these messages?” Evadne was engrossed in her game.</p>
+                        
+                        <p>Jason hurried over to check her phone. “Ah, it’s from a group called ‘Secrecy Bureau of Ashbourne’. Someone just sent you a message.”</p>
+                        
+                        <p>The group was created by Evadne’s second older brother, Arnold. It included Evadne and her four biological brothers. The group name, Secrecy Bureau of Ashbourne, implied their agreement to keep Evadne and Thaddeus’ marriage a secret, not to be leaked out.</p>
+                        
+                        <p>Evadne was startled and quickly grabbed her phone, forgetting about her game.</p>
+                        
+                        <p>After all, Jason still has no clue that she’s been married and divorced, the less people know about it, the better. If this gets to her old man, it’s gonna be a big mess!</p>
+                        
+                        <p>Arnold: “I can’t stand it! Is this Thaddeus tram pling on human decency? He’s way out of line!”</p>
+                        
+                        <p>Bet: “I’ll dig up some dirt on the Abernathy group, try to bankrupt them within a month.”</p>
+                        
+                        <p>Elvis: “Give me a week, I’ll make Thaddeus pay.”</p>
+                        
+                        <p>Cas sius: “Amen,”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1013,31 +1065,35 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Evadne: “What are you guys talking about, what happened?!”</p>
-                    
-                    <p>A few secondster, Arnold sends a web link.</p>
-                    
-                    <p>Arnold: “Unfaithful Thaddeus has announced his wedding, not only that, there’s online gossip saying you’re the other woman, saying you forced your way into their rtionship, causing them to split up!”</p>
-                    
-                    <p>Elvis: “Ha, split up? Should I make them part forever?”</p>
-                    
-                    <p>Cas sius: “Don’t let their evil deeds disturb your peace, don’t be jealous of their wrongdoings. Like gra** they’ll soon be cut down, and like green nts they’ll soon wither. Curb your anger, abandon your wrath; do not be disturbed, so as not to do evil.”</p>
-                    
-                    <p>Amold: “Enough with your preaching, you’re even gonna convert the devil.”</p>
-                    
-                    <p>Elvis: “In half an hour, I’ll delete all the news detrimental to you, including the trending topic about Thaddeus’ remarriage.</p>
-                    
-                    <p>Evadne replied, “It’s okay, don’t worry about it, let everything happen as it should.”</p>
-                    
-                    <p>Amold was puzzled.</p>
-                    
-                    <p>Evadne: “Because it has nothing to do with me, Thaddeus’ ex-wife is na, and I, am Evadne of the Ashbourne family.”</p>
-                    
-                    <p>Arnold: “Exactly! You’ve never appeared in public with Thaddeus in the past three years, no one has seen you, let alone find you, this will not affect you!”</p>
-                    
-                    <p>Evadne: “But some woman who overestimates her abilities might have a headache over this.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Evadne: “What are you guys talking about, what happened?!”</p>
+                        
+                        <p>A few secondster, Arnold sends a web link.</p>
+                        
+                        <p>Arnold: “Unfaithful Thaddeus has announced his wedding, not only that, there’s online gossip saying you’re the other woman, saying you forced your way into their rtionship, causing them to split up!”</p>
+                        
+                        <p>Elvis: “Ha, split up? Should I make them part forever?”</p>
+                        
+                        <p>Cas sius: “Don’t let their evil deeds disturb your peace, don’t be jealous of their wrongdoings. Like gra** they’ll soon be cut down, and like green nts they’ll soon wither. Curb your anger, abandon your wrath; do not be disturbed, so as not to do evil.”</p>
+                        
+                        <p>Amold: “Enough with your preaching, you’re even gonna convert the devil.”</p>
+                        
+                        <p>Elvis: “In half an hour, I’ll delete all the news detrimental to you, including the trending topic about Thaddeus’ remarriage.</p>
+                        
+                        <p>Evadne replied, “It’s okay, don’t worry about it, let everything happen as it should.”</p>
+                        
+                        <p>Amold was puzzled.</p>
+                        
+                        <p>Evadne: “Because it has nothing to do with me, Thaddeus’ ex-wife is na, and I, am Evadne of the Ashbourne family.”</p>
+                        
+                        <p>Arnold: “Exactly! You’ve never appeared in public with Thaddeus in the past three years, no one has seen you, let alone find you, this will not affect you!”</p>
+                        
+                        <p>Evadne: “But some woman who overestimates her abilities might have a headache over this.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1052,31 +1108,35 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Evadne lifted her red l*ps proudly.</p>
-                    
-                    <p>Thaddeus, you want your first love, then I wish you eternal happiness.</p>
-                    
-                    <p>But if your woman wants to make a scene? Don’t me me for being rude and let her taste the bitterness of failure!</p>
-                    
-                    <p>The Abernathy group was caught off guard by the sudden public announcement of the wedding!</p>
-                    
-                    <p>The PR department’s staff and Gordon’s phone were practically blown up by the media, the news drew nationwide attention.</p>
-                    
-                    <p>First, Mr. Thaddeus is getting married.</p>
-                    
-                    <p>Second, Mr. Thaddeus is actually remarrying!</p>
-                    
-                    <p>Okay, everyone just found out about Mr. Thaddeus’ marriage, but it turns out Mr. Thaddeus is getting married for the second time.</p>
-                    
-                    <p>Is marriage so casual now?</p>
-                    
-                    <p>“The wedding announcement was first published by the “Elmsworth Daily”, reportedly, Ms. Acacia personally went to see their president, and then the news was released.”</p>
-                    
-                    <p>Gordon stared at his phone. “This news has been retweeted over a million times on Twitter, but the hottest topic is who Thaddeus’ ex-wife is, and Ms. na is getting a lot of k…”</p>
-                    
-                    <p>“Delete them!” Thaddeus’ face was icy, his eyes dark.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Evadne lifted her red l*ps proudly.</p>
+                        
+                        <p>Thaddeus, you want your first love, then I wish you eternal happiness.</p>
+                        
+                        <p>But if your woman wants to make a scene? Don’t me me for being rude and let her taste the bitterness of failure!</p>
+                        
+                        <p>The Abernathy group was caught off guard by the sudden public announcement of the wedding!</p>
+                        
+                        <p>The PR department’s staff and Gordon’s phone were practically blown up by the media, the news drew nationwide attention.</p>
+                        
+                        <p>First, Mr. Thaddeus is getting married.</p>
+                        
+                        <p>Second, Mr. Thaddeus is actually remarrying!</p>
+                        
+                        <p>Okay, everyone just found out about Mr. Thaddeus’ marriage, but it turns out Mr. Thaddeus is getting married for the second time.</p>
+                        
+                        <p>Is marriage so casual now?</p>
+                        
+                        <p>“The wedding announcement was first published by the “Elmsworth Daily”, reportedly, Ms. Acacia personally went to see their president, and then the news was released.”</p>
+                        
+                        <p>Gordon stared at his phone. “This news has been retweeted over a million times on Twitter, but the hottest topic is who Thaddeus’ ex-wife is, and Ms. na is getting a lot of k…”</p>
+                        
+                        <p>“Delete them!” Thaddeus’ face was icy, his eyes dark.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1091,23 +1151,27 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Elmsworth Daily is owned by the Abernathy group, and in Elmsworth, this media outlet is known for publishing statements that are beneficial to the Abernathy group.</p>
-                    
-                    <p>11:29</p>
-                    
-                    <p>“Who do you want to delete the information of?”</p>
-                    
-                    <p>“Anyone who published this news, take it all down!”</p>
-                    
-                    <p>“Yes! But what about the online public opinion? I’m afraid it’s out of control…”</p>
-                    
-                    <p>Gordon couldn’t help worrying, “I wonder how Ms. na feels when she sees this. She must be very upset…” Thaddeus’ eyes suddenly darkened, he immediately picked up his phone and found Cas sius’ number. Really! He’s used to it. Uninformed people might think he has a thing for Cas sius!</p>
-                    
-                    <p>As he hesitated, Acacia’s name suddenly popped up on the screen.</p>
-                    
-                    <p>Thaddeus couldn’t help but frown, feeling a bit agitated.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Elmsworth Daily is owned by the Abernathy group, and in Elmsworth, this media outlet is known for publishing statements that are beneficial to the Abernathy group.</p>
+                        
+                        <p>11:29</p>
+                        
+                        <p>“Who do you want to delete the information of?”</p>
+                        
+                        <p>“Anyone who published this news, take it all down!”</p>
+                        
+                        <p>“Yes! But what about the online public opinion? I’m afraid it’s out of control…”</p>
+                        
+                        <p>Gordon couldn’t help worrying, “I wonder how Ms. na feels when she sees this. She must be very upset…” Thaddeus’ eyes suddenly darkened, he immediately picked up his phone and found Cas sius’ number. Really! He’s used to it. Uninformed people might think he has a thing for Cas sius!</p>
+                        
+                        <p>As he hesitated, Acacia’s name suddenly popped up on the screen.</p>
+                        
+                        <p>Thaddeus couldn’t help but frown, feeling a bit agitated.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2423,6 +2487,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2549,7 +2693,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2591,32 +2734,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2627,21 +2752,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2674,6 +2789,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2694,20 +2815,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.025627">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.025627">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.213264">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.213264">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.025627",
-        "dateModified": "2026-07-19T02:47:19.025627",
+        "datePublished": "2026-07-19T13:03:14.213264",
+        "dateModified": "2026-07-19T13:03:14.213264",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,29 +893,33 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>I stared at Blake&#39;s bleeding palm, the deep cut making my stomach twist.</p>
-                    
-                    <p>I caught Nora&#39;s eye and gave her a quick nod. She understood immediately and slipped away through the crowd.</p>
-                    
-                    <p>&#34;You must be hurting,&#34; I said quietly.</p>
-                    
-                    <p>Five years ago, when I cared for Blake, I discovered one of his secret weaknesses: he hated pain. The man who seemed untouchable to the world would flinch at the smallest needle. Yet here he was,bleeding from a knife wound he&#39;d taken for me.</p>
-                    
-                    <p>Rebecca&#39;s voice cut through my thoughts.</p>
-                    
-                    <p>&#34;What is wrong with you?&#34; she snapped, pointing at my face. &#34;Tonight is Blake and Laurel&#39;s engagement party. You&#39;re Blake&#39;s ex-wife, already thrown out of the Parker family, yet you show up here?&#34;</p>
-                    
-                    <p>&#34;You had to provoke Thalia into attacking you, which caused Blake to get hurt!&#34; Rebecca continued.</p>
-                    
-                    <p>She turned to Blake. &#34;And you! What were you thinking?&#34;</p>
-                    
-                    <p>&#34;Tonight is your engagement with Laurel! Why would you hurt yourself for this nobody?&#34; Her voice cracked.′′Dyou know how long Laurel has been looking forward to tonight?&#34;</p>
-                    
-                    <p>She threw up her hands. &#34;You&#39;ve ruined everything! What is Laurel supposed to do now?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>I stared at Blake&#39;s bleeding palm, the deep cut making my stomach twist.</p>
+                        
+                        <p>I caught Nora&#39;s eye and gave her a quick nod. She understood immediately and slipped away through the crowd.</p>
+                        
+                        <p>&#34;You must be hurting,&#34; I said quietly.</p>
+                        
+                        <p>Five years ago, when I cared for Blake, I discovered one of his secret weaknesses: he hated pain. The man who seemed untouchable to the world would flinch at the smallest needle. Yet here he was,bleeding from a knife wound he&#39;d taken for me.</p>
+                        
+                        <p>Rebecca&#39;s voice cut through my thoughts.</p>
+                        
+                        <p>&#34;What is wrong with you?&#34; she snapped, pointing at my face. &#34;Tonight is Blake and Laurel&#39;s engagement party. You&#39;re Blake&#39;s ex-wife, already thrown out of the Parker family, yet you show up here?&#34;</p>
+                        
+                        <p>&#34;You had to provoke Thalia into attacking you, which caused Blake to get hurt!&#34; Rebecca continued.</p>
+                        
+                        <p>She turned to Blake. &#34;And you! What were you thinking?&#34;</p>
+                        
+                        <p>&#34;Tonight is your engagement with Laurel! Why would you hurt yourself for this nobody?&#34; Her voice cracked.′′Dyou know how long Laurel has been looking forward to tonight?&#34;</p>
+                        
+                        <p>She threw up her hands. &#34;You&#39;ve ruined everything! What is Laurel supposed to do now?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -894,29 +934,33 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>On cue, Laurel, tears in her eyes, grabbed Blake&#39;s good arm, staring at his bleeding hand.</p>
-                    
-                    <p>&#34;Blake darling,&#34; she whimpered. &#34;I don&#39;t care if the party&#39;s ruined...&#34;</p>
-                    
-                    <p>She looked up at him. &#34;I only care about you.&#34;</p>
-                    
-                    <p>I watched her tears fall, perfectly timed. She was good, I had to admit.</p>
-                    
-                    <p>&#34;Your hand... there won&#39;t be permanent damage, will there?&#34; Laurel asked,her voice shaking. &#34;This is your right hand -you need it for everything.&#34;</p>
-                    
-                    <p>Her sobs grew louder. &#34;If something happened to you at our engagement, I&#39;d never forgive myself!&#34;</p>
-                    
-                    <p>Blake sighed and patted Laurel&#39;s shoulder with his good hand.</p>
-                    
-                    <p>&#34;The engagement isn&#39;t canceled,&#34; he said quietly.′′It3sjust a small cut.&#34;</p>
-                    
-                    <p>He met her eyes. &#34;I&#39;ll keep my promises to you.&#34;</p>
-                    
-                    <p>Laurel threw herself against him.</p>
-                    
-                    <p>&#34;Blake darling...&#34; she cried into his chest. &#34;You were trying to stop Thalia from making a terrible mistake...&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>On cue, Laurel, tears in her eyes, grabbed Blake&#39;s good arm, staring at his bleeding hand.</p>
+                        
+                        <p>&#34;Blake darling,&#34; she whimpered. &#34;I don&#39;t care if the party&#39;s ruined...&#34;</p>
+                        
+                        <p>She looked up at him. &#34;I only care about you.&#34;</p>
+                        
+                        <p>I watched her tears fall, perfectly timed. She was good, I had to admit.</p>
+                        
+                        <p>&#34;Your hand... there won&#39;t be permanent damage, will there?&#34; Laurel asked,her voice shaking. &#34;This is your right hand -you need it for everything.&#34;</p>
+                        
+                        <p>Her sobs grew louder. &#34;If something happened to you at our engagement, I&#39;d never forgive myself!&#34;</p>
+                        
+                        <p>Blake sighed and patted Laurel&#39;s shoulder with his good hand.</p>
+                        
+                        <p>&#34;The engagement isn&#39;t canceled,&#34; he said quietly.′′It3sjust a small cut.&#34;</p>
+                        
+                        <p>He met her eyes. &#34;I&#39;ll keep my promises to you.&#34;</p>
+                        
+                        <p>Laurel threw herself against him.</p>
+                        
+                        <p>&#34;Blake darling...&#34; she cried into his chest. &#34;You were trying to stop Thalia from making a terrible mistake...&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -931,29 +975,33 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>She pulled back. &#34;But the price was too high. You&#39;re the best brother...&#34;</p>
-                    
-                    <p>Blake just responded with a flat &#34;Mmm.&#34;</p>
-                    
-                    <p>He didn&#39;t explain why he&#39;d jumped between me and that knife. His silence was agreement enough.</p>
-                    
-                    <p>&#34;So that&#39;s it&#39;. I thought. Blake had only tried to keep his sister from committing a crime, For a moment. I&#39;d foolishly thought he might stíll</p>
-                    
-                    <p>care about me.</p>
-                    
-                    <p>Nora returned with a first aid kit and handed it to me wordlessly.</p>
-                    
-                    <p>I looked at the scene- Laurel clinging to Blake, crying dramatically while his hand still dripped blood. It was absurd. Everyone was admiring the &#34;perfect couple&#34; while no one bothered to treat his wound.</p>
-                    
-                    <p>I walked over and handed the kit to Olivia.</p>
-                    
-                    <p>&#34;If his wound isn&#39;t treated soon, there really won&#39;t be an engagement tonight,&#34; I said pointedly.</p>
-                    
-                    <p>My words broke the spell. Suddenly everyone remembered Blake was still bleeding.</p>
-                    
-                    <p>Laurel grabbed the kit and pulled Blake to a chair. Olivia and Rebecca helped Thalia up. The crowd&#39;s attention shifted, following the Parker family&#39;s movements.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>She pulled back. &#34;But the price was too high. You&#39;re the best brother...&#34;</p>
+                        
+                        <p>Blake just responded with a flat &#34;Mmm.&#34;</p>
+                        
+                        <p>He didn&#39;t explain why he&#39;d jumped between me and that knife. His silence was agreement enough.</p>
+                        
+                        <p>&#34;So that&#39;s it&#39;. I thought. Blake had only tried to keep his sister from committing a crime, For a moment. I&#39;d foolishly thought he might stíll</p>
+                        
+                        <p>care about me.</p>
+                        
+                        <p>Nora returned with a first aid kit and handed it to me wordlessly.</p>
+                        
+                        <p>I looked at the scene- Laurel clinging to Blake, crying dramatically while his hand still dripped blood. It was absurd. Everyone was admiring the &#34;perfect couple&#34; while no one bothered to treat his wound.</p>
+                        
+                        <p>I walked over and handed the kit to Olivia.</p>
+                        
+                        <p>&#34;If his wound isn&#39;t treated soon, there really won&#39;t be an engagement tonight,&#34; I said pointedly.</p>
+                        
+                        <p>My words broke the spell. Suddenly everyone remembered Blake was still bleeding.</p>
+                        
+                        <p>Laurel grabbed the kit and pulled Blake to a chair. Olivia and Rebecca helped Thalia up. The crowd&#39;s attention shifted, following the Parker family&#39;s movements.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -968,29 +1016,33 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>From where I stood. I could see white bone in Blake&#39;s wound. Thalia had put her full strength behind that knife.</p>
-                    
-                    <p>*If not for Blake, I might not even have my two months left.&#34;</p>
-                    
-                    <p>Even if he&#39;d only acted to protect Thalia, he had saved my life.</p>
-                    
-                    <p>Astrid appeared beside me, tugging my sleeve.</p>
-                    
-                    <p>&#34;Mr. Parker says it&#39;s time to go,&#34; she whispered. &#34;Everything&#39;s ready at both the airport and garage.&#34;</p>
-                    
-                    <p>She glanced toward the commotion. &#34;With Blake hurt,everyone&#39;s distracted. This is our chance.&#34;</p>
-                    
-                    <p>I looked toward William, who was sitting across the ballroom and.catching my eye, gave a slight wave with a warm smile, clearly signaling me to leave.</p>
-                    
-                    <p>I bit my lip and took one last look at Blake. He sat pale-faced as Laurel pressed against him, tending his wound. She was so close that if he lowered his head, he could&#39;ve kissed her forehead.</p>
-                    
-                    <p>People snapped photos, capturing their moment.</p>
-                    
-                    <p>I turned to Rachel, still in her wheelchair. Though her face remained blank.her eyes were fixed on Blake and Laurel with tears glistening in them.</p>
-                    
-                    <p>I leaned close to her ear. &#34;Rachel, let&#39;s go.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>From where I stood. I could see white bone in Blake&#39;s wound. Thalia had put her full strength behind that knife.</p>
+                        
+                        <p>*If not for Blake, I might not even have my two months left.&#34;</p>
+                        
+                        <p>Even if he&#39;d only acted to protect Thalia, he had saved my life.</p>
+                        
+                        <p>Astrid appeared beside me, tugging my sleeve.</p>
+                        
+                        <p>&#34;Mr. Parker says it&#39;s time to go,&#34; she whispered. &#34;Everything&#39;s ready at both the airport and garage.&#34;</p>
+                        
+                        <p>She glanced toward the commotion. &#34;With Blake hurt,everyone&#39;s distracted. This is our chance.&#34;</p>
+                        
+                        <p>I looked toward William, who was sitting across the ballroom and.catching my eye, gave a slight wave with a warm smile, clearly signaling me to leave.</p>
+                        
+                        <p>I bit my lip and took one last look at Blake. He sat pale-faced as Laurel pressed against him, tending his wound. She was so close that if he lowered his head, he could&#39;ve kissed her forehead.</p>
+                        
+                        <p>People snapped photos, capturing their moment.</p>
+                        
+                        <p>I turned to Rachel, still in her wheelchair. Though her face remained blank.her eyes were fixed on Blake and Laurel with tears glistening in them.</p>
+                        
+                        <p>I leaned close to her ear. &#34;Rachel, let&#39;s go.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1005,29 +1057,33 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>With Nora and Astrid flanking us, I pushed Rachel&#39;s wheelchair toward the service elevator.</p>
-                    
-                    <p>We&#39;d barely made it into the hallway when I almost ran into Ethan in a waiter&#39;s uniform.</p>
-                    
-                    <p>&#34;What are you doing here?&#34; I asked, completely surprised.</p>
-                    
-                    <p>Without a word, Ethan took the wheelchair from me and started pushing Rachel toward the elevator.</p>
-                    
-                    <p>&#34;Astrid told me about youar plan,&#34; he explained. &#34;I know once you leave, I might never see you again.&#34;</p>
-                    
-                    <p>He gave me a sad smile. &#34;So I wanted to see you off and help. Don&#39;t forget you&#39;re sick too. A sick person helping another sick person escape won&#39;t get far,&#34;</p>
-                    
-                    <p>He hit the down button. &#34;But with me helping, it&#39;s different. I can take</p>
-                    
-                    <p>care of your friend.&#34;</p>
-                    
-                    <p>He grinned. &#34;Tle worked as a caregiver before. I&#39;e got experlence!&#34;</p>
-                    
-                    <p>I tried keeping up with Ethan&#39;s pace but my body wouldn&#39;t cooperate.Maybe confronting Thalia had drained me more than t thought.Each step felt heavier than the last.</p>
-                    
-                    <p>Despite pushing myself until I was breathless, the gap between us kopt growing.My legs felt like lead, and dizziness set in.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>With Nora and Astrid flanking us, I pushed Rachel&#39;s wheelchair toward the service elevator.</p>
+                        
+                        <p>We&#39;d barely made it into the hallway when I almost ran into Ethan in a waiter&#39;s uniform.</p>
+                        
+                        <p>&#34;What are you doing here?&#34; I asked, completely surprised.</p>
+                        
+                        <p>Without a word, Ethan took the wheelchair from me and started pushing Rachel toward the elevator.</p>
+                        
+                        <p>&#34;Astrid told me about youar plan,&#34; he explained. &#34;I know once you leave, I might never see you again.&#34;</p>
+                        
+                        <p>He gave me a sad smile. &#34;So I wanted to see you off and help. Don&#39;t forget you&#39;re sick too. A sick person helping another sick person escape won&#39;t get far,&#34;</p>
+                        
+                        <p>He hit the down button. &#34;But with me helping, it&#39;s different. I can take</p>
+                        
+                        <p>care of your friend.&#34;</p>
+                        
+                        <p>He grinned. &#34;Tle worked as a caregiver before. I&#39;e got experlence!&#34;</p>
+                        
+                        <p>I tried keeping up with Ethan&#39;s pace but my body wouldn&#39;t cooperate.Maybe confronting Thalia had drained me more than t thought.Each step felt heavier than the last.</p>
+                        
+                        <p>Despite pushing myself until I was breathless, the gap between us kopt growing.My legs felt like lead, and dizziness set in.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1042,29 +1098,33 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Ethan noticed immediatoly. He stopped the wheelchatr and rushed back to support me.</p>
-                    
-                    <p>&#34;Audrey, what&#39;s wrong?&#34; His arm went around my waist, steadying me.</p>
-                    
-                    <p>I leaned against him, struggling to breathe, &#34;I don&#39;t thìnk I have much strength left.&#34;</p>
-                    
-                    <p>I admitted, &#34;You were right. Without you. I couldn&#39;t have gotten Rachel out on my own.&#34;</p>
-                    
-                    <p>Ethan looked down at my pale face, worried,</p>
-                    
-                    <p>&#34;Audrey,&#34; he said softly, &#34;your health is already this bad, Are you sure you still want to take your friend with you?&#34;</p>
-                    
-                    <p>I managed a nod whlle fighting to catch my breath.&#34;I&#39;m fine.&#34;</p>
-                    
-                    <p>&#34;Just got worked up with Thalla,&#34; I added, trying to sound casual.-&#34;Once we&#39;re in the car, I&#39;ll rest.&#34;</p>
-                    
-                    <p>Deep down. I knew better. A normal person wouldn&#39;t be this wreeked from a simple argument. The fact that I could barely funetion showed how much my body had deterlorated I wasn&#39;t even half the person I used to</p>
-                    
-                    <p>be.</p>
-                    
-                    <p>But this only made me more determined. I had to get Rachel away from the Rose family while I could still move.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Ethan noticed immediatoly. He stopped the wheelchatr and rushed back to support me.</p>
+                        
+                        <p>&#34;Audrey, what&#39;s wrong?&#34; His arm went around my waist, steadying me.</p>
+                        
+                        <p>I leaned against him, struggling to breathe, &#34;I don&#39;t thìnk I have much strength left.&#34;</p>
+                        
+                        <p>I admitted, &#34;You were right. Without you. I couldn&#39;t have gotten Rachel out on my own.&#34;</p>
+                        
+                        <p>Ethan looked down at my pale face, worried,</p>
+                        
+                        <p>&#34;Audrey,&#34; he said softly, &#34;your health is already this bad, Are you sure you still want to take your friend with you?&#34;</p>
+                        
+                        <p>I managed a nod whlle fighting to catch my breath.&#34;I&#39;m fine.&#34;</p>
+                        
+                        <p>&#34;Just got worked up with Thalla,&#34; I added, trying to sound casual.-&#34;Once we&#39;re in the car, I&#39;ll rest.&#34;</p>
+                        
+                        <p>Deep down. I knew better. A normal person wouldn&#39;t be this wreeked from a simple argument. The fact that I could barely funetion showed how much my body had deterlorated I wasn&#39;t even half the person I used to</p>
+                        
+                        <p>be.</p>
+                        
+                        <p>But this only made me more determined. I had to get Rachel away from the Rose family while I could still move.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1079,27 +1139,31 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>I bit my lip and forced my legs forward toward the elevator. Sweat plastered my hair to my forehead as I struggled not to show Ethan how bad it really was.</p>
-                    
-                    <p>He wasn&#39;t fooled.</p>
-                    
-                    <p>&#34;Let me help,&#34; he said simply.</p>
-                    
-                    <p>Before I could say anything, he picked me up and headed for the elevator.</p>
-                    
-                    <p>I gasped at the sudden lift, automatically grabbing his neck for support.&#34;Ethan-&#34;</p>
-                    
-                    <p>&#34;You&#39;re too slow,&#34; he cut me off.</p>
-                    
-                    <p>After carrying me into the elevator, he set me down and wheeled Rachel in beside us.</p>
-                    
-                    <p>&#34;If they figure out what we&#39;re doing, you&#39;ll never get out.&#34; he said,hitting the close button. &#34;So stop arguing. I&#39;m strong enough for both of you.&#34;</p>
-                    
-                    <p>He was right. At my pace, we&#39;d have been caught before reaching the parking garage.</p>
-                    
-                    <p>As the doors closed, I let out a weak laugh. &#34;Thanks.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>I bit my lip and forced my legs forward toward the elevator. Sweat plastered my hair to my forehead as I struggled not to show Ethan how bad it really was.</p>
+                        
+                        <p>He wasn&#39;t fooled.</p>
+                        
+                        <p>&#34;Let me help,&#34; he said simply.</p>
+                        
+                        <p>Before I could say anything, he picked me up and headed for the elevator.</p>
+                        
+                        <p>I gasped at the sudden lift, automatically grabbing his neck for support.&#34;Ethan-&#34;</p>
+                        
+                        <p>&#34;You&#39;re too slow,&#34; he cut me off.</p>
+                        
+                        <p>After carrying me into the elevator, he set me down and wheeled Rachel in beside us.</p>
+                        
+                        <p>&#34;If they figure out what we&#39;re doing, you&#39;ll never get out.&#34; he said,hitting the close button. &#34;So stop arguing. I&#39;m strong enough for both of you.&#34;</p>
+                        
+                        <p>He was right. At my pace, we&#39;d have been caught before reaching the parking garage.</p>
+                        
+                        <p>As the doors closed, I let out a weak laugh. &#34;Thanks.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2415,6 +2479,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2541,7 +2685,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2583,32 +2726,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2619,21 +2744,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2666,6 +2781,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2686,20 +2807,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

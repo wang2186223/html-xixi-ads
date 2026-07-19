@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:29.774564">
-    <meta property="article:modified_time" content="2026-07-19T02:47:29.774564">
+    <meta property="article:published_time" content="2026-07-19T13:03:24.156648">
+    <meta property="article:modified_time" content="2026-07-19T13:03:24.156648">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:29">
+    <meta name="last-modified" content="2026-07-19 13:03:24">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:29.774564",
-        "dateModified": "2026-07-19T02:47:29.774564",
+        "datePublished": "2026-07-19T13:03:24.156648",
+        "dateModified": "2026-07-19T13:03:24.156648",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,29 +893,33 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>On the second day of the trial, a heavy sense of unease gripped everyone present at the courthouse. The courtroom was noticeably more packed than the day before, and there was an air of expectation that hung over the proceedings.</p>
-                    
-                    <p>Alexander, who had recently been through a lot, stood with his family,who had come to support him during Lily&#39;s trial. He was relieved that,during the time Lily was incarcerated, they managed to keep everything hidden from Viola. Lily was able to stay in touch with Viola daily thanks to a phone she was provided while in jail.</p>
-                    
-                    <p>The prosecutor and the defense attorney arrived at the courthouse.</p>
-                    
-                    <p>Sarah and her group arrived as well, and she was pleased to see that Ariana was not present. Her absence was proof that she wasn&#39;t as loyal as she claimed to be-Sarah believed Ariana was only interested in seeing Lily declared guilty, which is why she didn&#39;t want to witness the proceedings today, knowing that Lily would likely be found innocent.</p>
-                    
-                    <p>Among those present were Sophia and Richard. Sophia had been unable to attend the first day of the trial due to a hospital emergency. This time.Sandra was also there, having returned from a trip abroad during the first hearing.</p>
-                    
-                    <p>Caleb, Lily&#39;s grandfather, a respected and authoritative figure in the family.was also present, displaying his usual stoic demeanor as he faced the legal proceedings. He had visited Lily in jail the day before,where she had informed him about what would happen in court today.</p>
-                    
-                    <p>Ariana, however, chose not to enter the courthouse. Instead, she stayed at home, watching the events unfold live on her television. She didn&#39;t want</p>
-                    
-                    <p>to be there to witness Lily being exonerated.</p>
-                    
-                    <p>Lily was brought into the courtroom, dressed in a long-sleeved white silk blouse,cream-colored pants, black shoes, and her hair neatly tied back.</p>
-                    
-                    <p>Alexander smiled, admiring how beautiful she looked in the outfit.</p>
-                    
-                    <p>The judge entered, and everyone stood up.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>On the second day of the trial, a heavy sense of unease gripped everyone present at the courthouse. The courtroom was noticeably more packed than the day before, and there was an air of expectation that hung over the proceedings.</p>
+                        
+                        <p>Alexander, who had recently been through a lot, stood with his family,who had come to support him during Lily&#39;s trial. He was relieved that,during the time Lily was incarcerated, they managed to keep everything hidden from Viola. Lily was able to stay in touch with Viola daily thanks to a phone she was provided while in jail.</p>
+                        
+                        <p>The prosecutor and the defense attorney arrived at the courthouse.</p>
+                        
+                        <p>Sarah and her group arrived as well, and she was pleased to see that Ariana was not present. Her absence was proof that she wasn&#39;t as loyal as she claimed to be-Sarah believed Ariana was only interested in seeing Lily declared guilty, which is why she didn&#39;t want to witness the proceedings today, knowing that Lily would likely be found innocent.</p>
+                        
+                        <p>Among those present were Sophia and Richard. Sophia had been unable to attend the first day of the trial due to a hospital emergency. This time.Sandra was also there, having returned from a trip abroad during the first hearing.</p>
+                        
+                        <p>Caleb, Lily&#39;s grandfather, a respected and authoritative figure in the family.was also present, displaying his usual stoic demeanor as he faced the legal proceedings. He had visited Lily in jail the day before,where she had informed him about what would happen in court today.</p>
+                        
+                        <p>Ariana, however, chose not to enter the courthouse. Instead, she stayed at home, watching the events unfold live on her television. She didn&#39;t want</p>
+                        
+                        <p>to be there to witness Lily being exonerated.</p>
+                        
+                        <p>Lily was brought into the courtroom, dressed in a long-sleeved white silk blouse,cream-colored pants, black shoes, and her hair neatly tied back.</p>
+                        
+                        <p>Alexander smiled, admiring how beautiful she looked in the outfit.</p>
+                        
+                        <p>The judge entered, and everyone stood up.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -894,29 +934,33 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Soon after, the courtroom settled, and the trial commenced.</p>
-                    
-                    <p>&#34;Prosecutor Yul, please provide the original file,&#34; the judge ordered.</p>
-                    
-                    <p>Prosecutor Yul nodded and handed the original file to Lawyer Stone, who took it and proceeded to conduct a test in front of everyone.</p>
-                    
-                    <p>All eyes were on Lawyer Stone as he prepared the device for testing.ensuring everyone could see it, leaving no room for doubts about tampering. After the test was completed, it was revealed that thedocument was forged-it was not an official document issued by Blake.</p>
-                    
-                    <p>Everyone, including the prosecution, was shocked-the forgery was so expertly done that it appeared legitimate, even bearing the CEO&#39;s seal.</p>
-                    
-                    <p>The prosecutor conducted their own tests, which confirmed the forgery.The prosecution team felt humiliated.</p>
-                    
-                    <p>The reporters quickly captured photographs of the document and the evidence proving it was a forgery, and the story spread rapidly online.</p>
-                    
-                    <p>&#34;This is unbelievable. Mrs. Kane is innocent-she was framed!&#34; a fan exclaimed online.</p>
-                    
-                    <p>Many who had turned against the Kane family began to reconsider their stance after seeing the evidence of Lily&#39;s innocence.</p>
-                    
-                    <p>&#34;We were wrong not to believe in Lily Kane. I feel terrible now,&#34; another fan confessed in a comment.</p>
-                    
-                    <p>However,even with the document proven to be fabricated, Lawyer Stone requested to continue the trial.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Soon after, the courtroom settled, and the trial commenced.</p>
+                        
+                        <p>&#34;Prosecutor Yul, please provide the original file,&#34; the judge ordered.</p>
+                        
+                        <p>Prosecutor Yul nodded and handed the original file to Lawyer Stone, who took it and proceeded to conduct a test in front of everyone.</p>
+                        
+                        <p>All eyes were on Lawyer Stone as he prepared the device for testing.ensuring everyone could see it, leaving no room for doubts about tampering. After the test was completed, it was revealed that thedocument was forged-it was not an official document issued by Blake.</p>
+                        
+                        <p>Everyone, including the prosecution, was shocked-the forgery was so expertly done that it appeared legitimate, even bearing the CEO&#39;s seal.</p>
+                        
+                        <p>The prosecutor conducted their own tests, which confirmed the forgery.The prosecution team felt humiliated.</p>
+                        
+                        <p>The reporters quickly captured photographs of the document and the evidence proving it was a forgery, and the story spread rapidly online.</p>
+                        
+                        <p>&#34;This is unbelievable. Mrs. Kane is innocent-she was framed!&#34; a fan exclaimed online.</p>
+                        
+                        <p>Many who had turned against the Kane family began to reconsider their stance after seeing the evidence of Lily&#39;s innocence.</p>
+                        
+                        <p>&#34;We were wrong not to believe in Lily Kane. I feel terrible now,&#34; another fan confessed in a comment.</p>
+                        
+                        <p>However,even with the document proven to be fabricated, Lawyer Stone requested to continue the trial.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -931,29 +975,33 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;Are you certain you want to continue? Mrs. Kane&#39;s innocence has been established; there&#39;s no need to prolong the case,&#34; the judge said.</p>
-                    
-                    <p>&#34;Yes,Your Honor, but my client wishes to fully clear her name and that of her family. People might speculate that this was all orchestrated by the Blakes, and to prevent such rumors, we have decided to proceed and identify the true culprit.&#34;</p>
-                    
-                    <p>&#34;The true culprit?&#34;</p>
-                    
-                    <p>&#34;Yes, Your Honor. We have evidence revealing the real perpetrator.&#34;</p>
-                    
-                    <p>The courtroom buzzed with surprise.</p>
-                    
-                    <p>&#34;Silence!&#34; the deputy chief ordered,and the room quieted.</p>
-                    
-                    <p>&#34;If that&#39;s your decision, proceed,&#34; the judge allowed.</p>
-                    
-                    <p>&#34;Thank you, Your Honor,&#34; Lawyer Stone said,bowing his head.</p>
-                    
-                    <p>He returned to his table and picked up a file.</p>
-                    
-                    <p>&#34;During the first hearing, the assistant prosecutor, who was supposed to deliver the original file, was involved in an accident. The medical records and other evidence in this file prove that the accident was a hit-and-run.orchestrated to prevent the delivery of the original document to the court.&#34;</p>
-                    
-                    <p>The courtroom was stunned by this revelation, and those watching the trial live were equally shocked.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;Are you certain you want to continue? Mrs. Kane&#39;s innocence has been established; there&#39;s no need to prolong the case,&#34; the judge said.</p>
+                        
+                        <p>&#34;Yes,Your Honor, but my client wishes to fully clear her name and that of her family. People might speculate that this was all orchestrated by the Blakes, and to prevent such rumors, we have decided to proceed and identify the true culprit.&#34;</p>
+                        
+                        <p>&#34;The true culprit?&#34;</p>
+                        
+                        <p>&#34;Yes, Your Honor. We have evidence revealing the real perpetrator.&#34;</p>
+                        
+                        <p>The courtroom buzzed with surprise.</p>
+                        
+                        <p>&#34;Silence!&#34; the deputy chief ordered,and the room quieted.</p>
+                        
+                        <p>&#34;If that&#39;s your decision, proceed,&#34; the judge allowed.</p>
+                        
+                        <p>&#34;Thank you, Your Honor,&#34; Lawyer Stone said,bowing his head.</p>
+                        
+                        <p>He returned to his table and picked up a file.</p>
+                        
+                        <p>&#34;During the first hearing, the assistant prosecutor, who was supposed to deliver the original file, was involved in an accident. The medical records and other evidence in this file prove that the accident was a hit-and-run.orchestrated to prevent the delivery of the original document to the court.&#34;</p>
+                        
+                        <p>The courtroom was stunned by this revelation, and those watching the trial live were equally shocked.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -968,29 +1016,33 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Ariana, who was watching from home, dropped her teacup in shock. She hadn&#39;t expected anyone to uncover this detail. She had made another mistake.</p>
-                    
-                    <p>God only knew what else they had discovered. The lawyer had mentioned exposing the culprit, wwhich likely meant they knew she was involved. Her hands and feet trembled as she paced around her room, trying to think of her next move.</p>
-                    
-                    <p>&#34;Ariana, are you okay? I heard something break-did you hurt yourself?&#34;Carolina asked, concerned. She had come to check on her during a break.</p>
-                    
-                    <p>&#34;I&#39;m...I&#39;m fine, Mother...no need to worry,&#34; Ariana replied, her voice shaky.</p>
-                    
-                    <p>&#34;Are you sure you&#39;re okay?&#34;</p>
-                    
-                    <p>&#34;Yes, I&#39;m fine, Mother. Just leave!&#34; Ariana screamed. Carolina hesitated but eventually left.</p>
-                    
-                    <p>Once she was sure her mother had gone, Ariana immediately went to her safe. She punched in the password, opened it, and grabbed one of the burner phones inside. She dialed a number, and the person picked up on the first ring.</p>
-                    
-                    <p>&#34;I need you to take the fall for me. Do whatever it takes to keep me out of trouble,&#34; she instructed. After the person responded, Ariana sighed in relief and ended the call.</p>
-                    
-                    <p>She was relieved she hadn&#39;t gone to court; otherwise, she wouldn&#39;t have been able to make this call.</p>
-                    
-                    <p>Ariana had been behind everything-the forged document, Lily&#39;s signature,and hiring an employee at Blake to sneak the document into the company&#39;s records and erase the CCTV footage. She also paid men to demolish the</p>
-                    
-                    <p>buildings, killing everyone inside, and secretly sent them out of the country afterward.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Ariana, who was watching from home, dropped her teacup in shock. She hadn&#39;t expected anyone to uncover this detail. She had made another mistake.</p>
+                        
+                        <p>God only knew what else they had discovered. The lawyer had mentioned exposing the culprit, wwhich likely meant they knew she was involved. Her hands and feet trembled as she paced around her room, trying to think of her next move.</p>
+                        
+                        <p>&#34;Ariana, are you okay? I heard something break-did you hurt yourself?&#34;Carolina asked, concerned. She had come to check on her during a break.</p>
+                        
+                        <p>&#34;I&#39;m...I&#39;m fine, Mother...no need to worry,&#34; Ariana replied, her voice shaky.</p>
+                        
+                        <p>&#34;Are you sure you&#39;re okay?&#34;</p>
+                        
+                        <p>&#34;Yes, I&#39;m fine, Mother. Just leave!&#34; Ariana screamed. Carolina hesitated but eventually left.</p>
+                        
+                        <p>Once she was sure her mother had gone, Ariana immediately went to her safe. She punched in the password, opened it, and grabbed one of the burner phones inside. She dialed a number, and the person picked up on the first ring.</p>
+                        
+                        <p>&#34;I need you to take the fall for me. Do whatever it takes to keep me out of trouble,&#34; she instructed. After the person responded, Ariana sighed in relief and ended the call.</p>
+                        
+                        <p>She was relieved she hadn&#39;t gone to court; otherwise, she wouldn&#39;t have been able to make this call.</p>
+                        
+                        <p>Ariana had been behind everything-the forged document, Lily&#39;s signature,and hiring an employee at Blake to sneak the document into the company&#39;s records and erase the CCTV footage. She also paid men to demolish the</p>
+                        
+                        <p>buildings, killing everyone inside, and secretly sent them out of the country afterward.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1005,29 +1057,33 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>She had executed her plan so cleverly that she believed no one would ever discover it, but it seemed she had underestimated Lily once again.</p>
-                    
-                    <p>Back in the courtroom, Lawyer Stone presented another document containing records of the heavy machinery used to demolish the buildings.</p>
-                    
-                    <p>&#34;The records show that the bulldozers used were from Blake,but they were taken without authorization from the warehouse. Unknown individuals accessed the warehouse and used the machinery to demolish the buildings. This suggests that someone inside Blake was bribed to facilitate this.&#34;</p>
-                    
-                    <p>&#34;There&#39;s only one person with the authority to release the machinery,&#34;Lawyer Stone continued.</p>
-                    
-                    <p>He named the person, who was immediately brought to the witness stand.</p>
-                    
-                    <p>The elderly warehouse director confessed that he was paid by an unknown individual to open the warehouse late at night. He said the men took the bulldozers and returned them five hours later, the time during which the demolition occurred. He claimed he didn&#39;t realize what had happened until he saw the news the next morning. The only reason he took the bribe was to pay for his sick daughter&#39;s hospital bills.</p>
-                    
-                    <p>The crowd murmured in shock.</p>
-                    
-                    <p>&#34;When we traced the call, we found that the person who contacted him used a burner phone,&#34; the lawyer revealed.</p>
-                    
-                    <p>After presenting numerous pieces of evidence, Lawyer Stone called a new witness.</p>
-                    
-                    <p>&#34;I would like to bring to the stand one of the men hired by the culprit to demolish the buildings.&#34;</p>
-                    
-                    <p>Ariana&#39;s heart sank as she watched one of the men she had paid and sent abroad step up to the witness stand. She recognized him as the second-in-command of the group she had hired.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>She had executed her plan so cleverly that she believed no one would ever discover it, but it seemed she had underestimated Lily once again.</p>
+                        
+                        <p>Back in the courtroom, Lawyer Stone presented another document containing records of the heavy machinery used to demolish the buildings.</p>
+                        
+                        <p>&#34;The records show that the bulldozers used were from Blake,but they were taken without authorization from the warehouse. Unknown individuals accessed the warehouse and used the machinery to demolish the buildings. This suggests that someone inside Blake was bribed to facilitate this.&#34;</p>
+                        
+                        <p>&#34;There&#39;s only one person with the authority to release the machinery,&#34;Lawyer Stone continued.</p>
+                        
+                        <p>He named the person, who was immediately brought to the witness stand.</p>
+                        
+                        <p>The elderly warehouse director confessed that he was paid by an unknown individual to open the warehouse late at night. He said the men took the bulldozers and returned them five hours later, the time during which the demolition occurred. He claimed he didn&#39;t realize what had happened until he saw the news the next morning. The only reason he took the bribe was to pay for his sick daughter&#39;s hospital bills.</p>
+                        
+                        <p>The crowd murmured in shock.</p>
+                        
+                        <p>&#34;When we traced the call, we found that the person who contacted him used a burner phone,&#34; the lawyer revealed.</p>
+                        
+                        <p>After presenting numerous pieces of evidence, Lawyer Stone called a new witness.</p>
+                        
+                        <p>&#34;I would like to bring to the stand one of the men hired by the culprit to demolish the buildings.&#34;</p>
+                        
+                        <p>Ariana&#39;s heart sank as she watched one of the men she had paid and sent abroad step up to the witness stand. She recognized him as the second-in-command of the group she had hired.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1042,29 +1098,33 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Her eyes were glued to the television as she waited for his testimony.</p>
-                    
-                    <p>The man revealed they had been paid to demolish the buildings.When asked who paid them, he mentioned the name of Ariana&#39;s assistant,Jamila.</p>
-                    
-                    <p>The courtroom was in shock, and the internet exploded with the news.</p>
-                    
-                    <p>&#34;Oh my God, I can&#39;t believe this. Ariana used her assistant to do this!&#34;someone commented online.</p>
-                    
-                    <p>&#34;I thought she was a saint, and to think I liked her!&#34; another person remarked.</p>
-                    
-                    <p>Ariana, unable to bear the negative comments, angrily threw her tablet against the wall.</p>
-                    
-                    <p>Three hours later, Jamila was brought to court. Terrified but determined to protect her family, she took the witness stand.</p>
-                    
-                    <p>She was asked if Ariana Martins had instructed her to carry out these actions.</p>
-                    
-                    <p>Everyone waited for her response.</p>
-                    
-                    <p>&#34;No,&#34; Jamila replied, causing Lily to frown.</p>
-                    
-                    <p>&#34;How can we be sure you&#39;re telling the truth?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Her eyes were glued to the television as she waited for his testimony.</p>
+                        
+                        <p>The man revealed they had been paid to demolish the buildings.When asked who paid them, he mentioned the name of Ariana&#39;s assistant,Jamila.</p>
+                        
+                        <p>The courtroom was in shock, and the internet exploded with the news.</p>
+                        
+                        <p>&#34;Oh my God, I can&#39;t believe this. Ariana used her assistant to do this!&#34;someone commented online.</p>
+                        
+                        <p>&#34;I thought she was a saint, and to think I liked her!&#34; another person remarked.</p>
+                        
+                        <p>Ariana, unable to bear the negative comments, angrily threw her tablet against the wall.</p>
+                        
+                        <p>Three hours later, Jamila was brought to court. Terrified but determined to protect her family, she took the witness stand.</p>
+                        
+                        <p>She was asked if Ariana Martins had instructed her to carry out these actions.</p>
+                        
+                        <p>Everyone waited for her response.</p>
+                        
+                        <p>&#34;No,&#34; Jamila replied, causing Lily to frown.</p>
+                        
+                        <p>&#34;How can we be sure you&#39;re telling the truth?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1079,25 +1139,29 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;I&#39;m not lying. I did it all on my own. My boss is too kind and innocent to do such a thing.&#34;</p>
-                    
-                    <p>&#34;If you claim you acted alone, where did you get the money to pay for all this? According to my records, five million dollars was spent to pay everyone involved.&#34;</p>
-                    
-                    <p>&#34;Yes, my boss, Miss Martins, is a generous soul. I told her about my family&#39;s situation, and she gave me a check for ten million dollars to move them out of their home and take care of their needs. But I used five million of it for this instead.&#34;</p>
-                    
-                    <p>The people in the courtroom whispered among themselves, confused by Jamila&#39;s statement. It didn&#39;t make sense-why would she do something like this?</p>
-                    
-                    <p>Sarah clenched her fists. &#34;I&#39;m going to smack that witch when this is over.I knew it! She&#39;s pure evil, and she&#39;s trying to put all the blame on this poor assistant of hers. Who knows what she used to threaten the girl?&#34;Sarah fumed, and Anthony tried to calm her down.</p>
-                    
-                    <p>&#34;Don&#39;t worry, you&#39;ll get your chance,&#34; he reassured her.</p>
-                    
-                    <p>&#34;Can you explain why you did this? Has Mrs. Kane done something to you that made you act against her like this?&#34; the lawyer asked Jamila.</p>
-                    
-                    <p>Jamila glanced at Lily, who was staring at her with piercing eyes. Unable to meet her gaze, Jamila looked at the lawyer instead.</p>
-                    
-                    <p>&#34;Yes,she has.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;I&#39;m not lying. I did it all on my own. My boss is too kind and innocent to do such a thing.&#34;</p>
+                        
+                        <p>&#34;If you claim you acted alone, where did you get the money to pay for all this? According to my records, five million dollars was spent to pay everyone involved.&#34;</p>
+                        
+                        <p>&#34;Yes, my boss, Miss Martins, is a generous soul. I told her about my family&#39;s situation, and she gave me a check for ten million dollars to move them out of their home and take care of their needs. But I used five million of it for this instead.&#34;</p>
+                        
+                        <p>The people in the courtroom whispered among themselves, confused by Jamila&#39;s statement. It didn&#39;t make sense-why would she do something like this?</p>
+                        
+                        <p>Sarah clenched her fists. &#34;I&#39;m going to smack that witch when this is over.I knew it! She&#39;s pure evil, and she&#39;s trying to put all the blame on this poor assistant of hers. Who knows what she used to threaten the girl?&#34;Sarah fumed, and Anthony tried to calm her down.</p>
+                        
+                        <p>&#34;Don&#39;t worry, you&#39;ll get your chance,&#34; he reassured her.</p>
+                        
+                        <p>&#34;Can you explain why you did this? Has Mrs. Kane done something to you that made you act against her like this?&#34; the lawyer asked Jamila.</p>
+                        
+                        <p>Jamila glanced at Lily, who was staring at her with piercing eyes. Unable to meet her gaze, Jamila looked at the lawyer instead.</p>
+                        
+                        <p>&#34;Yes,she has.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2413,6 +2477,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2539,7 +2683,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2581,32 +2724,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2617,21 +2742,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2664,6 +2779,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2684,20 +2805,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

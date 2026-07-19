@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:29.792994">
-    <meta property="article:modified_time" content="2026-07-19T02:47:29.792994">
+    <meta property="article:published_time" content="2026-07-19T13:03:24.173819">
+    <meta property="article:modified_time" content="2026-07-19T13:03:24.173819">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:29">
+    <meta name="last-modified" content="2026-07-19 13:03:24">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:29.792994",
-        "dateModified": "2026-07-19T02:47:29.792994",
+        "datePublished": "2026-07-19T13:03:24.173819",
+        "dateModified": "2026-07-19T13:03:24.173819",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,21 +893,25 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>The city buzzed with the news of The Conclave&#39;s exposure, and the once shadowy whispers had now become open secrets. The factions scrambled to regroup, recalibrate, and reassess their positions,knowing that one wrong move could spell their end. Yet, amidst this frenzy, deeper plots began to unfold-secrets within secrets, alliances built on fragile trust, and a revelation that would shake all their plans.</p>
-                    
-                    <p>Alexander sat in his safe house, pouring over the newly released information about The Conclave. Lily&#39;s leak had thrown everything into disarray, and while he admired her boldness, he worried about the repercussions it might have on their already perilous situation. Caleb sat across from him, deep in thought.</p>
-                    
-                    <p>&#34;She&#39;s put herself right in the line of fire,” Caleb said, breaking the silence.&#34;Now that she&#39;s exposed The Conclave, they&#39;ll stop at nothing to eliminate her. If we don&#39;t act quickly, she might not survive the fallout.”</p>
-                    
-                    <p>Alexander nodded. “I&#39;m aware, but this could be our chance to strike back.</p>
-                    
-                    <p>If we can disrupt The Conclave&#39;s operations before they retaliate,we might have a chance to-”</p>
-                    
-                    <p>Before he could finish, his phone buzzed with a private message. He glanced at the screen, his brow furrowing as he read the anonymous text: *&#34;Meet me at the old factory by midnight. Come alone, or she dies.&#34;*</p>
-                    
-                    <p>Alexander&#39;s breath caught. It wasn&#39;t signed, but he could sense the gravity of the situation. He showed the message to Caleb, who studied it with concern.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>The city buzzed with the news of The Conclave&#39;s exposure, and the once shadowy whispers had now become open secrets. The factions scrambled to regroup, recalibrate, and reassess their positions,knowing that one wrong move could spell their end. Yet, amidst this frenzy, deeper plots began to unfold-secrets within secrets, alliances built on fragile trust, and a revelation that would shake all their plans.</p>
+                        
+                        <p>Alexander sat in his safe house, pouring over the newly released information about The Conclave. Lily&#39;s leak had thrown everything into disarray, and while he admired her boldness, he worried about the repercussions it might have on their already perilous situation. Caleb sat across from him, deep in thought.</p>
+                        
+                        <p>&#34;She&#39;s put herself right in the line of fire,” Caleb said, breaking the silence.&#34;Now that she&#39;s exposed The Conclave, they&#39;ll stop at nothing to eliminate her. If we don&#39;t act quickly, she might not survive the fallout.”</p>
+                        
+                        <p>Alexander nodded. “I&#39;m aware, but this could be our chance to strike back.</p>
+                        
+                        <p>If we can disrupt The Conclave&#39;s operations before they retaliate,we might have a chance to-”</p>
+                        
+                        <p>Before he could finish, his phone buzzed with a private message. He glanced at the screen, his brow furrowing as he read the anonymous text: *&#34;Meet me at the old factory by midnight. Come alone, or she dies.&#34;*</p>
+                        
+                        <p>Alexander&#39;s breath caught. It wasn&#39;t signed, but he could sense the gravity of the situation. He showed the message to Caleb, who studied it with concern.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -886,21 +926,25 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;It could be a trap,&#34; Caleb warned. &#34;But if it&#39;s about Lily, we can&#39;t ignore it.”</p>
-                    
-                    <p>“I&#39;m going,&#34; Alexander said, determination hardening his voice.“I&#39;ll handle this myself. Keep the others on standby in case thing go south.&#34;</p>
-                    
-                    <p>Alexander arrived at the dilapidated old factory on the outskirts of town,its windows broken and walls crumbling with age. The wind howled through the empty halls, carrying with it an air of foreboding. As he stepped inside,the shadows seemed to close in around him.</p>
-                    
-                    <p>A figure emerged from the darkness, and Alexander&#39;s eyes widened in surprise-it was Ariana, her face bruised and clothes torn, as if she had barely escaped a vicious attack.</p>
-                    
-                    <p>&#34;You?&#34; Alexander&#39;s voice was filled with confusion and suspicion. “What are you playing at. Ariana?”&#34;</p>
-                    
-                    <p>She held up her hands, as if in surrender. “You think I planned this? The Conclave turned on me. They wanted me out of the picture just as much as they wanted to get rid of you. I barely got away with my life.&#34;</p>
-                    
-                    <p>Alexander narrowed his eyes, trying to gauge the truth in her words. “Why should I believe you?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;It could be a trap,&#34; Caleb warned. &#34;But if it&#39;s about Lily, we can&#39;t ignore it.”</p>
+                        
+                        <p>“I&#39;m going,&#34; Alexander said, determination hardening his voice.“I&#39;ll handle this myself. Keep the others on standby in case thing go south.&#34;</p>
+                        
+                        <p>Alexander arrived at the dilapidated old factory on the outskirts of town,its windows broken and walls crumbling with age. The wind howled through the empty halls, carrying with it an air of foreboding. As he stepped inside,the shadows seemed to close in around him.</p>
+                        
+                        <p>A figure emerged from the darkness, and Alexander&#39;s eyes widened in surprise-it was Ariana, her face bruised and clothes torn, as if she had barely escaped a vicious attack.</p>
+                        
+                        <p>&#34;You?&#34; Alexander&#39;s voice was filled with confusion and suspicion. “What are you playing at. Ariana?”&#34;</p>
+                        
+                        <p>She held up her hands, as if in surrender. “You think I planned this? The Conclave turned on me. They wanted me out of the picture just as much as they wanted to get rid of you. I barely got away with my life.&#34;</p>
+                        
+                        <p>Alexander narrowed his eyes, trying to gauge the truth in her words. “Why should I believe you?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -915,21 +959,25 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Ariana stepped closer, her voice low and urgent. “Because they&#39;re not who you think they are, Alexander. The Conclave has been playing both sides.They&#39;ve been feeding information to Caleb behind your back, manipulating your every move,”</p>
-                    
-                    <p>Alexander froze, his mind racing. He had known there were leaks in his organization, but Caleb? It was impossible-Caleb had been like a brother to him. But as the pieces began to fit together, doubt crept in.</p>
-                    
-                    <p>Seeing his reaction, Ariana pressed on. &#34;They have bigger plans, Alexander.Exposing them was just the beginning. They want to create chaos,to</p>
-                    
-                    <p>watch us tear each other apart while they seize control of the city. And Caleb-he&#39;s been working with them to ensure that outcome.&#34;</p>
-                    
-                    <p>Back at the headquarters, Caleb paced in his office, deep in thought. He had just received a message from Victor, who had managed to infiltrate The Conclave&#39;s ranks. But the information Victor had sent chilled him to the bone: *&#34;They know about you, Caleb. They&#39;re coming for you next.Your usefulness has run out.&#34;*</p>
-                    
-                    <p>His heart pounded as he realized the precarious position he wwas in.He had aligned with The Conclave, believing they would help hím secure power over the city, but it seemed they had other plans. And now, they intended to cut him loose.</p>
-                    
-                    <p>Caleb&#39;s thoughts turned to Alexander. He had kept his dealings with The Conclave a secret, believing that he could protect both their interests. But now, he realized that his actions had made him a pawn in a much larger game. A part of him wondered if he should have trusted Alexander mnore,if they could have faced this threat together instead of working from the shadows.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Ariana stepped closer, her voice low and urgent. “Because they&#39;re not who you think they are, Alexander. The Conclave has been playing both sides.They&#39;ve been feeding information to Caleb behind your back, manipulating your every move,”</p>
+                        
+                        <p>Alexander froze, his mind racing. He had known there were leaks in his organization, but Caleb? It was impossible-Caleb had been like a brother to him. But as the pieces began to fit together, doubt crept in.</p>
+                        
+                        <p>Seeing his reaction, Ariana pressed on. &#34;They have bigger plans, Alexander.Exposing them was just the beginning. They want to create chaos,to</p>
+                        
+                        <p>watch us tear each other apart while they seize control of the city. And Caleb-he&#39;s been working with them to ensure that outcome.&#34;</p>
+                        
+                        <p>Back at the headquarters, Caleb paced in his office, deep in thought. He had just received a message from Victor, who had managed to infiltrate The Conclave&#39;s ranks. But the information Victor had sent chilled him to the bone: *&#34;They know about you, Caleb. They&#39;re coming for you next.Your usefulness has run out.&#34;*</p>
+                        
+                        <p>His heart pounded as he realized the precarious position he wwas in.He had aligned with The Conclave, believing they would help hím secure power over the city, but it seemed they had other plans. And now, they intended to cut him loose.</p>
+                        
+                        <p>Caleb&#39;s thoughts turned to Alexander. He had kept his dealings with The Conclave a secret, believing that he could protect both their interests. But now, he realized that his actions had made him a pawn in a much larger game. A part of him wondered if he should have trusted Alexander mnore,if they could have faced this threat together instead of working from the shadows.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -944,21 +992,25 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Just then, the door to his office burst open, and Victor stumbled inside,clutching his side where a dark stain spread across his shirt.“They found me... I tried to warn you, but they got to me first.&#34;</p>
-                    
-                    <p>Caleb rushed to Victor&#39;s side, helping him to a chair. &#34;Who did this?&#34;</p>
-                    
-                    <p>Victor&#39;s voice was faint, his breaths labored. &#34;The Conclave... they&#39;re here...They want to take you out before you can become a threat.”</p>
-                    
-                    <p>Meanwhile, Carolina paced back and forth in her lavish penthouse,overlooking the city that she had once controlled from the shadows.Her anger boiled over as she watched the news unfold, with reports of The</p>
-                    
-                    <p>Conclave&#39;s activities spreading like wildfire. But her fury wasn&#39;t just about the exposure-it was the realization that she was losing her grip over her own allies.</p>
-                    
-                    <p>&#34;Where is that girl?&#34; she muttered under her breath, glaring out the window.Her thoughts turned to Ariana. &#34;I warned her not to trust those outsiders, and now she&#39;s thrown us all into the fire.&#34;</p>
-                    
-                    <p>One of her aides, a nervous young man who had been trying to stay out of her way, approached cautiously. “Ma&#39;am, there&#39;s something else you should know. Maxwell has been meeting with The Conclave behind your back. He&#39;s... he&#39;s been planning to turn on you.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Just then, the door to his office burst open, and Victor stumbled inside,clutching his side where a dark stain spread across his shirt.“They found me... I tried to warn you, but they got to me first.&#34;</p>
+                        
+                        <p>Caleb rushed to Victor&#39;s side, helping him to a chair. &#34;Who did this?&#34;</p>
+                        
+                        <p>Victor&#39;s voice was faint, his breaths labored. &#34;The Conclave... they&#39;re here...They want to take you out before you can become a threat.”</p>
+                        
+                        <p>Meanwhile, Carolina paced back and forth in her lavish penthouse,overlooking the city that she had once controlled from the shadows.Her anger boiled over as she watched the news unfold, with reports of The</p>
+                        
+                        <p>Conclave&#39;s activities spreading like wildfire. But her fury wasn&#39;t just about the exposure-it was the realization that she was losing her grip over her own allies.</p>
+                        
+                        <p>&#34;Where is that girl?&#34; she muttered under her breath, glaring out the window.Her thoughts turned to Ariana. &#34;I warned her not to trust those outsiders, and now she&#39;s thrown us all into the fire.&#34;</p>
+                        
+                        <p>One of her aides, a nervous young man who had been trying to stay out of her way, approached cautiously. “Ma&#39;am, there&#39;s something else you should know. Maxwell has been meeting with The Conclave behind your back. He&#39;s... he&#39;s been planning to turn on you.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -973,21 +1025,25 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Carolina&#39;s expression darkened further, a dangerous glint in her eye.“So,even Maxwell thinks he can betray me?&#34; She turned sharply to her aide.“Get a message to him. Tell him that if he wants a war, he&#39;ll get one.&#34;</p>
-                    
-                    <p>She picked up her phone, dialing a number she hadn&#39;t called in years-an old contact from her days in the underworld. When the line picked up,her voice was cold and unwavering. “I need you to take care of a problem.And make sure there&#39;s no trace left behind.&#34;</p>
-                    
-                    <p>Alexander stood face to face with Ariana, struggling to process the revelations she had laid before him. Just as he opened his mouth to demand more answers, a series of gunshots echoed through the building.followed by the clatter of boots.</p>
-                    
-                    <p>&#34;They&#39;ve found us,&#34; Ariana whispered urgently. &#34;The Conclave isn&#39;t going to let us walk away from this. We need to move.&#34;</p>
-                    
-                    <p>But before they could escape, masked figures burst into the room, weapons drawn. Alexander and Ariana exchanged a look-united by the realization that they were out of options.</p>
-                    
-                    <p>They fought side by side, taking down the attackers with a mix of desperation and skill. But as the last of the masked figures fell,a familiar voice rang out from the shadows-Caleb&#39;s.</p>
-                    
-                    <p>He stepped forward, his gun aimed squarely at Ariana.&#34;I should have known you&#39;d try to drag him into your mess.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Carolina&#39;s expression darkened further, a dangerous glint in her eye.“So,even Maxwell thinks he can betray me?&#34; She turned sharply to her aide.“Get a message to him. Tell him that if he wants a war, he&#39;ll get one.&#34;</p>
+                        
+                        <p>She picked up her phone, dialing a number she hadn&#39;t called in years-an old contact from her days in the underworld. When the line picked up,her voice was cold and unwavering. “I need you to take care of a problem.And make sure there&#39;s no trace left behind.&#34;</p>
+                        
+                        <p>Alexander stood face to face with Ariana, struggling to process the revelations she had laid before him. Just as he opened his mouth to demand more answers, a series of gunshots echoed through the building.followed by the clatter of boots.</p>
+                        
+                        <p>&#34;They&#39;ve found us,&#34; Ariana whispered urgently. &#34;The Conclave isn&#39;t going to let us walk away from this. We need to move.&#34;</p>
+                        
+                        <p>But before they could escape, masked figures burst into the room, weapons drawn. Alexander and Ariana exchanged a look-united by the realization that they were out of options.</p>
+                        
+                        <p>They fought side by side, taking down the attackers with a mix of desperation and skill. But as the last of the masked figures fell,a familiar voice rang out from the shadows-Caleb&#39;s.</p>
+                        
+                        <p>He stepped forward, his gun aimed squarely at Ariana.&#34;I should have known you&#39;d try to drag him into your mess.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1002,21 +1058,25 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Alexander turned to face his former ally, a mixture of betrayal and disbelief on his face. “Caleb... tell me i&#39;s not true.&#34;</p>
-                    
-                    <p>Caleb&#39;s expression softened for a moment, but then hardened again.&#34;I did what I had to, Alexander. I thought I could keep The Conclave under control, but they were playing us all along. And now, it&#39;s too late to go back.”</p>
-                    
-                    <p>Ariana seized the moment, lunging for her weapon. But before she could reach it, a shot rang out, and she crumpled to the ground, clutching her side.</p>
-                    
-                    <p>Alexander&#39;s shout echoed through the empty factory, and he rushed to Ariana&#39;s side, pressing his hands against the wound. &#34;Stay with me!&#34; he shouted, but her breathing grew more labored.</p>
-                    
-                    <p>Caleb took a step forward, his face twisted with remorse. &#34;I never wanted this, but now we have no choice. The Conclave is going to destroy us if we don&#39;t take them down first.&#34;</p>
-                    
-                    <p>Alexander looked up at Caleb, anger and desperation warring in his eyes.“You better pray that you&#39;re right, because if she dies, there won&#39;t be a place in this world where you can hide.&#34;</p>
-                    
-                    <p>As the two men faced the uncertain future before them, a new shadow</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Alexander turned to face his former ally, a mixture of betrayal and disbelief on his face. “Caleb... tell me i&#39;s not true.&#34;</p>
+                        
+                        <p>Caleb&#39;s expression softened for a moment, but then hardened again.&#34;I did what I had to, Alexander. I thought I could keep The Conclave under control, but they were playing us all along. And now, it&#39;s too late to go back.”</p>
+                        
+                        <p>Ariana seized the moment, lunging for her weapon. But before she could reach it, a shot rang out, and she crumpled to the ground, clutching her side.</p>
+                        
+                        <p>Alexander&#39;s shout echoed through the empty factory, and he rushed to Ariana&#39;s side, pressing his hands against the wound. &#34;Stay with me!&#34; he shouted, but her breathing grew more labored.</p>
+                        
+                        <p>Caleb took a step forward, his face twisted with remorse. &#34;I never wanted this, but now we have no choice. The Conclave is going to destroy us if we don&#39;t take them down first.&#34;</p>
+                        
+                        <p>Alexander looked up at Caleb, anger and desperation warring in his eyes.“You better pray that you&#39;re right, because if she dies, there won&#39;t be a place in this world where you can hide.&#34;</p>
+                        
+                        <p>As the two men faced the uncertain future before them, a new shadow</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1031,17 +1091,21 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>watched from the shadows-a member of The Conclave who had been recording every word. He slipped away unnoticed, a grim smile on his lips.</p>
-                    
-                    <p>By dawn, The Conclave would know everything. And with Carolina,Maxwell, and even Alexander now entangled in their web,the stage was set for a confrontation that would leave no one unscathed.</p>
-                    
-                    <p>But there was one final twist that no one could predict-Lily,who had been following the clues to the factory, arrived just in time to witness the scene. Hidden behind a crumbling wall, she watched the aftermath unfold,her mind racing with new plans. With everyone distracted, she saw an opportunity-a way to turn the tables on The Conclave, save those she cared about, and rewrite the rules of the game.</p>
-                    
-                    <p>As she slipped back into the shadows, one thought filled her mind: *This battle is far from over.*</p>
-                    
-                    <p>And with that, the city braced for the storm that was about to break,knowing that the next move could change everything-and that the final game was only just beginning.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>watched from the shadows-a member of The Conclave who had been recording every word. He slipped away unnoticed, a grim smile on his lips.</p>
+                        
+                        <p>By dawn, The Conclave would know everything. And with Carolina,Maxwell, and even Alexander now entangled in their web,the stage was set for a confrontation that would leave no one unscathed.</p>
+                        
+                        <p>But there was one final twist that no one could predict-Lily,who had been following the clues to the factory, arrived just in time to witness the scene. Hidden behind a crumbling wall, she watched the aftermath unfold,her mind racing with new plans. With everyone distracted, she saw an opportunity-a way to turn the tables on The Conclave, save those she cared about, and rewrite the rules of the game.</p>
+                        
+                        <p>As she slipped back into the shadows, one thought filled her mind: *This battle is far from over.*</p>
+                        
+                        <p>And with that, the city braced for the storm that was about to break,knowing that the next move could change everything-and that the final game was only just beginning.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2357,6 +2421,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2483,7 +2627,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2525,32 +2668,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2561,21 +2686,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2608,6 +2723,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2628,20 +2749,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

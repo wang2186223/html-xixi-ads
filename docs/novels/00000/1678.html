@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>&#34;Your generosity is misplaced, Ms. Hartley,&#34; the assistant replied smoothly. &#34;This reflects our failure to properly vet talent. Mr. Vaughn will contact you personally regarding compensation.&#34; His gaze hardened as he turned back to Cassandra. &#34;After processing her termination, we&#39;ll deliver her directly to the police precinct. You have my word.&#34;</p>
-                    
-                    <p>At his signal, two broad-shouldered security officers materialized, flanking Cassandra with military precision. Their viselike grips on her arms rendered further protests impossible. Her mouth worked soundlessly, all fight drained from her.</p>
-                    
-                    <p>Adrian, already settled in the luxury sedan, leaned forward as Vivian slid in beside him. His usually sharp features softened unexpectedly. &#34;If anyone ever threatens you again, come to me immediately. Even if you&#39;re capable of handling it alone... I want to be your first call.&#34;</p>
-                    
-                    <p>Vivian&#39;s lips curved slightly, though her eyes remained unreadable. &#34;She&#39;s painfully transparent.&#34; The words were dismissive, but her mind circled the true puppet master behind Cassandra&#39;s audacity: Serena. Without Serena&#39;s backing, Cassandra would never have dared such recklessness.</p>
-                    
-                    <p>But Vivian swallowed the observation. Raising Serena&#39;s involvement now would only trigger another pointless argument with Adrian. Some battles required strategic timing.</p>
-                    
-                    <p>The assistant&#39;s frosty voice carried through the open car door: &#34;The security footage clearly shows you intentionally swerving toward Ms. Hartley. That we&#39;re pursuing criminal charges rather than civil litigation speaks to our company&#39;s values. Ivory Phoenix protects its partners.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>&#34;Your generosity is misplaced, Ms. Hartley,&#34; the assistant replied smoothly. &#34;This reflects our failure to properly vet talent. Mr. Vaughn will contact you personally regarding compensation.&#34; His gaze hardened as he turned back to Cassandra. &#34;After processing her termination, we&#39;ll deliver her directly to the police precinct. You have my word.&#34;</p>
+                        
+                        <p>At his signal, two broad-shouldered security officers materialized, flanking Cassandra with military precision. Their viselike grips on her arms rendered further protests impossible. Her mouth worked soundlessly, all fight drained from her.</p>
+                        
+                        <p>Adrian, already settled in the luxury sedan, leaned forward as Vivian slid in beside him. His usually sharp features softened unexpectedly. &#34;If anyone ever threatens you again, come to me immediately. Even if you&#39;re capable of handling it alone... I want to be your first call.&#34;</p>
+                        
+                        <p>Vivian&#39;s lips curved slightly, though her eyes remained unreadable. &#34;She&#39;s painfully transparent.&#34; The words were dismissive, but her mind circled the true puppet master behind Cassandra&#39;s audacity: Serena. Without Serena&#39;s backing, Cassandra would never have dared such recklessness.</p>
+                        
+                        <p>But Vivian swallowed the observation. Raising Serena&#39;s involvement now would only trigger another pointless argument with Adrian. Some battles required strategic timing.</p>
+                        
+                        <p>The assistant&#39;s frosty voice carried through the open car door: &#34;The security footage clearly shows you intentionally swerving toward Ms. Hartley. That we&#39;re pursuing criminal charges rather than civil litigation speaks to our company&#39;s values. Ivory Phoenix protects its partners.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>His words hung in the air as the car door thudded shut, sealing them in soundproofed luxury. The engine purred to life, carrying them away from the confrontation, though the tension lingered like static electricity.</p>
-                    
-                    <p>Ethan Caldwell stood with his usual commanding presence, his voice firm as he declared, &#34;The Blackwood Group&#39;s legal team will work closely with Ivory Phoenix Productions. I&#39;ll personally coordinate with several marshals to expedite the investigation.&#34;</p>
-                    
-                    <p>Cassandra Blake&#39;s face turned ashen. Her knees threatened to buckle as visions of prison bars and cold metal handcuffs flashed through her mind, shattering her earlier bravado. What she&#39;d dismissed as an empty threat—a momentary lapse in judgment—now loomed as a terrifying reality. The tremors running through her body betrayed her crumbling composure.</p>
-                    
-                    <p>The assistant&#39;s crisp voice sliced through her mounting panic. &#34;Apologies for the delay, Mr. Blackwood, Ms. Hartley. I&#39;ll be escorting her back to headquarters to finalize the termination agreement. The breach of contract penalty stands at eight million.&#34; His gaze deliberately lingered on Cassandra as he delivered the staggering figure.</p>
-                    
-                    <p>&#34;Eight million?&#34; Cassandra&#39;s voice cracked, rising to an unnatural pitch. &#34;How am I supposed to come up with eight million?&#34;</p>
-                    
-                    <p>Her desperate shriek echoed through the room, a futile attempt to regain control of the spiraling situation.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>His words hung in the air as the car door thudded shut, sealing them in soundproofed luxury. The engine purred to life, carrying them away from the confrontation, though the tension lingered like static electricity.</p>
+                        
+                        <p>Ethan Caldwell stood with his usual commanding presence, his voice firm as he declared, &#34;The Blackwood Group&#39;s legal team will work closely with Ivory Phoenix Productions. I&#39;ll personally coordinate with several marshals to expedite the investigation.&#34;</p>
+                        
+                        <p>Cassandra Blake&#39;s face turned ashen. Her knees threatened to buckle as visions of prison bars and cold metal handcuffs flashed through her mind, shattering her earlier bravado. What she&#39;d dismissed as an empty threat—a momentary lapse in judgment—now loomed as a terrifying reality. The tremors running through her body betrayed her crumbling composure.</p>
+                        
+                        <p>The assistant&#39;s crisp voice sliced through her mounting panic. &#34;Apologies for the delay, Mr. Blackwood, Ms. Hartley. I&#39;ll be escorting her back to headquarters to finalize the termination agreement. The breach of contract penalty stands at eight million.&#34; His gaze deliberately lingered on Cassandra as he delivered the staggering figure.</p>
+                        
+                        <p>&#34;Eight million?&#34; Cassandra&#39;s voice cracked, rising to an unnatural pitch. &#34;How am I supposed to come up with eight million?&#34;</p>
+                        
+                        <p>Her desperate shriek echoed through the room, a futile attempt to regain control of the spiraling situation.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Adrian Blackwood reclined in his seat, nodding absently. &#34;She&#39;s naive,&#34; he agreed, though Cassandra&#39;s features had already blurred from his memory.</p>
-                    
-                    <p>Ethan closed the car door with a muted click and settled into the driver&#39;s seat. Through the rearview mirror, his tense eyes met Vivian&#39;s. &#34;The hospital reported Natasha&#39;s disappearance.&#34;</p>
-                    
-                    <p>Vivian&#39;s fingers stilled on her knee. She hadn&#39;t anticipated Adrian monitoring her family so closely—this newfound vigilance contrasted sharply with his usual reactive nature. The man who once waited for problems to land at his feet now seemed to anticipate them.</p>
-                    
-                    <p>&#34;Her injuries were nearly healed,&#34; Vivian offered with a casual shrug. &#34;Perhaps she simply checked herself out early?&#34;</p>
-                    
-                    <p>With her live-streaming privileges revoked after the scandal, Natasha&#39;s capacity for mischief had diminished. But Ethan shook his head. &#34;No discharge paperwork was filed. Daphne arrived with lunch to find her room vacant. Her phone&#39;s offline, and security footage only shows her leaving after receiving a call.&#34;</p>
-                    
-                    <p>&#34;Double the surveillance,&#34; Adrian interjected, his casual tone belying the steel beneath. He wouldn&#39;t risk another threat to Vivian&#39;s safety.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Adrian Blackwood reclined in his seat, nodding absently. &#34;She&#39;s naive,&#34; he agreed, though Cassandra&#39;s features had already blurred from his memory.</p>
+                        
+                        <p>Ethan closed the car door with a muted click and settled into the driver&#39;s seat. Through the rearview mirror, his tense eyes met Vivian&#39;s. &#34;The hospital reported Natasha&#39;s disappearance.&#34;</p>
+                        
+                        <p>Vivian&#39;s fingers stilled on her knee. She hadn&#39;t anticipated Adrian monitoring her family so closely—this newfound vigilance contrasted sharply with his usual reactive nature. The man who once waited for problems to land at his feet now seemed to anticipate them.</p>
+                        
+                        <p>&#34;Her injuries were nearly healed,&#34; Vivian offered with a casual shrug. &#34;Perhaps she simply checked herself out early?&#34;</p>
+                        
+                        <p>With her live-streaming privileges revoked after the scandal, Natasha&#39;s capacity for mischief had diminished. But Ethan shook his head. &#34;No discharge paperwork was filed. Daphne arrived with lunch to find her room vacant. Her phone&#39;s offline, and security footage only shows her leaving after receiving a call.&#34;</p>
+                        
+                        <p>&#34;Double the surveillance,&#34; Adrian interjected, his casual tone belying the steel beneath. He wouldn&#39;t risk another threat to Vivian&#39;s safety.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Yet in his determination to shield her, Adrian couldn&#39;t foresee the storm gathering on the horizon.</p>
-                    
-                    <p>After discussing the Dawson family affairs, Vivian hesitated before suggesting, &#34;Let&#39;s dine out tonight. It&#39;s been ages since we visited Emerald Pizzeria.&#34;</p>
-                    
-                    <p>Feeling suddenly self-conscious, she quickly added, &#34;Consider it my thank you for appearing as our guest today.&#34;</p>
-                    
-                    <p>Adrian&#39;s lips curved into a faint smile, pride flickering in his eyes. &#34;I hadn&#39;t planned to attend. Dominic reached out—mentioned your friend canceled last minute.&#34;</p>
-                    
-                    <p>&#34;Dominic?&#34; Vivian&#39;s stomach tightened, recalling Audrey&#39;s earlier unease. &#34;Is he with Audrey now? Perhaps we should postpone and check on her instead.&#34;</p>
-                    
-                    <p>Adrian&#39;s expression darkened instantly. &#34;Is this your idea of gratitude?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Yet in his determination to shield her, Adrian couldn&#39;t foresee the storm gathering on the horizon.</p>
+                        
+                        <p>After discussing the Dawson family affairs, Vivian hesitated before suggesting, &#34;Let&#39;s dine out tonight. It&#39;s been ages since we visited Emerald Pizzeria.&#34;</p>
+                        
+                        <p>Feeling suddenly self-conscious, she quickly added, &#34;Consider it my thank you for appearing as our guest today.&#34;</p>
+                        
+                        <p>Adrian&#39;s lips curved into a faint smile, pride flickering in his eyes. &#34;I hadn&#39;t planned to attend. Dominic reached out—mentioned your friend canceled last minute.&#34;</p>
+                        
+                        <p>&#34;Dominic?&#34; Vivian&#39;s stomach tightened, recalling Audrey&#39;s earlier unease. &#34;Is he with Audrey now? Perhaps we should postpone and check on her instead.&#34;</p>
+                        
+                        <p>Adrian&#39;s expression darkened instantly. &#34;Is this your idea of gratitude?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Vivian hurried to clarify, &#34;It&#39;s just that I&#39;m concerned about Audrey—&#34;</p>
-                    
-                    <p>Adrian brushed off her worries with an indifferent flick of his wrist. &#34;What&#39;s there to worry about? Dominic&#39;s security team is the finest in Crestwood. She&#39;s perfectly safe.&#34;</p>
-                    
-                    <p>&#34;That&#39;s not what concerns me—&#34; Vivian muttered, pressing her lips together in quiet displeasure.</p>
-                    
-                    <p>Adrian studied her face. &#34;You&#39;re worried about their relationship, aren&#39;t you?&#34;</p>
-                    
-                    <p>Vivian&#39;s eyebrows shot up. &#34;How did you know?&#34;</p>
-                    
-                    <p>He gave a derisive chuckle. &#34;It&#39;s written all over your face.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Vivian hurried to clarify, &#34;It&#39;s just that I&#39;m concerned about Audrey—&#34;</p>
+                        
+                        <p>Adrian brushed off her worries with an indifferent flick of his wrist. &#34;What&#39;s there to worry about? Dominic&#39;s security team is the finest in Crestwood. She&#39;s perfectly safe.&#34;</p>
+                        
+                        <p>&#34;That&#39;s not what concerns me—&#34; Vivian muttered, pressing her lips together in quiet displeasure.</p>
+                        
+                        <p>Adrian studied her face. &#34;You&#39;re worried about their relationship, aren&#39;t you?&#34;</p>
+                        
+                        <p>Vivian&#39;s eyebrows shot up. &#34;How did you know?&#34;</p>
+                        
+                        <p>He gave a derisive chuckle. &#34;It&#39;s written all over your face.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>With a sigh, Vivian lowered her gaze. &#34;They&#39;re not well-suited.&#34;</p>
-                    
-                    <p>Adrian leaned back casually. &#34;In matters of the heart, there&#39;s no such thing as perfect compatibility. It boils down to whether two people want each other. This is the first time I&#39;ve seen Dominic so taken with a woman. Whether Audrey returns his feelings—you&#39;d know better than I.&#34;</p>
-                    
-                    <p>&#34;Love is something only the people involved can navigate. Outsiders just complicate things.&#34;</p>
-                    
-                    <p>Vivian softly repeated his words, &#34;So in relationships, there&#39;s no perfect match, only wanting or not wanting?&#34;</p>
-                    
-                    <p>She turned to study Adrian&#39;s profile. His expression remained impassive, as if they were discussing the weather.</p>
-                    
-                    <p>Biting back the question burning her tongue—Do you want me?—Vivian instead asked, &#34;Would you prefer seafood or something else?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>With a sigh, Vivian lowered her gaze. &#34;They&#39;re not well-suited.&#34;</p>
+                        
+                        <p>Adrian leaned back casually. &#34;In matters of the heart, there&#39;s no such thing as perfect compatibility. It boils down to whether two people want each other. This is the first time I&#39;ve seen Dominic so taken with a woman. Whether Audrey returns his feelings—you&#39;d know better than I.&#34;</p>
+                        
+                        <p>&#34;Love is something only the people involved can navigate. Outsiders just complicate things.&#34;</p>
+                        
+                        <p>Vivian softly repeated his words, &#34;So in relationships, there&#39;s no perfect match, only wanting or not wanting?&#34;</p>
+                        
+                        <p>She turned to study Adrian&#39;s profile. His expression remained impassive, as if they were discussing the weather.</p>
+                        
+                        <p>Biting back the question burning her tongue—Do you want me?—Vivian instead asked, &#34;Would you prefer seafood or something else?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Adrian pulled out his phone without looking at her, his voice laced with sarcasm. &#34;With such half-hearted gratitude, the menu hardly matters.&#34;</p>
-                    
-                    <p>&#34;If it doesn&#39;t matter, then let&#39;s go to that new seafood place. I&#39;ve been craving their caviar-topped snow crab with that special pickled radish—so refreshing! And their sea urchin toast, with the crispy bread slathered in sweet pumpkin purée and piled high with fresh uni. Oh! And the Wagyu with matsutake mushrooms—that sizzle when it hits the hot stone...&#34; Vivian trailed off dreamily.</p>
-                    
-                    <p>Adrian remained silent. Was the issue truly about the food? Or her lackluster show of appreciation?</p>
-                    
-                    <p>His voice turned frosty. &#34;I&#39;m beginning to think you only invited me to indulge your own cravings.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Adrian pulled out his phone without looking at her, his voice laced with sarcasm. &#34;With such half-hearted gratitude, the menu hardly matters.&#34;</p>
+                        
+                        <p>&#34;If it doesn&#39;t matter, then let&#39;s go to that new seafood place. I&#39;ve been craving their caviar-topped snow crab with that special pickled radish—so refreshing! And their sea urchin toast, with the crispy bread slathered in sweet pumpkin purée and piled high with fresh uni. Oh! And the Wagyu with matsutake mushrooms—that sizzle when it hits the hot stone...&#34; Vivian trailed off dreamily.</p>
+                        
+                        <p>Adrian remained silent. Was the issue truly about the food? Or her lackluster show of appreciation?</p>
+                        
+                        <p>His voice turned frosty. &#34;I&#39;m beginning to think you only invited me to indulge your own cravings.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

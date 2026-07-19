@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.004424">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.004424">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.179933">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.179933">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.004424",
-        "dateModified": "2026-07-19T02:47:19.004424",
+        "datePublished": "2026-07-19T13:03:14.179933",
+        "dateModified": "2026-07-19T13:03:14.179933",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,27 +893,31 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>Dr. Evans sighed and looked at me directly.</p>
-                    
-                    <p>&#34;Audrey, if Blake came here to help his Miss Rose find her missing phone,as you claim. wouldn&#39;t he have immediately demanded it from you when he entered the room?&#34;</p>
-                    
-                    <p>I froze. She had a point.</p>
-                    
-                    <p>&#34;Yet,&#34; Dr. Evans continued, &#34;you saw what happened. When Blake arrived,he didn&#39;t rush straight to your room. He stood outside talking to me first.&#34;</p>
-                    
-                    <p>I lifted my head slowly, replaying the scene. Blake hadn&#39;t barged in demanding the phone.</p>
-                    
-                    <p>&#34;What did he say to you?&#34; My voice came out smaller than I intended.</p>
-                    
-                    <p>&#34;He asked about your health. Specifically, he wanted to know if there was something wrong with your stomach, since I&#39;m a specialist in gastric cancer treatmnent at Mayo Clinic.&#34;</p>
-                    
-                    <p>My breath caught.</p>
-                    
-                    <p>&#34;When I told him Ethan brought you here because he&#39;s Alexander&#39;s roommate. Blake pressed further. He asked about your vomiting blood,whether we&#39;d run any tests, and if we&#39;d confirmed that you were healthy.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>Dr. Evans sighed and looked at me directly.</p>
+                        
+                        <p>&#34;Audrey, if Blake came here to help his Miss Rose find her missing phone,as you claim. wouldn&#39;t he have immediately demanded it from you when he entered the room?&#34;</p>
+                        
+                        <p>I froze. She had a point.</p>
+                        
+                        <p>&#34;Yet,&#34; Dr. Evans continued, &#34;you saw what happened. When Blake arrived,he didn&#39;t rush straight to your room. He stood outside talking to me first.&#34;</p>
+                        
+                        <p>I lifted my head slowly, replaying the scene. Blake hadn&#39;t barged in demanding the phone.</p>
+                        
+                        <p>&#34;What did he say to you?&#34; My voice came out smaller than I intended.</p>
+                        
+                        <p>&#34;He asked about your health. Specifically, he wanted to know if there was something wrong with your stomach, since I&#39;m a specialist in gastric cancer treatmnent at Mayo Clinic.&#34;</p>
+                        
+                        <p>My breath caught.</p>
+                        
+                        <p>&#34;When I told him Ethan brought you here because he&#39;s Alexander&#39;s roommate. Blake pressed further. He asked about your vomiting blood,whether we&#39;d run any tests, and if we&#39;d confirmed that you were healthy.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -892,27 +932,31 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>She gave me a meaningful look. &#34;Only after I assured him you weren&#39;t seriously ill did he come in to see you.&#34;</p>
-                    
-                    <p>*Blake had been asking about my health first? Not about the phone?&#34;</p>
-                    
-                    <p>&#34;If he was here to confront you or retrieve that phone,&#34; Dr. Evans said,&#34;why would he spend so much time inquiring about your medical condition?&#34;</p>
-                    
-                    <p>I sat motionless, my face draining of color. Had I misread everything?</p>
-                    
-                    <p>*If Blake truly had been worried about me... and I attacked him the moment he walked in.*</p>
-                    
-                    <p>My phone rang, making me jump. Ethan checked the screen.</p>
-                    
-                    <p>&#34;Michael Chen? Who&#39;s that?&#34;</p>
-                    
-                    <p>&#34;Blake Parker&#39;s assistant.&#34; I replied.</p>
-                    
-                    <p>Ethan was about to reject the call when I stopped him.′′NO,wait.I&#39;ll answer.&#34;</p>
-                    
-                    <p>&#34;Hello?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>She gave me a meaningful look. &#34;Only after I assured him you weren&#39;t seriously ill did he come in to see you.&#34;</p>
+                        
+                        <p>*Blake had been asking about my health first? Not about the phone?&#34;</p>
+                        
+                        <p>&#34;If he was here to confront you or retrieve that phone,&#34; Dr. Evans said,&#34;why would he spend so much time inquiring about your medical condition?&#34;</p>
+                        
+                        <p>I sat motionless, my face draining of color. Had I misread everything?</p>
+                        
+                        <p>*If Blake truly had been worried about me... and I attacked him the moment he walked in.*</p>
+                        
+                        <p>My phone rang, making me jump. Ethan checked the screen.</p>
+                        
+                        <p>&#34;Michael Chen? Who&#39;s that?&#34;</p>
+                        
+                        <p>&#34;Blake Parker&#39;s assistant.&#34; I replied.</p>
+                        
+                        <p>Ethan was about to reject the call when I stopped him.′′NO,wait.I&#39;ll answer.&#34;</p>
+                        
+                        <p>&#34;Hello?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -927,27 +971,31 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;Miss Sinclair.&#34; Michael sounded uncomfortable. &#34;I&#39;m not sure I should be calling, but I felt I needed to clear something up.&#34;</p>
-                    
-                    <p>&#34;Mr. Parker said there&#39;s no point explaining, but I don&#39;t agree. About that night at the hotel...&#34;</p>
-                    
-                    <p>I waited.</p>
-                    
-                    <p>′′Itwas me who filed the report. Not Mr.Parker.&#34;</p>
-                    
-                    <p>&#34;I already know that.&#34;</p>
-                    
-                    <p>&#34;Yes, but what you don&#39;t know is why.&#34; Michael paused. &#34;Mr. Parker</p>
-                    
-                    <p>made a mistake that night. When he called and Ethan answered,he thought you were alone with him.&#34;</p>
-                    
-                    <p>&#34;He worried you were being impulsive. Getting involved with someone so much younger who might hurt you.&#34;</p>
-                    
-                    <p>&#34;He couldn&#39;t come himself since he was with Miss Rose, and sending me directly seemed inappropriate,so he suggested the report to interrupt whatever he thought was happening.&#34;</p>
-                    
-                    <p>&#34;As for me being outside the hotel, I parked there in case Mr. Parker came looking for you. It had nothing to do with taking photos or embarrassing you.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;Miss Sinclair.&#34; Michael sounded uncomfortable. &#34;I&#39;m not sure I should be calling, but I felt I needed to clear something up.&#34;</p>
+                        
+                        <p>&#34;Mr. Parker said there&#39;s no point explaining, but I don&#39;t agree. About that night at the hotel...&#34;</p>
+                        
+                        <p>I waited.</p>
+                        
+                        <p>′′Itwas me who filed the report. Not Mr.Parker.&#34;</p>
+                        
+                        <p>&#34;I already know that.&#34;</p>
+                        
+                        <p>&#34;Yes, but what you don&#39;t know is why.&#34; Michael paused. &#34;Mr. Parker</p>
+                        
+                        <p>made a mistake that night. When he called and Ethan answered,he thought you were alone with him.&#34;</p>
+                        
+                        <p>&#34;He worried you were being impulsive. Getting involved with someone so much younger who might hurt you.&#34;</p>
+                        
+                        <p>&#34;He couldn&#39;t come himself since he was with Miss Rose, and sending me directly seemed inappropriate,so he suggested the report to interrupt whatever he thought was happening.&#34;</p>
+                        
+                        <p>&#34;As for me being outside the hotel, I parked there in case Mr. Parker came looking for you. It had nothing to do with taking photos or embarrassing you.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -962,27 +1010,31 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Mr. Parker never wanted to humiliate you,&#34; Michael continued. &#34;He was trying to protect you.&#34;</p>
-                    
-                    <p>&#34;There&#39;s no need to explain,&#34; I cut him off. &#34;Who I spend time with.whether I get hurt- I know better than anyone. I don&#39;t need your boss&#39;s concern.&#34;</p>
-                    
-                    <p>Before hanging up, I asked, &#34;Michael, these days Blake&#39;s been looking for me... was it because he was worried, or was it for Laurel?&#34;</p>
-                    
-                    <p>&#34;For Laurel?&#34; Michael sounded confused. &#34;Miss Sinclair, I think you&#39;ve misunderstood Mr. Parker. He -&#34;</p>
-                    
-                    <p>A voice interrupted from Michael&#39;s end. &#34;Mr. Chen, Mr. Parker says he&#39;s on his way to Twilight Mansion to see Miss Rose. He wants you to handle things at the company...&#34;</p>
-                    
-                    <p>I couldn&#39;t help but laugh coldly as I heard the male voice cutting in from Michael&#39;s end. I hung up without another word.</p>
-                    
-                    <p>What misunderstanding could I possibly have about Blake Parker?</p>
-                    
-                    <p>In his heart, Laurel Rose would always come first.</p>
-                    
-                    <p>After ending Michael&#39;s call. I immediately called Astrid, giving her Dr.Evans&#39; address.</p>
-                    
-                    <p>Astrid arrived in record time. The moment she stepped into Dr. Evans&#39;home,she nearly burst into tears, wrapping me in a fierce hug.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Mr. Parker never wanted to humiliate you,&#34; Michael continued. &#34;He was trying to protect you.&#34;</p>
+                        
+                        <p>&#34;There&#39;s no need to explain,&#34; I cut him off. &#34;Who I spend time with.whether I get hurt- I know better than anyone. I don&#39;t need your boss&#39;s concern.&#34;</p>
+                        
+                        <p>Before hanging up, I asked, &#34;Michael, these days Blake&#39;s been looking for me... was it because he was worried, or was it for Laurel?&#34;</p>
+                        
+                        <p>&#34;For Laurel?&#34; Michael sounded confused. &#34;Miss Sinclair, I think you&#39;ve misunderstood Mr. Parker. He -&#34;</p>
+                        
+                        <p>A voice interrupted from Michael&#39;s end. &#34;Mr. Chen, Mr. Parker says he&#39;s on his way to Twilight Mansion to see Miss Rose. He wants you to handle things at the company...&#34;</p>
+                        
+                        <p>I couldn&#39;t help but laugh coldly as I heard the male voice cutting in from Michael&#39;s end. I hung up without another word.</p>
+                        
+                        <p>What misunderstanding could I possibly have about Blake Parker?</p>
+                        
+                        <p>In his heart, Laurel Rose would always come first.</p>
+                        
+                        <p>After ending Michael&#39;s call. I immediately called Astrid, giving her Dr.Evans&#39; address.</p>
+                        
+                        <p>Astrid arrived in record time. The moment she stepped into Dr. Evans&#39;home,she nearly burst into tears, wrapping me in a fierce hug.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -997,27 +1049,31 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;You&#39;re only contacting me NOW?&#34; she cried, holding me so tightly I could barely breathe. &#34;You have no idea how worried I&#39;ve been these past two days!&#34;</p>
-                    
-                    <p>&#34;I&#39;ve been looking everywhere for you!&#34; she continued, still clinging to me.&#34;I was worried sick that Blake Parker might find you first and drag you straight to Laurel Rose!&#34;</p>
-                    
-                    <p>Her grip was so tight I could barely breathe, but I felt a wave of emotion wash over me.</p>
-                    
-                    <p>&#34;I&#39;m sorry for making you worry,&#34; I said quietly.</p>
-                    
-                    <p>Astrid held on as if she was afraid I&#39;d disappear again if she let go.</p>
-                    
-                    <p>When she finally pulled back. I saw tears in her eyes. &#34;Don&#39;t ever do that again. When you&#39;re in trouble, you call me. Got it?&#34;</p>
-                    
-                    <p>She turned to Ethan, her eyes narrowing. &#34;And you! How could you keep this from me? Even if she told you not to tell anyone. I&#39;m not just anyone!&#34;</p>
-                    
-                    <p>Ethan raised his hands. &#34;You&#39;re right. My mistake. I owe you a meal. It won&#39;t happen again.&#34;</p>
-                    
-                    <p>His sincerity made Astrid shake her head with a reluctant smie. &#34;Forget</p>
-                    
-                    <p>the meal. Just don&#39;t pull this stunt again.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;You&#39;re only contacting me NOW?&#34; she cried, holding me so tightly I could barely breathe. &#34;You have no idea how worried I&#39;ve been these past two days!&#34;</p>
+                        
+                        <p>&#34;I&#39;ve been looking everywhere for you!&#34; she continued, still clinging to me.&#34;I was worried sick that Blake Parker might find you first and drag you straight to Laurel Rose!&#34;</p>
+                        
+                        <p>Her grip was so tight I could barely breathe, but I felt a wave of emotion wash over me.</p>
+                        
+                        <p>&#34;I&#39;m sorry for making you worry,&#34; I said quietly.</p>
+                        
+                        <p>Astrid held on as if she was afraid I&#39;d disappear again if she let go.</p>
+                        
+                        <p>When she finally pulled back. I saw tears in her eyes. &#34;Don&#39;t ever do that again. When you&#39;re in trouble, you call me. Got it?&#34;</p>
+                        
+                        <p>She turned to Ethan, her eyes narrowing. &#34;And you! How could you keep this from me? Even if she told you not to tell anyone. I&#39;m not just anyone!&#34;</p>
+                        
+                        <p>Ethan raised his hands. &#34;You&#39;re right. My mistake. I owe you a meal. It won&#39;t happen again.&#34;</p>
+                        
+                        <p>His sincerity made Astrid shake her head with a reluctant smie. &#34;Forget</p>
+                        
+                        <p>the meal. Just don&#39;t pull this stunt again.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1032,27 +1088,31 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>I glanced at Dr. Evans. &#34;Dr. Evans, thank you for everything. We should go now. We&#39;ve imposed enough, and Blake knows I&#39;m here.&#34;</p>
-                    
-                    <p>Dr. Evans nodded. &#34;Remember your medication. And try to avoid stress.&#34;</p>
-                    
-                    <p>With Astrid and Ethan&#39;s help, I gathered my things. As we left, I felt grateful to Dr. Evans for protecting me when I needed it most.</p>
-                    
-                    <p>The smell of home greeted me as Astrid unlocked my apartment door.Snow came running immediately, meowing loudly and circling my legs. I knelt down and scooped her into my arms, burying my face in her fur.</p>
-                    
-                    <p>&#34;Even though you disappeared, I tookexcellent care of this little guy,&#34;Astrid said,sitting on my couch like she owned it. She gestured for Ethan to sit too.</p>
-                    
-                    <p>&#34;Now,&#34; she fixed me with her gaze, &#34;what&#39;s really going on with your health?&#34;</p>
-                    
-                    <p>I kept stroking Snow, avoiding her eyes.&#34;Itold you. The blood was from my gums.&#34;</p>
-                    
-                    <p>&#34;Do I look five years old?&#34; Astrid&#39;s eyes flashed. &#34;Bleeding gums don&#39;t make you vomit blood repeatedly!&#34;</p>
-                    
-                    <p>She leaned forward. &#34;I&#39;m your best friend. Don&#39;t I deserve to know what&#39;s happening?&#34;</p>
-                    
-                    <p>When I didn&#39;t answer, she sprawled across the couch.&#34;Fine.I&#39;m not leaving until you tell me what&#39;s wrong.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>I glanced at Dr. Evans. &#34;Dr. Evans, thank you for everything. We should go now. We&#39;ve imposed enough, and Blake knows I&#39;m here.&#34;</p>
+                        
+                        <p>Dr. Evans nodded. &#34;Remember your medication. And try to avoid stress.&#34;</p>
+                        
+                        <p>With Astrid and Ethan&#39;s help, I gathered my things. As we left, I felt grateful to Dr. Evans for protecting me when I needed it most.</p>
+                        
+                        <p>The smell of home greeted me as Astrid unlocked my apartment door.Snow came running immediately, meowing loudly and circling my legs. I knelt down and scooped her into my arms, burying my face in her fur.</p>
+                        
+                        <p>&#34;Even though you disappeared, I tookexcellent care of this little guy,&#34;Astrid said,sitting on my couch like she owned it. She gestured for Ethan to sit too.</p>
+                        
+                        <p>&#34;Now,&#34; she fixed me with her gaze, &#34;what&#39;s really going on with your health?&#34;</p>
+                        
+                        <p>I kept stroking Snow, avoiding her eyes.&#34;Itold you. The blood was from my gums.&#34;</p>
+                        
+                        <p>&#34;Do I look five years old?&#34; Astrid&#39;s eyes flashed. &#34;Bleeding gums don&#39;t make you vomit blood repeatedly!&#34;</p>
+                        
+                        <p>She leaned forward. &#34;I&#39;m your best friend. Don&#39;t I deserve to know what&#39;s happening?&#34;</p>
+                        
+                        <p>When I didn&#39;t answer, she sprawled across the couch.&#34;Fine.I&#39;m not leaving until you tell me what&#39;s wrong.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1067,25 +1127,29 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>I managed a small smile. &#34;That&#39;s okay. I was planning to cook something</p>
-                    
-                    <p>for both of you anyway.&#34;</p>
-                    
-                    <p>I turned to Ethan. &#34;What would you like to eat?&#34;</p>
-                    
-                    <p>&#34;Audrey Sinclair!&#34; Astrid looked ready to explode.</p>
-                    
-                    <p>I smiled, and just as I was about to keep trading jibes with her, my phone rang,showing James&#39;s name.</p>
-                    
-                    <p>I hesitated, then answered, &#34;James.&#34;</p>
-                    
-                    <p>&#34;Audrey!&#34; Relief mixed with urgency in his voice. &#34;Where have you been? T ve been trying to reach you for days!&#34;</p>
-                    
-                    <p>&#34;The company that wants to collaborate with us has been trying to meet with you. George has been calling me constantly!&#34;</p>
-                    
-                    <p>&#34;They just called again,&#34; James continued, his voice urgent. &#34;Their executives say if you don&#39;t show up today, they&#39;re canceling the collaboration completely!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>I managed a small smile. &#34;That&#39;s okay. I was planning to cook something</p>
+                        
+                        <p>for both of you anyway.&#34;</p>
+                        
+                        <p>I turned to Ethan. &#34;What would you like to eat?&#34;</p>
+                        
+                        <p>&#34;Audrey Sinclair!&#34; Astrid looked ready to explode.</p>
+                        
+                        <p>I smiled, and just as I was about to keep trading jibes with her, my phone rang,showing James&#39;s name.</p>
+                        
+                        <p>I hesitated, then answered, &#34;James.&#34;</p>
+                        
+                        <p>&#34;Audrey!&#34; Relief mixed with urgency in his voice. &#34;Where have you been? T ve been trying to reach you for days!&#34;</p>
+                        
+                        <p>&#34;The company that wants to collaborate with us has been trying to meet with you. George has been calling me constantly!&#34;</p>
+                        
+                        <p>&#34;They just called again,&#34; James continued, his voice urgent. &#34;Their executives say if you don&#39;t show up today, they&#39;re canceling the collaboration completely!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2401,6 +2465,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2527,7 +2671,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2569,32 +2712,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2605,21 +2730,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2652,6 +2767,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2672,20 +2793,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

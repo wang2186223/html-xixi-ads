@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Adrian cut him off with a dismissive flick of his wrist. &#34;Don&#39;t flatter yourself. He&#39;s beneath my notice.&#34;</p>
-                    
-                    <p>The subtext screamed louder than words—Sebastian wasn&#39;t worth the energy.</p>
-                    
-                    <p>Vivian jerked her chin toward the exit. &#34;Harrison, take him and go.&#34;</p>
-                    
-                    <p>Sebastian planted his feet. &#34;Not without you,&#34; he growled, eyes never leaving Adrian. &#34;I don&#39;t like you alone with him.&#34;</p>
-                    
-                    <p>&#34;Harrison,&#34; Vivian&#39;s voice turned steely, &#34;I know Mr. Blackwood. Remove Sebastian. Now.&#34;</p>
-                    
-                    <p>Adrian&#39;s lips twitched at her commanding tone. He turned away, granting silent permission for their departure.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Adrian cut him off with a dismissive flick of his wrist. &#34;Don&#39;t flatter yourself. He&#39;s beneath my notice.&#34;</p>
+                        
+                        <p>The subtext screamed louder than words—Sebastian wasn&#39;t worth the energy.</p>
+                        
+                        <p>Vivian jerked her chin toward the exit. &#34;Harrison, take him and go.&#34;</p>
+                        
+                        <p>Sebastian planted his feet. &#34;Not without you,&#34; he growled, eyes never leaving Adrian. &#34;I don&#39;t like you alone with him.&#34;</p>
+                        
+                        <p>&#34;Harrison,&#34; Vivian&#39;s voice turned steely, &#34;I know Mr. Blackwood. Remove Sebastian. Now.&#34;</p>
+                        
+                        <p>Adrian&#39;s lips twitched at her commanding tone. He turned away, granting silent permission for their departure.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Harrison&#39;s nervous gaze darted between them before he began apologizing profusely to Adrian while trying to steer Sebastian toward the door.</p>
-                    
-                    <p>Sebastian resisted until Harrison hissed in his ear, &#34;Fine, ruin your career. But ready to tank your idol&#39;s chances before she even debuts?&#34;</p>
-                    
-                    <p>The words hit like a gut punch. Shoulders slumping, Sebastian finally moved—but not without shooting Adrian a venomous glare over his shoulder, dragging his feet like a petulant child.</p>
-                    
-                    <p>As they retreated, Harrison muttered under his breath, &#34;Christ.&#34;</p>
-                    
-                    <p>The heavy door clicked shut behind them.</p>
-                    
-                    <p>Silence.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Harrison&#39;s nervous gaze darted between them before he began apologizing profusely to Adrian while trying to steer Sebastian toward the door.</p>
+                        
+                        <p>Sebastian resisted until Harrison hissed in his ear, &#34;Fine, ruin your career. But ready to tank your idol&#39;s chances before she even debuts?&#34;</p>
+                        
+                        <p>The words hit like a gut punch. Shoulders slumping, Sebastian finally moved—but not without shooting Adrian a venomous glare over his shoulder, dragging his feet like a petulant child.</p>
+                        
+                        <p>As they retreated, Harrison muttered under his breath, &#34;Christ.&#34;</p>
+                        
+                        <p>The heavy door clicked shut behind them.</p>
+                        
+                        <p>Silence.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Then Adrian turned slowly, his gaze burning into Vivian. &#34;Now,&#34; he purred, &#34;where were we?&#34;</p>
-                    
-                    <p>The afternoon sun cast long shadows across the pavement as Vivian watched their retreating figures vanish around the corner. Turning back to Adrian, she squared her shoulders with deliberate composure. &#34;Leave Sebastian out of this. I&#39;ll attend your grandmother&#39;s gala if you drop the matter.&#34;</p>
-                    
-                    <p>Adrian&#39;s lips curled in a sardonic smile, his gaze sharp as cut glass. &#34;Since when did the brilliant screenwriter become a bodyguard for some rookie actor?&#34;</p>
-                    
-                    <p>Vivian didn&#39;t flinch. Her voice remained steady as tempered steel. &#34;Do we have an agreement or not?&#34;</p>
-                    
-                    <p>A muscle twitched in his jaw before he exhaled sharply. &#34;Fine. The boy&#39;s hardly worth my attention anyway.&#34; His eyes flickered to the angry red mark on her collarbone where Sebastian had shoved her earlier. The rigid set of his shoulders softened marginally. &#34;Let&#39;s get that looked at by a physician.&#34;</p>
-                    
-                    <p>She opened her mouth to protest, then caught the dangerous glint in Adrian&#39;s eyes. One wrong move and his simmering temper might redirect toward Sebastian. Swallowing her pride, she gave a terse nod. &#34;Let me get my purse.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Then Adrian turned slowly, his gaze burning into Vivian. &#34;Now,&#34; he purred, &#34;where were we?&#34;</p>
+                        
+                        <p>The afternoon sun cast long shadows across the pavement as Vivian watched their retreating figures vanish around the corner. Turning back to Adrian, she squared her shoulders with deliberate composure. &#34;Leave Sebastian out of this. I&#39;ll attend your grandmother&#39;s gala if you drop the matter.&#34;</p>
+                        
+                        <p>Adrian&#39;s lips curled in a sardonic smile, his gaze sharp as cut glass. &#34;Since when did the brilliant screenwriter become a bodyguard for some rookie actor?&#34;</p>
+                        
+                        <p>Vivian didn&#39;t flinch. Her voice remained steady as tempered steel. &#34;Do we have an agreement or not?&#34;</p>
+                        
+                        <p>A muscle twitched in his jaw before he exhaled sharply. &#34;Fine. The boy&#39;s hardly worth my attention anyway.&#34; His eyes flickered to the angry red mark on her collarbone where Sebastian had shoved her earlier. The rigid set of his shoulders softened marginally. &#34;Let&#39;s get that looked at by a physician.&#34;</p>
+                        
+                        <p>She opened her mouth to protest, then caught the dangerous glint in Adrian&#39;s eyes. One wrong move and his simmering temper might redirect toward Sebastian. Swallowing her pride, she gave a terse nod. &#34;Let me get my purse.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Adrian tapped his watch. &#34;Five minutes. I&#39;ll be in the car.&#34;</p>
-                    
-                    <p>Outside The Emerald Pizzeria, Vivian approached the waiting Bentley where Ethan already stood holding the rear door. Leaning against the polished black chassis with phone pressed to his ear, Ethan barked orders to someone. &#34;Have the medical team meet us at Seabreeze Villa immediately.&#34; Vivian&#39;s brows knitted in confusion - since when did a minor scrape warrant summoning the Blackwood family physicians?</p>
-                    
-                    <p>Her indifference toward medical attention paled against her greater concern - keeping Adrian&#39;s wrath from falling on Sebastian. Complying with his demands seemed a small price to pay. Without comment, she slid into the supple leather seat.</p>
-                    
-                    <p>Adrian sat immersed in a video conference, the glow from his laptop accentuating the sharp angles of his profile. Power radiated from him like an electrical current, that effortless magnetism that made boardrooms fall silent when he entered. This was a man accustomed to bending the world to his will.</p>
-                    
-                    <p>Vivian averted her gaze, sinking deeper into the seat just as Adrian abruptly closed his laptop. His hand shot out to adjust her disheveled sweater, making her recoil violently. The sudden movement caused the loose knit fabric to slip, exposing the delicate curve of her shoulder. His fingers stilled against the fabric, eyes lingering on the flushed skin before traveling up to meet her startled expression.</p>
-                    
-                    <p>Her wide eyes held the skittish wariness of a woodland creature caught in a hunter&#39;s sights, torn between fight and flight. For a suspended moment, the air between them crackled with unspoken tension.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Adrian tapped his watch. &#34;Five minutes. I&#39;ll be in the car.&#34;</p>
+                        
+                        <p>Outside The Emerald Pizzeria, Vivian approached the waiting Bentley where Ethan already stood holding the rear door. Leaning against the polished black chassis with phone pressed to his ear, Ethan barked orders to someone. &#34;Have the medical team meet us at Seabreeze Villa immediately.&#34; Vivian&#39;s brows knitted in confusion - since when did a minor scrape warrant summoning the Blackwood family physicians?</p>
+                        
+                        <p>Her indifference toward medical attention paled against her greater concern - keeping Adrian&#39;s wrath from falling on Sebastian. Complying with his demands seemed a small price to pay. Without comment, she slid into the supple leather seat.</p>
+                        
+                        <p>Adrian sat immersed in a video conference, the glow from his laptop accentuating the sharp angles of his profile. Power radiated from him like an electrical current, that effortless magnetism that made boardrooms fall silent when he entered. This was a man accustomed to bending the world to his will.</p>
+                        
+                        <p>Vivian averted her gaze, sinking deeper into the seat just as Adrian abruptly closed his laptop. His hand shot out to adjust her disheveled sweater, making her recoil violently. The sudden movement caused the loose knit fabric to slip, exposing the delicate curve of her shoulder. His fingers stilled against the fabric, eyes lingering on the flushed skin before traveling up to meet her startled expression.</p>
+                        
+                        <p>Her wide eyes held the skittish wariness of a woodland creature caught in a hunter&#39;s sights, torn between fight and flight. For a suspended moment, the air between them crackled with unspoken tension.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>He released the fabric with deliberate slowness. &#34;Dress more appropriately next time,&#34; he clipped, returning his attention to the laptop as if nothing had happened.</p>
-                    
-                    <p>Vivian hastily righted her sweater, her pulse hammering against her ribs. &#34;It&#39;s just a scratch,&#34; she muttered, turning to stare resolutely out the tinted window as the car pulled away from the curb.</p>
-                    
-                    <p>The silence between them stretched taut as a bowstring, charged with all the things left unsaid.</p>
-                    
-                    <p>The luxurious car&#39;s interior gradually filled with warmth, carrying the subtle scent of sandalwood from Adrian&#39;s cologne. Vivian turned her face toward the window, watching the city lights blur past. His sharp profile reflected against the glass, close yet impossibly distant.</p>
-                    
-                    <p>As the vehicle halted before Seabreeze Villa&#39;s grand gates, Vivian didn&#39;t wait for Ethan&#39;s assistance. She pushed the door open herself, her heels clicking against the cobblestone driveway.</p>
-                    
-                    <p>She&#39;d barely taken three steps when the villa&#39;s ornate doors flew open. Gwendolyn stood frozen in the doorway, her welcoming smile twisting into a grimace. &#34;You?&#34; The single word dripped with venomous surprise.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>He released the fabric with deliberate slowness. &#34;Dress more appropriately next time,&#34; he clipped, returning his attention to the laptop as if nothing had happened.</p>
+                        
+                        <p>Vivian hastily righted her sweater, her pulse hammering against her ribs. &#34;It&#39;s just a scratch,&#34; she muttered, turning to stare resolutely out the tinted window as the car pulled away from the curb.</p>
+                        
+                        <p>The silence between them stretched taut as a bowstring, charged with all the things left unsaid.</p>
+                        
+                        <p>The luxurious car&#39;s interior gradually filled with warmth, carrying the subtle scent of sandalwood from Adrian&#39;s cologne. Vivian turned her face toward the window, watching the city lights blur past. His sharp profile reflected against the glass, close yet impossibly distant.</p>
+                        
+                        <p>As the vehicle halted before Seabreeze Villa&#39;s grand gates, Vivian didn&#39;t wait for Ethan&#39;s assistance. She pushed the door open herself, her heels clicking against the cobblestone driveway.</p>
+                        
+                        <p>She&#39;d barely taken three steps when the villa&#39;s ornate doors flew open. Gwendolyn stood frozen in the doorway, her welcoming smile twisting into a grimace. &#34;You?&#34; The single word dripped with venomous surprise.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Only moments earlier, the driver had returned with a team of foreign specialists. Gwendolyn had been certain Adrian would bring Serena home. Now faced with Vivian&#39;s unexpected appearance, her mind jumped to worst-case scenarios.</p>
-                    
-                    <p>Adrian&#39;s arrival cut through the tension like winter wind. Ethan immediately stepped forward, his voice laced with warning. &#34;Mind your manners when addressing Mrs. Blackwood.&#34;</p>
-                    
-                    <p>Gwendolyn&#39;s hands trembled as she forced a curtsy. &#34;My apologies, Mr. Blackwood. I was simply... overwhelmed with joy at Mrs. Blackwood&#39;s return.&#34;</p>
-                    
-                    <p>Adrian&#39;s glacial stare made the autumn air feel warm by comparison. &#34;If you cannot conduct yourself appropriately, consider this your final warning.&#34;</p>
-                    
-                    <p>Gwendolyn&#39;s throat constricted. Positions like this—with their generous salaries and elite social circles—were nearly impossible to obtain. A dismissal would ruin her reputation among high society employers.</p>
-                    
-                    <p>Panic turned her movements jerky. Before anyone could react, she dropped to her knees before Vivian, striking her own cheeks with sharp slaps that echoed across the courtyard. Crimson handprints bloomed across her pale skin.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Only moments earlier, the driver had returned with a team of foreign specialists. Gwendolyn had been certain Adrian would bring Serena home. Now faced with Vivian&#39;s unexpected appearance, her mind jumped to worst-case scenarios.</p>
+                        
+                        <p>Adrian&#39;s arrival cut through the tension like winter wind. Ethan immediately stepped forward, his voice laced with warning. &#34;Mind your manners when addressing Mrs. Blackwood.&#34;</p>
+                        
+                        <p>Gwendolyn&#39;s hands trembled as she forced a curtsy. &#34;My apologies, Mr. Blackwood. I was simply... overwhelmed with joy at Mrs. Blackwood&#39;s return.&#34;</p>
+                        
+                        <p>Adrian&#39;s glacial stare made the autumn air feel warm by comparison. &#34;If you cannot conduct yourself appropriately, consider this your final warning.&#34;</p>
+                        
+                        <p>Gwendolyn&#39;s throat constricted. Positions like this—with their generous salaries and elite social circles—were nearly impossible to obtain. A dismissal would ruin her reputation among high society employers.</p>
+                        
+                        <p>Panic turned her movements jerky. Before anyone could react, she dropped to her knees before Vivian, striking her own cheeks with sharp slaps that echoed across the courtyard. Crimson handprints bloomed across her pale skin.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Mrs. Blackwood!&#34; she begged between gasps. &#34;Please forgive this foolish woman! I spoke without thinking—I was just so shocked to see you here!&#34; Her fingers clutched at Vivian&#39;s coat hem. &#34;Have mercy on someone as ignorant as myself!&#34;</p>
-                    
-                    <p>Vivian recoiled, stepping neatly out of reach. &#34;Your employment isn&#39;t my concern.&#34; Her voice remained cool, detached. She&#39;d long exhausted any sympathy for this woman. Their divorce had severed any obligation to intervene in household affairs.</p>
-                    
-                    <p>Misreading Vivian&#39;s indifference as tacit approval, Gwendolyn turned pleading eyes toward Adrian. &#34;Mr. Blackwood, Mrs. Blackwood has forgiven me! Please—&#34;</p>
-                    
-                    <p>Adrian&#39;s jaw tightened. &#34;See that it never happens again.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Mrs. Blackwood!&#34; she begged between gasps. &#34;Please forgive this foolish woman! I spoke without thinking—I was just so shocked to see you here!&#34; Her fingers clutched at Vivian&#39;s coat hem. &#34;Have mercy on someone as ignorant as myself!&#34;</p>
+                        
+                        <p>Vivian recoiled, stepping neatly out of reach. &#34;Your employment isn&#39;t my concern.&#34; Her voice remained cool, detached. She&#39;d long exhausted any sympathy for this woman. Their divorce had severed any obligation to intervene in household affairs.</p>
+                        
+                        <p>Misreading Vivian&#39;s indifference as tacit approval, Gwendolyn turned pleading eyes toward Adrian. &#34;Mr. Blackwood, Mrs. Blackwood has forgiven me! Please—&#34;</p>
+                        
+                        <p>Adrian&#39;s jaw tightened. &#34;See that it never happens again.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

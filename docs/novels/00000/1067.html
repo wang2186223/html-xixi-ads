@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Channeling all her pent-up fury, she delivered a vicious kick to the driver&#39;s side door. The metallic shriek echoed through the night as an ugly dent deformed the flawless surface. Vivian didn&#39;t look back. The fleeting satisfaction fueled her escape into the darkness, her emotions a turbulent storm.</p>
-                    
-                    <p>One Week Later</p>
-                    
-                    <p>Emberglow County.</p>
-                    
-                    <p>Surrounding Crestwood City, Emberglow County housed the legendary Sapphire Springs - a natural wonder steeped in history. The area had miraculously escaped urban sprawl, preserving its untouched beauty where wilderness still ruled supreme. Vivian had first discovered this paradise with Adrian during a location scouting trip. The breathtaking scenery had inspired her to feature it prominently in one of her screenplays.</p>
-                    
-                    <p>Recently, Damien caught wind of Sapphire Springs&#39; sudden popularity among social media influencers. The viral attention had local officials scrambling to develop the area into a tourist destination. Fearing construction delays, Damien accelerated the filming schedule. &#34;We need to wrap these scenes before the bulldozers arrive.&#34;</p>
-                    
-                    <p>The makeup artist&#39;s voice snapped Vivian back to reality. She nodded absently and offered the woman a small tin. &#34;Try these herbal drops. Great for vocal strain and surprisingly delicious.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Channeling all her pent-up fury, she delivered a vicious kick to the driver&#39;s side door. The metallic shriek echoed through the night as an ugly dent deformed the flawless surface. Vivian didn&#39;t look back. The fleeting satisfaction fueled her escape into the darkness, her emotions a turbulent storm.</p>
+                        
+                        <p>One Week Later</p>
+                        
+                        <p>Emberglow County.</p>
+                        
+                        <p>Surrounding Crestwood City, Emberglow County housed the legendary Sapphire Springs - a natural wonder steeped in history. The area had miraculously escaped urban sprawl, preserving its untouched beauty where wilderness still ruled supreme. Vivian had first discovered this paradise with Adrian during a location scouting trip. The breathtaking scenery had inspired her to feature it prominently in one of her screenplays.</p>
+                        
+                        <p>Recently, Damien caught wind of Sapphire Springs&#39; sudden popularity among social media influencers. The viral attention had local officials scrambling to develop the area into a tourist destination. Fearing construction delays, Damien accelerated the filming schedule. &#34;We need to wrap these scenes before the bulldozers arrive.&#34;</p>
+                        
+                        <p>The makeup artist&#39;s voice snapped Vivian back to reality. She nodded absently and offered the woman a small tin. &#34;Try these herbal drops. Great for vocal strain and surprisingly delicious.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>The makeup artist popped one gratefully, savoring the minty sweetness. The cast and crew&#39;s shared dedication created an unusually collaborative atmosphere.</p>
-                    
-                    <p>By the water&#39;s edge, Adrian had arrived urgently after learning about the impending development plans. He&#39;d long coveted this pristine location, though previous attempts to acquire it were blocked by environmental protections. But he never abandoned his ambitions.</p>
-                    
-                    <p>Dressed in immaculate white, he paused mid-step, one polished shoe resting on a boulder as he surveyed the landscape. Walter Holloway, the development project manager, approached nervously, pointing toward a row of dilapidated cabins.</p>
-                    
-                    <p>&#34;Mr. Blackwood, notice how these guesthouses operate at minimal capacity. The recent mudslides destroyed half the properties. Locals remain unaware of the rezoning plans, still hoping for demolition payouts.&#34; Walter&#39;s usual commanding presence shriveled into deference around Adrian.</p>
-                    
-                    <p>Adrian remained silent, his sharp gaze scanning the shoreline until it landed on a barefoot woman in a flowing white dress. Beside her stood a lean man, their silhouettes creating a striking contrast against the shimmering water.</p>
-                    
-                    <p>Penelope Holloway, Walter&#39;s starstruck daughter, followed Adrian&#39;s line of sight. &#34;Oh! That&#39;s Sebastian Hartwell!&#34; she gasped. &#34;And that must be his co-star!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>The makeup artist popped one gratefully, savoring the minty sweetness. The cast and crew&#39;s shared dedication created an unusually collaborative atmosphere.</p>
+                        
+                        <p>By the water&#39;s edge, Adrian had arrived urgently after learning about the impending development plans. He&#39;d long coveted this pristine location, though previous attempts to acquire it were blocked by environmental protections. But he never abandoned his ambitions.</p>
+                        
+                        <p>Dressed in immaculate white, he paused mid-step, one polished shoe resting on a boulder as he surveyed the landscape. Walter Holloway, the development project manager, approached nervously, pointing toward a row of dilapidated cabins.</p>
+                        
+                        <p>&#34;Mr. Blackwood, notice how these guesthouses operate at minimal capacity. The recent mudslides destroyed half the properties. Locals remain unaware of the rezoning plans, still hoping for demolition payouts.&#34; Walter&#39;s usual commanding presence shriveled into deference around Adrian.</p>
+                        
+                        <p>Adrian remained silent, his sharp gaze scanning the shoreline until it landed on a barefoot woman in a flowing white dress. Beside her stood a lean man, their silhouettes creating a striking contrast against the shimmering water.</p>
+                        
+                        <p>Penelope Holloway, Walter&#39;s starstruck daughter, followed Adrian&#39;s line of sight. &#34;Oh! That&#39;s Sebastian Hartwell!&#34; she gasped. &#34;And that must be his co-star!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Since their explosive confrontation, Vivian had thrown herself into work, channeling all her energy into the film. Adrian hadn&#39;t contacted her - no calls, no texts. It was as if their connection had dissolved into nothingness.</p>
-                    
-                    <p>Yet traces of their past lingered. Serena&#39;s Instagram posts occasionally contained subtle references to Adrian - inside jokes and details only someone intimately familiar with him would recognize.</p>
-                    
-                    <p>Vivian&#39;s instincts screamed that these veiled gestures were aimed directly at her, crafted to unsettle. But why? To revel in some imagined victory? What exactly did Serena have to boast about? Vivian had left that chapter behind without a single backward glance.</p>
-                    
-                    <p>With an irritated flick of her wrist, she blocked Serena on Instagram. Engaging in this ridiculous game of cryptic social media posts wasn&#39;t worth sacrificing her tranquility.</p>
-                    
-                    <p>&#34;Vivian, the storm&#39;s passed for now, but dark clouds are gathering again,&#34; someone called out.</p>
-                    
-                    <p>&#34;Aren&#39;t they just picture-perfect together? Like they stepped out of a romance novel!&#34; Penelope gushed, turning to Adrian with newfound confidence. &#34;Don&#39;t you agree, Mr. Blackwood?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Since their explosive confrontation, Vivian had thrown herself into work, channeling all her energy into the film. Adrian hadn&#39;t contacted her - no calls, no texts. It was as if their connection had dissolved into nothingness.</p>
+                        
+                        <p>Yet traces of their past lingered. Serena&#39;s Instagram posts occasionally contained subtle references to Adrian - inside jokes and details only someone intimately familiar with him would recognize.</p>
+                        
+                        <p>Vivian&#39;s instincts screamed that these veiled gestures were aimed directly at her, crafted to unsettle. But why? To revel in some imagined victory? What exactly did Serena have to boast about? Vivian had left that chapter behind without a single backward glance.</p>
+                        
+                        <p>With an irritated flick of her wrist, she blocked Serena on Instagram. Engaging in this ridiculous game of cryptic social media posts wasn&#39;t worth sacrificing her tranquility.</p>
+                        
+                        <p>&#34;Vivian, the storm&#39;s passed for now, but dark clouds are gathering again,&#34; someone called out.</p>
+                        
+                        <p>&#34;Aren&#39;t they just picture-perfect together? Like they stepped out of a romance novel!&#34; Penelope gushed, turning to Adrian with newfound confidence. &#34;Don&#39;t you agree, Mr. Blackwood?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Adrian&#39;s mouth twisted into a sardonic smile. &#34;Not particularly,&#34; he replied icily, standing taller and deliberately looking away.</p>
-                    
-                    <p>Penelope&#39;s eyes widened in shock. &#34;Even someone as stunning as her doesn&#39;t interest you? What kind of woman would catch your attention, Mr. Blackwood?&#34;</p>
-                    
-                    <p>Annoyance flashed in Adrian&#39;s stormy eyes. &#34;Someone with depth,&#34; he clipped.</p>
-                    
-                    <p>Walter, remembering earlier conversations about his daughter&#39;s academic achievements, puffed up with paternal pride.</p>
-                    
-                    <p>Penelope flushed pink, misinterpreting his words as personal praise.</p>
-                    
-                    <p>Walter continued showering compliments. &#34;A man of Mr. Blackwood&#39;s caliber would never be impressed by superficial beauty.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Adrian&#39;s mouth twisted into a sardonic smile. &#34;Not particularly,&#34; he replied icily, standing taller and deliberately looking away.</p>
+                        
+                        <p>Penelope&#39;s eyes widened in shock. &#34;Even someone as stunning as her doesn&#39;t interest you? What kind of woman would catch your attention, Mr. Blackwood?&#34;</p>
+                        
+                        <p>Annoyance flashed in Adrian&#39;s stormy eyes. &#34;Someone with depth,&#34; he clipped.</p>
+                        
+                        <p>Walter, remembering earlier conversations about his daughter&#39;s academic achievements, puffed up with paternal pride.</p>
+                        
+                        <p>Penelope flushed pink, misinterpreting his words as personal praise.</p>
+                        
+                        <p>Walter continued showering compliments. &#34;A man of Mr. Blackwood&#39;s caliber would never be impressed by superficial beauty.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Adrian&#39;s discomfort visibly grew, and just as he opened his mouth to respond, a thunderous crash silenced everyone.</p>
-                    
-                    <p>The mudslide that hit nearby brought filming to an abrupt halt. The violent sound startled the entire crew, with one staff member pointing ahead in disbelief. &#34;Look! Our reserved lodge is completely destroyed.&#34;</p>
-                    
-                    <p>Sebastian, ever the joker, raised his hands in mock surrender. &#34;Don&#39;t blame me! I was just kidding earlier.&#34; He recalled his offhand comment upon arrival about possibly camping if another landslide occurred. The eerie accuracy of his prediction sent chills down his spine.</p>
-                    
-                    <p>&#34;Let&#39;s assess the damage,&#34; the director sighed, rubbing his temples. He gestured for the group to follow him toward the devastated property.</p>
-                    
-                    <p>Upon arrival, they found the lodge owners standing shell-shocked at the entrance. The destruction was evident - thick mud and debris filled every room, though miraculously, no injuries were reported.</p>
-                    
-                    <p>A crew member groaned in frustration. &#34;There&#39;s no way we can salvage this before nightfall. Where are we supposed to sleep?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Adrian&#39;s discomfort visibly grew, and just as he opened his mouth to respond, a thunderous crash silenced everyone.</p>
+                        
+                        <p>The mudslide that hit nearby brought filming to an abrupt halt. The violent sound startled the entire crew, with one staff member pointing ahead in disbelief. &#34;Look! Our reserved lodge is completely destroyed.&#34;</p>
+                        
+                        <p>Sebastian, ever the joker, raised his hands in mock surrender. &#34;Don&#39;t blame me! I was just kidding earlier.&#34; He recalled his offhand comment upon arrival about possibly camping if another landslide occurred. The eerie accuracy of his prediction sent chills down his spine.</p>
+                        
+                        <p>&#34;Let&#39;s assess the damage,&#34; the director sighed, rubbing his temples. He gestured for the group to follow him toward the devastated property.</p>
+                        
+                        <p>Upon arrival, they found the lodge owners standing shell-shocked at the entrance. The destruction was evident - thick mud and debris filled every room, though miraculously, no injuries were reported.</p>
+                        
+                        <p>A crew member groaned in frustration. &#34;There&#39;s no way we can salvage this before nightfall. Where are we supposed to sleep?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;Sleep here? Absolutely not!&#34; Walter pushed forward, his secretary scrambling behind him. He rounded on the lodge owner angrily. &#34;There were landslide warnings! How could you still be operating?&#34;</p>
-                    
-                    <p>The owner wiped his muddy hands on his pants guiltily. &#34;The weather cleared up this morning. Who could&#39;ve predicted...?&#34;</p>
-                    
-                    <p>Exhausted but composed, Vivian stepped forward to take control. &#34;First, let&#39;s retrieve our belongings and check for damage. Then we&#39;ll scout for nearby hotels or rental properties,&#34; she said calmly, her authoritative voice cutting through the panic.</p>
-                    
-                    <p>The crew immediately snapped into action, rushing inside to salvage what they could from the ruined lodge.</p>
-                    
-                    <p>Vivian took charge immediately, collecting her belongings with effortless grace. Penelope, eager to impress her celebrity crush Sebastian, tugged at her father&#39;s sleeve with starry-eyed enthusiasm. &#34;Papa, our guesthouse has plenty of rooms available. We could host the entire film crew.&#34;</p>
-                    
-                    <p>Walter hesitated, his businessman&#39;s mind calculating risks. Though their establishment wasn&#39;t officially open for business, housing a production team wasn&#39;t illegal. Yet Walter, ever the pragmatist, doubted entertainment industry connections would benefit their small-town enterprise.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;Sleep here? Absolutely not!&#34; Walter pushed forward, his secretary scrambling behind him. He rounded on the lodge owner angrily. &#34;There were landslide warnings! How could you still be operating?&#34;</p>
+                        
+                        <p>The owner wiped his muddy hands on his pants guiltily. &#34;The weather cleared up this morning. Who could&#39;ve predicted...?&#34;</p>
+                        
+                        <p>Exhausted but composed, Vivian stepped forward to take control. &#34;First, let&#39;s retrieve our belongings and check for damage. Then we&#39;ll scout for nearby hotels or rental properties,&#34; she said calmly, her authoritative voice cutting through the panic.</p>
+                        
+                        <p>The crew immediately snapped into action, rushing inside to salvage what they could from the ruined lodge.</p>
+                        
+                        <p>Vivian took charge immediately, collecting her belongings with effortless grace. Penelope, eager to impress her celebrity crush Sebastian, tugged at her father&#39;s sleeve with starry-eyed enthusiasm. &#34;Papa, our guesthouse has plenty of rooms available. We could host the entire film crew.&#34;</p>
+                        
+                        <p>Walter hesitated, his businessman&#39;s mind calculating risks. Though their establishment wasn&#39;t officially open for business, housing a production team wasn&#39;t illegal. Yet Walter, ever the pragmatist, doubted entertainment industry connections would benefit their small-town enterprise.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Noticing her father&#39;s reluctance, Penelope leaned in conspiratorially. &#34;They&#39;re shooting a major production here. Sebastian is Hollywood royalty - everything he touches turns to gold. Imagine the tourism boost if we get featured! This could be our golden ticket to becoming their official hospitality partners.&#34;</p>
-                    
-                    <p>Walter&#39;s eyes gleamed with sudden interest. Just as he prepared to agree, he caught Adrian&#39;s imposing figure nearby, his expression unreadable. Walter approached cautiously. &#34;Mr. Blackwood, would it inconvenience you if we accommodated the film crew here?&#34;</p>
-                    
-                    <p>Adrian&#39;s response came clipped and indifferent. &#34;Do what you want. Just keep them away from my space. I detest disturbances.&#34;</p>
-                    
-                    <p>Relieved by the lack of objection, Walter beamed. &#34;Naturally, Mr. Blackwood. Your suite is already prepared separately.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Noticing her father&#39;s reluctance, Penelope leaned in conspiratorially. &#34;They&#39;re shooting a major production here. Sebastian is Hollywood royalty - everything he touches turns to gold. Imagine the tourism boost if we get featured! This could be our golden ticket to becoming their official hospitality partners.&#34;</p>
+                        
+                        <p>Walter&#39;s eyes gleamed with sudden interest. Just as he prepared to agree, he caught Adrian&#39;s imposing figure nearby, his expression unreadable. Walter approached cautiously. &#34;Mr. Blackwood, would it inconvenience you if we accommodated the film crew here?&#34;</p>
+                        
+                        <p>Adrian&#39;s response came clipped and indifferent. &#34;Do what you want. Just keep them away from my space. I detest disturbances.&#34;</p>
+                        
+                        <p>Relieved by the lack of objection, Walter beamed. &#34;Naturally, Mr. Blackwood. Your suite is already prepared separately.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.006178">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.006178">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.182004">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.182004">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.006178",
-        "dateModified": "2026-07-19T02:47:19.006178",
+        "datePublished": "2026-07-19T13:03:14.182004",
+        "dateModified": "2026-07-19T13:03:14.182004",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,25 +893,29 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV*</p>
-                    
-                    <p>&#34;Yes, what exactly is Miss Sinclair doing at my mother&#39;s villa?&#34; Laurel asked, leaning into Blake&#39;s arm. She tilted her head and watched me with a smirk. &#34;Did you know Blake darling would be here? Is that why you came?&#34;</p>
-                    
-                    <p>The casual way she nestled against him made my stomach turn. Before I could answer, James burst out of the tea room behind me.</p>
-                    
-                    <p>&#34;Audrey! We can&#39;t just chase after the staff like that,&#34; he called, then stopped when he spotted Blake and Laurel on the stairs. &#34;Blake Parker?&#34;</p>
-                    
-                    <p>&#34;James Collins,&#34; Blake&#39;s eyes narrowed as he reached the bottom step.still supporting Laurel. He looked between us. &#34;So you&#39;re the representatives from Original Studio.&#34;</p>
-                    
-                    <p>James stepped forward. &#34;You&#39;re the executive from the jewelry company?&#34;</p>
-                    
-                    <p>&#34;George only sent the two of you?&#34; Blake asked, ignoring James&#39;s question.</p>
-                    
-                    <p>&#34;Is anyone else coming?&#34; Blake looked directly at me.</p>
-                    
-                    <p>&#34;No one else,&#34; I said.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV*</p>
+                        
+                        <p>&#34;Yes, what exactly is Miss Sinclair doing at my mother&#39;s villa?&#34; Laurel asked, leaning into Blake&#39;s arm. She tilted her head and watched me with a smirk. &#34;Did you know Blake darling would be here? Is that why you came?&#34;</p>
+                        
+                        <p>The casual way she nestled against him made my stomach turn. Before I could answer, James burst out of the tea room behind me.</p>
+                        
+                        <p>&#34;Audrey! We can&#39;t just chase after the staff like that,&#34; he called, then stopped when he spotted Blake and Laurel on the stairs. &#34;Blake Parker?&#34;</p>
+                        
+                        <p>&#34;James Collins,&#34; Blake&#39;s eyes narrowed as he reached the bottom step.still supporting Laurel. He looked between us. &#34;So you&#39;re the representatives from Original Studio.&#34;</p>
+                        
+                        <p>James stepped forward. &#34;You&#39;re the executive from the jewelry company?&#34;</p>
+                        
+                        <p>&#34;George only sent the two of you?&#34; Blake asked, ignoring James&#39;s question.</p>
+                        
+                        <p>&#34;Is anyone else coming?&#34; Blake looked directly at me.</p>
+                        
+                        <p>&#34;No one else,&#34; I said.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -890,25 +930,29 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Blake&#39;s mouth curved into a cold smile. &#34;Then you can leave. It seems George has no real interest in this collaboration.&#34;</p>
-                    
-                    <p>&#34;What do you mean no interest?&#34; James asked. his face flushing.</p>
-                    
-                    <p>&#34;Exactly what I said.&#34; Blake replied.</p>
-                    
-                    <p>&#34;How can you say that?&#34; James stepped forward. &#34;You told us when and</p>
-                    
-                    <p>where to meet, and we drove all the way out here. Now you&#39;re saying we lack interest?&#34;</p>
-                    
-                    <p>James&#39;s hands tightened into fists.&#34;Ithink you&#39;re the one making excuses.</p>
-                    
-                    <p>You&#39;re deliberately wasting our time!&#34;</p>
-                    
-                    <p>Blake let go of Laurel and pulled out a cigarette. He lit it slowly.taking a long drag before responding.</p>
-                    
-                    <p>&#34;I specifically requested to meet with Rachel Hayes. The designer whose work I&#39;m interested in.&#34; His eyes flicked to me briefly. &#34;I reviewed those sketches and asked to meet their creator. Where is Rachel Hayes?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Blake&#39;s mouth curved into a cold smile. &#34;Then you can leave. It seems George has no real interest in this collaboration.&#34;</p>
+                        
+                        <p>&#34;What do you mean no interest?&#34; James asked. his face flushing.</p>
+                        
+                        <p>&#34;Exactly what I said.&#34; Blake replied.</p>
+                        
+                        <p>&#34;How can you say that?&#34; James stepped forward. &#34;You told us when and</p>
+                        
+                        <p>where to meet, and we drove all the way out here. Now you&#39;re saying we lack interest?&#34;</p>
+                        
+                        <p>James&#39;s hands tightened into fists.&#34;Ithink you&#39;re the one making excuses.</p>
+                        
+                        <p>You&#39;re deliberately wasting our time!&#34;</p>
+                        
+                        <p>Blake let go of Laurel and pulled out a cigarette. He lit it slowly.taking a long drag before responding.</p>
+                        
+                        <p>&#34;I specifically requested to meet with Rachel Hayes. The designer whose work I&#39;m interested in.&#34; His eyes flicked to me briefly. &#34;I reviewed those sketches and asked to meet their creator. Where is Rachel Hayes?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -923,25 +967,29 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;You expect two employees to represent the designer?&#34; Blake exhaled smoke. &#34;That doesn&#39;t show serious commitment.&#34;</p>
-                    
-                    <p>James&#39;s face went pale. I could see him struggling for a response.</p>
-                    
-                    <p>I studied Blake carefully. Something didn&#39;t add up.</p>
-                    
-                    <p>&#34;May I ask you something, Mr. Parker?&#34; I met his gaze. &#34;Did you want to collaborate with Original Studio because you liked the jewelry designs.or because you recognized the designer&#39;s name?&#34;</p>
-                    
-                    <p>Blake&#39;s eyes widened slightly. &#34;You know who Rachel Hayes is?&#34;</p>
-                    
-                    <p>&#34;I don&#39;t just know who she is. I&#39;m-&#34; I started.</p>
-                    
-                    <p>&#34;Blake darling was interested because of the name!&#34; Laurel jumped in,grabbing Blake&#39;s arm. &#34;Rachel was my sister. She committed suicide four years ago.&#34;</p>
-                    
-                    <p>She turned to me, her voice suddenly light. &#34;When Blake darling saw a designer with my sister&#39;s name, of course he was curious. That&#39;s the only</p>
-                    
-                    <p>reason he cared abouIt those designs.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;You expect two employees to represent the designer?&#34; Blake exhaled smoke. &#34;That doesn&#39;t show serious commitment.&#34;</p>
+                        
+                        <p>James&#39;s face went pale. I could see him struggling for a response.</p>
+                        
+                        <p>I studied Blake carefully. Something didn&#39;t add up.</p>
+                        
+                        <p>&#34;May I ask you something, Mr. Parker?&#34; I met his gaze. &#34;Did you want to collaborate with Original Studio because you liked the jewelry designs.or because you recognized the designer&#39;s name?&#34;</p>
+                        
+                        <p>Blake&#39;s eyes widened slightly. &#34;You know who Rachel Hayes is?&#34;</p>
+                        
+                        <p>&#34;I don&#39;t just know who she is. I&#39;m-&#34; I started.</p>
+                        
+                        <p>&#34;Blake darling was interested because of the name!&#34; Laurel jumped in,grabbing Blake&#39;s arm. &#34;Rachel was my sister. She committed suicide four years ago.&#34;</p>
+                        
+                        <p>She turned to me, her voice suddenly light. &#34;When Blake darling saw a designer with my sister&#39;s name, of course he was curious. That&#39;s the only</p>
+                        
+                        <p>reason he cared abouIt those designs.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -956,25 +1004,29 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Her lips curved into a dismissive smile. &#34;I&#39;ve seen them, and they&#39;re nothing special. They only caught Blake darling&#39;s eye because of my sister&#39;s name.&#34;</p>
-                    
-                    <p>Hearing this, I felt my head throbbed. I&#39;d believed they wanted my designs because they were good. I&#39;d been so happy thinking someone appreciated my work despite my lack of reputation.</p>
-                    
-                    <p>But it was all a lie. Blake Parker only noticed because I was using Rachel&#39;s name. My designs weren&#39;t special. I&#39;d only gotten this chance because of Rachel.</p>
-                    
-                    <p>&#34;Who says the designs are ordinary?&#34; James suddenly shouted,stepping between us. &#34;That only proves you know nothing about jewelry design!&#34;</p>
-                    
-                    <p>His voice echoed through the hallway. &#34;I&#39;ve shown those designs to experts!Not one criticized them. Every designer said they showed real talent!&#34;</p>
-                    
-                    <p>James turned to Blake. &#34;Blake Parker, tell us the truth! Did you want to work with us because of a name, or because you actually liked the designs?&#34;</p>
-                    
-                    <p>**Blake&#39;s POV**</p>
-                    
-                    <p>I frowned as I studied James. then looked at Audrey. Something shifted inside me as I caught the hurt in her eyes.</p>
-                    
-                    <p>I saw the designs first, before I even knew the designer&#39;s name. The name caught my attention, but what truly interested me was the quality of the work. If I hadn&#39;t been impressed by the designs, I wouldn&#39;t have cared who created them.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Her lips curved into a dismissive smile. &#34;I&#39;ve seen them, and they&#39;re nothing special. They only caught Blake darling&#39;s eye because of my sister&#39;s name.&#34;</p>
+                        
+                        <p>Hearing this, I felt my head throbbed. I&#39;d believed they wanted my designs because they were good. I&#39;d been so happy thinking someone appreciated my work despite my lack of reputation.</p>
+                        
+                        <p>But it was all a lie. Blake Parker only noticed because I was using Rachel&#39;s name. My designs weren&#39;t special. I&#39;d only gotten this chance because of Rachel.</p>
+                        
+                        <p>&#34;Who says the designs are ordinary?&#34; James suddenly shouted,stepping between us. &#34;That only proves you know nothing about jewelry design!&#34;</p>
+                        
+                        <p>His voice echoed through the hallway. &#34;I&#39;ve shown those designs to experts!Not one criticized them. Every designer said they showed real talent!&#34;</p>
+                        
+                        <p>James turned to Blake. &#34;Blake Parker, tell us the truth! Did you want to work with us because of a name, or because you actually liked the designs?&#34;</p>
+                        
+                        <p>**Blake&#39;s POV**</p>
+                        
+                        <p>I frowned as I studied James. then looked at Audrey. Something shifted inside me as I caught the hurt in her eyes.</p>
+                        
+                        <p>I saw the designs first, before I even knew the designer&#39;s name. The name caught my attention, but what truly interested me was the quality of the work. If I hadn&#39;t been impressed by the designs, I wouldn&#39;t have cared who created them.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -989,25 +1041,29 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>But why did Audrey react that way when Laurel dismissed the designs?Unless...</p>
-                    
-                    <p>Before I could respond, Laurel jumped in.</p>
-                    
-                    <p>&#34;Fine, let&#39;s say I don&#39;t have good taste,&#34; she said with a dismissive wave.&#34;Miss Sinclair, now that we&#39;ve answered your question.perhaps you could answer mine.&#34;</p>
-                    
-                    <p>Her smile remained cold. &#34;Where is this designer who shares my sister&#39;s name? This person claiming to have only three months to live?&#34;</p>
-                    
-                    <p>I watched Audrey take a deep breath and straighten her shoulders.</p>
-                    
-                    <p>&#34;The designer who uses the name Rachel Hayes...&#34; she paused. &#34;That designer is me.&#34;</p>
-                    
-                    <p>The hallway fell completely silent. I couldn&#39;t hide my shock.</p>
-                    
-                    <p>&#34;You?&#34; Laurel gasped, covering her mouth. &#34;How could you be impersonating my sister?&#34;</p>
-                    
-                    <p>She turned to me, clutching my arm. &#34;Blake darling, did you tell her about Rachel?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>But why did Audrey react that way when Laurel dismissed the designs?Unless...</p>
+                        
+                        <p>Before I could respond, Laurel jumped in.</p>
+                        
+                        <p>&#34;Fine, let&#39;s say I don&#39;t have good taste,&#34; she said with a dismissive wave.&#34;Miss Sinclair, now that we&#39;ve answered your question.perhaps you could answer mine.&#34;</p>
+                        
+                        <p>Her smile remained cold. &#34;Where is this designer who shares my sister&#39;s name? This person claiming to have only three months to live?&#34;</p>
+                        
+                        <p>I watched Audrey take a deep breath and straighten her shoulders.</p>
+                        
+                        <p>&#34;The designer who uses the name Rachel Hayes...&#34; she paused. &#34;That designer is me.&#34;</p>
+                        
+                        <p>The hallway fell completely silent. I couldn&#39;t hide my shock.</p>
+                        
+                        <p>&#34;You?&#34; Laurel gasped, covering her mouth. &#34;How could you be impersonating my sister?&#34;</p>
+                        
+                        <p>She turned to me, clutching my arm. &#34;Blake darling, did you tell her about Rachel?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1022,25 +1078,29 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>My mind raced back five years, to when I&#39;d been rescued and cared for while temporarily blind. After two months of recovery, my family had finally found me and brought me home. I&#39;d specifically asked my aunt Elizabeth to bring along the girl who&#39;d cared for me, but she&#39;d made vague excuses.</p>
-                    
-                    <p>When my sight returned, I couldn&#39;t find the rehabilitation center where I&#39;d stayed. All I had was a name: Rachel Hayes. I&#39;d assumed finding her would be easy since Rachel had mentioned her wealthy stepfather was part</p>
-                    
-                    <p>of New York&#39;s high society. But she had vanished without a trace.</p>
-                    
-                    <p>It was only when Laurel later approached me, explaining she was the one who had saved me and revealing her connection to Rachel, that pieces started falling into place. The Rose family had been so protective of Rachel&#39;s privacy, how could I possibly spread her news?</p>
-                    
-                    <p>&#34;No,&#34; I said firmly, confusion washing over me. &#34;I never mentioned Rachel to her.&#34;</p>
-                    
-                    <p>&#34;Then how did you know my sister&#39;s name?&#34; Laurel demanded, turning back to Audrey.</p>
-                    
-                    <p>&#34;Rachel kept detailed notes,&#34; Scarlett showed up, her voice cool as she approached. &#34;She would have recorded everything about our family in those notes.&#34;</p>
-                    
-                    <p>&#34;Miss Sinclair, I understand why you might resent Laurel after what happened with Nora. I see why you&#39;d blame her for everything.&#34;</p>
-                    
-                    <p>&#34;But even if you&#39;re angry, it wasn&#39;t right to take a phone that doesn t belong to you, was it?&#34; Scarlett continued.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>My mind raced back five years, to when I&#39;d been rescued and cared for while temporarily blind. After two months of recovery, my family had finally found me and brought me home. I&#39;d specifically asked my aunt Elizabeth to bring along the girl who&#39;d cared for me, but she&#39;d made vague excuses.</p>
+                        
+                        <p>When my sight returned, I couldn&#39;t find the rehabilitation center where I&#39;d stayed. All I had was a name: Rachel Hayes. I&#39;d assumed finding her would be easy since Rachel had mentioned her wealthy stepfather was part</p>
+                        
+                        <p>of New York&#39;s high society. But she had vanished without a trace.</p>
+                        
+                        <p>It was only when Laurel later approached me, explaining she was the one who had saved me and revealing her connection to Rachel, that pieces started falling into place. The Rose family had been so protective of Rachel&#39;s privacy, how could I possibly spread her news?</p>
+                        
+                        <p>&#34;No,&#34; I said firmly, confusion washing over me. &#34;I never mentioned Rachel to her.&#34;</p>
+                        
+                        <p>&#34;Then how did you know my sister&#39;s name?&#34; Laurel demanded, turning back to Audrey.</p>
+                        
+                        <p>&#34;Rachel kept detailed notes,&#34; Scarlett showed up, her voice cool as she approached. &#34;She would have recorded everything about our family in those notes.&#34;</p>
+                        
+                        <p>&#34;Miss Sinclair, I understand why you might resent Laurel after what happened with Nora. I see why you&#39;d blame her for everything.&#34;</p>
+                        
+                        <p>&#34;But even if you&#39;re angry, it wasn&#39;t right to take a phone that doesn t belong to you, was it?&#34; Scarlett continued.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1055,17 +1115,21 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>She moved closer to Audrey. &#34;And even if you wanted Laurel to suffer by hiding the phone, why did you need to look through its contents?&#34;</p>
-                    
-                    <p>&#34;You must have gone through Rachel&#39;s phone and discovered her secrets,&#34;Scarlett accused. &#34;That&#39;s how you came up with this plan to use her name and get Blake&#39;s attention.&#34;</p>
-                    
-                    <p>Her smile was sharp as she finished. &#34;And it worked perfectly.&#34;</p>
-                    
-                    <p>I watched as Scarlett extended her hand toward Audrey. &#34;Since you now know that Rachel Hayes is Laurel&#39;s sister, my daughter, don&#39;t you think it&#39;s</p>
-                    
-                    <p>appropriate to return her belongings to me?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>She moved closer to Audrey. &#34;And even if you wanted Laurel to suffer by hiding the phone, why did you need to look through its contents?&#34;</p>
+                        
+                        <p>&#34;You must have gone through Rachel&#39;s phone and discovered her secrets,&#34;Scarlett accused. &#34;That&#39;s how you came up with this plan to use her name and get Blake&#39;s attention.&#34;</p>
+                        
+                        <p>Her smile was sharp as she finished. &#34;And it worked perfectly.&#34;</p>
+                        
+                        <p>I watched as Scarlett extended her hand toward Audrey. &#34;Since you now know that Rachel Hayes is Laurel&#39;s sister, my daughter, don&#39;t you think it&#39;s</p>
+                        
+                        <p>appropriate to return her belongings to me?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2381,6 +2445,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2507,7 +2651,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2549,32 +2692,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2585,21 +2710,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2632,6 +2747,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2652,20 +2773,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

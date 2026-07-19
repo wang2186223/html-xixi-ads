@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.101231">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.101231">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.277581">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.277581">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.101231",
-        "dateModified": "2026-07-19T02:47:19.101231",
+        "datePublished": "2026-07-19T13:03:14.277581",
+        "dateModified": "2026-07-19T13:03:14.277581",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,27 +893,31 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>&#34;You seem to know Parker pretty well,&#34; Adrian commented, watching me with those calculating eyes of his.</p>
-                    
-                    <p>I kept staring out the window at the New York traffic. &#34;I dated him for years. Anyone who spent that much time with him would get how he thinks.&#34;</p>
-                    
-                    <p>&#34;And why wouldn&#39;t he come after you? Just because he figured out you&#39;re actually Audrey?&#34;</p>
-                    
-                    <p>I turned from the window with a frown. &#34;Blake wouldn&#39;t defend Rachel,and it has zero to do with me being Audrey. Like I told you before -he never gave a damn about me. Any guilt or feelings were just an act.&#34;</p>
-                    
-                    <p>When Adrian still looked skeptical, I added, &#34;He wouldn&#39;t back Rachel because she dragged William Parker into her bullshit.&#34;</p>
-                    
-                    <p>&#34;Blake barely tolerates his mom and sister. If they weren&#39;t blood.he&#39;d never speak to them again.&#34;</p>
-                    
-                    <p>Adrian nodded slowly.</p>
-                    
-                    <p>&#34;But William is different,&#34; I explained. &#34;Blake grew up with his grandfather. After his dad died five years ago, William became the only family member Blake actually cares about.&#34;</p>
-                    
-                    <p>I gestured vaguely. &#34;While Rachel was busy playing Miss Perfect, she painted William as some senile old man who&#39;s easy to manipulate.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>&#34;You seem to know Parker pretty well,&#34; Adrian commented, watching me with those calculating eyes of his.</p>
+                        
+                        <p>I kept staring out the window at the New York traffic. &#34;I dated him for years. Anyone who spent that much time with him would get how he thinks.&#34;</p>
+                        
+                        <p>&#34;And why wouldn&#39;t he come after you? Just because he figured out you&#39;re actually Audrey?&#34;</p>
+                        
+                        <p>I turned from the window with a frown. &#34;Blake wouldn&#39;t defend Rachel,and it has zero to do with me being Audrey. Like I told you before -he never gave a damn about me. Any guilt or feelings were just an act.&#34;</p>
+                        
+                        <p>When Adrian still looked skeptical, I added, &#34;He wouldn&#39;t back Rachel because she dragged William Parker into her bullshit.&#34;</p>
+                        
+                        <p>&#34;Blake barely tolerates his mom and sister. If they weren&#39;t blood.he&#39;d never speak to them again.&#34;</p>
+                        
+                        <p>Adrian nodded slowly.</p>
+                        
+                        <p>&#34;But William is different,&#34; I explained. &#34;Blake grew up with his grandfather. After his dad died five years ago, William became the only family member Blake actually cares about.&#34;</p>
+                        
+                        <p>I gestured vaguely. &#34;While Rachel was busy playing Miss Perfect, she painted William as some senile old man who&#39;s easy to manipulate.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -892,27 +932,31 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Adrian leaned back in his seat. &#34;Makes sense. Emma&#39;s my closest family</p>
-                    
-                    <p>now. If someone talked shit about her, I&#39;d be pissed too.&#34;</p>
-                    
-                    <p>&#34;Exactly. To Blake, William is everything.&#34;</p>
-                    
-                    <p>&#34;So why would Rachel miss something that obvious? She supposedly loves the guy.&#34;</p>
-                    
-                    <p>I pressed my lips together. &#34;She probably knew but forgot in the moment.She-&#34;</p>
-                    
-                    <p>My phone rang, Astrid&#39;s name flashing on the screen. My stomach instantly knotted - Astrid never called unless something was wrong.</p>
-                    
-                    <p>&#34;Astrid? What&#39;s up?&#34; I answered, tension in my voice.</p>
-                    
-                    <p>&#34;Audrey! Emma&#39;s gone!&#34; Her panicked voice hit me like a punch.</p>
-                    
-                    <p>My fingers tightened around the phone. &#34;What do you mean gone? How could Emma be gone?&#34;</p>
-                    
-                    <p>Adrian&#39;s head snapped toward me. &#34;What happened?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Adrian leaned back in his seat. &#34;Makes sense. Emma&#39;s my closest family</p>
+                        
+                        <p>now. If someone talked shit about her, I&#39;d be pissed too.&#34;</p>
+                        
+                        <p>&#34;Exactly. To Blake, William is everything.&#34;</p>
+                        
+                        <p>&#34;So why would Rachel miss something that obvious? She supposedly loves the guy.&#34;</p>
+                        
+                        <p>I pressed my lips together. &#34;She probably knew but forgot in the moment.She-&#34;</p>
+                        
+                        <p>My phone rang, Astrid&#39;s name flashing on the screen. My stomach instantly knotted - Astrid never called unless something was wrong.</p>
+                        
+                        <p>&#34;Astrid? What&#39;s up?&#34; I answered, tension in my voice.</p>
+                        
+                        <p>&#34;Audrey! Emma&#39;s gone!&#34; Her panicked voice hit me like a punch.</p>
+                        
+                        <p>My fingers tightened around the phone. &#34;What do you mean gone? How could Emma be gone?&#34;</p>
+                        
+                        <p>Adrian&#39;s head snapped toward me. &#34;What happened?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -927,27 +971,31 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>I quickly put the call on speaker.</p>
-                    
-                    <p>&#34;Emma&#39;s really gone!&#34; Astrid cried, her voice breaking. &#34;When I got to the Four Seasons, she was drawing in the living room with the bodyguards around. She asked me to draw with her.&#34;</p>
-                    
-                    <p>&#34;Later she said she felt cooped up and wanted to go outside. I didn&#39;t want to at first, but she started crying and saying she wanted to find you guys.&#34;</p>
-                    
-                    <p>Astrid took a shaky breath. &#34;I was gonna call you, but Emma pointed out your meeting with William was being livestreamed. She said if I called.everyone would hear.&#34;</p>
-                    
-                    <p>Adrian&#39;s jaw clenched tight.</p>
-                    
-                    <p>&#34;She said you&#39;d definitely be cool with me taking her to the hotel garden...&#34;Astrid&#39;s voice trembled.′′Imade sense, so I took her.&#34;</p>
-                    
-                    <p>&#34;In the garden, she was playing with the flowers while I sat on a bench.The bodyguards were right there, so I just looked down to text Henry for a minute...&#34; Her voice cracked. &#34;Then something hit the back of my head and I blacked out.&#34;</p>
-                    
-                    <p>My heart hammered harder with each word.</p>
-                    
-                    <p>&#34;When I woke up, the bodyguards were knocked out too, and Emma was gone...&#34; Astrid completely broke down. &#34;I&#39;m so sorry, Audrey, I&#39;m so sorry.Adrian!I never thought she&#39;d get kidnapped... I&#39;m really sorry!&#34;</p>
-                    
-                    <p>&#34;I already had Henry send people to look, and I called the cops!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>I quickly put the call on speaker.</p>
+                        
+                        <p>&#34;Emma&#39;s really gone!&#34; Astrid cried, her voice breaking. &#34;When I got to the Four Seasons, she was drawing in the living room with the bodyguards around. She asked me to draw with her.&#34;</p>
+                        
+                        <p>&#34;Later she said she felt cooped up and wanted to go outside. I didn&#39;t want to at first, but she started crying and saying she wanted to find you guys.&#34;</p>
+                        
+                        <p>Astrid took a shaky breath. &#34;I was gonna call you, but Emma pointed out your meeting with William was being livestreamed. She said if I called.everyone would hear.&#34;</p>
+                        
+                        <p>Adrian&#39;s jaw clenched tight.</p>
+                        
+                        <p>&#34;She said you&#39;d definitely be cool with me taking her to the hotel garden...&#34;Astrid&#39;s voice trembled.′′Imade sense, so I took her.&#34;</p>
+                        
+                        <p>&#34;In the garden, she was playing with the flowers while I sat on a bench.The bodyguards were right there, so I just looked down to text Henry for a minute...&#34; Her voice cracked. &#34;Then something hit the back of my head and I blacked out.&#34;</p>
+                        
+                        <p>My heart hammered harder with each word.</p>
+                        
+                        <p>&#34;When I woke up, the bodyguards were knocked out too, and Emma was gone...&#34; Astrid completely broke down. &#34;I&#39;m so sorry, Audrey, I&#39;m so sorry.Adrian!I never thought she&#39;d get kidnapped... I&#39;m really sorry!&#34;</p>
+                        
+                        <p>&#34;I already had Henry send people to look, and I called the cops!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -962,27 +1010,31 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>I bit my lip hard and looked at Adrian. &#34;Emma...&#34;</p>
-                    
-                    <p>Adrian&#39;s face darkened as he hung up. &#34;What good is crying when she&#39;s already missing?&#34;</p>
-                    
-                    <p>The car barely moved in Manhattan&#39;s lunch traffic. Adrian barked orders on his phone while telling our driver to hurry, but we were completely stuck.</p>
-                    
-                    <p>After a few minutes of not moving, Adrian lost it. He slammed his fist against the door with a bang that made me jump.</p>
-                    
-                    <p>&#34;Useless!&#34; he snarled at our driver, his usual polish completely gone.</p>
-                    
-                    <p>The driver flinched, catching my eye in the mirror. &#34;Mrs. Knox... I&#39;m sorry,but it&#39;s always like this at lunch. There&#39;s nothing I can -&#34;</p>
-                    
-                    <p>&#34;Not your fault,&#34; I assured him, seeing how scared he looked. &#34;He&#39;s just worried about our daughter.&#34;</p>
-                    
-                    <p>I handed him some cash. &#34;You should head back.&#34;</p>
-                    
-                    <p>We got out and started pushing through the crowded sidewalks toward the hotel. Adrian kept yelling at Henry on the phone.</p>
-                    
-                    <p>&#34;You said your guys would take care of us in New York. This is your idea of taking care?&#34; he snapped. &#34;Your bodyguards all got knocked out! Are these really professionals?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>I bit my lip hard and looked at Adrian. &#34;Emma...&#34;</p>
+                        
+                        <p>Adrian&#39;s face darkened as he hung up. &#34;What good is crying when she&#39;s already missing?&#34;</p>
+                        
+                        <p>The car barely moved in Manhattan&#39;s lunch traffic. Adrian barked orders on his phone while telling our driver to hurry, but we were completely stuck.</p>
+                        
+                        <p>After a few minutes of not moving, Adrian lost it. He slammed his fist against the door with a bang that made me jump.</p>
+                        
+                        <p>&#34;Useless!&#34; he snarled at our driver, his usual polish completely gone.</p>
+                        
+                        <p>The driver flinched, catching my eye in the mirror. &#34;Mrs. Knox... I&#39;m sorry,but it&#39;s always like this at lunch. There&#39;s nothing I can -&#34;</p>
+                        
+                        <p>&#34;Not your fault,&#34; I assured him, seeing how scared he looked. &#34;He&#39;s just worried about our daughter.&#34;</p>
+                        
+                        <p>I handed him some cash. &#34;You should head back.&#34;</p>
+                        
+                        <p>We got out and started pushing through the crowded sidewalks toward the hotel. Adrian kept yelling at Henry on the phone.</p>
+                        
+                        <p>&#34;You said your guys would take care of us in New York. This is your idea of taking care?&#34; he snapped. &#34;Your bodyguards all got knocked out! Are these really professionals?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -997,27 +1049,31 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>His anger built with each step. &#34;Find my daughter. Now!&#34;</p>
-                    
-                    <p>He suddenly stopped and turned to me, his eyes cold. &#34;Audrey.&#34;</p>
-                    
-                    <p>I snapped out of my worried thoughts.&#34;What?&#34;</p>
-                    
-                    <p>&#34;Your friend better pray Emma comes back safe.&#34;</p>
-                    
-                    <p>My heart sank as I realized where thiswas going.</p>
-                    
-                    <p>&#34;Or I&#39;m suing her,&#34; he continued.</p>
-                    
-                    <p>I stared at him. &#34;Are you serious?&#34;</p>
-                    
-                    <p>&#34;Damn right I am!&#34; Adrian&#39;s voice rose. &#34;She was on her phone while watching my kid! That&#39;s why Emma got kidnapped!&#34;</p>
-                    
-                    <p>His eyes flashed. &#34;This irresponsible person nearly got my daughter killed -and you still want to be friends with her?&#34;</p>
-                    
-                    <p>He stepped closer. &#34;Don&#39;t forget, you&#39;re alive because of Evelyn. Taking care of her daughter is the least you can do.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>His anger built with each step. &#34;Find my daughter. Now!&#34;</p>
+                        
+                        <p>He suddenly stopped and turned to me, his eyes cold. &#34;Audrey.&#34;</p>
+                        
+                        <p>I snapped out of my worried thoughts.&#34;What?&#34;</p>
+                        
+                        <p>&#34;Your friend better pray Emma comes back safe.&#34;</p>
+                        
+                        <p>My heart sank as I realized where thiswas going.</p>
+                        
+                        <p>&#34;Or I&#39;m suing her,&#34; he continued.</p>
+                        
+                        <p>I stared at him. &#34;Are you serious?&#34;</p>
+                        
+                        <p>&#34;Damn right I am!&#34; Adrian&#39;s voice rose. &#34;She was on her phone while watching my kid! That&#39;s why Emma got kidnapped!&#34;</p>
+                        
+                        <p>His eyes flashed. &#34;This irresponsible person nearly got my daughter killed -and you still want to be friends with her?&#34;</p>
+                        
+                        <p>He stepped closer. &#34;Don&#39;t forget, you&#39;re alive because of Evelyn. Taking care of her daughter is the least you can do.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1032,27 +1088,31 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>I took a deep breath, trying to stay calm despite wanting to scream at him.</p>
-                    
-                    <p>&#34;Adrian, we don&#39;t know anything about Emma right now. Finding her is what matters.&#34;</p>
-                    
-                    <p>I met his glare. &#34;I&#39;m not wasting time arguing about who&#39;s to blame.&#34;</p>
-                    
-                    <p>My heart raced but I kept going, &#34;Getting distracted while watching a kid isn&#39;t a crime. There were bodyguards there, and she was just texting.&#34;</p>
-                    
-                    <p>Adrian&#39;s face remained stone-cold as I continued, &#34;Haven&#39;t you ever gotten distracted with Emma when other people were around?&#34;</p>
-                    
-                    <p>I gestured at the street. &#34;And Henry&#39;s bodyguards wouldn&#39;t get knocked out by some random person. This was planned.&#34;</p>
-                    
-                    <p>My voice hardened. &#34;This could&#39;ve happened to any of us. Stop blaming everyone else!&#34;</p>
-                    
-                    <p>I walked around him toward the hotel. After a moment, I heard him following.</p>
-                    
-                    <p>When we reached the Four Seasons, police cars lined the entrance. Astrid stood there, face swollen from crying as she talked to the officers.</p>
-                    
-                    <p>&#34;I really just looked.down to answer some texts,&#34; she sobbed. &#34;There were six bodyguards watching. so I didn&#39;t think anything would happen...&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>I took a deep breath, trying to stay calm despite wanting to scream at him.</p>
+                        
+                        <p>&#34;Adrian, we don&#39;t know anything about Emma right now. Finding her is what matters.&#34;</p>
+                        
+                        <p>I met his glare. &#34;I&#39;m not wasting time arguing about who&#39;s to blame.&#34;</p>
+                        
+                        <p>My heart raced but I kept going, &#34;Getting distracted while watching a kid isn&#39;t a crime. There were bodyguards there, and she was just texting.&#34;</p>
+                        
+                        <p>Adrian&#39;s face remained stone-cold as I continued, &#34;Haven&#39;t you ever gotten distracted with Emma when other people were around?&#34;</p>
+                        
+                        <p>I gestured at the street. &#34;And Henry&#39;s bodyguards wouldn&#39;t get knocked out by some random person. This was planned.&#34;</p>
+                        
+                        <p>My voice hardened. &#34;This could&#39;ve happened to any of us. Stop blaming everyone else!&#34;</p>
+                        
+                        <p>I walked around him toward the hotel. After a moment, I heard him following.</p>
+                        
+                        <p>When we reached the Four Seasons, police cars lined the entrance. Astrid stood there, face swollen from crying as she talked to the officers.</p>
+                        
+                        <p>&#34;I really just looked.down to answer some texts,&#34; she sobbed. &#34;There were six bodyguards watching. so I didn&#39;t think anything would happen...&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1067,19 +1127,23 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>She wiped her nose. &#34;It&#39;s all my fault...&#34;</p>
-                    
-                    <p>Seeing her like that broke my heart. I grabbed Adrian&#39;s arm as he moved toward her.&#34;Don&#39;t.&#34;</p>
-                    
-                    <p>Adrian yanked free and stormed over to Astrid. &#34;You call that watching Emma carefully?&#34;</p>
-                    
-                    <p>His voice cut like ice. &#34;You don&#39;t even know how many bodyguards were there!&#34;</p>
-                    
-                    <p>&#34;I only assigned five bodyguards to Emma, but you say you saw six!&#34;</p>
-                    
-                    <p>His eyes narrowed dangerously. &#34;Were you really trying to help us take care of our child?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>She wiped her nose. &#34;It&#39;s all my fault...&#34;</p>
+                        
+                        <p>Seeing her like that broke my heart. I grabbed Adrian&#39;s arm as he moved toward her.&#34;Don&#39;t.&#34;</p>
+                        
+                        <p>Adrian yanked free and stormed over to Astrid. &#34;You call that watching Emma carefully?&#34;</p>
+                        
+                        <p>His voice cut like ice. &#34;You don&#39;t even know how many bodyguards were there!&#34;</p>
+                        
+                        <p>&#34;I only assigned five bodyguards to Emma, but you say you saw six!&#34;</p>
+                        
+                        <p>His eyes narrowed dangerously. &#34;Were you really trying to help us take care of our child?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2395,6 +2459,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2521,7 +2665,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2563,32 +2706,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2599,21 +2724,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2646,6 +2761,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2666,20 +2787,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

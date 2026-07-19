@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.032296">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.032296">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.226310">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.226310">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.032296",
-        "dateModified": "2026-07-19T02:47:19.032296",
+        "datePublished": "2026-07-19T13:03:14.226310",
+        "dateModified": "2026-07-19T13:03:14.226310",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,31 +893,35 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV*</p>
-                    
-                    <p>Blake kept me pinned against the wall, looking down with a cold smirk. &#34;Where do you think you&#39;re going, hmmn?&#34;</p>
-                    
-                    <p>&#34;Now everyone believes you&#39;re dead. Even my grandfather is urging me to hold your funeral. Where exactly are you planning to hide?&#34;</p>
-                    
-                    <p>I clutched Snow tighter but didn&#39;t respond.</p>
-                    
-                    <p>&#34;You think Astrid can hide you?&#34; His eyes narrowed as he studied my face.</p>
-                    
-                    <p>When I remained silent, his gaze intensified. &#34;Do you have any idea what will happen if people discover you&#39;re still alive?&#34;</p>
-                    
-                    <p>Blake stared directly into my eyes. &#34;After causing such chaos, even if Rachel and Felix weren&#39;t injured, the Rose and Thompson families won&#39;t let this go.&#34;</p>
-                    
-                    <p>I felt myself freeze as reality hit me. I hadn&#39;t thought this through.</p>
-                    
-                    <p>Even if no one was hurt in the crash, once the Rose family discovers I&#39;m alive, they&#39;ll hold me accountable for taking Rachel. If I claim she died, I&#39;d be responsible for her death. If I return her, they&#39;d charge me with kidnapping.</p>
-                    
-                    <p>And the Thompsons... Felix had been studying abroad for years. The patriarch of his family finally got him to return, and then because of me,he almost died. They wouldn&#39;t just let that slide.</p>
-                    
-                    <p>Blake noticedI my expression change and his lips curved upward. &#34;Finally realized how serious this is?&#34;</p>
-                    
-                    <p>Before I could answer, he suddenly bent down and lifted me into his arms.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV*</p>
+                        
+                        <p>Blake kept me pinned against the wall, looking down with a cold smirk. &#34;Where do you think you&#39;re going, hmmn?&#34;</p>
+                        
+                        <p>&#34;Now everyone believes you&#39;re dead. Even my grandfather is urging me to hold your funeral. Where exactly are you planning to hide?&#34;</p>
+                        
+                        <p>I clutched Snow tighter but didn&#39;t respond.</p>
+                        
+                        <p>&#34;You think Astrid can hide you?&#34; His eyes narrowed as he studied my face.</p>
+                        
+                        <p>When I remained silent, his gaze intensified. &#34;Do you have any idea what will happen if people discover you&#39;re still alive?&#34;</p>
+                        
+                        <p>Blake stared directly into my eyes. &#34;After causing such chaos, even if Rachel and Felix weren&#39;t injured, the Rose and Thompson families won&#39;t let this go.&#34;</p>
+                        
+                        <p>I felt myself freeze as reality hit me. I hadn&#39;t thought this through.</p>
+                        
+                        <p>Even if no one was hurt in the crash, once the Rose family discovers I&#39;m alive, they&#39;ll hold me accountable for taking Rachel. If I claim she died, I&#39;d be responsible for her death. If I return her, they&#39;d charge me with kidnapping.</p>
+                        
+                        <p>And the Thompsons... Felix had been studying abroad for years. The patriarch of his family finally got him to return, and then because of me,he almost died. They wouldn&#39;t just let that slide.</p>
+                        
+                        <p>Blake noticedI my expression change and his lips curved upward. &#34;Finally realized how serious this is?&#34;</p>
+                        
+                        <p>Before I could answer, he suddenly bent down and lifted me into his arms.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -896,31 +936,35 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>I gasped, one hand holding Snow while the other instinctively wrapped</p>
-                    
-                    <p>around his neck.</p>
-                    
-                    <p>&#34;Put me down!&#34; I tried to wriggle free.</p>
-                    
-                    <p>&#34;So you can run off and eventually be found? Leading to what, exactly?&#34;Blake&#39;s voice remained steady. &#34;Come with me. At least at my place,neither family would dare come looking.&#34;</p>
-                    
-                    <p>As I struggled, Blake&#39;s injured hand pressed against my leg. The feeling of his bandage against my calf made me stop.</p>
-                    
-                    <p>The image of Blake blocking Thalia&#39;s knife flashed through my mind.</p>
-                    
-                    <p>&#34;Your hand...&#34; I said quietly.</p>
-                    
-                    <p>His injured hand paused slightly, then he gave a faint smile. &#34;It&#39;s fine.Thalia&#39;s not that strong.&#34;</p>
-                    
-                    <p>Blake carried me downstairs and to his car. After placing me in the passenger seat, he got in and started the engine.</p>
-                    
-                    <p>I watched his profile while petting Snow, my thoughts racing ahead of me.</p>
-                    
-                    <p>I didn&#39;t want his protection. New York is huge - I could find places to hide without him. But I know Blake too wvell. Once he decides something,my opinion means nothing. With our difference in strength and my condition worsening. I couldn&#39;t fight him here.</p>
-                    
-                    <p>For now, I&#39;d play along and look for a chance to escape later.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>I gasped, one hand holding Snow while the other instinctively wrapped</p>
+                        
+                        <p>around his neck.</p>
+                        
+                        <p>&#34;Put me down!&#34; I tried to wriggle free.</p>
+                        
+                        <p>&#34;So you can run off and eventually be found? Leading to what, exactly?&#34;Blake&#39;s voice remained steady. &#34;Come with me. At least at my place,neither family would dare come looking.&#34;</p>
+                        
+                        <p>As I struggled, Blake&#39;s injured hand pressed against my leg. The feeling of his bandage against my calf made me stop.</p>
+                        
+                        <p>The image of Blake blocking Thalia&#39;s knife flashed through my mind.</p>
+                        
+                        <p>&#34;Your hand...&#34; I said quietly.</p>
+                        
+                        <p>His injured hand paused slightly, then he gave a faint smile. &#34;It&#39;s fine.Thalia&#39;s not that strong.&#34;</p>
+                        
+                        <p>Blake carried me downstairs and to his car. After placing me in the passenger seat, he got in and started the engine.</p>
+                        
+                        <p>I watched his profile while petting Snow, my thoughts racing ahead of me.</p>
+                        
+                        <p>I didn&#39;t want his protection. New York is huge - I could find places to hide without him. But I know Blake too wvell. Once he decides something,my opinion means nothing. With our difference in strength and my condition worsening. I couldn&#39;t fight him here.</p>
+                        
+                        <p>For now, I&#39;d play along and look for a chance to escape later.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -935,31 +979,35 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;I&#39;m arranging 24-hour surveillance,&#34; Blake said while driving. &#34;Don&#39;t think you can slip away when I&#39;m with Laurel or handling business.&#34;</p>
-                    
-                    <p>I turned toward the window. &#34;Planning to keep me locked up forever?&#34;</p>
-                    
-                    <p>&#34;Of course not,&#34; he replied.</p>
-                    
-                    <p>He glanced at me briefly. &#34;Felix and Rachel are missing, presumed dead by their families. First, we return them both. We&#39;ll say you sacrificed yourself to save them. After a few months, when this blows over and everyone&#39;s moved on, you&#39;ll be free.&#34;</p>
-                    
-                    <p>I closed my eyes. &#34;I won&#39;t let Rachel go back to the Rose family.&#34;</p>
-                    
-                    <p>*Never!*</p>
-                    
-                    <p>Something in my voice must have annoyed him. Blake pulled over and turned to me.</p>
-                    
-                    <p>&#34;Must you always fight me on everything?&#34; His jaw tightened. &#34;This is the best solution. Why make things difficult?If you don&#39;t return Rachel, what&#39;s your plan? Pretend to be dead forever?&#34;</p>
-                    
-                    <p>I raised an eyebrow. &#34;Why not?&#34;</p>
-                    
-                    <p>&#34;I&#39;ve seen tharough your act,&#34; Blake frowned. &#34;You and Rachel weren&#39;t friends before her accident. You didn&#39;t even know her. Why pretend to have this deep connection? Return her to her family where she belongs.&#34;</p>
-                    
-                    <p>&#34;Family?&#34; I cut in sharply. &#34;You want Rachel back with people who keep her drugged into a vegetative state?&#34;</p>
-                    
-                    <p>Blake&#39;s brow furrowed. &#34;What? What are you talking about?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;I&#39;m arranging 24-hour surveillance,&#34; Blake said while driving. &#34;Don&#39;t think you can slip away when I&#39;m with Laurel or handling business.&#34;</p>
+                        
+                        <p>I turned toward the window. &#34;Planning to keep me locked up forever?&#34;</p>
+                        
+                        <p>&#34;Of course not,&#34; he replied.</p>
+                        
+                        <p>He glanced at me briefly. &#34;Felix and Rachel are missing, presumed dead by their families. First, we return them both. We&#39;ll say you sacrificed yourself to save them. After a few months, when this blows over and everyone&#39;s moved on, you&#39;ll be free.&#34;</p>
+                        
+                        <p>I closed my eyes. &#34;I won&#39;t let Rachel go back to the Rose family.&#34;</p>
+                        
+                        <p>*Never!*</p>
+                        
+                        <p>Something in my voice must have annoyed him. Blake pulled over and turned to me.</p>
+                        
+                        <p>&#34;Must you always fight me on everything?&#34; His jaw tightened. &#34;This is the best solution. Why make things difficult?If you don&#39;t return Rachel, what&#39;s your plan? Pretend to be dead forever?&#34;</p>
+                        
+                        <p>I raised an eyebrow. &#34;Why not?&#34;</p>
+                        
+                        <p>&#34;I&#39;ve seen tharough your act,&#34; Blake frowned. &#34;You and Rachel weren&#39;t friends before her accident. You didn&#39;t even know her. Why pretend to have this deep connection? Return her to her family where she belongs.&#34;</p>
+                        
+                        <p>&#34;Family?&#34; I cut in sharply. &#34;You want Rachel back with people who keep her drugged into a vegetative state?&#34;</p>
+                        
+                        <p>Blake&#39;s brow furrowed. &#34;What? What are you talking about?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -974,31 +1022,35 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>I took a deep breath and pulled out my spare phone. After turning it on,I called Felix.</p>
-                    
-                    <p>&#34;Put Dr. Clarke on, please.&#34;</p>
-                    
-                    <p>After a brief pause, the old man&#39;s voice came through. &#34;Audrey. where have you been? Felix has been looking everywhere for you. With your condition, you can&#39;t just disappear like this.&#34;</p>
-                    
-                    <p>&#34;Your illness-&#34;</p>
-                    
-                    <p>&#34;Dr. Clarke,&#34; I cut him off. &#34;Could you explain again why Rachel became a vegetative patient?&#34;</p>
-                    
-                    <p>A pause. &#34;Put me on speaker.&#34;</p>
-                    
-                    <p>I hit the button and held the phone between us.</p>
-                    
-                    <p>&#34;Rachel&#39;s condition isn&#39;t actually a vegetative state,&#34; His voice filled the car.&#34;Her body doesn&#39;t have the typical damage you&#39;d expect.&#34;</p>
-                    
-                    <p>&#34;The fall four years ago likely only broke her limbs. Her spinal cord and brain weren&#39;t injured. After healing and rehabilitation, she should have been fine. There&#39;s no medical reason for her vegetative symptoms.&#34;</p>
-                    
-                    <p>&#34;What we&#39;ve discovered is someone has been consistently injecting her with an inhibitor drug that blocks brain and nerve functions, making her appear comnatose. She doesn&#39;t need treatment to wake up. We simply need to wait for her body to clear the toxins from her system.&#34;</p>
-                    
-                    <p>&#34;Anything else?&#34; he asked.</p>
-                    
-                    <p>&#34;No,that&#39;s all. Thank you.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>I took a deep breath and pulled out my spare phone. After turning it on,I called Felix.</p>
+                        
+                        <p>&#34;Put Dr. Clarke on, please.&#34;</p>
+                        
+                        <p>After a brief pause, the old man&#39;s voice came through. &#34;Audrey. where have you been? Felix has been looking everywhere for you. With your condition, you can&#39;t just disappear like this.&#34;</p>
+                        
+                        <p>&#34;Your illness-&#34;</p>
+                        
+                        <p>&#34;Dr. Clarke,&#34; I cut him off. &#34;Could you explain again why Rachel became a vegetative patient?&#34;</p>
+                        
+                        <p>A pause. &#34;Put me on speaker.&#34;</p>
+                        
+                        <p>I hit the button and held the phone between us.</p>
+                        
+                        <p>&#34;Rachel&#39;s condition isn&#39;t actually a vegetative state,&#34; His voice filled the car.&#34;Her body doesn&#39;t have the typical damage you&#39;d expect.&#34;</p>
+                        
+                        <p>&#34;The fall four years ago likely only broke her limbs. Her spinal cord and brain weren&#39;t injured. After healing and rehabilitation, she should have been fine. There&#39;s no medical reason for her vegetative symptoms.&#34;</p>
+                        
+                        <p>&#34;What we&#39;ve discovered is someone has been consistently injecting her with an inhibitor drug that blocks brain and nerve functions, making her appear comnatose. She doesn&#39;t need treatment to wake up. We simply need to wait for her body to clear the toxins from her system.&#34;</p>
+                        
+                        <p>&#34;Anything else?&#34; he asked.</p>
+                        
+                        <p>&#34;No,that&#39;s all. Thank you.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1013,31 +1065,35 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>I hung up and met Blake&#39;s shocked expression with a cold stare.</p>
-                    
-                    <p>&#34;Two years ago, Dr. Clarke&#39;s team woke you from your vegetative state.&#34; I reminded him. &#34;You wouldn&#39;t doubt his expertise, would you?&#34;</p>
-                    
-                    <p>Blake&#39;s face had gone completely still. &#34;Are you saying Rachel&#39;s condition</p>
-                    
-                    <p>was deliberately induced?&#34;</p>
-                    
-                    <p>&#34;Yes,&#34; I said firmly. &#34;For four years, while under Rose family care, Rachel has been drugged daily. Still want to send her back?&#34;</p>
-                    
-                    <p>**Blake&#39;s POV**</p>
-                    
-                    <p>The car went dead silent.</p>
-                    
-                    <p>I closed my eyes and leaned back, my fingers pressing against my throbbing temples.</p>
-                    
-                    <p>Audrey might lie to me, but Dr. Clarke wouldn&#39;t. And yet...</p>
-                    
-                    <p>Images of the Rose family flashed through my mind.</p>
-                    
-                    <p>I knew they weren&#39;t great to Rachel, but they had kept her for four years after her accident. They must care about her somewhat. Maybe they just got tired of the constant caretaking.</p>
-                    
-                    <p>But I never imagined they&#39;d been faking her condition.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>I hung up and met Blake&#39;s shocked expression with a cold stare.</p>
+                        
+                        <p>&#34;Two years ago, Dr. Clarke&#39;s team woke you from your vegetative state.&#34; I reminded him. &#34;You wouldn&#39;t doubt his expertise, would you?&#34;</p>
+                        
+                        <p>Blake&#39;s face had gone completely still. &#34;Are you saying Rachel&#39;s condition</p>
+                        
+                        <p>was deliberately induced?&#34;</p>
+                        
+                        <p>&#34;Yes,&#34; I said firmly. &#34;For four years, while under Rose family care, Rachel has been drugged daily. Still want to send her back?&#34;</p>
+                        
+                        <p>**Blake&#39;s POV**</p>
+                        
+                        <p>The car went dead silent.</p>
+                        
+                        <p>I closed my eyes and leaned back, my fingers pressing against my throbbing temples.</p>
+                        
+                        <p>Audrey might lie to me, but Dr. Clarke wouldn&#39;t. And yet...</p>
+                        
+                        <p>Images of the Rose family flashed through my mind.</p>
+                        
+                        <p>I knew they weren&#39;t great to Rachel, but they had kept her for four years after her accident. They must care about her somewhat. Maybe they just got tired of the constant caretaking.</p>
+                        
+                        <p>But I never imagined they&#39;d been faking her condition.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1052,31 +1108,35 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Dr. Clarke said Rachel had been drugged daily for four years...</p>
-                    
-                    <p>So the Rose family&#39;s &#34;care&#34; meant keeping her sedated and helpless. Jesus.</p>
-                    
-                    <p>But why keep her like this?</p>
-                    
-                    <p>For four years, they told everyone Rachel was dead. They could have killed her any day without raising suspicion.</p>
-                    
-                    <p>After all, as far as the public knew, Rachel died from that fall.</p>
-                    
-                    <p>So why announce her death, then save her, only to drug her into this living hell for four years?</p>
-                    
-                    <p>The only explanation was that the Roses were keeping secrets from each other. Some wanted Rachel vegetative, others wanted her healthy. Someone preferred drugging her instead of letting her come to actual harm.</p>
-                    
-                    <p>That person had to be Scarlett, who&#39;d been quietly looking after Rachel all this time.</p>
-                    
-                    <p>But who in the family wanted to keep Rachel in that state?</p>
-                    
-                    <p>Jonathan Rose?</p>
-                    
-                    <p>Or...Laurel?</p>
-                    
-                    <p>I opened my eyes and looked at Audrey. &#34;How long until Rachel wakes up?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Dr. Clarke said Rachel had been drugged daily for four years...</p>
+                        
+                        <p>So the Rose family&#39;s &#34;care&#34; meant keeping her sedated and helpless. Jesus.</p>
+                        
+                        <p>But why keep her like this?</p>
+                        
+                        <p>For four years, they told everyone Rachel was dead. They could have killed her any day without raising suspicion.</p>
+                        
+                        <p>After all, as far as the public knew, Rachel died from that fall.</p>
+                        
+                        <p>So why announce her death, then save her, only to drug her into this living hell for four years?</p>
+                        
+                        <p>The only explanation was that the Roses were keeping secrets from each other. Some wanted Rachel vegetative, others wanted her healthy. Someone preferred drugging her instead of letting her come to actual harm.</p>
+                        
+                        <p>That person had to be Scarlett, who&#39;d been quietly looking after Rachel all this time.</p>
+                        
+                        <p>But who in the family wanted to keep Rachel in that state?</p>
+                        
+                        <p>Jonathan Rose?</p>
+                        
+                        <p>Or...Laurel?</p>
+                        
+                        <p>I opened my eyes and looked at Audrey. &#34;How long until Rachel wakes up?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1091,19 +1151,23 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;One to two weeks,&#34; Audrey said, her mouth tightening. &#34;That&#39;s why I won&#39;t let her go back to the Roses. If she wants to return after she&#39;s awake,I&#39;ll respect that.&#34;</p>
-                    
-                    <p>&#34;But until then...&#34; She paused. &#34;I won&#39;t tell anyone where she is.&#34;</p>
-                    
-                    <p>I frowned. &#34;Two weeks isn&#39;t that long.&#34;</p>
-                    
-                    <p>I started the engine. &#34;Until Rachel wakes up, you need to stay hidden.&#34;</p>
-                    
-                    <p>Audrey looked down at Snow, stroking his fur without saying anything else.</p>
-                    
-                    <p>Soon, I pulled the car to a stop. &#34;We&#39;re here.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;One to two weeks,&#34; Audrey said, her mouth tightening. &#34;That&#39;s why I won&#39;t let her go back to the Roses. If she wants to return after she&#39;s awake,I&#39;ll respect that.&#34;</p>
+                        
+                        <p>&#34;But until then...&#34; She paused. &#34;I won&#39;t tell anyone where she is.&#34;</p>
+                        
+                        <p>I frowned. &#34;Two weeks isn&#39;t that long.&#34;</p>
+                        
+                        <p>I started the engine. &#34;Until Rachel wakes up, you need to stay hidden.&#34;</p>
+                        
+                        <p>Audrey looked down at Snow, stroking his fur without saying anything else.</p>
+                        
+                        <p>Soon, I pulled the car to a stop. &#34;We&#39;re here.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2419,6 +2483,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2545,7 +2689,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2587,32 +2730,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2623,21 +2748,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2670,6 +2785,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2690,20 +2811,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

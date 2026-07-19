@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.072187">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.072187">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.262513">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.262513">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.072187",
-        "dateModified": "2026-07-19T02:47:19.072187",
+        "datePublished": "2026-07-19T13:03:14.262513",
+        "dateModified": "2026-07-19T13:03:14.262513",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,27 +893,31 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV*</p>
-                    
-                    <p>Blake noticed me ignoring him and subtly relaxed his expression. He took out his phone from his garbage-covered pocket and called Michael,explaining his location and situaation. After putting away his phone, he attempted to get up from the oil-slicked ground.</p>
-                    
-                    <p>But getting up wasn&#39;t easy for him.</p>
-                    
-                    <p>Due to the kitchen waste and grease, he kept slipping. Each attempt ended with him falling back into the mess. He didn&#39;t make a sound,just grimly tried again and again.</p>
-                    
-                    <p>I watched him struggle for a few minutes,torn between satisfaction and pity. Finally, I couldn&#39;t take it anymore.</p>
-                    
-                    <p>&#34;Need help?&#34; I set my phone down and stood up.</p>
-                    
-                    <p>&#34;Don&#39;t come over!&#34; His voice was icy.′′Ican manage.&#34;</p>
-                    
-                    <p>&#34;Why are you being so stubborn? If your physical condition isn&#39;t good,you should accept help.&#34;</p>
-                    
-                    <p>&#34;Do you really thinak you&#39;re invincible?&#34; I asked.</p>
-                    
-                    <p>The words felt strangely familiar as they left my mouth. A memory flashed - Blake, newly blind five years ago, bumping into furniture,refusing assistance.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV*</p>
+                        
+                        <p>Blake noticed me ignoring him and subtly relaxed his expression. He took out his phone from his garbage-covered pocket and called Michael,explaining his location and situaation. After putting away his phone, he attempted to get up from the oil-slicked ground.</p>
+                        
+                        <p>But getting up wasn&#39;t easy for him.</p>
+                        
+                        <p>Due to the kitchen waste and grease, he kept slipping. Each attempt ended with him falling back into the mess. He didn&#39;t make a sound,just grimly tried again and again.</p>
+                        
+                        <p>I watched him struggle for a few minutes,torn between satisfaction and pity. Finally, I couldn&#39;t take it anymore.</p>
+                        
+                        <p>&#34;Need help?&#34; I set my phone down and stood up.</p>
+                        
+                        <p>&#34;Don&#39;t come over!&#34; His voice was icy.′′Ican manage.&#34;</p>
+                        
+                        <p>&#34;Why are you being so stubborn? If your physical condition isn&#39;t good,you should accept help.&#34;</p>
+                        
+                        <p>&#34;Do you really thinak you&#39;re invincible?&#34; I asked.</p>
+                        
+                        <p>The words felt strangely familiar as they left my mouth. A memory flashed - Blake, newly blind five years ago, bumping into furniture,refusing assistance.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -892,27 +932,31 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>His head snapped up, our eyes locking. For a moment, neither of us moved.</p>
-                    
-                    <p>I broke the spell first, carefully picking my way through the garbage to offer my hand. Blake stared at it, jaw tight with reluctance.</p>
-                    
-                    <p>&#34;Take it.&#34; I said. &#34;Unless you&#39;d rather wait in trash for your assistant.&#34;</p>
-                    
-                    <p>After a beat, he grasped my hand. As I pulled him up. our eyes met again,and something electric passed between us.</p>
-                    
-                    <p>&#34;BLAKE!&#34; A shriek cut through the air. &#34;WHAT HAPPENED TO YOU?&#34;</p>
-                    
-                    <p>Startled. I let go. Blake wobbled, and I quickly grabbed his arm,steadying him against my side. Looking up, I saw Rebecca Parker charging toward us with Victoria Sinclair trailing behind.</p>
-                    
-                    <p>&#34;What did this woman do to you!&#34; Rebecca,laser-focused on us, hit the slick patch at full speed. She went down hard, landing in the worst of the garbage pile.</p>
-                    
-                    <p>&#34;Mrs. Parker!&#34; Victoria rushed forward, and then she slid too. She flew forward,landing directly on top of Rebecca with an audible thud.</p>
-                    
-                    <p>&#34;Get off me!&#34; Rebecca shoved at Victoria.</p>
-                    
-                    <p>Victoria scrambled to comply, accidentally elbowing Rebecca in the stomach.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>His head snapped up, our eyes locking. For a moment, neither of us moved.</p>
+                        
+                        <p>I broke the spell first, carefully picking my way through the garbage to offer my hand. Blake stared at it, jaw tight with reluctance.</p>
+                        
+                        <p>&#34;Take it.&#34; I said. &#34;Unless you&#39;d rather wait in trash for your assistant.&#34;</p>
+                        
+                        <p>After a beat, he grasped my hand. As I pulled him up. our eyes met again,and something electric passed between us.</p>
+                        
+                        <p>&#34;BLAKE!&#34; A shriek cut through the air. &#34;WHAT HAPPENED TO YOU?&#34;</p>
+                        
+                        <p>Startled. I let go. Blake wobbled, and I quickly grabbed his arm,steadying him against my side. Looking up, I saw Rebecca Parker charging toward us with Victoria Sinclair trailing behind.</p>
+                        
+                        <p>&#34;What did this woman do to you!&#34; Rebecca,laser-focused on us, hit the slick patch at full speed. She went down hard, landing in the worst of the garbage pile.</p>
+                        
+                        <p>&#34;Mrs. Parker!&#34; Victoria rushed forward, and then she slid too. She flew forward,landing directly on top of Rebecca with an audible thud.</p>
+                        
+                        <p>&#34;Get off me!&#34; Rebecca shoved at Victoria.</p>
+                        
+                        <p>Victoria scrambled to comply, accidentally elbowing Rebecca in the stomach.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -927,27 +971,31 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;You did that on purpose!&#34; Rebecca accused, finally managing to sit up.&#34;You&#39;re just like that worthless Audrey Sinclair from your family. Both of you are trash, both wanting me dead!&#34;</p>
-                    
-                    <p>Iignored her, keeping Blake&#39;s arm around my shoulders as we moved toward a bench. I frowned at her words. When exactly had I ever wished Rebecca dead? II anyone had murderous intentions, It was the other way around.</p>
-                    
-                    <p>A fleet of black SUVs pulled up nearby. Michael emerged with several bodyguards.</p>
-                    
-                    <p>&#34;Sir!&#34; His eyes widened at Blake&#39;s condition. &#34;What happened?&#34;</p>
-                    
-                    <p>By now, we&#39;d reached the bench. I helped Blake sit, then stepped back,wiping my hands clean.</p>
-                    
-                    <p>&#34;Just fell,&#34; Blake said, removing his ruined jacket.</p>
-                    
-                    <p>Michael moved toward the overturned wheelchair, but Blake stopped him.</p>
-                    
-                    <p>&#34;Help them first,&#34; he directed, nodding toward Rebecca and Victoria.</p>
-                    
-                    <p>&#34;Quick!&#34; Michael ordered the guards. &#34;Help Mrs. Parker and Miss Sinclair!&#34;</p>
-                    
-                    <p>Two men rushed forward,carefully extracting the women from the mess.The moment Rebecca was upright, she lunged at Victoria,slapping her face hard.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;You did that on purpose!&#34; Rebecca accused, finally managing to sit up.&#34;You&#39;re just like that worthless Audrey Sinclair from your family. Both of you are trash, both wanting me dead!&#34;</p>
+                        
+                        <p>Iignored her, keeping Blake&#39;s arm around my shoulders as we moved toward a bench. I frowned at her words. When exactly had I ever wished Rebecca dead? II anyone had murderous intentions, It was the other way around.</p>
+                        
+                        <p>A fleet of black SUVs pulled up nearby. Michael emerged with several bodyguards.</p>
+                        
+                        <p>&#34;Sir!&#34; His eyes widened at Blake&#39;s condition. &#34;What happened?&#34;</p>
+                        
+                        <p>By now, we&#39;d reached the bench. I helped Blake sit, then stepped back,wiping my hands clean.</p>
+                        
+                        <p>&#34;Just fell,&#34; Blake said, removing his ruined jacket.</p>
+                        
+                        <p>Michael moved toward the overturned wheelchair, but Blake stopped him.</p>
+                        
+                        <p>&#34;Help them first,&#34; he directed, nodding toward Rebecca and Victoria.</p>
+                        
+                        <p>&#34;Quick!&#34; Michael ordered the guards. &#34;Help Mrs. Parker and Miss Sinclair!&#34;</p>
+                        
+                        <p>Two men rushed forward,carefully extracting the women from the mess.The moment Rebecca was upright, she lunged at Victoria,slapping her face hard.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -962,27 +1010,31 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;You worthless girl!&#34; She landed another blow. &#34;Your mother said you really saw Audrey. I foolishly brought you here thinking you were helping me, and what happened? You&#39;re working with Audrey to humiliate me!&#34;</p>
-                    
-                    <p>Victoria&#39;s cheek reddened from the impact. &#34;Mrs. Parker,that&#39;s not true! I was just trying to help you up!&#34;</p>
-                    
-                    <p>&#34;How could Audrey and I possibly be working together?&#34; Victoria pointed at me, voice shaking with emotion. &#34;She&#39;s the person I hate most in this world!&#34;</p>
-                    
-                    <p>&#34;I was always the Sinclair family&#39;s princess! Everyone thought I was the true heiress until she showed up!&#34; Victoria&#39;s words tumbled out. &#34;She grew up in the countryside, rude and disgusting. What right does she have to</p>
-                    
-                    <p>be my sister or my parents&#39; biological daughter?&#34;</p>
-                    
-                    <p>&#34;When she died, my parents and I were happier than anyone!&#34; VIctoria wiped at her tears. &#34;Mrs. Parker, please believe me, I wasn&#39;t conspiring with her!&#34;</p>
-                    
-                    <p>I clenched my fists, bitter irony washing over me. My biological parents celebrated my &#34;death&#34; while my sister&#39;s adoptive family saved my life.Perhaps being abandoned at birth had spared Evelyn from knowing she wasn&#39;t wanted by her blood relatives.</p>
-                    
-                    <p>&#34;I hope that&#39;s true,&#34; Rebecca snorted, futilely trying to clean her ruined outfit.</p>
-                    
-                    <p>She turned her cold eyes on me. &#34;Weren&#39;t you supposed to be dead? How are you suddenly back? Couldn&#39;t live without my son, so you rushed back before his wedding?&#34;</p>
-                    
-                    <p>I kept my back turned, which only fueled her anger.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;You worthless girl!&#34; She landed another blow. &#34;Your mother said you really saw Audrey. I foolishly brought you here thinking you were helping me, and what happened? You&#39;re working with Audrey to humiliate me!&#34;</p>
+                        
+                        <p>Victoria&#39;s cheek reddened from the impact. &#34;Mrs. Parker,that&#39;s not true! I was just trying to help you up!&#34;</p>
+                        
+                        <p>&#34;How could Audrey and I possibly be working together?&#34; Victoria pointed at me, voice shaking with emotion. &#34;She&#39;s the person I hate most in this world!&#34;</p>
+                        
+                        <p>&#34;I was always the Sinclair family&#39;s princess! Everyone thought I was the true heiress until she showed up!&#34; Victoria&#39;s words tumbled out. &#34;She grew up in the countryside, rude and disgusting. What right does she have to</p>
+                        
+                        <p>be my sister or my parents&#39; biological daughter?&#34;</p>
+                        
+                        <p>&#34;When she died, my parents and I were happier than anyone!&#34; VIctoria wiped at her tears. &#34;Mrs. Parker, please believe me, I wasn&#39;t conspiring with her!&#34;</p>
+                        
+                        <p>I clenched my fists, bitter irony washing over me. My biological parents celebrated my &#34;death&#34; while my sister&#39;s adoptive family saved my life.Perhaps being abandoned at birth had spared Evelyn from knowing she wasn&#39;t wanted by her blood relatives.</p>
+                        
+                        <p>&#34;I hope that&#39;s true,&#34; Rebecca snorted, futilely trying to clean her ruined outfit.</p>
+                        
+                        <p>She turned her cold eyes on me. &#34;Weren&#39;t you supposed to be dead? How are you suddenly back? Couldn&#39;t live without my son, so you rushed back before his wedding?&#34;</p>
+                        
+                        <p>I kept my back turned, which only fueled her anger.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -997,27 +1049,31 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;Dream on if you think your return will stop Blake from marrying Rachel!&#34;she spat. &#34;The daughter-in-law of our Parker family can be anyone but you! Did you hear me,Audrey Sinclair?&#34;</p>
-                    
-                    <p>Years ago,her words would have crushed me. Now they barely registered.</p>
-                    
-                    <p>I actually felt like laughing.</p>
-                    
-                    <p>&#34;She&#39;s not Audrey Sinclair.&#34;</p>
-                    
-                    <p>Blake&#39;s calm voice cut through his mother&#39;s rant as Michael helped him into a fresh wheelchalr.</p>
-                    
-                    <p>&#34;She&#39;s the daughter of the Australian Parker family, Adrian Knox&#39;s wlfe,Evelyn Knox,&#34;</p>
-                    
-                    <p>Rebecca laughed sharply. &#34;The Australian Parkers? The ones your father drove out of New York twenty years ago? People who left in disgrace are still losers, even in Australia.&#34;</p>
-                    
-                    <p>I turned, unable to hide my surprise. &#34;The Parkers here drove the Australian branch out of New York?&#34;</p>
-                    
-                    <p>&#34;Of course! They tried competing for resources, to become New York&#39;s wealthiest family.&#34; Rebecca looked smug. &#34;My husband crushed them in three years.&#34;</p>
-                    
-                    <p>I stared at her, stunned. Jeffrey and Eleanor had never mentioned this -they&#39;d only said they moved for better opportunities.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;Dream on if you think your return will stop Blake from marrying Rachel!&#34;she spat. &#34;The daughter-in-law of our Parker family can be anyone but you! Did you hear me,Audrey Sinclair?&#34;</p>
+                        
+                        <p>Years ago,her words would have crushed me. Now they barely registered.</p>
+                        
+                        <p>I actually felt like laughing.</p>
+                        
+                        <p>&#34;She&#39;s not Audrey Sinclair.&#34;</p>
+                        
+                        <p>Blake&#39;s calm voice cut through his mother&#39;s rant as Michael helped him into a fresh wheelchalr.</p>
+                        
+                        <p>&#34;She&#39;s the daughter of the Australian Parker family, Adrian Knox&#39;s wlfe,Evelyn Knox,&#34;</p>
+                        
+                        <p>Rebecca laughed sharply. &#34;The Australian Parkers? The ones your father drove out of New York twenty years ago? People who left in disgrace are still losers, even in Australia.&#34;</p>
+                        
+                        <p>I turned, unable to hide my surprise. &#34;The Parkers here drove the Australian branch out of New York?&#34;</p>
+                        
+                        <p>&#34;Of course! They tried competing for resources, to become New York&#39;s wealthiest family.&#34; Rebecca looked smug. &#34;My husband crushed them in three years.&#34;</p>
+                        
+                        <p>I stared at her, stunned. Jeffrey and Eleanor had never mentioned this -they&#39;d only said they moved for better opportunities.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1032,27 +1088,31 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;You&#39;re just Audrey pretending to be from the Parker family,&#34; Rebecca stepped closer. &#34;Did you think having an heiress identity would make Blake want you? Our family might marry into any family, but never with losers!&#34;</p>
-                    
-                    <p>&#34;Mother, stop,&#34; Blake said firmly.&#34;The Australian Parkers moved because their bousiness was better in Australia. Besides, Miss Knox is married with a four-year-old daughter. She&#39;s not Audrey and has no interest in marrying me.&#34;</p>
-                    
-                    <p>&#34;A four-year-old?&#34; Rebecca&#39;s eyes narrowed.&#34;Ithink she faked her death,found a new identity, and came back for you!&#34;</p>
-                    
-                    <p>She stalked toward me. &#34;Whether she&#39;s Audrey or this supposed heiress,I can tell with one look!&#34;</p>
-                    
-                    <p>&#34;Mom, don&#39;t - &#34; Blake started.</p>
-                    
-                    <p>Too late. Rebecca grabbed my arm and tore my sleeve open. The fabric ripped loudly, exposing my elbow to the sunlight.</p>
-                    
-                    <p>&#34;Stlll saying you&#39;re not Audrey Sinclalr?&#34; Rebecca laughed triumphantly. &#34;Even the burn location is Identical!&#34;</p>
-                    
-                    <p>I stared at my exposed skin. Just above my elbow was a distinctive burn scar.</p>
-                    
-                    <p>**Blake&#39;s POV*</p>
-                    
-                    <p>I couldn&#39;t tear my eyes from that ugly red mark on her elbow. &#34;That&#39;s...&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;You&#39;re just Audrey pretending to be from the Parker family,&#34; Rebecca stepped closer. &#34;Did you think having an heiress identity would make Blake want you? Our family might marry into any family, but never with losers!&#34;</p>
+                        
+                        <p>&#34;Mother, stop,&#34; Blake said firmly.&#34;The Australian Parkers moved because their bousiness was better in Australia. Besides, Miss Knox is married with a four-year-old daughter. She&#39;s not Audrey and has no interest in marrying me.&#34;</p>
+                        
+                        <p>&#34;A four-year-old?&#34; Rebecca&#39;s eyes narrowed.&#34;Ithink she faked her death,found a new identity, and came back for you!&#34;</p>
+                        
+                        <p>She stalked toward me. &#34;Whether she&#39;s Audrey or this supposed heiress,I can tell with one look!&#34;</p>
+                        
+                        <p>&#34;Mom, don&#39;t - &#34; Blake started.</p>
+                        
+                        <p>Too late. Rebecca grabbed my arm and tore my sleeve open. The fabric ripped loudly, exposing my elbow to the sunlight.</p>
+                        
+                        <p>&#34;Stlll saying you&#39;re not Audrey Sinclalr?&#34; Rebecca laughed triumphantly. &#34;Even the burn location is Identical!&#34;</p>
+                        
+                        <p>I stared at my exposed skin. Just above my elbow was a distinctive burn scar.</p>
+                        
+                        <p>**Blake&#39;s POV*</p>
+                        
+                        <p>I couldn&#39;t tear my eyes from that ugly red mark on her elbow. &#34;That&#39;s...&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1067,25 +1127,29 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;That&#39;s the burn I gave her at dinner three years ago!&#34; Mom cut in,voice dripping with pride.</p>
-                    
-                    <p>She tossed her hair back despite the garbage clinging to it. &#34;Itold this nobody she should divorce you. Said she wasn&#39;t in your league and needed to wake up.&#34;</p>
-                    
-                    <p>&#34;But instead of listening, she talked back! Said your marriage was between you two and none of my business!&#34;</p>
-                    
-                    <p>&#34;Can you believe that?&#34; Mom nearly shouted. &#34;As if your mother has no say in your life!&#34;</p>
-                    
-                    <p>&#34;So I grabbed that pot of soup and dumped it on her. She dodged most of it, but still caught some on her elbow.&#34;</p>
-                    
-                    <p>My chest tighten. I&#39;d never known about this.</p>
-                    
-                    <p>I&#39;d seen that scar plenty of times but figured it was from her childhood.</p>
-                    
-                    <p>I never asked. Never cared enough to ask.</p>
-                    
-                    <p>Christ. My mother did this to her.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;That&#39;s the burn I gave her at dinner three years ago!&#34; Mom cut in,voice dripping with pride.</p>
+                        
+                        <p>She tossed her hair back despite the garbage clinging to it. &#34;Itold this nobody she should divorce you. Said she wasn&#39;t in your league and needed to wake up.&#34;</p>
+                        
+                        <p>&#34;But instead of listening, she talked back! Said your marriage was between you two and none of my business!&#34;</p>
+                        
+                        <p>&#34;Can you believe that?&#34; Mom nearly shouted. &#34;As if your mother has no say in your life!&#34;</p>
+                        
+                        <p>&#34;So I grabbed that pot of soup and dumped it on her. She dodged most of it, but still caught some on her elbow.&#34;</p>
+                        
+                        <p>My chest tighten. I&#39;d never known about this.</p>
+                        
+                        <p>I&#39;d seen that scar plenty of times but figured it was from her childhood.</p>
+                        
+                        <p>I never asked. Never cared enough to ask.</p>
+                        
+                        <p>Christ. My mother did this to her.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2401,6 +2465,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2527,7 +2671,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2569,32 +2712,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2605,21 +2730,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2652,6 +2767,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2672,20 +2793,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:31.265455">
-    <meta property="article:modified_time" content="2026-07-19T02:47:31.265455">
+    <meta property="article:published_time" content="2026-07-19T13:03:25.538297">
+    <meta property="article:modified_time" content="2026-07-19T13:03:25.538297">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:31">
+    <meta name="last-modified" content="2026-07-19 13:03:25">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:31.265455",
-        "dateModified": "2026-07-19T02:47:31.265455",
+        "datePublished": "2026-07-19T13:03:25.538297",
+        "dateModified": "2026-07-19T13:03:25.538297",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,15 +893,19 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>After all, she was merely a heartbeat away from passing. Next time, victory would surely be within her grasp.</p>
-                    
-                    <p>The moment shattered as a desperate voice pierced the air from beyond the room. “Mr. Norris, her injuries are critical. If she’s moved now, it will be fatal!”</p>
-                    
-                    <p>Katelyn stood frozen, her mind struggling to process what she’d just heard.</p>
-                    
-                    <p>The next moment, the messenger finally noticed Katelyn’s and Vincent’s presence. His face drained of color as he stumbled back a step.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>After all, she was merely a heartbeat away from passing. Next time, victory would surely be within her grasp.</p>
+                        
+                        <p>The moment shattered as a desperate voice pierced the air from beyond the room. “Mr. Norris, her injuries are critical. If she’s moved now, it will be fatal!”</p>
+                        
+                        <p>Katelyn stood frozen, her mind struggling to process what she’d just heard.</p>
+                        
+                        <p>The next moment, the messenger finally noticed Katelyn’s and Vincent’s presence. His face drained of color as he stumbled back a step.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -880,15 +920,19 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>“The rabbit you requested,” he quickly amended, “escaped during transport and was injured after leaping from the vehicle.”</p>
-                    
-                    <p>Bernie’s features twisted with rage. “You couldn’t handle even this simple task? I only wanted to get a small companion for Alfy, something to keep her from crying like this.”</p>
-                    
-                    <p>The messenger bowed his head in silence, not daring to offer any defense.</p>
-                    
-                    <p>“Get another one,” Bernie commanded, his voice dropping to a dangerous octave.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>“The rabbit you requested,” he quickly amended, “escaped during transport and was injured after leaping from the vehicle.”</p>
+                        
+                        <p>Bernie’s features twisted with rage. “You couldn’t handle even this simple task? I only wanted to get a small companion for Alfy, something to keep her from crying like this.”</p>
+                        
+                        <p>The messenger bowed his head in silence, not daring to offer any defense.</p>
+                        
+                        <p>“Get another one,” Bernie commanded, his voice dropping to a dangerous octave.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -903,15 +947,19 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>“Understood.” The messenger hurried from the room, shoulders hunched.</p>
-                    
-                    <p>Though Alfy had stopped her outright crying, small hiccups still escaped her throat. She looked up at Bernie with reddened eyes. “Uncle Bernie, you were getting me a bunny?”</p>
-                    
-                    <p>Bernie’s stern expression softened as he gazed at Alfy. “Yes, I noticed how stressed you’ve been with your studies lately. I thought a bunny might help lift your spirits.”</p>
-                    
-                    <p>After all, Alfy had always been drawn to fuzzy creatures since she was tiny. But Bernie’s severe animal allergies had always prevented her from having pets at home.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“Understood.” The messenger hurried from the room, shoulders hunched.</p>
+                        
+                        <p>Though Alfy had stopped her outright crying, small hiccups still escaped her throat. She looked up at Bernie with reddened eyes. “Uncle Bernie, you were getting me a bunny?”</p>
+                        
+                        <p>Bernie’s stern expression softened as he gazed at Alfy. “Yes, I noticed how stressed you’ve been with your studies lately. I thought a bunny might help lift your spirits.”</p>
+                        
+                        <p>After all, Alfy had always been drawn to fuzzy creatures since she was tiny. But Bernie’s severe animal allergies had always prevented her from having pets at home.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -926,15 +974,19 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Just then, Alfy’s heart swelled with gratitude. She stepped forward, gently tugging at Bernie’s sleeve like she used to do as a child. “Please don’t be angry anymore. I understand now that I was wrong.” Her sincere contrition, combined with those doe-like eyes, could soften even the hardest heart.</p>
-                    
-                    <p>“It’s getting late,” Bernie said, his voice gentler now. “Go with Katelyn. The drive back will take an hour or two.”</p>
-                    
-                    <p>: ?ν.?</p>
-                    
-                    <p>Alfy nodded several times in quick succession. Her tears had finally subsided. A small smile graced her features as she bounced over to Katelyn. “Ready to go!”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Just then, Alfy’s heart swelled with gratitude. She stepped forward, gently tugging at Bernie’s sleeve like she used to do as a child. “Please don’t be angry anymore. I understand now that I was wrong.” Her sincere contrition, combined with those doe-like eyes, could soften even the hardest heart.</p>
+                        
+                        <p>“It’s getting late,” Bernie said, his voice gentler now. “Go with Katelyn. The drive back will take an hour or two.”</p>
+                        
+                        <p>: ?ν.?</p>
+                        
+                        <p>Alfy nodded several times in quick succession. Her tears had finally subsided. A small smile graced her features as she bounced over to Katelyn. “Ready to go!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -949,15 +1001,19 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Katelyn turned to Bernie with a polite bow. “We apologize for any disruption.”</p>
-                    
-                    <p>Vincent responded with just a slight nod. He exchanged a meaningful glance with Katelyn, unspoken understanding passing between them before they headed outside.</p>
-                    
-                    <p>Inside the vehicle, as Vincent started the engine, Katelyn surveyed their surroundings while Alfy slumped against the back seat. The girl’s pursed lips betrayed her lingering sadness.</p>
-                    
-                    <p>After one final scan of the estate grounds, Katelyn’s suspicions solidified—something was definitely amiss about Bernie’s property. But with Alfy present, she couldn’t voice her concerns to Vincent.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Katelyn turned to Bernie with a polite bow. “We apologize for any disruption.”</p>
+                        
+                        <p>Vincent responded with just a slight nod. He exchanged a meaningful glance with Katelyn, unspoken understanding passing between them before they headed outside.</p>
+                        
+                        <p>Inside the vehicle, as Vincent started the engine, Katelyn surveyed their surroundings while Alfy slumped against the back seat. The girl’s pursed lips betrayed her lingering sadness.</p>
+                        
+                        <p>After one final scan of the estate grounds, Katelyn’s suspicions solidified—something was definitely amiss about Bernie’s property. But with Alfy present, she couldn’t voice her concerns to Vincent.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -972,15 +1028,19 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>As they passed through the estate’s gates, Katelyn turned to look at Alfy, her voice gentle but probing. “Alfy, what had you so upset earlier? You can tell me now, can’t you?”</p>
-                    
-                    <p>Alfy’s shoulders sagged as a heavy sigh escaped her lips. She fidgeted with her sleeve, silence stretching between them before she finally confessed, “It’s about Jaxen. Tonight, I discovered he went to a hotel with some girl.”</p>
-                    
-                    <p>.</p>
-                    
-                    <p>.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>As they passed through the estate’s gates, Katelyn turned to look at Alfy, her voice gentle but probing. “Alfy, what had you so upset earlier? You can tell me now, can’t you?”</p>
+                        
+                        <p>Alfy’s shoulders sagged as a heavy sigh escaped her lips. She fidgeted with her sleeve, silence stretching between them before she finally confessed, “It’s about Jaxen. Tonight, I discovered he went to a hotel with some girl.”</p>
+                        
+                        <p>.</p>
+                        
+                        <p>.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -995,9 +1055,13 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2313,6 +2377,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2439,7 +2583,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2481,32 +2624,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2517,21 +2642,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2564,6 +2679,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2584,20 +2705,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

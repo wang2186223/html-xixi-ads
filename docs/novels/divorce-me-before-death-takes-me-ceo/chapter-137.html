@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:18.959870">
-    <meta property="article:modified_time" content="2026-07-19T02:47:18.959870">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.168601">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.168601">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:18">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:18.959870",
-        "dateModified": "2026-07-19T02:47:18.959870",
+        "datePublished": "2026-07-19T13:03:14.168601",
+        "dateModified": "2026-07-19T13:03:14.168601",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,29 +893,33 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV*</p>
-                    
-                    <p>Blake pulled Laurel protectively against him, glaring down at Jennifer who sat on the floor with blood trickling from her split lip.</p>
-                    
-                    <p>&#34;You did all this,&#34; he said coldly, &#34;and now you&#39;re trying to drag Laurel down with you.&#34;</p>
-                    
-                    <p>His grip on Laurel tightened. &#34;Don&#39;t think you can implicate her in your crimes.&#34;</p>
-                    
-                    <p>Jennifer stared up at him, mouth open in disbelief.</p>
-                    
-                    <p>&#34;There&#39;s no point in listening to her anymore,&#34; Blake told the officers.&#34;Take her away.&#34;</p>
-                    
-                    <p>&#34;Yes, Mr. Parker,&#34; the male officer nodded and stepped forward.</p>
-                    
-                    <p>The handcuffs clicked around Jennifer&#39;s wrists. She stared at them,stunned into silence. The blood fromn her lip had formed a small red line down her chin.</p>
-                    
-                    <p>I watched her world collapse. Just hours ago, she&#39;d stood confidently ordering men to beat me. Now she looked small and broken, head bowed,not even looking at Laurel.</p>
-                    
-                    <p>Then something in Jennifer snapped.</p>
-                    
-                    <p>&#34;Four years!&#34; she screamed, thrashing against the officers. &#34;Laurel Rose,four years I&#39;ve been with you!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV*</p>
+                        
+                        <p>Blake pulled Laurel protectively against him, glaring down at Jennifer who sat on the floor with blood trickling from her split lip.</p>
+                        
+                        <p>&#34;You did all this,&#34; he said coldly, &#34;and now you&#39;re trying to drag Laurel down with you.&#34;</p>
+                        
+                        <p>His grip on Laurel tightened. &#34;Don&#39;t think you can implicate her in your crimes.&#34;</p>
+                        
+                        <p>Jennifer stared up at him, mouth open in disbelief.</p>
+                        
+                        <p>&#34;There&#39;s no point in listening to her anymore,&#34; Blake told the officers.&#34;Take her away.&#34;</p>
+                        
+                        <p>&#34;Yes, Mr. Parker,&#34; the male officer nodded and stepped forward.</p>
+                        
+                        <p>The handcuffs clicked around Jennifer&#39;s wrists. She stared at them,stunned into silence. The blood fromn her lip had formed a small red line down her chin.</p>
+                        
+                        <p>I watched her world collapse. Just hours ago, she&#39;d stood confidently ordering men to beat me. Now she looked small and broken, head bowed,not even looking at Laurel.</p>
+                        
+                        <p>Then something in Jennifer snapped.</p>
+                        
+                        <p>&#34;Four years!&#34; she screamed, thrashing against the officers. &#34;Laurel Rose,four years I&#39;ve been with you!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -894,29 +934,33 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>She Junged toward Laurel, who pressed closer to Blake.</p>
-                    
-                    <p>&#34;I did everything for you, and this is how you repay me?&#34;</p>
-                    
-                    <p>&#34;You won&#39;t get away with this!&#34; Jennifer&#39;s voice rose higher. &#34;You deserve to die! Don&#39;t forget, I know everything about your sister!&#34;</p>
-                    
-                    <p>&#34;You&#39;re using me as a scapegoat today, and I&#39;ll tell everyone what you did to her!&#34;</p>
-                    
-                    <p>At the mention of her sister, Laurel&#39;s face instantly went white.</p>
-                    
-                    <p>&#34;Shut up!&#34; she shrieked, lunging forward from Blake&#39;s arms. Gone was the fragile victim,replaced by raw fury.</p>
-                    
-                    <p>&#34;Jennifer Carson!&#34; Her voice shook with rage. &#34;You dare slander me? Keep talking and I&#39;ll tell everyone what you did in that small town. Every.Disgusting.Detail.&#34;</p>
-                    
-                    <p>Jennifer&#39;s mouth opened, then closed. Whatever words she&#39;d planned died on her lips.</p>
-                    
-                    <p>Seeing her threat had worked, Laurel switched tactics. Her shoulders slumped as she collapsed against Blake&#39;s chest,tears streaming.</p>
-                    
-                    <p>&#34;I know,&#34; she sobbed. &#34;My sister&#39;s death... I should&#39;ve seen the signs.&#34;</p>
-                    
-                    <p>&#34;Her depression...&#34; Laurel&#39;s voice cracked perfectly. &#34;She loved me so much,but I failed her when she needed me.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>She Junged toward Laurel, who pressed closer to Blake.</p>
+                        
+                        <p>&#34;I did everything for you, and this is how you repay me?&#34;</p>
+                        
+                        <p>&#34;You won&#39;t get away with this!&#34; Jennifer&#39;s voice rose higher. &#34;You deserve to die! Don&#39;t forget, I know everything about your sister!&#34;</p>
+                        
+                        <p>&#34;You&#39;re using me as a scapegoat today, and I&#39;ll tell everyone what you did to her!&#34;</p>
+                        
+                        <p>At the mention of her sister, Laurel&#39;s face instantly went white.</p>
+                        
+                        <p>&#34;Shut up!&#34; she shrieked, lunging forward from Blake&#39;s arms. Gone was the fragile victim,replaced by raw fury.</p>
+                        
+                        <p>&#34;Jennifer Carson!&#34; Her voice shook with rage. &#34;You dare slander me? Keep talking and I&#39;ll tell everyone what you did in that small town. Every.Disgusting.Detail.&#34;</p>
+                        
+                        <p>Jennifer&#39;s mouth opened, then closed. Whatever words she&#39;d planned died on her lips.</p>
+                        
+                        <p>Seeing her threat had worked, Laurel switched tactics. Her shoulders slumped as she collapsed against Blake&#39;s chest,tears streaming.</p>
+                        
+                        <p>&#34;I know,&#34; she sobbed. &#34;My sister&#39;s death... I should&#39;ve seen the signs.&#34;</p>
+                        
+                        <p>&#34;Her depression...&#34; Laurel&#39;s voice cracked perfectly. &#34;She loved me so much,but I failed her when she needed me.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -931,29 +975,33 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>She pressed herself against Blake, deliberately soaking his white shirt.&#34;I couldn&#39;t stop her from jumping. It&#39;s my fault.&#34;</p>
-                    
-                    <p>With each word, her sobs grew louder, her breathing more labored.</p>
-                    
-                    <p>&#34;Jennifer&#39;s right,&#34; she whispered.&#34;I&#39;m responsible.&#34;</p>
-                    
-                    <p>Worried. Blake wrapped his arm around her and looked at the officers.&#34;Take Jennifer away now. Laurel&#39;s health isn&#39;t good. Emotional stress could trigger her condition!&#34;</p>
-                    
-                    <p>I watched the whole scene unfold like a theater performance. Her switches between rage and vulnerability were too smooth. This wasn&#39;t grief - it was acting.</p>
-                    
-                    <p>Jennifer&#39;s accusation suggested something far darker than a suicide. And Laurel&#39;s extreme reaction told me it wasn&#39;t just empty threats.</p>
-                    
-                    <p>The female officer turned to me. &#34;Miss Sinclair, we&#39;ll take her to the station.</p>
-                    
-                    <p>When you have time, please come make a statement.&#34;</p>
-                    
-                    <p>She glanced at Laurel, who was still crying in Blake&#39;s arms. &#34;We&#39;ll recover your stolen phone during questioning.&#34;</p>
-                    
-                    <p>&#34;Thank you,&#34; I said.</p>
-                    
-                    <p>The officers led Jennifer out. As the door closed behind them, Blake guided Laurel to the sofa and poured her tea.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>She pressed herself against Blake, deliberately soaking his white shirt.&#34;I couldn&#39;t stop her from jumping. It&#39;s my fault.&#34;</p>
+                        
+                        <p>With each word, her sobs grew louder, her breathing more labored.</p>
+                        
+                        <p>&#34;Jennifer&#39;s right,&#34; she whispered.&#34;I&#39;m responsible.&#34;</p>
+                        
+                        <p>Worried. Blake wrapped his arm around her and looked at the officers.&#34;Take Jennifer away now. Laurel&#39;s health isn&#39;t good. Emotional stress could trigger her condition!&#34;</p>
+                        
+                        <p>I watched the whole scene unfold like a theater performance. Her switches between rage and vulnerability were too smooth. This wasn&#39;t grief - it was acting.</p>
+                        
+                        <p>Jennifer&#39;s accusation suggested something far darker than a suicide. And Laurel&#39;s extreme reaction told me it wasn&#39;t just empty threats.</p>
+                        
+                        <p>The female officer turned to me. &#34;Miss Sinclair, we&#39;ll take her to the station.</p>
+                        
+                        <p>When you have time, please come make a statement.&#34;</p>
+                        
+                        <p>She glanced at Laurel, who was still crying in Blake&#39;s arms. &#34;We&#39;ll recover your stolen phone during questioning.&#34;</p>
+                        
+                        <p>&#34;Thank you,&#34; I said.</p>
+                        
+                        <p>The officers led Jennifer out. As the door closed behind them, Blake guided Laurel to the sofa and poured her tea.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -968,29 +1016,33 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Drink this,&#34; he said. &#34;Take a moment.&#34;</p>
-                    
-                    <p>Laurel accepted with trembling hands, eyes downcast.</p>
-                    
-                    <p>&#34;Thank you, Blake darling,&#34; she murmured before sipping.</p>
-                    
-                    <p>Her voice was sweet again, fury completely erased. &#34;Jennifer was with me so long... I never thought she&#39;d do such awful things behind my back.&#34;</p>
-                    
-                    <p>She dabbed her eyes. &#34;She knows exactly how to hurt me... bringing up my sister like that...&#34;</p>
-                    
-                    <p>J watched her transform from aggressor to victim without missing a heat</p>
-                    
-                    <p>&#34;When I think about what she did to you, Miss Sinclair...&#34; Laurel turned to me,dabbing at her eyes.&#34;I&#39;m truly sorry.&#34;</p>
-                    
-                    <p>I laughed - couldn&#39;t help it. &#34;Save it.&#34;</p>
-                    
-                    <p>&#34;I just hope after Jennifer tells the truth, Miss Rose will face the consequences.&#34;</p>
-                    
-                    <p>Laurel nestled closer to Blake.′′YOou still don&#39;t believe I&#39;m innocent...&#34;</p>
-                    
-                    <p>She turned her tear-stained face to him. &#34;I&#39;ve explained everything, but she still suspects me...&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Drink this,&#34; he said. &#34;Take a moment.&#34;</p>
+                        
+                        <p>Laurel accepted with trembling hands, eyes downcast.</p>
+                        
+                        <p>&#34;Thank you, Blake darling,&#34; she murmured before sipping.</p>
+                        
+                        <p>Her voice was sweet again, fury completely erased. &#34;Jennifer was with me so long... I never thought she&#39;d do such awful things behind my back.&#34;</p>
+                        
+                        <p>She dabbed her eyes. &#34;She knows exactly how to hurt me... bringing up my sister like that...&#34;</p>
+                        
+                        <p>J watched her transform from aggressor to victim without missing a heat</p>
+                        
+                        <p>&#34;When I think about what she did to you, Miss Sinclair...&#34; Laurel turned to me,dabbing at her eyes.&#34;I&#39;m truly sorry.&#34;</p>
+                        
+                        <p>I laughed - couldn&#39;t help it. &#34;Save it.&#34;</p>
+                        
+                        <p>&#34;I just hope after Jennifer tells the truth, Miss Rose will face the consequences.&#34;</p>
+                        
+                        <p>Laurel nestled closer to Blake.′′YOou still don&#39;t believe I&#39;m innocent...&#34;</p>
+                        
+                        <p>She turned her tear-stained face to him. &#34;I&#39;ve explained everything, but she still suspects me...&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1005,29 +1057,33 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Blake pulled her closer. &#34;Don&#39;t cry anymore.&#34;</p>
-                    
-                    <p>He glared at me. &#34;The facts are clear. Why are you trying to upset her?&#34;</p>
-                    
-                    <p>I stared at him in disbelief. The evidence against Laurel was overwhelming.yet he saw only what he wanted to see.</p>
-                    
-                    <p>&#34;Facts?&#34; I laughed bitterly. &#34;You really think an agent would do all this on her own with no reason?&#34;</p>
-                    
-                    <p>I stepped closer. &#34;Blake Parker, no matter what Laurel does, if she claims innocence,you&#39;ll believe her?&#34;</p>
-                    
-                    <p>He couldn&#39;t argue about that.</p>
-                    
-                    <p>&#34;Miss Rose,&#34; I said, turning to her, &#34;based on Mr. Parker&#39;s feelings for you,even if you confessed to everything, he wouldn&#39;t punish you.&#34;</p>
-                    
-                    <p>I pointed at him. &#34;For Mr. Parker, his ex-wife nearly dying matters less than one sweet word from you.&#34;</p>
-                    
-                    <p>Blake&#39;s face darkened, &#34;Audrey Sinclair, what nonsense are you saying?&#34;</p>
-                    
-                    <p>I lifted my bruised face to meet his eyes.&#34;I&#39;ve shown you all the evídence.but you refuse to see it.&#34;</p>
-                    
-                    <p>&#34;Miss Rose claims innocence, and you believe her without questíon. Am I wrong?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Blake pulled her closer. &#34;Don&#39;t cry anymore.&#34;</p>
+                        
+                        <p>He glared at me. &#34;The facts are clear. Why are you trying to upset her?&#34;</p>
+                        
+                        <p>I stared at him in disbelief. The evidence against Laurel was overwhelming.yet he saw only what he wanted to see.</p>
+                        
+                        <p>&#34;Facts?&#34; I laughed bitterly. &#34;You really think an agent would do all this on her own with no reason?&#34;</p>
+                        
+                        <p>I stepped closer. &#34;Blake Parker, no matter what Laurel does, if she claims innocence,you&#39;ll believe her?&#34;</p>
+                        
+                        <p>He couldn&#39;t argue about that.</p>
+                        
+                        <p>&#34;Miss Rose,&#34; I said, turning to her, &#34;based on Mr. Parker&#39;s feelings for you,even if you confessed to everything, he wouldn&#39;t punish you.&#34;</p>
+                        
+                        <p>I pointed at him. &#34;For Mr. Parker, his ex-wife nearly dying matters less than one sweet word from you.&#34;</p>
+                        
+                        <p>Blake&#39;s face darkened, &#34;Audrey Sinclair, what nonsense are you saying?&#34;</p>
+                        
+                        <p>I lifted my bruised face to meet his eyes.&#34;I&#39;ve shown you all the evídence.but you refuse to see it.&#34;</p>
+                        
+                        <p>&#34;Miss Rose claims innocence, and you believe her without questíon. Am I wrong?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1042,29 +1098,33 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;Blake darling believes me because I am innocent,&#34; Laurel quickly cut in.</p>
-                    
-                    <p>She blinked. &#34;I didn&#39;t do those things, so I deny it. What&#39;s wrong with that?&#34;</p>
-                    
-                    <p>&#34;Are you truly innocent?&#34; I challenged, stepping closer. &#34;You say you never took Jennifer&#39;s call. Then show me your phone. Let me see if Jennifer called you while I was being beaten!&#34;</p>
-                    
-                    <p>I held out my hand. &#34;Show me!&#34;</p>
-                    
-                    <p>Laurel backed away. &#34;My phone is my private property. I...&#34;</p>
-                    
-                    <p>Blake stepped between us. &#34;Stop being so aggressive.&#34;</p>
-                    
-                    <p>His eyes turned cold. &#34;Laurel doesn&#39;t have to show you her phone. You have no right to demand it.&#34;</p>
-                    
-                    <p>He took a deep breath. &#34;That&#39;s the end of this matter!&#34;</p>
-                    
-                    <p>The finality in his voice hit me like a physical blow. In that moment,I saw the truth in his eyes - no matter what evidence I presented.Blake had made his choice.</p>
-                    
-                    <p>I closed my eyes, a bitter smile forming.</p>
-                    
-                    <p>&#34;Yes, it&#39;s me being aggressive,&#34; I said quietly.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;Blake darling believes me because I am innocent,&#34; Laurel quickly cut in.</p>
+                        
+                        <p>She blinked. &#34;I didn&#39;t do those things, so I deny it. What&#39;s wrong with that?&#34;</p>
+                        
+                        <p>&#34;Are you truly innocent?&#34; I challenged, stepping closer. &#34;You say you never took Jennifer&#39;s call. Then show me your phone. Let me see if Jennifer called you while I was being beaten!&#34;</p>
+                        
+                        <p>I held out my hand. &#34;Show me!&#34;</p>
+                        
+                        <p>Laurel backed away. &#34;My phone is my private property. I...&#34;</p>
+                        
+                        <p>Blake stepped between us. &#34;Stop being so aggressive.&#34;</p>
+                        
+                        <p>His eyes turned cold. &#34;Laurel doesn&#39;t have to show you her phone. You have no right to demand it.&#34;</p>
+                        
+                        <p>He took a deep breath. &#34;That&#39;s the end of this matter!&#34;</p>
+                        
+                        <p>The finality in his voice hit me like a physical blow. In that moment,I saw the truth in his eyes - no matter what evidence I presented.Blake had made his choice.</p>
+                        
+                        <p>I closed my eyes, a bitter smile forming.</p>
+                        
+                        <p>&#34;Yes, it&#39;s me being aggressive,&#34; I said quietly.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1079,27 +1139,31 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;I forced Miss Rose to have trolls attack me online. I made her send men</p>
-                    
-                    <p>to kidnap Ethan. This morning, I forced her to have men beat me until I could barely stand.&#34;</p>
-                    
-                    <p>Blake&#39;s expression softened as he looked at my bruised face.Something flickered in his eyes.</p>
-                    
-                    <p>&#34;That&#39;s not what I meant,&#34; he said, his voice uncertain. &#34;I-&#34;</p>
-                    
-                    <p>&#34;Blake darling!&#34; Laurel moved between us, blocking his view of my face.</p>
-                    
-                    <p>&#34;Miss Sinclair has a point,&#34; she said. &#34;Jennifer is connected to all these incidents.&#34;</p>
-                    
-                    <p>She turned to me. &#34;Everything was Jennifer using my name. Why can&#39;t you believe that?&#34;</p>
-                    
-                    <p>The audacity almost impressed me. She&#39;d perfectly cut off Blake&#39;s moment of doubt.</p>
-                    
-                    <p>&#34;You want to see my phone?&#34; Laurel suddenly demanded. &#34;Fine! Here!&#34;</p>
-                    
-                    <p>She pulled it from her pocket and thrust it toward me. &#34;Take it! Look all you want!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;I forced Miss Rose to have trolls attack me online. I made her send men</p>
+                        
+                        <p>to kidnap Ethan. This morning, I forced her to have men beat me until I could barely stand.&#34;</p>
+                        
+                        <p>Blake&#39;s expression softened as he looked at my bruised face.Something flickered in his eyes.</p>
+                        
+                        <p>&#34;That&#39;s not what I meant,&#34; he said, his voice uncertain. &#34;I-&#34;</p>
+                        
+                        <p>&#34;Blake darling!&#34; Laurel moved between us, blocking his view of my face.</p>
+                        
+                        <p>&#34;Miss Sinclair has a point,&#34; she said. &#34;Jennifer is connected to all these incidents.&#34;</p>
+                        
+                        <p>She turned to me. &#34;Everything was Jennifer using my name. Why can&#39;t you believe that?&#34;</p>
+                        
+                        <p>The audacity almost impressed me. She&#39;d perfectly cut off Blake&#39;s moment of doubt.</p>
+                        
+                        <p>&#34;You want to see my phone?&#34; Laurel suddenly demanded. &#34;Fine! Here!&#34;</p>
+                        
+                        <p>She pulled it from her pocket and thrust it toward me. &#34;Take it! Look all you want!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2415,6 +2479,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2541,7 +2685,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2583,32 +2726,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2619,21 +2744,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2666,6 +2781,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2686,20 +2807,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

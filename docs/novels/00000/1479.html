@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>The barista, wise beyond her years, simply continued smiling as she wiped down the espresso machine.</p>
-                    
-                    <p>With no audience to perform for, Giselle turned her attention to Vivian. &#34;Where&#39;s that handsome husband of yours? Too busy making millions to join you?&#34;</p>
-                    
-                    <p>Vivian took another measured sip before answering. &#34;Adrian&#39;s at the office.&#34; Her tone suggested the conversation would end there.</p>
-                    
-                    <p>But Giselle, never one to read social cues, barreled forward. &#34;You know, I ran into Serena Whitmore last week at the Opal Galleria. She was asking about you.&#34; A calculated pause. &#34;And Adrian, of course.&#34;</p>
-                    
-                    <p>Vivian&#39;s fingers tightened imperceptibly around her cup. The name hung between them like an uninvited guest.</p>
-                    
-                    <p>Giselle&#39;s smile turned feline. &#34;Funny how life works out, isn&#39;t it? Who would have thought back in high school that you&#39;d end up married to her...&#34; She let the sentence dangle, watching for Vivian&#39;s reaction.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>The barista, wise beyond her years, simply continued smiling as she wiped down the espresso machine.</p>
+                        
+                        <p>With no audience to perform for, Giselle turned her attention to Vivian. &#34;Where&#39;s that handsome husband of yours? Too busy making millions to join you?&#34;</p>
+                        
+                        <p>Vivian took another measured sip before answering. &#34;Adrian&#39;s at the office.&#34; Her tone suggested the conversation would end there.</p>
+                        
+                        <p>But Giselle, never one to read social cues, barreled forward. &#34;You know, I ran into Serena Whitmore last week at the Opal Galleria. She was asking about you.&#34; A calculated pause. &#34;And Adrian, of course.&#34;</p>
+                        
+                        <p>Vivian&#39;s fingers tightened imperceptibly around her cup. The name hung between them like an uninvited guest.</p>
+                        
+                        <p>Giselle&#39;s smile turned feline. &#34;Funny how life works out, isn&#39;t it? Who would have thought back in high school that you&#39;d end up married to her...&#34; She let the sentence dangle, watching for Vivian&#39;s reaction.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>The boutique&#39;s bell chimed again, saving Vivian from responding as two well-dressed women entered, their laughter filling the small space. Giselle immediately straightened, her social antennae quivering at the potential for new connections.</p>
-                    
-                    <p>Vivian used the distraction to check her watch. &#34;Excuse me,&#34; she murmured, gathering her things. &#34;I have an appointment.&#34;</p>
-                    
-                    <p>Giselle barely glanced up from adjusting her diamond tennis bracelet. &#34;We should do lunch,&#34; she said absently, already assessing the newcomers&#39; handbags for authenticity.</p>
-                    
-                    <p>Vivian&#39;s smile didn&#39;t reach her eyes. &#34;We really shouldn&#39;t.&#34;</p>
-                    
-                    <p>Outside, the crisp autumn air felt like a reprieve. Vivian inhaled deeply, the lingering tension easing from her shoulders. She pulled out her phone, thumb hovering over Adrian&#39;s contact before thinking better of it. Some ghosts were better left undisturbed.</p>
-                    
-                    <p>Vivian arched a perfectly sculpted eyebrow, her lips curling in amusement. &#34;Weekend overtime? Which corporate giant has him chained to his desk?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>The boutique&#39;s bell chimed again, saving Vivian from responding as two well-dressed women entered, their laughter filling the small space. Giselle immediately straightened, her social antennae quivering at the potential for new connections.</p>
+                        
+                        <p>Vivian used the distraction to check her watch. &#34;Excuse me,&#34; she murmured, gathering her things. &#34;I have an appointment.&#34;</p>
+                        
+                        <p>Giselle barely glanced up from adjusting her diamond tennis bracelet. &#34;We should do lunch,&#34; she said absently, already assessing the newcomers&#39; handbags for authenticity.</p>
+                        
+                        <p>Vivian&#39;s smile didn&#39;t reach her eyes. &#34;We really shouldn&#39;t.&#34;</p>
+                        
+                        <p>Outside, the crisp autumn air felt like a reprieve. Vivian inhaled deeply, the lingering tension easing from her shoulders. She pulled out her phone, thumb hovering over Adrian&#39;s contact before thinking better of it. Some ghosts were better left undisturbed.</p>
+                        
+                        <p>Vivian arched a perfectly sculpted eyebrow, her lips curling in amusement. &#34;Weekend overtime? Which corporate giant has him chained to his desk?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;Blackwood Group,&#34; she replied, feeling Giselle&#39;s presence souring both her mood and appetite. Lately, Vivian had been battling fatigue and nausea, her stomach rejecting even her favorite dishes. Just when she thought she might manage a few bites, Giselle&#39;s incessant chatter descended like a swarm of locusts, stripping away what little appetite remained.</p>
-                    
-                    <p>Giselle&#39;s manicured fingers paused mid-air, her coffee cup hovering. &#34;Blackwood Group?&#34; She leaned forward with sudden interest, her designer bracelets clinking. &#34;My lover has connections there. What division does your husband work in? Perhaps they could collaborate.&#34; Her smile turned predatory. &#34;I could put in a good word for him.&#34;</p>
-                    
-                    <p>Vivian&#39;s instincts flared. She hadn&#39;t anticipated Giselle having ties to the Blackwoods. The family&#39;s influence sprawled across Crestwood like ancient roots, their numerous relatives embedded in every sector. But the real mystery was - what self-respecting Blackwood would associate with someone like Giselle?</p>
-                    
-                    <p>With practiced grace, Vivian extricated her arm from Giselle&#39;s grasp. &#34;That won&#39;t be necessary. Their paths aren&#39;t likely to cross.&#34;</p>
-                    
-                    <p>Adrian had been consumed by projects outside his usual scope lately, pushing his limits to master new skills. Ethan had taken over most of his routine responsibilities at headquarters.</p>
-                    
-                    <p>Giselle misinterpreted the refusal, assuming Vivian&#39;s husband occupied some insignificant position beneath notice. Undeterred, she examined her diamond-encrusted nails. &#34;I always wondered why a socialite like you suddenly plunged into acting.&#34; Her gaze flicked to Vivian&#39;s simple gold wedding band. &#34;Now I understand - you married beneath your station.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;Blackwood Group,&#34; she replied, feeling Giselle&#39;s presence souring both her mood and appetite. Lately, Vivian had been battling fatigue and nausea, her stomach rejecting even her favorite dishes. Just when she thought she might manage a few bites, Giselle&#39;s incessant chatter descended like a swarm of locusts, stripping away what little appetite remained.</p>
+                        
+                        <p>Giselle&#39;s manicured fingers paused mid-air, her coffee cup hovering. &#34;Blackwood Group?&#34; She leaned forward with sudden interest, her designer bracelets clinking. &#34;My lover has connections there. What division does your husband work in? Perhaps they could collaborate.&#34; Her smile turned predatory. &#34;I could put in a good word for him.&#34;</p>
+                        
+                        <p>Vivian&#39;s instincts flared. She hadn&#39;t anticipated Giselle having ties to the Blackwoods. The family&#39;s influence sprawled across Crestwood like ancient roots, their numerous relatives embedded in every sector. But the real mystery was - what self-respecting Blackwood would associate with someone like Giselle?</p>
+                        
+                        <p>With practiced grace, Vivian extricated her arm from Giselle&#39;s grasp. &#34;That won&#39;t be necessary. Their paths aren&#39;t likely to cross.&#34;</p>
+                        
+                        <p>Adrian had been consumed by projects outside his usual scope lately, pushing his limits to master new skills. Ethan had taken over most of his routine responsibilities at headquarters.</p>
+                        
+                        <p>Giselle misinterpreted the refusal, assuming Vivian&#39;s husband occupied some insignificant position beneath notice. Undeterred, she examined her diamond-encrusted nails. &#34;I always wondered why a socialite like you suddenly plunged into acting.&#34; Her gaze flicked to Vivian&#39;s simple gold wedding band. &#34;Now I understand - you married beneath your station.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>She leaned closer, her perfume cloying. &#34;You were the campus beauty, the heiress. We all expected you to land a tycoon.&#34; A theatrical sigh. &#34;Instead you settled for some corporate drone.&#34; Her eyes gleamed with malice. &#34;But now that you&#39;re famous, you can trade up. Wealthy men won&#39;t care about your marital history.&#34;</p>
-                    
-                    <p>The barb struck a memory - Giselle&#39;s humiliating rejection by a wealthy senior who&#39;d then praised Vivian&#39;s beauty. That old resentment had festered for years.</p>
-                    
-                    <p>Vivian&#39;s fingers tightened around her water glass. Most Blackwoods knew her identity, except perhaps the most distant relatives. Studying Giselle&#39;s triumphant expression, she asked coolly, &#34;Exactly how is your lover connected to the family? Some obscure cousin twice removed?&#34;</p>
-                    
-                    <p>Giselle&#39;s face flushed crimson. &#34;How dare you! My lover holds real power there. Even Adrian Blackwood answers to him.&#34;</p>
-                    
-                    <p>The claim sent a jolt through Vivian. Her mind raced through the family hierarchy before landing on Leonard&#39;s face. A shiver crawled down her spine, and she forcefully banished the disturbing thought.</p>
-                    
-                    <p>Victor had always appeared larger than life, a man who commanded respect with just a glance. The idea that he would entertain someone as vapid as his current companion seemed utterly ridiculous.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>She leaned closer, her perfume cloying. &#34;You were the campus beauty, the heiress. We all expected you to land a tycoon.&#34; A theatrical sigh. &#34;Instead you settled for some corporate drone.&#34; Her eyes gleamed with malice. &#34;But now that you&#39;re famous, you can trade up. Wealthy men won&#39;t care about your marital history.&#34;</p>
+                        
+                        <p>The barb struck a memory - Giselle&#39;s humiliating rejection by a wealthy senior who&#39;d then praised Vivian&#39;s beauty. That old resentment had festered for years.</p>
+                        
+                        <p>Vivian&#39;s fingers tightened around her water glass. Most Blackwoods knew her identity, except perhaps the most distant relatives. Studying Giselle&#39;s triumphant expression, she asked coolly, &#34;Exactly how is your lover connected to the family? Some obscure cousin twice removed?&#34;</p>
+                        
+                        <p>Giselle&#39;s face flushed crimson. &#34;How dare you! My lover holds real power there. Even Adrian Blackwood answers to him.&#34;</p>
+                        
+                        <p>The claim sent a jolt through Vivian. Her mind raced through the family hierarchy before landing on Leonard&#39;s face. A shiver crawled down her spine, and she forcefully banished the disturbing thought.</p>
+                        
+                        <p>Victor had always appeared larger than life, a man who commanded respect with just a glance. The idea that he would entertain someone as vapid as his current companion seemed utterly ridiculous.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Vivian needed to stop these wild thoughts. She cut straight to the point. &#34;Since when did the Blackwood family have someone like that in their circle?&#34;</p>
-                    
-                    <p>Giselle noticed the subtle shift in Vivian&#39;s tone and straightened with visible satisfaction. For once, Vivian seemed intrigued by something related to her husband. Giselle deliberately paused before dropping her bombshell. &#34;He&#39;s Adrian&#39;s uncle—Victor Thornton.&#34;</p>
-                    
-                    <p>A smug smile played on Giselle&#39;s lips. Even Vivian, usually so aloof, couldn&#39;t resist the pull of high-society gossip. Power like Victor&#39;s cast an undeniable shadow. And this attention? All thanks to her man&#39;s rising status in Crestwood.</p>
-                    
-                    <p>Vivian was speechless.</p>
-                    
-                    <p>Just then, Audrey strolled into the boutique, having overheard the conversation. &#34;What? Giselle, since when did you start settling for middle-aged men?&#34; She positioned herself protectively in front of Vivian, her expression dripping with disdain as she scrutinized Giselle.</p>
-                    
-                    <p>Giselle startled momentarily but quickly regained her composure. She pressed a dramatic hand to her chest as if to calm her racing heart.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Vivian needed to stop these wild thoughts. She cut straight to the point. &#34;Since when did the Blackwood family have someone like that in their circle?&#34;</p>
+                        
+                        <p>Giselle noticed the subtle shift in Vivian&#39;s tone and straightened with visible satisfaction. For once, Vivian seemed intrigued by something related to her husband. Giselle deliberately paused before dropping her bombshell. &#34;He&#39;s Adrian&#39;s uncle—Victor Thornton.&#34;</p>
+                        
+                        <p>A smug smile played on Giselle&#39;s lips. Even Vivian, usually so aloof, couldn&#39;t resist the pull of high-society gossip. Power like Victor&#39;s cast an undeniable shadow. And this attention? All thanks to her man&#39;s rising status in Crestwood.</p>
+                        
+                        <p>Vivian was speechless.</p>
+                        
+                        <p>Just then, Audrey strolled into the boutique, having overheard the conversation. &#34;What? Giselle, since when did you start settling for middle-aged men?&#34; She positioned herself protectively in front of Vivian, her expression dripping with disdain as she scrutinized Giselle.</p>
+                        
+                        <p>Giselle startled momentarily but quickly regained her composure. She pressed a dramatic hand to her chest as if to calm her racing heart.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;Audrey!&#34; Giselle exclaimed. &#34;You&#39;ve changed so much since school—where&#39;s that shy girl I knew? You nearly gave me a heart attack! And middle-aged? Please. Victor is distinguished, not old.&#34;</p>
-                    
-                    <p>She tossed her hair. &#34;I&#39;ve moved past those immature college boys and their meaningless flings. I prefer men who know what they want.&#34;</p>
-                    
-                    <p>Vivian&#39;s mind wandered to the rumors about Victor&#39;s wandering eye—the arranged marriage, the whispered affairs. She never imagined one of her former classmates would become entangled in such drama.</p>
-                    
-                    <p>She studied Giselle critically. Despite the designer labels screaming wealth, her plain features couldn&#39;t be disguised.</p>
-                    
-                    <p>After a beat, Giselle countered, &#34;Audrey, tell me—are you even married yet?&#34;</p>
-                    
-                    <p>Audrey pulled out a chair beside Vivian and sat down. &#34;Why the sudden interest? My personal life is none of your business.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;Audrey!&#34; Giselle exclaimed. &#34;You&#39;ve changed so much since school—where&#39;s that shy girl I knew? You nearly gave me a heart attack! And middle-aged? Please. Victor is distinguished, not old.&#34;</p>
+                        
+                        <p>She tossed her hair. &#34;I&#39;ve moved past those immature college boys and their meaningless flings. I prefer men who know what they want.&#34;</p>
+                        
+                        <p>Vivian&#39;s mind wandered to the rumors about Victor&#39;s wandering eye—the arranged marriage, the whispered affairs. She never imagined one of her former classmates would become entangled in such drama.</p>
+                        
+                        <p>She studied Giselle critically. Despite the designer labels screaming wealth, her plain features couldn&#39;t be disguised.</p>
+                        
+                        <p>After a beat, Giselle countered, &#34;Audrey, tell me—are you even married yet?&#34;</p>
+                        
+                        <p>Audrey pulled out a chair beside Vivian and sat down. &#34;Why the sudden interest? My personal life is none of your business.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Taking the cue, Vivian gave Giselle a sidelong glance and added coolly, &#34;If I recall correctly, Victor already has a wife. And unless something&#39;s changed, it&#39;s not you.&#34;</p>
-                    
-                    <p>Audrey smirked. &#34;Maybe you&#39;re just bitter because no one wants to marry you.&#34;</p>
-                    
-                    <p>Giselle&#39;s expression darkened. &#34;What do either of you know? Victor and his wife? That&#39;s not a marriage—it&#39;s a corporate merger. She&#39;s just another trust fund princess.&#34; She paused for effect. &#34;Speaking of money, Audrey, your family&#39;s quite wealthy too, aren&#39;t they? Better hope your future husband doesn&#39;t turn out like Victor—disinterested and unfaithful. Or maybe you should aim for someone like Vivian&#39;s husband. At least a regular office worker is easier to control.&#34;</p>
-                    
-                    <p>&#34;Regular?&#34; Audrey turned to Vivian in surprise.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Taking the cue, Vivian gave Giselle a sidelong glance and added coolly, &#34;If I recall correctly, Victor already has a wife. And unless something&#39;s changed, it&#39;s not you.&#34;</p>
+                        
+                        <p>Audrey smirked. &#34;Maybe you&#39;re just bitter because no one wants to marry you.&#34;</p>
+                        
+                        <p>Giselle&#39;s expression darkened. &#34;What do either of you know? Victor and his wife? That&#39;s not a marriage—it&#39;s a corporate merger. She&#39;s just another trust fund princess.&#34; She paused for effect. &#34;Speaking of money, Audrey, your family&#39;s quite wealthy too, aren&#39;t they? Better hope your future husband doesn&#39;t turn out like Victor—disinterested and unfaithful. Or maybe you should aim for someone like Vivian&#39;s husband. At least a regular office worker is easier to control.&#34;</p>
+                        
+                        <p>&#34;Regular?&#34; Audrey turned to Vivian in surprise.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

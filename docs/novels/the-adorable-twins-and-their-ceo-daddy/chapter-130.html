@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:32.329955">
-    <meta property="article:modified_time" content="2026-07-19T02:47:32.329955">
+    <meta property="article:published_time" content="2026-07-19T13:03:26.663493">
+    <meta property="article:modified_time" content="2026-07-19T13:03:26.663493">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:32">
+    <meta name="last-modified" content="2026-07-19 13:03:26">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:32.329955",
-        "dateModified": "2026-07-19T02:47:32.329955",
+        "datePublished": "2026-07-19T13:03:26.663493",
+        "dateModified": "2026-07-19T13:03:26.663493",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,17 +893,21 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>“&#34;No! I am not!&#34; Eliana blurted out.</p>
-                    
-                    <p>Realizing something, she became stunned. She turned around stiffly. Just as she thought, Preston was playfully staring at her lazily.</p>
-                    
-                    <p>He looked so handsome and charming at this moment.</p>
-                    
-                    <p>&#34;What? Are you thinking of another man?&#34; Maurice asked, raising his eyebrows at her.</p>
-                    
-                    <p>&#34;No! Not at all! Of course not.&#34; Eliana would never admit to him that she was thinking about Maurice. If she admitted that, then he would really think of her as a dissolute woman. Hence, she denied it, shaking her head.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>“&#34;No! I am not!&#34; Eliana blurted out.</p>
+                        
+                        <p>Realizing something, she became stunned. She turned around stiffly. Just as she thought, Preston was playfully staring at her lazily.</p>
+                        
+                        <p>He looked so handsome and charming at this moment.</p>
+                        
+                        <p>&#34;What? Are you thinking of another man?&#34; Maurice asked, raising his eyebrows at her.</p>
+                        
+                        <p>&#34;No! Not at all! Of course not.&#34; Eliana would never admit to him that she was thinking about Maurice. If she admitted that, then he would really think of her as a dissolute woman. Hence, she denied it, shaking her head.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -882,17 +922,21 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Wanting to tease her, Maurice got close to her and touched the tip of her nose with his nose affectionately.</p>
-                    
-                    <p>&#34;Really? Is he better than me?&#34;</p>
-                    
-                    <p>Upon hearing his sudden question, Eliana&#39;s face flushed.?What a rogue!</p>
-                    
-                    <p>But after thinking about it for a moment, she realized that both Preston and Maurice had their own qualities. It was really hard to tell who was better.</p>
-                    
-                    <p>Wait… Why am I even comparing them?</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Wanting to tease her, Maurice got close to her and touched the tip of her nose with his nose affectionately.</p>
+                        
+                        <p>&#34;Really? Is he better than me?&#34;</p>
+                        
+                        <p>Upon hearing his sudden question, Eliana&#39;s face flushed.?What a rogue!</p>
+                        
+                        <p>But after thinking about it for a moment, she realized that both Preston and Maurice had their own qualities. It was really hard to tell who was better.</p>
+                        
+                        <p>Wait… Why am I even comparing them?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -907,17 +951,21 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;Shut up! Preston, you&#39;re so full of yourself,&#34; Eliana began to speak mindlessly. And her words made Maurice feel morose.</p>
-                    
-                    <p>She was the only woman he had ever been with, but he could not tell her that. He was really upset.</p>
-                    
-                    <p>Noticing his silence, Eliana figured that she must have hit a sore spot.</p>
-                    
-                    <p>She quickly got off the bed and picked up her clothes that were scattered on the floor. The moment she put her shirt on, she sensed something was wrong. She suddenly remembered what had happened five years ago.</p>
-                    
-                    <p>&#34;Oh no! I almost forgot! Preston, did you take precautions last night?&#34; Eliana asked restlessly.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;Shut up! Preston, you&#39;re so full of yourself,&#34; Eliana began to speak mindlessly. And her words made Maurice feel morose.</p>
+                        
+                        <p>She was the only woman he had ever been with, but he could not tell her that. He was really upset.</p>
+                        
+                        <p>Noticing his silence, Eliana figured that she must have hit a sore spot.</p>
+                        
+                        <p>She quickly got off the bed and picked up her clothes that were scattered on the floor. The moment she put her shirt on, she sensed something was wrong. She suddenly remembered what had happened five years ago.</p>
+                        
+                        <p>&#34;Oh no! I almost forgot! Preston, did you take precautions last night?&#34; Eliana asked restlessly.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -932,17 +980,21 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Precautions??Maurice kept silent. Since it had happened so quickly the previous night, he had no time to prepare.</p>
-                    
-                    <p>Looking at his guilty expression, she figured that he must not have.</p>
-                    
-                    <p>Furious, she blurted out, &#34;You didn&#39;t! And it was the same mistake that happened five years ago. Because of which, I…&#34;</p>
-                    
-                    <p>Realizing what she was about to say, she stopped suddenly.?Oh no! I almost spilled the beans…</p>
-                    
-                    <p>&#34;What happened five years ago?&#34; Maurice immediately sensed that something was wrong. Why was Eliana insisting on him taking precautions? There must be some reason behind it.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Precautions??Maurice kept silent. Since it had happened so quickly the previous night, he had no time to prepare.</p>
+                        
+                        <p>Looking at his guilty expression, she figured that he must not have.</p>
+                        
+                        <p>Furious, she blurted out, &#34;You didn&#39;t! And it was the same mistake that happened five years ago. Because of which, I…&#34;</p>
+                        
+                        <p>Realizing what she was about to say, she stopped suddenly.?Oh no! I almost spilled the beans…</p>
+                        
+                        <p>&#34;What happened five years ago?&#34; Maurice immediately sensed that something was wrong. Why was Eliana insisting on him taking precautions? There must be some reason behind it.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -957,17 +1009,21 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;Nothing…&#34; Eliana shook her head, not daring to look him in the eye.</p>
-                    
-                    <p>&#34;Eliana!&#34; Maurice called out her name loudly and fixed his gaze on her, putting her under a lot of pressure.</p>
-                    
-                    <p>&#34;I said nothing happened. Why are you so mad at me?&#34; Eliana also lost her temper, and Maurice did not know what to say.</p>
-                    
-                    <p>However, he was certain that she was lying to him about something.</p>
-                    
-                    <p>&#34;Eliana, you&#39;d better not hide anything from me. If I find out the truth, then you&#39;ll be in trouble.&#34; Maurice&#39;s eyes darkened. He was enraged.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;Nothing…&#34; Eliana shook her head, not daring to look him in the eye.</p>
+                        
+                        <p>&#34;Eliana!&#34; Maurice called out her name loudly and fixed his gaze on her, putting her under a lot of pressure.</p>
+                        
+                        <p>&#34;I said nothing happened. Why are you so mad at me?&#34; Eliana also lost her temper, and Maurice did not know what to say.</p>
+                        
+                        <p>However, he was certain that she was lying to him about something.</p>
+                        
+                        <p>&#34;Eliana, you&#39;d better not hide anything from me. If I find out the truth, then you&#39;ll be in trouble.&#34; Maurice&#39;s eyes darkened. He was enraged.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -982,17 +1038,21 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Eliana became a little upset, because she knew that if he found out about the kids, then the consequences she would be facing in the future would be horrible! Eliana was too nervous to even speak.</p>
-                    
-                    <p>All of a sudden, her phone, which Maurice had retrieved and given back to her, rang. Eliana and Maurice both glanced at her phone at the same time. And her heart skipped a beat.</p>
-                    
-                    <p>She figured that it must be her kids calling her because she had stayed out all night. She pounced on the bedside table to get her phone and was about to cut the call without even looking at the caller ID.</p>
-                    
-                    <p>However, Maurice held her from behind as he quickly answered the call and turned on the speaker.</p>
-                    
-                    <p>&#34;Hello, Eliana. It&#39;s me.&#34; Bradley&#39;s voice came from the other end.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Eliana became a little upset, because she knew that if he found out about the kids, then the consequences she would be facing in the future would be horrible! Eliana was too nervous to even speak.</p>
+                        
+                        <p>All of a sudden, her phone, which Maurice had retrieved and given back to her, rang. Eliana and Maurice both glanced at her phone at the same time. And her heart skipped a beat.</p>
+                        
+                        <p>She figured that it must be her kids calling her because she had stayed out all night. She pounced on the bedside table to get her phone and was about to cut the call without even looking at the caller ID.</p>
+                        
+                        <p>However, Maurice held her from behind as he quickly answered the call and turned on the speaker.</p>
+                        
+                        <p>&#34;Hello, Eliana. It&#39;s me.&#34; Bradley&#39;s voice came from the other end.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -2310,6 +2370,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2436,7 +2576,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2478,32 +2617,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2514,21 +2635,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2561,6 +2672,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2581,20 +2698,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Adrian&#39;s response was glacial. He barely touched his glass before slamming it down, sending liquor droplets spraying across the tablecloth. Conversation died instantly - even the crew members at neighboring tables froze mid-bite.</p>
-                    
-                    <p>Vivian remained oblivious to the tension, wholly focused on her meal. The lazy susan spun continuously as hungry hands reached for dish after dish. After a grueling day, she seized this quiet moment to finally eat properly.</p>
-                    
-                    <p>To her, Adrian was just another face in the crowd. His moods meant nothing compared to the steaming delicacies before her. What man could possibly compete with perfectly cooked seafood?</p>
-                    
-                    <p>Adrian&#39;s stormy gaze locked onto Vivian, who continued eating with single-minded determination. His grip tightened around his glass until the tendons in his wrist stood out sharply. The sheer audacity of her indifference - they were practically encouraging him to cheat, and she couldn&#39;t be bothered to look up from her plate?</p>
-                    
-                    <p>A tempest of fury raged beneath his carefully composed exterior, his expression hardening into something dangerous. The air around him practically crackled with restrained violence.</p>
-                    
-                    <p>The cheerful mood around the dining table evaporated instantly. All laughter died, replaced by an oppressive silence that made everyone shift uncomfortably in their seats.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Adrian&#39;s response was glacial. He barely touched his glass before slamming it down, sending liquor droplets spraying across the tablecloth. Conversation died instantly - even the crew members at neighboring tables froze mid-bite.</p>
+                        
+                        <p>Vivian remained oblivious to the tension, wholly focused on her meal. The lazy susan spun continuously as hungry hands reached for dish after dish. After a grueling day, she seized this quiet moment to finally eat properly.</p>
+                        
+                        <p>To her, Adrian was just another face in the crowd. His moods meant nothing compared to the steaming delicacies before her. What man could possibly compete with perfectly cooked seafood?</p>
+                        
+                        <p>Adrian&#39;s stormy gaze locked onto Vivian, who continued eating with single-minded determination. His grip tightened around his glass until the tendons in his wrist stood out sharply. The sheer audacity of her indifference - they were practically encouraging him to cheat, and she couldn&#39;t be bothered to look up from her plate?</p>
+                        
+                        <p>A tempest of fury raged beneath his carefully composed exterior, his expression hardening into something dangerous. The air around him practically crackled with restrained violence.</p>
+                        
+                        <p>The cheerful mood around the dining table evaporated instantly. All laughter died, replaced by an oppressive silence that made everyone shift uncomfortably in their seats.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Adrian Blackwood leaned back in his chair, his piercing gaze locking onto Walter Holloway. A sardonic smile played on his lips. &#34;Is this what you consider professional conduct?&#34; His voice cut through the air like shards of ice.</p>
-                    
-                    <p>Walter&#39;s face flushed crimson, torn between embarrassment and defensive pride. &#34;Our business dealings are completely above board,&#34; he insisted, his voice strained. &#34;We would never resort to unethical practices. If anyone tried, I&#39;d personally put a stop to it immediately!&#34;</p>
-                    
-                    <p>Then, turning back to Adrian, Walter&#39;s expression transformed into an ingratiating smile. &#34;Mr. Blackwood, you must understand - these men are simple, hardworking types. They spend their days on construction sites and don&#39;t have refined manners. After a few drinks, their tongues get loose with crude jokes. Please forgive their lack of sophistication.&#34;</p>
-                    
-                    <p>The others quickly caught on, offering profuse apologies. &#34;Indeed, Mr. Blackwood, we meant no offense. We&#39;re just rough working men without much education. To make amends, we&#39;ll drink three glasses as punishment!&#34;</p>
-                    
-                    <p>Without hesitation, even those who had remained silent earlier grabbed their glasses, filling them to the brim with strong liquor before downing them in one go. Their faces grew redder with each swallow.</p>
-                    
-                    <p>Adrian remained impassive. After a deliberate pause, he reached for his teacup, taking a slow, measured sip as if savoring the moment.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Adrian Blackwood leaned back in his chair, his piercing gaze locking onto Walter Holloway. A sardonic smile played on his lips. &#34;Is this what you consider professional conduct?&#34; His voice cut through the air like shards of ice.</p>
+                        
+                        <p>Walter&#39;s face flushed crimson, torn between embarrassment and defensive pride. &#34;Our business dealings are completely above board,&#34; he insisted, his voice strained. &#34;We would never resort to unethical practices. If anyone tried, I&#39;d personally put a stop to it immediately!&#34;</p>
+                        
+                        <p>Then, turning back to Adrian, Walter&#39;s expression transformed into an ingratiating smile. &#34;Mr. Blackwood, you must understand - these men are simple, hardworking types. They spend their days on construction sites and don&#39;t have refined manners. After a few drinks, their tongues get loose with crude jokes. Please forgive their lack of sophistication.&#34;</p>
+                        
+                        <p>The others quickly caught on, offering profuse apologies. &#34;Indeed, Mr. Blackwood, we meant no offense. We&#39;re just rough working men without much education. To make amends, we&#39;ll drink three glasses as punishment!&#34;</p>
+                        
+                        <p>Without hesitation, even those who had remained silent earlier grabbed their glasses, filling them to the brim with strong liquor before downing them in one go. Their faces grew redder with each swallow.</p>
+                        
+                        <p>Adrian remained impassive. After a deliberate pause, he reached for his teacup, taking a slow, measured sip as if savoring the moment.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Only then did the tension ease slightly, allowing the meal to continue - though the earlier boisterous atmosphere never fully returned.</p>
-                    
-                    <p>Meanwhile, Penelope Holloway, slightly intoxicated herself, found her admiration for Adrian growing with each passing minute. The alcohol fueled her vivid imagination, painting him as the perfect gentleman - handsome, successful, and honorable. She couldn&#39;t let this golden opportunity slip away.</p>
-                    
-                    <p>Adrian&#39;s abrupt mood shift made Walter think better of bringing up their planned drinking session again. Dinner concluded quickly, with everyone retiring to their rooms for the night.</p>
-                    
-                    <p>Alone in his suite, Adrian collapsed onto the sofa. His fingers trembled slightly as he twisted open a bottle of chilled mineral water from the minibar, gulping it down desperately. His shirt hung loosely, the fabric fluttering with each ragged breath.</p>
-                    
-                    <p>The cold water did little to quench the fire burning through his veins - a dangerous cocktail of alcohol and something far more primal. His thoughts kept returning to Vivian Hartley by Sapphire Springs, her image crystallizing from the day&#39;s hazy memories into sharp, painful clarity. The way the soft light had caressed her porcelain skin, the elegant lines of her silhouette...</p>
-                    
-                    <p>Then came the more disturbing memory - Vivian in the bathroom, her bare skin exposed, those wide, startled eyes. That image struck him with shocking intensity, sending an electric jolt through his system.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Only then did the tension ease slightly, allowing the meal to continue - though the earlier boisterous atmosphere never fully returned.</p>
+                        
+                        <p>Meanwhile, Penelope Holloway, slightly intoxicated herself, found her admiration for Adrian growing with each passing minute. The alcohol fueled her vivid imagination, painting him as the perfect gentleman - handsome, successful, and honorable. She couldn&#39;t let this golden opportunity slip away.</p>
+                        
+                        <p>Adrian&#39;s abrupt mood shift made Walter think better of bringing up their planned drinking session again. Dinner concluded quickly, with everyone retiring to their rooms for the night.</p>
+                        
+                        <p>Alone in his suite, Adrian collapsed onto the sofa. His fingers trembled slightly as he twisted open a bottle of chilled mineral water from the minibar, gulping it down desperately. His shirt hung loosely, the fabric fluttering with each ragged breath.</p>
+                        
+                        <p>The cold water did little to quench the fire burning through his veins - a dangerous cocktail of alcohol and something far more primal. His thoughts kept returning to Vivian Hartley by Sapphire Springs, her image crystallizing from the day&#39;s hazy memories into sharp, painful clarity. The way the soft light had caressed her porcelain skin, the elegant lines of her silhouette...</p>
+                        
+                        <p>Then came the more disturbing memory - Vivian in the bathroom, her bare skin exposed, those wide, startled eyes. That image struck him with shocking intensity, sending an electric jolt through his system.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Adrian was no stranger to attraction. He&#39;d effortlessly brushed off advances from a bikini-clad beauty queen without a second thought. Yet this accidental encounter with Vivian - so vulnerable, so unguarded - had awakened something raw and visceral within him. It was as if some long-dormant switch had been flipped, leaving him hypersensitive to the slightest provocation.</p>
-                    
-                    <p>As he wrestled with whether his feelings for Vivian stemmed from genuine emotion or mere physical desire, he couldn&#39;t deny the magnetic pull she exerted on him.</p>
-                    
-                    <p>The rich food from dinner only seemed to fuel his body&#39;s traitorous responses. His mind wandered to stories his friends had told in their youth - tales of first awakenings and explosive passions. Could this overwhelming sensation be his own delayed eruption of youthful desire, finally coming to life with terrifying intensity?</p>
-                    
-                    <p>The unspoken tension between them still lingered, amplified by the constant comments about how perfectly Vivian and Sebastian complemented each other. Though Adrian knew Vivian only saw Sebastian as a brother figure, an insidious doubt crept into his mind—what if someone who truly understood her essence came along? Since their wedding day, Vivian had become more than just his wife in Adrian&#39;s eyes. The devotion in her gaze marked her as his alone.</p>
-                    
-                    <p>Yet Vivian had transformed into a radiant, independent woman who commanded every room she entered, no longer existing in Adrian&#39;s shadow. The realization pricked at his nerves like thorns. With a sharp turn, Adrian stormed toward the bathroom, hoping the steady stream of water would wash away his growing frustration.</p>
-                    
-                    <p>The bedroom, once brightly lit, now lay bathed in the dim glow of a single wall lamp. His corporate instincts kicked in immediately—the business world was a battlefield, and he knew all its treacherous games.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Adrian was no stranger to attraction. He&#39;d effortlessly brushed off advances from a bikini-clad beauty queen without a second thought. Yet this accidental encounter with Vivian - so vulnerable, so unguarded - had awakened something raw and visceral within him. It was as if some long-dormant switch had been flipped, leaving him hypersensitive to the slightest provocation.</p>
+                        
+                        <p>As he wrestled with whether his feelings for Vivian stemmed from genuine emotion or mere physical desire, he couldn&#39;t deny the magnetic pull she exerted on him.</p>
+                        
+                        <p>The rich food from dinner only seemed to fuel his body&#39;s traitorous responses. His mind wandered to stories his friends had told in their youth - tales of first awakenings and explosive passions. Could this overwhelming sensation be his own delayed eruption of youthful desire, finally coming to life with terrifying intensity?</p>
+                        
+                        <p>The unspoken tension between them still lingered, amplified by the constant comments about how perfectly Vivian and Sebastian complemented each other. Though Adrian knew Vivian only saw Sebastian as a brother figure, an insidious doubt crept into his mind—what if someone who truly understood her essence came along? Since their wedding day, Vivian had become more than just his wife in Adrian&#39;s eyes. The devotion in her gaze marked her as his alone.</p>
+                        
+                        <p>Yet Vivian had transformed into a radiant, independent woman who commanded every room she entered, no longer existing in Adrian&#39;s shadow. The realization pricked at his nerves like thorns. With a sharp turn, Adrian stormed toward the bathroom, hoping the steady stream of water would wash away his growing frustration.</p>
+                        
+                        <p>The bedroom, once brightly lit, now lay bathed in the dim glow of a single wall lamp. His corporate instincts kicked in immediately—the business world was a battlefield, and he knew all its treacherous games.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>His gaze swept the room, finding it deceptively calm at first glance. Then his eyes locked onto the shadowy corner where a slender figure sat silently on his bed. Relief flickered briefly—just a woman, seemingly harmless.</p>
-                    
-                    <p>The memory of tonight&#39;s business dinner surfaced, making him suspect this might be some executive&#39;s misguided attempt at negotiation. &#34;Get out now!&#34; His command echoed through the room as he reached for the light switch.</p>
-                    
-                    <p>&#34;Mr. Blackwood, please—it&#39;s me.&#34; The reply came in a trembling whisper, laced with nervous anticipation.</p>
-                    
-                    <p>As light flooded the room, Penelope scrambled awkwardly off the bed, crossing her arms over her chest in a futile attempt at modesty.</p>
-                    
-                    <p>Her sailor-style dress clung to her curves, the flimsy fabric leaving little to the imagination. A deep blush spread across Penelope&#39;s cheeks as she lowered her eyes, though she couldn&#39;t resist stealing shy glances at Adrian.</p>
-                    
-                    <p>Adrian stood motionless, his bare torso glistening with residual water droplets, a towel hanging precariously low on his hips.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>His gaze swept the room, finding it deceptively calm at first glance. Then his eyes locked onto the shadowy corner where a slender figure sat silently on his bed. Relief flickered briefly—just a woman, seemingly harmless.</p>
+                        
+                        <p>The memory of tonight&#39;s business dinner surfaced, making him suspect this might be some executive&#39;s misguided attempt at negotiation. &#34;Get out now!&#34; His command echoed through the room as he reached for the light switch.</p>
+                        
+                        <p>&#34;Mr. Blackwood, please—it&#39;s me.&#34; The reply came in a trembling whisper, laced with nervous anticipation.</p>
+                        
+                        <p>As light flooded the room, Penelope scrambled awkwardly off the bed, crossing her arms over her chest in a futile attempt at modesty.</p>
+                        
+                        <p>Her sailor-style dress clung to her curves, the flimsy fabric leaving little to the imagination. A deep blush spread across Penelope&#39;s cheeks as she lowered her eyes, though she couldn&#39;t resist stealing shy glances at Adrian.</p>
+                        
+                        <p>Adrian stood motionless, his bare torso glistening with residual water droplets, a towel hanging precariously low on his hips.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>The water trails from his damp hair traced paths down his sculpted chest and along the defined ridges of his abdomen, disappearing into the towel&#39;s fabric.</p>
-                    
-                    <p>The noticeable bulge beneath the towel sent an electric thrill through Penelope, warming her from within.</p>
-                    
-                    <p>Adrian&#39;s brows knitted together as he grabbed his robe, shrugging it on with sharp movements.</p>
-                    
-                    <p>Penelope&#39;s gaze burned with unmistakable invitation, saturating the air with palpable tension.</p>
-                    
-                    <p>He moved to the sofa, sinking into its plush depths with practiced grace, and took a deliberate sip of water—a silent command for her to recognize her cue to leave.</p>
-                    
-                    <p>The alcohol had blurred Penelope&#39;s judgment, making her completely misinterpret the sudden chill in the air.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>The water trails from his damp hair traced paths down his sculpted chest and along the defined ridges of his abdomen, disappearing into the towel&#39;s fabric.</p>
+                        
+                        <p>The noticeable bulge beneath the towel sent an electric thrill through Penelope, warming her from within.</p>
+                        
+                        <p>Adrian&#39;s brows knitted together as he grabbed his robe, shrugging it on with sharp movements.</p>
+                        
+                        <p>Penelope&#39;s gaze burned with unmistakable invitation, saturating the air with palpable tension.</p>
+                        
+                        <p>He moved to the sofa, sinking into its plush depths with practiced grace, and took a deliberate sip of water—a silent command for her to recognize her cue to leave.</p>
+                        
+                        <p>The alcohol had blurred Penelope&#39;s judgment, making her completely misinterpret the sudden chill in the air.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,11 +1079,15 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>She ducked her head like a startled deer, fingers nervously smoothing her dress before retreating toward the bed.</p>
-                    
-                    <p>With a calculated tilt of her chin and honeyed words, she purred, &#34;Adrian, surely a gentleman like you wouldn&#39;t make a lady take the first step?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>She ducked her head like a startled deer, fingers nervously smoothing her dress before retreating toward the bed.</p>
+                        
+                        <p>With a calculated tilt of her chin and honeyed words, she purred, &#34;Adrian, surely a gentleman like you wouldn&#39;t make a lady take the first step?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2339,6 +2403,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2465,7 +2609,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2507,32 +2650,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2543,21 +2668,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2590,6 +2705,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2610,20 +2731,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

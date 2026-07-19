@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:15.399256">
-    <meta property="article:modified_time" content="2026-07-19T02:47:15.399256">
+    <meta property="article:published_time" content="2026-07-19T13:03:10.722707">
+    <meta property="article:modified_time" content="2026-07-19T13:03:10.722707">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:15">
+    <meta name="last-modified" content="2026-07-19 13:03:10">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:15.399256",
-        "dateModified": "2026-07-19T02:47:15.399256",
+        "datePublished": "2026-07-19T13:03:10.722707",
+        "dateModified": "2026-07-19T13:03:10.722707",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,35 +893,39 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter8</p>
-                    
-                    <p>“Oh, no! Are you alright, Rose?” Shannon was shocked, but she wanted to laugh.</p>
-                    
-                    <p>Upon seeing this, Justin hurriedly stepped forward to pull Rosalind up from the floor, but she refused</p>
-                    
-                    <p>to move.</p>
-                    
-                    <p>Rosalind cried, “Justin, it hurts… Will you carry me?”</p>
-                    
-                    <p>Her knees were numb from the fall.</p>
-                    
-                    <p>Bella crossed her arms and stared at the woman on the floor.</p>
-                    
-                    <p>Rosalind was such a fake bitch in front of Justin.</p>
-                    
-                    <p>“Justin, Ms. Brown pushed me!”</p>
-                    
-                    <p>Rosalind timidly hid in Justin’s embrace and glanced at Bella sinisterly.</p>
-                    
-                    <p>“Rose, what did you say?” Justin was startled.</p>
-                    
-                    <p>“Are you sure that I pushed you?” Bella smiled. She did not get angry. Instead, she was enjoying Rosalind’s acting.</p>
-                    
-                    <p>“Why would I fall all of a sudden?” Rosalind was so angry that her usually soft voice rose in pitch.</p>
-                    
-                    <p>“That’s not completely impossible. After all, you look so weak that a gust of wind can blow you over.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter8</p>
+                        
+                        <p>“Oh, no! Are you alright, Rose?” Shannon was shocked, but she wanted to laugh.</p>
+                        
+                        <p>Upon seeing this, Justin hurriedly stepped forward to pull Rosalind up from the floor, but she refused</p>
+                        
+                        <p>to move.</p>
+                        
+                        <p>Rosalind cried, “Justin, it hurts… Will you carry me?”</p>
+                        
+                        <p>Her knees were numb from the fall.</p>
+                        
+                        <p>Bella crossed her arms and stared at the woman on the floor.</p>
+                        
+                        <p>Rosalind was such a fake bitch in front of Justin.</p>
+                        
+                        <p>“Justin, Ms. Brown pushed me!”</p>
+                        
+                        <p>Rosalind timidly hid in Justin’s embrace and glanced at Bella sinisterly.</p>
+                        
+                        <p>“Rose, what did you say?” Justin was startled.</p>
+                        
+                        <p>“Are you sure that I pushed you?” Bella smiled. She did not get angry. Instead, she was enjoying Rosalind’s acting.</p>
+                        
+                        <p>“Why would I fall all of a sudden?” Rosalind was so angry that her usually soft voice rose in pitch.</p>
+                        
+                        <p>“That’s not completely impossible. After all, you look so weak that a gust of wind can blow you over.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -900,35 +940,39 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>“How dare you insult me?!”</p>
-                    
-                    <p>Rosalind was so angry that her face turned red. “I clearly felt your hand pushing me from behind. Why aren’t you admitting it?”</p>
-                    
-                    <p>“Ms. Gold, there are surveillance cameras everywhere, so stop accusing me.”</p>
-                    
-                    <p>Suddenly, Bella’s bright and clear eyes darkened. She looked intimidating. “I can sue you for defamation once I get the evidence.”</p>
-                    
-                    <p>Justin blinked in shock. He felt that Anna was completely different than before.</p>
-                    
-                    <p>She was no longer the boring, honest, and humble wife who stayed alone in an empty house.</p>
-                    
-                    <p>Rosalind was obviously intimidated by Bella and hurriedly looked to Shannon for help.</p>
-                    
-                    <p>“Oh, it’s all a misunderstanding!”</p>
-                    
-                    <p>Shannon glanced at the surveillance camera above her head and smiled to smooth things over. “Rose must have accidentally slipped because she didn’t stand firm. She probably bumped into Anna and thought that Anna pushed her. It’s all a misunderstanding!”</p>
-                    
-                    <p>“Rose, did you slip by yourself?” Justin lowered his eyes and stared at the woman in his arms. His</p>
-                    
-                    <p>tone was a little cold.</p>
-                    
-                    <p>“I thought she pushed me…”</p>
-                    
-                    <p>Justin narrowed his eyes.</p>
-                    
-                    <p>Rosalind was flustered and simply blamed Bella. “If she didn’t move out of the way, I wouldn’t have fallen! She obviously did it on purpose. The bracelet my grandmother passed on to me is also broken now. It’s a Gold family heirloom. It wouldn’t be broken if it weren’t for her. Ms. Brown, I know that you’re mad about the divorce, but you shouldn’t vent your anger on me. Is it my fault that you got divorced?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>“How dare you insult me?!”</p>
+                        
+                        <p>Rosalind was so angry that her face turned red. “I clearly felt your hand pushing me from behind. Why aren’t you admitting it?”</p>
+                        
+                        <p>“Ms. Gold, there are surveillance cameras everywhere, so stop accusing me.”</p>
+                        
+                        <p>Suddenly, Bella’s bright and clear eyes darkened. She looked intimidating. “I can sue you for defamation once I get the evidence.”</p>
+                        
+                        <p>Justin blinked in shock. He felt that Anna was completely different than before.</p>
+                        
+                        <p>She was no longer the boring, honest, and humble wife who stayed alone in an empty house.</p>
+                        
+                        <p>Rosalind was obviously intimidated by Bella and hurriedly looked to Shannon for help.</p>
+                        
+                        <p>“Oh, it’s all a misunderstanding!”</p>
+                        
+                        <p>Shannon glanced at the surveillance camera above her head and smiled to smooth things over. “Rose must have accidentally slipped because she didn’t stand firm. She probably bumped into Anna and thought that Anna pushed her. It’s all a misunderstanding!”</p>
+                        
+                        <p>“Rose, did you slip by yourself?” Justin lowered his eyes and stared at the woman in his arms. His</p>
+                        
+                        <p>tone was a little cold.</p>
+                        
+                        <p>“I thought she pushed me…”</p>
+                        
+                        <p>Justin narrowed his eyes.</p>
+                        
+                        <p>Rosalind was flustered and simply blamed Bella. “If she didn’t move out of the way, I wouldn’t have fallen! She obviously did it on purpose. The bracelet my grandmother passed on to me is also broken now. It’s a Gold family heirloom. It wouldn’t be broken if it weren’t for her. Ms. Brown, I know that you’re mad about the divorce, but you shouldn’t vent your anger on me. Is it my fault that you got divorced?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -943,35 +987,39 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Rosalind cried again.</p>
-                    
-                    <p>She really had an endless supply of tears.</p>
-                    
-                    <p>“First of all, I’m not mad about the divorce. On the contrary, I’d like to thank you for helping me escape that hellhole. I no longer have to wait from dusk to dawn like an abandoned wife.” Bella raised her chin slightly and retorted.</p>
-                    
-                    <p>‘Wait from dusk until dawn?’ Justin was puzzled.</p>
-                    
-                    <p>“Secondly, if this bracelet is really a family heirloom, you should be thanking me.</p>
-                    
-                    <p>Bella walked over, picked up half of the bracelet, and put it under the light. “It’s fake.”</p>
-                    
-                    <p>“What?!” Rosalind and Shannon were stunned.</p>
-                    
-                    <p>“This bracelet is filled with toxic glue, so prolonged exposure is detrimental to your health.”</p>
-                    
-                    <p>Bella casually threw the bracelet into the trash can. The emerald-green jade bracelet on her wrist was the biggest mockery to Rosalind.</p>
-                    
-                    <p>“Mr. Salvador, since you want to marry Ms. Gold, why don’t you buy some decent jewelry for her?”</p>
-                    
-                    <p>“Anna!” Justin frowned angrily.</p>
-                    
-                    <p>“I have a jade toad on my dressing table at Tideview Manor that I think suits you, Rosalind. You can make it into a bracelet if you wish.” Bella patted the dust off her hands as if the bracelet she touched earlier was contaminated.</p>
-                    
-                    <p>Rosalind thought, ‘A toad?! This bitch is clearly trying to insult me in a roundabout way!’</p>
-                    
-                    <p>Rosalind was furious. She tried to retaliate, but Bella had already left.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Rosalind cried again.</p>
+                        
+                        <p>She really had an endless supply of tears.</p>
+                        
+                        <p>“First of all, I’m not mad about the divorce. On the contrary, I’d like to thank you for helping me escape that hellhole. I no longer have to wait from dusk to dawn like an abandoned wife.” Bella raised her chin slightly and retorted.</p>
+                        
+                        <p>‘Wait from dusk until dawn?’ Justin was puzzled.</p>
+                        
+                        <p>“Secondly, if this bracelet is really a family heirloom, you should be thanking me.</p>
+                        
+                        <p>Bella walked over, picked up half of the bracelet, and put it under the light. “It’s fake.”</p>
+                        
+                        <p>“What?!” Rosalind and Shannon were stunned.</p>
+                        
+                        <p>“This bracelet is filled with toxic glue, so prolonged exposure is detrimental to your health.”</p>
+                        
+                        <p>Bella casually threw the bracelet into the trash can. The emerald-green jade bracelet on her wrist was the biggest mockery to Rosalind.</p>
+                        
+                        <p>“Mr. Salvador, since you want to marry Ms. Gold, why don’t you buy some decent jewelry for her?”</p>
+                        
+                        <p>“Anna!” Justin frowned angrily.</p>
+                        
+                        <p>“I have a jade toad on my dressing table at Tideview Manor that I think suits you, Rosalind. You can make it into a bracelet if you wish.” Bella patted the dust off her hands as if the bracelet she touched earlier was contaminated.</p>
+                        
+                        <p>Rosalind thought, ‘A toad?! This bitch is clearly trying to insult me in a roundabout way!’</p>
+                        
+                        <p>Rosalind was furious. She tried to retaliate, but Bella had already left.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -986,35 +1034,39 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Outside the hospital, Bella could not help but laugh when she thought of Rosalind’s expression.</p>
-                    
-                    <p>“Anna!”</p>
-                    
-                    <p>Bella looked back indifferently when she heard Justin’s deep voice.</p>
-                    
-                    <p>The breeze blew a few strands of her black hair, adding a hint of messiness to her flawless beauty.</p>
-                    
-                    <p>Justin narrowed his eyes and walked up to her.</p>
-                    
-                    <p>“Yes, Mr. Salvador?”</p>
-                    
-                    <p>Bella was expressionless. “If Ms. Gold is still hung up over her bracelet, you can tell her that I will</p>
-                    
-                    <p>send her a cart of bracelets tomorrow.”</p>
-                    
-                    <p>“When we were in the ward, you told Grandpa…’</p>
-                    
-                    <p>3)</p>
-                    
-                    <p>“Oh, don’t think too much about it. I just didn’t want to make Grandpa angry.” Her eyes softened</p>
-                    
-                    <p>when she mentioned Nigel.</p>
-                    
-                    <p>“We’re even now.”</p>
-                    
-                    <p>Bella looked confused.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Outside the hospital, Bella could not help but laugh when she thought of Rosalind’s expression.</p>
+                        
+                        <p>“Anna!”</p>
+                        
+                        <p>Bella looked back indifferently when she heard Justin’s deep voice.</p>
+                        
+                        <p>The breeze blew a few strands of her black hair, adding a hint of messiness to her flawless beauty.</p>
+                        
+                        <p>Justin narrowed his eyes and walked up to her.</p>
+                        
+                        <p>“Yes, Mr. Salvador?”</p>
+                        
+                        <p>Bella was expressionless. “If Ms. Gold is still hung up over her bracelet, you can tell her that I will</p>
+                        
+                        <p>send her a cart of bracelets tomorrow.”</p>
+                        
+                        <p>“When we were in the ward, you told Grandpa…’</p>
+                        
+                        <p>3)</p>
+                        
+                        <p>“Oh, don’t think too much about it. I just didn’t want to make Grandpa angry.” Her eyes softened</p>
+                        
+                        <p>when she mentioned Nigel.</p>
+                        
+                        <p>“We’re even now.”</p>
+                        
+                        <p>Bella looked confused.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1029,35 +1081,39 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>“You faked your identity and went out of your way to marry me. I won’t tell Grandpa or anyone else in the family about that.” Justin’s expression was gloomy and dangerous.</p>
-                    
-                    <p>Bella widened her eyes in shock.</p>
-                    
-                    <p>“But you have to tell me why you used a false identity to marry me. No, I shouldn’t ask that.”</p>
-                    
-                    <p>Justin slowly approached her. “What was your motive for using a false identity to get close to Grandpa?”</p>
-                    
-                    <p>Bella’s heart clenched, and she took a step back.</p>
-                    
-                    <p>As a result, she forgot that there were some steps behind her. She lost her footing and fell backward.</p>
-                    
-                    <p>The next second, she felt a warm hand on her waist as Justin pulled her up.</p>
-                    
-                    <p>When their eyes met, Bella blushed, and Justin’s breathing became erratic.</p>
-                    
-                    <p>Until this moment, she still thought that Justin was handsome. Everything about him was to her taste.</p>
-                    
-                    <p>Bella remembered the first time she saw these bright eyes. It was 13 years ago, and she was just 11 years old back then. She was lost in the dark forest, and it was raining heavily.</p>
-                    
-                    <p>Justin had saved her life once. Without him, Bella would not be alive today.</p>
-                    
-                    <p>Now, Justin had broken her heart and hurt her so badly that she thought it was the worst thing she could experience.</p>
-                    
-                    <p>Justin withdrew his arm and helped Bella stand upright.</p>
-                    
-                    <p>“Thanks.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>“You faked your identity and went out of your way to marry me. I won’t tell Grandpa or anyone else in the family about that.” Justin’s expression was gloomy and dangerous.</p>
+                        
+                        <p>Bella widened her eyes in shock.</p>
+                        
+                        <p>“But you have to tell me why you used a false identity to marry me. No, I shouldn’t ask that.”</p>
+                        
+                        <p>Justin slowly approached her. “What was your motive for using a false identity to get close to Grandpa?”</p>
+                        
+                        <p>Bella’s heart clenched, and she took a step back.</p>
+                        
+                        <p>As a result, she forgot that there were some steps behind her. She lost her footing and fell backward.</p>
+                        
+                        <p>The next second, she felt a warm hand on her waist as Justin pulled her up.</p>
+                        
+                        <p>When their eyes met, Bella blushed, and Justin’s breathing became erratic.</p>
+                        
+                        <p>Until this moment, she still thought that Justin was handsome. Everything about him was to her taste.</p>
+                        
+                        <p>Bella remembered the first time she saw these bright eyes. It was 13 years ago, and she was just 11 years old back then. She was lost in the dark forest, and it was raining heavily.</p>
+                        
+                        <p>Justin had saved her life once. Without him, Bella would not be alive today.</p>
+                        
+                        <p>Now, Justin had broken her heart and hurt her so badly that she thought it was the worst thing she could experience.</p>
+                        
+                        <p>Justin withdrew his arm and helped Bella stand upright.</p>
+                        
+                        <p>“Thanks.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1072,35 +1128,39 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>“Answer the question I just asked.” Justin was persistent.</p>
-                    
-                    <p>“I am no longer your wife, and I have the right not to tell you.”</p>
-                    
-                    <p>Bella smiled coldly and turned around. “Since you said that we’re even now, why bother? Even if I married you with a fake identity, I haven’t done anything to hurt you in the past three years, right?”</p>
-                    
-                    <p>Suddenly, Justin grabbed her arm and said solemnly, “We haven’t finalized the divorce yet, so you are still my wife in name. You have an obligation to let me know who you really are!”</p>
-                    
-                    <p>“I’m not telling you.”</p>
-                    
-                    <p>Bella’s breathing quickened, and her eyes turned red. “Mr. Salvador, don’t you think you’re being ridiculous by mentioning obligations? You haven’t once fulfilled your obligations as a husband in the past three years, so what gives you the right to ask me to fulfill mine as a wife?!”</p>
-                    
-                    <p>“Anna, don’t think that I won’t do anything to you!” Justin suddenly pulled her into his arms. They were so close that their breaths intertwined.</p>
-                    
-                    <p>Justin was not someone who would get angry easily, but this woman had been stepping on his toes lately.</p>
-                    
-                    <p>She surely was capable!</p>
-                    
-                    <p>“Then go and investigate. Why bother asking me?”</p>
-                    
-                    <p>Bella forcefully broke away from his grasp and left without looking back.</p>
-                    
-                    <p>Justin stared at the woman’s graceful back and remembered her flaming red lips and those sharp heels. His chest tightened.</p>
-                    
-                    <p>He thought, ‘Why did she adopt this style? Was she catering to Asher Thompson’s taste? She’s evil and unfaithful. I really don’t know what Grandpa sees in her!’</p>
-                    
-                    <p>“Mr. Salvador, Ms. Gold said that she has sprained her ankle. She wants you to accompany her.” Ian ran over, panting heavily.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>“Answer the question I just asked.” Justin was persistent.</p>
+                        
+                        <p>“I am no longer your wife, and I have the right not to tell you.”</p>
+                        
+                        <p>Bella smiled coldly and turned around. “Since you said that we’re even now, why bother? Even if I married you with a fake identity, I haven’t done anything to hurt you in the past three years, right?”</p>
+                        
+                        <p>Suddenly, Justin grabbed her arm and said solemnly, “We haven’t finalized the divorce yet, so you are still my wife in name. You have an obligation to let me know who you really are!”</p>
+                        
+                        <p>“I’m not telling you.”</p>
+                        
+                        <p>Bella’s breathing quickened, and her eyes turned red. “Mr. Salvador, don’t you think you’re being ridiculous by mentioning obligations? You haven’t once fulfilled your obligations as a husband in the past three years, so what gives you the right to ask me to fulfill mine as a wife?!”</p>
+                        
+                        <p>“Anna, don’t think that I won’t do anything to you!” Justin suddenly pulled her into his arms. They were so close that their breaths intertwined.</p>
+                        
+                        <p>Justin was not someone who would get angry easily, but this woman had been stepping on his toes lately.</p>
+                        
+                        <p>She surely was capable!</p>
+                        
+                        <p>“Then go and investigate. Why bother asking me?”</p>
+                        
+                        <p>Bella forcefully broke away from his grasp and left without looking back.</p>
+                        
+                        <p>Justin stared at the woman’s graceful back and remembered her flaming red lips and those sharp heels. His chest tightened.</p>
+                        
+                        <p>He thought, ‘Why did she adopt this style? Was she catering to Asher Thompson’s taste? She’s evil and unfaithful. I really don’t know what Grandpa sees in her!’</p>
+                        
+                        <p>“Mr. Salvador, Ms. Gold said that she has sprained her ankle. She wants you to accompany her.” Ian ran over, panting heavily.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1115,23 +1175,27 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Suddenly, there was a loud roar from a sports car engine.</p>
-                    
-                    <p>“Wow! That’s the young madam!”</p>
-                    
-                    <p>Justin was stunned when he saw his ex-wife driving a black supercar. She passed him by, looking so</p>
-                    
-                    <p>arrogant.</p>
-                    
-                    <p>She was driving a top-of-the-line limited-edition supercar-a Bugatti La Voiture Noire.</p>
-                    
-                    <p>“OMG! It turns out that the young madam is a low-key tycoon!” Ian’s eyes widened.</p>
-                    
-                    <p>Justin’s eyes darkened, and he slowly clenched his fists.</p>
-                    
-                    <p>“Follow her!”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Suddenly, there was a loud roar from a sports car engine.</p>
+                        
+                        <p>“Wow! That’s the young madam!”</p>
+                        
+                        <p>Justin was stunned when he saw his ex-wife driving a black supercar. She passed him by, looking so</p>
+                        
+                        <p>arrogant.</p>
+                        
+                        <p>She was driving a top-of-the-line limited-edition supercar-a Bugatti La Voiture Noire.</p>
+                        
+                        <p>“OMG! It turns out that the young madam is a low-key tycoon!” Ian’s eyes widened.</p>
+                        
+                        <p>Justin’s eyes darkened, and he slowly clenched his fists.</p>
+                        
+                        <p>“Follow her!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2447,6 +2511,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2573,7 +2717,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2615,32 +2758,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2651,21 +2776,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2698,6 +2813,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2718,20 +2839,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

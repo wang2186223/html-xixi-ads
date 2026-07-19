@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>&#34;Mrs. Blackwood,&#34; he ventured cautiously, &#34;while Mr. Blackwood can be... difficult, his heart is in the right place. He makes snap decisions in business, but regarding matters of—&#34;</p>
-                    
-                    <p>Vivian interrupted sharply. &#34;When you sit beside a fireplace, do you analyze whether you feel warm?&#34;</p>
-                    
-                    <p>The unexpected question made Ethan stammer. &#34;I-I suppose not?&#34;</p>
-                    
-                    <p>Vivian&#39;s gaze remained icy. &#34;Exactly. You simply know. Love works the same way.&#34;</p>
-                    
-                    <p>Before Ethan could formulate a response, Audrey leaned forward with a predatory grin. &#34;So spare us the relationship advice and focus on the road, yeah? Unless you&#39;d prefer I take the wheel.&#34;</p>
-                    
-                    <p>Blushing furiously, Ethan nodded. &#34;Understood.&#34; He secured their door and hurried to the driver&#39;s seat.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>&#34;Mrs. Blackwood,&#34; he ventured cautiously, &#34;while Mr. Blackwood can be... difficult, his heart is in the right place. He makes snap decisions in business, but regarding matters of—&#34;</p>
+                        
+                        <p>Vivian interrupted sharply. &#34;When you sit beside a fireplace, do you analyze whether you feel warm?&#34;</p>
+                        
+                        <p>The unexpected question made Ethan stammer. &#34;I-I suppose not?&#34;</p>
+                        
+                        <p>Vivian&#39;s gaze remained icy. &#34;Exactly. You simply know. Love works the same way.&#34;</p>
+                        
+                        <p>Before Ethan could formulate a response, Audrey leaned forward with a predatory grin. &#34;So spare us the relationship advice and focus on the road, yeah? Unless you&#39;d prefer I take the wheel.&#34;</p>
+                        
+                        <p>Blushing furiously, Ethan nodded. &#34;Understood.&#34; He secured their door and hurried to the driver&#39;s seat.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>As the car pulled away, Audrey turned to Vivian, whispering, &#34;You&#39;re not reconsidering, are you?&#34;</p>
-                    
-                    <p>Vivian shook her head decisively. &#34;Never.&#34; She turned toward the window, watching the city lights smear across the glass, her mind clearly elsewhere.</p>
-                    
-                    <p>Upon arriving at Seabreeze Villa, Vivian stepped into the foyer, the crisp air carrying faint notes of Adrian&#39;s cologne. Gwendolyn materialized instantly, her smile overly bright. &#34;Welcome home, Mrs. Blackwood!&#34;</p>
-                    
-                    <p>Vivian acknowledged her with a curt nod before addressing Ethan. &#34;Is Adrian back?&#34;</p>
-                    
-                    <p>Ethan chose his words carefully. &#34;Mr. Blackwood had urgent business in Frostholm tonight.&#34;</p>
-                    
-                    <p>&#34;Frostholm?&#34; Hadn&#39;t he agreed to finalize the divorce? This sudden trip couldn&#39;t be coincidental. Vivian&#39;s frown deepened. &#34;I thought his current project was in Emberglow County?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>As the car pulled away, Audrey turned to Vivian, whispering, &#34;You&#39;re not reconsidering, are you?&#34;</p>
+                        
+                        <p>Vivian shook her head decisively. &#34;Never.&#34; She turned toward the window, watching the city lights smear across the glass, her mind clearly elsewhere.</p>
+                        
+                        <p>Upon arriving at Seabreeze Villa, Vivian stepped into the foyer, the crisp air carrying faint notes of Adrian&#39;s cologne. Gwendolyn materialized instantly, her smile overly bright. &#34;Welcome home, Mrs. Blackwood!&#34;</p>
+                        
+                        <p>Vivian acknowledged her with a curt nod before addressing Ethan. &#34;Is Adrian back?&#34;</p>
+                        
+                        <p>Ethan chose his words carefully. &#34;Mr. Blackwood had urgent business in Frostholm tonight.&#34;</p>
+                        
+                        <p>&#34;Frostholm?&#34; Hadn&#39;t he agreed to finalize the divorce? This sudden trip couldn&#39;t be coincidental. Vivian&#39;s frown deepened. &#34;I thought his current project was in Emberglow County?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Ethan maintained his professional demeanor. &#34;The Blackwood Group operates internationally, Mrs. Blackwood.&#34;</p>
-                    
-                    <p>Vivian&#39;s patience snapped. &#34;Since when does the CEO personally oversee every minor project?&#34;</p>
-                    
-                    <p>Ethan didn&#39;t falter. &#34;Mr. Blackwood believes hands-on leadership drives our success.&#34;</p>
-                    
-                    <p>Vivian arched an eyebrow, unimpressed. &#34;How remarkably coincidental.&#34;</p>
-                    
-                    <p>Ethan knew better than to argue. Handing Vivian&#39;s luggage to Gwendolyn, he added, &#34;If you require anything, Mrs. Blackwood, Gwendolyn will assist. I must return to the office.&#34; With that, he made a swift exit, leaving Vivian and Gwendolyn standing in the grand foyer.</p>
-                    
-                    <p>Gwendolyn clutched the suitcase, but instead of moving toward the staircase, she hesitated, her curiosity palpable. She turned to Vivian, her voice carefully measured. &#34;Mrs. Blackwood... did you and Mr. Blackwood have a disagreement?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Ethan maintained his professional demeanor. &#34;The Blackwood Group operates internationally, Mrs. Blackwood.&#34;</p>
+                        
+                        <p>Vivian&#39;s patience snapped. &#34;Since when does the CEO personally oversee every minor project?&#34;</p>
+                        
+                        <p>Ethan didn&#39;t falter. &#34;Mr. Blackwood believes hands-on leadership drives our success.&#34;</p>
+                        
+                        <p>Vivian arched an eyebrow, unimpressed. &#34;How remarkably coincidental.&#34;</p>
+                        
+                        <p>Ethan knew better than to argue. Handing Vivian&#39;s luggage to Gwendolyn, he added, &#34;If you require anything, Mrs. Blackwood, Gwendolyn will assist. I must return to the office.&#34; With that, he made a swift exit, leaving Vivian and Gwendolyn standing in the grand foyer.</p>
+                        
+                        <p>Gwendolyn clutched the suitcase, but instead of moving toward the staircase, she hesitated, her curiosity palpable. She turned to Vivian, her voice carefully measured. &#34;Mrs. Blackwood... did you and Mr. Blackwood have a disagreement?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Vivian&#39;s sharp gaze caught the unusual gleam in Gwendolyn&#39;s eyes. It wasn&#39;t concern—it was something closer to anticipation. Her instincts screamed caution.</p>
-                    
-                    <p>&#34;Do you wish we had?&#34; Vivian countered, her tone razor-sharp. Her gut told her to keep the divorce proceedings far from Gwendolyn&#39;s prying ears.</p>
-                    
-                    <p>Gwendolyn faltered, her practiced smile slipping momentarily before she plastered it back on. &#34;Heavens no! I pray you and Mr. Blackwood remain blissfully in love forever.&#34;</p>
-                    
-                    <p>Vivian&#39;s lips curled into a knowing smirk. &#34;Precisely.&#34;</p>
-                    
-                    <p>&#34;We&#39;ll be blissfully in love forever.&#34; Leaning in conspiratorially, she tugged her collar aside to reveal a faint mark on her neck. &#34;Who knows? Perhaps we&#39;ll even welcome a little heir this year.&#34;</p>
-                    
-                    <p>Gwendolyn&#39;s grip turned bone-white as her eyes locked onto the mark. Her mind reeled. It appeared Adrian and Vivian&#39;s relationship was actually thriving.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Vivian&#39;s sharp gaze caught the unusual gleam in Gwendolyn&#39;s eyes. It wasn&#39;t concern—it was something closer to anticipation. Her instincts screamed caution.</p>
+                        
+                        <p>&#34;Do you wish we had?&#34; Vivian countered, her tone razor-sharp. Her gut told her to keep the divorce proceedings far from Gwendolyn&#39;s prying ears.</p>
+                        
+                        <p>Gwendolyn faltered, her practiced smile slipping momentarily before she plastered it back on. &#34;Heavens no! I pray you and Mr. Blackwood remain blissfully in love forever.&#34;</p>
+                        
+                        <p>Vivian&#39;s lips curled into a knowing smirk. &#34;Precisely.&#34;</p>
+                        
+                        <p>&#34;We&#39;ll be blissfully in love forever.&#34; Leaning in conspiratorially, she tugged her collar aside to reveal a faint mark on her neck. &#34;Who knows? Perhaps we&#39;ll even welcome a little heir this year.&#34;</p>
+                        
+                        <p>Gwendolyn&#39;s grip turned bone-white as her eyes locked onto the mark. Her mind reeled. It appeared Adrian and Vivian&#39;s relationship was actually thriving.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Just then, Vivian&#39;s phone buzzed, shattering the tension. She glanced at the group chat message from Damien: &#34;Don&#39;t leave after filming. I&#39;m coming with exciting news.&#34;</p>
-                    
-                    <p>During lunch break, the crew mingled over boxed meals. Sebastian lounged with his chair tilted back, casually sliding a chicken wing into Vivian&#39;s container. Vivian took a bite and remarked, &#34;Mr. Vaughn should consider heartier options. These meals barely qualify as sustenance.&#34;</p>
-                    
-                    <p>Right on cue, Damien appeared bearing two bags of premium coffee. &#34;My apologies. I&#39;ll ensure tomorrow&#39;s catering includes more substantial portions.&#34;</p>
-                    
-                    <p>As he distributed the drinks, he announced, &#34;Today we&#39;ll be selecting cast members for this week&#39;s Spotlight Night.&#34; The popular variety show was a coveted platform, regularly featuring A-list hosts and rising stars to promote their latest projects.</p>
-                    
-                    <p>The room fell silent, anticipation thickening the air. Damien&#39;s unexpected visit clearly signaled more than routine casting decisions.</p>
-                    
-                    <p>After a deliberate sip of coffee, he revealed, &#34;I intend to use this opportunity to unveil Vivian as the true Katrina.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Just then, Vivian&#39;s phone buzzed, shattering the tension. She glanced at the group chat message from Damien: &#34;Don&#39;t leave after filming. I&#39;m coming with exciting news.&#34;</p>
+                        
+                        <p>During lunch break, the crew mingled over boxed meals. Sebastian lounged with his chair tilted back, casually sliding a chicken wing into Vivian&#39;s container. Vivian took a bite and remarked, &#34;Mr. Vaughn should consider heartier options. These meals barely qualify as sustenance.&#34;</p>
+                        
+                        <p>Right on cue, Damien appeared bearing two bags of premium coffee. &#34;My apologies. I&#39;ll ensure tomorrow&#39;s catering includes more substantial portions.&#34;</p>
+                        
+                        <p>As he distributed the drinks, he announced, &#34;Today we&#39;ll be selecting cast members for this week&#39;s Spotlight Night.&#34; The popular variety show was a coveted platform, regularly featuring A-list hosts and rising stars to promote their latest projects.</p>
+                        
+                        <p>The room fell silent, anticipation thickening the air. Damien&#39;s unexpected visit clearly signaled more than routine casting decisions.</p>
+                        
+                        <p>After a deliberate sip of coffee, he revealed, &#34;I intend to use this opportunity to unveil Vivian as the true Katrina.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Sebastian&#39;s expression turned thoughtful. &#34;Isn&#39;t that premature? We agreed to wait until post-production.&#34;</p>
-                    
-                    <p>Damien set down his cup. &#34;By airtime, filming will be nearly complete.&#34; His tone brooked no argument. &#34;This timing will maximize publicity.&#34;</p>
-                    
-                    <p>Considering this, Sebastian planted his feet firmly on the ground, ticking off points on his fingers. &#34;We are indeed approaching wrap.&#34;</p>
-                    
-                    <p>&#34;Vivian, what do you think?&#34; His intense gaze sought her opinion.</p>
-                    
-                    <p>Vivian paused, stirring her iced tea with a straw before responding coolly, &#34;I&#39;m fine with whatever the team decides.&#34;</p>
-                    
-                    <p>&#34;Then it&#39;s settled,&#34; Damien stated firmly. He&#39;d made this special trip because the buzz surrounding Vivian&#39;s secret identity was reaching fever pitch. Revealing it on Spotlight Night would maximize the impact.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Sebastian&#39;s expression turned thoughtful. &#34;Isn&#39;t that premature? We agreed to wait until post-production.&#34;</p>
+                        
+                        <p>Damien set down his cup. &#34;By airtime, filming will be nearly complete.&#34; His tone brooked no argument. &#34;This timing will maximize publicity.&#34;</p>
+                        
+                        <p>Considering this, Sebastian planted his feet firmly on the ground, ticking off points on his fingers. &#34;We are indeed approaching wrap.&#34;</p>
+                        
+                        <p>&#34;Vivian, what do you think?&#34; His intense gaze sought her opinion.</p>
+                        
+                        <p>Vivian paused, stirring her iced tea with a straw before responding coolly, &#34;I&#39;m fine with whatever the team decides.&#34;</p>
+                        
+                        <p>&#34;Then it&#39;s settled,&#34; Damien stated firmly. He&#39;d made this special trip because the buzz surrounding Vivian&#39;s secret identity was reaching fever pitch. Revealing it on Spotlight Night would maximize the impact.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Across town, Serena lounged on a designer sofa, wrapped in a cashmere throw while scrolling through her phone. Gregory Thornton, the director, approached with an ingratiating smile. &#34;Serena, Spotlight Night wants some of our cast for their next episode. We thought you and Julian would be perfect.&#34;</p>
-                    
-                    <p>Serena didn&#39;t even glance up from her game. &#34;Not interested. Ask someone else.&#34;</p>
-                    
-                    <p>Her preoccupation with Vivian and Adrian&#39;s growing closeness had drained her completely. The last thing she wanted was to appear on some vapid variety show.</p>
-                    
-                    <p>Gregory blinked in surprise - this was a coveted opportunity. Seeing his hesitation, Miranda Graves interjected, recognizing the promotional value. &#34;Serena darling, this could really boost our show&#39;s ratings. Think of the exposure!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Across town, Serena lounged on a designer sofa, wrapped in a cashmere throw while scrolling through her phone. Gregory Thornton, the director, approached with an ingratiating smile. &#34;Serena, Spotlight Night wants some of our cast for their next episode. We thought you and Julian would be perfect.&#34;</p>
+                        
+                        <p>Serena didn&#39;t even glance up from her game. &#34;Not interested. Ask someone else.&#34;</p>
+                        
+                        <p>Her preoccupation with Vivian and Adrian&#39;s growing closeness had drained her completely. The last thing she wanted was to appear on some vapid variety show.</p>
+                        
+                        <p>Gregory blinked in surprise - this was a coveted opportunity. Seeing his hesitation, Miranda Graves interjected, recognizing the promotional value. &#34;Serena darling, this could really boost our show&#39;s ratings. Think of the exposure!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

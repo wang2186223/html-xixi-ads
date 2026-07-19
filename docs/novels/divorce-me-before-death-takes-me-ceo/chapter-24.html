@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:18.803390">
-    <meta property="article:modified_time" content="2026-07-19T02:47:18.803390">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.097687">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.097687">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:18">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:18.803390",
-        "dateModified": "2026-07-19T02:47:18.803390",
+        "datePublished": "2026-07-19T13:03:14.097687",
+        "dateModified": "2026-07-19T13:03:14.097687",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,23 +893,27 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>I watched the hatred twist Rebecca&#39;s features as she stared at me,her delicate makeup doing nothing to hide the fury in her eyes. I couldn&#39;t help but give a sneer.</p>
-                    
-                    <p>Taking advantage of Blake&#39;s momentary distraction, I finally managed to pull my hand free from his grip. The burning sensation in my stomach had intensified, but I forced myself to stand straight. I wouldn&#39;t show weakness. Not now.</p>
-                    
-                    <p>&#34;Interesting how the real aggressors are the first to complain,&#34; I said, my voice steady despite the effort it took to remain standing.</p>
-                    
-                    <p>Rebecca&#39;s eyes narrowed dangerously. &#34;I&#39;m your mother-in-law, Thalia is your sister-in-law. Isn&#39;t it our right to discipline you?&#34;</p>
-                    
-                    <p>A bitter smile touched my lips. The irony was almost amusing. &#34;So it&#39;s your right to hit me, but when I defend myself, you run crying to William?</p>
-                    
-                    <p>The glasses on the coffee table trembled as William&#39;s hand came down hard on its surface. &#34;What is she talking about?&#34; His voice carried the authority of someone used to commanding boardrooms. &#34;Rebecca?&#34;</p>
-                    
-                    <p>I watched as Rebecca&#39;s confidence faltered slightly. Thalia, who had been maintaining a hostile silence, suddenly found the carpet fascinating. I kept expressionless as I continued.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>I watched the hatred twist Rebecca&#39;s features as she stared at me,her delicate makeup doing nothing to hide the fury in her eyes. I couldn&#39;t help but give a sneer.</p>
+                        
+                        <p>Taking advantage of Blake&#39;s momentary distraction, I finally managed to pull my hand free from his grip. The burning sensation in my stomach had intensified, but I forced myself to stand straight. I wouldn&#39;t show weakness. Not now.</p>
+                        
+                        <p>&#34;Interesting how the real aggressors are the first to complain,&#34; I said, my voice steady despite the effort it took to remain standing.</p>
+                        
+                        <p>Rebecca&#39;s eyes narrowed dangerously. &#34;I&#39;m your mother-in-law, Thalia is your sister-in-law. Isn&#39;t it our right to discipline you?&#34;</p>
+                        
+                        <p>A bitter smile touched my lips. The irony was almost amusing. &#34;So it&#39;s your right to hit me, but when I defend myself, you run crying to William?</p>
+                        
+                        <p>The glasses on the coffee table trembled as William&#39;s hand came down hard on its surface. &#34;What is she talking about?&#34; His voice carried the authority of someone used to commanding boardrooms. &#34;Rebecca?&#34;</p>
+                        
+                        <p>I watched as Rebecca&#39;s confidence faltered slightly. Thalia, who had been maintaining a hostile silence, suddenly found the carpet fascinating. I kept expressionless as I continued.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -888,23 +928,27 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Would you like to tell William about how you both attacked me last night?&#34; I asked, my tone conversational.&#34;Or should I describe how you</p>
-                    
-                    <p>held me while Thalia slapped me?&#34;</p>
-                    
-                    <p>William&#39;s face darkened with each word. &#34;Blake,&#34; he turned to his grandson, voice dangerously low. &#34;You just stood there watching your mother and sister attack her?&#34;</p>
-                    
-                    <p>&#34;Oh no,&#34; I cut in before Blake could respond, watching his jaw tighten.&#34;</p>
-                    
-                    <p>He didn&#39;t just watch. He pushed me into a marble pillar to get to Laurel.&#34;</p>
-                    
-                    <p>&#34;I did not push you,&#34; Blake&#39;s voice was cold as if telling me that it wasn&#39;t him that night. &#34;I was merely separating you two.&#34;</p>
-                    
-                    <p>William&#39;s teacup hit the floor. &#34;When you were in a coma,&#34; his voice shook with barely contained fury, &#34;Audrey cared for you day and night. Have you forgotten everything?&#34;</p>
-                    
-                    <p>I swayed slightly, grateful for the chair behind me as another wave of dizziness hit.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Would you like to tell William about how you both attacked me last night?&#34; I asked, my tone conversational.&#34;Or should I describe how you</p>
+                        
+                        <p>held me while Thalia slapped me?&#34;</p>
+                        
+                        <p>William&#39;s face darkened with each word. &#34;Blake,&#34; he turned to his grandson, voice dangerously low. &#34;You just stood there watching your mother and sister attack her?&#34;</p>
+                        
+                        <p>&#34;Oh no,&#34; I cut in before Blake could respond, watching his jaw tighten.&#34;</p>
+                        
+                        <p>He didn&#39;t just watch. He pushed me into a marble pillar to get to Laurel.&#34;</p>
+                        
+                        <p>&#34;I did not push you,&#34; Blake&#39;s voice was cold as if telling me that it wasn&#39;t him that night. &#34;I was merely separating you two.&#34;</p>
+                        
+                        <p>William&#39;s teacup hit the floor. &#34;When you were in a coma,&#34; his voice shook with barely contained fury, &#34;Audrey cared for you day and night. Have you forgotten everything?&#34;</p>
+                        
+                        <p>I swayed slightly, grateful for the chair behind me as another wave of dizziness hit.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -919,23 +963,27 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;William,&#34; I said softly, drawing his attention away from Blake. &#34;I need to tell you something.&#34;</p>
-                    
-                    <p>The room fell silent as I forced my legs to carry me to the center of the room. Every step felt like walking on broken glass, but I kept my spine straight. This was it - the moment I&#39;d been preparing for a long while.</p>
-                    
-                    <p>&#34;I had this idea since I lost my child - I want a divorce.&#34;</p>
-                    
-                    <p>Blake&#39;s sharp intake of breath was the only sound in the suddenly still room. I could feel his eyes burning into me, but I kept my gaze fixed on William.</p>
-                    
-                    <p>&#34;From the beginning,&#34; I continued slowly, &#34;this marriage was my one-sided love. Blake never cared for me. When Laurel returned...&#34; I paused,</p>
-                    
-                    <p>swallowing against the metallic taste that threatened to rise in my throat.&#34;Well, everyone can see where his heart truly lies.&#34;</p>
-                    
-                    <p>I took a steadying breath, gathering my courage. &#34;William, I hope you can understand and support my decision. I...”</p>
-                    
-                    <p>My words died in my throat as William&#39;s face suddenly turned a sickly shade of white. His hand clutched at his chest as he gasped for air, each breath seeming more difficult than the last.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;William,&#34; I said softly, drawing his attention away from Blake. &#34;I need to tell you something.&#34;</p>
+                        
+                        <p>The room fell silent as I forced my legs to carry me to the center of the room. Every step felt like walking on broken glass, but I kept my spine straight. This was it - the moment I&#39;d been preparing for a long while.</p>
+                        
+                        <p>&#34;I had this idea since I lost my child - I want a divorce.&#34;</p>
+                        
+                        <p>Blake&#39;s sharp intake of breath was the only sound in the suddenly still room. I could feel his eyes burning into me, but I kept my gaze fixed on William.</p>
+                        
+                        <p>&#34;From the beginning,&#34; I continued slowly, &#34;this marriage was my one-sided love. Blake never cared for me. When Laurel returned...&#34; I paused,</p>
+                        
+                        <p>swallowing against the metallic taste that threatened to rise in my throat.&#34;Well, everyone can see where his heart truly lies.&#34;</p>
+                        
+                        <p>I took a steadying breath, gathering my courage. &#34;William, I hope you can understand and support my decision. I...”</p>
+                        
+                        <p>My words died in my throat as William&#39;s face suddenly turned a sickly shade of white. His hand clutched at his chest as he gasped for air, each breath seeming more difficult than the last.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -950,23 +998,27 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Charles!&#34; Blake shouted.</p>
-                    
-                    <p>Charles appeared instantly with a bottle of heart medication, his usual composed demeanor showing cracks of genuine concern.</p>
-                    
-                    <p>&#34;You know grandpa can&#39;t handle such news,&#34; Blake&#39;s voice cut through the tension like ice. &#34;Are you trying to kill him?&#34;</p>
-                    
-                    <p>Thalia let out a cold laugh. &#34;Grandpa has always favored her the most, but look at her now - she doesn&#39;t care if her actions kill him!&#34;</p>
-                    
-                    <p>&#34;I&#39;m sorry, but...&#34; I said softly, my voice barely above a whisper. &#34;I can&#39;t keep pretending anymore.&#34;</p>
-                    
-                    <p>Slowly, deliberately, I lowered myself to my knees before William. The movement sent sharp pains through my stomach, but I ignored them.Taking his weathered hand in mine, I pressed my forehead against it in a gesture of deep respect.</p>
-                    
-                    <p>&#34;Thank you for everything you&#39;ve done for me, William,&#34; I said slowly,feeling tears threaten. &#34;I&#39;ll always be grateful for your kindness. Though I may no longer be part of this family, you&#39;ll forever be in my heart.&#34;</p>
-                    
-                    <p>William&#39;s hand trembled in mine as Charles approached with the</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Charles!&#34; Blake shouted.</p>
+                        
+                        <p>Charles appeared instantly with a bottle of heart medication, his usual composed demeanor showing cracks of genuine concern.</p>
+                        
+                        <p>&#34;You know grandpa can&#39;t handle such news,&#34; Blake&#39;s voice cut through the tension like ice. &#34;Are you trying to kill him?&#34;</p>
+                        
+                        <p>Thalia let out a cold laugh. &#34;Grandpa has always favored her the most, but look at her now - she doesn&#39;t care if her actions kill him!&#34;</p>
+                        
+                        <p>&#34;I&#39;m sorry, but...&#34; I said softly, my voice barely above a whisper. &#34;I can&#39;t keep pretending anymore.&#34;</p>
+                        
+                        <p>Slowly, deliberately, I lowered myself to my knees before William. The movement sent sharp pains through my stomach, but I ignored them.Taking his weathered hand in mine, I pressed my forehead against it in a gesture of deep respect.</p>
+                        
+                        <p>&#34;Thank you for everything you&#39;ve done for me, William,&#34; I said slowly,feeling tears threaten. &#34;I&#39;ll always be grateful for your kindness. Though I may no longer be part of this family, you&#39;ll forever be in my heart.&#34;</p>
+                        
+                        <p>William&#39;s hand trembled in mine as Charles approached with the</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -981,23 +1033,27 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>medication. Without hesitation, I reached up and took the pills from the butler&#39;s hand.</p>
-                    
-                    <p>&#34;These are new,&#34; I observed, studying the tablets before popping theminto my mouth. &#34;Fruit-flavored vitamin B complex. Larger than last time&#39;s.&#34;</p>
-                    
-                    <p>The room went deadly quiet.</p>
-                    
-                    <p>&#34;How did you...&#34; William started, then stopped as I pulled an envelope from my purse.</p>
-                    
-                    <p>&#34;Your latest health report,&#34; I said, placing it on the coffee table. &#34;I had three different specialists review it. You&#39;re in perfect health for your age,William.&#34;</p>
-                    
-                    <p>The color in William&#39;s face shifted from sickly white to embarrassed red.</p>
-                    
-                    <p>&#34;You know, William,&#34; I said softly, my lips curving into a gentle smile, &#34;you don&#39;t have to keep up this act. No more fake heart attacks to make me stay.&#34;</p>
-                    
-                    <p>&#34;This isn&#39;t some emotional outburst or rash decision,&#34; I continued, keeping my voice level. &#34;Ive spent a long time thinking about this. It&#39;s time to set us both free.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>medication. Without hesitation, I reached up and took the pills from the butler&#39;s hand.</p>
+                        
+                        <p>&#34;These are new,&#34; I observed, studying the tablets before popping theminto my mouth. &#34;Fruit-flavored vitamin B complex. Larger than last time&#39;s.&#34;</p>
+                        
+                        <p>The room went deadly quiet.</p>
+                        
+                        <p>&#34;How did you...&#34; William started, then stopped as I pulled an envelope from my purse.</p>
+                        
+                        <p>&#34;Your latest health report,&#34; I said, placing it on the coffee table. &#34;I had three different specialists review it. You&#39;re in perfect health for your age,William.&#34;</p>
+                        
+                        <p>The color in William&#39;s face shifted from sickly white to embarrassed red.</p>
+                        
+                        <p>&#34;You know, William,&#34; I said softly, my lips curving into a gentle smile, &#34;you don&#39;t have to keep up this act. No more fake heart attacks to make me stay.&#34;</p>
+                        
+                        <p>&#34;This isn&#39;t some emotional outburst or rash decision,&#34; I continued, keeping my voice level. &#34;Ive spent a long time thinking about this. It&#39;s time to set us both free.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1012,23 +1068,27 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>William seemed to age before my eyes, all pretense dropping away as he closed his eyes with a heavy sigh. &#34;Still the same stubborn girl who walked into my grandson&#39;s hospital room three years ago, aren&#39;t you?&#34; His voice carried a mix of fondness and resignation. &#34;Some things never change.&#34;</p>
-                    
-                    <p>When he opened his eyes again, they were suspiciously bright. &#34;Audrey...&#34;he paused, his voice rougher than usual. &#34;You were everything I could have wanted in a granddaughter,&#34;</p>
-                    
-                    <p>&#34;Maybe that&#39;s the problem,&#34; he added, shooting Blake a disappointed look.&#34;You and my grandson... perhaps it wasn&#39;t meant to be. God knows he doesn&#39;t deserve someone like you.&#34;</p>
-                    
-                    <p>He reached for a tissue, his hands trembling slightly as he dabbed at his eyes. &#34;I always imagined you&#39;d be here, running this family when I&#39;m too old to...&#34;</p>
-                    
-                    <p>*I&#39;m sorry, William*, I thought,*The cancer had already decided I wouldn&#39;t be here to see anyone grow old.*</p>
-                    
-                    <p>After composing himself, William fixed Blake with a hard stare. &#34;You screwed this up, boy. The least you can do is give her the divorce she wants.&#34; His voice dropped, heavy with finality. &#34;Let her go.&#34;</p>
-                    
-                    <p>&#34;Today,&#34; I said quickly, seizing the moment. My fingers twisted in my dress, trying to hide their trembling. &#34;We can do it today.&#34;</p>
-                    
-                    <p>I couldn&#39;t risk any delays. Not when Blake might change his mind, not when my time was running out like sand through an hourglass.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>William seemed to age before my eyes, all pretense dropping away as he closed his eyes with a heavy sigh. &#34;Still the same stubborn girl who walked into my grandson&#39;s hospital room three years ago, aren&#39;t you?&#34; His voice carried a mix of fondness and resignation. &#34;Some things never change.&#34;</p>
+                        
+                        <p>When he opened his eyes again, they were suspiciously bright. &#34;Audrey...&#34;he paused, his voice rougher than usual. &#34;You were everything I could have wanted in a granddaughter,&#34;</p>
+                        
+                        <p>&#34;Maybe that&#39;s the problem,&#34; he added, shooting Blake a disappointed look.&#34;You and my grandson... perhaps it wasn&#39;t meant to be. God knows he doesn&#39;t deserve someone like you.&#34;</p>
+                        
+                        <p>He reached for a tissue, his hands trembling slightly as he dabbed at his eyes. &#34;I always imagined you&#39;d be here, running this family when I&#39;m too old to...&#34;</p>
+                        
+                        <p>*I&#39;m sorry, William*, I thought,*The cancer had already decided I wouldn&#39;t be here to see anyone grow old.*</p>
+                        
+                        <p>After composing himself, William fixed Blake with a hard stare. &#34;You screwed this up, boy. The least you can do is give her the divorce she wants.&#34; His voice dropped, heavy with finality. &#34;Let her go.&#34;</p>
+                        
+                        <p>&#34;Today,&#34; I said quickly, seizing the moment. My fingers twisted in my dress, trying to hide their trembling. &#34;We can do it today.&#34;</p>
+                        
+                        <p>I couldn&#39;t risk any delays. Not when Blake might change his mind, not when my time was running out like sand through an hourglass.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1043,21 +1103,25 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Getting divorced today?&#34; Laurel&#39;s voice rose with barely concealed delight before she caught herself. Her face quickly turned into one of concern. &#34;Oh,what a terrible shame...&#34;</p>
-                    
-                    <p>&#34;A shame?&#34; William&#39;s laugh could have cut glass. &#34;That&#39;s rich,coming from you. Tell me, Miss Rose, would they be signing divorce papers if you hadn&#39;t slithered back into town?&#34;</p>
-                    
-                    <p>Laurel&#39;s mask cracked as she ducked her head, one hand flying to her chest in her signature gesture of distress.</p>
-                    
-                    <p>&#34;That&#39;s enough.&#34; Blake stepped forward, his jaw tight. &#34;Leave Laurel out of this. The divorce is between Audrey and me.&#34;</p>
-                    
-                    <p>&#34;Leave her out of it?&#34; William&#39;s voice rose dangerously. &#34;The woman who wormed her way back into your life and systematically destroyed your marriage? I&#39;m showing remarkable restraint by not having Charles throw her out on her clad behind!&#34;</p>
-                    
-                    <p>He turned away from Blake in disgust. &#34;Since you&#39;re all so eager to protect precious Miss Rose, stop wasting time and get those divorce papers signed!&#34;</p>
-                    
-                    <p>&#34;Let Audrey be free!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Getting divorced today?&#34; Laurel&#39;s voice rose with barely concealed delight before she caught herself. Her face quickly turned into one of concern. &#34;Oh,what a terrible shame...&#34;</p>
+                        
+                        <p>&#34;A shame?&#34; William&#39;s laugh could have cut glass. &#34;That&#39;s rich,coming from you. Tell me, Miss Rose, would they be signing divorce papers if you hadn&#39;t slithered back into town?&#34;</p>
+                        
+                        <p>Laurel&#39;s mask cracked as she ducked her head, one hand flying to her chest in her signature gesture of distress.</p>
+                        
+                        <p>&#34;That&#39;s enough.&#34; Blake stepped forward, his jaw tight. &#34;Leave Laurel out of this. The divorce is between Audrey and me.&#34;</p>
+                        
+                        <p>&#34;Leave her out of it?&#34; William&#39;s voice rose dangerously. &#34;The woman who wormed her way back into your life and systematically destroyed your marriage? I&#39;m showing remarkable restraint by not having Charles throw her out on her clad behind!&#34;</p>
+                        
+                        <p>He turned away from Blake in disgust. &#34;Since you&#39;re all so eager to protect precious Miss Rose, stop wasting time and get those divorce papers signed!&#34;</p>
+                        
+                        <p>&#34;Let Audrey be free!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2373,6 +2437,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2499,7 +2643,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2541,32 +2684,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2577,21 +2702,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2624,6 +2739,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2644,20 +2765,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

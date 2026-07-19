@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.029631">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.029631">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.223762">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.223762">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.029631",
-        "dateModified": "2026-07-19T02:47:19.029631",
+        "datePublished": "2026-07-19T13:03:14.223762",
+        "dateModified": "2026-07-19T13:03:14.223762",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,31 +893,35 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Blake&#39;s POV**</p>
-                    
-                    <p>William Parker rested against the hospital bed, afternoon light streaming through the half-drawn blinds.I stood beside him, holding his hand,feeling how fragile his bones had become.</p>
-                    
-                    <p>&#34;I don&#39;t have any other requests,&#34; William said, his voice weak but clear.</p>
-                    
-                    <p>&#34;You should arrange Audrey&#39;s funeral as soon as possible.&#34;</p>
-                    
-                    <p>My hand tensed around his.</p>
-                    
-                    <p>&#34;Your grandfather has no wishes now,&#34; he continued.′′Ijust want to see Audrey properly laid to rest before I die.&#34;</p>
-                    
-                    <p>I lifted my head, looking directly at him. Something in my chest tightened.</p>
-                    
-                    <p>&#34;Grandfather,&#34; I said quietly.&#34;Doyou really believe she&#39;s dead too?&#34;</p>
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>&#34;Checkmate! I win this time!&#34;</p>
-                    
-                    <p>Felix&#39;s voice pulled me from darkness. My eyes opened slowly, adjusting to the brightness of an unfamiliar room. In the corner, Felix sat with an elderly man at a chess board.</p>
-                    
-                    <p>&#34;You little rascal.,&#34; The old man said, stroking his beard. &#34;No respect for your elders anymore,huh?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Blake&#39;s POV**</p>
+                        
+                        <p>William Parker rested against the hospital bed, afternoon light streaming through the half-drawn blinds.I stood beside him, holding his hand,feeling how fragile his bones had become.</p>
+                        
+                        <p>&#34;I don&#39;t have any other requests,&#34; William said, his voice weak but clear.</p>
+                        
+                        <p>&#34;You should arrange Audrey&#39;s funeral as soon as possible.&#34;</p>
+                        
+                        <p>My hand tensed around his.</p>
+                        
+                        <p>&#34;Your grandfather has no wishes now,&#34; he continued.′′Ijust want to see Audrey properly laid to rest before I die.&#34;</p>
+                        
+                        <p>I lifted my head, looking directly at him. Something in my chest tightened.</p>
+                        
+                        <p>&#34;Grandfather,&#34; I said quietly.&#34;Doyou really believe she&#39;s dead too?&#34;</p>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>&#34;Checkmate! I win this time!&#34;</p>
+                        
+                        <p>Felix&#39;s voice pulled me from darkness. My eyes opened slowly, adjusting to the brightness of an unfamiliar room. In the corner, Felix sat with an elderly man at a chess board.</p>
+                        
+                        <p>&#34;You little rascal.,&#34; The old man said, stroking his beard. &#34;No respect for your elders anymore,huh?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -896,31 +936,35 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Fellx grinned. &#34;So you&#39;ve been letting me win all these years?&#34;</p>
-                    
-                    <p>&#34;Nonsense,&#34; The old man snorted. &#34;I know exactly how bad I am at chess.&#34;</p>
-                    
-                    <p>He turned and noticed I was awake. I recognized him immediately- Dr.Harrison Clarke, the renowned physician who had helped wake Blake from his vegetative state two years ago. His demeanor shifted instantly to professional assessment:</p>
-                    
-                    <p>&#34;Look who&#39;s back,&#34; he said, approaching my bed. &#34;You&#39;ve been out for a day.How do you feel?&#34;</p>
-                    
-                    <p>My throat burned. &#34;You saved me...&#34;</p>
-                    
-                    <p>&#34;Of course!&#34; he replied. &#34;Though racing cars into rivers with terminal cancer isn&#39;t exactly recommended. You&#39;re lucky to be alive at all.&#34;</p>
-                    
-                    <p>Felix jumped in. &#34;Grandpa, cut it out. She did it for her friend and for me.&#34;</p>
-                    
-                    <p>Dr. Clarke shot Felix a cold look. &#34;You&#39;re not one to talk. A grown man letting a dying woman take risks for him!&#34;</p>
-                    
-                    <p>Felix fell silent,looking away.</p>
-                    
-                    <p>I glanced between them. &#34;You two are...&#34;</p>
-                    
-                    <p>&#34;He&#39;s my grandfather,&#34; Felix confirmed. &#34;I didn&#39;t know how sick you were until recently. If I&#39;d known sooner, I would&#39;ve asked him to help you.&#34;</p>
-                    
-                    <p>I managed a smile. &#34;It&#39;s fine. Life and death are determined by fate. I&#39;ve been ready for the end since my diagnosis.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Fellx grinned. &#34;So you&#39;ve been letting me win all these years?&#34;</p>
+                        
+                        <p>&#34;Nonsense,&#34; The old man snorted. &#34;I know exactly how bad I am at chess.&#34;</p>
+                        
+                        <p>He turned and noticed I was awake. I recognized him immediately- Dr.Harrison Clarke, the renowned physician who had helped wake Blake from his vegetative state two years ago. His demeanor shifted instantly to professional assessment:</p>
+                        
+                        <p>&#34;Look who&#39;s back,&#34; he said, approaching my bed. &#34;You&#39;ve been out for a day.How do you feel?&#34;</p>
+                        
+                        <p>My throat burned. &#34;You saved me...&#34;</p>
+                        
+                        <p>&#34;Of course!&#34; he replied. &#34;Though racing cars into rivers with terminal cancer isn&#39;t exactly recommended. You&#39;re lucky to be alive at all.&#34;</p>
+                        
+                        <p>Felix jumped in. &#34;Grandpa, cut it out. She did it for her friend and for me.&#34;</p>
+                        
+                        <p>Dr. Clarke shot Felix a cold look. &#34;You&#39;re not one to talk. A grown man letting a dying woman take risks for him!&#34;</p>
+                        
+                        <p>Felix fell silent,looking away.</p>
+                        
+                        <p>I glanced between them. &#34;You two are...&#34;</p>
+                        
+                        <p>&#34;He&#39;s my grandfather,&#34; Felix confirmed. &#34;I didn&#39;t know how sick you were until recently. If I&#39;d known sooner, I would&#39;ve asked him to help you.&#34;</p>
+                        
+                        <p>I managed a smile. &#34;It&#39;s fine. Life and death are determined by fate. I&#39;ve been ready for the end since my diagnosis.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -935,31 +979,35 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>I turned to Dr. Clarke. &#34;My friend... can you help her? Your team woke Blake from his vegetative state. Could you do the same for her?&#34;</p>
-                    
-                    <p>Dr. Clarke raised an eyebrow. &#34;You&#39;re dying, and you&#39;re worried about your vegetative friend?&#34;</p>
-                    
-                    <p>&#34;Because I&#39;m dying.&#34; I said firmly. &#34;That&#39;s why I want her to wake up.She still has time to recover.&#34;</p>
-                    
-                    <p>He studied me, then sighed, his experienced eyes assessing my condition.</p>
-                    
-                    <p>&#34;Do you know why I came to New York?&#34; he asked.</p>
-                    
-                    <p>&#34;It was -&#34;</p>
-                    
-                    <p>&#34;To treat your friend,&#34; he interrupted. &#34;Blake Parker hired my entire team to come here and treat Rachel Hayes. He said she&#39;s important to him and he&#39;d pay anything to wake her.&#34;</p>
-                    
-                    <p>I stared at him, struggling to process this.</p>
-                    
-                    <p>&#34;Quite ironic,&#34; he continued. &#34;He pays to bring me here for Rachel, while you try to smuggle her out so I can treat her abroad. Is there some misunderstanding between you two?&#34;</p>
-                    
-                    <p>&#34;Aren&#39;t you two married? I think you should take... &#34;</p>
-                    
-                    <p>&#34;Blake and I are divorced,&#34; I interrupted.</p>
-                    
-                    <p>His eyebrows shot up.&#34;Divorced? How? When I treated Blake two years ago,you seemed inseparable.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>I turned to Dr. Clarke. &#34;My friend... can you help her? Your team woke Blake from his vegetative state. Could you do the same for her?&#34;</p>
+                        
+                        <p>Dr. Clarke raised an eyebrow. &#34;You&#39;re dying, and you&#39;re worried about your vegetative friend?&#34;</p>
+                        
+                        <p>&#34;Because I&#39;m dying.&#34; I said firmly. &#34;That&#39;s why I want her to wake up.She still has time to recover.&#34;</p>
+                        
+                        <p>He studied me, then sighed, his experienced eyes assessing my condition.</p>
+                        
+                        <p>&#34;Do you know why I came to New York?&#34; he asked.</p>
+                        
+                        <p>&#34;It was -&#34;</p>
+                        
+                        <p>&#34;To treat your friend,&#34; he interrupted. &#34;Blake Parker hired my entire team to come here and treat Rachel Hayes. He said she&#39;s important to him and he&#39;d pay anything to wake her.&#34;</p>
+                        
+                        <p>I stared at him, struggling to process this.</p>
+                        
+                        <p>&#34;Quite ironic,&#34; he continued. &#34;He pays to bring me here for Rachel, while you try to smuggle her out so I can treat her abroad. Is there some misunderstanding between you two?&#34;</p>
+                        
+                        <p>&#34;Aren&#39;t you two married? I think you should take... &#34;</p>
+                        
+                        <p>&#34;Blake and I are divorced,&#34; I interrupted.</p>
+                        
+                        <p>His eyebrows shot up.&#34;Divorced? How? When I treated Blake two years ago,you seemed inseparable.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -974,31 +1022,35 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>He shook his head. &#34;William Parker wouldn&#39;t stop bragging about his grandson&#39;s devoted wife. I&#39;ve been using you two as my example of enduring love at medical conferences.&#34;</p>
-                    
-                    <p>&#34;In our field, we see relationships crumble under medical stress. You two were different.&#34;</p>
-                    
-                    <p>Felix cleared his throat. &#34;Grandpa, they&#39;re divorced. No need to reopen old wounds. Blake left her for someone else, Let&#39;s change the subject.&#34;</p>
-                    
-                    <p>He turned to me. &#34;Hungry? Thirsty? I can make my grandfather get you something.&#34;</p>
-                    
-                    <p>&#34;You insolent kid!&#34;Dr. Clarke sputtered. &#34;I&#39;m your elder! You can&#39;t order me around.&#34;</p>
-                    
-                    <p>&#34;I need to talk to Audrey alone,&#34; Felix replied, nudging his grandfather toward the door. &#34;Young people stuff. No doctors allowed.&#34;</p>
-                    
-                    <p>&#34;Go get her some water.&#34;</p>
-                    
-                    <p>Dr. Clarke frowned but left, muttering under his breath about disrespectful grandchildren.</p>
-                    
-                    <p>When the door closed, Felix sat beside my bed.</p>
-                    
-                    <p>&#34;Sorry about my grandfather,&#34; he said quietly. &#34;Don&#39;t take his comments about you and Blake to heart.&#34;</p>
-                    
-                    <p>I smiled faintly. &#34;It&#39;s okay. What he described was real once. I can handle memories.&#34;</p>
-                    
-                    <p>Felix nodded. &#34;The Parkers are in chaos right now. Rebecca called everyone to the hospital thinking William was dying. Now he&#39;s recovering.and they&#39;re all stuck.there.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>He shook his head. &#34;William Parker wouldn&#39;t stop bragging about his grandson&#39;s devoted wife. I&#39;ve been using you two as my example of enduring love at medical conferences.&#34;</p>
+                        
+                        <p>&#34;In our field, we see relationships crumble under medical stress. You two were different.&#34;</p>
+                        
+                        <p>Felix cleared his throat. &#34;Grandpa, they&#39;re divorced. No need to reopen old wounds. Blake left her for someone else, Let&#39;s change the subject.&#34;</p>
+                        
+                        <p>He turned to me. &#34;Hungry? Thirsty? I can make my grandfather get you something.&#34;</p>
+                        
+                        <p>&#34;You insolent kid!&#34;Dr. Clarke sputtered. &#34;I&#39;m your elder! You can&#39;t order me around.&#34;</p>
+                        
+                        <p>&#34;I need to talk to Audrey alone,&#34; Felix replied, nudging his grandfather toward the door. &#34;Young people stuff. No doctors allowed.&#34;</p>
+                        
+                        <p>&#34;Go get her some water.&#34;</p>
+                        
+                        <p>Dr. Clarke frowned but left, muttering under his breath about disrespectful grandchildren.</p>
+                        
+                        <p>When the door closed, Felix sat beside my bed.</p>
+                        
+                        <p>&#34;Sorry about my grandfather,&#34; he said quietly. &#34;Don&#39;t take his comments about you and Blake to heart.&#34;</p>
+                        
+                        <p>I smiled faintly. &#34;It&#39;s okay. What he described was real once. I can handle memories.&#34;</p>
+                        
+                        <p>Felix nodded. &#34;The Parkers are in chaos right now. Rebecca called everyone to the hospital thinking William was dying. Now he&#39;s recovering.and they&#39;re all stuck.there.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1013,31 +1065,35 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>He laughed. &#34;Elizabeth and Rebecca are at each other&#39;s throats. Elizabeth called Rebecca heartless for waiting for William to die, and Rebecca fired back that Elizabeth was already checking the will.&#34;</p>
-                    
-                    <p>&#34;New York&#39;s first family falling apart over inheritance before the old man&#39;s even gone.&#34;</p>
-                    
-                    <p>I closed my eyes, smiling coldly. &#34;They&#39;ve always been like this. Most</p>
-                    
-                    <p>people never see behind the facade.&#34;</p>
-                    
-                    <p>I hesitated before asking. &#34;What about Blake?&#34;</p>
-                    
-                    <p>&#34;Still care about him?&#34; Felix asked, his expression darkening.</p>
-                    
-                    <p>&#34;Just curious,&#34; I said quickly. &#34;Did you contact Astrid?&#34;</p>
-                    
-                    <p>&#34;Yeah, borrowed a phone at the hospital. She knows you&#39;re safe.&#34;</p>
-                    
-                    <p>He paused. &#34;About Blake... after checking on William, he went back to the river. He&#39;s still searching for you.&#34;</p>
-                    
-                    <p>&#34;William wanted to arrange your funeral, but Blake refused. Said unless they find your body, he won&#39;t believe you&#39;re dead.&#34;</p>
-                    
-                    <p>Felix showed me his phone. &#34;Someone posted this earlier.&#34;</p>
-                    
-                    <p>On screen was Blake in a rescue boat, wearing a life vest, searching the water. His face was drawn with worry, his appearance disheveled.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>He laughed. &#34;Elizabeth and Rebecca are at each other&#39;s throats. Elizabeth called Rebecca heartless for waiting for William to die, and Rebecca fired back that Elizabeth was already checking the will.&#34;</p>
+                        
+                        <p>&#34;New York&#39;s first family falling apart over inheritance before the old man&#39;s even gone.&#34;</p>
+                        
+                        <p>I closed my eyes, smiling coldly. &#34;They&#39;ve always been like this. Most</p>
+                        
+                        <p>people never see behind the facade.&#34;</p>
+                        
+                        <p>I hesitated before asking. &#34;What about Blake?&#34;</p>
+                        
+                        <p>&#34;Still care about him?&#34; Felix asked, his expression darkening.</p>
+                        
+                        <p>&#34;Just curious,&#34; I said quickly. &#34;Did you contact Astrid?&#34;</p>
+                        
+                        <p>&#34;Yeah, borrowed a phone at the hospital. She knows you&#39;re safe.&#34;</p>
+                        
+                        <p>He paused. &#34;About Blake... after checking on William, he went back to the river. He&#39;s still searching for you.&#34;</p>
+                        
+                        <p>&#34;William wanted to arrange your funeral, but Blake refused. Said unless they find your body, he won&#39;t believe you&#39;re dead.&#34;</p>
+                        
+                        <p>Felix showed me his phone. &#34;Someone posted this earlier.&#34;</p>
+                        
+                        <p>On screen was Blake in a rescue boat, wearing a life vest, searching the water. His face was drawn with worry, his appearance disheveled.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1052,31 +1108,35 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>I laughed bitterly. &#34;Seems he&#39;s learned to act from Laurel.&#34;</p>
-                    
-                    <p>I turned away from the photo. *When did Blake ever care about me? Now I&#39;m &#39;dead,&#39; and suddlenly he&#39;s heartbroken? Who&#39;s he putting on this show for?*</p>
-                    
-                    <p>Felix sighed in relief. &#34;Good. I was afraid you&#39;d see this and want to go back to him.&#34;</p>
-                    
-                    <p>&#34;Never,&#34; I said firmly. &#34;Not happening.&#34;</p>
-                    
-                    <p>Dr. Clarke walked in with a glass of water and handed it to me. As I drank, he stood nearby, stroking his beard with a troubled look,</p>
-                    
-                    <p>I caught his hesitation right away.</p>
-                    
-                    <p>&#34;Dr. Clarke,&#34; I said, setting down my glass. &#34;Whatever it is, just tell me.&#34;</p>
-                    
-                    <p>He sighed. &#34;I checked on your friend.&#34;</p>
-                    
-                    <p>I straightened up despite the pain shooting through my body. &#34;Rachel...how is she?&#34;</p>
-                    
-                    <p>&#34;Can she wake up?&#34;</p>
-                    
-                    <p>&#34;Yes.&#34; Dr. Clarke nodded. &#34;She&#39;s in better shape than Blake was two years ago.&#34;</p>
-                    
-                    <p>His eyes narrowed as he studied me. &#34;Who&#39;s been taking care of her all this time?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>I laughed bitterly. &#34;Seems he&#39;s learned to act from Laurel.&#34;</p>
+                        
+                        <p>I turned away from the photo. *When did Blake ever care about me? Now I&#39;m &#39;dead,&#39; and suddlenly he&#39;s heartbroken? Who&#39;s he putting on this show for?*</p>
+                        
+                        <p>Felix sighed in relief. &#34;Good. I was afraid you&#39;d see this and want to go back to him.&#34;</p>
+                        
+                        <p>&#34;Never,&#34; I said firmly. &#34;Not happening.&#34;</p>
+                        
+                        <p>Dr. Clarke walked in with a glass of water and handed it to me. As I drank, he stood nearby, stroking his beard with a troubled look,</p>
+                        
+                        <p>I caught his hesitation right away.</p>
+                        
+                        <p>&#34;Dr. Clarke,&#34; I said, setting down my glass. &#34;Whatever it is, just tell me.&#34;</p>
+                        
+                        <p>He sighed. &#34;I checked on your friend.&#34;</p>
+                        
+                        <p>I straightened up despite the pain shooting through my body. &#34;Rachel...how is she?&#34;</p>
+                        
+                        <p>&#34;Can she wake up?&#34;</p>
+                        
+                        <p>&#34;Yes.&#34; Dr. Clarke nodded. &#34;She&#39;s in better shape than Blake was two years ago.&#34;</p>
+                        
+                        <p>His eyes narrowed as he studied me. &#34;Who&#39;s been taking care of her all this time?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1091,25 +1151,29 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Her mother,&#34; I replied.</p>
-                    
-                    <p>&#34;Her mother?&#34; His eyebrows shot up. &#34;What did Rachel do to deserve that kind of treatment?&#34;</p>
-                    
-                    <p>I blinked, confused. &#34;What do you mean?&#34;</p>
-                    
-                    <p>Dr. Clarke pulled a small box from his pocket and set it on the bed. &#34;This drug causes brain lethargy. Makes perfectly healthy people look vegetative-can&#39;t move, can&#39;t speak.&#34;</p>
-                    
-                    <p>He crossed his arms. &#34;My team&#39;s assessment shows your friend didn&#39;t suffer brain damage from her fall. She broke some bones, but her brain was fine.&#34;</p>
-                    
-                    <p>&#34;She&#39;s only in this state because someone&#39;s been injecting her with this stuff for four years, keeping her paralyzed but conscious.&#34;</p>
-                    
-                    <p>The room spun around me. My mouth went dry.</p>
-                    
-                    <p>&#34;So Rachel wasn&#39;t brain-damaged?&#34; My voice came out barely above a whisper. &#34;She&#39;s not actually a vegetative patient?&#34;</p>
-                    
-                    <p>&#34;Someone&#39;s been drugging her to keep her like this?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Her mother,&#34; I replied.</p>
+                        
+                        <p>&#34;Her mother?&#34; His eyebrows shot up. &#34;What did Rachel do to deserve that kind of treatment?&#34;</p>
+                        
+                        <p>I blinked, confused. &#34;What do you mean?&#34;</p>
+                        
+                        <p>Dr. Clarke pulled a small box from his pocket and set it on the bed. &#34;This drug causes brain lethargy. Makes perfectly healthy people look vegetative-can&#39;t move, can&#39;t speak.&#34;</p>
+                        
+                        <p>He crossed his arms. &#34;My team&#39;s assessment shows your friend didn&#39;t suffer brain damage from her fall. She broke some bones, but her brain was fine.&#34;</p>
+                        
+                        <p>&#34;She&#39;s only in this state because someone&#39;s been injecting her with this stuff for four years, keeping her paralyzed but conscious.&#34;</p>
+                        
+                        <p>The room spun around me. My mouth went dry.</p>
+                        
+                        <p>&#34;So Rachel wasn&#39;t brain-damaged?&#34; My voice came out barely above a whisper. &#34;She&#39;s not actually a vegetative patient?&#34;</p>
+                        
+                        <p>&#34;Someone&#39;s been drugging her to keep her like this?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2425,6 +2489,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2551,7 +2695,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2593,32 +2736,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2629,21 +2754,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2676,6 +2791,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2696,20 +2817,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:43.765425">
-    <meta property="article:modified_time" content="2026-07-19T02:47:43.765425">
+    <meta property="article:published_time" content="2026-07-19T13:03:36.883381">
+    <meta property="article:modified_time" content="2026-07-19T13:03:36.883381">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:43">
+    <meta name="last-modified" content="2026-07-19 13:03:36">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:43.765425",
-        "dateModified": "2026-07-19T02:47:43.765425",
+        "datePublished": "2026-07-19T13:03:36.883381",
+        "dateModified": "2026-07-19T13:03:36.883381",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>J was a lucrative opportunity she had eyed from the start. With J’s achievements, securing the number-one spot would be within her grasp.</p>
-                    
-                    <p>Due to the NCI competition’s rules, Lilian could only exchange resources with J. The conditions she proposed were the shares in an unpromising company within NCI.</p>
-                    
-                    <p>It was worth noting that while this particular company didn’t hold much promise in the virtual software realm, it was a solid asset for Lilian in the real world.</p>
-                    
-                    <p>As long as J agreed to sell off their shares in the virtual world to support Lilian’s company, she could hand over this business to J—someone with no prior connections—to manage in the real world.</p>
-                    
-                    <p>For J, it would be a golden platform to showcase their talents, while Lilian could gain recognition in the virtual world and, in reality, have a competent person under her control. This arrangement would also ensure that J felt indebted to her. Additionally, Lilian’s father would be proud, her social reputation would soar… In many ways, she stood to gain quite a lot from the deal.</p>
-                    
-                    <p>However, these benefits, tempting as they might seem to someone inexperienced in the real world, came across as thinly veiled manipulation to Madisyn. Lilian’s words and the draft contract revealed everything Madisyn needed to know: Lilian was overbearing to a fault. To Madisyn, the supposed “cooperation” felt less like a favor and more like a subtle threat—a ticking time bomb waiting to go off.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>J was a lucrative opportunity she had eyed from the start. With J’s achievements, securing the number-one spot would be within her grasp.</p>
+                        
+                        <p>Due to the NCI competition’s rules, Lilian could only exchange resources with J. The conditions she proposed were the shares in an unpromising company within NCI.</p>
+                        
+                        <p>It was worth noting that while this particular company didn’t hold much promise in the virtual software realm, it was a solid asset for Lilian in the real world.</p>
+                        
+                        <p>As long as J agreed to sell off their shares in the virtual world to support Lilian’s company, she could hand over this business to J—someone with no prior connections—to manage in the real world.</p>
+                        
+                        <p>For J, it would be a golden platform to showcase their talents, while Lilian could gain recognition in the virtual world and, in reality, have a competent person under her control. This arrangement would also ensure that J felt indebted to her. Additionally, Lilian’s father would be proud, her social reputation would soar… In many ways, she stood to gain quite a lot from the deal.</p>
+                        
+                        <p>However, these benefits, tempting as they might seem to someone inexperienced in the real world, came across as thinly veiled manipulation to Madisyn. Lilian’s words and the draft contract revealed everything Madisyn needed to know: Lilian was overbearing to a fault. To Madisyn, the supposed “cooperation” felt less like a favor and more like a subtle threat—a ticking time bomb waiting to go off.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Unfazed, she tapped her slender fingers against the keyboard and stated her demands.</p>
-                    
-                    <p>J said, “I can sell the shares, but I want the development rights to Fisher Bay.”</p>
-                    
-                    <p>“Are you sure?” Lilian asked.</p>
-                    
-                    <p>“Yes. Do you agree?” J confirmed.</p>
-                    
-                    <p>Lilian hesitated. Suspicion flickered in her eyes. Was J truly this naive? Lilian, who had accompanied her father to countless negotiation tables since she was a child, had never seen anyone willingly reduce their own benefit instead of clawing for more.</p>
-                    
-                    <p>Lilian didn’t answer right away. Her wine glass paused mid-swirl.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Unfazed, she tapped her slender fingers against the keyboard and stated her demands.</p>
+                        
+                        <p>J said, “I can sell the shares, but I want the development rights to Fisher Bay.”</p>
+                        
+                        <p>“Are you sure?” Lilian asked.</p>
+                        
+                        <p>“Yes. Do you agree?” J confirmed.</p>
+                        
+                        <p>Lilian hesitated. Suspicion flickered in her eyes. Was J truly this naive? Lilian, who had accompanied her father to countless negotiation tables since she was a child, had never seen anyone willingly reduce their own benefit instead of clawing for more.</p>
+                        
+                        <p>Lilian didn’t answer right away. Her wine glass paused mid-swirl.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>She couldn’t shake the feeling that J had ulterior motives. Yet, Fisher Bay’s value had plummeted during the initial stages of the NCI competition.</p>
-                    
-                    <p>Back then, a virtual government policy to add a port had turned Fisher Bay into a hotspot. Enthusiasts eagerly invested their first earnings, and Lilian had followed the trend, albeit with limited liquid assets.</p>
-                    
-                    <p>Her holdings were modest compared to others, leaving her frustrated. However, Fisher Bay’s skyrocketing demand pushed the government to reject its development policy.</p>
-                    
-                    <p>Leaving investors trapped in a financial mess, Fisher Bay’s collapse was a cruel twist of fate. By sheer luck, Lilian’s limited funds spared her from the fallout.</p>
-                    
-                    <p>Those who had amassed substantial capital in the beginning were considered the crème de la crème of the industry. Yet, their fortune was undone by pure bad luck. Lilian, however, found herself with more financial resources and fewer rivals. Seizing the opportunity, she rose to become the third-ranked star of the industry.</p>
-                    
-                    <p>Analysts consistently predicted that Fisher Bay would never recover, leaving Lilian to question J’s intentions. Was J trying to curry favor?</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>She couldn’t shake the feeling that J had ulterior motives. Yet, Fisher Bay’s value had plummeted during the initial stages of the NCI competition.</p>
+                        
+                        <p>Back then, a virtual government policy to add a port had turned Fisher Bay into a hotspot. Enthusiasts eagerly invested their first earnings, and Lilian had followed the trend, albeit with limited liquid assets.</p>
+                        
+                        <p>Her holdings were modest compared to others, leaving her frustrated. However, Fisher Bay’s skyrocketing demand pushed the government to reject its development policy.</p>
+                        
+                        <p>Leaving investors trapped in a financial mess, Fisher Bay’s collapse was a cruel twist of fate. By sheer luck, Lilian’s limited funds spared her from the fallout.</p>
+                        
+                        <p>Those who had amassed substantial capital in the beginning were considered the crème de la crème of the industry. Yet, their fortune was undone by pure bad luck. Lilian, however, found herself with more financial resources and fewer rivals. Seizing the opportunity, she rose to become the third-ranked star of the industry.</p>
+                        
+                        <p>Analysts consistently predicted that Fisher Bay would never recover, leaving Lilian to question J’s intentions. Was J trying to curry favor?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Despite her reservations, Lilian recognized that selling her shares in Fisher Bay would help recover frozen funds, which ultimately worked to her advantage.</p>
-                    
-                    <p>After careful consideration, Lilian agreed.</p>
-                    
-                    <p>“Okay, Mr. J, it’s a pleasure doing business with you,” Lilian said, offering a faint smile.</p>
-                    
-                    <p>J replied, “Likewise.”</p>
-                    
-                    <p>As Lilian exited the chat, a sly glint sparkled in Madisyn’s eyes, making her look like a cunning fox.</p>
-                    
-                    <p>Fisher Bay was the next project she had her sights set on. Ordinarily, securing its development rights would have required a great deal of effort, but with Lilian’s unexpected offer, Madisyn had managed to wrap it up effortlessly.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Despite her reservations, Lilian recognized that selling her shares in Fisher Bay would help recover frozen funds, which ultimately worked to her advantage.</p>
+                        
+                        <p>After careful consideration, Lilian agreed.</p>
+                        
+                        <p>“Okay, Mr. J, it’s a pleasure doing business with you,” Lilian said, offering a faint smile.</p>
+                        
+                        <p>J replied, “Likewise.”</p>
+                        
+                        <p>As Lilian exited the chat, a sly glint sparkled in Madisyn’s eyes, making her look like a cunning fox.</p>
+                        
+                        <p>Fisher Bay was the next project she had her sights set on. Ordinarily, securing its development rights would have required a great deal of effort, but with Lilian’s unexpected offer, Madisyn had managed to wrap it up effortlessly.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Andrew, who had been silently observing the negotiation, knew Madisyn had her own plans. Still, he couldn’t help but issue a warning.</p>
-                    
-                    <p>“You need to be careful working with Lilian. She’s not someone to cross—she holds grudges.”</p>
-                    
-                    <p>Madisyn shot him a reassuring look, her lips curling into a mischievous smile. She reached out, pinched his sharp chin, and chuckled.</p>
-                    
-                    <p>“Don’t worry. She doesn’t even know who I am. To her, I’m just a regular student.”</p>
-                    
-                    <p>“Well, you’re the smartest.”</p>
-                    
-                    <p>A warm smile spread across Andrew’s face. He leaned in closer, allowing her to toy with his features.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Andrew, who had been silently observing the negotiation, knew Madisyn had her own plans. Still, he couldn’t help but issue a warning.</p>
+                        
+                        <p>“You need to be careful working with Lilian. She’s not someone to cross—she holds grudges.”</p>
+                        
+                        <p>Madisyn shot him a reassuring look, her lips curling into a mischievous smile. She reached out, pinched his sharp chin, and chuckled.</p>
+                        
+                        <p>“Don’t worry. She doesn’t even know who I am. To her, I’m just a regular student.”</p>
+                        
+                        <p>“Well, you’re the smartest.”</p>
+                        
+                        <p>A warm smile spread across Andrew’s face. He leaned in closer, allowing her to toy with his features.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Madisyn felt a wave of contentment seeing Andrew’s loyalty, which only added to her amusement. She leaned in and planted a soft kiss on his face.</p>
-                    
-                    <p>“Andrew, I think I like you a little more again.”</p>
-                    
-                    <p>After the kiss, Madisyn pouted and wrapped her arms around Andrew’s neck, refusing to let go, as if she couldn’t get enough of his comforting, warm, and woody scent.</p>
-                    
-                    <p>Seeing her clinginess, Andrew’s dark eyes softened, and a smile tugged at his lips. In that moment, he thought his efforts had finally paid off. He had finally managed to capture her interest. He whispered in a low, affectionate tone, “Well, I’m honored.”</p>
-                    
-                    <p>.</p>
-                    
-                    <p>.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Madisyn felt a wave of contentment seeing Andrew’s loyalty, which only added to her amusement. She leaned in and planted a soft kiss on his face.</p>
+                        
+                        <p>“Andrew, I think I like you a little more again.”</p>
+                        
+                        <p>After the kiss, Madisyn pouted and wrapped her arms around Andrew’s neck, refusing to let go, as if she couldn’t get enough of his comforting, warm, and woody scent.</p>
+                        
+                        <p>Seeing her clinginess, Andrew’s dark eyes softened, and a smile tugged at his lips. In that moment, he thought his efforts had finally paid off. He had finally managed to capture her interest. He whispered in a low, affectionate tone, “Well, I’m honored.”</p>
+                        
+                        <p>.</p>
+                        
+                        <p>.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,13 +1079,17 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>.</p>
-                    
-                    <p>Message from Noah: Nice Sunday dear readers. God loves you and Noah whishes you all the best (?O?=)? ?</p>
-                    
-                    <p>.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>.</p>
+                        
+                        <p>Message from Noah: Nice Sunday dear readers. God loves you and Noah whishes you all the best (?O?=)? ?</p>
+                        
+                        <p>.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2341,6 +2405,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2467,7 +2611,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2509,32 +2652,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2545,21 +2670,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2592,6 +2707,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2612,20 +2733,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

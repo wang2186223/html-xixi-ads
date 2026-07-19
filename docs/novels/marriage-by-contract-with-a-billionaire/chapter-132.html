@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:29.779673">
-    <meta property="article:modified_time" content="2026-07-19T02:47:29.779673">
+    <meta property="article:published_time" content="2026-07-19T13:03:24.161342">
+    <meta property="article:modified_time" content="2026-07-19T13:03:24.161342">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:29">
+    <meta name="last-modified" content="2026-07-19 13:03:24">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:29.779673",
-        "dateModified": "2026-07-19T02:47:29.779673",
+        "datePublished": "2026-07-19T13:03:24.161342",
+        "dateModified": "2026-07-19T13:03:24.161342",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,29 +893,33 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>A few days later, the time finally came for Lily to be discharged from the hospital after two long weeks. Alexander had agreed to let her go.</p>
-                    
-                    <p>&#34;The security team will be here shortly to pick you and Viola up.&#34; Roland informed her.</p>
-                    
-                    <p>&#34;Mmm,&#34; she murmured in response.</p>
-                    
-                    <p>Roland turned to leave but paused. &#34;I know things aren&#39;t right between you and Alexander, but please don&#39;t do anything that will push him further away. I&#39;m begging you,&#34; he said, his tone full of concern before walking out.</p>
-                    
-                    <p>Lily understood why he was so serious. It wasn&#39;t just because the situation had affected everyone, especially changing Alexander&#39;s behavior, but because Roland feared for her safety. He knew that if anything happened to her, Alexander would lose it since she meant everything to him.</p>
-                    
-                    <p>Reflecting on Roland&#39;s words made Lily briefly reconsider her plan.However, she knew who was after her and believed that person had a plan in motion to eliminate her. She couldn&#39;t back down.</p>
-                    
-                    <p>&#34;Are you having second thoughts?&#34; Sarah, her friend, asked,noticing Lily deep in thought.</p>
-                    
-                    <p>&#34;I did for a second, but I&#39;m sticking with my plan. Things will only get worse if I don&#39;&#34;t,&#34;Lily replied.</p>
-                    
-                    <p>Sarah sighed. Lily had already shared her plan with her, and while Sarah wished Alexander could handle everything, she couldn&#39;t deny that Lily&#39;s plan was solid. She would support her.</p>
-                    
-                    <p>&#34;Are your discharge papers ready?&#34;</p>
-                    
-                    <p>&#34;Yes.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>A few days later, the time finally came for Lily to be discharged from the hospital after two long weeks. Alexander had agreed to let her go.</p>
+                        
+                        <p>&#34;The security team will be here shortly to pick you and Viola up.&#34; Roland informed her.</p>
+                        
+                        <p>&#34;Mmm,&#34; she murmured in response.</p>
+                        
+                        <p>Roland turned to leave but paused. &#34;I know things aren&#39;t right between you and Alexander, but please don&#39;t do anything that will push him further away. I&#39;m begging you,&#34; he said, his tone full of concern before walking out.</p>
+                        
+                        <p>Lily understood why he was so serious. It wasn&#39;t just because the situation had affected everyone, especially changing Alexander&#39;s behavior, but because Roland feared for her safety. He knew that if anything happened to her, Alexander would lose it since she meant everything to him.</p>
+                        
+                        <p>Reflecting on Roland&#39;s words made Lily briefly reconsider her plan.However, she knew who was after her and believed that person had a plan in motion to eliminate her. She couldn&#39;t back down.</p>
+                        
+                        <p>&#34;Are you having second thoughts?&#34; Sarah, her friend, asked,noticing Lily deep in thought.</p>
+                        
+                        <p>&#34;I did for a second, but I&#39;m sticking with my plan. Things will only get worse if I don&#39;&#34;t,&#34;Lily replied.</p>
+                        
+                        <p>Sarah sighed. Lily had already shared her plan with her, and while Sarah wished Alexander could handle everything, she couldn&#39;t deny that Lily&#39;s plan was solid. She would support her.</p>
+                        
+                        <p>&#34;Are your discharge papers ready?&#34;</p>
+                        
+                        <p>&#34;Yes.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -894,29 +934,33 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Has Michael arrived?&#34;</p>
-                    
-                    <p>&#34;Michael? Why do you need him?&#34;</p>
-                    
-                    <p>&#34;Because I&#39;m leaving without Alexander&#39;s knowledge.&#34;</p>
-                    
-                    <p>&#34;But Roland just said the car would be here to take you and Viola home.&#34;</p>
-                    
-                    <p>Lily smiled slightly at her confused friend. &#34;Yes, but I&#39;m not taking that car.&#34;</p>
-                    
-                    <p>&#34;What are you planning now?&#34; Sarah was growing more concerned.</p>
-                    
-                    <p>&#34;I&#39;m not going home.&#34;</p>
-                    
-                    <p>&#34;Then where are you going? What&#39;s your plan?&#34;</p>
-                    
-                    <p>&#34;I&#39;m heading to my family&#39;s house.&#34;</p>
-                    
-                    <p>&#34;What? Why? You know Alexander won&#39;t allow that.&#34;</p>
-                    
-                    <p>&#34;Of course, but I&#39;m an adult. He can&#39;t force me to go back with him.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Has Michael arrived?&#34;</p>
+                        
+                        <p>&#34;Michael? Why do you need him?&#34;</p>
+                        
+                        <p>&#34;Because I&#39;m leaving without Alexander&#39;s knowledge.&#34;</p>
+                        
+                        <p>&#34;But Roland just said the car would be here to take you and Viola home.&#34;</p>
+                        
+                        <p>Lily smiled slightly at her confused friend. &#34;Yes, but I&#39;m not taking that car.&#34;</p>
+                        
+                        <p>&#34;What are you planning now?&#34; Sarah was growing more concerned.</p>
+                        
+                        <p>&#34;I&#39;m not going home.&#34;</p>
+                        
+                        <p>&#34;Then where are you going? What&#39;s your plan?&#34;</p>
+                        
+                        <p>&#34;I&#39;m heading to my family&#39;s house.&#34;</p>
+                        
+                        <p>&#34;What? Why? You know Alexander won&#39;t allow that.&#34;</p>
+                        
+                        <p>&#34;Of course, but I&#39;m an adult. He can&#39;t force me to go back with him.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -931,29 +975,33 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;Is this because you&#39;re afraid he has some kind of punishment waiting for you at home?&#34;</p>
-                    
-                    <p>&#34;No. To carry out my plan, I need to be apart from him. I want it to seem like we&#39;ve separated. If I told him my plan, he wouldin&#39;t agree, so I have to do this without his knowledge.&#34;</p>
-                    
-                    <p>&#34;And what will you tell him?&#34;</p>
-                    
-                    <p>&#34;Don&#39;t worry about that.&#34;</p>
-                    
-                    <p>Sarah rubbed her pregnant belly, feeling the stress build up. &#34;Baby,let&#39;s hope your godmother isn&#39;t making a huge mistake,&#34; she sighed</p>
-                    
-                    <p>Lily glanced at her friend&#39;s belly and smiled.</p>
-                    
-                    <p>Meanwhile, at Alexander&#39;s secret base, Roland presented him with the findings on Ariana.</p>
-                    
-                    <p>&#34;We discovered that she left the country for business. We checked her call logs, and there&#39;s one call that can&#39;t be traced.&#34;</p>
-                    
-                    <p>&#34;Who did she contact?&#34;</p>
-                    
-                    <p>&#34;We couldn&#39;t identify the recipient, but the strange thing is that the call was made at the exact time the accident happened.&#34;</p>
-                    
-                    <p>Alexander&#39;s eyes locked onto Roland. &#34;Then what are you waiting for?Bring her here!&#34; he snapped.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;Is this because you&#39;re afraid he has some kind of punishment waiting for you at home?&#34;</p>
+                        
+                        <p>&#34;No. To carry out my plan, I need to be apart from him. I want it to seem like we&#39;ve separated. If I told him my plan, he wouldin&#39;t agree, so I have to do this without his knowledge.&#34;</p>
+                        
+                        <p>&#34;And what will you tell him?&#34;</p>
+                        
+                        <p>&#34;Don&#39;t worry about that.&#34;</p>
+                        
+                        <p>Sarah rubbed her pregnant belly, feeling the stress build up. &#34;Baby,let&#39;s hope your godmother isn&#39;t making a huge mistake,&#34; she sighed</p>
+                        
+                        <p>Lily glanced at her friend&#39;s belly and smiled.</p>
+                        
+                        <p>Meanwhile, at Alexander&#39;s secret base, Roland presented him with the findings on Ariana.</p>
+                        
+                        <p>&#34;We discovered that she left the country for business. We checked her call logs, and there&#39;s one call that can&#39;t be traced.&#34;</p>
+                        
+                        <p>&#34;Who did she contact?&#34;</p>
+                        
+                        <p>&#34;We couldn&#39;t identify the recipient, but the strange thing is that the call was made at the exact time the accident happened.&#34;</p>
+                        
+                        <p>Alexander&#39;s eyes locked onto Roland. &#34;Then what are you waiting for?Bring her here!&#34; he snapped.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -968,29 +1016,33 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Even though Lily and Viola were safe, Alexander&#39;s anger over the attack hadn&#39;t subsided. Weeks had passed, but he had yet to find the person responsible. Whoever it was had hidden well, but Alexander wouldn&#39;t rest until he uncovered the truth.</p>
-                    
-                    <p>&#34;It&#39;s not that simple. Since her interview last week, the media&#39;s focused on her. If she suddenly disappears, it&#39;ll raise suspicion, and the police will quickly get involved.&#34;</p>
-                    
-                    <p>Alexander slammed his hand on the desk in frustration. For the first time.things weren&#39;t going his way. Ariana was clever-he knew this all too well.She&#39;d been close to him once and understood how he operated. Her moves were always calculated, but Alexander was determined to catch her</p>
-                    
-                    <p>off guard.</p>
-                    
-                    <p>&#34;You think she&#39;s behind it?&#34; Roland asked.</p>
-                    
-                    <p>&#34;Everyone&#39;s a suspect,&#34; Alexander replied coldly.</p>
-                    
-                    <p>Roland nodded.&#34;I&#39;ll keep digging.&#34;</p>
-                    
-                    <p>Just then, Roland&#39;s phone rang. He answered quickly. &#34;Yes?&#34;</p>
-                    
-                    <p>Alexander watched him closely.</p>
-                    
-                    <p>Roland&#39;s expression tightened. &#34;What do you mean they left before you arrived?&#34; he said into the phone.</p>
-                    
-                    <p>Alexander snatched the phone from Roland&#39;s hand. &#34;What did you say?&#34;he demanded.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Even though Lily and Viola were safe, Alexander&#39;s anger over the attack hadn&#39;t subsided. Weeks had passed, but he had yet to find the person responsible. Whoever it was had hidden well, but Alexander wouldn&#39;t rest until he uncovered the truth.</p>
+                        
+                        <p>&#34;It&#39;s not that simple. Since her interview last week, the media&#39;s focused on her. If she suddenly disappears, it&#39;ll raise suspicion, and the police will quickly get involved.&#34;</p>
+                        
+                        <p>Alexander slammed his hand on the desk in frustration. For the first time.things weren&#39;t going his way. Ariana was clever-he knew this all too well.She&#39;d been close to him once and understood how he operated. Her moves were always calculated, but Alexander was determined to catch her</p>
+                        
+                        <p>off guard.</p>
+                        
+                        <p>&#34;You think she&#39;s behind it?&#34; Roland asked.</p>
+                        
+                        <p>&#34;Everyone&#39;s a suspect,&#34; Alexander replied coldly.</p>
+                        
+                        <p>Roland nodded.&#34;I&#39;ll keep digging.&#34;</p>
+                        
+                        <p>Just then, Roland&#39;s phone rang. He answered quickly. &#34;Yes?&#34;</p>
+                        
+                        <p>Alexander watched him closely.</p>
+                        
+                        <p>Roland&#39;s expression tightened. &#34;What do you mean they left before you arrived?&#34; he said into the phone.</p>
+                        
+                        <p>Alexander snatched the phone from Roland&#39;s hand. &#34;What did you say?&#34;he demanded.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1005,29 +1057,33 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>The guard stammered, &#34;Boss... I...&#34;</p>
-                    
-                    <p>&#34;Speak!&#34;</p>
-                    
-                    <p>&#34;The lady boss and your daughterleft the hospital before I could pick them up.&#34;</p>
-                    
-                    <p>&#34;What do you mean they left before you arrived?!&#34; Alexander yelled.</p>
-                    
-                    <p>&#34;I&#39;m sorry,boss.&#34;</p>
-                    
-                    <p>Alexander ended the call, furious, and threw the phone onto the couch.He grabbed his own phone and called Clara.</p>
-                    
-                    <p>Clara answered immediately.&#34;Yes,Mr.Kane?&#34;</p>
-                    
-                    <p>&#34;Are Lily and Viola at home?&#34;</p>
-                    
-                    <p>&#34;No,sir.&#34;</p>
-                    
-                    <p>Alexander clenched his jaw. He was growing increasingly agitated.Roland stood there, knowing that if anything happened to them, he would be held responsible.</p>
-                    
-                    <p>Alexander dialed Lily&#39;s number, tapping his fingers on the desk impatiently. Atthat moment, Lily had just arrived at her family estate and saw his name flash on her phone. Her heart raced, but she answered.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>The guard stammered, &#34;Boss... I...&#34;</p>
+                        
+                        <p>&#34;Speak!&#34;</p>
+                        
+                        <p>&#34;The lady boss and your daughterleft the hospital before I could pick them up.&#34;</p>
+                        
+                        <p>&#34;What do you mean they left before you arrived?!&#34; Alexander yelled.</p>
+                        
+                        <p>&#34;I&#39;m sorry,boss.&#34;</p>
+                        
+                        <p>Alexander ended the call, furious, and threw the phone onto the couch.He grabbed his own phone and called Clara.</p>
+                        
+                        <p>Clara answered immediately.&#34;Yes,Mr.Kane?&#34;</p>
+                        
+                        <p>&#34;Are Lily and Viola at home?&#34;</p>
+                        
+                        <p>&#34;No,sir.&#34;</p>
+                        
+                        <p>Alexander clenched his jaw. He was growing increasingly agitated.Roland stood there, knowing that if anything happened to them, he would be held responsible.</p>
+                        
+                        <p>Alexander dialed Lily&#39;s number, tapping his fingers on the desk impatiently. Atthat moment, Lily had just arrived at her family estate and saw his name flash on her phone. Her heart raced, but she answered.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1042,29 +1098,33 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;Alexander.&#34;</p>
-                    
-                    <p>&#34;Why did you leave the hospital without the guards? Where are you,and why aren&#39;t you at home?&#34; His tone was sharp,demanding answers.</p>
-                    
-                    <p>&#34;I&#39;m at my family&#39;s estate.&#34;</p>
-                    
-                    <p>&#34;That&#39;s not your home anymore.&#34;</p>
-                    
-                    <p>&#34;It&#39;s still my family&#39;s home, Alexander. I&#39;ve decided to stay here with Viola for now.&#34;</p>
-                    
-                    <p>There was a long pause.</p>
-                    
-                    <p>&#34;It&#39;s safer for us to stay here until we find out who&#39;s after us. It seems like whoever&#39;s targeting us wants us apart. We&#39;ll only be safe when that person is gone,&#34; she explained, wwaiting for him to argue or insist she come home.But instead, he simply said, &#34;Okay,&#34; before hanging up.</p>
-                    
-                    <p>Tears welled in Lily&#39;s eyes, but she quickly wiped them away so Viola wouldn&#39;t see. Separating herself from Alexander was painful, but she believed everything would return to normal once she dealt with Ariana.</p>
-                    
-                    <p>&#34;Where is she?&#34; Roland asked.</p>
-                    
-                    <p>&#34;She&#39;s staying with her family until we figure out who&#39;s behind this,&#34;Alexander replied, his voice thick with emotion.</p>
-                    
-                    <p>Roland could feeI Alexander&#39;s pain but didn&#39;t know how to console him.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;Alexander.&#34;</p>
+                        
+                        <p>&#34;Why did you leave the hospital without the guards? Where are you,and why aren&#39;t you at home?&#34; His tone was sharp,demanding answers.</p>
+                        
+                        <p>&#34;I&#39;m at my family&#39;s estate.&#34;</p>
+                        
+                        <p>&#34;That&#39;s not your home anymore.&#34;</p>
+                        
+                        <p>&#34;It&#39;s still my family&#39;s home, Alexander. I&#39;ve decided to stay here with Viola for now.&#34;</p>
+                        
+                        <p>There was a long pause.</p>
+                        
+                        <p>&#34;It&#39;s safer for us to stay here until we find out who&#39;s after us. It seems like whoever&#39;s targeting us wants us apart. We&#39;ll only be safe when that person is gone,&#34; she explained, wwaiting for him to argue or insist she come home.But instead, he simply said, &#34;Okay,&#34; before hanging up.</p>
+                        
+                        <p>Tears welled in Lily&#39;s eyes, but she quickly wiped them away so Viola wouldn&#39;t see. Separating herself from Alexander was painful, but she believed everything would return to normal once she dealt with Ariana.</p>
+                        
+                        <p>&#34;Where is she?&#34; Roland asked.</p>
+                        
+                        <p>&#34;She&#39;s staying with her family until we figure out who&#39;s behind this,&#34;Alexander replied, his voice thick with emotion.</p>
+                        
+                        <p>Roland could feeI Alexander&#39;s pain but didn&#39;t know how to console him.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1079,17 +1139,21 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Send more security to her family&#39;s estate. Make sure they&#39;re the best.&#34;</p>
-                    
-                    <p>&#34;I&#39;ll do that right away. Anything else?&#34;</p>
-                    
-                    <p>&#34;Tell the driver to get ready. I&#39;ve got meetings to attend at the company.I&#39;ve delayed them long enough.&#34;</p>
-                    
-                    <p>Roland was taken aback. Alexander had been avoiding work for weeks,but now he was suddenly diving back in.</p>
-                    
-                    <p>He hoped this wasn&#39;t a sign that Alexander was returning to his old,workaholic ways-the way he used to cope before meeting Lily. It seemed like he was slowly becoming the man he once was, and that worried Roland.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Send more security to her family&#39;s estate. Make sure they&#39;re the best.&#34;</p>
+                        
+                        <p>&#34;I&#39;ll do that right away. Anything else?&#34;</p>
+                        
+                        <p>&#34;Tell the driver to get ready. I&#39;ve got meetings to attend at the company.I&#39;ve delayed them long enough.&#34;</p>
+                        
+                        <p>Roland was taken aback. Alexander had been avoiding work for weeks,but now he was suddenly diving back in.</p>
+                        
+                        <p>He hoped this wasn&#39;t a sign that Alexander was returning to his old,workaholic ways-the way he used to cope before meeting Lily. It seemed like he was slowly becoming the man he once was, and that worried Roland.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2405,6 +2469,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2531,7 +2675,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2573,32 +2716,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2609,21 +2734,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2656,6 +2771,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2676,20 +2797,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

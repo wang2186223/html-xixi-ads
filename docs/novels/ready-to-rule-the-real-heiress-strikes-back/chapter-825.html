@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:26.573706">
-    <meta property="article:modified_time" content="2026-07-19T02:47:26.573706">
+    <meta property="article:published_time" content="2026-07-19T13:03:21.155052">
+    <meta property="article:modified_time" content="2026-07-19T13:03:21.155052">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:26">
+    <meta name="last-modified" content="2026-07-19 13:03:21">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:26.573706",
-        "dateModified": "2026-07-19T02:47:26.573706",
+        "datePublished": "2026-07-19T13:03:21.155052",
+        "dateModified": "2026-07-19T13:03:21.155052",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,15 +893,19 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter825</p>
-                    
-                    <p>Leo was there too, which made it obvious he was in on everything.</p>
-                    
-                    <p>&#34;Honestly, aside from Elliot, there&#39;s hardly anyone in this company who can compare to you,&#34; Leo said, sounding a bit shy as Lydia stood in front of the company&#39;s wall of awards. The truth was, Lorelei&#39;s reputation in the music world was on another level.</p>
-                    
-                    <p>&#34;They each have something special about them,&#34; Lydia replied, keeping it simple. For her, singing was just a hobby. She never really mixed with the entertainment crowd, so she barely knew anyone in the industry. In fact, almost no one actually knew her. They only knew her by her stage name, Lorelei.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter825</p>
+                        
+                        <p>Leo was there too, which made it obvious he was in on everything.</p>
+                        
+                        <p>&#34;Honestly, aside from Elliot, there&#39;s hardly anyone in this company who can compare to you,&#34; Leo said, sounding a bit shy as Lydia stood in front of the company&#39;s wall of awards. The truth was, Lorelei&#39;s reputation in the music world was on another level.</p>
+                        
+                        <p>&#34;They each have something special about them,&#34; Lydia replied, keeping it simple. For her, singing was just a hobby. She never really mixed with the entertainment crowd, so she barely knew anyone in the industry. In fact, almost no one actually knew her. They only knew her by her stage name, Lorelei.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -880,15 +920,19 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Come check out my studio. You can rest there for a bit,&#34; Elliot offered, clearly enjoying having his sister around.</p>
-                    
-                    <p>Lydia nodded. &#34;Sure.&#34;</p>
-                    
-                    <p>Elliot&#39;s studio was filled with screens, each one showing his roles from different films and shows. Every character looked like they had a life of their own, and the whole place was honestly impressive.</p>
-                    
-                    <p>Just then, someone knocked at the door. A staff member peeked in. &#34;Hey, Leo, security just called. Elliot&#39;s sister is here. Should I bring her up?</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Come check out my studio. You can rest there for a bit,&#34; Elliot offered, clearly enjoying having his sister around.</p>
+                        
+                        <p>Lydia nodded. &#34;Sure.&#34;</p>
+                        
+                        <p>Elliot&#39;s studio was filled with screens, each one showing his roles from different films and shows. Every character looked like they had a life of their own, and the whole place was honestly impressive.</p>
+                        
+                        <p>Just then, someone knocked at the door. A staff member peeked in. &#34;Hey, Leo, security just called. Elliot&#39;s sister is here. Should I bring her up?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -903,15 +947,19 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Leo paused. At first, he almost said she was already here, but then realized the staff must be talking about the other sister.</p>
-                    
-                    <p>He turned to Elliot. &#34;Elliot, Lucinda&#39;s here. Want me to let her up?&#34;</p>
-                    
-                    <p>Elliot&#39;s patience with Lucinda had been wearing thin lately. He barely hesitated.   Tell her I&#39;m rehearsing and really busy. She should just go home.&#34;</p>
-                    
-                    <p>Leo nodded. &#34;Okay, will do.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Leo paused. At first, he almost said she was already here, but then realized the staff must be talking about the other sister.</p>
+                        
+                        <p>He turned to Elliot. &#34;Elliot, Lucinda&#39;s here. Want me to let her up?&#34;</p>
+                        
+                        <p>Elliot&#39;s patience with Lucinda had been wearing thin lately. He barely hesitated.   Tell her I&#39;m rehearsing and really busy. She should just go home.&#34;</p>
+                        
+                        <p>Leo nodded. &#34;Okay, will do.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -926,15 +974,19 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Normally, when Lucinda visited, security would just call and she&#39;d be escorted right up. This time, though, she waited and waited, but no one came. Eventually, a staff member finally appeared.</p>
-                    
-                    <p>&#34;Miss Lucinda, I&#39;m really sorry, but Elliot is busy with rehearsals. He asked that you head home for now.&#34;</p>
-                    
-                    <p>Lucinda&#39;s frustration shot through</p>
-                    
-                    <p>the roof. Go home? How could Elliot treat her like this? He always claimed she was like a rear sister to him, but was this what he meant? Why was Lydia allowed up, but she was sent home?</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Normally, when Lucinda visited, security would just call and she&#39;d be escorted right up. This time, though, she waited and waited, but no one came. Eventually, a staff member finally appeared.</p>
+                        
+                        <p>&#34;Miss Lucinda, I&#39;m really sorry, but Elliot is busy with rehearsals. He asked that you head home for now.&#34;</p>
+                        
+                        <p>Lucinda&#39;s frustration shot through</p>
+                        
+                        <p>the roof. Go home? How could Elliot treat her like this? He always claimed she was like a rear sister to him, but was this what he meant? Why was Lydia allowed up, but she was sent home?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -949,15 +1001,19 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;Then... what about my sister?&#34;</p>
-                    
-                    <p>The staff member looked lost. &#34;Your... sister?&#34;</p>
-                    
-                    <p>Lucinda rolled her eyes. &#34;The girl who came in with Elliot.&#34;</p>
-                    
-                    <p>Now the staff member looked even more confused. Was that girl really Elliot&#39;s girlfriend? Why else would his own sister call her &#39;sister&#39;?</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;Then... what about my sister?&#34;</p>
+                        
+                        <p>The staff member looked lost. &#34;Your... sister?&#34;</p>
+                        
+                        <p>Lucinda rolled her eyes. &#34;The girl who came in with Elliot.&#34;</p>
+                        
+                        <p>Now the staff member looked even more confused. Was that girl really Elliot&#39;s girlfriend? Why else would his own sister call her &#39;sister&#39;?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -972,15 +1028,19 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;She, um... she&#39;s...&#34;</p>
-                    
-                    <p>Lucinda stepped closer, pulling him aside. She slid a ring off her finger and held it out to him. &#34;I just bought this today, first time wearing it. It&#39;s yours. You can give it to your girlfriend.&#34;</p>
-                    
-                    <p>The staff member stared at her. &#34;Miss Lucinda, I can&#39;t take this...&#34;</p>
-                    
-                    <p>&#34;I just want to know what Elliot and that girl are doing. That&#39;s all. Don&#39;t worry, I won&#39;t say anything.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;She, um... she&#39;s...&#34;</p>
+                        
+                        <p>Lucinda stepped closer, pulling him aside. She slid a ring off her finger and held it out to him. &#34;I just bought this today, first time wearing it. It&#39;s yours. You can give it to your girlfriend.&#34;</p>
+                        
+                        <p>The staff member stared at her. &#34;Miss Lucinda, I can&#39;t take this...&#34;</p>
+                        
+                        <p>&#34;I just want to know what Elliot and that girl are doing. That&#39;s all. Don&#39;t worry, I won&#39;t say anything.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -995,13 +1055,17 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Lucinda tucked the ring into his pocket before he could protest.</p>
-                    
-                    <p>The staff member&#39;s heart was racing. The diamond on the ring was huge, probably worth a fortune. Lucinda really lived up to her status as a billionaire&#39;s daughter And it wasn&#39;t like he was spilling any top-secret information. Nothing ill  gal about it, right?</p>
-                    
-                    <p>&#34;Miss Lucinda, Elliot is just showing the young lady around his studio He probably just wanted a bit of alone time, with her it&#39;s not that he didn&#39;t want to see you. Please, don&#39;t take it the wrong way.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Lucinda tucked the ring into his pocket before he could protest.</p>
+                        
+                        <p>The staff member&#39;s heart was racing. The diamond on the ring was huge, probably worth a fortune. Lucinda really lived up to her status as a billionaire&#39;s daughter And it wasn&#39;t like he was spilling any top-secret information. Nothing ill  gal about it, right?</p>
+                        
+                        <p>&#34;Miss Lucinda, Elliot is just showing the young lady around his studio He probably just wanted a bit of alone time, with her it&#39;s not that he didn&#39;t want to see you. Please, don&#39;t take it the wrong way.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2317,6 +2381,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2443,7 +2587,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2485,32 +2628,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2521,21 +2646,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2568,6 +2683,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2588,20 +2709,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

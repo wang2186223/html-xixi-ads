@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.390003">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.390003">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.392772">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.392772">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.390003",
-        "dateModified": "2026-07-19T02:47:23.390003",
+        "datePublished": "2026-07-19T13:03:18.392772",
+        "dateModified": "2026-07-19T13:03:18.392772",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,25 +893,29 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Brian&#39;s POV</p>
-                    
-                    <p>As I stepped out of the car, the front door swung open. and Grandma Ruth appeared, her face lighting up with genuine joy at the sight of me,which caught me off guard. Since Mom and*Dad&#39;s divorce, very few people had been genuinely happy to see me.</p>
-                    
-                    <p>&#34;You&#39;re home!&#34; Grandma exclaimed as she hurried to the doorway to greet me.</p>
-                    
-                    <p>&#34;Yes!&#34; I responded naturally, feeling a smile spread across my own face.</p>
-                    
-                    <p>Grandma took my small backpack from my shoulder as we walked inside.&#34;I made the porridge today, but Ms. Taylor prepared the other dishes.Her cooking skills are truly remarkable. I watched her cook... somehow the same ingredients just become more appetizing in her hands.&#34;</p>
-                    
-                    <p>I appreciated these simple family interactions-casual conversations with people who actually cared about me.</p>
-                    
-                    <p>&#34;Really?&#34; I asked with interest.</p>
-                    
-                    <p>&#34;Of course! You&#39;ll taste for yourself,&#34; Grandma answered without hesitation,her eyes crinkling at the corners.</p>
-                    
-                    <p>I immediately ran to the bathroom to wash my hands thoroughly, then sat at the dining table, surprised by the delicious spread of food before me.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Brian&#39;s POV</p>
+                        
+                        <p>As I stepped out of the car, the front door swung open. and Grandma Ruth appeared, her face lighting up with genuine joy at the sight of me,which caught me off guard. Since Mom and*Dad&#39;s divorce, very few people had been genuinely happy to see me.</p>
+                        
+                        <p>&#34;You&#39;re home!&#34; Grandma exclaimed as she hurried to the doorway to greet me.</p>
+                        
+                        <p>&#34;Yes!&#34; I responded naturally, feeling a smile spread across my own face.</p>
+                        
+                        <p>Grandma took my small backpack from my shoulder as we walked inside.&#34;I made the porridge today, but Ms. Taylor prepared the other dishes.Her cooking skills are truly remarkable. I watched her cook... somehow the same ingredients just become more appetizing in her hands.&#34;</p>
+                        
+                        <p>I appreciated these simple family interactions-casual conversations with people who actually cared about me.</p>
+                        
+                        <p>&#34;Really?&#34; I asked with interest.</p>
+                        
+                        <p>&#34;Of course! You&#39;ll taste for yourself,&#34; Grandma answered without hesitation,her eyes crinkling at the corners.</p>
+                        
+                        <p>I immediately ran to the bathroom to wash my hands thoroughly, then sat at the dining table, surprised by the delicious spread of food before me.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -890,25 +930,29 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;I haven&#39;t had such a satisfying meal in ages!&#34; I exclaimed, my eyes widening at the sight. &#34;When Mom was still with me, she always took such good care of me. She would always ask what I wanted to eat, and when I came home from school, the table would be filled with all my</p>
-                    
-                    <p>favorite foods.&#34;</p>
-                    
-                    <p>My voice gradually trailed off as I recalled the unpleasant memories that followed. &#34;But after Dad and Mom divorced... when Dad wasn&#39;t home,even if Sarah cooked, she wouldn&#39;t let me eat. A few times, she even took Max out to dinner, leaving me alone at home. With nothing to eat, I could only search the refrigerator for leftovers. I&#39;eventually got gastroenteritis and was hospitalized. Sarah told Dad it was because I ate too much...and Dad scolded me for it.&#34;</p>
-                    
-                    <p>The first time this happened, I felt it was particularly unfair. I hadn&#39;t done anything wrong, yet Sarah could easily twist the facts. Gradually, I realized Sarah could do this without consequences primarily because Dad-Philip-indulged her. Whatever she did, Dad would forgive her. As for my feelings? Dad simply didn&#39;t care.</p>
-                    
-                    <p>I endured this frustration for a long time until I moved out to live with Grandma. Only then did I discover life could be so much better. No more worrying about being inexplicably accused when I got home, no more worrying about having no dinner.</p>
-                    
-                    <p>&#34;Why didn&#39;t you tell me about these things earlier?&#34; Grandma asked with concern, her brow furrowing with worry.</p>
-                    
-                    <p>Seeing Grandma&#39;s worried expression, I felt a warmth in my heart.&#34;Because when these things happened, I told Dad. But Dad didn&#39;t believe anything I said. I thought, if even Dad-the person closest to me in the world-wouldn&#39;t stand by me, then surely no one would believe me.&#34;</p>
-                    
-                    <p>After speaking, I unconsciously lowered my head.</p>
-                    
-                    <p>Grandma sighed, gently stroking my hair: &#34;Silly child, remember this: no matter what happens, I will always stand unconditionally by your side.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;I haven&#39;t had such a satisfying meal in ages!&#34; I exclaimed, my eyes widening at the sight. &#34;When Mom was still with me, she always took such good care of me. She would always ask what I wanted to eat, and when I came home from school, the table would be filled with all my</p>
+                        
+                        <p>favorite foods.&#34;</p>
+                        
+                        <p>My voice gradually trailed off as I recalled the unpleasant memories that followed. &#34;But after Dad and Mom divorced... when Dad wasn&#39;t home,even if Sarah cooked, she wouldn&#39;t let me eat. A few times, she even took Max out to dinner, leaving me alone at home. With nothing to eat, I could only search the refrigerator for leftovers. I&#39;eventually got gastroenteritis and was hospitalized. Sarah told Dad it was because I ate too much...and Dad scolded me for it.&#34;</p>
+                        
+                        <p>The first time this happened, I felt it was particularly unfair. I hadn&#39;t done anything wrong, yet Sarah could easily twist the facts. Gradually, I realized Sarah could do this without consequences primarily because Dad-Philip-indulged her. Whatever she did, Dad would forgive her. As for my feelings? Dad simply didn&#39;t care.</p>
+                        
+                        <p>I endured this frustration for a long time until I moved out to live with Grandma. Only then did I discover life could be so much better. No more worrying about being inexplicably accused when I got home, no more worrying about having no dinner.</p>
+                        
+                        <p>&#34;Why didn&#39;t you tell me about these things earlier?&#34; Grandma asked with concern, her brow furrowing with worry.</p>
+                        
+                        <p>Seeing Grandma&#39;s worried expression, I felt a warmth in my heart.&#34;Because when these things happened, I told Dad. But Dad didn&#39;t believe anything I said. I thought, if even Dad-the person closest to me in the world-wouldn&#39;t stand by me, then surely no one would believe me.&#34;</p>
+                        
+                        <p>After speaking, I unconsciously lowered my head.</p>
+                        
+                        <p>Grandma sighed, gently stroking my hair: &#34;Silly child, remember this: no matter what happens, I will always stand unconditionally by your side.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -923,25 +967,29 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>I looked up into Grandma&#39;s eyes, suddenly feeling an urge to cry. I nodded firmly: &#34;Thank you, Grandma. You&#39;re the best!&#34;</p>
-                    
-                    <p>Our dinner began in a relaxed and pleasant atmosphere. Ms. Taylor ladled hot beef stew onto my plate: &#34;Try the special sauce-I added a bit of rosemary.&#34;</p>
-                    
-                    <p>&#34;It smells amazing!&#34; I didn&#39;t hesitate to pick up my fork,eager to taste it.</p>
-                    
-                    <p>Mitchell cut a small piece of his home-baked bread and handed it to me:&#34;I made this using Grandma&#39;s old recipe. See if it tastes like you remember.&#34;</p>
-                    
-                    <p>&#34;Oh, don&#39;t forget some salad,&#34; Grandma chimed in, adding some fresh vegetables to the side of my plate. &#34;A balanced diet is important for growing children.&#34;</p>
-                    
-                    <p>I looked at the generous portion of food on my plate, my eyes crinkling with happiness. Wanting to show my appreciation too, I poured orange juice for everyone. I carefully picked up the pitcher, serving each person from their right side, just as Mom had taught me.</p>
-                    
-                    <p>&#34;Thank you, little gentleman,&#34; Ms. Taylor said with a smile.</p>
-                    
-                    <p>The conversation at the table was light and enjoyable. Mitchell recounted interesting things he&#39;d seen while driving today, Ms. Taylor shared educational tips she&#39;d recently discovered on Pinterest, and Grandma told stories from her youth. Laughter constantly echoed throughout the dining room.</p>
-                    
-                    <p>As I ate, I wondered why I hadn&#39;t been closer to Grandma before.I remembered it was because Grandma Betty would often speak poorly of Mom and Grandma Ruth in front of me, calling them &#34;poor relatives&#34; and &#34;parasites&#34; who wanted to take advantage of the Baker family&#39;s wealth.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>I looked up into Grandma&#39;s eyes, suddenly feeling an urge to cry. I nodded firmly: &#34;Thank you, Grandma. You&#39;re the best!&#34;</p>
+                        
+                        <p>Our dinner began in a relaxed and pleasant atmosphere. Ms. Taylor ladled hot beef stew onto my plate: &#34;Try the special sauce-I added a bit of rosemary.&#34;</p>
+                        
+                        <p>&#34;It smells amazing!&#34; I didn&#39;t hesitate to pick up my fork,eager to taste it.</p>
+                        
+                        <p>Mitchell cut a small piece of his home-baked bread and handed it to me:&#34;I made this using Grandma&#39;s old recipe. See if it tastes like you remember.&#34;</p>
+                        
+                        <p>&#34;Oh, don&#39;t forget some salad,&#34; Grandma chimed in, adding some fresh vegetables to the side of my plate. &#34;A balanced diet is important for growing children.&#34;</p>
+                        
+                        <p>I looked at the generous portion of food on my plate, my eyes crinkling with happiness. Wanting to show my appreciation too, I poured orange juice for everyone. I carefully picked up the pitcher, serving each person from their right side, just as Mom had taught me.</p>
+                        
+                        <p>&#34;Thank you, little gentleman,&#34; Ms. Taylor said with a smile.</p>
+                        
+                        <p>The conversation at the table was light and enjoyable. Mitchell recounted interesting things he&#39;d seen while driving today, Ms. Taylor shared educational tips she&#39;d recently discovered on Pinterest, and Grandma told stories from her youth. Laughter constantly echoed throughout the dining room.</p>
+                        
+                        <p>As I ate, I wondered why I hadn&#39;t been closer to Grandma before.I remembered it was because Grandma Betty would often speak poorly of Mom and Grandma Ruth in front of me, calling them &#34;poor relatives&#34; and &#34;parasites&#34; who wanted to take advantage of the Baker family&#39;s wealth.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -956,25 +1004,29 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Now I finally understood the problem with Betty&#39;s perspective. When my parents first got together. Dad didn&#39;t have money either. He gradually succeeded in business only with Mom Annie&#39;s support. But after Dad&#39;s success,Betty seemed to forget they had once struggled too, and began looking down on Mom and Grandma, even though Grandma Ruth had never taken any money from our family.</p>
-                    
-                    <p>I suddenly realized that those who talk the most aren&#39;t necessarily the ones who truly care about me. And those who truly love me don&#39;t always express it with words.</p>
-                    
-                    <p>After dinner, I saw Grandma trying to clear the table, but Mitchell immediately stood up: &#34;Please let me handle this. You&#39;ve been busyall day.</p>
-                    
-                    <p>&#34;You&#39;re so thoughtful,&#34; Grandma said, &#34;but haven&#39;t you been working all day too?&#34;</p>
-                    
-                    <p>Mitchell smiled and replied: &#34;Driving isn&#39;t work for me; it&#39;s more like pleasure. Besides, Ms. Taylor prepared such a delicious dinner; I should at least be responsible for cleaning up.&#34;</p>
-                    
-                    <p>&#34;Then I&#39;ll help,&#34; Ms. Taylor offered, beginning to collect the plates.</p>
-                    
-                    <p>&#34;I want to help too!&#34; I jumped up, helping to clear my own place,folding my napkin neatly as Mom had taught me and placing it aside.</p>
-                    
-                    <p>Grandma seemed a bit overwhelmed, but she smiled as she let us work.I overheard her quietly say to Mitchell: &#34;With all of you here, I feel like I&#39;ve become the guest.&#34;</p>
-                    
-                    <p>&#34;Ruth, you&#39;re already working hard taking care of Brian,&#34; Mitchell gently replied. &#34;Letting us share in the household chores is only right.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Now I finally understood the problem with Betty&#39;s perspective. When my parents first got together. Dad didn&#39;t have money either. He gradually succeeded in business only with Mom Annie&#39;s support. But after Dad&#39;s success,Betty seemed to forget they had once struggled too, and began looking down on Mom and Grandma, even though Grandma Ruth had never taken any money from our family.</p>
+                        
+                        <p>I suddenly realized that those who talk the most aren&#39;t necessarily the ones who truly care about me. And those who truly love me don&#39;t always express it with words.</p>
+                        
+                        <p>After dinner, I saw Grandma trying to clear the table, but Mitchell immediately stood up: &#34;Please let me handle this. You&#39;ve been busyall day.</p>
+                        
+                        <p>&#34;You&#39;re so thoughtful,&#34; Grandma said, &#34;but haven&#39;t you been working all day too?&#34;</p>
+                        
+                        <p>Mitchell smiled and replied: &#34;Driving isn&#39;t work for me; it&#39;s more like pleasure. Besides, Ms. Taylor prepared such a delicious dinner; I should at least be responsible for cleaning up.&#34;</p>
+                        
+                        <p>&#34;Then I&#39;ll help,&#34; Ms. Taylor offered, beginning to collect the plates.</p>
+                        
+                        <p>&#34;I want to help too!&#34; I jumped up, helping to clear my own place,folding my napkin neatly as Mom had taught me and placing it aside.</p>
+                        
+                        <p>Grandma seemed a bit overwhelmed, but she smiled as she let us work.I overheard her quietly say to Mitchell: &#34;With all of you here, I feel like I&#39;ve become the guest.&#34;</p>
+                        
+                        <p>&#34;Ruth, you&#39;re already working hard taking care of Brian,&#34; Mitchell gently replied. &#34;Letting us share in the household chores is only right.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -989,25 +1041,29 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>I heard Grandma say: &#34;I&#39;m thinking of looking at those new dishwashers tomorrow, so we can lighten the kitchen work.&#34;</p>
-                    
-                    <p>When the kitchen was nearly tidied up. I picked up my small backpack: &#34;Grandma. I&#39;m going to my room to study now.&#34;</p>
-                    
-                    <p>Grandma&#39;s eyes widened: &#34;How old are you? Studying already?&#34;</p>
-                    
-                    <p>I guessed most kids my age would probably be playing. Grandma asked with concern: &#34;Why put so much pressure on yourself?&#34;</p>
-                    
-                    <p>I smiled and explained: &#34;Because I want to stay ahead of the other kids.Think about it-if I finish previewing all the elementary school material now, I&#39;ll have much less academic pressure during elementary school...&#34;</p>
-                    
-                    <p>These were ideas Ms. Taylor had taught me, and I found them very sensible. I continued explaining: &#34;I can study in advance, so when other children are still struggling with the basics, I&#39;ll have already mastered more advanced content. By the time I reach middle and high school, I&#39;ll be able to handle things easily and have more time to do what I enjoy.&#34;</p>
-                    
-                    <p>After hearing my explanation, Grandma smiled and nodded: &#34;Our Brian has really grown up.&#34;</p>
-                    
-                    <p>I waved goodbye to Grandma and headed to my bedroom.</p>
-                    
-                    <p>Walking into my room, I turned on the light. The entire wall was covered with posters of Mom Annie-all specially printed with Mitchell&#39;s help. My mood instantly improved.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>I heard Grandma say: &#34;I&#39;m thinking of looking at those new dishwashers tomorrow, so we can lighten the kitchen work.&#34;</p>
+                        
+                        <p>When the kitchen was nearly tidied up. I picked up my small backpack: &#34;Grandma. I&#39;m going to my room to study now.&#34;</p>
+                        
+                        <p>Grandma&#39;s eyes widened: &#34;How old are you? Studying already?&#34;</p>
+                        
+                        <p>I guessed most kids my age would probably be playing. Grandma asked with concern: &#34;Why put so much pressure on yourself?&#34;</p>
+                        
+                        <p>I smiled and explained: &#34;Because I want to stay ahead of the other kids.Think about it-if I finish previewing all the elementary school material now, I&#39;ll have much less academic pressure during elementary school...&#34;</p>
+                        
+                        <p>These were ideas Ms. Taylor had taught me, and I found them very sensible. I continued explaining: &#34;I can study in advance, so when other children are still struggling with the basics, I&#39;ll have already mastered more advanced content. By the time I reach middle and high school, I&#39;ll be able to handle things easily and have more time to do what I enjoy.&#34;</p>
+                        
+                        <p>After hearing my explanation, Grandma smiled and nodded: &#34;Our Brian has really grown up.&#34;</p>
+                        
+                        <p>I waved goodbye to Grandma and headed to my bedroom.</p>
+                        
+                        <p>Walking into my room, I turned on the light. The entire wall was covered with posters of Mom Annie-all specially printed with Mitchell&#39;s help. My mood instantly improved.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1022,25 +1078,29 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Ms. Taylor followed me in and sat at my desk: &#34;Let&#39;s start on your homework.&#34;</p>
-                    
-                    <p>&#34;Okay,&#34; I put down my backpack, turned on the smalldesk lamp,and</p>
-                    
-                    <p>Cnapter 155.1 want to Be with Mom</p>
-                    
-                    <p>softly called out: &#34;Mom, Mom.&#34;</p>
-                    
-                    <p>&#34;I&#39;m here,&#34; the small robot placed on the desk responded in Mom&#39;s voice-gentle,quiet, and full of love.</p>
-                    
-                    <p>Hearing Mom&#39;s voice, I suddenly felt a tightness in my throat. This robot was custom-made with Mitchell&#39;s help, using recordings from voice messages Mom had sent me before.</p>
-                    
-                    <p>The engineer who made it once told me: &#34;Your mom loves you very much;you can hear it in these recordings.&#34;</p>
-                    
-                    <p>Indeed, only after losing Mom and repeatedly listening to these recordings did I truly understand the love contained in her words. She always cared about everything in my life-wanting me to eat well, dress warmly,stay healthy. Back then, I found her nagging annoying; now I missed it terribly.</p>
-                    
-                    <p>I smiled at the robot and said: &#34;I&#39;m going to start my homework now.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Ms. Taylor followed me in and sat at my desk: &#34;Let&#39;s start on your homework.&#34;</p>
+                        
+                        <p>&#34;Okay,&#34; I put down my backpack, turned on the smalldesk lamp,and</p>
+                        
+                        <p>Cnapter 155.1 want to Be with Mom</p>
+                        
+                        <p>softly called out: &#34;Mom, Mom.&#34;</p>
+                        
+                        <p>&#34;I&#39;m here,&#34; the small robot placed on the desk responded in Mom&#39;s voice-gentle,quiet, and full of love.</p>
+                        
+                        <p>Hearing Mom&#39;s voice, I suddenly felt a tightness in my throat. This robot was custom-made with Mitchell&#39;s help, using recordings from voice messages Mom had sent me before.</p>
+                        
+                        <p>The engineer who made it once told me: &#34;Your mom loves you very much;you can hear it in these recordings.&#34;</p>
+                        
+                        <p>Indeed, only after losing Mom and repeatedly listening to these recordings did I truly understand the love contained in her words. She always cared about everything in my life-wanting me to eat well, dress warmly,stay healthy. Back then, I found her nagging annoying; now I missed it terribly.</p>
+                        
+                        <p>I smiled at the robot and said: &#34;I&#39;m going to start my homework now.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1055,19 +1115,23 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Wow,&#34; the robot responded in an admiring tone, just as Mom would say:&#34;Our Brian is so amazing.&#34;</p>
-                    
-                    <p>I proudly straightened my shoulders: &#34;Of course!&#34;</p>
-                    
-                    <p>I placed the robot in front of me so I could feel like Mom was always with me,watching me study.</p>
-                    
-                    <p>Looking down to begin my homework, I harbored a small dream in my heart: to study hard, hoping that someday I could invent a time machine.Then I could go back to the past, back to the day when Dad first introduced me to Sarah.</p>
-                    
-                    <p>This time, I would stand by Mom&#39;s side without hesitation,letting her know she wasn&#39;t alone. I would firmly tell Dad: &#34;I want to be with Mom.&#34;</p>
-                    
-                    <p>That way. Mom wouldn&#39;t have felt so lonely and helpless when she left.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Wow,&#34; the robot responded in an admiring tone, just as Mom would say:&#34;Our Brian is so amazing.&#34;</p>
+                        
+                        <p>I proudly straightened my shoulders: &#34;Of course!&#34;</p>
+                        
+                        <p>I placed the robot in front of me so I could feel like Mom was always with me,watching me study.</p>
+                        
+                        <p>Looking down to begin my homework, I harbored a small dream in my heart: to study hard, hoping that someday I could invent a time machine.Then I could go back to the past, back to the day when Dad first introduced me to Sarah.</p>
+                        
+                        <p>This time, I would stand by Mom&#39;s side without hesitation,letting her know she wasn&#39;t alone. I would firmly tell Dad: &#34;I want to be with Mom.&#34;</p>
+                        
+                        <p>That way. Mom wouldn&#39;t have felt so lonely and helpless when she left.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2383,6 +2447,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2509,7 +2653,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2551,32 +2694,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2587,21 +2712,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2634,6 +2749,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2654,20 +2775,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

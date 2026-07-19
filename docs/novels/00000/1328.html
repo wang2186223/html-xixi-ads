@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Sebastian handed her the bag with a grateful smile, then turned back toward his room, his mood noticeably lighter.</p>
-                    
-                    <p>Isabella steadied herself and knocked softly. &#34;Vivian, it’s Isabella.&#34;</p>
-                    
-                    <p>Before the door could open, Ethan appeared from the opposite hallway, arms laden with bags.</p>
-                    
-                    <p>Isabella offered him a polite smile. &#34;You’re Mr. Blackwood’s assistant, right?&#34;</p>
-                    
-                    <p>&#34;That’s correct. Ethan Caldwell,&#34; he replied with a courteous nod.</p>
-                    
-                    <p>&#34;Isabella Thornton,&#34; she introduced herself, awkwardly recalling the whispers from last night.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Sebastian handed her the bag with a grateful smile, then turned back toward his room, his mood noticeably lighter.</p>
+                        
+                        <p>Isabella steadied herself and knocked softly. &#34;Vivian, it’s Isabella.&#34;</p>
+                        
+                        <p>Before the door could open, Ethan appeared from the opposite hallway, arms laden with bags.</p>
+                        
+                        <p>Isabella offered him a polite smile. &#34;You’re Mr. Blackwood’s assistant, right?&#34;</p>
+                        
+                        <p>&#34;That’s correct. Ethan Caldwell,&#34; he replied with a courteous nod.</p>
+                        
+                        <p>&#34;Isabella Thornton,&#34; she introduced herself, awkwardly recalling the whispers from last night.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Vivian opened the door just as they finished exchanging pleasantries. Her gaze flicked between them, assessing the scene.</p>
-                    
-                    <p>Ethan, who had been Adrian’s assistant for years, was usually a quiet presence—barely noticeable. But up close, he was surprisingly striking, with sharp, refined features.</p>
-                    
-                    <p>Isabella, in contrast, had a bold, arresting beauty, her long hair swept into a high ponytail, eyes bright and expressive.</p>
-                    
-                    <p>Her vibrant energy clashed intriguingly with Ethan’s composed, understated aura.</p>
-                    
-                    <p>Isabella lifted the lunch bag Sebastian had given her, shaking it slightly. &#34;Sebastian sent this for you.&#34;</p>
-                    
-                    <p>&#34;This is from Mr. Blackwood,&#34; Ethan stepped forward, presenting his own bag. &#34;Along with some ointment.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Vivian opened the door just as they finished exchanging pleasantries. Her gaze flicked between them, assessing the scene.</p>
+                        
+                        <p>Ethan, who had been Adrian’s assistant for years, was usually a quiet presence—barely noticeable. But up close, he was surprisingly striking, with sharp, refined features.</p>
+                        
+                        <p>Isabella, in contrast, had a bold, arresting beauty, her long hair swept into a high ponytail, eyes bright and expressive.</p>
+                        
+                        <p>Her vibrant energy clashed intriguingly with Ethan’s composed, understated aura.</p>
+                        
+                        <p>Isabella lifted the lunch bag Sebastian had given her, shaking it slightly. &#34;Sebastian sent this for you.&#34;</p>
+                        
+                        <p>&#34;This is from Mr. Blackwood,&#34; Ethan stepped forward, presenting his own bag. &#34;Along with some ointment.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Before Vivian could respond, he added smoothly, &#34;The ointment was overnighted to reduce swelling quickly. Mr. Blackwood is concerned about your on-camera appearance. He takes your career very seriously.&#34;</p>
-                    
-                    <p>A flicker of guilt crossed Ethan’s face as he recalled Adrian’s instructions—just deliver it, no unnecessary explanations.</p>
-                    
-                    <p>But he couldn’t help himself.</p>
-                    
-                    <p>Not when Vivian looked like this.</p>
-                    
-                    <p>Vivian hesitated before accepting the bag, murmuring a quiet &#34;Thank you.&#34;</p>
-                    
-                    <p>Ethan looked visibly relieved, giving an approving nod before offering some comforting words and turning to leave.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Before Vivian could respond, he added smoothly, &#34;The ointment was overnighted to reduce swelling quickly. Mr. Blackwood is concerned about your on-camera appearance. He takes your career very seriously.&#34;</p>
+                        
+                        <p>A flicker of guilt crossed Ethan’s face as he recalled Adrian’s instructions—just deliver it, no unnecessary explanations.</p>
+                        
+                        <p>But he couldn’t help himself.</p>
+                        
+                        <p>Not when Vivian looked like this.</p>
+                        
+                        <p>Vivian hesitated before accepting the bag, murmuring a quiet &#34;Thank you.&#34;</p>
+                        
+                        <p>Ethan looked visibly relieved, giving an approving nod before offering some comforting words and turning to leave.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;So what do you think of Ethan?&#34; Vivian asked casually, studying Isabella with curious eyes.</p>
-                    
-                    <p>&#34;He seems decent enough,&#34; Isabella replied with a nonchalant shrug.</p>
-                    
-                    <p>&#34;Just decent?&#34;</p>
-                    
-                    <p>Vivian arched an eyebrow but didn&#39;t press further, her attention already shifting to the food Ethan had delivered.</p>
-                    
-                    <p>Isabella, however, seemed more intrigued by examining the contents. The porcelain soup container was exquisite and substantial, radiating understated elegance.</p>
-                    
-                    <p>&#34;This definitely isn&#39;t from some ordinary takeout place!&#34; Isabella exclaimed, her face brightening. &#34;Vivian, Mr. Blackwood treats you exceptionally well. A wealthy, gorgeous CEO pampering you? That&#39;s every girl&#39;s fantasy.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;So what do you think of Ethan?&#34; Vivian asked casually, studying Isabella with curious eyes.</p>
+                        
+                        <p>&#34;He seems decent enough,&#34; Isabella replied with a nonchalant shrug.</p>
+                        
+                        <p>&#34;Just decent?&#34;</p>
+                        
+                        <p>Vivian arched an eyebrow but didn&#39;t press further, her attention already shifting to the food Ethan had delivered.</p>
+                        
+                        <p>Isabella, however, seemed more intrigued by examining the contents. The porcelain soup container was exquisite and substantial, radiating understated elegance.</p>
+                        
+                        <p>&#34;This definitely isn&#39;t from some ordinary takeout place!&#34; Isabella exclaimed, her face brightening. &#34;Vivian, Mr. Blackwood treats you exceptionally well. A wealthy, gorgeous CEO pampering you? That&#39;s every girl&#39;s fantasy.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Vivian&#39;s lips curved into a faint, knowing smile. &#34;These gestures mean nothing to someone with his resources. For men like him, it&#39;s the easiest way to show attention.&#34;</p>
-                    
-                    <p>Isabella paused, considering her words. &#34;You&#39;re right,&#34; she said thoughtfully. &#34;Though I heard when Serena was ill, he personally carried her to the hospital and stayed by her bedside the entire time. Even with all his devotion, he still couldn&#39;t escape being... well, typical male behavior.&#34;</p>
-                    
-                    <p>She had meant to generalize, but as a particular face flashed through her mind, her words trailed off.</p>
-                    
-                    <p>Looking at Vivian with sudden admiration, Isabella added, &#34;You&#39;re so level-headed. No wonder Sebastian respects you so much.&#34;</p>
-                    
-                    <p>Vivian forced a smile, changing the subject. &#34;Have you eaten? There&#39;s too much here for one person. Join me?&#34;</p>
-                    
-                    <p>Was she truly level-headed? If she were, she wouldn&#39;t have allowed herself to remain in such a precarious, humiliating situation. If she were truly sensible, she wouldn&#39;t have hesitated when their contractual year ended.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Vivian&#39;s lips curved into a faint, knowing smile. &#34;These gestures mean nothing to someone with his resources. For men like him, it&#39;s the easiest way to show attention.&#34;</p>
+                        
+                        <p>Isabella paused, considering her words. &#34;You&#39;re right,&#34; she said thoughtfully. &#34;Though I heard when Serena was ill, he personally carried her to the hospital and stayed by her bedside the entire time. Even with all his devotion, he still couldn&#39;t escape being... well, typical male behavior.&#34;</p>
+                        
+                        <p>She had meant to generalize, but as a particular face flashed through her mind, her words trailed off.</p>
+                        
+                        <p>Looking at Vivian with sudden admiration, Isabella added, &#34;You&#39;re so level-headed. No wonder Sebastian respects you so much.&#34;</p>
+                        
+                        <p>Vivian forced a smile, changing the subject. &#34;Have you eaten? There&#39;s too much here for one person. Join me?&#34;</p>
+                        
+                        <p>Was she truly level-headed? If she were, she wouldn&#39;t have allowed herself to remain in such a precarious, humiliating situation. If she were truly sensible, she wouldn&#39;t have hesitated when their contractual year ended.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>After lunch, Isabella left for work, leaving Vivian alone in the quiet room. Fortunately, the sedative she&#39;d been given was mild, leaving no lasting effects. Between hydration, rest, and a satisfying meal, she quickly regained her usual energy.</p>
-                    
-                    <p>After a revitalizing shower, she changed into a simple yet elegant long-sleeved nightgown. Settling against the headboard, she retrieved the Ambermyst script and began rehearsing her lines with quiet intensity. Seeing the story she&#39;d written through an actress&#39;s perspective brought fresh insights, as if she were uncovering hidden layers within her own creation.</p>
-                    
-                    <p>Time passed swiftly when immersed in creative work. Before she noticed, daylight had surrendered to twilight&#39;s deep hues. The rhythmic patter of heavy rain outside enveloped the room in cozy isolation, making it feel like a solitary island adrift in a stormy sea.</p>
-                    
-                    <p>Her concentration was broken by a knock at the door. Assuming it was Isabella or perhaps Sebastian bringing dinner, she padded to the door still holding the script, her mind elsewhere. But when she opened it, she was met with an entirely unexpected sight.</p>
-                    
-                    <p>Adrian stood there, rain-drenched and intense. Her brow furrowed as she lowered the script, blurting out, &#34;What are you doing here?&#34;</p>
-                    
-                    <p>Adrian stood bare-chested in the doorway, his damp white shirt clinging to every defined muscle like liquid silk. A single raised eyebrow accentuated his sharp features as his voice cut through the humid air. &#34;Were you expecting someone else?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>After lunch, Isabella left for work, leaving Vivian alone in the quiet room. Fortunately, the sedative she&#39;d been given was mild, leaving no lasting effects. Between hydration, rest, and a satisfying meal, she quickly regained her usual energy.</p>
+                        
+                        <p>After a revitalizing shower, she changed into a simple yet elegant long-sleeved nightgown. Settling against the headboard, she retrieved the Ambermyst script and began rehearsing her lines with quiet intensity. Seeing the story she&#39;d written through an actress&#39;s perspective brought fresh insights, as if she were uncovering hidden layers within her own creation.</p>
+                        
+                        <p>Time passed swiftly when immersed in creative work. Before she noticed, daylight had surrendered to twilight&#39;s deep hues. The rhythmic patter of heavy rain outside enveloped the room in cozy isolation, making it feel like a solitary island adrift in a stormy sea.</p>
+                        
+                        <p>Her concentration was broken by a knock at the door. Assuming it was Isabella or perhaps Sebastian bringing dinner, she padded to the door still holding the script, her mind elsewhere. But when she opened it, she was met with an entirely unexpected sight.</p>
+                        
+                        <p>Adrian stood there, rain-drenched and intense. Her brow furrowed as she lowered the script, blurting out, &#34;What are you doing here?&#34;</p>
+                        
+                        <p>Adrian stood bare-chested in the doorway, his damp white shirt clinging to every defined muscle like liquid silk. A single raised eyebrow accentuated his sharp features as his voice cut through the humid air. &#34;Were you expecting someone else?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Before the tension could thicken, Ethan materialized in the frame, his broad shoulders nearly filling the space. &#34;Mrs. Hartley, Mr. Blackwood sustained injuries from a falling tree branch and requires medical attention.&#34;</p>
-                    
-                    <p>Vivian&#39;s eyes darted to the streaks of dried mud staining Adrian&#39;s shoulder, her lips thinning into a disapproving line. Without speaking, she pivoted sharply toward the bathroom cabinet, her heels clicking against the hardwood with military precision. Adrian followed uninvited, his presence expanding to fill her private space.</p>
-                    
-                    <p>She hesitated mid-step when she sensed him crossing the threshold. Protesting now would be pointless - the damage was done. All she wanted was to treat his wounds and send him packing.</p>
-                    
-                    <p>&#34;I&#39;ll retrieve the documents from Mr. Holloway,&#34; Ethan announced from the doorway. Adrian acknowledged with a barely perceptible tilt of his chin. Turning to Vivian, Ethan added, &#34;Please see to Mr. Blackwood&#39;s injuries,&#34; before shutting the door with finality, effectively silencing any objections.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Before the tension could thicken, Ethan materialized in the frame, his broad shoulders nearly filling the space. &#34;Mrs. Hartley, Mr. Blackwood sustained injuries from a falling tree branch and requires medical attention.&#34;</p>
+                        
+                        <p>Vivian&#39;s eyes darted to the streaks of dried mud staining Adrian&#39;s shoulder, her lips thinning into a disapproving line. Without speaking, she pivoted sharply toward the bathroom cabinet, her heels clicking against the hardwood with military precision. Adrian followed uninvited, his presence expanding to fill her private space.</p>
+                        
+                        <p>She hesitated mid-step when she sensed him crossing the threshold. Protesting now would be pointless - the damage was done. All she wanted was to treat his wounds and send him packing.</p>
+                        
+                        <p>&#34;I&#39;ll retrieve the documents from Mr. Holloway,&#34; Ethan announced from the doorway. Adrian acknowledged with a barely perceptible tilt of his chin. Turning to Vivian, Ethan added, &#34;Please see to Mr. Blackwood&#39;s injuries,&#34; before shutting the door with finality, effectively silencing any objections.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

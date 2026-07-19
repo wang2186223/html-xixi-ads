@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:29.744505">
-    <meta property="article:modified_time" content="2026-07-19T02:47:29.744505">
+    <meta property="article:published_time" content="2026-07-19T13:03:24.127774">
+    <meta property="article:modified_time" content="2026-07-19T13:03:24.127774">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:29">
+    <meta name="last-modified" content="2026-07-19 13:03:24">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:29.744505",
-        "dateModified": "2026-07-19T02:47:29.744505",
+        "datePublished": "2026-07-19T13:03:24.127774",
+        "dateModified": "2026-07-19T13:03:24.127774",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,25 +893,29 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>“Surprise!!&#34;</p>
-                    
-                    <p>The moment Sandra stepped through the door, a chorus of voices erupted in a warm, boisterous greeting. She froze in place for a heartbeat, her eyes wide as she took in the sight. A roomn filled with friends, family, and familiar faces greeted her, the cheerful noise mingling with laughter and excitement.</p>
-                    
-                    <p>“Oh my...&#34; Sandra&#39;s smile spread, her heart leaping in her chest. It had been so long since she felt this kind of warmth. Her eyes scanned the crowd,catching sight of her high school friends and a few family friends she hadn&#39;t seen in ages.</p>
-                    
-                    <p>&#34;Welcome back, my granddaughter,&#34; Grandma Helen said with open arms.her voice brimming with joy.</p>
-                    
-                    <p>&#34;Grandma,&#34; Sandra said immediately, rushing into her embrace.&#34;I missed you.”</p>
-                    
-                    <p>&#34;I missed you too,&#34; Helen replied emotionally, holding her close as tears welled in her eyes.</p>
-                    
-                    <p>Lilly, standing off to the side, watched the reunion silently, her smile small but genuine as Sandra hugged one friend after another. Sandra&#39;s laughter filled the room as she made her way through the crowd, greeting familiar faces until she approached Richard.  “Richard!&#34; Sandra exclaimed, her voice warm and familiar. “Sandra!&#34; Richard responded just as enthusiastically. They embraced, their hug tight and full of the kind of affection only old</p>
-                    
-                    <p>friends could share. But as they broke apart. Sandra&#39;s gaze shifted to Lilly,who stood a few paces away, observing the reunion with a polite.composed smile.</p>
-                    
-                    <p>&#34;Welcome home, Sandra,&#34; Lilly said, her voice soft, yet undeniably warm.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>“Surprise!!&#34;</p>
+                        
+                        <p>The moment Sandra stepped through the door, a chorus of voices erupted in a warm, boisterous greeting. She froze in place for a heartbeat, her eyes wide as she took in the sight. A roomn filled with friends, family, and familiar faces greeted her, the cheerful noise mingling with laughter and excitement.</p>
+                        
+                        <p>“Oh my...&#34; Sandra&#39;s smile spread, her heart leaping in her chest. It had been so long since she felt this kind of warmth. Her eyes scanned the crowd,catching sight of her high school friends and a few family friends she hadn&#39;t seen in ages.</p>
+                        
+                        <p>&#34;Welcome back, my granddaughter,&#34; Grandma Helen said with open arms.her voice brimming with joy.</p>
+                        
+                        <p>&#34;Grandma,&#34; Sandra said immediately, rushing into her embrace.&#34;I missed you.”</p>
+                        
+                        <p>&#34;I missed you too,&#34; Helen replied emotionally, holding her close as tears welled in her eyes.</p>
+                        
+                        <p>Lilly, standing off to the side, watched the reunion silently, her smile small but genuine as Sandra hugged one friend after another. Sandra&#39;s laughter filled the room as she made her way through the crowd, greeting familiar faces until she approached Richard.  “Richard!&#34; Sandra exclaimed, her voice warm and familiar. “Sandra!&#34; Richard responded just as enthusiastically. They embraced, their hug tight and full of the kind of affection only old</p>
+                        
+                        <p>friends could share. But as they broke apart. Sandra&#39;s gaze shifted to Lilly,who stood a few paces away, observing the reunion with a polite.composed smile.</p>
+                        
+                        <p>&#34;Welcome home, Sandra,&#34; Lilly said, her voice soft, yet undeniably warm.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -890,25 +930,29 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>All eyes in the room shifted toward Sandra as she stood still for a moment.contemplating. Everyone was waiting. Even Grandma Helen, who stood at the edge of the room, was eagerly watching to see how Sandra would react to Lilly.</p>
-                    
-                    <p>After what felt like an eternity, Sandra smiled-an unexpectedly bright,welcoming smile. She stepped forward, wrapping Lilly in an embrace that startled everyone, including Lilly. No one had expected such a gesture on their first meeting, least of all Lilly.</p>
-                    
-                    <p>For a moment, the room was completely still, the tension in the air dissipating as Sandra pulled back from the hug and flashed a teasing grin.“I never thought my cold-hearted brother had such a good eye for beauty,&#34;she commented, her voice playful yet laced with an edge.</p>
-                    
-                    <p>Lilly smiled, her lips curling in response.“You&#39;re stunning,&#34; Sandra added,her words genuine.</p>
-                    
-                    <p>“Thank you, and so are you,&#34; Lilly replied, her voice steady, though there was an underlying hesitation.Grandma Helen let out a sigh of relief, the tension in her shoulders melting as she watched Sandra and Lilly engage in a conversation. It was clear to everyone that, for the momenat, Sandra had accepted Lilly. Sandra leaned in closer to Lilly. &#34;So, tell me more about you and Alexander,&#34; she asked, her curiosity piqued as they continued to talk. As their conversation deepened. Sandra was delighted to learn that she would soon be an aunt. Her excitement was palpable. &#34;That&#39;s the greatest gift Alexander could give me&#34; she said with a broad smile.</p>
-                    
-                    <p>By then. Sandra&#39;s thoughts turned to the only other petson she truly wanted to see.&#34;By the way, where is Alexander?&#34; she asked.</p>
-                    
-                    <p>Lilly&#39;s smile faltered, but she quickly recovered.&#34;He&#39;ll be here soon.&#34; she said,though the uncertainty in her voice didn&#39;t go unnoticed.</p>
-                    
-                    <p>The room fell into a lighter chatter as everyone continued to enjoy dinner.Just as they were beginning to settle in, the door opened. and Alexander stepped inside. His presence was commanding.his eyes scanning the room before they landed on his sister.</p>
-                    
-                    <p>&#34;Brother!&#34; Sandra stood up quickly, her voice filled with warmth and affection.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>All eyes in the room shifted toward Sandra as she stood still for a moment.contemplating. Everyone was waiting. Even Grandma Helen, who stood at the edge of the room, was eagerly watching to see how Sandra would react to Lilly.</p>
+                        
+                        <p>After what felt like an eternity, Sandra smiled-an unexpectedly bright,welcoming smile. She stepped forward, wrapping Lilly in an embrace that startled everyone, including Lilly. No one had expected such a gesture on their first meeting, least of all Lilly.</p>
+                        
+                        <p>For a moment, the room was completely still, the tension in the air dissipating as Sandra pulled back from the hug and flashed a teasing grin.“I never thought my cold-hearted brother had such a good eye for beauty,&#34;she commented, her voice playful yet laced with an edge.</p>
+                        
+                        <p>Lilly smiled, her lips curling in response.“You&#39;re stunning,&#34; Sandra added,her words genuine.</p>
+                        
+                        <p>“Thank you, and so are you,&#34; Lilly replied, her voice steady, though there was an underlying hesitation.Grandma Helen let out a sigh of relief, the tension in her shoulders melting as she watched Sandra and Lilly engage in a conversation. It was clear to everyone that, for the momenat, Sandra had accepted Lilly. Sandra leaned in closer to Lilly. &#34;So, tell me more about you and Alexander,&#34; she asked, her curiosity piqued as they continued to talk. As their conversation deepened. Sandra was delighted to learn that she would soon be an aunt. Her excitement was palpable. &#34;That&#39;s the greatest gift Alexander could give me&#34; she said with a broad smile.</p>
+                        
+                        <p>By then. Sandra&#39;s thoughts turned to the only other petson she truly wanted to see.&#34;By the way, where is Alexander?&#34; she asked.</p>
+                        
+                        <p>Lilly&#39;s smile faltered, but she quickly recovered.&#34;He&#39;ll be here soon.&#34; she said,though the uncertainty in her voice didn&#39;t go unnoticed.</p>
+                        
+                        <p>The room fell into a lighter chatter as everyone continued to enjoy dinner.Just as they were beginning to settle in, the door opened. and Alexander stepped inside. His presence was commanding.his eyes scanning the room before they landed on his sister.</p>
+                        
+                        <p>&#34;Brother!&#34; Sandra stood up quickly, her voice filled with warmth and affection.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -923,25 +967,29 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Alexander walked toward her. his expression a mix of fondness and calm control. As soon as they embraced, the room seemed to quiet. Lilly watched.noting the brief but genuine warmth in Alexander&#39;s eyes as he hugged Sandra. Despite his usual stoic demeanor, it was clear he cared deeply for his family.</p>
-                    
-                    <p>After a moment, Sandra let go of her brother and took a seat, leaving Alexander to settle next to Lilly. There was a brief silence before Lilly spoke, her voice a bit softer now.</p>
-                    
-                    <p>&#34;I&#39;m glad you made it,&#34; she said. Alexander nodded, his gaze lingering on her face for a moment longer than usual. &#34;Is something on my face?&#34; Lilly asked, raising an eyebrow. &#34;No,” he replied slowly, though his gaze didn&#39;t waver, &#34;Did you cry?&#34; Lilly blinked, confused. &#34;Huh? No,&#34; she said, her voice carrying a hint of uncertainty.&#34;Why do you ask?&#34;</p>
-                    
-                    <p>Alexander said nothing, but his eyes never left her. He knew more than he let on-his bodyguards had reported everything about her recent activities.including the fact that she&#39;d cried after speaking with her father earlier that day.</p>
-                    
-                    <p>The evening passed in relative ease, with laughter and shared stories around the dinner table. However, as the night wore on, Lilly&#39;s mind was elsewhere. Her phone buzzed in her pocket, and she quickly excused herself from the room. It was a message from Matthew.</p>
-                    
-                    <p>We&#39;ve found him. Call me.</p>
-                    
-                    <p>Lilly&#39;s heart skipped a beat as she read the text. She rushed outside to make the call.</p>
-                    
-                    <p>\---</p>
-                    
-                    <p>&#34;Where is he?&#34; Lilly demanded, her voice urgent as she paced the hallway.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Alexander walked toward her. his expression a mix of fondness and calm control. As soon as they embraced, the room seemed to quiet. Lilly watched.noting the brief but genuine warmth in Alexander&#39;s eyes as he hugged Sandra. Despite his usual stoic demeanor, it was clear he cared deeply for his family.</p>
+                        
+                        <p>After a moment, Sandra let go of her brother and took a seat, leaving Alexander to settle next to Lilly. There was a brief silence before Lilly spoke, her voice a bit softer now.</p>
+                        
+                        <p>&#34;I&#39;m glad you made it,&#34; she said. Alexander nodded, his gaze lingering on her face for a moment longer than usual. &#34;Is something on my face?&#34; Lilly asked, raising an eyebrow. &#34;No,” he replied slowly, though his gaze didn&#39;t waver, &#34;Did you cry?&#34; Lilly blinked, confused. &#34;Huh? No,&#34; she said, her voice carrying a hint of uncertainty.&#34;Why do you ask?&#34;</p>
+                        
+                        <p>Alexander said nothing, but his eyes never left her. He knew more than he let on-his bodyguards had reported everything about her recent activities.including the fact that she&#39;d cried after speaking with her father earlier that day.</p>
+                        
+                        <p>The evening passed in relative ease, with laughter and shared stories around the dinner table. However, as the night wore on, Lilly&#39;s mind was elsewhere. Her phone buzzed in her pocket, and she quickly excused herself from the room. It was a message from Matthew.</p>
+                        
+                        <p>We&#39;ve found him. Call me.</p>
+                        
+                        <p>Lilly&#39;s heart skipped a beat as she read the text. She rushed outside to make the call.</p>
+                        
+                        <p>\---</p>
+                        
+                        <p>&#34;Where is he?&#34; Lilly demanded, her voice urgent as she paced the hallway.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -956,25 +1004,29 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;If we&#39;re right, he&#39;s hiding in a small village in the western part of the country,&#34;Matthew&#39;s voice crackled through the phone.</p>
-                    
-                    <p>&#34;That&#39;s not too far. How long will it take to get there?&#34; Lilly asked,her mind already racing through the logistics of the journey.</p>
-                    
-                    <p>&#34;The village is near City U. We&#39;l need to get to the city, take a train to a nearby town, and then drive from there,&#34; Matthew explained.</p>
-                    
-                    <p>Lilly cursed under her breath. &#34;He&#39;s done well to hide, but we&#39;ve found him. Now we need to catch him.&#34;</p>
-                    
-                    <p>&#34;Yes,&#34; Matthew agreed.&#34;We&#39;ll make him confess to his crimes and tell us who sent him.&#34;</p>
-                    
-                    <p>Lilly felt the weight of the situation pressing down on her. But there&#39;s more,&#34;she thought. Sarah&#39;s warning echoed in her mind:</p>
-                    
-                    <p>*&#34;You need to tell Alexander. He trusts you now.&#34;*</p>
-                    
-                    <p>Lilly hesitated, but Sarah&#39;s voice was firm in her head. *If you keep this from him, you&#39;ll lose that trust.*</p>
-                    
-                    <p>&#34;I think it&#39;s time you tell Alexander,&#34; Sarah had said earlier.“You can&#39;t keep hiding this. He has connections that could get the assassin to talk.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;If we&#39;re right, he&#39;s hiding in a small village in the western part of the country,&#34;Matthew&#39;s voice crackled through the phone.</p>
+                        
+                        <p>&#34;That&#39;s not too far. How long will it take to get there?&#34; Lilly asked,her mind already racing through the logistics of the journey.</p>
+                        
+                        <p>&#34;The village is near City U. We&#39;l need to get to the city, take a train to a nearby town, and then drive from there,&#34; Matthew explained.</p>
+                        
+                        <p>Lilly cursed under her breath. &#34;He&#39;s done well to hide, but we&#39;ve found him. Now we need to catch him.&#34;</p>
+                        
+                        <p>&#34;Yes,&#34; Matthew agreed.&#34;We&#39;ll make him confess to his crimes and tell us who sent him.&#34;</p>
+                        
+                        <p>Lilly felt the weight of the situation pressing down on her. But there&#39;s more,&#34;she thought. Sarah&#39;s warning echoed in her mind:</p>
+                        
+                        <p>*&#34;You need to tell Alexander. He trusts you now.&#34;*</p>
+                        
+                        <p>Lilly hesitated, but Sarah&#39;s voice was firm in her head. *If you keep this from him, you&#39;ll lose that trust.*</p>
+                        
+                        <p>&#34;I think it&#39;s time you tell Alexander,&#34; Sarah had said earlier.“You can&#39;t keep hiding this. He has connections that could get the assassin to talk.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -989,25 +1041,29 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Lilly stood still for a moment, lost in thought. Then Michael added, “Sarah&#39;s right. Your stepmother-now that you&#39;re the vice president-she&#39;s definitely planning something. You can&#39;t face this alone.&#34;</p>
-                    
-                    <p>Lilly nodded,though doubt lingered in her mind. She needed Alexander&#39;s help,but telling him felt like walking a dangerous line.</p>
-                    
-                    <p>When she returned home later that evening, she found Alexander already there.Clara greeted him warmly, but Sandra&#39;s usual welcome was absent.He looked around, noticing Lilly&#39;s absence. &#34;Ma&#39;am is already back home,&#34; Clara commented, watching Alexander closely. Without a word, he walked up the stairs, his mind racing. When he knocked on Lilly&#39;s door, there was no response. He opened the door and found it empty. His steps quickened as he made his way to the mini-library on the ground floor,where he found Lilly reading,her back to the door.</p>
-                    
-                    <p>Lilly turned when she heard the door open, and when her eyes met Alexander&#39;s, her breath caught in her throat. She stood up immediately.moving toward him and embracing him without hesitation.</p>
-                    
-                    <p>&#34;What are you doing here?&#34; he asked, his voice low,laced with curiosity.</p>
-                    
-                    <p>“Waiting for you,&#34; she replied, her words steady but carrying an undertone of something heavier.</p>
-                    
-                    <p>&#34;In here? That&#39;s new.&#34; Alexander&#39;s lips quirked into a small, amused smile.</p>
-                    
-                    <p>&#34;I need to tell you something important,&#34; Lilly said, her tone suddenly serious.</p>
-                    
-                    <p>Alexander&#39;s expression shifted, and he gestured for her to sit.&#34;What is it?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Lilly stood still for a moment, lost in thought. Then Michael added, “Sarah&#39;s right. Your stepmother-now that you&#39;re the vice president-she&#39;s definitely planning something. You can&#39;t face this alone.&#34;</p>
+                        
+                        <p>Lilly nodded,though doubt lingered in her mind. She needed Alexander&#39;s help,but telling him felt like walking a dangerous line.</p>
+                        
+                        <p>When she returned home later that evening, she found Alexander already there.Clara greeted him warmly, but Sandra&#39;s usual welcome was absent.He looked around, noticing Lilly&#39;s absence. &#34;Ma&#39;am is already back home,&#34; Clara commented, watching Alexander closely. Without a word, he walked up the stairs, his mind racing. When he knocked on Lilly&#39;s door, there was no response. He opened the door and found it empty. His steps quickened as he made his way to the mini-library on the ground floor,where he found Lilly reading,her back to the door.</p>
+                        
+                        <p>Lilly turned when she heard the door open, and when her eyes met Alexander&#39;s, her breath caught in her throat. She stood up immediately.moving toward him and embracing him without hesitation.</p>
+                        
+                        <p>&#34;What are you doing here?&#34; he asked, his voice low,laced with curiosity.</p>
+                        
+                        <p>“Waiting for you,&#34; she replied, her words steady but carrying an undertone of something heavier.</p>
+                        
+                        <p>&#34;In here? That&#39;s new.&#34; Alexander&#39;s lips quirked into a small, amused smile.</p>
+                        
+                        <p>&#34;I need to tell you something important,&#34; Lilly said, her tone suddenly serious.</p>
+                        
+                        <p>Alexander&#39;s expression shifted, and he gestured for her to sit.&#34;What is it?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1022,25 +1078,29 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Lilly hesitated, but then she stepped back and looked him in the eyes,her face somber. &#34;It&#39;s about my sisters&#39;deaths.&#34;</p>
-                    
-                    <p>Alexander frowned, his attention fully on her. &#34;You said you were investigating but found nothing.&#34;</p>
-                    
-                    <p>&#34;I did find somnething,&#34; Lilly corrected softly. &#34;I know who killed them.&#34;</p>
-                    
-                    <p>Alexander&#39;s brow furrowed, &#34;You do?” &#34;Yes,” Lilly replied, her voicetrembling with the weight of the revelation. “Who? And how long have you known?” Alexander pressed, his concern deepening.</p>
-                    
-                    <p>&#34;My stepmother and Kate,&#34; Lilly whispered. her throat tightwith emotion.</p>
-                    
-                    <p>A heavy silence filled the room as Alexander processed her words.He turned away, his fists clenching.</p>
-                    
-                    <p>&#34;How long?&#34; he asked again, his voice rough with anger.</p>
-                    
-                    <p>&#34;Two months after I went into hiding,&#34; Lilly replied, her voice breaking.</p>
-                    
-                    <p>&#34;And you&#39;ve kept it to yourself? Letting the murderers walk free all this time?&#34; Alexander&#39;s voice raised with fury, his control slipping for a moment.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Lilly hesitated, but then she stepped back and looked him in the eyes,her face somber. &#34;It&#39;s about my sisters&#39;deaths.&#34;</p>
+                        
+                        <p>Alexander frowned, his attention fully on her. &#34;You said you were investigating but found nothing.&#34;</p>
+                        
+                        <p>&#34;I did find somnething,&#34; Lilly corrected softly. &#34;I know who killed them.&#34;</p>
+                        
+                        <p>Alexander&#39;s brow furrowed, &#34;You do?” &#34;Yes,” Lilly replied, her voicetrembling with the weight of the revelation. “Who? And how long have you known?” Alexander pressed, his concern deepening.</p>
+                        
+                        <p>&#34;My stepmother and Kate,&#34; Lilly whispered. her throat tightwith emotion.</p>
+                        
+                        <p>A heavy silence filled the room as Alexander processed her words.He turned away, his fists clenching.</p>
+                        
+                        <p>&#34;How long?&#34; he asked again, his voice rough with anger.</p>
+                        
+                        <p>&#34;Two months after I went into hiding,&#34; Lilly replied, her voice breaking.</p>
+                        
+                        <p>&#34;And you&#39;ve kept it to yourself? Letting the murderers walk free all this time?&#34; Alexander&#39;s voice raised with fury, his control slipping for a moment.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1055,17 +1115,21 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Lilly swallowed,her heart pounding in her chest. “There wasn&#39;t enough evidence. I couldn&#39;t risk going to anyone without solid proof.”</p>
-                    
-                    <p>&#34;Solid proof? You should have told me, told your grandfather,&#34;he snapped.unable to contain his anger. “You&#39;ve been putting yourself at risk while they roam free!&#34;</p>
-                    
-                    <p>Lilly&#39;s breath hitched as tears filled her eyes. But despite the fury in his words, Alexander saw the pain in her eyes, and it softened him. He crossed the room and wiped the tear that slipped down her cheek.</p>
-                    
-                    <p>&#34;Stop crying,&#34; he muttered,pulling her into his arms.</p>
-                    
-                    <p>Lilly leaned into him, finding solace in his warmth despite the storm that raged within her. &#34;Tell me what you need me to do,&#34; Alexander said, his voice calm now but carrying a dangerous promise. Lilly pulled away slightly, her eyes locking with his. &#34;I need your help to make the killer confess,&#34; Alexander&#39;s gaze turned cold, his jaw tightening. &#34;Then we&#39;ll make them pay.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Lilly swallowed,her heart pounding in her chest. “There wasn&#39;t enough evidence. I couldn&#39;t risk going to anyone without solid proof.”</p>
+                        
+                        <p>&#34;Solid proof? You should have told me, told your grandfather,&#34;he snapped.unable to contain his anger. “You&#39;ve been putting yourself at risk while they roam free!&#34;</p>
+                        
+                        <p>Lilly&#39;s breath hitched as tears filled her eyes. But despite the fury in his words, Alexander saw the pain in her eyes, and it softened him. He crossed the room and wiped the tear that slipped down her cheek.</p>
+                        
+                        <p>&#34;Stop crying,&#34; he muttered,pulling her into his arms.</p>
+                        
+                        <p>Lilly leaned into him, finding solace in his warmth despite the storm that raged within her. &#34;Tell me what you need me to do,&#34; Alexander said, his voice calm now but carrying a dangerous promise. Lilly pulled away slightly, her eyes locking with his. &#34;I need your help to make the killer confess,&#34; Alexander&#39;s gaze turned cold, his jaw tightening. &#34;Then we&#39;ll make them pay.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2381,6 +2445,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2507,7 +2651,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2549,32 +2692,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2585,21 +2710,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2632,6 +2747,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2652,20 +2773,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

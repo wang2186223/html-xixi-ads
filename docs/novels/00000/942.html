@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Vivian&#39;s expression remained unreadable. &#34;Does his money spend differently than mine?&#34; Her tone was deceptively mild. &#34;For someone in retail, you should know better than to judge customers by their handbags.&#34;</p>
-                    
-                    <p>The saleswoman whirled toward her colleagues with a theatrical gasp. &#34;Can you believe this? The audacity!&#34; The other associates exchanged uneasy glances but remained silent.</p>
-                    
-                    <p>The older saleswoman scoffed when Vivian didn&#39;t respond to her taunts. She turned back with a sneer, her voice laced with venom. &#34;You&#39;re clearly out of your league, darling. That pen costs more than your entire pathetic existence. Don&#39;t embarrass yourself.&#34;</p>
-                    
-                    <p>Vivian&#39;s fingers stilled on the glass display case. She withdrew her hand slowly, her gaze turning arctic. &#34;Is this how you treat all your customers? I&#39;d like to speak with your supervisor.&#34;</p>
-                    
-                    <p>With an exaggerated eye roll, the saleswoman crossed her arms. &#34;The manager? For you? Don&#39;t waste his time.&#34;</p>
-                    
-                    <p>&#34;And what about me? Do I qualify for an audience?&#34; A rich, velvety voice cut through the tension like a knife.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Vivian&#39;s expression remained unreadable. &#34;Does his money spend differently than mine?&#34; Her tone was deceptively mild. &#34;For someone in retail, you should know better than to judge customers by their handbags.&#34;</p>
+                        
+                        <p>The saleswoman whirled toward her colleagues with a theatrical gasp. &#34;Can you believe this? The audacity!&#34; The other associates exchanged uneasy glances but remained silent.</p>
+                        
+                        <p>The older saleswoman scoffed when Vivian didn&#39;t respond to her taunts. She turned back with a sneer, her voice laced with venom. &#34;You&#39;re clearly out of your league, darling. That pen costs more than your entire pathetic existence. Don&#39;t embarrass yourself.&#34;</p>
+                        
+                        <p>Vivian&#39;s fingers stilled on the glass display case. She withdrew her hand slowly, her gaze turning arctic. &#34;Is this how you treat all your customers? I&#39;d like to speak with your supervisor.&#34;</p>
+                        
+                        <p>With an exaggerated eye roll, the saleswoman crossed her arms. &#34;The manager? For you? Don&#39;t waste his time.&#34;</p>
+                        
+                        <p>&#34;And what about me? Do I qualify for an audience?&#34; A rich, velvety voice cut through the tension like a knife.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Both women turned toward the entrance. Leaning against the doorframe with effortless grace stood Dominic Sinclair, his trademark smirk playing on his lips. Though his posture appeared relaxed, his sharp hazel eyes missed nothing.</p>
-                    
-                    <p>The saleswoman&#39;s face underwent a remarkable transformation - from shock to obsequious delight in milliseconds. She practically tripped over herself rushing toward him. &#34;Mr. Sinclair! What an unexpected pleasure! Shopping for yourself today? Or perhaps a gift? Let me prepare our private lounge - I&#39;ll bring our newest collection for your consideration.&#34;</p>
-                    
-                    <p>Dominic pushed off the wall and strolled further inside, his tone deceptively light. &#34;No customers, you said?&#34; He gestured toward Vivian, who stood motionless by the counter. &#34;Then who&#39;s this? A ghost? Or just beneath your notice?&#34;</p>
-                    
-                    <p>The saleswoman faltered, realization dawning too late. Her eyes darted between Vivian and Dominic, piecing together her own narrative. Clearly, the wealthy playboy didn&#39;t actually know this nobody - he must have noticed her pretty face and decided to play knight in shining armor.</p>
-                    
-                    <p>Internally seething, the saleswoman assessed Vivian&#39;s flawless features with jealous scrutiny. Definitely stic surgery. She leaned conspiratorially toward Dominic, lowering her voice. &#34;Mr. Sinclair, don&#39;t trouble yourself with her type. She&#39;s just another gold digger who spends more time hunting rich men than actually shopping.&#34;</p>
-                    
-                    <p>Dominic&#39;s gaze flickered to Vivian briefly before returning to the saleswoman. His smile remained, but his eyes turned dangerous. &#34;Fascinating. And you&#39;re an expert on her life story because...?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Both women turned toward the entrance. Leaning against the doorframe with effortless grace stood Dominic Sinclair, his trademark smirk playing on his lips. Though his posture appeared relaxed, his sharp hazel eyes missed nothing.</p>
+                        
+                        <p>The saleswoman&#39;s face underwent a remarkable transformation - from shock to obsequious delight in milliseconds. She practically tripped over herself rushing toward him. &#34;Mr. Sinclair! What an unexpected pleasure! Shopping for yourself today? Or perhaps a gift? Let me prepare our private lounge - I&#39;ll bring our newest collection for your consideration.&#34;</p>
+                        
+                        <p>Dominic pushed off the wall and strolled further inside, his tone deceptively light. &#34;No customers, you said?&#34; He gestured toward Vivian, who stood motionless by the counter. &#34;Then who&#39;s this? A ghost? Or just beneath your notice?&#34;</p>
+                        
+                        <p>The saleswoman faltered, realization dawning too late. Her eyes darted between Vivian and Dominic, piecing together her own narrative. Clearly, the wealthy playboy didn&#39;t actually know this nobody - he must have noticed her pretty face and decided to play knight in shining armor.</p>
+                        
+                        <p>Internally seething, the saleswoman assessed Vivian&#39;s flawless features with jealous scrutiny. Definitely stic surgery. She leaned conspiratorially toward Dominic, lowering her voice. &#34;Mr. Sinclair, don&#39;t trouble yourself with her type. She&#39;s just another gold digger who spends more time hunting rich men than actually shopping.&#34;</p>
+                        
+                        <p>Dominic&#39;s gaze flickered to Vivian briefly before returning to the saleswoman. His smile remained, but his eyes turned dangerous. &#34;Fascinating. And you&#39;re an expert on her life story because...?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Vivian observed the exchange with detached amusement, perfectly content to let Dominic&#39;s little drama play out.</p>
-                    
-                    <p>Misinterpreting his reaction, the saleswoman pressed on eagerly. &#34;In our line of work, we develop an instinct for these things,&#34; she boasted, puffing up with false importance. &#34;Men often miss the obvious, Mr. Sinclair. But I can spot her kind from across the room.&#34;</p>
-                    
-                    <p>Dominic&#39;s charming facade shattered instantly. His expression darkened as his voice dropped to a lethal whisper. &#34;Are you implying I&#39;m stupid?&#34;</p>
-                    
-                    <p>The color drained from the saleswoman&#39;s face as she realized her miscalculation. &#34;N-no, of course not! I just meant—&#34; she stammered, her confidence crumbling.</p>
-                    
-                    <p>Audrey&#39;s resentment toward Vivian surged. If not for this woman, she wouldn&#39;t have offended someone as important as Dominic.</p>
-                    
-                    <p>As she desperately searched for a solution, her gaze landed on a familiar silhouette outside the boutique. Audrey. The striking designer outfit made her instantly recognizable. Rumors had been circulating about Audrey&#39;s close relationship with Dominic.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Vivian observed the exchange with detached amusement, perfectly content to let Dominic&#39;s little drama play out.</p>
+                        
+                        <p>Misinterpreting his reaction, the saleswoman pressed on eagerly. &#34;In our line of work, we develop an instinct for these things,&#34; she boasted, puffing up with false importance. &#34;Men often miss the obvious, Mr. Sinclair. But I can spot her kind from across the room.&#34;</p>
+                        
+                        <p>Dominic&#39;s charming facade shattered instantly. His expression darkened as his voice dropped to a lethal whisper. &#34;Are you implying I&#39;m stupid?&#34;</p>
+                        
+                        <p>The color drained from the saleswoman&#39;s face as she realized her miscalculation. &#34;N-no, of course not! I just meant—&#34; she stammered, her confidence crumbling.</p>
+                        
+                        <p>Audrey&#39;s resentment toward Vivian surged. If not for this woman, she wouldn&#39;t have offended someone as important as Dominic.</p>
+                        
+                        <p>As she desperately searched for a solution, her gaze landed on a familiar silhouette outside the boutique. Audrey. The striking designer outfit made her instantly recognizable. Rumors had been circulating about Audrey&#39;s close relationship with Dominic.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>The pieces clicked into place. The girlfriend was here—this was the perfect opportunity to turn the tables.</p>
-                    
-                    <p>She discreetly signaled to another sales associate nearby, one who had gossiped about Audrey and Dominic before. The woman nodded understandingly and hurried outside to intercept Audrey.</p>
-                    
-                    <p>&#34;Miss Winslow?&#34; The associate greeted with practiced warmth. &#34;Are you looking for someone?&#34;</p>
-                    
-                    <p>Audrey paused, giving her a questioning look. &#34;Do you know him?&#34;</p>
-                    
-                    <p>The associate flashed a saccharine smile. &#34;Naturally. I work at Sterling &amp; Co. I&#39;ve seen you and Mr. Sinclair together before.&#34; She lowered her voice conspiratorially. &#34;He&#39;s inside right now. I noticed you seemed... concerned.&#34;</p>
-                    
-                    <p>Audrey&#39;s instincts screamed warning, but the associate&#39;s words were dripping with honeyed politeness. Surely an employee of such a prestigious brand wouldn&#39;t lie about this?</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>The pieces clicked into place. The girlfriend was here—this was the perfect opportunity to turn the tables.</p>
+                        
+                        <p>She discreetly signaled to another sales associate nearby, one who had gossiped about Audrey and Dominic before. The woman nodded understandingly and hurried outside to intercept Audrey.</p>
+                        
+                        <p>&#34;Miss Winslow?&#34; The associate greeted with practiced warmth. &#34;Are you looking for someone?&#34;</p>
+                        
+                        <p>Audrey paused, giving her a questioning look. &#34;Do you know him?&#34;</p>
+                        
+                        <p>The associate flashed a saccharine smile. &#34;Naturally. I work at Sterling &amp; Co. I&#39;ve seen you and Mr. Sinclair together before.&#34; She lowered her voice conspiratorially. &#34;He&#39;s inside right now. I noticed you seemed... concerned.&#34;</p>
+                        
+                        <p>Audrey&#39;s instincts screamed warning, but the associate&#39;s words were dripping with honeyed politeness. Surely an employee of such a prestigious brand wouldn&#39;t lie about this?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;Thank you,&#34; Audrey replied coolly. &#34;I&#39;ll go find him myself.&#34;</p>
-                    
-                    <p>The associate hesitated dramatically. &#34;Miss Winslow...&#34;</p>
-                    
-                    <p>Audrey&#39;s eyebrow arched. &#34;Yes?&#34;</p>
-                    
-                    <p>Leaning in, the associate whispered, &#34;There&#39;s... a woman inside who&#39;s been rather... attached to Mr. Sinclair. We couldn&#39;t exactly intervene...&#34;</p>
-                    
-                    <p>Audrey&#39;s expression darkened. She&#39;d read those tabloid stories about shop girls seducing wealthy clients. Was this happening right under her nose?</p>
-                    
-                    <p>Her thoughts spiraled. Dominic had excused himself to the restroom earlier—was this why he&#39;d disappeared? They&#39;d barely started dating and he was already straying?</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;Thank you,&#34; Audrey replied coolly. &#34;I&#39;ll go find him myself.&#34;</p>
+                        
+                        <p>The associate hesitated dramatically. &#34;Miss Winslow...&#34;</p>
+                        
+                        <p>Audrey&#39;s eyebrow arched. &#34;Yes?&#34;</p>
+                        
+                        <p>Leaning in, the associate whispered, &#34;There&#39;s... a woman inside who&#39;s been rather... attached to Mr. Sinclair. We couldn&#39;t exactly intervene...&#34;</p>
+                        
+                        <p>Audrey&#39;s expression darkened. She&#39;d read those tabloid stories about shop girls seducing wealthy clients. Was this happening right under her nose?</p>
+                        
+                        <p>Her thoughts spiraled. Dominic had excused himself to the restroom earlier—was this why he&#39;d disappeared? They&#39;d barely started dating and he was already straying?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>White-hot anger obliterated all reason as she stormed toward the Sterling &amp; Co counter. The moment Audrey entered, she spotted Dominic with his back turned, standing dangerously close to a woman in a sales associate uniform.</p>
-                    
-                    <p>Not just one woman, but two? Her vision blurred with rage. Without thinking, she marched forward and delivered a stinging slap across the associate&#39;s face.</p>
-                    
-                    <p>The sharp crack of the slap silenced the entire boutique. Every head turned in shock. Audrey stood trembling with fury, hands planted on her hips as she unleashed her wrath.</p>
-                    
-                    <p>&#34;You shameless hussy! Trying to steal my man? And you!&#34; She whirled on Dominic. &#34;You worthless playboy! You have me and you&#39;re still sniffing around this... this shop girl? Have you lost your damn mind?&#34;</p>
-                    
-                    <p>Dominic turned slowly, genuine confusion knitting his brows together. &#34;Audrey? What the hell are you doing here?&#34;</p>
-                    
-                    <p>Vivian straightened at the counter, her emerald eyes flashing with sudden interest. &#34;Audrey?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>White-hot anger obliterated all reason as she stormed toward the Sterling &amp; Co counter. The moment Audrey entered, she spotted Dominic with his back turned, standing dangerously close to a woman in a sales associate uniform.</p>
+                        
+                        <p>Not just one woman, but two? Her vision blurred with rage. Without thinking, she marched forward and delivered a stinging slap across the associate&#39;s face.</p>
+                        
+                        <p>The sharp crack of the slap silenced the entire boutique. Every head turned in shock. Audrey stood trembling with fury, hands planted on her hips as she unleashed her wrath.</p>
+                        
+                        <p>&#34;You shameless hussy! Trying to steal my man? And you!&#34; She whirled on Dominic. &#34;You worthless playboy! You have me and you&#39;re still sniffing around this... this shop girl? Have you lost your damn mind?&#34;</p>
+                        
+                        <p>Dominic turned slowly, genuine confusion knitting his brows together. &#34;Audrey? What the hell are you doing here?&#34;</p>
+                        
+                        <p>Vivian straightened at the counter, her emerald eyes flashing with sudden interest. &#34;Audrey?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>The slapped salesgirl clutched her burning cheek, shock and pain warring across her face. She threw a desperate look at her colleague who&#39;d brought Audrey in - now frozen by the entrance like a deer in headlights.</p>
-                    
-                    <p>&#34;What in the world just happened?&#34; the other associate breathed, completely unprepared for the storm she&#39;d unwittingly summoned.</p>
-                    
-                    <p>The assistant by the door hesitated, confusion and alarm flickering across her features before scurrying to Audrey&#39;s side. &#34;Miss Winslow, there must be some mistake—&#34;</p>
-                    
-                    <p>Before she could imply Vivian was the troublemaker, Audrey&#39;s gaze had already landed on her friend. After shooting Dominic a glacial look, she marched toward Vivian. When she reached her, her voice warmed instantly. &#34;Darling Vivian! Fancy seeing you here of all places!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>The slapped salesgirl clutched her burning cheek, shock and pain warring across her face. She threw a desperate look at her colleague who&#39;d brought Audrey in - now frozen by the entrance like a deer in headlights.</p>
+                        
+                        <p>&#34;What in the world just happened?&#34; the other associate breathed, completely unprepared for the storm she&#39;d unwittingly summoned.</p>
+                        
+                        <p>The assistant by the door hesitated, confusion and alarm flickering across her features before scurrying to Audrey&#39;s side. &#34;Miss Winslow, there must be some mistake—&#34;</p>
+                        
+                        <p>Before she could imply Vivian was the troublemaker, Audrey&#39;s gaze had already landed on her friend. After shooting Dominic a glacial look, she marched toward Vivian. When she reached her, her voice warmed instantly. &#34;Darling Vivian! Fancy seeing you here of all places!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.370171">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.370171">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.373337">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.373337">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.370171",
-        "dateModified": "2026-07-19T02:47:23.370171",
+        "datePublished": "2026-07-19T13:03:18.373337",
+        "dateModified": "2026-07-19T13:03:18.373337",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,23 +893,27 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Philip&#39;s POV</p>
-                    
-                    <p>I was reviewing the quarterly financial reports for Philip Investment Group.The numbers looked impressive. Even after losing several collaborative projects with Howard Technologies, my company remained strong. That brought me satisfaction.</p>
-                    
-                    <p>I glanced at Brian&#39;s photo on my desk-him at three years old, laughing at the Central Park Zoo. The empty frame beside it bothered me. I&#39;d removed Annie&#39;s photo weeks ago but hadn&#39;t replaced it. The empty space made something twist in my chest.</p>
-                    
-                    <p>Annie should have returned to me by now. Instead, she was building a new life at Howard Technologies. The thought of her with Howard made my jaw clench. I slammed the financial report shut, making my assistant look up nervously.</p>
-                    
-                    <p>My phone rang. Sarah&#39;s face on the screen. I paused before answering,surprised by my own reluctance.</p>
-                    
-                    <p>&#34;What is it?&#34; My voice sounded cold. I was getting tired of Sarah&#39;s constant demands and mood swings. But then I remembered she was carrying my child and tried to soften my tone.</p>
-                    
-                    <p>′′Mystomach feels uncomfortable..,&#34; Sarah&#39;s voice trembled. I recognized the pattern-Sarah always needed me when I was busiest at work.&#34;It&#39;s all Annie&#39;s fault,&#34; she continued, sniffling. &#34;She exposed our relationship online.&#34; Annie&#39;s name made me sit up straight, anger burning in my chest. How dare she? She already had Howard&#39;s attention-wasn&#39;t that enough? Why couldn&#39;t she leave us alone? &#34;People are attacking me, calling me a &#39;homewrecker,&#39;&#34; Sarah sobbed. &#34;I don&#39;t even know what I did wrong.&#34;</p>
-                    
-                    <p>I felt suddenly protective. Sarah was pregnant with my child. I couldn&#39;t let anyone hurt her or my baby, no matter how annoyed I sometimes felt with her. I remembered how Annie needed peace during her pregnancy with Brian. How could Annie attack another pregnant woman? This wasn&#39;t like her at all. What happened to the gentle Annie I knew?</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Philip&#39;s POV</p>
+                        
+                        <p>I was reviewing the quarterly financial reports for Philip Investment Group.The numbers looked impressive. Even after losing several collaborative projects with Howard Technologies, my company remained strong. That brought me satisfaction.</p>
+                        
+                        <p>I glanced at Brian&#39;s photo on my desk-him at three years old, laughing at the Central Park Zoo. The empty frame beside it bothered me. I&#39;d removed Annie&#39;s photo weeks ago but hadn&#39;t replaced it. The empty space made something twist in my chest.</p>
+                        
+                        <p>Annie should have returned to me by now. Instead, she was building a new life at Howard Technologies. The thought of her with Howard made my jaw clench. I slammed the financial report shut, making my assistant look up nervously.</p>
+                        
+                        <p>My phone rang. Sarah&#39;s face on the screen. I paused before answering,surprised by my own reluctance.</p>
+                        
+                        <p>&#34;What is it?&#34; My voice sounded cold. I was getting tired of Sarah&#39;s constant demands and mood swings. But then I remembered she was carrying my child and tried to soften my tone.</p>
+                        
+                        <p>′′Mystomach feels uncomfortable..,&#34; Sarah&#39;s voice trembled. I recognized the pattern-Sarah always needed me when I was busiest at work.&#34;It&#39;s all Annie&#39;s fault,&#34; she continued, sniffling. &#34;She exposed our relationship online.&#34; Annie&#39;s name made me sit up straight, anger burning in my chest. How dare she? She already had Howard&#39;s attention-wasn&#39;t that enough? Why couldn&#39;t she leave us alone? &#34;People are attacking me, calling me a &#39;homewrecker,&#39;&#34; Sarah sobbed. &#34;I don&#39;t even know what I did wrong.&#34;</p>
+                        
+                        <p>I felt suddenly protective. Sarah was pregnant with my child. I couldn&#39;t let anyone hurt her or my baby, no matter how annoyed I sometimes felt with her. I remembered how Annie needed peace during her pregnancy with Brian. How could Annie attack another pregnant woman? This wasn&#39;t like her at all. What happened to the gentle Annie I knew?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -888,23 +928,27 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Can you please ask Annie?&#34; Sarah pleaded. &#34;If she tels me what I&#39;ve done to offend her, I&#39;ll correct it immediately!&#34;</p>
-                    
-                    <p>I clenched my fist. Some part of me knew I might be getting manipulated,but I was too angry to think clearly. I considered myself a logical businessman, but with Annie and Sarah, I always ended uap ruled by emotions.</p>
-                    
-                    <p>&#34;T&#39;ll handle this,&#34; I said, ending the call. I needed to confront Annie.How could she treat a pregnant woman this way,especially after going through pregnancy herself?</p>
-                    
-                    <p>I stared at Howard&#39;s contact on my phone. I couldn&#39;t call Annie directly-she&#39;d blocked my number. But I could reach her through Howard. This wasn&#39;t about winning Annie back, I told myself. This was about protecting Sarah and my unborn child.</p>
-                    
-                    <p>I pressed call. Howard answered with a cool &#34;Can I help you?&#34; He sounded surprised to hear from me. I didn&#39;t waste time: &#34;Ask Annie why, as a woman, she keeps targeting another woman.What&#39;s the point of that?&#34; The anger in my voice gave me satisfaction. I wanted Howard to see Annie&#39;s flaws-to see her spiteful side.Maybe then he wouldn&#39;t think she was so perfect. &#34;Could you clarify which lady Annie is allegedly harassing?&#34;Howard remained calm, almost sarcastic. His tone suggested my accusations were ridiculous, That made me even angrier.</p>
-                    
-                    <p>&#34;Sarah Johnson,&#34; I said, my teeth clenched tight.</p>
-                    
-                    <p>The line went quiet. I pictured Howard looking down on me-this man who had taken everything that should be mine: my wife, my son&#39;s affection,even my social position. My jealousy burned hotter.</p>
-                    
-                    <p>&#34;Mr. Thompson, this doesn&#39;t concern you,&#34; I said, trying to sound calm.&#34;I don&#39;t want to direct my anger at innocent people, so please put Annie on the phone.&#34; I sounded polite, but inside I was furious. Who was he to get between Annie and me? This was our business.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Can you please ask Annie?&#34; Sarah pleaded. &#34;If she tels me what I&#39;ve done to offend her, I&#39;ll correct it immediately!&#34;</p>
+                        
+                        <p>I clenched my fist. Some part of me knew I might be getting manipulated,but I was too angry to think clearly. I considered myself a logical businessman, but with Annie and Sarah, I always ended uap ruled by emotions.</p>
+                        
+                        <p>&#34;T&#39;ll handle this,&#34; I said, ending the call. I needed to confront Annie.How could she treat a pregnant woman this way,especially after going through pregnancy herself?</p>
+                        
+                        <p>I stared at Howard&#39;s contact on my phone. I couldn&#39;t call Annie directly-she&#39;d blocked my number. But I could reach her through Howard. This wasn&#39;t about winning Annie back, I told myself. This was about protecting Sarah and my unborn child.</p>
+                        
+                        <p>I pressed call. Howard answered with a cool &#34;Can I help you?&#34; He sounded surprised to hear from me. I didn&#39;t waste time: &#34;Ask Annie why, as a woman, she keeps targeting another woman.What&#39;s the point of that?&#34; The anger in my voice gave me satisfaction. I wanted Howard to see Annie&#39;s flaws-to see her spiteful side.Maybe then he wouldn&#39;t think she was so perfect. &#34;Could you clarify which lady Annie is allegedly harassing?&#34;Howard remained calm, almost sarcastic. His tone suggested my accusations were ridiculous, That made me even angrier.</p>
+                        
+                        <p>&#34;Sarah Johnson,&#34; I said, my teeth clenched tight.</p>
+                        
+                        <p>The line went quiet. I pictured Howard looking down on me-this man who had taken everything that should be mine: my wife, my son&#39;s affection,even my social position. My jealousy burned hotter.</p>
+                        
+                        <p>&#34;Mr. Thompson, this doesn&#39;t concern you,&#34; I said, trying to sound calm.&#34;I don&#39;t want to direct my anger at innocent people, so please put Annie on the phone.&#34; I sounded polite, but inside I was furious. Who was he to get between Annie and me? This was our business.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -919,23 +963,27 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;She is my girlfriend,&#34; Howard stated firmly. Each word felt like a knife in my chest. &#34;And I&#39;ve heard about the conflict between them today.&#34;</p>
-                    
-                    <p>&#34;So you&#39;re protecting her?&#34; I asked mockingly, my anger obvious.</p>
-                    
-                    <p>Howard laughed coldly. &#34;What else would I do?&#34;</p>
-                    
-                    <p>Every word he spoke made me angrier. &#34;Throughout this entire situation,she hasn&#39;t done anything wrong. What kind of boyfriend would I be if I let you lecture her?&#34; Hearing him call himself Annie&#39;s &#34;boyfriend&#34; made me dizzy with rage.Even though I had Sarah, even though I ended my marriage to Annie,I couldn&#39;t accept her being with someone else. Annie should always be mine.This thought was ugly, and it disgusted me, but I couldn&#39;t deny it was there. &#34;Since their conflict began online, Isuggest you search for the complete story there first,&#34; Howard said calmly. He was talking to me like I was a child. &#34;Understand the truth before passing judgment.&#34; His tone made my blood boil, &#34;Our companies maintain a partnership,&#34; Howard continued, &#34;yet you&#39;re easily provoked by Sarah&#39;s words, quick to attack my girlfriend without considering the consequences. This seriously calls into question your professional judgment.&#34;</p>
-                    
-                    <p>His words hit me like cold water. Was he threatening my business? Over a woman? &#34;After all that talk, you just want me to leave Annie alone,right?&#34;I almost shouted.</p>
-                    
-                    <p>&#34;From a professional standpoint, your impulsiveness makes you an unreliable partner,&#34; he said flatly. Each word stung my pride. &#34;From a personal standpoint, you claim to love Annie, yet you consistently doubt and criticize her based on others&#39; accusations.&#34;</p>
-                    
-                    <p>&#34;I regret everything Annie once had to endure,&#34; Howard added. Those words stabln business, people always respectebed my heart.</p>
-                    
-                    <p>d me, flattered me, did what I wanted. Howard showed me none of that.He was suggesting I&#39;d been a terrible husband who didn&#39;t deserve Annie.The worst part? Deep down, I knew he was right. That made me even angrier.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;She is my girlfriend,&#34; Howard stated firmly. Each word felt like a knife in my chest. &#34;And I&#39;ve heard about the conflict between them today.&#34;</p>
+                        
+                        <p>&#34;So you&#39;re protecting her?&#34; I asked mockingly, my anger obvious.</p>
+                        
+                        <p>Howard laughed coldly. &#34;What else would I do?&#34;</p>
+                        
+                        <p>Every word he spoke made me angrier. &#34;Throughout this entire situation,she hasn&#39;t done anything wrong. What kind of boyfriend would I be if I let you lecture her?&#34; Hearing him call himself Annie&#39;s &#34;boyfriend&#34; made me dizzy with rage.Even though I had Sarah, even though I ended my marriage to Annie,I couldn&#39;t accept her being with someone else. Annie should always be mine.This thought was ugly, and it disgusted me, but I couldn&#39;t deny it was there. &#34;Since their conflict began online, Isuggest you search for the complete story there first,&#34; Howard said calmly. He was talking to me like I was a child. &#34;Understand the truth before passing judgment.&#34; His tone made my blood boil, &#34;Our companies maintain a partnership,&#34; Howard continued, &#34;yet you&#39;re easily provoked by Sarah&#39;s words, quick to attack my girlfriend without considering the consequences. This seriously calls into question your professional judgment.&#34;</p>
+                        
+                        <p>His words hit me like cold water. Was he threatening my business? Over a woman? &#34;After all that talk, you just want me to leave Annie alone,right?&#34;I almost shouted.</p>
+                        
+                        <p>&#34;From a professional standpoint, your impulsiveness makes you an unreliable partner,&#34; he said flatly. Each word stung my pride. &#34;From a personal standpoint, you claim to love Annie, yet you consistently doubt and criticize her based on others&#39; accusations.&#34;</p>
+                        
+                        <p>&#34;I regret everything Annie once had to endure,&#34; Howard added. Those words stabln business, people always respectebed my heart.</p>
+                        
+                        <p>d me, flattered me, did what I wanted. Howard showed me none of that.He was suggesting I&#39;d been a terrible husband who didn&#39;t deserve Annie.The worst part? Deep down, I knew he was right. That made me even angrier.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -950,23 +998,27 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Learn the details of the situation first,&#34; Howard suggested. He used the same superior tone I often used with my employees. Being talked to this way made me feel both ashamed and furious.</p>
-                    
-                    <p>&#34;Fine, I will,&#34; I snapped back. I grabbed my phone and searched social media. The first comments I found did criticize Sarah, just as she claimed. My anger grew-how could Annie be so cruel? This wasn&#39;t like her at all. But something made me keep searching. I needed to know why strangers were defending Annie. After more searching, I found a video showing what really happened: OSarah had first attacked Annie&#39;s comics and character</p>
-                    
-                    <p>DAnnie had responded with evidence showing Sarah started it</p>
-                    
-                    <p>OSarah had lied more,claiming Annie was the real &#34;other woman&#34;</p>
-                    
-                    <p>DAnnie had posted our marriage certificate and Sarah&#39;s wedding announcement with her ex-husband, proving who was lying</p>
-                    
-                    <p>My anger vanished, replaced by shame and embarrassment. Sarah had tricked me again, and I&#39;d fallen for it like an idiot. I&#39;d accused Annie without checking facts first. This wasn&#39;t even the first time-I&#39;d believed Sarah&#39;s lies about Brian before too. Why did I let Sarah manipulate me so easily? Maybe because she knew exactly how to trigger my need to control Annie?</p>
-                    
-                    <p>A horrible thought hit me: maybe I didn&#39;t really love Annie. Maybe I just couldn&#39;t stand her being outside my control. I couldn&#39;t accept that she was happier without me than she ever was with me. The thought made me sick,but I knew it was true.</p>
-                    
-                    <p>&#34;Have you finished reading, Mr. Baker?&#34; Howard&#39;s voice startled me-I&#39;d forgotten he was still on the line.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Learn the details of the situation first,&#34; Howard suggested. He used the same superior tone I often used with my employees. Being talked to this way made me feel both ashamed and furious.</p>
+                        
+                        <p>&#34;Fine, I will,&#34; I snapped back. I grabbed my phone and searched social media. The first comments I found did criticize Sarah, just as she claimed. My anger grew-how could Annie be so cruel? This wasn&#39;t like her at all. But something made me keep searching. I needed to know why strangers were defending Annie. After more searching, I found a video showing what really happened: OSarah had first attacked Annie&#39;s comics and character</p>
+                        
+                        <p>DAnnie had responded with evidence showing Sarah started it</p>
+                        
+                        <p>OSarah had lied more,claiming Annie was the real &#34;other woman&#34;</p>
+                        
+                        <p>DAnnie had posted our marriage certificate and Sarah&#39;s wedding announcement with her ex-husband, proving who was lying</p>
+                        
+                        <p>My anger vanished, replaced by shame and embarrassment. Sarah had tricked me again, and I&#39;d fallen for it like an idiot. I&#39;d accused Annie without checking facts first. This wasn&#39;t even the first time-I&#39;d believed Sarah&#39;s lies about Brian before too. Why did I let Sarah manipulate me so easily? Maybe because she knew exactly how to trigger my need to control Annie?</p>
+                        
+                        <p>A horrible thought hit me: maybe I didn&#39;t really love Annie. Maybe I just couldn&#39;t stand her being outside my control. I couldn&#39;t accept that she was happier without me than she ever was with me. The thought made me sick,but I knew it was true.</p>
+                        
+                        <p>&#34;Have you finished reading, Mr. Baker?&#34; Howard&#39;s voice startled me-I&#39;d forgotten he was still on the line.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -981,23 +1033,27 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;Yes,&#34; I answered, feeling like a child caught doing something wrong.</p>
-                    
-                    <p>&#34;Do you still want to defend Sarah?&#34; OSarah had first attacked Annie&#39;s comics and character</p>
-                    
-                    <p>DAnnie had responded with evidence showing Sarah started it</p>
-                    
-                    <p>OSarah had lied more,claiming Annie was the real &#34;other woman&#34;</p>
-                    
-                    <p>DAnnie had posted our marriage certificate and Sarah&#39;s wedding announcement with her ex-husband, proving who was lying</p>
-                    
-                    <p>My anger vanished, replaced by shame and embarrassment. Sarah had tricked me again, and I&#39;d fallen for it like an idiot. I&#39;d accused Annie without checking facts first. This wasn&#39;t even the first time-I&#39;d believed Sarah&#39;s lies about Brian before too. Why did I let Sarah manipulate me so easily? Maybe because she knew exactly how to trigger my need to control Annie?</p>
-                    
-                    <p>A horrible thought hit me: maybe I didn&#39;t really love Annie. Maybe I just couldn&#39;t stand her being outside my control. I couldn&#39;t accept that she was happier without me than she ever was with me. The thought made me sick,but I knew it was true.</p>
-                    
-                    <p>&#34;Have you finished reading, Mr. Baker?&#34; Howard&#39;s voice startled me-I&#39;d forgotten he was still on the line.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;Yes,&#34; I answered, feeling like a child caught doing something wrong.</p>
+                        
+                        <p>&#34;Do you still want to defend Sarah?&#34; OSarah had first attacked Annie&#39;s comics and character</p>
+                        
+                        <p>DAnnie had responded with evidence showing Sarah started it</p>
+                        
+                        <p>OSarah had lied more,claiming Annie was the real &#34;other woman&#34;</p>
+                        
+                        <p>DAnnie had posted our marriage certificate and Sarah&#39;s wedding announcement with her ex-husband, proving who was lying</p>
+                        
+                        <p>My anger vanished, replaced by shame and embarrassment. Sarah had tricked me again, and I&#39;d fallen for it like an idiot. I&#39;d accused Annie without checking facts first. This wasn&#39;t even the first time-I&#39;d believed Sarah&#39;s lies about Brian before too. Why did I let Sarah manipulate me so easily? Maybe because she knew exactly how to trigger my need to control Annie?</p>
+                        
+                        <p>A horrible thought hit me: maybe I didn&#39;t really love Annie. Maybe I just couldn&#39;t stand her being outside my control. I couldn&#39;t accept that she was happier without me than she ever was with me. The thought made me sick,but I knew it was true.</p>
+                        
+                        <p>&#34;Have you finished reading, Mr. Baker?&#34; Howard&#39;s voice startled me-I&#39;d forgotten he was still on the line.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1012,23 +1068,27 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;Yes,&#34; I answered, feeling like a child caught doing something wrong.</p>
-                    
-                    <p>&#34;Do you still want to defend Sarah?&#34; I couldn&#39;t answer. I was too ashamed. Once again, I&#39;d made a fool of myself in front of Howard, proving he was right about me all along.&#34;There&#39;s nothing wrong with acting foolishly, as long as you recognize your limitations,&#34; Howard said calmly, but with a sharp edge. &#34;If Annie truly wanted to create trouble for both of you, she&#39;s had plenty of opportunities. But she hasn&#39;t. She just wants to forget everything related to you. Yet you two keep entangling her.&#34; Each word hit me hard. The worst part was knowing he was right. Annie never started these conflicts-it was always Sarah and me who wouldn&#39;t leave her alone.</p>
-                    
-                    <p>&#34;Why?&#34; Howard spoke slowly. &#34;Do you think she&#39;s easy to bully because she has no one protecting her?&#34;</p>
-                    
-                    <p>That hurt. I should have been Annie&#39;s protector, not someone who hurt her. Now Howard protected her, and I was the person she needed protection from. This complete role reversal made me feel lost and jealous.</p>
-                    
-                    <p>&#34;No, absolutely not,&#34; I denied quickly, but my voice gave me away.</p>
-                    
-                    <p>&#34;Good,&#34; Howard said with disgust and hung up.</p>
-                    
-                    <p>I sat in the dark of my study, flipping through photos of Annie and me.</p>
-                    
-                    <p>A thought of Howard&#39;s arm around her waist sent me lurching to my feet,my fist clenched tight. The phone screen cracked under my grip,a jagged line splitting across our faces.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;Yes,&#34; I answered, feeling like a child caught doing something wrong.</p>
+                        
+                        <p>&#34;Do you still want to defend Sarah?&#34; I couldn&#39;t answer. I was too ashamed. Once again, I&#39;d made a fool of myself in front of Howard, proving he was right about me all along.&#34;There&#39;s nothing wrong with acting foolishly, as long as you recognize your limitations,&#34; Howard said calmly, but with a sharp edge. &#34;If Annie truly wanted to create trouble for both of you, she&#39;s had plenty of opportunities. But she hasn&#39;t. She just wants to forget everything related to you. Yet you two keep entangling her.&#34; Each word hit me hard. The worst part was knowing he was right. Annie never started these conflicts-it was always Sarah and me who wouldn&#39;t leave her alone.</p>
+                        
+                        <p>&#34;Why?&#34; Howard spoke slowly. &#34;Do you think she&#39;s easy to bully because she has no one protecting her?&#34;</p>
+                        
+                        <p>That hurt. I should have been Annie&#39;s protector, not someone who hurt her. Now Howard protected her, and I was the person she needed protection from. This complete role reversal made me feel lost and jealous.</p>
+                        
+                        <p>&#34;No, absolutely not,&#34; I denied quickly, but my voice gave me away.</p>
+                        
+                        <p>&#34;Good,&#34; Howard said with disgust and hung up.</p>
+                        
+                        <p>I sat in the dark of my study, flipping through photos of Annie and me.</p>
+                        
+                        <p>A thought of Howard&#39;s arm around her waist sent me lurching to my feet,my fist clenched tight. The phone screen cracked under my grip,a jagged line splitting across our faces.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1043,11 +1103,15 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>I threw the phone onto my chair and caught my reflection in the window-hair disheveled, expensive shirt wrinkled. A bitter laugh escaped me.</p>
-                    
-                    <p>Here I was, Philip Baker, Harvard Business School graduate, CEO of a major investment firm-pacing around like a teenager over a woman I claimed not to want. Outmaneuvered by Sarah, outclassed by Howard,yet somehow still convinced of my own brilliance. Pathetic.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>I threw the phone onto my chair and caught my reflection in the window-hair disheveled, expensive shirt wrinkled. A bitter laugh escaped me.</p>
+                        
+                        <p>Here I was, Philip Baker, Harvard Business School graduate, CEO of a major investment firm-pacing around like a teenager over a woman I claimed not to want. Outmaneuvered by Sarah, outclassed by Howard,yet somehow still convinced of my own brilliance. Pathetic.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2363,6 +2427,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2489,7 +2633,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2531,32 +2674,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2567,21 +2692,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2614,6 +2729,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2634,20 +2755,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

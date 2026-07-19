@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>With that, she turned sharply and marched back to the dressing room.</p>
-                    
-                    <p>Watching Adrian get verbally eviscerated, Serena felt her fear of Vivian&#39;s wrath dissipate. The more Vivian asserted herself, the quicker Adrian&#39;s patience would wear thin.</p>
-                    
-                    <p>When Vivian emerged in her original outfit and motioned for Audrey to leave, Serena put on her most concerned expression. &#34;Adrian, I&#39;m so sorry for causing trouble between you two today. Don&#39;t worry about me - you should go after her. Strong women still need tenderness sometimes. A little extra attention might smooth things over.&#34;</p>
-                    
-                    <p>Adrian turned his back, his face an unreadable mask of indifference. &#34;She&#39;s none of your concern,&#34; he replied, his voice like winter frost, devoid of any warmth.</p>
-                    
-                    <p>Serena&#39;s question trembled in the air. &#34;Adrian... is it true? Are you really considering divorce?&#34;</p>
-                    
-                    <p>&#34;Divorce?&#34; Adrian scoffed, casually producing a platinum credit card from his wallet and sliding it across the counter. &#34;Package the dress she&#39;s wearing and those purses she liked.&#34; His deflection was smooth as silk.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>With that, she turned sharply and marched back to the dressing room.</p>
+                        
+                        <p>Watching Adrian get verbally eviscerated, Serena felt her fear of Vivian&#39;s wrath dissipate. The more Vivian asserted herself, the quicker Adrian&#39;s patience would wear thin.</p>
+                        
+                        <p>When Vivian emerged in her original outfit and motioned for Audrey to leave, Serena put on her most concerned expression. &#34;Adrian, I&#39;m so sorry for causing trouble between you two today. Don&#39;t worry about me - you should go after her. Strong women still need tenderness sometimes. A little extra attention might smooth things over.&#34;</p>
+                        
+                        <p>Adrian turned his back, his face an unreadable mask of indifference. &#34;She&#39;s none of your concern,&#34; he replied, his voice like winter frost, devoid of any warmth.</p>
+                        
+                        <p>Serena&#39;s question trembled in the air. &#34;Adrian... is it true? Are you really considering divorce?&#34;</p>
+                        
+                        <p>&#34;Divorce?&#34; Adrian scoffed, casually producing a platinum credit card from his wallet and sliding it across the counter. &#34;Package the dress she&#39;s wearing and those purses she liked.&#34; His deflection was smooth as silk.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>The total soared past a million sterling.</p>
-                    
-                    <p>The salesgirl&#39;s eyes widened momentarily before she caught herself. &#34;Right away, Mr. Blackwood.&#34; She scurried off to process the extravagant purchase.</p>
-                    
-                    <p>From the moment Adrian and Serena had entered, the boutique staff had received strict instructions from management - absolute discretion regarding their VIP clients. No gossip, no photos, no exceptions.</p>
-                    
-                    <p>Initially indifferent, the salesgirl now practically glowed with commission-fueled enthusiasm. &#34;Miss Whitmore, that gown was made for you! Might we take a commemorative photo?&#34; Her smile stretched unnaturally wide.</p>
-                    
-                    <p>&#34;Of course,&#34; Serena answered, her lips curving into a practiced smile that never reached her eyes, her fingers curling into tight fists at her sides.</p>
-                    
-                    <p>Outside the boutique, Vivian had just stepped onto the sidewalk when the scene inside caught her attention. She whirled around, ready to charge back in, when Audrey grabbed her wrist.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>The total soared past a million sterling.</p>
+                        
+                        <p>The salesgirl&#39;s eyes widened momentarily before she caught herself. &#34;Right away, Mr. Blackwood.&#34; She scurried off to process the extravagant purchase.</p>
+                        
+                        <p>From the moment Adrian and Serena had entered, the boutique staff had received strict instructions from management - absolute discretion regarding their VIP clients. No gossip, no photos, no exceptions.</p>
+                        
+                        <p>Initially indifferent, the salesgirl now practically glowed with commission-fueled enthusiasm. &#34;Miss Whitmore, that gown was made for you! Might we take a commemorative photo?&#34; Her smile stretched unnaturally wide.</p>
+                        
+                        <p>&#34;Of course,&#34; Serena answered, her lips curving into a practiced smile that never reached her eyes, her fingers curling into tight fists at her sides.</p>
+                        
+                        <p>Outside the boutique, Vivian had just stepped onto the sidewalk when the scene inside caught her attention. She whirled around, ready to charge back in, when Audrey grabbed her wrist.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;Why are you stopping me?&#34; Vivian hissed, her emerald eyes blazing. &#34;That conniving snake needs to be exposed! Did you see how she&#39;s playing the victim?&#34;</p>
-                    
-                    <p>Audrey pulled her away from the storefront. &#34;We already put her in her place earlier. This is exactly what she wants - to make you look like the jealous ex while she plays damsel in distress for Adrian. Don&#39;t give her the satisfaction.&#34;</p>
-                    
-                    <p>Vivian allowed herself to be led away, linking arms with Audrey as she vented. &#34;What spell has that woman cast over Adrian? How can he not see through her act? She&#39;s about as subtle as a neon sign in a library! And that outfit? Looks like she raided a discount bin at PrimeCart.&#34;</p>
-                    
-                    <p>Audrey listened quietly, her own resolve crystallizing. &#34;Men are unreliable. I&#39;ll build my own empire. Whatever that viper has schemed her way into, I&#39;ll earn tenfold through my own talent!&#34;</p>
-                    
-                    <p>Her phone buzzed with a text from Damien Vaughn confirming her audition time with the male lead.</p>
-                    
-                    <p>Three days later at Ivory Phoenix Productions, Lydia burst into the waiting area, her chest heaving. Spotting Vivian lounging on a plush sofa, she exhaled in relief. &#34;You drop this bombshell at the last possible moment! Thank goodness my schedule was clear.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;Why are you stopping me?&#34; Vivian hissed, her emerald eyes blazing. &#34;That conniving snake needs to be exposed! Did you see how she&#39;s playing the victim?&#34;</p>
+                        
+                        <p>Audrey pulled her away from the storefront. &#34;We already put her in her place earlier. This is exactly what she wants - to make you look like the jealous ex while she plays damsel in distress for Adrian. Don&#39;t give her the satisfaction.&#34;</p>
+                        
+                        <p>Vivian allowed herself to be led away, linking arms with Audrey as she vented. &#34;What spell has that woman cast over Adrian? How can he not see through her act? She&#39;s about as subtle as a neon sign in a library! And that outfit? Looks like she raided a discount bin at PrimeCart.&#34;</p>
+                        
+                        <p>Audrey listened quietly, her own resolve crystallizing. &#34;Men are unreliable. I&#39;ll build my own empire. Whatever that viper has schemed her way into, I&#39;ll earn tenfold through my own talent!&#34;</p>
+                        
+                        <p>Her phone buzzed with a text from Damien Vaughn confirming her audition time with the male lead.</p>
+                        
+                        <p>Three days later at Ivory Phoenix Productions, Lydia burst into the waiting area, her chest heaving. Spotting Vivian lounging on a plush sofa, she exhaled in relief. &#34;You drop this bombshell at the last possible moment! Thank goodness my schedule was clear.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Vivian offered a reassuring smile. &#34;It&#39;s just an audition. No guarantees.&#34;</p>
-                    
-                    <p>&#34;For a project this prestigious? Just getting in the door is half the battle!&#34; Lydia collapsed beside her. &#34;How did you land this? The Katrina Spencer screenplay? Even our agency&#39;s top talent would kill for this opportunity. Was it that contact who helped you during the scandal?&#34;</p>
-                    
-                    <p>Vivian took a deep breath, steeling herself. &#34;Lydia... I am Katrina Spencer.&#34;</p>
-                    
-                    <p>Lydia, as her manager, had to find out sooner or later.</p>
-                    
-                    <p>With an exasperated sigh, Lydia gave her a skeptical look. &#34;Right, and I suppose you&#39;re also secretly royalty?&#34;</p>
-                    
-                    <p>Vivian hesitated for a split second. Technically, she was Vivian Hartley. Determined to settle this, she pulled up the copyright agreement on her phone and shoved it toward Lydia. &#34;See for yourself.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Vivian offered a reassuring smile. &#34;It&#39;s just an audition. No guarantees.&#34;</p>
+                        
+                        <p>&#34;For a project this prestigious? Just getting in the door is half the battle!&#34; Lydia collapsed beside her. &#34;How did you land this? The Katrina Spencer screenplay? Even our agency&#39;s top talent would kill for this opportunity. Was it that contact who helped you during the scandal?&#34;</p>
+                        
+                        <p>Vivian took a deep breath, steeling herself. &#34;Lydia... I am Katrina Spencer.&#34;</p>
+                        
+                        <p>Lydia, as her manager, had to find out sooner or later.</p>
+                        
+                        <p>With an exasperated sigh, Lydia gave her a skeptical look. &#34;Right, and I suppose you&#39;re also secretly royalty?&#34;</p>
+                        
+                        <p>Vivian hesitated for a split second. Technically, she was Vivian Hartley. Determined to settle this, she pulled up the copyright agreement on her phone and shoved it toward Lydia. &#34;See for yourself.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Lydia took the device with obvious doubt, but her eyes widened as she scanned the document.</p>
-                    
-                    <p>She looked up, stunned. &#34;You&#39;re actually Vivian Hartley?&#34;</p>
-                    
-                    <p>Vivian nodded firmly. &#34;Yes.&#34;</p>
-                    
-                    <p>&#34;Why keep it a secret? And why bother auditioning for Blazing Horizon like some newcomer?&#34; Lydia&#39;s composure cracked completely.</p>
-                    
-                    <p>Vivian had every advantage, yet she&#39;d let Serena humiliate her?</p>
-                    
-                    <p>Vivian remembered storming out of the house that day with no plan, just raw determination—and somehow, that had led her straight to Lydia.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Lydia took the device with obvious doubt, but her eyes widened as she scanned the document.</p>
+                        
+                        <p>She looked up, stunned. &#34;You&#39;re actually Vivian Hartley?&#34;</p>
+                        
+                        <p>Vivian nodded firmly. &#34;Yes.&#34;</p>
+                        
+                        <p>&#34;Why keep it a secret? And why bother auditioning for Blazing Horizon like some newcomer?&#34; Lydia&#39;s composure cracked completely.</p>
+                        
+                        <p>Vivian had every advantage, yet she&#39;d let Serena humiliate her?</p>
+                        
+                        <p>Vivian remembered storming out of the house that day with no plan, just raw determination—and somehow, that had led her straight to Lydia.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>She exhaled. &#34;At first, I needed to prove I could make it on my own merit. No shortcuts.&#34;</p>
-                    
-                    <p>Lydia rubbed her temples. &#34;Well, it&#39;s not too late to pivot.&#34;</p>
-                    
-                    <p>A sudden thought made Lydia rummage through her bag. She produced a cream-colored envelope. &#34;This came for you.&#34;</p>
-                    
-                    <p>Vivian took it, frowning. &#34;Who sent it?&#34;</p>
-                    
-                    <p>&#34;No clue. It was left at reception with strict orders to hand it directly to you. The courier vanished before I could ask questions.&#34; Lydia&#39;s frown deepened, as if mentally retracing steps that led nowhere.</p>
-                    
-                    <p>Vivian slid a finger under the flap. Inside lay an ivory card, its surface embossed with a single elegant word: Invitation. The kind that reeked of obligation masked as privilege.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>She exhaled. &#34;At first, I needed to prove I could make it on my own merit. No shortcuts.&#34;</p>
+                        
+                        <p>Lydia rubbed her temples. &#34;Well, it&#39;s not too late to pivot.&#34;</p>
+                        
+                        <p>A sudden thought made Lydia rummage through her bag. She produced a cream-colored envelope. &#34;This came for you.&#34;</p>
+                        
+                        <p>Vivian took it, frowning. &#34;Who sent it?&#34;</p>
+                        
+                        <p>&#34;No clue. It was left at reception with strict orders to hand it directly to you. The courier vanished before I could ask questions.&#34; Lydia&#39;s frown deepened, as if mentally retracing steps that led nowhere.</p>
+                        
+                        <p>Vivian slid a finger under the flap. Inside lay an ivory card, its surface embossed with a single elegant word: Invitation. The kind that reeked of obligation masked as privilege.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Her phone buzzed before she could open it. Damien Vaughn&#39;s name flashed on the screen, his impatient voice crackling through. &#34;Where are you? We&#39;re waiting.&#34;</p>
-                    
-                    <p>&#34;On my way,&#34; she muttered, tucking the envelope away—then tossing it into the nearest bin without a second glance. These things found her like clockwork every year, each more tedious than the last.</p>
-                    
-                    <p>She didn&#39;t bother wondering how they&#39;d tracked her to the office. In this world, privacy was a myth.</p>
-                    
-                    <p>Truth was, she loathed these events. Adrian, her husband, treated invitations like hot potatoes, dumping them on her with a dismissive, &#34;Go if you want.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Her phone buzzed before she could open it. Damien Vaughn&#39;s name flashed on the screen, his impatient voice crackling through. &#34;Where are you? We&#39;re waiting.&#34;</p>
+                        
+                        <p>&#34;On my way,&#34; she muttered, tucking the envelope away—then tossing it into the nearest bin without a second glance. These things found her like clockwork every year, each more tedious than the last.</p>
+                        
+                        <p>She didn&#39;t bother wondering how they&#39;d tracked her to the office. In this world, privacy was a myth.</p>
+                        
+                        <p>Truth was, she loathed these events. Adrian, her husband, treated invitations like hot potatoes, dumping them on her with a dismissive, &#34;Go if you want.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

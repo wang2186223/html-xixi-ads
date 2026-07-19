@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:32.331125">
-    <meta property="article:modified_time" content="2026-07-19T02:47:32.331125">
+    <meta property="article:published_time" content="2026-07-19T13:03:26.664613">
+    <meta property="article:modified_time" content="2026-07-19T13:03:26.664613">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:32">
+    <meta name="last-modified" content="2026-07-19 13:03:26">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:32.331125",
-        "dateModified": "2026-07-19T02:47:32.331125",
+        "datePublished": "2026-07-19T13:03:26.664613",
+        "dateModified": "2026-07-19T13:03:26.664613",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,21 +893,25 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Eliana felt a little scared when she saw how gloomy Preston was.</p>
-                    
-                    <p>“Don’t be angry. I am sorry, okay? I should not have rummaged through your stuff without permission.”</p>
-                    
-                    <p>Maurice’s anger dissipated after he heard her sincere apology.</p>
-                    
-                    <p>Raising her head, Eliana looked around and continued, “Is this really your house?”</p>
-                    
-                    <p>“Yes, but it used to be my parents’ house.”</p>
-                    
-                    <p>There was a hint of nostalgic look in his eyes, which revealed his soft side.</p>
-                    
-                    <p>The elders of his parents’ families had not approved of their marriage, so they had eloped and had lived in that house for a few years. Only after Maurice’s sister was born had his grandfather brought them back.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Eliana felt a little scared when she saw how gloomy Preston was.</p>
+                        
+                        <p>“Don’t be angry. I am sorry, okay? I should not have rummaged through your stuff without permission.”</p>
+                        
+                        <p>Maurice’s anger dissipated after he heard her sincere apology.</p>
+                        
+                        <p>Raising her head, Eliana looked around and continued, “Is this really your house?”</p>
+                        
+                        <p>“Yes, but it used to be my parents’ house.”</p>
+                        
+                        <p>There was a hint of nostalgic look in his eyes, which revealed his soft side.</p>
+                        
+                        <p>The elders of his parents’ families had not approved of their marriage, so they had eloped and had lived in that house for a few years. Only after Maurice’s sister was born had his grandfather brought them back.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -886,21 +926,25 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>And the days that Maurice had spent in his parents’ house was the happiest time of his life.</p>
-                    
-                    <p>Eliana rarely ever heard about his family, and she knew nothing about them, except for the fact that his mother had passed away.</p>
-                    
-                    <p>“What about your other family members? And this girl, is she your younger sister?”</p>
-                    
-                    <p>Eliana’s eyes were gleaming with curiosity as she pointed at the photo.</p>
-                    
-                    <p>Maurice kept silent for a long time, and just when she was convinced that he was not going to answer her, he said, “They are all gone.”</p>
-                    
-                    <p>Eliana was shocked to hear that.</p>
-                    
-                    <p>She found it strange that he was so calm when he talked about it. It was as though his heart was dead from the great pain of losing his loved ones.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>And the days that Maurice had spent in his parents’ house was the happiest time of his life.</p>
+                        
+                        <p>Eliana rarely ever heard about his family, and she knew nothing about them, except for the fact that his mother had passed away.</p>
+                        
+                        <p>“What about your other family members? And this girl, is she your younger sister?”</p>
+                        
+                        <p>Eliana’s eyes were gleaming with curiosity as she pointed at the photo.</p>
+                        
+                        <p>Maurice kept silent for a long time, and just when she was convinced that he was not going to answer her, he said, “They are all gone.”</p>
+                        
+                        <p>Eliana was shocked to hear that.</p>
+                        
+                        <p>She found it strange that he was so calm when he talked about it. It was as though his heart was dead from the great pain of losing his loved ones.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -915,21 +959,25 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>She felt a sharp pain in her heart as though someone was piercing a needle through it.</p>
-                    
-                    <p>She pitied him. If his family had been still around, then he would not have become a gigolo.</p>
-                    
-                    <p>The sympathy in her eyes felt like a sting in his heart.</p>
-                    
-                    <p>His parents had passed away when he was just a child, and he had been met with many peoples’ sympathetic looks.</p>
-                    
-                    <p>And that would always make him feel disgusted.</p>
-                    
-                    <p>“Don’t look at me like that. I don’t need your pity,” he said coldly.</p>
-                    
-                    <p>He believed that pity was the most hypocritical and useless thing in the world.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>She felt a sharp pain in her heart as though someone was piercing a needle through it.</p>
+                        
+                        <p>She pitied him. If his family had been still around, then he would not have become a gigolo.</p>
+                        
+                        <p>The sympathy in her eyes felt like a sting in his heart.</p>
+                        
+                        <p>His parents had passed away when he was just a child, and he had been met with many peoples’ sympathetic looks.</p>
+                        
+                        <p>And that would always make him feel disgusted.</p>
+                        
+                        <p>“Don’t look at me like that. I don’t need your pity,” he said coldly.</p>
+                        
+                        <p>He believed that pity was the most hypocritical and useless thing in the world.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -944,21 +992,25 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Eliana did not seem to be irritated by his words. In fact, she was able to understand his feelings, so she patted him on the shoulder to comfort him.</p>
-                    
-                    <p>“Don’t worry. I won’t leave you before I help you find the ring. If you want, you can consider me as your family, and I will take care of you.”</p>
-                    
-                    <p>As a mother of two kids, she wanted to take care of Preston, who had lacked a mother’s love.</p>
-                    
-                    <p>In her eyes, he was a poor kid, who had lost his parents and had to grow up all alone.</p>
-                    
-                    <p>Overwhelmed by her instinctive maternal love, she decided to be nicer to him.</p>
-                    
-                    <p>Noticing that Preston had just washed his hair, Eliana immediately asked, “Why don’t you dry your hair? What if you catch a cold?”</p>
-                    
-                    <p>Without waiting for his response, she turned around, and grabbed the hair dryer. Then she stared at him with gleaming eyes.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Eliana did not seem to be irritated by his words. In fact, she was able to understand his feelings, so she patted him on the shoulder to comfort him.</p>
+                        
+                        <p>“Don’t worry. I won’t leave you before I help you find the ring. If you want, you can consider me as your family, and I will take care of you.”</p>
+                        
+                        <p>As a mother of two kids, she wanted to take care of Preston, who had lacked a mother’s love.</p>
+                        
+                        <p>In her eyes, he was a poor kid, who had lost his parents and had to grow up all alone.</p>
+                        
+                        <p>Overwhelmed by her instinctive maternal love, she decided to be nicer to him.</p>
+                        
+                        <p>Noticing that Preston had just washed his hair, Eliana immediately asked, “Why don’t you dry your hair? What if you catch a cold?”</p>
+                        
+                        <p>Without waiting for his response, she turned around, and grabbed the hair dryer. Then she stared at him with gleaming eyes.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -973,21 +1025,25 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>“Let me help you dry your hair.”</p>
-                    
-                    <p>Maurice could not bring himself to refuse her when he saw the expectant look in her eyes.</p>
-                    
-                    <p>He walked over and sat down on the bed quietly, letting her dry his hair.</p>
-                    
-                    <p>Since she was used to drying her kids’ hair, she was good at it.</p>
-                    
-                    <p>However, Maurice was a little touched because no one had dried his hair for him except for his mother.</p>
-                    
-                    <p>When her soft small hand caressed his hair, Maurice felt the long lost peace. Only when he was with her was he able to let his guard down and enjoy a moment of peace.</p>
-                    
-                    <p>“Eliana, I know that we are now pretending to be lovers. But how about making it real? Would you be my girlfriend?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>“Let me help you dry your hair.”</p>
+                        
+                        <p>Maurice could not bring himself to refuse her when he saw the expectant look in her eyes.</p>
+                        
+                        <p>He walked over and sat down on the bed quietly, letting her dry his hair.</p>
+                        
+                        <p>Since she was used to drying her kids’ hair, she was good at it.</p>
+                        
+                        <p>However, Maurice was a little touched because no one had dried his hair for him except for his mother.</p>
+                        
+                        <p>When her soft small hand caressed his hair, Maurice felt the long lost peace. Only when he was with her was he able to let his guard down and enjoy a moment of peace.</p>
+                        
+                        <p>“Eliana, I know that we are now pretending to be lovers. But how about making it real? Would you be my girlfriend?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1002,21 +1058,25 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>The noise from the hair dryer was so loud that Eliana was not able to hear him clearly.</p>
-                    
-                    <p>She turned off the hair dryer, found a dry towel, and threw it to him.</p>
-                    
-                    <p>“Dry off the rest with this.”</p>
-                    
-                    <p>Maurice was speechless when he felt the towel thrown at his face. “Didn’t you hear my question?”</p>
-                    
-                    <p>Confused, Eliana leaned closer and asked, “What? What did you say?”</p>
-                    
-                    <p>The moment Maurice moved the towel off his face, he saw Eliana’s face that was merely a centimeter away from his. Within a second, their lips brushed against each other dramatically.</p>
-                    
-                    <p>Eliana’s heart skipped a beat.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>The noise from the hair dryer was so loud that Eliana was not able to hear him clearly.</p>
+                        
+                        <p>She turned off the hair dryer, found a dry towel, and threw it to him.</p>
+                        
+                        <p>“Dry off the rest with this.”</p>
+                        
+                        <p>Maurice was speechless when he felt the towel thrown at his face. “Didn’t you hear my question?”</p>
+                        
+                        <p>Confused, Eliana leaned closer and asked, “What? What did you say?”</p>
+                        
+                        <p>The moment Maurice moved the towel off his face, he saw Eliana’s face that was merely a centimeter away from his. Within a second, their lips brushed against each other dramatically.</p>
+                        
+                        <p>Eliana’s heart skipped a beat.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1031,21 +1091,25 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Covering her mouth, she took a step back. “What the hell are you doing?”</p>
-                    
-                    <p>Maurice touched his lips, reminiscing the touch of her lips from a moment ago.</p>
-                    
-                    <p>“I said, how about making it real? And would you be my girlfriend?” Maurice repeated.</p>
-                    
-                    <p>Perhaps, it was the familiar place that was making him stay calm and finally able to confess his feelings.</p>
-                    
-                    <p>He even decided to come clean about his identity and to never lie to her again if she accepted him.</p>
-                    
-                    <p>Nervousness crashed into his heart like a wave as he stared at her expectantly.</p>
-                    
-                    <p>“No. Sorry,” Eliana refused him, making his heart sink.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Covering her mouth, she took a step back. “What the hell are you doing?”</p>
+                        
+                        <p>Maurice touched his lips, reminiscing the touch of her lips from a moment ago.</p>
+                        
+                        <p>“I said, how about making it real? And would you be my girlfriend?” Maurice repeated.</p>
+                        
+                        <p>Perhaps, it was the familiar place that was making him stay calm and finally able to confess his feelings.</p>
+                        
+                        <p>He even decided to come clean about his identity and to never lie to her again if she accepted him.</p>
+                        
+                        <p>Nervousness crashed into his heart like a wave as he stared at her expectantly.</p>
+                        
+                        <p>“No. Sorry,” Eliana refused him, making his heart sink.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2361,6 +2425,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2487,7 +2631,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2529,32 +2672,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2565,21 +2690,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2612,6 +2727,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2632,20 +2753,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

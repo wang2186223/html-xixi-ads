@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.036331">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.036331">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.229043">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.229043">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.036331",
-        "dateModified": "2026-07-19T02:47:19.036331",
+        "datePublished": "2026-07-19T13:03:14.229043",
+        "dateModified": "2026-07-19T13:03:14.229043",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,31 +893,35 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Blake&#39;s POV*</p>
-                    
-                    <p>After resolving Hannah&#39;s situation at Mayo Clinic, I returned to Lunar Mansion exhausted, but couldn&#39;t find Audrey anywhere despite searching the entire house. My frustration grew with each empty room.</p>
-                    
-                    <p>*If she hadn&#39;t had security call me about needing medicine, I wouldn&#39;t have lost Thalia. Hannah wouldn&#39;t be fighting for her life right now. And this woman has the nerve to disappear after claiming she&#39;s dying?*</p>
-                    
-                    <p>I loosened my tie in frustration and headed toward the back garden. The mansion had limited exits, and since security confirmed she hadn&#39;t left, the only place she could be was the garden.</p>
-                    
-                    <p>As I approached the back door, voices drifted through.</p>
-                    
-                    <p>&#34;So you had embarrassing moments as a kid too?&#34; Felix Thompson.&#34;I thought someone as beautiful as you would&#39;ve always been perfect.&#34;</p>
-                    
-                    <p>&#34;Perfect? Me?&#34; Audrey laughed. &#34;I grew up in a village doing farm work.People thought I was rough around the edges.&#34;</p>
-                    
-                    <p>&#34;I&#39;d love to see that sometime...&#34;</p>
-                    
-                    <p>I stepped into the garden. Audrey sat inside our property. On the other side of the fence - technically outside my security perimeter-Felix Thompson lounged like a man without a care. Not exactly looking like someone who&#39;d supposedly drowned in the Hudson.</p>
-                    
-                    <p>&#34;What are you doing?&#34; I asked, walking toward them. &#34;This is your dying emergency,Audrey?&#34;</p>
-                    
-                    <p>I&#39;d rushed back worried about her, and here she was, flirting through a fence.</p>
-                    
-                    <p>Felix stood awkwardly. &#34;Blake. Audrey isn&#39;t well. I brought medicine.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Blake&#39;s POV*</p>
+                        
+                        <p>After resolving Hannah&#39;s situation at Mayo Clinic, I returned to Lunar Mansion exhausted, but couldn&#39;t find Audrey anywhere despite searching the entire house. My frustration grew with each empty room.</p>
+                        
+                        <p>*If she hadn&#39;t had security call me about needing medicine, I wouldn&#39;t have lost Thalia. Hannah wouldn&#39;t be fighting for her life right now. And this woman has the nerve to disappear after claiming she&#39;s dying?*</p>
+                        
+                        <p>I loosened my tie in frustration and headed toward the back garden. The mansion had limited exits, and since security confirmed she hadn&#39;t left, the only place she could be was the garden.</p>
+                        
+                        <p>As I approached the back door, voices drifted through.</p>
+                        
+                        <p>&#34;So you had embarrassing moments as a kid too?&#34; Felix Thompson.&#34;I thought someone as beautiful as you would&#39;ve always been perfect.&#34;</p>
+                        
+                        <p>&#34;Perfect? Me?&#34; Audrey laughed. &#34;I grew up in a village doing farm work.People thought I was rough around the edges.&#34;</p>
+                        
+                        <p>&#34;I&#39;d love to see that sometime...&#34;</p>
+                        
+                        <p>I stepped into the garden. Audrey sat inside our property. On the other side of the fence - technically outside my security perimeter-Felix Thompson lounged like a man without a care. Not exactly looking like someone who&#39;d supposedly drowned in the Hudson.</p>
+                        
+                        <p>&#34;What are you doing?&#34; I asked, walking toward them. &#34;This is your dying emergency,Audrey?&#34;</p>
+                        
+                        <p>I&#39;d rushed back worried about her, and here she was, flirting through a fence.</p>
+                        
+                        <p>Felix stood awkwardly. &#34;Blake. Audrey isn&#39;t well. I brought medicine.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -896,31 +936,35 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Medicine?&#34; I looked between them. &#34;My staff can&#39;t buy medicine? We need the &#39;dead&#39; Mr. Thompson to hand-deliver it? Or does it only work when he brings it?&#34;</p>
-                    
-                    <p>Audrey stood up. &#34;You should go.&#34;</p>
-                    
-                    <p>&#34;Blake, there&#39;s nothing between us,&#34; Felix said.</p>
-                    
-                    <p>&#34;Leave.&#34;</p>
-                    
-                    <p>One word. Felix hesitated, then walked away, glancing back repeatedly.</p>
-                    
-                    <p>When he disappeared, Audrey turned to me.&#34;Ithought you wouldn&#39;t be back for a week.&#34;</p>
-                    
-                    <p>She walked toward the house. No limping. No hunched posture from pain.Just her usual graceful walk.</p>
-                    
-                    <p>*Unbelievable. Hours ago she claimed she&#39;d die without medication. And I almost bought it.*</p>
-                    
-                    <p>&#34;If I hadn&#39;t come back today, I&#39;d have missed your garden date,&#34; I said,following her.</p>
-                    
-                    <p>Inside, I caught her arm, pinning her against the door. &#34;When did you get so cozy with Thompson?&#34;</p>
-                    
-                    <p>She didn&#39;t flinch.</p>
-                    
-                    <p>&#34;Coming out of hiding just for you? Makes sense - he faked bis death to</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Medicine?&#34; I looked between them. &#34;My staff can&#39;t buy medicine? We need the &#39;dead&#39; Mr. Thompson to hand-deliver it? Or does it only work when he brings it?&#34;</p>
+                        
+                        <p>Audrey stood up. &#34;You should go.&#34;</p>
+                        
+                        <p>&#34;Blake, there&#39;s nothing between us,&#34; Felix said.</p>
+                        
+                        <p>&#34;Leave.&#34;</p>
+                        
+                        <p>One word. Felix hesitated, then walked away, glancing back repeatedly.</p>
+                        
+                        <p>When he disappeared, Audrey turned to me.&#34;Ithought you wouldn&#39;t be back for a week.&#34;</p>
+                        
+                        <p>She walked toward the house. No limping. No hunched posture from pain.Just her usual graceful walk.</p>
+                        
+                        <p>*Unbelievable. Hours ago she claimed she&#39;d die without medication. And I almost bought it.*</p>
+                        
+                        <p>&#34;If I hadn&#39;t come back today, I&#39;d have missed your garden date,&#34; I said,following her.</p>
+                        
+                        <p>Inside, I caught her arm, pinning her against the door. &#34;When did you get so cozy with Thompson?&#34;</p>
+                        
+                        <p>She didn&#39;t flinch.</p>
+                        
+                        <p>&#34;Coming out of hiding just for you? Makes sense - he faked bis death to</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -935,31 +979,35 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>protect you anyway.&#34;</p>
-                    
-                    <p>I leaned closer. &#34;You&#39;re better at seducing men than I thought.&#34;</p>
-                    
-                    <p>Audrey shoved my hand away.&#34;You locked me up. Someone had to bring me medicine.&#34;</p>
-                    
-                    <p>&#34;My security&#39;s medicine not good enough?&#34;</p>
-                    
-                    <p>&#34;That&#39;s right.&#34; She took a breath. &#34;Blake, I&#39;ll tell you the truth. I&#39;m terminally ill. Not much time left.&#34;</p>
-                    
-                    <p>&#34;Your guards can&#39;t get what I need. Felix brought it because his grandfather is Dr. Clarke.&#34;</p>
-                    
-                    <p>I raised an eyebrow. &#34;What terminal illness?&#34;</p>
-                    
-                    <p>&#34;Late-stage gastric cancer.&#34;</p>
-                    
-                    <p>I laughed. &#34;Really? That&#39;s the best you could come up with? Gastric cancer?You accused Laurel of fakingillness. Now you&#39;re doing the same.&#34;</p>
-                    
-                    <p>She started for a while, then smiled bitterly. &#34;You&#39;re right. I was faking.Had security call because I wanted you back. Happy now?&#34;</p>
-                    
-                    <p>*I knew it.*</p>
-                    
-                    <p>I grabbed her jaw, forcing her to look at me.&#34;Do you know what I was doing when they called?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>protect you anyway.&#34;</p>
+                        
+                        <p>I leaned closer. &#34;You&#39;re better at seducing men than I thought.&#34;</p>
+                        
+                        <p>Audrey shoved my hand away.&#34;You locked me up. Someone had to bring me medicine.&#34;</p>
+                        
+                        <p>&#34;My security&#39;s medicine not good enough?&#34;</p>
+                        
+                        <p>&#34;That&#39;s right.&#34; She took a breath. &#34;Blake, I&#39;ll tell you the truth. I&#39;m terminally ill. Not much time left.&#34;</p>
+                        
+                        <p>&#34;Your guards can&#39;t get what I need. Felix brought it because his grandfather is Dr. Clarke.&#34;</p>
+                        
+                        <p>I raised an eyebrow. &#34;What terminal illness?&#34;</p>
+                        
+                        <p>&#34;Late-stage gastric cancer.&#34;</p>
+                        
+                        <p>I laughed. &#34;Really? That&#39;s the best you could come up with? Gastric cancer?You accused Laurel of fakingillness. Now you&#39;re doing the same.&#34;</p>
+                        
+                        <p>She started for a while, then smiled bitterly. &#34;You&#39;re right. I was faking.Had security call because I wanted you back. Happy now?&#34;</p>
+                        
+                        <p>*I knew it.*</p>
+                        
+                        <p>I grabbed her jaw, forcing her to look at me.&#34;Do you know what I was doing when they called?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -974,31 +1022,35 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;If you hadn&#39;t pulled that stunt, I wouldn&#39;t have lost Thalia. What they did to Hannah wouldn&#39;t have happened.&#34;</p>
-                    
-                    <p>**Audrey&#39;s POV*</p>
-                    
-                    <p>I froze. Felix had mentioned Hannah earlier - the woman who got my medication. Blake&#39;s new charity case. The reason he came rushing back.</p>
-                    
-                    <p>&#34;So you were following your sister,&#34; I said, connecting the dots. &#34;My call made you lose them, and by the time you found them again, they&#39;d already hurt this Hannah girl?&#34;</p>
-                    
-                    <p>Blake didn&#39;t answer, but his fingers dug deeper into my jaw. Hard enough I thought the bone might crack.</p>
-                    
-                    <p>I laughed,yanking his hand away. &#34;How is that my fault?&#34;</p>
-                    
-                    <p>&#34;I didn&#39;t assault her. I&#39;m not responsible for your sister&#39;s actions.How was I supposed to know what you were doing? If you&#39;re mad about failing to protect your new girlfriend, don&#39;t blame me.&#34;</p>
-                    
-                    <p>&#34;Instead of wasting time on me, maybe discipline your psychotic sister! I&#39;ve putup with her crap for years. If she keeps going, someone will die,and you&#39;ll go down with her.&#34;</p>
-                    
-                    <p>I snatched up Snow and stormed upstairs. Minutes later, I heard his car start.</p>
-                    
-                    <p>Gone.</p>
-                    
-                    <p>I curled up with Snow, pain throbbing through me now that I didn&#39;t need to hide it.</p>
-                    
-                    <p>*T&#39;m over him. Done. But hearing him give away medicine I needed to live.then blame me for his sister&#39;s cruelty... why does that still hurt?*</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;If you hadn&#39;t pulled that stunt, I wouldn&#39;t have lost Thalia. What they did to Hannah wouldn&#39;t have happened.&#34;</p>
+                        
+                        <p>**Audrey&#39;s POV*</p>
+                        
+                        <p>I froze. Felix had mentioned Hannah earlier - the woman who got my medication. Blake&#39;s new charity case. The reason he came rushing back.</p>
+                        
+                        <p>&#34;So you were following your sister,&#34; I said, connecting the dots. &#34;My call made you lose them, and by the time you found them again, they&#39;d already hurt this Hannah girl?&#34;</p>
+                        
+                        <p>Blake didn&#39;t answer, but his fingers dug deeper into my jaw. Hard enough I thought the bone might crack.</p>
+                        
+                        <p>I laughed,yanking his hand away. &#34;How is that my fault?&#34;</p>
+                        
+                        <p>&#34;I didn&#39;t assault her. I&#39;m not responsible for your sister&#39;s actions.How was I supposed to know what you were doing? If you&#39;re mad about failing to protect your new girlfriend, don&#39;t blame me.&#34;</p>
+                        
+                        <p>&#34;Instead of wasting time on me, maybe discipline your psychotic sister! I&#39;ve putup with her crap for years. If she keeps going, someone will die,and you&#39;ll go down with her.&#34;</p>
+                        
+                        <p>I snatched up Snow and stormed upstairs. Minutes later, I heard his car start.</p>
+                        
+                        <p>Gone.</p>
+                        
+                        <p>I curled up with Snow, pain throbbing through me now that I didn&#39;t need to hide it.</p>
+                        
+                        <p>*T&#39;m over him. Done. But hearing him give away medicine I needed to live.then blame me for his sister&#39;s cruelty... why does that still hurt?*</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1013,31 +1065,35 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>I held Snow tighter and closed my eyes.</p>
-                    
-                    <p>*Why does heartbreak feel so physical? Is death the only way I&#39;ll escape</p>
-                    
-                    <p>Blake Parker? Well, death&#39;s coming soon anyway.*</p>
-                    
-                    <p>For the next week, Blake stayed away. But security doubled. Before, Felix could pass things through the fence. Now guards watched every inch of the property.</p>
-                    
-                    <p>I grew weaker without proper treatment. A canary in Blake&#39;s gilded cage.</p>
-                    
-                    <p>But I wasn&#39;t hopeless. I started with just Felix, then added Astrid and Ethan to my secret calls. Their voices kept me going.</p>
-                    
-                    <p>Sometimes,catching my skeletal reflection, I felt oddly relieved.</p>
-                    
-                    <p>*Better Blake locked me away. If Astrid saw me like this, she&#39;d fall apart.Dying quietly isn&#39;t so bad.*</p>
-                    
-                    <p>My only wish now? Hearing Rachel wake up before I go.</p>
-                    
-                    <p>That day, I&#39;d framed a small painting to hang in the bathroom.I hammered a nail into the wall, phone on speaker.</p>
-                    
-                    <p>&#34;Rachel really woke up?&#34; I asked.</p>
-                    
-                    <p>&#34;Yes!&#34; Felix&#39;s excitement poured through the phone. &#34;She said some words yesterday. They were slurred, but definitely your name!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>I held Snow tighter and closed my eyes.</p>
+                        
+                        <p>*Why does heartbreak feel so physical? Is death the only way I&#39;ll escape</p>
+                        
+                        <p>Blake Parker? Well, death&#39;s coming soon anyway.*</p>
+                        
+                        <p>For the next week, Blake stayed away. But security doubled. Before, Felix could pass things through the fence. Now guards watched every inch of the property.</p>
+                        
+                        <p>I grew weaker without proper treatment. A canary in Blake&#39;s gilded cage.</p>
+                        
+                        <p>But I wasn&#39;t hopeless. I started with just Felix, then added Astrid and Ethan to my secret calls. Their voices kept me going.</p>
+                        
+                        <p>Sometimes,catching my skeletal reflection, I felt oddly relieved.</p>
+                        
+                        <p>*Better Blake locked me away. If Astrid saw me like this, she&#39;d fall apart.Dying quietly isn&#39;t so bad.*</p>
+                        
+                        <p>My only wish now? Hearing Rachel wake up before I go.</p>
+                        
+                        <p>That day, I&#39;d framed a small painting to hang in the bathroom.I hammered a nail into the wall, phone on speaker.</p>
+                        
+                        <p>&#34;Rachel really woke up?&#34; I asked.</p>
+                        
+                        <p>&#34;Yes!&#34; Felix&#39;s excitement poured through the phone. &#34;She said some words yesterday. They were slurred, but definitely your name!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1052,31 +1108,35 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;Grandpa&#39;s doing rehab with her. In a few days, she should be talking in full sentences!&#34;</p>
-                    
-                    <p>&#34;That&#39;s amazing!&#34;</p>
-                    
-                    <p>A car pulled up outside.</p>
-                    
-                    <p>*Blake&#39;s back?*</p>
-                    
-                    <p>Remembering his reaction last time, I quickly ended the call. I didn&#39;t want to lose my last connection to the outside.</p>
-                    
-                    <p>I left the bathroom and heard an angry female voice from downstairs.</p>
-                    
-                    <p>&#34;Laurel. I was right! My brother stayed here that night.Someone&#39;s definitely living here!&#34;</p>
-                    
-                    <p>&#34;It&#39;s her. I won&#39;t get it wrong this time!&#34;</p>
-                    
-                    <p>Thalia. My stomach dropped.</p>
-                    
-                    <p>I never expected her to bring Laurel here. Just a week ago, Thalia had helped torture Hannah until she nearly died from a lung infection. Blake had cleaned up that mess,and I figured that was the end of it.</p>
-                    
-                    <p>Guess answering Blake&#39;s phone that morning was all it took for them to hunt me down.</p>
-                    
-                    <p>I turned to sneak through the back corridor to the garden. No way I could face all three of them.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;Grandpa&#39;s doing rehab with her. In a few days, she should be talking in full sentences!&#34;</p>
+                        
+                        <p>&#34;That&#39;s amazing!&#34;</p>
+                        
+                        <p>A car pulled up outside.</p>
+                        
+                        <p>*Blake&#39;s back?*</p>
+                        
+                        <p>Remembering his reaction last time, I quickly ended the call. I didn&#39;t want to lose my last connection to the outside.</p>
+                        
+                        <p>I left the bathroom and heard an angry female voice from downstairs.</p>
+                        
+                        <p>&#34;Laurel. I was right! My brother stayed here that night.Someone&#39;s definitely living here!&#34;</p>
+                        
+                        <p>&#34;It&#39;s her. I won&#39;t get it wrong this time!&#34;</p>
+                        
+                        <p>Thalia. My stomach dropped.</p>
+                        
+                        <p>I never expected her to bring Laurel here. Just a week ago, Thalia had helped torture Hannah until she nearly died from a lung infection. Blake had cleaned up that mess,and I figured that was the end of it.</p>
+                        
+                        <p>Guess answering Blake&#39;s phone that morning was all it took for them to hunt me down.</p>
+                        
+                        <p>I turned to sneak through the back corridor to the garden. No way I could face all three of them.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1091,23 +1151,27 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;There she is!&#34; Olivia&#39;s voice rang out.</p>
-                    
-                    <p>Busted. I felt their stares like daggers in my back.</p>
-                    
-                    <p>&#34;So Blake really does have a side piece,&#34; Laurel said, her voice sickly sweet.&#34;You know his dead ex-wife used to live here, right? Not creeped out by</p>
-                    
-                    <p>that?&#34;</p>
-                    
-                    <p>&#34;Turn around,&#34; she coaxed. &#34;Let me see who stole my fiancé.&#34;</p>
-                    
-                    <p>My hands balled into fists. I stayed frozen.</p>
-                    
-                    <p>Then Thalia&#39;s grip locked around my arm,spinning me forcefully.</p>
-                    
-                    <p>&#34;Are you deaf?&#34; she snapped. &#34;Look at us when we&#39;re talking to you!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;There she is!&#34; Olivia&#39;s voice rang out.</p>
+                        
+                        <p>Busted. I felt their stares like daggers in my back.</p>
+                        
+                        <p>&#34;So Blake really does have a side piece,&#34; Laurel said, her voice sickly sweet.&#34;You know his dead ex-wife used to live here, right? Not creeped out by</p>
+                        
+                        <p>that?&#34;</p>
+                        
+                        <p>&#34;Turn around,&#34; she coaxed. &#34;Let me see who stole my fiancé.&#34;</p>
+                        
+                        <p>My hands balled into fists. I stayed frozen.</p>
+                        
+                        <p>Then Thalia&#39;s grip locked around my arm,spinning me forcefully.</p>
+                        
+                        <p>&#34;Are you deaf?&#34; she snapped. &#34;Look at us when we&#39;re talking to you!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2423,6 +2487,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2549,7 +2693,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2591,32 +2734,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2627,21 +2752,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2674,6 +2789,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2694,20 +2815,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

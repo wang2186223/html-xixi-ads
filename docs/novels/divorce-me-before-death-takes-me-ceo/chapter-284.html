@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.100185">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.100185">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.276714">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.276714">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.100185",
-        "dateModified": "2026-07-19T02:47:19.100185",
+        "datePublished": "2026-07-19T13:03:14.276714",
+        "dateModified": "2026-07-19T13:03:14.276714",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,25 +893,29 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>Adrian held his iPhone up, frowning as he scrolled through comments pouring in after William Parker&#39;s livestream. We were in his car,just leaving Mayo Clinic.</p>
-                    
-                    <p>&#34;Is this eye contact really that emotional?&#34; Adrian muttered, squinting at the screen. &#34;I honestly don&#39;t see it.&#34;</p>
-                    
-                    <p>I leaned over to look at what had caught his attention. The video showed Blake staring at me during the livestream - the moment that had apparently set social media on fire.</p>
-                    
-                    <p>&#34;Isn&#39;t this just a normal glance?&#34; Adrian continued, genuinely confused.&#34;Where exactly are people seeing all this emotion they&#39;re talking about?&#34;</p>
-                    
-                    <p>He handed me his phone. &#34;Here, check it out yourself.&#34;</p>
-                    
-                    <p>I took the device, my finger hovering over the screen. There was Blake,his eyes meeting mine for that brief moment everyone was dissecting. Once, I could read every flicker of emotion in those eyes. Now. I couldn&#39;t see what the commenters were so excited about.</p>
-                    
-                    <p>I stared at the frozen frame, something twisting inside me.</p>
-                    
-                    <p>*Maybe it&#39;s because I don&#39;t love him anymore.*</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>Adrian held his iPhone up, frowning as he scrolled through comments pouring in after William Parker&#39;s livestream. We were in his car,just leaving Mayo Clinic.</p>
+                        
+                        <p>&#34;Is this eye contact really that emotional?&#34; Adrian muttered, squinting at the screen. &#34;I honestly don&#39;t see it.&#34;</p>
+                        
+                        <p>I leaned over to look at what had caught his attention. The video showed Blake staring at me during the livestream - the moment that had apparently set social media on fire.</p>
+                        
+                        <p>&#34;Isn&#39;t this just a normal glance?&#34; Adrian continued, genuinely confused.&#34;Where exactly are people seeing all this emotion they&#39;re talking about?&#34;</p>
+                        
+                        <p>He handed me his phone. &#34;Here, check it out yourself.&#34;</p>
+                        
+                        <p>I took the device, my finger hovering over the screen. There was Blake,his eyes meeting mine for that brief moment everyone was dissecting. Once, I could read every flicker of emotion in those eyes. Now. I couldn&#39;t see what the commenters were so excited about.</p>
+                        
+                        <p>I stared at the frozen frame, something twisting inside me.</p>
+                        
+                        <p>*Maybe it&#39;s because I don&#39;t love him anymore.*</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -890,25 +930,29 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>The thought settled quietly as I handed the phone back to Adrian.</p>
-                    
-                    <p>&#34;Probably just internet drama,&#34; I said with a shrug.</p>
-                    
-                    <p>Adrian shook his head, still scrolling.′′Ithink they&#39;re just making up</p>
-                    
-                    <p>stories because they found out Rachel&#39;s been using your identity. &#39;They&#39;re upset and want to paint Blake as still being in love with you to make Rachel look even worse.&#34;</p>
-                    
-                    <p>I turned to look out the window, watching New York blur past. &#34;You might be right.&#34;</p>
-                    
-                    <p>The car fell silent for a while before Adrian spoke again.</p>
-                    
-                    <p>&#34;Are you really going to wait until William Parker passes away and then distribute his assets to charity like he asked?&#34;</p>
-                    
-                    <p>I turned back to him, my decision already made. &#34;Of course. William has been important to me. If this is his wish, I&#39;ll do everything I can to help him fulfill it.&#34;</p>
-                    
-                    <p>Adrian studied me for a moment, then hesitated before asking, &#34;But if you do this publicly... your adoptive parents in Sydney will see it. They and the Parker family...&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>The thought settled quietly as I handed the phone back to Adrian.</p>
+                        
+                        <p>&#34;Probably just internet drama,&#34; I said with a shrug.</p>
+                        
+                        <p>Adrian shook his head, still scrolling.′′Ithink they&#39;re just making up</p>
+                        
+                        <p>stories because they found out Rachel&#39;s been using your identity. &#39;They&#39;re upset and want to paint Blake as still being in love with you to make Rachel look even worse.&#34;</p>
+                        
+                        <p>I turned to look out the window, watching New York blur past. &#34;You might be right.&#34;</p>
+                        
+                        <p>The car fell silent for a while before Adrian spoke again.</p>
+                        
+                        <p>&#34;Are you really going to wait until William Parker passes away and then distribute his assets to charity like he asked?&#34;</p>
+                        
+                        <p>I turned back to him, my decision already made. &#34;Of course. William has been important to me. If this is his wish, I&#39;ll do everything I can to help him fulfill it.&#34;</p>
+                        
+                        <p>Adrian studied me for a moment, then hesitated before asking, &#34;But if you do this publicly... your adoptive parents in Sydney will see it. They and the Parker family...&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -923,25 +967,29 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>I nodded, understanding his concern. &#34;I&#39;ll explain everything to them.I know they have history with the New York Parkers, and I&#39;ll stay with them like my sister did before me. I&#39;ll minimize contact with the New York branch.&#34;</p>
-                    
-                    <p>I paused, thinking of William. &#34;But in my current situation... I can&#39;t use my real identity to be with William or honor him. Helping distribute his assets to charity according to his wishes is the last thing I can do for him,so...&#34;</p>
-                    
-                    <p>The car suddenly screeched to a halt, throwing me forward. Adrian quickly reached out to steady me.</p>
-                    
-                    <p>&#34;What the hell?&#34; Adrian snapped at the driver. &#34;Is this how Henry</p>
-                    
-                    <p>Hartford trains his drivers?&#34;</p>
-                    
-                    <p>The ddriver&#39;s voice came back shaky. &#34;Sorry. Mr. Knox, but look ahead...there&#39;s someone... if I hadn&#39;t stopped quickly, I would have hit them...&#34;</p>
-                    
-                    <p>Adrian and I both looked through the windshield. There,standing in the middle of Fifth Avenue with her arms spread wide, was Rachel Hayes. Her face was set in determination as she blocked our car, seemingly indifferent to the angry honks from vehicles backing up behind us.</p>
-                    
-                    <p>&#34;What the fuck?&#34; Adriana muttered under his breath.</p>
-                    
-                    <p>Around us, drivers were rolling down their windows to shout at Rachel.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>I nodded, understanding his concern. &#34;I&#39;ll explain everything to them.I know they have history with the New York Parkers, and I&#39;ll stay with them like my sister did before me. I&#39;ll minimize contact with the New York branch.&#34;</p>
+                        
+                        <p>I paused, thinking of William. &#34;But in my current situation... I can&#39;t use my real identity to be with William or honor him. Helping distribute his assets to charity according to his wishes is the last thing I can do for him,so...&#34;</p>
+                        
+                        <p>The car suddenly screeched to a halt, throwing me forward. Adrian quickly reached out to steady me.</p>
+                        
+                        <p>&#34;What the hell?&#34; Adrian snapped at the driver. &#34;Is this how Henry</p>
+                        
+                        <p>Hartford trains his drivers?&#34;</p>
+                        
+                        <p>The ddriver&#39;s voice came back shaky. &#34;Sorry. Mr. Knox, but look ahead...there&#39;s someone... if I hadn&#39;t stopped quickly, I would have hit them...&#34;</p>
+                        
+                        <p>Adrian and I both looked through the windshield. There,standing in the middle of Fifth Avenue with her arms spread wide, was Rachel Hayes. Her face was set in determination as she blocked our car, seemingly indifferent to the angry honks from vehicles backing up behind us.</p>
+                        
+                        <p>&#34;What the fuck?&#34; Adriana muttered under his breath.</p>
+                        
+                        <p>Around us, drivers were rolling down their windows to shout at Rachel.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -956,25 +1004,29 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Lady,are you crazy or what?!&#34;</p>
-                    
-                    <p>&#34;Some of us have places to be!&#34;</p>
-                    
-                    <p>&#34;Move your ass before I call the cops!&#34;</p>
-                    
-                    <p>&#34;This isn&#39;t a movie set,get out of the road!&#34;</p>
-                    
-                    <p>Rachel ignored them all, her eyes fixed on our car. She stood perfectly still.causing a growing traffic jam in one of Manhattan&#39;s busiest streets.</p>
-                    
-                    <p>After a moment, Adrian said coldly, &#34;The police will take her away! What does that have to do with us?&#34;</p>
-                    
-                    <p>I watched Rachel standing there, and couldn&#39;t help but remember how she used to lecture me about following traffic rules five years ago.</p>
-                    
-                    <p>*&#34;Life isn&#39;t a TV drama, Audrey. You need to follow traffic rules in the real world!&#34;*</p>
-                    
-                    <p>*&#34;Audrey, you need to be more composed,more calm.&#34;*</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Lady,are you crazy or what?!&#34;</p>
+                        
+                        <p>&#34;Some of us have places to be!&#34;</p>
+                        
+                        <p>&#34;Move your ass before I call the cops!&#34;</p>
+                        
+                        <p>&#34;This isn&#39;t a movie set,get out of the road!&#34;</p>
+                        
+                        <p>Rachel ignored them all, her eyes fixed on our car. She stood perfectly still.causing a growing traffic jam in one of Manhattan&#39;s busiest streets.</p>
+                        
+                        <p>After a moment, Adrian said coldly, &#34;The police will take her away! What does that have to do with us?&#34;</p>
+                        
+                        <p>I watched Rachel standing there, and couldn&#39;t help but remember how she used to lecture me about following traffic rules five years ago.</p>
+                        
+                        <p>*&#34;Life isn&#39;t a TV drama, Audrey. You need to follow traffic rules in the real world!&#34;*</p>
+                        
+                        <p>*&#34;Audrey, you need to be more composed,more calm.&#34;*</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -989,25 +1041,29 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>*&#34;This isn&#39;t some country road back in your hometown. People could die doing things like this!&#34;*</p>
-                    
-                    <p>How ironic thatshe was now the one causing traffic chaos. I unfastened my seatbelt and reached for the door handle.</p>
-                    
-                    <p>Adrian grabbed my wrist. &#34;Wait. You&#39;re actually going to talk to her?&#34;</p>
-                    
-                    <p>&#34;Do we have a choice? We can&#39;t exactly drive away, can we?&#34; I nodded toward the growing crowd surrounding our car. People were taking photos,pointing, and the traffic was completely blocked.</p>
-                    
-                    <p>&#34;What does she want?&#34; Adrian growled.</p>
-                    
-                    <p>&#34;She&#39;s looking for me,&#34; I explained. &#34;That video of Blake looking at me during the livestream is all over social media, and people are analyzing his gaze like it means something... As Blake&#39;s fiancée who&#39;s getting married tomorrow, she&#39;s obviously coming to confront me.&#34;</p>
-                    
-                    <p>&#34;What good will confronting you do? Ask you not to seduce Blake? But you haven&#39;t done anything.&#34;</p>
-                    
-                    <p>&#34;Whether I did anything or not doesn&#39;t matter. She just needs to make people think I did. That&#39;s enough.&#34;</p>
-                    
-                    <p>I looked at Adrian with determination. &#34;Don&#39;t worry. I know what I&#39;m doing.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>*&#34;This isn&#39;t some country road back in your hometown. People could die doing things like this!&#34;*</p>
+                        
+                        <p>How ironic thatshe was now the one causing traffic chaos. I unfastened my seatbelt and reached for the door handle.</p>
+                        
+                        <p>Adrian grabbed my wrist. &#34;Wait. You&#39;re actually going to talk to her?&#34;</p>
+                        
+                        <p>&#34;Do we have a choice? We can&#39;t exactly drive away, can we?&#34; I nodded toward the growing crowd surrounding our car. People were taking photos,pointing, and the traffic was completely blocked.</p>
+                        
+                        <p>&#34;What does she want?&#34; Adrian growled.</p>
+                        
+                        <p>&#34;She&#39;s looking for me,&#34; I explained. &#34;That video of Blake looking at me during the livestream is all over social media, and people are analyzing his gaze like it means something... As Blake&#39;s fiancée who&#39;s getting married tomorrow, she&#39;s obviously coming to confront me.&#34;</p>
+                        
+                        <p>&#34;What good will confronting you do? Ask you not to seduce Blake? But you haven&#39;t done anything.&#34;</p>
+                        
+                        <p>&#34;Whether I did anything or not doesn&#39;t matter. She just needs to make people think I did. That&#39;s enough.&#34;</p>
+                        
+                        <p>I looked at Adrian with determination. &#34;Don&#39;t worry. I know what I&#39;m doing.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1022,25 +1078,29 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>I knew running away would only make me look guilty. Better to face her head-on and see if Rachel still thought she could outmaneuver me in these mind games like she did five years ago.</p>
-                    
-                    <p>I gently pulled my hand from Adrian&#39;s grip and opened the door.</p>
-                    
-                    <p>As soon as I stepped out of the car, Rachel&#39;s eyes locked with mine, Then.to my surprise, she dropped to her knees in the middle of the street with a loud thud.</p>
-                    
-                    <p>I stood by the Bentley&#39;s door, expressionless, as the crowd gasped and even more phones came out to record the scene.</p>
-                    
-                    <p>&#34;Mrs. Knox!&#34; Rachel called out, her eyes filled with tears. &#34;I know approaching you like this seems extreme. But short of blocking you on the street in front of everyone, I had no idea how to find you...&#34;</p>
-                    
-                    <p>The crowd&#39;s murmurs grew louder.</p>
-                    
-                    <p>&#34;What&#39;s going on? This Mrs. Knox doesn&#39;t want to see Rachel Hayes?&#34;</p>
-                    
-                    <p>&#34;With her relationship with Blake Parker being what it is, of course she&#39;d avoid his fiancée. What&#39;s strange about that?&#34;</p>
-                    
-                    <p>&#34;I thought Audrey&#39;s twin sister was one of the good ones, but now...&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>I knew running away would only make me look guilty. Better to face her head-on and see if Rachel still thought she could outmaneuver me in these mind games like she did five years ago.</p>
+                        
+                        <p>I gently pulled my hand from Adrian&#39;s grip and opened the door.</p>
+                        
+                        <p>As soon as I stepped out of the car, Rachel&#39;s eyes locked with mine, Then.to my surprise, she dropped to her knees in the middle of the street with a loud thud.</p>
+                        
+                        <p>I stood by the Bentley&#39;s door, expressionless, as the crowd gasped and even more phones came out to record the scene.</p>
+                        
+                        <p>&#34;Mrs. Knox!&#34; Rachel called out, her eyes filled with tears. &#34;I know approaching you like this seems extreme. But short of blocking you on the street in front of everyone, I had no idea how to find you...&#34;</p>
+                        
+                        <p>The crowd&#39;s murmurs grew louder.</p>
+                        
+                        <p>&#34;What&#39;s going on? This Mrs. Knox doesn&#39;t want to see Rachel Hayes?&#34;</p>
+                        
+                        <p>&#34;With her relationship with Blake Parker being what it is, of course she&#39;d avoid his fiancée. What&#39;s strange about that?&#34;</p>
+                        
+                        <p>&#34;I thought Audrey&#39;s twin sister was one of the good ones, but now...&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1055,13 +1115,17 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;What soap opera is this? A bride-to-be kneeling in the street to beg her fiancé&#39;s ex-wife&#39;s sister?&#34;</p>
-                    
-                    <p>Rachel got up, dusting off her knees. She walked toward me with small.hesitant steps, her expression vulnerable and fragile. When she reached me.she grabbed my arm.</p>
-                    
-                    <p>&#34;Mrs. Knox,&#34; she said, her voice trembling,′′Iknow what I&#39;m about tosay might offend you, but... I truly have no other option.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;What soap opera is this? A bride-to-be kneeling in the street to beg her fiancé&#39;s ex-wife&#39;s sister?&#34;</p>
+                        
+                        <p>Rachel got up, dusting off her knees. She walked toward me with small.hesitant steps, her expression vulnerable and fragile. When she reached me.she grabbed my arm.</p>
+                        
+                        <p>&#34;Mrs. Knox,&#34; she said, her voice trembling,′′Iknow what I&#39;m about tosay might offend you, but... I truly have no other option.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2377,6 +2441,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2503,7 +2647,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2545,32 +2688,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2581,21 +2706,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2628,6 +2743,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2648,20 +2769,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

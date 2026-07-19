@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:29.725631">
-    <meta property="article:modified_time" content="2026-07-19T02:47:29.725631">
+    <meta property="article:published_time" content="2026-07-19T13:03:24.111571">
+    <meta property="article:modified_time" content="2026-07-19T13:03:24.111571">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:29">
+    <meta name="last-modified" content="2026-07-19 13:03:24">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:29.725631",
-        "dateModified": "2026-07-19T02:47:29.725631",
+        "datePublished": "2026-07-19T13:03:24.111571",
+        "dateModified": "2026-07-19T13:03:24.111571",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,21 +893,25 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Aurora City&#39;s elite enclave shimmered in the late afternoon sun,its crown jewel,the Garden Estate, standing like a fortress of opulence. Built by the Kane Corporation, the estate boasted both luxury and unmatched security.making it impenetrable to outsiders without proper clearance. Grandma Helen found this exclusivity an unnecessary ordeal.</p>
-                    
-                    <p>As her car passed through the final security checkpoint, she sighed heavily,her annoyance palpable. &#34;Why must I endure this charade every single time? My grandson couldn&#39;t even bother to inform his staff that I&#39;m not just any visitor.&#34;</p>
-                    
-                    <p>&#34;Patience, Grandma,&#34; her companion soothed,though with little success.</p>
-                    
-                    <p>Helen shifted her gaze to the estate&#39;s sprawling landscape.Manicured lawns stretched endlessly, accented by gardens bursting with color. She grudgingly admitted, &#34;At least the view is worth something.”</p>
-                    
-                    <p>Upon arriving at the mansion, a team of bodyguards sprang into action,opening the car door and bowing respectfully. Helen stepped out with an air of authority, her sharp eyes scanning the area as if she were inspecting her territory.</p>
-                    
-                    <p>&#34;Welcome, Grandma,&#34; a maid named Clara greeted her, rushing out to meet her.</p>
-                    
-                    <p>Helen wasted no time.&#34;Where is the woman my grandson married?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Aurora City&#39;s elite enclave shimmered in the late afternoon sun,its crown jewel,the Garden Estate, standing like a fortress of opulence. Built by the Kane Corporation, the estate boasted both luxury and unmatched security.making it impenetrable to outsiders without proper clearance. Grandma Helen found this exclusivity an unnecessary ordeal.</p>
+                        
+                        <p>As her car passed through the final security checkpoint, she sighed heavily,her annoyance palpable. &#34;Why must I endure this charade every single time? My grandson couldn&#39;t even bother to inform his staff that I&#39;m not just any visitor.&#34;</p>
+                        
+                        <p>&#34;Patience, Grandma,&#34; her companion soothed,though with little success.</p>
+                        
+                        <p>Helen shifted her gaze to the estate&#39;s sprawling landscape.Manicured lawns stretched endlessly, accented by gardens bursting with color. She grudgingly admitted, &#34;At least the view is worth something.”</p>
+                        
+                        <p>Upon arriving at the mansion, a team of bodyguards sprang into action,opening the car door and bowing respectfully. Helen stepped out with an air of authority, her sharp eyes scanning the area as if she were inspecting her territory.</p>
+                        
+                        <p>&#34;Welcome, Grandma,&#34; a maid named Clara greeted her, rushing out to meet her.</p>
+                        
+                        <p>Helen wasted no time.&#34;Where is the woman my grandson married?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -886,21 +926,25 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;She isn&#39;t back yet, Ma&#39;am,&#34; Clara replied nervously. &#34;But she mentioned she would return by 3 p.m.&#34;</p>
-                    
-                    <p>Helen nodded curtly.“Fine. I&#39;ll wait.&#34; The clock ticked closer to 3 p.m. when Lily Evans pulled up to the estate.She noticed the unfamiliar car parked outside and hesitated. Was Alexander back? Her heart skipped a beat at the possibility.though whether it was anticipation or dread,she couldn&#39;t tell.</p>
-                    
-                    <p>Inside. Clara met her at the door. &#34;You&#39;re back, Miss Evans.&#34;</p>
-                    
-                    <p>&#34;Yes,&#34; Lily answered,setting her belongings down.</p>
-                    
-                    <p>&#34;I&#39;ll take these to your room,&#34; Clara offered. “MIrs. Kane is waiting for you in the living room.”</p>
-                    
-                    <p>&#34;Mrs. Kane?” Lily&#39;s brow furrowed.</p>
-                    
-                    <p>&#34;Mr. Kane&#39;s grandmother,&#34; Clara clarified.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;She isn&#39;t back yet, Ma&#39;am,&#34; Clara replied nervously. &#34;But she mentioned she would return by 3 p.m.&#34;</p>
+                        
+                        <p>Helen nodded curtly.“Fine. I&#39;ll wait.&#34; The clock ticked closer to 3 p.m. when Lily Evans pulled up to the estate.She noticed the unfamiliar car parked outside and hesitated. Was Alexander back? Her heart skipped a beat at the possibility.though whether it was anticipation or dread,she couldn&#39;t tell.</p>
+                        
+                        <p>Inside. Clara met her at the door. &#34;You&#39;re back, Miss Evans.&#34;</p>
+                        
+                        <p>&#34;Yes,&#34; Lily answered,setting her belongings down.</p>
+                        
+                        <p>&#34;I&#39;ll take these to your room,&#34; Clara offered. “MIrs. Kane is waiting for you in the living room.”</p>
+                        
+                        <p>&#34;Mrs. Kane?” Lily&#39;s brow furrowed.</p>
+                        
+                        <p>&#34;Mr. Kane&#39;s grandmother,&#34; Clara clarified.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -915,21 +959,25 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Realization dawned on Lily, and she quickly smoothed her hair and adjusted her simple outfit. “I&#39;ll see her right away.&#34;</p>
-                    
-                    <p>Lily stepped into the living room, her heart pounding. Sitting in an ornate armchair was a woman whose presence commanded the room. Helen&#39;s sharp eyes studied Lily before offering a faint smile, one that didn&#39;t quite reach her eyes.</p>
-                    
-                    <p>&#34;Hello, Grandma. It&#39;s nice to meet you,&#34; Lily greeted you with a polite smile, masking her nervousness.</p>
-                    
-                    <p>Helen gestured to the seat across from her, &#34;Sit down, dear.&#34; Lily obeyed, her posture poised and respectful. Helen observed her, noting the unassuming grace in Lily&#39;s movements. Despite her simple attire,she carried herself with a quiet dignity that intrigued Helen. “1assume you&#39;re the one my grandson married?&#34; Helen asked, her tone neutral.</p>
-                    
-                    <p>&#34;Yes, Grandma.&#34; Lily replied softly.</p>
-                    
-                    <p>Helen chuckled, a glint of amusement breaking through her usual stern demeanor. “Well, I already like you. Alexander may have stumbled into this, but he&#39;s made a good choice.”</p>
-                    
-                    <p>Lily smiled politely but avoided holding Helen&#39;s gaze fortoo long,unsure of what to make of the compliment.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Realization dawned on Lily, and she quickly smoothed her hair and adjusted her simple outfit. “I&#39;ll see her right away.&#34;</p>
+                        
+                        <p>Lily stepped into the living room, her heart pounding. Sitting in an ornate armchair was a woman whose presence commanded the room. Helen&#39;s sharp eyes studied Lily before offering a faint smile, one that didn&#39;t quite reach her eyes.</p>
+                        
+                        <p>&#34;Hello, Grandma. It&#39;s nice to meet you,&#34; Lily greeted you with a polite smile, masking her nervousness.</p>
+                        
+                        <p>Helen gestured to the seat across from her, &#34;Sit down, dear.&#34; Lily obeyed, her posture poised and respectful. Helen observed her, noting the unassuming grace in Lily&#39;s movements. Despite her simple attire,she carried herself with a quiet dignity that intrigued Helen. “1assume you&#39;re the one my grandson married?&#34; Helen asked, her tone neutral.</p>
+                        
+                        <p>&#34;Yes, Grandma.&#34; Lily replied softly.</p>
+                        
+                        <p>Helen chuckled, a glint of amusement breaking through her usual stern demeanor. “Well, I already like you. Alexander may have stumbled into this, but he&#39;s made a good choice.”</p>
+                        
+                        <p>Lily smiled politely but avoided holding Helen&#39;s gaze fortoo long,unsure of what to make of the compliment.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -944,21 +992,25 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;What&#39;s your name, dear?&#34; Helen asked, her curiosity piqued.</p>
-                    
-                    <p>&#34;Lily Evans,&#34; she replied.</p>
-                    
-                    <p>&#34;Lily Evans,&#34; Helen repeated, letting the name roll off her tongue.“A lovely name.&#34;</p>
-                    
-                    <p>&#34;Thank you,Grandma.”</p>
-                    
-                    <p>Helen leaned forward slightly, her tone softening.“Tell me about yourself.Lily. What do you love to do?&#34;</p>
-                    
-                    <p>Lily opened her mouth to respond, but a familiar voice cut through the air,cold and unyielding.</p>
-                    
-                    <p>&#34;There&#39;s no need for that,&#34; Alexander said, striding into the room. &#34;This marriage will last only a year and six months.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;What&#39;s your name, dear?&#34; Helen asked, her curiosity piqued.</p>
+                        
+                        <p>&#34;Lily Evans,&#34; she replied.</p>
+                        
+                        <p>&#34;Lily Evans,&#34; Helen repeated, letting the name roll off her tongue.“A lovely name.&#34;</p>
+                        
+                        <p>&#34;Thank you,Grandma.”</p>
+                        
+                        <p>Helen leaned forward slightly, her tone softening.“Tell me about yourself.Lily. What do you love to do?&#34;</p>
+                        
+                        <p>Lily opened her mouth to respond, but a familiar voice cut through the air,cold and unyielding.</p>
+                        
+                        <p>&#34;There&#39;s no need for that,&#34; Alexander said, striding into the room. &#34;This marriage will last only a year and six months.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -973,21 +1025,25 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Lily froze, her composure shattering for a brief moment before she masked her hurt. Helen&#39;s frown deepened at her grandson&#39;s callousness,but she quickly turned back to Lily with a reassuring smile.</p>
-                    
-                    <p>Lily stood abruptly, attempting to steer the conversation.&#34;What would you like to eat, Grandma? I&#39;ll prepare something for you.&#34; Alexander&#39;s brow furrowed, his displeasure evident.</p>
-                    
-                    <p>Such a considerate offer earned Helen&#39;s approval.“You&#39;re a sweet child.</p>
-                    
-                    <p>but there&#39;s no need. I have other engagements to attend.&#34;</p>
-                    
-                    <p>“Let me see you off, then,&#34; Lily offered, moving towardthe door.</p>
-                    
-                    <p>Before she could take another step. Alexander stepped in front of her, his towering presence cutting off her path. His dark eyes locked onto hers, and though her heart raced, she forced herself to meet his gaze briefly before looking away.</p>
-                    
-                    <p>&#34;Clara will see her off,&#34; he said firmly.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Lily froze, her composure shattering for a brief moment before she masked her hurt. Helen&#39;s frown deepened at her grandson&#39;s callousness,but she quickly turned back to Lily with a reassuring smile.</p>
+                        
+                        <p>Lily stood abruptly, attempting to steer the conversation.&#34;What would you like to eat, Grandma? I&#39;ll prepare something for you.&#34; Alexander&#39;s brow furrowed, his displeasure evident.</p>
+                        
+                        <p>Such a considerate offer earned Helen&#39;s approval.“You&#39;re a sweet child.</p>
+                        
+                        <p>but there&#39;s no need. I have other engagements to attend.&#34;</p>
+                        
+                        <p>“Let me see you off, then,&#34; Lily offered, moving towardthe door.</p>
+                        
+                        <p>Before she could take another step. Alexander stepped in front of her, his towering presence cutting off her path. His dark eyes locked onto hers, and though her heart raced, she forced herself to meet his gaze briefly before looking away.</p>
+                        
+                        <p>&#34;Clara will see her off,&#34; he said firmly.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1002,21 +1058,25 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Helen left with a knowing smile, pleased with her visi but aware of the tension in the air.</p>
-                    
-                    <p>As the sound of the car faded into the distance, Alexander handed Lily a folder.&#34;Sign both copies and give one to Clara,&#34; he said curtly, his tone brooking no argument.</p>
-                    
-                    <p>Lily held the folder in her trembling hands, watching as he turned and left without another word. She exhaled shakily, steeling herself before retreating to her room.</p>
-                    
-                    <p>Alone,she carefully read through the new contract, her stomach churning as each clause confirmed the cold, transactional nature of their arrangement. With a resigned sigh, she signed both copies and delivered one to Clara. Later, in the kitchen, Lily overheard the hushed whispers of the staff. &#34;Why is Mr. Kane back so early?”one asked nervously. &#34;He&#39;s in a foul mood,&#34; another muttered.</p>
-                    
-                    <p>Their fear was palpable, and Lily stepped in to reassure them. &#34;It&#39;s fine.Go on with your work. I won&#39;t say anything.”</p>
-                    
-                    <p>Clara approached her hesitantly. “Is there anything else you need, Miss Evans?”</p>
-                    
-                    <p>Lily shook her head, her mind already preoccupied. &#34;Just tell me where I can find Mr.Kane.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Helen left with a knowing smile, pleased with her visi but aware of the tension in the air.</p>
+                        
+                        <p>As the sound of the car faded into the distance, Alexander handed Lily a folder.&#34;Sign both copies and give one to Clara,&#34; he said curtly, his tone brooking no argument.</p>
+                        
+                        <p>Lily held the folder in her trembling hands, watching as he turned and left without another word. She exhaled shakily, steeling herself before retreating to her room.</p>
+                        
+                        <p>Alone,she carefully read through the new contract, her stomach churning as each clause confirmed the cold, transactional nature of their arrangement. With a resigned sigh, she signed both copies and delivered one to Clara. Later, in the kitchen, Lily overheard the hushed whispers of the staff. &#34;Why is Mr. Kane back so early?”one asked nervously. &#34;He&#39;s in a foul mood,&#34; another muttered.</p>
+                        
+                        <p>Their fear was palpable, and Lily stepped in to reassure them. &#34;It&#39;s fine.Go on with your work. I won&#39;t say anything.”</p>
+                        
+                        <p>Clara approached her hesitantly. “Is there anything else you need, Miss Evans?”</p>
+                        
+                        <p>Lily shook her head, her mind already preoccupied. &#34;Just tell me where I can find Mr.Kane.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1031,17 +1091,21 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;He should be in his study,&#34; Clara replied.</p>
-                    
-                    <p>Following the maid&#39;s directions, Lily made her way to the study. Her nerves prickled as she raised her hand to knock, hesitated, then knocked softly.</p>
-                    
-                    <p>No response.</p>
-                    
-                    <p>She was about to try again when a familiar, icy voice came from behind her,sending a chill down her spine.</p>
-                    
-                    <p>&#34;What are you doing here?&#34; Alexander demanded, his presence looming as he stepped closer.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;He should be in his study,&#34; Clara replied.</p>
+                        
+                        <p>Following the maid&#39;s directions, Lily made her way to the study. Her nerves prickled as she raised her hand to knock, hesitated, then knocked softly.</p>
+                        
+                        <p>No response.</p>
+                        
+                        <p>She was about to try again when a familiar, icy voice came from behind her,sending a chill down her spine.</p>
+                        
+                        <p>&#34;What are you doing here?&#34; Alexander demanded, his presence looming as he stepped closer.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2357,6 +2421,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2483,7 +2627,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2525,32 +2668,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2561,21 +2686,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2608,6 +2723,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2628,20 +2749,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

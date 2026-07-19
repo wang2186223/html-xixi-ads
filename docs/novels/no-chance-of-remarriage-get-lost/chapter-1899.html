@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:42.438888">
-    <meta property="article:modified_time" content="2026-07-19T02:47:42.438888">
+    <meta property="article:published_time" content="2026-07-19T13:03:35.586579">
+    <meta property="article:modified_time" content="2026-07-19T13:03:35.586579">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:42">
+    <meta name="last-modified" content="2026-07-19 13:03:35">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:42.438888",
-        "dateModified": "2026-07-19T02:47:42.438888",
+        "datePublished": "2026-07-19T13:03:35.586579",
+        "dateModified": "2026-07-19T13:03:35.586579",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter1899</p>
-                    
-                    <p>Chapter 1901 Departure</p>
-                    
-                    <p>In the end, Elisa, Gareth, and the village chief could not reach an agreement.</p>
-                    
-                    <p>Anna wanted to explain, but the village chief took her away.</p>
-                    
-                    <p>Elisa and Gareth returned home together.</p>
-                    
-                    <p>Mrs. Kella had already prepared a table full of food for them. When she saw that they had returned, she greeted them cheerfully. “Come sit down! It&#39;s time to eat.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter1899</p>
+                        
+                        <p>Chapter 1901 Departure</p>
+                        
+                        <p>In the end, Elisa, Gareth, and the village chief could not reach an agreement.</p>
+                        
+                        <p>Anna wanted to explain, but the village chief took her away.</p>
+                        
+                        <p>Elisa and Gareth returned home together.</p>
+                        
+                        <p>Mrs. Kella had already prepared a table full of food for them. When she saw that they had returned, she greeted them cheerfully. “Come sit down! It&#39;s time to eat.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Mrs. Kella noticed the expressions on their faces and assumed they hadn&#39;t won, so she didn&#39;t bring up the matter on her own.</p>
-                    
-                    <p>During the meal, all three were preoccupied with their own thoughts, preventing them from fully enjoying the food.</p>
-                    
-                    <p>After finishing her meal, Mrs. Kella put down her cutlery to give them some heartfelt advice. “Actually, sometimes it&#39;s quite good to let things take their natural course. If you&#39;ve tried your best, then no matter what, there will be no regrets.”</p>
-                    
-                    <p>The two understood that Mrs. Kella was trying to tell them that some things could not be forced.</p>
-                    
-                    <p>However, how could one be content when they were just a hair&#39;s breadth away from success?</p>
-                    
-                    <p>Elisa managed a smile. “It&#39;s okay, Mrs. Kella. We&#39;ll take things slow.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Mrs. Kella noticed the expressions on their faces and assumed they hadn&#39;t won, so she didn&#39;t bring up the matter on her own.</p>
+                        
+                        <p>During the meal, all three were preoccupied with their own thoughts, preventing them from fully enjoying the food.</p>
+                        
+                        <p>After finishing her meal, Mrs. Kella put down her cutlery to give them some heartfelt advice. “Actually, sometimes it&#39;s quite good to let things take their natural course. If you&#39;ve tried your best, then no matter what, there will be no regrets.”</p>
+                        
+                        <p>The two understood that Mrs. Kella was trying to tell them that some things could not be forced.</p>
+                        
+                        <p>However, how could one be content when they were just a hair&#39;s breadth away from success?</p>
+                        
+                        <p>Elisa managed a smile. “It&#39;s okay, Mrs. Kella. We&#39;ll take things slow.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>After urging Mrs. Kella to go to bed in her room, Elisa looked at Gareth under the moonlight. For some reason, she felt that something was quite strange about him this time.</p>
-                    
-                    <p>There was always an unsettling and ominous feeling in her heart which made her frown constantly.</p>
-                    
-                    <p>Elisa sat next to Gareth, gently tapping him because he seemed lost in thought.</p>
-                    
-                    <p>“No worries. We&#39;ll just stick to what we initially discussed and steal it as planned. As soon as we get it, we must leave immediately. When the opportunity arises, we&#39;ll come back to apologize in person.”</p>
-                    
-                    <p>Gareth curved his lips into a smile, nodding slightly.</p>
-                    
-                    <p>If Elisa had carefully observed Gareth&#39;s expression, she would have certainly noticed that something was off.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>After urging Mrs. Kella to go to bed in her room, Elisa looked at Gareth under the moonlight. For some reason, she felt that something was quite strange about him this time.</p>
+                        
+                        <p>There was always an unsettling and ominous feeling in her heart which made her frown constantly.</p>
+                        
+                        <p>Elisa sat next to Gareth, gently tapping him because he seemed lost in thought.</p>
+                        
+                        <p>“No worries. We&#39;ll just stick to what we initially discussed and steal it as planned. As soon as we get it, we must leave immediately. When the opportunity arises, we&#39;ll come back to apologize in person.”</p>
+                        
+                        <p>Gareth curved his lips into a smile, nodding slightly.</p>
+                        
+                        <p>If Elisa had carefully observed Gareth&#39;s expression, she would have certainly noticed that something was off.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>It was a pity that the moonlight was dim that day, and Gareth deliberately turned his head to prevent her from seeing him clearly.</p>
-                    
-                    <p>After a while, Gareth pointed to the bottle of alcohol on the table. “Join me for a drink. I&#39;ve been under a lot of stress lately.”</p>
-                    
-                    <p>Elisa nodded and lifted her cup, but she hesitated a bit before taking a sip.</p>
-                    
-                    <p>“What&#39;s the matter?” Gareth asked, chuckling as he glanced at Elisa. “Are you afraid I&#39;ve poisoned it?” He then poured himself a drink and finished it in a single gulp.</p>
-                    
-                    <p>With a gentle smile, Elisa shook her head.</p>
-                    
-                    <p>She was not afraid of being poisoned, but she was concerned that Gareth was going to take advantage of her falling unconscious to send her away.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>It was a pity that the moonlight was dim that day, and Gareth deliberately turned his head to prevent her from seeing him clearly.</p>
+                        
+                        <p>After a while, Gareth pointed to the bottle of alcohol on the table. “Join me for a drink. I&#39;ve been under a lot of stress lately.”</p>
+                        
+                        <p>Elisa nodded and lifted her cup, but she hesitated a bit before taking a sip.</p>
+                        
+                        <p>“What&#39;s the matter?” Gareth asked, chuckling as he glanced at Elisa. “Are you afraid I&#39;ve poisoned it?” He then poured himself a drink and finished it in a single gulp.</p>
+                        
+                        <p>With a gentle smile, Elisa shook her head.</p>
+                        
+                        <p>She was not afraid of being poisoned, but she was concerned that Gareth was going to take advantage of her falling unconscious to send her away.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>But now that Gareth had taken a gulp, she was more at ease.</p>
-                    
-                    <p>Under the moonlight, the two of them began to drink, one glass after the other.</p>
-                    
-                    <p>Suddenly, Elisa felt her eyelids grow heavy. Her head spun, and her vision blurred as if the whole world had started to spin around her.</p>
-                    
-                    <p>She inwardly cried out in alarm, turning her gaze toward Gareth.</p>
-                    
-                    <p>The latter wore an apologetic expression. Elisa knew she had been tricked, and her worst fears had indeed come to pass.</p>
-                    
-                    <p>She wanted to say something, but the drug took effect quickly. Elisa slumped onto the table, falling into a deep sleep.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>But now that Gareth had taken a gulp, she was more at ease.</p>
+                        
+                        <p>Under the moonlight, the two of them began to drink, one glass after the other.</p>
+                        
+                        <p>Suddenly, Elisa felt her eyelids grow heavy. Her head spun, and her vision blurred as if the whole world had started to spin around her.</p>
+                        
+                        <p>She inwardly cried out in alarm, turning her gaze toward Gareth.</p>
+                        
+                        <p>The latter wore an apologetic expression. Elisa knew she had been tricked, and her worst fears had indeed come to pass.</p>
+                        
+                        <p>She wanted to say something, but the drug took effect quickly. Elisa slumped onto the table, falling into a deep sleep.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Before losing consciousness, Elisa had just one thought in mind.</p>
-                    
-                    <p>Gareth had deceived her.</p>
-                    
-                    <p>As he watched Elisa drift into unconsciousness, Gareth suppressed his reluctance, greedily tracing her eyes with his own gaze, as if he wanted to etch her image into his heart.</p>
-                    
-                    <p>“I&#39;m sorry,” Gareth said indifferently.</p>
-                    
-                    <p>If it were not for such desperate circumstances, he would never have wanted to abandon Elisa, adrift in the vast ocean.</p>
-                    
-                    <p>However, the only ones left there now were Sodo, who harbored ulterior motives, as well as the cunning and crafty village chief.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Before losing consciousness, Elisa had just one thought in mind.</p>
+                        
+                        <p>Gareth had deceived her.</p>
+                        
+                        <p>As he watched Elisa drift into unconsciousness, Gareth suppressed his reluctance, greedily tracing her eyes with his own gaze, as if he wanted to etch her image into his heart.</p>
+                        
+                        <p>“I&#39;m sorry,” Gareth said indifferently.</p>
+                        
+                        <p>If it were not for such desperate circumstances, he would never have wanted to abandon Elisa, adrift in the vast ocean.</p>
+                        
+                        <p>However, the only ones left there now were Sodo, who harbored ulterior motives, as well as the cunning and crafty village chief.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,19 +1079,23 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>He simply couldn&#39;t bear to leave Elisa alone.</p>
-                    
-                    <p>“Soran, when you come back for me, I will personally atone for my sins.” Gareth&#39;s murmuring voice was carried away by the wind as his kisses gently landed on Elisa&#39;s eyelids.</p>
-                    
-                    <p>When Elisa came to, it was already bright outside.</p>
-                    
-                    <p>She instinctively thought that everything that happened yesterday was just a dream.</p>
-                    
-                    <p>But upon waking up and looking around, Elisa realized it was not a dream.</p>
-                    
-                    <p>Indeed, she was on a small boat, with an envelope beside her, as well as the Nomadic Odyssey.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>He simply couldn&#39;t bear to leave Elisa alone.</p>
+                        
+                        <p>“Soran, when you come back for me, I will personally atone for my sins.” Gareth&#39;s murmuring voice was carried away by the wind as his kisses gently landed on Elisa&#39;s eyelids.</p>
+                        
+                        <p>When Elisa came to, it was already bright outside.</p>
+                        
+                        <p>She instinctively thought that everything that happened yesterday was just a dream.</p>
+                        
+                        <p>But upon waking up and looking around, Elisa realized it was not a dream.</p>
+                        
+                        <p>Indeed, she was on a small boat, with an envelope beside her, as well as the Nomadic Odyssey.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2347,6 +2411,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2473,7 +2617,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2515,32 +2658,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2551,21 +2676,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2598,6 +2713,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2618,20 +2739,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

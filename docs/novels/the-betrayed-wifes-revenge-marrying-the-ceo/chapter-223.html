@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.432569">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.432569">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.426416">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.426416">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.432569",
-        "dateModified": "2026-07-19T02:47:23.432569",
+        "datePublished": "2026-07-19T13:03:18.426416",
+        "dateModified": "2026-07-19T13:03:18.426416",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,23 +893,27 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Sarah&#39;s POV</p>
-                    
-                    <p>I slammed the door behind me, hurling my designer handbag onto the sofa with such force it nearly knocked over the crystal vase beside it.Damn Philip Baker! I checked my phone again, and there it was,still displaying &#34;Blocked.&#34; I felt blood rushing to my head as my finger almost punctured the screen of my expensive phone.</p>
-                    
-                    <p>&#34;Bastard!&#34; I hissed through clenched teeth, kicking off my stilettos and sending them flying into the corner of the room. The sophisticated Upper East Side lady image always crumbled quickly when I was alone.</p>
-                    
-                    <p>Three days! Three whole days of Philip ignoring me, with all my calls and messages disappearing into a void. I had never been treated with such cold indifference! I, Sarah Johnson, hadn&#39;t been rejected by any man since college, and now Philip was giving me the cold shoulder like I was yesterday&#39;s trash?</p>
-                    
-                    <p>I paced back and forth across my luxury apartment, my manicured nails nearly digging into my palms. What right did he have to be so angry with me? It was just a little vasectomy! It&#39;s not like it caused him any real harm!Men are so dramatic.</p>
-                    
-                    <p>My eyes drifted to the diamond necklace Philip had given me, sitting on my bedroom vanity. It was worth a small fortune, far more expensive than anything he&#39;d ever bought for his ex-wife. That had to mean he cared about me,right? So why had he suddenly changed?</p>
-                    
-                    <p>Was it because of Annie? I felt a sharp pain in my chest at the thought.I couldn&#39;t bear the idea that Philip might be distant because of his boring ex-wife. Annie Baker, that dull, docile housewife, had dared to leave Philip</p>
-                    
-                    <p>and quickly found herselfa powerful protector in Howard Thompson?</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Sarah&#39;s POV</p>
+                        
+                        <p>I slammed the door behind me, hurling my designer handbag onto the sofa with such force it nearly knocked over the crystal vase beside it.Damn Philip Baker! I checked my phone again, and there it was,still displaying &#34;Blocked.&#34; I felt blood rushing to my head as my finger almost punctured the screen of my expensive phone.</p>
+                        
+                        <p>&#34;Bastard!&#34; I hissed through clenched teeth, kicking off my stilettos and sending them flying into the corner of the room. The sophisticated Upper East Side lady image always crumbled quickly when I was alone.</p>
+                        
+                        <p>Three days! Three whole days of Philip ignoring me, with all my calls and messages disappearing into a void. I had never been treated with such cold indifference! I, Sarah Johnson, hadn&#39;t been rejected by any man since college, and now Philip was giving me the cold shoulder like I was yesterday&#39;s trash?</p>
+                        
+                        <p>I paced back and forth across my luxury apartment, my manicured nails nearly digging into my palms. What right did he have to be so angry with me? It was just a little vasectomy! It&#39;s not like it caused him any real harm!Men are so dramatic.</p>
+                        
+                        <p>My eyes drifted to the diamond necklace Philip had given me, sitting on my bedroom vanity. It was worth a small fortune, far more expensive than anything he&#39;d ever bought for his ex-wife. That had to mean he cared about me,right? So why had he suddenly changed?</p>
+                        
+                        <p>Was it because of Annie? I felt a sharp pain in my chest at the thought.I couldn&#39;t bear the idea that Philip might be distant because of his boring ex-wife. Annie Baker, that dull, docile housewife, had dared to leave Philip</p>
+                        
+                        <p>and quickly found herselfa powerful protector in Howard Thompson?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -888,23 +928,27 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>I snatched up my phone and dialed Betty&#39;s number. The old woman could at least tell me what Philip had been up to lately. She answered before the first ring had even finished, her voice unusually tense.</p>
-                    
-                    <p>&#34;Sarah! Thank God you called,&#34; Betty was practically panting.&#34;Iwas just about to contact you!&#34;</p>
-                    
-                    <p>&#34;What&#39;s wrong?&#34; I immediately sat up straight,sensing something was off.&#34;Is Philip still not answering your calls?&#34;</p>
-                    
-                    <p>&#34;It&#39;s worse than that!&#34; Betty&#39;s voice trembled. &#34;Philip just dropped me off at home, and he... he&#39;s absolutely furious!&#34;</p>
-                    
-                    <p>My heart raced. &#34;What happened? Tell me everything.&#34;</p>
-                    
-                    <p>Betty took a deep breath as if trying to compose herself. &#34;I... I went to Howard Thompson&#39;s mansion. I thought I could expose Annie for what she really is, make Howard see that she&#39;s only after his money...&#34;</p>
-                    
-                    <p>&#34;You did what?&#34; I nearly screamed. &#34;You acted without a plan?&#34;</p>
-                    
-                    <p>God, Betty was always so self-important, thinking her Upper East Side socialite tactcs could solve everything.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>I snatched up my phone and dialed Betty&#39;s number. The old woman could at least tell me what Philip had been up to lately. She answered before the first ring had even finished, her voice unusually tense.</p>
+                        
+                        <p>&#34;Sarah! Thank God you called,&#34; Betty was practically panting.&#34;Iwas just about to contact you!&#34;</p>
+                        
+                        <p>&#34;What&#39;s wrong?&#34; I immediately sat up straight,sensing something was off.&#34;Is Philip still not answering your calls?&#34;</p>
+                        
+                        <p>&#34;It&#39;s worse than that!&#34; Betty&#39;s voice trembled. &#34;Philip just dropped me off at home, and he... he&#39;s absolutely furious!&#34;</p>
+                        
+                        <p>My heart raced. &#34;What happened? Tell me everything.&#34;</p>
+                        
+                        <p>Betty took a deep breath as if trying to compose herself. &#34;I... I went to Howard Thompson&#39;s mansion. I thought I could expose Annie for what she really is, make Howard see that she&#39;s only after his money...&#34;</p>
+                        
+                        <p>&#34;You did what?&#34; I nearly screamed. &#34;You acted without a plan?&#34;</p>
+                        
+                        <p>God, Betty was always so self-important, thinking her Upper East Side socialite tactcs could solve everything.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -919,23 +963,27 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;I was only trying to help!&#34; Betty defended herself. &#34;But things got completely out of control. Philip showed up, and then Annie pulled out all these financial records.,.&#34;</p>
-                    
-                    <p>&#34;What financial records?&#34; My heart sank.</p>
-                    
-                    <p>&#34;Showing how much money Philip gave her over the years, and how much she spent on him.&#34; Betty&#39;s voice dropped. &#34;The records showed that Annie</p>
-                    
-                    <p>actually spent more on Philip than he did on her. And Howard stood up for Annie in front of everyone. Philip looked both embarrassed and furious.</p>
-                    
-                    <p>I cursed silently. Damn Annie, turning out to be an accounting expert. No wonder Philip has been in such a foul mood these past few days. When a man&#39;s pride is wounded, he becomes unpredictable.</p>
-                    
-                    <p>&#34;Philip said that vasectomy was something we forced him to do,&#34; Betty continued, fear evident in her voice. &#34;He refuses to unblock me and says I&#39;ve been controlling his life. Sarah, I&#39;ve never seen him this angry!&#34;</p>
-                    
-                    <p>My hand tightened around the phone until my knuckles turned white.The situation was worse than I&#39;d imagined. Philip wasn&#39;t just threatened by Annie and Howard&#39;s relationship; he was furious about our manipulation. This wasn&#39;t a good sign.</p>
-                    
-                    <p>&#34;What should I do, Sarah?&#34; Betty&#39;s voice was filled with desperation.&#34;If Philip really cutsties with us and stops giving me financial support, what will happen to me?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;I was only trying to help!&#34; Betty defended herself. &#34;But things got completely out of control. Philip showed up, and then Annie pulled out all these financial records.,.&#34;</p>
+                        
+                        <p>&#34;What financial records?&#34; My heart sank.</p>
+                        
+                        <p>&#34;Showing how much money Philip gave her over the years, and how much she spent on him.&#34; Betty&#39;s voice dropped. &#34;The records showed that Annie</p>
+                        
+                        <p>actually spent more on Philip than he did on her. And Howard stood up for Annie in front of everyone. Philip looked both embarrassed and furious.</p>
+                        
+                        <p>I cursed silently. Damn Annie, turning out to be an accounting expert. No wonder Philip has been in such a foul mood these past few days. When a man&#39;s pride is wounded, he becomes unpredictable.</p>
+                        
+                        <p>&#34;Philip said that vasectomy was something we forced him to do,&#34; Betty continued, fear evident in her voice. &#34;He refuses to unblock me and says I&#39;ve been controlling his life. Sarah, I&#39;ve never seen him this angry!&#34;</p>
+                        
+                        <p>My hand tightened around the phone until my knuckles turned white.The situation was worse than I&#39;d imagined. Philip wasn&#39;t just threatened by Annie and Howard&#39;s relationship; he was furious about our manipulation. This wasn&#39;t a good sign.</p>
+                        
+                        <p>&#34;What should I do, Sarah?&#34; Betty&#39;s voice was filled with desperation.&#34;If Philip really cutsties with us and stops giving me financial support, what will happen to me?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -950,23 +998,27 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>A thought flashed through my mind. This could be exactly the opening I needed.</p>
-                    
-                    <p>&#34;Listen,&#34; I softened my tone, pretending to consider a strategy, &#34;since normal methods aren&#39;t working, we need to take drastic measures.&#34;</p>
-                    
-                    <p>&#34;What measures?&#34; Betty immediately latched onto this lifeline.</p>
-                    
-                    <p>I took a deep breath, making sure my voice sounded hesitant and pained.&#34;I&#39;m going to schedule an abortion. You should go to Philip&#39;s place and tell him I&#39;ve decided not to keep the baby.&#34;</p>
-                    
-                    <p>&#34;What?&#34; Betty nearly screamed. &#34;Are you insane? That&#39;s my grandchild!&#34;</p>
-                    
-                    <p>I secretly smiled. Her reaction was exactly what I wanted.</p>
-                    
-                    <p>&#34;If Philip truly cares about this child, he&#39;ll come to stop me,&#34; I explained,deliberately injecting a hint of desperation into my voice. &#34;Then we can apologize, and everything will start fresh.&#34;</p>
-                    
-                    <p>Betty was silent for a few seconds, contemplating the suggestion. I could almost see the conflicted expression on her meticulously made-up face.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>A thought flashed through my mind. This could be exactly the opening I needed.</p>
+                        
+                        <p>&#34;Listen,&#34; I softened my tone, pretending to consider a strategy, &#34;since normal methods aren&#39;t working, we need to take drastic measures.&#34;</p>
+                        
+                        <p>&#34;What measures?&#34; Betty immediately latched onto this lifeline.</p>
+                        
+                        <p>I took a deep breath, making sure my voice sounded hesitant and pained.&#34;I&#39;m going to schedule an abortion. You should go to Philip&#39;s place and tell him I&#39;ve decided not to keep the baby.&#34;</p>
+                        
+                        <p>&#34;What?&#34; Betty nearly screamed. &#34;Are you insane? That&#39;s my grandchild!&#34;</p>
+                        
+                        <p>I secretly smiled. Her reaction was exactly what I wanted.</p>
+                        
+                        <p>&#34;If Philip truly cares about this child, he&#39;ll come to stop me,&#34; I explained,deliberately injecting a hint of desperation into my voice. &#34;Then we can apologize, and everything will start fresh.&#34;</p>
+                        
+                        <p>Betty was silent for a few seconds, contemplating the suggestion. I could almost see the conflicted expression on her meticulously made-up face.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -981,23 +1033,27 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;What if he doesn&#39;t come?&#34; she asked cautiously. &#34;What if he really doesn&#39;t care, or thinks an abortion would be a good thing?&#34;</p>
-                    
-                    <p>This question was expected. I made my voice tremble slightly. &#34;Then I&#39;ll accept my fate. Consider it punishment for my selfish behavior.&#34;</p>
-                    
-                    <p>I struggled not to laugh out loud. Of course I wouldn&#39;t actually get an abortion; this child was my only leverage over Philip. But Betty didn&#39;t need to know that.</p>
-                    
-                    <p>&#34;After all,&#34; I continued my performance, &#34;if I hadn&#39;t insisted on having a child to secure my relationship with Philip, you wouldn&#39;t have convinced him to have that surgery. I pressured you, you pressured him, it&#39;s all my fault.&#34;</p>
-                    
-                    <p>&#34;Mom...&#34; I added this final touch, knowing Betty&#39;s weakness when hearing this term of endearment, &#34;I have to take responsibility for my actionas.&#34;</p>
-                    
-                    <p>&#34;Absolutely not!&#34; Betty took the bait instantly, her voice filled with maternal determination. &#34;That&#39;s my own grandchild! I will never allow you to do this!&#34;</p>
-                    
-                    <p>I smiled inwardly. The greedy old woman needed this child more than I did.</p>
-                    
-                    <p>&#34;But we have no choice.&#34; I pretended to sob. &#34;Philip has refused to communicate with us.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;What if he doesn&#39;t come?&#34; she asked cautiously. &#34;What if he really doesn&#39;t care, or thinks an abortion would be a good thing?&#34;</p>
+                        
+                        <p>This question was expected. I made my voice tremble slightly. &#34;Then I&#39;ll accept my fate. Consider it punishment for my selfish behavior.&#34;</p>
+                        
+                        <p>I struggled not to laugh out loud. Of course I wouldn&#39;t actually get an abortion; this child was my only leverage over Philip. But Betty didn&#39;t need to know that.</p>
+                        
+                        <p>&#34;After all,&#34; I continued my performance, &#34;if I hadn&#39;t insisted on having a child to secure my relationship with Philip, you wouldn&#39;t have convinced him to have that surgery. I pressured you, you pressured him, it&#39;s all my fault.&#34;</p>
+                        
+                        <p>&#34;Mom...&#34; I added this final touch, knowing Betty&#39;s weakness when hearing this term of endearment, &#34;I have to take responsibility for my actionas.&#34;</p>
+                        
+                        <p>&#34;Absolutely not!&#34; Betty took the bait instantly, her voice filled with maternal determination. &#34;That&#39;s my own grandchild! I will never allow you to do this!&#34;</p>
+                        
+                        <p>I smiled inwardly. The greedy old woman needed this child more than I did.</p>
+                        
+                        <p>&#34;But we have no choice.&#34; I pretended to sob. &#34;Philip has refused to communicate with us.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1012,23 +1068,27 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Betty&#39;s voice became calm and resolute: &#34;Listen to me, your most important task right now is to take care of yourself and the baby. As for Philip, leave him to me.&#34;</p>
-                    
-                    <p>&#34;Are you sure?&#34; I continued to act vulnerable and insecure. &#34;He seems genuinely angry.&#34;</p>
-                    
-                    <p>&#34;Trust me,&#34; Betty&#39;s tone carried the confidence of someone who had weathered many storms, &#34;I know my son. He might be temporarily lost,but blood is thicker than water. I&#39;ll make him understand the importance of family.&#34;</p>
-                    
-                    <p>I almost wanted to applaud my own performance. Betty was following my script perfectly, thinking everything was her own idea.</p>
-                    
-                    <p>&#34;Alright then,&#34; I said softly, &#34;I&#39;ll do as you say. But I&#39;ll still go to the hospital,for show. If Philip does come looking for me, I need to be in the right place.&#34;</p>
-                    
-                    <p>&#34;Wise choice,&#34; Betty agreed. &#34;You go to the hospital, I&#39;ll go to Philip&#39;s place.Remember, don&#39;t actually sign any paperwork.&#34;</p>
-                    
-                    <p>&#34;Of course not,&#34; I promised, my voice containing the submissiveness she expected to hear.</p>
-                    
-                    <p>After hanging up, my expression instantly hardened. The old woman was so easy to manipulate; just mention her grandchild and she&#39;d do anything.As for Philip, men are ultimately simple creatures. Once it involves his offspring-his only child-he&#39;ll come around. And if this doesn&#39;t work, I have other methods. Sarah Johnson of the Upper East Side never accepts</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Betty&#39;s voice became calm and resolute: &#34;Listen to me, your most important task right now is to take care of yourself and the baby. As for Philip, leave him to me.&#34;</p>
+                        
+                        <p>&#34;Are you sure?&#34; I continued to act vulnerable and insecure. &#34;He seems genuinely angry.&#34;</p>
+                        
+                        <p>&#34;Trust me,&#34; Betty&#39;s tone carried the confidence of someone who had weathered many storms, &#34;I know my son. He might be temporarily lost,but blood is thicker than water. I&#39;ll make him understand the importance of family.&#34;</p>
+                        
+                        <p>I almost wanted to applaud my own performance. Betty was following my script perfectly, thinking everything was her own idea.</p>
+                        
+                        <p>&#34;Alright then,&#34; I said softly, &#34;I&#39;ll do as you say. But I&#39;ll still go to the hospital,for show. If Philip does come looking for me, I need to be in the right place.&#34;</p>
+                        
+                        <p>&#34;Wise choice,&#34; Betty agreed. &#34;You go to the hospital, I&#39;ll go to Philip&#39;s place.Remember, don&#39;t actually sign any paperwork.&#34;</p>
+                        
+                        <p>&#34;Of course not,&#34; I promised, my voice containing the submissiveness she expected to hear.</p>
+                        
+                        <p>After hanging up, my expression instantly hardened. The old woman was so easy to manipulate; just mention her grandchild and she&#39;d do anything.As for Philip, men are ultimately simple creatures. Once it involves his offspring-his only child-he&#39;ll come around. And if this doesn&#39;t work, I have other methods. Sarah Johnson of the Upper East Side never accepts</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1043,19 +1103,23 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>failure.</p>
-                    
-                    <p>I grabbed my coat and checked my appearance in the mirror adjusting my expression until I was sure I looked both vulnerably pitiful and still beautiful. Eyes slightly puffy, but makeup still flawless.Perfect.</p>
-                    
-                    <p>On my way to the hospital. I sent Betty a text: &#34;At the hospital now, about to register.&#34; In reality. I had merely parked at the café across from the hospital. where I leisurely ordered a cappuccino and waited for the drama to unfold.</p>
-                    
-                    <p>My phone soon vibrated with Betty&#39;s response: &#34;At Philip&#39;s doorstep.I&#39;ll make him understand the seriousness of the situation.&#34;</p>
-                    
-                    <p>&#34;Go for it. Mom.&#34; I whispered to my phone, unable to hide the mockery in my tone. The more forceful she was, the more Philip might resist, but that played right into my hands.</p>
-                    
-                    <p>Ultimately. Philip would come to me.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>failure.</p>
+                        
+                        <p>I grabbed my coat and checked my appearance in the mirror adjusting my expression until I was sure I looked both vulnerably pitiful and still beautiful. Eyes slightly puffy, but makeup still flawless.Perfect.</p>
+                        
+                        <p>On my way to the hospital. I sent Betty a text: &#34;At the hospital now, about to register.&#34; In reality. I had merely parked at the café across from the hospital. where I leisurely ordered a cappuccino and waited for the drama to unfold.</p>
+                        
+                        <p>My phone soon vibrated with Betty&#39;s response: &#34;At Philip&#39;s doorstep.I&#39;ll make him understand the seriousness of the situation.&#34;</p>
+                        
+                        <p>&#34;Go for it. Mom.&#34; I whispered to my phone, unable to hide the mockery in my tone. The more forceful she was, the more Philip might resist, but that played right into my hands.</p>
+                        
+                        <p>Ultimately. Philip would come to me.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2371,6 +2435,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2497,7 +2641,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2539,32 +2682,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2575,21 +2700,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2622,6 +2737,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2642,20 +2763,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

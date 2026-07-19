@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.118445">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.118445">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.291326">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.291326">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.118445",
-        "dateModified": "2026-07-19T02:47:19.118445",
+        "datePublished": "2026-07-19T13:03:14.291326",
+        "dateModified": "2026-07-19T13:03:14.291326",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,27 +893,31 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Blake&#39;s POV**</p>
-                    
-                    <p>The crowd buzzed with speculation below the stage. I caught fragments of whispered theories.</p>
-                    
-                    <p>&#34;So Blake Parker faked his death because he&#39;s afraid of marriage...&#34;</p>
-                    
-                    <p>&#34;His wife died of cancer after only three years. The guy&#39;s probably traumatized...&#34;</p>
-                    
-                    <p>&#34;Never thought someone that cold could be so messed up over his dead wife...&#34;</p>
-                    
-                    <p>I turned to Rebecca with a cold smile. &#34;Who told you I&#39;m afraid of marriage because of Audrey?&#34;</p>
-                    
-                    <p>Rebecca blinked, clearly surprised by my challenge. After a moment,she frowned. &#34;Blake.&#34; Just my name, but her tone made it clear she was warning me to back down.</p>
-                    
-                    <p>I studied her with growing contempt. All these years, she&#39;d played the authority figure, and I&#39;d let her. Whatever she demanded, I provided.I thought I was being a good son to a woman trapped in a loveless marriage.</p>
-                    
-                    <p>But now, watching her fake maternal concern when I knew the truth about our relationship made me want to laugh. She wasn&#39;t even trying to hide her fakeness anymore.</p>
-                    
-                    <p>Rebecca sensed my coldness. She frowned, then attacked:&#34;If it weren&#39;t for that bitch Audrey, why would you fake your death? Why would you</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Blake&#39;s POV**</p>
+                        
+                        <p>The crowd buzzed with speculation below the stage. I caught fragments of whispered theories.</p>
+                        
+                        <p>&#34;So Blake Parker faked his death because he&#39;s afraid of marriage...&#34;</p>
+                        
+                        <p>&#34;His wife died of cancer after only three years. The guy&#39;s probably traumatized...&#34;</p>
+                        
+                        <p>&#34;Never thought someone that cold could be so messed up over his dead wife...&#34;</p>
+                        
+                        <p>I turned to Rebecca with a cold smile. &#34;Who told you I&#39;m afraid of marriage because of Audrey?&#34;</p>
+                        
+                        <p>Rebecca blinked, clearly surprised by my challenge. After a moment,she frowned. &#34;Blake.&#34; Just my name, but her tone made it clear she was warning me to back down.</p>
+                        
+                        <p>I studied her with growing contempt. All these years, she&#39;d played the authority figure, and I&#39;d let her. Whatever she demanded, I provided.I thought I was being a good son to a woman trapped in a loveless marriage.</p>
+                        
+                        <p>But now, watching her fake maternal concern when I knew the truth about our relationship made me want to laugh. She wasn&#39;t even trying to hide her fakeness anymore.</p>
+                        
+                        <p>Rebecca sensed my coldness. She frowned, then attacked:&#34;If it weren&#39;t for that bitch Audrey, why would you fake your death? Why would you</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -892,27 +932,31 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>rather let everyone think you were dead than marry Rachel?&#34;</p>
-                    
-                    <p>&#34;Exactly!&#34; Thalia jumped in, emboldened by the murmurs of agreement from the audience.&#34;That woman screwed him up!&#34;</p>
-                    
-                    <p>&#34;She trapped my brother into marriage while he was unconscious, just for the Parker name. Then she bullied everyone, blocked him from people he actually cared about...&#34;</p>
-                    
-                    <p>&#34;Then she divorced him publicly and died in his villa. Any guy would be messed up after that.&#34;</p>
-                    
-                    <p>Thalia turned to me with a practiced smile.&#34;Don&#39;t worry. Rachel&#39;s been fully vetted by Mom and me. She won&#39;t cause any of the problems Audrey did.&#34;</p>
-                    
-                    <p>She grabbed Rachel&#39;s hand anad placed it in mine. &#34;Everyone, ignore what just happened! My brother&#39;s just got cold feet because of that crazy woman.</p>
-                    
-                    <p>Let&#39;s move on with the wedding!&#34;</p>
-                    
-                    <p>Her announcement was met with stunned silence before conversation erupted again.</p>
-                    
-                    <p>&#34;Blake...&#34; Rachel bit her lip and looked up at me. &#34;Let&#39;s finish the ceremony first. Afterward, I&#39;l explain everything, okay?&#34;</p>
-                    
-                    <p>I frowned as she continued, &#34;If we cancel now, people will really believe Audrey made you afraid of marriage. We need to finish this to clear her name.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>rather let everyone think you were dead than marry Rachel?&#34;</p>
+                        
+                        <p>&#34;Exactly!&#34; Thalia jumped in, emboldened by the murmurs of agreement from the audience.&#34;That woman screwed him up!&#34;</p>
+                        
+                        <p>&#34;She trapped my brother into marriage while he was unconscious, just for the Parker name. Then she bullied everyone, blocked him from people he actually cared about...&#34;</p>
+                        
+                        <p>&#34;Then she divorced him publicly and died in his villa. Any guy would be messed up after that.&#34;</p>
+                        
+                        <p>Thalia turned to me with a practiced smile.&#34;Don&#39;t worry. Rachel&#39;s been fully vetted by Mom and me. She won&#39;t cause any of the problems Audrey did.&#34;</p>
+                        
+                        <p>She grabbed Rachel&#39;s hand anad placed it in mine. &#34;Everyone, ignore what just happened! My brother&#39;s just got cold feet because of that crazy woman.</p>
+                        
+                        <p>Let&#39;s move on with the wedding!&#34;</p>
+                        
+                        <p>Her announcement was met with stunned silence before conversation erupted again.</p>
+                        
+                        <p>&#34;Blake...&#34; Rachel bit her lip and looked up at me. &#34;Let&#39;s finish the ceremony first. Afterward, I&#39;l explain everything, okay?&#34;</p>
+                        
+                        <p>I frowned as she continued, &#34;If we cancel now, people will really believe Audrey made you afraid of marriage. We need to finish this to clear her name.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -927,27 +971,31 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>She squeezed my hand. &#34;You wouldn&#39;t want Audrey smeared even after she&#39;s gone, right? She always cared about her image - &#34;</p>
-                    
-                    <p>I yanked my hand away so hard that Rachel stumbled backward. If Thalla</p>
-                    
-                    <p>hadn&#39;t caught her, she would have fallen flat in her wedding dress.</p>
-                    
-                    <p>&#34;What the hell?&#34; Thalia steadied Rachel, glaring at me. &#34;Why&#39;d you push her away?&#34;</p>
-                    
-                    <p>I took the tissue Jett handed me and deliberately wiped my hand, as if touching Rachel had left something disgusting on my skin. Rachel&#39;s face fell as she watched.</p>
-                    
-                    <p>I tossed the tissue and grabbed the microphone. &#34;Rebecca. Thalia-you&#39;re helping Rachel because she promised you half my inheritance yesterday,right?&#34;</p>
-                    
-                    <p>The crowd gasped as alI three women paled.</p>
-                    
-                    <p>Rebecca glared at me. &#34;What are you talking about?!&#34;</p>
-                    
-                    <p>′′I′&#39;m close to Rachel because she&#39;s about to be family! Is it wrong to treat your future wife as well as Itreat you?&#34;</p>
-                    
-                    <p>I laughed coldly. &#34;When have you ever treated me well? Name one time.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>She squeezed my hand. &#34;You wouldn&#39;t want Audrey smeared even after she&#39;s gone, right? She always cared about her image - &#34;</p>
+                        
+                        <p>I yanked my hand away so hard that Rachel stumbled backward. If Thalla</p>
+                        
+                        <p>hadn&#39;t caught her, she would have fallen flat in her wedding dress.</p>
+                        
+                        <p>&#34;What the hell?&#34; Thalia steadied Rachel, glaring at me. &#34;Why&#39;d you push her away?&#34;</p>
+                        
+                        <p>I took the tissue Jett handed me and deliberately wiped my hand, as if touching Rachel had left something disgusting on my skin. Rachel&#39;s face fell as she watched.</p>
+                        
+                        <p>I tossed the tissue and grabbed the microphone. &#34;Rebecca. Thalia-you&#39;re helping Rachel because she promised you half my inheritance yesterday,right?&#34;</p>
+                        
+                        <p>The crowd gasped as alI three women paled.</p>
+                        
+                        <p>Rebecca glared at me. &#34;What are you talking about?!&#34;</p>
+                        
+                        <p>′′I′&#39;m close to Rachel because she&#39;s about to be family! Is it wrong to treat your future wife as well as Itreat you?&#34;</p>
+                        
+                        <p>I laughed coldly. &#34;When have you ever treated me well? Name one time.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -962,27 +1010,31 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Rebecca stared, blinking rapidly as she searched for examples. Finding none, she clenched her fists. &#34;I gave birth to you!&#34;</p>
-                    
-                    <p>&#34;If I didn&#39;t care, would I have brought you into this world and raised you?Don&#39;t forget your roots. I&#39;m your mother and you&#39;ll listen to me!&#34;</p>
-                    
-                    <p>I felt the anger I&#39;d suppressed for years rising to the surface. This woman had never cared for me, yet I&#39;d spent my life trying to win her approval. I&#39;d even hurt Audrey because of her.</p>
-                    
-                    <p>Without thinking, I glanced toward Audrey In the audience. She was watching us with concern, her eyes fixed on my legs. She was worried I</p>
-                    
-                    <p>couldn&#39;t stand much longer.</p>
-                    
-                    <p>The medication Harrison had given me was time-limited. If it wore off while I was still on stage, I&#39;d collapse in front of everyone. Not just embarrassing me personally, but potentially tanking Parker Group&#39;s stock price. Nobody invests in a company whose CEO might drop dead at any moment.</p>
-                    
-                    <p>Audrey caught my eye and subtly pointed at her watch, reminding me to hurry. The simple gesture touched something in me. Even now,after everything,she still cared enough to worry.</p>
-                    
-                    <p>I turned back to Rebecca. &#34;Still can&#39;t think of anything?&#34;</p>
-                    
-                    <p>She lowered her voice. &#34;Blake Parker, don&#39;t forget I gave birth to you!&#34;</p>
-                    
-                    <p>I leaned in, speaking just loud enough for her alone. &#34;Are you really my mother? Was I really born from you?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Rebecca stared, blinking rapidly as she searched for examples. Finding none, she clenched her fists. &#34;I gave birth to you!&#34;</p>
+                        
+                        <p>&#34;If I didn&#39;t care, would I have brought you into this world and raised you?Don&#39;t forget your roots. I&#39;m your mother and you&#39;ll listen to me!&#34;</p>
+                        
+                        <p>I felt the anger I&#39;d suppressed for years rising to the surface. This woman had never cared for me, yet I&#39;d spent my life trying to win her approval. I&#39;d even hurt Audrey because of her.</p>
+                        
+                        <p>Without thinking, I glanced toward Audrey In the audience. She was watching us with concern, her eyes fixed on my legs. She was worried I</p>
+                        
+                        <p>couldn&#39;t stand much longer.</p>
+                        
+                        <p>The medication Harrison had given me was time-limited. If it wore off while I was still on stage, I&#39;d collapse in front of everyone. Not just embarrassing me personally, but potentially tanking Parker Group&#39;s stock price. Nobody invests in a company whose CEO might drop dead at any moment.</p>
+                        
+                        <p>Audrey caught my eye and subtly pointed at her watch, reminding me to hurry. The simple gesture touched something in me. Even now,after everything,she still cared enough to worry.</p>
+                        
+                        <p>I turned back to Rebecca. &#34;Still can&#39;t think of anything?&#34;</p>
+                        
+                        <p>She lowered her voice. &#34;Blake Parker, don&#39;t forget I gave birth to you!&#34;</p>
+                        
+                        <p>I leaned in, speaking just loud enough for her alone. &#34;Are you really my mother? Was I really born from you?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -997,27 +1049,31 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>The color drained from her face. Her eyes widened in shock as she instinctively looked toward Thalia.</p>
-                    
-                    <p>&#34;I found out from someone,&#34; I said quietly. &#34;You and I have no blood relation. But Thalia and I share a father, don&#39;t we?&#34;</p>
-                    
-                    <p>Rebecca went even paler. She stepped back, clearly rattled, and stared at Thalia.who was whispering something to Rachel.</p>
-                    
-                    <p>Suddenly, Rebecca lunged forward and grabbed Thalia&#39;s arm. &#34;You told hím,didn&#39;t you?!&#34;</p>
-                    
-                    <p>Thalia winced in pain. &#34;Mom, what are you doing?&#34;</p>
-                    
-                    <p>&#34;What am I doing?!&#34; Rebecca tightened her grip.111only told you about</p>
-                    
-                    <p>this yesterday, and today he knows! Who else could have told him?&#34;</p>
-                    
-                    <p>Thalia looked bewildered. Her eyes darted from me to Rebecca before widening in realization. &#34;You mean... that Blake isn&#39;t your biological son?&#34;</p>
-                    
-                    <p>She raised her voice, seemingly trying to prove her innocence. &#34;I swear I didn&#39;t tell anyone! I didn&#39;t say anything!&#34;</p>
-                    
-                    <p>Her words weren&#39;t loud enough for the entire venue to hear, but the front row - including several reporters - caught every word. Within minutes, the news spread throughout the room.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>The color drained from her face. Her eyes widened in shock as she instinctively looked toward Thalia.</p>
+                        
+                        <p>&#34;I found out from someone,&#34; I said quietly. &#34;You and I have no blood relation. But Thalia and I share a father, don&#39;t we?&#34;</p>
+                        
+                        <p>Rebecca went even paler. She stepped back, clearly rattled, and stared at Thalia.who was whispering something to Rachel.</p>
+                        
+                        <p>Suddenly, Rebecca lunged forward and grabbed Thalia&#39;s arm. &#34;You told hím,didn&#39;t you?!&#34;</p>
+                        
+                        <p>Thalia winced in pain. &#34;Mom, what are you doing?&#34;</p>
+                        
+                        <p>&#34;What am I doing?!&#34; Rebecca tightened her grip.111only told you about</p>
+                        
+                        <p>this yesterday, and today he knows! Who else could have told him?&#34;</p>
+                        
+                        <p>Thalia looked bewildered. Her eyes darted from me to Rebecca before widening in realization. &#34;You mean... that Blake isn&#39;t your biological son?&#34;</p>
+                        
+                        <p>She raised her voice, seemingly trying to prove her innocence. &#34;I swear I didn&#39;t tell anyone! I didn&#39;t say anything!&#34;</p>
+                        
+                        <p>Her words weren&#39;t loud enough for the entire venue to hear, but the front row - including several reporters - caught every word. Within minutes, the news spread throughout the room.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1032,27 +1088,31 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;What?! Blake Parker isn&#39;t Rebecca&#39;s biological son?!&#34;</p>
-                    
-                    <p>&#34;No wonder they&#39;re never seen together...&#34;</p>
-                    
-                    <p>&#34;Holy shit, did he just find out? Today of all days?&#34;</p>
-                    
-                    <p>&#34;But I thought Rebecca got pregnant and stole Leo from his girlfriend...&#34;</p>
-                    
-                    <p>&#34;Rich people drama is something else. Maybe she faked the pregnancy,then swapped someone else&#39;s kid...&#34;</p>
-                    
-                    <p>&#34;But Blake looks exactly like his father. That means...&#34;</p>
-                    
-                    <p>**William&#39;s POV**</p>
-                    
-                    <p>I leaned back in my wheelchair, oxygen mask on my face, watching the screen with wide eyes. My hands trembled as I clutched my chest.</p>
-                    
-                    <p>*Impossíble...*</p>
-                    
-                    <p>*Blake is a Parker. I made damn sure of that!*</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;What?! Blake Parker isn&#39;t Rebecca&#39;s biological son?!&#34;</p>
+                        
+                        <p>&#34;No wonder they&#39;re never seen together...&#34;</p>
+                        
+                        <p>&#34;Holy shit, did he just find out? Today of all days?&#34;</p>
+                        
+                        <p>&#34;But I thought Rebecca got pregnant and stole Leo from his girlfriend...&#34;</p>
+                        
+                        <p>&#34;Rich people drama is something else. Maybe she faked the pregnancy,then swapped someone else&#39;s kid...&#34;</p>
+                        
+                        <p>&#34;But Blake looks exactly like his father. That means...&#34;</p>
+                        
+                        <p>**William&#39;s POV**</p>
+                        
+                        <p>I leaned back in my wheelchair, oxygen mask on my face, watching the screen with wide eyes. My hands trembled as I clutched my chest.</p>
+                        
+                        <p>*Impossíble...*</p>
+                        
+                        <p>*Blake is a Parker. I made damn sure of that!*</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1067,19 +1127,23 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>When Rebecca gave bírth, I personally sent the baby&#39;s DNA to over a</p>
-                    
-                    <p>dozen labs. Every single one confirmed a 99.9% probability that Blake and Leo were father and son.</p>
-                    
-                    <p>He is our blood. He has to be!</p>
-                    
-                    <p>But Rebecca&#39;s words...</p>
-                    
-                    <p>My mind drifted back decades to when I forced Leonora Sterling and Leo to break up.</p>
-                    
-                    <p>That day, the usually gentle Leonora looked me deadin the eye and said:&#34;William, if I told you I was carrying Leo&#39;s child too,what would your choice be?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>When Rebecca gave bírth, I personally sent the baby&#39;s DNA to over a</p>
+                        
+                        <p>dozen labs. Every single one confirmed a 99.9% probability that Blake and Leo were father and son.</p>
+                        
+                        <p>He is our blood. He has to be!</p>
+                        
+                        <p>But Rebecca&#39;s words...</p>
+                        
+                        <p>My mind drifted back decades to when I forced Leonora Sterling and Leo to break up.</p>
+                        
+                        <p>That day, the usually gentle Leonora looked me deadin the eye and said:&#34;William, if I told you I was carrying Leo&#39;s child too,what would your choice be?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2395,6 +2459,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2521,7 +2665,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2563,32 +2706,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2599,21 +2724,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2646,6 +2761,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2666,20 +2787,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

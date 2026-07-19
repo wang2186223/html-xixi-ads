@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Bianca&#39;s laugh held no warmth. &#34;Using our family&#39;s connections to parade around with some B-list producer? Pathetic. That studio barely qualifies as mid-tier - does she actually think rubbing elbows here will earn her respect? If our social circle catches wind of this acting nonsense, it&#39;s Adrian&#39;s reputation that&#39;ll suffer.&#34;</p>
-                    
-                    <p>The venom in her words lashed out indiscriminately, even grazing Vivian who stood beside her.</p>
-                    
-                    <p>Vivian absorbed the unintended slight without flinching, her smile never wavering. &#34;Now, now,&#34; she soothed, pitching her voice to a conspiratorial murmur, &#34;with the right project and a few well-placed awards, perceptions can change remarkably. I happen to know a screenwriter who could give Vivian Hartley herself a run for her money...&#34;</p>
-                    
-                    <p>Her strategy unfolded like a poisonous flower - offering help while planting seeds of doubt.</p>
-                    
-                    <p>&#34;Please,&#34; Bianca scoffed, rolling her eyes. &#34;Awards? For what - her stellar performance folding laundry? She&#39;s only here to exploit the Blackwood name. Nothing more.&#34;</p>
-                    
-                    <p>Vivian swirled her champagne thoughtfully. &#34;Even the most inexperienced actress can shine with proper guidance. If Ms. Hartley is serious about her career, I&#39;d be happy to make introductions...&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Bianca&#39;s laugh held no warmth. &#34;Using our family&#39;s connections to parade around with some B-list producer? Pathetic. That studio barely qualifies as mid-tier - does she actually think rubbing elbows here will earn her respect? If our social circle catches wind of this acting nonsense, it&#39;s Adrian&#39;s reputation that&#39;ll suffer.&#34;</p>
+                        
+                        <p>The venom in her words lashed out indiscriminately, even grazing Vivian who stood beside her.</p>
+                        
+                        <p>Vivian absorbed the unintended slight without flinching, her smile never wavering. &#34;Now, now,&#34; she soothed, pitching her voice to a conspiratorial murmur, &#34;with the right project and a few well-placed awards, perceptions can change remarkably. I happen to know a screenwriter who could give Vivian Hartley herself a run for her money...&#34;</p>
+                        
+                        <p>Her strategy unfolded like a poisonous flower - offering help while planting seeds of doubt.</p>
+                        
+                        <p>&#34;Please,&#34; Bianca scoffed, rolling her eyes. &#34;Awards? For what - her stellar performance folding laundry? She&#39;s only here to exploit the Blackwood name. Nothing more.&#34;</p>
+                        
+                        <p>Vivian swirled her champagne thoughtfully. &#34;Even the most inexperienced actress can shine with proper guidance. If Ms. Hartley is serious about her career, I&#39;d be happy to make introductions...&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Meanwhile, near the dessert table, Vivian Hartley felt the weight of hostile stares pressing against her skin. Spotting an escape route, she discreetly slipped toward the balcony doors, the murmur of malicious gossip fading behind her.</p>
-                    
-                    <p>Vivian&#39;s breath caught when she noticed Serena deep in conversation with Margaret Blackwood and Bianca Thornton. She had intended to slip past unnoticed, but a particular phrase made her pause mid-step.</p>
-                    
-                    <p>Her ears burned as she realized they were discussing her.</p>
-                    
-                    <p>Serena was offering to introduce her to industry connections? Including a screenwriter supposedly on par with Vivian Hartley herself? The irony was almost laughable.</p>
-                    
-                    <p>Setting down her champagne flute with deliberate care, Vivian approached Margaret with practiced grace. &#34;Mrs. Blackwood,&#34; she greeted with measured politeness.</p>
-                    
-                    <p>&#34;Vivian.&#34; Margaret&#39;s response was clipped, her smile not reaching her eyes.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Meanwhile, near the dessert table, Vivian Hartley felt the weight of hostile stares pressing against her skin. Spotting an escape route, she discreetly slipped toward the balcony doors, the murmur of malicious gossip fading behind her.</p>
+                        
+                        <p>Vivian&#39;s breath caught when she noticed Serena deep in conversation with Margaret Blackwood and Bianca Thornton. She had intended to slip past unnoticed, but a particular phrase made her pause mid-step.</p>
+                        
+                        <p>Her ears burned as she realized they were discussing her.</p>
+                        
+                        <p>Serena was offering to introduce her to industry connections? Including a screenwriter supposedly on par with Vivian Hartley herself? The irony was almost laughable.</p>
+                        
+                        <p>Setting down her champagne flute with deliberate care, Vivian approached Margaret with practiced grace. &#34;Mrs. Blackwood,&#34; she greeted with measured politeness.</p>
+                        
+                        <p>&#34;Vivian.&#34; Margaret&#39;s response was clipped, her smile not reaching her eyes.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Social appearances meant everything to Margaret. Though she clearly despised Vivian, she&#39;d rather die than cause a scene at such a public event.</p>
-                    
-                    <p>Bianca stood nearby, her gaze so venomous Vivian could almost feel it pricking her skin. The younger woman&#39;s eyes raked over Vivian&#39;s ensemble with barely concealed envy. How did this nobody carry herself with such effortless elegance? Even that bold emerald green—a color that would make most women look garish—only accentuated her poise. How could someone from such a nouveau riche family possess such natural refinement?</p>
-                    
-                    <p>Vivian met Serena&#39;s gaze directly, her voice crisp. &#34;Ms. Whitmore, there&#39;s no need to concern yourself with my professional connections. If you have such valuable resources at your disposal, I suggest you utilize them for your own benefit rather than wasting them on me.&#34;</p>
-                    
-                    <p>Though they looked down on her, Vivian had no intention of revealing her true identity as the acclaimed screenwriter Vivian Hartley—her most carefully guarded secret.</p>
-                    
-                    <p>Bianca, still smarting from the earlier confrontation about invitations, couldn&#39;t resist sneering, &#34;Acting so high and mighty about not needing help? Then why even show up at these events?&#34;</p>
-                    
-                    <p>Serena jumped in with exaggerated enthusiasm. &#34;This screenwriter has several major hits under her belt—some say her work rivals Vivian Hartley&#39;s. If you&#39;re interested, I&#39;d be happy to arrange an introduction.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Social appearances meant everything to Margaret. Though she clearly despised Vivian, she&#39;d rather die than cause a scene at such a public event.</p>
+                        
+                        <p>Bianca stood nearby, her gaze so venomous Vivian could almost feel it pricking her skin. The younger woman&#39;s eyes raked over Vivian&#39;s ensemble with barely concealed envy. How did this nobody carry herself with such effortless elegance? Even that bold emerald green—a color that would make most women look garish—only accentuated her poise. How could someone from such a nouveau riche family possess such natural refinement?</p>
+                        
+                        <p>Vivian met Serena&#39;s gaze directly, her voice crisp. &#34;Ms. Whitmore, there&#39;s no need to concern yourself with my professional connections. If you have such valuable resources at your disposal, I suggest you utilize them for your own benefit rather than wasting them on me.&#34;</p>
+                        
+                        <p>Though they looked down on her, Vivian had no intention of revealing her true identity as the acclaimed screenwriter Vivian Hartley—her most carefully guarded secret.</p>
+                        
+                        <p>Bianca, still smarting from the earlier confrontation about invitations, couldn&#39;t resist sneering, &#34;Acting so high and mighty about not needing help? Then why even show up at these events?&#34;</p>
+                        
+                        <p>Serena jumped in with exaggerated enthusiasm. &#34;This screenwriter has several major hits under her belt—some say her work rivals Vivian Hartley&#39;s. If you&#39;re interested, I&#39;d be happy to arrange an introduction.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>The claim was laughable. Screenwriters of Vivian Hartley&#39;s caliber were unicorns in the industry. Serena&#39;s offer was clearly disingenuous—even if she knew such a writer, securing a meeting would be nearly impossible.</p>
-                    
-                    <p>Vivian&#39;s smile remained unshaken. &#34;I&#39;m quite satisfied with my current project&#39;s screenwriter.&#34;</p>
-                    
-                    <p>Serena&#39;s eyes sparkled with mischief. &#34;How loyal of you. Though if I recall correctly, wasn&#39;t Damien Vaughn also a screenwriter? His works never quite achieved commercial success, did they?&#34; She paused dramatically. &#34;Ah, but given your... close relationship, of course you&#39;d want to support his work. My apologies for overstepping.&#34;</p>
-                    
-                    <p>The implication was clear—Serena was subtly suggesting an inappropriate relationship between Vivian and Damien.</p>
-                    
-                    <p>Bianca gasped theatrically, lowering her voice to a scandalized whisper. &#34;You&#39;re involved with another man? Vivian, you&#39;re married!&#34; Her eyes darted around nervously, clearly torn between wanting to cause a scene and fearing the social repercussions.</p>
-                    
-                    <p>Vivian&#39;s expression darkened. &#34;My personal life is none of your concern,&#34; she said icily, recognizing Bianca as nothing more than Serena&#39;s pawn—too naive to understand the larger game being played.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>The claim was laughable. Screenwriters of Vivian Hartley&#39;s caliber were unicorns in the industry. Serena&#39;s offer was clearly disingenuous—even if she knew such a writer, securing a meeting would be nearly impossible.</p>
+                        
+                        <p>Vivian&#39;s smile remained unshaken. &#34;I&#39;m quite satisfied with my current project&#39;s screenwriter.&#34;</p>
+                        
+                        <p>Serena&#39;s eyes sparkled with mischief. &#34;How loyal of you. Though if I recall correctly, wasn&#39;t Damien Vaughn also a screenwriter? His works never quite achieved commercial success, did they?&#34; She paused dramatically. &#34;Ah, but given your... close relationship, of course you&#39;d want to support his work. My apologies for overstepping.&#34;</p>
+                        
+                        <p>The implication was clear—Serena was subtly suggesting an inappropriate relationship between Vivian and Damien.</p>
+                        
+                        <p>Bianca gasped theatrically, lowering her voice to a scandalized whisper. &#34;You&#39;re involved with another man? Vivian, you&#39;re married!&#34; Her eyes darted around nervously, clearly torn between wanting to cause a scene and fearing the social repercussions.</p>
+                        
+                        <p>Vivian&#39;s expression darkened. &#34;My personal life is none of your concern,&#34; she said icily, recognizing Bianca as nothing more than Serena&#39;s pawn—too naive to understand the larger game being played.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;You—!&#34; Bianca sputtered, stamping her foot in frustration.</p>
-                    
-                    <p>The tension crackled between them like static before a storm.</p>
-                    
-                    <p>Vivian turned to Margaret, her lips forming a perfect pout. &#34;Aunt Margaret, just look at how she&#39;s acting!&#34;</p>
-                    
-                    <p>Margaret Blackwood, who had remained silent until this moment, finally spoke. Her voice was like ice cutting through the tension. &#34;You may think this isn&#39;t my concern, but I assure you it is.&#34;</p>
-                    
-                    <p>Margaret&#39;s blatant favoritism toward Bianca was almost comical in its transparency. Vivian had always suspected Margaret was the type to blindly prioritize family loyalty above all else. But as time passed, she realized the dynamics were far more complex. Even Victor seemed desperate to marry his daughter into some influential family for personal gain. Apparently, this was just how the Blackwoods operated.</p>
-                    
-                    <p>Vivian parted her lips but said nothing. Instead, she lowered her gaze, the picture of demure submission.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;You—!&#34; Bianca sputtered, stamping her foot in frustration.</p>
+                        
+                        <p>The tension crackled between them like static before a storm.</p>
+                        
+                        <p>Vivian turned to Margaret, her lips forming a perfect pout. &#34;Aunt Margaret, just look at how she&#39;s acting!&#34;</p>
+                        
+                        <p>Margaret Blackwood, who had remained silent until this moment, finally spoke. Her voice was like ice cutting through the tension. &#34;You may think this isn&#39;t my concern, but I assure you it is.&#34;</p>
+                        
+                        <p>Margaret&#39;s blatant favoritism toward Bianca was almost comical in its transparency. Vivian had always suspected Margaret was the type to blindly prioritize family loyalty above all else. But as time passed, she realized the dynamics were far more complex. Even Victor seemed desperate to marry his daughter into some influential family for personal gain. Apparently, this was just how the Blackwoods operated.</p>
+                        
+                        <p>Vivian parted her lips but said nothing. Instead, she lowered her gaze, the picture of demure submission.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Margaret&#39;s rebuke was sharp and deliberate. &#34;You&#39;re embarrassing our family. I don&#39;t care about your private affairs, but here, in public, as a Blackwood, you must uphold our reputation. You represent our image and must act accordingly. This isn&#39;t some casual ladies&#39; tea party. It&#39;s inappropriate to be seen with a stranger, let alone follow him here. Now, come with me.&#34;</p>
-                    
-                    <p>&#34;My apologies,&#34; Vivian murmured, her tone respectful and seemingly compliant, as if nothing had fundamentally changed.</p>
-                    
-                    <p>For a fleeting moment, Margaret&#39;s stern expression softened, but Vivian&#39;s next words froze it again.</p>
-                    
-                    <p>Vivian clutched the fabric of her dress, her voice barely above a whisper but filled with quiet determination. &#34;But I can&#39;t leave. My employer is still here, and it would be improper to abandon him mid-event. As a professional, I can&#39;t risk tarnishing the Blackwood name by acting irresponsibly.&#34;</p>
-                    
-                    <p>Margaret&#39;s piercing gaze locked onto Vivian, cold realization dawning in her eyes. She let out a derisive laugh. &#34;Now I see your true colors. I wish Leonard and Beatrice could witness this carefully constructed facade of yours.&#34;</p>
-                    
-                    <p>Bianca chimed in with malicious delight, &#34;Look at you, Vivian. You&#39;re practically defying Aunt Margaret now!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Margaret&#39;s rebuke was sharp and deliberate. &#34;You&#39;re embarrassing our family. I don&#39;t care about your private affairs, but here, in public, as a Blackwood, you must uphold our reputation. You represent our image and must act accordingly. This isn&#39;t some casual ladies&#39; tea party. It&#39;s inappropriate to be seen with a stranger, let alone follow him here. Now, come with me.&#34;</p>
+                        
+                        <p>&#34;My apologies,&#34; Vivian murmured, her tone respectful and seemingly compliant, as if nothing had fundamentally changed.</p>
+                        
+                        <p>For a fleeting moment, Margaret&#39;s stern expression softened, but Vivian&#39;s next words froze it again.</p>
+                        
+                        <p>Vivian clutched the fabric of her dress, her voice barely above a whisper but filled with quiet determination. &#34;But I can&#39;t leave. My employer is still here, and it would be improper to abandon him mid-event. As a professional, I can&#39;t risk tarnishing the Blackwood name by acting irresponsibly.&#34;</p>
+                        
+                        <p>Margaret&#39;s piercing gaze locked onto Vivian, cold realization dawning in her eyes. She let out a derisive laugh. &#34;Now I see your true colors. I wish Leonard and Beatrice could witness this carefully constructed facade of yours.&#34;</p>
+                        
+                        <p>Bianca chimed in with malicious delight, &#34;Look at you, Vivian. You&#39;re practically defying Aunt Margaret now!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Serena, the architect of this confrontation, wore a faint smile of satisfaction. Having achieved her goal, she decided not to escalate things further. Glancing at her phone, she said with calculated politeness, &#34;Mrs. Blackwood, Bianca, Ms. Hartley, I have matters to attend to. Please enjoy the rest of your evening.&#34;</p>
-                    
-                    <p>&#34;Margaret, I&#39;ve been away too long. My boss might be looking for me,&#34; Vivian interjected quickly, fabricating an excuse to escape. &#34;I should return now.&#34;</p>
-                    
-                    <p>Margaret&#39;s eyes burned into Vivian&#39;s retreating figure, her anger palpable. Seeking privacy, she pulled out her phone and dialed Adrian. &#34;Did you know Vivian attended the Kingsley Group&#39;s gala?&#34; she demanded.</p>
-                    
-                    <p>Adrian&#39;s response was calm. &#34;Yes, I gave her the invitation. She&#39;s been emotionally fragile since the incident.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Serena, the architect of this confrontation, wore a faint smile of satisfaction. Having achieved her goal, she decided not to escalate things further. Glancing at her phone, she said with calculated politeness, &#34;Mrs. Blackwood, Bianca, Ms. Hartley, I have matters to attend to. Please enjoy the rest of your evening.&#34;</p>
+                        
+                        <p>&#34;Margaret, I&#39;ve been away too long. My boss might be looking for me,&#34; Vivian interjected quickly, fabricating an excuse to escape. &#34;I should return now.&#34;</p>
+                        
+                        <p>Margaret&#39;s eyes burned into Vivian&#39;s retreating figure, her anger palpable. Seeking privacy, she pulled out her phone and dialed Adrian. &#34;Did you know Vivian attended the Kingsley Group&#39;s gala?&#34; she demanded.</p>
+                        
+                        <p>Adrian&#39;s response was calm. &#34;Yes, I gave her the invitation. She&#39;s been emotionally fragile since the incident.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

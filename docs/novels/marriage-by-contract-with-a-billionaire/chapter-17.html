@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:29.731102">
-    <meta property="article:modified_time" content="2026-07-19T02:47:29.731102">
+    <meta property="article:published_time" content="2026-07-19T13:03:24.116116">
+    <meta property="article:modified_time" content="2026-07-19T13:03:24.116116">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:29">
+    <meta name="last-modified" content="2026-07-19 13:03:24">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:29.731102",
-        "dateModified": "2026-07-19T02:47:29.731102",
+        "datePublished": "2026-07-19T13:03:24.116116",
+        "dateModified": "2026-07-19T13:03:24.116116",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,25 +893,29 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Kate&#39;s heart was racing as she drove through the familiar streets toward the Blake family estate. The image of the woman she had seen at the mall wouldn&#39;t leave her mind. Every detail-her walk, her hair, the way she carried herself-screamed of her long-lost sister, Lilly.</p>
-                    
-                    <p>Arriving at the imposing Blake mansion. Kate parked her luxury car hastily, nearly forgetting to shut the door. The grandeur of the estate.surrounded by lush greenery and guarded gates, was a stark reminder of the weight of her family&#39;s name and the power they wielded in Aurora City.</p>
-                    
-                    <p>The head maid. Emily, greeted her at the entrance. &#34;You&#39;re back early,Miss Kate.&#34;</p>
-                    
-                    <p>&#34;Where&#39;s my mother?&#34; Kate asked, barely stopping.</p>
-                    
-                    <p>&#34;In the garden, Miss,&#34; Emily replied, watching curiously as Kate strode past without another word.</p>
-                    
-                    <p>Kate reached the garden, finding Lady Bella pruning roses with a calm precision that belied the storm brewing in her daughter&#39;s chest.</p>
-                    
-                    <p>&#34;Mother!&#34; Kate called her voice tight with urgency.</p>
-                    
-                    <p>Lady Bella turned, arching a brow. &#34;You&#39;re back so soon. What happened?  Kate glanced over her shoulder,ensuring no one was close enough to overhear.′′Weneed to talk. Alone,&#34; With a wave of her hand, Lady Bella dismissed the nearby maids.&#34;What is it, Kate?&#34; she asked, her voice low, sensing the tension in her daughter. Kate stepped closer, her voice trembling with suppressed emotion. &#34;I think I saw her, Mother. Lilly. At the mall.&#34;</p>
-                    
-                    <p>Lady Bella froze, the pruning shears slipping slightly in her hand.&#34;Lilly?&#34;she repeated,her tone sharp.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Kate&#39;s heart was racing as she drove through the familiar streets toward the Blake family estate. The image of the woman she had seen at the mall wouldn&#39;t leave her mind. Every detail-her walk, her hair, the way she carried herself-screamed of her long-lost sister, Lilly.</p>
+                        
+                        <p>Arriving at the imposing Blake mansion. Kate parked her luxury car hastily, nearly forgetting to shut the door. The grandeur of the estate.surrounded by lush greenery and guarded gates, was a stark reminder of the weight of her family&#39;s name and the power they wielded in Aurora City.</p>
+                        
+                        <p>The head maid. Emily, greeted her at the entrance. &#34;You&#39;re back early,Miss Kate.&#34;</p>
+                        
+                        <p>&#34;Where&#39;s my mother?&#34; Kate asked, barely stopping.</p>
+                        
+                        <p>&#34;In the garden, Miss,&#34; Emily replied, watching curiously as Kate strode past without another word.</p>
+                        
+                        <p>Kate reached the garden, finding Lady Bella pruning roses with a calm precision that belied the storm brewing in her daughter&#39;s chest.</p>
+                        
+                        <p>&#34;Mother!&#34; Kate called her voice tight with urgency.</p>
+                        
+                        <p>Lady Bella turned, arching a brow. &#34;You&#39;re back so soon. What happened?  Kate glanced over her shoulder,ensuring no one was close enough to overhear.′′Weneed to talk. Alone,&#34; With a wave of her hand, Lady Bella dismissed the nearby maids.&#34;What is it, Kate?&#34; she asked, her voice low, sensing the tension in her daughter. Kate stepped closer, her voice trembling with suppressed emotion. &#34;I think I saw her, Mother. Lilly. At the mall.&#34;</p>
+                        
+                        <p>Lady Bella froze, the pruning shears slipping slightly in her hand.&#34;Lilly?&#34;she repeated,her tone sharp.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -890,25 +930,29 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Yes. I saw someone who looked exactly like her walking out of a jewelry store. I wasn&#39;t sure at first, but the way she walked, the side profile-it was her,&#34; Kate insisted.her voice rising.</p>
-                    
-                    <p>Lady Bella&#39;s expression darkened, her mind racing. &#34;Are you certain? It&#39;s been months, Kate. No one has seen or heard anything about her. The search turned up nothing.&#34;</p>
-                    
-                    <p>&#34;I&#39;m not entirely sure,&#34; Kate admitted reluctantly, &#34;but I know what I saw.We need to confirm it. I need you topull the CCTV footage from the mall.&#34;</p>
-                    
-                    <p>Lady Bella frowned. &#34;That&#39;s not our family&#39;s mall, Kate. I don&#39;t have direct access.&#34;</p>
-                    
-                    <p>&#34;Didn&#39;t you say the manager is an old friend? Call him. Make something up. I need to know if it was her,&#34; Kate pleaded.</p>
-                    
-                    <p>Lady Bella hesitated, but the desperation in Kate&#39;s eyes pushed her into action. &#34;Alright. I&#39;ll see what I can do.&#34;</p>
-                    
-                    <p>Kate grabbed her mother&#39;s hand tightly. &#34;Thank you. You know we can&#39;t let her reappear now. Not after everything we&#39;ve done.&#34; Lady Bella nodded, her lips pressing into a thin line. &#34;We won&#39;t let that happen. She wwon&#39;t ruin what we&#39;ve worked so hard for.&#34; As Lady Bella made the call to her contact at the mall. Kate paced the garden, her mind consumed with possibilities, If it was Lilly, why had she resurfaced now? What had she been doing all these months? And more importantly, what did she know?</p>
-                    
-                    <p>Meanwhile, in a sleek black car speeding through Aurora City, Lilly was typing furiously on her phone.</p>
-                    
-                    <p>Lilly: I think Kate saw me.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Yes. I saw someone who looked exactly like her walking out of a jewelry store. I wasn&#39;t sure at first, but the way she walked, the side profile-it was her,&#34; Kate insisted.her voice rising.</p>
+                        
+                        <p>Lady Bella&#39;s expression darkened, her mind racing. &#34;Are you certain? It&#39;s been months, Kate. No one has seen or heard anything about her. The search turned up nothing.&#34;</p>
+                        
+                        <p>&#34;I&#39;m not entirely sure,&#34; Kate admitted reluctantly, &#34;but I know what I saw.We need to confirm it. I need you topull the CCTV footage from the mall.&#34;</p>
+                        
+                        <p>Lady Bella frowned. &#34;That&#39;s not our family&#39;s mall, Kate. I don&#39;t have direct access.&#34;</p>
+                        
+                        <p>&#34;Didn&#39;t you say the manager is an old friend? Call him. Make something up. I need to know if it was her,&#34; Kate pleaded.</p>
+                        
+                        <p>Lady Bella hesitated, but the desperation in Kate&#39;s eyes pushed her into action. &#34;Alright. I&#39;ll see what I can do.&#34;</p>
+                        
+                        <p>Kate grabbed her mother&#39;s hand tightly. &#34;Thank you. You know we can&#39;t let her reappear now. Not after everything we&#39;ve done.&#34; Lady Bella nodded, her lips pressing into a thin line. &#34;We won&#39;t let that happen. She wwon&#39;t ruin what we&#39;ve worked so hard for.&#34; As Lady Bella made the call to her contact at the mall. Kate paced the garden, her mind consumed with possibilities, If it was Lilly, why had she resurfaced now? What had she been doing all these months? And more importantly, what did she know?</p>
+                        
+                        <p>Meanwhile, in a sleek black car speeding through Aurora City, Lilly was typing furiously on her phone.</p>
+                        
+                        <p>Lilly: I think Kate saw me.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -923,25 +967,29 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Matthew responded first.</p>
-                    
-                    <p>Matthew,Are you sure?</p>
-                    
-                    <p>Lilly: She chased me through the mall. If she didn&#39;t suspect something.she wouldn&#39;t have done that.</p>
-                    
-                    <p>Michael chimed in.</p>
-                    
-                    <p>Michael: That&#39;s not good.</p>
-                    
-                    <p>Lilly: I need you to handle it. Delete any footage from the mall&#39;s security system. She can&#39;t confirm it was me.</p>
-                    
-                    <p>Matthew: You mean to hack into the Kane family mall&#39;s system?</p>
-                    
-                    <p>Lilly: Yes. Do whatever it takes. They can&#39;t know I&#39;m alive. Not yet.</p>
-                    
-                    <p>Matthew with a thumbs-up emoji, followed by a smirking face.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Matthew responded first.</p>
+                        
+                        <p>Matthew,Are you sure?</p>
+                        
+                        <p>Lilly: She chased me through the mall. If she didn&#39;t suspect something.she wouldn&#39;t have done that.</p>
+                        
+                        <p>Michael chimed in.</p>
+                        
+                        <p>Michael: That&#39;s not good.</p>
+                        
+                        <p>Lilly: I need you to handle it. Delete any footage from the mall&#39;s security system. She can&#39;t confirm it was me.</p>
+                        
+                        <p>Matthew: You mean to hack into the Kane family mall&#39;s system?</p>
+                        
+                        <p>Lilly: Yes. Do whatever it takes. They can&#39;t know I&#39;m alive. Not yet.</p>
+                        
+                        <p>Matthew with a thumbs-up emoji, followed by a smirking face.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -956,25 +1004,29 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Michael: You&#39;re playing with fire, Lilly. If they figure it out, they won&#39;t sit still. Lilly: Then I&#39;ll be ready. But until then, make sure theycan&#39;t trace me. Lilly smiled faintly at her screen before glancing out the window. Her moment of calm shattered when she realized Alexander,sitting beside her,had been silently watching her.</p>
-                    
-                    <p>&#34;Something amusing?&#34; he asked, his tone neutral but his eyes piercing.</p>
-                    
-                    <p>Caught off guard. Lilly quickly locked her phone. &#34;Nothing important.&#34;</p>
-                    
-                    <p>Alexander&#39;s gaze lingered on her for a moment before his phone rang. He answered without breaking eye contact.</p>
-                    
-                    <p>&#34;Grandma,&#34; he said, his voice softening slightly.</p>
-                    
-                    <p>&#34;I heard you took Lily from the mall,&#34; Grandma Helen said sharply. &#34;I told you I&#39;d bring her back tomorrow evening!&#34;</p>
-                    
-                    <p>Alexander&#39;s jaw tightened, but he said nothing.</p>
-                    
-                    <p>&#34;I bought things for her, and she got something for me too.Send your driver to pick them up. And Alexander,&#34; Grandma Helen&#39;s voice grew stern, &#34;if you mistreat that girl, you&#39;ll regret it. She&#39;s my granddaughter-in-law, and even if your marriage doesn&#39;t last, she&#39;ll always be part of this family. Treat her well.&#34;</p>
-                    
-                    <p>The call ended abruptly,leaving Alexander staring at his phone in silence.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Michael: You&#39;re playing with fire, Lilly. If they figure it out, they won&#39;t sit still. Lilly: Then I&#39;ll be ready. But until then, make sure theycan&#39;t trace me. Lilly smiled faintly at her screen before glancing out the window. Her moment of calm shattered when she realized Alexander,sitting beside her,had been silently watching her.</p>
+                        
+                        <p>&#34;Something amusing?&#34; he asked, his tone neutral but his eyes piercing.</p>
+                        
+                        <p>Caught off guard. Lilly quickly locked her phone. &#34;Nothing important.&#34;</p>
+                        
+                        <p>Alexander&#39;s gaze lingered on her for a moment before his phone rang. He answered without breaking eye contact.</p>
+                        
+                        <p>&#34;Grandma,&#34; he said, his voice softening slightly.</p>
+                        
+                        <p>&#34;I heard you took Lily from the mall,&#34; Grandma Helen said sharply. &#34;I told you I&#39;d bring her back tomorrow evening!&#34;</p>
+                        
+                        <p>Alexander&#39;s jaw tightened, but he said nothing.</p>
+                        
+                        <p>&#34;I bought things for her, and she got something for me too.Send your driver to pick them up. And Alexander,&#34; Grandma Helen&#39;s voice grew stern, &#34;if you mistreat that girl, you&#39;ll regret it. She&#39;s my granddaughter-in-law, and even if your marriage doesn&#39;t last, she&#39;ll always be part of this family. Treat her well.&#34;</p>
+                        
+                        <p>The call ended abruptly,leaving Alexander staring at his phone in silence.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -989,25 +1041,29 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Lilly glanced at him, wondering what was going through his mind.But his expression remained cold as ever.</p>
-                    
-                    <p>***************Back at the Blake mansion, Lady Bella sat by the phone, tapping her manicured nails against the table as she waited for her contact to send the footage. Kate paced the room, her anxiety growing by the second. &#34;What&#39;s taking so long?&#34; &#34;Patience,&#34; Bella said sharply.</p>
-                    
-                    <p>When her phone finally pinged. Bella opened the files immediately.Together, they scrutinized the grainy footage of the jewelry store entrance.</p>
-                    
-                    <p>Kate leaned closer to the screen, her breath hitchingas she spotted a figure in a simple yet elegant dress. Her heart pounded as she recognized the familiar profile.</p>
-                    
-                    <p>&#34;It&#39;s her.&#34; Kate whispered, her voice trembling with equal parts fury and disbelief.</p>
-                    
-                    <p>Bella&#39;s lips thinned into a calculating smile. &#34;So, she&#39;s back.&#34;</p>
-                    
-                    <p>Kate&#39;s fists clenched at her sides. &#34;She thinks she can return after all these years and disrupt everything. She has no idea what&#39;s waiting for her.&#34;</p>
-                    
-                    <p>But as they continued to watch, the footage abruptly cut off, leaving the screen blank.</p>
-                    
-                    <p>&#34;What happened?&#34; Kate demanded.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Lilly glanced at him, wondering what was going through his mind.But his expression remained cold as ever.</p>
+                        
+                        <p>***************Back at the Blake mansion, Lady Bella sat by the phone, tapping her manicured nails against the table as she waited for her contact to send the footage. Kate paced the room, her anxiety growing by the second. &#34;What&#39;s taking so long?&#34; &#34;Patience,&#34; Bella said sharply.</p>
+                        
+                        <p>When her phone finally pinged. Bella opened the files immediately.Together, they scrutinized the grainy footage of the jewelry store entrance.</p>
+                        
+                        <p>Kate leaned closer to the screen, her breath hitchingas she spotted a figure in a simple yet elegant dress. Her heart pounded as she recognized the familiar profile.</p>
+                        
+                        <p>&#34;It&#39;s her.&#34; Kate whispered, her voice trembling with equal parts fury and disbelief.</p>
+                        
+                        <p>Bella&#39;s lips thinned into a calculating smile. &#34;So, she&#39;s back.&#34;</p>
+                        
+                        <p>Kate&#39;s fists clenched at her sides. &#34;She thinks she can return after all these years and disrupt everything. She has no idea what&#39;s waiting for her.&#34;</p>
+                        
+                        <p>But as they continued to watch, the footage abruptly cut off, leaving the screen blank.</p>
+                        
+                        <p>&#34;What happened?&#34; Kate demanded.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1022,25 +1078,29 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Bella&#39;s contact called a moment later, his voice apologetic. &#34;The footage was wiped clean. Someone hacked into the system.&#34;</p>
-                    
-                    <p>Kate&#39;s face twisted in frustration, her suspicions growing deeper. &#34;She&#39;s smarter than we thought. But it doesn&#39;t matter. She can&#39;t hide forever.&#34;</p>
-                    
-                    <p>Her gaze hardened, determination etched into her features. &#34;If Lilly is back,I&#39;ll make sure she regrets it.&#34; Kate grasped her mother&#39;s hand tightly, her eyes burning with determination.&#34;Thanks, MIother. You know what&#39;s at stake. We can&#39;t let this opportunity slip away. We need to finish what we started.&#34; Bella nodded solemnly. &#34;Yes. We need to.</p>
-                    
-                    <p>Kate wasn&#39;t just any Blake-she was the iHlegitimate daughter of Bella.born from an affair with Daniel Blake while he was still married to Lifly&#39;s mother. Bella had fought to secure her place in the family,clawing her way to the top after Selina. Daniel&#39;s wife, had died. Despite the lingering whispers of society calling Bella a gold digger and Kate an illegitimate child,they had managed to carve out their position. But there was always one thing left undone-taking full control of the Blake family legacy. And Lilly&#39;s sudden reappearance could ruin everything.</p>
-                    
-                    <p>When the car finally pulled into the mansion, Lilly moved to get out,but Alexander&#39;s voice stopped her.</p>
-                    
-                    <p>&#34;Leave the gift,&#34; he said, his tone sharp. &#34;It will be taken to my grandmother. You won&#39;t be going to the family house again.&#34;</p>
-                    
-                    <p>Lilly froze her hand on the door handle. Her heart skipped a beat at the finality in his words. She dropped the gift onto the seat without another word and stepped out of the car.</p>
-                    
-                    <p>But as the door closed behind her. Alexander&#39;s eyes drifted to the package.and curiosity flashed across his face. With a slow, deliberate motion,he picked it up. A small brow quirked as he examined it-an expensive jewel set. His eyes narrowed.</p>
-                    
-                    <p>&#34;Who paid for this?&#34; he murmured under his breath, his mind already working.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Bella&#39;s contact called a moment later, his voice apologetic. &#34;The footage was wiped clean. Someone hacked into the system.&#34;</p>
+                        
+                        <p>Kate&#39;s face twisted in frustration, her suspicions growing deeper. &#34;She&#39;s smarter than we thought. But it doesn&#39;t matter. She can&#39;t hide forever.&#34;</p>
+                        
+                        <p>Her gaze hardened, determination etched into her features. &#34;If Lilly is back,I&#39;ll make sure she regrets it.&#34; Kate grasped her mother&#39;s hand tightly, her eyes burning with determination.&#34;Thanks, MIother. You know what&#39;s at stake. We can&#39;t let this opportunity slip away. We need to finish what we started.&#34; Bella nodded solemnly. &#34;Yes. We need to.</p>
+                        
+                        <p>Kate wasn&#39;t just any Blake-she was the iHlegitimate daughter of Bella.born from an affair with Daniel Blake while he was still married to Lifly&#39;s mother. Bella had fought to secure her place in the family,clawing her way to the top after Selina. Daniel&#39;s wife, had died. Despite the lingering whispers of society calling Bella a gold digger and Kate an illegitimate child,they had managed to carve out their position. But there was always one thing left undone-taking full control of the Blake family legacy. And Lilly&#39;s sudden reappearance could ruin everything.</p>
+                        
+                        <p>When the car finally pulled into the mansion, Lilly moved to get out,but Alexander&#39;s voice stopped her.</p>
+                        
+                        <p>&#34;Leave the gift,&#34; he said, his tone sharp. &#34;It will be taken to my grandmother. You won&#39;t be going to the family house again.&#34;</p>
+                        
+                        <p>Lilly froze her hand on the door handle. Her heart skipped a beat at the finality in his words. She dropped the gift onto the seat without another word and stepped out of the car.</p>
+                        
+                        <p>But as the door closed behind her. Alexander&#39;s eyes drifted to the package.and curiosity flashed across his face. With a slow, deliberate motion,he picked it up. A small brow quirked as he examined it-an expensive jewel set. His eyes narrowed.</p>
+                        
+                        <p>&#34;Who paid for this?&#34; he murmured under his breath, his mind already working.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1055,19 +1115,23 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Reaching for his phone, he dialed his assistant. &#34;Yes,boss?&#34; &#34;Didn&#39;t I tell you to report any transactions made with the card I gave her?&#34;he asked, his voice low with suspicion.</p>
-                    
-                    <p>&#34;Yes, sir, but there haven&#39;t been any transactions on her card.&#34;</p>
-                    
-                    <p>Alexander paused, his grip tightening on the phone. &#34;What do you mean there haven&#39;t been any transactions?&#34;</p>
-                    
-                    <p>The silence on the other end was palpable, and then the assistant&#39;s voice came back, uneasy. &#34;I&#39;m checking it now, sir. But there&#39;s no record of any purchases.&#34;</p>
-                    
-                    <p>Alexander&#39;s jaw clenched. He looked at the expensive jewel in his hand and the growing suspicion in his gut. &#34;Then whose money did she use to buy this?&#34;</p>
-                    
-                    <p>Lilly Evans was becoming more and more of a mystery with each passing day.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Reaching for his phone, he dialed his assistant. &#34;Yes,boss?&#34; &#34;Didn&#39;t I tell you to report any transactions made with the card I gave her?&#34;he asked, his voice low with suspicion.</p>
+                        
+                        <p>&#34;Yes, sir, but there haven&#39;t been any transactions on her card.&#34;</p>
+                        
+                        <p>Alexander paused, his grip tightening on the phone. &#34;What do you mean there haven&#39;t been any transactions?&#34;</p>
+                        
+                        <p>The silence on the other end was palpable, and then the assistant&#39;s voice came back, uneasy. &#34;I&#39;m checking it now, sir. But there&#39;s no record of any purchases.&#34;</p>
+                        
+                        <p>Alexander&#39;s jaw clenched. He looked at the expensive jewel in his hand and the growing suspicion in his gut. &#34;Then whose money did she use to buy this?&#34;</p>
+                        
+                        <p>Lilly Evans was becoming more and more of a mystery with each passing day.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2383,6 +2447,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2509,7 +2653,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2551,32 +2694,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2587,21 +2712,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2634,6 +2749,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2654,20 +2775,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

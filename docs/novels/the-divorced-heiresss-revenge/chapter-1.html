@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:15.389134">
-    <meta property="article:modified_time" content="2026-07-19T02:47:15.389134">
+    <meta property="article:published_time" content="2026-07-19T13:03:10.711567">
+    <meta property="article:modified_time" content="2026-07-19T13:03:10.711567">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:15">
+    <meta name="last-modified" content="2026-07-19 13:03:10">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:15.389134",
-        "dateModified": "2026-07-19T02:47:15.389134",
+        "datePublished": "2026-07-19T13:03:10.711567",
+        "dateModified": "2026-07-19T13:03:10.711567",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,29 +893,33 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter1</p>
-                    
-                    <p>Chapter 1</p>
-                    
-                    <p>Anna Brown looked at the divorce papers on the table that her husband had already signed.</p>
-                    
-                    <p>She looked in the direction of the window with tears in her eyes. Justin Salvador was standing there in the glow of the afternoon sun, looking as perfect and cold as a stone sculpture and emanating an oppressive vibe.</p>
-                    
-                    <p>“I’ve signed the papers. You should sign them as soon as possible so that we can finalize the divorce before Rose comes home.”</p>
-                    
-                    <p>Justin put his hands behind his back and said, without glancing at her, “Since we had a prenuptial agreement, there won’t be any issues with property division. But as compensation, I will give you an additional $20 million as well as the villa in the western suburbs. After all, I won’t be able to explain it to Grandpa if you leave without taking a cent.”</p>
-                    
-                    <p>Anna was dumbstruck. “Does Grandpa know that you want to divorce me?”</p>
-                    
-                    <p>“Grandpa’s opinion won’t affect my decision.”</p>
-                    
-                    <p>Anna’s slender body shook, so she could only hold onto the edge of the table to stabilize herself. Tears streamed down her face as she asked, “Justin, can we please stay married?”</p>
-                    
-                    <p>Finally, Justin turned around and looked at her doubtfully.</p>
-                    
-                    <p>He pursed his thin lips and narrowed his dark eyes. His handsome face still made Anna’s heart skip a beat.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter1</p>
+                        
+                        <p>Chapter 1</p>
+                        
+                        <p>Anna Brown looked at the divorce papers on the table that her husband had already signed.</p>
+                        
+                        <p>She looked in the direction of the window with tears in her eyes. Justin Salvador was standing there in the glow of the afternoon sun, looking as perfect and cold as a stone sculpture and emanating an oppressive vibe.</p>
+                        
+                        <p>“I’ve signed the papers. You should sign them as soon as possible so that we can finalize the divorce before Rose comes home.”</p>
+                        
+                        <p>Justin put his hands behind his back and said, without glancing at her, “Since we had a prenuptial agreement, there won’t be any issues with property division. But as compensation, I will give you an additional $20 million as well as the villa in the western suburbs. After all, I won’t be able to explain it to Grandpa if you leave without taking a cent.”</p>
+                        
+                        <p>Anna was dumbstruck. “Does Grandpa know that you want to divorce me?”</p>
+                        
+                        <p>“Grandpa’s opinion won’t affect my decision.”</p>
+                        
+                        <p>Anna’s slender body shook, so she could only hold onto the edge of the table to stabilize herself. Tears streamed down her face as she asked, “Justin, can we please stay married?”</p>
+                        
+                        <p>Finally, Justin turned around and looked at her doubtfully.</p>
+                        
+                        <p>He pursed his thin lips and narrowed his dark eyes. His handsome face still made Anna’s heart skip a beat.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -894,29 +934,33 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>“Why?”</p>
-                    
-                    <p>“Because I love you.”</p>
-                    
-                    <p>Anna’s eyes were red and tearful. “Justin, I love you. I still want to be your wife even if you don’t have feelings for me…”</p>
-                    
-                    <p>“I’ve had enough of this, Anna. A marriage without love is torture for me.”</p>
-                    
-                    <p>Justin waved her off. He did not even have the patience to listen to her. “Our marriage was a mistake from the start. You knew that I was just fighting with Grandpa back then. You also knew that I liked Rose. I just couldn’t be with her back then for certain reasons. She’s coming back from Meridan soon, and I plan to marry her, so you have to leave now that our three-year contract period is up.”</p>
-                    
-                    <p>Anna lowered her head. Large teardrops fell on the table, but she quickly wiped them away.</p>
-                    
-                    <p>Justin noticed it, but he did not say a word.</p>
-                    
-                    <p>At this time, his phone rang. He quickly answered the call when he saw the name on the screen.</p>
-                    
-                    <p>“Rose, have you boarded the plane yet?”</p>
-                    
-                    <p>He had such a gentle tone that Anna wondered if it came from the same man who was so cold to her</p>
-                    
-                    <p>moments ago.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>“Why?”</p>
+                        
+                        <p>“Because I love you.”</p>
+                        
+                        <p>Anna’s eyes were red and tearful. “Justin, I love you. I still want to be your wife even if you don’t have feelings for me…”</p>
+                        
+                        <p>“I’ve had enough of this, Anna. A marriage without love is torture for me.”</p>
+                        
+                        <p>Justin waved her off. He did not even have the patience to listen to her. “Our marriage was a mistake from the start. You knew that I was just fighting with Grandpa back then. You also knew that I liked Rose. I just couldn’t be with her back then for certain reasons. She’s coming back from Meridan soon, and I plan to marry her, so you have to leave now that our three-year contract period is up.”</p>
+                        
+                        <p>Anna lowered her head. Large teardrops fell on the table, but she quickly wiped them away.</p>
+                        
+                        <p>Justin noticed it, but he did not say a word.</p>
+                        
+                        <p>At this time, his phone rang. He quickly answered the call when he saw the name on the screen.</p>
+                        
+                        <p>“Rose, have you boarded the plane yet?”</p>
+                        
+                        <p>He had such a gentle tone that Anna wondered if it came from the same man who was so cold to her</p>
+                        
+                        <p>moments ago.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -931,29 +975,33 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Rosalind Gold said in a cheery voice over the phone, “Justin, I’m already at the Savrow Airport.”</p>
-                    
-                    <p>“What? Weren’t you supposed to get in tonight?”</p>
-                    
-                    <p>“I wanted to surprise you!”</p>
-                    
-                    <p>“Wait for me, Rose. I’ll pick you up now!”</p>
-                    
-                    <p>After that, Justin left in a hurry.</p>
-                    
-                    <p>When the door slammed shut, Anna felt heartbroken and abandoned.</p>
-                    
-                    <p>She had sacrificed so much for the Salvadors and had devoted herself to Justin during their marriage.</p>
-                    
-                    <p>In the end, he only thought of her decade-long crush and three years of marriage as torture.</p>
-                    
-                    <p>Justin acted as if he had been released from serving a three-year prison sentence and hurriedly abandoned Anna at the first opportunity. This was so that he could marry his childhood sweetheart, Rosalind Gold, whom he had been longing for.</p>
-                    
-                    <p>Anna was crushed and disheartened to find that she could not do anything to win over Justin’s heart.</p>
-                    
-                    <p>She took a deep breath, smiled wryly, and shook her head. Her indignant tears smudged Justin’s beautiful signature on the divorce papers.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Rosalind Gold said in a cheery voice over the phone, “Justin, I’m already at the Savrow Airport.”</p>
+                        
+                        <p>“What? Weren’t you supposed to get in tonight?”</p>
+                        
+                        <p>“I wanted to surprise you!”</p>
+                        
+                        <p>“Wait for me, Rose. I’ll pick you up now!”</p>
+                        
+                        <p>After that, Justin left in a hurry.</p>
+                        
+                        <p>When the door slammed shut, Anna felt heartbroken and abandoned.</p>
+                        
+                        <p>She had sacrificed so much for the Salvadors and had devoted herself to Justin during their marriage.</p>
+                        
+                        <p>In the end, he only thought of her decade-long crush and three years of marriage as torture.</p>
+                        
+                        <p>Justin acted as if he had been released from serving a three-year prison sentence and hurriedly abandoned Anna at the first opportunity. This was so that he could marry his childhood sweetheart, Rosalind Gold, whom he had been longing for.</p>
+                        
+                        <p>Anna was crushed and disheartened to find that she could not do anything to win over Justin’s heart.</p>
+                        
+                        <p>She took a deep breath, smiled wryly, and shook her head. Her indignant tears smudged Justin’s beautiful signature on the divorce papers.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -968,29 +1016,33 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>In the evening, Justin brought Rosalind back to Tideview Manor.</p>
-                    
-                    <p>Justin, the second son of the affluent Salvador family, carried a demure woman in bridal style as he walked into the manor, attracting everyone’s attention. 1</p>
-                    
-                    <p>“Justin, you’re not divorced yet, so we shouldn’t be so intimate. Otherwise, Anna will resent me if she sees us.” Rosalind rubbed Justin’s chest as she spoke softly.</p>
-                    
-                    <p>“She won’t.”</p>
-                    
-                    <p>Justin’s eyes turned cold as he said, “So what if she sees us? I don’t love her. She’s only my wife in name, so she should know her place.”</p>
-                    
-                    <p>The Salvadors gathered around Rosalind and greeted her while Anna was setting the table in the dining room.</p>
-                    
-                    <p>Justin caught a glimpse of his wife’s lonely figure and smirked, thinking, ‘How could Anna be so servile to my family? Did she think that doing so would make me change my mind about the divorce? How ridiculous!’</p>
-                    
-                    <p>“Young Master Justin!” After a while, the butler ran over to Justin. “Young Madam just left!”</p>
-                    
-                    <p>“She left? When?”</p>
-                    
-                    <p>“Just now! She didn’t take anything with her. She just took off her apron and left through the back door. A black car picked her up.”</p>
-                    
-                    <p>Justin hurried back to the bedroom, which was clean and tidy. He saw the signed and tear-stained divorce agreement on the bedside table.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>In the evening, Justin brought Rosalind back to Tideview Manor.</p>
+                        
+                        <p>Justin, the second son of the affluent Salvador family, carried a demure woman in bridal style as he walked into the manor, attracting everyone’s attention. 1</p>
+                        
+                        <p>“Justin, you’re not divorced yet, so we shouldn’t be so intimate. Otherwise, Anna will resent me if she sees us.” Rosalind rubbed Justin’s chest as she spoke softly.</p>
+                        
+                        <p>“She won’t.”</p>
+                        
+                        <p>Justin’s eyes turned cold as he said, “So what if she sees us? I don’t love her. She’s only my wife in name, so she should know her place.”</p>
+                        
+                        <p>The Salvadors gathered around Rosalind and greeted her while Anna was setting the table in the dining room.</p>
+                        
+                        <p>Justin caught a glimpse of his wife’s lonely figure and smirked, thinking, ‘How could Anna be so servile to my family? Did she think that doing so would make me change my mind about the divorce? How ridiculous!’</p>
+                        
+                        <p>“Young Master Justin!” After a while, the butler ran over to Justin. “Young Madam just left!”</p>
+                        
+                        <p>“She left? When?”</p>
+                        
+                        <p>“Just now! She didn’t take anything with her. She just took off her apron and left through the back door. A black car picked her up.”</p>
+                        
+                        <p>Justin hurried back to the bedroom, which was clean and tidy. He saw the signed and tear-stained divorce agreement on the bedside table.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1005,29 +1057,33 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>He frowned and walked over to the window, just in time to see a black Rolls-Royce driving away from Tideview Manor. Soon, its tail lights disappeared into the night.</p>
-                    
-                    <p>Justin thought to himself, ‘Wasn’t she reluctant to leave in the afternoon? It looks like she can’t wait</p>
-                    
-                    <p>to leave right now!’ 1</p>
-                    
-                    <p>He felt that Anna had played him like a fool, so he took out his phone and called his secretary indignantly.</p>
-                    
-                    <p>“Check whose car this belongs to. License plate number SA9999.”</p>
-                    
-                    <p>“Yes, Sir.”</p>
-                    
-                    <p>Five minutes later, Justin’s secretary called him back. “Mr. Salvador, I found out that the car with that</p>
-                    
-                    <p>license plate number belongs to the CEO of KS Group.”</p>
-                    
-                    <p>KS Group’s CEO was the eldest son of the Thompson family, Asher.</p>
-                    
-                    <p>Anna came from a small town. She was poor and did not have any connections. During the past three years, Justin noticed that Anna did not even have a social circle because all she did was stay at home. How did she manage to get acquainted with Asher Thompson?</p>
-                    
-                    <p>Justin thought that Anna had already found herself a rebound guy.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>He frowned and walked over to the window, just in time to see a black Rolls-Royce driving away from Tideview Manor. Soon, its tail lights disappeared into the night.</p>
+                        
+                        <p>Justin thought to himself, ‘Wasn’t she reluctant to leave in the afternoon? It looks like she can’t wait</p>
+                        
+                        <p>to leave right now!’ 1</p>
+                        
+                        <p>He felt that Anna had played him like a fool, so he took out his phone and called his secretary indignantly.</p>
+                        
+                        <p>“Check whose car this belongs to. License plate number SA9999.”</p>
+                        
+                        <p>“Yes, Sir.”</p>
+                        
+                        <p>Five minutes later, Justin’s secretary called him back. “Mr. Salvador, I found out that the car with that</p>
+                        
+                        <p>license plate number belongs to the CEO of KS Group.”</p>
+                        
+                        <p>KS Group’s CEO was the eldest son of the Thompson family, Asher.</p>
+                        
+                        <p>Anna came from a small town. She was poor and did not have any connections. During the past three years, Justin noticed that Anna did not even have a social circle because all she did was stay at home. How did she manage to get acquainted with Asher Thompson?</p>
+                        
+                        <p>Justin thought that Anna had already found herself a rebound guy.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1042,29 +1098,33 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>“Mr. Salvador, did you bring up the divorce with the young madam today?” His secretary asked</p>
-                    
-                    <p>tentatively.</p>
-                    
-                    <p>“Of course! Why would I drag it out?” Justin felt frustrated.</p>
-                    
-                    <p>“Oh… But it’s the young madam’s birthday today.”</p>
-                    
-                    <p>Justin was taken aback when he heard this.</p>
-                    
-                    <p>In the back row of the black Rolls-Royce, Asher, the eldest son of the prestigious Thompson family, gently held Anna’s hand.</p>
-                    
-                    <p>“Your second brother prepared a fireworks show for you tonight to celebrate your return.”</p>
-                    
-                    <p>“I’m really not in the mood to watch fireworks.”</p>
-                    
-                    <p>Anna resumed her identity as Bella Thompson, the heiress of the Thompson family. She leaned on her eldest brother’s shoulder and burst into tears.</p>
-                    
-                    <p>She glanced at her old phone and read the last message she received, which was from Rosalind.</p>
-                    
-                    <p>[You stole Justin from me. I told you that I’d make you give him up sooner or later. Justin is mine, so stop pestering him!]</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>“Mr. Salvador, did you bring up the divorce with the young madam today?” His secretary asked</p>
+                        
+                        <p>tentatively.</p>
+                        
+                        <p>“Of course! Why would I drag it out?” Justin felt frustrated.</p>
+                        
+                        <p>“Oh… But it’s the young madam’s birthday today.”</p>
+                        
+                        <p>Justin was taken aback when he heard this.</p>
+                        
+                        <p>In the back row of the black Rolls-Royce, Asher, the eldest son of the prestigious Thompson family, gently held Anna’s hand.</p>
+                        
+                        <p>“Your second brother prepared a fireworks show for you tonight to celebrate your return.”</p>
+                        
+                        <p>“I’m really not in the mood to watch fireworks.”</p>
+                        
+                        <p>Anna resumed her identity as Bella Thompson, the heiress of the Thompson family. She leaned on her eldest brother’s shoulder and burst into tears.</p>
+                        
+                        <p>She glanced at her old phone and read the last message she received, which was from Rosalind.</p>
+                        
+                        <p>[You stole Justin from me. I told you that I’d make you give him up sooner or later. Justin is mine, so stop pestering him!]</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1079,23 +1139,27 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>She smiled tearfully with her eyes closed and came to a realization.</p>
-                    
-                    <p>“What’s wrong? Do you still miss him after all he has done to you?” Asher hugged his sister in</p>
-                    
-                    <p>distress.</p>
-                    
-                    <p>“Ash, it’s my birthday today…”</p>
-                    
-                    <p>“I know. Justin is a jerk for choosing to divorce you today of all days.”</p>
-                    
-                    <p>“That’s why I have no regrets. Justin just killed Anna Brown.”</p>
-                    
-                    <p>When she opened her eyes again, she was no longer Anna Brown, the dutiful wife of Justin Salvador. Instead, she was once again Bella Thompson, the proud heiress of KS Group. This time, she would no longer be hung up on that man.</p>
-                    
-                    <p>Bella said, “I’m over him. I’ll be damned if I ever go back to him.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>She smiled tearfully with her eyes closed and came to a realization.</p>
+                        
+                        <p>“What’s wrong? Do you still miss him after all he has done to you?” Asher hugged his sister in</p>
+                        
+                        <p>distress.</p>
+                        
+                        <p>“Ash, it’s my birthday today…”</p>
+                        
+                        <p>“I know. Justin is a jerk for choosing to divorce you today of all days.”</p>
+                        
+                        <p>“That’s why I have no regrets. Justin just killed Anna Brown.”</p>
+                        
+                        <p>When she opened her eyes again, she was no longer Anna Brown, the dutiful wife of Justin Salvador. Instead, she was once again Bella Thompson, the proud heiress of KS Group. This time, she would no longer be hung up on that man.</p>
+                        
+                        <p>Bella said, “I’m over him. I’ll be damned if I ever go back to him.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2411,6 +2475,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2537,7 +2681,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2579,32 +2722,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2615,21 +2740,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2662,6 +2777,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2682,20 +2803,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

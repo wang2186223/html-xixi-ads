@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.106742">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.106742">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.281656">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.281656">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.106742",
-        "dateModified": "2026-07-19T02:47:19.106742",
+        "datePublished": "2026-07-19T13:03:14.281656",
+        "dateModified": "2026-07-19T13:03:14.281656",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,31 +893,35 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Agai n</p>
-                    
-                    <p>**Audrey&#39;s POV*</p>
-                    
-                    <p>In theliving room, everyone&#39;s expression had turned grim.</p>
-                    
-                    <p>&#34;Audrey,&#34; James said, &#34;Aren&#39;t you going after Adrian? He&#39;s got the wrong idea about all of us.&#34;</p>
-                    
-                    <p>I shook my head. &#34;No point. He needs to cool off first.&#34;</p>
-                    
-                    <p>&#34;Iget why he freaked out about Emma&#39;s kidnapping. But she&#39;s safe now.Why is he still acting like this?*</p>
-                    
-                    <p>&#34;Mrs.Knox.&#34;</p>
-                    
-                    <p>I turned to see one of the doctors. looking nervous.</p>
-                    
-                    <p>&#34;Got a minute?&#34; he asked, glancing in the direction Adrian had gone.&#34;Mr.Parker&#39;s awake. He&#39;s asking for you.&#34;</p>
-                    
-                    <p>The doctor lowered his voice. &#34;After what I just heard from Mr. Knox, I wasn&#39;t sure if... you&#39;d be able to see him?&#34;</p>
-                    
-                    <p>&#34;Of course I am,&#34; I said firmly. &#34;Blake saved my daughter. I&#39;d be heartless not to see him.&#34;</p>
-                    
-                    <p>Relief washed over his face as he led me down the hallway.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Agai n</p>
+                        
+                        <p>**Audrey&#39;s POV*</p>
+                        
+                        <p>In theliving room, everyone&#39;s expression had turned grim.</p>
+                        
+                        <p>&#34;Audrey,&#34; James said, &#34;Aren&#39;t you going after Adrian? He&#39;s got the wrong idea about all of us.&#34;</p>
+                        
+                        <p>I shook my head. &#34;No point. He needs to cool off first.&#34;</p>
+                        
+                        <p>&#34;Iget why he freaked out about Emma&#39;s kidnapping. But she&#39;s safe now.Why is he still acting like this?*</p>
+                        
+                        <p>&#34;Mrs.Knox.&#34;</p>
+                        
+                        <p>I turned to see one of the doctors. looking nervous.</p>
+                        
+                        <p>&#34;Got a minute?&#34; he asked, glancing in the direction Adrian had gone.&#34;Mr.Parker&#39;s awake. He&#39;s asking for you.&#34;</p>
+                        
+                        <p>The doctor lowered his voice. &#34;After what I just heard from Mr. Knox, I wasn&#39;t sure if... you&#39;d be able to see him?&#34;</p>
+                        
+                        <p>&#34;Of course I am,&#34; I said firmly. &#34;Blake saved my daughter. I&#39;d be heartless not to see him.&#34;</p>
+                        
+                        <p>Relief washed over his face as he led me down the hallway.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -896,31 +936,35 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>I stepped into the room. Blake was propped up in bed, skin ghostly against the white sheets, his right arm heavily bandlaged. He was watching something on a tablet - Rachel&#39;s interview outside their wedding venue.</p>
-                    
-                    <p>He looked up, face brightening. &#34;You came.&#34;</p>
-                    
-                    <p>I moved closer. &#34;How are you feeling?&#34;</p>
-                    
-                    <p>&#34;Fine,&#34; he said with a weak smile. &#34;Just some surface wounds,nothing deep.&#34;</p>
-                    
-                    <p>I sat down, studying his face. What a ridiculous lie. I&#39;d watched the doctors treat him. The gash in his arm went clear to the bone - one of the most horrific wounds I&#39;d ever seen. Yet here he was, downplaying everything.</p>
-                    
-                    <p>&#34;Blake.&#34; My fingers twisted in my lap. &#34;Thank you for what you did for Emma today.&#34;</p>
-                    
-                    <p>He started to shake his head.&#34;You don&#39;t-&#34;</p>
-                    
-                    <p>&#34;I know exactly how bad your injuries are, so don&#39;t pretend otherwise,&#34; I cut him off. &#34;And I know about your legs too - that they were damaged because of me on Long Island.&#34;</p>
-                    
-                    <p>He stiffened. &#34;Who told you that?&#34;</p>
-                    
-                    <p>&#34;Does it matter if it was Michael or Jett?&#34; I leaned forward. &#34;Blake, I need you to stop doing these things for me.&#34;</p>
-                    
-                    <p>&#34;Audrey-&#34;</p>
-                    
-                    <p>&#34;There&#39;s nothing between us anymore. I don&#39;t want to owe you anything.&#34;I forced myself to keep going. &#34;You and I live in different worlds now.We can&#39;t keep getting tangled in each other&#39;s lives.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>I stepped into the room. Blake was propped up in bed, skin ghostly against the white sheets, his right arm heavily bandlaged. He was watching something on a tablet - Rachel&#39;s interview outside their wedding venue.</p>
+                        
+                        <p>He looked up, face brightening. &#34;You came.&#34;</p>
+                        
+                        <p>I moved closer. &#34;How are you feeling?&#34;</p>
+                        
+                        <p>&#34;Fine,&#34; he said with a weak smile. &#34;Just some surface wounds,nothing deep.&#34;</p>
+                        
+                        <p>I sat down, studying his face. What a ridiculous lie. I&#39;d watched the doctors treat him. The gash in his arm went clear to the bone - one of the most horrific wounds I&#39;d ever seen. Yet here he was, downplaying everything.</p>
+                        
+                        <p>&#34;Blake.&#34; My fingers twisted in my lap. &#34;Thank you for what you did for Emma today.&#34;</p>
+                        
+                        <p>He started to shake his head.&#34;You don&#39;t-&#34;</p>
+                        
+                        <p>&#34;I know exactly how bad your injuries are, so don&#39;t pretend otherwise,&#34; I cut him off. &#34;And I know about your legs too - that they were damaged because of me on Long Island.&#34;</p>
+                        
+                        <p>He stiffened. &#34;Who told you that?&#34;</p>
+                        
+                        <p>&#34;Does it matter if it was Michael or Jett?&#34; I leaned forward. &#34;Blake, I need you to stop doing these things for me.&#34;</p>
+                        
+                        <p>&#34;Audrey-&#34;</p>
+                        
+                        <p>&#34;There&#39;s nothing between us anymore. I don&#39;t want to owe you anything.&#34;I forced myself to keep going. &#34;You and I live in different worlds now.We can&#39;t keep getting tangled in each other&#39;s lives.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -935,31 +979,35 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>He swallowed hard. &#34;Everything I&#39;ve done, I owed you. You don&#39;t need to feel grateful.&#34;</p>
-                    
-                    <p>&#34;I hurt you so much before. I just wanted to make it right somehow.Never meant to burden you.&#34;</p>
-                    
-                    <p>&#34;Blake,&#34; I interrupted. &#34;You just saved my daughter, so maybe this isn&#39;t the time for this.&#34;</p>
-                    
-                    <p>I took a deep breath. &#34;But you know about the history between your parents and my adoptive parents. William told me everything about the feud between the New York and Australian Parkers.&#34;</p>
-                    
-                    <p>He nodded slowly.</p>
-                    
-                    <p>&#34;I don&#39;t want any connection with you anymore. I&#39;m not Audrey Sinclair now.&#34; My voice grew firmer. &#34;And I don&#39;t want my adoptive parents to get the wrong idea about me.&#34;</p>
-                    
-                    <p>&#34;The doctors say your condition isn&#39;t permanent. You could walk again with therapy.&#34;</p>
-                    
-                    <p>&#34;You&#39;ve saved Emma and me twice now. So I&#39;ll stay in New York until you&#39;ve recovered from these wounds and can leave that wheelchair.&#34; I met his gaze directly. &#34;I hope you&#39;ll commit to recovery so Emma and I can go back to Sydney sooner.&#34;</p>
-                    
-                    <p>His face fell. &#34;I&#39;ll do my best.&#34;</p>
-                    
-                    <p>I stood to leave, my emotions a tangled mess. Blake looked utterly defeated, his shoulders slumped. This wasn&#39;t the satisfaction I once imagined feeling seeing Blake Parker brought low.</p>
-                    
-                    <p>I walked toward the door. I&#39;d almost reached it when his voice stopped me.</p>
-                    
-                    <p>&#34;Audrey...&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>He swallowed hard. &#34;Everything I&#39;ve done, I owed you. You don&#39;t need to feel grateful.&#34;</p>
+                        
+                        <p>&#34;I hurt you so much before. I just wanted to make it right somehow.Never meant to burden you.&#34;</p>
+                        
+                        <p>&#34;Blake,&#34; I interrupted. &#34;You just saved my daughter, so maybe this isn&#39;t the time for this.&#34;</p>
+                        
+                        <p>I took a deep breath. &#34;But you know about the history between your parents and my adoptive parents. William told me everything about the feud between the New York and Australian Parkers.&#34;</p>
+                        
+                        <p>He nodded slowly.</p>
+                        
+                        <p>&#34;I don&#39;t want any connection with you anymore. I&#39;m not Audrey Sinclair now.&#34; My voice grew firmer. &#34;And I don&#39;t want my adoptive parents to get the wrong idea about me.&#34;</p>
+                        
+                        <p>&#34;The doctors say your condition isn&#39;t permanent. You could walk again with therapy.&#34;</p>
+                        
+                        <p>&#34;You&#39;ve saved Emma and me twice now. So I&#39;ll stay in New York until you&#39;ve recovered from these wounds and can leave that wheelchair.&#34; I met his gaze directly. &#34;I hope you&#39;ll commit to recovery so Emma and I can go back to Sydney sooner.&#34;</p>
+                        
+                        <p>His face fell. &#34;I&#39;ll do my best.&#34;</p>
+                        
+                        <p>I stood to leave, my emotions a tangled mess. Blake looked utterly defeated, his shoulders slumped. This wasn&#39;t the satisfaction I once imagined feeling seeing Blake Parker brought low.</p>
+                        
+                        <p>I walked toward the door. I&#39;d almost reached it when his voice stopped me.</p>
+                        
+                        <p>&#34;Audrey...&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -974,31 +1022,35 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>I paused but didn&#39;t turn.</p>
-                    
-                    <p>&#34;I&#39;m sorry,&#34; he said roughly.</p>
-                    
-                    <p>My chest tightened. &#34;You have nothing to apologize for. But I hope you won&#39;t do this again,&#34; I added, &#34;No more playing hero for me.&#34;</p>
-                    
-                    <p>&#34;I just worry about you,&#34; he insisted.</p>
-                    
-                    <p>&#34;I don&#39;t need your worry,&#34; I shot back. &#34;When I had nothing, when your family treated me like dirt, you never once protected me.&#34;</p>
-                    
-                    <p>I shook my head. &#34;It&#39;s too late, Blake. If you&#39;d shown this concern when I was still Audrey Sinclair, maybe things would&#39;ve been different.&#34;</p>
-                    
-                    <p>I stepped through the doorway and closed it firmly behind me, leaning against it for a moment.</p>
-                    
-                    <p>**Blake&#39;s POV**</p>
-                    
-                    <p>I stared at the closed door, her final words echoing in my head.</p>
-                    
-                    <p>*Too late.*</p>
-                    
-                    <p>Those two words summed up everything with Audrey. I&#39;d realized my feelings too late. I&#39;d discovered Laurel&#39;s lies too late. I&#39;d learned how to be decent too late.</p>
-                    
-                    <p>Always too late.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>I paused but didn&#39;t turn.</p>
+                        
+                        <p>&#34;I&#39;m sorry,&#34; he said roughly.</p>
+                        
+                        <p>My chest tightened. &#34;You have nothing to apologize for. But I hope you won&#39;t do this again,&#34; I added, &#34;No more playing hero for me.&#34;</p>
+                        
+                        <p>&#34;I just worry about you,&#34; he insisted.</p>
+                        
+                        <p>&#34;I don&#39;t need your worry,&#34; I shot back. &#34;When I had nothing, when your family treated me like dirt, you never once protected me.&#34;</p>
+                        
+                        <p>I shook my head. &#34;It&#39;s too late, Blake. If you&#39;d shown this concern when I was still Audrey Sinclair, maybe things would&#39;ve been different.&#34;</p>
+                        
+                        <p>I stepped through the doorway and closed it firmly behind me, leaning against it for a moment.</p>
+                        
+                        <p>**Blake&#39;s POV**</p>
+                        
+                        <p>I stared at the closed door, her final words echoing in my head.</p>
+                        
+                        <p>*Too late.*</p>
+                        
+                        <p>Those two words summed up everything with Audrey. I&#39;d realized my feelings too late. I&#39;d discovered Laurel&#39;s lies too late. I&#39;d learned how to be decent too late.</p>
+                        
+                        <p>Always too late.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1013,31 +1065,35 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>I picked up the tablet again, mechanically scrolling through news about the kidnapping.</p>
-                    
-                    <p>I was examining a blurry security image when the door creaked open.I looked up, half-hoping Audrey had returned.</p>
-                    
-                    <p>Instead, a small head peeked around the edge.</p>
-                    
-                    <p>&#34;Uncle Blake? Can Emma come in?&#34; came a whispered voice.</p>
-                    
-                    <p>I couldn&#39;t heIp smiling. &#34;Sure.&#34;</p>
-                    
-                    <p>Emma tiptoed in, carefully balancing a small plate as she approached my bed.</p>
-                    
-                    <p>&#34;Emma brought you apples,&#34; she announced, presenting the plate with neatly arranged slices. &#34;Unacle, Emma made this for you!&#34;</p>
-                    
-                    <p>I took the plate, touched. &#34;Thank you.&#34;</p>
-                    
-                    <p>She beamed, watching as I took a bite.</p>
-                    
-                    <p>&#34;It&#39;s very sweet,&#34; I told her.</p>
-                    
-                    <p>Her face lit up. &#34;Uncle likes it! This is Emma&#39;s first time making fruit plate.</p>
-                    
-                    <p>You&#39;re very lucky!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>I picked up the tablet again, mechanically scrolling through news about the kidnapping.</p>
+                        
+                        <p>I was examining a blurry security image when the door creaked open.I looked up, half-hoping Audrey had returned.</p>
+                        
+                        <p>Instead, a small head peeked around the edge.</p>
+                        
+                        <p>&#34;Uncle Blake? Can Emma come in?&#34; came a whispered voice.</p>
+                        
+                        <p>I couldn&#39;t heIp smiling. &#34;Sure.&#34;</p>
+                        
+                        <p>Emma tiptoed in, carefully balancing a small plate as she approached my bed.</p>
+                        
+                        <p>&#34;Emma brought you apples,&#34; she announced, presenting the plate with neatly arranged slices. &#34;Unacle, Emma made this for you!&#34;</p>
+                        
+                        <p>I took the plate, touched. &#34;Thank you.&#34;</p>
+                        
+                        <p>She beamed, watching as I took a bite.</p>
+                        
+                        <p>&#34;It&#39;s very sweet,&#34; I told her.</p>
+                        
+                        <p>Her face lit up. &#34;Uncle likes it! This is Emma&#39;s first time making fruit plate.</p>
+                        
+                        <p>You&#39;re very lucky!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1052,31 +1108,35 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>She climbed onto the chair Audrey had left, her little legs swinging. &#34;Auntie Astrid was worried about me using knife, so she gave me a really dull one. I had to push so hard!&#34;</p>
-                    
-                    <p>I chuckled, taking another bite. &#34;It&#39;s perfect.&#34;</p>
-                    
-                    <p>&#34;It is sweet, right?&#34; She helped herself to a piece. &#34;Handsome uncle, if you like it, Emma can cut more for you later, okay?&#34;</p>
-                    
-                    <p>I glanced toward the door. &#34;Does your dad know you&#39;re here?&#34;</p>
-                    
-                    <p>&#34;Nope!&#34; she answered cheerfully. &#34;Daddy is fighting with Mommy and Auntie Astrid outside. He&#39;s making phone calls and being angry.&#34;</p>
-                    
-                    <p>She leaned closer. &#34;I sneaked back when he wasn&#39;t looking! I saw Auntie Astrid cutting fruit for the doctors, so I decided to make some for you too!&#34;</p>
-                    
-                    <p>&#34;Uncle Blake,&#34; she said suddenly, her expression serious. &#34;I&#39;m sorry I didn&#39;t like you before.&#34;</p>
-                    
-                    <p>I raised an eyebrow. &#34;Oh?&#34;</p>
-                    
-                    <p>&#34;When you saved me today,&#34; she continued earnestly, &#34;you were so brave!You&#39;re the coolest, handsomest man ever- even better than Daddy!&#34;</p>
-                    
-                    <p>&#34;Really?&#34; I couldn&#39;t help but smile.</p>
-                    
-                    <p>&#34;Really!&#34; She nodded hard. &#34;Daddy is scary when he&#39;s mad...&#34;</p>
-                    
-                    <p>Her voice dropped to a whisper. &#34;Emma was so scared when he yelled at Auntie Astrid.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>She climbed onto the chair Audrey had left, her little legs swinging. &#34;Auntie Astrid was worried about me using knife, so she gave me a really dull one. I had to push so hard!&#34;</p>
+                        
+                        <p>I chuckled, taking another bite. &#34;It&#39;s perfect.&#34;</p>
+                        
+                        <p>&#34;It is sweet, right?&#34; She helped herself to a piece. &#34;Handsome uncle, if you like it, Emma can cut more for you later, okay?&#34;</p>
+                        
+                        <p>I glanced toward the door. &#34;Does your dad know you&#39;re here?&#34;</p>
+                        
+                        <p>&#34;Nope!&#34; she answered cheerfully. &#34;Daddy is fighting with Mommy and Auntie Astrid outside. He&#39;s making phone calls and being angry.&#34;</p>
+                        
+                        <p>She leaned closer. &#34;I sneaked back when he wasn&#39;t looking! I saw Auntie Astrid cutting fruit for the doctors, so I decided to make some for you too!&#34;</p>
+                        
+                        <p>&#34;Uncle Blake,&#34; she said suddenly, her expression serious. &#34;I&#39;m sorry I didn&#39;t like you before.&#34;</p>
+                        
+                        <p>I raised an eyebrow. &#34;Oh?&#34;</p>
+                        
+                        <p>&#34;When you saved me today,&#34; she continued earnestly, &#34;you were so brave!You&#39;re the coolest, handsomest man ever- even better than Daddy!&#34;</p>
+                        
+                        <p>&#34;Really?&#34; I couldn&#39;t help but smile.</p>
+                        
+                        <p>&#34;Really!&#34; She nodded hard. &#34;Daddy is scary when he&#39;s mad...&#34;</p>
+                        
+                        <p>Her voice dropped to a whisper. &#34;Emma was so scared when he yelled at Auntie Astrid.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1091,21 +1151,25 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Before I could respond, raised voices filtered through the door.</p>
-                    
-                    <p>&#34;Emma? Where are you?&#34; Adrian&#39;s voice, sharp with tension.</p>
-                    
-                    <p>&#34;Audrey, where has Emma gone now?&#34; His volume increased. &#34;Is this how you mother her? Letting her disappear twice in one day?&#34;</p>
-                    
-                    <p>I quickly put a finger to my lips, and Emma nodded, eyes wide.</p>
-                    
-                    <p>&#34;Adrian,&#34; came Audrey&#39;s voice, level but edged. &#34;This is Thompson mansion. Emma can&#39;t possibly disappear here. Find her properly before jumping to conclusions.&#34;</p>
-                    
-                    <p>&#34;Besides,&#34; she continued, &#34;you were holding her when she disappeared.She was with you the whole time. You took a phone call and she wandered of. How is that my fault?&#34;</p>
-                    
-                    <p>&#34;Of course it&#39;s your fault!&#34; Adrian snapped back.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Before I could respond, raised voices filtered through the door.</p>
+                        
+                        <p>&#34;Emma? Where are you?&#34; Adrian&#39;s voice, sharp with tension.</p>
+                        
+                        <p>&#34;Audrey, where has Emma gone now?&#34; His volume increased. &#34;Is this how you mother her? Letting her disappear twice in one day?&#34;</p>
+                        
+                        <p>I quickly put a finger to my lips, and Emma nodded, eyes wide.</p>
+                        
+                        <p>&#34;Adrian,&#34; came Audrey&#39;s voice, level but edged. &#34;This is Thompson mansion. Emma can&#39;t possibly disappear here. Find her properly before jumping to conclusions.&#34;</p>
+                        
+                        <p>&#34;Besides,&#34; she continued, &#34;you were holding her when she disappeared.She was with you the whole time. You took a phone call and she wandered of. How is that my fault?&#34;</p>
+                        
+                        <p>&#34;Of course it&#39;s your fault!&#34; Adrian snapped back.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2421,6 +2485,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2547,7 +2691,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2589,32 +2732,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2625,21 +2750,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2672,6 +2787,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2692,20 +2813,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

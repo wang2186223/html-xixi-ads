@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:25.531807">
-    <meta property="article:modified_time" content="2026-07-19T02:47:25.531807">
+    <meta property="article:published_time" content="2026-07-19T13:03:20.435206">
+    <meta property="article:modified_time" content="2026-07-19T13:03:20.435206">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:25">
+    <meta name="last-modified" content="2026-07-19 13:03:20">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:25.531807",
-        "dateModified": "2026-07-19T02:47:25.531807",
+        "datePublished": "2026-07-19T13:03:20.435206",
+        "dateModified": "2026-07-19T13:03:20.435206",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,15 +893,19 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Chapter1913</p>
-                    
-                    <p>Her voice rose sharply as she hurled the words at him.</p>
-                    
-                    <p>“No, Belinda, you’ve got it wrong! That’s not what we meant,” Lyle replied in haste. “The reason we’re bringing it up now is that we’ve discovered the truth—we realized we had falsely accused you back then. Just yesterday, Mitchell and I found Gretchen. After questioning her, we finally learned what had really happened to Tunny. We know now that you were innocent, that you had nothing to do with Tunny’s death. It was Kylee who killed it!”</p>
-                    
-                    <p>“What did you just say?” Belinda’s eyes widened, her whole body jolting in shock.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Chapter1913</p>
+                        
+                        <p>Her voice rose sharply as she hurled the words at him.</p>
+                        
+                        <p>“No, Belinda, you’ve got it wrong! That’s not what we meant,” Lyle replied in haste. “The reason we’re bringing it up now is that we’ve discovered the truth—we realized we had falsely accused you back then. Just yesterday, Mitchell and I found Gretchen. After questioning her, we finally learned what had really happened to Tunny. We know now that you were innocent, that you had nothing to do with Tunny’s death. It was Kylee who killed it!”</p>
+                        
+                        <p>“What did you just say?” Belinda’s eyes widened, her whole body jolting in shock.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -880,15 +920,19 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Lyle’s expression grew grave as he confirmed, “Yes. Tunny was killed by Kylee. Gretchen told us herself.”</p>
-                    
-                    <p>Belinda’s lips parted, but no sound came out. She was frozen for a long moment. The revelation struck her like a bolt of lightning.</p>
-                    
-                    <p>She had once thought Tunny’s death might have been an accident, and that Kylee and Gretchen had simply pinned it on her.</p>
-                    
-                    <p>But she had never imagined that Kylee had actually been the one who had killed it. That was her cat, after all.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Lyle’s expression grew grave as he confirmed, “Yes. Tunny was killed by Kylee. Gretchen told us herself.”</p>
+                        
+                        <p>Belinda’s lips parted, but no sound came out. She was frozen for a long moment. The revelation struck her like a bolt of lightning.</p>
+                        
+                        <p>She had once thought Tunny’s death might have been an accident, and that Kylee and Gretchen had simply pinned it on her.</p>
+                        
+                        <p>But she had never imagined that Kylee had actually been the one who had killed it. That was her cat, after all.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -903,15 +947,19 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Even if it was only a pet, Tunny had been by her side for more than half a year. To think that Kylee would kill it just to frame her—she couldn’t fathom such cruelty.</p>
-                    
-                    <p>Her mind spun back to that summer break when Kylee had come to her, insisting she join her for a visit to the Happer family estate in Soling. She’d said she wanted to stay there for a month and asked her to come along.</p>
-                    
-                    <p>At first, Belinda had refused, believing it inappropriate for her to visit the Happer family, given her status.</p>
-                    
-                    <p>But Kylee had pressed her relentlessly, growing sulky and angry until, in the end, Belinda reluctantly agreed.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Even if it was only a pet, Tunny had been by her side for more than half a year. To think that Kylee would kill it just to frame her—she couldn’t fathom such cruelty.</p>
+                        
+                        <p>Her mind spun back to that summer break when Kylee had come to her, insisting she join her for a visit to the Happer family estate in Soling. She’d said she wanted to stay there for a month and asked her to come along.</p>
+                        
+                        <p>At first, Belinda had refused, believing it inappropriate for her to visit the Happer family, given her status.</p>
+                        
+                        <p>But Kylee had pressed her relentlessly, growing sulky and angry until, in the end, Belinda reluctantly agreed.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -926,15 +974,19 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>At that time, she had already been married to Lucas. She had informed Lucas and Harold before accompanying Kylee to Soling.</p>
-                    
-                    <p>At first, she had felt uneasy, out of place in the Happer household. But after a few days, she discovered the Happer family members were all kind.</p>
-                    
-                    <p>They neither looked down on her nor treated her harshly because of her identity.</p>
-                    
-                    <p>Explore more stories gα?ησνls?c?m</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>At that time, she had already been married to Lucas. She had informed Lucas and Harold before accompanying Kylee to Soling.</p>
+                        
+                        <p>At first, she had felt uneasy, out of place in the Happer household. But after a few days, she discovered the Happer family members were all kind.</p>
+                        
+                        <p>They neither looked down on her nor treated her harshly because of her identity.</p>
+                        
+                        <p>Explore more stories gα?ησνls?c?m</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -949,15 +1001,19 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>She even found herself more at ease with the Happer family than with the Wrights.</p>
-                    
-                    <p>She had grown fond of them, and in her heart, she secretly envied Kylee for being born into such a family.</p>
-                    
-                    <p>In the beginning, both Lyle and Mitchell had treated her with indifference, as though she didn’t exist.</p>
-                    
-                    <p>But as the days passed—after nearly twenty—their attitude toward her slowly began to shift for the better.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>She even found herself more at ease with the Happer family than with the Wrights.</p>
+                        
+                        <p>She had grown fond of them, and in her heart, she secretly envied Kylee for being born into such a family.</p>
+                        
+                        <p>In the beginning, both Lyle and Mitchell had treated her with indifference, as though she didn’t exist.</p>
+                        
+                        <p>But as the days passed—after nearly twenty—their attitude toward her slowly began to shift for the better.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -972,15 +1028,19 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Everything seemed to be going well… until the tragedy of Tunny’s death shattered it all.</p>
-                    
-                    <p>Back then, in the community where the Happers lived, Belinda had come across a frail little stray kitten, no more than three months old.</p>
-                    
-                    <p>Moved by pity, she had asked Kylee to adopt the creature, so that Tunny might have a companion from then on.</p>
-                    
-                    <p>But Kylee had flatly refused Belinda’s request, not even bothering to hide the disdain in her eyes for the poor stray cat. Because of that, Belinda never mentioned it again. Instead, she quietly slipped outside the mansion every day to feed the little creature. She had even planned to take the tiny cat back with her to Owathe.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Everything seemed to be going well… until the tragedy of Tunny’s death shattered it all.</p>
+                        
+                        <p>Back then, in the community where the Happers lived, Belinda had come across a frail little stray kitten, no more than three months old.</p>
+                        
+                        <p>Moved by pity, she had asked Kylee to adopt the creature, so that Tunny might have a companion from then on.</p>
+                        
+                        <p>But Kylee had flatly refused Belinda’s request, not even bothering to hide the disdain in her eyes for the poor stray cat. Because of that, Belinda never mentioned it again. Instead, she quietly slipped outside the mansion every day to feed the little creature. She had even planned to take the tiny cat back with her to Owathe.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -995,15 +1055,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>After all, she wasn’t truly part of the Happer family, so she had no right to bring the kitten into their household just yet.</p>
-                    
-                    <p>.</p>
-                    
-                    <p>.</p>
-                    
-                    <p>.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>After all, she wasn’t truly part of the Happer family, so she had no right to bring the kitten into their household just yet.</p>
+                        
+                        <p>.</p>
+                        
+                        <p>.</p>
+                        
+                        <p>.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2319,6 +2383,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2445,7 +2589,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2487,32 +2630,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2523,21 +2648,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2570,6 +2685,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2590,20 +2711,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

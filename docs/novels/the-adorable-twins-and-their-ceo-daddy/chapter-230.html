@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:32.394613">
-    <meta property="article:modified_time" content="2026-07-19T02:47:32.394613">
+    <meta property="article:published_time" content="2026-07-19T13:03:26.721409">
+    <meta property="article:modified_time" content="2026-07-19T13:03:26.721409">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:32">
+    <meta name="last-modified" content="2026-07-19 13:03:26">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:32.394613",
-        "dateModified": "2026-07-19T02:47:32.394613",
+        "datePublished": "2026-07-19T13:03:26.721409",
+        "dateModified": "2026-07-19T13:03:26.721409",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,21 +893,25 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>“Eliana, Eliana…”</p>
-                    
-                    <p>Drowning, Eliana heard someone frantically calling out to her. She struggled to open her eyes. But her eyelids weighed such heaviness that she couldn’t part them open.</p>
-                    
-                    <p>Suddenly, a pair of large hands pressed against her chest and squeezed hard. Something which felt cold and soft stuck to her lips, forcing air into her mouth.</p>
-                    
-                    <p>“Ahem, ahem, ahem…”</p>
-                    
-                    <p>Eliana finally spurted out the water stuck in her lungs. She had a violent fit of cough, as though she was going to cough her lungs out. Her nasal passage burned in pains.</p>
-                    
-                    <p>After coughing for nearly a minute, Eliana finally stopped.</p>
-                    
-                    <p>“Eliana, are you alright?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>“Eliana, Eliana…”</p>
+                        
+                        <p>Drowning, Eliana heard someone frantically calling out to her. She struggled to open her eyes. But her eyelids weighed such heaviness that she couldn’t part them open.</p>
+                        
+                        <p>Suddenly, a pair of large hands pressed against her chest and squeezed hard. Something which felt cold and soft stuck to her lips, forcing air into her mouth.</p>
+                        
+                        <p>“Ahem, ahem, ahem…”</p>
+                        
+                        <p>Eliana finally spurted out the water stuck in her lungs. She had a violent fit of cough, as though she was going to cough her lungs out. Her nasal passage burned in pains.</p>
+                        
+                        <p>After coughing for nearly a minute, Eliana finally stopped.</p>
+                        
+                        <p>“Eliana, are you alright?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -886,21 +926,25 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>A pair of large hands helped her sit up and gently patted her back.</p>
-                    
-                    <p>In a struggle, Eliana’s eyes fluttered open and before her was a face as handsome as a god.</p>
-                    
-                    <p>“M… Maurice.”</p>
-                    
-                    <p>It was Maurice who had saved her</p>
-                    
-                    <p>With difficulty, Eliana called out his name, her nose feeling sore. One more look at him, she suddenly felt all kinds feelings surged up in her heart.</p>
-                    
-                    <p>She could have sworn that she wouldn’t survive this time.</p>
-                    
-                    <p>The moment she saw Maurice, she realized that she survived. The urge to cry came heavy on her, like a bullied child who could no longer bear the grievance upon seeing their parents.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>A pair of large hands helped her sit up and gently patted her back.</p>
+                        
+                        <p>In a struggle, Eliana’s eyes fluttered open and before her was a face as handsome as a god.</p>
+                        
+                        <p>“M… Maurice.”</p>
+                        
+                        <p>It was Maurice who had saved her</p>
+                        
+                        <p>With difficulty, Eliana called out his name, her nose feeling sore. One more look at him, she suddenly felt all kinds feelings surged up in her heart.</p>
+                        
+                        <p>She could have sworn that she wouldn’t survive this time.</p>
+                        
+                        <p>The moment she saw Maurice, she realized that she survived. The urge to cry came heavy on her, like a bullied child who could no longer bear the grievance upon seeing their parents.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -915,21 +959,25 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>“Say nothing. I’ll take you away.”</p>
-                    
-                    <p>Maurice’s gaze was gentle and firm as he reached out and wrapped his arms around Eliana’s waist and legs. He lifted her up and turned away as the crowd stared in amazement.</p>
-                    
-                    <p>It was only after a long time that the crowd came out of their reverie.</p>
-                    
-                    <p>“Phew! That was scary. Thankfully, nothing happened,” Inger said in relief.</p>
-                    
-                    <p>The scene was in chaos after Eliana drowned. However, just when she thought something bad was going to happen, the CEO of the Moran Group suddenly rushed over and dived into the water without hesitation to save Eliana.</p>
-                    
-                    <p>Maurice’s defiance to personally go into the water to save her, regardless of his own safety, made Inger guess that the relationship between him and Eliana might be… perhaps, not just an ordinary one.</p>
-                    
-                    <p>Inger suddenly regretted the harsh words he had just hurled at Eliana. If Eliana held any grudge against them and reported to Mr. Moran, Eli would suffer for it.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“Say nothing. I’ll take you away.”</p>
+                        
+                        <p>Maurice’s gaze was gentle and firm as he reached out and wrapped his arms around Eliana’s waist and legs. He lifted her up and turned away as the crowd stared in amazement.</p>
+                        
+                        <p>It was only after a long time that the crowd came out of their reverie.</p>
+                        
+                        <p>“Phew! That was scary. Thankfully, nothing happened,” Inger said in relief.</p>
+                        
+                        <p>The scene was in chaos after Eliana drowned. However, just when she thought something bad was going to happen, the CEO of the Moran Group suddenly rushed over and dived into the water without hesitation to save Eliana.</p>
+                        
+                        <p>Maurice’s defiance to personally go into the water to save her, regardless of his own safety, made Inger guess that the relationship between him and Eliana might be… perhaps, not just an ordinary one.</p>
+                        
+                        <p>Inger suddenly regretted the harsh words he had just hurled at Eliana. If Eliana held any grudge against them and reported to Mr. Moran, Eli would suffer for it.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -944,21 +992,25 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>With this in mind, Inger subconsciously turned to look at Eli.</p>
-                    
-                    <p>Since Maurice took Eliana away, Eli had been standing quietly by the pool, staring at nothing in particular.</p>
-                    
-                    <p>He squatted down to pick up the diamonds that Eliana had worked so hard to find, and without realizing it, glanced at the few sketches on the floor.</p>
-                    
-                    <p>It must have fallen off during the chaos.</p>
-                    
-                    <p>Eli picked up each of the sketches. On the drafts were men’s clothes of different styles, together with the matching jewelry.</p>
-                    
-                    <p>The lines were simple, but it was quite clear that the drawer had taken her time.</p>
-                    
-                    <p>Did Eliana draw all these?</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>With this in mind, Inger subconsciously turned to look at Eli.</p>
+                        
+                        <p>Since Maurice took Eliana away, Eli had been standing quietly by the pool, staring at nothing in particular.</p>
+                        
+                        <p>He squatted down to pick up the diamonds that Eliana had worked so hard to find, and without realizing it, glanced at the few sketches on the floor.</p>
+                        
+                        <p>It must have fallen off during the chaos.</p>
+                        
+                        <p>Eli picked up each of the sketches. On the drafts were men’s clothes of different styles, together with the matching jewelry.</p>
+                        
+                        <p>The lines were simple, but it was quite clear that the drawer had taken her time.</p>
+                        
+                        <p>Did Eliana draw all these?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -973,21 +1025,25 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Eli’s heart sank as he looked at the sketches. He had been making things hard for Eliana the whole day, yet she still helped him with styling intently.</p>
-                    
-                    <p>If she was really a stalking fan, was it necessary for her to do these? Eli was suddenly a bit unsure.</p>
-                    
-                    <p>Quietly, he put away the sketches that were soaked with water. His heart was clouded with mixed feelings.</p>
-                    
-                    <p>Maybe he was wrong from the start.</p>
-                    
-                    <p>“Achoo!”</p>
-                    
-                    <p>Wrapped in a bath towel, Eliana shivered seriously, her teeth chattering against each other. She kept on sneezing.</p>
-                    
-                    <p>After Maurice carried her, he took her to his office.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Eli’s heart sank as he looked at the sketches. He had been making things hard for Eliana the whole day, yet she still helped him with styling intently.</p>
+                        
+                        <p>If she was really a stalking fan, was it necessary for her to do these? Eli was suddenly a bit unsure.</p>
+                        
+                        <p>Quietly, he put away the sketches that were soaked with water. His heart was clouded with mixed feelings.</p>
+                        
+                        <p>Maybe he was wrong from the start.</p>
+                        
+                        <p>“Achoo!”</p>
+                        
+                        <p>Wrapped in a bath towel, Eliana shivered seriously, her teeth chattering against each other. She kept on sneezing.</p>
+                        
+                        <p>After Maurice carried her, he took her to his office.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1002,21 +1058,25 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>“Hurry up, get out of your wet clothes and go take a shower,” Maurice urged as he took a set of women’s clothes out of nowhere and placed them on the sofa.</p>
-                    
-                    <p>Eliana wrapped herself tightly with the bath towel. “No, thanks. I just want to go home now.”</p>
-                    
-                    <p>How could she go home in this state?</p>
-                    
-                    <p>Maurice frowned, looked at the disheveled Eliana and threatened, “If you don’t want to take a shower yourself, I’ll do it for you.”</p>
-                    
-                    <p>He reached out his hands, feigning a move to take off the bath towel.</p>
-                    
-                    <p>“I’ll go. I’ll go, okay?” Eliana surrendered.</p>
-                    
-                    <p>Eliana rushed into the bathroom, her face flushing red.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>“Hurry up, get out of your wet clothes and go take a shower,” Maurice urged as he took a set of women’s clothes out of nowhere and placed them on the sofa.</p>
+                        
+                        <p>Eliana wrapped herself tightly with the bath towel. “No, thanks. I just want to go home now.”</p>
+                        
+                        <p>How could she go home in this state?</p>
+                        
+                        <p>Maurice frowned, looked at the disheveled Eliana and threatened, “If you don’t want to take a shower yourself, I’ll do it for you.”</p>
+                        
+                        <p>He reached out his hands, feigning a move to take off the bath towel.</p>
+                        
+                        <p>“I’ll go. I’ll go, okay?” Eliana surrendered.</p>
+                        
+                        <p>Eliana rushed into the bathroom, her face flushing red.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1031,21 +1091,25 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>The warm water flowed from the nozzle, caressing off the coldness and tiredness all over her body. She couldn’t help but let out a small moan.</p>
-                    
-                    <p>Eliana felt relieved after taking the shower, but when she was about to get dressed, she was dumbfounded. Her mouth slightly parted in confusion.</p>
-                    
-                    <p>She was such a fool to have forgotten to bring the clean clothes into the bathroom.</p>
-                    
-                    <p>And she wasn’t with her phone.</p>
-                    
-                    <p>Now there was only Maurice outside. Eliana only had one option if she didn’t want to go out naked…</p>
-                    
-                    <p>Ask Maurice to give her the clothes.</p>
-                    
-                    <p>‘God, help me!’</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>The warm water flowed from the nozzle, caressing off the coldness and tiredness all over her body. She couldn’t help but let out a small moan.</p>
+                        
+                        <p>Eliana felt relieved after taking the shower, but when she was about to get dressed, she was dumbfounded. Her mouth slightly parted in confusion.</p>
+                        
+                        <p>She was such a fool to have forgotten to bring the clean clothes into the bathroom.</p>
+                        
+                        <p>And she wasn’t with her phone.</p>
+                        
+                        <p>Now there was only Maurice outside. Eliana only had one option if she didn’t want to go out naked…</p>
+                        
+                        <p>Ask Maurice to give her the clothes.</p>
+                        
+                        <p>‘God, help me!’</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2361,6 +2425,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2487,7 +2631,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2529,32 +2672,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2565,21 +2690,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2612,6 +2727,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2632,20 +2753,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

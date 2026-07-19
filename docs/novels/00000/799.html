@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Vivian followed the guard&#39;s gesture and froze. There stood Adrian, his usual impeccable appearance slightly disheveled. Her stomach twisted. Only one person could have summoned him here so quickly - Serena.</p>
-                    
-                    <p>The timing was too perfect. She&#39;d just rejected Serena&#39;s fake olive branch, and now Adrian came charging in like some white knight. This was clearly another setup.</p>
-                    
-                    <p>Forcing a neutral expression, Vivian strode toward the entrance. At an event like this, invitations were practically disposable - she&#39;d heard Bianca mentioning extras earlier. No doubt Adrian had given his to Serena.</p>
-                    
-                    <p>Was this Serena&#39;s new tactic? Weaponizing Adrian against her? Vivian nearly rolled her eyes at the predictability.</p>
-                    
-                    <p>&#34;You&#39;re looking for your darling Serena?&#34; Vivian&#39;s voice dripped ice as she stopped before Adrian. &#34;She&#39;s probably waiting with open arms somewhere.&#34;</p>
-                    
-                    <p>Adrian&#39;s jaw clenched at her frigid tone, so different from the warmth she&#39;d shown those strangers. The contrast stung more than he&#39;d admit.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Vivian followed the guard&#39;s gesture and froze. There stood Adrian, his usual impeccable appearance slightly disheveled. Her stomach twisted. Only one person could have summoned him here so quickly - Serena.</p>
+                        
+                        <p>The timing was too perfect. She&#39;d just rejected Serena&#39;s fake olive branch, and now Adrian came charging in like some white knight. This was clearly another setup.</p>
+                        
+                        <p>Forcing a neutral expression, Vivian strode toward the entrance. At an event like this, invitations were practically disposable - she&#39;d heard Bianca mentioning extras earlier. No doubt Adrian had given his to Serena.</p>
+                        
+                        <p>Was this Serena&#39;s new tactic? Weaponizing Adrian against her? Vivian nearly rolled her eyes at the predictability.</p>
+                        
+                        <p>&#34;You&#39;re looking for your darling Serena?&#34; Vivian&#39;s voice dripped ice as she stopped before Adrian. &#34;She&#39;s probably waiting with open arms somewhere.&#34;</p>
+                        
+                        <p>Adrian&#39;s jaw clenched at her frigid tone, so different from the warmth she&#39;d shown those strangers. The contrast stung more than he&#39;d admit.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;What ridiculous accusation is that?&#34; he growled, irritation flashing in his stormy eyes. &#34;Why must you always drag Serena into everything? I used to think you misunderstood her, but now I see the truth - you&#39;re deliberately targeting her!&#34;</p>
-                    
-                    <p>Vivian arched one perfectly sculpted eyebrow with the indifference of a queen dismissing an insignificant subject. &#34;Yes, darling, I&#39;m the villainess of this little drama. Are we done here? Or do you need to deliver another monologue about my shortcomings? If not, consider your message received.&#34;</p>
-                    
-                    <p>She pivoted on her stiletto heels, but Adrian&#39;s broad frame materialized before her like an immovable fortress. &#34;You&#39;re not stepping inside without me.&#34;</p>
-                    
-                    <p>Crossing her arms, Vivian met his stormy gaze without flinching. &#34;Not tonight, Blackwood. Find your own way in.&#34;</p>
-                    
-                    <p>A harsh laugh escaped Adrian&#39;s lips, his jaw tightening visibly. &#34;You&#39;re holding my damn invitation. What&#39;s your game now?&#34;</p>
-                    
-                    <p>Vivian&#39;s crimson lips pursed. She&#39;d arrived with Damien. When exactly had Adrian entrusted her with anything?</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;What ridiculous accusation is that?&#34; he growled, irritation flashing in his stormy eyes. &#34;Why must you always drag Serena into everything? I used to think you misunderstood her, but now I see the truth - you&#39;re deliberately targeting her!&#34;</p>
+                        
+                        <p>Vivian arched one perfectly sculpted eyebrow with the indifference of a queen dismissing an insignificant subject. &#34;Yes, darling, I&#39;m the villainess of this little drama. Are we done here? Or do you need to deliver another monologue about my shortcomings? If not, consider your message received.&#34;</p>
+                        
+                        <p>She pivoted on her stiletto heels, but Adrian&#39;s broad frame materialized before her like an immovable fortress. &#34;You&#39;re not stepping inside without me.&#34;</p>
+                        
+                        <p>Crossing her arms, Vivian met his stormy gaze without flinching. &#34;Not tonight, Blackwood. Find your own way in.&#34;</p>
+                        
+                        <p>A harsh laugh escaped Adrian&#39;s lips, his jaw tightening visibly. &#34;You&#39;re holding my damn invitation. What&#39;s your game now?&#34;</p>
+                        
+                        <p>Vivian&#39;s crimson lips pursed. She&#39;d arrived with Damien. When exactly had Adrian entrusted her with anything?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>The escalating tension drew Damien&#39;s attention. He approached with measured steps, nodding at Adrian before turning to Vivian. &#34;Trouble?&#34;</p>
-                    
-                    <p>The flustered waiter saw salvation in Damien&#39;s arrival. Before Vivian could respond, he blurted, &#34;Mr. Vaughn, this gentleman claims Miss Hartley has his invitation.&#34;</p>
-                    
-                    <p>Damien assessed the situation instantly. &#34;This is Mr. Kingsley&#39;s business associate and CEO of Blackwood Group,&#34; he explained smoothly. &#34;An invitation would never be an issue for him. Clearly a misunderstanding. You may return to your post - I&#39;ll escort Mr. Blackwood personally.&#34;</p>
-                    
-                    <p>The waiter practically fled in relief.</p>
-                    
-                    <p>Turning to Adrian, Damien added context. &#34;Vivian accompanied me as Mr. Kingsley invested in our new production. That tiny evening bag couldn&#39;t possibly hold an invitation. You&#39;ve made an incorrect assumption, Mr. Blackwood.&#34;</p>
-                    
-                    <p>Adrian&#39;s expression darkened as realization dawned. Yet that familiar irritation simmered beneath his polished exterior. Why would she arrive with this unassuming filmmaker when she could have commanded her own entrance? Was this another calculated provocation?</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>The escalating tension drew Damien&#39;s attention. He approached with measured steps, nodding at Adrian before turning to Vivian. &#34;Trouble?&#34;</p>
+                        
+                        <p>The flustered waiter saw salvation in Damien&#39;s arrival. Before Vivian could respond, he blurted, &#34;Mr. Vaughn, this gentleman claims Miss Hartley has his invitation.&#34;</p>
+                        
+                        <p>Damien assessed the situation instantly. &#34;This is Mr. Kingsley&#39;s business associate and CEO of Blackwood Group,&#34; he explained smoothly. &#34;An invitation would never be an issue for him. Clearly a misunderstanding. You may return to your post - I&#39;ll escort Mr. Blackwood personally.&#34;</p>
+                        
+                        <p>The waiter practically fled in relief.</p>
+                        
+                        <p>Turning to Adrian, Damien added context. &#34;Vivian accompanied me as Mr. Kingsley invested in our new production. That tiny evening bag couldn&#39;t possibly hold an invitation. You&#39;ve made an incorrect assumption, Mr. Blackwood.&#34;</p>
+                        
+                        <p>Adrian&#39;s expression darkened as realization dawned. Yet that familiar irritation simmered beneath his polished exterior. Why would she arrive with this unassuming filmmaker when she could have commanded her own entrance? Was this another calculated provocation?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>His original purpose - to speak with Margaret - now seemed trivial compared to this new development. Shrugging off his tailored jacket, he moved to drape it over Vivian&#39;s bare shoulders. &#34;What the hell are you wearing? We&#39;ll table our history for now, but you&#39;re coming with me.&#34;</p>
-                    
-                    <p>Vivian sidestepped gracefully, letting the jacket fall. &#34;My wardrobe choices ceased being your concern when I filed for divorce. Or did you forget the paperwork?&#34;</p>
-                    
-                    <p>&#34;We&#39;re still legally married.&#34; Adrian&#39;s voice dropped to a dangerous register.</p>
-                    
-                    <p>&#34;I&#39;ve moved out and submitted the documents.&#34; Vivian held her ground. &#34;If you continue being difficult, the court will handle it after the mandatory separation period.&#34;</p>
-                    
-                    <p>Reginald noticed the commotion and approached. &#34;Mr. Blackwood! Had I known you were attending...&#34;</p>
-                    
-                    <p>Sensing Vivian&#39;s discomfort, Damien smoothly intervened. &#34;Mr. Blackwood, several investors have been asking about our film&#39;s progress. I&#39;ll take Vivian to greet them. My apologies for the poor hospitality - allow me to make it up with dinner later.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>His original purpose - to speak with Margaret - now seemed trivial compared to this new development. Shrugging off his tailored jacket, he moved to drape it over Vivian&#39;s bare shoulders. &#34;What the hell are you wearing? We&#39;ll table our history for now, but you&#39;re coming with me.&#34;</p>
+                        
+                        <p>Vivian sidestepped gracefully, letting the jacket fall. &#34;My wardrobe choices ceased being your concern when I filed for divorce. Or did you forget the paperwork?&#34;</p>
+                        
+                        <p>&#34;We&#39;re still legally married.&#34; Adrian&#39;s voice dropped to a dangerous register.</p>
+                        
+                        <p>&#34;I&#39;ve moved out and submitted the documents.&#34; Vivian held her ground. &#34;If you continue being difficult, the court will handle it after the mandatory separation period.&#34;</p>
+                        
+                        <p>Reginald noticed the commotion and approached. &#34;Mr. Blackwood! Had I known you were attending...&#34;</p>
+                        
+                        <p>Sensing Vivian&#39;s discomfort, Damien smoothly intervened. &#34;Mr. Blackwood, several investors have been asking about our film&#39;s progress. I&#39;ll take Vivian to greet them. My apologies for the poor hospitality - allow me to make it up with dinner later.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Vivian shot Damien a grateful smile and followed his lead.</p>
-                    
-                    <p>Ever the observant spectator, Reginald chuckled as he watched them go. &#34;The beauty Mr. Vaughn brought is quite extraordinary. At first glance, one might assume she&#39;s his latest muse. Though both insist otherwise.&#34;</p>
-                    
-                    <p>Adrian&#39;s reply was frosty and abrupt. &#34;They&#39;re not compatible.&#34;</p>
-                    
-                    <p>Reginald arched an eyebrow, mistaking the comment as criticism toward Vivian. &#34;Well, everyone has their preferences. You&#39;ve always valued character over superficial charm, Mr. Blackwood.&#34;</p>
-                    
-                    <p>Adrian, irritated and weary, merely gave a dismissive grunt.</p>
-                    
-                    <p>Margaret&#39;s approach caught Reginald&#39;s attention. &#34;Mr. Blackwood, you&#39;re here to meet your mother?&#34; He greeted her with practiced warmth. &#34;Mrs. Blackwood, you should have notified me of your arrival. With today&#39;s crowd, I apologize for not receiving you properly.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Vivian shot Damien a grateful smile and followed his lead.</p>
+                        
+                        <p>Ever the observant spectator, Reginald chuckled as he watched them go. &#34;The beauty Mr. Vaughn brought is quite extraordinary. At first glance, one might assume she&#39;s his latest muse. Though both insist otherwise.&#34;</p>
+                        
+                        <p>Adrian&#39;s reply was frosty and abrupt. &#34;They&#39;re not compatible.&#34;</p>
+                        
+                        <p>Reginald arched an eyebrow, mistaking the comment as criticism toward Vivian. &#34;Well, everyone has their preferences. You&#39;ve always valued character over superficial charm, Mr. Blackwood.&#34;</p>
+                        
+                        <p>Adrian, irritated and weary, merely gave a dismissive grunt.</p>
+                        
+                        <p>Margaret&#39;s approach caught Reginald&#39;s attention. &#34;Mr. Blackwood, you&#39;re here to meet your mother?&#34; He greeted her with practiced warmth. &#34;Mrs. Blackwood, you should have notified me of your arrival. With today&#39;s crowd, I apologize for not receiving you properly.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>After exchanging formalities, Reginald tactfully withdrew, sensing the palpable tension surrounding the Blackwood family.</p>
-                    
-                    <p>Margaret didn&#39;t mince words, her tone razor-sharp. &#34;Where&#39;s Vivian?&#34;</p>
-                    
-                    <p>Bianca, ever the eager tattletale, scanned the venue and pointed. &#34;Aunt Margaret, over there - chatting with that Vaughn man again!&#34;</p>
-                    
-                    <p>Margaret&#39;s expression soured instantly. Her voice cut through the air like a whip. &#34;Why aren&#39;t you controlling your wife better? What kind of impression does it give when she&#39;s cozying up to another man at such an important function?&#34;</p>
-                    
-                    <p>Bianca, never one to miss an opportunity to stir trouble, added with feigned concern, &#34;Exactly, Aunt Margaret! Think of the gossip this could spark. The Blackwood name doesn&#39;t need this kind of scandal.&#34;</p>
-                    
-                    <p>Adrian massaged his temples, feeling the onset of a migraine. His patience wearing thin, he retorted sharply, &#34;Damien and Vivian are discussing business. This is a professional event - networking is expected. There&#39;s nothing improper about working at a party.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>After exchanging formalities, Reginald tactfully withdrew, sensing the palpable tension surrounding the Blackwood family.</p>
+                        
+                        <p>Margaret didn&#39;t mince words, her tone razor-sharp. &#34;Where&#39;s Vivian?&#34;</p>
+                        
+                        <p>Bianca, ever the eager tattletale, scanned the venue and pointed. &#34;Aunt Margaret, over there - chatting with that Vaughn man again!&#34;</p>
+                        
+                        <p>Margaret&#39;s expression soured instantly. Her voice cut through the air like a whip. &#34;Why aren&#39;t you controlling your wife better? What kind of impression does it give when she&#39;s cozying up to another man at such an important function?&#34;</p>
+                        
+                        <p>Bianca, never one to miss an opportunity to stir trouble, added with feigned concern, &#34;Exactly, Aunt Margaret! Think of the gossip this could spark. The Blackwood name doesn&#39;t need this kind of scandal.&#34;</p>
+                        
+                        <p>Adrian massaged his temples, feeling the onset of a migraine. His patience wearing thin, he retorted sharply, &#34;Damien and Vivian are discussing business. This is a professional event - networking is expected. There&#39;s nothing improper about working at a party.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Margaret&#39;s frown deepened, her displeasure turning to open contempt. &#34;So that&#39;s your stance? You&#39;d rather play peacemaker than hold her accountable? Fine, if you won&#39;t handle it, I will.&#34; She turned decisively to Bianca. &#34;Fetch Vivian immediately.&#34;</p>
-                    
-                    <p>Bianca&#39;s eyes gleamed with malicious delight. Like a soldier given orders, she marched toward Vivian and seized her wrist. &#34;Aunt Margaret demands you come with us now.&#34;</p>
-                    
-                    <p>Vivian, aware of the curious glances directed their way, allowed herself to be led to a secluded corner before shaking off Bianca&#39;s grip with quiet dignity. &#34;Bianca, let&#39;s be clear - I&#39;m your cousin&#39;s wife, a Blackwood by marriage, not some errand girl for the Thorntons. Remember your place.&#34;</p>
-                    
-                    <p>Bianca smirked, barely containing her smugness. &#34;Oh please, spare me the lecture. I&#39;m just delivering a message. Aunt Margaret thinks you should stop making a spectacle of yourself, flirting with every man in sight. The Blackwoods don&#39;t need a daughter-in-law with questionable morals.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Margaret&#39;s frown deepened, her displeasure turning to open contempt. &#34;So that&#39;s your stance? You&#39;d rather play peacemaker than hold her accountable? Fine, if you won&#39;t handle it, I will.&#34; She turned decisively to Bianca. &#34;Fetch Vivian immediately.&#34;</p>
+                        
+                        <p>Bianca&#39;s eyes gleamed with malicious delight. Like a soldier given orders, she marched toward Vivian and seized her wrist. &#34;Aunt Margaret demands you come with us now.&#34;</p>
+                        
+                        <p>Vivian, aware of the curious glances directed their way, allowed herself to be led to a secluded corner before shaking off Bianca&#39;s grip with quiet dignity. &#34;Bianca, let&#39;s be clear - I&#39;m your cousin&#39;s wife, a Blackwood by marriage, not some errand girl for the Thorntons. Remember your place.&#34;</p>
+                        
+                        <p>Bianca smirked, barely containing her smugness. &#34;Oh please, spare me the lecture. I&#39;m just delivering a message. Aunt Margaret thinks you should stop making a spectacle of yourself, flirting with every man in sight. The Blackwoods don&#39;t need a daughter-in-law with questionable morals.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

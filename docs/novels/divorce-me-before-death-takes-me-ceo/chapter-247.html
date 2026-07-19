@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.064105">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.064105">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.259295">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.259295">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.064105",
-        "dateModified": "2026-07-19T02:47:19.064105",
+        "datePublished": "2026-07-19T13:03:14.259295",
+        "dateModified": "2026-07-19T13:03:14.259295",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,33 +893,37 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>** Audrey&#39;s POV*</p>
-                    
-                    <p>Though I hadn&#39;t completely trusted Eleanor&#39;s words, I&#39;d been keeping my distance from Adrian this past month, but I never expected him to warn me about the Parkers.</p>
-                    
-                    <p>It seemed the relationship between Adrian and the Parker family was more complicated than I&#39;d thought.</p>
-                    
-                    <p>I didn&#39;t care about their conflicts. What mattered was my sister&#39;s death.That sister I never met but who cared about me so much - was her death really an accident? If someone deliberately caused it, one of these people with their contradictory stories must be involved.</p>
-                    
-                    <p>I&#39;d taken on Evelyn&#39;s identity and responsibilities. The least I could do was uncover the truth about her death.</p>
-                    
-                    <p>Adrian noticed my silence and frowned. &#34;The Parkers got to you already.didn&#39;t they? No wonder you&#39;ve been avoiding me all month.&#34;</p>
-                    
-                    <p>&#34;I thought you were one big happy family when I first woke up,&#34; I said.</p>
-                    
-                    <p>&#34;If we were, Evelyn wouldn&#39;t be dead,&#34; Adrian said flatly.</p>
-                    
-                    <p>&#34;About my sister&#39;s death -&#34;</p>
-                    
-                    <p>&#34;Let me guess,&#34; he cut in. &#34;They said I drove her to it? That I locked her up in a psychiatric facility and got her pregnant there? That I forced her to have Emma?&#34;</p>
-                    
-                    <p>&#34;Something like that,&#34; I replied, surprised at his accuracy.</p>
-                    
-                    <p>Adrian shrugged. &#34;Not thefirst time they&#39;ve spread that story. Lies don&#39;t become trut through repetition.&#34;</p>
-                    
-                    <p>&#34;You&#39;re focused on New York right now. When you return, I&#39;ll tell you everything about your sister.&#34; After a pause, he added, &#34;Including how the New York Parkers fit into it.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>** Audrey&#39;s POV*</p>
+                        
+                        <p>Though I hadn&#39;t completely trusted Eleanor&#39;s words, I&#39;d been keeping my distance from Adrian this past month, but I never expected him to warn me about the Parkers.</p>
+                        
+                        <p>It seemed the relationship between Adrian and the Parker family was more complicated than I&#39;d thought.</p>
+                        
+                        <p>I didn&#39;t care about their conflicts. What mattered was my sister&#39;s death.That sister I never met but who cared about me so much - was her death really an accident? If someone deliberately caused it, one of these people with their contradictory stories must be involved.</p>
+                        
+                        <p>I&#39;d taken on Evelyn&#39;s identity and responsibilities. The least I could do was uncover the truth about her death.</p>
+                        
+                        <p>Adrian noticed my silence and frowned. &#34;The Parkers got to you already.didn&#39;t they? No wonder you&#39;ve been avoiding me all month.&#34;</p>
+                        
+                        <p>&#34;I thought you were one big happy family when I first woke up,&#34; I said.</p>
+                        
+                        <p>&#34;If we were, Evelyn wouldn&#39;t be dead,&#34; Adrian said flatly.</p>
+                        
+                        <p>&#34;About my sister&#39;s death -&#34;</p>
+                        
+                        <p>&#34;Let me guess,&#34; he cut in. &#34;They said I drove her to it? That I locked her up in a psychiatric facility and got her pregnant there? That I forced her to have Emma?&#34;</p>
+                        
+                        <p>&#34;Something like that,&#34; I replied, surprised at his accuracy.</p>
+                        
+                        <p>Adrian shrugged. &#34;Not thefirst time they&#39;ve spread that story. Lies don&#39;t become trut through repetition.&#34;</p>
+                        
+                        <p>&#34;You&#39;re focused on New York right now. When you return, I&#39;ll tell you everything about your sister.&#34; After a pause, he added, &#34;Including how the New York Parkers fit into it.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -898,33 +938,37 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;The New York Parkers?&#34; I couldn&#39;t hide my confusion. &#34;What do they have to do with Evelyn?&#34;</p>
-                    
-                    <p>My sister had never been to New York as far as I knew. And during my three years with the New York Parkers, I&#39;d never heard of any connection to their Australian counterparts.</p>
-                    
-                    <p>&#34;More than you&#39;d think,&#34; Adrian replied. &#34;We&#39;ll talk when you get back.&#34;</p>
-                    
-                    <p>He left me standing there, my mind racing with questions.</p>
-                    
-                    <p>I tossed and turned all night, my thoughts a jumble of Adrian, the Parkers.William,and Blake.</p>
-                    
-                    <p>The next morning, eyes heavy from lack of sleep, I packed our bags and took Emma to the airport. Adrian couldn&#39;t join us - company business,he said.</p>
-                    
-                    <p>Eleanor met us at the departure gate, her fingers tight around mine.</p>
-                    
-                    <p>&#34;If you can&#39;t let go of Blake Parker, we won&#39;t stand in your way,&#34; she said,her voice dropping to a whisper. &#34;But remember - Adrian&#39;s business is deeply entangled with our family assets. Don&#39;t rush into anything. Don&#39;t provoke him.&#34;</p>
-                    
-                    <p>Her eyes held mine.&#39;′′W need time to investigate your sister&#39;s death. We can&#39;t tip him off.&#34;</p>
-                    
-                    <p>I stared at this woman I thought I knew, feeling like I was seeing her for the first time. I&#39;d thought of Eleanor as the perfect mother figure,but this family wasn&#39;t nearly as simple as they appeared.</p>
-                    
-                    <p>&#34;Evelyn,&#34; she prompted when I didn&#39;t respond.</p>
-                    
-                    <p>I forced a smile and hugged her briefly.&#34;T&#34;m just going to see William.Nothing more.&#34;</p>
-                    
-                    <p>As we walked toward security, I could feel her eyes tracking us, calculating.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;The New York Parkers?&#34; I couldn&#39;t hide my confusion. &#34;What do they have to do with Evelyn?&#34;</p>
+                        
+                        <p>My sister had never been to New York as far as I knew. And during my three years with the New York Parkers, I&#39;d never heard of any connection to their Australian counterparts.</p>
+                        
+                        <p>&#34;More than you&#39;d think,&#34; Adrian replied. &#34;We&#39;ll talk when you get back.&#34;</p>
+                        
+                        <p>He left me standing there, my mind racing with questions.</p>
+                        
+                        <p>I tossed and turned all night, my thoughts a jumble of Adrian, the Parkers.William,and Blake.</p>
+                        
+                        <p>The next morning, eyes heavy from lack of sleep, I packed our bags and took Emma to the airport. Adrian couldn&#39;t join us - company business,he said.</p>
+                        
+                        <p>Eleanor met us at the departure gate, her fingers tight around mine.</p>
+                        
+                        <p>&#34;If you can&#39;t let go of Blake Parker, we won&#39;t stand in your way,&#34; she said,her voice dropping to a whisper. &#34;But remember - Adrian&#39;s business is deeply entangled with our family assets. Don&#39;t rush into anything. Don&#39;t provoke him.&#34;</p>
+                        
+                        <p>Her eyes held mine.&#39;′′W need time to investigate your sister&#39;s death. We can&#39;t tip him off.&#34;</p>
+                        
+                        <p>I stared at this woman I thought I knew, feeling like I was seeing her for the first time. I&#39;d thought of Eleanor as the perfect mother figure,but this family wasn&#39;t nearly as simple as they appeared.</p>
+                        
+                        <p>&#34;Evelyn,&#34; she prompted when I didn&#39;t respond.</p>
+                        
+                        <p>I forced a smile and hugged her briefly.&#34;T&#34;m just going to see William.Nothing more.&#34;</p>
+                        
+                        <p>As we walked toward security, I could feel her eyes tracking us, calculating.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -939,33 +983,37 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;What did Grandma say?&#34; Emma asked, her small hand warm in mine.</p>
-                    
-                    <p>My mood lifted instantly. &#34;She said this is our first mother-daughter trip and I should take good care of you.&#34;</p>
-                    
-                    <p>&#34;Of course you willl&#34; Emma jumped excitedly, pulling me through security.</p>
-                    
-                    <p>Five hours later, we landed in New York.</p>
-                    
-                    <p>&#34;Over here!&#34; Astrid and Ethan waved from the arrival area, both holding enormous bunches of sunflowers.</p>
-                    
-                    <p>&#34;Emma, look! Sunflowers!&#34; I pointed.</p>
-                    
-                    <p>Emma broke free and ran toward them, but in her excitement, she collided with an electric wheelchair crossing her path.</p>
-                    
-                    <p>&#34;Ouch!&#34; She tumbled to the ground with a cry.</p>
-                    
-                    <p>&#34;Emmal&#34; I rushed over and scooped her up.1&#39;m so sorry about my daughter-&#34;</p>
-                    
-                    <p>T&#39;he words died in my throat as I recognized the eyes above the mask.</p>
-                    
-                    <p>Blake Parker.</p>
-                    
-                    <p>In a wheelchair.</p>
-                    
-                    <p>Before I could say anything, he pressed the control and sped away.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;What did Grandma say?&#34; Emma asked, her small hand warm in mine.</p>
+                        
+                        <p>My mood lifted instantly. &#34;She said this is our first mother-daughter trip and I should take good care of you.&#34;</p>
+                        
+                        <p>&#34;Of course you willl&#34; Emma jumped excitedly, pulling me through security.</p>
+                        
+                        <p>Five hours later, we landed in New York.</p>
+                        
+                        <p>&#34;Over here!&#34; Astrid and Ethan waved from the arrival area, both holding enormous bunches of sunflowers.</p>
+                        
+                        <p>&#34;Emma, look! Sunflowers!&#34; I pointed.</p>
+                        
+                        <p>Emma broke free and ran toward them, but in her excitement, she collided with an electric wheelchair crossing her path.</p>
+                        
+                        <p>&#34;Ouch!&#34; She tumbled to the ground with a cry.</p>
+                        
+                        <p>&#34;Emmal&#34; I rushed over and scooped her up.1&#39;m so sorry about my daughter-&#34;</p>
+                        
+                        <p>T&#39;he words died in my throat as I recognized the eyes above the mask.</p>
+                        
+                        <p>Blake Parker.</p>
+                        
+                        <p>In a wheelchair.</p>
+                        
+                        <p>Before I could say anything, he pressed the control and sped away.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -980,33 +1028,37 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Wait!&#34; I called after him. Emma still in my arms.</p>
-                    
-                    <p>**Blake&#39;s POV*k</p>
-                    
-                    <p>I increased my wheelchair&#39;s speed, ignoring the voice behind me.</p>
-                    
-                    <p>I&#39;d come to the airport just to catch a glimpse of her. After a month apart,</p>
-                    
-                    <p>I needed to see her face.</p>
-                    
-                    <p>I hadn&#39;t expected her to recognize me so easily despite the mask hiding most of my face.</p>
-                    
-                    <p>A bitter feeling settled in mny chest. Maybe I&#39;d underestimated how well she knew me. Maybe she could identify me with just a glance.</p>
-                    
-                    <p>If I&#39;d shown her even a fraction of that attentiveness during our marriage.would things have turned out differently?</p>
-                    
-                    <p>**Audrey&#39;s POV*</p>
-                    
-                    <p>&#34;Blake Parker, stop! What happened to your leg?&#34; I called as I chased the wheelchair.</p>
-                    
-                    <p>A month ago, he&#39;d stepped into an animal trap meant for me. Now he was in a wheelchair. The connection seemed obvious.</p>
-                    
-                    <p>&#34;Mommy, put me down!&#34; Emnma squirmed in my arms. &#34;I can find Auntie Astrid by myself!&#34;</p>
-                    
-                    <p>I hesitated, glancing toward the exit where Astrid stood.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Wait!&#34; I called after him. Emma still in my arms.</p>
+                        
+                        <p>**Blake&#39;s POV*k</p>
+                        
+                        <p>I increased my wheelchair&#39;s speed, ignoring the voice behind me.</p>
+                        
+                        <p>I&#39;d come to the airport just to catch a glimpse of her. After a month apart,</p>
+                        
+                        <p>I needed to see her face.</p>
+                        
+                        <p>I hadn&#39;t expected her to recognize me so easily despite the mask hiding most of my face.</p>
+                        
+                        <p>A bitter feeling settled in mny chest. Maybe I&#39;d underestimated how well she knew me. Maybe she could identify me with just a glance.</p>
+                        
+                        <p>If I&#39;d shown her even a fraction of that attentiveness during our marriage.would things have turned out differently?</p>
+                        
+                        <p>**Audrey&#39;s POV*</p>
+                        
+                        <p>&#34;Blake Parker, stop! What happened to your leg?&#34; I called as I chased the wheelchair.</p>
+                        
+                        <p>A month ago, he&#39;d stepped into an animal trap meant for me. Now he was in a wheelchair. The connection seemed obvious.</p>
+                        
+                        <p>&#34;Mommy, put me down!&#34; Emnma squirmed in my arms. &#34;I can find Auntie Astrid by myself!&#34;</p>
+                        
+                        <p>I hesitated, glancing toward the exit where Astrid stood.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1021,33 +1073,37 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;I won&#39;t get lost.&#34; Emma insisted. &#34;You need to catch up to him!&#34;</p>
-                    
-                    <p>I set her down gently. &#34;Go straight to them, okay?&#34;</p>
-                    
-                    <p>&#34;Don&#39;t worry!&#34; She nodded solemnly and took off toward Astrid.</p>
-                    
-                    <p>As I turned to pursue Blake, Ethan rushed past me and cut off the wheelchair&#39;s path.</p>
-                    
-                    <p>&#34;Hold up,&#34; he said, gripping the armrest firmly. &#34;Someone&#39;s trying to talk to you.&#34;</p>
-                    
-                    <p>&#34;Let go,&#34; Blake snapped, glaring up at him.</p>
-                    
-                    <p>I caught up, breathing hard. &#34;Blake! Why are you running? What happened to your leg?&#34;</p>
-                    
-                    <p>Ethan looked between us, surprised.&#34;Blake? Blake Parker?&#34;</p>
-                    
-                    <p>Blake just frowned, refusing to answer.</p>
-                    
-                    <p>&#34;Are you sure it&#39;s him?&#34; Ethan asked me, doubt creeping into his voice.&#34;Evelyn, I think you might be mistaken.&#34;</p>
-                    
-                    <p>&#34;It&#39;s definitely him,&#34; I stepped in front of the wheelchair, catching my breath. &#34;Blake. Take off the mask.&#34;</p>
-                    
-                    <p>He let out a sigh.</p>
-                    
-                    <p>&#34;Mrs. Knox,&#34; he finally said, &#34;Been a while.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;I won&#39;t get lost.&#34; Emma insisted. &#34;You need to catch up to him!&#34;</p>
+                        
+                        <p>I set her down gently. &#34;Go straight to them, okay?&#34;</p>
+                        
+                        <p>&#34;Don&#39;t worry!&#34; She nodded solemnly and took off toward Astrid.</p>
+                        
+                        <p>As I turned to pursue Blake, Ethan rushed past me and cut off the wheelchair&#39;s path.</p>
+                        
+                        <p>&#34;Hold up,&#34; he said, gripping the armrest firmly. &#34;Someone&#39;s trying to talk to you.&#34;</p>
+                        
+                        <p>&#34;Let go,&#34; Blake snapped, glaring up at him.</p>
+                        
+                        <p>I caught up, breathing hard. &#34;Blake! Why are you running? What happened to your leg?&#34;</p>
+                        
+                        <p>Ethan looked between us, surprised.&#34;Blake? Blake Parker?&#34;</p>
+                        
+                        <p>Blake just frowned, refusing to answer.</p>
+                        
+                        <p>&#34;Are you sure it&#39;s him?&#34; Ethan asked me, doubt creeping into his voice.&#34;Evelyn, I think you might be mistaken.&#34;</p>
+                        
+                        <p>&#34;It&#39;s definitely him,&#34; I stepped in front of the wheelchair, catching my breath. &#34;Blake. Take off the mask.&#34;</p>
+                        
+                        <p>He let out a sigh.</p>
+                        
+                        <p>&#34;Mrs. Knox,&#34; he finally said, &#34;Been a while.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1062,33 +1118,37 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Ethan&#39;s jaw dropped at the sound of his voice.</p>
-                    
-                    <p>&#34;What happened to your leg?&#34; I asked directly.</p>
-                    
-                    <p>I hated owing people favors, especially Blake Parker. But there&#39;s a difference between not wanting to be in someone&#39;s debt and pretending you don&#39;t know you are.</p>
-                    
-                    <p>He had stepped into that trap for me on Long Island. When we tried to visit himn after, he&#39;d refused to see us. Now he was in a wheelchair.I couldn&#39;t ignore the possible-connection.</p>
-                    
-                    <p>We locked eyes, neither of us backing down.</p>
-                    
-                    <p>&#34;Blake was in a car accident with me.&#34;</p>
-                    
-                    <p>Rachel appeared beside us, casually resting her hand on the wheelchair handle. &#34;I should&#39;ve been the one who got hurt, but he pushed me out of the way.&#34;</p>
-                    
-                    <p>She rolled up her sleeve, revealing a large patch of healing abrasions on her arm.&#34;See? I only got scraped up. Blake&#39;s leg took the worst of it.&#34;</p>
-                    
-                    <p>The wound was too extensive to be from some minor incident. I couldn&#39;t deny what I was seeing.</p>
-                    
-                    <p>&#34;He didn&#39;t want me in a wheelchair for the wedding,&#34; Rachel continued,&#34;Said a long wedding dress doesn&#39;t look right with wheels. He&#39;d rather be injured himself.&#34;</p>
-                    
-                    <p>She tilted her head. &#34;Any other questions, Mrs. Knox?&#34;</p>
-                    
-                    <p>My nails dug into my palms. &#34;No.&#34;</p>
-                    
-                    <p>I took a breath. &#34;I was worried his injury might be from when he helped me last month.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Ethan&#39;s jaw dropped at the sound of his voice.</p>
+                        
+                        <p>&#34;What happened to your leg?&#34; I asked directly.</p>
+                        
+                        <p>I hated owing people favors, especially Blake Parker. But there&#39;s a difference between not wanting to be in someone&#39;s debt and pretending you don&#39;t know you are.</p>
+                        
+                        <p>He had stepped into that trap for me on Long Island. When we tried to visit himn after, he&#39;d refused to see us. Now he was in a wheelchair.I couldn&#39;t ignore the possible-connection.</p>
+                        
+                        <p>We locked eyes, neither of us backing down.</p>
+                        
+                        <p>&#34;Blake was in a car accident with me.&#34;</p>
+                        
+                        <p>Rachel appeared beside us, casually resting her hand on the wheelchair handle. &#34;I should&#39;ve been the one who got hurt, but he pushed me out of the way.&#34;</p>
+                        
+                        <p>She rolled up her sleeve, revealing a large patch of healing abrasions on her arm.&#34;See? I only got scraped up. Blake&#39;s leg took the worst of it.&#34;</p>
+                        
+                        <p>The wound was too extensive to be from some minor incident. I couldn&#39;t deny what I was seeing.</p>
+                        
+                        <p>&#34;He didn&#39;t want me in a wheelchair for the wedding,&#34; Rachel continued,&#34;Said a long wedding dress doesn&#39;t look right with wheels. He&#39;d rather be injured himself.&#34;</p>
+                        
+                        <p>She tilted her head. &#34;Any other questions, Mrs. Knox?&#34;</p>
+                        
+                        <p>My nails dug into my palms. &#34;No.&#34;</p>
+                        
+                        <p>I took a breath. &#34;I was worried his injury might be from when he helped me last month.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1103,21 +1163,25 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Since it&#39;s not... I&#39;mn glad.&#34;</p>
-                    
-                    <p>I grabbed Ethan&#39;s arm and walked away.</p>
-                    
-                    <p>Stupid. I should&#39;ve known better.</p>
-                    
-                    <p>Blake had made it clear we were done. If his leg really had been damaged saving me, he would&#39;ve contacted Adrian for compensation immediately.Why wait a month?</p>
-                    
-                    <p>Instead, I&#39;d humiliated myself and been forced to hear about their perfect relationship in the process.</p>
-                    
-                    <p>&#34;Audrey,&#34; Ethan whispered,′′Isaw Blake standing in some business news last week. Don&#39;t worry about that.&#34;</p>
-                    
-                    <p>I just nodded and walked faster.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Since it&#39;s not... I&#39;mn glad.&#34;</p>
+                        
+                        <p>I grabbed Ethan&#39;s arm and walked away.</p>
+                        
+                        <p>Stupid. I should&#39;ve known better.</p>
+                        
+                        <p>Blake had made it clear we were done. If his leg really had been damaged saving me, he would&#39;ve contacted Adrian for compensation immediately.Why wait a month?</p>
+                        
+                        <p>Instead, I&#39;d humiliated myself and been forced to hear about their perfect relationship in the process.</p>
+                        
+                        <p>&#34;Audrey,&#34; Ethan whispered,′′Isaw Blake standing in some business news last week. Don&#39;t worry about that.&#34;</p>
+                        
+                        <p>I just nodded and walked faster.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2433,6 +2497,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2559,7 +2703,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2601,32 +2744,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2637,21 +2762,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2684,6 +2799,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2704,20 +2825,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

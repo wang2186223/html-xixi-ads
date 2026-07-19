@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:32.731798">
-    <meta property="article:modified_time" content="2026-07-19T02:47:32.731798">
+    <meta property="article:published_time" content="2026-07-19T13:03:27.043005">
+    <meta property="article:modified_time" content="2026-07-19T13:03:27.043005">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:32">
+    <meta name="last-modified" content="2026-07-19 13:03:27">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:32.731798",
-        "dateModified": "2026-07-19T02:47:32.731798",
+        "datePublished": "2026-07-19T13:03:27.043005",
+        "dateModified": "2026-07-19T13:03:27.043005",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,29 +893,33 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>She interrupted him, &#34;Give me three minutes. My name is Ella Brooks. I graduated from Lincoln Tech University. I&#39;m currently raising funds to launch my own business. I was previously involved in developing the Prometheus Project at Summit Technòlogies Group.&#34;</p>
-                    
-                    <p>&#34;Today, artificial intelligence îsn&#39;t just a concept-it&#39;s a historic step into the unknown. I want to create an AI metaverse.&#34;</p>
-                    
-                    <p>&#34;People from all social classes could utilize AI in various industries.making it a tool that benefits everyone. I know you might find my ideas far-fetched, or perhaps you think AI technology isn&#39;t mature enough yet,but if you give me a chance, I could be the lever that moves the mountain.&#34;</p>
-                    
-                    <p>&#34;I realize this is forward of me. As you said, we&#39;ve just met and don&#39;t know each other. But maybe AI is the bridge between us-our meeting might be the result of algorithms and big data. Since Al created this opportunity, why not sit down and discuss it?&#34;</p>
-                    
-                    <p>&#34;Sir, what do you think?&#34;</p>
-                    
-                    <p>The suited man arched an eyebrow, studying Ella,who had delivered such a passionate speech.</p>
-                    
-                    <p>&#34;How did you know I used an Al app to get this ride?&#34; He asked.</p>
-                    
-                    <p>Ella smiled lightly. &#34;Because before I got in, the driver mentioned he was using algorithms to find areas with high foot traffic.&#34;</p>
-                    
-                    <p>&#34;The Victoria Harbor Technology Park has always been an Al development hub. Perhaps we&#39;re all just pieces of code or data points, which explains this coincidence.&#34; She added.</p>
-                    
-                    <p>&#34;I also graduated from Lincoln Tech,&#34; The suited man remarked casually.</p>
-                    
-                    <p>Ella took a deep breath, determined to seize this opportunity.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>She interrupted him, &#34;Give me three minutes. My name is Ella Brooks. I graduated from Lincoln Tech University. I&#39;m currently raising funds to launch my own business. I was previously involved in developing the Prometheus Project at Summit Technòlogies Group.&#34;</p>
+                        
+                        <p>&#34;Today, artificial intelligence îsn&#39;t just a concept-it&#39;s a historic step into the unknown. I want to create an AI metaverse.&#34;</p>
+                        
+                        <p>&#34;People from all social classes could utilize AI in various industries.making it a tool that benefits everyone. I know you might find my ideas far-fetched, or perhaps you think AI technology isn&#39;t mature enough yet,but if you give me a chance, I could be the lever that moves the mountain.&#34;</p>
+                        
+                        <p>&#34;I realize this is forward of me. As you said, we&#39;ve just met and don&#39;t know each other. But maybe AI is the bridge between us-our meeting might be the result of algorithms and big data. Since Al created this opportunity, why not sit down and discuss it?&#34;</p>
+                        
+                        <p>&#34;Sir, what do you think?&#34;</p>
+                        
+                        <p>The suited man arched an eyebrow, studying Ella,who had delivered such a passionate speech.</p>
+                        
+                        <p>&#34;How did you know I used an Al app to get this ride?&#34; He asked.</p>
+                        
+                        <p>Ella smiled lightly. &#34;Because before I got in, the driver mentioned he was using algorithms to find areas with high foot traffic.&#34;</p>
+                        
+                        <p>&#34;The Victoria Harbor Technology Park has always been an Al development hub. Perhaps we&#39;re all just pieces of code or data points, which explains this coincidence.&#34; She added.</p>
+                        
+                        <p>&#34;I also graduated from Lincoln Tech,&#34; The suited man remarked casually.</p>
+                        
+                        <p>Ella took a deep breath, determined to seize this opportunity.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -894,29 +934,33 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>The Victoria Harbor Technology Park was where investment magnates gathered, most of them industry-leading taents.</p>
-                    
-                    <p>The place was filled with brilliant minds, and stories of people changing their social class through scientific achievements were commonplace.</p>
-                    
-                    <p>Ella had heard about it from Austin.</p>
-                    
-                    <p>Within the Technology Park, you could see a whole new world.</p>
-                    
-                    <p>A new perspective.</p>
-                    
-                    <p>Austin&#39;s company was located there.</p>
-                    
-                    <p>It was where most college graduates in the city aspired to work.</p>
-                    
-                    <p>Noticing Ella&#39;s prolonged silence, the suited man glanced at his wristwatch.</p>
-                    
-                    <p>The watch was extremely expensive.</p>
-                    
-                    <p>One glance told Ella this man was exceptional, and she was certain she had caught a genuine opportunity.</p>
-                    
-                    <p>&#34;Sir, could you drive faster,please?&#34; The man asked the driver.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>The Victoria Harbor Technology Park was where investment magnates gathered, most of them industry-leading taents.</p>
+                        
+                        <p>The place was filled with brilliant minds, and stories of people changing their social class through scientific achievements were commonplace.</p>
+                        
+                        <p>Ella had heard about it from Austin.</p>
+                        
+                        <p>Within the Technology Park, you could see a whole new world.</p>
+                        
+                        <p>A new perspective.</p>
+                        
+                        <p>Austin&#39;s company was located there.</p>
+                        
+                        <p>It was where most college graduates in the city aspired to work.</p>
+                        
+                        <p>Noticing Ella&#39;s prolonged silence, the suited man glanced at his wristwatch.</p>
+                        
+                        <p>The watch was extremely expensive.</p>
+                        
+                        <p>One glance told Ella this man was exceptional, and she was certain she had caught a genuine opportunity.</p>
+                        
+                        <p>&#34;Sir, could you drive faster,please?&#34; The man asked the driver.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -931,29 +975,33 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;Right away, sirl&#34; the driver replied, still distracted by Ella&#39;s speech.</p>
-                    
-                    <p>Seeing he was in a hurry, Ella leaned closer and asked, &#34;Are you pressed for time today?&#34;</p>
-                    
-                    <p>&#34;Yes, I&#39;m very busy,&#34; The suited man said, glancing at her.</p>
-                    
-                    <p>She bit her lower lip, then boldly continued, &#34;Could we exchange contact information?&#34;</p>
-                    
-                    <p>&#34;I&#39;ve heard about the Prometheus Project team&#39;s dissolution and how core technical staff were poached. It&#39;s a sinking ship. Are you asking me to help bail you out?&#34; The suited man immediately saw through her intentions.</p>
-                    
-                    <p>Ella tensed her lips, gripping the leather seat, and persisted, &#34;I&#39;m not trying to impose. I just believe that a meeting like this is fate. This trip of yours probably isn&#39;t work-related.&#34;</p>
-                    
-                    <p>The suited man&#39;s interest seemed piqued by this comment.</p>
-                    
-                    <p>He lazily appraised Ella. &#34;How did you guess that?&#34;</p>
-                    
-                    <p>&#34;Because I noticed you&#39;re wearing Gucci Guilty-notes of pepper and lavender soap. Such an intense scent stimulus reminds me of a dangerous,handsome man in the night.&#34;</p>
-                    
-                    <p>As she spoke. Ella shifted slightly closer.</p>
-                    
-                    <p>She even leaned in to take a deep whiff of his suit.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;Right away, sirl&#34; the driver replied, still distracted by Ella&#39;s speech.</p>
+                        
+                        <p>Seeing he was in a hurry, Ella leaned closer and asked, &#34;Are you pressed for time today?&#34;</p>
+                        
+                        <p>&#34;Yes, I&#39;m very busy,&#34; The suited man said, glancing at her.</p>
+                        
+                        <p>She bit her lower lip, then boldly continued, &#34;Could we exchange contact information?&#34;</p>
+                        
+                        <p>&#34;I&#39;ve heard about the Prometheus Project team&#39;s dissolution and how core technical staff were poached. It&#39;s a sinking ship. Are you asking me to help bail you out?&#34; The suited man immediately saw through her intentions.</p>
+                        
+                        <p>Ella tensed her lips, gripping the leather seat, and persisted, &#34;I&#39;m not trying to impose. I just believe that a meeting like this is fate. This trip of yours probably isn&#39;t work-related.&#34;</p>
+                        
+                        <p>The suited man&#39;s interest seemed piqued by this comment.</p>
+                        
+                        <p>He lazily appraised Ella. &#34;How did you guess that?&#34;</p>
+                        
+                        <p>&#34;Because I noticed you&#39;re wearing Gucci Guilty-notes of pepper and lavender soap. Such an intense scent stimulus reminds me of a dangerous,handsome man in the night.&#34;</p>
+                        
+                        <p>As she spoke. Ella shifted slightly closer.</p>
+                        
+                        <p>She even leaned in to take a deep whiff of his suit.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -968,29 +1016,33 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>As if she couldn&#39;t get enough.</p>
-                    
-                    <p>The suited man fell silent.</p>
-                    
-                    <p>He suspected Ella of sexual harassment.</p>
-                    
-                    <p>&#34;Am I right?&#34; Seeing that he didn&#39;t challenge her, Ella flashed a naive smile with her water-filled eyes.</p>
-                    
-                    <p>The suited man nodded, admitting, &#34;Yes, it&#39;s this cologne. I&#39;m meeting...&#34;</p>
-                    
-                    <p>&#34;Your girlfriend?&#34; She asked.</p>
-                    
-                    <p>The suited man didn&#39;t respond.</p>
-                    
-                    <p>Ella took his silence as confirmation and continued, &#34;A date,right? Sir,I could help you pick out beautiful flowers to enhance the atmosphere-guaranteed to surprise her.&#34;</p>
-                    
-                    <p>He smiled. &#34;No need.&#34;</p>
-                    
-                    <p>&#34;I know a really popular flower shop. I used to buy flowers there frequently,&#34; She insisted.</p>
-                    
-                    <p>Ella had bought flowers in the past because of Austin.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>As if she couldn&#39;t get enough.</p>
+                        
+                        <p>The suited man fell silent.</p>
+                        
+                        <p>He suspected Ella of sexual harassment.</p>
+                        
+                        <p>&#34;Am I right?&#34; Seeing that he didn&#39;t challenge her, Ella flashed a naive smile with her water-filled eyes.</p>
+                        
+                        <p>The suited man nodded, admitting, &#34;Yes, it&#39;s this cologne. I&#39;m meeting...&#34;</p>
+                        
+                        <p>&#34;Your girlfriend?&#34; She asked.</p>
+                        
+                        <p>The suited man didn&#39;t respond.</p>
+                        
+                        <p>Ella took his silence as confirmation and continued, &#34;A date,right? Sir,I could help you pick out beautiful flowers to enhance the atmosphere-guaranteed to surprise her.&#34;</p>
+                        
+                        <p>He smiled. &#34;No need.&#34;</p>
+                        
+                        <p>&#34;I know a really popular flower shop. I used to buy flowers there frequently,&#34; She insisted.</p>
+                        
+                        <p>Ella had bought flowers in the past because of Austin.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1005,29 +1057,33 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>He had said the house needed flowers for decoration.</p>
-                    
-                    <p>Otherwise,it was too dull.</p>
-                    
-                    <p>To add freshness to Austin&#39;s life, she had bought a bouquet every day.</p>
-                    
-                    <p>Ella thought that if she could appeal to this man&#39;s interests and connect with him,why not try?</p>
-                    
-                    <p>The suited man found her increasingly boundary-pushing behavior both puzzling and somewhat admirable.</p>
-                    
-                    <p>In his view, adults should be able to recognize both direct and subtle rejections.</p>
-                    
-                    <p>But she clearly wasn&#39;t taking his hints.</p>
-                    
-                    <p>A compliance test,perhaps?</p>
-                    
-                    <p>Interesting.</p>
-                    
-                    <p>&#34;Turn around and go to this shop. It should be nearby-just a minute&#39;s detour that won&#39;t delay your date,&#34; Ella instructed te driver.</p>
-                    
-                    <p>The suited man fell silent.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>He had said the house needed flowers for decoration.</p>
+                        
+                        <p>Otherwise,it was too dull.</p>
+                        
+                        <p>To add freshness to Austin&#39;s life, she had bought a bouquet every day.</p>
+                        
+                        <p>Ella thought that if she could appeal to this man&#39;s interests and connect with him,why not try?</p>
+                        
+                        <p>The suited man found her increasingly boundary-pushing behavior both puzzling and somewhat admirable.</p>
+                        
+                        <p>In his view, adults should be able to recognize both direct and subtle rejections.</p>
+                        
+                        <p>But she clearly wasn&#39;t taking his hints.</p>
+                        
+                        <p>A compliance test,perhaps?</p>
+                        
+                        <p>Interesting.</p>
+                        
+                        <p>&#34;Turn around and go to this shop. It should be nearby-just a minute&#39;s detour that won&#39;t delay your date,&#34; Ella instructed te driver.</p>
+                        
+                        <p>The suited man fell silent.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1042,29 +1098,33 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>The driver actually followed Ella&#39;s directions.</p>
-                    
-                    <p>Ella was being audacious, and the suited man turned to give her a cold stare. &#34;Ms. Brooks, your speech was verypassionate, but I&#39;m afraid I have to disappoint you.&#34;</p>
-                    
-                    <p>&#34;In the financial world, connections are built on mutual benefit. You offer me nothing of value, so I won&#39;t help you.&#34;</p>
-                    
-                    <p>&#34;Besides, you don&#39;t even know who I am. Aren&#39;t you afraid I might be a financial scammer?&#34;</p>
-                    
-                    <p>Ella shook her head,responding with sincerity and earnestness, &#34;If you were a financial scammer, you wouldn&#39;t present yourself so flawlessly without any defects.&#34;</p>
-                    
-                    <p>&#34;At the very least, you wouldn&#39;t be wearing a Patek Philippe and this custom-tailored suit.&#34;</p>
-                    
-                    <p>The suited man looked down at her with contempt in his eyes. &#34;Ms.Brooks, if your approach to understanding someone begins with examining their external appearance, then I don&#39;t believe you&#39;re someone worth partnering with.&#34;</p>
-                    
-                    <p>&#34;People often judge others first by their clothing, then consider their inner qualities, sir. If your outfit costs less than fifty dollars, I certainly wouldn&#39;t be flattering you this way. Just as my ordinary office attire is worth several thousand dollars is what makes you willing to give me a second glance. If I were a beggar, I probably wouldn&#39;t even have had the chance to share</p>
-                    
-                    <p>this ride with you,would I?&#34;</p>
-                    
-                    <p>Ella was rather pragmatic.</p>
-                    
-                    <p>It was also the first lesson she&#39;d learned entering Quantum Tech.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>The driver actually followed Ella&#39;s directions.</p>
+                        
+                        <p>Ella was being audacious, and the suited man turned to give her a cold stare. &#34;Ms. Brooks, your speech was verypassionate, but I&#39;m afraid I have to disappoint you.&#34;</p>
+                        
+                        <p>&#34;In the financial world, connections are built on mutual benefit. You offer me nothing of value, so I won&#39;t help you.&#34;</p>
+                        
+                        <p>&#34;Besides, you don&#39;t even know who I am. Aren&#39;t you afraid I might be a financial scammer?&#34;</p>
+                        
+                        <p>Ella shook her head,responding with sincerity and earnestness, &#34;If you were a financial scammer, you wouldn&#39;t present yourself so flawlessly without any defects.&#34;</p>
+                        
+                        <p>&#34;At the very least, you wouldn&#39;t be wearing a Patek Philippe and this custom-tailored suit.&#34;</p>
+                        
+                        <p>The suited man looked down at her with contempt in his eyes. &#34;Ms.Brooks, if your approach to understanding someone begins with examining their external appearance, then I don&#39;t believe you&#39;re someone worth partnering with.&#34;</p>
+                        
+                        <p>&#34;People often judge others first by their clothing, then consider their inner qualities, sir. If your outfit costs less than fifty dollars, I certainly wouldn&#39;t be flattering you this way. Just as my ordinary office attire is worth several thousand dollars is what makes you willing to give me a second glance. If I were a beggar, I probably wouldn&#39;t even have had the chance to share</p>
+                        
+                        <p>this ride with you,would I?&#34;</p>
+                        
+                        <p>Ella was rather pragmatic.</p>
+                        
+                        <p>It was also the first lesson she&#39;d learned entering Quantum Tech.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1079,25 +1139,29 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Strangers always judge appearances before assessing what&#39;s inside.</p>
-                    
-                    <p>No one gives three minutes of their time to someone who looks unattractive.</p>
-                    
-                    <p>Ella was confident in her looks and her silver tongue.</p>
-                    
-                    <p>Even if mocked or ridiculed, she would seize this opportunity with everything she had.</p>
-                    
-                    <p>The suited man was apparently won over by her words. After studying Ella for a long moment, he recited a string of numbers.</p>
-                    
-                    <p>&#34;What&#39;s this?&#34; Ella asked.</p>
-                    
-                    <p>&#34;My phone number. I have urgent business today and can&#39;t discuss artificial intelligence with you, but we&#39;ll meet again.&#34;</p>
-                    
-                    <p>Ella froze, and after a long moment, tears welled in her eyes as she realized what had happened.</p>
-                    
-                    <p>She had succeeded!</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Strangers always judge appearances before assessing what&#39;s inside.</p>
+                        
+                        <p>No one gives three minutes of their time to someone who looks unattractive.</p>
+                        
+                        <p>Ella was confident in her looks and her silver tongue.</p>
+                        
+                        <p>Even if mocked or ridiculed, she would seize this opportunity with everything she had.</p>
+                        
+                        <p>The suited man was apparently won over by her words. After studying Ella for a long moment, he recited a string of numbers.</p>
+                        
+                        <p>&#34;What&#39;s this?&#34; Ella asked.</p>
+                        
+                        <p>&#34;My phone number. I have urgent business today and can&#39;t discuss artificial intelligence with you, but we&#39;ll meet again.&#34;</p>
+                        
+                        <p>Ella froze, and after a long moment, tears welled in her eyes as she realized what had happened.</p>
+                        
+                        <p>She had succeeded!</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2413,6 +2477,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2539,7 +2683,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2581,32 +2724,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2617,21 +2742,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2664,6 +2779,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2684,20 +2805,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.393850">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.393850">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.396131">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.396131">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.393850",
-        "dateModified": "2026-07-19T02:47:23.393850",
+        "datePublished": "2026-07-19T13:03:18.396131",
+        "dateModified": "2026-07-19T13:03:18.396131",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,23 +893,27 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Annie&#39;s POV</p>
-                    
-                    <p>I was sitting at my workstation in Howard&#39;s office. I had been working on a particularly challenging panel for my children&#39;s book, trying to capture the perfect expression for my main character: when the office door opened.</p>
-                    
-                    <p>Philip Baker walked in with his usual confident stride. I kept my head down, pretending to be absorbed in my work. From the corner of my eye,I noticed Howard&#39;s expression-a brief flash of annoyance quickly masked by professional courtesy. After all. Philip was here to discuss a potential business collaboration, not to socialize.</p>
-                    
-                    <p>I continued sketching, though I couldn&#39;t help but overhear their conversation. To my surprise, Philip remained unusually focused on the business discussion throughout the meeting. There was none of the subtle posturing or personal comments I had come to expect from him. Perhaps he was finally learning to separate business from personal matters.</p>
-                    
-                    <p>When they finally reached an agreement, Howard stood up, clearly intending to escort Philip out. However, instead of heading directly to the door, Philip changed course and walked toward my workspace. I kept my pencil moving across the paper, feigning complete concentration on my sketch.</p>
-                    
-                    <p>&#34;Annie, did I tell you I gave Sarah a huge sum of money to promote her comics?&#34; Philip asked, his tone carrying what I perceived as pride.</p>
-                    
-                    <p>I looked up at his proud expression, finding it somewhat amusing but keeping my face neutral. &#34;No, you didn&#39;t tell me,&#34; I replied honestly.</p>
-                    
-                    <p>A thought crossed my mind: someday,Philip would discover that the</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Annie&#39;s POV</p>
+                        
+                        <p>I was sitting at my workstation in Howard&#39;s office. I had been working on a particularly challenging panel for my children&#39;s book, trying to capture the perfect expression for my main character: when the office door opened.</p>
+                        
+                        <p>Philip Baker walked in with his usual confident stride. I kept my head down, pretending to be absorbed in my work. From the corner of my eye,I noticed Howard&#39;s expression-a brief flash of annoyance quickly masked by professional courtesy. After all. Philip was here to discuss a potential business collaboration, not to socialize.</p>
+                        
+                        <p>I continued sketching, though I couldn&#39;t help but overhear their conversation. To my surprise, Philip remained unusually focused on the business discussion throughout the meeting. There was none of the subtle posturing or personal comments I had come to expect from him. Perhaps he was finally learning to separate business from personal matters.</p>
+                        
+                        <p>When they finally reached an agreement, Howard stood up, clearly intending to escort Philip out. However, instead of heading directly to the door, Philip changed course and walked toward my workspace. I kept my pencil moving across the paper, feigning complete concentration on my sketch.</p>
+                        
+                        <p>&#34;Annie, did I tell you I gave Sarah a huge sum of money to promote her comics?&#34; Philip asked, his tone carrying what I perceived as pride.</p>
+                        
+                        <p>I looked up at his proud expression, finding it somewhat amusing but keeping my face neutral. &#34;No, you didn&#39;t tell me,&#34; I replied honestly.</p>
+                        
+                        <p>A thought crossed my mind: someday,Philip would discover that the</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -888,23 +928,27 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>child Sarah was carrying wasn&#39;t actually his. I imagined sending Brian a recording of this conversation, letting him know how his father had generously given Sarah a massive amount of money while quibbling over his son&#39;s living expenses. I suspected this revelation would significantly impact their father-son relationship.</p>
-                    
-                    <p>Concealing my private schadenfreude, I asked casually. &#34;Why do you bring this up?&#34;</p>
-                    
-                    <p>&#34;Would Howard spend that much money on you?&#34; Philip probed further.the corner of his mouth turning up in that self-satisfied smile I knew so well.</p>
-                    
-                    <p>I glanced at Howard, mentally calculating. It suddenly occurred to me that Howard had invested considerably in my work-purchasing several factories for merchandise production, fully funding my animation project,and arranging for both domestic and international promotion. I roughly estimated that the amount Howard had actually spent even exceeded the figure Philip was boasting about.</p>
-                    
-                    <p>Before I could formulate a response, Howard calmly interjected, &#34;You know I always prioritize profit.&#34;</p>
-                    
-                    <p>Philip&#39;s facelit up with satisfaction upon hearing this answer, his eyes brightening like a high school student who had just won a debate. &#34;So you&#39;re saying you wouldn&#39;t spend that much?&#34;</p>
-                    
-                    <p>Howard didn&#39;t contradict him, evidently unconcerned about revealing how much he had spent on me.</p>
-                    
-                    <p>&#34;Now that you see Sarah earning more than you and gaining more popularity, don&#39;t you feel envious or jealous?&#34; Philip turned to me with what I perceived as a smug expression.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>child Sarah was carrying wasn&#39;t actually his. I imagined sending Brian a recording of this conversation, letting him know how his father had generously given Sarah a massive amount of money while quibbling over his son&#39;s living expenses. I suspected this revelation would significantly impact their father-son relationship.</p>
+                        
+                        <p>Concealing my private schadenfreude, I asked casually. &#34;Why do you bring this up?&#34;</p>
+                        
+                        <p>&#34;Would Howard spend that much money on you?&#34; Philip probed further.the corner of his mouth turning up in that self-satisfied smile I knew so well.</p>
+                        
+                        <p>I glanced at Howard, mentally calculating. It suddenly occurred to me that Howard had invested considerably in my work-purchasing several factories for merchandise production, fully funding my animation project,and arranging for both domestic and international promotion. I roughly estimated that the amount Howard had actually spent even exceeded the figure Philip was boasting about.</p>
+                        
+                        <p>Before I could formulate a response, Howard calmly interjected, &#34;You know I always prioritize profit.&#34;</p>
+                        
+                        <p>Philip&#39;s facelit up with satisfaction upon hearing this answer, his eyes brightening like a high school student who had just won a debate. &#34;So you&#39;re saying you wouldn&#39;t spend that much?&#34;</p>
+                        
+                        <p>Howard didn&#39;t contradict him, evidently unconcerned about revealing how much he had spent on me.</p>
+                        
+                        <p>&#34;Now that you see Sarah earning more than you and gaining more popularity, don&#39;t you feel envious or jealous?&#34; Philip turned to me with what I perceived as a smug expression.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -919,23 +963,27 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;No.&#34; I answered honestly, &#34;many people earn more than I do. If I were to be jealous of everyone,when would it end?&#34;</p>
-                    
-                    <p>Philip stared at me, clearly not believing my response.</p>
-                    
-                    <p>&#34;Regardless of what the future holds. I&#39;m already content with my current situation&#34; I continued. &#34;My monthly income now exceeds anything I could have imagined before. Even if I greedily wanted more,what would be the point?&#34;</p>
-                    
-                    <p>Philip looked shocked, and I sensed he hadn&#39;t expected me to be so easily satisfied.</p>
-                    
-                    <p>&#34;But initially, Sarah wasn&#39;t as good as you. Then she suddenly became better than you,&#34; he hastily argued, his face flushing red, hands gesturing in the air like a student protesting a deduction in points.</p>
-                    
-                    <p>&#34;I foresaw this long ago,&#34; I responded calmly, understanding that Philip still didn&#39;t believe me. But to me, it no longer mattered.</p>
-                    
-                    <p>&#34;Even though you always claimed to love me, your heart has actually been with Sarah all along, you just never realized it. When we were still married,you openly favored her. After the divorce, you claimed to love me,coming to pursue me every day, but... your actions told a different story.&#34;</p>
-                    
-                    <p>I chuckled softly. &#34;For instance, you were always unwilling to spend money on me. Despite having considerable assets, you never wanted to buy me flowers, always saying it was wasteful because flowers would wither within days, suggesting we should have home-cooked meals together instead.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;No.&#34; I answered honestly, &#34;many people earn more than I do. If I were to be jealous of everyone,when would it end?&#34;</p>
+                        
+                        <p>Philip stared at me, clearly not believing my response.</p>
+                        
+                        <p>&#34;Regardless of what the future holds. I&#39;m already content with my current situation&#34; I continued. &#34;My monthly income now exceeds anything I could have imagined before. Even if I greedily wanted more,what would be the point?&#34;</p>
+                        
+                        <p>Philip looked shocked, and I sensed he hadn&#39;t expected me to be so easily satisfied.</p>
+                        
+                        <p>&#34;But initially, Sarah wasn&#39;t as good as you. Then she suddenly became better than you,&#34; he hastily argued, his face flushing red, hands gesturing in the air like a student protesting a deduction in points.</p>
+                        
+                        <p>&#34;I foresaw this long ago,&#34; I responded calmly, understanding that Philip still didn&#39;t believe me. But to me, it no longer mattered.</p>
+                        
+                        <p>&#34;Even though you always claimed to love me, your heart has actually been with Sarah all along, you just never realized it. When we were still married,you openly favored her. After the divorce, you claimed to love me,coming to pursue me every day, but... your actions told a different story.&#34;</p>
+                        
+                        <p>I chuckled softly. &#34;For instance, you were always unwilling to spend money on me. Despite having considerable assets, you never wanted to buy me flowers, always saying it was wasteful because flowers would wither within days, suggesting we should have home-cooked meals together instead.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -950,23 +998,27 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Was there anything wrong with what I said?&#34; Philip immediately defended himself, chin raised, wearing an expression of someone</p>
-                    
-                    <p>wrongfully accused.</p>
-                    
-                    <p>&#34;Nothing wrong.&#34; I nodded in agreement. &#34;But when it came to buying flowers for Sarah, you didn&#39;t think that way, did you?&#34;</p>
-                    
-                    <p>&#34;That was her fist visit to our home. Wasn&#39;t it appropriate for me to welcome her?&#34;Philip still had excuses.</p>
-                    
-                    <p>&#34;You&#39;re always so stingy! You&#39;ve held a grudge about buying flowers for someone else for so long,&#34; he instinctively accused me, the veins on his forehead faintly visible, his lips pressed into a thin line like an executive whose proposal had been rejected.</p>
-                    
-                    <p>I was no longer troubled by his accusations, only hoping he would recognize who he truly loved, hoping afterward he would stop bothering me and return to Sarah. That way, when Sarah&#39;s child was born, the information I planned to reveal would deliver a devastating blow to him.</p>
-                    
-                    <p>&#34;When was the last time you bought me flowers?&#34; I asked calmly.</p>
-                    
-                    <p>Philip struggled to recall.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Was there anything wrong with what I said?&#34; Philip immediately defended himself, chin raised, wearing an expression of someone</p>
+                        
+                        <p>wrongfully accused.</p>
+                        
+                        <p>&#34;Nothing wrong.&#34; I nodded in agreement. &#34;But when it came to buying flowers for Sarah, you didn&#39;t think that way, did you?&#34;</p>
+                        
+                        <p>&#34;That was her fist visit to our home. Wasn&#39;t it appropriate for me to welcome her?&#34;Philip still had excuses.</p>
+                        
+                        <p>&#34;You&#39;re always so stingy! You&#39;ve held a grudge about buying flowers for someone else for so long,&#34; he instinctively accused me, the veins on his forehead faintly visible, his lips pressed into a thin line like an executive whose proposal had been rejected.</p>
+                        
+                        <p>I was no longer troubled by his accusations, only hoping he would recognize who he truly loved, hoping afterward he would stop bothering me and return to Sarah. That way, when Sarah&#39;s child was born, the information I planned to reveal would deliver a devastating blow to him.</p>
+                        
+                        <p>&#34;When was the last time you bought me flowers?&#34; I asked calmly.</p>
+                        
+                        <p>Philip struggled to recall.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -981,23 +1033,27 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;Don&#39;t bother trying to remember-because you never bought me flowers,not once,&#34; I helped him answer.</p>
-                    
-                    <p>&#34;You wanted a divorce just because I never bought you flowers?&#34; Philip frowned, his tone still carrying impatience, hands splayed outward, his expression as exaggerated as a poor soap opera actor.</p>
-                    
-                    <p>As soon as the words left his mouth, his expression suddenly froze,as if realizing something. We were already separated; I had no need to threaten divorce. He lowered his head, lips pressed tightly together, in what appeared to me as quite an awkward manner.</p>
-                    
-                    <p>&#34;Flowers are just one example. You felt that spending even a penny on me was a waste.&#34; I reflected, wondering how I had tolerated such treatment.</p>
-                    
-                    <p>&#34;But you never complained about buying expensive luxury items and jewelry for Sarah,&#34; I continued calmly.</p>
-                    
-                    <p>Philip clenched his fists, opened his mouth as if to rebut, but ultimately remained silent. His mouth opened and closed like a fish out of water,eyes wide but unable to produce a sound.</p>
-                    
-                    <p>I noticed the small beads of sweat forming on his forehead and his slightly reddening cheeks, which I thought was typically his reaction when feeling cornered.</p>
-                    
-                    <p>&#34;They say a man&#39;s money follows his heart,&#34; I continued steadily. &#34;I think you&#39;re still in love with Sarah.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;Don&#39;t bother trying to remember-because you never bought me flowers,not once,&#34; I helped him answer.</p>
+                        
+                        <p>&#34;You wanted a divorce just because I never bought you flowers?&#34; Philip frowned, his tone still carrying impatience, hands splayed outward, his expression as exaggerated as a poor soap opera actor.</p>
+                        
+                        <p>As soon as the words left his mouth, his expression suddenly froze,as if realizing something. We were already separated; I had no need to threaten divorce. He lowered his head, lips pressed tightly together, in what appeared to me as quite an awkward manner.</p>
+                        
+                        <p>&#34;Flowers are just one example. You felt that spending even a penny on me was a waste.&#34; I reflected, wondering how I had tolerated such treatment.</p>
+                        
+                        <p>&#34;But you never complained about buying expensive luxury items and jewelry for Sarah,&#34; I continued calmly.</p>
+                        
+                        <p>Philip clenched his fists, opened his mouth as if to rebut, but ultimately remained silent. His mouth opened and closed like a fish out of water,eyes wide but unable to produce a sound.</p>
+                        
+                        <p>I noticed the small beads of sweat forming on his forehead and his slightly reddening cheeks, which I thought was typically his reaction when feeling cornered.</p>
+                        
+                        <p>&#34;They say a man&#39;s money follows his heart,&#34; I continued steadily. &#34;I think you&#39;re still in love with Sarah.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1012,23 +1068,27 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;But wasn&#39;t I good to you when we were together?&#34; Philip stared at me intently.</p>
-                    
-                    <p>&#34;Before dating Howard, I didn&#39;t know what good or bad treatment was.I thought your behavior was normal, and I even feared I might encounter someone worse than you. So I endured all your hurtful actions,&#34; I chose my words carefully.</p>
-                    
-                    <p>&#34;After officially dating Howard, I realized that when a man loves a woman,he treats her well wholeheartedly. He doesn&#39;t use &#39;typical man&#39; as anexcuse to avoid romantic gifts and dates. He pays attention to all the small details in life.&#34;</p>
-                    
-                    <p>I looked directly at Philip. &#34;Then I knew for certain that you hadn&#39;t been good to me. Every day of those six years was difficult.&#34;</p>
-                    
-                    <p>Philip&#39;s lips moved, but he ultimately remained silent.</p>
-                    
-                    <p>&#34;Seeing your attitude toward Sarah. it&#39;s clear your feelings for her are genuine. When you saw Sarah being treated unfairly in her work, you undoubtedly felt heartbroken, wishing to bring her back to the peak of success. making everyone admire and worship her,&#34; I observed his expression,smiling as I spoke.</p>
-                    
-                    <p>&#34;I foresaw this long ago, so when you actually did it, it was completely within my expectations,&#34; I added, slowing my pace.</p>
-                    
-                    <p>&#34;You claim you&#39;re not jealous of her, but you must be lying. You must be jealous of her! Envious of her! Hate her!&#34; Philip emphasized each word,and from the excitement in his tone, I guessed he might be trying to convince himself of something.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;But wasn&#39;t I good to you when we were together?&#34; Philip stared at me intently.</p>
+                        
+                        <p>&#34;Before dating Howard, I didn&#39;t know what good or bad treatment was.I thought your behavior was normal, and I even feared I might encounter someone worse than you. So I endured all your hurtful actions,&#34; I chose my words carefully.</p>
+                        
+                        <p>&#34;After officially dating Howard, I realized that when a man loves a woman,he treats her well wholeheartedly. He doesn&#39;t use &#39;typical man&#39; as anexcuse to avoid romantic gifts and dates. He pays attention to all the small details in life.&#34;</p>
+                        
+                        <p>I looked directly at Philip. &#34;Then I knew for certain that you hadn&#39;t been good to me. Every day of those six years was difficult.&#34;</p>
+                        
+                        <p>Philip&#39;s lips moved, but he ultimately remained silent.</p>
+                        
+                        <p>&#34;Seeing your attitude toward Sarah. it&#39;s clear your feelings for her are genuine. When you saw Sarah being treated unfairly in her work, you undoubtedly felt heartbroken, wishing to bring her back to the peak of success. making everyone admire and worship her,&#34; I observed his expression,smiling as I spoke.</p>
+                        
+                        <p>&#34;I foresaw this long ago, so when you actually did it, it was completely within my expectations,&#34; I added, slowing my pace.</p>
+                        
+                        <p>&#34;You claim you&#39;re not jealous of her, but you must be lying. You must be jealous of her! Envious of her! Hate her!&#34; Philip emphasized each word,and from the excitement in his tone, I guessed he might be trying to convince himself of something.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1043,13 +1103,17 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;If thinking that makes you feel better... then you can think that way,&#34;I answered, not understanding why he was saying this, but not wanting to delve deeper.</p>
-                    
-                    <p>Philip fell silent, just staring at me, his expression like an adult who had just been told Santa Claus doesn&#39;t exist-confused and frustrated.</p>
-                    
-                    <p>&#34;You two continue talking. I&#39;ll step out for a moment,&#34; I glanced at Howard beside me, saying calmly.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;If thinking that makes you feel better... then you can think that way,&#34;I answered, not understanding why he was saying this, but not wanting to delve deeper.</p>
+                        
+                        <p>Philip fell silent, just staring at me, his expression like an adult who had just been told Santa Claus doesn&#39;t exist-confused and frustrated.</p>
+                        
+                        <p>&#34;You two continue talking. I&#39;ll step out for a moment,&#34; I glanced at Howard beside me, saying calmly.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2365,6 +2429,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2491,7 +2635,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2533,32 +2676,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2569,21 +2694,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2616,6 +2731,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2636,20 +2757,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

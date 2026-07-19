@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:33.391524">
-    <meta property="article:modified_time" content="2026-07-19T02:47:33.391524">
+    <meta property="article:published_time" content="2026-07-19T13:03:27.632140">
+    <meta property="article:modified_time" content="2026-07-19T13:03:27.632140">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:33">
+    <meta name="last-modified" content="2026-07-19 13:03:27">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:33.391524",
-        "dateModified": "2026-07-19T02:47:33.391524",
+        "datePublished": "2026-07-19T13:03:27.632140",
+        "dateModified": "2026-07-19T13:03:27.632140",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,17 +893,21 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Chapter 345</p>
-                    
-                    <p>“Why are you here?” she asked.</p>
-                    
-                    <p>Benedict answered smilingly, “Well, of course, I’m here to visit the patient.”</p>
-                    
-                    <p>Noticing the confusion on Vivian’s face, he explained, “When I visited Ms. Rachel yesterday, I heard from her that you’re injured and were admitted to the hospital. She was very worried about you, but she can’t visit you in her current health condition. So, she asked me to come and check if you’re alright.”</p>
-                    
-                    <p>“Is my mom alright?” Vivian couldn’t help feeling worried when Benedict mentioned Rachel’s health condition.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Chapter 345</p>
+                        
+                        <p>“Why are you here?” she asked.</p>
+                        
+                        <p>Benedict answered smilingly, “Well, of course, I’m here to visit the patient.”</p>
+                        
+                        <p>Noticing the confusion on Vivian’s face, he explained, “When I visited Ms. Rachel yesterday, I heard from her that you’re injured and were admitted to the hospital. She was very worried about you, but she can’t visit you in her current health condition. So, she asked me to come and check if you’re alright.”</p>
+                        
+                        <p>“Is my mom alright?” Vivian couldn’t help feeling worried when Benedict mentioned Rachel’s health condition.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -882,17 +922,21 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Benedict reassured her, “Yes, she’s fine. There’s no need to worry.” Then, he asked, “Are you alright?”</p>
-                    
-                    <p>“Yes, thanks to Finnick,” replied Vivian.</p>
-                    
-                    <p>Yet, Benedict’s face darkened upon the mention of Finnick.</p>
-                    
-                    <p>“Huh,” he snorted, “I thought Finnick had lost both of his legs ten years ago, but it turns out he escaped unscathed. Evelyn was the only one who died in the fire.”</p>
-                    
-                    <p>Hearing his sarcastic words, Vivian furrowed her brows. “Benedict, none of us know what happened at that time. I don’t believe Finnick would leave Evelyn for dead. I hope you won’t say things like this again before we even find out about the truth.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Benedict reassured her, “Yes, she’s fine. There’s no need to worry.” Then, he asked, “Are you alright?”</p>
+                        
+                        <p>“Yes, thanks to Finnick,” replied Vivian.</p>
+                        
+                        <p>Yet, Benedict’s face darkened upon the mention of Finnick.</p>
+                        
+                        <p>“Huh,” he snorted, “I thought Finnick had lost both of his legs ten years ago, but it turns out he escaped unscathed. Evelyn was the only one who died in the fire.”</p>
+                        
+                        <p>Hearing his sarcastic words, Vivian furrowed her brows. “Benedict, none of us know what happened at that time. I don’t believe Finnick would leave Evelyn for dead. I hope you won’t say things like this again before we even find out about the truth.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -907,17 +951,21 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Benedict paid no heed to Vivian’s words. To him, Vivian was only trying to defend Finnick.</p>
-                    
-                    <p>Suddenly, he froze on the spot when something caught his attention.</p>
-                    
-                    <p>Noticing his abnormality, Vivian followed his gaze and saw the Blue Enchantress, a gift from Elaine, on the nightstand.</p>
-                    
-                    <p>Shifting her eyes back to Benedict, she asked in confusion, “What’s wrong?”</p>
-                    
-                    <p>“That’s Evelyn’s favorite flower,” Benedict answered sorrowfully, fixing his eyes on the Blue Enchantress.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Benedict paid no heed to Vivian’s words. To him, Vivian was only trying to defend Finnick.</p>
+                        
+                        <p>Suddenly, he froze on the spot when something caught his attention.</p>
+                        
+                        <p>Noticing his abnormality, Vivian followed his gaze and saw the Blue Enchantress, a gift from Elaine, on the nightstand.</p>
+                        
+                        <p>Shifting her eyes back to Benedict, she asked in confusion, “What’s wrong?”</p>
+                        
+                        <p>“That’s Evelyn’s favorite flower,” Benedict answered sorrowfully, fixing his eyes on the Blue Enchantress.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -932,17 +980,21 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>What? Blue Enchantress is Evelyn’s favorite flower?</p>
-                    
-                    <p>Hearing that, Vivian recalled when Finnick seemed to be lost in his thoughts while staring at the flower yesterday. At that instant, conflicted emotions overwhelmed her heart. At that time, did the flowers remind him of Evelyn? Is it because of Evelyn that he asked me to throw away the flowers? Because he was afraid that it might bring back sad memories?</p>
-                    
-                    <p>As for Benedict, he was disdainful of Finnick for pretending to be disabled. Now that he saw his sister’s most favorite flower, he couldn’t help feeling a little moody. Since he was not in the mood to stay any longer, he soon left the hospital after having a little chat with Vivian.</p>
-                    
-                    <p>Vivian felt a little tired after dealing with both Fabian and Benedict. She was now lying in bed, trying to get some rest. Yet, she was bothered by the thought that Finnick was acting strangely yesterday because of Evelyn. She was perturbed, and couldn’t seem to sleep.</p>
-                    
-                    <p>After much tossing and turning in bed, being overwhelmed by fatigue, Vivian eventually fell asleep.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>What? Blue Enchantress is Evelyn’s favorite flower?</p>
+                        
+                        <p>Hearing that, Vivian recalled when Finnick seemed to be lost in his thoughts while staring at the flower yesterday. At that instant, conflicted emotions overwhelmed her heart. At that time, did the flowers remind him of Evelyn? Is it because of Evelyn that he asked me to throw away the flowers? Because he was afraid that it might bring back sad memories?</p>
+                        
+                        <p>As for Benedict, he was disdainful of Finnick for pretending to be disabled. Now that he saw his sister’s most favorite flower, he couldn’t help feeling a little moody. Since he was not in the mood to stay any longer, he soon left the hospital after having a little chat with Vivian.</p>
+                        
+                        <p>Vivian felt a little tired after dealing with both Fabian and Benedict. She was now lying in bed, trying to get some rest. Yet, she was bothered by the thought that Finnick was acting strangely yesterday because of Evelyn. She was perturbed, and couldn’t seem to sleep.</p>
+                        
+                        <p>After much tossing and turning in bed, being overwhelmed by fatigue, Vivian eventually fell asleep.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -957,17 +1009,21 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>It was past three in the afternoon when she woke up. While making her bed, she heard hurried footsteps coming from outside the ward. Then, a resounding voice rang out, “Which ward is it? Are we not there yet?”</p>
-                    
-                    <p>It’s Grandpa! Vivian recognized it was Samuel upon hearing his familiar voice.</p>
-                    
-                    <p>She quickly put on her coat and then opened the door to see Samuel standing outside in the corridor with a group of doctors behind him.</p>
-                    
-                    <p>“Grandpa, I’m here,” she called out.</p>
-                    
-                    <p>Upon seeing Vivian, Samuel admonished, “Stay there! Don’t move! Didn’t they say you’re injured? Why aren’t you resting? You should rest in bed!”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>It was past three in the afternoon when she woke up. While making her bed, she heard hurried footsteps coming from outside the ward. Then, a resounding voice rang out, “Which ward is it? Are we not there yet?”</p>
+                        
+                        <p>It’s Grandpa! Vivian recognized it was Samuel upon hearing his familiar voice.</p>
+                        
+                        <p>She quickly put on her coat and then opened the door to see Samuel standing outside in the corridor with a group of doctors behind him.</p>
+                        
+                        <p>“Grandpa, I’m here,” she called out.</p>
+                        
+                        <p>Upon seeing Vivian, Samuel admonished, “Stay there! Don’t move! Didn’t they say you’re injured? Why aren’t you resting? You should rest in bed!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -982,17 +1038,21 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Vivian shook her head in amusement at Samuel’s overreaction. “Oh, Grandpa, they’re exaggerating it. I’m fine,” Vivian reassured Samuel while helping him into the ward to sit on the couch.</p>
-                    
-                    <p>“Really?” Samuel asked as he couldn’t seem to cast his worries away.</p>
-                    
-                    <p>Vivian answered helplessly, “Really. As you can see, I’m fine.” What did they say about my injury? Why is everyone visiting me all of a sudden?</p>
-                    
-                    <p>Benedict scrutinized her from head to toe, making sure she was alright before he could put his mind at ease.</p>
-                    
-                    <p>“I think it’s better you do a full-body check-up in case there’s any sequela. You might as well ask the doctor to check your fertility. Oh, I can’t wait to meet my grandchild.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Vivian shook her head in amusement at Samuel’s overreaction. “Oh, Grandpa, they’re exaggerating it. I’m fine,” Vivian reassured Samuel while helping him into the ward to sit on the couch.</p>
+                        
+                        <p>“Really?” Samuel asked as he couldn’t seem to cast his worries away.</p>
+                        
+                        <p>Vivian answered helplessly, “Really. As you can see, I’m fine.” What did they say about my injury? Why is everyone visiting me all of a sudden?</p>
+                        
+                        <p>Benedict scrutinized her from head to toe, making sure she was alright before he could put his mind at ease.</p>
+                        
+                        <p>“I think it’s better you do a full-body check-up in case there’s any sequela. You might as well ask the doctor to check your fertility. Oh, I can’t wait to meet my grandchild.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -2310,6 +2370,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2436,7 +2576,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2478,32 +2617,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2514,21 +2635,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2561,6 +2672,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2581,20 +2698,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

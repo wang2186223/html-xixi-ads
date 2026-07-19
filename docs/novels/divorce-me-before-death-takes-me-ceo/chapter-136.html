@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:18.959312">
-    <meta property="article:modified_time" content="2026-07-19T02:47:18.959312">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.168092">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.168092">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:18">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:18.959312",
-        "dateModified": "2026-07-19T02:47:18.959312",
+        "datePublished": "2026-07-19T13:03:14.168092",
+        "dateModified": "2026-07-19T13:03:14.168092",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,27 +893,31 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>William turned away from Laurel and settled back onto the sofa.He stroked his beard, his eyes never leaving her face. The room went quiet.</p>
-                    
-                    <p>&#34;So,&#34; he finally said, &#34;Ethan Davies&#39;s evidence was true after all.&#34;</p>
-                    
-                    <p>He paused, eyes narrowing. &#34;The people who exposed Audrey online and spread rumors about her were connected to Parker-Rose Studio.&#34;</p>
-                    
-                    <p>&#34;The men who tried to kidnap her and crashed into her car were instructed by your agent Jennifer.&#34;</p>
-                    
-                    <p>William&#39;s voice hardened. &#34;And this morning when Audrey was beaten,that too was arranged by Jennifer under your direction. What do you have to say for yourself?&#34;</p>
-                    
-                    <p>Laurel&#39;s lips trembled, but she stayed silent.</p>
-                    
-                    <p>His eyes turned cold. &#34;A jealous, vicious woman like you still dreams of joining the Parker family? As long as I&#39;m alive, you&#39;ll never set foot through that door as Blake&#39;s wife!&#34;</p>
-                    
-                    <p>Blake shifted beside me but said nothing.</p>
-                    
-                    <p>William turned to his grandson. &#34;I don&#39;t care what terminal illness she claims to have. or if she&#39;s supposedly dying. From today on, if you continue seeing her, I will no longer consider you my grandson!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>William turned away from Laurel and settled back onto the sofa.He stroked his beard, his eyes never leaving her face. The room went quiet.</p>
+                        
+                        <p>&#34;So,&#34; he finally said, &#34;Ethan Davies&#39;s evidence was true after all.&#34;</p>
+                        
+                        <p>He paused, eyes narrowing. &#34;The people who exposed Audrey online and spread rumors about her were connected to Parker-Rose Studio.&#34;</p>
+                        
+                        <p>&#34;The men who tried to kidnap her and crashed into her car were instructed by your agent Jennifer.&#34;</p>
+                        
+                        <p>William&#39;s voice hardened. &#34;And this morning when Audrey was beaten,that too was arranged by Jennifer under your direction. What do you have to say for yourself?&#34;</p>
+                        
+                        <p>Laurel&#39;s lips trembled, but she stayed silent.</p>
+                        
+                        <p>His eyes turned cold. &#34;A jealous, vicious woman like you still dreams of joining the Parker family? As long as I&#39;m alive, you&#39;ll never set foot through that door as Blake&#39;s wife!&#34;</p>
+                        
+                        <p>Blake shifted beside me but said nothing.</p>
+                        
+                        <p>William turned to his grandson. &#34;I don&#39;t care what terminal illness she claims to have. or if she&#39;s supposedly dying. From today on, if you continue seeing her, I will no longer consider you my grandson!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -892,27 +932,31 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>No one dared breathe.</p>
-                    
-                    <p>“Charles.&#34; William barked, &#34;see them out!&#34;</p>
-                    
-                    <p>As Charles moved toward Laurel. I spoke up. &#34;Jennifer stays.&#34;</p>
-                    
-                    <p>Jennifer&#39;s face went white as she looked toward Laurel for help. But Laurel was too busy with her own crisis to notice.</p>
-                    
-                    <p>Laurel took a deep breath and approached William. &#34;William,&#34; she said,voice quivering, &#34;I&#39;m truly being wrongfully accused! These things have nothing to do with me!&#34;</p>
-                    
-                    <p>Her eyes filled with tears as she glanced at Blake. Then she spun toward Jennifer.</p>
-                    
-                    <p>&#34;How could you?&#34; she screamed, her hand flying through the air.</p>
-                    
-                    <p>The sound echoed as Laurel&#39;s palm hit Jennifer&#39;s cheek. Before Jennifer could recover, Laurel struck again with full force.</p>
-                    
-                    <p>Jennifer stumbled back, her lip split and bleeding. Two teeth had been knocked loose, blood trickling from her mouth.</p>
-                    
-                    <p>&#34;I treated you like family!&#34; Laurel shrieked. &#34;And this is how you repay me!?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>No one dared breathe.</p>
+                        
+                        <p>“Charles.&#34; William barked, &#34;see them out!&#34;</p>
+                        
+                        <p>As Charles moved toward Laurel. I spoke up. &#34;Jennifer stays.&#34;</p>
+                        
+                        <p>Jennifer&#39;s face went white as she looked toward Laurel for help. But Laurel was too busy with her own crisis to notice.</p>
+                        
+                        <p>Laurel took a deep breath and approached William. &#34;William,&#34; she said,voice quivering, &#34;I&#39;m truly being wrongfully accused! These things have nothing to do with me!&#34;</p>
+                        
+                        <p>Her eyes filled with tears as she glanced at Blake. Then she spun toward Jennifer.</p>
+                        
+                        <p>&#34;How could you?&#34; she screamed, her hand flying through the air.</p>
+                        
+                        <p>The sound echoed as Laurel&#39;s palm hit Jennifer&#39;s cheek. Before Jennifer could recover, Laurel struck again with full force.</p>
+                        
+                        <p>Jennifer stumbled back, her lip split and bleeding. Two teeth had been knocked loose, blood trickling from her mouth.</p>
+                        
+                        <p>&#34;I treated you like family!&#34; Laurel shrieked. &#34;And this is how you repay me!?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -927,27 +971,31 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Jennifer touched her swelling face, eyes wide with shock.</p>
-                    
-                    <p>&#34;Tell me!&#34; Laurel continued, voice rising. &#34;When did I ever tell you to expose Audrey online? When did I tell you to spread rumors about her?&#34;</p>
-                    
-                    <p>She grabbed Jennifer&#39;s shoulders, shaking her. &#34;Everything you did,you did on your own! Now I&#39;m being blamed! Last night I was asleep early-I knew nothing about what happened!&#34;</p>
-                    
-                    <p>Jennifer opened her mouth, but no words came out.</p>
-                    
-                    <p>&#34;Why did you have people beat Audrey? Why did you use my name?&#34;</p>
-                    
-                    <p>Laurel&#39;s eyes flashed with rage. &#34;You stood under that security camera deliberately to frame me, didn&#39;t you!?&#34;</p>
-                    
-                    <p>She shoved Jennifer hard. &#34;Say something! Why are you trying to frame me!?&#34;</p>
-                    
-                    <p>I watched Laurel&#39;s performance unfold. The blood on the floor caught my eye.</p>
-                    
-                    <p>&#34;Miss Rose,&#34; I said, &#34;you can hit your agent of four years with such brutality?&#34;</p>
-                    
-                    <p>Laurel turned to me, breathing hard. &#34;She did terrible things behind my back! No matter how close we were, I cannot forgive that!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Jennifer touched her swelling face, eyes wide with shock.</p>
+                        
+                        <p>&#34;Tell me!&#34; Laurel continued, voice rising. &#34;When did I ever tell you to expose Audrey online? When did I tell you to spread rumors about her?&#34;</p>
+                        
+                        <p>She grabbed Jennifer&#39;s shoulders, shaking her. &#34;Everything you did,you did on your own! Now I&#39;m being blamed! Last night I was asleep early-I knew nothing about what happened!&#34;</p>
+                        
+                        <p>Jennifer opened her mouth, but no words came out.</p>
+                        
+                        <p>&#34;Why did you have people beat Audrey? Why did you use my name?&#34;</p>
+                        
+                        <p>Laurel&#39;s eyes flashed with rage. &#34;You stood under that security camera deliberately to frame me, didn&#39;t you!?&#34;</p>
+                        
+                        <p>She shoved Jennifer hard. &#34;Say something! Why are you trying to frame me!?&#34;</p>
+                        
+                        <p>I watched Laurel&#39;s performance unfold. The blood on the floor caught my eye.</p>
+                        
+                        <p>&#34;Miss Rose,&#34; I said, &#34;you can hit your agent of four years with such brutality?&#34;</p>
+                        
+                        <p>Laurel turned to me, breathing hard. &#34;She did terrible things behind my back! No matter how close we were, I cannot forgive that!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -962,27 +1010,31 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>She glared at Jennifer before facing me again. &#34;Jennifer, you&#39;ve been with me for so many years. I considered you family. How could you do this to me?&#34;</p>
-                    
-                    <p>*What an act. She&#39;s really going all in.*</p>
-                    
-                    <p>&#34;Why continue pretending?&#34; I asked.fJennifer wasn&#39;t following your orders, why would an agent with no connection to me target me repeatedly? She has no grudge against either of us. Why would she risk your reputation and try to harm me? What possible reason could she have?&#34;</p>
-                    
-                    <p>For a split second, I caught pure hatred in Laurel&#39;s eyes before she masked it.</p>
-                    
-                    <p>&#34;Maybe...&#34; Laurel said, voice softening, &#34;she wasn&#39;t trying to ruin my reputation. Maybe she thought with Blake supporting me,he would protect her for my sake...&#34;</p>
-                    
-                    <p>She suddenly strode toward Jennifer and delivered a kick that sent the woman sprawling. Jennifer lay there before slowly pulling herself up.</p>
-                    
-                    <p>&#34;Laurel...&#34; she wheezed, barely audible through swollen lips.</p>
-                    
-                    <p>&#34;Don&#39;t call my name!&#34; Laurel snapped. &#34;I don&#39;t know people like you!&#34;</p>
-                    
-                    <p>William watched with disgust before asking, &#34;Did your agent simply assume you would protect her, or did you promise her protection?&#34;</p>
-                    
-                    <p>Laurel stiffened. &#34;Of course she assumed! I had no idea what she was doing!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>She glared at Jennifer before facing me again. &#34;Jennifer, you&#39;ve been with me for so many years. I considered you family. How could you do this to me?&#34;</p>
+                        
+                        <p>*What an act. She&#39;s really going all in.*</p>
+                        
+                        <p>&#34;Why continue pretending?&#34; I asked.fJennifer wasn&#39;t following your orders, why would an agent with no connection to me target me repeatedly? She has no grudge against either of us. Why would she risk your reputation and try to harm me? What possible reason could she have?&#34;</p>
+                        
+                        <p>For a split second, I caught pure hatred in Laurel&#39;s eyes before she masked it.</p>
+                        
+                        <p>&#34;Maybe...&#34; Laurel said, voice softening, &#34;she wasn&#39;t trying to ruin my reputation. Maybe she thought with Blake supporting me,he would protect her for my sake...&#34;</p>
+                        
+                        <p>She suddenly strode toward Jennifer and delivered a kick that sent the woman sprawling. Jennifer lay there before slowly pulling herself up.</p>
+                        
+                        <p>&#34;Laurel...&#34; she wheezed, barely audible through swollen lips.</p>
+                        
+                        <p>&#34;Don&#39;t call my name!&#34; Laurel snapped. &#34;I don&#39;t know people like you!&#34;</p>
+                        
+                        <p>William watched with disgust before asking, &#34;Did your agent simply assume you would protect her, or did you promise her protection?&#34;</p>
+                        
+                        <p>Laurel stiffened. &#34;Of course she assumed! I had no idea what she was doing!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -997,27 +1049,31 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>William turned to Jennifer. &#34;Tell us yourself. Were these actions your own,or ordered by Laurel Rose?&#34;</p>
-                    
-                    <p>Jennifer opened her mouth to speak.&#34;I...&#34;</p>
-                    
-                    <p>&#34;Jennifer,&#34; Laurel cut in, voice suddenly smooth. &#34;You know how good I&#39;ve been to you. I arranged jobs for your parents and brother,helped your family buy a house and car. I&#39;ve treated you like family. Think carefully before you speak.&#34;</p>
-                    
-                    <p>*That threat couldn&#39;t be more obvious if she&#39;d pulled out a knife.*</p>
-                    
-                    <p>**Jennifer&#39;s POV**</p>
-                    
-                    <p>I stared up at Laurel, stunned into silence. Looking at her familiar face, I suddenly felt like I was seeing a stranger.</p>
-                    
-                    <p>For over four years, I&#39;d followed her loyally. I thought I knew her better than anyone - better than her own parents. I believed our bond was special.</p>
-                    
-                    <p>Now,beaten and bleeding on the floor of the Parker mansion I realizod</p>
-                    
-                    <p>how wrong Id been.</p>
-                    
-                    <p>&#34;Miss Rose,&#34; Audrey&#39;s voice broke through my thoughts, &#34;are you threatening her by listing your past kindnesses?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>William turned to Jennifer. &#34;Tell us yourself. Were these actions your own,or ordered by Laurel Rose?&#34;</p>
+                        
+                        <p>Jennifer opened her mouth to speak.&#34;I...&#34;</p>
+                        
+                        <p>&#34;Jennifer,&#34; Laurel cut in, voice suddenly smooth. &#34;You know how good I&#39;ve been to you. I arranged jobs for your parents and brother,helped your family buy a house and car. I&#39;ve treated you like family. Think carefully before you speak.&#34;</p>
+                        
+                        <p>*That threat couldn&#39;t be more obvious if she&#39;d pulled out a knife.*</p>
+                        
+                        <p>**Jennifer&#39;s POV**</p>
+                        
+                        <p>I stared up at Laurel, stunned into silence. Looking at her familiar face, I suddenly felt like I was seeing a stranger.</p>
+                        
+                        <p>For over four years, I&#39;d followed her loyally. I thought I knew her better than anyone - better than her own parents. I believed our bond was special.</p>
+                        
+                        <p>Now,beaten and bleeding on the floor of the Parker mansion I realizod</p>
+                        
+                        <p>how wrong Id been.</p>
+                        
+                        <p>&#34;Miss Rose,&#34; Audrey&#39;s voice broke through my thoughts, &#34;are you threatening her by listing your past kindnesses?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1032,27 +1088,31 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Laurel&#39;s expression stayed calm. &#34;Threatening? Not at all. I just know some people, when cornered, will bie the hand that fed them like dogs.I&#39;m reminding Jennifer not to damage my reputation.&#34;</p>
-                    
-                    <p>William let out a cold laugh. &#34;Biting the hand that fed you like a dog? Is Miss Rose describing herself?&#34;</p>
-                    
-                    <p>Laurel&#39;s face went white. She bit her lip and turned to Blake with pleading eyes.</p>
-                    
-                    <p>Blake frowned. &#34;Grandfather, Laurel isn&#39;t like that.&#34;</p>
-                    
-                    <p>&#34;We&#39;ll know soon enough,&#34; William replied. &#34;Bring them in,please.&#34;</p>
-                    
-                    <p>Charles moved toward a side door and opened it. Two people stepped into the room. Though in plain clothes, their posture gave them away instantly.</p>
-                    
-                    <p>&#34;New York Police Department,&#34; the man said, showing his badge.</p>
-                    
-                    <p>The female officer spoke next. &#34;We&#39;ve been waiting in the guest room.We received a report from Miss Sinclair that Jennifer Carson is involved in theft and assault. We need her to come with us.&#34;</p>
-                    
-                    <p>&#34;This morning,&#34; the male officer added, &#34;we also received a report from a man with evidence that Jennifer Carson orchestrated a kidnapping attempt at a university campus.&#34;</p>
-                    
-                    <p>He looked at me. &#34;Jennifer Carson, you need to come with us.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Laurel&#39;s expression stayed calm. &#34;Threatening? Not at all. I just know some people, when cornered, will bie the hand that fed them like dogs.I&#39;m reminding Jennifer not to damage my reputation.&#34;</p>
+                        
+                        <p>William let out a cold laugh. &#34;Biting the hand that fed you like a dog? Is Miss Rose describing herself?&#34;</p>
+                        
+                        <p>Laurel&#39;s face went white. She bit her lip and turned to Blake with pleading eyes.</p>
+                        
+                        <p>Blake frowned. &#34;Grandfather, Laurel isn&#39;t like that.&#34;</p>
+                        
+                        <p>&#34;We&#39;ll know soon enough,&#34; William replied. &#34;Bring them in,please.&#34;</p>
+                        
+                        <p>Charles moved toward a side door and opened it. Two people stepped into the room. Though in plain clothes, their posture gave them away instantly.</p>
+                        
+                        <p>&#34;New York Police Department,&#34; the man said, showing his badge.</p>
+                        
+                        <p>The female officer spoke next. &#34;We&#39;ve been waiting in the guest room.We received a report from Miss Sinclair that Jennifer Carson is involved in theft and assault. We need her to come with us.&#34;</p>
+                        
+                        <p>&#34;This morning,&#34; the male officer added, &#34;we also received a report from a man with evidence that Jennifer Carson orchestrated a kidnapping attempt at a university campus.&#34;</p>
+                        
+                        <p>He looked at me. &#34;Jennifer Carson, you need to come with us.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1067,25 +1127,29 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>I panicked, This couldn&#39;t be happening. Audrey always seemed so nageive</p>
-                    
-                    <p>- always yielding, never fighting back. Thalia and Olivia had said this woman would forgive anything. All we did was have her beaten up, and now she was sending me to jail?</p>
-                    
-                    <p>I crawvled toward Laurel, grabbing her pants. &#34;Laurel! Save mel I don&#39;t want to go to jail! Help me!&#34;</p>
-                    
-                    <p>My words rushed out. &#34;Everything I did... I was following your orders! I...I... I only did what you told me to do...&#34;</p>
-                    
-                    <p>Laurel&#39;s eyes flashed with panic. She kicked my hand away.&#34;Don&#39;t touch me!&#34;</p>
-                    
-                    <p>She turned to Blake. &#34;Blake darling, let them take her away! I can&#39;t stand looking at such a disgusting woman!&#34;</p>
-                    
-                    <p>In that moment, something inside me died. All those things - they were Laurel&#39;s ideas. Many times I&#39;d tried to convince her to show restraint. Now she was denying everything, pushing all the blame onto me.</p>
-                    
-                    <p>&#34;Laurel Rose!&#34; I cried out. &#34;Do you have any conscience left? WNhich of my actions didn&#39;t you know about? I-&#34;</p>
-                    
-                    <p>&#34;Enough!&#34; Blake&#39;s voice cut through the room.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>I panicked, This couldn&#39;t be happening. Audrey always seemed so nageive</p>
+                        
+                        <p>- always yielding, never fighting back. Thalia and Olivia had said this woman would forgive anything. All we did was have her beaten up, and now she was sending me to jail?</p>
+                        
+                        <p>I crawvled toward Laurel, grabbing her pants. &#34;Laurel! Save mel I don&#39;t want to go to jail! Help me!&#34;</p>
+                        
+                        <p>My words rushed out. &#34;Everything I did... I was following your orders! I...I... I only did what you told me to do...&#34;</p>
+                        
+                        <p>Laurel&#39;s eyes flashed with panic. She kicked my hand away.&#34;Don&#39;t touch me!&#34;</p>
+                        
+                        <p>She turned to Blake. &#34;Blake darling, let them take her away! I can&#39;t stand looking at such a disgusting woman!&#34;</p>
+                        
+                        <p>In that moment, something inside me died. All those things - they were Laurel&#39;s ideas. Many times I&#39;d tried to convince her to show restraint. Now she was denying everything, pushing all the blame onto me.</p>
+                        
+                        <p>&#34;Laurel Rose!&#34; I cried out. &#34;Do you have any conscience left? WNhich of my actions didn&#39;t you know about? I-&#34;</p>
+                        
+                        <p>&#34;Enough!&#34; Blake&#39;s voice cut through the room.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2401,6 +2465,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2527,7 +2671,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2569,32 +2712,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2605,21 +2730,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2652,6 +2767,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2672,20 +2793,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

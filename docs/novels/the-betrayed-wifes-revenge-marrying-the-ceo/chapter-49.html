@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.350398">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.350398">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.357594">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.357594">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.350398",
-        "dateModified": "2026-07-19T02:47:23.350398",
+        "datePublished": "2026-07-19T13:03:18.357594",
+        "dateModified": "2026-07-19T13:03:18.357594",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,29 +893,33 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Annie&#39;s POV</p>
-                    
-                    <p>Monday mornings at Howard Technologies always carried a certain energy.</p>
-                    
-                    <p>I&#39;d just settled into my studio space when Catherine Morgan swept in without knocking, her designer heels clicking purposefully across the floor.</p>
-                    
-                    <p>&#34;Annie!&#34; she exclaimed, dropping into the chair across from me. &#34;You won&#39;t believe what happened over the weekend!&#34;</p>
-                    
-                    <p>I set down my tablet with a bemused smile. These impromptu visits had become routine. &#34;Good morning to you too,Catherine.&#34;</p>
-                    
-                    <p>She leaned forward conspiratorially. &#34;Remember Joey that I told you about last time?&#34;</p>
-                    
-                    <p>I recalled our previous conversation. &#34;The one who accepted those roses from the cheap guy?&#34;</p>
-                    
-                    <p>&#34;Yes!&#34; Catherine&#39;s eyes lit up. &#34;Well, you won&#39;t believe what happened next.That cheap jerk asked Joey to help him pay back his ex-girlfriend!&#34;</p>
-                    
-                    <p>I blinked in surprise. &#34;Wait, what?&#34;</p>
-                    
-                    <p>&#34;I know!&#34; Catherine threw her hands up. &#34;Can you believe the audacity?Joey makes good money-she&#39;s saved over $200,000 through hard work.Did he really think she&#39;d just hand it over because he asked?&#34;</p>
-                    
-                    <p>&#34;That&#39;s.,. quite presumptuous,&#34; I agreed, finding myself drawn into her drama.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Annie&#39;s POV</p>
+                        
+                        <p>Monday mornings at Howard Technologies always carried a certain energy.</p>
+                        
+                        <p>I&#39;d just settled into my studio space when Catherine Morgan swept in without knocking, her designer heels clicking purposefully across the floor.</p>
+                        
+                        <p>&#34;Annie!&#34; she exclaimed, dropping into the chair across from me. &#34;You won&#39;t believe what happened over the weekend!&#34;</p>
+                        
+                        <p>I set down my tablet with a bemused smile. These impromptu visits had become routine. &#34;Good morning to you too,Catherine.&#34;</p>
+                        
+                        <p>She leaned forward conspiratorially. &#34;Remember Joey that I told you about last time?&#34;</p>
+                        
+                        <p>I recalled our previous conversation. &#34;The one who accepted those roses from the cheap guy?&#34;</p>
+                        
+                        <p>&#34;Yes!&#34; Catherine&#39;s eyes lit up. &#34;Well, you won&#39;t believe what happened next.That cheap jerk asked Joey to help him pay back his ex-girlfriend!&#34;</p>
+                        
+                        <p>I blinked in surprise. &#34;Wait, what?&#34;</p>
+                        
+                        <p>&#34;I know!&#34; Catherine threw her hands up. &#34;Can you believe the audacity?Joey makes good money-she&#39;s saved over $200,000 through hard work.Did he really think she&#39;d just hand it over because he asked?&#34;</p>
+                        
+                        <p>&#34;That&#39;s.,. quite presumptuous,&#34; I agreed, finding myself drawn into her drama.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -894,29 +934,33 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Catherine made a face of theatrical disgust. &#34;And when she refused, he immediately threatened to break up with her.&#34; &#34;Seriously?&#34; I couldn&#39;t help my incredulity. &#34;That&#39;s ridiculous.&#34;</p>
-                    
-                    <p>&#34;Right?&#34; Catherine nodded vigorously. &#34;But it gets worse! Joey actually paid him, and then-get this-he came to *me* asking for money!&#34;</p>
-                    
-                    <p>The story grew increasingly bizarre as Catherine detailed how the man had come to her after Joey paid, only to be soundly rejected. When she finished,she dramatically flung herself sideways, resting her head on my lap. The unexpected intimacy caught me off guard.</p>
-                    
-                    <p>&#34;Catherine?&#34; I asked gently, noticing how her usual animation had suddenly dimmed.</p>
-                    
-                    <p>&#34;Mmm?&#34; She looked up at me, her expressíon suddenly serious.</p>
-                    
-                    <p>&#34;Did something happen? You seem... different today.&#34;</p>
-                    
-                    <p>Catherine sighed. &#34;A friend confessed his feelings to me this weekend,&#34; she admitted quietly. &#34;I turned him down.&#34;</p>
-                    
-                    <p>I waited,sensing there was more.</p>
-                    
-                    <p>&#34;And now I&#39;m wondering if I made a mistake,&#34; she continued, her voice smaller than I&#39;d ever heard it. &#34;Annie, what would you do if you were me?</p>
-                    
-                    <p>11</p>
-                    
-                    <p>The question caught me off guard. I considered my answer carefully &#34;If it were me,&#34; I began slowly, thinking of my own complicated feelings toward Howard, &#34;I&#39;d probably turn him down too. After all, I just got divorced, my life is in pieces, and I&#39;m trying to rebuild. I probably wouldn&#39;t deserve him right now.&#34; Catherine studied my face for a long moment before a mischievous smile tugged at her lips. &#34;That&#39;s what I thought you&#39;d say,&#34; she murmured,seemingly satisfied with my response.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Catherine made a face of theatrical disgust. &#34;And when she refused, he immediately threatened to break up with her.&#34; &#34;Seriously?&#34; I couldn&#39;t help my incredulity. &#34;That&#39;s ridiculous.&#34;</p>
+                        
+                        <p>&#34;Right?&#34; Catherine nodded vigorously. &#34;But it gets worse! Joey actually paid him, and then-get this-he came to *me* asking for money!&#34;</p>
+                        
+                        <p>The story grew increasingly bizarre as Catherine detailed how the man had come to her after Joey paid, only to be soundly rejected. When she finished,she dramatically flung herself sideways, resting her head on my lap. The unexpected intimacy caught me off guard.</p>
+                        
+                        <p>&#34;Catherine?&#34; I asked gently, noticing how her usual animation had suddenly dimmed.</p>
+                        
+                        <p>&#34;Mmm?&#34; She looked up at me, her expressíon suddenly serious.</p>
+                        
+                        <p>&#34;Did something happen? You seem... different today.&#34;</p>
+                        
+                        <p>Catherine sighed. &#34;A friend confessed his feelings to me this weekend,&#34; she admitted quietly. &#34;I turned him down.&#34;</p>
+                        
+                        <p>I waited,sensing there was more.</p>
+                        
+                        <p>&#34;And now I&#39;m wondering if I made a mistake,&#34; she continued, her voice smaller than I&#39;d ever heard it. &#34;Annie, what would you do if you were me?</p>
+                        
+                        <p>11</p>
+                        
+                        <p>The question caught me off guard. I considered my answer carefully &#34;If it were me,&#34; I began slowly, thinking of my own complicated feelings toward Howard, &#34;I&#39;d probably turn him down too. After all, I just got divorced, my life is in pieces, and I&#39;m trying to rebuild. I probably wouldn&#39;t deserve him right now.&#34; Catherine studied my face for a long moment before a mischievous smile tugged at her lips. &#34;That&#39;s what I thought you&#39;d say,&#34; she murmured,seemingly satisfied with my response.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -931,29 +975,33 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>She sat up abruptly, smoothing her suit and instantly transforming back into the polished socialite. &#34;Well, I should let you work. Thanks for the chat,Annie!&#34;</p>
-                    
-                    <p>After work,Howard and I spotted Sue Peterson pacing anxiously near the entrance.</p>
-                    
-                    <p>&#34;Annie, Howard,&#34; she called, walking quickly toward us. &#34;Could you take Penny to your place for a while? Something&#39;s come up that I need to handle.&#34;</p>
-                    
-                    <p>Howard&#39;s gaze sharpened. &#34;Is it about your ex-husband?&#34;</p>
-                    
-                    <p>Sue&#39;s surprised expression confirmed his suspicion before she nodded. &#34;Yes,how did you-&#34;</p>
-                    
-                    <p>&#34;Just an educated guess,&#34; Howard replied evenly. &#34;What&#39;s happening?&#34;</p>
-                    
-                    <p>Sue ran a hand through her hair. &#34;Dave&#39;s demanding to see Penny tonight.He claims I&#39;m keeping her from him, which is ridiculous considering he rarely bothers to pick her up when he&#39;s supposed to.&#34;</p>
-                    
-                    <p>Lucy emerged from the school building just then, spotting us and running toward me with a smile. She slipped her small hand into mine with the easy trust we&#39;d built over these past months.</p>
-                    
-                    <p>&#34;I could join you,&#34; Howard offered, his tone matter-of-fact. &#34;If anything happens, I can provide support.&#34; Sue hesitated, her gaze moving from Howard to me, clearly wondering if I&#39;d be uncomfortable.</p>
-                    
-                    <p>&#34;Would that be a problem?&#34; I asked gently, understanding her hesitation.</p>
-                    
-                    <p>Sue bit her lip. &#34;I wouldn&#39;t want to impose-&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>She sat up abruptly, smoothing her suit and instantly transforming back into the polished socialite. &#34;Well, I should let you work. Thanks for the chat,Annie!&#34;</p>
+                        
+                        <p>After work,Howard and I spotted Sue Peterson pacing anxiously near the entrance.</p>
+                        
+                        <p>&#34;Annie, Howard,&#34; she called, walking quickly toward us. &#34;Could you take Penny to your place for a while? Something&#39;s come up that I need to handle.&#34;</p>
+                        
+                        <p>Howard&#39;s gaze sharpened. &#34;Is it about your ex-husband?&#34;</p>
+                        
+                        <p>Sue&#39;s surprised expression confirmed his suspicion before she nodded. &#34;Yes,how did you-&#34;</p>
+                        
+                        <p>&#34;Just an educated guess,&#34; Howard replied evenly. &#34;What&#39;s happening?&#34;</p>
+                        
+                        <p>Sue ran a hand through her hair. &#34;Dave&#39;s demanding to see Penny tonight.He claims I&#39;m keeping her from him, which is ridiculous considering he rarely bothers to pick her up when he&#39;s supposed to.&#34;</p>
+                        
+                        <p>Lucy emerged from the school building just then, spotting us and running toward me with a smile. She slipped her small hand into mine with the easy trust we&#39;d built over these past months.</p>
+                        
+                        <p>&#34;I could join you,&#34; Howard offered, his tone matter-of-fact. &#34;If anything happens, I can provide support.&#34; Sue hesitated, her gaze moving from Howard to me, clearly wondering if I&#39;d be uncomfortable.</p>
+                        
+                        <p>&#34;Would that be a problem?&#34; I asked gently, understanding her hesitation.</p>
+                        
+                        <p>Sue bit her lip. &#34;I wouldn&#39;t want to impose-&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -968,29 +1016,33 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;You wouldn&#39;t be,&#34; I assured her. &#34;We&#39;d be happy to help.&#34;</p>
-                    
-                    <p>Relief washed over her face. &#34;I would appreciate the backup,&#34; she admitted.&#34;Dave can be... difficult.&#34;</p>
-                    
-                    <p>&#34;Then it&#39;s settled,&#34; Howard stated with finality. &#34;We&#39;ll accompany you.&#34;</p>
-                    
-                    <p>An hour later, we were settled at a corner table in the restaurant.Howard had arranged for us to sit several tables away from where Sue would meet her ex-husband. Lucy and Penny sat beside me, studying the children&#39;s menu with serious expressions.</p>
-                    
-                    <p>&#34;I think this looks good,&#34; Penny pointed at a colorful pasta dish, her pigtails bouncing with enthusiasm.</p>
-                    
-                    <p>Lucy nodded, her eyes brightening at the illustration.</p>
-                    
-                    <p>While Howard helped the girls with their selections, I kept a discreet eye on Sue and Dave. Her ex-husband was conventionally handsome, but his aggressive posture and cold eyes reminded me uncomfortably of Philip during our worst arguments.</p>
-                    
-                    <p>&#34;What right do you have to keep Penny from me?&#34; Dave&#39;s voice carried despite his attempt to keep it low.</p>
-                    
-                    <p>&#34;Maybe because you never show up for her,&#34; Sue replied firmly. &#34;I&#39;ve been busy with work,&#34; he snapped defensively.</p>
-                    
-                    <p>&#34;Aren&#39;t you unemployed now?&#34;</p>
-                    
-                    <p>Dave&#39;s face reddened. &#34;That&#39;s temporary. I have prospects.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;You wouldn&#39;t be,&#34; I assured her. &#34;We&#39;d be happy to help.&#34;</p>
+                        
+                        <p>Relief washed over her face. &#34;I would appreciate the backup,&#34; she admitted.&#34;Dave can be... difficult.&#34;</p>
+                        
+                        <p>&#34;Then it&#39;s settled,&#34; Howard stated with finality. &#34;We&#39;ll accompany you.&#34;</p>
+                        
+                        <p>An hour later, we were settled at a corner table in the restaurant.Howard had arranged for us to sit several tables away from where Sue would meet her ex-husband. Lucy and Penny sat beside me, studying the children&#39;s menu with serious expressions.</p>
+                        
+                        <p>&#34;I think this looks good,&#34; Penny pointed at a colorful pasta dish, her pigtails bouncing with enthusiasm.</p>
+                        
+                        <p>Lucy nodded, her eyes brightening at the illustration.</p>
+                        
+                        <p>While Howard helped the girls with their selections, I kept a discreet eye on Sue and Dave. Her ex-husband was conventionally handsome, but his aggressive posture and cold eyes reminded me uncomfortably of Philip during our worst arguments.</p>
+                        
+                        <p>&#34;What right do you have to keep Penny from me?&#34; Dave&#39;s voice carried despite his attempt to keep it low.</p>
+                        
+                        <p>&#34;Maybe because you never show up for her,&#34; Sue replied firmly. &#34;I&#39;ve been busy with work,&#34; he snapped defensively.</p>
+                        
+                        <p>&#34;Aren&#39;t you unemployed now?&#34;</p>
+                        
+                        <p>Dave&#39;s face reddened. &#34;That&#39;s temporary. I have prospects.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1005,29 +1057,33 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;The same prospects you&#39;ve had for six months? Meanwhile, I&#39;m working full-time while raising our daughter.&#34;</p>
-                    
-                    <p>&#34;I&#39;m her father,&#34; Dave hissed. &#34;I have rights.&#34;</p>
-                    
-                    <p>&#34;Rights you&#39;ve barely exercised,&#34; Sue countered. &#34;When was the last time you attended a parent-teacher conference? Or remembered what foods she&#39;s allergic to?&#34;</p>
-                    
-                    <p>&#34;If you&#39;re going to be difficult, I&#39;ll take you to court.&#34;</p>
-                    
-                    <p>Sue remained surprisingly calm. &#34;Go ahead. The court will ask Penny who she wants to live with. They&#39;ll investigate which home environment better supports her development.&#34;</p>
-                    
-                    <p>Dave&#39;s aggression faltered. He softened his voice, changing tactics. &#34;Sue, be reasonable. I just want time with my daughter.&#34;</p>
-                    
-                    <p>&#34;Now you do,&#34; Sue replied coolly. &#34;After months of broken promises.Do you know how many times Penny&#39;s waited for you? How many times I&#39;ve had to explain that Daddy&#39;s not coming-again?&#34;</p>
-                    
-                    <p>Sue stood, clearly finished with the conversation. &#34;I won&#39;t let you disrupt her life because you suddenly feel like playing father.&#34;</p>
-                    
-                    <p>As she turned to leave, Dave grabbed her wrist. &#34;We&#39;re not finished-&#34;</p>
-                    
-                    <p>Howard was on his feet immediately, his movement smooth and purposeful. I quickly engaged the girls in conversation to distract them.</p>
-                    
-                    <p>&#34;Mr. Peterson,&#34; Howard&#39;s voice carried quiet authority. &#34;I believe Ms.Peterson was leaving. You might want to release her wrist.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;The same prospects you&#39;ve had for six months? Meanwhile, I&#39;m working full-time while raising our daughter.&#34;</p>
+                        
+                        <p>&#34;I&#39;m her father,&#34; Dave hissed. &#34;I have rights.&#34;</p>
+                        
+                        <p>&#34;Rights you&#39;ve barely exercised,&#34; Sue countered. &#34;When was the last time you attended a parent-teacher conference? Or remembered what foods she&#39;s allergic to?&#34;</p>
+                        
+                        <p>&#34;If you&#39;re going to be difficult, I&#39;ll take you to court.&#34;</p>
+                        
+                        <p>Sue remained surprisingly calm. &#34;Go ahead. The court will ask Penny who she wants to live with. They&#39;ll investigate which home environment better supports her development.&#34;</p>
+                        
+                        <p>Dave&#39;s aggression faltered. He softened his voice, changing tactics. &#34;Sue, be reasonable. I just want time with my daughter.&#34;</p>
+                        
+                        <p>&#34;Now you do,&#34; Sue replied coolly. &#34;After months of broken promises.Do you know how many times Penny&#39;s waited for you? How many times I&#39;ve had to explain that Daddy&#39;s not coming-again?&#34;</p>
+                        
+                        <p>Sue stood, clearly finished with the conversation. &#34;I won&#39;t let you disrupt her life because you suddenly feel like playing father.&#34;</p>
+                        
+                        <p>As she turned to leave, Dave grabbed her wrist. &#34;We&#39;re not finished-&#34;</p>
+                        
+                        <p>Howard was on his feet immediately, his movement smooth and purposeful. I quickly engaged the girls in conversation to distract them.</p>
+                        
+                        <p>&#34;Mr. Peterson,&#34; Howard&#39;s voice carried quiet authority. &#34;I believe Ms.Peterson was leaving. You might want to release her wrist.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1042,29 +1098,33 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Dave looked up, startled. &#34;This is a private conversation.&#34;</p>
-                    
-                    <p>&#34;It was,&#34; Howard agreed pleasantly, though his eyes remained cold. &#34;Until you physically restrained someone. That crosses from &#39;private conversation&#39;into &#39;potential assault.&#34;</p>
-                    
-                    <p>Dave&#39;s grip loosened, and Sue pulled her arm away.</p>
-                    
-                    <p>&#34;Who are you?&#34; Dave demanded, embarrassment mixing with anger.</p>
-                    
-                    <p>&#34;Howard Thompson.&#34; The name registered immediately with Dave,whose expression shifted from anger to calculation.</p>
-                    
-                    <p>&#34;This isn&#39;t your business, Thompson.&#34;</p>
-                    
-                    <p>&#34;I disagree,&#34; Howard replied evenly. &#34;Ms. Peterson works for me now, and her well-being is certainly my business. As is ensuring Penny has a stable environment.&#34;</p>
-                    
-                    <p>Howard turned to Sue. &#34;Ready to leave?&#34;</p>
-                    
-                    <p>Sue nodded with evident relief. As they walked back to our table, Dave watched with barely contained fury.</p>
-                    
-                    <p>Outside,Howard pulled Sue aside for a brief conversation while I helped the girls into the car. Through the window, I could see Sue nodding in response to Howard&#39;s words. When they joined us, Howard&#39;s expression was serious. &#34;Dave will likely continue his harassment. He&#39;s clearly using Penny as leverage, particularly since Sue provides financial support to his new family.&#34; &#34;What can she do?&#34; I asked, concerned for both mother and daughter.</p>
-                    
-                    <p>Howard outlined the security measures already in place at Sue&#39;s residence and at Howard Technologies. &#34;The office has strict access controls,and your apartment has decent security. But remain cautious elsewhere.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Dave looked up, startled. &#34;This is a private conversation.&#34;</p>
+                        
+                        <p>&#34;It was,&#34; Howard agreed pleasantly, though his eyes remained cold. &#34;Until you physically restrained someone. That crosses from &#39;private conversation&#39;into &#39;potential assault.&#34;</p>
+                        
+                        <p>Dave&#39;s grip loosened, and Sue pulled her arm away.</p>
+                        
+                        <p>&#34;Who are you?&#34; Dave demanded, embarrassment mixing with anger.</p>
+                        
+                        <p>&#34;Howard Thompson.&#34; The name registered immediately with Dave,whose expression shifted from anger to calculation.</p>
+                        
+                        <p>&#34;This isn&#39;t your business, Thompson.&#34;</p>
+                        
+                        <p>&#34;I disagree,&#34; Howard replied evenly. &#34;Ms. Peterson works for me now, and her well-being is certainly my business. As is ensuring Penny has a stable environment.&#34;</p>
+                        
+                        <p>Howard turned to Sue. &#34;Ready to leave?&#34;</p>
+                        
+                        <p>Sue nodded with evident relief. As they walked back to our table, Dave watched with barely contained fury.</p>
+                        
+                        <p>Outside,Howard pulled Sue aside for a brief conversation while I helped the girls into the car. Through the window, I could see Sue nodding in response to Howard&#39;s words. When they joined us, Howard&#39;s expression was serious. &#34;Dave will likely continue his harassment. He&#39;s clearly using Penny as leverage, particularly since Sue provides financial support to his new family.&#34; &#34;What can she do?&#34; I asked, concerned for both mother and daughter.</p>
+                        
+                        <p>Howard outlined the security measures already in place at Sue&#39;s residence and at Howard Technologies. &#34;The office has strict access controls,and your apartment has decent security. But remain cautious elsewhere.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1079,19 +1139,23 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;I could assign company security personnel,&#34; he added. &#34;Given your role on our secure projects, it would be justified.&#34;</p>
-                    
-                    <p>&#34;Thank you,&#34; Sue said softly. &#34;I don&#39;t know how to repay you both.&#34;</p>
-                    
-                    <p>Howard shook his head. &#34;There&#39;s no need. You&#39;re a valuable employee,and Penny&#39;s friendship has been significant for Lucy&#39;s progress.&#34;</p>
-                    
-                    <p>As we drove away, I glanced at Howard&#39;s profile, struck by the quiet strength he&#39;d displayed. Behind his matter-of-fact tone,I recognized what he tried to disguise - genuine care and protection for those he considered part of his circle.</p>
-                    
-                    <p>*I&#39;d probably turn him down too. I just got divorced, my life is in pieces...*My own words to Catherine floated back.</p>
-                    
-                    <p>Howard had stepped in tonight without hesitation. And despite all my careful boundaries, I couldn&#39;t ignore the flutter in my stomach when Howard&#39;s gaze met mine. Maybe that was the most frightening part - not that I was drawn to him, but that I&#39;d begun to imagine what it might be like to let someone in again.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;I could assign company security personnel,&#34; he added. &#34;Given your role on our secure projects, it would be justified.&#34;</p>
+                        
+                        <p>&#34;Thank you,&#34; Sue said softly. &#34;I don&#39;t know how to repay you both.&#34;</p>
+                        
+                        <p>Howard shook his head. &#34;There&#39;s no need. You&#39;re a valuable employee,and Penny&#39;s friendship has been significant for Lucy&#39;s progress.&#34;</p>
+                        
+                        <p>As we drove away, I glanced at Howard&#39;s profile, struck by the quiet strength he&#39;d displayed. Behind his matter-of-fact tone,I recognized what he tried to disguise - genuine care and protection for those he considered part of his circle.</p>
+                        
+                        <p>*I&#39;d probably turn him down too. I just got divorced, my life is in pieces...*My own words to Catherine floated back.</p>
+                        
+                        <p>Howard had stepped in tonight without hesitation. And despite all my careful boundaries, I couldn&#39;t ignore the flutter in my stomach when Howard&#39;s gaze met mine. Maybe that was the most frightening part - not that I was drawn to him, but that I&#39;d begun to imagine what it might be like to let someone in again.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2407,6 +2471,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2533,7 +2677,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2575,32 +2718,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2611,21 +2736,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2658,6 +2773,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2678,20 +2799,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

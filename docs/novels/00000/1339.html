@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Shaking her head, Vivian placed Adrian&#39;s drink on his nightstand. &#34;Your grandmother&#39;s special recipe,&#34; she said dryly before retreating to her makeshift bed on the sofa.</p>
-                    
-                    <p>The rich aroma of her own drink made her mouth water. The luxurious fish maw, simmered to perfection in fresh milk with just a hint of rock sugar, was worlds away from the instant noodles that usually stocked her pantry. Each velvety sip reminded her of the privileges money could buy - and how desperately she wanted to reclaim that independence.</p>
-                    
-                    <p>Adrian watched her with unusual interest, his fingers twitching toward her bowl. &#34;That good? Let me taste.&#34;</p>
-                    
-                    <p>&#34;Get your own,&#34; Vivian shot back, protectively cradling the bowl as she devoured the last precious bites.</p>
-                    
-                    <p>His lips thinned as he drained his honey milk in one long swallow, slamming the empty cup down with more force than necessary. &#34;People would think the Blackwoods starve you,&#34; he remarked, barely stopping himself from comparing her to a rabid dog guarding its meal.</p>
-                    
-                    <p>Despite the satisfying meal, an odd restlessness prickled under Vivian&#39;s skin. She longed for a cool shower and the oblivion of sleep, but Adrian&#39;s brooding presence made both impossible.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Shaking her head, Vivian placed Adrian&#39;s drink on his nightstand. &#34;Your grandmother&#39;s special recipe,&#34; she said dryly before retreating to her makeshift bed on the sofa.</p>
+                        
+                        <p>The rich aroma of her own drink made her mouth water. The luxurious fish maw, simmered to perfection in fresh milk with just a hint of rock sugar, was worlds away from the instant noodles that usually stocked her pantry. Each velvety sip reminded her of the privileges money could buy - and how desperately she wanted to reclaim that independence.</p>
+                        
+                        <p>Adrian watched her with unusual interest, his fingers twitching toward her bowl. &#34;That good? Let me taste.&#34;</p>
+                        
+                        <p>&#34;Get your own,&#34; Vivian shot back, protectively cradling the bowl as she devoured the last precious bites.</p>
+                        
+                        <p>His lips thinned as he drained his honey milk in one long swallow, slamming the empty cup down with more force than necessary. &#34;People would think the Blackwoods starve you,&#34; he remarked, barely stopping himself from comparing her to a rabid dog guarding its meal.</p>
+                        
+                        <p>Despite the satisfying meal, an odd restlessness prickled under Vivian&#39;s skin. She longed for a cool shower and the oblivion of sleep, but Adrian&#39;s brooding presence made both impossible.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Scrolling through her phone provided little distraction. A strange heat was building inside her, spreading through her limbs like liquid fire. She tugged at the hem of her skirt, hoping the night air would soothe her flushed skin, but the discomfort only intensified.</p>
-                    
-                    <p>The room seemed to shrink around them, the walls pressing closer with each passing minute. Vivian&#39;s breath came faster now, her fingers trembling against her phone screen. Something was very wrong.</p>
-                    
-                    <p>Adrian&#39;s sharp inhale told her he felt it too. His usually composed features had taken on a dangerous edge, his knuckles white where they gripped the sheets. Their eyes met across the shadowed room - and in that charged moment, they both understood.</p>
-                    
-                    <p>The drinks had been spiked.</p>
-                    
-                    <p>Vivian exhaled sharply, turning toward Adrian with an unfinished sentence hanging between them. &#34;Were you planning to—&#34;</p>
-                    
-                    <p>Her words dissolved as she found him studying her with an intensity that felt like a physical touch.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Scrolling through her phone provided little distraction. A strange heat was building inside her, spreading through her limbs like liquid fire. She tugged at the hem of her skirt, hoping the night air would soothe her flushed skin, but the discomfort only intensified.</p>
+                        
+                        <p>The room seemed to shrink around them, the walls pressing closer with each passing minute. Vivian&#39;s breath came faster now, her fingers trembling against her phone screen. Something was very wrong.</p>
+                        
+                        <p>Adrian&#39;s sharp inhale told her he felt it too. His usually composed features had taken on a dangerous edge, his knuckles white where they gripped the sheets. Their eyes met across the shadowed room - and in that charged moment, they both understood.</p>
+                        
+                        <p>The drinks had been spiked.</p>
+                        
+                        <p>Vivian exhaled sharply, turning toward Adrian with an unfinished sentence hanging between them. &#34;Were you planning to—&#34;</p>
+                        
+                        <p>Her words dissolved as she found him studying her with an intensity that felt like a physical touch.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Normally, Vivian despised his loveless advances, yet now an unfamiliar heat unfurled in her core, awakening desires she&#39;d never acknowledged.</p>
-                    
-                    <p>She fidgeted, her cheeks flushing as embarrassment prickled her skin. This sudden craving confused her. Though her mind urged restraint, her body responded with undeniable hunger. Avoiding his gaze, she swallowed hard. &#34;If you&#39;re not showering, I will. This heat is unbearable.&#34;</p>
-                    
-                    <p>Her lips parted slightly, her voice softening unintentionally—almost like an invitation. Without warning, Adrian closed the distance, caging her against the sofa with his arms. His warm breath carried traces of whiskey, making her head spin as if she&#39;d been drinking too. Every angle of his face—from the sharp jawline to those hypnotic eyes—was devastatingly perfect.</p>
-                    
-                    <p>Her breath caught when she realized their lips were mere inches apart. Memories of their past rushed through her—none particularly tender, yet now the thought of his mouth on hers sent molten need through her veins. Logic screamed for retreat, but primal desire held her captive. The air between them crackled with tension, her pulse pounding so loudly it drowned all reason.</p>
-                    
-                    <p>Almost unconsciously, she tilted her chin upward. Adrian abruptly straightened, his voice slicing through the haze. &#34;Doesn&#39;t this seem odd to you?&#34;</p>
-                    
-                    <p>Vivian stiffened, his words dousing her like ice water.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Normally, Vivian despised his loveless advances, yet now an unfamiliar heat unfurled in her core, awakening desires she&#39;d never acknowledged.</p>
+                        
+                        <p>She fidgeted, her cheeks flushing as embarrassment prickled her skin. This sudden craving confused her. Though her mind urged restraint, her body responded with undeniable hunger. Avoiding his gaze, she swallowed hard. &#34;If you&#39;re not showering, I will. This heat is unbearable.&#34;</p>
+                        
+                        <p>Her lips parted slightly, her voice softening unintentionally—almost like an invitation. Without warning, Adrian closed the distance, caging her against the sofa with his arms. His warm breath carried traces of whiskey, making her head spin as if she&#39;d been drinking too. Every angle of his face—from the sharp jawline to those hypnotic eyes—was devastatingly perfect.</p>
+                        
+                        <p>Her breath caught when she realized their lips were mere inches apart. Memories of their past rushed through her—none particularly tender, yet now the thought of his mouth on hers sent molten need through her veins. Logic screamed for retreat, but primal desire held her captive. The air between them crackled with tension, her pulse pounding so loudly it drowned all reason.</p>
+                        
+                        <p>Almost unconsciously, she tilted her chin upward. Adrian abruptly straightened, his voice slicing through the haze. &#34;Doesn&#39;t this seem odd to you?&#34;</p>
+                        
+                        <p>Vivian stiffened, his words dousing her like ice water.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;The drink,&#34; Adrian rasped, his voice thick. &#34;It was tampered with.&#34;</p>
-                    
-                    <p>&#34;What?&#34; Her wide eyes met his, surprise mingling with lingering hunger in her gaze. The unspoken longing in her expression tested his crumbling control, igniting a matching fire within him.</p>
-                    
-                    <p>Clenching his fists, he ground out, &#34;Grandmother... she must&#39;ve added something.&#34;</p>
-                    
-                    <p>Even through the fog, Vivian understood. Her eyes darted to the empty soup bowl, disbelief flashing across her face. Of course. Someone like her—so guarded—wouldn&#39;t surrender to passion without cause. The realization eased some embarrassment.</p>
-                    
-                    <p>She pressed trembling hands against Adrian&#39;s chest. &#34;I know what to do.&#34;</p>
-                    
-                    <p>Adrian frowned but stepped back, granting her space. He exhaled sharply. Grandmother meant no harm—he knew that. Whatever she&#39;d used was likely meant to... bridge the gap between them.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;The drink,&#34; Adrian rasped, his voice thick. &#34;It was tampered with.&#34;</p>
+                        
+                        <p>&#34;What?&#34; Her wide eyes met his, surprise mingling with lingering hunger in her gaze. The unspoken longing in her expression tested his crumbling control, igniting a matching fire within him.</p>
+                        
+                        <p>Clenching his fists, he ground out, &#34;Grandmother... she must&#39;ve added something.&#34;</p>
+                        
+                        <p>Even through the fog, Vivian understood. Her eyes darted to the empty soup bowl, disbelief flashing across her face. Of course. Someone like her—so guarded—wouldn&#39;t surrender to passion without cause. The realization eased some embarrassment.</p>
+                        
+                        <p>She pressed trembling hands against Adrian&#39;s chest. &#34;I know what to do.&#34;</p>
+                        
+                        <p>Adrian frowned but stepped back, granting her space. He exhaled sharply. Grandmother meant no harm—he knew that. Whatever she&#39;d used was likely meant to... bridge the gap between them.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Discomfort twisted his gut. Had it really come to this? Needing a spiked drink to connect with his own wife? Without explanation, Vivian grabbed his wrist and pulled him toward the bathroom. Under his questioning stare, she twisted the shower knob, releasing an icy torrent that cascaded instantly.</p>
-                    
-                    <p>The icy water cascaded over them both, drenching their clothes instantly.</p>
-                    
-                    <p>Adrian shuddered violently as the freezing liquid seeped through his shirt, his jaw tightening. &#34;This is your brilliant solution?&#34; he ground out between clenched teeth.</p>
-                    
-                    <p>Vivian remained unfazed as she moved toward the bathtub, twisting the faucet to release more cold water.</p>
-                    
-                    <p>&#34;It works in all the romance dramas,&#34; she stated with clinical detachment. &#34;Cold water suppresses desire. Trust me - I&#39;ve written enough scripts to know.&#34; A faint smirk played on her lips as she added, &#34;Research is part of my job.&#34;</p>
-                    
-                    <p>The soaked fabric of her dress clung to her body like a second skin, revealing every tantalizing curve with startling clarity.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Discomfort twisted his gut. Had it really come to this? Needing a spiked drink to connect with his own wife? Without explanation, Vivian grabbed his wrist and pulled him toward the bathroom. Under his questioning stare, she twisted the shower knob, releasing an icy torrent that cascaded instantly.</p>
+                        
+                        <p>The icy water cascaded over them both, drenching their clothes instantly.</p>
+                        
+                        <p>Adrian shuddered violently as the freezing liquid seeped through his shirt, his jaw tightening. &#34;This is your brilliant solution?&#34; he ground out between clenched teeth.</p>
+                        
+                        <p>Vivian remained unfazed as she moved toward the bathtub, twisting the faucet to release more cold water.</p>
+                        
+                        <p>&#34;It works in all the romance dramas,&#34; she stated with clinical detachment. &#34;Cold water suppresses desire. Trust me - I&#39;ve written enough scripts to know.&#34; A faint smirk played on her lips as she added, &#34;Research is part of my job.&#34;</p>
+                        
+                        <p>The soaked fabric of her dress clung to her body like a second skin, revealing every tantalizing curve with startling clarity.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>As she leaned forward to adjust the water flow, the graceful arch of her back and the tempting swell of her hips captured Adrian&#39;s attention, stealing the breath from his lungs.</p>
-                    
-                    <p>The vision, combined with the relentless heat of the drug still burning through his veins, shattered the last remnants of his restraint.</p>
-                    
-                    <p>Adrian&#39;s throat worked as he swallowed hard, his control disintegrating as he closed the distance between them.</p>
-                    
-                    <p>His large hands found purchase on her waist, fingers pressing deliberately into the damp fabric, the heat of his touch searing through the wet material.</p>
-                    
-                    <p>Bending close enough that his breath ghosted over her ear, he growled in a voice rough with need, &#34;Vivian... I need you.&#34;</p>
-                    
-                    <p>A violent tremor racked Vivian&#39;s body, her knees nearly buckling beneath her. She twisted free from Adrian&#39;s grasp, hastily kicking off her heels before plunging into the half-filled tub with desperate urgency.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>As she leaned forward to adjust the water flow, the graceful arch of her back and the tempting swell of her hips captured Adrian&#39;s attention, stealing the breath from his lungs.</p>
+                        
+                        <p>The vision, combined with the relentless heat of the drug still burning through his veins, shattered the last remnants of his restraint.</p>
+                        
+                        <p>Adrian&#39;s throat worked as he swallowed hard, his control disintegrating as he closed the distance between them.</p>
+                        
+                        <p>His large hands found purchase on her waist, fingers pressing deliberately into the damp fabric, the heat of his touch searing through the wet material.</p>
+                        
+                        <p>Bending close enough that his breath ghosted over her ear, he growled in a voice rough with need, &#34;Vivian... I need you.&#34;</p>
+                        
+                        <p>A violent tremor racked Vivian&#39;s body, her knees nearly buckling beneath her. She twisted free from Adrian&#39;s grasp, hastily kicking off her heels before plunging into the half-filled tub with desperate urgency.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,13 +1079,17 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Curling into herself, she let the frigid water rise to her collarbones, but it did nothing to quench the firestorm raging within her - a dizzying paradox of ice and flame.</p>
-                    
-                    <p>Adrian&#39;s gaze burned into her with predatory intensity, the hunger in his dark eyes threatening to devour her whole.</p>
-                    
-                    <p>Rational thought abandoned him, consumed by primal need. He no longer cared whether it was the drug or something more profound - all that mattered was claiming her. She was his wife. Why should he resist?</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Curling into herself, she let the frigid water rise to her collarbones, but it did nothing to quench the firestorm raging within her - a dizzying paradox of ice and flame.</p>
+                        
+                        <p>Adrian&#39;s gaze burned into her with predatory intensity, the hunger in his dark eyes threatening to devour her whole.</p>
+                        
+                        <p>Rational thought abandoned him, consumed by primal need. He no longer cared whether it was the drug or something more profound - all that mattered was claiming her. She was his wife. Why should he resist?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2341,6 +2405,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2467,7 +2611,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2509,32 +2652,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2545,21 +2670,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2592,6 +2707,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2612,20 +2733,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

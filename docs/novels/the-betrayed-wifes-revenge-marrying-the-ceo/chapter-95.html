@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.372956">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.372956">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.376136">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.376136">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.372956",
-        "dateModified": "2026-07-19T02:47:23.372956",
+        "datePublished": "2026-07-19T13:03:18.376136",
+        "dateModified": "2026-07-19T13:03:18.376136",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,25 +893,29 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Annie&#39;s POV</p>
-                    
-                    <p>I saved the final illustration for my children&#39;s book and closed my tablet.My fingers were stiff from hours of detailed work, but finishing the project gave me a sense of accomplishment.</p>
-                    
-                    <p>The peaceful moment ended when my office door burst open. Catherine Morgan stumbled in, her makeup smeared by tears, her designer blouse wrinkled.</p>
-                    
-                    <p>&#34;Annie!&#34; she wailed, dropping into the chair across from my desk. &#34;This is absolutely unbearable!&#34;</p>
-                    
-                    <p>I set my tablet aside. &#34;What happened?&#34;</p>
-                    
-                    <p>&#34;Your boyfriend happened!&#34; Catherine dabbed at her eyes with a crumpled tissue. &#34;Do you know where he sent me? That new gaming project team!&#34;</p>
-                    
-                    <p>I kept my expression neutral, though I had a good idea what was going on.&#34;I heard about your new assignment. How&#39;s it going?&#34;</p>
-                    
-                    <p>&#34;How&#39;s it going?&#34; Catherine&#39;s voice rose an octave. &#34;I&#39;ve been there for hours without even being able to use the bathroom! Two hours, Annie!The project manager watches us like a hawk. I had to make up an emergency just to escape for a few minutes!&#34;</p>
-                    
-                    <p>She leaned forward, eyes wild with frustration. &#34;The workload is insane.The deadlines are impossible. And the worst part? Howard did this on purpose! He set a trap, and Molly and I walked right into it!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Annie&#39;s POV</p>
+                        
+                        <p>I saved the final illustration for my children&#39;s book and closed my tablet.My fingers were stiff from hours of detailed work, but finishing the project gave me a sense of accomplishment.</p>
+                        
+                        <p>The peaceful moment ended when my office door burst open. Catherine Morgan stumbled in, her makeup smeared by tears, her designer blouse wrinkled.</p>
+                        
+                        <p>&#34;Annie!&#34; she wailed, dropping into the chair across from my desk. &#34;This is absolutely unbearable!&#34;</p>
+                        
+                        <p>I set my tablet aside. &#34;What happened?&#34;</p>
+                        
+                        <p>&#34;Your boyfriend happened!&#34; Catherine dabbed at her eyes with a crumpled tissue. &#34;Do you know where he sent me? That new gaming project team!&#34;</p>
+                        
+                        <p>I kept my expression neutral, though I had a good idea what was going on.&#34;I heard about your new assignment. How&#39;s it going?&#34;</p>
+                        
+                        <p>&#34;How&#39;s it going?&#34; Catherine&#39;s voice rose an octave. &#34;I&#39;ve been there for hours without even being able to use the bathroom! Two hours, Annie!The project manager watches us like a hawk. I had to make up an emergency just to escape for a few minutes!&#34;</p>
+                        
+                        <p>She leaned forward, eyes wild with frustration. &#34;The workload is insane.The deadlines are impossible. And the worst part? Howard did this on purpose! He set a trap, and Molly and I walked right into it!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -890,25 +930,29 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>I reached across the desk and patted her hand. &#34;You&#39;ve been working really hard. I&#39;m sorry it&#39;s been difficult.&#34;</p>
-                    
-                    <p>&#34;He&#39;s terrifying,&#34; Catherine whispered, glancing nervously at the door. &#34;I never thought he&#39;d go this far just because of a little prank.&#34;</p>
-                    
-                    <p>&#34;A prank?&#34; I asked, though I&#39;d already guessed about the spicy food incident Howard had mentioned.</p>
-                    
-                    <p>Catherine waved her hand dismissively. &#34;Just a silly joke. Nothing worth mentioning.&#34; She quickly changed the subject. &#34;The point is, this new position is killing me!&#34;</p>
-                    
-                    <p>I studied her carefully. &#34;Despite the difficulties, have you learned anything useful?&#34;</p>
-                    
-                    <p>Catherine paused, caught off guard by my question. &#34;Well... I guess I have picked up some new skills. The project lead is actually brilliant-when he&#39;s not driving us insane with deadlines. And the technical aspects are interesting...&#34; Her voice trailed off.</p>
-                    
-                    <p>&#34;But?&#34; I prompted.</p>
-                    
-                    <p>&#34;But it&#39;s exhausting!&#34; she exclaimed, throwing her hands up. &#34;I didn&#39;t sign up for this kind of pressure! I want my comfortable job in marketing back.All I did there was coordinate events and manage social media. It was easy.&#34;</p>
-                    
-                    <p>&#34;I thought you were planning to take over your father&#39;s company someday,&#34;I reminded her. &#34;The Morgan family business is substantial. Won&#39;t these management skills come in handy?&#34; Catherine sighed and slumped in her chair. &#34;I was thinking... maybe I could just find a husband willing to marry into the family and let him run Dad&#39;s company. Then I could keep working here, doing something simple.&#34; I couldn&#39;t help but laugh at her naivety. &#34;Catherine, that&#39;s a dangerous plan. If you hand over control to someone else, what&#39;s to stop them from taking everything and leaving you with nothing? Your father built that company with hard work, not by finding someone else to do the difficult parts.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>I reached across the desk and patted her hand. &#34;You&#39;ve been working really hard. I&#39;m sorry it&#39;s been difficult.&#34;</p>
+                        
+                        <p>&#34;He&#39;s terrifying,&#34; Catherine whispered, glancing nervously at the door. &#34;I never thought he&#39;d go this far just because of a little prank.&#34;</p>
+                        
+                        <p>&#34;A prank?&#34; I asked, though I&#39;d already guessed about the spicy food incident Howard had mentioned.</p>
+                        
+                        <p>Catherine waved her hand dismissively. &#34;Just a silly joke. Nothing worth mentioning.&#34; She quickly changed the subject. &#34;The point is, this new position is killing me!&#34;</p>
+                        
+                        <p>I studied her carefully. &#34;Despite the difficulties, have you learned anything useful?&#34;</p>
+                        
+                        <p>Catherine paused, caught off guard by my question. &#34;Well... I guess I have picked up some new skills. The project lead is actually brilliant-when he&#39;s not driving us insane with deadlines. And the technical aspects are interesting...&#34; Her voice trailed off.</p>
+                        
+                        <p>&#34;But?&#34; I prompted.</p>
+                        
+                        <p>&#34;But it&#39;s exhausting!&#34; she exclaimed, throwing her hands up. &#34;I didn&#39;t sign up for this kind of pressure! I want my comfortable job in marketing back.All I did there was coordinate events and manage social media. It was easy.&#34;</p>
+                        
+                        <p>&#34;I thought you were planning to take over your father&#39;s company someday,&#34;I reminded her. &#34;The Morgan family business is substantial. Won&#39;t these management skills come in handy?&#34; Catherine sighed and slumped in her chair. &#34;I was thinking... maybe I could just find a husband willing to marry into the family and let him run Dad&#39;s company. Then I could keep working here, doing something simple.&#34; I couldn&#39;t help but laugh at her naivety. &#34;Catherine, that&#39;s a dangerous plan. If you hand over control to someone else, what&#39;s to stop them from taking everything and leaving you with nothing? Your father built that company with hard work, not by finding someone else to do the difficult parts.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -923,25 +967,29 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>She frowned, clearly not having considered this perspective before.&#34;But learning all this technical stuff is so hard...&#34; Her complaint sounded childish even to her own ears, and she winced.</p>
-                    
-                    <p>&#34;The things worth having rarely come easily,&#34; I said. &#34;If you want to be respected as more than just &#39;Morgan&#39;s daughter,&#39; you need to develop real professional skills.&#34;</p>
-                    
-                    <p>Catherine looked at me for a long moment, then grudgingly nodded. &#34;I guess you&#39;re right. It&#39;s just... nobody ever pushed me this hard before.&#34;</p>
-                    
-                    <p>A sharp knock interrupted us. The gaming department&#39;s project manager-a stern man with thick glasses-poked his head in.</p>
-                    
-                    <p>&#34;Miss Morgan, your fifteen-minute break ended thirty minutes ago,&#34; he said,checking his watch. &#34;We have a milestone to hit by six.&#34;</p>
-                    
-                    <p>Catherine shot me a desperate look, silently pleading for rescue, but I just gave her an encouraging smile. With a dramatic sigh, she stood and smoothed her wrinkled blouse.</p>
-                    
-                    <p>&#34;Coming,&#34; she said reluctantly. As she trudged toward the door,she glanced back at me. &#34;This conversation isn&#39;t over.&#34;</p>
-                    
-                    <p>As Catherine left, I noticed Howard standing in the doorway. The subtle smile on his lips told me he&#39;d heard at least part of our conversation. He stepped into my office,closing the door behind him.</p>
-                    
-                    <p>&#34;I&#39;m back,&#34; he said, walking over to kiss my forehead. &#34;I missed you.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>She frowned, clearly not having considered this perspective before.&#34;But learning all this technical stuff is so hard...&#34; Her complaint sounded childish even to her own ears, and she winced.</p>
+                        
+                        <p>&#34;The things worth having rarely come easily,&#34; I said. &#34;If you want to be respected as more than just &#39;Morgan&#39;s daughter,&#39; you need to develop real professional skills.&#34;</p>
+                        
+                        <p>Catherine looked at me for a long moment, then grudgingly nodded. &#34;I guess you&#39;re right. It&#39;s just... nobody ever pushed me this hard before.&#34;</p>
+                        
+                        <p>A sharp knock interrupted us. The gaming department&#39;s project manager-a stern man with thick glasses-poked his head in.</p>
+                        
+                        <p>&#34;Miss Morgan, your fifteen-minute break ended thirty minutes ago,&#34; he said,checking his watch. &#34;We have a milestone to hit by six.&#34;</p>
+                        
+                        <p>Catherine shot me a desperate look, silently pleading for rescue, but I just gave her an encouraging smile. With a dramatic sigh, she stood and smoothed her wrinkled blouse.</p>
+                        
+                        <p>&#34;Coming,&#34; she said reluctantly. As she trudged toward the door,she glanced back at me. &#34;This conversation isn&#39;t over.&#34;</p>
+                        
+                        <p>As Catherine left, I noticed Howard standing in the doorway. The subtle smile on his lips told me he&#39;d heard at least part of our conversation. He stepped into my office,closing the door behind him.</p>
+                        
+                        <p>&#34;I&#39;m back,&#34; he said, walking over to kiss my forehead. &#34;I missed you.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -956,25 +1004,29 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>I stood and hugged him, breathing in his familiar scent. &#34;I missed you too,&#34;I admitted, surprised by how mnuch I meant it.</p>
-                    
-                    <p>As I held him, I couldn&#39;t help comparing him to Philip. My ex-husband rarely expressed missing me during the day. Had he ever truly loved me?I doubted it now. Howard never hesitated to show his feelings. There was something reassuring about a man who wasn&#39;t afraid to be vunerable.</p>
-                    
-                    <p>&#34;Sit down,&#34; I suggested, pointing to the sofa in the corner. &#34;You look tired.How was your meeting?&#34;</p>
-                    
-                    <p>Howard studied my face carefully. &#34;Something&#39;s different about your tone.What happened while I was gone?&#34;</p>
-                    
-                    <p>I took a deep breath, deciding to be direct. &#34;Someone showed me photos of you and Sarah Johnson talking in your car today.&#34;</p>
-                    
-                    <p>His expression darkened immediately. &#34;Let me guess-Caroline Gluck?&#34;</p>
-                    
-                    <p>I nodded. &#34;She claimed you didn&#39;t love me anymore, thatyou were developing feelings for Sarah instead.&#34; I kept my voice steady, meeting his eyes.</p>
-                    
-                    <p>Howard&#39;s jaw tightened. He reached for my hand. &#34;This was Sarah&#39;s plan all along. She approached me in the parking garage, insisting she had important information about you. She claimed you were hiding something from me.&#34;</p>
-                    
-                    <p>&#34;And you let her into your car to hear what she had to say?&#34; I asked,curious rather than accusatory.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>I stood and hugged him, breathing in his familiar scent. &#34;I missed you too,&#34;I admitted, surprised by how mnuch I meant it.</p>
+                        
+                        <p>As I held him, I couldn&#39;t help comparing him to Philip. My ex-husband rarely expressed missing me during the day. Had he ever truly loved me?I doubted it now. Howard never hesitated to show his feelings. There was something reassuring about a man who wasn&#39;t afraid to be vunerable.</p>
+                        
+                        <p>&#34;Sit down,&#34; I suggested, pointing to the sofa in the corner. &#34;You look tired.How was your meeting?&#34;</p>
+                        
+                        <p>Howard studied my face carefully. &#34;Something&#39;s different about your tone.What happened while I was gone?&#34;</p>
+                        
+                        <p>I took a deep breath, deciding to be direct. &#34;Someone showed me photos of you and Sarah Johnson talking in your car today.&#34;</p>
+                        
+                        <p>His expression darkened immediately. &#34;Let me guess-Caroline Gluck?&#34;</p>
+                        
+                        <p>I nodded. &#34;She claimed you didn&#39;t love me anymore, thatyou were developing feelings for Sarah instead.&#34; I kept my voice steady, meeting his eyes.</p>
+                        
+                        <p>Howard&#39;s jaw tightened. He reached for my hand. &#34;This was Sarah&#39;s plan all along. She approached me in the parking garage, insisting she had important information about you. She claimed you were hiding something from me.&#34;</p>
+                        
+                        <p>&#34;And you let her into your car to hear what she had to say?&#34; I asked,curious rather than accusatory.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -989,25 +1041,29 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;I wanted to know what lies she would make up,&#34; Howard answered calmly. &#34;I&#39;ve been expecting her next move since she started harassing you online.&#34;</p>
-                    
-                    <p>&#34;What did she tell you?&#34; I was genuinely curious about what new story Sarah had coneocted.</p>
-                    
-                    <p>Howard&#39;s grip on my hand tightened slightly. &#34;She claimed your fall down the stairs wasn&#39;t what caused your miscarriage.&#34; His voice was carefully controlled. &#34;She said you had an... inappropriate relationship with her ex-husband, Robert. And that was the real reason you lost the baby.&#34;</p>
-                    
-                    <p>I felt cold at his words. Of all the lies Sarah could have chosen, this one cut closest to a painful truth-though not in the way she&#39;d implied.</p>
-                    
-                    <p>Howard continued, his eyes never leaving mine. &#34;Of course I know what exactly happened. And I want you to know that I trust you completely.&#34;</p>
-                    
-                    <p>His unwavering faith in me warmed my heart. After years with Philip,who questioned me at every turn, Howard&#39;s trust felt like a precious gift.</p>
-                    
-                    <p>&#34;Thank you,&#34; I whispered, squeezing his hand. &#34;That means more than you know.&#34;</p>
-                    
-                    <p>&#34;You called me that day, remember? When you were in danger?&#34;</p>
-                    
-                    <p>The memory rushed back-the desperate phone call I&#39;d made to Howard after waking up in Robert&#39;s apartment, drugged and disoriented. I&#39;d barely known Howard then, just enough to have his number, but he had been the only person I could think to call.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;I wanted to know what lies she would make up,&#34; Howard answered calmly. &#34;I&#39;ve been expecting her next move since she started harassing you online.&#34;</p>
+                        
+                        <p>&#34;What did she tell you?&#34; I was genuinely curious about what new story Sarah had coneocted.</p>
+                        
+                        <p>Howard&#39;s grip on my hand tightened slightly. &#34;She claimed your fall down the stairs wasn&#39;t what caused your miscarriage.&#34; His voice was carefully controlled. &#34;She said you had an... inappropriate relationship with her ex-husband, Robert. And that was the real reason you lost the baby.&#34;</p>
+                        
+                        <p>I felt cold at his words. Of all the lies Sarah could have chosen, this one cut closest to a painful truth-though not in the way she&#39;d implied.</p>
+                        
+                        <p>Howard continued, his eyes never leaving mine. &#34;Of course I know what exactly happened. And I want you to know that I trust you completely.&#34;</p>
+                        
+                        <p>His unwavering faith in me warmed my heart. After years with Philip,who questioned me at every turn, Howard&#39;s trust felt like a precious gift.</p>
+                        
+                        <p>&#34;Thank you,&#34; I whispered, squeezing his hand. &#34;That means more than you know.&#34;</p>
+                        
+                        <p>&#34;You called me that day, remember? When you were in danger?&#34;</p>
+                        
+                        <p>The memory rushed back-the desperate phone call I&#39;d made to Howard after waking up in Robert&#39;s apartment, drugged and disoriented. I&#39;d barely known Howard then, just enough to have his number, but he had been the only person I could think to call.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1022,25 +1078,29 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;You called me for help,&#34; Howard continued, his voice gentle but his eyes sharp with anger. &#34;I sent people to investigate immediately.I know everything-how Phílip and Sarah drugged your drink at the charity event,how Robert took you to his apartment while you were unconscious, how you managed to escape by appealing to his wounded pride and sense of competition with Philip.&#34;</p>
-                    
-                    <p>I felt exposed yet strangely secure. Howard knew more about my darkest moments than I&#39;d realized. But instead of judgment, all I saw in his eyes was admiration and protectiveness.</p>
-                    
-                    <p>&#34;You were incredibly brave that night,&#34; he said, touching my cheek. &#34;It&#39;s one of the many reasons I admire you, Annie.&#34; For a moment, I glimpsed something dangerous in Howard&#39;s eyes-a cold,calculating look that reminded me he wasn&#39;t just the gentle man who held me at night. He was also a powerful businessman who eliminated obstacles without mercy. I had little doubt that he&#39;d already planned some form of punishment for Philip and Sarah.</p>
-                    
-                    <p>&#34;I can&#39;t believe Sarah dared to bring this up to you directly,&#34; I said,shaking my head.</p>
-                    
-                    <p>Howard&#39;s lip curled slightly. &#34;She thought she could manipulate me.I made it clear I knew the truth. I told her I was the one who took you to the emergency room after your fall. I said if a baby could survive such a fall, it would be a miracle.&#34; His voice turned ice-cold. &#34;Then I suggested she try falling down the stairs herself to test her theory.&#34;</p>
-                    
-                    <p>I looked up sharply at that. &#34;Howard...&#34;</p>
-                    
-                    <p>&#34;I didn&#39;t push her,&#34; he clarified quickly. &#34;I merely pointed out how absurd her claim was.&#34;</p>
-                    
-                    <p>I nodded slowly, thinking. &#34;Still, her baby muast be protected.&#34;</p>
-                    
-                    <p>Howard looked at me with genuine confusion. &#34;Why? After what she did to you-after she indirectly caused the death of your child-why would you care about hers?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;You called me for help,&#34; Howard continued, his voice gentle but his eyes sharp with anger. &#34;I sent people to investigate immediately.I know everything-how Phílip and Sarah drugged your drink at the charity event,how Robert took you to his apartment while you were unconscious, how you managed to escape by appealing to his wounded pride and sense of competition with Philip.&#34;</p>
+                        
+                        <p>I felt exposed yet strangely secure. Howard knew more about my darkest moments than I&#39;d realized. But instead of judgment, all I saw in his eyes was admiration and protectiveness.</p>
+                        
+                        <p>&#34;You were incredibly brave that night,&#34; he said, touching my cheek. &#34;It&#39;s one of the many reasons I admire you, Annie.&#34; For a moment, I glimpsed something dangerous in Howard&#39;s eyes-a cold,calculating look that reminded me he wasn&#39;t just the gentle man who held me at night. He was also a powerful businessman who eliminated obstacles without mercy. I had little doubt that he&#39;d already planned some form of punishment for Philip and Sarah.</p>
+                        
+                        <p>&#34;I can&#39;t believe Sarah dared to bring this up to you directly,&#34; I said,shaking my head.</p>
+                        
+                        <p>Howard&#39;s lip curled slightly. &#34;She thought she could manipulate me.I made it clear I knew the truth. I told her I was the one who took you to the emergency room after your fall. I said if a baby could survive such a fall, it would be a miracle.&#34; His voice turned ice-cold. &#34;Then I suggested she try falling down the stairs herself to test her theory.&#34;</p>
+                        
+                        <p>I looked up sharply at that. &#34;Howard...&#34;</p>
+                        
+                        <p>&#34;I didn&#39;t push her,&#34; he clarified quickly. &#34;I merely pointed out how absurd her claim was.&#34;</p>
+                        
+                        <p>I nodded slowly, thinking. &#34;Still, her baby muast be protected.&#34;</p>
+                        
+                        <p>Howard looked at me with genuine confusion. &#34;Why? After what she did to you-after she indirectly caused the death of your child-why would you care about hers?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1055,13 +1115,17 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Don&#39;t you want revenge for your lost child?&#34; he asked, his voice soft but intense.</p>
-                    
-                    <p>I met his gaze steadily, my voice calm and certain. &#34;It&#39;s precisely because I want revenge for my child...&#34;</p>
-                    
-                    <p>I let the sentence hang unfinished, a small smile playing at my lips.Howard studied me for a long moment, his expression changing from confusion to dawning realization, then to admiration mixed&#39;with concern. &#34;Annie,&#34; he said slowly, &#34;what are you planning?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Don&#39;t you want revenge for your lost child?&#34; he asked, his voice soft but intense.</p>
+                        
+                        <p>I met his gaze steadily, my voice calm and certain. &#34;It&#39;s precisely because I want revenge for my child...&#34;</p>
+                        
+                        <p>I let the sentence hang unfinished, a small smile playing at my lips.Howard studied me for a long moment, his expression changing from confusion to dawning realization, then to admiration mixed&#39;with concern. &#34;Annie,&#34; he said slowly, &#34;what are you planning?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2377,6 +2441,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2503,7 +2647,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2545,32 +2688,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2581,21 +2706,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2628,6 +2743,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2648,20 +2769,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

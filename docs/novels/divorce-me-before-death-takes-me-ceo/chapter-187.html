@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.023771">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.023771">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.209119">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.209119">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.023771",
-        "dateModified": "2026-07-19T02:47:19.023771",
+        "datePublished": "2026-07-19T13:03:14.209119",
+        "dateModified": "2026-07-19T13:03:14.209119",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,29 +893,33 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>&#34;You&#39;ve been by Rachel&#39;s side all this time,&#34; I said to Nora. &#34;What really happened to Rachel four years ago?&#34;</p>
-                    
-                    <p>&#34;I remember Rachel was taken abroad by her uncle. Astrid and I went to the airport. We watched them go through security. So why is she at Twilight Mansion?&#34;</p>
-                    
-                    <p>Nora hesitated, her eyes darting between Rachel and me before she finally spoke.</p>
-                    
-                    <p>&#34;Miss Hayes did leave with her uncle,&#34; she admitted quietly. &#34;But as soon as they landed, Jonathan Rose&#39;s men brought them back.&#34;</p>
-                    
-                    <p>&#34;Why?&#34;</p>
-                    
-                    <p>&#34;Mr. Rose was afraid if Miss Hayes stayed abroad, Mrs. Rose would visit frequently and... possibly cheat again. So he brought Miss Hayes back as leverage to control his wife.&#34;</p>
-                    
-                    <p>Nora looked at me, and continued, &#34;He was also afraid Mrs. Rose and her brother might find better doctors abroad for Miss Hayes.&#34;</p>
-                    
-                    <p>&#34;Why would he not want Rachel to get better treatment?&#34;</p>
-                    
-                    <p>Nora leaned forward,lowering her voice. &#34;Miss Hayes knows certain secrets about Miss Rose and the Rose family. They don&#39;t want her to wake up or speak,&#34;</p>
-                    
-                    <p>The Implication hit me like ice water. &#34;Are you saylng...&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>&#34;You&#39;ve been by Rachel&#39;s side all this time,&#34; I said to Nora. &#34;What really happened to Rachel four years ago?&#34;</p>
+                        
+                        <p>&#34;I remember Rachel was taken abroad by her uncle. Astrid and I went to the airport. We watched them go through security. So why is she at Twilight Mansion?&#34;</p>
+                        
+                        <p>Nora hesitated, her eyes darting between Rachel and me before she finally spoke.</p>
+                        
+                        <p>&#34;Miss Hayes did leave with her uncle,&#34; she admitted quietly. &#34;But as soon as they landed, Jonathan Rose&#39;s men brought them back.&#34;</p>
+                        
+                        <p>&#34;Why?&#34;</p>
+                        
+                        <p>&#34;Mr. Rose was afraid if Miss Hayes stayed abroad, Mrs. Rose would visit frequently and... possibly cheat again. So he brought Miss Hayes back as leverage to control his wife.&#34;</p>
+                        
+                        <p>Nora looked at me, and continued, &#34;He was also afraid Mrs. Rose and her brother might find better doctors abroad for Miss Hayes.&#34;</p>
+                        
+                        <p>&#34;Why would he not want Rachel to get better treatment?&#34;</p>
+                        
+                        <p>Nora leaned forward,lowering her voice. &#34;Miss Hayes knows certain secrets about Miss Rose and the Rose family. They don&#39;t want her to wake up or speak,&#34;</p>
+                        
+                        <p>The Implication hit me like ice water. &#34;Are you saylng...&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -894,29 +934,33 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;I&#39;ve always suspected Miss Hayes&#39;s fall wasn&#39;t an accident,&#34; Nora said.&#34;Miss Rose was on that rooftop too.&#34;</p>
-                    
-                    <p>The bathroom door burst open. Astrid stood there dripping wet, a towel clutched to her chest. The perfume bottle she&#39;d been holding shattered on the floor.</p>
-                    
-                    <p>&#34;Are you saying Rachel was pushed by Laurel?&#34; Astrid stepped forward.glass crunching under her bare feet, leaving bloody footprints. She didn&#39;t seem to notice.</p>
-                    
-                    <p>&#34;Do you have proof, or is this just a guess?&#34; she demanded, grabbing Nora&#39;s shoulders.</p>
-                    
-                    <p>Nora shrank back. &#34;I don&#39;t have proof. It&#39;s just my suspicion.&#34;</p>
-                    
-                    <p>&#34;You can&#39;t just throw around accusations like that!&#34; Astrid&#39;s fingers dug into Nora&#39;s shoulders. &#34;Why do you think that? If she really hurt Rachel,I&#39;ll crash her engagement tonight!&#34;</p>
-                    
-                    <p>&#34;Astrid, stop.&#34; I moved between them, gently pulling her hands away.&#34;You&#39;re bleeding.&#34;</p>
-                    
-                    <p>&#34;But Audrey - &#34;</p>
-                    
-                    <p>&#34;Getting angry won&#39;t help Rachel,&#34; I said. guiding her to sit on the bed.&#34;Without proof.creating a scene would only hurt us, not Laurel.&#34;</p>
-                    
-                    <p>I knelt to examine her feet. &#34;Our priority is getting Rachel away safely.&#34;</p>
-                    
-                    <p>&#34;The Rose family has deliberately kept Rachel from receiving proper treatment.&#34; I added, keeping my voice steady despite my anger. &#34;If you make a scene tonight and we fail to get her out, they&#39;ll never give us another chance.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;I&#39;ve always suspected Miss Hayes&#39;s fall wasn&#39;t an accident,&#34; Nora said.&#34;Miss Rose was on that rooftop too.&#34;</p>
+                        
+                        <p>The bathroom door burst open. Astrid stood there dripping wet, a towel clutched to her chest. The perfume bottle she&#39;d been holding shattered on the floor.</p>
+                        
+                        <p>&#34;Are you saying Rachel was pushed by Laurel?&#34; Astrid stepped forward.glass crunching under her bare feet, leaving bloody footprints. She didn&#39;t seem to notice.</p>
+                        
+                        <p>&#34;Do you have proof, or is this just a guess?&#34; she demanded, grabbing Nora&#39;s shoulders.</p>
+                        
+                        <p>Nora shrank back. &#34;I don&#39;t have proof. It&#39;s just my suspicion.&#34;</p>
+                        
+                        <p>&#34;You can&#39;t just throw around accusations like that!&#34; Astrid&#39;s fingers dug into Nora&#39;s shoulders. &#34;Why do you think that? If she really hurt Rachel,I&#39;ll crash her engagement tonight!&#34;</p>
+                        
+                        <p>&#34;Astrid, stop.&#34; I moved between them, gently pulling her hands away.&#34;You&#39;re bleeding.&#34;</p>
+                        
+                        <p>&#34;But Audrey - &#34;</p>
+                        
+                        <p>&#34;Getting angry won&#39;t help Rachel,&#34; I said. guiding her to sit on the bed.&#34;Without proof.creating a scene would only hurt us, not Laurel.&#34;</p>
+                        
+                        <p>I knelt to examine her feet. &#34;Our priority is getting Rachel away safely.&#34;</p>
+                        
+                        <p>&#34;The Rose family has deliberately kept Rachel from receiving proper treatment.&#34; I added, keeping my voice steady despite my anger. &#34;If you make a scene tonight and we fail to get her out, they&#39;ll never give us another chance.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -931,29 +975,33 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Astrid&#39;s shoulders sagged. &#34;You&#39;re right. We can&#39;t let Rachel stay with them another day.&#34;</p>
-                    
-                    <p>I grabbed the first aid kit from the bathroom and began cleaning the cuts on her feet.</p>
-                    
-                    <p>&#34;Does it hurt?&#34;</p>
-                    
-                    <p>Astrid&#39;s eyes filled with tears. &#34;Audrey, I&#39;m useless. I couldn&#39;t protect Rachel... and I can&#39;t save you either.&#34;</p>
-                    
-                    <p>&#34;Don&#39;t talk like that. I need your help tonight.&#34;</p>
-                    
-                    <p>&#34;I wish I was the one who got sick instead of you,&#34; she said, her voice breaking. &#34;Why did it have to be you wvith this-&#34;</p>
-                    
-                    <p>&#34;Astrid,&#34; I cut her off with a glance toward Rachel. &#34;Not here.&#34;</p>
-                    
-                    <p>I didn&#39;t want Rachel hearing about my condition while unable to respond or ask questions. It would only distress her.</p>
-                    
-                    <p>While I bandaged Astrid&#39;s feet, Nora gently cleaned Rachel,using a damp cloth and a light mist of perfume to mask the smell.</p>
-                    
-                    <p>When I finished, I helped Astrid stand and walk to Rachel&#39;s bedside.</p>
-                    
-                    <p>&#34;Hey Rachel,&#34; Astrid said, touching her face. &#34;Never thought our reunion would be in a hotel garbage basement.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Astrid&#39;s shoulders sagged. &#34;You&#39;re right. We can&#39;t let Rachel stay with them another day.&#34;</p>
+                        
+                        <p>I grabbed the first aid kit from the bathroom and began cleaning the cuts on her feet.</p>
+                        
+                        <p>&#34;Does it hurt?&#34;</p>
+                        
+                        <p>Astrid&#39;s eyes filled with tears. &#34;Audrey, I&#39;m useless. I couldn&#39;t protect Rachel... and I can&#39;t save you either.&#34;</p>
+                        
+                        <p>&#34;Don&#39;t talk like that. I need your help tonight.&#34;</p>
+                        
+                        <p>&#34;I wish I was the one who got sick instead of you,&#34; she said, her voice breaking. &#34;Why did it have to be you wvith this-&#34;</p>
+                        
+                        <p>&#34;Astrid,&#34; I cut her off with a glance toward Rachel. &#34;Not here.&#34;</p>
+                        
+                        <p>I didn&#39;t want Rachel hearing about my condition while unable to respond or ask questions. It would only distress her.</p>
+                        
+                        <p>While I bandaged Astrid&#39;s feet, Nora gently cleaned Rachel,using a damp cloth and a light mist of perfume to mask the smell.</p>
+                        
+                        <p>When I finished, I helped Astrid stand and walk to Rachel&#39;s bedside.</p>
+                        
+                        <p>&#34;Hey Rachel,&#34; Astrid said, touching her face. &#34;Never thought our reunion would be in a hotel garbage basement.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -968,29 +1016,33 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Rachel&#39;s eyes moved slightly, and I could see her trying to smile. Her face tensed with effort, brows furrowing, but her muscles wouldn&#39;t cooperate.</p>
-                    
-                    <p>My chest ached at the sight. I took her hand and squeezed It.</p>
-                    
-                    <p>&#34;Don&#39;t worry,&#34; I promised.&#34;T&#34;m getting you out tonight. I&#39;ve arranged a</p>
-                    
-                    <p>private jet. Once we&#39;re abroad, I&#39;ll find the best medical teams to help you.&#34;</p>
-                    
-                    <p>&#34;Miss Hayes has been in my care since her accident,&#34; Nora said softly.&#34;This is the most responsive I&#39;ve seen her. Perhaps with you, she really could recover.&#34;</p>
-                    
-                    <p>A tear slid down Rachel&#39;s temple, which Nora quickly dabbed away.</p>
-                    
-                    <p>The moment was broken by Nora&#39;s phone ringing. She answered it nervously.</p>
-                    
-                    <p>&#34;Hello,Mr.Rose.&#34;</p>
-                    
-                    <p>Jonathan Rose&#39;s cold voice carried through the speaker: &#34;Where the hell have you taken her? The ceremony&#39;s starting, and the Parkers have asked twice why Rachel isn&#39;t here! You want to keep your job? Get her to the venue in ten minutes!&#34;</p>
-                    
-                    <p>&#34;Yes, sir,&#34; Nora stammered.</p>
-                    
-                    <p>&#34;I don&#39;t know what Blake and William Parker&#39;s problem is,&#34; he continued.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Rachel&#39;s eyes moved slightly, and I could see her trying to smile. Her face tensed with effort, brows furrowing, but her muscles wouldn&#39;t cooperate.</p>
+                        
+                        <p>My chest ached at the sight. I took her hand and squeezed It.</p>
+                        
+                        <p>&#34;Don&#39;t worry,&#34; I promised.&#34;T&#34;m getting you out tonight. I&#39;ve arranged a</p>
+                        
+                        <p>private jet. Once we&#39;re abroad, I&#39;ll find the best medical teams to help you.&#34;</p>
+                        
+                        <p>&#34;Miss Hayes has been in my care since her accident,&#34; Nora said softly.&#34;This is the most responsive I&#39;ve seen her. Perhaps with you, she really could recover.&#34;</p>
+                        
+                        <p>A tear slid down Rachel&#39;s temple, which Nora quickly dabbed away.</p>
+                        
+                        <p>The moment was broken by Nora&#39;s phone ringing. She answered it nervously.</p>
+                        
+                        <p>&#34;Hello,Mr.Rose.&#34;</p>
+                        
+                        <p>Jonathan Rose&#39;s cold voice carried through the speaker: &#34;Where the hell have you taken her? The ceremony&#39;s starting, and the Parkers have asked twice why Rachel isn&#39;t here! You want to keep your job? Get her to the venue in ten minutes!&#34;</p>
+                        
+                        <p>&#34;Yes, sir,&#34; Nora stammered.</p>
+                        
+                        <p>&#34;I don&#39;t know what Blake and William Parker&#39;s problem is,&#34; he continued.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1005,29 +1057,33 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;Insisting on seeing this vegetable. How morbid.&#34;</p>
-                    
-                    <p>He hung up abruptly.</p>
-                    
-                    <p>&#34;Isn&#39;t Jonathan Rose supposed to be this perfect gentleman in society?&#34;Astrid asked, frowning. &#34;What a fake.&#34;</p>
-                    
-                    <p>&#34;Remember how Rachel told us about her stepfather and stepsister?&#34; I said.&#34;We just never realized she meant Jonathan and Laurel Rose.&#34;</p>
-                    
-                    <p>&#34;True.&#34; Astrid nodded. &#34;Small world.&#34;</p>
-                    
-                    <p>I thought back to all the times Rachel had dodged our questions about her famlly, Whenever Astrid or I asked about her stepfather or stepsister. she&#39;d</p>
-                    
-                    <p>change the subject-she knew Astrid too well.</p>
-                    
-                    <p>If Astrid found out they was mistreating Rachel, she&#39;d definitely show up at their mansion and raise hell.</p>
-                    
-                    <p>&#34;Enough of this,&#34; I said, turning to Nora. &#34;Did they at least bring something decent for her to wear tonight?&#34;</p>
-                    
-                    <p>Rachel was still in those striped hospital pajamas, now stained with whatever had leaked from the garbage bins in the service elevator.</p>
-                    
-                    <p>Nora shook her head. &#34;Nothing, These hospital clothes are all Miss Hayes has worn for four years.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;Insisting on seeing this vegetable. How morbid.&#34;</p>
+                        
+                        <p>He hung up abruptly.</p>
+                        
+                        <p>&#34;Isn&#39;t Jonathan Rose supposed to be this perfect gentleman in society?&#34;Astrid asked, frowning. &#34;What a fake.&#34;</p>
+                        
+                        <p>&#34;Remember how Rachel told us about her stepfather and stepsister?&#34; I said.&#34;We just never realized she meant Jonathan and Laurel Rose.&#34;</p>
+                        
+                        <p>&#34;True.&#34; Astrid nodded. &#34;Small world.&#34;</p>
+                        
+                        <p>I thought back to all the times Rachel had dodged our questions about her famlly, Whenever Astrid or I asked about her stepfather or stepsister. she&#39;d</p>
+                        
+                        <p>change the subject-she knew Astrid too well.</p>
+                        
+                        <p>If Astrid found out they was mistreating Rachel, she&#39;d definitely show up at their mansion and raise hell.</p>
+                        
+                        <p>&#34;Enough of this,&#34; I said, turning to Nora. &#34;Did they at least bring something decent for her to wear tonight?&#34;</p>
+                        
+                        <p>Rachel was still in those striped hospital pajamas, now stained with whatever had leaked from the garbage bins in the service elevator.</p>
+                        
+                        <p>Nora shook her head. &#34;Nothing, These hospital clothes are all Miss Hayes has worn for four years.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1042,29 +1098,33 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;You&#39;ve got to be kidding me.&#34; Astrid&#39;s voice rose.</p>
-                    
-                    <p>I walked to the hotel closet and pulled out a garment bag.&#34;Don&#39;t worry.I figured as much.&#34;</p>
-                    
-                    <p>&#34;I had a feeling they&#39;d pull something like this,&#34; I explained, unzipping the bag to reveal a simple but elegant dress. &#34;So I came prepared.&#34;</p>
-                    
-                    <p>Astrid grabbed the dress, her mood instantly shifting. &#34;Let&#39;s get you looking fabulous, Rachel.&#34;</p>
-                    
-                    <p>For the next twenty minutes, we worked together dressing Rachel,fixing her hair, and securing her comfortably in the wheelchair. Jonathan Rose called twice more, each time escalating his threats against Nora.</p>
-                    
-                    <p>But since Rachel was going to leave with me tonight. Nora simply regarded his threat as nothing more than empty words.</p>
-                    
-                    <p>J applied some light makeup to bring color back to Rachel&#39;s face, then wlth Nora guiding the way, we wheeled Rachel toward the elevator.</p>
-                    
-                    <p>**Blake&#39;s POV**</p>
-                    
-                    <p>I waited until the elevator doors closed before crushing my cigarette under my shoe. The hallway fell silent.</p>
-                    
-                    <p>They never noticed me standing in the corner, watching. Their attention had been completely focused on Rachel.</p>
-                    
-                    <p>I&#39;d followed them from the moment they rescued Rachel from that filthy service elevator. What I saw made my chest tighten.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;You&#39;ve got to be kidding me.&#34; Astrid&#39;s voice rose.</p>
+                        
+                        <p>I walked to the hotel closet and pulled out a garment bag.&#34;Don&#39;t worry.I figured as much.&#34;</p>
+                        
+                        <p>&#34;I had a feeling they&#39;d pull something like this,&#34; I explained, unzipping the bag to reveal a simple but elegant dress. &#34;So I came prepared.&#34;</p>
+                        
+                        <p>Astrid grabbed the dress, her mood instantly shifting. &#34;Let&#39;s get you looking fabulous, Rachel.&#34;</p>
+                        
+                        <p>For the next twenty minutes, we worked together dressing Rachel,fixing her hair, and securing her comfortably in the wheelchair. Jonathan Rose called twice more, each time escalating his threats against Nora.</p>
+                        
+                        <p>But since Rachel was going to leave with me tonight. Nora simply regarded his threat as nothing more than empty words.</p>
+                        
+                        <p>J applied some light makeup to bring color back to Rachel&#39;s face, then wlth Nora guiding the way, we wheeled Rachel toward the elevator.</p>
+                        
+                        <p>**Blake&#39;s POV**</p>
+                        
+                        <p>I waited until the elevator doors closed before crushing my cigarette under my shoe. The hallway fell silent.</p>
+                        
+                        <p>They never noticed me standing in the corner, watching. Their attention had been completely focused on Rachel.</p>
+                        
+                        <p>I&#39;d followed them from the moment they rescued Rachel from that filthy service elevator. What I saw made my chest tighten.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1079,17 +1139,21 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>When they first brought her in, Rachel was just another patient-hospital clothes, dirty blanket, reeking of medicine and garbage.</p>
-                    
-                    <p>Forty minutes later, she emerged transformed. Evening dress. Styled hair.Makeup. Even from my distance, I caught the faint scent of perfume replacing the hospital smell.</p>
-                    
-                    <p>I lit another cigarette. The difference was stark. Audrey and Astrid had shown more care for Rachel than the Roses.</p>
-                    
-                    <p>*What&#39;s their relationship with Rachel? Why had Laurel and the Rose family never mentioned them who clearly mattered to Rachel?*</p>
-                    
-                    <p>*Why had Audrey never mentioned knowing Rachel?*</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>When they first brought her in, Rachel was just another patient-hospital clothes, dirty blanket, reeking of medicine and garbage.</p>
+                        
+                        <p>Forty minutes later, she emerged transformed. Evening dress. Styled hair.Makeup. Even from my distance, I caught the faint scent of perfume replacing the hospital smell.</p>
+                        
+                        <p>I lit another cigarette. The difference was stark. Audrey and Astrid had shown more care for Rachel than the Roses.</p>
+                        
+                        <p>*What&#39;s their relationship with Rachel? Why had Laurel and the Rose family never mentioned them who clearly mattered to Rachel?*</p>
+                        
+                        <p>*Why had Audrey never mentioned knowing Rachel?*</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2405,6 +2469,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2531,7 +2675,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2573,32 +2716,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2609,21 +2734,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2656,6 +2771,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2676,20 +2797,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

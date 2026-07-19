@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:30.263146">
-    <meta property="article:modified_time" content="2026-07-19T02:47:30.263146">
+    <meta property="article:published_time" content="2026-07-19T13:03:24.658138">
+    <meta property="article:modified_time" content="2026-07-19T13:03:24.658138">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:30">
+    <meta name="last-modified" content="2026-07-19 13:03:24">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:30.263146",
-        "dateModified": "2026-07-19T02:47:30.263146",
+        "datePublished": "2026-07-19T13:03:24.658138",
+        "dateModified": "2026-07-19T13:03:24.658138",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>“Get that bitch Katelyn Bailey out here! Tell her to return Austen to me!”</p>
-                    
-                    <p>A sharp, female voice rang through the hall, loud and piercing, nearly unbearable.</p>
-                    
-                    <p>Katelyn and Vincent exchanged a look, immediately recognizing who it was.</p>
-                    
-                    <p>It was Elora.</p>
-                    
-                    <p>Elora had been victimized by someone in the T Organization, and Katelyn had been the one to discover what had happened and rushed her to the emergency room. Katelyn never asked about the aftermath.</p>
-                    
-                    <p>By the strength in Elora’s voice now, it was clear she had physically recovered.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>“Get that bitch Katelyn Bailey out here! Tell her to return Austen to me!”</p>
+                        
+                        <p>A sharp, female voice rang through the hall, loud and piercing, nearly unbearable.</p>
+                        
+                        <p>Katelyn and Vincent exchanged a look, immediately recognizing who it was.</p>
+                        
+                        <p>It was Elora.</p>
+                        
+                        <p>Elora had been victimized by someone in the T Organization, and Katelyn had been the one to discover what had happened and rushed her to the emergency room. Katelyn never asked about the aftermath.</p>
+                        
+                        <p>By the strength in Elora’s voice now, it was clear she had physically recovered.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Breck, positioned before Elora, was trying to calm her down. “Have you forgotten what the doctor advised? You’re supposed to be resting in bed, avoiding any stress.”</p>
-                    
-                    <p>Breck felt a mix of frustration and helplessness, regretting how much he had indulged Elora over the years.</p>
-                    
-                    <p>His pleas seemed to fall on deaf ears.</p>
-                    
-                    <p>Dressed in her hospital gown, Elora stood her ground. “Dad, you need to help me get Austen back. If he stays with Katelyn, he’ll surely face punishment.”</p>
-                    
-                    <p>Upon waking from her surgery, Elora had immediately noticed the absence of her trusted bodyguard, Austen Henderson, who was normally always by her side.</p>
-                    
-                    <p>That was her first clue that something was wrong.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Breck, positioned before Elora, was trying to calm her down. “Have you forgotten what the doctor advised? You’re supposed to be resting in bed, avoiding any stress.”</p>
+                        
+                        <p>Breck felt a mix of frustration and helplessness, regretting how much he had indulged Elora over the years.</p>
+                        
+                        <p>His pleas seemed to fall on deaf ears.</p>
+                        
+                        <p>Dressed in her hospital gown, Elora stood her ground. “Dad, you need to help me get Austen back. If he stays with Katelyn, he’ll surely face punishment.”</p>
+                        
+                        <p>Upon waking from her surgery, Elora had immediately noticed the absence of her trusted bodyguard, Austen Henderson, who was normally always by her side.</p>
+                        
+                        <p>That was her first clue that something was wrong.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Austen had been her constant companion since childhood, always close by, no matter the situation.</p>
-                    
-                    <p>And as she suspected, her investigations revealed that Austen had been taken by Katelyn.</p>
-                    
-                    <p>?  : g?ν</p>
-                    
-                    <p>Now, Elora was filled with a deep-seated anger.</p>
-                    
-                    <p>Why hadn’t she dealt with that damned Katelyn at the first opportunity?</p>
-                    
-                    <p>Breck struggled to maintain his composure, still trying to reason with her. “I’ll figure out how to get Austen back for you. But you need to return to your room and rest now. You’re my heiress. I can’t bear the thought of losing you.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Austen had been her constant companion since childhood, always close by, no matter the situation.</p>
+                        
+                        <p>And as she suspected, her investigations revealed that Austen had been taken by Katelyn.</p>
+                        
+                        <p>?  : g?ν</p>
+                        
+                        <p>Now, Elora was filled with a deep-seated anger.</p>
+                        
+                        <p>Why hadn’t she dealt with that damned Katelyn at the first opportunity?</p>
+                        
+                        <p>Breck struggled to maintain his composure, still trying to reason with her. “I’ll figure out how to get Austen back for you. But you need to return to your room and rest now. You’re my heiress. I can’t bear the thought of losing you.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Elora looked at Breck, incredulous, her voice rising. “Dad, you know how important Austen is to me, and yet you keep standing in my way!”</p>
-                    
-                    <p>Elora was overwhelmed with distress and confusion.</p>
-                    
-                    <p>Had her beloved father now aligned himself with Katelyn? A complex emotion flickered in Breck’s eyes as he held back the words he wanted to say, instead letting out a heavy sigh. “I made a mistake before. Katelyn is someone we simply cannot afford to antagonize.”</p>
-                    
-                    <p>Breck had learned a hard truth through tough experiences. Katelyn wasn’t just a famous designer known as Iris; her closest friends included heirs of the Adams Group and the Lawrence Group. Elora’s previous problems all stemmed from underestimating Katelyn, leading to severe consequences. More importantly, his boss had explicitly instructed Breck to avoid Katelyn.</p>
-                    
-                    <p>Throughout his years of managing the casino, this was the first time Breck had received such a direct command from his boss. It was clear that Katelyn was more important than he had initially realized, but Breck couldn’t explain the complexities to Elora without putting her safety at risk. This content belongs to find?novel.net</p>
-                    
-                    <p>“You need to go back to your room now. I’ll speak with Katelyn and try to bring Austen back,” Breck said.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Elora looked at Breck, incredulous, her voice rising. “Dad, you know how important Austen is to me, and yet you keep standing in my way!”</p>
+                        
+                        <p>Elora was overwhelmed with distress and confusion.</p>
+                        
+                        <p>Had her beloved father now aligned himself with Katelyn? A complex emotion flickered in Breck’s eyes as he held back the words he wanted to say, instead letting out a heavy sigh. “I made a mistake before. Katelyn is someone we simply cannot afford to antagonize.”</p>
+                        
+                        <p>Breck had learned a hard truth through tough experiences. Katelyn wasn’t just a famous designer known as Iris; her closest friends included heirs of the Adams Group and the Lawrence Group. Elora’s previous problems all stemmed from underestimating Katelyn, leading to severe consequences. More importantly, his boss had explicitly instructed Breck to avoid Katelyn.</p>
+                        
+                        <p>Throughout his years of managing the casino, this was the first time Breck had received such a direct command from his boss. It was clear that Katelyn was more important than he had initially realized, but Breck couldn’t explain the complexities to Elora without putting her safety at risk. This content belongs to find?novel.net</p>
+                        
+                        <p>“You need to go back to your room now. I’ll speak with Katelyn and try to bring Austen back,” Breck said.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Elora gritted her teeth, her eyes showing unwavering resolve. “You have to bring Austen back. I can handle her taking Bartley, but Austen must not be harmed.”</p>
-                    
-                    <p>Breck was visibly puzzled by Elora’s adamant demand. “He’s just a bodyguard. If something happens to him, I can always find you a replacement.”</p>
-                    
-                    <p>“No,” Elora interrupted, her voice fierce. “Austen is the only one I want!”</p>
-                    
-                    <p>Their heated argument at the door could clearly be heard by Katelyn and Vincent, who were still inside the hospital room.</p>
-                    
-                    <p>Katelyn then realized something. “So the man in black is called Austen. And it seems Elora cares so much about him—he must be very dear to her.”</p>
-                    
-                    <p>Austen himself had shown similar sentiments. When Austen was taken captive and brought to Earl Poulos’ castle, he continually insisted that he needed to return to Elora’s side, no matter what.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Elora gritted her teeth, her eyes showing unwavering resolve. “You have to bring Austen back. I can handle her taking Bartley, but Austen must not be harmed.”</p>
+                        
+                        <p>Breck was visibly puzzled by Elora’s adamant demand. “He’s just a bodyguard. If something happens to him, I can always find you a replacement.”</p>
+                        
+                        <p>“No,” Elora interrupted, her voice fierce. “Austen is the only one I want!”</p>
+                        
+                        <p>Their heated argument at the door could clearly be heard by Katelyn and Vincent, who were still inside the hospital room.</p>
+                        
+                        <p>Katelyn then realized something. “So the man in black is called Austen. And it seems Elora cares so much about him—he must be very dear to her.”</p>
+                        
+                        <p>Austen himself had shown similar sentiments. When Austen was taken captive and brought to Earl Poulos’ castle, he continually insisted that he needed to return to Elora’s side, no matter what.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>It seemed that even a bodyguard and his employer could share a deep, mutual loyalty.</p>
-                    
-                    <p>Vincent added, “They must have grown up together to share such a strong bond.”</p>
-                    
-                    <p>Then, Elora’s voice came again from the door. “Katelyn, if you return Austen to me, we can resolve our issues once and for all.”</p>
-                    
-                    <p>Elora was willing to forsake everything else, but she would never allow any harm to come to Austen.</p>
-                    
-                    <p>In the next moment, the door to the room was abruptly pushed open.</p>
-                    
-                    <p>.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>It seemed that even a bodyguard and his employer could share a deep, mutual loyalty.</p>
+                        
+                        <p>Vincent added, “They must have grown up together to share such a strong bond.”</p>
+                        
+                        <p>Then, Elora’s voice came again from the door. “Katelyn, if you return Austen to me, we can resolve our issues once and for all.”</p>
+                        
+                        <p>Elora was willing to forsake everything else, but she would never allow any harm to come to Austen.</p>
+                        
+                        <p>In the next moment, the door to the room was abruptly pushed open.</p>
+                        
+                        <p>.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,11 +1079,15 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>.</p>
-                    
-                    <p>.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>.</p>
+                        
+                        <p>.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2339,6 +2403,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2465,7 +2609,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2507,32 +2650,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2543,21 +2668,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2590,6 +2705,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2610,20 +2731,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

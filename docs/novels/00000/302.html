@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Daphne offered a saccharine smile that didn&#39;t reach her cold eyes. &#34;We came to visit your dear grandmother, of course. We even brought her fresh peaches yesterday.&#34;</p>
-                    
-                    <p>The pieces clicked together in Vivian&#39;s mind - Eleanor&#39;s unusual quietness earlier, the way she&#39;d avoided mentioning Adrian entirely. Now she understood. These vipers had undoubtedly revealed her impending divorce, sending Eleanor into distress that worsened her fragile condition.</p>
-                    
-                    <p>Vivian&#39;s hands clenched into fists at her sides. &#34;Stay away from my grandmother,&#34; she hissed, green eyes blazing. &#34;If anything happens to her, I swear I&#39;ll drag you both down with me. I have nothing left to lose.&#34;</p>
-                    
-                    <p>Richard barked out a humorless laugh. &#34;Is that any way to speak to your father? You sound like some back-alley criminal.&#34;</p>
-                    
-                    <p>Daphne placed a restraining hand on Richard&#39;s arm before stepping forward. &#34;Darling, what a terrible thing to suggest! Your father cares for Eleanor deeply.&#34; Her gaze flicked meaningfully to Dr. Harrison. &#34;We couldn&#39;t help overhearing about your... financial difficulties. Why didn&#39;t you come to us?&#34;</p>
-                    
-                    <p>&#34;I have everything under control,&#34; Vivian said through gritted teeth, gesturing toward the door. &#34;Now if you&#39;ll excuse us-&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Daphne offered a saccharine smile that didn&#39;t reach her cold eyes. &#34;We came to visit your dear grandmother, of course. We even brought her fresh peaches yesterday.&#34;</p>
+                        
+                        <p>The pieces clicked together in Vivian&#39;s mind - Eleanor&#39;s unusual quietness earlier, the way she&#39;d avoided mentioning Adrian entirely. Now she understood. These vipers had undoubtedly revealed her impending divorce, sending Eleanor into distress that worsened her fragile condition.</p>
+                        
+                        <p>Vivian&#39;s hands clenched into fists at her sides. &#34;Stay away from my grandmother,&#34; she hissed, green eyes blazing. &#34;If anything happens to her, I swear I&#39;ll drag you both down with me. I have nothing left to lose.&#34;</p>
+                        
+                        <p>Richard barked out a humorless laugh. &#34;Is that any way to speak to your father? You sound like some back-alley criminal.&#34;</p>
+                        
+                        <p>Daphne placed a restraining hand on Richard&#39;s arm before stepping forward. &#34;Darling, what a terrible thing to suggest! Your father cares for Eleanor deeply.&#34; Her gaze flicked meaningfully to Dr. Harrison. &#34;We couldn&#39;t help overhearing about your... financial difficulties. Why didn&#39;t you come to us?&#34;</p>
+                        
+                        <p>&#34;I have everything under control,&#34; Vivian said through gritted teeth, gesturing toward the door. &#34;Now if you&#39;ll excuse us-&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Richard&#39;s voice turned dangerously smooth. &#34;Such devotion to your grandmother. Pity if she suffered because you couldn&#39;t pay her medical bills.&#34;</p>
-                    
-                    <p>&#34;Don&#39;t let pride cloud your judgment, dear,&#34; Daphne purred, moving closer. &#34;We come bearing good news. Maxwell has offered to cover all expenses. His uncle isn&#39;t just any doctor - he&#39;s a renowned specialist in geriatric care. This could be Eleanor&#39;s best chance.&#34;</p>
-                    
-                    <p>Vivian&#39;s blood ran cold as she recognized the trap being laid before her. The walls seemed to close in as she realized how thoroughly they&#39;d cornered her.</p>
-                    
-                    <p>Vivian saw through their scheme instantly. They had come fully prepared. Eleanor&#39;s chronic illness was complicated by her delicate condition that ruled out surgery, leaving only medicinal treatments as an option. After consulting numerous specialists, doctors from both Crestwood and Frostholm had suggested Vivian explore alternative therapies. A master practitioner in traditional medicine might hold the key to her grandmother&#39;s recovery.</p>
-                    
-                    <p>She had already sought out several renowned healers, but none had produced noticeable improvements. Now this couple was attempting to manipulate her into an alliance with the Sterling family. Vivian knew with absolute certainty that if Eleanor discovered her granddaughter was considering marriage to secure a physician, she would refuse treatment outright.</p>
-                    
-                    <p>With this realization burning in her chest, Vivian stood her ground. &#34;Grandmother and I don&#39;t need the Sterlings&#39; help.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Richard&#39;s voice turned dangerously smooth. &#34;Such devotion to your grandmother. Pity if she suffered because you couldn&#39;t pay her medical bills.&#34;</p>
+                        
+                        <p>&#34;Don&#39;t let pride cloud your judgment, dear,&#34; Daphne purred, moving closer. &#34;We come bearing good news. Maxwell has offered to cover all expenses. His uncle isn&#39;t just any doctor - he&#39;s a renowned specialist in geriatric care. This could be Eleanor&#39;s best chance.&#34;</p>
+                        
+                        <p>Vivian&#39;s blood ran cold as she recognized the trap being laid before her. The walls seemed to close in as she realized how thoroughly they&#39;d cornered her.</p>
+                        
+                        <p>Vivian saw through their scheme instantly. They had come fully prepared. Eleanor&#39;s chronic illness was complicated by her delicate condition that ruled out surgery, leaving only medicinal treatments as an option. After consulting numerous specialists, doctors from both Crestwood and Frostholm had suggested Vivian explore alternative therapies. A master practitioner in traditional medicine might hold the key to her grandmother&#39;s recovery.</p>
+                        
+                        <p>She had already sought out several renowned healers, but none had produced noticeable improvements. Now this couple was attempting to manipulate her into an alliance with the Sterling family. Vivian knew with absolute certainty that if Eleanor discovered her granddaughter was considering marriage to secure a physician, she would refuse treatment outright.</p>
+                        
+                        <p>With this realization burning in her chest, Vivian stood her ground. &#34;Grandmother and I don&#39;t need the Sterlings&#39; help.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Faced with her defiance, Richard couldn&#39;t mask his irritation. &#34;You&#39;re already a divorced woman. You&#39;re not some innocent maiden anymore. What&#39;s the harm in remarrying?&#34;</p>
-                    
-                    <p>Disbelief flashed across Vivian&#39;s face as she stared at the man who was supposed to be her father. The words cut deeper because they sounded nothing like the father she remembered. This was the final straw. Years of suppressed anguish erupted within her. In one fluid motion, Vivian hurled her phone directly at Richard&#39;s face and screamed, &#34;Get out! You disgusting pig!&#34;</p>
-                    
-                    <p>Richard clutched his swelling eye, his features contorted in pain. His hand shot up, poised to strike. &#34;You ungrateful brat! How dare you attack your own father!&#34;</p>
-                    
-                    <p>Blinded by rage, Vivian moved too slowly to avoid the incoming slap that connected sharply with her cheek. Her vision swam momentarily as she stumbled back, nearly losing her balance.</p>
-                    
-                    <p>When Richard raised his hand for another blow, a tall figure materialized between them, shielding Vivian with protective urgency. Straightening her disheveled hair, Vivian looked up to see Ethan standing there. Towering over Richard, Ethan radiated quiet authority, the kind honed through years at Adrian&#39;s side.</p>
-                    
-                    <p>His voice was glacial steel. &#34;Mr. Dawson, I&#39;d reconsider your actions carefully. Remember, Mrs. Blackwood remains under the Blackwood family&#39;s protection.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Faced with her defiance, Richard couldn&#39;t mask his irritation. &#34;You&#39;re already a divorced woman. You&#39;re not some innocent maiden anymore. What&#39;s the harm in remarrying?&#34;</p>
+                        
+                        <p>Disbelief flashed across Vivian&#39;s face as she stared at the man who was supposed to be her father. The words cut deeper because they sounded nothing like the father she remembered. This was the final straw. Years of suppressed anguish erupted within her. In one fluid motion, Vivian hurled her phone directly at Richard&#39;s face and screamed, &#34;Get out! You disgusting pig!&#34;</p>
+                        
+                        <p>Richard clutched his swelling eye, his features contorted in pain. His hand shot up, poised to strike. &#34;You ungrateful brat! How dare you attack your own father!&#34;</p>
+                        
+                        <p>Blinded by rage, Vivian moved too slowly to avoid the incoming slap that connected sharply with her cheek. Her vision swam momentarily as she stumbled back, nearly losing her balance.</p>
+                        
+                        <p>When Richard raised his hand for another blow, a tall figure materialized between them, shielding Vivian with protective urgency. Straightening her disheveled hair, Vivian looked up to see Ethan standing there. Towering over Richard, Ethan radiated quiet authority, the kind honed through years at Adrian&#39;s side.</p>
+                        
+                        <p>His voice was glacial steel. &#34;Mr. Dawson, I&#39;d reconsider your actions carefully. Remember, Mrs. Blackwood remains under the Blackwood family&#39;s protection.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Richard, ever the coward when confronted with equal force, lowered his hand reluctantly, muttering, &#34;No one tells me how to discipline my own daughter.&#34;</p>
-                    
-                    <p>Ethan ignored the grumbling and gently guided Vivian to a nearby chair. &#34;Mrs. Blackwood, are you hurt?&#34;</p>
-                    
-                    <p>His voice softened as he studied her, eyes reflecting genuine concern. Vivian, trapped in this web of familial cruelty, seemed even more vulnerable under his careful gaze.</p>
-                    
-                    <p>The security team closed ranks around Daphne and Richard. Sensing the escalating tension, Daphne quickly ushered her husband away in humiliating retreat.</p>
-                    
-                    <p>Dabbing at her stinging cheek, Vivian looked up at Ethan with shimmering eyes. &#34;Why are you here?&#34;</p>
-                    
-                    <p>&#34;Let me handle Eleanor&#39;s medical expenses,&#34; Ethan offered without preamble. &#34;Mrs. Blackwood, Mr. Blackwood has already transferred eight hundred thousand to cover the next three months&#39; treatments.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Richard, ever the coward when confronted with equal force, lowered his hand reluctantly, muttering, &#34;No one tells me how to discipline my own daughter.&#34;</p>
+                        
+                        <p>Ethan ignored the grumbling and gently guided Vivian to a nearby chair. &#34;Mrs. Blackwood, are you hurt?&#34;</p>
+                        
+                        <p>His voice softened as he studied her, eyes reflecting genuine concern. Vivian, trapped in this web of familial cruelty, seemed even more vulnerable under his careful gaze.</p>
+                        
+                        <p>The security team closed ranks around Daphne and Richard. Sensing the escalating tension, Daphne quickly ushered her husband away in humiliating retreat.</p>
+                        
+                        <p>Dabbing at her stinging cheek, Vivian looked up at Ethan with shimmering eyes. &#34;Why are you here?&#34;</p>
+                        
+                        <p>&#34;Let me handle Eleanor&#39;s medical expenses,&#34; Ethan offered without preamble. &#34;Mrs. Blackwood, Mr. Blackwood has already transferred eight hundred thousand to cover the next three months&#39; treatments.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>This shouldn&#39;t have surprised her. Adrian had arranged the hospital admission—of course he&#39;d be monitoring everything.</p>
-                    
-                    <p>Vivian pressed her lips into a thin line, fingers trembling as they covered her face. The way Adrian always threw money at problems made her blood boil—as if every issue could be silenced with the swipe of a pen.</p>
-                    
-                    <p>If Richard hadn&#39;t exploded earlier, she might have stood her ground against Ethan&#39;s offer. But now? That ship had sailed.</p>
-                    
-                    <p>Ethan picked up an ice pack from the nurse&#39;s station, his voice softening. &#34;Mrs. Blackwood, shall I drive you back to Seabreeze Villa?&#34;</p>
-                    
-                    <p>She accepted the cold compress gratefully, pressing it to her burning cheeks. The chill grounded her, tempering the firestorm inside.</p>
-                    
-                    <p>&#34;Is he there?&#34; The question slipped out before she could stop it. Despite everything, she missed Adrian&#39;s presence. Even his cold glares and cutting remarks were preferable to this hollow absence—especially when he&#39;d always known how to fix her messes.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>This shouldn&#39;t have surprised her. Adrian had arranged the hospital admission—of course he&#39;d be monitoring everything.</p>
+                        
+                        <p>Vivian pressed her lips into a thin line, fingers trembling as they covered her face. The way Adrian always threw money at problems made her blood boil—as if every issue could be silenced with the swipe of a pen.</p>
+                        
+                        <p>If Richard hadn&#39;t exploded earlier, she might have stood her ground against Ethan&#39;s offer. But now? That ship had sailed.</p>
+                        
+                        <p>Ethan picked up an ice pack from the nurse&#39;s station, his voice softening. &#34;Mrs. Blackwood, shall I drive you back to Seabreeze Villa?&#34;</p>
+                        
+                        <p>She accepted the cold compress gratefully, pressing it to her burning cheeks. The chill grounded her, tempering the firestorm inside.</p>
+                        
+                        <p>&#34;Is he there?&#34; The question slipped out before she could stop it. Despite everything, she missed Adrian&#39;s presence. Even his cold glares and cutting remarks were preferable to this hollow absence—especially when he&#39;d always known how to fix her messes.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Ethan&#39;s arrival had felt like a lifeline moments ago. Now the rope was fraying.</p>
-                    
-                    <p>&#34;Mr. Blackwood is still at the office,&#34; Ethan hesitated. &#34;Working late.&#34;</p>
-                    
-                    <p>Adrian had deliberately avoided the hospital, unwilling to risk another confrontation with Vivian in front of Eleanor. Sending Ethan had been his coward&#39;s compromise.</p>
-                    
-                    <p>Mid-explanation, a team of doctors hurried toward them.</p>
-                    
-                    <p>&#34;Mr. Caldwell!&#34; The lead physician brightened. &#34;Here for Ms. Whitmore&#39;s follow-up?&#34;</p>
-                    
-                    <p>Vivian&#39;s stomach dropped. So Adrian&#39;s late nights were spent with Serena. Ethan wasn&#39;t here for her at all—just facilitating another woman&#39;s care. That fleeting hope? A lighthouse beam meant for someone else&#39;s shore.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Ethan&#39;s arrival had felt like a lifeline moments ago. Now the rope was fraying.</p>
+                        
+                        <p>&#34;Mr. Blackwood is still at the office,&#34; Ethan hesitated. &#34;Working late.&#34;</p>
+                        
+                        <p>Adrian had deliberately avoided the hospital, unwilling to risk another confrontation with Vivian in front of Eleanor. Sending Ethan had been his coward&#39;s compromise.</p>
+                        
+                        <p>Mid-explanation, a team of doctors hurried toward them.</p>
+                        
+                        <p>&#34;Mr. Caldwell!&#34; The lead physician brightened. &#34;Here for Ms. Whitmore&#39;s follow-up?&#34;</p>
+                        
+                        <p>Vivian&#39;s stomach dropped. So Adrian&#39;s late nights were spent with Serena. Ethan wasn&#39;t here for her at all—just facilitating another woman&#39;s care. That fleeting hope? A lighthouse beam meant for someone else&#39;s shore.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Before Ethan could respond, Vivian thrust the ice pack back at him. &#34;Thank your boss for me. I&#39;ll settle today&#39;s bill personally.&#34;</p>
-                    
-                    <p>Ethan shook his head sharply at the doctors. &#34;Wrong patient.&#34; Turning back to Vivian, he reached out. &#34;Mrs. Blackwood, I&#39;m not here for—&#34;</p>
-                    
-                    <p>She forced a brittle smile. &#34;Just deliver the message.&#34; No explanation could undo this. After years as Adrian&#39;s shadow, Ethan would defend him to the grave.</p>
-                    
-                    <p>Her heels clicked faster down the corridor, each step putting distance between her and their pitying stares. The renowned Crestwood Medical Center—Adrian&#39;s pet project with its elite specialists and marble halls—had always been his domain. Even the chief surgeon was his personal physician.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Before Ethan could respond, Vivian thrust the ice pack back at him. &#34;Thank your boss for me. I&#39;ll settle today&#39;s bill personally.&#34;</p>
+                        
+                        <p>Ethan shook his head sharply at the doctors. &#34;Wrong patient.&#34; Turning back to Vivian, he reached out. &#34;Mrs. Blackwood, I&#39;m not here for—&#34;</p>
+                        
+                        <p>She forced a brittle smile. &#34;Just deliver the message.&#34; No explanation could undo this. After years as Adrian&#39;s shadow, Ethan would defend him to the grave.</p>
+                        
+                        <p>Her heels clicked faster down the corridor, each step putting distance between her and their pitying stares. The renowned Crestwood Medical Center—Adrian&#39;s pet project with its elite specialists and marble halls—had always been his domain. Even the chief surgeon was his personal physician.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

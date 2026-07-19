@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.040273">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.040273">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.233374">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.233374">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.040273",
-        "dateModified": "2026-07-19T02:47:19.040273",
+        "datePublished": "2026-07-19T13:03:14.233374",
+        "dateModified": "2026-07-19T13:03:14.233374",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,31 +893,35 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Blake&#39;s POV**</p>
-                    
-                    <p>&#34;Audrey&#39;s health was never good, you know that, right?&#34; Ethan asked.</p>
-                    
-                    <p>I nodded. I&#39;d noticed her weight loss after filing for divorce, but hospital records only showed gastritis. Nothing serious. Nothing fatal.</p>
-                    
-                    <p>&#34;She had cancer. Gastric cancer,&#34; he said.</p>
-                    
-                    <p>&#34;When I met her, you two weren&#39;t divorced yet. At that time, she had less than three months to live.&#34;</p>
-                    
-                    <p>&#34;What? That can&#39;t be true.&#34; I looked up, voice cracking.</p>
-                    
-                    <p>&#34;She was in constant pain, and you - her husband - never noticed.&#34; The accusation in his tone was unmistakable. &#34;With your resources and connections, you couldn&#39;t have missed it if you&#39;d paid any attention.But you were too busy with Miss Rose.&#34;</p>
-                    
-                    <p>I lowered my head. &#34;Yes... it&#39;s my fault...&#34;</p>
-                    
-                    <p>&#34;But,&#34; I looked up, desperate for some explanation, &#34;if she had three months left, then how -&#34;</p>
-                    
-                    <p>&#34;When we got to Lunar Mansion, we found Audrey with a nail pierced through the back of her head, stuck&lt;in the wall.&#34;</p>
-                    
-                    <p>Everything stopped.</p>
-                    
-                    <p>&#34;Do you know who did that?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Blake&#39;s POV**</p>
+                        
+                        <p>&#34;Audrey&#39;s health was never good, you know that, right?&#34; Ethan asked.</p>
+                        
+                        <p>I nodded. I&#39;d noticed her weight loss after filing for divorce, but hospital records only showed gastritis. Nothing serious. Nothing fatal.</p>
+                        
+                        <p>&#34;She had cancer. Gastric cancer,&#34; he said.</p>
+                        
+                        <p>&#34;When I met her, you two weren&#39;t divorced yet. At that time, she had less than three months to live.&#34;</p>
+                        
+                        <p>&#34;What? That can&#39;t be true.&#34; I looked up, voice cracking.</p>
+                        
+                        <p>&#34;She was in constant pain, and you - her husband - never noticed.&#34; The accusation in his tone was unmistakable. &#34;With your resources and connections, you couldn&#39;t have missed it if you&#39;d paid any attention.But you were too busy with Miss Rose.&#34;</p>
+                        
+                        <p>I lowered my head. &#34;Yes... it&#39;s my fault...&#34;</p>
+                        
+                        <p>&#34;But,&#34; I looked up, desperate for some explanation, &#34;if she had three months left, then how -&#34;</p>
+                        
+                        <p>&#34;When we got to Lunar Mansion, we found Audrey with a nail pierced through the back of her head, stuck&lt;in the wall.&#34;</p>
+                        
+                        <p>Everything stopped.</p>
+                        
+                        <p>&#34;Do you know who did that?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -896,31 +936,35 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>My mind went blank. &#34;You&#39;re saying... her head was pierced by a nail?&#34;</p>
-                    
-                    <p>&#34;Yes. She was trying to hang a painting.&#34;</p>
-                    
-                    <p>My hands shook as the memory crashed over me.</p>
-                    
-                    <p>Three days ago. The bathroom at Lunar Mansion. Audrey forcing Laurel&#39;s face into the toilet. Me pulling Audrey away, pushing her against the wall-not hard, just enough to separate them. When I left with Laurel, Audrey was still leaning against that wall, not moving. I thought she was just disappointed I&#39;d come to Laurel&#39;s rescue.</p>
-                    
-                    <p>But now I understood.</p>
-                    
-                    <p>*My push killed her.*</p>
-                    
-                    <p>I stared at her photo on the gravestone. That gentle smile I&#39;d taken for granted.</p>
-                    
-                    <p>I fell to my knees and broke. &#34;Audrey, I&#39;m sorry... it&#39;s my fault...&#34;</p>
-                    
-                    <p>Rain began to fall lightly around us.</p>
-                    
-                    <p>&#34;Five years ago - I didn&#39;t forget anything,&#34; I confessed to her silent image.&#34;I remembered everything, but I found the wrong person...&#34;</p>
-                    
-                    <p>&#34;That day when you asked if I was with Laurel because she saved my life...were you trying to tell me that I had the wrong person?&#34; My fingers dug into the wet earth. &#34;I was too proud. I lied because I didn&#39;t want you thinking I was shallow enough to love someone out of gratitude...&#34;</p>
-                    
-                    <p>&#34;If I&#39;d just told the truth that day...&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>My mind went blank. &#34;You&#39;re saying... her head was pierced by a nail?&#34;</p>
+                        
+                        <p>&#34;Yes. She was trying to hang a painting.&#34;</p>
+                        
+                        <p>My hands shook as the memory crashed over me.</p>
+                        
+                        <p>Three days ago. The bathroom at Lunar Mansion. Audrey forcing Laurel&#39;s face into the toilet. Me pulling Audrey away, pushing her against the wall-not hard, just enough to separate them. When I left with Laurel, Audrey was still leaning against that wall, not moving. I thought she was just disappointed I&#39;d come to Laurel&#39;s rescue.</p>
+                        
+                        <p>But now I understood.</p>
+                        
+                        <p>*My push killed her.*</p>
+                        
+                        <p>I stared at her photo on the gravestone. That gentle smile I&#39;d taken for granted.</p>
+                        
+                        <p>I fell to my knees and broke. &#34;Audrey, I&#39;m sorry... it&#39;s my fault...&#34;</p>
+                        
+                        <p>Rain began to fall lightly around us.</p>
+                        
+                        <p>&#34;Five years ago - I didn&#39;t forget anything,&#34; I confessed to her silent image.&#34;I remembered everything, but I found the wrong person...&#34;</p>
+                        
+                        <p>&#34;That day when you asked if I was with Laurel because she saved my life...were you trying to tell me that I had the wrong person?&#34; My fingers dug into the wet earth. &#34;I was too proud. I lied because I didn&#39;t want you thinking I was shallow enough to love someone out of gratitude...&#34;</p>
+                        
+                        <p>&#34;If I&#39;d just told the truth that day...&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -935,31 +979,35 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>I pressed my forehead against the cold stone. &#34;Audrey, I was wrong... So wrong...&#34;</p>
-                    
-                    <p>For two days, I didn&#39;t leave. Didn&#39;t eat. Didn&#39;t move.</p>
-                    
-                    <p>My mother came first, then Elizabeth. Both tried to convince me to leave.I ignored them.</p>
-                    
-                    <p>They left food and water I didIn&#39;t touch. Eventually, they gave up trying to move me and simply posted security nearby.</p>
-                    
-                    <p>I existed somewhere between awareness and delirium, murmuring to Audrey&#39;s gravestone.all the things I should have said when she was alive.</p>
-                    
-                    <p>On the evening of the second day, angry footsteps approached.</p>
-                    
-                    <p>&#34;Get out!&#34; Astrid shouted, kicking me. Her fists pounded against my back. &#34;Audrey said she didn&#39;t want you at her grave! You don&#39;t deserve to be here!&#34;</p>
-                    
-                    <p>I didn&#39;t fight back. I just held onto the gravestone, taking each blow.</p>
-                    
-                    <p>When she tired, Astrid collapsed beside me, sobbing into her hands.</p>
-                    
-                    <p>&#34;What&#39;s the point of this?&#34; she asked through tears. &#34;When she was alive,if you&#39;d looked at her just once - shown just a fraction of this concern-none of this would have happened!&#34;</p>
-                    
-                    <p>I had no response.</p>
-                    
-                    <p>&#34;Do you know what she went through for you?&#34; she continued. &#34;She was always cheerful, even with abusive adoptive parents and biological parents who didn&#39;t want her. But after meeting you - to be worthy of you -she endured all the humiliation from your family. Learned to be the perfect Mrs.Parker.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>I pressed my forehead against the cold stone. &#34;Audrey, I was wrong... So wrong...&#34;</p>
+                        
+                        <p>For two days, I didn&#39;t leave. Didn&#39;t eat. Didn&#39;t move.</p>
+                        
+                        <p>My mother came first, then Elizabeth. Both tried to convince me to leave.I ignored them.</p>
+                        
+                        <p>They left food and water I didIn&#39;t touch. Eventually, they gave up trying to move me and simply posted security nearby.</p>
+                        
+                        <p>I existed somewhere between awareness and delirium, murmuring to Audrey&#39;s gravestone.all the things I should have said when she was alive.</p>
+                        
+                        <p>On the evening of the second day, angry footsteps approached.</p>
+                        
+                        <p>&#34;Get out!&#34; Astrid shouted, kicking me. Her fists pounded against my back. &#34;Audrey said she didn&#39;t want you at her grave! You don&#39;t deserve to be here!&#34;</p>
+                        
+                        <p>I didn&#39;t fight back. I just held onto the gravestone, taking each blow.</p>
+                        
+                        <p>When she tired, Astrid collapsed beside me, sobbing into her hands.</p>
+                        
+                        <p>&#34;What&#39;s the point of this?&#34; she asked through tears. &#34;When she was alive,if you&#39;d looked at her just once - shown just a fraction of this concern-none of this would have happened!&#34;</p>
+                        
+                        <p>I had no response.</p>
+                        
+                        <p>&#34;Do you know what she went through for you?&#34; she continued. &#34;She was always cheerful, even with abusive adoptive parents and biological parents who didn&#39;t want her. But after meeting you - to be worthy of you -she endured all the humiliation from your family. Learned to be the perfect Mrs.Parker.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -974,31 +1022,35 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>I hadn&#39;t known that about Audrey. She never shared those parts of her past.</p>
-                    
-                    <p>&#34;She destroyed her health taking care of you, and couldn&#39;t even protect her baby!&#34;</p>
-                    
-                    <p>&#34;You cheated during your marriage! And in all those years; there wasn&#39;t a minute when she wasn&#39;t hurt by you. Even after divorcing,you made her design your engagement rings. You kept finding ways to hurt her.&#34;</p>
-                    
-                    <p>I closed my eyes.</p>
-                    
-                    <p>&#34;You drained everything from her, took her life, and now you&#39;re here crying - what good does that do?&#34;</p>
-                    
-                    <p>Astrid stood, delivering her final blow. &#34;Blake Parker, if you really regret it,just die and join her!&#34;</p>
-                    
-                    <p>She left me alone with the weight of everything I&#39;d destroyed.</p>
-                    
-                    <p>That night, I finally left the cemetery.</p>
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>Morning sunlight filtered through my eyelids and made me squint.I instinctively moved my finger.</p>
-                    
-                    <p>*Why am I still conscious?*</p>
-                    
-                    <p>The last thing I remembered was holding my jewelry design and Snow,smiling as everything faded away.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>I hadn&#39;t known that about Audrey. She never shared those parts of her past.</p>
+                        
+                        <p>&#34;She destroyed her health taking care of you, and couldn&#39;t even protect her baby!&#34;</p>
+                        
+                        <p>&#34;You cheated during your marriage! And in all those years; there wasn&#39;t a minute when she wasn&#39;t hurt by you. Even after divorcing,you made her design your engagement rings. You kept finding ways to hurt her.&#34;</p>
+                        
+                        <p>I closed my eyes.</p>
+                        
+                        <p>&#34;You drained everything from her, took her life, and now you&#39;re here crying - what good does that do?&#34;</p>
+                        
+                        <p>Astrid stood, delivering her final blow. &#34;Blake Parker, if you really regret it,just die and join her!&#34;</p>
+                        
+                        <p>She left me alone with the weight of everything I&#39;d destroyed.</p>
+                        
+                        <p>That night, I finally left the cemetery.</p>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>Morning sunlight filtered through my eyelids and made me squint.I instinctively moved my finger.</p>
+                        
+                        <p>*Why am I still conscious?*</p>
+                        
+                        <p>The last thing I remembered was holding my jewelry design and Snow,smiling as everything faded away.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1013,31 +1065,35 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;Look! Look!&#34; A child&#39;s voice cut through my confusion. &#34;She moved!&#34;</p>
-                    
-                    <p>I tried opening my eyes, but couldn&#39;t.</p>
-                    
-                    <p>Tiny footsteps pattered across the floor. &#34;Come quickly! She is waking up!&#34;</p>
-                    
-                    <p>Several sets of footsteps hurried into the room. Someone checked the machines connectedto my body.</p>
-                    
-                    <p>&#34;Doctor, how is she?&#34; a woman asked.</p>
-                    
-                    <p>&#34;Very good,&#34; a man replied. &#34;Her body has finally stopped rejecting the treatment. She should wake up today.&#34;</p>
-                    
-                    <p>&#34;That&#39;s wonderful!&#34; the woman exclaimed.</p>
-                    
-                    <p>&#34;Emma, she is about to wake up. Are you happy?&#34;</p>
-                    
-                    <p>&#34;Happy!&#34;</p>
-                    
-                    <p>I searched my memory but couldn&#39;t place these voices. They weren&#39;t Astrid,James,or anyone I knew.</p>
-                    
-                    <p>&#34;Adrian, I&#39;ll take Emma to preschool. I&#39;m counting on you here,&#34; the woman said.</p>
-                    
-                    <p>&#34;Alright,&#34; a man replied.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;Look! Look!&#34; A child&#39;s voice cut through my confusion. &#34;She moved!&#34;</p>
+                        
+                        <p>I tried opening my eyes, but couldn&#39;t.</p>
+                        
+                        <p>Tiny footsteps pattered across the floor. &#34;Come quickly! She is waking up!&#34;</p>
+                        
+                        <p>Several sets of footsteps hurried into the room. Someone checked the machines connectedto my body.</p>
+                        
+                        <p>&#34;Doctor, how is she?&#34; a woman asked.</p>
+                        
+                        <p>&#34;Very good,&#34; a man replied. &#34;Her body has finally stopped rejecting the treatment. She should wake up today.&#34;</p>
+                        
+                        <p>&#34;That&#39;s wonderful!&#34; the woman exclaimed.</p>
+                        
+                        <p>&#34;Emma, she is about to wake up. Are you happy?&#34;</p>
+                        
+                        <p>&#34;Happy!&#34;</p>
+                        
+                        <p>I searched my memory but couldn&#39;t place these voices. They weren&#39;t Astrid,James,or anyone I knew.</p>
+                        
+                        <p>&#34;Adrian, I&#39;ll take Emma to preschool. I&#39;m counting on you here,&#34; the woman said.</p>
+                        
+                        <p>&#34;Alright,&#34; a man replied.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1052,31 +1108,35 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>The door closed, leaving silence.</p>
-                    
-                    <p>&#34;Don&#39;t overthink it,&#34; the man - Adrian - finally said. &#34;You didn&#39;t die. We brought you to Australia.&#34;</p>
-                    
-                    <p>*Australia? How?*</p>
-                    
-                    <p>&#34;Now try to open your eyes,&#34; he instructed. &#34;You should be able to now.&#34;</p>
-                    
-                    <p>I forced my eyes open. The brightness stung at first, then shapes started coming into focus.</p>
-                    
-                    <p>White walls. Beeping machines. Sunlight through half-drawn blinds.</p>
-                    
-                    <p>The man was sprawled in a recliner next to my bed. Blue eyes, expensive clothes, bored expression. Handsome in that rich-guy way,but with something cold in his stare that made me want to look away.</p>
-                    
-                    <p>He straightened when he saw me watching him. &#34;Finally awake,huh?&#34;</p>
-                    
-                    <p>My throat felt like sandpaper. I tried to speak but only managed a croak.</p>
-                    
-                    <p>&#34;Water?&#34; He didn&#39;t wait for an answer, just poured from a pitcher and held it to my lips.&#34;Drink.&#34;</p>
-                    
-                    <p>I took a few sips, wincing at the effort. &#34;Who are you?&#34;</p>
-                    
-                    <p>&#34;Adrian Knox.&#34; He set the glass down with a clink. &#34;My team brought you here from New York seven months ago.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>The door closed, leaving silence.</p>
+                        
+                        <p>&#34;Don&#39;t overthink it,&#34; the man - Adrian - finally said. &#34;You didn&#39;t die. We brought you to Australia.&#34;</p>
+                        
+                        <p>*Australia? How?*</p>
+                        
+                        <p>&#34;Now try to open your eyes,&#34; he instructed. &#34;You should be able to now.&#34;</p>
+                        
+                        <p>I forced my eyes open. The brightness stung at first, then shapes started coming into focus.</p>
+                        
+                        <p>White walls. Beeping machines. Sunlight through half-drawn blinds.</p>
+                        
+                        <p>The man was sprawled in a recliner next to my bed. Blue eyes, expensive clothes, bored expression. Handsome in that rich-guy way,but with something cold in his stare that made me want to look away.</p>
+                        
+                        <p>He straightened when he saw me watching him. &#34;Finally awake,huh?&#34;</p>
+                        
+                        <p>My throat felt like sandpaper. I tried to speak but only managed a croak.</p>
+                        
+                        <p>&#34;Water?&#34; He didn&#39;t wait for an answer, just poured from a pitcher and held it to my lips.&#34;Drink.&#34;</p>
+                        
+                        <p>I took a few sips, wincing at the effort. &#34;Who are you?&#34;</p>
+                        
+                        <p>&#34;Adrian Knox.&#34; He set the glass down with a clink. &#34;My team brought you here from New York seven months ago.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1091,31 +1151,35 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Seven months?&#34; The words didn&#39;t make sense at first.</p>
-                    
-                    <p>&#34;Yeah. You&#39;ve been out this whole time.&#34; His tone was matter-of-fact.like we were discussing the weather. &#34;Dr. Clarke wasn&#39;t sure you&#39;d wake up.Said if you stayed under for a year, you were probably gone for good.&#34;</p>
-                    
-                    <p>I latched onto the familiar name.&#34;Dr.Clarke?&#34;</p>
-                    
-                    <p>Adrian nodded once. &#34;He did the medical part. I handled everything else.&#34;</p>
-                    
-                    <p>My head was spinning. I tried to sit up but couldn&#39;t. &#34;Why would you do that? I don&#39;t even know you.&#34;</p>
-                    
-                    <p>Something shifted in his expression. He leaned forward, elbows on his knees.</p>
-                    
-                    <p>&#34;Because you have a twin sister. Identical. Same face, same DNA,&#34;</p>
-                    
-                    <p>I stared at him, trying to process what he was saying.</p>
-                    
-                    <p>&#34;Your parents dumped her at the hospital when they found out she had a heart defect. An Australian couple adopted her.&#34;</p>
-                    
-                    <p>He spoke flatly, like reading a file. &#34;Four years ago, her heart gave out.They couldn&#39;t revive her fast enough. Brain death.&#34;</p>
-                    
-                    <p>&#34;Her parents and husband - that would be me - couldn&#39;t accept it.We looked everywhere for help. Seven months ago, we found Dr. Clarke.&#34;</p>
-                    
-                    <p>He paused. &#34;And then we found you.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Seven months?&#34; The words didn&#39;t make sense at first.</p>
+                        
+                        <p>&#34;Yeah. You&#39;ve been out this whole time.&#34; His tone was matter-of-fact.like we were discussing the weather. &#34;Dr. Clarke wasn&#39;t sure you&#39;d wake up.Said if you stayed under for a year, you were probably gone for good.&#34;</p>
+                        
+                        <p>I latched onto the familiar name.&#34;Dr.Clarke?&#34;</p>
+                        
+                        <p>Adrian nodded once. &#34;He did the medical part. I handled everything else.&#34;</p>
+                        
+                        <p>My head was spinning. I tried to sit up but couldn&#39;t. &#34;Why would you do that? I don&#39;t even know you.&#34;</p>
+                        
+                        <p>Something shifted in his expression. He leaned forward, elbows on his knees.</p>
+                        
+                        <p>&#34;Because you have a twin sister. Identical. Same face, same DNA,&#34;</p>
+                        
+                        <p>I stared at him, trying to process what he was saying.</p>
+                        
+                        <p>&#34;Your parents dumped her at the hospital when they found out she had a heart defect. An Australian couple adopted her.&#34;</p>
+                        
+                        <p>He spoke flatly, like reading a file. &#34;Four years ago, her heart gave out.They couldn&#39;t revive her fast enough. Brain death.&#34;</p>
+                        
+                        <p>&#34;Her parents and husband - that would be me - couldn&#39;t accept it.We looked everywhere for help. Seven months ago, we found Dr. Clarke.&#34;</p>
+                        
+                        <p>He paused. &#34;And then we found you.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2431,6 +2495,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2557,7 +2701,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2599,32 +2742,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2635,21 +2760,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2682,6 +2797,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2702,20 +2823,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

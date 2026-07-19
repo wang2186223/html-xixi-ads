@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Vivian nibbled her lower lip. &#34;The owner clearly lacks business sense yet clings to the property. Probably holding out for a better offer.&#34;</p>
-                    
-                    <p>Adrian hesitated before revealing, &#34;Ethan mentioned the executives believe the owner is searching for someone. They&#39;re determined to stay put—selling isn&#39;t an option.&#34;</p>
-                    
-                    <p>&#34;Willowbrook has barely half a million residents. If they haven&#39;t found this person after all these years...&#34; Vivian trailed off, then added thoughtfully, &#34;Actually, I&#39;ve never visited Crystalpeak.&#34;</p>
-                    
-                    <p>&#34;Never?&#34; Adrian&#39;s eyebrows shot up.</p>
-                    
-                    <p>Resting her chin in one hand, Vivian absently pushed food around her plate with the other. &#34;They built it after I left for college. Only came back during holidays and never stayed long enough to visit.&#34;</p>
-                    
-                    <p>Adrian set down his fork, studying her profile. &#34;The deal didn&#39;t close today, but the resort manager gave me complimentary passes—full access to the hot springs with overnight accommodation. Interested?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Vivian nibbled her lower lip. &#34;The owner clearly lacks business sense yet clings to the property. Probably holding out for a better offer.&#34;</p>
+                        
+                        <p>Adrian hesitated before revealing, &#34;Ethan mentioned the executives believe the owner is searching for someone. They&#39;re determined to stay put—selling isn&#39;t an option.&#34;</p>
+                        
+                        <p>&#34;Willowbrook has barely half a million residents. If they haven&#39;t found this person after all these years...&#34; Vivian trailed off, then added thoughtfully, &#34;Actually, I&#39;ve never visited Crystalpeak.&#34;</p>
+                        
+                        <p>&#34;Never?&#34; Adrian&#39;s eyebrows shot up.</p>
+                        
+                        <p>Resting her chin in one hand, Vivian absently pushed food around her plate with the other. &#34;They built it after I left for college. Only came back during holidays and never stayed long enough to visit.&#34;</p>
+                        
+                        <p>Adrian set down his fork, studying her profile. &#34;The deal didn&#39;t close today, but the resort manager gave me complimentary passes—full access to the hot springs with overnight accommodation. Interested?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Absolutely!&#34; Vivian immediately reached for her phone to call Audrey.</p>
-                    
-                    <p>Before Vivian could speak, Audrey&#39;s抱怨came through the line. &#34;This town is deader than last season&#39;s fashion! How did you survive growing up here? I wanted to visit Crystalpeak tomorrow but everything&#39;s booked solid.&#34;</p>
-                    
-                    <p>After letting her friend vent, Vivian casually offered, &#34;Adrian has some passes. Want to join us?&#34;</p>
-                    
-                    <p>An ear-piercing squeal followed. &#34;Oh my god, you&#39;re an angel!&#34;</p>
-                    
-                    <p>The phone slipped from Vivian&#39;s ear with a soft click. &#34;Alright then, we&#39;ll meet at the resort tomorrow.&#34;</p>
-                    
-                    <p>Adrian stood frozen, watching helplessly as their romantic getaway morphed into a group excursion before his eyes.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Absolutely!&#34; Vivian immediately reached for her phone to call Audrey.</p>
+                        
+                        <p>Before Vivian could speak, Audrey&#39;s抱怨came through the line. &#34;This town is deader than last season&#39;s fashion! How did you survive growing up here? I wanted to visit Crystalpeak tomorrow but everything&#39;s booked solid.&#34;</p>
+                        
+                        <p>After letting her friend vent, Vivian casually offered, &#34;Adrian has some passes. Want to join us?&#34;</p>
+                        
+                        <p>An ear-piercing squeal followed. &#34;Oh my god, you&#39;re an angel!&#34;</p>
+                        
+                        <p>The phone slipped from Vivian&#39;s ear with a soft click. &#34;Alright then, we&#39;ll meet at the resort tomorrow.&#34;</p>
+                        
+                        <p>Adrian stood frozen, watching helplessly as their romantic getaway morphed into a group excursion before his eyes.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Crystalpeak Hot Springs Resort - Next Day</p>
-                    
-                    <p>Perched on the mountainside like a hidden jewel, Crystalpeak Resort offered the perfect escape. One side catered to lively public pools filled with vacationers, while the other boasted five exclusive villas, each with private thermal springs where guests could soak undisturbed in steaming mineral waters.</p>
-                    
-                    <p>Vivian and her friends had secured one of these luxurious villas. When she arrived with Adrian, Dominic and Audrey were already pacing impatiently at the villa entrance.</p>
-                    
-                    <p>Audrey practically pounced the moment Vivian stepped from the car, her lips forming an exaggerated pout. &#34;I didn&#39;t pack a swimsuit when we left Crestwood! The resort shop has nothing but hideous floral monstrosities - I&#39;d rather stay in my room playing video games than be seen in those!&#34;</p>
-                    
-                    <p>Ethan was already unloading their luggage. Vivian grabbed several shopping bags and handed them to Audrey with a knowing smirk. &#34;Ethan thought ahead. These are all new swimwear and toiletries - take your pick.&#34;</p>
-                    
-                    <p>Audrey&#39;s eyes sparkled as she peeked inside, immediately spotting designer labels. &#34;These are this season&#39;s runway pieces!&#34; She clutched the bags like precious treasure. &#34;You absolute angel! I&#39;m changing right now!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Crystalpeak Hot Springs Resort - Next Day</p>
+                        
+                        <p>Perched on the mountainside like a hidden jewel, Crystalpeak Resort offered the perfect escape. One side catered to lively public pools filled with vacationers, while the other boasted five exclusive villas, each with private thermal springs where guests could soak undisturbed in steaming mineral waters.</p>
+                        
+                        <p>Vivian and her friends had secured one of these luxurious villas. When she arrived with Adrian, Dominic and Audrey were already pacing impatiently at the villa entrance.</p>
+                        
+                        <p>Audrey practically pounced the moment Vivian stepped from the car, her lips forming an exaggerated pout. &#34;I didn&#39;t pack a swimsuit when we left Crestwood! The resort shop has nothing but hideous floral monstrosities - I&#39;d rather stay in my room playing video games than be seen in those!&#34;</p>
+                        
+                        <p>Ethan was already unloading their luggage. Vivian grabbed several shopping bags and handed them to Audrey with a knowing smirk. &#34;Ethan thought ahead. These are all new swimwear and toiletries - take your pick.&#34;</p>
+                        
+                        <p>Audrey&#39;s eyes sparkled as she peeked inside, immediately spotting designer labels. &#34;These are this season&#39;s runway pieces!&#34; She clutched the bags like precious treasure. &#34;You absolute angel! I&#39;m changing right now!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Before anyone could respond, Audrey had vanished inside in a whirlwind of excitement.</p>
-                    
-                    <p>&#34;Women and their fashion,&#34; Dominic sighed, shaking his head as he turned to Adrian. &#34;Hey mate, got any spare swim trunks I could borrow?&#34;</p>
-                    
-                    <p>Adrian&#39;s glacial stare could have frozen lava. Without speaking, he snatched a bag from Ethan and shoved it at Dominic before striding inside, his silence more cutting than any words.</p>
-                    
-                    <p>Dominic blinked in confusion. &#34;What&#39;s crawled up his trousers?&#34; he muttered to Vivian.</p>
-                    
-                    <p>Vivian merely shrugged, her tone airy. &#34;Oh, don&#39;t mind him - he&#39;s just being dramatic today.&#34;</p>
-                    
-                    <p>She followed Adrian inside, leaving Dominic scratching his head. He turned to Ethan for explanation, but the assistant merely adjusted his wire-rimmed glasses. &#34;Mr. Sinclair, hot springs are traditionally... a couples&#39; activity.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Before anyone could respond, Audrey had vanished inside in a whirlwind of excitement.</p>
+                        
+                        <p>&#34;Women and their fashion,&#34; Dominic sighed, shaking his head as he turned to Adrian. &#34;Hey mate, got any spare swim trunks I could borrow?&#34;</p>
+                        
+                        <p>Adrian&#39;s glacial stare could have frozen lava. Without speaking, he snatched a bag from Ethan and shoved it at Dominic before striding inside, his silence more cutting than any words.</p>
+                        
+                        <p>Dominic blinked in confusion. &#34;What&#39;s crawled up his trousers?&#34; he muttered to Vivian.</p>
+                        
+                        <p>Vivian merely shrugged, her tone airy. &#34;Oh, don&#39;t mind him - he&#39;s just being dramatic today.&#34;</p>
+                        
+                        <p>She followed Adrian inside, leaving Dominic scratching his head. He turned to Ethan for explanation, but the assistant merely adjusted his wire-rimmed glasses. &#34;Mr. Sinclair, hot springs are traditionally... a couples&#39; activity.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Dominic frowned. &#34;But isn&#39;t it more fun with friends? Drinking, playing cards, telling stories?&#34;</p>
-                    
-                    <p>Ethan suppressed a sigh. The man was about as perceptive as a brick wall. Without responding, he gathered the remaining bags and disappeared inside.</p>
-                    
-                    <p>Left standing alone, Dominic huffed. &#34;Why&#39;s everyone in such a hurry?&#34; he grumbled before following.</p>
-                    
-                    <p>Inside, the group quickly changed. Adrian and Dominic emerged first in plush robes over their swimwear. Moments later, Vivian and Audrey appeared, their hair pinned up and similarly dressed in resort robes.</p>
-                    
-                    <p>Ethan Caldwell had stayed back at Seabreeze Villa to handle some urgent work, leaving the remaining four to explore the private hot springs of Crystalpeak Resort. These weren&#39;t just ordinary hot springs - they were the epitome of luxury. The courtyard alone housed eight different pools, each offering unique experiences: champagne baths, therapeutic mineral soaks, rose petal pools, and more.</p>
-                    
-                    <p>Audrey grabbed Vivian Hartley&#39;s wrist with childlike excitement. &#34;We&#39;re starting with the champagne pool!&#34; Adrian Blackwood and Dominic followed at a leisurely pace, already loosening their silk robes.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Dominic frowned. &#34;But isn&#39;t it more fun with friends? Drinking, playing cards, telling stories?&#34;</p>
+                        
+                        <p>Ethan suppressed a sigh. The man was about as perceptive as a brick wall. Without responding, he gathered the remaining bags and disappeared inside.</p>
+                        
+                        <p>Left standing alone, Dominic huffed. &#34;Why&#39;s everyone in such a hurry?&#34; he grumbled before following.</p>
+                        
+                        <p>Inside, the group quickly changed. Adrian and Dominic emerged first in plush robes over their swimwear. Moments later, Vivian and Audrey appeared, their hair pinned up and similarly dressed in resort robes.</p>
+                        
+                        <p>Ethan Caldwell had stayed back at Seabreeze Villa to handle some urgent work, leaving the remaining four to explore the private hot springs of Crystalpeak Resort. These weren&#39;t just ordinary hot springs - they were the epitome of luxury. The courtyard alone housed eight different pools, each offering unique experiences: champagne baths, therapeutic mineral soaks, rose petal pools, and more.</p>
+                        
+                        <p>Audrey grabbed Vivian Hartley&#39;s wrist with childlike excitement. &#34;We&#39;re starting with the champagne pool!&#34; Adrian Blackwood and Dominic followed at a leisurely pace, already loosening their silk robes.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>As the men shrugged off their robes, their sculpted physiques were revealed - broad shoulders tapering to narrow waists, abdominal muscles so defined they could&#39;ve been chiseled from marble.</p>
-                    
-                    <p>Audrey&#39;s gaze lingered on Adrian&#39;s swim trunks, and she elbowed Vivian with a mischievous grin. &#34;Damn girl, you really won the genetic lottery!&#34;</p>
-                    
-                    <p>Dominic caught the implication and immediately adjusted his own swimwear defensively. &#34;Excuse me? I&#39;m not exactly lacking in that department either! These trunks just don&#39;t fit right!&#34;</p>
-                    
-                    <p>Adrian&#39;s eyes flicked toward Vivian, only to find her gaze curiously assessing Dominic. His reaction was instantaneous - without warning, he delivered a sharp kick that sent Dominic tumbling into the pool.</p>
-                    
-                    <p>The splash was spectacular. Dominic surfaced moments later, sputtering and wiping water from his face just as Audrey and Vivian were slipping out of their robes.</p>
-                    
-                    <p>Audrey had chosen a violet bikini that perfectly matched her headband. Normally exuding sultry confidence, the swimsuit gave her an unexpectedly sweet, almost innocent charm - a tantalizing contradiction.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>As the men shrugged off their robes, their sculpted physiques were revealed - broad shoulders tapering to narrow waists, abdominal muscles so defined they could&#39;ve been chiseled from marble.</p>
+                        
+                        <p>Audrey&#39;s gaze lingered on Adrian&#39;s swim trunks, and she elbowed Vivian with a mischievous grin. &#34;Damn girl, you really won the genetic lottery!&#34;</p>
+                        
+                        <p>Dominic caught the implication and immediately adjusted his own swimwear defensively. &#34;Excuse me? I&#39;m not exactly lacking in that department either! These trunks just don&#39;t fit right!&#34;</p>
+                        
+                        <p>Adrian&#39;s eyes flicked toward Vivian, only to find her gaze curiously assessing Dominic. His reaction was instantaneous - without warning, he delivered a sharp kick that sent Dominic tumbling into the pool.</p>
+                        
+                        <p>The splash was spectacular. Dominic surfaced moments later, sputtering and wiping water from his face just as Audrey and Vivian were slipping out of their robes.</p>
+                        
+                        <p>Audrey had chosen a violet bikini that perfectly matched her headband. Normally exuding sultry confidence, the swimsuit gave her an unexpectedly sweet, almost innocent charm - a tantalizing contradiction.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,13 +1079,17 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Dominic&#39;s jaw went slack. But when he turned, his gaze followed Adrian&#39;s and landed on Vivian.</p>
-                    
-                    <p>Vivian wore a white one-piece with daring cutouts at the waist and back, covered by a sheer wrap that hinted at more than it revealed. Her long legs bore only faint traces of past scars, giving her an ethereal quality of both fragility and strength.</p>
-                    
-                    <p>The pool sat near the courtyard&#39;s edge. Two men passing by couldn&#39;t resist peering through the slats in the fence.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Dominic&#39;s jaw went slack. But when he turned, his gaze followed Adrian&#39;s and landed on Vivian.</p>
+                        
+                        <p>Vivian wore a white one-piece with daring cutouts at the waist and back, covered by a sheer wrap that hinted at more than it revealed. Her long legs bore only faint traces of past scars, giving her an ethereal quality of both fragility and strength.</p>
+                        
+                        <p>The pool sat near the courtyard&#39;s edge. Two men passing by couldn&#39;t resist peering through the slats in the fence.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2341,6 +2405,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2467,7 +2611,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2509,32 +2652,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2545,21 +2670,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2592,6 +2707,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2612,20 +2733,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.093266">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.093266">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.272038">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.272038">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.093266",
-        "dateModified": "2026-07-19T02:47:19.093266",
+        "datePublished": "2026-07-19T13:03:14.272038",
+        "dateModified": "2026-07-19T13:03:14.272038",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,31 +893,35 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>He didn&#39;t move. His body remained pressed against mine, trapping me between him and the car. I&#39;could feel his rapid heartbeat through his shirt,his arms trembling slightly as they braced against the vehicle on either side of me.</p>
-                    
-                    <p>&#34;Wait a moment longer,&#34; he said, voice strained.</p>
-                    
-                    <p>I frowned. The egg dripping down my neck was seeping through my blouse, making the fabric stick uncomfortably to my skin.</p>
-                    
-                    <p>&#34;Those people are livestreaming this,&#34; I said. &#34;Are you trying to make things worse?&#34;</p>
-                    
-                    <p>His eyes briefly met mine before darting away. &#34;Just wait. Michael will be here soon. I can&#39;t... stand up right now.&#34;</p>
-                    
-                    <p>That&#39;s when it clicked. Blake couldn&#39;t stand on his own. He was holding this position through pure arm strength to keep from crushing me.</p>
-                    
-                    <p>Though I was grateful he&#39;d protected me, gratitude didn&#39;t equal wanting this kind of contact. Two divorced people pressed against a car like this?What would people think?</p>
-                    
-                    <p>But wait - how had he gotten out of his wheelchair to shield me in the first place?</p>
-                    
-                    <p>Footsteps approached from different directions.</p>
-                    
-                    <p>&#34;Evelyn!&#34;</p>
-                    
-                    <p>&#34;Blake!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>He didn&#39;t move. His body remained pressed against mine, trapping me between him and the car. I&#39;could feel his rapid heartbeat through his shirt,his arms trembling slightly as they braced against the vehicle on either side of me.</p>
+                        
+                        <p>&#34;Wait a moment longer,&#34; he said, voice strained.</p>
+                        
+                        <p>I frowned. The egg dripping down my neck was seeping through my blouse, making the fabric stick uncomfortably to my skin.</p>
+                        
+                        <p>&#34;Those people are livestreaming this,&#34; I said. &#34;Are you trying to make things worse?&#34;</p>
+                        
+                        <p>His eyes briefly met mine before darting away. &#34;Just wait. Michael will be here soon. I can&#39;t... stand up right now.&#34;</p>
+                        
+                        <p>That&#39;s when it clicked. Blake couldn&#39;t stand on his own. He was holding this position through pure arm strength to keep from crushing me.</p>
+                        
+                        <p>Though I was grateful he&#39;d protected me, gratitude didn&#39;t equal wanting this kind of contact. Two divorced people pressed against a car like this?What would people think?</p>
+                        
+                        <p>But wait - how had he gotten out of his wheelchair to shield me in the first place?</p>
+                        
+                        <p>Footsteps approached from different directions.</p>
+                        
+                        <p>&#34;Evelyn!&#34;</p>
+                        
+                        <p>&#34;Blake!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -896,31 +936,35 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Adrian and Ethan reached us simultaneously, each grabbing one of Blake&#39;s shoulders to lift him back into his wheelchair. Adrian immediately moved to my side, while Ethan helped Blake straighten his clothes.</p>
-                    
-                    <p>Adrian&#39;s eyes swept over me. &#34;You okay?&#34;</p>
-                    
-                    <p>&#34;Fine. Just messy.&#34; I tried ignoring the smell.</p>
-                    
-                    <p>Adrian turned to Blake. &#34;Though my wife didn&#39;t need your help, I should thank you.&#34;</p>
-                    
-                    <p>Blake still looked pale. &#34;No need.&#34;</p>
-                    
-                    <p>Ethan said, eyes wide. &#34;How did you do that? I thought you couldn&#39;t...&#34;</p>
-                    
-                    <p>Blake shook his head. &#34;I don&#39;t know.&#34;</p>
-                    
-                    <p>He turned toward the group of young women who were still recording with their phones. The overweight girl was on her knees, vomiting. The livestreamer trembled as Blake looked her way.</p>
-                    
-                    <p>&#34;Mr. Parker,&#34; she called out, &#34;we&#39;re just trying to get justice for your ex-wife! Her sister stole her designs when she couldn&#39;t defend herself.We&#39;re punishing her-not doing anything wrong!&#34;</p>
-                    
-                    <p>The others nodded. &#34;We&#39;re defending original designs!&#34;</p>
-                    
-                    <p>&#34;This woman&#39;s heartless to her own family,&#34; another added. &#34;Her sister only had these few designs, and she&#39;s stealing them too!&#34;</p>
-                    
-                    <p>&#34;Mr. Parker, we&#39;re helping you punish someone bad, but you&#39;re protecting her.Why?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Adrian and Ethan reached us simultaneously, each grabbing one of Blake&#39;s shoulders to lift him back into his wheelchair. Adrian immediately moved to my side, while Ethan helped Blake straighten his clothes.</p>
+                        
+                        <p>Adrian&#39;s eyes swept over me. &#34;You okay?&#34;</p>
+                        
+                        <p>&#34;Fine. Just messy.&#34; I tried ignoring the smell.</p>
+                        
+                        <p>Adrian turned to Blake. &#34;Though my wife didn&#39;t need your help, I should thank you.&#34;</p>
+                        
+                        <p>Blake still looked pale. &#34;No need.&#34;</p>
+                        
+                        <p>Ethan said, eyes wide. &#34;How did you do that? I thought you couldn&#39;t...&#34;</p>
+                        
+                        <p>Blake shook his head. &#34;I don&#39;t know.&#34;</p>
+                        
+                        <p>He turned toward the group of young women who were still recording with their phones. The overweight girl was on her knees, vomiting. The livestreamer trembled as Blake looked her way.</p>
+                        
+                        <p>&#34;Mr. Parker,&#34; she called out, &#34;we&#39;re just trying to get justice for your ex-wife! Her sister stole her designs when she couldn&#39;t defend herself.We&#39;re punishing her-not doing anything wrong!&#34;</p>
+                        
+                        <p>The others nodded. &#34;We&#39;re defending original designs!&#34;</p>
+                        
+                        <p>&#34;This woman&#39;s heartless to her own family,&#34; another added. &#34;Her sister only had these few designs, and she&#39;s stealing them too!&#34;</p>
+                        
+                        <p>&#34;Mr. Parker, we&#39;re helping you punish someone bad, but you&#39;re protecting her.Why?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -935,31 +979,35 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Blake&#39;s demeanor shifted. Even seated, his presence expanded. filling the air with a cold authority I remembered too well.</p>
-                    
-                    <p>&#34;Whether you&#39;re helping me and my ex-wife or just venting frustrations.you know your true motives,&#34; he said quietly.</p>
-                    
-                    <p>The girls exchanged worried glances.</p>
-                    
-                    <p>&#34;You have three minutes to eat those eggs, then apologize to Mrs.Knox.&#34;Blake continued. &#34;Otherwise, I&#39;ll make sure you can&#39;t survive in New York.&#34;</p>
-                    
-                    <p>The overweight girl struggled to her feet. &#34;That&#39;s ridiculous! We didn&#39;t do anything wrong. Why are you even helping her?&#34;</p>
-                    
-                    <p>She pointed at me. &#34;She stole attention from your wedding and plagiarized your dead wife&#39;s designs! If you respected your ex-wife, you wouldn&#39;t protect this woman!&#34;</p>
-                    
-                    <p>&#34;Why help her? Is it because she looks like Audrey? Did you fall for her face?&#34;</p>
-                    
-                    <p>Her friend tried pulling her back. &#34;Stop it!&#34;</p>
-                    
-                    <p>The air grew heavy. Blake&#39;s expression darkened.</p>
-                    
-                    <p>Before she could say more, several men in black rushed forward. Michael appeared with two bodyguards. He kicked the girl&#39;s knee from behind,forcing her down again. The guards pressed her face into her own vomit.</p>
-                    
-                    <p>&#34;Ahhh!&#34; she wailed.</p>
-                    
-                    <p>Blake wheeled himself in front of her.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Blake&#39;s demeanor shifted. Even seated, his presence expanded. filling the air with a cold authority I remembered too well.</p>
+                        
+                        <p>&#34;Whether you&#39;re helping me and my ex-wife or just venting frustrations.you know your true motives,&#34; he said quietly.</p>
+                        
+                        <p>The girls exchanged worried glances.</p>
+                        
+                        <p>&#34;You have three minutes to eat those eggs, then apologize to Mrs.Knox.&#34;Blake continued. &#34;Otherwise, I&#39;ll make sure you can&#39;t survive in New York.&#34;</p>
+                        
+                        <p>The overweight girl struggled to her feet. &#34;That&#39;s ridiculous! We didn&#39;t do anything wrong. Why are you even helping her?&#34;</p>
+                        
+                        <p>She pointed at me. &#34;She stole attention from your wedding and plagiarized your dead wife&#39;s designs! If you respected your ex-wife, you wouldn&#39;t protect this woman!&#34;</p>
+                        
+                        <p>&#34;Why help her? Is it because she looks like Audrey? Did you fall for her face?&#34;</p>
+                        
+                        <p>Her friend tried pulling her back. &#34;Stop it!&#34;</p>
+                        
+                        <p>The air grew heavy. Blake&#39;s expression darkened.</p>
+                        
+                        <p>Before she could say more, several men in black rushed forward. Michael appeared with two bodyguards. He kicked the girl&#39;s knee from behind,forcing her down again. The guards pressed her face into her own vomit.</p>
+                        
+                        <p>&#34;Ahhh!&#34; she wailed.</p>
+                        
+                        <p>Blake wheeled himself in front of her.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -974,31 +1022,35 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;What I should or shouldn&#39;t do isn&#39;t for you to direct,&#34; he said calmly. &#34;My character and preferences aren&#39;t for you to judge.&#34;</p>
-                    
-                    <p>He glanced at the phones still recording. &#34;They&#39;re livestreaming.&#34;</p>
-                    
-                    <p>Michael nodded. &#34;I&#39;ll handle it.&#34;</p>
-                    
-                    <p>He signaled to more men waiting nearby. &#34;Everyone, over here!&#34;</p>
-                    
-                    <p>The bodyguards rushed forward, subduing all the women. Their screams filled the air as they were forced to the ground.</p>
-                    
-                    <p>I frowned at the excessive force.&#34;Let&#39;s go,&#34; I told Adrian.</p>
-                    
-                    <p>&#34;Wait,&#34; he replied, dabbing egg from my hair with a tissue. &#34;Aren&#39;t you curious who sent them?&#34;</p>
-                    
-                    <p>I paused. &#34;Sent? They weren&#39;t actingalone?&#34;</p>
-                    
-                    <p>&#34;No. I was in the smoking area and saw everything. They were waiting for you specifically. They had photos of our car. When they matched it to Ethan&#39;s, they saged this ambush.&#34;</p>
-                    
-                    <p>&#34;This was planned, not spontaneous.&#34;</p>
-                    
-                    <p>The overweight girl&#39;s shouting drew my attention.</p>
-                    
-                    <p>&#34;Mr. Parker! My father partnered with Parker Group this week and had dinner with Rachel Hayes! We&#39;re friends - we texted today! You can&#39;t treat me like this!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;What I should or shouldn&#39;t do isn&#39;t for you to direct,&#34; he said calmly. &#34;My character and preferences aren&#39;t for you to judge.&#34;</p>
+                        
+                        <p>He glanced at the phones still recording. &#34;They&#39;re livestreaming.&#34;</p>
+                        
+                        <p>Michael nodded. &#34;I&#39;ll handle it.&#34;</p>
+                        
+                        <p>He signaled to more men waiting nearby. &#34;Everyone, over here!&#34;</p>
+                        
+                        <p>The bodyguards rushed forward, subduing all the women. Their screams filled the air as they were forced to the ground.</p>
+                        
+                        <p>I frowned at the excessive force.&#34;Let&#39;s go,&#34; I told Adrian.</p>
+                        
+                        <p>&#34;Wait,&#34; he replied, dabbing egg from my hair with a tissue. &#34;Aren&#39;t you curious who sent them?&#34;</p>
+                        
+                        <p>I paused. &#34;Sent? They weren&#39;t actingalone?&#34;</p>
+                        
+                        <p>&#34;No. I was in the smoking area and saw everything. They were waiting for you specifically. They had photos of our car. When they matched it to Ethan&#39;s, they saged this ambush.&#34;</p>
+                        
+                        <p>&#34;This was planned, not spontaneous.&#34;</p>
+                        
+                        <p>The overweight girl&#39;s shouting drew my attention.</p>
+                        
+                        <p>&#34;Mr. Parker! My father partnered with Parker Group this week and had dinner with Rachel Hayes! We&#39;re friends - we texted today! You can&#39;t treat me like this!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1013,31 +1065,35 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Adrian walked toward her. &#34;So Rachel Hayes sent you?&#34;</p>
-                    
-                    <p>Her eyes widened. &#34;Of course...&#34; She caught herself. &#34;No! This was my idea!It has nothing to do with Miss Hayes!&#34;</p>
-                    
-                    <p>Adrian laughed. &#34;Interesting. I never suggested Rachel sent you. Why the rush to deny it?&#34;</p>
-                    
-                    <p>She kept her head down. &#34;I just don&#39;t want you to misunderstand her!&#34;</p>
-                    
-                    <p>&#34;IFyou hadn&#39;t mentioned her, we wouldn&#39;t have suspected her,&#34; Adrian said. &#34;But now...&#34;</p>
-                    
-                    <p>He took out his phone and called Rachel, putting it on speaker.</p>
-                    
-                    <p>&#34;Hello?&#34;</p>
-                    
-                    <p>&#34;Adrian Knox here. There&#39;s an overweight girl claiming her father dined with you. Says you&#39;re friends.&#34;</p>
-                    
-                    <p>Silence stretched for several seconds.</p>
-                    
-                    <p>&#34;Where are you?&#34; Rachel finally asked. &#34;The hotel entrance?&#34;</p>
-                    
-                    <p>&#34;You&#39;ve guessed correctly. Please come quickly -we&#39;ll wait for you.&#34;</p>
-                    
-                    <p>Rachel&#39;s voice hardened. &#34;Fine. Don&#39;t hurt her or her friends. I&#39;m coming now.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Adrian walked toward her. &#34;So Rachel Hayes sent you?&#34;</p>
+                        
+                        <p>Her eyes widened. &#34;Of course...&#34; She caught herself. &#34;No! This was my idea!It has nothing to do with Miss Hayes!&#34;</p>
+                        
+                        <p>Adrian laughed. &#34;Interesting. I never suggested Rachel sent you. Why the rush to deny it?&#34;</p>
+                        
+                        <p>She kept her head down. &#34;I just don&#39;t want you to misunderstand her!&#34;</p>
+                        
+                        <p>&#34;IFyou hadn&#39;t mentioned her, we wouldn&#39;t have suspected her,&#34; Adrian said. &#34;But now...&#34;</p>
+                        
+                        <p>He took out his phone and called Rachel, putting it on speaker.</p>
+                        
+                        <p>&#34;Hello?&#34;</p>
+                        
+                        <p>&#34;Adrian Knox here. There&#39;s an overweight girl claiming her father dined with you. Says you&#39;re friends.&#34;</p>
+                        
+                        <p>Silence stretched for several seconds.</p>
+                        
+                        <p>&#34;Where are you?&#34; Rachel finally asked. &#34;The hotel entrance?&#34;</p>
+                        
+                        <p>&#34;You&#39;ve guessed correctly. Please come quickly -we&#39;ll wait for you.&#34;</p>
+                        
+                        <p>Rachel&#39;s voice hardened. &#34;Fine. Don&#39;t hurt her or her friends. I&#39;m coming now.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1052,31 +1108,35 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>She hung up.</p>
-                    
-                    <p>I leaned against the car, Rachel&#39;s voice echoing in my head. I knew her voice patterns too well after all our years as friends. That quick response,that immediate promise to come - she didn&#39;t even ask who these girls were or why they were in trouble.</p>
-                    
-                    <p>She knew exactly where they were and what they were doing.</p>
-                    
-                    <p>So I was right. Rachel was behind this whole thing.</p>
-                    
-                    <p>She&#39;d stolen my draft designs to accuse me of plagiarism.</p>
-                    
-                    <p>She&#39;d arranged for these girls to ambush me with rotten eggs.</p>
-                    
-                    <p>The reality hit me like a physical blow. Did Rachel hate me that much?Even knowing Evelyn was my twin sister, she&#39;d go this far?</p>
-                    
-                    <p>&#34;Hey.&#34; Ethan touched my shoulder lightly. &#34;It&#39;ll take her a while to get here. Why don&#39;t you go clean up?&#34;</p>
-                    
-                    <p>His suggestion pulled me back to reality. I&#39;d been planning to shower before Adrian stopped me to watch this drama unfold. Now that we were waiting for Rachel anyway, I might as well make myself presentable.</p>
-                    
-                    <p>I glanced at Adrian. &#34;I&#39;m going upstairs.&#34;</p>
-                    
-                    <p>He nodded. &#34;I&#39;ll call when the show starts.&#34;</p>
-                    
-                    <p>As I walked past Blake, I kept my eyes forward, not acknowledging his presence. I didn&#39;t spare him a single glance.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>She hung up.</p>
+                        
+                        <p>I leaned against the car, Rachel&#39;s voice echoing in my head. I knew her voice patterns too well after all our years as friends. That quick response,that immediate promise to come - she didn&#39;t even ask who these girls were or why they were in trouble.</p>
+                        
+                        <p>She knew exactly where they were and what they were doing.</p>
+                        
+                        <p>So I was right. Rachel was behind this whole thing.</p>
+                        
+                        <p>She&#39;d stolen my draft designs to accuse me of plagiarism.</p>
+                        
+                        <p>She&#39;d arranged for these girls to ambush me with rotten eggs.</p>
+                        
+                        <p>The reality hit me like a physical blow. Did Rachel hate me that much?Even knowing Evelyn was my twin sister, she&#39;d go this far?</p>
+                        
+                        <p>&#34;Hey.&#34; Ethan touched my shoulder lightly. &#34;It&#39;ll take her a while to get here. Why don&#39;t you go clean up?&#34;</p>
+                        
+                        <p>His suggestion pulled me back to reality. I&#39;d been planning to shower before Adrian stopped me to watch this drama unfold. Now that we were waiting for Rachel anyway, I might as well make myself presentable.</p>
+                        
+                        <p>I glanced at Adrian. &#34;I&#39;m going upstairs.&#34;</p>
+                        
+                        <p>He nodded. &#34;I&#39;ll call when the show starts.&#34;</p>
+                        
+                        <p>As I walked past Blake, I kept my eyes forward, not acknowledging his presence. I didn&#39;t spare him a single glance.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1091,21 +1151,25 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Mrs. Knox,&#34; Michael called after me, voice tight with disapproval. &#34;You&#39;re just leaving? After he-&#34;</p>
-                    
-                    <p>&#34;Michael.&#34; Blake&#39;s voice cut through the air like a knife. &#34;Focus on your job.&#34;</p>
-                    
-                    <p>I heard Michael sigh behind me as I continued toward the hotel entrance.He raised his voice deliberately. &#34;What are you all standing around for? Mr.</p>
-                    
-                    <p>Parker deserves better than this.&#34;</p>
-                    
-                    <p>The subtext was clear - he wasn&#39;t just talking to the security team.</p>
-                    
-                    <p>I didn&#39;t break stride. Blake&#39;s help meant nothing to me now. Adrian had already thanked him, which was more courtesy than Blake had ever shown me. All those times I&#39;d bent over backward for him, all I&#39;d ever gotten was a quick &#34;thanks&#34; before he moved on.</p>
-                    
-                    <p>Now that I was just giving him the same treatment.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Mrs. Knox,&#34; Michael called after me, voice tight with disapproval. &#34;You&#39;re just leaving? After he-&#34;</p>
+                        
+                        <p>&#34;Michael.&#34; Blake&#39;s voice cut through the air like a knife. &#34;Focus on your job.&#34;</p>
+                        
+                        <p>I heard Michael sigh behind me as I continued toward the hotel entrance.He raised his voice deliberately. &#34;What are you all standing around for? Mr.</p>
+                        
+                        <p>Parker deserves better than this.&#34;</p>
+                        
+                        <p>The subtext was clear - he wasn&#39;t just talking to the security team.</p>
+                        
+                        <p>I didn&#39;t break stride. Blake&#39;s help meant nothing to me now. Adrian had already thanked him, which was more courtesy than Blake had ever shown me. All those times I&#39;d bent over backward for him, all I&#39;d ever gotten was a quick &#34;thanks&#34; before he moved on.</p>
+                        
+                        <p>Now that I was just giving him the same treatment.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2421,6 +2485,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2547,7 +2691,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2589,32 +2732,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2625,21 +2750,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2672,6 +2787,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2692,20 +2813,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

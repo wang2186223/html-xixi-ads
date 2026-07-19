@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:18.814329">
-    <meta property="article:modified_time" content="2026-07-19T02:47:18.814329">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.106440">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.106440">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:18">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:18.814329",
-        "dateModified": "2026-07-19T02:47:18.814329",
+        "datePublished": "2026-07-19T13:03:14.106440",
+        "dateModified": "2026-07-19T13:03:14.106440",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,23 +893,27 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>My heart skipped a beat. &#34;Blake?&#34;</p>
-                    
-                    <p>&#34;Yeah. I thought I&#39;d found you a place secluded enough, but he still managed to track you down!&#34;</p>
-                    
-                    <p>I sat up straighter, gripping the phone tighter. &#34;What&#39;s he doing at my place?&#34;</p>
-                    
-                    <p>&#34;Says you stood him up, came to &#39;settle scores&#39;- he&#39;s completely lostit!&#34;Astrid&#39;s voice still carried her heavy anger. &#34;He somehow convinced himself you were home, and when he didn&#39;t have a key, he just kicked your door in!&#34;</p>
-                    
-                    <p>&#34;When I got there, he was standing in your apartment with his precious Laurel Rose. That scene is just too disgusting so I kicked them both out!&#34;</p>
-                    
-                    <p>She continued, apparently trying to tidy up my apartment. &#34;They&#39;ve turned your whole place upside down. Were they looking for something specific or just being destructive?&#34;</p>
-                    
-                    <p>As Astrid&#39;s words sank in, my mind went blank for a moment.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>My heart skipped a beat. &#34;Blake?&#34;</p>
+                        
+                        <p>&#34;Yeah. I thought I&#39;d found you a place secluded enough, but he still managed to track you down!&#34;</p>
+                        
+                        <p>I sat up straighter, gripping the phone tighter. &#34;What&#39;s he doing at my place?&#34;</p>
+                        
+                        <p>&#34;Says you stood him up, came to &#39;settle scores&#39;- he&#39;s completely lostit!&#34;Astrid&#39;s voice still carried her heavy anger. &#34;He somehow convinced himself you were home, and when he didn&#39;t have a key, he just kicked your door in!&#34;</p>
+                        
+                        <p>&#34;When I got there, he was standing in your apartment with his precious Laurel Rose. That scene is just too disgusting so I kicked them both out!&#34;</p>
+                        
+                        <p>She continued, apparently trying to tidy up my apartment. &#34;They&#39;ve turned your whole place upside down. Were they looking for something specific or just being destructive?&#34;</p>
+                        
+                        <p>As Astrid&#39;s words sank in, my mind went blank for a moment.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -888,23 +928,27 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>*Snow!*</p>
-                    
-                    <p>The name burst into my mind with such force I nearly dropped the phone.</p>
-                    
-                    <p>&#34;Astrid,&#34; I cut through her tirade, panicclawing up my throat. &#34;The cat-check for Snow! I&#39;m not home when this happened - she must be terrified!&#34;</p>
-                    
-                    <p>&#34;Oh god,&#34; I could hear her moving, voice shifting as she searched. &#34;That&#39;s</p>
-                    
-                    <p>what felt off! Under the couch? The bed?&#34;</p>
-                    
-                    <p>&#34;Anywhere!&#34; The word came out sharp enough to make Ethan jump. &#34;She hides when she&#39;s scared, and with strangers breaking in-&#34;</p>
-                    
-                    <p>&#34;Who&#39;s Snow by the way?&#34; Ethan&#39;s question floated past me, barely registering.</p>
-                    
-                    <p>My chest felt too tight. &#34;My cat,&#34; I managed, though the words felt inadequate. How could I explain that Snow was the only pure thing to come out of my marriage? The only warmth in those endless nights when Blake&#39;s side of the bed stayed cold and empty? That in a life where I&#39;d learned to expect nothing, she&#39;d been my one constant?</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>*Snow!*</p>
+                        
+                        <p>The name burst into my mind with such force I nearly dropped the phone.</p>
+                        
+                        <p>&#34;Astrid,&#34; I cut through her tirade, panicclawing up my throat. &#34;The cat-check for Snow! I&#39;m not home when this happened - she must be terrified!&#34;</p>
+                        
+                        <p>&#34;Oh god,&#34; I could hear her moving, voice shifting as she searched. &#34;That&#39;s</p>
+                        
+                        <p>what felt off! Under the couch? The bed?&#34;</p>
+                        
+                        <p>&#34;Anywhere!&#34; The word came out sharp enough to make Ethan jump. &#34;She hides when she&#39;s scared, and with strangers breaking in-&#34;</p>
+                        
+                        <p>&#34;Who&#39;s Snow by the way?&#34; Ethan&#39;s question floated past me, barely registering.</p>
+                        
+                        <p>My chest felt too tight. &#34;My cat,&#34; I managed, though the words felt inadequate. How could I explain that Snow was the only pure thing to come out of my marriage? The only warmth in those endless nights when Blake&#39;s side of the bed stayed cold and empty? That in a life where I&#39;d learned to expect nothing, she&#39;d been my one constant?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -919,23 +963,27 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>I could walk away from the Parker fortune. The mansions. The cars. All of it. But Snow...</p>
-                    
-                    <p>&#34;Audrey, I can&#39;t find her. &#34; Astrid&#39;s voice had gone soft in a way that made my blood run cold. &#34;I&#39;ve looked everywhere - under the sofa, under the bed, in all the closets...&#34; She paused. &#34;Usually when I visit, she comes running as soon as I call. Today, nothing.&#34;</p>
-                    
-                    <p>The possibility that Snow might have escaped when Blake kicked in the door sent waves of nausea through me that had nothing to do with my illness. She was an indoor cat, completely unprepared for the streets of New York. The thought of her lost and frightened made my chest constrict painfully.</p>
-                    
-                    <p>&#34;I need to come there,&#34; I said, already trying to push myself up from the hospital bed. &#34;Ethan, help me up...&#34;</p>
-                    
-                    <p>He frowned, moving closer to my bed. His concern was too obvious.′′Ayou sure? You look really pale...&#34;</p>
-                    
-                    <p>The line went quiet for a moment, then Astrid&#39;s sharp intake of breath cut through the silence. &#34;What&#39;s going on? Audrey? Where are you - in a hospital?&#34;</p>
-                    
-                    <p>I bit my lip, still struggling to push myself up despite the way the room tilted around me.</p>
-                    
-                    <p>Seeing my determination. Ethan gently took the phone from my trembling hands. &#34;Hey Astrid, this is Ethan - we met at The Underground,remember?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>I could walk away from the Parker fortune. The mansions. The cars. All of it. But Snow...</p>
+                        
+                        <p>&#34;Audrey, I can&#39;t find her. &#34; Astrid&#39;s voice had gone soft in a way that made my blood run cold. &#34;I&#39;ve looked everywhere - under the sofa, under the bed, in all the closets...&#34; She paused. &#34;Usually when I visit, she comes running as soon as I call. Today, nothing.&#34;</p>
+                        
+                        <p>The possibility that Snow might have escaped when Blake kicked in the door sent waves of nausea through me that had nothing to do with my illness. She was an indoor cat, completely unprepared for the streets of New York. The thought of her lost and frightened made my chest constrict painfully.</p>
+                        
+                        <p>&#34;I need to come there,&#34; I said, already trying to push myself up from the hospital bed. &#34;Ethan, help me up...&#34;</p>
+                        
+                        <p>He frowned, moving closer to my bed. His concern was too obvious.′′Ayou sure? You look really pale...&#34;</p>
+                        
+                        <p>The line went quiet for a moment, then Astrid&#39;s sharp intake of breath cut through the silence. &#34;What&#39;s going on? Audrey? Where are you - in a hospital?&#34;</p>
+                        
+                        <p>I bit my lip, still struggling to push myself up despite the way the room tilted around me.</p>
+                        
+                        <p>Seeing my determination. Ethan gently took the phone from my trembling hands. &#34;Hey Astrid, this is Ethan - we met at The Underground,remember?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -950,23 +998,27 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Of course I remember you, but what are you doing with...&#34; Her voice trailed off, confusion evident.</p>
-                    
-                    <p>&#34;Listen,&#34; Ethan took a deep breath, keeping his voice steady.&#34;Audrey had a medical emergency last night. She&#39;s stable now, but stilI under observation. The doctors won&#39;t let her leave yet.&#34;</p>
-                    
-                    <p>&#34;I&#39;m here looking after her. She&#39;s in no condition to be discharged, let alone searching for Snow, but she&#39;s insisting on getting up...&#34;</p>
-                    
-                    <p>&#34;Wait,what?&#34; Astrid&#39;s voice rose sharply. &#34;Audrey, you&#39;re sick and you didn&#39;t tell me?!&#34;</p>
-                    
-                    <p>&#34;Now I get why you míssed the divorce proceedings - you&#39;re stuck in observation! Does Blake know about this?&#34;</p>
-                    
-                    <p>I shot Ethan an accusing look as I reclaimed my phone. &#34;I told him I wasn&#39;t feeling well. He didn&#39;t believe me.&#34;</p>
-                    
-                    <p>&#34;Of course he didn&#39;t!&#34; Astrid&#39;s voice rose, showing her evident anger. &#34;That bastard!&#34;</p>
-                    
-                    <p>&#34;Astrid, please.&#34; I cut her off, pressing my fingers to my throbbing temple.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Of course I remember you, but what are you doing with...&#34; Her voice trailed off, confusion evident.</p>
+                        
+                        <p>&#34;Listen,&#34; Ethan took a deep breath, keeping his voice steady.&#34;Audrey had a medical emergency last night. She&#39;s stable now, but stilI under observation. The doctors won&#39;t let her leave yet.&#34;</p>
+                        
+                        <p>&#34;I&#39;m here looking after her. She&#39;s in no condition to be discharged, let alone searching for Snow, but she&#39;s insisting on getting up...&#34;</p>
+                        
+                        <p>&#34;Wait,what?&#34; Astrid&#39;s voice rose sharply. &#34;Audrey, you&#39;re sick and you didn&#39;t tell me?!&#34;</p>
+                        
+                        <p>&#34;Now I get why you míssed the divorce proceedings - you&#39;re stuck in observation! Does Blake know about this?&#34;</p>
+                        
+                        <p>I shot Ethan an accusing look as I reclaimed my phone. &#34;I told him I wasn&#39;t feeling well. He didn&#39;t believe me.&#34;</p>
+                        
+                        <p>&#34;Of course he didn&#39;t!&#34; Astrid&#39;s voice rose, showing her evident anger. &#34;That bastard!&#34;</p>
+                        
+                        <p>&#34;Astrid, please.&#34; I cut her off, pressing my fingers to my throbbing temple.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -981,23 +1033,27 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;I don&#39;t care about him right now. I just need to know where Snow is...&#34;</p>
-                    
-                    <p>&#34;They probably let her out on purpose,knowing how much you care about her!&#34; Astrid&#39;s voice was filled with anger. &#34;Audrey, you focus on getting better. I&#39;ll put up missing cat posters and get everyone I know looking for her.&#34;</p>
-                    
-                    <p>I pressed my lips together, fighting back tears. &#34;Okay. Thanks, Astrid.&#34;</p>
-                    
-                    <p>The line fell quiet after we ended the call. Ethan shifted in his chair,staring at me with a concerned expression.</p>
-                    
-                    <p>&#34;The timeline might work&lt; in our favor,&#34; he said, his voice carrying that gentle optimism I&#39;d come to associate with him. &#34;If Snow went missing this morning, she likely hasn&#39;t ventured far. Most cats stay within familiar territory.&#34;</p>
-                    
-                    <p>His words sparked a memory that made my heart skip. &#34;Last night...&#34; The realization hit me with sudden clarity. &#34;I saw her last night, right before...&#34;</p>
-                    
-                    <p>*If she hadn&#39;t knocked over that tea...* The thought remained unfinished,but its weight pressed against my chest. That small accident might have saved my life.</p>
-                    
-                    <p>The memory of James going to my apartment last night flashed through my mind. Hastily, I grabbed my phone and dialed James. &#34;James.&#34; I struggled to keep my voice steady when he answered. &#34;Last night, when everything happened... did you see my cat? A large white Ragdoll?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;I don&#39;t care about him right now. I just need to know where Snow is...&#34;</p>
+                        
+                        <p>&#34;They probably let her out on purpose,knowing how much you care about her!&#34; Astrid&#39;s voice was filled with anger. &#34;Audrey, you focus on getting better. I&#39;ll put up missing cat posters and get everyone I know looking for her.&#34;</p>
+                        
+                        <p>I pressed my lips together, fighting back tears. &#34;Okay. Thanks, Astrid.&#34;</p>
+                        
+                        <p>The line fell quiet after we ended the call. Ethan shifted in his chair,staring at me with a concerned expression.</p>
+                        
+                        <p>&#34;The timeline might work&lt; in our favor,&#34; he said, his voice carrying that gentle optimism I&#39;d come to associate with him. &#34;If Snow went missing this morning, she likely hasn&#39;t ventured far. Most cats stay within familiar territory.&#34;</p>
+                        
+                        <p>His words sparked a memory that made my heart skip. &#34;Last night...&#34; The realization hit me with sudden clarity. &#34;I saw her last night, right before...&#34;</p>
+                        
+                        <p>*If she hadn&#39;t knocked over that tea...* The thought remained unfinished,but its weight pressed against my chest. That small accident might have saved my life.</p>
+                        
+                        <p>The memory of James going to my apartment last night flashed through my mind. Hastily, I grabbed my phone and dialed James. &#34;James.&#34; I struggled to keep my voice steady when he answered. &#34;Last night, when everything happened... did you see my cat? A large white Ragdoll?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1012,23 +1068,27 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>The pause that followed stretched so long I wondered if the connection had failed. When he finally spoke, his voice carried an unusual roughness.&#34;No.&#34;</p>
-                    
-                    <p>He added, almost too quickly, &#34;What&#39;s wrong?&#34;</p>
-                    
-                    <p>I felt something inside me deflate. &#34;Snow&#39;s missing. She&#39;s always been shy around strangers... if you didn&#39;t see her, she must have been hiding somewhere.&#34;</p>
-                    
-                    <p>My voice sounded distant to my own ears as I added, &#34;I&#39;Il keep looking.&#34;</p>
-                    
-                    <p>&#34;Of course.&#34; There was something odd in the way he softened his tone.&#34;Call if you need anything.&#34;</p>
-                    
-                    <p>I managed a quiet &#34;thanks&#34; before ending the call. The phone felt unusually heavy in my hand as I set it down, closing my eyes against the sudden burn of tears.</p>
-                    
-                    <p>Everything I cherished was gone. First the cancer forced me to give up Blake - five years of love reduced to medical necessities and divorce papers.Now it seemed determined to take away my last source of comfort. Was it too much to ask for a few final months with my beloved cat?</p>
-                    
-                    <p>Ethan&#39;s voice cut through my spiral of despair, warm and reassuring. &#34;Let s not assume the worst. Snow knows your scent, knows her home.She&#39;s probably just found a quiet spot to wait for you.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>The pause that followed stretched so long I wondered if the connection had failed. When he finally spoke, his voice carried an unusual roughness.&#34;No.&#34;</p>
+                        
+                        <p>He added, almost too quickly, &#34;What&#39;s wrong?&#34;</p>
+                        
+                        <p>I felt something inside me deflate. &#34;Snow&#39;s missing. She&#39;s always been shy around strangers... if you didn&#39;t see her, she must have been hiding somewhere.&#34;</p>
+                        
+                        <p>My voice sounded distant to my own ears as I added, &#34;I&#39;Il keep looking.&#34;</p>
+                        
+                        <p>&#34;Of course.&#34; There was something odd in the way he softened his tone.&#34;Call if you need anything.&#34;</p>
+                        
+                        <p>I managed a quiet &#34;thanks&#34; before ending the call. The phone felt unusually heavy in my hand as I set it down, closing my eyes against the sudden burn of tears.</p>
+                        
+                        <p>Everything I cherished was gone. First the cancer forced me to give up Blake - five years of love reduced to medical necessities and divorce papers.Now it seemed determined to take away my last source of comfort. Was it too much to ask for a few final months with my beloved cat?</p>
+                        
+                        <p>Ethan&#39;s voice cut through my spiral of despair, warm and reassuring. &#34;Let s not assume the worst. Snow knows your scent, knows her home.She&#39;s probably just found a quiet spot to wait for you.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1043,21 +1103,25 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;You mentioned she&#39;s shy, easily startled?&#34; His gentle reminder of Snow&#39;s personality traits felt like a lifeline. &#34;She&#39;ll come out when she feels safe.&#34;</p>
-                    
-                    <p>Something in his words ignited a spark of determination. My eyes snapped open as I pushed myself upright. &#34;Dr. Evans - I need to talk to her about discharge.&#34;</p>
-                    
-                    <p>&#34;Already ahead of you.&#34; A small smile played at the corners of his mouth as he held up his phone, displaying a series of text messages. &#34;Alex checked with her. You&#39;re cleared to leave.&#34;</p>
-                    
-                    <p>&#34;Let me handle the paperwork while you get changed. Then we can search</p>
-                    
-                    <p>the neighborhood together. Deal?&#34;</p>
-                    
-                    <p>The lump in my throat made it difficult to speak, so I just nodded,hoping he could read the gratitude in my eyes.</p>
-                    
-                    <p>&#34;Back in a few minutes!&#34; Hlis voice carried a note of encouragement as he headed for the door.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;You mentioned she&#39;s shy, easily startled?&#34; His gentle reminder of Snow&#39;s personality traits felt like a lifeline. &#34;She&#39;ll come out when she feels safe.&#34;</p>
+                        
+                        <p>Something in his words ignited a spark of determination. My eyes snapped open as I pushed myself upright. &#34;Dr. Evans - I need to talk to her about discharge.&#34;</p>
+                        
+                        <p>&#34;Already ahead of you.&#34; A small smile played at the corners of his mouth as he held up his phone, displaying a series of text messages. &#34;Alex checked with her. You&#39;re cleared to leave.&#34;</p>
+                        
+                        <p>&#34;Let me handle the paperwork while you get changed. Then we can search</p>
+                        
+                        <p>the neighborhood together. Deal?&#34;</p>
+                        
+                        <p>The lump in my throat made it difficult to speak, so I just nodded,hoping he could read the gratitude in my eyes.</p>
+                        
+                        <p>&#34;Back in a few minutes!&#34; Hlis voice carried a note of encouragement as he headed for the door.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2373,6 +2437,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2499,7 +2643,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2541,32 +2684,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2577,21 +2702,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2624,6 +2739,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2644,20 +2765,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:34.247007">
-    <meta property="article:modified_time" content="2026-07-19T02:47:34.247007">
+    <meta property="article:published_time" content="2026-07-19T13:03:28.431872">
+    <meta property="article:modified_time" content="2026-07-19T13:03:28.431872">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:34">
+    <meta name="last-modified" content="2026-07-19 13:03:28">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:34.247007",
-        "dateModified": "2026-07-19T02:47:34.247007",
+        "datePublished": "2026-07-19T13:03:28.431872",
+        "dateModified": "2026-07-19T13:03:28.431872",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Chapter 821</p>
-                    
-                    <p>Finnick had to work hard so that his son would take after him as well.</p>
-                    
-                    <p>With these thoughts in mind, he decided to be extra diligent at work.</p>
-                    
-                    <p>Some time ago, some classified documents were leaked, causing a crisis for the company. Therefore, Finnick was doing all he could to fix the problem.</p>
-                    
-                    <p>A company of this scale still had to operate no matter what, and it was impossible for him to ignore the issues at work.</p>
-                    
-                    <p>On the other hand, Evelyn was busy trying to form an alliance of her own.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Chapter 821</p>
+                        
+                        <p>Finnick had to work hard so that his son would take after him as well.</p>
+                        
+                        <p>With these thoughts in mind, he decided to be extra diligent at work.</p>
+                        
+                        <p>Some time ago, some classified documents were leaked, causing a crisis for the company. Therefore, Finnick was doing all he could to fix the problem.</p>
+                        
+                        <p>A company of this scale still had to operate no matter what, and it was impossible for him to ignore the issues at work.</p>
+                        
+                        <p>On the other hand, Evelyn was busy trying to form an alliance of her own.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>She went to visit Mark who was in prison.</p>
-                    
-                    <p>“Hi, I’m here to see Mark Norton,” she informed the police at the prison before walking in.</p>
-                    
-                    <p>This was the first time Mark had a visitor in prison, but he didn’t expect his visitor to be Evelyn.</p>
-                    
-                    <p>“What are you doing here?” he asked while scrunching his brows.</p>
-                    
-                    <p>“Mark, I’m simply here to see you,” she replied in a gentle tone.</p>
-                    
-                    <p>Despite what she said, Mark didn’t believe that she would come to visit him without an agenda.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>She went to visit Mark who was in prison.</p>
+                        
+                        <p>“Hi, I’m here to see Mark Norton,” she informed the police at the prison before walking in.</p>
+                        
+                        <p>This was the first time Mark had a visitor in prison, but he didn’t expect his visitor to be Evelyn.</p>
+                        
+                        <p>“What are you doing here?” he asked while scrunching his brows.</p>
+                        
+                        <p>“Mark, I’m simply here to see you,” she replied in a gentle tone.</p>
+                        
+                        <p>Despite what she said, Mark didn’t believe that she would come to visit him without an agenda.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>“Just tell me what you’re here for.” He folded his arms on the table and glared at her.</p>
-                    
-                    <p>“Alright, since you said so, I’ll just go straight to the point.” Evelyn took off her glasses and looked at him solemnly.</p>
-                    
-                    <p>“I need your help to destroy Finnick’s company and bring him down for good,” she said as her eyes filled with rage.</p>
-                    
-                    <p>Mark couldn’t believe his ears; he thought he had heard her wrongly. After processing her words for a moment, he realized that what he had just heard was real.</p>
-                    
-                    <p>“Why?” he questioned her. Evelyn loves Finnick to death. Why would she want to bring him down all of a sudden? Is she jilted?</p>
-                    
-                    <p>“Because I want to prove that no one else in this world loves him more than I do. Even if he lost everything, I would still love him the same,” she answered with conviction.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“Just tell me what you’re here for.” He folded his arms on the table and glared at her.</p>
+                        
+                        <p>“Alright, since you said so, I’ll just go straight to the point.” Evelyn took off her glasses and looked at him solemnly.</p>
+                        
+                        <p>“I need your help to destroy Finnick’s company and bring him down for good,” she said as her eyes filled with rage.</p>
+                        
+                        <p>Mark couldn’t believe his ears; he thought he had heard her wrongly. After processing her words for a moment, he realized that what he had just heard was real.</p>
+                        
+                        <p>“Why?” he questioned her. Evelyn loves Finnick to death. Why would she want to bring him down all of a sudden? Is she jilted?</p>
+                        
+                        <p>“Because I want to prove that no one else in this world loves him more than I do. Even if he lost everything, I would still love him the same,” she answered with conviction.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Mark was shocked to know that Evelyn would go to this extent to prove her love for Finnick.</p>
-                    
-                    <p>Just how much does she love him to say something like that?</p>
-                    
-                    <p>She wants to prove that she is the one who loves Finnick the most by making him lose everything he has.</p>
-                    
-                    <p>That’s absolutely shocking.</p>
-                    
-                    <p>“Are you sure?” he questioned her again to make sure she was really serious about her plan.</p>
-                    
-                    <p>It wasn’t that he didn’t want to help her out. In fact, carrying out this plan of hers was actually to his benefit.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Mark was shocked to know that Evelyn would go to this extent to prove her love for Finnick.</p>
+                        
+                        <p>Just how much does she love him to say something like that?</p>
+                        
+                        <p>She wants to prove that she is the one who loves Finnick the most by making him lose everything he has.</p>
+                        
+                        <p>That’s absolutely shocking.</p>
+                        
+                        <p>“Are you sure?” he questioned her again to make sure she was really serious about her plan.</p>
+                        
+                        <p>It wasn’t that he didn’t want to help her out. In fact, carrying out this plan of hers was actually to his benefit.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Mark let out a grin as he thought about this.</p>
-                    
-                    <p>If Evelyn is really serious about this, I will definitely help her out. It’s all up to her now.</p>
-                    
-                    <p>Since she loves Finnick so deeply, she would want to fulfill this plan of hers.</p>
-                    
-                    <p>However, after waiting for some time, he didn’t hear a firm answer from Evelyn.</p>
-                    
-                    <p>Just as he thought she had changed her mind, she suddenly said, “Yes, I’m sure.”</p>
-                    
-                    <p>She sounded calm and composed as though the plan had nothing to do with her.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Mark let out a grin as he thought about this.</p>
+                        
+                        <p>If Evelyn is really serious about this, I will definitely help her out. It’s all up to her now.</p>
+                        
+                        <p>Since she loves Finnick so deeply, she would want to fulfill this plan of hers.</p>
+                        
+                        <p>However, after waiting for some time, he didn’t hear a firm answer from Evelyn.</p>
+                        
+                        <p>Just as he thought she had changed her mind, she suddenly said, “Yes, I’m sure.”</p>
+                        
+                        <p>She sounded calm and composed as though the plan had nothing to do with her.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>“Okay. Since you’re sure, let’s discuss our next steps,” Mark said as he looked at her, admiring her courage.</p>
-                    
-                    <p>Girls rarely have such courage and audacity these days.</p>
-                    
-                    <p>Moreover, if her plan gets exposed, she may face severe consequences.</p>
-                    
-                    <p>“Okay,” she muttered, then they started coming up with a detailed plan.</p>
-                    
-                    <p>In the prison, only the sounds of their whispers could be heard.</p>
-                    
-                    <p>“Let’s stick to this for now.” Mark licked his lips then turned to look at Evelyn.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>“Okay. Since you’re sure, let’s discuss our next steps,” Mark said as he looked at her, admiring her courage.</p>
+                        
+                        <p>Girls rarely have such courage and audacity these days.</p>
+                        
+                        <p>Moreover, if her plan gets exposed, she may face severe consequences.</p>
+                        
+                        <p>“Okay,” she muttered, then they started coming up with a detailed plan.</p>
+                        
+                        <p>In the prison, only the sounds of their whispers could be heard.</p>
+                        
+                        <p>“Let’s stick to this for now.” Mark licked his lips then turned to look at Evelyn.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>He scrutinized her every gesture, trying to figure out if she actually had the guts to complete the tasks he had given her.</p>
-                    
-                    <p>Nevertheless, the determination in her eyes surprised him.</p>
-                    
-                    <p>Mark admired the Evelyn’s courage, but all she cared about was toppling Finnick.</p>
-                    
-                    <p>“You seem pretty determined,” he said to her jokingly.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>He scrutinized her every gesture, trying to figure out if she actually had the guts to complete the tasks he had given her.</p>
+                        
+                        <p>Nevertheless, the determination in her eyes surprised him.</p>
+                        
+                        <p>Mark admired the Evelyn’s courage, but all she cared about was toppling Finnick.</p>
+                        
+                        <p>“You seem pretty determined,” he said to her jokingly.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

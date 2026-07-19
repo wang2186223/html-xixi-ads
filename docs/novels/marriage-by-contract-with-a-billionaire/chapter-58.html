@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:29.749072">
-    <meta property="article:modified_time" content="2026-07-19T02:47:29.749072">
+    <meta property="article:published_time" content="2026-07-19T13:03:24.131815">
+    <meta property="article:modified_time" content="2026-07-19T13:03:24.131815">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:29">
+    <meta name="last-modified" content="2026-07-19 13:03:24">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:29.749072",
-        "dateModified": "2026-07-19T02:47:29.749072",
+        "datePublished": "2026-07-19T13:03:24.131815",
+        "dateModified": "2026-07-19T13:03:24.131815",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,17 +893,21 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Upon their arrival at the prison, the tension in the air was palpable. Kate and Bella had no words for their visitors at first. As they were led into the room, they looked at Alexander, his expression cold and unreadable, and then shifted their gaze to Lilly. Despite their grim surroundings, there was still a flicker of emotion in Kate&#39;s eyes-an ache, a longing-for something lost. Lilly noticed it, but she wasn&#39;t interested in playing that game.</p>
-                    
-                    <p>The glass barrier between them seemed to magnify the silence, but Lilly&#39;s resolve remained firm. She walked to a seat, sat down, and picked up the telephone. The air was thick with anticipation as Alexander stood behind her,watching with an intensity that mirrored her own.</p>
-                    
-                    <p>Kate and Bella mirrored their actions, lifting the phones to their ears, their eyes never leaving Lilly.</p>
-                    
-                    <p>Lilly&#39;s voice broke through the silence, her tone calm but laced with unspoken fury.&#34;How does it feel to be here? I bet you never imagined your lives would end like this.&#34; Her gaze never wavered from Bella. “You&#39;Il rot in here for the rest of your lives. All the harm you&#39;ve done to my family, it&#39;s time you paid for it.&#34;</p>
-                    
-                    <p>Bella&#39;s eyes flashed for a split second-was it defiance? Lilly couldn&#39;t tell,and it unsettled her. She had expected Bella to react, to show some sign of the person she once knew, but Bella remained stone-faced. It was unnerving. Lilly leaned closer, her voice low and dangerous. “You&#39;ll regret ever crossing me. I will make sure you never see the light of day again.&#34; Her eyes locked with Bella&#39;s, searching for any hint of fear-but there was nothing. Turning her attention to Kate, Lilly&#39;s gaze softened just for a moment.but the venom in her words remained. &#34;And you, Kate. You&#39;ll never get out of here. Not now, not ever. You think Alexander&#39;s going to come rescue you?You&#39;re wrong.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Upon their arrival at the prison, the tension in the air was palpable. Kate and Bella had no words for their visitors at first. As they were led into the room, they looked at Alexander, his expression cold and unreadable, and then shifted their gaze to Lilly. Despite their grim surroundings, there was still a flicker of emotion in Kate&#39;s eyes-an ache, a longing-for something lost. Lilly noticed it, but she wasn&#39;t interested in playing that game.</p>
+                        
+                        <p>The glass barrier between them seemed to magnify the silence, but Lilly&#39;s resolve remained firm. She walked to a seat, sat down, and picked up the telephone. The air was thick with anticipation as Alexander stood behind her,watching with an intensity that mirrored her own.</p>
+                        
+                        <p>Kate and Bella mirrored their actions, lifting the phones to their ears, their eyes never leaving Lilly.</p>
+                        
+                        <p>Lilly&#39;s voice broke through the silence, her tone calm but laced with unspoken fury.&#34;How does it feel to be here? I bet you never imagined your lives would end like this.&#34; Her gaze never wavered from Bella. “You&#39;Il rot in here for the rest of your lives. All the harm you&#39;ve done to my family, it&#39;s time you paid for it.&#34;</p>
+                        
+                        <p>Bella&#39;s eyes flashed for a split second-was it defiance? Lilly couldn&#39;t tell,and it unsettled her. She had expected Bella to react, to show some sign of the person she once knew, but Bella remained stone-faced. It was unnerving. Lilly leaned closer, her voice low and dangerous. “You&#39;ll regret ever crossing me. I will make sure you never see the light of day again.&#34; Her eyes locked with Bella&#39;s, searching for any hint of fear-but there was nothing. Turning her attention to Kate, Lilly&#39;s gaze softened just for a moment.but the venom in her words remained. &#34;And you, Kate. You&#39;ll never get out of here. Not now, not ever. You think Alexander&#39;s going to come rescue you?You&#39;re wrong.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -882,17 +922,21 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Kate&#39;s eyes flickered, but it was fleeting-she quickly masked the emotion,her fingers trembling around the receiver. Lilly knew that, deep down,Kate&#39;s feelings for Alexander hadn&#39;t disappeared. But it was irrelevant now. Lilly was no longer that naive girl.</p>
-                    
-                    <p>With a final look at the two women, Lilly put the phone down and stood.“I said what I needed to say,&#34; she murmured, her voice steely as she turned away, her hand brushing against Alexander&#39;s as he walked her out.</p>
-                    
-                    <p>As they drove away, the weight of the visit settled over her like a heavy fog.&#34;You did what you needed to,&#34; Alexander assured her, his voice steady.&#34;They won&#39;t escape. I&#39;ve made sure of it.&#34;</p>
-                    
-                    <p>Lilly didn&#39;t feel reassured. The unease that had gnawed at her since the trial still lingered. Bella was too calm, too collected-something wasn&#39;t right. She couldn&#39;t shake the feeling that there was more to this than met the eye.</p>
-                    
-                    <p>Several hours later, they arrived at the graveyard. Lilly took the flowers from the bodyguards, her movements slow and deliberate. As they approached the family plot, she froze. Someone was kneeling by the graves,crying softly. It was Peter. Alexander stood at her side, his gaze hard as he observed the scene. Peter was a broken man, his shoulders hunched in sorrow, his eyes red-rimmed with regret. He had been there for over an hour, paying tribute to the daughters he had failed. The assistant standing off to the side had never seen him cry, and even he couldn&#39;t help but feel the weight of the moment.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Kate&#39;s eyes flickered, but it was fleeting-she quickly masked the emotion,her fingers trembling around the receiver. Lilly knew that, deep down,Kate&#39;s feelings for Alexander hadn&#39;t disappeared. But it was irrelevant now. Lilly was no longer that naive girl.</p>
+                        
+                        <p>With a final look at the two women, Lilly put the phone down and stood.“I said what I needed to say,&#34; she murmured, her voice steely as she turned away, her hand brushing against Alexander&#39;s as he walked her out.</p>
+                        
+                        <p>As they drove away, the weight of the visit settled over her like a heavy fog.&#34;You did what you needed to,&#34; Alexander assured her, his voice steady.&#34;They won&#39;t escape. I&#39;ve made sure of it.&#34;</p>
+                        
+                        <p>Lilly didn&#39;t feel reassured. The unease that had gnawed at her since the trial still lingered. Bella was too calm, too collected-something wasn&#39;t right. She couldn&#39;t shake the feeling that there was more to this than met the eye.</p>
+                        
+                        <p>Several hours later, they arrived at the graveyard. Lilly took the flowers from the bodyguards, her movements slow and deliberate. As they approached the family plot, she froze. Someone was kneeling by the graves,crying softly. It was Peter. Alexander stood at her side, his gaze hard as he observed the scene. Peter was a broken man, his shoulders hunched in sorrow, his eyes red-rimmed with regret. He had been there for over an hour, paying tribute to the daughters he had failed. The assistant standing off to the side had never seen him cry, and even he couldn&#39;t help but feel the weight of the moment.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -907,17 +951,21 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Lilly&#39;s eyes narrowed, her pulse quickening. She wasn&#39;t prepared for this confrontation,not today.</p>
-                    
-                    <p>Peter stood as he noticed their approach. His eyes were bloodshot, his movements sluggish. &#34;I came to ask for their forgiveness,&#34;he said,his voice cracking.</p>
-                    
-                    <p>&#34;You&#39;re leaving?&#34;Lilly asked, her voice trembling with a mix of disbelief and anger.</p>
-                    
-                    <p>Peter nodded slowly. &#34;I&#39;m leaving in three hours. I have to. I&#39;ve lost everything.&#34; His voice was tinged with a quiet desperation.“I need to find a way to fix this. I promise I&#39;ll come back. I&#39;ll make things right.&#34;</p>
-                    
-                    <p>Lilly shook her head, the weight of his words sinking deep into her.“Is this your solution? Leaving? Is this how you plan to make amends?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Lilly&#39;s eyes narrowed, her pulse quickening. She wasn&#39;t prepared for this confrontation,not today.</p>
+                        
+                        <p>Peter stood as he noticed their approach. His eyes were bloodshot, his movements sluggish. &#34;I came to ask for their forgiveness,&#34;he said,his voice cracking.</p>
+                        
+                        <p>&#34;You&#39;re leaving?&#34;Lilly asked, her voice trembling with a mix of disbelief and anger.</p>
+                        
+                        <p>Peter nodded slowly. &#34;I&#39;m leaving in three hours. I have to. I&#39;ve lost everything.&#34; His voice was tinged with a quiet desperation.“I need to find a way to fix this. I promise I&#39;ll come back. I&#39;ll make things right.&#34;</p>
+                        
+                        <p>Lilly shook her head, the weight of his words sinking deep into her.“Is this your solution? Leaving? Is this how you plan to make amends?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -932,17 +980,21 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;I&#39;m not running away, Lilly,” Peter said softly, stepping toward her, his hand outstretched. But Lilly stepped back, her eyes filled with fury and disappointment.</p>
-                    
-                    <p>“Then what exactly are you doing?&#34; she demanded, her voice rising.“What do you want from me?&#34;</p>
-                    
-                    <p>Peter&#39;s face contorted with emotion,but before he could speak, Lilly&#39;s words cut through him. “Leave. Just leave, I don&#39;t want to hear any more.” He hesitated, his eyes filled with anguish. &#34;Lilly-” “Leave!&#34; she shouted, her voice echoing in the quiet cemetery. He nodded, defeated, and turned away, his assistant following him with a look of sympathy for the broken family left behind.</p>
-                    
-                    <p>Lilly stood frozen for a moment, the tears that had been building finally spilling over. Alexander was there in an instant, his arms enveloping her in a comforting embrace. &#34;It&#39;s okay,&#34; he murmured softly. &#34;I&#39;m here for you. You don&#39;t need him.&#34;</p>
-                    
-                    <p>Her tears didn&#39;t stop, but his words soothed the pain, if only a little.When she finally pulled back, she took the flowers from the bodyguards and made her way to her sisters&#39; graves. The quiet whispers of the wind felt like a conversation with the lost. She placed the flowers carefully,whispering a prayer for their souls before she stood, a sense of closure washing over her.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;I&#39;m not running away, Lilly,” Peter said softly, stepping toward her, his hand outstretched. But Lilly stepped back, her eyes filled with fury and disappointment.</p>
+                        
+                        <p>“Then what exactly are you doing?&#34; she demanded, her voice rising.“What do you want from me?&#34;</p>
+                        
+                        <p>Peter&#39;s face contorted with emotion,but before he could speak, Lilly&#39;s words cut through him. “Leave. Just leave, I don&#39;t want to hear any more.” He hesitated, his eyes filled with anguish. &#34;Lilly-” “Leave!&#34; she shouted, her voice echoing in the quiet cemetery. He nodded, defeated, and turned away, his assistant following him with a look of sympathy for the broken family left behind.</p>
+                        
+                        <p>Lilly stood frozen for a moment, the tears that had been building finally spilling over. Alexander was there in an instant, his arms enveloping her in a comforting embrace. &#34;It&#39;s okay,&#34; he murmured softly. &#34;I&#39;m here for you. You don&#39;t need him.&#34;</p>
+                        
+                        <p>Her tears didn&#39;t stop, but his words soothed the pain, if only a little.When she finally pulled back, she took the flowers from the bodyguards and made her way to her sisters&#39; graves. The quiet whispers of the wind felt like a conversation with the lost. She placed the flowers carefully,whispering a prayer for their souls before she stood, a sense of closure washing over her.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -957,17 +1009,21 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Alexander stood beside her, their fingers entwined.&#34;How do you feel now?”he asked, his voice gentle.</p>
-                    
-                    <p>Lilly closed her eyes,feeling a sense of peace she hadn&#39;t known in years. “</p>
-                    
-                    <p>I feel like I can breathe again. Like the weight of the world is finally lifting.”</p>
-                    
-                    <p>Alexander&#39;s lips curled into a smile, his gaze full of love. &#34;Good. Because now we can focus on what really matters-our child and our life together.&#34;</p>
-                    
-                    <p>Lilly&#39;s smile mirrored his. &#34;I love you, Alexander,&#34; she whispered,her heart full.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Alexander stood beside her, their fingers entwined.&#34;How do you feel now?”he asked, his voice gentle.</p>
+                        
+                        <p>Lilly closed her eyes,feeling a sense of peace she hadn&#39;t known in years. “</p>
+                        
+                        <p>I feel like I can breathe again. Like the weight of the world is finally lifting.”</p>
+                        
+                        <p>Alexander&#39;s lips curled into a smile, his gaze full of love. &#34;Good. Because now we can focus on what really matters-our child and our life together.&#34;</p>
+                        
+                        <p>Lilly&#39;s smile mirrored his. &#34;I love you, Alexander,&#34; she whispered,her heart full.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -982,17 +1038,21 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;I love you too,&#34; he said, his voice thick with emotion.</p>
-                    
-                    <p>She suddenly found the courage to ask what had been on her mind.“When did you start feelingthis way about me?&#34;</p>
-                    
-                    <p>“From the first day I saw you,&#34; Alexander replied, his tone unwavering. Lilly&#39;s eyes widened. &#34;From the very first day?&#34;</p>
-                    
-                    <p>&#34;Yes,&#34; he confirmed, a small, affectionate smile playing on his lips.“Ididn&#39;t know it then, but when your grandfather took you away, I almost lost my mind. That&#39;s when I knew.&#34;</p>
-                    
-                    <p>Tears threatened to rise again, but this time, they were tears of happiness.&#34;I love you too. I always have.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;I love you too,&#34; he said, his voice thick with emotion.</p>
+                        
+                        <p>She suddenly found the courage to ask what had been on her mind.“When did you start feelingthis way about me?&#34;</p>
+                        
+                        <p>“From the first day I saw you,&#34; Alexander replied, his tone unwavering. Lilly&#39;s eyes widened. &#34;From the very first day?&#34;</p>
+                        
+                        <p>&#34;Yes,&#34; he confirmed, a small, affectionate smile playing on his lips.“Ididn&#39;t know it then, but when your grandfather took you away, I almost lost my mind. That&#39;s when I knew.&#34;</p>
+                        
+                        <p>Tears threatened to rise again, but this time, they were tears of happiness.&#34;I love you too. I always have.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1007,13 +1067,17 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>And in that moment, everything felt right. The past was behind them, and the future-together-was all that mattered.</p>
-                    
-                    <p>The bodyguards respectfully turned away, allowing the couple their moment of peace, as Lilly and Alexander shared a kiss, the promise of a future filled with love and a new life together.</p>
-                    
-                    <p>THREE YEARS LATER.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>And in that moment, everything felt right. The past was behind them, and the future-together-was all that mattered.</p>
+                        
+                        <p>The bodyguards respectfully turned away, allowing the couple their moment of peace, as Lilly and Alexander shared a kiss, the promise of a future filled with love and a new life together.</p>
+                        
+                        <p>THREE YEARS LATER.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2329,6 +2393,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2455,7 +2599,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2497,32 +2640,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2533,21 +2658,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2580,6 +2695,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2600,20 +2721,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

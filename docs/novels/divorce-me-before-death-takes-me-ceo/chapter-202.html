@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.031313">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.031313">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.225496">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.225496">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.031313",
-        "dateModified": "2026-07-19T02:47:19.031313",
+        "datePublished": "2026-07-19T13:03:14.225496",
+        "dateModified": "2026-07-19T13:03:14.225496",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,25 +893,29 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV*</p>
-                    
-                    <p>I sat on the rusty hospital bed in the abandoned clinic,watching the ocean through broken windows: The sea breeze carried salt and memories,making this forgotten place feel strangely like home.</p>
-                    
-                    <p>My phone felt heavy in my hand as I dialed Felix.</p>
-                    
-                    <p>&#34;Audrey?&#34; His voice came through immediately. &#34;Where the hell are you?&#34;</p>
-                    
-                    <p>&#34;Somewhere quiet.&#34;</p>
-                    
-                    <p>&#34;Dr. Evans said you vanished.&#34; Worry sharpened his tone. &#34;You can&#39;t just disappear like this. Not in your condition.&#34;</p>
-                    
-                    <p>I traced a finger along the peeling paint beside me. &#34;My illness isn&#39;t going anywhere, Felix. Whether I stay put or not... does it matter? Just take care of Rachel for me.&#34;</p>
-                    
-                    <p>&#34;Are you serious right now?&#34; His voice rose. &#34;My grandfather might have options for you. Experimental treatments. Something. By running away,you&#39;re throwing everything away!&#34;</p>
-                    
-                    <p>&#34;Come back, please&#34; he demanded.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV*</p>
+                        
+                        <p>I sat on the rusty hospital bed in the abandoned clinic,watching the ocean through broken windows: The sea breeze carried salt and memories,making this forgotten place feel strangely like home.</p>
+                        
+                        <p>My phone felt heavy in my hand as I dialed Felix.</p>
+                        
+                        <p>&#34;Audrey?&#34; His voice came through immediately. &#34;Where the hell are you?&#34;</p>
+                        
+                        <p>&#34;Somewhere quiet.&#34;</p>
+                        
+                        <p>&#34;Dr. Evans said you vanished.&#34; Worry sharpened his tone. &#34;You can&#39;t just disappear like this. Not in your condition.&#34;</p>
+                        
+                        <p>I traced a finger along the peeling paint beside me. &#34;My illness isn&#39;t going anywhere, Felix. Whether I stay put or not... does it matter? Just take care of Rachel for me.&#34;</p>
+                        
+                        <p>&#34;Are you serious right now?&#34; His voice rose. &#34;My grandfather might have options for you. Experimental treatments. Something. By running away,you&#39;re throwing everything away!&#34;</p>
+                        
+                        <p>&#34;Come back, please&#34; he demanded.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -890,25 +930,29 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>I sighed. &#34;Dr. Clarke came to New York because of Mayo Clinic. Dr. Evans is his friend. If I return, I&#39;ll have to face her. I&#39;m not ready for that yet.&#34;</p>
-                    
-                    <p>The line went quiet before Felix spoke again, softer now. &#34;I could find you somewhere they won&#39;t look. Just come back, okay?&#34;</p>
-                    
-                    <p>&#34;Let me think first.&#34; I ended the call and turned off my phone.</p>
-                    
-                    <p>The silence felt good. I leaned back, letting my thoughts settle. Dr. Evans had been my doctor, my protector - she&#39;d even canceled vacation to care for me. But she&#39;d also used me, letting Laurel Rose pretend to have my illness while knowing how that woman treated me.</p>
-                    
-                    <p>I moved to the window, looking out at the familiar shore. Five years ago, I&#39;d cared for Blake here when he couldn&#39;t see or recognize me. In this very room, he gave me his mother&#39;s pendant - my most treasured possession until I learned how little it meant to him. Five years, and he never once searched for the woman who saved him.</p>
-                    
-                    <p>A soft sound broke into my thoughts.</p>
-                    
-                    <p>&#34;Meow!&#34;</p>
-                    
-                    <p>I turned around, startled.</p>
-                    
-                    <p>&#34;Meow!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>I sighed. &#34;Dr. Clarke came to New York because of Mayo Clinic. Dr. Evans is his friend. If I return, I&#39;ll have to face her. I&#39;m not ready for that yet.&#34;</p>
+                        
+                        <p>The line went quiet before Felix spoke again, softer now. &#34;I could find you somewhere they won&#39;t look. Just come back, okay?&#34;</p>
+                        
+                        <p>&#34;Let me think first.&#34; I ended the call and turned off my phone.</p>
+                        
+                        <p>The silence felt good. I leaned back, letting my thoughts settle. Dr. Evans had been my doctor, my protector - she&#39;d even canceled vacation to care for me. But she&#39;d also used me, letting Laurel Rose pretend to have my illness while knowing how that woman treated me.</p>
+                        
+                        <p>I moved to the window, looking out at the familiar shore. Five years ago, I&#39;d cared for Blake here when he couldn&#39;t see or recognize me. In this very room, he gave me his mother&#39;s pendant - my most treasured possession until I learned how little it meant to him. Five years, and he never once searched for the woman who saved him.</p>
+                        
+                        <p>A soft sound broke into my thoughts.</p>
+                        
+                        <p>&#34;Meow!&#34;</p>
+                        
+                        <p>I turned around, startled.</p>
+                        
+                        <p>&#34;Meow!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -923,25 +967,29 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>My heart jumped. Snow, my fluffy white ragdoll cat, bounded toward me from the hallway.</p>
-                    
-                    <p>&#34;Snow!&#34; I dropped to my knees as he ran to me. &#34;How did you get here?&#34;</p>
-                    
-                    <p>I scooped him up, burying my face in his fur as he purred against me. &#34;T&#39;ve missed you!&#34;</p>
-                    
-                    <p>Then confusion set in. How could Snow be here? Had Astrid brought him?That made no sense - she didn&#39;t know about this place. We&#39;d met four years ago, long after I&#39;d left Blake, and I&#39;d never mentioned Pinehaven Village to her.</p>
-                    
-                    <p>&#34;I brought it.&#34;</p>
-                    
-                    <p>The deep voice from the doorway froze me in place.</p>
-                    
-                    <p>Blake stood there, thinner than days ago, his face unshaven. His eyes locked onto me with an intensity that made my chest tighten.</p>
-                    
-                    <p>I tried to speak but nothing came out.</p>
-                    
-                    <p>Blake walked toward me, each step heavy with purpose. Despite the open windows, the air grew suffocating.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>My heart jumped. Snow, my fluffy white ragdoll cat, bounded toward me from the hallway.</p>
+                        
+                        <p>&#34;Snow!&#34; I dropped to my knees as he ran to me. &#34;How did you get here?&#34;</p>
+                        
+                        <p>I scooped him up, burying my face in his fur as he purred against me. &#34;T&#39;ve missed you!&#34;</p>
+                        
+                        <p>Then confusion set in. How could Snow be here? Had Astrid brought him?That made no sense - she didn&#39;t know about this place. We&#39;d met four years ago, long after I&#39;d left Blake, and I&#39;d never mentioned Pinehaven Village to her.</p>
+                        
+                        <p>&#34;I brought it.&#34;</p>
+                        
+                        <p>The deep voice from the doorway froze me in place.</p>
+                        
+                        <p>Blake stood there, thinner than days ago, his face unshaven. His eyes locked onto me with an intensity that made my chest tighten.</p>
+                        
+                        <p>I tried to speak but nothing came out.</p>
+                        
+                        <p>Blake walked toward me, each step heavy with purpose. Despite the open windows, the air grew suffocating.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -956,25 +1004,29 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Snow, he-&#34; I managed, my voice dry.</p>
-                    
-                    <p>&#34;Where have you been?&#34; Blake cut me off. &#34;Your phone&#39;s been off. No messages. Nothing.&#34;</p>
-                    
-                    <p>His voice hardened. &#34;William almost died worrying about you. He&#39;s an old man, Audrey. Is this how you treat people you claim to care about?&#34;</p>
-                    
-                    <p>I instinctively stepped back, clutching Snow tighter. &#34;You&#39;re blaming me for William&#39;s condition?&#34;</p>
-                    
-                    <p>My own anger surfaced. &#34;The accident wasn&#39;t my fault. And you blocked the plane William arranged for me. You knew he supported my leaving!Getting caught in an accident makes me heartless?&#34;</p>
-                    
-                    <p>Blake grabbed my wrist. &#34;If you cared at all, you&#39;d have visited William after he collapsed.&#34;</p>
-                    
-                    <p>&#34;What makes you think I didn&#39;-t?&#34;I shot back. &#34;How do you think he woke up that night?&#34;</p>
-                    
-                    <p>Hearing her words, I remembered that night at the hospital - the nurse with Dr. Evans, someone whose silhouette seemed familiar.Before I could question her, William had called me in.</p>
-                    
-                    <p>It suddenly made sense why William had been urging me to declare Audrey dead, to arrange her funeral. The old man was protecting her.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Snow, he-&#34; I managed, my voice dry.</p>
+                        
+                        <p>&#34;Where have you been?&#34; Blake cut me off. &#34;Your phone&#39;s been off. No messages. Nothing.&#34;</p>
+                        
+                        <p>His voice hardened. &#34;William almost died worrying about you. He&#39;s an old man, Audrey. Is this how you treat people you claim to care about?&#34;</p>
+                        
+                        <p>I instinctively stepped back, clutching Snow tighter. &#34;You&#39;re blaming me for William&#39;s condition?&#34;</p>
+                        
+                        <p>My own anger surfaced. &#34;The accident wasn&#39;t my fault. And you blocked the plane William arranged for me. You knew he supported my leaving!Getting caught in an accident makes me heartless?&#34;</p>
+                        
+                        <p>Blake grabbed my wrist. &#34;If you cared at all, you&#39;d have visited William after he collapsed.&#34;</p>
+                        
+                        <p>&#34;What makes you think I didn&#39;-t?&#34;I shot back. &#34;How do you think he woke up that night?&#34;</p>
+                        
+                        <p>Hearing her words, I remembered that night at the hospital - the nurse with Dr. Evans, someone whose silhouette seemed familiar.Before I could question her, William had called me in.</p>
+                        
+                        <p>It suddenly made sense why William had been urging me to declare Audrey dead, to arrange her funeral. The old man was protecting her.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -989,25 +1041,29 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>I let go of her wrist and reached for Snow, pulling him from her arms.She seemed startled, grabbing at one of Snow&#39;s back legs as the cat willingly jumped to me.</p>
-                    
-                    <p>Snow nuzzled against my chest with a soft meow.</p>
-                    
-                    <p>Audrey&#39;s face fell as shereleased Snow&#39;s leg.</p>
-                    
-                    <p>&#34;Can I have my cat back?&#34; she asked quietly.</p>
-                    
-                    <p>&#34;Seems like Snow has an opinion too,&#34; I couldn&#39;t help saying. &#34;It knows you abandoned it.&#34;</p>
-                    
-                    <p>Her face paled. &#34;I didn&#39;t abandon Snow. I just -&#34;</p>
-                    
-                    <p>&#34;Just didn&#39;t think it was as important as smuggling Rachel Hayes away?&#34; I interrupted. &#34;What exactly is your relationship with Rachel?&#34;</p>
-                    
-                    <p>The question had been bothering me. Whenever Audrey mentioned being friends with Rachel, Laurel would shut down the conversation,insisting Audrey was lying to get close to me.</p>
-                    
-                    <p>But that made no sense with what I&#39;d seen. Why would Audrey risk everything to help a vegetative Rachel? I&#39;d watched Audrey and Astrid clean Rachel up, dress her properly for the engagement - while the Rose family.who claimed Rachel as family, hadn&#39;t even provided clothes for her.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>I let go of her wrist and reached for Snow, pulling him from her arms.She seemed startled, grabbing at one of Snow&#39;s back legs as the cat willingly jumped to me.</p>
+                        
+                        <p>Snow nuzzled against my chest with a soft meow.</p>
+                        
+                        <p>Audrey&#39;s face fell as shereleased Snow&#39;s leg.</p>
+                        
+                        <p>&#34;Can I have my cat back?&#34; she asked quietly.</p>
+                        
+                        <p>&#34;Seems like Snow has an opinion too,&#34; I couldn&#39;t help saying. &#34;It knows you abandoned it.&#34;</p>
+                        
+                        <p>Her face paled. &#34;I didn&#39;t abandon Snow. I just -&#34;</p>
+                        
+                        <p>&#34;Just didn&#39;t think it was as important as smuggling Rachel Hayes away?&#34; I interrupted. &#34;What exactly is your relationship with Rachel?&#34;</p>
+                        
+                        <p>The question had been bothering me. Whenever Audrey mentioned being friends with Rachel, Laurel would shut down the conversation,insisting Audrey was lying to get close to me.</p>
+                        
+                        <p>But that made no sense with what I&#39;d seen. Why would Audrey risk everything to help a vegetative Rachel? I&#39;d watched Audrey and Astrid clean Rachel up, dress her properly for the engagement - while the Rose family.who claimed Rachel as family, hadn&#39;t even provided clothes for her.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1022,25 +1078,29 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;We&#39;re friends,&#34; Audrey said simply.</p>
-                    
-                    <p>Her lips curled into a sad smile. &#34;Blake, I believe Astrid returned that pendant to you the night I left. Five years ago. in this room, you gave me that pendant.&#34;</p>
-                    
-                    <p>&#34;You said it was from your mother, precious to you. That&#39;s why you wanted me to have.it. I couldn&#39;t speak then, but I promised myself I&#39;d keep it safe.&#34; She looked directly at me. &#34;Do you still not remember what happened five years ago?&#34;</p>
-                    
-                    <p>&#34;Rachel and I are best friends, as close as sisters. She even called me her sister.&#34; Her voice hardened. &#34;But I suppose Mr. Parker,being the important man you are, can&#39;t be bothered to remember any of this?&#34;</p>
-                    
-                    <p>I stood frozen, my thoughts scattered in a thousand directions at once.</p>
-                    
-                    <p>This couldn&#39;t be right.</p>
-                    
-                    <p>Five years ago, the woman who rescued me, who Rachel called sister- that was Laurel. And we weren&#39;t in this run-down clinic. We were across town in another village entirely.</p>
-                    
-                    <p>The pendant. I gave it to Laurel.</p>
-                    
-                    <p>None of this made sense.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;We&#39;re friends,&#34; Audrey said simply.</p>
+                        
+                        <p>Her lips curled into a sad smile. &#34;Blake, I believe Astrid returned that pendant to you the night I left. Five years ago. in this room, you gave me that pendant.&#34;</p>
+                        
+                        <p>&#34;You said it was from your mother, precious to you. That&#39;s why you wanted me to have.it. I couldn&#39;t speak then, but I promised myself I&#39;d keep it safe.&#34; She looked directly at me. &#34;Do you still not remember what happened five years ago?&#34;</p>
+                        
+                        <p>&#34;Rachel and I are best friends, as close as sisters. She even called me her sister.&#34; Her voice hardened. &#34;But I suppose Mr. Parker,being the important man you are, can&#39;t be bothered to remember any of this?&#34;</p>
+                        
+                        <p>I stood frozen, my thoughts scattered in a thousand directions at once.</p>
+                        
+                        <p>This couldn&#39;t be right.</p>
+                        
+                        <p>Five years ago, the woman who rescued me, who Rachel called sister- that was Laurel. And we weren&#39;t in this run-down clinic. We were across town in another village entirely.</p>
+                        
+                        <p>The pendant. I gave it to Laurel.</p>
+                        
+                        <p>None of this made sense.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1055,25 +1115,29 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Audrey caught my expression and let out a short laugh. &#34;Something finally clicking for you?&#34;</p>
-                    
-                    <p>She stepped forward with her arms out for Snow. &#34;Don&#39;t strain yourself.I stopped expecting you to remember a long time ago. Thanks for bringing my cat,at least.&#34;</p>
-                    
-                    <p>Her dismissive tone snapped me back to reality.</p>
-                    
-                    <p>I tightened my grip on Snow and took a step back. &#34;Looks like Laurel was telling the truth about you after all.&#34;</p>
-                    
-                    <p>&#34;You took Rachel&#39;s phone to study her notes. That&#39;s how you&#39;re pretending to be the woman from five years ago.&#34;</p>
-                    
-                    <p>The pieces were falling into place. I&#39;d never understood why Laurel was so concerned about Audrey having Rachel&#39;s phone. Now it was clear.</p>
-                    
-                    <p>She was using Rachel&#39;s memories to insert herself into my past.</p>
-                    
-                    <p>&#34;How long have you been planning this?&#34; I asked, studying her face for any trace of guilt. &#34;Befriending Rachel, staging that escape, even faking your own death.&#34;</p>
-                    
-                    <p>I shook my head, disgusted. &#34;All so you could replace Laurel and convince me you were my savior.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Audrey caught my expression and let out a short laugh. &#34;Something finally clicking for you?&#34;</p>
+                        
+                        <p>She stepped forward with her arms out for Snow. &#34;Don&#39;t strain yourself.I stopped expecting you to remember a long time ago. Thanks for bringing my cat,at least.&#34;</p>
+                        
+                        <p>Her dismissive tone snapped me back to reality.</p>
+                        
+                        <p>I tightened my grip on Snow and took a step back. &#34;Looks like Laurel was telling the truth about you after all.&#34;</p>
+                        
+                        <p>&#34;You took Rachel&#39;s phone to study her notes. That&#39;s how you&#39;re pretending to be the woman from five years ago.&#34;</p>
+                        
+                        <p>The pieces were falling into place. I&#39;d never understood why Laurel was so concerned about Audrey having Rachel&#39;s phone. Now it was clear.</p>
+                        
+                        <p>She was using Rachel&#39;s memories to insert herself into my past.</p>
+                        
+                        <p>&#34;How long have you been planning this?&#34; I asked, studying her face for any trace of guilt. &#34;Befriending Rachel, staging that escape, even faking your own death.&#34;</p>
+                        
+                        <p>I shook my head, disgusted. &#34;All so you could replace Laurel and convince me you were my savior.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2389,6 +2453,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2515,7 +2659,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2557,32 +2700,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2593,21 +2718,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2640,6 +2755,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2660,20 +2781,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

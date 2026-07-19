@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.406719">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.406719">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.408617">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.408617">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.406719",
-        "dateModified": "2026-07-19T02:47:23.406719",
+        "datePublished": "2026-07-19T13:03:18.408617",
+        "dateModified": "2026-07-19T13:03:18.408617",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,23 +893,27 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Annie&#39;s POV</p>
-                    
-                    <p>After a long day at work and a brief workout session, I savored this rare moment of tranquility in our home.</p>
-                    
-                    <p>Lucy and Penny had gone upstairs to play under the watchful eyes of Lucy&#39;s grandparents, while Sue Peterson and I settled in the living room,discussing tomorrow&#39;s performance at the Upper East Side Priváte Preschool.</p>
-                    
-                    <p>&#34;I heard from Penny that Lucy has a performance tomorrow too?&#34; Sue asked. a warm smile brightening her face.</p>
-                    
-                    <p>&#34;Yes,&#34; I replied, feeling my lips automatically curve upward at the mention of Lucy. &#34;She&#39;ll be the little host for their class présentation. I can&#39;t wait to see her. No matter how busy things get, I&#39;ll definitely make time to be at school for her performance.&#34;</p>
-                    
-                    <p>As I spoke, I imagined Lucy standing on stage, her sky-blue eyes wide with excitement, golden curls shimmering under the spotlight. &#34;I need to bring my camera to capture every precious moment.&#34;</p>
-                    
-                    <p>Sue&#39;s expression softened. &#34;Penny has a part in the performance too. To be honest, sometimes I worry I&#39;m spoiling her too much-always taking time off work to see her performances, wanting to document every little detail.&#34;</p>
-                    
-                    <p>She paused, tucking a strand of hair behind her ear. &#34;But after getting to know you, I&#39;ve realized I&#39;m not alone-all parents who truly love their children are like this.&#34; I nodded with a gentle laugh. &#34;Exactly. The truth is, our children will only stay with us for ten, maybe fifteen years. If we don&#39;t cherish this time and record these moments. when they grow up and leave, we&#39;ll find we have nothing left but memories. That feeling must be incredibly lonely.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Annie&#39;s POV</p>
+                        
+                        <p>After a long day at work and a brief workout session, I savored this rare moment of tranquility in our home.</p>
+                        
+                        <p>Lucy and Penny had gone upstairs to play under the watchful eyes of Lucy&#39;s grandparents, while Sue Peterson and I settled in the living room,discussing tomorrow&#39;s performance at the Upper East Side Priváte Preschool.</p>
+                        
+                        <p>&#34;I heard from Penny that Lucy has a performance tomorrow too?&#34; Sue asked. a warm smile brightening her face.</p>
+                        
+                        <p>&#34;Yes,&#34; I replied, feeling my lips automatically curve upward at the mention of Lucy. &#34;She&#39;ll be the little host for their class présentation. I can&#39;t wait to see her. No matter how busy things get, I&#39;ll definitely make time to be at school for her performance.&#34;</p>
+                        
+                        <p>As I spoke, I imagined Lucy standing on stage, her sky-blue eyes wide with excitement, golden curls shimmering under the spotlight. &#34;I need to bring my camera to capture every precious moment.&#34;</p>
+                        
+                        <p>Sue&#39;s expression softened. &#34;Penny has a part in the performance too. To be honest, sometimes I worry I&#39;m spoiling her too much-always taking time off work to see her performances, wanting to document every little detail.&#34;</p>
+                        
+                        <p>She paused, tucking a strand of hair behind her ear. &#34;But after getting to know you, I&#39;ve realized I&#39;m not alone-all parents who truly love their children are like this.&#34; I nodded with a gentle laugh. &#34;Exactly. The truth is, our children will only stay with us for ten, maybe fifteen years. If we don&#39;t cherish this time and record these moments. when they grow up and leave, we&#39;ll find we have nothing left but memories. That feeling must be incredibly lonely.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -888,23 +928,27 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>My thoughts drifted involuntarily to my marriage with Philip. Before meeting Howard. I had thought Philip was good enough for me-he was wealthy, handsome, from a good family. But it wasn&#39;t until after experiencing that painful betrayal and meeting Howard,someone who truly respected and understood me, that I realized my standards had been far too low.</p>
-                    
-                    <p>Sue seemed to be reflecting on her own life choices. &#34;Before joining Howard&#39;s company, I was too easily swayed by pretty promises and too willing to let work consume all my time. I thought that since the company treated me well. I should devote myself entirely to work, with family and my daughter coming second.&#34;</p>
-                    
-                    <p>Her words resonated deeply with me. &#34;And then you suddenly realized that&#39;s not how life should be.right?&#34;</p>
-                    
-                    <p>She nodded, her eyes sparkling with new clarity. &#34;Exactly. After joining Howard&#39;s company, I had an awakening. Making money is important,but enjoying life is more so. We earn money to make life better, not to sacrifice life entirely for work.&#34;</p>
-                    
-                    <p>&#34;If we neglect our children and miss their growing years,&#34; I said softly,&#34;what&#39;s the point of earning all that money? When we look back and find our children have become people we barely know, that regret will follow us for the rest of our lives,&#34;</p>
-                    
-                    <p>&#34;Tm glad I woke up in time,&#34; Sue said, her expression relaxing. &#34;I brought Penny to live with me and found a job with more humanity. Howard&#39;s company is truly different-it allows employees to balance work and family.&#34;</p>
-                    
-                    <p>We exchanged knowing smiles, both understanding that those difficult days were behind us. Now we had new lives, and everything was moving in a positive direction.</p>
-                    
-                    <p>At nine o&#39;clock. Penny finally came downstairs, reluctant to leave. She held Sue&#39;s hand as they said their goodbyes.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>My thoughts drifted involuntarily to my marriage with Philip. Before meeting Howard. I had thought Philip was good enough for me-he was wealthy, handsome, from a good family. But it wasn&#39;t until after experiencing that painful betrayal and meeting Howard,someone who truly respected and understood me, that I realized my standards had been far too low.</p>
+                        
+                        <p>Sue seemed to be reflecting on her own life choices. &#34;Before joining Howard&#39;s company, I was too easily swayed by pretty promises and too willing to let work consume all my time. I thought that since the company treated me well. I should devote myself entirely to work, with family and my daughter coming second.&#34;</p>
+                        
+                        <p>Her words resonated deeply with me. &#34;And then you suddenly realized that&#39;s not how life should be.right?&#34;</p>
+                        
+                        <p>She nodded, her eyes sparkling with new clarity. &#34;Exactly. After joining Howard&#39;s company, I had an awakening. Making money is important,but enjoying life is more so. We earn money to make life better, not to sacrifice life entirely for work.&#34;</p>
+                        
+                        <p>&#34;If we neglect our children and miss their growing years,&#34; I said softly,&#34;what&#39;s the point of earning all that money? When we look back and find our children have become people we barely know, that regret will follow us for the rest of our lives,&#34;</p>
+                        
+                        <p>&#34;Tm glad I woke up in time,&#34; Sue said, her expression relaxing. &#34;I brought Penny to live with me and found a job with more humanity. Howard&#39;s company is truly different-it allows employees to balance work and family.&#34;</p>
+                        
+                        <p>We exchanged knowing smiles, both understanding that those difficult days were behind us. Now we had new lives, and everything was moving in a positive direction.</p>
+                        
+                        <p>At nine o&#39;clock. Penny finally came downstairs, reluctant to leave. She held Sue&#39;s hand as they said their goodbyes.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -919,23 +963,27 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>I stood at the door, watching until their car disappeared around the corner before turning to take Lucy&#39;s small hand and head upstairs.</p>
-                    
-                    <p>Lucy&#39;s hand felt warm and soft in mine, like a small bird that trusted me completely. All the way up the stairs, she chattered enthusiastically about her adventures with Penny, her blue eyes sparkling, golden curls swaying gently with each animated movement.</p>
-                    
-                    <p>&#34;...and then Penny said she wants to be an actress when she grows up, she&#39;s always wanted to be an actress,&#34; Lucy explained as we walked, her expression utterly serious, as if this were the mnost important topic in the world. &#34;I told her I want to be a scientist because you can invent lots of interesting things. Mom, do you think it&#39;s better to be an actress or a scientist?&#34;</p>
-                    
-                    <p>I considered how to answer this unexpected question. &#34;I think whether it&#39;s being an actress or a scientist, as long as it&#39;s what you love, that&#39;s the best choice. Every profession hasits own unique charm.&#34;</p>
-                    
-                    <p>Lucy seemed satisfied with this answer, nodding immediately before changing the subject: &#34;Penny says I&#39;ll do great in my performance tomorrow because I&#39;ve memorized all my lines!&#34;</p>
-                    
-                    <p>As we reached Lucy&#39;s bedroom door. I paused. &#34;Speaking of tomorrow&#39;s performance, has our little host decided what she&#39;s going to wear?&#34;</p>
-                    
-                    <p>Lucy tilted her head, her big eyes blinking adorably in a way that melted my heart. &#34;I haven&#39;t decided yet.&#34;</p>
-                    
-                    <p>&#34;Luckily, Howard bought you many beautiful dresses,&#34; I said. opening her closet door to reveal an array of neatly hung dresses in various colors and styles. &#34;Let&#39;s see which one would be best for tomorrow&#39;s performance.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>I stood at the door, watching until their car disappeared around the corner before turning to take Lucy&#39;s small hand and head upstairs.</p>
+                        
+                        <p>Lucy&#39;s hand felt warm and soft in mine, like a small bird that trusted me completely. All the way up the stairs, she chattered enthusiastically about her adventures with Penny, her blue eyes sparkling, golden curls swaying gently with each animated movement.</p>
+                        
+                        <p>&#34;...and then Penny said she wants to be an actress when she grows up, she&#39;s always wanted to be an actress,&#34; Lucy explained as we walked, her expression utterly serious, as if this were the mnost important topic in the world. &#34;I told her I want to be a scientist because you can invent lots of interesting things. Mom, do you think it&#39;s better to be an actress or a scientist?&#34;</p>
+                        
+                        <p>I considered how to answer this unexpected question. &#34;I think whether it&#39;s being an actress or a scientist, as long as it&#39;s what you love, that&#39;s the best choice. Every profession hasits own unique charm.&#34;</p>
+                        
+                        <p>Lucy seemed satisfied with this answer, nodding immediately before changing the subject: &#34;Penny says I&#39;ll do great in my performance tomorrow because I&#39;ve memorized all my lines!&#34;</p>
+                        
+                        <p>As we reached Lucy&#39;s bedroom door. I paused. &#34;Speaking of tomorrow&#39;s performance, has our little host decided what she&#39;s going to wear?&#34;</p>
+                        
+                        <p>Lucy tilted her head, her big eyes blinking adorably in a way that melted my heart. &#34;I haven&#39;t decided yet.&#34;</p>
+                        
+                        <p>&#34;Luckily, Howard bought you many beautiful dresses,&#34; I said. opening her closet door to reveal an array of neatly hung dresses in various colors and styles. &#34;Let&#39;s see which one would be best for tomorrow&#39;s performance.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -950,23 +998,27 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Yay!&#34; Lucy jumped with excitement before quickly composing herself into what she apparently thought was a mature pose, making me struggle not to laugh.</p>
-                    
-                    <p>She carefully took out a pink puffy dress from the closet and solemnly asked for my opinion: &#34;Mom, how about this one?&#34;</p>
-                    
-                    <p>Rather than immediately giving my assessment, I encouraged her: &#34;Why don&#39;t you try it on? After you&#39;re wearing it, we can decide together.&#34;</p>
-                    
-                    <p>Lucy nodded, closing the bedroom door to change. Shortly after, she stood before the mirror in the pink dress, seriously examining herself as she turned from side to side. She furrowed her little brow and shook her head.&#34;No,this one won&#39;t do.&#34;</p>
-                    
-                    <p>Before I could comment, she had already quickly removed the pink dress and picked up a light blue one. Watching her methodically try on each outfit, I couldn&#39;t help but smile. It felt like playing a real-life dress-up game,with Lucy offering her unique commentary on each garment:</p>
-                    
-                    <p>&#34;This one&#39;s too sparkly,&#34;</p>
-                    
-                    <p>&#34;This one isn&#39;t princess enough.&#34; &#34;This color isn&#39;t special enough&#34;...</p>
-                    
-                    <p>Finally, she paused at a white princess dress. It had delicate lace trim and small pearl decorations, simple yet elegant. Lucy put it on and twirled in front of the mirror again and again, her little face radiating undisguised joy.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Yay!&#34; Lucy jumped with excitement before quickly composing herself into what she apparently thought was a mature pose, making me struggle not to laugh.</p>
+                        
+                        <p>She carefully took out a pink puffy dress from the closet and solemnly asked for my opinion: &#34;Mom, how about this one?&#34;</p>
+                        
+                        <p>Rather than immediately giving my assessment, I encouraged her: &#34;Why don&#39;t you try it on? After you&#39;re wearing it, we can decide together.&#34;</p>
+                        
+                        <p>Lucy nodded, closing the bedroom door to change. Shortly after, she stood before the mirror in the pink dress, seriously examining herself as she turned from side to side. She furrowed her little brow and shook her head.&#34;No,this one won&#39;t do.&#34;</p>
+                        
+                        <p>Before I could comment, she had already quickly removed the pink dress and picked up a light blue one. Watching her methodically try on each outfit, I couldn&#39;t help but smile. It felt like playing a real-life dress-up game,with Lucy offering her unique commentary on each garment:</p>
+                        
+                        <p>&#34;This one&#39;s too sparkly,&#34;</p>
+                        
+                        <p>&#34;This one isn&#39;t princess enough.&#34; &#34;This color isn&#39;t special enough&#34;...</p>
+                        
+                        <p>Finally, she paused at a white princess dress. It had delicate lace trim and small pearl decorations, simple yet elegant. Lucy put it on and twirled in front of the mirror again and again, her little face radiating undisguised joy.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -981,23 +1033,27 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;Mom,what do you think of this dress?&#34;,she turned to me. blue eyes shimmering with anticipation.</p>
-                    
-                    <p>Instead of answering directly. I asked her: &#34;Do you like it?&#34;</p>
-                    
-                    <p>Lucy nodded vigorously, her golden curls bouncing with the movement.&#34;I do. Mom. I really, really do! It makes me feel like a real host!&#34;</p>
-                    
-                    <p>Hearing her answer. I felt a wave of warmth flow through my heart.Growing up. few people had genuinely cared about my opinions. My mother loved me, but the hardships of life left her little time for such details. And Philip, even at his best, rarely truly asked what I thought.</p>
-                    
-                    <p>&#34;Then we&#39;ll wear this dress tomorrow,&#34; I smiled, admiring how she looked in the white dress. It truly suited her, highlighating her angelic features.&#34;Howard and I will try to get to the preschool early tomorrow afternoon to help you with your hair,okay?&#34;</p>
-                    
-                    <p>When Lucy heard this news, her face immediately lit up with a brilliant smile. She rushed into my arms like a whirlwind, her small arms wrapping tightly around me. &#34;You&#39;re the best, Mom! I love you!&#34;</p>
-                    
-                    <p>I gently stroked her soft hair, feeling infinite tenderness rising in my heart.&#34;I love you too, Lucy. Very,very much.&#34;</p>
-                    
-                    <p>With preparations complete, Lucy obediently climbed into bed and tucked herself under the covers. I sat beside her and, as usual, began reading her bedtime story in a soft voice. Lucy listened attentively, occasionally asking urprisingly insightful questions.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;Mom,what do you think of this dress?&#34;,she turned to me. blue eyes shimmering with anticipation.</p>
+                        
+                        <p>Instead of answering directly. I asked her: &#34;Do you like it?&#34;</p>
+                        
+                        <p>Lucy nodded vigorously, her golden curls bouncing with the movement.&#34;I do. Mom. I really, really do! It makes me feel like a real host!&#34;</p>
+                        
+                        <p>Hearing her answer. I felt a wave of warmth flow through my heart.Growing up. few people had genuinely cared about my opinions. My mother loved me, but the hardships of life left her little time for such details. And Philip, even at his best, rarely truly asked what I thought.</p>
+                        
+                        <p>&#34;Then we&#39;ll wear this dress tomorrow,&#34; I smiled, admiring how she looked in the white dress. It truly suited her, highlighating her angelic features.&#34;Howard and I will try to get to the preschool early tomorrow afternoon to help you with your hair,okay?&#34;</p>
+                        
+                        <p>When Lucy heard this news, her face immediately lit up with a brilliant smile. She rushed into my arms like a whirlwind, her small arms wrapping tightly around me. &#34;You&#39;re the best, Mom! I love you!&#34;</p>
+                        
+                        <p>I gently stroked her soft hair, feeling infinite tenderness rising in my heart.&#34;I love you too, Lucy. Very,very much.&#34;</p>
+                        
+                        <p>With preparations complete, Lucy obediently climbed into bed and tucked herself under the covers. I sat beside her and, as usual, began reading her bedtime story in a soft voice. Lucy listened attentively, occasionally asking urprisingly insightful questions.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1012,23 +1068,27 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;Mom,why doesn&#39;t the moon fall down?&#34;</p>
-                    
-                    <p>&#34;Do stars have mommies too?&#34;</p>
-                    
-                    <p>&#34;If I forget my lines tomorrow,will the audience laugh at me?&#34;</p>
-                    
-                    <p>I patiently answered each question, no matter how strange or complex.</p>
-                    
-                    <p>When I finished the story and saw Lucy&#39;s eyelids growing heavy. I leaned down to kiss her forehead.</p>
-                    
-                    <p>&#34;Goodnight, my little angel. Tomorrow will be a wonderful day.&#34;</p>
-                    
-                    <p>&#34;Goodnight. Mom,&#34; she mumbled, already half-asleep. &#34;I love you...&#34;</p>
-                    
-                    <p>I gently turned off the bedside lamp and lingered at the doorway for a moment. gazing at this little girl who had brought infinite light to my life.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;Mom,why doesn&#39;t the moon fall down?&#34;</p>
+                        
+                        <p>&#34;Do stars have mommies too?&#34;</p>
+                        
+                        <p>&#34;If I forget my lines tomorrow,will the audience laugh at me?&#34;</p>
+                        
+                        <p>I patiently answered each question, no matter how strange or complex.</p>
+                        
+                        <p>When I finished the story and saw Lucy&#39;s eyelids growing heavy. I leaned down to kiss her forehead.</p>
+                        
+                        <p>&#34;Goodnight, my little angel. Tomorrow will be a wonderful day.&#34;</p>
+                        
+                        <p>&#34;Goodnight. Mom,&#34; she mumbled, already half-asleep. &#34;I love you...&#34;</p>
+                        
+                        <p>I gently turned off the bedside lamp and lingered at the doorway for a moment. gazing at this little girl who had brought infinite light to my life.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1043,13 +1103,17 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Glancing at my watch, I saw it was already past ten. Howard had been working in his study since we&#39;d returned from the preschool with Lucy.He should probably take a break too, I thought.</p>
-                    
-                    <p>I decided to check on him and confirm whether he could make time for Lucy&#39;s performance tomorrow. Howard always kept his word.</p>
-                    
-                    <p>I placed my hand on the doorknob and took a deep breath, preparing to knock.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Glancing at my watch, I saw it was already past ten. Howard had been working in his study since we&#39;d returned from the preschool with Lucy.He should probably take a break too, I thought.</p>
+                        
+                        <p>I decided to check on him and confirm whether he could make time for Lucy&#39;s performance tomorrow. Howard always kept his word.</p>
+                        
+                        <p>I placed my hand on the doorknob and took a deep breath, preparing to knock.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2365,6 +2429,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2491,7 +2635,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2533,32 +2676,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2569,21 +2694,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2616,6 +2731,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2636,20 +2757,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

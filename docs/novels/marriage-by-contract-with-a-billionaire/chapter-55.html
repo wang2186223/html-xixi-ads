@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:29.747698">
-    <meta property="article:modified_time" content="2026-07-19T02:47:29.747698">
+    <meta property="article:published_time" content="2026-07-19T13:03:24.130657">
+    <meta property="article:modified_time" content="2026-07-19T13:03:24.130657">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:29">
+    <meta name="last-modified" content="2026-07-19 13:03:24">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:29.747698",
-        "dateModified": "2026-07-19T02:47:29.747698",
+        "datePublished": "2026-07-19T13:03:24.130657",
+        "dateModified": "2026-07-19T13:03:24.130657",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,25 +893,29 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>&#34;Did you capture the assassin?&#34; Lilly&#39;s grandfather&#39;s voice was like ice,his eyes burning with a silent fury.</p>
-                    
-                    <p>Lilly&#39;s nod was all the confirmation he needed. The darkness in his gaze deepened. “Bring him to me. I will have him executed for what he did to my granddaughters. Who sent him?&#34; His words were sharp, like a bladle,the muscles of his jaw taut with restraint. His rarely seen emotions now emerged with the weight of every painful memory of his lost granddaughters.</p>
-                    
-                    <p>&#34;He confessed under severe torture,&#34; Lilly replied, her voice a whisper in the stillness.&#34;He revealed those who hired him.&#34;</p>
-                    
-                    <p>Her grandfather&#39;s expression shifted, his anger now like a tempest in his eyes.&#34;Who are they?&#34; he demanded, barely containing the violence in his tone.</p>
-                    
-                    <p>Lilly reached into her bag, her fingers trembling as she retrieved her phone.She tapped a few buttons, and a video began to play-a recording of the confession, the words too heavy for her to speak aloud. The screen flickered to life, showing a bloodied man, his face distorted with pain, his body marked by scars of countless betrayals.</p>
-                    
-                    <p>&#34;I... was paid to kill them,&#34; the man rasped.</p>
-                    
-                    <p>A low, calm voice echoed from off-camera.&#34;Who hired you?&#34; &#34;Two women,&#34; the man croaked, wincing at the pain coursing through him. &#34;One young... the other older. They never told me their names.&#34; The camera zoomed in on two photos, each framed with deliberate precision. The older woman was unmistakable.</p>
-                    
-                    <p>Lilly&#39;s grandfather&#39;s eyes hardened, his lips pressing into a thin line as he scanned the images. His voice was a venomous whisper. &#34;Recognize her?&#34;</p>
-                    
-                    <p>&#34;Yes,&#34; the assassin muttered, his voice barely audible. &#34;She&#39;s the one who paid me.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>&#34;Did you capture the assassin?&#34; Lilly&#39;s grandfather&#39;s voice was like ice,his eyes burning with a silent fury.</p>
+                        
+                        <p>Lilly&#39;s nod was all the confirmation he needed. The darkness in his gaze deepened. “Bring him to me. I will have him executed for what he did to my granddaughters. Who sent him?&#34; His words were sharp, like a bladle,the muscles of his jaw taut with restraint. His rarely seen emotions now emerged with the weight of every painful memory of his lost granddaughters.</p>
+                        
+                        <p>&#34;He confessed under severe torture,&#34; Lilly replied, her voice a whisper in the stillness.&#34;He revealed those who hired him.&#34;</p>
+                        
+                        <p>Her grandfather&#39;s expression shifted, his anger now like a tempest in his eyes.&#34;Who are they?&#34; he demanded, barely containing the violence in his tone.</p>
+                        
+                        <p>Lilly reached into her bag, her fingers trembling as she retrieved her phone.She tapped a few buttons, and a video began to play-a recording of the confession, the words too heavy for her to speak aloud. The screen flickered to life, showing a bloodied man, his face distorted with pain, his body marked by scars of countless betrayals.</p>
+                        
+                        <p>&#34;I... was paid to kill them,&#34; the man rasped.</p>
+                        
+                        <p>A low, calm voice echoed from off-camera.&#34;Who hired you?&#34; &#34;Two women,&#34; the man croaked, wincing at the pain coursing through him. &#34;One young... the other older. They never told me their names.&#34; The camera zoomed in on two photos, each framed with deliberate precision. The older woman was unmistakable.</p>
+                        
+                        <p>Lilly&#39;s grandfather&#39;s eyes hardened, his lips pressing into a thin line as he scanned the images. His voice was a venomous whisper. &#34;Recognize her?&#34;</p>
+                        
+                        <p>&#34;Yes,&#34; the assassin muttered, his voice barely audible. &#34;She&#39;s the one who paid me.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -890,25 +930,29 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;And this one?” Alexander&#39;s voice remained cold, showing the photo of Kate.</p>
-                    
-                    <p>The man recoiled slightly, his gaze flickering with recognition.“She came with the older one... called her &#39;mother.&#39;&#34;</p>
-                    
-                    <p>Lilly&#39;s grandfather slammed his fist onto the table, the impact loud and deafening in the tense silence. His eyes burned with unrestrained rage.&#34;How dare they! I should have seen it-should have known! I let that filth into our family!&#34;</p>
-                    
-                    <p>“Guards!&#34; he bellowed, his voice echoing through the cold, vast space. Two men rushed in, their faces blank and obedient.</p>
-                    
-                    <p>“Yes,sir.”</p>
-                    
-                    <p>“Find Bella and Kate. Bring them to the torture room!&#34; His voice was ice-cold, the weight of his fury now fully realized.</p>
-                    
-                    <p>Lilly stood, her voice cuttíng through the thick tension. “You won&#39;t find them,&#34; she said, her words chilling the air around them. “A few months after I disappeared,&#34; she admitted, the guilt weighing on her like a suffocating blanket. “What do you mean?&#34; her grandfather growled, the fire in his voice sparking again. &#34;They must pay for what they&#39;ve done!” His gaze turned to ice as he fixed her with an accusing glare. &#34;And you didn&#39;t think to tell me? After everything that happened?&#34; &#34;They&#39;re already gone,&#34; Lilly explained, her voice firm despite the turmoil inside her. &#34;They&#39;re trying to flee the country. Alexander and his men are already in pursuit.&#34;</p>
-                    
-                    <p>Her grandfather&#39;s face twisted with frustration. &#34;Then I&#39;ll send more men.</p>
-                    
-                    <p>They won&#39;t get far.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;And this one?” Alexander&#39;s voice remained cold, showing the photo of Kate.</p>
+                        
+                        <p>The man recoiled slightly, his gaze flickering with recognition.“She came with the older one... called her &#39;mother.&#39;&#34;</p>
+                        
+                        <p>Lilly&#39;s grandfather slammed his fist onto the table, the impact loud and deafening in the tense silence. His eyes burned with unrestrained rage.&#34;How dare they! I should have seen it-should have known! I let that filth into our family!&#34;</p>
+                        
+                        <p>“Guards!&#34; he bellowed, his voice echoing through the cold, vast space. Two men rushed in, their faces blank and obedient.</p>
+                        
+                        <p>“Yes,sir.”</p>
+                        
+                        <p>“Find Bella and Kate. Bring them to the torture room!&#34; His voice was ice-cold, the weight of his fury now fully realized.</p>
+                        
+                        <p>Lilly stood, her voice cuttíng through the thick tension. “You won&#39;t find them,&#34; she said, her words chilling the air around them. “A few months after I disappeared,&#34; she admitted, the guilt weighing on her like a suffocating blanket. “What do you mean?&#34; her grandfather growled, the fire in his voice sparking again. &#34;They must pay for what they&#39;ve done!” His gaze turned to ice as he fixed her with an accusing glare. &#34;And you didn&#39;t think to tell me? After everything that happened?&#34; &#34;They&#39;re already gone,&#34; Lilly explained, her voice firm despite the turmoil inside her. &#34;They&#39;re trying to flee the country. Alexander and his men are already in pursuit.&#34;</p>
+                        
+                        <p>Her grandfather&#39;s face twisted with frustration. &#34;Then I&#39;ll send more men.</p>
+                        
+                        <p>They won&#39;t get far.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -923,25 +967,29 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;No need,&#34; Lilly said, her gaze unwavering.&#34;“Alexander will catch them.</p>
-                    
-                    <p>He has it under control.&#34;</p>
-                    
-                    <p>The old man&#39;s teeth ground together as he turned away, pacing.“Do you expect me to sit here and do nothing while they escape?!&#34;</p>
-                    
-                    <p>Lilly&#39;s heart skipped a beat, but she remained calm. &#34;No, Grandfather.We&#39;Il go to Alexander&#39;s base. Once he catches them, they&#39;ll be brought there.&#34;</p>
-                    
-                    <p>Her grandfather&#39;s eyes darkened with determination. “What are we waiting for, then? Get the cars ready!&#34; he barked, his orders swift and cutting.</p>
-                    
-                    <p>The car ride was heavy with tension. Lilly noticed her grandfather&#39;s stare,his eyes distant, lost in the abyss of his thoughts. The muscles in his clenched fist betrayed the storm of emotions brewing inside him.</p>
-                    
-                    <p>“How long have you known?&#34; he asked, his voice low and dangerous. Lilly&#39;s stomach dropped, the question she&#39;d been dreading finally coming to the surface. She&#39;d kep t this secret for too long, and now the weight of it crushed her. &#34;I&#39;m sorry.&#34; she whispered, her voice fragile.</p>
-                    
-                    <p>&#34;Sorry?!&#34; he roared, his face contorting with anger.&#34;After what they did?And you kept this from me? Victoria and Shigella are dead, and you let them walk free. You let them worm their way into our family, into our lives!&#34; He was trembling with fury, his voice a dangerous whisper.&#34;And Alexander knew before I did?&#34;</p>
-                    
-                    <p>&#34;I didn&#39;t want to burden you,&#34; she replied, her voice barely a breath.&#34;After everything. I didn&#39;t want to add to your pain.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;No need,&#34; Lilly said, her gaze unwavering.&#34;“Alexander will catch them.</p>
+                        
+                        <p>He has it under control.&#34;</p>
+                        
+                        <p>The old man&#39;s teeth ground together as he turned away, pacing.“Do you expect me to sit here and do nothing while they escape?!&#34;</p>
+                        
+                        <p>Lilly&#39;s heart skipped a beat, but she remained calm. &#34;No, Grandfather.We&#39;Il go to Alexander&#39;s base. Once he catches them, they&#39;ll be brought there.&#34;</p>
+                        
+                        <p>Her grandfather&#39;s eyes darkened with determination. “What are we waiting for, then? Get the cars ready!&#34; he barked, his orders swift and cutting.</p>
+                        
+                        <p>The car ride was heavy with tension. Lilly noticed her grandfather&#39;s stare,his eyes distant, lost in the abyss of his thoughts. The muscles in his clenched fist betrayed the storm of emotions brewing inside him.</p>
+                        
+                        <p>“How long have you known?&#34; he asked, his voice low and dangerous. Lilly&#39;s stomach dropped, the question she&#39;d been dreading finally coming to the surface. She&#39;d kep t this secret for too long, and now the weight of it crushed her. &#34;I&#39;m sorry.&#34; she whispered, her voice fragile.</p>
+                        
+                        <p>&#34;Sorry?!&#34; he roared, his face contorting with anger.&#34;After what they did?And you kept this from me? Victoria and Shigella are dead, and you let them walk free. You let them worm their way into our family, into our lives!&#34; He was trembling with fury, his voice a dangerous whisper.&#34;And Alexander knew before I did?&#34;</p>
+                        
+                        <p>&#34;I didn&#39;t want to burden you,&#34; she replied, her voice barely a breath.&#34;After everything. I didn&#39;t want to add to your pain.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -956,25 +1004,29 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>His anger didn&#39;t subside.“Pain?*Pain*?You should&#39;ve told me. Lilly! Do you know what I&#39;ve lost? What we&#39;ve all lost because of their deceit? I trusted Kate. I gave her everything, made her CEO. And she&#39;s nothing but a murderer!”</p>
-                    
-                    <p>&#34;I&#39;m sorry,&#34; she repeated, her voice cracking.</p>
-                    
-                    <p>He turned away, his fists clenched, each word from his mouth a stinging lash.“I&#39;m going to make them pay for this,&#34; he said, his voice cold as steel.“When we get there, I&#39;ll deal with them myself.&#34;</p>
-                    
-                    <p>Lilly hesitated but finally spoke. &#34;Alexander won&#39;t let you.&#34;</p>
-                    
-                    <p>Her grandfather turned sharply, eyes blazing. “And why the hell not?”</p>
-                    
-                    <p>&#34;Because they caused Sandra&#39;s accident,&#34; Lilly said, her voice barely above a whisper. &#34;She&#39;s in the hospital, fighting for her life.,, and it&#39;s all because of them. I wastheir target, Grandfather. But Sandra.., she was hit instead.&#34;</p>
-                    
-                    <p>The words hung in the air,a dagger aimed straight at the heart. Lilly&#39;s grandfather froze, his body rigid with rage.</p>
-                    
-                    <p>&#34;They deserve death. All of them,&#34; he growled, his voice a promise of</p>
-                    
-                    <p>violence.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>His anger didn&#39;t subside.“Pain?*Pain*?You should&#39;ve told me. Lilly! Do you know what I&#39;ve lost? What we&#39;ve all lost because of their deceit? I trusted Kate. I gave her everything, made her CEO. And she&#39;s nothing but a murderer!”</p>
+                        
+                        <p>&#34;I&#39;m sorry,&#34; she repeated, her voice cracking.</p>
+                        
+                        <p>He turned away, his fists clenched, each word from his mouth a stinging lash.“I&#39;m going to make them pay for this,&#34; he said, his voice cold as steel.“When we get there, I&#39;ll deal with them myself.&#34;</p>
+                        
+                        <p>Lilly hesitated but finally spoke. &#34;Alexander won&#39;t let you.&#34;</p>
+                        
+                        <p>Her grandfather turned sharply, eyes blazing. “And why the hell not?”</p>
+                        
+                        <p>&#34;Because they caused Sandra&#39;s accident,&#34; Lilly said, her voice barely above a whisper. &#34;She&#39;s in the hospital, fighting for her life.,, and it&#39;s all because of them. I wastheir target, Grandfather. But Sandra.., she was hit instead.&#34;</p>
+                        
+                        <p>The words hung in the air,a dagger aimed straight at the heart. Lilly&#39;s grandfather froze, his body rigid with rage.</p>
+                        
+                        <p>&#34;They deserve death. All of them,&#34; he growled, his voice a promise of</p>
+                        
+                        <p>violence.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -989,25 +1041,29 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>**Earlier that Day:**</p>
-                    
-                    <p>Kate and her mother had been frantically gathering their things, preparing to flee,when the walls of their escape collapsed around them. A voice cut through the air, familiar and cold.</p>
-                    
-                    <p>“Not so fast.”</p>
-                    
-                    <p>It was James, Alexander&#39;s most trusted associate. The look on Kate&#39;s face soured in an instant.</p>
-                    
-                    <p>“Damn it, we&#39;re finished,&#34; Kate hissed under her breath, realizing how close James was to Alexander. He was sent after them, and there was no escaping now.</p>
-                    
-                    <p>&#34;So,trying to run from your sins, are we?” James&#39; voice was calm,but the malice in it was clear. &#34;Seize them!&#34; he ordered.</p>
-                    
-                    <p>The men around them moved swiftly, expertly neutralizing the threat as they injected both women with a tranquilizer, rendering them unconscious before they could react.</p>
-                    
-                    <p>Hours later, cold water splashed across their faces,jolting them awake. The harsh light was blinding, the room oppressive. They were tied to chairs.their vision blurry as they tried to make sense of their surroundings.Bloodstains on the floor, ominous shadows creeping along the walls, and the cold chill in the air all sent waves of terror through them. Then, three battered men were dragged in, tied to chairs opposite them.Bella&#39;s heart lurched when she recognized two of them-the assassin and the gang leader. In a distant, sterile room, Alexander watched everything unfold on a screen.The sharp contrast between the pristine, modern control room and the filth of the torture chamber was chilling.</p>
-                    
-                    <p>&#34;Alexander, they&#39;ve arrived,&#34; James&#39;s voice called as he entered the room.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>**Earlier that Day:**</p>
+                        
+                        <p>Kate and her mother had been frantically gathering their things, preparing to flee,when the walls of their escape collapsed around them. A voice cut through the air, familiar and cold.</p>
+                        
+                        <p>“Not so fast.”</p>
+                        
+                        <p>It was James, Alexander&#39;s most trusted associate. The look on Kate&#39;s face soured in an instant.</p>
+                        
+                        <p>“Damn it, we&#39;re finished,&#34; Kate hissed under her breath, realizing how close James was to Alexander. He was sent after them, and there was no escaping now.</p>
+                        
+                        <p>&#34;So,trying to run from your sins, are we?” James&#39; voice was calm,but the malice in it was clear. &#34;Seize them!&#34; he ordered.</p>
+                        
+                        <p>The men around them moved swiftly, expertly neutralizing the threat as they injected both women with a tranquilizer, rendering them unconscious before they could react.</p>
+                        
+                        <p>Hours later, cold water splashed across their faces,jolting them awake. The harsh light was blinding, the room oppressive. They were tied to chairs.their vision blurry as they tried to make sense of their surroundings.Bloodstains on the floor, ominous shadows creeping along the walls, and the cold chill in the air all sent waves of terror through them. Then, three battered men were dragged in, tied to chairs opposite them.Bella&#39;s heart lurched when she recognized two of them-the assassin and the gang leader. In a distant, sterile room, Alexander watched everything unfold on a screen.The sharp contrast between the pristine, modern control room and the filth of the torture chamber was chilling.</p>
+                        
+                        <p>&#34;Alexander, they&#39;ve arrived,&#34; James&#39;s voice called as he entered the room.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1022,25 +1078,29 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Alexander nodded silently, his expression unreadable. He stood up, ready to face what was about to unfold, and followed James to the warehouse. It was time for the reckoning.</p>
-                    
-                    <p>As Lilly and her grandfather arrived, they were greeted by an empty, eerie warehouse.The air felt still, like a trap waiting to spring.</p>
-                    
-                    <p>&#34;Is this the place?&#34; her grandfather asked, his suspicion growing.</p>
-                    
-                    <p>Lilly scanned the surroundings, noting the hidden guards lurking in the shadows.</p>
-                    
-                    <p>&#34;Yes,” Pedro confirmed, his voice a whisper. &#34;This is where he told us to come.”</p>
-                    
-                    <p>Suddenly, the sound of a door creaking open echoed through the quiet.Alexander emerged, his figure tall and commanding, his gaze locking onto Lilly&#39;s grandfather.</p>
-                    
-                    <p>“Alexander,&#34; Lilly called, rushing to him.</p>
-                    
-                    <p>He embraced her, his eyes briefly meeting her grandfather&#39;s. “Did you capture them?” &#34;I did,&#34; her grandfather replied, his voice still laced with fury. &#34;I&#39;ll let you decide their fate.&#34; Lilly exhaled, relief washing over her. She knew, at long last, Bella and Kate&#39;s time had come.</p>
-                    
-                    <p>As they made their way underground, Lilly felt her curiosity stir. Thebase was hidden away beneath the earth-a secret lair of sorts.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Alexander nodded silently, his expression unreadable. He stood up, ready to face what was about to unfold, and followed James to the warehouse. It was time for the reckoning.</p>
+                        
+                        <p>As Lilly and her grandfather arrived, they were greeted by an empty, eerie warehouse.The air felt still, like a trap waiting to spring.</p>
+                        
+                        <p>&#34;Is this the place?&#34; her grandfather asked, his suspicion growing.</p>
+                        
+                        <p>Lilly scanned the surroundings, noting the hidden guards lurking in the shadows.</p>
+                        
+                        <p>&#34;Yes,” Pedro confirmed, his voice a whisper. &#34;This is where he told us to come.”</p>
+                        
+                        <p>Suddenly, the sound of a door creaking open echoed through the quiet.Alexander emerged, his figure tall and commanding, his gaze locking onto Lilly&#39;s grandfather.</p>
+                        
+                        <p>“Alexander,&#34; Lilly called, rushing to him.</p>
+                        
+                        <p>He embraced her, his eyes briefly meeting her grandfather&#39;s. “Did you capture them?” &#34;I did,&#34; her grandfather replied, his voice still laced with fury. &#34;I&#39;ll let you decide their fate.&#34; Lilly exhaled, relief washing over her. She knew, at long last, Bella and Kate&#39;s time had come.</p>
+                        
+                        <p>As they made their way underground, Lilly felt her curiosity stir. Thebase was hidden away beneath the earth-a secret lair of sorts.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1055,23 +1115,27 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Why underground?&#34; she asked, the question burning on her tongue.</p>
-                    
-                    <p>&#34;It&#39;s a story for another time.&#34; Alexander replied cryptically.</p>
-                    
-                    <p>Her grandfather, however, was not so patient. His frustration was evident.and his foot tapped impatiently as they descended into the depths.</p>
-                    
-                    <p>The doors opened to reveal a hallway that stretched out before them-dark,cold, and endless. But it was the clean, organized monitoring room that caught Lilly&#39;s attention. It stood in stark contrast to the bloody torture chamber she saw on the screen, and she shuddered at the thought of what was happening to her enemies in real-time.</p>
-                    
-                    <p>Her grandfather&#39;s anger was palpable as he clenched his fists. “Take me to them.”</p>
-                    
-                    <p>Alexander didn&#39;t hesitate. He signaled for a guard to escort him. But just as Lilly took a step to follow, Alexander&#39;s grip stopped her, his eyes softening as he wiped away her silent tears.</p>
-                    
-                    <p>“Why are you stopping me?&#34; she asked, her voice breaking.</p>
-                    
-                    <p>“Because youI can&#39;t go in there,&#34; he said quietly, his gaze firm yet gentle.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Why underground?&#34; she asked, the question burning on her tongue.</p>
+                        
+                        <p>&#34;It&#39;s a story for another time.&#34; Alexander replied cryptically.</p>
+                        
+                        <p>Her grandfather, however, was not so patient. His frustration was evident.and his foot tapped impatiently as they descended into the depths.</p>
+                        
+                        <p>The doors opened to reveal a hallway that stretched out before them-dark,cold, and endless. But it was the clean, organized monitoring room that caught Lilly&#39;s attention. It stood in stark contrast to the bloody torture chamber she saw on the screen, and she shuddered at the thought of what was happening to her enemies in real-time.</p>
+                        
+                        <p>Her grandfather&#39;s anger was palpable as he clenched his fists. “Take me to them.”</p>
+                        
+                        <p>Alexander didn&#39;t hesitate. He signaled for a guard to escort him. But just as Lilly took a step to follow, Alexander&#39;s grip stopped her, his eyes softening as he wiped away her silent tears.</p>
+                        
+                        <p>“Why are you stopping me?&#34; she asked, her voice breaking.</p>
+                        
+                        <p>“Because youI can&#39;t go in there,&#34; he said quietly, his gaze firm yet gentle.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2387,6 +2451,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2513,7 +2657,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2555,32 +2698,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2591,21 +2716,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2638,6 +2753,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2658,20 +2779,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

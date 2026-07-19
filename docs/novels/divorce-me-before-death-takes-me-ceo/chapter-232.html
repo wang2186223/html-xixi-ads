@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.052223">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.052223">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.248874">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.248874">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.052223",
-        "dateModified": "2026-07-19T02:47:19.052223",
+        "datePublished": "2026-07-19T13:03:14.248874",
+        "dateModified": "2026-07-19T13:03:14.248874",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,23 +893,27 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>Twilight settled over Long Island as Dr. Clarke&#39;s birthday gala went into full swing. I smoothed down the emerald-accented dress Eleanor had selected for me, making sure Emma&#39;s matching ribbon was straight.</p>
-                    
-                    <p>With Emma&#39;s small hand in mine and my other arm linked through Adrian&#39;s, we made our entrance. Despite Dr. Clarke not being among the wealthiest in attendance, his forty years treating seemingly impossible medical cases worldwide had earned him a celebration packed with influential guests.</p>
-                    
-                    <p>At the entrance, a man in a white suit greeted each arrival. I recognized him immediately.</p>
-                    
-                    <p>&#34;Welcome!&#34; he said to the couple ahead of us. &#34;My grandfather can&#39;t stand here long, so I&#39;m filling in.&#34;</p>
-                    
-                    <p>After the couple moved on, Adrian handed over our invitation.</p>
-                    
-                    <p>&#34;The Knox family,&#34; the man said, glancing down before looking up with a practiced smile. &#34;Mr. Knox, Mrs. Knox, I&#39;m Dr. Clarke&#39;s grandson. My grandfather&#39;s resting, so I&#39;m here to welcome you.&#34;</p>
-                    
-                    <p>When his eyes met mine, the recognition was instant. His pupils contracted and his mouth fell open mid-sentence. &#34;You... Audrey!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>Twilight settled over Long Island as Dr. Clarke&#39;s birthday gala went into full swing. I smoothed down the emerald-accented dress Eleanor had selected for me, making sure Emma&#39;s matching ribbon was straight.</p>
+                        
+                        <p>With Emma&#39;s small hand in mine and my other arm linked through Adrian&#39;s, we made our entrance. Despite Dr. Clarke not being among the wealthiest in attendance, his forty years treating seemingly impossible medical cases worldwide had earned him a celebration packed with influential guests.</p>
+                        
+                        <p>At the entrance, a man in a white suit greeted each arrival. I recognized him immediately.</p>
+                        
+                        <p>&#34;Welcome!&#34; he said to the couple ahead of us. &#34;My grandfather can&#39;t stand here long, so I&#39;m filling in.&#34;</p>
+                        
+                        <p>After the couple moved on, Adrian handed over our invitation.</p>
+                        
+                        <p>&#34;The Knox family,&#34; the man said, glancing down before looking up with a practiced smile. &#34;Mr. Knox, Mrs. Knox, I&#39;m Dr. Clarke&#39;s grandson. My grandfather&#39;s resting, so I&#39;m here to welcome you.&#34;</p>
+                        
+                        <p>When his eyes met mine, the recognition was instant. His pupils contracted and his mouth fell open mid-sentence. &#34;You... Audrey!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -888,23 +928,27 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Without hesitation, he abandoned his post, practically vaulting over the table between us. &#34;Audrey! Is it really you?&#34;</p>
-                    
-                    <p>He reached for my arm then stopped himself, his hands fidgeting at his sides instead. &#34;I knew you had to be alive!&#34;</p>
-                    
-                    <p>Watching my old friend&#39;s unfiltered joy caused unexpected emotions to surface. Felix was Dr. Clarke&#39;s grandson, and clearly, he knew my real identity.</p>
-                    
-                    <p>&#34;I...&#34; Before I could respond, I felt someone watching me. Turning slightly,I locked eyes with Blake standing twenty feet away, his expression calculating.</p>
-                    
-                    <p>I pulled away from Felix. &#34;I&#39;m sorry, but you&#39;ve mistaken me for someone else.&#34;</p>
-                    
-                    <p>&#34;Audrey, why are you still - &#34;</p>
-                    
-                    <p>&#34;Mr. Thompson,&#34; I cut him off, subtly shaking my head and glancing toward Blake.</p>
-                    
-                    <p>&#34;You&#39;ve really mistaken me for someone else.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Without hesitation, he abandoned his post, practically vaulting over the table between us. &#34;Audrey! Is it really you?&#34;</p>
+                        
+                        <p>He reached for my arm then stopped himself, his hands fidgeting at his sides instead. &#34;I knew you had to be alive!&#34;</p>
+                        
+                        <p>Watching my old friend&#39;s unfiltered joy caused unexpected emotions to surface. Felix was Dr. Clarke&#39;s grandson, and clearly, he knew my real identity.</p>
+                        
+                        <p>&#34;I...&#34; Before I could respond, I felt someone watching me. Turning slightly,I locked eyes with Blake standing twenty feet away, his expression calculating.</p>
+                        
+                        <p>I pulled away from Felix. &#34;I&#39;m sorry, but you&#39;ve mistaken me for someone else.&#34;</p>
+                        
+                        <p>&#34;Audrey, why are you still - &#34;</p>
+                        
+                        <p>&#34;Mr. Thompson,&#34; I cut him off, subtly shaking my head and glancing toward Blake.</p>
+                        
+                        <p>&#34;You&#39;ve really mistaken me for someone else.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -919,23 +963,27 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Felix&#39;s eyes darted between Blake and me, understanding dawning on his face.</p>
-                    
-                    <p>&#34;When exactly did you become acquainted with Mrs. Knox?&#34; Blake&#39;s cold voice sliced through the moment. &#34;I don&#39;t recall hearing about this before.&#34;</p>
-                    
-                    <p>Felix recovered quickly.′′I′&#39;m sorry, Mrs. Knox. I mistook you for someone else. You look remarkably similar to a friend of mine.&#34;</p>
-                    
-                    <p>I exhaled softly. &#34;That friend would be Blake Parker&#39;s ex-wife, Audrey Sinclair, I&#39;m guessing? I&#39;ve been mistaken for her several times lately.&#34; I glanced at Blake. &#34;Though Mr. Parker seems particularly convinced I&#39;m her.&#34;</p>
-                    
-                    <p>&#34;Since you&#39;re friends with him...could you convince him to stop bothering me′′</p>
-                    
-                    <p>&#34;I...will.&#34;</p>
-                    
-                    <p>&#34;Thank you,&#34; Adrian said, &#34;We should let you get back to your duties.&#34;</p>
-                    
-                    <p>As we walked toward the main hall, I could feel Blake&#39;s gaze following us.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Felix&#39;s eyes darted between Blake and me, understanding dawning on his face.</p>
+                        
+                        <p>&#34;When exactly did you become acquainted with Mrs. Knox?&#34; Blake&#39;s cold voice sliced through the moment. &#34;I don&#39;t recall hearing about this before.&#34;</p>
+                        
+                        <p>Felix recovered quickly.′′I′&#39;m sorry, Mrs. Knox. I mistook you for someone else. You look remarkably similar to a friend of mine.&#34;</p>
+                        
+                        <p>I exhaled softly. &#34;That friend would be Blake Parker&#39;s ex-wife, Audrey Sinclair, I&#39;m guessing? I&#39;ve been mistaken for her several times lately.&#34; I glanced at Blake. &#34;Though Mr. Parker seems particularly convinced I&#39;m her.&#34;</p>
+                        
+                        <p>&#34;Since you&#39;re friends with him...could you convince him to stop bothering me′′</p>
+                        
+                        <p>&#34;I...will.&#34;</p>
+                        
+                        <p>&#34;Thank you,&#34; Adrian said, &#34;We should let you get back to your duties.&#34;</p>
+                        
+                        <p>As we walked toward the main hall, I could feel Blake&#39;s gaze following us.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -950,23 +998,27 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>**Blake&#39;s POV**</p>
-                    
-                    <p>I watched them disappear into the crowd, the little girl skipping beside them.</p>
-                    
-                    <p>Felix stood frozen, staring after them.</p>
-                    
-                    <p>&#34;Tlhat woman...&#34; I studied his face. &#34;You also think she&#39;s Audrey Sinclair,right?&#34;</p>
-                    
-                    <p>He laughed awkwardly. &#34;A mistake. She looks similar.&#34; He quickly changed topics. &#34;Where&#39;s Rachel? I thought she was coming with you.&#34;</p>
-                    
-                    <p>I looked toward where Audrey had disappeared. &#34;She went to pick up some guests who decided last minute to attend.&#34; My lips curved slightly. &#34;You know them both.&#34;</p>
-                    
-                    <p>&#34;Who?&#34; Felix asked, confusion evident. &#34;Do they know my grandfather?&#34;</p>
-                    
-                    <p>&#34;When they arrive, you&#39;ll understand.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>**Blake&#39;s POV**</p>
+                        
+                        <p>I watched them disappear into the crowd, the little girl skipping beside them.</p>
+                        
+                        <p>Felix stood frozen, staring after them.</p>
+                        
+                        <p>&#34;Tlhat woman...&#34; I studied his face. &#34;You also think she&#39;s Audrey Sinclair,right?&#34;</p>
+                        
+                        <p>He laughed awkwardly. &#34;A mistake. She looks similar.&#34; He quickly changed topics. &#34;Where&#39;s Rachel? I thought she was coming with you.&#34;</p>
+                        
+                        <p>I looked toward where Audrey had disappeared. &#34;She went to pick up some guests who decided last minute to attend.&#34; My lips curved slightly. &#34;You know them both.&#34;</p>
+                        
+                        <p>&#34;Who?&#34; Felix asked, confusion evident. &#34;Do they know my grandfather?&#34;</p>
+                        
+                        <p>&#34;When they arrive, you&#39;ll understand.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -981,23 +1033,27 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Felix&#39;s expression shifted from confusion to concern. &#34;When will Rachel be back?&#34;</p>
-                    
-                    <p>I checked my watch. &#34;Soon. Though they might not come to the party immediately.&#34;</p>
-                    
-                    <p>*They&#39;ll likely have their confrontation outside first*, I thought.</p>
-                    
-                    <p>**Astrid&#39;s POV*</p>
-                    
-                    <p>I hit the tarmac running, rage propelling me forward. Rachel stood waiting by the exit. I grabbed her collar the moment I reached her.</p>
-                    
-                    <p>&#34;We once considered you our best friend!&#34; The words burned in my throat.&#34;Now look at you!&#34;</p>
-                    
-                    <p>&#34;Not only did you get engaged to her scumbag ex-husband after she died,you&#39;ve become their errand girl!&#34; My grip tightened on her blouse.&#34;Whatever Thalia and Rebecca want, you just do it!&#34;</p>
-                    
-                    <p>I ignored him. &#34;Do you have any idea what Snow meant to Audrey? How could you just give her away?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Felix&#39;s expression shifted from confusion to concern. &#34;When will Rachel be back?&#34;</p>
+                        
+                        <p>I checked my watch. &#34;Soon. Though they might not come to the party immediately.&#34;</p>
+                        
+                        <p>*They&#39;ll likely have their confrontation outside first*, I thought.</p>
+                        
+                        <p>**Astrid&#39;s POV*</p>
+                        
+                        <p>I hit the tarmac running, rage propelling me forward. Rachel stood waiting by the exit. I grabbed her collar the moment I reached her.</p>
+                        
+                        <p>&#34;We once considered you our best friend!&#34; The words burned in my throat.&#34;Now look at you!&#34;</p>
+                        
+                        <p>&#34;Not only did you get engaged to her scumbag ex-husband after she died,you&#39;ve become their errand girl!&#34; My grip tightened on her blouse.&#34;Whatever Thalia and Rebecca want, you just do it!&#34;</p>
+                        
+                        <p>I ignored him. &#34;Do you have any idea what Snow meant to Audrey? How could you just give her away?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1012,23 +1068,27 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;Blake didn&#39;t want her anymore? Fine! But you should have called me or Ethan!&#34; My voice cracked despite my efforts to stay steady. &#34;Snow was everything to Audrey. I would&#39;ve quit my job before giving away her last connection to this world!&#34;、</p>
-                    
-                    <p>My grip tightened, veins popping on the back of my hand. &#34;Keep this up and we&#39;re done,Rachel!&#34;</p>
-                    
-                    <p>&#34;You don&#39;t deserve to call yourself our friend. You sure as hell don&#39;t deserve what Audrey did for you!&#34;</p>
-                    
-                    <p>Rachel closed her eyes and sighed. When she opened them again, her face was tired.</p>
-                    
-                    <p>&#34;Not everything is what it seems, Astrid.&#34;</p>
-                    
-                    <p>&#34;Then what&#39;s the truth?&#34; I wasn&#39;t buying it. &#34;Just tell me who has Snow.Name, address. I&#39;m getting her back tonight!&#34;</p>
-                    
-                    <p>Rachel hesitated, then met my eyes. &#34;Their name is Knox.&#34;</p>
-                    
-                    <p>&#34;The husband is Adrian Knox, and the wife -&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;Blake didn&#39;t want her anymore? Fine! But you should have called me or Ethan!&#34; My voice cracked despite my efforts to stay steady. &#34;Snow was everything to Audrey. I would&#39;ve quit my job before giving away her last connection to this world!&#34;、</p>
+                        
+                        <p>My grip tightened, veins popping on the back of my hand. &#34;Keep this up and we&#39;re done,Rachel!&#34;</p>
+                        
+                        <p>&#34;You don&#39;t deserve to call yourself our friend. You sure as hell don&#39;t deserve what Audrey did for you!&#34;</p>
+                        
+                        <p>Rachel closed her eyes and sighed. When she opened them again, her face was tired.</p>
+                        
+                        <p>&#34;Not everything is what it seems, Astrid.&#34;</p>
+                        
+                        <p>&#34;Then what&#39;s the truth?&#34; I wasn&#39;t buying it. &#34;Just tell me who has Snow.Name, address. I&#39;m getting her back tonight!&#34;</p>
+                        
+                        <p>Rachel hesitated, then met my eyes. &#34;Their name is Knox.&#34;</p>
+                        
+                        <p>&#34;The husband is Adrian Knox, and the wife -&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1043,21 +1103,25 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>I cut her off with a harsh laugh. &#34;The Knox family. Got it.&#34; I turned and grabbed Ethan&#39;s arm. &#34;Let&#39;s crash a party. Can&#39;t wait till it&#39;s over-they might slip out.&#34;</p>
-                    
-                    <p>Ethan let me drag him along but looked back at Rachel. &#34;Rachel, I trusted you.How could you give Snow away?&#34;</p>
-                    
-                    <p>&#34;It&#39;s complicated,&#34; Rachel said, frowning. She took a deep breath.&#34;I&#39;ll take you in. They won&#39;t let you through without me.&#34;</p>
-                    
-                    <p>She walked ahead toward the exit, all business.</p>
-                    
-                    <p>Watching her go, something twisted in my chest. When we first became friends-me,Audrey,and Rachel- I&#39;d been jealous of how close they were.</p>
-                    
-                    <p>Now?</p>
-                    
-                    <p>Audrey was barely gone for months. I didn&#39;t recognize Rachel anymore.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>I cut her off with a harsh laugh. &#34;The Knox family. Got it.&#34; I turned and grabbed Ethan&#39;s arm. &#34;Let&#39;s crash a party. Can&#39;t wait till it&#39;s over-they might slip out.&#34;</p>
+                        
+                        <p>Ethan let me drag him along but looked back at Rachel. &#34;Rachel, I trusted you.How could you give Snow away?&#34;</p>
+                        
+                        <p>&#34;It&#39;s complicated,&#34; Rachel said, frowning. She took a deep breath.&#34;I&#39;ll take you in. They won&#39;t let you through without me.&#34;</p>
+                        
+                        <p>She walked ahead toward the exit, all business.</p>
+                        
+                        <p>Watching her go, something twisted in my chest. When we first became friends-me,Audrey,and Rachel- I&#39;d been jealous of how close they were.</p>
+                        
+                        <p>Now?</p>
+                        
+                        <p>Audrey was barely gone for months. I didn&#39;t recognize Rachel anymore.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2373,6 +2437,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2499,7 +2643,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2541,32 +2684,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2577,21 +2702,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2624,6 +2739,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2644,20 +2765,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

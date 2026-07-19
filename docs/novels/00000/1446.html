@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Everything clicked into place. It explained Julian&#39;s access to the Blackwood yacht and their private conversation at Crystalpeak. But why hadn&#39;t Adrian formally introduced them?</p>
-                    
-                    <p>Shaking off the thought, Vivian turned to more pressing matters. &#34;Since you&#39;re related,&#34; she said to Adrian, &#34;you must know his tastes. Would he prefer this pen? Or does he have other hobbies? I want to choose something he&#39;ll genuinely like.&#34;</p>
-                    
-                    <p>She held up an onyx fountain pen, examining it under the boutique lights.</p>
-                    
-                    <p>Adrian&#39;s expression darkened further. &#34;We&#39;re not close,&#34; he said tersely. &#34;Haven&#39;t spoken in years. He&#39;s some distant cousin—I&#39;ve got hundreds of relatives. How would I know their preferences?&#34;</p>
-                    
-                    <p>&#34;Fair point.&#34; Vivian nodded, setting down the black pen. She picked up the silver one she&#39;d been considering earlier and handed it to the shopkeeper. &#34;We&#39;ll take this one.&#34;</p>
-                    
-                    <p>The CEO motioned to the remaining junior sales assistant. &#34;Package this for Mrs. Hartley.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Everything clicked into place. It explained Julian&#39;s access to the Blackwood yacht and their private conversation at Crystalpeak. But why hadn&#39;t Adrian formally introduced them?</p>
+                        
+                        <p>Shaking off the thought, Vivian turned to more pressing matters. &#34;Since you&#39;re related,&#34; she said to Adrian, &#34;you must know his tastes. Would he prefer this pen? Or does he have other hobbies? I want to choose something he&#39;ll genuinely like.&#34;</p>
+                        
+                        <p>She held up an onyx fountain pen, examining it under the boutique lights.</p>
+                        
+                        <p>Adrian&#39;s expression darkened further. &#34;We&#39;re not close,&#34; he said tersely. &#34;Haven&#39;t spoken in years. He&#39;s some distant cousin—I&#39;ve got hundreds of relatives. How would I know their preferences?&#34;</p>
+                        
+                        <p>&#34;Fair point.&#34; Vivian nodded, setting down the black pen. She picked up the silver one she&#39;d been considering earlier and handed it to the shopkeeper. &#34;We&#39;ll take this one.&#34;</p>
+                        
+                        <p>The CEO motioned to the remaining junior sales assistant. &#34;Package this for Mrs. Hartley.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Assuming the $30,000 ivory fountain pen was the complimentary gift, the CEO flashed an obsequious smile. &#34;Shall we wrap the other one as well?&#34;</p>
-                    
-                    <p>Vivian hesitated, thinking he referred to the Sterling pen. She picked it up again and glanced at Adrian. &#34;This one suits you perfectly.&#34;</p>
-                    
-                    <p>Adrian&#39;s gaze flickered to the price tag - $90,000, triple the ivory pen&#39;s cost.</p>
-                    
-                    <p>His lips twisted in feigned disinterest. &#34;Hardly remarkable. I&#39;ve never bothered with anything this pedestrian.&#34;</p>
-                    
-                    <p>Vivian arched one perfectly sculpted brow, suppressing amusement. Without comment, she handed the Sterling pen to the CEO. &#34;Consider this your gift to us.&#34;</p>
-                    
-                    <p>The CEO&#39;s practiced smile faltered. &#34;Our... gift?&#34; he asked cautiously, his professional composure cracking. Surely she couldn&#39;t mean...</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Assuming the $30,000 ivory fountain pen was the complimentary gift, the CEO flashed an obsequious smile. &#34;Shall we wrap the other one as well?&#34;</p>
+                        
+                        <p>Vivian hesitated, thinking he referred to the Sterling pen. She picked it up again and glanced at Adrian. &#34;This one suits you perfectly.&#34;</p>
+                        
+                        <p>Adrian&#39;s gaze flickered to the price tag - $90,000, triple the ivory pen&#39;s cost.</p>
+                        
+                        <p>His lips twisted in feigned disinterest. &#34;Hardly remarkable. I&#39;ve never bothered with anything this pedestrian.&#34;</p>
+                        
+                        <p>Vivian arched one perfectly sculpted brow, suppressing amusement. Without comment, she handed the Sterling pen to the CEO. &#34;Consider this your gift to us.&#34;</p>
+                        
+                        <p>The CEO&#39;s practiced smile faltered. &#34;Our... gift?&#34; he asked cautiously, his professional composure cracking. Surely she couldn&#39;t mean...</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Vivian nodded serenely, her tone laced with playful steel. &#34;Naturally. Thirty thousand is already extravagant. Asking for a hundred-thousand-dollar gift would be downright vulgar.&#34;</p>
-                    
-                    <p>The CEO gaped, momentarily speechless. In his decades of dealing with entitled clientele, this audacity was unprecedented. As a ruthless businessman, he prided himself on his cutthroat instincts, but this woman operated on another level entirely.</p>
-                    
-                    <p>Desperate, the CEO turned to Adrian. &#34;Mr. Blackwood, we secured that sapphire-limited edition you admired. Would you care to see it?&#34;</p>
-                    
-                    <p>Before Adrian could respond, Vivian smoothly interjected, &#34;Which of your little admirers pulled strings for that?&#34;</p>
-                    
-                    <p>The CEO blanched, realizing his tactical error.</p>
-                    
-                    <p>Adrian&#39;s expression remained impassive. &#34;I own an identical piece,&#34; he said dismissively. &#34;Half the social circuit has seen it.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Vivian nodded serenely, her tone laced with playful steel. &#34;Naturally. Thirty thousand is already extravagant. Asking for a hundred-thousand-dollar gift would be downright vulgar.&#34;</p>
+                        
+                        <p>The CEO gaped, momentarily speechless. In his decades of dealing with entitled clientele, this audacity was unprecedented. As a ruthless businessman, he prided himself on his cutthroat instincts, but this woman operated on another level entirely.</p>
+                        
+                        <p>Desperate, the CEO turned to Adrian. &#34;Mr. Blackwood, we secured that sapphire-limited edition you admired. Would you care to see it?&#34;</p>
+                        
+                        <p>Before Adrian could respond, Vivian smoothly interjected, &#34;Which of your little admirers pulled strings for that?&#34;</p>
+                        
+                        <p>The CEO blanched, realizing his tactical error.</p>
+                        
+                        <p>Adrian&#39;s expression remained impassive. &#34;I own an identical piece,&#34; he said dismissively. &#34;Half the social circuit has seen it.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Vivian seized the opening, her smile turning razor-sharp. &#34;Since he already has one, we&#39;ll return for newer models.&#34; The unspoken message hung between them - and we won&#39;t be spending another dime here.</p>
-                    
-                    <p>The CEO&#39;s ingratiating tactics had spectacularly backfired. The sales assistant&#39;s earlier rudeness, combined with the store&#39;s blatant greed, had irrevocably soured Vivian. Such predatory behavior didn&#39;t deserve her patronage.</p>
-                    
-                    <p>Adrian, his patience evaporating, gestured impatiently. &#34;Just finish the packaging.&#34;</p>
-                    
-                    <p>Thoroughly defeated, the CEO instructed the assistant to hastily wrap the pens. When presented with the purchases, Vivian took both bags and offered one to Adrian.</p>
-                    
-                    <p>Adrian quirked an eyebrow, his lips twitching. &#34;Regifting freebies? How... economical of you.&#34;</p>
-                    
-                    <p>Stepping onto the sunlit plaza, Vivian cast one final glance at the CEO&#39;s thunderous expression before turning to Adrian. Her teasing smile danced at the corners of her mouth. &#34;Who said this was for you?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Vivian seized the opening, her smile turning razor-sharp. &#34;Since he already has one, we&#39;ll return for newer models.&#34; The unspoken message hung between them - and we won&#39;t be spending another dime here.</p>
+                        
+                        <p>The CEO&#39;s ingratiating tactics had spectacularly backfired. The sales assistant&#39;s earlier rudeness, combined with the store&#39;s blatant greed, had irrevocably soured Vivian. Such predatory behavior didn&#39;t deserve her patronage.</p>
+                        
+                        <p>Adrian, his patience evaporating, gestured impatiently. &#34;Just finish the packaging.&#34;</p>
+                        
+                        <p>Thoroughly defeated, the CEO instructed the assistant to hastily wrap the pens. When presented with the purchases, Vivian took both bags and offered one to Adrian.</p>
+                        
+                        <p>Adrian quirked an eyebrow, his lips twitching. &#34;Regifting freebies? How... economical of you.&#34;</p>
+                        
+                        <p>Stepping onto the sunlit plaza, Vivian cast one final glance at the CEO&#39;s thunderous expression before turning to Adrian. Her teasing smile danced at the corners of her mouth. &#34;Who said this was for you?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Adrian&#39;s eyebrow climbed higher. &#34;Then who exactly merits this generosity?&#34;</p>
-                    
-                    <p>Vivian shot him an exasperated look. &#34;Do I look like a walking bank vault? Sure, this pen was complimentary, but it&#39;s actually worth more than the one I bought! Who on earth would I give such an extravagant gift to? I need it for drafting my manuscripts. I just asked you to hold it for a second.&#34;</p>
-                    
-                    <p>Adrian&#39;s expression darkened. &#34;But you said it suited me.&#34;</p>
-                    
-                    <p>Vivian let out an impatient sigh. &#34;Why must you twist everything? First you claim you wouldn&#39;t be caught dead with such a &#39;cheap&#39; pen, now you&#39;re sulking because I&#39;m not giving it to you?&#34;</p>
-                    
-                    <p>&#34;I never said I wouldn&#39;t use an affordable pen,&#34; Adrian countered, his voice dripping with mock offense. &#34;Merely that I&#39;ve never used one this modest before. As a wordsmith, shouldn&#39;t you appreciate semantic precision?&#34;</p>
-                    
-                    <p>Before he could finish, Vivian had already brushed past him, her heels clicking decisively against the marble floor. Adrian hesitated, watching the distance between them grow, before jogging to catch up with an exaggerated sigh.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Adrian&#39;s eyebrow climbed higher. &#34;Then who exactly merits this generosity?&#34;</p>
+                        
+                        <p>Vivian shot him an exasperated look. &#34;Do I look like a walking bank vault? Sure, this pen was complimentary, but it&#39;s actually worth more than the one I bought! Who on earth would I give such an extravagant gift to? I need it for drafting my manuscripts. I just asked you to hold it for a second.&#34;</p>
+                        
+                        <p>Adrian&#39;s expression darkened. &#34;But you said it suited me.&#34;</p>
+                        
+                        <p>Vivian let out an impatient sigh. &#34;Why must you twist everything? First you claim you wouldn&#39;t be caught dead with such a &#39;cheap&#39; pen, now you&#39;re sulking because I&#39;m not giving it to you?&#34;</p>
+                        
+                        <p>&#34;I never said I wouldn&#39;t use an affordable pen,&#34; Adrian countered, his voice dripping with mock offense. &#34;Merely that I&#39;ve never used one this modest before. As a wordsmith, shouldn&#39;t you appreciate semantic precision?&#34;</p>
+                        
+                        <p>Before he could finish, Vivian had already brushed past him, her heels clicking decisively against the marble floor. Adrian hesitated, watching the distance between them grow, before jogging to catch up with an exaggerated sigh.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>As they walked, Vivian&#39;s attention was drawn to a newly opened boutique. She browsed the displays with mild interest until, just as she turned to leave, a sleek leather glasses case caught her eye.</p>
-                    
-                    <p>Remembering the battered case she&#39;d seen Ethan using earlier, she picked it up and headed to the register. Her eyebrows shot up when she saw the price tag - five hundred dollars for such a small item.</p>
-                    
-                    <p>Before she could reconsider, the cashier had already printed the receipt. &#34;Cash, card, or mobile payment?&#34; the clerk chirped.</p>
-                    
-                    <p>Choosing mobile payment with resigned acceptance, Vivian pulled out her phone.</p>
-                    
-                    <p>As the transaction processed, the clerk cheerfully tossed a hideous neon green frog plush into her bag. &#34;Today&#39;s promotion - spend five hundred and get this stress-relief toy free!&#34;</p>
-                    
-                    <p>Vivian forced a tight-lipped smile. &#34;How... thoughtful.&#34; Stepping outside, she found Adrian leaning against a pillar, drawing admiring glances from a group of women. Their hopeful expressions fell when they saw Vivian approach, one muttering, &#34;Figures. The gorgeous ones are always taken.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>As they walked, Vivian&#39;s attention was drawn to a newly opened boutique. She browsed the displays with mild interest until, just as she turned to leave, a sleek leather glasses case caught her eye.</p>
+                        
+                        <p>Remembering the battered case she&#39;d seen Ethan using earlier, she picked it up and headed to the register. Her eyebrows shot up when she saw the price tag - five hundred dollars for such a small item.</p>
+                        
+                        <p>Before she could reconsider, the cashier had already printed the receipt. &#34;Cash, card, or mobile payment?&#34; the clerk chirped.</p>
+                        
+                        <p>Choosing mobile payment with resigned acceptance, Vivian pulled out her phone.</p>
+                        
+                        <p>As the transaction processed, the clerk cheerfully tossed a hideous neon green frog plush into her bag. &#34;Today&#39;s promotion - spend five hundred and get this stress-relief toy free!&#34;</p>
+                        
+                        <p>Vivian forced a tight-lipped smile. &#34;How... thoughtful.&#34; Stepping outside, she found Adrian leaning against a pillar, drawing admiring glances from a group of women. Their hopeful expressions fell when they saw Vivian approach, one muttering, &#34;Figures. The gorgeous ones are always taken.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Adrian smirked at their retreating backs, shooting Vivian a pointed look. &#34;Seems I&#39;m quite the desirable commodity, according to public opinion.&#34;</p>
-                    
-                    <p>Vivian didn&#39;t miss a beat. &#34;Remember that celebrity heartthrob whose scandal made headlines last year? His wife was envied too... before the truth came out.&#34;</p>
-                    
-                    <p>&#34;And when have I ever resembled that trainwreck?&#34; Adrian protested, his eyes widening in mock horror as he followed her.</p>
-                    
-                    <p>Pausing mid-step, Vivian tapped her chin thoughtfully. &#34;Neglect can be just as damaging as outright betrayal. You&#39;ve had your moments.&#34; She continued walking as she added, &#34;But everyone has flaws. Work on yours, and who knows? You might actually deserve that admiration.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Adrian smirked at their retreating backs, shooting Vivian a pointed look. &#34;Seems I&#39;m quite the desirable commodity, according to public opinion.&#34;</p>
+                        
+                        <p>Vivian didn&#39;t miss a beat. &#34;Remember that celebrity heartthrob whose scandal made headlines last year? His wife was envied too... before the truth came out.&#34;</p>
+                        
+                        <p>&#34;And when have I ever resembled that trainwreck?&#34; Adrian protested, his eyes widening in mock horror as he followed her.</p>
+                        
+                        <p>Pausing mid-step, Vivian tapped her chin thoughtfully. &#34;Neglect can be just as damaging as outright betrayal. You&#39;ve had your moments.&#34; She continued walking as she added, &#34;But everyone has flaws. Work on yours, and who knows? You might actually deserve that admiration.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:18.939897">
-    <meta property="article:modified_time" content="2026-07-19T02:47:18.939897">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.163633">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.163633">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:18">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:18.939897",
-        "dateModified": "2026-07-19T02:47:18.939897",
+        "datePublished": "2026-07-19T13:03:14.163633",
+        "dateModified": "2026-07-19T13:03:14.163633",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,29 +893,33 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Blake&#39;s POV**</p>
-                    
-                    <p>The coffee shop across from NYU hummed with morning activity.Students grabbed coffees before class while professors typed away on laptops.</p>
-                    
-                    <p>I followed Laurel to a booth, watching her closely. For someone who wanted to &#34;investigate at NYU,&#34; we hadn&#39;t made it past the coffee shop.</p>
-                    
-                    <p>&#34;Blake darling,&#34; Laurel said, sliding into her seat, &#34;I remember telling you how much I love the caramel latte here.&#34;</p>
-                    
-                    <p>She looked up, eyes nostalgic. &#34;I wanted to bring you here three years ago,but never got the chance.&#34;</p>
-                    
-                    <p>I frowned at the menu.</p>
-                    
-                    <p>&#34;I&#39;ve had the caramel latte here,&#34; I said flatly.</p>
-                    
-                    <p>Laurel&#39;s smile faltered.</p>
-                    
-                    <p>&#34;Iced americano,&#34; I told the server.</p>
-                    
-                    <p>&#34;Caramel latte for me,&#34; Laurel added.</p>
-                    
-                    <p>Once the server left, Laurel leaned forward.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Blake&#39;s POV**</p>
+                        
+                        <p>The coffee shop across from NYU hummed with morning activity.Students grabbed coffees before class while professors typed away on laptops.</p>
+                        
+                        <p>I followed Laurel to a booth, watching her closely. For someone who wanted to &#34;investigate at NYU,&#34; we hadn&#39;t made it past the coffee shop.</p>
+                        
+                        <p>&#34;Blake darling,&#34; Laurel said, sliding into her seat, &#34;I remember telling you how much I love the caramel latte here.&#34;</p>
+                        
+                        <p>She looked up, eyes nostalgic. &#34;I wanted to bring you here three years ago,but never got the chance.&#34;</p>
+                        
+                        <p>I frowned at the menu.</p>
+                        
+                        <p>&#34;I&#39;ve had the caramel latte here,&#34; I said flatly.</p>
+                        
+                        <p>Laurel&#39;s smile faltered.</p>
+                        
+                        <p>&#34;Iced americano,&#34; I told the server.</p>
+                        
+                        <p>&#34;Caramel latte for me,&#34; Laurel added.</p>
+                        
+                        <p>Once the server left, Laurel leaned forward.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -894,29 +934,33 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;When did you try their caramel latte?&#34; she asked.</p>
-                    
-                    <p>She blinked at me. &#34;Did you come here alone when I was gone because you missed me?&#34;</p>
-                    
-                    <p>I gave a half-smile and turned toward the NYU sign outside.</p>
-                    
-                    <p>I did come here before, but I wasn&#39;t alone.</p>
-                    
-                    <p>Back then, I&#39;d just woken from a six-month coma. I refused to engage with the world, staying in a wheelchair even though I could stand. I was angry, bitter, lashing out at everyone - especially Audrey Sinclair,the woman who&#39;d married me while I was unconscious.</p>
-                    
-                    <p>But she was also the person who put up with me most. Despite my attitude, she&#39;d wheel me to NYU, to this coffee shop, and tell me stories about her college days.</p>
-                    
-                    <p>She talked about changing from a country girl nobody respected into someone who earned her place through hard work. She described studying while juggling jobs, making friends who accepted her, finding her way in the city.</p>
-                    
-                    <p>Her stories weren&#39;t complicated, but she&#39;d light up telling them, smiling as she described her friends and experiences.</p>
-                    
-                    <p>At first, I&#39;d cut her off with harsh comments, finding her optimism irritating. But gradually, I found myself drawn to the determination in her eyes.</p>
-                    
-                    <p>Eventually, I willingly came here with her. I&#39;d sit while she drank her caramel latte, listening to the same stories over and over.</p>
-                    
-                    <p>Though I never said it, I drew strength from her energy. It helped me accept my changed self and face a world that had almost forgotten me.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;When did you try their caramel latte?&#34; she asked.</p>
+                        
+                        <p>She blinked at me. &#34;Did you come here alone when I was gone because you missed me?&#34;</p>
+                        
+                        <p>I gave a half-smile and turned toward the NYU sign outside.</p>
+                        
+                        <p>I did come here before, but I wasn&#39;t alone.</p>
+                        
+                        <p>Back then, I&#39;d just woken from a six-month coma. I refused to engage with the world, staying in a wheelchair even though I could stand. I was angry, bitter, lashing out at everyone - especially Audrey Sinclair,the woman who&#39;d married me while I was unconscious.</p>
+                        
+                        <p>But she was also the person who put up with me most. Despite my attitude, she&#39;d wheel me to NYU, to this coffee shop, and tell me stories about her college days.</p>
+                        
+                        <p>She talked about changing from a country girl nobody respected into someone who earned her place through hard work. She described studying while juggling jobs, making friends who accepted her, finding her way in the city.</p>
+                        
+                        <p>Her stories weren&#39;t complicated, but she&#39;d light up telling them, smiling as she described her friends and experiences.</p>
+                        
+                        <p>At first, I&#39;d cut her off with harsh comments, finding her optimism irritating. But gradually, I found myself drawn to the determination in her eyes.</p>
+                        
+                        <p>Eventually, I willingly came here with her. I&#39;d sit while she drank her caramel latte, listening to the same stories over and over.</p>
+                        
+                        <p>Though I never said it, I drew strength from her energy. It helped me accept my changed self and face a world that had almost forgotten me.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -931,29 +975,33 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>I started rehab, relearned business, stood again, and took back control of Parker Group.</p>
-                    
-                    <p>Audrey and her stories played a crucial role in that comeback.</p>
-                    
-                    <p>Back then, I even thought spending my life with someone like Audrey might work.</p>
-                    
-                    <p>Until I saw her true face and learned why she really stayed with me...</p>
-                    
-                    <p>After that,our interactions became purely functional- meeting basic marital obligations,nothing more.</p>
-                    
-                    <p>I never came back to this café and grew to dislike caramel lattes.</p>
-                    
-                    <p>&#34;Blake darling?&#34;</p>
-                    
-                    <p>Laurel&#39;s voice pulled me from my thoughts. I realized I&#39;d been staring at the NYU sign.</p>
-                    
-                    <p>&#34;Want to visit your old campus?&#34; I asked,turning back.</p>
-                    
-                    <p>Laurel stiffened. &#34;I&#39;m kind of a minor celebrity now,&#34; she stammered.&#34;Going on campus might cause a scene.&#34;</p>
-                    
-                    <p>&#34;True,&#34; I said.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>I started rehab, relearned business, stood again, and took back control of Parker Group.</p>
+                        
+                        <p>Audrey and her stories played a crucial role in that comeback.</p>
+                        
+                        <p>Back then, I even thought spending my life with someone like Audrey might work.</p>
+                        
+                        <p>Until I saw her true face and learned why she really stayed with me...</p>
+                        
+                        <p>After that,our interactions became purely functional- meeting basic marital obligations,nothing more.</p>
+                        
+                        <p>I never came back to this café and grew to dislike caramel lattes.</p>
+                        
+                        <p>&#34;Blake darling?&#34;</p>
+                        
+                        <p>Laurel&#39;s voice pulled me from my thoughts. I realized I&#39;d been staring at the NYU sign.</p>
+                        
+                        <p>&#34;Want to visit your old campus?&#34; I asked,turning back.</p>
+                        
+                        <p>Laurel stiffened. &#34;I&#39;m kind of a minor celebrity now,&#34; she stammered.&#34;Going on campus might cause a scene.&#34;</p>
+                        
+                        <p>&#34;True,&#34; I said.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -968,29 +1016,33 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>*The internet hasn&#39;t been kind to her lately, and college students follow everything online.*</p>
-                    
-                    <p>Our drinks arrived. Laurel took a sip and pulled out her phone to type something. I pretended not to notice.</p>
-                    
-                    <p>Five minutes later, the door swung open. Jennifer rushed in looking flustered, with a thin, pale guy trailing behind.</p>
-                    
-                    <p>&#34;Laurel!&#34; Jennifer called. &#34;We have a lead!&#34;</p>
-                    
-                    <p>She pointed to the young man. &#34;This student says his roommate disappeared last night and hasn&#39;t come back!&#34;</p>
-                    
-                    <p>I leaned back, drinking my coffee while studying the supposed student. He looked frail, with pale skin and tired eyres.</p>
-                    
-                    <p>*Ethan Davies studies sports science. This guy doesn&#39;t look like an athlete at all. Too thin, too pale, wrong build. Something&#39;s off.*</p>
-                    
-                    <p>&#34;Really?&#34; Laurel stood up. &#34;His roommate vanished last night?&#34;</p>
-                    
-                    <p>Jennifer nodded. &#34;Yes! According to him, his roommate met a newly divorced woman who invited him for... a car date. Now they can&#39;t reach him.&#34;</p>
-                    
-                    <p>She lowered her voice. &#34;He saw the accident news online and got worried it might be his roommate.&#34;</p>
-                    
-                    <p>The pale guy spoke up, his voice soft and raspy. &#34;Ethan Davies left around midnight. We worried about him being out so late. This morning we saw that a couple died in a car crash. We didn&#39;t connect it to him at first, but when we couldIn&#39;t reach him all day, we started to worry.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>*The internet hasn&#39;t been kind to her lately, and college students follow everything online.*</p>
+                        
+                        <p>Our drinks arrived. Laurel took a sip and pulled out her phone to type something. I pretended not to notice.</p>
+                        
+                        <p>Five minutes later, the door swung open. Jennifer rushed in looking flustered, with a thin, pale guy trailing behind.</p>
+                        
+                        <p>&#34;Laurel!&#34; Jennifer called. &#34;We have a lead!&#34;</p>
+                        
+                        <p>She pointed to the young man. &#34;This student says his roommate disappeared last night and hasn&#39;t come back!&#34;</p>
+                        
+                        <p>I leaned back, drinking my coffee while studying the supposed student. He looked frail, with pale skin and tired eyres.</p>
+                        
+                        <p>*Ethan Davies studies sports science. This guy doesn&#39;t look like an athlete at all. Too thin, too pale, wrong build. Something&#39;s off.*</p>
+                        
+                        <p>&#34;Really?&#34; Laurel stood up. &#34;His roommate vanished last night?&#34;</p>
+                        
+                        <p>Jennifer nodded. &#34;Yes! According to him, his roommate met a newly divorced woman who invited him for... a car date. Now they can&#39;t reach him.&#34;</p>
+                        
+                        <p>She lowered her voice. &#34;He saw the accident news online and got worried it might be his roommate.&#34;</p>
+                        
+                        <p>The pale guy spoke up, his voice soft and raspy. &#34;Ethan Davies left around midnight. We worried about him being out so late. This morning we saw that a couple died in a car crash. We didn&#39;t connect it to him at first, but when we couldIn&#39;t reach him all day, we started to worry.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1005,29 +1057,33 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;Ethan Davies?&#34; Laurel tapped her chin. &#34;That name sounds familiar...Blake, doesn&#39;t it ring a bell?&#34;</p>
-                    
-                    <p>&#34;It does,&#34; I replied. &#34;He&#39;s the college student who was friendly with Audrey Sinclair.&#34;</p>
-                    
-                    <p>&#34;That&#39;s him!&#34; Laurel gasped, hand over her mouth. &#34;If he was the man last night, then who was the woman? A recently divorced woman... It couldn&#39;t be... Miss Sinclair?&#34;</p>
-                    
-                    <p>Jennifer&#39;s eyes widened. &#34;No way! Miss Sinclair ju1st divorced Mr. Parker,but she loved him deeply. How could she-&#34;</p>
-                    
-                    <p>&#34;I&#39;ve seen Ethan&#39;s woman before,&#34; the pale student cut in. &#34;This Sinclair</p>
-                    
-                    <p>lady -got a photo? I could tell you if it&#39;s her!&#34;</p>
-                    
-                    <p>&#34;We do!&#34; Jennifer showed him her phone.</p>
-                    
-                    <p>The young man nodded quickly. &#34;That&#39;s her! That&#39;s definitely who left with Ethan last night. I&#39;d know her anywhere!&#34;</p>
-                    
-                    <p>Laurel&#39;s hand went to her mouth, tears forming. &#34;Oh no... Miss Sinclair?&#34;</p>
-                    
-                    <p>She turned to me, dabbing her eyes. &#34;Blake darling, I never thought my attempt to help identify victims would lead to Miss Sinclair...&#34;</p>
-                    
-                    <p>She sniffed. &#34;Should we go to the morgue and notify her family? Even if what she did was inappropriate, her family deserves to know.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;Ethan Davies?&#34; Laurel tapped her chin. &#34;That name sounds familiar...Blake, doesn&#39;t it ring a bell?&#34;</p>
+                        
+                        <p>&#34;It does,&#34; I replied. &#34;He&#39;s the college student who was friendly with Audrey Sinclair.&#34;</p>
+                        
+                        <p>&#34;That&#39;s him!&#34; Laurel gasped, hand over her mouth. &#34;If he was the man last night, then who was the woman? A recently divorced woman... It couldn&#39;t be... Miss Sinclair?&#34;</p>
+                        
+                        <p>Jennifer&#39;s eyes widened. &#34;No way! Miss Sinclair ju1st divorced Mr. Parker,but she loved him deeply. How could she-&#34;</p>
+                        
+                        <p>&#34;I&#39;ve seen Ethan&#39;s woman before,&#34; the pale student cut in. &#34;This Sinclair</p>
+                        
+                        <p>lady -got a photo? I could tell you if it&#39;s her!&#34;</p>
+                        
+                        <p>&#34;We do!&#34; Jennifer showed him her phone.</p>
+                        
+                        <p>The young man nodded quickly. &#34;That&#39;s her! That&#39;s definitely who left with Ethan last night. I&#39;d know her anywhere!&#34;</p>
+                        
+                        <p>Laurel&#39;s hand went to her mouth, tears forming. &#34;Oh no... Miss Sinclair?&#34;</p>
+                        
+                        <p>She turned to me, dabbing her eyes. &#34;Blake darling, I never thought my attempt to help identify victims would lead to Miss Sinclair...&#34;</p>
+                        
+                        <p>She sniffed. &#34;Should we go to the morgue and notify her family? Even if what she did was inappropriate, her family deserves to know.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1042,29 +1098,33 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>I finished my coffee and set the cup down with a soft click. The caféseemed to grow quiet.</p>
-                    
-                    <p>&#34;Based on just this student&#39;s word,&#34; I said calmly,&#34;you&#39;re convinced Audrey Sinclair died last night?&#34;</p>
-                    
-                    <p>Laurel faltered, glancing at Jennifer.′′I′m just guessing... since he recognized her in the photo...&#34;</p>
-                    
-                    <p>I turned to the pale young man.</p>
-                    
-                    <p>&#34;You&#39;re a student at New York University?&#34; I asked directly.</p>
-                    
-                    <p>The young man flinched under my gaze, then nodded. &#34;Yeah... I attend NYU.&#34;</p>
-                    
-                    <p>&#34;Show me your student ID,&#34; I said, fingers tapping the table.</p>
-                    
-                    <p>Without hesítation, he pulled a card from his pocket and slid it across.</p>
-                    
-                    <p>1 picked it up, scanning it briefly. &#34;Economics department.&#34;</p>
-                    
-                    <p>I placed the ID down with a cold smile. &#34;So an economics student is roommates with Ethan Davies from Sports Science?&#34;</p>
-                    
-                    <p>His smile vanished. &#34;I... well...&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>I finished my coffee and set the cup down with a soft click. The caféseemed to grow quiet.</p>
+                        
+                        <p>&#34;Based on just this student&#39;s word,&#34; I said calmly,&#34;you&#39;re convinced Audrey Sinclair died last night?&#34;</p>
+                        
+                        <p>Laurel faltered, glancing at Jennifer.′′I′m just guessing... since he recognized her in the photo...&#34;</p>
+                        
+                        <p>I turned to the pale young man.</p>
+                        
+                        <p>&#34;You&#39;re a student at New York University?&#34; I asked directly.</p>
+                        
+                        <p>The young man flinched under my gaze, then nodded. &#34;Yeah... I attend NYU.&#34;</p>
+                        
+                        <p>&#34;Show me your student ID,&#34; I said, fingers tapping the table.</p>
+                        
+                        <p>Without hesítation, he pulled a card from his pocket and slid it across.</p>
+                        
+                        <p>1 picked it up, scanning it briefly. &#34;Economics department.&#34;</p>
+                        
+                        <p>I placed the ID down with a cold smile. &#34;So an economics student is roommates with Ethan Davies from Sports Science?&#34;</p>
+                        
+                        <p>His smile vanished. &#34;I... well...&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1079,25 +1139,29 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>After stumbling over his words, he turned to Jennifer. &#34;Ms. Carson... what do I tell him?&#34;</p>
-                    
-                    <p>He spoke louder than he intended. Everyone at nearby tables turned to look.</p>
-                    
-                    <p>Laurel&#39;s face drained of color.</p>
-                    
-                    <p>Jennifer shot him a death glare. &#34;Why the hell are you asking me?&#34;</p>
-                    
-                    <p>&#34;Mr. Parker just caught you pretending to be someone&#39;s roommate.I should be asking why you lied to me!&#34; She watched me from the corner of her eye as she spoke.</p>
-                    
-                    <p>&#34;That&#39;s enough,&#34; I said.</p>
-                    
-                    <p>I stood up, straightening my sleeves. &#34;Laurel, when your agent schedules your next acting workshop, bring Jennifer and your hired actor here.&#34;</p>
-                    
-                    <p>I looked between them. &#34;You all need the lessons. This performance was amateur at best.&#34;</p>
-                    
-                    <p>I walked out without looking back.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>After stumbling over his words, he turned to Jennifer. &#34;Ms. Carson... what do I tell him?&#34;</p>
+                        
+                        <p>He spoke louder than he intended. Everyone at nearby tables turned to look.</p>
+                        
+                        <p>Laurel&#39;s face drained of color.</p>
+                        
+                        <p>Jennifer shot him a death glare. &#34;Why the hell are you asking me?&#34;</p>
+                        
+                        <p>&#34;Mr. Parker just caught you pretending to be someone&#39;s roommate.I should be asking why you lied to me!&#34; She watched me from the corner of her eye as she spoke.</p>
+                        
+                        <p>&#34;That&#39;s enough,&#34; I said.</p>
+                        
+                        <p>I stood up, straightening my sleeves. &#34;Laurel, when your agent schedules your next acting workshop, bring Jennifer and your hired actor here.&#34;</p>
+                        
+                        <p>I looked between them. &#34;You all need the lessons. This performance was amateur at best.&#34;</p>
+                        
+                        <p>I walked out without looking back.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2413,6 +2477,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2539,7 +2683,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2581,32 +2724,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2617,21 +2742,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2664,6 +2779,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2684,20 +2805,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

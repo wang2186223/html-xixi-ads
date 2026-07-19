@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.020377">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.020377">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.205517">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.205517">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.020377",
-        "dateModified": "2026-07-19T02:47:19.020377",
+        "datePublished": "2026-07-19T13:03:14.205517",
+        "dateModified": "2026-07-19T13:03:14.205517",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,29 +893,33 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Blake&#39;s POV**</p>
-                    
-                    <p>Astrid&#39;s voice carried clearly through the thin walls of this old building.</p>
-                    
-                    <p>&#34;Do you regret marrying him?&#34;</p>
-                    
-                    <p>Hearing this question, I frowned, unconsciously tightening my grip on the keys in my hand.</p>
-                    
-                    <p>*In truth, I also wanted to know - during those three years of marriage.had Audrey ever regretted being with me?*</p>
-                    
-                    <p>But long after Astrid&#39;s question, no response came from Audrey.The air in the hallway felt as stifling as it must have been inside the apartment.</p>
-                    
-                    <p>After a lengthy silence, I slid my key into the lock and stepped inside my newly rented apartment.</p>
-                    
-                    <p>The place was barren. I sat on the leather sofa and listened to the conversation next door.</p>
-                    
-                    <p>&#34;Astrid, drop it,&#34; Ethan said. &#34;If Audrey doesn&#39;t want to talk about it, don&#39;t push her.&#34;</p>
-                    
-                    <p>&#34;I think she must have liked Parker at some point,&#34; he added.s just that he disappointed her.&#34;</p>
-                    
-                    <p>A cold laugh cut through the wall - Audrey&#39;s laugh, but without any warmth.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Blake&#39;s POV**</p>
+                        
+                        <p>Astrid&#39;s voice carried clearly through the thin walls of this old building.</p>
+                        
+                        <p>&#34;Do you regret marrying him?&#34;</p>
+                        
+                        <p>Hearing this question, I frowned, unconsciously tightening my grip on the keys in my hand.</p>
+                        
+                        <p>*In truth, I also wanted to know - during those three years of marriage.had Audrey ever regretted being with me?*</p>
+                        
+                        <p>But long after Astrid&#39;s question, no response came from Audrey.The air in the hallway felt as stifling as it must have been inside the apartment.</p>
+                        
+                        <p>After a lengthy silence, I slid my key into the lock and stepped inside my newly rented apartment.</p>
+                        
+                        <p>The place was barren. I sat on the leather sofa and listened to the conversation next door.</p>
+                        
+                        <p>&#34;Astrid, drop it,&#34; Ethan said. &#34;If Audrey doesn&#39;t want to talk about it, don&#39;t push her.&#34;</p>
+                        
+                        <p>&#34;I think she must have liked Parker at some point,&#34; he added.s just that he disappointed her.&#34;</p>
+                        
+                        <p>A cold laugh cut through the wall - Audrey&#39;s laugh, but without any warmth.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -894,29 +934,33 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;He didn&#39;t disappoint me,&#34; she said.′′Inever expected anything from him.&#34;</p>
-                    
-                    <p>&#34;Blake Parker and I were always from different worlds,&#34; she continued、&#34;</p>
-                    
-                    <p>When I married him, he was still a vegetative patient.&#34;</p>
-                    
-                    <p>&#34;If he&#39;d never woken up, we would have lived peacefully. But he did wake up.&#34; I heard ice clinking against glass. &#34;From the day he woke up, I knew we&#39;d eventually divorce.&#34;</p>
-                    
-                    <p>She paused. &#34;So I have no regrets. If I had another chance,I&#39;d probably make the same choice.&#34;</p>
-                    
-                    <p>My hands clenched into fists. So that was our marriage to her-a mistake she&#39;d willingly repeat.</p>
-                    
-                    <p>The conversation shifted. Soon laughter filled the air as they planned her jewelry launch to rehash old stories I&#39;d never been part of. I sat alone in the dark, struck by how different Audrey sounded with them - relaxed,playful, nothing like the cold woman she was around me.</p>
-                    
-                    <p>Not once did they mention my name or anyone from the Parker family. It was as if I and the entire Parker family didn&#39;t matter to her at all.</p>
-                    
-                    <p>My mind drifted back to Pinehaven Village, to how her eyes lit up when she spoke about the man she&#39;d once liked. I&#39;d never seen that look directed at me.</p>
-                    
-                    <p>I grabbed a bottle of wine from the counter, not bothering with a glass. My phone buzzed with Laurel&#39;s message:</p>
-                    
-                    <p>*&#34;Blake darling, I&#39;ve tried these three dresses and can&#39;t decide which is best for the engagement. Could I wear all of them?&#34;*</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;He didn&#39;t disappoint me,&#34; she said.′′Inever expected anything from him.&#34;</p>
+                        
+                        <p>&#34;Blake Parker and I were always from different worlds,&#34; she continued、&#34;</p>
+                        
+                        <p>When I married him, he was still a vegetative patient.&#34;</p>
+                        
+                        <p>&#34;If he&#39;d never woken up, we would have lived peacefully. But he did wake up.&#34; I heard ice clinking against glass. &#34;From the day he woke up, I knew we&#39;d eventually divorce.&#34;</p>
+                        
+                        <p>She paused. &#34;So I have no regrets. If I had another chance,I&#39;d probably make the same choice.&#34;</p>
+                        
+                        <p>My hands clenched into fists. So that was our marriage to her-a mistake she&#39;d willingly repeat.</p>
+                        
+                        <p>The conversation shifted. Soon laughter filled the air as they planned her jewelry launch to rehash old stories I&#39;d never been part of. I sat alone in the dark, struck by how different Audrey sounded with them - relaxed,playful, nothing like the cold woman she was around me.</p>
+                        
+                        <p>Not once did they mention my name or anyone from the Parker family. It was as if I and the entire Parker family didn&#39;t matter to her at all.</p>
+                        
+                        <p>My mind drifted back to Pinehaven Village, to how her eyes lit up when she spoke about the man she&#39;d once liked. I&#39;d never seen that look directed at me.</p>
+                        
+                        <p>I grabbed a bottle of wine from the counter, not bothering with a glass. My phone buzzed with Laurel&#39;s message:</p>
+                        
+                        <p>*&#34;Blake darling, I&#39;ve tried these three dresses and can&#39;t decide which is best for the engagement. Could I wear all of them?&#34;*</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -931,29 +975,33 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>I looked at the images without interest, locked the screen, and set it aside.</p>
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>&#34;It&#39;s getting late,&#34; I said, checking my watch. &#34;Ethan, don&#39;t you have classes tomorrow?&#34;</p>
-                    
-                    <p>Ethan finished his beer and noddled. &#34;Yeah, I should head back.&#34;</p>
-                    
-                    <p>I called him a taxi and went downstairs to see him off. The night air felt good against my face as we waited.</p>
-                    
-                    <p>&#34;Text me when you get to your dorm,&#34; I reminded him.</p>
-                    
-                    <p>Ethan smiled, cheeks flushed from the alcohol. &#34;Audrey, you&#39;re really something.&#34;</p>
-                    
-                    <p>&#34;I wish I&#39;d met you three years earlier,&#34; he added, words slightly slurred.</p>
-                    
-                    <p>&#34;You&#39;re thinking too much. It wouldn&#39;t have made any difference.&#34;</p>
-                    
-                    <p>&#34;Why not?&#34;</p>
-                    
-                    <p>I sighed. &#34;I&#39;ve been in love with Blake Parker for five years. Even if we&#39;d met three years ago, I wouldn&#39;t have changed my mind.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>I looked at the images without interest, locked the screen, and set it aside.</p>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>&#34;It&#39;s getting late,&#34; I said, checking my watch. &#34;Ethan, don&#39;t you have classes tomorrow?&#34;</p>
+                        
+                        <p>Ethan finished his beer and noddled. &#34;Yeah, I should head back.&#34;</p>
+                        
+                        <p>I called him a taxi and went downstairs to see him off. The night air felt good against my face as we waited.</p>
+                        
+                        <p>&#34;Text me when you get to your dorm,&#34; I reminded him.</p>
+                        
+                        <p>Ethan smiled, cheeks flushed from the alcohol. &#34;Audrey, you&#39;re really something.&#34;</p>
+                        
+                        <p>&#34;I wish I&#39;d met you three years earlier,&#34; he added, words slightly slurred.</p>
+                        
+                        <p>&#34;You&#39;re thinking too much. It wouldn&#39;t have made any difference.&#34;</p>
+                        
+                        <p>&#34;Why not?&#34;</p>
+                        
+                        <p>I sighed. &#34;I&#39;ve been in love with Blake Parker for five years. Even if we&#39;d met three years ago, I wouldn&#39;t have changed my mind.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -968,29 +1016,33 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>The taxi pulled up.</p>
-                    
-                    <p>&#34;Ethan, we work best as friends. Or you can think of me as your sister.&#34;</p>
-                    
-                    <p>He gave me a sad smile. &#34;I know.&#34;</p>
-                    
-                    <p>As he climbed in. he rolled down the window. &#34;I&#39;ll text when I get back.&#34;</p>
-                    
-                    <p>&#34;You better.&#34; I warned.</p>
-                    
-                    <p>&#34;Bye,&#34; he said, eyes lingering on my face. &#34;Sister.&#34;</p>
-                    
-                    <p>I watched until the taxi disappeared, then headed inside. When the elevator opened on my floor, I noticed keys hanging from the lock next</p>
-                    
-                    <p>door.</p>
-                    
-                    <p>*So our new neighbor&#39;s moved in. Careless enough to leave their keys in the door.*</p>
-                    
-                    <p>I considered knocking but decided against it. It was late, and I didn&#39;t know who they were.</p>
-                    
-                    <p>Back in my apartment, Astrid had fallen asleep on the couch. I removed the wine glass from her hand and covered her with a blanket.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>The taxi pulled up.</p>
+                        
+                        <p>&#34;Ethan, we work best as friends. Or you can think of me as your sister.&#34;</p>
+                        
+                        <p>He gave me a sad smile. &#34;I know.&#34;</p>
+                        
+                        <p>As he climbed in. he rolled down the window. &#34;I&#39;ll text when I get back.&#34;</p>
+                        
+                        <p>&#34;You better.&#34; I warned.</p>
+                        
+                        <p>&#34;Bye,&#34; he said, eyes lingering on my face. &#34;Sister.&#34;</p>
+                        
+                        <p>I watched until the taxi disappeared, then headed inside. When the elevator opened on my floor, I noticed keys hanging from the lock next</p>
+                        
+                        <p>door.</p>
+                        
+                        <p>*So our new neighbor&#39;s moved in. Careless enough to leave their keys in the door.*</p>
+                        
+                        <p>I considered knocking but decided against it. It was late, and I didn&#39;t know who they were.</p>
+                        
+                        <p>Back in my apartment, Astrid had fallen asleep on the couch. I removed the wine glass from her hand and covered her with a blanket.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1005,29 +1057,33 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>After cleaning up, I took the trash out. The keys were still in my neighbor s door.</p>
-                    
-                    <p>*Still there? Maybe they&#39;re not home.*</p>
-                    
-                    <p>As I approached the elevator, I heard a key turning. Looking back,I saw the keys in my neighbor&#39;s door moving slightly, then stopping.</p>
-                    
-                    <p>I waited, curious to meet them, but nothing happened. Eventually. I continued to the trash chute. When I returned, the keys hadn&#39;t moved.</p>
-                    
-                    <p>*Weird. Seemed like they were about to open the door but changed their mind when they heard me.*</p>
-                    
-                    <p>I reached for my own doorknob, feeling oddly uncomfortable.</p>
-                    
-                    <p>*Looks like my new neighbor&#39;s avoiding me. I&#39;m just a neighbor, not some monster.*</p>
-                    
-                    <p>I closed my door firmly and had barely taken two steps when I heard a door opening, followed by quick footsteps and the elevator ping.</p>
-                    
-                    <p>**Blake&#39;s POV**</p>
-                    
-                    <p>&#34;Blake darling,finally!&#34;</p>
-                    
-                    <p>My car had barely stopped at the mansion when Laurel rushed over, eyes red and swollen. She yanked the door open and threw herself into the backseat, straight into my arms.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>After cleaning up, I took the trash out. The keys were still in my neighbor s door.</p>
+                        
+                        <p>*Still there? Maybe they&#39;re not home.*</p>
+                        
+                        <p>As I approached the elevator, I heard a key turning. Looking back,I saw the keys in my neighbor&#39;s door moving slightly, then stopping.</p>
+                        
+                        <p>I waited, curious to meet them, but nothing happened. Eventually. I continued to the trash chute. When I returned, the keys hadn&#39;t moved.</p>
+                        
+                        <p>*Weird. Seemed like they were about to open the door but changed their mind when they heard me.*</p>
+                        
+                        <p>I reached for my own doorknob, feeling oddly uncomfortable.</p>
+                        
+                        <p>*Looks like my new neighbor&#39;s avoiding me. I&#39;m just a neighbor, not some monster.*</p>
+                        
+                        <p>I closed my door firmly and had barely taken two steps when I heard a door opening, followed by quick footsteps and the elevator ping.</p>
+                        
+                        <p>**Blake&#39;s POV**</p>
+                        
+                        <p>&#34;Blake darling,finally!&#34;</p>
+                        
+                        <p>My car had barely stopped at the mansion when Laurel rushed over, eyes red and swollen. She yanked the door open and threw herself into the backseat, straight into my arms.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1042,29 +1098,33 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;I sent people to your house,&#34; she said. &#34;They said you weren&#39;t home or at the office...&#34;</p>
-                    
-                    <p>She looked at my face, tears still wet on her cheeks. &#34;Then you1 didn&#39;t answer my messages. I thought something happened...&#34;</p>
-                    
-                    <p>She bit her lip and pressed against my chest. &#34;I was so worried.&#34;</p>
-                    
-                    <p>&#34;We&#39;re getting engaged soon. Why not move in here tonight? We could take care of Rachel together.&#34;</p>
-                    
-                    <p>I frowned at her clinging to me. &#34;I&#39;m fine.&#34;</p>
-                    
-                    <p>If Michael hadn&#39;t called about Laurel planning to bring people to my grandfather&#39;s house, I wouldn&#39;t be here this late.</p>
-                    
-                    <p>&#34;But I was worried,&#34; she insisted. &#34;You didn&#39;t answer me...&#34;</p>
-                    
-                    <p>I closed my eyes. &#34;Laurel, I need my own space.&#34;</p>
-                    
-                    <p>′′It2sten at night. If I don&#39;t answer, maybe I&#39;m sleeping? Why jump to conclusions?&#34;</p>
-                    
-                    <p>Her face went pale. &#34;But I couldn&#39;t find you.&#34;</p>
-                    
-                    <p>I rubbed my temple. &#34;Why did you need to find me so urgently hour?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;I sent people to your house,&#34; she said. &#34;They said you weren&#39;t home or at the office...&#34;</p>
+                        
+                        <p>She looked at my face, tears still wet on her cheeks. &#34;Then you1 didn&#39;t answer my messages. I thought something happened...&#34;</p>
+                        
+                        <p>She bit her lip and pressed against my chest. &#34;I was so worried.&#34;</p>
+                        
+                        <p>&#34;We&#39;re getting engaged soon. Why not move in here tonight? We could take care of Rachel together.&#34;</p>
+                        
+                        <p>I frowned at her clinging to me. &#34;I&#39;m fine.&#34;</p>
+                        
+                        <p>If Michael hadn&#39;t called about Laurel planning to bring people to my grandfather&#39;s house, I wouldn&#39;t be here this late.</p>
+                        
+                        <p>&#34;But I was worried,&#34; she insisted. &#34;You didn&#39;t answer me...&#34;</p>
+                        
+                        <p>I closed my eyes. &#34;Laurel, I need my own space.&#34;</p>
+                        
+                        <p>′′It2sten at night. If I don&#39;t answer, maybe I&#39;m sleeping? Why jump to conclusions?&#34;</p>
+                        
+                        <p>Her face went pale. &#34;But I couldn&#39;t find you.&#34;</p>
+                        
+                        <p>I rubbed my temple. &#34;Why did you need to find me so urgently hour?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1079,27 +1139,31 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>She just stared, no words coming out.</p>
-                    
-                    <p>&#34;Laurel,&#34; I said quietly, &#34;you&#39;re becoming less and less like the girl I remember.&#34;</p>
-                    
-                    <p>&#34;The Laurel I knew five years ago wouldn&#39;t throw a fit this late just because I missed some texts. And she&#39;d never drag my grandfather into it.&#34;</p>
-                    
-                    <p>She stared at me, face going white.</p>
-                    
-                    <p>I pried her away from my chest. &#34;Our engagement isn&#39;t real, and you know it. I won&#39;t be moving in with you - not before, not after.&#34;</p>
-                    
-                    <p>&#34;There aren&#39;t many people in this world who could actually hurt me.When I don&#39;t answer you, I&#39;m either sleeping or busy. That&#39;s it.&#34;</p>
-                    
-                    <p>I took a deep breath. &#34;You used to understand boundaries. Don&#39;t pull this again - calling Michael, hunting down my grandfather. This stops now.&#34;</p>
-                    
-                    <p>&#34;Next time, I won&#39;t care that you once saved my life or that you&#39;re sick.That won&#39;t matter. My grandfather is off-limits. Always has been.&#34;</p>
-                    
-                    <p>I reached across her and pushed the door open. &#34;Go home.&#34;</p>
-                    
-                    <p>&#34;Those dresses - I saw them. None of them suit you. Pick something else.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>She just stared, no words coming out.</p>
+                        
+                        <p>&#34;Laurel,&#34; I said quietly, &#34;you&#39;re becoming less and less like the girl I remember.&#34;</p>
+                        
+                        <p>&#34;The Laurel I knew five years ago wouldn&#39;t throw a fit this late just because I missed some texts. And she&#39;d never drag my grandfather into it.&#34;</p>
+                        
+                        <p>She stared at me, face going white.</p>
+                        
+                        <p>I pried her away from my chest. &#34;Our engagement isn&#39;t real, and you know it. I won&#39;t be moving in with you - not before, not after.&#34;</p>
+                        
+                        <p>&#34;There aren&#39;t many people in this world who could actually hurt me.When I don&#39;t answer you, I&#39;m either sleeping or busy. That&#39;s it.&#34;</p>
+                        
+                        <p>I took a deep breath. &#34;You used to understand boundaries. Don&#39;t pull this again - calling Michael, hunting down my grandfather. This stops now.&#34;</p>
+                        
+                        <p>&#34;Next time, I won&#39;t care that you once saved my life or that you&#39;re sick.That won&#39;t matter. My grandfather is off-limits. Always has been.&#34;</p>
+                        
+                        <p>I reached across her and pushed the door open. &#34;Go home.&#34;</p>
+                        
+                        <p>&#34;Those dresses - I saw them. None of them suit you. Pick something else.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2415,6 +2479,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2541,7 +2685,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2583,32 +2726,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2619,21 +2744,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2666,6 +2781,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2686,20 +2807,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

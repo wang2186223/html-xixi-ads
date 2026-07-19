@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:44.287733">
-    <meta property="article:modified_time" content="2026-07-19T02:47:44.287733">
+    <meta property="article:published_time" content="2026-07-19T13:03:37.455146">
+    <meta property="article:modified_time" content="2026-07-19T13:03:37.455146">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:44">
+    <meta name="last-modified" content="2026-07-19 13:03:37">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:44.287733",
-        "dateModified": "2026-07-19T02:47:44.287733",
+        "datePublished": "2026-07-19T13:03:37.455146",
+        "dateModified": "2026-07-19T13:03:37.455146",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter446</p>
-                    
-                    <p>Cole readily agreed, “Sure.”</p>
-                    
-                    <p>Right after Mila exited the ward, Phoebe and Cole found themselves enveloped in a tranquil atmosphere as they exchanged awkward glances.</p>
-                    
-                    <p>Cole hastily searched for a topic to break the silence. “Would you like some fruit? Let me slice an apple for you.”</p>
-                    
-                    <p>Phoebe nodded, saying, “Thank you.”</p>
-                    
-                    <p>Cole felt a sudden stiffness, his movements becoming clumsy and uncoordinated. He</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter446</p>
+                        
+                        <p>Cole readily agreed, “Sure.”</p>
+                        
+                        <p>Right after Mila exited the ward, Phoebe and Cole found themselves enveloped in a tranquil atmosphere as they exchanged awkward glances.</p>
+                        
+                        <p>Cole hastily searched for a topic to break the silence. “Would you like some fruit? Let me slice an apple for you.”</p>
+                        
+                        <p>Phoebe nodded, saying, “Thank you.”</p>
+                        
+                        <p>Cole felt a sudden stiffness, his movements becoming clumsy and uncoordinated. He</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>wandered inside the ward, scanning the surroundings until he realized the apple was right before him.</p>
-                    
-                    <p>Frantically, he searched for a knife, circling until he spotted it beside the fruits. His</p>
-                    
-                    <p>fumbling actions brought a smile to Phoebe’s lips.</p>
-                    
-                    <p>Three days later, Phoebe had made a full recovery. On the day of her discharge, Cole arrived to pick them up.</p>
-                    
-                    <p>Seated in Cole’s car, Mila inquired, “Cole, is Nate in Phoenicia?”</p>
-                    
-                    <p>“He is,” Cole responded.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>wandered inside the ward, scanning the surroundings until he realized the apple was right before him.</p>
+                        
+                        <p>Frantically, he searched for a knife, circling until he spotted it beside the fruits. His</p>
+                        
+                        <p>fumbling actions brought a smile to Phoebe’s lips.</p>
+                        
+                        <p>Three days later, Phoebe had made a full recovery. On the day of her discharge, Cole arrived to pick them up.</p>
+                        
+                        <p>Seated in Cole’s car, Mila inquired, “Cole, is Nate in Phoenicia?”</p>
+                        
+                        <p>“He is,” Cole responded.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>“Is he busy?” Mila probed.</p>
-                    
-                    <p>“He’s quite busy,” Cole responded honestly. He pondered, “When is Mr. Morrison ever not busy?”</p>
-                    
-                    <p>“That’s alright. It won’t take up too much of his time anyway.”</p>
-                    
-                    <p>Curious, Cole asked, “Ms. Hoffis, do you have something to discuss with him?”</p>
-                    
-                    <p>Mila instructed, “Cole, take me to Sudvilla, and then drop Phoebe off at Hoffis Manor.”</p>
-                    
-                    <p>“Alright.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“Is he busy?” Mila probed.</p>
+                        
+                        <p>“He’s quite busy,” Cole responded honestly. He pondered, “When is Mr. Morrison ever not busy?”</p>
+                        
+                        <p>“That’s alright. It won’t take up too much of his time anyway.”</p>
+                        
+                        <p>Curious, Cole asked, “Ms. Hoffis, do you have something to discuss with him?”</p>
+                        
+                        <p>Mila instructed, “Cole, take me to Sudvilla, and then drop Phoebe off at Hoffis Manor.”</p>
+                        
+                        <p>“Alright.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Phoebe, feeling dubious, questioned, “Mila, why are you going to Sudvilla?”</p>
-                    
-                    <p>Mila leaned close to Phoebe’s ear, whispering while covering her mouth with her hand, “To steal something.”</p>
-                    
-                    <p>Phoebe’s eyes widened in shock, finding it difficult to believe what she had just heard.” What are you planning to steal?” she asked in a hushed tone.</p>
-                    
-                    <p>Mila responded with a mysterious smile, her expression unreadable as she shook her head, indicating she couldn’t reveal her plans just yet.</p>
-                    
-                    <p>Phoebe stared at her with curiosity. She wondered if Mila was truly intending to steal something from Nathan. And if so, what could it be?</p>
-                    
-                    <p>Under the cloak of night’s tranquility, a sleek black car glided into Sudvilla.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Phoebe, feeling dubious, questioned, “Mila, why are you going to Sudvilla?”</p>
+                        
+                        <p>Mila leaned close to Phoebe’s ear, whispering while covering her mouth with her hand, “To steal something.”</p>
+                        
+                        <p>Phoebe’s eyes widened in shock, finding it difficult to believe what she had just heard.” What are you planning to steal?” she asked in a hushed tone.</p>
+                        
+                        <p>Mila responded with a mysterious smile, her expression unreadable as she shook her head, indicating she couldn’t reveal her plans just yet.</p>
+                        
+                        <p>Phoebe stared at her with curiosity. She wondered if Mila was truly intending to steal something from Nathan. And if so, what could it be?</p>
+                        
+                        <p>Under the cloak of night’s tranquility, a sleek black car glided into Sudvilla.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>The driver stepped out, courteously opening Nathan’s car door. “Mr. Morrison, we’ve arrived.”</p>
-                    
-                    <p>Emerging from his reverie, Nathan closed the files, donned his suit jacket, and gathered his documents before stepping onto the pavement. He acknowledged the driver with a nod.” You may head back.”</p>
-                    
-                    <p>The driver bowed respectfully. “Good night, Mr. Morrison.”</p>
-                    
-                    <p>Nathan pressed his fingerprint and pushed the gate open. As he stepped inside, the glow of lights from within the mansion caught his attention, stirring a sense of alertness within</p>
-                    
-                    <p>him.</p>
-                    
-                    <p>“Why are the lights on? Is Cole home?” he wondered.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>The driver stepped out, courteously opening Nathan’s car door. “Mr. Morrison, we’ve arrived.”</p>
+                        
+                        <p>Emerging from his reverie, Nathan closed the files, donned his suit jacket, and gathered his documents before stepping onto the pavement. He acknowledged the driver with a nod.” You may head back.”</p>
+                        
+                        <p>The driver bowed respectfully. “Good night, Mr. Morrison.”</p>
+                        
+                        <p>Nathan pressed his fingerprint and pushed the gate open. As he stepped inside, the glow of lights from within the mansion caught his attention, stirring a sense of alertness within</p>
+                        
+                        <p>him.</p>
+                        
+                        <p>“Why are the lights on? Is Cole home?” he wondered.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Closing the door behind him, Nathan’s keen eyes swept across the living room before proceeding further.</p>
-                    
-                    <p>A sound emanated from the kitchen. Nathan paused, fixing his gaze on the kitchen entrance</p>
-                    
-                    <p>At that moment, a graceful figure emerged from the kitchen, carrying utensils.</p>
-                    
-                    <p>As Nathan beheld her, his heart danced with a surge of warmth, flooding him with affection. He stood frozen in place.</p>
-                    
-                    <p>Mila’s smile radiated as she approached, her eyes brimming with tenderness. “Nate, you’re back. I’ve made some bread pudding for you. Would you care for some?”</p>
-                    
-                    <p>The scene before Nathan seemed surreal–a loving woman awaiting his return late at night. It felt both dreamlike and palpably real.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Closing the door behind him, Nathan’s keen eyes swept across the living room before proceeding further.</p>
+                        
+                        <p>A sound emanated from the kitchen. Nathan paused, fixing his gaze on the kitchen entrance</p>
+                        
+                        <p>At that moment, a graceful figure emerged from the kitchen, carrying utensils.</p>
+                        
+                        <p>As Nathan beheld her, his heart danced with a surge of warmth, flooding him with affection. He stood frozen in place.</p>
+                        
+                        <p>Mila’s smile radiated as she approached, her eyes brimming with tenderness. “Nate, you’re back. I’ve made some bread pudding for you. Would you care for some?”</p>
+                        
+                        <p>The scene before Nathan seemed surreal–a loving woman awaiting his return late at night. It felt both dreamlike and palpably real.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,19 +1079,23 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Setting down the utensils, Mila approached Nathan, taking his jacket and documents and arranging them on the nearby couch. Turning back to him, Mila met Nathan’s gaze, her eyes reflecting clarity, her smile a balm to his soul.</p>
-                    
-                    <p>“Why are you here?” Nathan inquired with curiosity.</p>
-                    
-                    <p>But Mila sensed a subtle discord in his words. A pang of disappointment washed over her as</p>
-                    
-                    <p>she gently took Nathan’s hand, leading him to the dining table and urging him to sit.</p>
-                    
-                    <p>“Nate, please have some pumpkin soup. I made it especially for you,” she urged.</p>
-                    
-                    <p>Nathan remained composed as he repeated his question, “You still haven’t told me why you’re here.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Setting down the utensils, Mila approached Nathan, taking his jacket and documents and arranging them on the nearby couch. Turning back to him, Mila met Nathan’s gaze, her eyes reflecting clarity, her smile a balm to his soul.</p>
+                        
+                        <p>“Why are you here?” Nathan inquired with curiosity.</p>
+                        
+                        <p>But Mila sensed a subtle discord in his words. A pang of disappointment washed over her as</p>
+                        
+                        <p>she gently took Nathan’s hand, leading him to the dining table and urging him to sit.</p>
+                        
+                        <p>“Nate, please have some pumpkin soup. I made it especially for you,” she urged.</p>
+                        
+                        <p>Nathan remained composed as he repeated his question, “You still haven’t told me why you’re here.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2347,6 +2411,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2473,7 +2617,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2515,32 +2658,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2551,21 +2676,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2598,6 +2713,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2618,20 +2739,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

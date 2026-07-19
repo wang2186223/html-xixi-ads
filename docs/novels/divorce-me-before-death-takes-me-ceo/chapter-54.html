@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:18.818867">
-    <meta property="article:modified_time" content="2026-07-19T02:47:18.818867">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.111559">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.111559">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:18">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:18.818867",
-        "dateModified": "2026-07-19T02:47:18.818867",
+        "datePublished": "2026-07-19T13:03:14.111559",
+        "dateModified": "2026-07-19T13:03:14.111559",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,21 +893,25 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Blake&#39;s POV**</p>
-                    
-                    <p>The warmth of Audrey&#39;s hand still lingered on my skin. Her touch felt achingly familiar, stirring memories I&#39;d tried to suppress.</p>
-                    
-                    <p>But before I could think about it more, Laurel gasped dramatically. &#34;Miss Sinclair is so rough. That really hurt...&#34;</p>
-                    
-                    <p>I felt the last traces of Audrey&#39;s warmth fade from my palm as I frowned at this unexpected scene. &#34;Why are you here?&#34; I kept my voice low.</p>
-                    
-                    <p>Laurel&#39;s lower lip trembled as her eyes filled with tears. &#34;I had a fight with my mother,&#34; she whispered, voice catching. &#34;I couldn&#39;t stay at home.&#34;</p>
-                    
-                    <p>Her fingers twisted in the fabric as she continued, &#34;Thalia told me the mansion&#39;s been empty since Miss Sinclair moved out... so I moved in yesterday.&#34; She glanced up through wet lashes. &#34;Blake darling, you&#39;re not mad,are you?&#34;</p>
-                    
-                    <p>I pressed my fingers to my temples, fighting back a headache. &#34;Why didn&#39;t you tell me you needed a place to stay? I could have arranged somewhere else.&#34; A pause, heavy with implication. &#34;I&#39;ve been staying here lately.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Blake&#39;s POV**</p>
+                        
+                        <p>The warmth of Audrey&#39;s hand still lingered on my skin. Her touch felt achingly familiar, stirring memories I&#39;d tried to suppress.</p>
+                        
+                        <p>But before I could think about it more, Laurel gasped dramatically. &#34;Miss Sinclair is so rough. That really hurt...&#34;</p>
+                        
+                        <p>I felt the last traces of Audrey&#39;s warmth fade from my palm as I frowned at this unexpected scene. &#34;Why are you here?&#34; I kept my voice low.</p>
+                        
+                        <p>Laurel&#39;s lower lip trembled as her eyes filled with tears. &#34;I had a fight with my mother,&#34; she whispered, voice catching. &#34;I couldn&#39;t stay at home.&#34;</p>
+                        
+                        <p>Her fingers twisted in the fabric as she continued, &#34;Thalia told me the mansion&#39;s been empty since Miss Sinclair moved out... so I moved in yesterday.&#34; She glanced up through wet lashes. &#34;Blake darling, you&#39;re not mad,are you?&#34;</p>
+                        
+                        <p>I pressed my fingers to my temples, fighting back a headache. &#34;Why didn&#39;t you tell me you needed a place to stay? I could have arranged somewhere else.&#34; A pause, heavy with implication. &#34;I&#39;ve been staying here lately.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -886,21 +926,25 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>That was hard to admit. I hadn&#39;t told anyone about my recent habit of returning to this place night after night, seeking... what? Traces of a life I&#39;d systematically destroyed? The ghost of happiness I&#39;d never appreciated until it was gone?</p>
-                    
-                    <p>&#34;What&#39;s the problem?&#34; Laurel&#39;s smile was still sweet, yet it had started to grate on my nerves. &#34;The mansion&#39;s more than big enough for both of us.&#34;</p>
-                    
-                    <p>&#34;No.&#34; I inastinctively refused. After a moment, I added with careful</p>
-                    
-                    <p>neutrality, &#34;But stay if you want. I&#39;ll make other arrangements.&#34;</p>
-                    
-                    <p>Actually, her unannounced arrival effectively forced me to find somewhere else to stay, and it stirred an unexpected resistance. Among all my properties, this was the only one that still held echoes of a life I&#39;d chosen to walk away from. The thought of abandoning it now felt like surrendering something I wasn&#39;t ready to name.</p>
-                    
-                    <p>I shook my head and walked towards the living room. For a moment, the transformation inside instantly made me pause.</p>
-                    
-                    <p>Every trace of Audrey had been systematically erased, replaced by Laurel&#39;s particular brand of feminine excess. Pink throw pillows littered the couch where Audrey&#39;s carefully chosen earth tones had once created an atmosphere of warmth. Crystal figurines sparkled where her modest pottery collection had made the space feel like home.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>That was hard to admit. I hadn&#39;t told anyone about my recent habit of returning to this place night after night, seeking... what? Traces of a life I&#39;d systematically destroyed? The ghost of happiness I&#39;d never appreciated until it was gone?</p>
+                        
+                        <p>&#34;What&#39;s the problem?&#34; Laurel&#39;s smile was still sweet, yet it had started to grate on my nerves. &#34;The mansion&#39;s more than big enough for both of us.&#34;</p>
+                        
+                        <p>&#34;No.&#34; I inastinctively refused. After a moment, I added with careful</p>
+                        
+                        <p>neutrality, &#34;But stay if you want. I&#39;ll make other arrangements.&#34;</p>
+                        
+                        <p>Actually, her unannounced arrival effectively forced me to find somewhere else to stay, and it stirred an unexpected resistance. Among all my properties, this was the only one that still held echoes of a life I&#39;d chosen to walk away from. The thought of abandoning it now felt like surrendering something I wasn&#39;t ready to name.</p>
+                        
+                        <p>I shook my head and walked towards the living room. For a moment, the transformation inside instantly made me pause.</p>
+                        
+                        <p>Every trace of Audrey had been systematically erased, replaced by Laurel&#39;s particular brand of feminine excess. Pink throw pillows littered the couch where Audrey&#39;s carefully chosen earth tones had once created an atmosphere of warmth. Crystal figurines sparkled where her modest pottery collection had made the space feel like home.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -915,21 +959,25 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;You did all this overnight?&#34; I surveyed the room, feeling something shattering in my heart.</p>
-                    
-                    <p>&#34;Thalia helped me decorate!&#34; Laurel&#39;s smile was bright enough to blind. &#34;Isn&#39;t it lovely?&#34; She floated closer, her movement deliberately graceful.</p>
-                    
-                    <p>She watched Audrey&#39;s figure upstairs then added, &#34;Though I haven&#39;t seen Miss Sinclair&#39;s cat. Didn&#39;t she take it when she moved out? Why is she back looking for it?&#34; Her voice carried a particular lilt. &#34;Is she really looking for the cat, or is it just an excuse to see you?&#34;</p>
-                    
-                    <p>I studied her face, and asked, &#34;Snow wasn&#39;t here when you moved in?&#34;</p>
-                    
-                    <p>&#34;Yeah, the cat was... supposed to be here?&#34;</p>
-                    
-                    <p>The confusion in her expression made me realize something was wrong.Without bothering to respond, I took the stairs at a time, following Audrey&#39;</p>
-                    
-                    <p>s path.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;You did all this overnight?&#34; I surveyed the room, feeling something shattering in my heart.</p>
+                        
+                        <p>&#34;Thalia helped me decorate!&#34; Laurel&#39;s smile was bright enough to blind. &#34;Isn&#39;t it lovely?&#34; She floated closer, her movement deliberately graceful.</p>
+                        
+                        <p>She watched Audrey&#39;s figure upstairs then added, &#34;Though I haven&#39;t seen Miss Sinclair&#39;s cat. Didn&#39;t she take it when she moved out? Why is she back looking for it?&#34; Her voice carried a particular lilt. &#34;Is she really looking for the cat, or is it just an excuse to see you?&#34;</p>
+                        
+                        <p>I studied her face, and asked, &#34;Snow wasn&#39;t here when you moved in?&#34;</p>
+                        
+                        <p>&#34;Yeah, the cat was... supposed to be here?&#34;</p>
+                        
+                        <p>The confusion in her expression made me realize something was wrong.Without bothering to respond, I took the stairs at a time, following Audrey&#39;</p>
+                        
+                        <p>s path.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -944,21 +992,25 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Blake darling!&#34; Laurel&#39;s voice chased after me. &#34;You must be hungry. I&#39;ve got meat cooking downstairs...&#34;</p>
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>&#34;Snow?&#34; My voice echoed off walls that no longer felt familiar. &#34;Snow,where are you?&#34;</p>
-                    
-                    <p>Every step through the Lunar Mansion felt like navigating a maze of distorted memories, where familiar corridors led to unrecognizable spaces.Three years of careful decorating choices had been erased overnight,replaced by something that felt deliberately designed to mock everything I&#39;d built here.</p>
-                    
-                    <p>Even Blake&#39;s study hadn&#39;t been spared from Laurel&#39;s invasion. The irony wasn&#39;t lost on me. During our marriage, I&#39;d barely been allowed to enter his study, let alone change anything. Yet here was Laurel, freely redecorating the very space I&#39;d been barred from touching. The message couldn&#39;t have been clearer- I&#39;d always been the outsider in his life. Laurel,it seemed,was anything but.</p>
-                    
-                    <p>I drew in a deep breath, forcing down the bitter realization. *Focus on Snow,* I commanded myself. *This isn&#39;t your home anymore. Whatever Blake allows Laurel to do with the space... it&#39;s none of your business.*</p>
-                    
-                    <p>But determination alone wasn&#39;t enough. After what félt like hours of searching,having turned nearly every room upside down, Snow remained frustratingly absent. Not a single trace of her could be found - no fur, no favorite hiding spots, nothing. It was as if she&#39;d vanished into thin air.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Blake darling!&#34; Laurel&#39;s voice chased after me. &#34;You must be hungry. I&#39;ve got meat cooking downstairs...&#34;</p>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>&#34;Snow?&#34; My voice echoed off walls that no longer felt familiar. &#34;Snow,where are you?&#34;</p>
+                        
+                        <p>Every step through the Lunar Mansion felt like navigating a maze of distorted memories, where familiar corridors led to unrecognizable spaces.Three years of careful decorating choices had been erased overnight,replaced by something that felt deliberately designed to mock everything I&#39;d built here.</p>
+                        
+                        <p>Even Blake&#39;s study hadn&#39;t been spared from Laurel&#39;s invasion. The irony wasn&#39;t lost on me. During our marriage, I&#39;d barely been allowed to enter his study, let alone change anything. Yet here was Laurel, freely redecorating the very space I&#39;d been barred from touching. The message couldn&#39;t have been clearer- I&#39;d always been the outsider in his life. Laurel,it seemed,was anything but.</p>
+                        
+                        <p>I drew in a deep breath, forcing down the bitter realization. *Focus on Snow,* I commanded myself. *This isn&#39;t your home anymore. Whatever Blake allows Laurel to do with the space... it&#39;s none of your business.*</p>
+                        
+                        <p>But determination alone wasn&#39;t enough. After what félt like hours of searching,having turned nearly every room upside down, Snow remained frustratingly absent. Not a single trace of her could be found - no fur, no favorite hiding spots, nothing. It was as if she&#39;d vanished into thin air.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -973,21 +1025,25 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;Are you sure Snow is really here?&#34; I finally asked, turning to Blake</p>
-                    
-                    <p>behind me. &#34;Then where is she?&#34;</p>
-                    
-                    <p>&#34;I have no reason to lie.&#34; His voice was calm. &#34;Michael took her to the vet for grooming. then brought her back here.&#34;</p>
-                    
-                    <p>&#34;If Snow is here, then where?&#34; Panic began to rise. Blake&#39;s unwavering certainty only made the knot in my chest tighten. After a sleepless night of searching,after finally discovering he had taken her, how could she just...vanish?</p>
-                    
-                    <p>&#34;Watch your attitude.&#34; Laurel&#39;s voice sounded as she appeared at the top of the stairs. &#34;Weren&#39;t you supposed to care so much about that cat? How could you lose her in the first place?&#34; She leaned against the railing with practiced casualness. &#34;I&#39;ve been here since last night, and I haven&#39;t seen any cat!&#34;</p>
-                    
-                    <p>&#34;Laurel, stop!&#34; Blake&#39;s sharp tone carried a warning.</p>
-                    
-                    <p>She straightened, brushing imaginary dust from her pressed outfit,moving toward the stairs. &#34;Alright, keep looking. I need to check on my pot roast.I&#39;ve got meat cooking downstairs.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;Are you sure Snow is really here?&#34; I finally asked, turning to Blake</p>
+                        
+                        <p>behind me. &#34;Then where is she?&#34;</p>
+                        
+                        <p>&#34;I have no reason to lie.&#34; His voice was calm. &#34;Michael took her to the vet for grooming. then brought her back here.&#34;</p>
+                        
+                        <p>&#34;If Snow is here, then where?&#34; Panic began to rise. Blake&#39;s unwavering certainty only made the knot in my chest tighten. After a sleepless night of searching,after finally discovering he had taken her, how could she just...vanish?</p>
+                        
+                        <p>&#34;Watch your attitude.&#34; Laurel&#39;s voice sounded as she appeared at the top of the stairs. &#34;Weren&#39;t you supposed to care so much about that cat? How could you lose her in the first place?&#34; She leaned against the railing with practiced casualness. &#34;I&#39;ve been here since last night, and I haven&#39;t seen any cat!&#34;</p>
+                        
+                        <p>&#34;Laurel, stop!&#34; Blake&#39;s sharp tone carried a warning.</p>
+                        
+                        <p>She straightened, brushing imaginary dust from her pressed outfit,moving toward the stairs. &#34;Alright, keep looking. I need to check on my pot roast.I&#39;ve got meat cooking downstairs.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1002,21 +1058,25 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>The mention of cooking meat planted a seed of horror in my mind that bloomed into full-blown terror. &#34;The meat in your pot.&#34; I rushed to her,my voice shaking. &#34;What exactly are you cooking?&#34;</p>
-                    
-                    <p>For a split second, genuine surprise flickered across Laurel&#39;s face,then replaced by a hint of malice. &#34;Why don&#39;t you guess?&#34;</p>
-                    
-                    <p>Before I could realize it, my hands found her throat with a strength I didn&#39;</p>
-                    
-                    <p>t know I possessed. &#34;Is it Snow?&#34; I demanded desperately. My vision blurred with tears but my grip remained steady. &#34;TELL ME!&#34;</p>
-                    
-                    <p>For all her calculated provocations, my explosive rage seemed to genuinely</p>
-                    
-                    <p>terrify Laurel. She managed between gasps. &#34;Blake darling...&#34;</p>
-                    
-                    <p>I felt Blake&#39;s grip on my wrist before I registered his movement. &#34;Enough!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>The mention of cooking meat planted a seed of horror in my mind that bloomed into full-blown terror. &#34;The meat in your pot.&#34; I rushed to her,my voice shaking. &#34;What exactly are you cooking?&#34;</p>
+                        
+                        <p>For a split second, genuine surprise flickered across Laurel&#39;s face,then replaced by a hint of malice. &#34;Why don&#39;t you guess?&#34;</p>
+                        
+                        <p>Before I could realize it, my hands found her throat with a strength I didn&#39;</p>
+                        
+                        <p>t know I possessed. &#34;Is it Snow?&#34; I demanded desperately. My vision blurred with tears but my grip remained steady. &#34;TELL ME!&#34;</p>
+                        
+                        <p>For all her calculated provocations, my explosive rage seemed to genuinely</p>
+                        
+                        <p>terrify Laurel. She managed between gasps. &#34;Blake darling...&#34;</p>
+                        
+                        <p>I felt Blake&#39;s grip on my wrist before I registered his movement. &#34;Enough!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1031,21 +1091,25 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;She killed Snow!&#34;</p>
-                    
-                    <p>His voice held a hint of resignation. &#34;Think rationally! She&#39;s a delicate actress who can barely handle a knife. How could she hurt Snow?&#34;</p>
-                    
-                    <p>The logic in his words penetrated the red haze of my panic. He was right-someone like Laurel, who needed assistance just to carry her shopping bags, who complained about breaking a nail... she&#39;d never actually handle raw meat, let alone...</p>
-                    
-                    <p>&#34;I...&#34; Shame flooded my cheeks, and my grip loosened as clarity returned.&#34;I&#39;m sor...&#34;</p>
-                    
-                    <p>The words never finished forming. In that moment of vulnerability, I caught the flash of malice in Laurel&#39;s eyes. Then her hands connected with my chest, shoving with surprising strength.</p>
-                    
-                    <p>Time seemed to slow as I felt myself falling backward. I saw Blake reach out for me as my body tumbled down the stairs, but it was too late. With a dull thud, I hit the first floor.</p>
-                    
-                    <p>&#34;AUDREY!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;She killed Snow!&#34;</p>
+                        
+                        <p>His voice held a hint of resignation. &#34;Think rationally! She&#39;s a delicate actress who can barely handle a knife. How could she hurt Snow?&#34;</p>
+                        
+                        <p>The logic in his words penetrated the red haze of my panic. He was right-someone like Laurel, who needed assistance just to carry her shopping bags, who complained about breaking a nail... she&#39;d never actually handle raw meat, let alone...</p>
+                        
+                        <p>&#34;I...&#34; Shame flooded my cheeks, and my grip loosened as clarity returned.&#34;I&#39;m sor...&#34;</p>
+                        
+                        <p>The words never finished forming. In that moment of vulnerability, I caught the flash of malice in Laurel&#39;s eyes. Then her hands connected with my chest, shoving with surprising strength.</p>
+                        
+                        <p>Time seemed to slow as I felt myself falling backward. I saw Blake reach out for me as my body tumbled down the stairs, but it was too late. With a dull thud, I hit the first floor.</p>
+                        
+                        <p>&#34;AUDREY!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2361,6 +2425,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2487,7 +2631,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2529,32 +2672,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2565,21 +2690,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2612,6 +2727,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2632,20 +2753,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

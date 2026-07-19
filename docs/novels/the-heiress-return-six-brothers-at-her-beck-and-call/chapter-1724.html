@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:29.611742">
-    <meta property="article:modified_time" content="2026-07-19T02:47:29.611742">
+    <meta property="article:published_time" content="2026-07-19T13:03:24.009013">
+    <meta property="article:modified_time" content="2026-07-19T13:03:24.009013">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:29">
+    <meta name="last-modified" content="2026-07-19 13:03:24">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:29.611742",
-        "dateModified": "2026-07-19T02:47:29.611742",
+        "datePublished": "2026-07-19T13:03:24.009013",
+        "dateModified": "2026-07-19T13:03:24.009013",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,49 +893,53 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter1724</p>
-                    
-                    <p>Chapter 1724 Wynter&#39;s Purpose</p>
-                    
-                    <p>&#34;Nigel is the deputy director of your hospital&#39;s Infectious Diseases Department, right?&#34;</p>
-                    
-                    <p>Wynter&#39;s question hit Jay like a thunderclap. After all, he had just forced Nigel out of the hospital after a heated meeting. The fact that Wynter brought Nigel up made Jay realize the situation was spiraling out of control.</p>
-                    
-                    <p>Before he could respond, Wynter continued, &#34;Nigel has already told me everything.&#34;</p>
-                    
-                    <p>Wynter&#39;s sharp gaze swept across the room as she addressed everyone. &#34;Hospitals are places for saving lives. You, as this institution&#39;s head, choose not to solve the issue but to get rid of a good doctor who raised valid concerns.</p>
-                    
-                    <p>&#34;When a disease arises, you try to bury it instead of confronting it. Do I need to remind you of your duties? Do you still deserve to be called medical professionals?&#34;</p>
-                    
-                    <p>Her words left the room in stunned silence. Not a single person dared to make a sound.</p>
-                    
-                    <p>&#34;If this matter is properly handled, you may avoid consequences. But if the pandemic spirals out of control, the price you pay will not be as simple as legal repercussions,&#34; Wynter warned.</p>
-                    
-                    <p>Jay, who was still attempting to have the last say, retorted, &#34;The decision to have Nigel take a break wasn&#39;t solely mine. It was a directive from higher-ups. Besides, I think Nigel might have exaggerated the situation&#39;s severity. The disease isn&#39;t that critical.&#34;</p>
-                    
-                    <p>Wynter turned to look at him. &#34;So, by your logic, is it not critical until it spreads across the entire country? Excellent logic. Just excellent.&#34;</p>
-                    
-                    <p>Then, looking out the door, she raised her voice. &#34;Bring Nigel in here.&#34;</p>
-                    
-                    <p>Panic flickered across Jay&#39;s face the moment he heard Nigel&#39;s name. After all, he knew too much. If he decided to reveal the truth, the entire Colifernia would be thrown into chaos.</p>
-                    
-                    <p>The door opened, and Nigel entered, wearing a face mask.</p>
-                    
-                    <p>Despite the mask, Jay immediately recognized him. Forcing a smile, he said, &#34;Nigel, didn&#39;t I tell you to rest at home for a few days? Why are you back?&#34;</p>
-                    
-                    <p>Then, he quickly walked over to Nigel, leaning in and whispering into his ear, &#34;Are you trying to get us all killed?&#34;</p>
-                    
-                    <p>Nigel&#39;s calm demeanor didn&#39;t waver as he quietly replied, &#34;I am merely doing what a doctor should do. Mr. Ellis, I suggest you reflect on your actions.&#34;</p>
-                    
-                    <p>Wynter gestured for Nigel to come forward. &#34;Dr. Alistair, recount everything you know and have experienced, down to the smallest detail. Don&#39;t leave out a single thing.&#34;</p>
-                    
-                    <p>Nigel began to speak, retelling every detail he had shared with Wynter at the café. Not a single word was omitted. As the story unfolded, Jay&#39;s expression darkened, his gaze fixed on</p>
-                    
-                    <p>Nigel as if he wanted to destroy him.</p>
-                    
-                    <p>When Nigel finished, Wynter looked at Jay with an impassive expression. &#34;Mr. Ellis, do I really need to spell out the consequences of withholding such critical information?</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter1724</p>
+                        
+                        <p>Chapter 1724 Wynter&#39;s Purpose</p>
+                        
+                        <p>&#34;Nigel is the deputy director of your hospital&#39;s Infectious Diseases Department, right?&#34;</p>
+                        
+                        <p>Wynter&#39;s question hit Jay like a thunderclap. After all, he had just forced Nigel out of the hospital after a heated meeting. The fact that Wynter brought Nigel up made Jay realize the situation was spiraling out of control.</p>
+                        
+                        <p>Before he could respond, Wynter continued, &#34;Nigel has already told me everything.&#34;</p>
+                        
+                        <p>Wynter&#39;s sharp gaze swept across the room as she addressed everyone. &#34;Hospitals are places for saving lives. You, as this institution&#39;s head, choose not to solve the issue but to get rid of a good doctor who raised valid concerns.</p>
+                        
+                        <p>&#34;When a disease arises, you try to bury it instead of confronting it. Do I need to remind you of your duties? Do you still deserve to be called medical professionals?&#34;</p>
+                        
+                        <p>Her words left the room in stunned silence. Not a single person dared to make a sound.</p>
+                        
+                        <p>&#34;If this matter is properly handled, you may avoid consequences. But if the pandemic spirals out of control, the price you pay will not be as simple as legal repercussions,&#34; Wynter warned.</p>
+                        
+                        <p>Jay, who was still attempting to have the last say, retorted, &#34;The decision to have Nigel take a break wasn&#39;t solely mine. It was a directive from higher-ups. Besides, I think Nigel might have exaggerated the situation&#39;s severity. The disease isn&#39;t that critical.&#34;</p>
+                        
+                        <p>Wynter turned to look at him. &#34;So, by your logic, is it not critical until it spreads across the entire country? Excellent logic. Just excellent.&#34;</p>
+                        
+                        <p>Then, looking out the door, she raised her voice. &#34;Bring Nigel in here.&#34;</p>
+                        
+                        <p>Panic flickered across Jay&#39;s face the moment he heard Nigel&#39;s name. After all, he knew too much. If he decided to reveal the truth, the entire Colifernia would be thrown into chaos.</p>
+                        
+                        <p>The door opened, and Nigel entered, wearing a face mask.</p>
+                        
+                        <p>Despite the mask, Jay immediately recognized him. Forcing a smile, he said, &#34;Nigel, didn&#39;t I tell you to rest at home for a few days? Why are you back?&#34;</p>
+                        
+                        <p>Then, he quickly walked over to Nigel, leaning in and whispering into his ear, &#34;Are you trying to get us all killed?&#34;</p>
+                        
+                        <p>Nigel&#39;s calm demeanor didn&#39;t waver as he quietly replied, &#34;I am merely doing what a doctor should do. Mr. Ellis, I suggest you reflect on your actions.&#34;</p>
+                        
+                        <p>Wynter gestured for Nigel to come forward. &#34;Dr. Alistair, recount everything you know and have experienced, down to the smallest detail. Don&#39;t leave out a single thing.&#34;</p>
+                        
+                        <p>Nigel began to speak, retelling every detail he had shared with Wynter at the café. Not a single word was omitted. As the story unfolded, Jay&#39;s expression darkened, his gaze fixed on</p>
+                        
+                        <p>Nigel as if he wanted to destroy him.</p>
+                        
+                        <p>When Nigel finished, Wynter looked at Jay with an impassive expression. &#34;Mr. Ellis, do I really need to spell out the consequences of withholding such critical information?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -914,49 +954,53 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;You act as if it&#39;s nothing when the situation is already this dire, all while delivering hollow platitudes. How do you expect anyone to trust a hospital with how you&#39;re acting? Playing bureaucratic games... Do you take me as a fool?&#34;</p>
-                    
-                    <p>Jay was still desperate to defend himself. &#34;But we haven&#39;t even confirmed the pathogen yet! Making hasty announcements will only cause unnecessary panic. And as for a regional lockdown, the higher-ups wouldn&#39;t approve of it!&#34;</p>
-                    
-                    <p>&#34;Oh? Higher-ups? Which ones are you referring to?&#34; Wynter asked, her tone cool and detached.</p>
-                    
-                    <p>Jay immediately pulled out the Deputy Minister&#39;s name, confident in his ability to leverage authority, hoping to crush any resistance from Wynter. &#34;You&#39;ve probably met Mr. Killis from the Epidemic Prevention Department before you came.&#34;</p>
-                    
-                    <p>&#34;I haven&#39;t met him yet. But from the sound of it, I think it&#39;s time I did.&#34;</p>
-                    
-                    <p>Without hesitation, she pulled out her phone and made a call. &#34;Bring me Mr. Killis from the Epidemic Prevention Department.&#34;</p>
-                    
-                    <p>&#34;Understood,&#34; came the crisp response from the other end.</p>
-                    
-                    <p>The entire room exchanged uneasy glances, and Jay&#39;s confidence wavered.</p>
-                    
-                    <p>Wynter smirked faintly and sat down at the center of the conference table, flipping through the stack of documents.</p>
-                    
-                    <p>The silence in the room was deafening, and some attendees could be seen nervously wiping sweat from their foreheads. But, they wondered if she really could summon Zayn Killis with just one phone call.</p>
-                    
-                    <p>Just as everyone was questioning what was happening, the door opened.</p>
-                    
-                    <p>The people who entered were not dressed in the standard disciplinary inspection uniforms but wore black outer jackets with tactical combat gear underneath. This wasn&#39;t just a routine investigation this was military enforcement.</p>
-                    
-                    <p>The so-called Deputy Minister, Zayn, was dragged in with a gun pressed against his back, his legs long given out.</p>
-                    
-                    <p>Wynter, never one to waste words, waited for the door to close before placing a stack of documents into Zayn&#39;s trembling hands. &#34;Mr. Killis, I&#39;ve heard so much about you.</p>
-                    
-                    <p>&#34;Not at all, I... I...&#34; Zayn stammered, his legs trembling violently.</p>
-                    
-                    <p>Wynter continued calmly, &#34;It wasn&#39;t easy to catch you. I understand you were already arranging for your daughter to study abroad last month.</p>
-                    
-                    <p>&#34;And today, conveniently, you had official business scheduled in Havenia. Meanwhile, your</p>
-                    
-                    <p>wife, daughter, and mother were already heading to the airport.&#34;</p>
-                    
-                    <p>In this city, where lives were at stake, some people were desperately trying to escape, while others were choosing to stand and fight.</p>
-                    
-                    <p>Those at the top of the power hierarchy always had access to the best resources. They received information far earlier and faster than ordinary citizens.</p>
-                    
-                    <p>Sometimes, it was</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;You act as if it&#39;s nothing when the situation is already this dire, all while delivering hollow platitudes. How do you expect anyone to trust a hospital with how you&#39;re acting? Playing bureaucratic games... Do you take me as a fool?&#34;</p>
+                        
+                        <p>Jay was still desperate to defend himself. &#34;But we haven&#39;t even confirmed the pathogen yet! Making hasty announcements will only cause unnecessary panic. And as for a regional lockdown, the higher-ups wouldn&#39;t approve of it!&#34;</p>
+                        
+                        <p>&#34;Oh? Higher-ups? Which ones are you referring to?&#34; Wynter asked, her tone cool and detached.</p>
+                        
+                        <p>Jay immediately pulled out the Deputy Minister&#39;s name, confident in his ability to leverage authority, hoping to crush any resistance from Wynter. &#34;You&#39;ve probably met Mr. Killis from the Epidemic Prevention Department before you came.&#34;</p>
+                        
+                        <p>&#34;I haven&#39;t met him yet. But from the sound of it, I think it&#39;s time I did.&#34;</p>
+                        
+                        <p>Without hesitation, she pulled out her phone and made a call. &#34;Bring me Mr. Killis from the Epidemic Prevention Department.&#34;</p>
+                        
+                        <p>&#34;Understood,&#34; came the crisp response from the other end.</p>
+                        
+                        <p>The entire room exchanged uneasy glances, and Jay&#39;s confidence wavered.</p>
+                        
+                        <p>Wynter smirked faintly and sat down at the center of the conference table, flipping through the stack of documents.</p>
+                        
+                        <p>The silence in the room was deafening, and some attendees could be seen nervously wiping sweat from their foreheads. But, they wondered if she really could summon Zayn Killis with just one phone call.</p>
+                        
+                        <p>Just as everyone was questioning what was happening, the door opened.</p>
+                        
+                        <p>The people who entered were not dressed in the standard disciplinary inspection uniforms but wore black outer jackets with tactical combat gear underneath. This wasn&#39;t just a routine investigation this was military enforcement.</p>
+                        
+                        <p>The so-called Deputy Minister, Zayn, was dragged in with a gun pressed against his back, his legs long given out.</p>
+                        
+                        <p>Wynter, never one to waste words, waited for the door to close before placing a stack of documents into Zayn&#39;s trembling hands. &#34;Mr. Killis, I&#39;ve heard so much about you.</p>
+                        
+                        <p>&#34;Not at all, I... I...&#34; Zayn stammered, his legs trembling violently.</p>
+                        
+                        <p>Wynter continued calmly, &#34;It wasn&#39;t easy to catch you. I understand you were already arranging for your daughter to study abroad last month.</p>
+                        
+                        <p>&#34;And today, conveniently, you had official business scheduled in Havenia. Meanwhile, your</p>
+                        
+                        <p>wife, daughter, and mother were already heading to the airport.&#34;</p>
+                        
+                        <p>In this city, where lives were at stake, some people were desperately trying to escape, while others were choosing to stand and fight.</p>
+                        
+                        <p>Those at the top of the power hierarchy always had access to the best resources. They received information far earlier and faster than ordinary citizens.</p>
+                        
+                        <p>Sometimes, it was</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -971,49 +1015,53 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>irresponsibility that caused devastating harm to the general public in the first place. And when disaster struck, they were the first to flee. This inherent injustice</p>
-                    
-                    <p>was glaring.</p>
-                    
-                    <p>&#34;Judging by how carefully you&#39;ve arranged your family&#39;s departure, it&#39;s clear that you are a meticulous and well-planned individual, Mr. Killis,&#34; Wynter said in an unhurried tone.</p>
-                    
-                    <p>This left everyone in the room confused. Even Zayn himself was bewildered. Was she complimenting him?</p>
-                    
-                    <p>But Wynter&#39;s next words dragged him straight into the abyss. &#34;Since you&#39;re so organized, it&#39;s time to put that skill to good use. You&#39;ll accompany me to the quarantine ward. Together, we&#39;ll oversee the arrangements for the patients&#39; follow-up care.&#34;</p>
-                    
-                    <p>Zayn&#39;s paled in an instant. He would have preferred interrogation or even imprisonment</p>
-                    
-                    <p>over this.</p>
-                    
-                    <p>&#34;No, no! I&#39;m not suited for this kind of work! I truly made a mistake! I&#39;ll accept any investigation and any punishment the authorities decide.&#34; He hurriedly refused.</p>
-                    
-                    <p>Wynter chuckled lightly. &#34;They are busy. For now, focus on your work. You don&#39;t have to worry about your family. I had a chat with customs last month. I advised them to delay any travel for the officials&#39; family members during this uncertain period in Colifernia.</p>
-                    
-                    <p>&#34;Your family&#39;s departure has been postponed. After all, leaving you here alone would only make them worried.&#34;</p>
-                    
-                    <p>Zayn&#39;s face, pale before, was now completely ashen. Panic set in as he realized Wynter</p>
-                    
-                    <p>wasn&#39;t bluffing.</p>
-                    
-                    <p>She had somehow anticipated his plans and acted well in advance. He couldn&#39;t fathom the level of control she wielded. He had never encountered such a situation before!</p>
-                    
-                    <p>Yet, the gun still pressed against his back reminded him that this was no ordinary situation.</p>
-                    
-                    <p>Standing to the side, Jay genuinely felt like the sky was crumbling down. He never imagined Wynter would be so decisive and forceful.</p>
-                    
-                    <p>They couldn&#39;t even begin to grasp the extent of her authority. How could she summon Zayn with just a word? And using military enforcement, no less!</p>
-                    
-                    <p>Then, Wynter turned her attention to him. &#34;Mr. Ellis, since you&#39;ve always been such a great team player with Mr. Killis, I&#39;m sure you&#39;ll make an excellent partner in the quarantine ward</p>
-                    
-                    <p>as well. You&#39;re coming with us.&#34;</p>
-                    
-                    <p>Jay froze, panic etched on his face. He began to plead desperately, &#34;No, I won&#39;t go! If I stay in there too long, I&#39;ll die! I&#39;m not going!&#34;</p>
-                    
-                    <p>&#34;Didn&#39;t you just say the situation wasn&#39;t that serious?&#34; Wynter asked before continuing</p>
-                    
-                    <p>with a low voice, &#34;Mr. Ellis, you seem to have misunderstood. I wasn&#39;t asking for your</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>irresponsibility that caused devastating harm to the general public in the first place. And when disaster struck, they were the first to flee. This inherent injustice</p>
+                        
+                        <p>was glaring.</p>
+                        
+                        <p>&#34;Judging by how carefully you&#39;ve arranged your family&#39;s departure, it&#39;s clear that you are a meticulous and well-planned individual, Mr. Killis,&#34; Wynter said in an unhurried tone.</p>
+                        
+                        <p>This left everyone in the room confused. Even Zayn himself was bewildered. Was she complimenting him?</p>
+                        
+                        <p>But Wynter&#39;s next words dragged him straight into the abyss. &#34;Since you&#39;re so organized, it&#39;s time to put that skill to good use. You&#39;ll accompany me to the quarantine ward. Together, we&#39;ll oversee the arrangements for the patients&#39; follow-up care.&#34;</p>
+                        
+                        <p>Zayn&#39;s paled in an instant. He would have preferred interrogation or even imprisonment</p>
+                        
+                        <p>over this.</p>
+                        
+                        <p>&#34;No, no! I&#39;m not suited for this kind of work! I truly made a mistake! I&#39;ll accept any investigation and any punishment the authorities decide.&#34; He hurriedly refused.</p>
+                        
+                        <p>Wynter chuckled lightly. &#34;They are busy. For now, focus on your work. You don&#39;t have to worry about your family. I had a chat with customs last month. I advised them to delay any travel for the officials&#39; family members during this uncertain period in Colifernia.</p>
+                        
+                        <p>&#34;Your family&#39;s departure has been postponed. After all, leaving you here alone would only make them worried.&#34;</p>
+                        
+                        <p>Zayn&#39;s face, pale before, was now completely ashen. Panic set in as he realized Wynter</p>
+                        
+                        <p>wasn&#39;t bluffing.</p>
+                        
+                        <p>She had somehow anticipated his plans and acted well in advance. He couldn&#39;t fathom the level of control she wielded. He had never encountered such a situation before!</p>
+                        
+                        <p>Yet, the gun still pressed against his back reminded him that this was no ordinary situation.</p>
+                        
+                        <p>Standing to the side, Jay genuinely felt like the sky was crumbling down. He never imagined Wynter would be so decisive and forceful.</p>
+                        
+                        <p>They couldn&#39;t even begin to grasp the extent of her authority. How could she summon Zayn with just a word? And using military enforcement, no less!</p>
+                        
+                        <p>Then, Wynter turned her attention to him. &#34;Mr. Ellis, since you&#39;ve always been such a great team player with Mr. Killis, I&#39;m sure you&#39;ll make an excellent partner in the quarantine ward</p>
+                        
+                        <p>as well. You&#39;re coming with us.&#34;</p>
+                        
+                        <p>Jay froze, panic etched on his face. He began to plead desperately, &#34;No, I won&#39;t go! If I stay in there too long, I&#39;ll die! I&#39;m not going!&#34;</p>
+                        
+                        <p>&#34;Didn&#39;t you just say the situation wasn&#39;t that serious?&#34; Wynter asked before continuing</p>
+                        
+                        <p>with a low voice, &#34;Mr. Ellis, you seem to have misunderstood. I wasn&#39;t asking for your</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -1028,49 +1076,53 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>opinion. Take him away.&#34;</p>
-                    
-                    <p>Her ruthlessness was undeniable, but it was also incredibly effective. The more Jay screamed and resisted, the more Wynter&#39;s authority over the room solidified.</p>
-                    
-                    <p>Those who had initially dismissed her as a young woman now had entirely different</p>
-                    
-                    <p>expressions. They had dealt with countless inspections before, but never had they</p>
-                    
-                    <p>encountered anything like this.</p>
-                    
-                    <p>&#34;Everything discussed in this meeting room today is to remain strictly confidential,&#34; Wynter commanded, tapping lightly on the table. &#34;Now, let&#39;s discuss how to minimize the</p>
-                    
-                    <p>risks effectively...&#34;</p>
-                    
-                    <p>The meeting room now dove into the real agenda.</p>
-                    
-                    <p>Downstairs, Rohan, who had just been freed from the acupuncture seal, was completely</p>
-                    
-                    <p>unaware of the storm brewing above. All he knew was that Wynter had been blatantly disrespectful to him multiple times in public.</p>
-                    
-                    <p>&#34;I&#39;ll make sure this brat from the Quinnell family learns what happens when someone crosses me!&#34; he growled.</p>
-                    
-                    <p>His face twisted with anger as he dialed a number. &#34;Go stir up some trouble at the farmers&#39;</p>
-                    
-                    <p>market! What are you afraid of? Don&#39;t worry about it. There will be no problems with the</p>
-                    
-                    <p>scions backing our Chamber of Commerce.&#34;</p>
-                    
-                    <p>The scions Rohan referred to were part of society&#39;s upper echelon. In this circle, status often leaned heavily on political backgrounds paired with overseas capital.</p>
-                    
-                    <p>Many officials&#39; and elites&#39; children were sent abroad for schooling, usually during high school or college. Common destinations included Havenia or Emstia, tying their educational paths closely to their parents&#39; influence.</p>
-                    
-                    <p>Of course, this wasn&#39;t to say that wealth itself was inherently bad-after all, it only amplified the personality traits people possessed. However, issues inevitably arose when values and discipline were neglected.</p>
-                    
-                    <p>Among these scions, one prominent figure was currently being held at the airport-with</p>
-                    
-                    <p>both her luggage and herself detained.</p>
-                    
-                    <p>&#34;Why? You&#39;d better give me an explanation! Call your supervisor right now!&#34; Joey Killis</p>
-                    
-                    <p>demanded, her tone indignant.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>opinion. Take him away.&#34;</p>
+                        
+                        <p>Her ruthlessness was undeniable, but it was also incredibly effective. The more Jay screamed and resisted, the more Wynter&#39;s authority over the room solidified.</p>
+                        
+                        <p>Those who had initially dismissed her as a young woman now had entirely different</p>
+                        
+                        <p>expressions. They had dealt with countless inspections before, but never had they</p>
+                        
+                        <p>encountered anything like this.</p>
+                        
+                        <p>&#34;Everything discussed in this meeting room today is to remain strictly confidential,&#34; Wynter commanded, tapping lightly on the table. &#34;Now, let&#39;s discuss how to minimize the</p>
+                        
+                        <p>risks effectively...&#34;</p>
+                        
+                        <p>The meeting room now dove into the real agenda.</p>
+                        
+                        <p>Downstairs, Rohan, who had just been freed from the acupuncture seal, was completely</p>
+                        
+                        <p>unaware of the storm brewing above. All he knew was that Wynter had been blatantly disrespectful to him multiple times in public.</p>
+                        
+                        <p>&#34;I&#39;ll make sure this brat from the Quinnell family learns what happens when someone crosses me!&#34; he growled.</p>
+                        
+                        <p>His face twisted with anger as he dialed a number. &#34;Go stir up some trouble at the farmers&#39;</p>
+                        
+                        <p>market! What are you afraid of? Don&#39;t worry about it. There will be no problems with the</p>
+                        
+                        <p>scions backing our Chamber of Commerce.&#34;</p>
+                        
+                        <p>The scions Rohan referred to were part of society&#39;s upper echelon. In this circle, status often leaned heavily on political backgrounds paired with overseas capital.</p>
+                        
+                        <p>Many officials&#39; and elites&#39; children were sent abroad for schooling, usually during high school or college. Common destinations included Havenia or Emstia, tying their educational paths closely to their parents&#39; influence.</p>
+                        
+                        <p>Of course, this wasn&#39;t to say that wealth itself was inherently bad-after all, it only amplified the personality traits people possessed. However, issues inevitably arose when values and discipline were neglected.</p>
+                        
+                        <p>Among these scions, one prominent figure was currently being held at the airport-with</p>
+                        
+                        <p>both her luggage and herself detained.</p>
+                        
+                        <p>&#34;Why? You&#39;d better give me an explanation! Call your supervisor right now!&#34; Joey Killis</p>
+                        
+                        <p>demanded, her tone indignant.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1085,49 +1137,53 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>The customs officer maintained their professionalism. &#34;We&#39;ve received orders that you are</p>
-                    
-                    <p>temporarily prohibited from leaving the country. Please put down your phone and stop</p>
-                    
-                    <p>recording.&#34;</p>
-                    
-                    <p>&#34;Why can&#39;t I record? Do you even know who my dad is? How dare you stop me?&#34;</p>
-                    
-                    <p>She pointed at the officer&#39;s face. &#34;Someone like you, who&#39;s at the bottom of the ladder,</p>
-                    
-                    <p>doesn&#39;t even get to speak to someone like me on a normal day. This is your last warning-let me through, or I&#39;ll make sure you lose your job!&#34;</p>
-                    
-                    <p>The officer calmly warned her, &#34;If you persist, this will be considered an obstruction of</p>
-                    
-                    <p>public safety-&#34;</p>
-                    
-                    <p>&#34;Obstruction of public safety?&#34; Joey slammed her bag onto the counter. &#34;So what if I am? Do</p>
-                    
-                    <p>you know how many followers I have online? Do you even know what my family does? I travel abroad every month, and you&#39;ve never stopped me before. Why now?&#34;</p>
-                    
-                    <p>She spoke in a mix of Cascadian and Emstian. Her voice was both soft and delicate, giving</p>
-                    
-                    <p>the appearance of a sweet, innocent girl. Yet, her words and actions were the complete opposite, leaving everyone present watching in stunned silence.</p>
-                    
-                    <p>Her mother, Jennifer Lilth stepped in, trying to pacify her. &#34;Joey, don&#39;t be so stubborn.&#34;</p>
-                    
-                    <p>However, Joey refused to listen.</p>
-                    
-                    <p>At that moment, uniformed personnel arrived on the scene. Jennifer tried to smooth things over. &#34;My daughter is still young and emotional, but she hasn&#39;t done anything wrong. Don&#39;t you think you owe us an explanation for detaining us like this? My husband is a government official-you should reach out to him first.&#34;</p>
-                    
-                    <p>Her words reflected her sense of superiority, as if Joey&#39;s behavior was excusable because of</p>
-                    
-                    <p>her youth and &#34;poor mood&#34;. Her assumption was simple. Once customs contacted Zayn, everything would be resolved.</p>
-                    
-                    <p>However, her lack of awareness revealed her ignorance. As a Deputy Minister&#39;s wife, being</p>
-                    
-                    <p>detained at customs was already a glaring red flag. It was obvious something was amiss at home. Yet, she remained oblivious, her arrogance undiminished.</p>
-                    
-                    <p>Meanwhile, Joey was still smug. She was giggling as she pulled out her phone and posted a</p>
-                    
-                    <p>video on TikTok</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>The customs officer maintained their professionalism. &#34;We&#39;ve received orders that you are</p>
+                        
+                        <p>temporarily prohibited from leaving the country. Please put down your phone and stop</p>
+                        
+                        <p>recording.&#34;</p>
+                        
+                        <p>&#34;Why can&#39;t I record? Do you even know who my dad is? How dare you stop me?&#34;</p>
+                        
+                        <p>She pointed at the officer&#39;s face. &#34;Someone like you, who&#39;s at the bottom of the ladder,</p>
+                        
+                        <p>doesn&#39;t even get to speak to someone like me on a normal day. This is your last warning-let me through, or I&#39;ll make sure you lose your job!&#34;</p>
+                        
+                        <p>The officer calmly warned her, &#34;If you persist, this will be considered an obstruction of</p>
+                        
+                        <p>public safety-&#34;</p>
+                        
+                        <p>&#34;Obstruction of public safety?&#34; Joey slammed her bag onto the counter. &#34;So what if I am? Do</p>
+                        
+                        <p>you know how many followers I have online? Do you even know what my family does? I travel abroad every month, and you&#39;ve never stopped me before. Why now?&#34;</p>
+                        
+                        <p>She spoke in a mix of Cascadian and Emstian. Her voice was both soft and delicate, giving</p>
+                        
+                        <p>the appearance of a sweet, innocent girl. Yet, her words and actions were the complete opposite, leaving everyone present watching in stunned silence.</p>
+                        
+                        <p>Her mother, Jennifer Lilth stepped in, trying to pacify her. &#34;Joey, don&#39;t be so stubborn.&#34;</p>
+                        
+                        <p>However, Joey refused to listen.</p>
+                        
+                        <p>At that moment, uniformed personnel arrived on the scene. Jennifer tried to smooth things over. &#34;My daughter is still young and emotional, but she hasn&#39;t done anything wrong. Don&#39;t you think you owe us an explanation for detaining us like this? My husband is a government official-you should reach out to him first.&#34;</p>
+                        
+                        <p>Her words reflected her sense of superiority, as if Joey&#39;s behavior was excusable because of</p>
+                        
+                        <p>her youth and &#34;poor mood&#34;. Her assumption was simple. Once customs contacted Zayn, everything would be resolved.</p>
+                        
+                        <p>However, her lack of awareness revealed her ignorance. As a Deputy Minister&#39;s wife, being</p>
+                        
+                        <p>detained at customs was already a glaring red flag. It was obvious something was amiss at home. Yet, she remained oblivious, her arrogance undiminished.</p>
+                        
+                        <p>Meanwhile, Joey was still smug. She was giggling as she pulled out her phone and posted a</p>
+                        
+                        <p>video on TikTok</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1142,49 +1198,53 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>The caption read, &#34;I was so happy to go on a trip with Mommy. But on the way, we ran into a</p>
-                    
-                    <p>few barking dogs. So annoying!&#34;</p>
-                    
-                    <p>The video showed her in a perfectly styled outfit, radiating an air of charm and mischief, like</p>
-                    
-                    <p>a spoiled princess.</p>
-                    
-                    <p>&#34;What kind of dogs dare bark at our princess?&#34;</p>
-                    
-                    <p>&#34;Is this how rich people live? Traveling abroad every month? I&#39;m so jealous!&#34;</p>
-                    
-                    <p>&#34;Jojo is adorable! Does your family need a maid? I want to be friends with you!&#34;</p>
-                    
-                    <p>The people online, unaware of the full context, were quick to idolize her. It was, after all,</p>
-                    
-                    <p>human nature to admire wealth and power, especially when life feels unfair.</p>
-                    
-                    <p>But the reality was much darker. Some of these people&#39;s privileges and entitlement came at</p>
-                    
-                    <p>the expense of ordinary people&#39;s rights, exploiting their position to enjoy luxuries they</p>
-                    
-                    <p>didn&#39;t deserve.</p>
-                    
-                    <p>&#34;We&#39;ve already contacted him. You are now formally detained on charges of public safety obstruction,&#34; the uniform personnel commanded, direct and unyielding. Both Jennifer and Joey were completely dumbfounded.</p>
-                    
-                    <p>And this was the purpose of Wynter&#39;s decisions.</p>
-                    
-                    <p>In the meeting room, Wynter addressed Nigel, &#34;You will continue working in the hospital. If</p>
-                    
-                    <p>you encounter any issues, you can report them directly to me.</p>
-                    
-                    <p>&#34;My only request is that you do everything possible to treat every patient while ensuring</p>
-                    
-                    <p>your own safety. Spread my message to everyone.&#34;</p>
-                    
-                    <p>She then turned to the other hospital directors in the room. &#34;All other hospitals must also</p>
-                    
-                    <p>operate under the same principle. You will be held accountable if I discover any misconduct. &#34;All other directors may leave except for the Willowbrook Medical Center&#39;s director.&#34; As the others left, Drexel Asquith, the Willowbrook Medical Center&#39;s director remained. He</p>
-                    
-                    <p>was unsure of why Wynter had held him back, but he could sense that it must be something serious.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>The caption read, &#34;I was so happy to go on a trip with Mommy. But on the way, we ran into a</p>
+                        
+                        <p>few barking dogs. So annoying!&#34;</p>
+                        
+                        <p>The video showed her in a perfectly styled outfit, radiating an air of charm and mischief, like</p>
+                        
+                        <p>a spoiled princess.</p>
+                        
+                        <p>&#34;What kind of dogs dare bark at our princess?&#34;</p>
+                        
+                        <p>&#34;Is this how rich people live? Traveling abroad every month? I&#39;m so jealous!&#34;</p>
+                        
+                        <p>&#34;Jojo is adorable! Does your family need a maid? I want to be friends with you!&#34;</p>
+                        
+                        <p>The people online, unaware of the full context, were quick to idolize her. It was, after all,</p>
+                        
+                        <p>human nature to admire wealth and power, especially when life feels unfair.</p>
+                        
+                        <p>But the reality was much darker. Some of these people&#39;s privileges and entitlement came at</p>
+                        
+                        <p>the expense of ordinary people&#39;s rights, exploiting their position to enjoy luxuries they</p>
+                        
+                        <p>didn&#39;t deserve.</p>
+                        
+                        <p>&#34;We&#39;ve already contacted him. You are now formally detained on charges of public safety obstruction,&#34; the uniform personnel commanded, direct and unyielding. Both Jennifer and Joey were completely dumbfounded.</p>
+                        
+                        <p>And this was the purpose of Wynter&#39;s decisions.</p>
+                        
+                        <p>In the meeting room, Wynter addressed Nigel, &#34;You will continue working in the hospital. If</p>
+                        
+                        <p>you encounter any issues, you can report them directly to me.</p>
+                        
+                        <p>&#34;My only request is that you do everything possible to treat every patient while ensuring</p>
+                        
+                        <p>your own safety. Spread my message to everyone.&#34;</p>
+                        
+                        <p>She then turned to the other hospital directors in the room. &#34;All other hospitals must also</p>
+                        
+                        <p>operate under the same principle. You will be held accountable if I discover any misconduct. &#34;All other directors may leave except for the Willowbrook Medical Center&#39;s director.&#34; As the others left, Drexel Asquith, the Willowbrook Medical Center&#39;s director remained. He</p>
+                        
+                        <p>was unsure of why Wynter had held him back, but he could sense that it must be something serious.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1199,47 +1259,51 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Wynter began slowly, &#34;Dave Cowell works at your hospital, correct?&#34; Drexel nodded. &#34;Yes, he&#39;s the head of the Infectious Diseases Department.&#34; Wynter&#39;s expression grew thoughtful. &#34;I&#39;ve heard that while other hospitals are struggling</p>
-                    
-                    <p>with cases of this infectious disease, your hospital has managed to avoid having a single</p>
-                    
-                    <p>patient.&#34; Drexel responded immediately, &#34;We recently brought in a new team of department heads, including some foreign experts. Their methods are incredibly advanced.</p>
-                    
-                    <p>&#34;Diseases that are rare and complex for most doctors are like the common cold to them.</p>
-                    
-                    <p>They diagnose and treat patients almost instantly. People call them miracle workers.&#34; Wynter nodded, seemingly understanding. &#34;Wait for me here. In ten minutes, I&#39;ll go with you to Willowbrook Medical Center.&#34;</p>
-                    
-                    <p>In her mind, Wynter had already begun forming plans and strategies. The situation in</p>
-                    
-                    <p>Colifernia was deteriorating rapidly, but Willowbrook Medical Center&#39;s anomaly was</p>
-                    
-                    <p>striking.</p>
-                    
-                    <p>If not for the information Lancelot sent her confirming that Dave was working there, she</p>
-                    
-                    <p>might not have connected the dots.</p>
-                    
-                    <p>Meanwhile, Nigel, now fully suited in protective gear, re-entered the hospital. His</p>
-                    
-                    <p>appearance drew attention from everyone. Even through the layers of his gear, his colleagues could feel his determination and resolve.</p>
-                    
-                    <p>He spoke steadily. &#34;Thank you for your hard work. This outbreak is something we must face</p>
-                    
-                    <p>together. We have to do everything in our power to ensure every patient&#39;s safety and protect ourselves as well.&#34;</p>
-                    
-                    <p>&#34;Without the country, there&#39;s no home. Let&#39;s follow Dr. Alistair and fight through this</p>
-                    
-                    <p>outbreak together!&#34;</p>
-                    
-                    <p>&#34;I feel energized now that Dr. Alistair is back!&#34;</p>
-                    
-                    <p>The team placed their hands together in solidarity, their voices uniting in a chant of hope</p>
-                    
-                    <p>and determination.</p>
-                    
-                    <p>&#34;Let&#39;s go!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Wynter began slowly, &#34;Dave Cowell works at your hospital, correct?&#34; Drexel nodded. &#34;Yes, he&#39;s the head of the Infectious Diseases Department.&#34; Wynter&#39;s expression grew thoughtful. &#34;I&#39;ve heard that while other hospitals are struggling</p>
+                        
+                        <p>with cases of this infectious disease, your hospital has managed to avoid having a single</p>
+                        
+                        <p>patient.&#34; Drexel responded immediately, &#34;We recently brought in a new team of department heads, including some foreign experts. Their methods are incredibly advanced.</p>
+                        
+                        <p>&#34;Diseases that are rare and complex for most doctors are like the common cold to them.</p>
+                        
+                        <p>They diagnose and treat patients almost instantly. People call them miracle workers.&#34; Wynter nodded, seemingly understanding. &#34;Wait for me here. In ten minutes, I&#39;ll go with you to Willowbrook Medical Center.&#34;</p>
+                        
+                        <p>In her mind, Wynter had already begun forming plans and strategies. The situation in</p>
+                        
+                        <p>Colifernia was deteriorating rapidly, but Willowbrook Medical Center&#39;s anomaly was</p>
+                        
+                        <p>striking.</p>
+                        
+                        <p>If not for the information Lancelot sent her confirming that Dave was working there, she</p>
+                        
+                        <p>might not have connected the dots.</p>
+                        
+                        <p>Meanwhile, Nigel, now fully suited in protective gear, re-entered the hospital. His</p>
+                        
+                        <p>appearance drew attention from everyone. Even through the layers of his gear, his colleagues could feel his determination and resolve.</p>
+                        
+                        <p>He spoke steadily. &#34;Thank you for your hard work. This outbreak is something we must face</p>
+                        
+                        <p>together. We have to do everything in our power to ensure every patient&#39;s safety and protect ourselves as well.&#34;</p>
+                        
+                        <p>&#34;Without the country, there&#39;s no home. Let&#39;s follow Dr. Alistair and fight through this</p>
+                        
+                        <p>outbreak together!&#34;</p>
+                        
+                        <p>&#34;I feel energized now that Dr. Alistair is back!&#34;</p>
+                        
+                        <p>The team placed their hands together in solidarity, their voices uniting in a chant of hope</p>
+                        
+                        <p>and determination.</p>
+                        
+                        <p>&#34;Let&#39;s go!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2555,6 +2619,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2681,7 +2825,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2723,32 +2866,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2759,21 +2884,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2806,6 +2921,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2826,20 +2947,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

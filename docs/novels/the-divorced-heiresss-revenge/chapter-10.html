@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:15.402278">
-    <meta property="article:modified_time" content="2026-07-19T02:47:15.402278">
+    <meta property="article:published_time" content="2026-07-19T13:03:10.725284">
+    <meta property="article:modified_time" content="2026-07-19T13:03:10.725284">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:15">
+    <meta name="last-modified" content="2026-07-19 13:03:10">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:15.402278",
-        "dateModified": "2026-07-19T02:47:15.402278",
+        "datePublished": "2026-07-19T13:03:10.725284",
+        "dateModified": "2026-07-19T13:03:10.725284",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,35 +893,39 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter10</p>
-                    
-                    <p>On the other side at Tideview Manor, Justin was stunned for several seconds when his ex-wife hung up on him.</p>
-                    
-                    <p>She was so decisive and cold. How was she the same woman who cried and begged him not to divorce</p>
-                    
-                    <p>her?</p>
-                    
-                    <p>In the past three years, did she not have any feelings for him? Did she just put up with his family for the past three years for some reason?</p>
-                    
-                    <p>Justin felt angrier the more he thought about it.</p>
-                    
-                    <p>“Mr. Salvador, your coffee.”</p>
-                    
-                    <p>Ian walked in and saw his boss’ solemn expression, so he asked tentatively, “Have you contacted the young madam? Did you get her new phone number?”</p>
-                    
-                    <p>Justin held his forehead in frustration. He was so angry earlier that he forgot the purpose of his call.</p>
-                    
-                    <p>He thought he would be happy after Anna left, but he was just angry and annoyed because she was</p>
-                    
-                    <p>with Asher.</p>
-                    
-                    <p>How dare she manipulate his emotions?</p>
-                    
-                    <p>“Maybe next time. I don’t want to deal with that woman now.”</p>
-                    
-                    <p>Justin picked up the coffee and frowned after taking a sip.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter10</p>
+                        
+                        <p>On the other side at Tideview Manor, Justin was stunned for several seconds when his ex-wife hung up on him.</p>
+                        
+                        <p>She was so decisive and cold. How was she the same woman who cried and begged him not to divorce</p>
+                        
+                        <p>her?</p>
+                        
+                        <p>In the past three years, did she not have any feelings for him? Did she just put up with his family for the past three years for some reason?</p>
+                        
+                        <p>Justin felt angrier the more he thought about it.</p>
+                        
+                        <p>“Mr. Salvador, your coffee.”</p>
+                        
+                        <p>Ian walked in and saw his boss’ solemn expression, so he asked tentatively, “Have you contacted the young madam? Did you get her new phone number?”</p>
+                        
+                        <p>Justin held his forehead in frustration. He was so angry earlier that he forgot the purpose of his call.</p>
+                        
+                        <p>He thought he would be happy after Anna left, but he was just angry and annoyed because she was</p>
+                        
+                        <p>with Asher.</p>
+                        
+                        <p>How dare she manipulate his emotions?</p>
+                        
+                        <p>“Maybe next time. I don’t want to deal with that woman now.”</p>
+                        
+                        <p>Justin picked up the coffee and frowned after taking a sip.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -900,35 +940,39 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>“What happened? The taste isn’t right.”</p>
-                    
-                    <p>“But I made it according to the recipe that the young madam gave me.” Ian scratched his head in</p>
-                    
-                    <p>confusion.</p>
-                    
-                    <p>“Recipe?”</p>
-                    
-                    <p>“The young madam gave me a small notebook before she left. She wrote down your food and drink preferences and restrictions. She even noted down everything you ate with a detailed date and time.”</p>
-                    
-                    <p>As he said this, lan took out the small notebook and handed it to Justin.</p>
-                    
-                    <p>Justin took it and hesitated to open it.</p>
-                    
-                    <p>What he saw were rows of neat handwriting that was just as disciplined as Anna was before the</p>
-                    
-                    <p>divorce</p>
-                    
-                    <p>“Add a pinch of salt to the coffee to enhance the flavor. Justin likes it that way.”</p>
-                    
-                    <p>“Justin drank two bowls of seafood chowder with fresh scallops this afternoon. I should make it</p>
-                    
-                    <p>for him more often in the future.”</p>
-                    
-                    <p>-“Justin doesn’t like sweet foods. Next time, I’ll make cheese crackers or butter cake for teatime.</p>
-                    
-                    <p>Maybe he’ll like them.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>“What happened? The taste isn’t right.”</p>
+                        
+                        <p>“But I made it according to the recipe that the young madam gave me.” Ian scratched his head in</p>
+                        
+                        <p>confusion.</p>
+                        
+                        <p>“Recipe?”</p>
+                        
+                        <p>“The young madam gave me a small notebook before she left. She wrote down your food and drink preferences and restrictions. She even noted down everything you ate with a detailed date and time.”</p>
+                        
+                        <p>As he said this, lan took out the small notebook and handed it to Justin.</p>
+                        
+                        <p>Justin took it and hesitated to open it.</p>
+                        
+                        <p>What he saw were rows of neat handwriting that was just as disciplined as Anna was before the</p>
+                        
+                        <p>divorce</p>
+                        
+                        <p>“Add a pinch of salt to the coffee to enhance the flavor. Justin likes it that way.”</p>
+                        
+                        <p>“Justin drank two bowls of seafood chowder with fresh scallops this afternoon. I should make it</p>
+                        
+                        <p>for him more often in the future.”</p>
+                        
+                        <p>-“Justin doesn’t like sweet foods. Next time, I’ll make cheese crackers or butter cake for teatime.</p>
+                        
+                        <p>Maybe he’ll like them.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -943,35 +987,39 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>–“I bought several ties for Justin last year, but he has never worn any of the ones with red elements. Justin probably hates red.”</p>
-                    
-                    <p>Justin.</p>
-                    
-                    <p>Justin.</p>
-                    
-                    <p>Justin.</p>
-                    
-                    <p>Every sentence in the notebook was about him.</p>
-                    
-                    <p>Justin was shocked as he flipped through the pages slowly. He held his breath as if he were afraid that he might accidentally blow the words on the pages away.</p>
-                    
-                    <p>His eyes gradually darkened, and he held the book so hard that the paper wrinkled.</p>
-                    
-                    <p>“She’s studying me in detail. This just proves that she has ulterior motives!”</p>
-                    
-                    <p>Although Justin had mixed feelings about what was recorded in the notebook, he was still angry at Bella. So he simply threw the notebook into the wastebasket.</p>
-                    
-                    <p>“Mr. Salvador, don’t throw it away! The young madam has worked hard to gather all this information about you over the past three years. If she doesn’t care about you, why would she bother to remember your preferences? It shows how much she loves you!” Ian hurriedly picked it up, feeling sorry for</p>
-                    
-                    <p>Bella.</p>
-                    
-                    <p>“Stop calling her Young Madam. She doesn’t deserve it!”</p>
-                    
-                    <p>At this time, they heard noises coming from outside the study.</p>
-                    
-                    <p>It seemed to be coming from the right side of the corridor.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>–“I bought several ties for Justin last year, but he has never worn any of the ones with red elements. Justin probably hates red.”</p>
+                        
+                        <p>Justin.</p>
+                        
+                        <p>Justin.</p>
+                        
+                        <p>Justin.</p>
+                        
+                        <p>Every sentence in the notebook was about him.</p>
+                        
+                        <p>Justin was shocked as he flipped through the pages slowly. He held his breath as if he were afraid that he might accidentally blow the words on the pages away.</p>
+                        
+                        <p>His eyes gradually darkened, and he held the book so hard that the paper wrinkled.</p>
+                        
+                        <p>“She’s studying me in detail. This just proves that she has ulterior motives!”</p>
+                        
+                        <p>Although Justin had mixed feelings about what was recorded in the notebook, he was still angry at Bella. So he simply threw the notebook into the wastebasket.</p>
+                        
+                        <p>“Mr. Salvador, don’t throw it away! The young madam has worked hard to gather all this information about you over the past three years. If she doesn’t care about you, why would she bother to remember your preferences? It shows how much she loves you!” Ian hurriedly picked it up, feeling sorry for</p>
+                        
+                        <p>Bella.</p>
+                        
+                        <p>“Stop calling her Young Madam. She doesn’t deserve it!”</p>
+                        
+                        <p>At this time, they heard noises coming from outside the study.</p>
+                        
+                        <p>It seemed to be coming from the right side of the corridor.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -986,35 +1034,39 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>That room used to belong to Anna.</p>
-                    
-                    <p>“Go and check out what’s going on.” Justin rubbed his temples tiredly.</p>
-                    
-                    <p>Ian hurriedly walked out of the study and returned in a hurry with a complicated look.</p>
-                    
-                    <p>“Mr. Salvador, Ms. Gold caused the noise. She…”</p>
-                    
-                    <p>“What’s wrong with Rose?”</p>
-                    
-                    <p>“She’s throwing away everything in Young Mad… I mean, your ex-wife’s bedroom.”</p>
-                    
-                    <p>At this moment, Rosalind was throwing a fit in Anna’s bedroom.</p>
-                    
-                    <p>“This bitch! She’s just a country girl! How can she be so arrogant just because the old man favors her? What’s so great about that stupid bracelet anyway?! How dare she look down on me!”</p>
-                    
-                    <p>When Bella signed the divorce papers, she left the house empty-handed. This gave Rosalind the opportunity to throw Bella’s skin care products and the bedside decorations on the floor like garbage.</p>
-                    
-                    <p>The room was trashed when Justin walked in.</p>
-                    
-                    <p>“Rose! What are you doing?” Justin frowned.</p>
-                    
-                    <p>“I hate that there are traces of her in here!”</p>
-                    
-                    <p>Rosalind cried again when she saw Justin. “If it weren’t for her, we wouldn’t have missed out on three whole years together. She stole my place, but she’s acting like I’m the bad guy! She makes me look like a homewrecker!”</p>
-                    
-                    <p>“Rose, you’re not a homewrecker. Don’t let your imagination run wild.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>That room used to belong to Anna.</p>
+                        
+                        <p>“Go and check out what’s going on.” Justin rubbed his temples tiredly.</p>
+                        
+                        <p>Ian hurriedly walked out of the study and returned in a hurry with a complicated look.</p>
+                        
+                        <p>“Mr. Salvador, Ms. Gold caused the noise. She…”</p>
+                        
+                        <p>“What’s wrong with Rose?”</p>
+                        
+                        <p>“She’s throwing away everything in Young Mad… I mean, your ex-wife’s bedroom.”</p>
+                        
+                        <p>At this moment, Rosalind was throwing a fit in Anna’s bedroom.</p>
+                        
+                        <p>“This bitch! She’s just a country girl! How can she be so arrogant just because the old man favors her? What’s so great about that stupid bracelet anyway?! How dare she look down on me!”</p>
+                        
+                        <p>When Bella signed the divorce papers, she left the house empty-handed. This gave Rosalind the opportunity to throw Bella’s skin care products and the bedside decorations on the floor like garbage.</p>
+                        
+                        <p>The room was trashed when Justin walked in.</p>
+                        
+                        <p>“Rose! What are you doing?” Justin frowned.</p>
+                        
+                        <p>“I hate that there are traces of her in here!”</p>
+                        
+                        <p>Rosalind cried again when she saw Justin. “If it weren’t for her, we wouldn’t have missed out on three whole years together. She stole my place, but she’s acting like I’m the bad guy! She makes me look like a homewrecker!”</p>
+                        
+                        <p>“Rose, you’re not a homewrecker. Don’t let your imagination run wild.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1029,35 +1081,39 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Justin’s eyes darkened. He leaned over to pick up the jade toad that had been smashed to the floor.</p>
-                    
-                    <p>He was startled to find that the toad sculpture had a wink and did a peace sign.</p>
-                    
-                    <p>It made him smile.</p>
-                    
-                    <p>At this time, Rosalind opened the closet and threw out Anna’s clothes.</p>
-                    
-                    <p>“What’s this?”</p>
-                    
-                    <p>Rosalind casually opened a large box and saw a nicely tailored men’s suit made of high-quality</p>
-                    
-                    <p>fabrics.</p>
-                    
-                    <p>“Hah! Is this a gift Anna prepared for Mr. Thompson? Has she already found herself another husband</p>
-                    
-                    <p>so soon?”</p>
-                    
-                    <p>Upon hearing this, Justin looked gloomy and walked over to take the box.</p>
-                    
-                    <p>“Justin, this woman is despicable! I thought she married you because she loved you and would sincerely take care of you. It turned out that she was just playing you like a fool!”</p>
-                    
-                    <p>Rosalind’s eyes were red. She picked up the fruit knife on the coffee table and rushed forward to slash</p>
-                    
-                    <p>the suit.</p>
-                    
-                    <p>Justin had quick reflexes, so he shielded the box with his body.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Justin’s eyes darkened. He leaned over to pick up the jade toad that had been smashed to the floor.</p>
+                        
+                        <p>He was startled to find that the toad sculpture had a wink and did a peace sign.</p>
+                        
+                        <p>It made him smile.</p>
+                        
+                        <p>At this time, Rosalind opened the closet and threw out Anna’s clothes.</p>
+                        
+                        <p>“What’s this?”</p>
+                        
+                        <p>Rosalind casually opened a large box and saw a nicely tailored men’s suit made of high-quality</p>
+                        
+                        <p>fabrics.</p>
+                        
+                        <p>“Hah! Is this a gift Anna prepared for Mr. Thompson? Has she already found herself another husband</p>
+                        
+                        <p>so soon?”</p>
+                        
+                        <p>Upon hearing this, Justin looked gloomy and walked over to take the box.</p>
+                        
+                        <p>“Justin, this woman is despicable! I thought she married you because she loved you and would sincerely take care of you. It turned out that she was just playing you like a fool!”</p>
+                        
+                        <p>Rosalind’s eyes were red. She picked up the fruit knife on the coffee table and rushed forward to slash</p>
+                        
+                        <p>the suit.</p>
+                        
+                        <p>Justin had quick reflexes, so he shielded the box with his body.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1072,35 +1128,39 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>As a result, the knife slashed Justin’s arm, and bright red blood soaked through his white shirt.</p>
-                    
-                    <p>“Ah! OMG! I’m so sorry, Justin!”</p>
-                    
-                    <p>The knife in Rosalind’s hand fell to the floor. She was so scared that she covered her mouth, and her</p>
-                    
-                    <p>mind went blank. All she could do was cry.</p>
-                    
-                    <p>“OMG! What’s going on?!”</p>
-                    
-                    <p>Shannon came in with a few maids. She was frightened when she saw that Justin was injured. Blood was dripping on the white carpet, staining it red. “Justin, how did you cut yourself?!”</p>
-                    
-                    <p>“Ian, get a car to take Ms. Gold home.” Justin endured the pain and sighed helplessly.</p>
-                    
-                    <p>“Justin, I don’t want to go home. I want to be with you!” Rosalind hurriedly hugged Justin.</p>
-                    
-                    <p>“Right. You should let Rose stay here. It’s so late. She can take care of you since you’re injured.” Shannon saw an opportunity to help her niece.</p>
-                    
-                    <p>It was in Shannon’s interest that Justin and Rosalind got married, so she wished that Rosalind could stay over and sleep with Justin tonight.</p>
-                    
-                    <p>“No, she should go home.” Unexpectedly, Justin was firm on his decision.</p>
-                    
-                    <p>“Rose will marry you sooner or later anyway.”</p>
-                    
-                    <p>“When we get married, we’ll have all the time in the world to be together. Now, she should stay at home so that she can spend more time with her family. Secondly, Anna and I haven’t finalized the divorce, so it’s inappropriate for Rose to stay here.”</p>
-                    
-                    <p>At the mention of this, Shannon had nothing else to say.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>As a result, the knife slashed Justin’s arm, and bright red blood soaked through his white shirt.</p>
+                        
+                        <p>“Ah! OMG! I’m so sorry, Justin!”</p>
+                        
+                        <p>The knife in Rosalind’s hand fell to the floor. She was so scared that she covered her mouth, and her</p>
+                        
+                        <p>mind went blank. All she could do was cry.</p>
+                        
+                        <p>“OMG! What’s going on?!”</p>
+                        
+                        <p>Shannon came in with a few maids. She was frightened when she saw that Justin was injured. Blood was dripping on the white carpet, staining it red. “Justin, how did you cut yourself?!”</p>
+                        
+                        <p>“Ian, get a car to take Ms. Gold home.” Justin endured the pain and sighed helplessly.</p>
+                        
+                        <p>“Justin, I don’t want to go home. I want to be with you!” Rosalind hurriedly hugged Justin.</p>
+                        
+                        <p>“Right. You should let Rose stay here. It’s so late. She can take care of you since you’re injured.” Shannon saw an opportunity to help her niece.</p>
+                        
+                        <p>It was in Shannon’s interest that Justin and Rosalind got married, so she wished that Rosalind could stay over and sleep with Justin tonight.</p>
+                        
+                        <p>“No, she should go home.” Unexpectedly, Justin was firm on his decision.</p>
+                        
+                        <p>“Rose will marry you sooner or later anyway.”</p>
+                        
+                        <p>“When we get married, we’ll have all the time in the world to be together. Now, she should stay at home so that she can spend more time with her family. Secondly, Anna and I haven’t finalized the divorce, so it’s inappropriate for Rose to stay here.”</p>
+                        
+                        <p>At the mention of this, Shannon had nothing else to say.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1115,33 +1175,37 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>After sending Rosalind off, Justin looked at the state of the room and sighed. He ordered the maids to tidy up the mess.</p>
-                    
-                    <p>“Mr. Salvador, come and take a look!”</p>
-                    
-                    <p>Ian stood in front of the closet with a look of surprise and took out an intricate costume.</p>
-                    
-                    <p>Justin walked over and looked at the costume closely. The dress was made of a soft-pink, smooth</p>
-                    
-                    <p>fabric and embroidered with lifelike peonies. He could tell at a glance that it must be very expensive.</p>
-                    
-                    <p>Peonies symbolize true beauty.</p>
-                    
-                    <p>His long eyelashes trembled, and his thoughts wavered.</p>
-                    
-                    <p>“Does the young madam perform on stage? If that’s the case, she’s amazing!” Ian expressed his admiration. He always had a renewed impression of his boss’ ex-wife.</p>
-                    
-                    <p>Ian also could not understand why his boss looked down on such a cool and beautiful woman.</p>
-                    
-                    <p>“Haven’t you heard of a saying?”</p>
-                    
-                    <p>“Huh?”</p>
-                    
-                    <p>“Performers are great liars.”</p>
-                    
-                    <p>Justin pressed his thin lips into a straight line and felt inexplicably irritated.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>After sending Rosalind off, Justin looked at the state of the room and sighed. He ordered the maids to tidy up the mess.</p>
+                        
+                        <p>“Mr. Salvador, come and take a look!”</p>
+                        
+                        <p>Ian stood in front of the closet with a look of surprise and took out an intricate costume.</p>
+                        
+                        <p>Justin walked over and looked at the costume closely. The dress was made of a soft-pink, smooth</p>
+                        
+                        <p>fabric and embroidered with lifelike peonies. He could tell at a glance that it must be very expensive.</p>
+                        
+                        <p>Peonies symbolize true beauty.</p>
+                        
+                        <p>His long eyelashes trembled, and his thoughts wavered.</p>
+                        
+                        <p>“Does the young madam perform on stage? If that’s the case, she’s amazing!” Ian expressed his admiration. He always had a renewed impression of his boss’ ex-wife.</p>
+                        
+                        <p>Ian also could not understand why his boss looked down on such a cool and beautiful woman.</p>
+                        
+                        <p>“Haven’t you heard of a saying?”</p>
+                        
+                        <p>“Huh?”</p>
+                        
+                        <p>“Performers are great liars.”</p>
+                        
+                        <p>Justin pressed his thin lips into a straight line and felt inexplicably irritated.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2457,6 +2521,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2583,7 +2727,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2625,32 +2768,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2661,21 +2786,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2708,6 +2823,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2728,20 +2849,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

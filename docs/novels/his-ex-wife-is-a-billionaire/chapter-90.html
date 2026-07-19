@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.321095">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.321095">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.329731">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.329731">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.321095",
-        "dateModified": "2026-07-19T02:47:23.321095",
+        "datePublished": "2026-07-19T13:03:18.329731",
+        "dateModified": "2026-07-19T13:03:18.329731",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,35 +893,39 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>“Why?” Thaddeus frowned, a hint of tension in his eyes.</p>
-                    
-                    <p>He had no idea how long he had psyched himself up to say ‘I’m sorry. A whole da mn week without sleep!</p>
-                    
-                    <p>He had originally nned to apologize to her on his grandpa’s birthday, but after seeing Jareth strut into her house tonight, he realized that he couldn’t wait any longer and just wanted to see her ASAP.</p>
-                    
-                    <p>He didn’t really understand why he felt that way and he had never felt like that before.</p>
-                    
-                    <p>His emotions always had a switch. But at that moment, he was beginning to realize that the switch controlling his emotions seemed to be in na’s hands.</p>
-                    
-                    <p>“If someone should apologize, it should be Acacia herself. What are you doing apologizing on behalf of her? Trying to show off your lovey-dovey rtionship?”</p>
-                    
-                    <p>Evadne’s eyes were cold as ice while saying, “If she killed someone, would you pay for her crime?”</p>
-                    
-                    <p>“na, I’m here to apologize to you sincerely!” Thaddeus’ voice rose a few notches, his eyes slightly red.</p>
-                    
-                    <p>“I think you’re just trying to pi ss me off.” Evadne couldn’t help butugh, her eyes shing coldly, “Thaddeus, if you don’t understand the meaning of ‘sorry’, don’t use the word and taint it!”</p>
-                    
-                    <p>“na, are you trying to pick a fight with me?” Thaddeus’s voice became colder.</p>
-                    
-                    <p>“You’re the one picking a fight, I didn’t ask you toe, you came here to make yourself ufortable.”</p>
-                    
-                    <p>Evadne forcefully pulled her wrist away, wincing from the pain, “Let go, I’m going home!”</p>
-                    
-                    <p>“Even if I’m apologizing on behalf of Acacia, so what? I still apologized to you, what more do you want?!” Thaddeus could no longer hold his anger in, gripping her shoulders tightly.</p>
-                    
-                    <p>“Thaddeus, what I wanted was never an apology from you.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>“Why?” Thaddeus frowned, a hint of tension in his eyes.</p>
+                        
+                        <p>He had no idea how long he had psyched himself up to say ‘I’m sorry. A whole da mn week without sleep!</p>
+                        
+                        <p>He had originally nned to apologize to her on his grandpa’s birthday, but after seeing Jareth strut into her house tonight, he realized that he couldn’t wait any longer and just wanted to see her ASAP.</p>
+                        
+                        <p>He didn’t really understand why he felt that way and he had never felt like that before.</p>
+                        
+                        <p>His emotions always had a switch. But at that moment, he was beginning to realize that the switch controlling his emotions seemed to be in na’s hands.</p>
+                        
+                        <p>“If someone should apologize, it should be Acacia herself. What are you doing apologizing on behalf of her? Trying to show off your lovey-dovey rtionship?”</p>
+                        
+                        <p>Evadne’s eyes were cold as ice while saying, “If she killed someone, would you pay for her crime?”</p>
+                        
+                        <p>“na, I’m here to apologize to you sincerely!” Thaddeus’ voice rose a few notches, his eyes slightly red.</p>
+                        
+                        <p>“I think you’re just trying to pi ss me off.” Evadne couldn’t help butugh, her eyes shing coldly, “Thaddeus, if you don’t understand the meaning of ‘sorry’, don’t use the word and taint it!”</p>
+                        
+                        <p>“na, are you trying to pick a fight with me?” Thaddeus’s voice became colder.</p>
+                        
+                        <p>“You’re the one picking a fight, I didn’t ask you toe, you came here to make yourself ufortable.”</p>
+                        
+                        <p>Evadne forcefully pulled her wrist away, wincing from the pain, “Let go, I’m going home!”</p>
+                        
+                        <p>“Even if I’m apologizing on behalf of Acacia, so what? I still apologized to you, what more do you want?!” Thaddeus could no longer hold his anger in, gripping her shoulders tightly.</p>
+                        
+                        <p>“Thaddeus, what I wanted was never an apology from you.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -900,35 +940,39 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>What she really wanted from him was his love but she knew she would never have his love in her lifetime. She epted that reality then she finally let go of him, why was he still bothering her? Did he think she was cheap?</p>
-                    
-                    <p>Evadneughed bitterly, tears welling in her eyes.</p>
-                    
-                    <p>At that moment, her eyes were red as fire, bright enough, beautiful enough and dazzling enough. Thaddeus felt as if he was being burned by her gaze, his heart racing.</p>
-                    
-                    <p>“I want you to disappear from my world,pletely. Goodbye, no need to see you out.”</p>
-                    
-                    <p>Evadne pushed Thaddeus away, but he grabbed her wrist tightly again, saying, “How can I possibly disappear? We were once married so you can never erase the word ‘divorce’ from your life experience!”</p>
-                    
-                    <p>“I can if I say I can. You may think we’re divorced, but in my eyes, I’m a widow!” Evadne’s eyes were full of contempt as if he was just a speck of dust.</p>
-                    
-                    <p>Thaddeus suddenly felt pain as if he had been hit hard by something, his head buzzing, the pain unbearable!</p>
-                    
-                    <p>He took a deep breath, his hand trembling as he h oar sely said, “na! I won’t let you go! As long as I don’t divorce you, you will never start anew!”</p>
-                    
-                    <p>p!</p>
-                    
-                    <p>Evadne’s usually firm eyes were now full of tears, she finally couldn’t take it anymore and pped Thaddeus.</p>
-                    
-                    <p>That was only the second time she hit him, but her feelings that time werepletely different from the first.</p>
-                    
-                    <p>Her heart felt like it was pierced by his words.</p>
-                    
-                    <p>“Thaddeus, if I knew that you were such a lowlife, I never should have married you in the first ce!”</p>
-                    
-                    <p>Evadne quickly got out of the car and mmed the door shut.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>What she really wanted from him was his love but she knew she would never have his love in her lifetime. She epted that reality then she finally let go of him, why was he still bothering her? Did he think she was cheap?</p>
+                        
+                        <p>Evadneughed bitterly, tears welling in her eyes.</p>
+                        
+                        <p>At that moment, her eyes were red as fire, bright enough, beautiful enough and dazzling enough. Thaddeus felt as if he was being burned by her gaze, his heart racing.</p>
+                        
+                        <p>“I want you to disappear from my world,pletely. Goodbye, no need to see you out.”</p>
+                        
+                        <p>Evadne pushed Thaddeus away, but he grabbed her wrist tightly again, saying, “How can I possibly disappear? We were once married so you can never erase the word ‘divorce’ from your life experience!”</p>
+                        
+                        <p>“I can if I say I can. You may think we’re divorced, but in my eyes, I’m a widow!” Evadne’s eyes were full of contempt as if he was just a speck of dust.</p>
+                        
+                        <p>Thaddeus suddenly felt pain as if he had been hit hard by something, his head buzzing, the pain unbearable!</p>
+                        
+                        <p>He took a deep breath, his hand trembling as he h oar sely said, “na! I won’t let you go! As long as I don’t divorce you, you will never start anew!”</p>
+                        
+                        <p>p!</p>
+                        
+                        <p>Evadne’s usually firm eyes were now full of tears, she finally couldn’t take it anymore and pped Thaddeus.</p>
+                        
+                        <p>That was only the second time she hit him, but her feelings that time werepletely different from the first.</p>
+                        
+                        <p>Her heart felt like it was pierced by his words.</p>
+                        
+                        <p>“Thaddeus, if I knew that you were such a lowlife, I never should have married you in the first ce!”</p>
+                        
+                        <p>Evadne quickly got out of the car and mmed the door shut.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -943,35 +987,39 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>She ran towards the mansion without even taking the time to open her umbre as she just wanted to get out of his sight at that moment.</p>
-                    
-                    <p>Thaddeus sat there, stunned, his head still tilted, in the same position as when he was pped.</p>
-                    
-                    <p>After who knew how long, his tall figure began to curl up, his arms wrapped around his throbbing head, shaking, looking pitiful.</p>
-                    
-                    <p>Back home, Evadne avoided Jason and headed straight for her room.</p>
-                    
-                    <p>She had just made it up the stairs when she could no longer hold it together, her left hand against the wall, her right hand gripping her clothes, panting as if she were drowning. only just managing not to let the tears of sadness flow.</p>
-                    
-                    <p>*na?*</p>
-                    
-                    <p>Jareth’s worried voice came from behind her, Evadne bit her l*p, forcing the tears back down as she didn’t want to reveal her men tal state to him.</p>
-                    
-                    <p>“I’m tired and want to rest, I won’t see you out. Thanks for your gift.”</p>
-                    
-                    <p>“na, what’s wrong?” Jareth asked anxiously.</p>
-                    
-                    <p>“I’m fine, you don’t have to worry about me, good night!”</p>
-                    
-                    <p>*na!”</p>
-                    
-                    <p>Jareth quickly caught up with her, gripping her slender shoulders, forcing her to turn towards him.</p>
-                    
-                    <p>His strength was too much, Evadne felt dizzy, and her moist eyes filled with deep resentment.</p>
-                    
-                    <p>It was even more captivating.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>She ran towards the mansion without even taking the time to open her umbre as she just wanted to get out of his sight at that moment.</p>
+                        
+                        <p>Thaddeus sat there, stunned, his head still tilted, in the same position as when he was pped.</p>
+                        
+                        <p>After who knew how long, his tall figure began to curl up, his arms wrapped around his throbbing head, shaking, looking pitiful.</p>
+                        
+                        <p>Back home, Evadne avoided Jason and headed straight for her room.</p>
+                        
+                        <p>She had just made it up the stairs when she could no longer hold it together, her left hand against the wall, her right hand gripping her clothes, panting as if she were drowning. only just managing not to let the tears of sadness flow.</p>
+                        
+                        <p>*na?*</p>
+                        
+                        <p>Jareth’s worried voice came from behind her, Evadne bit her l*p, forcing the tears back down as she didn’t want to reveal her men tal state to him.</p>
+                        
+                        <p>“I’m tired and want to rest, I won’t see you out. Thanks for your gift.”</p>
+                        
+                        <p>“na, what’s wrong?” Jareth asked anxiously.</p>
+                        
+                        <p>“I’m fine, you don’t have to worry about me, good night!”</p>
+                        
+                        <p>*na!”</p>
+                        
+                        <p>Jareth quickly caught up with her, gripping her slender shoulders, forcing her to turn towards him.</p>
+                        
+                        <p>His strength was too much, Evadne felt dizzy, and her moist eyes filled with deep resentment.</p>
+                        
+                        <p>It was even more captivating.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -986,35 +1034,39 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>“You cried?” Jareth stared at her intently,</p>
-                    
-                    <p>“No.” She answered coldly, but her red-rimmed eyes couldn’t hide the secret.</p>
-                    
-                    <p>“na, did Thaddeus make you mad? He’s such a fool, you shouldn’t stoop to his level, he’s just not worth it!”</p>
-                    
-                    <p>“Yeah, not worth it,” Evadne muttered in a daze.</p>
-                    
-                    <p>Jareth took a deep breath, her gaze like shards of ice piercing his heart.</p>
-                    
-                    <p>16:45</p>
-                    
-                    <p>apter 90</p>
-                    
-                    <p>“na, why don’t you try being with me?”</p>
-                    
-                    <p>Evadne furrowed her brows.</p>
-                    
-                    <p>“Why don’t you try epting me? I might not be a good guy, but I’m willing to be one for you!”</p>
-                    
-                    <p>Couldn’t he bepared to anyone else, not even Thaddeus?</p>
-                    
-                    <p>“Jareth, I’m really tired. Don’t make it any harder for me than it has to be.” Evadne looked at him, looking extremely dejected.</p>
-                    
-                    <p>“na.” Jareth’s breath quickened, his heart full of pity.</p>
-                    
-                    <p>“It’s alreadyte, I really want to sleep, you should also go home.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“You cried?” Jareth stared at her intently,</p>
+                        
+                        <p>“No.” She answered coldly, but her red-rimmed eyes couldn’t hide the secret.</p>
+                        
+                        <p>“na, did Thaddeus make you mad? He’s such a fool, you shouldn’t stoop to his level, he’s just not worth it!”</p>
+                        
+                        <p>“Yeah, not worth it,” Evadne muttered in a daze.</p>
+                        
+                        <p>Jareth took a deep breath, her gaze like shards of ice piercing his heart.</p>
+                        
+                        <p>16:45</p>
+                        
+                        <p>apter 90</p>
+                        
+                        <p>“na, why don’t you try being with me?”</p>
+                        
+                        <p>Evadne furrowed her brows.</p>
+                        
+                        <p>“Why don’t you try epting me? I might not be a good guy, but I’m willing to be one for you!”</p>
+                        
+                        <p>Couldn’t he bepared to anyone else, not even Thaddeus?</p>
+                        
+                        <p>“Jareth, I’m really tired. Don’t make it any harder for me than it has to be.” Evadne looked at him, looking extremely dejected.</p>
+                        
+                        <p>“na.” Jareth’s breath quickened, his heart full of pity.</p>
+                        
+                        <p>“It’s alreadyte, I really want to sleep, you should also go home.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1029,35 +1081,39 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Evadne pushed him away and headed for her bedroom.</p>
-                    
-                    <p>“Are you and Ca ss ius really dating? What exactly is your rtionship with him? Are you really dating him or are you secretly using him to get back at Thaddeus?!”</p>
-                    
-                    <p>Evadne was taken aback, clenching her fist in the dark and retorted. “These are none of your business!”</p>
-                    
-                    <p>“There’s no trace of you and Cas sius living together in this mansion. If he’s your boyfriend, why isn’t there even a pair of his shoes at the door? How could there be no signs of him being with you?!”</p>
-                    
-                    <p>“I’m telling you again, none of this has anything to do with you. You don’t need to interfere in my personal life.”</p>
-                    
-                    <p>“na! Don’t hurt yourself, don’t do anything stu pid!” Jareth’s throat felt bitter, his voice filled with urgency.</p>
-                    
-                    <p>Evadne kept her l*ps sealed, not even looking back as she left him behind.</p>
-                    
-                    <p>Thaddeus was driving home from Evadne’s ce to Windermere Estate. A journey that normallysted less than an hour, but he took a full two hours to travel the same</p>
-                    
-                    <p>distance.</p>
-                    
-                    <p>A splitting headache made it almost impossible for him to see the road ahead, and the heavy rain made it even harder for him to focus on the road. He nearly crashed the car</p>
-                    
-                    <p>twice.</p>
-                    
-                    <p>Thaddeus burst into his study, knocking over cups and papers in his frantic search for medication. When he finally found the pill bottle that he was searching for, he swallowed the pills dry, without even pausing to get a drink of water.</p>
-                    
-                    <p>But even after taking double the usual dose, his headache didn’t let up one bit.</p>
-                    
-                    <p>“Thaddeus, if I knew that you were such a lowlife, I never should have married you in the first ce!”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Evadne pushed him away and headed for her bedroom.</p>
+                        
+                        <p>“Are you and Ca ss ius really dating? What exactly is your rtionship with him? Are you really dating him or are you secretly using him to get back at Thaddeus?!”</p>
+                        
+                        <p>Evadne was taken aback, clenching her fist in the dark and retorted. “These are none of your business!”</p>
+                        
+                        <p>“There’s no trace of you and Cas sius living together in this mansion. If he’s your boyfriend, why isn’t there even a pair of his shoes at the door? How could there be no signs of him being with you?!”</p>
+                        
+                        <p>“I’m telling you again, none of this has anything to do with you. You don’t need to interfere in my personal life.”</p>
+                        
+                        <p>“na! Don’t hurt yourself, don’t do anything stu pid!” Jareth’s throat felt bitter, his voice filled with urgency.</p>
+                        
+                        <p>Evadne kept her l*ps sealed, not even looking back as she left him behind.</p>
+                        
+                        <p>Thaddeus was driving home from Evadne’s ce to Windermere Estate. A journey that normallysted less than an hour, but he took a full two hours to travel the same</p>
+                        
+                        <p>distance.</p>
+                        
+                        <p>A splitting headache made it almost impossible for him to see the road ahead, and the heavy rain made it even harder for him to focus on the road. He nearly crashed the car</p>
+                        
+                        <p>twice.</p>
+                        
+                        <p>Thaddeus burst into his study, knocking over cups and papers in his frantic search for medication. When he finally found the pill bottle that he was searching for, he swallowed the pills dry, without even pausing to get a drink of water.</p>
+                        
+                        <p>But even after taking double the usual dose, his headache didn’t let up one bit.</p>
+                        
+                        <p>“Thaddeus, if I knew that you were such a lowlife, I never should have married you in the first ce!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1072,35 +1128,39 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>na’s hateful words echoed in his mind, making his strong b*dy curl up in pain. His headache was splitting, and he was soaked in cold sweat.</p>
-                    
-                    <p>Hearing themotion, Alva rushed into the room to figure out what was actually going on.</p>
-                    
-                    <p>Seeing Thaddeus in such pain, she felt her heart ache and tears sprang to her eyes.</p>
-                    
-                    <p>“Mr. Thaddeus! What’s wrong?! Is it your migraine acting up again?!”</p>
-                    
-                    <p>Thaddeus was in a state of confusion, slurring his words, “na. na.”</p>
-                    
-                    <p>“Mr. Thaddeus! Hang in there, I’m going to immediately call your private doctor!”</p>
-                    
-                    <p>Alva, white as a sheet, hurried out of the room. Just then, the phone started to vibrate.</p>
-                    
-                    <p>It was an unfamiliar number.</p>
-                    
-                    <p>“Hello?!”</p>
-                    
-                    <p>“Alva, it’s me,” A gentle voice came through.”</p>
-                    
-                    <p>“Ms. na?! Is that you?!” Alva pped a hand over her mouth, unable to believe her ears.</p>
-                    
-                    <p>“Yes, it’s me, na.”</p>
-                    
-                    <p>“Ms. na, it really is you, thank goodness!”</p>
-                    
-                    <p>Alva, tears streaming down her face, barely managed to get the words out of her mouth, “Please save Mr. Thaddeus! His migraine is back! He’s in so much pain he can’t even talk! When you were with Mr. Thaddeus, his migraines didn’te back for a long time, but now without you, it’s even worse! What should I do?!”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>na’s hateful words echoed in his mind, making his strong b*dy curl up in pain. His headache was splitting, and he was soaked in cold sweat.</p>
+                        
+                        <p>Hearing themotion, Alva rushed into the room to figure out what was actually going on.</p>
+                        
+                        <p>Seeing Thaddeus in such pain, she felt her heart ache and tears sprang to her eyes.</p>
+                        
+                        <p>“Mr. Thaddeus! What’s wrong?! Is it your migraine acting up again?!”</p>
+                        
+                        <p>Thaddeus was in a state of confusion, slurring his words, “na. na.”</p>
+                        
+                        <p>“Mr. Thaddeus! Hang in there, I’m going to immediately call your private doctor!”</p>
+                        
+                        <p>Alva, white as a sheet, hurried out of the room. Just then, the phone started to vibrate.</p>
+                        
+                        <p>It was an unfamiliar number.</p>
+                        
+                        <p>“Hello?!”</p>
+                        
+                        <p>“Alva, it’s me,” A gentle voice came through.”</p>
+                        
+                        <p>“Ms. na?! Is that you?!” Alva pped a hand over her mouth, unable to believe her ears.</p>
+                        
+                        <p>“Yes, it’s me, na.”</p>
+                        
+                        <p>“Ms. na, it really is you, thank goodness!”</p>
+                        
+                        <p>Alva, tears streaming down her face, barely managed to get the words out of her mouth, “Please save Mr. Thaddeus! His migraine is back! He’s in so much pain he can’t even talk! When you were with Mr. Thaddeus, his migraines didn’te back for a long time, but now without you, it’s even worse! What should I do?!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1115,25 +1175,29 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>“Alva, don’t panic, just listen to me.”</p>
-                    
-                    <p>Evadne took a deep breath, her voice steady and methodical, “Go to my room, there’s a silver box in the drawer next to my bed. Inside it, there’s a set of ma**aging tools I used to use to help Mr. Thaddeus with his migraines. Underneath the box, there’s a notebook with detailed instructions on how to use them and where to ma**age.”</p>
-                    
-                    <p>“Okay, I’m heading there right now!”</p>
-                    
-                    <p>“Also, Alva, Mr. Thaddeus got hurt tonight and he was hit by a tree branch on his back. He’s been keeping it to himself as if it was nothing to worry about, but I know it must be bad. In my drawer, there’s also an ointment for injuries, make sure you apply it for him. If it doesn’t get better in a few days, take him to see a doctor, don’t let it get worse.”</p>
-                    
-                    <p>“Got it, Ms. na.” Alva wiped her tears, feeling her heart ache.</p>
-                    
-                    <p>This girl really took good care of him, how could Mr. Thaddeus let her go?</p>
-                    
-                    <p>“There’s onest thing.”</p>
-                    
-                    <p>Evadne fell silent for a moment, then said softly, almost as though sighing. “Tonight, I’d appreciate it if you don’t mention anything rted to this call to Mr. Thaddeus. Please.”</p>
-                    
-                    <p>212</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>“Alva, don’t panic, just listen to me.”</p>
+                        
+                        <p>Evadne took a deep breath, her voice steady and methodical, “Go to my room, there’s a silver box in the drawer next to my bed. Inside it, there’s a set of ma**aging tools I used to use to help Mr. Thaddeus with his migraines. Underneath the box, there’s a notebook with detailed instructions on how to use them and where to ma**age.”</p>
+                        
+                        <p>“Okay, I’m heading there right now!”</p>
+                        
+                        <p>“Also, Alva, Mr. Thaddeus got hurt tonight and he was hit by a tree branch on his back. He’s been keeping it to himself as if it was nothing to worry about, but I know it must be bad. In my drawer, there’s also an ointment for injuries, make sure you apply it for him. If it doesn’t get better in a few days, take him to see a doctor, don’t let it get worse.”</p>
+                        
+                        <p>“Got it, Ms. na.” Alva wiped her tears, feeling her heart ache.</p>
+                        
+                        <p>This girl really took good care of him, how could Mr. Thaddeus let her go?</p>
+                        
+                        <p>“There’s onest thing.”</p>
+                        
+                        <p>Evadne fell silent for a moment, then said softly, almost as though sighing. “Tonight, I’d appreciate it if you don’t mention anything rted to this call to Mr. Thaddeus. Please.”</p>
+                        
+                        <p>212</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2449,6 +2513,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2575,7 +2719,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2617,32 +2760,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2653,21 +2778,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2700,6 +2815,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2720,20 +2841,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

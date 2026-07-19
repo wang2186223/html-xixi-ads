@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Vivian considered briefly before answering. &#34;A desktop computer with a large screen.&#34;</p>
-                    
-                    <p>Writing scripts on her laptop had strained her posture.</p>
-                    
-                    <p>If not for Serena&#39;s meddling, their divorce would have been finalized months ago.</p>
-                    
-                    <p>Since circumstances forced this arrangement, she might as well maximize the benefits.</p>
-                    
-                    <p>Adrian nodded toward Ethan, who immediately responded. &#34;Right away, Mr. Blackwood. I&#39;ll see to it personally.&#34;</p>
-                    
-                    <p>He handed Vivian&#39;s satchel to Gwendolyn.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Vivian considered briefly before answering. &#34;A desktop computer with a large screen.&#34;</p>
+                        
+                        <p>Writing scripts on her laptop had strained her posture.</p>
+                        
+                        <p>If not for Serena&#39;s meddling, their divorce would have been finalized months ago.</p>
+                        
+                        <p>Since circumstances forced this arrangement, she might as well maximize the benefits.</p>
+                        
+                        <p>Adrian nodded toward Ethan, who immediately responded. &#34;Right away, Mr. Blackwood. I&#39;ll see to it personally.&#34;</p>
+                        
+                        <p>He handed Vivian&#39;s satchel to Gwendolyn.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>The housekeeper clutched the bag, visibly shaken.</p>
-                    
-                    <p>The sudden shift in dynamics unsettled her.</p>
-                    
-                    <p>Unable to contain herself, she blurted out, &#34;You&#39;ll be sharing a bedroom?&#34;</p>
-                    
-                    <p>Vivian&#39;s eyes narrowed. &#34;Isn&#39;t that expected of married couples?&#34; Her tone turned icy.</p>
-                    
-                    <p>Gwendolyn quickly backtracked, forcing cheer into her voice. &#34;Mrs. Blackwood, you misunderstand! I merely wondered if you and Mr. Blackwood were reconciling. I&#39;m delighted for you both!&#34;</p>
-                    
-                    <p>Vivian&#39;s lips curved slightly. &#34;My return should answer that question.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>The housekeeper clutched the bag, visibly shaken.</p>
+                        
+                        <p>The sudden shift in dynamics unsettled her.</p>
+                        
+                        <p>Unable to contain herself, she blurted out, &#34;You&#39;ll be sharing a bedroom?&#34;</p>
+                        
+                        <p>Vivian&#39;s eyes narrowed. &#34;Isn&#39;t that expected of married couples?&#34; Her tone turned icy.</p>
+                        
+                        <p>Gwendolyn quickly backtracked, forcing cheer into her voice. &#34;Mrs. Blackwood, you misunderstand! I merely wondered if you and Mr. Blackwood were reconciling. I&#39;m delighted for you both!&#34;</p>
+                        
+                        <p>Vivian&#39;s lips curved slightly. &#34;My return should answer that question.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Taking her satchel from Gwendolyn&#39;s grasp, she added, &#34;I&#39;ll take this upstairs myself. I&#39;m exhausted and won&#39;t be joining dinner.&#34;</p>
-                    
-                    <p>Without awaiting response, she ascended the staircase.</p>
-                    
-                    <p>&#34;Warm the milk in the refrigerator and bring it to the master suite,&#34; Adrian instructed Gwendolyn before following Vivian.</p>
-                    
-                    <p>Upstairs, Vivian closed and locked the bedroom door.</p>
-                    
-                    <p>Moments later, the sound of the lock disengaging startled her.</p>
-                    
-                    <p>Vivian spun around to find Adrian standing in the doorway, his fingers clutching a silver key, his dark eyes locked onto her.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Taking her satchel from Gwendolyn&#39;s grasp, she added, &#34;I&#39;ll take this upstairs myself. I&#39;m exhausted and won&#39;t be joining dinner.&#34;</p>
+                        
+                        <p>Without awaiting response, she ascended the staircase.</p>
+                        
+                        <p>&#34;Warm the milk in the refrigerator and bring it to the master suite,&#34; Adrian instructed Gwendolyn before following Vivian.</p>
+                        
+                        <p>Upstairs, Vivian closed and locked the bedroom door.</p>
+                        
+                        <p>Moments later, the sound of the lock disengaging startled her.</p>
+                        
+                        <p>Vivian spun around to find Adrian standing in the doorway, his fingers clutching a silver key, his dark eyes locked onto her.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Her breath hitched as she scrambled to pull the silk robe over her bare shoulders. The fabric slipped through her trembling fingers twice before she managed to secure it.</p>
-                    
-                    <p>Moonlight traced the elegant curve of her spine, highlighting the delicate dip of her waist before flaring into the soft swell of her hips.</p>
-                    
-                    <p>Adrian remained motionless.</p>
-                    
-                    <p>His gaze traveled over the exposed skin of her back, cataloging every angry red mark marring her porcelain complexion.</p>
-                    
-                    <p>A muscle twitched in his jaw as fury and remorse twisted in his gut like twin vipers.</p>
-                    
-                    <p>Those crimson streaks were a brutal reminder of her pain - pain he&#39;d failed to shield her from.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Her breath hitched as she scrambled to pull the silk robe over her bare shoulders. The fabric slipped through her trembling fingers twice before she managed to secure it.</p>
+                        
+                        <p>Moonlight traced the elegant curve of her spine, highlighting the delicate dip of her waist before flaring into the soft swell of her hips.</p>
+                        
+                        <p>Adrian remained motionless.</p>
+                        
+                        <p>His gaze traveled over the exposed skin of her back, cataloging every angry red mark marring her porcelain complexion.</p>
+                        
+                        <p>A muscle twitched in his jaw as fury and remorse twisted in his gut like twin vipers.</p>
+                        
+                        <p>Those crimson streaks were a brutal reminder of her pain - pain he&#39;d failed to shield her from.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;Ever heard of knocking?&#34; she snapped, clutching the robe tighter around herself.</p>
-                    
-                    <p>Wordlessly, he crossed the room and guided her to sit on the edge of the four-poster bed.</p>
-                    
-                    <p>&#34;What now?&#34; Vivian exhaled sharply, irritation lacing her voice. &#34;I&#39;m exhausted, Adrian. Just let me sleep.&#34; She collapsed backward onto the duvet, her limbs heavy with fatigue.</p>
-                    
-                    <p>Adrian released a quiet sigh, his expression softening into something unbearably tender.</p>
-                    
-                    <p>As he reached to straighten her rumpled collar, Vivian&#39;s hand shot out to grip his wrist.</p>
-                    
-                    <p>Her eyes blazed with defiance. &#34;Is that all men think about? Even when I&#39;m...&#34; Her voice cracked. &#34;Look at me! Do you want to traumatize me further just to satisfy your—&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;Ever heard of knocking?&#34; she snapped, clutching the robe tighter around herself.</p>
+                        
+                        <p>Wordlessly, he crossed the room and guided her to sit on the edge of the four-poster bed.</p>
+                        
+                        <p>&#34;What now?&#34; Vivian exhaled sharply, irritation lacing her voice. &#34;I&#39;m exhausted, Adrian. Just let me sleep.&#34; She collapsed backward onto the duvet, her limbs heavy with fatigue.</p>
+                        
+                        <p>Adrian released a quiet sigh, his expression softening into something unbearably tender.</p>
+                        
+                        <p>As he reached to straighten her rumpled collar, Vivian&#39;s hand shot out to grip his wrist.</p>
+                        
+                        <p>Her eyes blazed with defiance. &#34;Is that all men think about? Even when I&#39;m...&#34; Her voice cracked. &#34;Look at me! Do you want to traumatize me further just to satisfy your—&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>The words died on her lips when Adrian produced a white medical kit from the nightstand. &#34;Iodine,&#34; he said simply, popping open the case. &#34;For your wounds. Not exactly the nefarious purpose you imagined.&#34; He shook his head, muttering, &#34;Ungrateful little thing.&#34;</p>
-                    
-                    <p>Vivian&#39;s cheeks burned.</p>
-                    
-                    <p>Mortified, she grabbed the oversized stuffed rabbit from the bed and pressed her face into its plush fur.</p>
-                    
-                    <p>&#34;Do you realize how ridiculous you look right now?&#34; Adrian&#39;s lips quirked as he soaked a cotton pad with antiseptic.</p>
-                    
-                    <p>Vivian remained motionless, her face still buried in the toy.</p>
-                    
-                    <p>His voice dropped to a teasing murmur, &#34;You know what they say about ostriches burying their heads in the sand?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>The words died on her lips when Adrian produced a white medical kit from the nightstand. &#34;Iodine,&#34; he said simply, popping open the case. &#34;For your wounds. Not exactly the nefarious purpose you imagined.&#34; He shook his head, muttering, &#34;Ungrateful little thing.&#34;</p>
+                        
+                        <p>Vivian&#39;s cheeks burned.</p>
+                        
+                        <p>Mortified, she grabbed the oversized stuffed rabbit from the bed and pressed her face into its plush fur.</p>
+                        
+                        <p>&#34;Do you realize how ridiculous you look right now?&#34; Adrian&#39;s lips quirked as he soaked a cotton pad with antiseptic.</p>
+                        
+                        <p>Vivian remained motionless, her face still buried in the toy.</p>
+                        
+                        <p>His voice dropped to a teasing murmur, &#34;You know what they say about ostriches burying their heads in the sand?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>She turned just enough to glare at him. &#34;That&#39;s a myth! Ostriches dig holes to turn their eggs, not to hide from predators.&#34;</p>
-                    
-                    <p>&#34;Is that so, my little ostrich?&#34; Adrian&#39;s eyes sparkled with mischief.</p>
-                    
-                    <p>Realizing he&#39;d compared her to the flightless bird, Vivian&#39;s flush deepened.</p>
-                    
-                    <p>She twisted to swat at him but jolted when her injured arm brushed against the metal first aid box.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>She turned just enough to glare at him. &#34;That&#39;s a myth! Ostriches dig holes to turn their eggs, not to hide from predators.&#34;</p>
+                        
+                        <p>&#34;Is that so, my little ostrich?&#34; Adrian&#39;s eyes sparkled with mischief.</p>
+                        
+                        <p>Realizing he&#39;d compared her to the flightless bird, Vivian&#39;s flush deepened.</p>
+                        
+                        <p>She twisted to swat at him but jolted when her injured arm brushed against the metal first aid box.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

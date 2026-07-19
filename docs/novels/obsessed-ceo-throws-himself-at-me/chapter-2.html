@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.153911">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.153911">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.340275">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.340275">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.153911",
-        "dateModified": "2026-07-19T02:47:19.153911",
+        "datePublished": "2026-07-19T13:03:14.340275",
+        "dateModified": "2026-07-19T13:03:14.340275",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,35 +893,39 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Chapter 2 I Am Your Father</p>
-                    
-                    <p>At the Southall residence.</p>
-                    
-                    <p>The entire place was set up for a birthday party.</p>
-                    
-                    <p>Shandie Southall, who was wearing the latest season’s dress from LV, was surrounded by socialites buttering her up.</p>
-                    
-                    <p>“Shandie, your dress is beautiful! It’s like a milky way.”</p>
-                    
-                    <p>“This is the dress from LV’s spring edition, isn’t it? I couldn’t even rent it, but you actually managed to buy it! Your dad is so nice to you!”</p>
-                    
-                    <p>“Happy birthday, Shandie. I heard Sam Sleight has offered you a role. You’re definitely going to be the most popular actress of the year. Don’t forget about us when you become famous.”</p>
-                    
-                    <p>“Who cares about the entertainment industry? Shannie’s just there for fun. Who is she? She’s Shandie Moore. It’s so easy for her to be famous.”</p>
-                    
-                    <p>Concealing the glee in her eyes, Shandie uttered, “Thank you very much. Let me go and check when the cake’s coming.”</p>
-                    
-                    <p>When Shandie returned to the mansion, she nearly collided with her mother, who was heading toward the outside.</p>
-                    
-                    <p>“Mom.” Lowering her voice, she whispered to Cindy Moore. “Has my cousin’s men returned yet? It’s my twentieth birthday today. I don’t want others to find out that our family has a girl who was kidnapped by human traffickers.”</p>
-                    
-                    <p>Lovingly tidying the edge of Shandie’s skirt, Cindy murmured, “No news is good news. Don’t worry. She won’t be able to come back. Even if she does, the traffickers had sold her to some faraway village. What can a country bumpkin like her do?”</p>
-                    
-                    <p>Shandie nodded in agreement. In fact, a part of her hoped that the country bumpkin would be able to return.</p>
-                    
-                    <p>That way, she would be able to relish the fact that she was the true daughter of a wealthy family.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Chapter 2 I Am Your Father</p>
+                        
+                        <p>At the Southall residence.</p>
+                        
+                        <p>The entire place was set up for a birthday party.</p>
+                        
+                        <p>Shandie Southall, who was wearing the latest season’s dress from LV, was surrounded by socialites buttering her up.</p>
+                        
+                        <p>“Shandie, your dress is beautiful! It’s like a milky way.”</p>
+                        
+                        <p>“This is the dress from LV’s spring edition, isn’t it? I couldn’t even rent it, but you actually managed to buy it! Your dad is so nice to you!”</p>
+                        
+                        <p>“Happy birthday, Shandie. I heard Sam Sleight has offered you a role. You’re definitely going to be the most popular actress of the year. Don’t forget about us when you become famous.”</p>
+                        
+                        <p>“Who cares about the entertainment industry? Shannie’s just there for fun. Who is she? She’s Shandie Moore. It’s so easy for her to be famous.”</p>
+                        
+                        <p>Concealing the glee in her eyes, Shandie uttered, “Thank you very much. Let me go and check when the cake’s coming.”</p>
+                        
+                        <p>When Shandie returned to the mansion, she nearly collided with her mother, who was heading toward the outside.</p>
+                        
+                        <p>“Mom.” Lowering her voice, she whispered to Cindy Moore. “Has my cousin’s men returned yet? It’s my twentieth birthday today. I don’t want others to find out that our family has a girl who was kidnapped by human traffickers.”</p>
+                        
+                        <p>Lovingly tidying the edge of Shandie’s skirt, Cindy murmured, “No news is good news. Don’t worry. She won’t be able to come back. Even if she does, the traffickers had sold her to some faraway village. What can a country bumpkin like her do?”</p>
+                        
+                        <p>Shandie nodded in agreement. In fact, a part of her hoped that the country bumpkin would be able to return.</p>
+                        
+                        <p>That way, she would be able to relish the fact that she was the true daughter of a wealthy family.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -900,35 +940,39 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>“Bad news, Mrs. Southall,” the housekeeper cried out as she rushed in. “A Nightshire helicopter landed on the lawn outside.</p>
-                    
-                    <p>“The Nightshires?” Shandie’s eyes lit up. “Mom, say, do you think Dad invited Vinson Nightshire?”</p>
-                    
-                    <p>Cindy was surprised as well.</p>
-                    
-                    <p>Although the Southalls were running one of the top businesses in the country, and they were one of the prominent families in Jadeborough, the Nightshires were one of the top families in the world.</p>
-                    
-                    <p>Vinson Nightshire was the heir of the Nightshire Group, and the Southalls still did not have the capability of inviting Vinson to their daughter’s birthday party.</p>
-                    
-                    <p>Maybe Vinson thinks that the business deal with our family is important?</p>
-                    
-                    <p>“Let’s have a look.” Cindy was perplexed, but it was a pleasant surprise for her.</p>
-                    
-                    <p>If our family gets to build a relationship with the Nightshires, we won’t need to worry about anything anymore.</p>
-                    
-                    <p>After the mother and daughter touched up their makeups, they then excitedly rushed toward the lawn.</p>
-                    
-                    <p>By then, a group of nouveau riche had already gathered on the lawn.</p>
-                    
-                    <p>The moment Shandie walked over, the socialites crowded around her with jealous looks.</p>
-                    
-                    <p>“Shannie, you actually invited the Nightshires! You’re amazing.”</p>
-                    
-                    <p>“How could you not have told me something as important as this? I should’ve hired a professional makeup artist to put on my makeup today.”</p>
-                    
-                    <p>Shandie smiled, but in her mind, she scoffed.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>“Bad news, Mrs. Southall,” the housekeeper cried out as she rushed in. “A Nightshire helicopter landed on the lawn outside.</p>
+                        
+                        <p>“The Nightshires?” Shandie’s eyes lit up. “Mom, say, do you think Dad invited Vinson Nightshire?”</p>
+                        
+                        <p>Cindy was surprised as well.</p>
+                        
+                        <p>Although the Southalls were running one of the top businesses in the country, and they were one of the prominent families in Jadeborough, the Nightshires were one of the top families in the world.</p>
+                        
+                        <p>Vinson Nightshire was the heir of the Nightshire Group, and the Southalls still did not have the capability of inviting Vinson to their daughter’s birthday party.</p>
+                        
+                        <p>Maybe Vinson thinks that the business deal with our family is important?</p>
+                        
+                        <p>“Let’s have a look.” Cindy was perplexed, but it was a pleasant surprise for her.</p>
+                        
+                        <p>If our family gets to build a relationship with the Nightshires, we won’t need to worry about anything anymore.</p>
+                        
+                        <p>After the mother and daughter touched up their makeups, they then excitedly rushed toward the lawn.</p>
+                        
+                        <p>By then, a group of nouveau riche had already gathered on the lawn.</p>
+                        
+                        <p>The moment Shandie walked over, the socialites crowded around her with jealous looks.</p>
+                        
+                        <p>“Shannie, you actually invited the Nightshires! You’re amazing.”</p>
+                        
+                        <p>“How could you not have told me something as important as this? I should’ve hired a professional makeup artist to put on my makeup today.”</p>
+                        
+                        <p>Shandie smiled, but in her mind, she scoffed.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -943,35 +987,39 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>The Nightshires are here for me. Why would you need to put on any makeup?</p>
-                    
-                    <p>I must have caught Vinson’s interest in the ceremony held by the Nightshires last month.</p>
-                    
-                    <p>I’m going to be Mrs. Nightshire soon!</p>
-                    
-                    <p>Right then, the helicopter door slowly opened.</p>
-                    
-                    <p>As everyone watched in anticipation, a young woman in ragged clothes jumped down from the vehicle.</p>
-                    
-                    <p>She was a slender young woman whose face was coated with dirt and dust. No one could see how she originally looked like. Even her hair was in a tangled mess as if she had not washed her head for an entire month.</p>
-                    
-                    <p>“What…”</p>
-                    
-                    <p>Everyone then turned to look at Shandie. Those who did not like her began mocking, “Shannie, is this your esteemed guest? A beggar?”</p>
-                    
-                    <p>Livid, Shandie stormed over and questioned, “Who are you? Who do you think you are to join my birthday party?”</p>
-                    
-                    <p>“Birthday party?” Instantly, Arielle realized who the arrogant girl was.</p>
-                    
-                    <p>it was known to others that she was Cindy’s adopted daughter, but the detective had told her that Shandie was actually Cindy and Henrick’s illegitimate child.</p>
-                    
-                    <p>He doesn’t even know whether his real daughter is dead or alive, but he’s holding a birthday party for his illegitimate daughter?</p>
-                    
-                    <p>Ha.</p>
-                    
-                    <p>“Who am I?” Arielle stared at the girl. “I am your father.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>The Nightshires are here for me. Why would you need to put on any makeup?</p>
+                        
+                        <p>I must have caught Vinson’s interest in the ceremony held by the Nightshires last month.</p>
+                        
+                        <p>I’m going to be Mrs. Nightshire soon!</p>
+                        
+                        <p>Right then, the helicopter door slowly opened.</p>
+                        
+                        <p>As everyone watched in anticipation, a young woman in ragged clothes jumped down from the vehicle.</p>
+                        
+                        <p>She was a slender young woman whose face was coated with dirt and dust. No one could see how she originally looked like. Even her hair was in a tangled mess as if she had not washed her head for an entire month.</p>
+                        
+                        <p>“What…”</p>
+                        
+                        <p>Everyone then turned to look at Shandie. Those who did not like her began mocking, “Shannie, is this your esteemed guest? A beggar?”</p>
+                        
+                        <p>Livid, Shandie stormed over and questioned, “Who are you? Who do you think you are to join my birthday party?”</p>
+                        
+                        <p>“Birthday party?” Instantly, Arielle realized who the arrogant girl was.</p>
+                        
+                        <p>it was known to others that she was Cindy’s adopted daughter, but the detective had told her that Shandie was actually Cindy and Henrick’s illegitimate child.</p>
+                        
+                        <p>He doesn’t even know whether his real daughter is dead or alive, but he’s holding a birthday party for his illegitimate daughter?</p>
+                        
+                        <p>Ha.</p>
+                        
+                        <p>“Who am I?” Arielle stared at the girl. “I am your father.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -986,35 +1034,39 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>“You—”</p>
-                    
-                    <p>Right as Shandie was about to lose her temper, Arielle belatedly added, “Your father’s real daughter.”</p>
-                    
-                    <p>Shandie froze, and the others around them instantly looked interested to watch the scene unfold.</p>
-                    
-                    <p>When Shandie came back to her senses, she stammered, “Y-You’re Arielle Moore?”</p>
-                    
-                    <p>That country bumpkin?</p>
-                    
-                    <p>She’s… really a country bumpkin, huh?</p>
-                    
-                    <p>Fortunately, Cindy was smarter than her daughter, for she hurried forward. “Arielle, is that you? I’ve been waiting for you for so long. My poor child, you’re finally back…”</p>
-                    
-                    <p>Arielle’s lips curled. “Hello, Aunt Cindy, it’s been a while.”</p>
-                    
-                    <p>Despite the smile on her lips, her tone was sarcastic.</p>
-                    
-                    <p>My mother’s younger sister married my father? My father married my aunt?</p>
-                    
-                    <p>What nonsense is this?</p>
-                    
-                    <p>Something must be up.</p>
-                    
-                    <p>The guests began whispering to each other. “I heard that Mrs. Southall used to be the previous Mrs. Southall’s sister.”</p>
-                    
-                    <p>“This must be Ms. Moore, who was kidnapped by human traffickers ten years ago.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“You—”</p>
+                        
+                        <p>Right as Shandie was about to lose her temper, Arielle belatedly added, “Your father’s real daughter.”</p>
+                        
+                        <p>Shandie froze, and the others around them instantly looked interested to watch the scene unfold.</p>
+                        
+                        <p>When Shandie came back to her senses, she stammered, “Y-You’re Arielle Moore?”</p>
+                        
+                        <p>That country bumpkin?</p>
+                        
+                        <p>She’s… really a country bumpkin, huh?</p>
+                        
+                        <p>Fortunately, Cindy was smarter than her daughter, for she hurried forward. “Arielle, is that you? I’ve been waiting for you for so long. My poor child, you’re finally back…”</p>
+                        
+                        <p>Arielle’s lips curled. “Hello, Aunt Cindy, it’s been a while.”</p>
+                        
+                        <p>Despite the smile on her lips, her tone was sarcastic.</p>
+                        
+                        <p>My mother’s younger sister married my father? My father married my aunt?</p>
+                        
+                        <p>What nonsense is this?</p>
+                        
+                        <p>Something must be up.</p>
+                        
+                        <p>The guests began whispering to each other. “I heard that Mrs. Southall used to be the previous Mrs. Southall’s sister.”</p>
+                        
+                        <p>“This must be Ms. Moore, who was kidnapped by human traffickers ten years ago.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1029,35 +1081,39 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>“The Southalls used to be Moores; Henrick Southall actually married into the Moore family. Once Maureen Moore died, the Moores all took on the family name Southall instead.”</p>
-                    
-                    <p>“That actually happened? Seriously…”</p>
-                    
-                    <p>Upon hearing their chatters, embarrassment flooded Cindy’s mind. She cleared her throat and muttered, “Darling, as long as you’re back. I’ll bring you to wash up. Look at you. You’re so… dirty. You must have had a difficult life in the countryside.”</p>
-                    
-                    <p>She’s still reminding others that I came from the countryside. It seems like she really hates me.</p>
-                    
-                    <p>Right as Arielle was about to speak, a low voice sounded out behind her. “Hey.”</p>
-                    
-                    <p>Everyone immediately turned to the owner of the voice. Once they saw the person coming down from the helicopter, they stiffened.</p>
-                    
-                    <p>It was Vinson.</p>
-                    
-                    <p>It was Vinson, whose every move dictated the global economy.</p>
-                    
-                    <p>“Mr. Nightshire?” Shandie excitedly darted forward to welcome him. “A-Are you here to join my birthday party? Thank you!”</p>
-                    
-                    <p>Shandie could not conceal the joy in her eyes, and the blush on her face was for all to see.</p>
-                    
-                    <p>At the start, she thought Vinson had only sent someone to send her birthday greetings, but it turned out Vinson himself came.</p>
-                    
-                    <p>The time for my spring—the time for my happy life—has come!</p>
-                    
-                    <p>If she could, she would have jumped in joy.</p>
-                    
-                    <p>Those around her were casting envious looks at her.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>“The Southalls used to be Moores; Henrick Southall actually married into the Moore family. Once Maureen Moore died, the Moores all took on the family name Southall instead.”</p>
+                        
+                        <p>“That actually happened? Seriously…”</p>
+                        
+                        <p>Upon hearing their chatters, embarrassment flooded Cindy’s mind. She cleared her throat and muttered, “Darling, as long as you’re back. I’ll bring you to wash up. Look at you. You’re so… dirty. You must have had a difficult life in the countryside.”</p>
+                        
+                        <p>She’s still reminding others that I came from the countryside. It seems like she really hates me.</p>
+                        
+                        <p>Right as Arielle was about to speak, a low voice sounded out behind her. “Hey.”</p>
+                        
+                        <p>Everyone immediately turned to the owner of the voice. Once they saw the person coming down from the helicopter, they stiffened.</p>
+                        
+                        <p>It was Vinson.</p>
+                        
+                        <p>It was Vinson, whose every move dictated the global economy.</p>
+                        
+                        <p>“Mr. Nightshire?” Shandie excitedly darted forward to welcome him. “A-Are you here to join my birthday party? Thank you!”</p>
+                        
+                        <p>Shandie could not conceal the joy in her eyes, and the blush on her face was for all to see.</p>
+                        
+                        <p>At the start, she thought Vinson had only sent someone to send her birthday greetings, but it turned out Vinson himself came.</p>
+                        
+                        <p>The time for my spring—the time for my happy life—has come!</p>
+                        
+                        <p>If she could, she would have jumped in joy.</p>
+                        
+                        <p>Those around her were casting envious looks at her.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1072,35 +1128,39 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Although she was just an adopted daughter, she seemed to have gotten Vinson’s attention. She had nothing but good days ahead of her.</p>
-                    
-                    <p>Yet, in the next second…</p>
-                    
-                    <p>“Who are you?”</p>
-                    
-                    <p>Vinson’s brows knitted as if he had just noticed Shandie. The impatience and confusion in his eyes were visible to everyone.</p>
-                    
-                    <p>Vinson did not know the woman in front of him.</p>
-                    
-                    <p>“Pft—” Some of the guests could not hold back their laughter.</p>
-                    
-                    <p>“I thought Mr. Nightshire was here to wish Shandie a happy birthday, but it turns out he doesn’t even know who she is.”</p>
-                    
-                    <p>“Hahaha! This is hilarious. If I were her, I’d bury my whole body in the sands and never come back out.”</p>
-                    
-                    <p>At that moment, Shandie’s expression changed from delight to shock, then to embarrassment. In the end, she glared at the two laughing socialites.</p>
-                    
-                    <p>At the end of the day, Cindy was the quickest to recover. She stepped forward and said, “Mr. Nightshire, we didn’t know you’d be coming today. What an honor for us to have you come. It’s my daughter’s birthday today, so she thought you were here to wish her a happy birthday. It seems like you’re here to discuss the business collaboration with Rick. He’s upstairs, so please come in.”</p>
-                    
-                    <p>The mocking gazes from the guests instantly disappeared.</p>
-                    
-                    <p>It was also an honor to have Vinson go to his business partner’s place to discuss a deal.</p>
-                    
-                    <p>Yet, once again, in the next second…</p>
-                    
-                    <p>“Do I know you?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Although she was just an adopted daughter, she seemed to have gotten Vinson’s attention. She had nothing but good days ahead of her.</p>
+                        
+                        <p>Yet, in the next second…</p>
+                        
+                        <p>“Who are you?”</p>
+                        
+                        <p>Vinson’s brows knitted as if he had just noticed Shandie. The impatience and confusion in his eyes were visible to everyone.</p>
+                        
+                        <p>Vinson did not know the woman in front of him.</p>
+                        
+                        <p>“Pft—” Some of the guests could not hold back their laughter.</p>
+                        
+                        <p>“I thought Mr. Nightshire was here to wish Shandie a happy birthday, but it turns out he doesn’t even know who she is.”</p>
+                        
+                        <p>“Hahaha! This is hilarious. If I were her, I’d bury my whole body in the sands and never come back out.”</p>
+                        
+                        <p>At that moment, Shandie’s expression changed from delight to shock, then to embarrassment. In the end, she glared at the two laughing socialites.</p>
+                        
+                        <p>At the end of the day, Cindy was the quickest to recover. She stepped forward and said, “Mr. Nightshire, we didn’t know you’d be coming today. What an honor for us to have you come. It’s my daughter’s birthday today, so she thought you were here to wish her a happy birthday. It seems like you’re here to discuss the business collaboration with Rick. He’s upstairs, so please come in.”</p>
+                        
+                        <p>The mocking gazes from the guests instantly disappeared.</p>
+                        
+                        <p>It was also an honor to have Vinson go to his business partner’s place to discuss a deal.</p>
+                        
+                        <p>Yet, once again, in the next second…</p>
+                        
+                        <p>“Do I know you?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1115,27 +1175,31 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Cindy’s gesture of invitation froze midair.</p>
-                    
-                    <p>Mr. Nightshire… doesn’t know me?</p>
-                    
-                    <p>Once again, the guests were trying to hold themselves back from laughing.</p>
-                    
-                    <p>Is the mother-and-daughter duo here for comedic purposes?</p>
-                    
-                    <p>Cindy was internally cringing from the awkwardness.</p>
-                    
-                    <p>If Vinson doesn’t know me, then who’s he here for?</p>
-                    
-                    <p>All of a sudden, she recalled that the Arielle Moore that everyone looked down on had come out of Vinson’s helicopter.</p>
-                    
-                    <p>Arielle’s appearance had been too sudden and shocking, as she was in such a disheveled state. For a long moment, she simply could not think that Vinson and Arielle might be connected.</p>
-                    
-                    <p>Does Arielle know Vinson?</p>
-                    
-                    <p>Right as that thought emerged in her mind, she saw Vinson walking past her toward Arielle.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Cindy’s gesture of invitation froze midair.</p>
+                        
+                        <p>Mr. Nightshire… doesn’t know me?</p>
+                        
+                        <p>Once again, the guests were trying to hold themselves back from laughing.</p>
+                        
+                        <p>Is the mother-and-daughter duo here for comedic purposes?</p>
+                        
+                        <p>Cindy was internally cringing from the awkwardness.</p>
+                        
+                        <p>If Vinson doesn’t know me, then who’s he here for?</p>
+                        
+                        <p>All of a sudden, she recalled that the Arielle Moore that everyone looked down on had come out of Vinson’s helicopter.</p>
+                        
+                        <p>Arielle’s appearance had been too sudden and shocking, as she was in such a disheveled state. For a long moment, she simply could not think that Vinson and Arielle might be connected.</p>
+                        
+                        <p>Does Arielle know Vinson?</p>
+                        
+                        <p>Right as that thought emerged in her mind, she saw Vinson walking past her toward Arielle.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2451,6 +2515,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2577,7 +2721,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2619,32 +2762,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2655,21 +2780,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2702,6 +2817,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2722,20 +2843,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

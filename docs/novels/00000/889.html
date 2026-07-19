@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>When he returned to the private courtyard intending to suggest their departure, the scene before him made the words die in his throat. Vivian and Audrey, wrapped in plush white robes, were laughing like schoolgirls as they dangled their feet in the steaming mineral waters.</p>
-                    
-                    <p>Vivian noticed him first, tilting her head in that curious way she had. &#34;What were you and Julian discussing for so long?&#34;</p>
-                    
-                    <p>&#34;Just corporate matters,&#34; Adrian replied with deliberate casualness, though his jaw tightened imperceptibly.</p>
-                    
-                    <p>Assuming it was merely business negotiations between powerful men, Vivian didn&#39;t probe further. Instead, she asked, &#34;How do you two know each other anyway?&#34;</p>
-                    
-                    <p>Internally, she marveled at this revelation. Adrian had known Julian for years - further proof of the Montclair heir&#39;s substantial influence. Yet she couldn&#39;t recall any Blackwood family connections to the Montclairs.</p>
-                    
-                    <p>Adrian&#39;s usually controlled voice carried an edge of irritation. &#34;Our paths crossed years ago. We&#39;re hardly close.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>When he returned to the private courtyard intending to suggest their departure, the scene before him made the words die in his throat. Vivian and Audrey, wrapped in plush white robes, were laughing like schoolgirls as they dangled their feet in the steaming mineral waters.</p>
+                        
+                        <p>Vivian noticed him first, tilting her head in that curious way she had. &#34;What were you and Julian discussing for so long?&#34;</p>
+                        
+                        <p>&#34;Just corporate matters,&#34; Adrian replied with deliberate casualness, though his jaw tightened imperceptibly.</p>
+                        
+                        <p>Assuming it was merely business negotiations between powerful men, Vivian didn&#39;t probe further. Instead, she asked, &#34;How do you two know each other anyway?&#34;</p>
+                        
+                        <p>Internally, she marveled at this revelation. Adrian had known Julian for years - further proof of the Montclair heir&#39;s substantial influence. Yet she couldn&#39;t recall any Blackwood family connections to the Montclairs.</p>
+                        
+                        <p>Adrian&#39;s usually controlled voice carried an edge of irritation. &#34;Our paths crossed years ago. We&#39;re hardly close.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Why this sudden fascination with Julian? She even addressed him with such familiarity, as if they shared some intimate history. An unfamiliar tightness coiled in Adrian&#39;s chest, though he&#39;d never admit it was jealousy.</p>
-                    
-                    <p>Dominic, ever the instigator, shot Adrian a mischievous grin. &#34;What&#39;s this? Is the great Adrian Blackwood actually jealous?&#34;</p>
-                    
-                    <p>Audrey rolled her eyes before cutting in sharply, &#34;Why would he be? They&#39;re practically divorced already.&#34;</p>
-                    
-                    <p>Dominic&#39;s expression turned comically alarmed as he subtly tugged at Audrey&#39;s sleeve. She jerked away with a scoff. &#34;What? Suddenly we&#39;re censoring the truth now?&#34;</p>
-                    
-                    <p>Adrian ignored Audrey entirely, instead fixing Dominic with a glare that could freeze lava. If looks could kill, Dominic would&#39;ve been vaporized on the spot.</p>
-                    
-                    <p>&#34;Couples fight,&#34; Dominic offered weakly, rubbing the back of his neck. &#34;They&#39;re not actually going through with the divorce, right?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Why this sudden fascination with Julian? She even addressed him with such familiarity, as if they shared some intimate history. An unfamiliar tightness coiled in Adrian&#39;s chest, though he&#39;d never admit it was jealousy.</p>
+                        
+                        <p>Dominic, ever the instigator, shot Adrian a mischievous grin. &#34;What&#39;s this? Is the great Adrian Blackwood actually jealous?&#34;</p>
+                        
+                        <p>Audrey rolled her eyes before cutting in sharply, &#34;Why would he be? They&#39;re practically divorced already.&#34;</p>
+                        
+                        <p>Dominic&#39;s expression turned comically alarmed as he subtly tugged at Audrey&#39;s sleeve. She jerked away with a scoff. &#34;What? Suddenly we&#39;re censoring the truth now?&#34;</p>
+                        
+                        <p>Adrian ignored Audrey entirely, instead fixing Dominic with a glare that could freeze lava. If looks could kill, Dominic would&#39;ve been vaporized on the spot.</p>
+                        
+                        <p>&#34;Couples fight,&#34; Dominic offered weakly, rubbing the back of his neck. &#34;They&#39;re not actually going through with the divorce, right?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Audrey planted her hands on her hips. &#34;Please. That precious Lise has practically moved into Blackwood Manor already.&#34;</p>
-                    
-                    <p>&#34;You really think they can all play happy family under one roof?&#34;</p>
-                    
-                    <p>The atmosphere turned suffocating. Vivian, unwilling to drag her friend deeper into this mess, was about to change the subject when a staff member approached with a polite bow.</p>
-                    
-                    <p>&#34;Mr. Pembroke has arranged for the entire resort to be at your private disposal. All other guests have been discreetly relocated.&#34;</p>
-                    
-                    <p>Audrey tapped her chin thoughtfully. &#34;In case any staff wander by, let&#39;s move to the indoor pool. A movie and some champagne in the water sounds perfect right now.&#34;</p>
-                    
-                    <p>The suggestion was met with unanimous approval.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Audrey planted her hands on her hips. &#34;Please. That precious Lise has practically moved into Blackwood Manor already.&#34;</p>
+                        
+                        <p>&#34;You really think they can all play happy family under one roof?&#34;</p>
+                        
+                        <p>The atmosphere turned suffocating. Vivian, unwilling to drag her friend deeper into this mess, was about to change the subject when a staff member approached with a polite bow.</p>
+                        
+                        <p>&#34;Mr. Pembroke has arranged for the entire resort to be at your private disposal. All other guests have been discreetly relocated.&#34;</p>
+                        
+                        <p>Audrey tapped her chin thoughtfully. &#34;In case any staff wander by, let&#39;s move to the indoor pool. A movie and some champagne in the water sounds perfect right now.&#34;</p>
+                        
+                        <p>The suggestion was met with unanimous approval.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Meanwhile, in the resort&#39;s main villa, Mr. Pembroke sat wringing his hands, his normally composed demeanor fraying at the edges. The same staff member returned to find him pacing anxiously. &#34;Sir? Is everything alright?&#34;</p>
-                    
-                    <p>The man was Mr. Pembroke&#39;s most trusted aide, renowned for his razor-sharp intellect and uncanny ability to read situations.</p>
-                    
-                    <p>Mr. Pembroke exhaled heavily, his shoulders slumping. &#34;I&#39;ve made a grave miscalculation today. Mr. Montclair might have me dismissed by morning. Back in Crestwood, I was just another errand boy, but this position was supposed to be my big break. The salary alone was triple what I earned before. Today&#39;s blunder could cost me everything.&#34;</p>
-                    
-                    <p>His assistant attempted to console him. &#34;You&#39;ve already evacuated the premises, and the families you relocated hold significant sway in Willowbrook. I doubt Mr. Montclair will remain angry for long.&#34;</p>
-                    
-                    <p>A disbelieving laugh escaped Mr. Pembroke&#39;s lips. &#34;In all my years, I&#39;ve never seen Mr—&#34;</p>
-                    
-                    <p>&#34;Montclair show such devotion to any woman. I made some discreet inquiries. They say he walked away from a billion-sterling deal without hesitation, all because of her.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Meanwhile, in the resort&#39;s main villa, Mr. Pembroke sat wringing his hands, his normally composed demeanor fraying at the edges. The same staff member returned to find him pacing anxiously. &#34;Sir? Is everything alright?&#34;</p>
+                        
+                        <p>The man was Mr. Pembroke&#39;s most trusted aide, renowned for his razor-sharp intellect and uncanny ability to read situations.</p>
+                        
+                        <p>Mr. Pembroke exhaled heavily, his shoulders slumping. &#34;I&#39;ve made a grave miscalculation today. Mr. Montclair might have me dismissed by morning. Back in Crestwood, I was just another errand boy, but this position was supposed to be my big break. The salary alone was triple what I earned before. Today&#39;s blunder could cost me everything.&#34;</p>
+                        
+                        <p>His assistant attempted to console him. &#34;You&#39;ve already evacuated the premises, and the families you relocated hold significant sway in Willowbrook. I doubt Mr. Montclair will remain angry for long.&#34;</p>
+                        
+                        <p>A disbelieving laugh escaped Mr. Pembroke&#39;s lips. &#34;In all my years, I&#39;ve never seen Mr—&#34;</p>
+                        
+                        <p>&#34;Montclair show such devotion to any woman. I made some discreet inquiries. They say he walked away from a billion-sterling deal without hesitation, all because of her.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>The assistant&#39;s eyes gleamed with sudden inspiration. &#34;Mr. Pembroke, perhaps this isn&#39;t a disaster, but rather... an opportunity?&#34;</p>
-                    
-                    <p>&#34;What sort of opportunity?&#34; Mr. Pembroke&#39;s voice held cautious hope.</p>
-                    
-                    <p>Leaning in conspiratorially, the assistant lowered his voice. &#34;If Mr. Montclair is this infatuated, why not arrange for the woman to be sent directly to his chambers? Turn your mistake into an act of service. He might reward you handsomely for such... consideration.&#34;</p>
-                    
-                    <p>Inside Seabreeze Villa, Adrian reclined in the steaming mineral pool, his muscular arms resting along the stone edge. Dominic sat beside him, fingers flying across his gaming console with the intensity of a general commanding troops. Every button press echoed through the tranquil space like miniature explosions.</p>
-                    
-                    <p>Audrey discreetly raised her phone, capturing a candid shot of Vivian leaning against the pool&#39;s mosaic tiles. The faint shutter sound made Adrian&#39;s eyelids flicker momentarily.</p>
-                    
-                    <p>Memories assaulted Adrian—visions of Vivian beneath him, those same water droplets replaced by sweat, her lips parted in ecstasy. The recollection sent heat pooling low in his abdomen. He clenched his jaw, forcing his eyes shut and his thoughts toward business matters.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>The assistant&#39;s eyes gleamed with sudden inspiration. &#34;Mr. Pembroke, perhaps this isn&#39;t a disaster, but rather... an opportunity?&#34;</p>
+                        
+                        <p>&#34;What sort of opportunity?&#34; Mr. Pembroke&#39;s voice held cautious hope.</p>
+                        
+                        <p>Leaning in conspiratorially, the assistant lowered his voice. &#34;If Mr. Montclair is this infatuated, why not arrange for the woman to be sent directly to his chambers? Turn your mistake into an act of service. He might reward you handsomely for such... consideration.&#34;</p>
+                        
+                        <p>Inside Seabreeze Villa, Adrian reclined in the steaming mineral pool, his muscular arms resting along the stone edge. Dominic sat beside him, fingers flying across his gaming console with the intensity of a general commanding troops. Every button press echoed through the tranquil space like miniature explosions.</p>
+                        
+                        <p>Audrey discreetly raised her phone, capturing a candid shot of Vivian leaning against the pool&#39;s mosaic tiles. The faint shutter sound made Adrian&#39;s eyelids flicker momentarily.</p>
+                        
+                        <p>Memories assaulted Adrian—visions of Vivian beneath him, those same water droplets replaced by sweat, her lips parted in ecstasy. The recollection sent heat pooling low in his abdomen. He clenched his jaw, forcing his eyes shut and his thoughts toward business matters.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Unaware of Adrian&#39;s heated gaze, Audrey tucked her phone away with flushed cheeks. &#34;That&#39;s it, I&#39;m done!&#34; she announced, scrambling from the water. &#34;I can&#39;t take another minute of this sauna. Honestly, I can barely breathe!&#34;</p>
-                    
-                    <p>Dominic, having just defeated his digital nemesis, set aside the console with a triumphant smirk. &#34;Pathetic stamina. We&#39;ve been soaking what—twenty minutes? And you&#39;re already surrendering?&#34;</p>
-                    
-                    <p>Audrey turned to Vivian for support. &#34;Do you hear how he talks? Absolutely no tact whatsoever!&#34;</p>
-                    
-                    <p>Dominic stretched lazily, his grin widening. &#34;Just calling it like I see it.&#34;</p>
-                    
-                    <p>&#34;Four of us here, and you&#39;re the only one turning into a cooked lobster. Admit it—you&#39;re embarrassingly out of shape.&#34; With theatrical flair, he flexed his arms, water cascading from his defined biceps. &#34;Unlike yours truly. These bad boys? Pure Crystalpeak Range endurance. Could hike those trails backward and still have energy to spare.&#34;</p>
-                    
-                    <p>Audrey&#39;s eye roll could have powered a small turbine. &#34;Congratulations. You&#39;ve officially become a walking gym advertisement.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Unaware of Adrian&#39;s heated gaze, Audrey tucked her phone away with flushed cheeks. &#34;That&#39;s it, I&#39;m done!&#34; she announced, scrambling from the water. &#34;I can&#39;t take another minute of this sauna. Honestly, I can barely breathe!&#34;</p>
+                        
+                        <p>Dominic, having just defeated his digital nemesis, set aside the console with a triumphant smirk. &#34;Pathetic stamina. We&#39;ve been soaking what—twenty minutes? And you&#39;re already surrendering?&#34;</p>
+                        
+                        <p>Audrey turned to Vivian for support. &#34;Do you hear how he talks? Absolutely no tact whatsoever!&#34;</p>
+                        
+                        <p>Dominic stretched lazily, his grin widening. &#34;Just calling it like I see it.&#34;</p>
+                        
+                        <p>&#34;Four of us here, and you&#39;re the only one turning into a cooked lobster. Admit it—you&#39;re embarrassingly out of shape.&#34; With theatrical flair, he flexed his arms, water cascading from his defined biceps. &#34;Unlike yours truly. These bad boys? Pure Crystalpeak Range endurance. Could hike those trails backward and still have energy to spare.&#34;</p>
+                        
+                        <p>Audrey&#39;s eye roll could have powered a small turbine. &#34;Congratulations. You&#39;ve officially become a walking gym advertisement.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,13 +1079,17 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Vivian rose gracefully, stretching her limbs. &#34;Actually, I&#39;m starting to feel it too. This heat is more intense than I expected.&#34; Her damp hair clung to her shoulders as she moved toward the steps.</p>
-                    
-                    <p>Adrian remained silent, his eyes closed in deliberate indifference. The tension in the air was palpable.</p>
-                    
-                    <p>Dominic wisely swallowed his next remark when he noticed Vivian&#39;s stiff posture. Picking a fight with two people when Adrian clearly wouldn&#39;t back him up? Not worth it. He exhaled sharply through his nose.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Vivian rose gracefully, stretching her limbs. &#34;Actually, I&#39;m starting to feel it too. This heat is more intense than I expected.&#34; Her damp hair clung to her shoulders as she moved toward the steps.</p>
+                        
+                        <p>Adrian remained silent, his eyes closed in deliberate indifference. The tension in the air was palpable.</p>
+                        
+                        <p>Dominic wisely swallowed his next remark when he noticed Vivian&#39;s stiff posture. Picking a fight with two people when Adrian clearly wouldn&#39;t back him up? Not worth it. He exhaled sharply through his nose.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2341,6 +2405,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2467,7 +2611,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2509,32 +2652,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2545,21 +2670,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2592,6 +2707,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2612,20 +2733,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

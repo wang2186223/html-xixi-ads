@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Vivian offered a polite but distant smile. &#34;Thank you, Dominic. I&#39;ll take you to dinner sometime.&#34;</p>
-                    
-                    <p>Gasps rippled through the crowd. Vivian had been wearing a fortune around her neck all evening.</p>
-                    
-                    <p>Bianca&#39;s nails dug into her palms as she glared at Vivian. Why did everyone obsess over her? Even Dominic, whom she&#39;d adored for years, seemed like Vivian&#39;s personal assistant.</p>
-                    
-                    <p>Unable to contain herself, Bianca stepped forward, sweetness lacing her venom. &#34;Vivian, we&#39;ve heard about everyone&#39;s gifts, but you still haven&#39;t answered my question. Didn&#39;t you bring anything for Beatrice?&#34;</p>
-                    
-                    <p>Adrian&#39;s expression darkened instantly. &#34;Any gift from me is from Vivian as well,&#34; he stated coldly.</p>
-                    
-                    <p>Beatrice quickly nodded in agreement. &#34;Of course. They&#39;re a couple - one gift is perfectly appropriate.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Vivian offered a polite but distant smile. &#34;Thank you, Dominic. I&#39;ll take you to dinner sometime.&#34;</p>
+                        
+                        <p>Gasps rippled through the crowd. Vivian had been wearing a fortune around her neck all evening.</p>
+                        
+                        <p>Bianca&#39;s nails dug into her palms as she glared at Vivian. Why did everyone obsess over her? Even Dominic, whom she&#39;d adored for years, seemed like Vivian&#39;s personal assistant.</p>
+                        
+                        <p>Unable to contain herself, Bianca stepped forward, sweetness lacing her venom. &#34;Vivian, we&#39;ve heard about everyone&#39;s gifts, but you still haven&#39;t answered my question. Didn&#39;t you bring anything for Beatrice?&#34;</p>
+                        
+                        <p>Adrian&#39;s expression darkened instantly. &#34;Any gift from me is from Vivian as well,&#34; he stated coldly.</p>
+                        
+                        <p>Beatrice quickly nodded in agreement. &#34;Of course. They&#39;re a couple - one gift is perfectly appropriate.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Bianca pressed on, her smile sharp. &#34;But Beatrice, I&#39;m just concerned. You&#39;ve been so generous to Vivian, yet she couldn&#39;t be bothered to prepare anything personally? Doesn&#39;t that seem... ungrateful?&#34;</p>
-                    
-                    <p>Vivian met Bianca&#39;s gaze steadily, a faint smile playing on her lips. &#34;What makes you think I didn&#39;t prepare something?&#34;</p>
-                    
-                    <p>Vivian&#39;s smile was like the first golden light of dawn melting winter&#39;s last frost, revealing a hidden radiance that made Adrian lose his breath for a moment.</p>
-                    
-                    <p>He&#39;d always been wary of women who stirred drama, especially within the complex web of his family. Before, Bianca had constantly thrown veiled insults at Vivian. Whenever Adrian noticed, he&#39;d offer gentle admonishments. Vivian would always respond with that same serene smile, brushing off the tension as unimportant. But he was a wolf—how could his mate be a timid lamb?</p>
-                    
-                    <p>The Vivian standing before him now ignited something primal in his chest.</p>
-                    
-                    <p>&#34;Bianca,&#34; Vivian spoke, her voice like honey laced with steel. &#34;You&#39;ve been so... persistent about this gift. Those who know you might call it thoughtfulness. But to outsiders, it might look like you simply can&#39;t stand seeing me shine.&#34; Her tone danced between playful and cutting, effortlessly exposing Bianca&#39;s true intentions.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Bianca pressed on, her smile sharp. &#34;But Beatrice, I&#39;m just concerned. You&#39;ve been so generous to Vivian, yet she couldn&#39;t be bothered to prepare anything personally? Doesn&#39;t that seem... ungrateful?&#34;</p>
+                        
+                        <p>Vivian met Bianca&#39;s gaze steadily, a faint smile playing on her lips. &#34;What makes you think I didn&#39;t prepare something?&#34;</p>
+                        
+                        <p>Vivian&#39;s smile was like the first golden light of dawn melting winter&#39;s last frost, revealing a hidden radiance that made Adrian lose his breath for a moment.</p>
+                        
+                        <p>He&#39;d always been wary of women who stirred drama, especially within the complex web of his family. Before, Bianca had constantly thrown veiled insults at Vivian. Whenever Adrian noticed, he&#39;d offer gentle admonishments. Vivian would always respond with that same serene smile, brushing off the tension as unimportant. But he was a wolf—how could his mate be a timid lamb?</p>
+                        
+                        <p>The Vivian standing before him now ignited something primal in his chest.</p>
+                        
+                        <p>&#34;Bianca,&#34; Vivian spoke, her voice like honey laced with steel. &#34;You&#39;ve been so... persistent about this gift. Those who know you might call it thoughtfulness. But to outsiders, it might look like you simply can&#39;t stand seeing me shine.&#34; Her tone danced between playful and cutting, effortlessly exposing Bianca&#39;s true intentions.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Bianca&#39;s face twisted in irritation. &#34;If you&#39;ve actually prepared something, why the secrecy? Stop playing games!&#34;</p>
-                    
-                    <p>Vivian turned to Beatrice with genuine warmth. &#34;My gift is a performance. I&#39;ll share it after dinner.&#34;</p>
-                    
-                    <p>Adrian adjusted his cufflinks, eyebrows lifting in surprise. He hadn&#39;t expected this from Vivian, and curiosity burned through him. She was the same woman, yet fundamentally different—constantly defying his expectations.</p>
-                    
-                    <p>Bianca&#39;s mocking laugh sliced through the moment. &#34;A performance? Please don&#39;t tell me you&#39;re planning some amateur theatrics for our entertainment?&#34;</p>
-                    
-                    <p>Where Vivian exuded quiet grace, Bianca&#39;s exaggerated reactions seemed almost crude in comparison.</p>
-                    
-                    <p>Beatrice&#39;s commanding voice cut through the tension. &#34;Enough!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Bianca&#39;s face twisted in irritation. &#34;If you&#39;ve actually prepared something, why the secrecy? Stop playing games!&#34;</p>
+                        
+                        <p>Vivian turned to Beatrice with genuine warmth. &#34;My gift is a performance. I&#39;ll share it after dinner.&#34;</p>
+                        
+                        <p>Adrian adjusted his cufflinks, eyebrows lifting in surprise. He hadn&#39;t expected this from Vivian, and curiosity burned through him. She was the same woman, yet fundamentally different—constantly defying his expectations.</p>
+                        
+                        <p>Bianca&#39;s mocking laugh sliced through the moment. &#34;A performance? Please don&#39;t tell me you&#39;re planning some amateur theatrics for our entertainment?&#34;</p>
+                        
+                        <p>Where Vivian exuded quiet grace, Bianca&#39;s exaggerated reactions seemed almost crude in comparison.</p>
+                        
+                        <p>Beatrice&#39;s commanding voice cut through the tension. &#34;Enough!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Bianca froze, her bravado crumbling instantly. In her eagerness to one-up Vivian, she&#39;d forgotten one crucial fact—Beatrice Blackwood wasn&#39;t someone you crossed lightly. As a distant relative of the Blackwood family, Bianca knew her place; she had no right to criticize Beatrice&#39;s chosen granddaughter-in-law.</p>
-                    
-                    <p>The crowd&#39;s murmurs shifted, their earlier skepticism about Vivian now turning into quiet disdain for the Thornton family. Comments about their failing business ventures and Bianca&#39;s lack of decorum floated through the air like poisoned darts. Bianca felt their judgment like physical blows. She scanned the room desperately, her gaze landing on Margaret. But Margaret&#39;s attention was elsewhere, focused on Dominic who was typing on his phone with a smirk that suggested private amusement.</p>
-                    
-                    <p>Bianca&#39;s instincts screamed danger. As Adrian and Vivian escorted Beatrice gracefully toward the Seabreeze Villa&#39;s dining room, Bianca&#39;s eyes burned into Vivian&#39;s retreating back. After a moment&#39;s hesitation, she squared her shoulders and marched toward Dominic.</p>
-                    
-                    <p>Her voice dripped saccharine sweetness as she called, &#34;Dominic.&#34;</p>
-                    
-                    <p>Startled, Dominic took an exaggerated step back. When their eyes met, he relaxed dramatically, clutching his chest with a theatrical gasp. &#34;Bianca! You move like a shadow—nearly gave me a coronary sneaking up like that. What are you, some kind of specter?&#34;</p>
-                    
-                    <p>Bianca blinked, thrown by the comparison. A specter? Wasn&#39;t she the picture of elegance? Still, she swallowed her irritation. This was her chance to get closer to Dominic Sinclair, and she wouldn&#39;t waste it.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Bianca froze, her bravado crumbling instantly. In her eagerness to one-up Vivian, she&#39;d forgotten one crucial fact—Beatrice Blackwood wasn&#39;t someone you crossed lightly. As a distant relative of the Blackwood family, Bianca knew her place; she had no right to criticize Beatrice&#39;s chosen granddaughter-in-law.</p>
+                        
+                        <p>The crowd&#39;s murmurs shifted, their earlier skepticism about Vivian now turning into quiet disdain for the Thornton family. Comments about their failing business ventures and Bianca&#39;s lack of decorum floated through the air like poisoned darts. Bianca felt their judgment like physical blows. She scanned the room desperately, her gaze landing on Margaret. But Margaret&#39;s attention was elsewhere, focused on Dominic who was typing on his phone with a smirk that suggested private amusement.</p>
+                        
+                        <p>Bianca&#39;s instincts screamed danger. As Adrian and Vivian escorted Beatrice gracefully toward the Seabreeze Villa&#39;s dining room, Bianca&#39;s eyes burned into Vivian&#39;s retreating back. After a moment&#39;s hesitation, she squared her shoulders and marched toward Dominic.</p>
+                        
+                        <p>Her voice dripped saccharine sweetness as she called, &#34;Dominic.&#34;</p>
+                        
+                        <p>Startled, Dominic took an exaggerated step back. When their eyes met, he relaxed dramatically, clutching his chest with a theatrical gasp. &#34;Bianca! You move like a shadow—nearly gave me a coronary sneaking up like that. What are you, some kind of specter?&#34;</p>
+                        
+                        <p>Bianca blinked, thrown by the comparison. A specter? Wasn&#39;t she the picture of elegance? Still, she swallowed her irritation. This was her chance to get closer to Dominic Sinclair, and she wouldn&#39;t waste it.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Forcing patience into her voice, she asked, &#34;Who has you so engrossed? You seemed completely absorbed.&#34;</p>
-                    
-                    <p>Dominic glanced at his phone, his lips curving into an involuntary smile at the playful profile picture lighting up his screen. With a careless swipe, he exited the messaging app. &#34;Just one of my cousins,&#34; he explained casually. &#34;She&#39;s searching for an apartment near her university, and one of her classmates happens to know the area well.&#34;</p>
-                    
-                    <p>A quiet chuckle escaped him as he recalled the sharp wit and offbeat humor of the girl he&#39;d been texting. It had been ages since someone had intrigued him this effortlessly.</p>
-                    
-                    <p>Bianca&#39;s interest waned instantly at the mention of family. &#34;Oh, your cousin,&#34; she murmured, her tone flat. Without hesitation, she pivoted the conversation. &#34;Dominic, why don&#39;t I introduce you to Adrian&#39;s grandfather inside?&#34;</p>
-                    
-                    <p>His gaze swept across the garden, taking in the elegant crowd admiring the meticulously arranged flowers. Recognizing he was out of place among such refined company, he nodded and followed Bianca indoors.</p>
-                    
-                    <p>In a secluded corner of the grand living room, Margaret sat by the sunlit window, her movements precise as she brewed coffee. She had no desire to confront Vivian directly—such a scene would only create unnecessary tension. Nor did she wish to play the gracious, doting mother-in-law for their guests. Instead, she sought refuge in this quiet nook, savoring a moment of peace amidst the party&#39;s lively hum.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Forcing patience into her voice, she asked, &#34;Who has you so engrossed? You seemed completely absorbed.&#34;</p>
+                        
+                        <p>Dominic glanced at his phone, his lips curving into an involuntary smile at the playful profile picture lighting up his screen. With a careless swipe, he exited the messaging app. &#34;Just one of my cousins,&#34; he explained casually. &#34;She&#39;s searching for an apartment near her university, and one of her classmates happens to know the area well.&#34;</p>
+                        
+                        <p>A quiet chuckle escaped him as he recalled the sharp wit and offbeat humor of the girl he&#39;d been texting. It had been ages since someone had intrigued him this effortlessly.</p>
+                        
+                        <p>Bianca&#39;s interest waned instantly at the mention of family. &#34;Oh, your cousin,&#34; she murmured, her tone flat. Without hesitation, she pivoted the conversation. &#34;Dominic, why don&#39;t I introduce you to Adrian&#39;s grandfather inside?&#34;</p>
+                        
+                        <p>His gaze swept across the garden, taking in the elegant crowd admiring the meticulously arranged flowers. Recognizing he was out of place among such refined company, he nodded and followed Bianca indoors.</p>
+                        
+                        <p>In a secluded corner of the grand living room, Margaret sat by the sunlit window, her movements precise as she brewed coffee. She had no desire to confront Vivian directly—such a scene would only create unnecessary tension. Nor did she wish to play the gracious, doting mother-in-law for their guests. Instead, she sought refuge in this quiet nook, savoring a moment of peace amidst the party&#39;s lively hum.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Leonard observed her practiced hands as she poured the rich, aromatic brew. &#34;Among the Blackwoods,&#34; he remarked with appreciation, &#34;no one makes coffee quite like you.&#34;</p>
-                    
-                    <p>Margaret offered him a graceful smile. &#34;Leonard, I&#39;m flattered, but drinking coffee this late might leave you restless all night.&#34;</p>
-                    
-                    <p>&#34;Margaret, could you prepare some for Vivian and Adrian as well?&#34;</p>
-                    
-                    <p>Before she could finish, Beatrice entered with Vivian and Adrian in tow. Vivian greeted them warmly. &#34;Leonard, Margaret.&#34;</p>
-                    
-                    <p>Leonard, well-versed in the couple&#39;s marital struggles thanks to Margaret&#39;s confidences, studied them thoughtfully. With the wisdom of his years, he offered gentle counsel. &#34;Marriage is never without its challenges. Even the strongest couples face storms. What matters is understanding each other and nurturing that bond.&#34;</p>
-                    
-                    <p>To Vivian&#39;s astonishment, Adrian responded without hesitation. Closing the distance between them, he draped an arm around her slender waist in a display of intimacy. &#34;We&#39;ll do exactly that. With any luck, by next year&#39;s gathering, you&#39;ll be holding your great-grandchild.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Leonard observed her practiced hands as she poured the rich, aromatic brew. &#34;Among the Blackwoods,&#34; he remarked with appreciation, &#34;no one makes coffee quite like you.&#34;</p>
+                        
+                        <p>Margaret offered him a graceful smile. &#34;Leonard, I&#39;m flattered, but drinking coffee this late might leave you restless all night.&#34;</p>
+                        
+                        <p>&#34;Margaret, could you prepare some for Vivian and Adrian as well?&#34;</p>
+                        
+                        <p>Before she could finish, Beatrice entered with Vivian and Adrian in tow. Vivian greeted them warmly. &#34;Leonard, Margaret.&#34;</p>
+                        
+                        <p>Leonard, well-versed in the couple&#39;s marital struggles thanks to Margaret&#39;s confidences, studied them thoughtfully. With the wisdom of his years, he offered gentle counsel. &#34;Marriage is never without its challenges. Even the strongest couples face storms. What matters is understanding each other and nurturing that bond.&#34;</p>
+                        
+                        <p>To Vivian&#39;s astonishment, Adrian responded without hesitation. Closing the distance between them, he draped an arm around her slender waist in a display of intimacy. &#34;We&#39;ll do exactly that. With any luck, by next year&#39;s gathering, you&#39;ll be holding your great-grandchild.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Vivian&#39;s eyes widened. For a man as notoriously reserved and pragmatic as Adrian, such a declaration—especially in front of family—was utterly uncharacteristic. Her mind raced with questions.</p>
-                    
-                    <p>Had he truly considered this? Where exactly did he plan to procure this great-grandchild? Surely not from her—was he thinking of Serena and her unborn child instead?</p>
-                    
-                    <p>Adrian&#39;s sharp gaze caught her racing thoughts, her expressive eyes flickering with suspicion. A faint smirk touched his lips, but he remained silent.</p>
-                    
-                    <p>Leonard, however, was delighted by the prospect. His face lit up with a broad smile. &#34;Marvelous! Four generations under one roof would be a true blessing.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Vivian&#39;s eyes widened. For a man as notoriously reserved and pragmatic as Adrian, such a declaration—especially in front of family—was utterly uncharacteristic. Her mind raced with questions.</p>
+                        
+                        <p>Had he truly considered this? Where exactly did he plan to procure this great-grandchild? Surely not from her—was he thinking of Serena and her unborn child instead?</p>
+                        
+                        <p>Adrian&#39;s sharp gaze caught her racing thoughts, her expressive eyes flickering with suspicion. A faint smirk touched his lips, but he remained silent.</p>
+                        
+                        <p>Leonard, however, was delighted by the prospect. His face lit up with a broad smile. &#34;Marvelous! Four generations under one roof would be a true blessing.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

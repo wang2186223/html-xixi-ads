@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:32.729357">
-    <meta property="article:modified_time" content="2026-07-19T02:47:32.729357">
+    <meta property="article:published_time" content="2026-07-19T13:03:27.040826">
+    <meta property="article:modified_time" content="2026-07-19T13:03:27.040826">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:32">
+    <meta name="last-modified" content="2026-07-19 13:03:27">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:32.729357",
-        "dateModified": "2026-07-19T02:47:32.729357",
+        "datePublished": "2026-07-19T13:03:27.040826",
+        "dateModified": "2026-07-19T13:03:27.040826",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,27 +893,31 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Paul&#39;s incessant chatter buzzed in Ella&#39;s ears like an annoying fly, casting shadows under her lashes as she tried to maintain her composure.</p>
-                    
-                    <p>The bright lights illuminated Austin and Judith, creating a picture-perfect scene.</p>
-                    
-                    <p>Austin&#39;s gaze briefly met Ella&#39;s before he deliberately looked away.</p>
-                    
-                    <p>Taking a deep breath, Ella shook off Paul&#39;s grip and glared at him furiously. &#34;Go get your eyes checked if you&#39;re blind. Which of your stupid eyes saw envy in me?&#34;</p>
-                    
-                    <p>&#34;Stupid eyes?&#34; Paul&#39;s mouth twitched, clearly stunned by her response.</p>
-                    
-                    <p>This wasn&#39;t the Ella who typically endured everything in silence.</p>
-                    
-                    <p>Her voice wasn&#39;t loud, but it attracted attention from those nearby.</p>
-                    
-                    <p>&#34;Who&#39;s that? So rude.&#34;</p>
-                    
-                    <p>&#34;Isn&#39;t that from Summit Technologies Group? I wanted to check out their brochure, but let&#39;s stay away now.&#34;</p>
-                    
-                    <p>&#34;Can&#39;t believe a representative from such a big company at a business summit would use such language.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Paul&#39;s incessant chatter buzzed in Ella&#39;s ears like an annoying fly, casting shadows under her lashes as she tried to maintain her composure.</p>
+                        
+                        <p>The bright lights illuminated Austin and Judith, creating a picture-perfect scene.</p>
+                        
+                        <p>Austin&#39;s gaze briefly met Ella&#39;s before he deliberately looked away.</p>
+                        
+                        <p>Taking a deep breath, Ella shook off Paul&#39;s grip and glared at him furiously. &#34;Go get your eyes checked if you&#39;re blind. Which of your stupid eyes saw envy in me?&#34;</p>
+                        
+                        <p>&#34;Stupid eyes?&#34; Paul&#39;s mouth twitched, clearly stunned by her response.</p>
+                        
+                        <p>This wasn&#39;t the Ella who typically endured everything in silence.</p>
+                        
+                        <p>Her voice wasn&#39;t loud, but it attracted attention from those nearby.</p>
+                        
+                        <p>&#34;Who&#39;s that? So rude.&#34;</p>
+                        
+                        <p>&#34;Isn&#39;t that from Summit Technologies Group? I wanted to check out their brochure, but let&#39;s stay away now.&#34;</p>
+                        
+                        <p>&#34;Can&#39;t believe a representative from such a big company at a business summit would use such language.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -892,27 +932,31 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>The small crowd that had been drawn to their promotional materials quickly dispersed.</p>
-                    
-                    <p>Paul, seeing this, smiled smugly. &#34;Everyone can see the truth. Even if you&#39;ve latched onto Summit Technologies, you&#39;re just a housewife dreaming of becoming a career woman. You&#39;ll never measure up to Judith-not in</p>
-                    
-                    <p>education or family background.&#34;</p>
-                    
-                    <p>Rather than arguing, Ella looked at him with disdain before turning away to start fresh.</p>
-                    
-                    <p>Paul watched her proud,retreating figure with mounting anger.</p>
-                    
-                    <p>According to his calculations, after being humiliated like that, she should have been too ashamed to appear before Austin.</p>
-                    
-                    <p>Why did she keep following Austin everywhere he went?</p>
-                    
-                    <p>Frustrated, Paul eventually returned to Austin&#39;s side.</p>
-                    
-                    <p>Austin was engaged in conversation with an investor,enthusiastically promoting Judith.</p>
-                    
-                    <p>The investor was clearly impressed with Judith, expressing interest in potential collaboration.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>The small crowd that had been drawn to their promotional materials quickly dispersed.</p>
+                        
+                        <p>Paul, seeing this, smiled smugly. &#34;Everyone can see the truth. Even if you&#39;ve latched onto Summit Technologies, you&#39;re just a housewife dreaming of becoming a career woman. You&#39;ll never measure up to Judith-not in</p>
+                        
+                        <p>education or family background.&#34;</p>
+                        
+                        <p>Rather than arguing, Ella looked at him with disdain before turning away to start fresh.</p>
+                        
+                        <p>Paul watched her proud,retreating figure with mounting anger.</p>
+                        
+                        <p>According to his calculations, after being humiliated like that, she should have been too ashamed to appear before Austin.</p>
+                        
+                        <p>Why did she keep following Austin everywhere he went?</p>
+                        
+                        <p>Frustrated, Paul eventually returned to Austin&#39;s side.</p>
+                        
+                        <p>Austin was engaged in conversation with an investor,enthusiastically promoting Judith.</p>
+                        
+                        <p>The investor was clearly impressed with Judith, expressing interest in potential collaboration.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -927,27 +971,31 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>After the person left, Paul grabbed a bottle of water from the table,unscrewed it, and took a gulp.</p>
-                    
-                    <p>&#34;Ella&#39;s out of her mind,&#34; he said bitterly.</p>
-                    
-                    <p>&#34;She upset you again?&#34;</p>
-                    
-                    <p>&#34;I was just hoping she&#39;d realize her place and stop following Austin around,but she called me blind.&#34;</p>
-                    
-                    <p>Paul drained the bottle and set it aside, crossing his arms as he glared at Ella&#39;s busy figure across the room.</p>
-                    
-                    <p>She was still handing out flyers, moving through the crowd undeterred despite repeated rejections.</p>
-                    
-                    <p>&#34;Look at her-isn&#39;t she shameless?&#34; He sneered.</p>
-                    
-                    <p>Judith&#39;s eyes gleamed with satisfaction, though her words conveyed sympathy. &#34;Don&#39;t be angry at Ella. I&#39;m sure she dloesn&#39;t mean it.&#34;</p>
-                    
-                    <p>She sighed compassionately. &#34;She&#39;s quite pitiful.&#34;</p>
-                    
-                    <p>&#34;She deserves it for wasting years of Austin&#39;s life. It&#39;s karma!&#34; Paul snorted dismissively.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>After the person left, Paul grabbed a bottle of water from the table,unscrewed it, and took a gulp.</p>
+                        
+                        <p>&#34;Ella&#39;s out of her mind,&#34; he said bitterly.</p>
+                        
+                        <p>&#34;She upset you again?&#34;</p>
+                        
+                        <p>&#34;I was just hoping she&#39;d realize her place and stop following Austin around,but she called me blind.&#34;</p>
+                        
+                        <p>Paul drained the bottle and set it aside, crossing his arms as he glared at Ella&#39;s busy figure across the room.</p>
+                        
+                        <p>She was still handing out flyers, moving through the crowd undeterred despite repeated rejections.</p>
+                        
+                        <p>&#34;Look at her-isn&#39;t she shameless?&#34; He sneered.</p>
+                        
+                        <p>Judith&#39;s eyes gleamed with satisfaction, though her words conveyed sympathy. &#34;Don&#39;t be angry at Ella. I&#39;m sure she dloesn&#39;t mean it.&#34;</p>
+                        
+                        <p>She sighed compassionately. &#34;She&#39;s quite pitiful.&#34;</p>
+                        
+                        <p>&#34;She deserves it for wasting years of Austin&#39;s life. It&#39;s karma!&#34; Paul snorted dismissively.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -962,27 +1010,31 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Though Judith maintained a concerned expression, inside, she was secretly delighted.</p>
-                    
-                    <p>&#39;Ella, everything-both the man and your career-belongs to me. Don&#39;t even think about competing with me.&#39; She thought to herself.</p>
-                    
-                    <p>Ella moved against the crowd, offering flyers. &#34;This is Summit Technologies Group&#39;s Prometheus Project. We&#39;re launching a breakthrough AI software.&#34;</p>
-                    
-                    <p>Before she could finish, she was jostled by the surging crowd.</p>
-                    
-                    <p>Just then, a strong hand gripped her arm.</p>
-                    
-                    <p>Ella looked up to see Anthony Gonzalez, and her expression softened.&#34;Anthony.&#34;</p>
-                    
-                    <p>&#34;Watch where you&#39;re going,&#34; he said with a warm smile, pulling her behind him.</p>
-                    
-                    <p>After steadying herself, he released her arm and gentlemanly cleared a path,leading her awway from the crowd.</p>
-                    
-                    <p>As the noise of the crowd faded, he smiled, &#34;You came to the summit for that project you asked me to help expand your investor network for?&#34;</p>
-                    
-                    <p>She nodded eagerly, her eyes filled with hope. &#34;Yes, I want to raise awareness at the summit, so when the product exchange meeting comes.we can suaccessfully market it.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Though Judith maintained a concerned expression, inside, she was secretly delighted.</p>
+                        
+                        <p>&#39;Ella, everything-both the man and your career-belongs to me. Don&#39;t even think about competing with me.&#39; She thought to herself.</p>
+                        
+                        <p>Ella moved against the crowd, offering flyers. &#34;This is Summit Technologies Group&#39;s Prometheus Project. We&#39;re launching a breakthrough AI software.&#34;</p>
+                        
+                        <p>Before she could finish, she was jostled by the surging crowd.</p>
+                        
+                        <p>Just then, a strong hand gripped her arm.</p>
+                        
+                        <p>Ella looked up to see Anthony Gonzalez, and her expression softened.&#34;Anthony.&#34;</p>
+                        
+                        <p>&#34;Watch where you&#39;re going,&#34; he said with a warm smile, pulling her behind him.</p>
+                        
+                        <p>After steadying herself, he released her arm and gentlemanly cleared a path,leading her awway from the crowd.</p>
+                        
+                        <p>As the noise of the crowd faded, he smiled, &#34;You came to the summit for that project you asked me to help expand your investor network for?&#34;</p>
+                        
+                        <p>She nodded eagerly, her eyes filled with hope. &#34;Yes, I want to raise awareness at the summit, so when the product exchange meeting comes.we can suaccessfully market it.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -997,27 +1049,31 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;Let me see.&#34;</p>
-                    
-                    <p>Anthony had specifically inquired about the Prometheus Project after escorting Ella home that day.</p>
-                    
-                    <p>He&#39;d heard the project had significant innovations and had achieved breakthrough developments in AI.</p>
-                    
-                    <p>Compared to existing AI products on the market, Anthony believed Prometheus might create a new technological era.</p>
-                    
-                    <p>Moreover, he had always respected Ella&#39;s abilities.</p>
-                    
-                    <p>After briefly reviewing the promotional material, he looked up and said,&#34;You&#39;re as impressive as you were when we were younger. Always excelling at whatever you do.&#34;</p>
-                    
-                    <p>&#34;This is Summit Technologies&#39; promotional language. I&#39;m just partnering with them,&#34; Ella explained modestly.</p>
-                    
-                    <p>Anthony tucked the flyer away and led her to meet several major investors.</p>
-                    
-                    <p>Ella felt somewhat overwhelmed by his support, but he reassured her.&#34;Some of these people will be judges at your product exchange meeting.You should network with them-it might help your project.&#34;</p>
-                    
-                    <p>&#34;Anthony, I... I don&#39;t want to impose,&#34; Ella hesitated, nervously clutching the edge of her skirt.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;Let me see.&#34;</p>
+                        
+                        <p>Anthony had specifically inquired about the Prometheus Project after escorting Ella home that day.</p>
+                        
+                        <p>He&#39;d heard the project had significant innovations and had achieved breakthrough developments in AI.</p>
+                        
+                        <p>Compared to existing AI products on the market, Anthony believed Prometheus might create a new technological era.</p>
+                        
+                        <p>Moreover, he had always respected Ella&#39;s abilities.</p>
+                        
+                        <p>After briefly reviewing the promotional material, he looked up and said,&#34;You&#39;re as impressive as you were when we were younger. Always excelling at whatever you do.&#34;</p>
+                        
+                        <p>&#34;This is Summit Technologies&#39; promotional language. I&#39;m just partnering with them,&#34; Ella explained modestly.</p>
+                        
+                        <p>Anthony tucked the flyer away and led her to meet several major investors.</p>
+                        
+                        <p>Ella felt somewhat overwhelmed by his support, but he reassured her.&#34;Some of these people will be judges at your product exchange meeting.You should network with them-it might help your project.&#34;</p>
+                        
+                        <p>&#34;Anthony, I... I don&#39;t want to impose,&#34; Ella hesitated, nervously clutching the edge of her skirt.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1032,27 +1088,31 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Seeing her endearing uncertainty, Anthony gently touched her head. &#34;The</p>
-                    
-                    <p>business world runs on relationships, Ella. If you don&#39;t want to use connections, plenty of others will gladly leverage relationships to get opportunities. Are you sure you don&#39;t want to take advantage of my network?&#34;</p>
-                    
-                    <p>If Judith could use Austin to build connections, why couldn&#39;t she do the same?</p>
-                    
-                    <p>In the profit-driven market, who truly succeeded without any help?</p>
-                    
-                    <p>She needed to learn to use the available resources.</p>
-                    
-                    <p>Through Anthony&#39;s introductions, Ella quickly engaged in deep discussions about the Prometheus Project.</p>
-                    
-                    <p>Meanwhile, Paul returned from the restroom and spotted Ella standing with Anthony.</p>
-                    
-                    <p>He hurriedly reported back to Austin.</p>
-                    
-                    <p>&#34;Austin, Ella is so calculating. She&#39;s with Anthony now, probably trying to make you jealous. That&#39;s Kenneth&#39;s grandson! Who knows what tricks she&#39;s using?&#34;</p>
-                    
-                    <p>Judith scanned the summit venue and confirmed that Ella was indeed missing from the Summit Technologies corner.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Seeing her endearing uncertainty, Anthony gently touched her head. &#34;The</p>
+                        
+                        <p>business world runs on relationships, Ella. If you don&#39;t want to use connections, plenty of others will gladly leverage relationships to get opportunities. Are you sure you don&#39;t want to take advantage of my network?&#34;</p>
+                        
+                        <p>If Judith could use Austin to build connections, why couldn&#39;t she do the same?</p>
+                        
+                        <p>In the profit-driven market, who truly succeeded without any help?</p>
+                        
+                        <p>She needed to learn to use the available resources.</p>
+                        
+                        <p>Through Anthony&#39;s introductions, Ella quickly engaged in deep discussions about the Prometheus Project.</p>
+                        
+                        <p>Meanwhile, Paul returned from the restroom and spotted Ella standing with Anthony.</p>
+                        
+                        <p>He hurriedly reported back to Austin.</p>
+                        
+                        <p>&#34;Austin, Ella is so calculating. She&#39;s with Anthony now, probably trying to make you jealous. That&#39;s Kenneth&#39;s grandson! Who knows what tricks she&#39;s using?&#34;</p>
+                        
+                        <p>Judith scanned the summit venue and confirmed that Ella was indeed missing from the Summit Technologies corner.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1067,25 +1127,29 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>She lowered her gaze, feeling uneusy.</p>
-                    
-                    <p>&#34;Austin, you don&#39;t think Ella is approaching Anthony just to impress the judges,do you?&#34; Judith asked with concern.</p>
-                    
-                    <p>She&#39;d learned from inside sources that Anthony was one of the judges for the product exchange meeting, given his status as the renowned Kenneth&#39;s</p>
-                    
-                    <p>grandson.</p>
-                    
-                    <p>Austin lowered his eyelids, his expression impassive as if Paul&#39;s words hadn&#39;t affected him. &#34;Don&#39;t worry about it. She won&#39;t be at the product exchange meeting.&#34;</p>
-                    
-                    <p>&#34;Why not?&#34; Judith asked, puzzled.</p>
-                    
-                    <p>Just then, Austin&#39;s phone rang, and he stepped aside to answer it.</p>
-                    
-                    <p>As he leaned against the wall near the entrance, one long leg slightly bent with his foot against the wall, he had a clear view of Ella laughing and conversing with the investors, with Anthony standing protectively nearby.</p>
-                    
-                    <p>After finishing his call, Austin noticed Ella had spotted him as well.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>She lowered her gaze, feeling uneusy.</p>
+                        
+                        <p>&#34;Austin, you don&#39;t think Ella is approaching Anthony just to impress the judges,do you?&#34; Judith asked with concern.</p>
+                        
+                        <p>She&#39;d learned from inside sources that Anthony was one of the judges for the product exchange meeting, given his status as the renowned Kenneth&#39;s</p>
+                        
+                        <p>grandson.</p>
+                        
+                        <p>Austin lowered his eyelids, his expression impassive as if Paul&#39;s words hadn&#39;t affected him. &#34;Don&#39;t worry about it. She won&#39;t be at the product exchange meeting.&#34;</p>
+                        
+                        <p>&#34;Why not?&#34; Judith asked, puzzled.</p>
+                        
+                        <p>Just then, Austin&#39;s phone rang, and he stepped aside to answer it.</p>
+                        
+                        <p>As he leaned against the wall near the entrance, one long leg slightly bent with his foot against the wall, he had a clear view of Ella laughing and conversing with the investors, with Anthony standing protectively nearby.</p>
+                        
+                        <p>After finishing his call, Austin noticed Ella had spotted him as well.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2401,6 +2465,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2527,7 +2671,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2569,32 +2712,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2605,21 +2730,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2652,6 +2767,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2672,20 +2793,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

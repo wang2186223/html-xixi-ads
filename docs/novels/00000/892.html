@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>The attendant&#39;s voice was honey-smooth. &#34;We have full security measures, sir. Your friend will be perfectly safe with us.&#34;</p>
-                    
-                    <p>Audrey waved dismissively over her shoulder as the attendant led her away. &#34;Relax, Dom! I&#39;m a big girl!&#34;</p>
-                    
-                    <p>Dominic watched them go, unease coiling in his gut. Something about the attendant&#39;s overly eager demeanor set off alarm bells in his mind.</p>
-                    
-                    <p>&#34;I&#39;ll pamper myself with a spa day while I&#39;m there!&#34; Audrey declared, dismissing his concern with a flick of her wrist.</p>
-                    
-                    <p>With a determined grip, she pulled the attendant along. &#34;Tell me everything about your signature treatments. I want the full experience.&#34;</p>
-                    
-                    <p>Dominic remained rooted in place, watching her retreating figure until it vanished around the corner. After a brief pause, he exhaled sharply and turned back toward Seabreeze Villa.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>The attendant&#39;s voice was honey-smooth. &#34;We have full security measures, sir. Your friend will be perfectly safe with us.&#34;</p>
+                        
+                        <p>Audrey waved dismissively over her shoulder as the attendant led her away. &#34;Relax, Dom! I&#39;m a big girl!&#34;</p>
+                        
+                        <p>Dominic watched them go, unease coiling in his gut. Something about the attendant&#39;s overly eager demeanor set off alarm bells in his mind.</p>
+                        
+                        <p>&#34;I&#39;ll pamper myself with a spa day while I&#39;m there!&#34; Audrey declared, dismissing his concern with a flick of her wrist.</p>
+                        
+                        <p>With a determined grip, she pulled the attendant along. &#34;Tell me everything about your signature treatments. I want the full experience.&#34;</p>
+                        
+                        <p>Dominic remained rooted in place, watching her retreating figure until it vanished around the corner. After a brief pause, he exhaled sharply and turned back toward Seabreeze Villa.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>He knelt on the sofa, his fingers working deftly at the buttons of her blouse.</p>
-                    
-                    <p>Vivian found herself momentarily lost in the heat of his touch.</p>
-                    
-                    <p>But a quick glance around the room snapped her back to awareness. &#34;Adrian, wait!&#34;</p>
-                    
-                    <p>He misinterpreted her hesitation as playful resistance.</p>
-                    
-                    <p>His skilled fingers traced circles against her most sensitive spot as he leaned in, his voice husky. &#34;Tell me you don&#39;t want this.&#34;</p>
-                    
-                    <p>Vivian&#39;s breath came in shallow gasps, her chest rising and falling rapidly.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>He knelt on the sofa, his fingers working deftly at the buttons of her blouse.</p>
+                        
+                        <p>Vivian found herself momentarily lost in the heat of his touch.</p>
+                        
+                        <p>But a quick glance around the room snapped her back to awareness. &#34;Adrian, wait!&#34;</p>
+                        
+                        <p>He misinterpreted her hesitation as playful resistance.</p>
+                        
+                        <p>His skilled fingers traced circles against her most sensitive spot as he leaned in, his voice husky. &#34;Tell me you don&#39;t want this.&#34;</p>
+                        
+                        <p>Vivian&#39;s breath came in shallow gasps, her chest rising and falling rapidly.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>She suppressed a moan, her voice barely audible. &#34;Not here...&#34;</p>
-                    
-                    <p>Her eyes darted toward the entrance. &#34;Audrey and Dominic could return any minute...&#34;</p>
-                    
-                    <p>Adrian paused briefly before withdrawing.</p>
-                    
-                    <p>Reaching above her, he activated the smart lock system with a decisive press.</p>
-                    
-                    <p>The electronic chime signaled their privacy as he murmured, &#34;Relax. No one&#39;s interrupting us now.&#34; Vivian attempted to sit up, her momentary clarity breaking through the haze.</p>
-                    
-                    <p>The movement brought her lips dangerously close to his belt buckle.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>She suppressed a moan, her voice barely audible. &#34;Not here...&#34;</p>
+                        
+                        <p>Her eyes darted toward the entrance. &#34;Audrey and Dominic could return any minute...&#34;</p>
+                        
+                        <p>Adrian paused briefly before withdrawing.</p>
+                        
+                        <p>Reaching above her, he activated the smart lock system with a decisive press.</p>
+                        
+                        <p>The electronic chime signaled their privacy as he murmured, &#34;Relax. No one&#39;s interrupting us now.&#34; Vivian attempted to sit up, her momentary clarity breaking through the haze.</p>
+                        
+                        <p>The movement brought her lips dangerously close to his belt buckle.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>His masculine scent - warm with hints of sandalwood - permeated the fabric, making her pulse quicken.</p>
-                    
-                    <p>Adrian stilled for a heartbeat before swiftly undoing his belt.</p>
-                    
-                    <p>His voice dropped to a rough whisper. &#34;Show me what that pretty mouth can do.&#34;</p>
-                    
-                    <p>Suddenly all those times she&#39;d felt overwhelmed made perfect sense, leaving her both intrigued and slightly apprehensive.</p>
-                    
-                    <p>He exhaled impatiently, his fingers threading through her hair to guide her closer.</p>
-                    
-                    <p>Despite her inexperience, she didn&#39;t resist.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>His masculine scent - warm with hints of sandalwood - permeated the fabric, making her pulse quicken.</p>
+                        
+                        <p>Adrian stilled for a heartbeat before swiftly undoing his belt.</p>
+                        
+                        <p>His voice dropped to a rough whisper. &#34;Show me what that pretty mouth can do.&#34;</p>
+                        
+                        <p>Suddenly all those times she&#39;d felt overwhelmed made perfect sense, leaving her both intrigued and slightly apprehensive.</p>
+                        
+                        <p>He exhaled impatiently, his fingers threading through her hair to guide her closer.</p>
+                        
+                        <p>Despite her inexperience, she didn&#39;t resist.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Earlier in Seabreeze Villa, Adrian had carried Vivian into the living room and deposited her gently on the plush sofa.</p>
-                    
-                    <p>Yet even after setting her down, he remained hovering close, unwilling to break contact.</p>
-                    
-                    <p>Vivian gazed up at him, her brow furrowing slightly in confusion.</p>
-                    
-                    <p>Vivian&#39;s eyes shimmered with playful mischief, her gaze dancing over Adrian&#39;s face like sunlight on water.</p>
-                    
-                    <p>Without warning, she closed the distance between them, her lips meeting his in a featherlight caress.</p>
-                    
-                    <p>The contact lasted mere seconds - a tentative exploration that left her pulse racing.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Earlier in Seabreeze Villa, Adrian had carried Vivian into the living room and deposited her gently on the plush sofa.</p>
+                        
+                        <p>Yet even after setting her down, he remained hovering close, unwilling to break contact.</p>
+                        
+                        <p>Vivian gazed up at him, her brow furrowing slightly in confusion.</p>
+                        
+                        <p>Vivian&#39;s eyes shimmered with playful mischief, her gaze dancing over Adrian&#39;s face like sunlight on water.</p>
+                        
+                        <p>Without warning, she closed the distance between them, her lips meeting his in a featherlight caress.</p>
+                        
+                        <p>The contact lasted mere seconds - a tentative exploration that left her pulse racing.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>She&#39;d become surprisingly adept at reading his reactions, at knowing precisely how to provoke that delicious tension in his jaw.</p>
-                    
-                    <p>Experience, it turned out, was the best teacher of all.</p>
-                    
-                    <p>Where once she would have blushed and stammered, now she moved with newfound confidence.</p>
-                    
-                    <p>That timid girl who&#39;d first arrived in Crestwood seemed like a distant memory now.</p>
-                    
-                    <p>Countless stolen moments had rewritten her body&#39;s responses, leaving her attuned to his every movement.</p>
-                    
-                    <p>Adrian had been restraining himself since their interrupted encounter in the library.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>She&#39;d become surprisingly adept at reading his reactions, at knowing precisely how to provoke that delicious tension in his jaw.</p>
+                        
+                        <p>Experience, it turned out, was the best teacher of all.</p>
+                        
+                        <p>Where once she would have blushed and stammered, now she moved with newfound confidence.</p>
+                        
+                        <p>That timid girl who&#39;d first arrived in Crestwood seemed like a distant memory now.</p>
+                        
+                        <p>Countless stolen moments had rewritten her body&#39;s responses, leaving her attuned to his every movement.</p>
+                        
+                        <p>Adrian had been restraining himself since their interrupted encounter in the library.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,9 +1079,13 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>But that whisper-soft kiss shattered his resolve completely.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>But that whisper-soft kiss shattered his resolve completely.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2337,6 +2401,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2463,7 +2607,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2505,32 +2648,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2541,21 +2666,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2588,6 +2703,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2608,20 +2729,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

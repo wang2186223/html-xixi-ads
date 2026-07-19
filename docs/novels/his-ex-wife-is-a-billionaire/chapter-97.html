@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.323618">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.323618">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.332129">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.332129">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.323618",
-        "dateModified": "2026-07-19T02:47:23.323618",
+        "datePublished": "2026-07-19T13:03:18.332129",
+        "dateModified": "2026-07-19T13:03:18.332129",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,27 +893,31 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>A flood of shame was raging against Thaddeus. Jareth was watching all this, his heart aching.</p>
-                    
-                    <p>His opponent was too strong. What should he do? He’s desperate for an answer!</p>
-                    
-                    <p>Evadne gratefully said, “Mr. Hamiltion, thank you for your kindness…”</p>
-                    
-                    <p>“Alright, it’s your birthday today, let’s not talk about unpleasant things.” Frederic rushed forward with a smile, “Let’s see the birthday gifts the kids have prepared for you? After the gifts, we can start the party, we shouldn’t keep the guests waiting too long.”</p>
-                    
-                    <p>“Yes! Let’s open the gifts, open the gifts!” Hamiltion rubbed his hands together with childlike anticipation.</p>
-                    
-                    <p>What a cute old man!</p>
-                    
-                    <p>Firstly, Jareth and other guests who have a close rtionship with the Abernathy family present their birthday gifts. Hamiltion nodded frequently in thanks, epting them one</p>
-                    
-                    <p>by one.</p>
-                    
-                    <p>Jareth stood in front of Hamiltion, bowed gracefully, and said with a smile, “Thad and I are like brothers, so if you’re Thad’s grandpa, then you’re my grandpa! I wish you a happy birthday, and may you be as happy every year as you are today!”</p>
-                    
-                    <p>“Good boy! Thank you!” Hamiltion couldn’t stop smiling.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>A flood of shame was raging against Thaddeus. Jareth was watching all this, his heart aching.</p>
+                        
+                        <p>His opponent was too strong. What should he do? He’s desperate for an answer!</p>
+                        
+                        <p>Evadne gratefully said, “Mr. Hamiltion, thank you for your kindness…”</p>
+                        
+                        <p>“Alright, it’s your birthday today, let’s not talk about unpleasant things.” Frederic rushed forward with a smile, “Let’s see the birthday gifts the kids have prepared for you? After the gifts, we can start the party, we shouldn’t keep the guests waiting too long.”</p>
+                        
+                        <p>“Yes! Let’s open the gifts, open the gifts!” Hamiltion rubbed his hands together with childlike anticipation.</p>
+                        
+                        <p>What a cute old man!</p>
+                        
+                        <p>Firstly, Jareth and other guests who have a close rtionship with the Abernathy family present their birthday gifts. Hamiltion nodded frequently in thanks, epting them one</p>
+                        
+                        <p>by one.</p>
+                        
+                        <p>Jareth stood in front of Hamiltion, bowed gracefully, and said with a smile, “Thad and I are like brothers, so if you’re Thad’s grandpa, then you’re my grandpa! I wish you a happy birthday, and may you be as happy every year as you are today!”</p>
+                        
+                        <p>“Good boy! Thank you!” Hamiltion couldn’t stop smiling.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -892,27 +932,31 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>“Mr. Hamiltion, happy birthday!” Glynnis walked over with a shy look on her face, standing next to Jareth as if she wanted to stand with him, “I know you like antiques, here’s my birthday gift for you!”</p>
-                    
-                    <p>As she spoke, she purposely leaned towards Jareth.</p>
-                    
-                    <p>However, Jareth didn’t even nce at her, he just dodged her.</p>
-                    
-                    <p>Glynnis almost fell over, her b*dy swaying for a few moments before she regained her bnce!</p>
-                    
-                    <p>How embarra**ing, there were already peopleughing quietly.</p>
-                    
-                    <p>Glynnis was so embarra**ed she could cry, cursing those whoughed at her in her heart.</p>
-                    
-                    <p>At this moment, a ser vant brought up the antique vase Glynnis had prepared.</p>
-                    
-                    <p>Hamiltion nodded with a smile, “Hmm! Very good, thank you!”</p>
-                    
-                    <p>Glynnis’ l*ps curled involuntarily in triumph.”Mr. Hamiltion, this is Mari’s birthday gift for you. Please have a look.”</p>
-                    
-                    <p>At this time, Mr. Murray walked over, holding a rolled up piece of white paper tied with a beautiful silk bow.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>“Mr. Hamiltion, happy birthday!” Glynnis walked over with a shy look on her face, standing next to Jareth as if she wanted to stand with him, “I know you like antiques, here’s my birthday gift for you!”</p>
+                        
+                        <p>As she spoke, she purposely leaned towards Jareth.</p>
+                        
+                        <p>However, Jareth didn’t even nce at her, he just dodged her.</p>
+                        
+                        <p>Glynnis almost fell over, her b*dy swaying for a few moments before she regained her bnce!</p>
+                        
+                        <p>How embarra**ing, there were already peopleughing quietly.</p>
+                        
+                        <p>Glynnis was so embarra**ed she could cry, cursing those whoughed at her in her heart.</p>
+                        
+                        <p>At this moment, a ser vant brought up the antique vase Glynnis had prepared.</p>
+                        
+                        <p>Hamiltion nodded with a smile, “Hmm! Very good, thank you!”</p>
+                        
+                        <p>Glynnis’ l*ps curled involuntarily in triumph.”Mr. Hamiltion, this is Mari’s birthday gift for you. Please have a look.”</p>
+                        
+                        <p>At this time, Mr. Murray walked over, holding a rolled up piece of white paper tied with a beautiful silk bow.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -927,27 +971,31 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>“Is it from Mari? Let me see it quickly!”</p>
-                    
-                    <p>Hamiltion unrolled the paper and looked at it, surprised at first, then burst outughing, “Is this me? Did Mari draw me? She’s very good at drawing! Mari is such a talented girl! Ha-ha!”</p>
-                    
-                    <p>Seeing Mr. Hamiltionughing happily, everyone crowded around to see what it was.</p>
-                    
-                    <p>Completely ignoring Glynnis who was just showing off.</p>
-                    
-                    <p>On the paper was a drawing of an old man in a long robe,ughing with his face lifted, every wrinkle meticulously drawn.</p>
-                    
-                    <p>There were also two lines of neat words at the bottom – Wishing Mr. Hamiltion a happy birthday, always beughing. Mari. “Look at the picture Mari drew, does it look like me? Mari is so talented in drawing!” Hamiltion praised proudly.</p>
-                    
-                    <p>“Jareth, look, Mari’s drawing is really good, it has an artist’s touch!”</p>
-                    
-                    <p>Jareth thought of the lovely Mari, his eyes filled with a gentle smile.</p>
-                    
-                    <p>Hearing this, Glynnis’ face stiffened, and she felt like she had been hit hard.</p>
-                    
-                    <p>“Although Mari’s drawing is somewhat immature, I believe that with time, she will definitely make a name for herself in the art world.” Thaddeus praised.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“Is it from Mari? Let me see it quickly!”</p>
+                        
+                        <p>Hamiltion unrolled the paper and looked at it, surprised at first, then burst outughing, “Is this me? Did Mari draw me? She’s very good at drawing! Mari is such a talented girl! Ha-ha!”</p>
+                        
+                        <p>Seeing Mr. Hamiltionughing happily, everyone crowded around to see what it was.</p>
+                        
+                        <p>Completely ignoring Glynnis who was just showing off.</p>
+                        
+                        <p>On the paper was a drawing of an old man in a long robe,ughing with his face lifted, every wrinkle meticulously drawn.</p>
+                        
+                        <p>There were also two lines of neat words at the bottom – Wishing Mr. Hamiltion a happy birthday, always beughing. Mari. “Look at the picture Mari drew, does it look like me? Mari is so talented in drawing!” Hamiltion praised proudly.</p>
+                        
+                        <p>“Jareth, look, Mari’s drawing is really good, it has an artist’s touch!”</p>
+                        
+                        <p>Jareth thought of the lovely Mari, his eyes filled with a gentle smile.</p>
+                        
+                        <p>Hearing this, Glynnis’ face stiffened, and she felt like she had been hit hard.</p>
+                        
+                        <p>“Although Mari’s drawing is somewhat immature, I believe that with time, she will definitely make a name for herself in the art world.” Thaddeus praised.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -962,27 +1010,31 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>“Mr. Hamiltion, Mari has a talent for drawing, she has always wanted to go to art school to study fine arts.” Evadne seized the opportunity to speak for Mari, “You see, even Thaddeus praised Mari, which shows that she really has talent. We should let her go to art school to develop her talent. I believe that in less than five years, the Abernathy family will have a brilliant female artist.”</p>
-                    
-                    <p>Thaddeus frowned, feeling that Evadne seemed to be using him.</p>
-                    
-                    <p>“Don’t you and Elspeth care about Mari at all? Mari is so talented, you should train her!” Hamiltion said.</p>
-                    
-                    <p>“Yes, you’re right…”</p>
-                    
-                    <p>Frederic and Elspeth could only agree with bitter smiles.</p>
-                    
-                    <p>“I really like the gift Mari gave me, where is she? I want to see her.” Hamiltion asked with a kind smile.</p>
-                    
-                    <p>“Mari isn’t feeling well, so she hasn’te down yet, she’lle to see youter.” Mr. Murray answered gently.</p>
-                    
-                    <p>“Ah…” Hamiltion sighed with concern, “Mr. Murray, have this picture framedter and hang it in my study, I want to see it all the time.”</p>
-                    
-                    <p>Seeing Mr. Hamiltion value Mari’s gift so much, Glynnis was so angry her eyes turned red.</p>
-                    
-                    <p>She had originally thought that Mari didn’t have much pocket money, so she wouldn’t be able to buy a good gift. But Mari gave a painting and even got praised by Mr. Hamiltion. The antique vase she bought with so much money wasn’t even as good as Mari’s painting.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“Mr. Hamiltion, Mari has a talent for drawing, she has always wanted to go to art school to study fine arts.” Evadne seized the opportunity to speak for Mari, “You see, even Thaddeus praised Mari, which shows that she really has talent. We should let her go to art school to develop her talent. I believe that in less than five years, the Abernathy family will have a brilliant female artist.”</p>
+                        
+                        <p>Thaddeus frowned, feeling that Evadne seemed to be using him.</p>
+                        
+                        <p>“Don’t you and Elspeth care about Mari at all? Mari is so talented, you should train her!” Hamiltion said.</p>
+                        
+                        <p>“Yes, you’re right…”</p>
+                        
+                        <p>Frederic and Elspeth could only agree with bitter smiles.</p>
+                        
+                        <p>“I really like the gift Mari gave me, where is she? I want to see her.” Hamiltion asked with a kind smile.</p>
+                        
+                        <p>“Mari isn’t feeling well, so she hasn’te down yet, she’lle to see youter.” Mr. Murray answered gently.</p>
+                        
+                        <p>“Ah…” Hamiltion sighed with concern, “Mr. Murray, have this picture framedter and hang it in my study, I want to see it all the time.”</p>
+                        
+                        <p>Seeing Mr. Hamiltion value Mari’s gift so much, Glynnis was so angry her eyes turned red.</p>
+                        
+                        <p>She had originally thought that Mari didn’t have much pocket money, so she wouldn’t be able to buy a good gift. But Mari gave a painting and even got praised by Mr. Hamiltion. The antique vase she bought with so much money wasn’t even as good as Mari’s painting.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -997,27 +1049,31 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Mari, just you wait and see!</p>
-                    
-                    <p>On the other side, Acacia paced anxiously in the corridor, calling for Elspeth.</p>
-                    
-                    <p>“Elspeth, what should we do?” Acacia was so anxious her face turned red, “Our n has no effect, instead it made Thaddeus and na’s rtionship stronger!”</p>
-                    
-                    <p>“I didn’t expect this either.” Elspeth squinted her eyes. “Acacia, it seems we have to take more drastic measures.”</p>
-                    
-                    <p>“Do we start now?” Acacia gritted her teeth, her eyes cold.</p>
-                    
-                    <p>“No, let’s wait a bit longer.” Elspeth lightly patted her shoulder and smirked, “We have another important guesting soon. I got plenty of tricks up my sleeve to make a</p>
-                    
-                    <p>16:46</p>
-                    
-                    <p>laughing stock out of na and ruin her reputation,”</p>
-                    
-                    <p>The gift-giving session was still in progress.</p>
-                    
-                    <p>When the exquisite antique violin presented by Thaddeus made its appearance, it caused a minor uproar!</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Mari, just you wait and see!</p>
+                        
+                        <p>On the other side, Acacia paced anxiously in the corridor, calling for Elspeth.</p>
+                        
+                        <p>“Elspeth, what should we do?” Acacia was so anxious her face turned red, “Our n has no effect, instead it made Thaddeus and na’s rtionship stronger!”</p>
+                        
+                        <p>“I didn’t expect this either.” Elspeth squinted her eyes. “Acacia, it seems we have to take more drastic measures.”</p>
+                        
+                        <p>“Do we start now?” Acacia gritted her teeth, her eyes cold.</p>
+                        
+                        <p>“No, let’s wait a bit longer.” Elspeth lightly patted her shoulder and smirked, “We have another important guesting soon. I got plenty of tricks up my sleeve to make a</p>
+                        
+                        <p>16:46</p>
+                        
+                        <p>laughing stock out of na and ruin her reputation,”</p>
+                        
+                        <p>The gift-giving session was still in progress.</p>
+                        
+                        <p>When the exquisite antique violin presented by Thaddeus made its appearance, it caused a minor uproar!</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1032,27 +1088,31 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>There were quite a few of Mr. Hamiltion’s friends from the antique appraisal world present, all eager to get a closer look and admire the beauty of this violin.</p>
-                    
-                    <p>But Hamiltion clung to the box, fearful that these shaky old folks might identally harm his treasure!</p>
-                    
-                    <p>“This is a gift from Thaddeus, hands off everyone!”</p>
-                    
-                    <p>Everyone burst intoughter, and even Evadne couldn’t help but cover her mouth and chuckle.</p>
-                    
-                    <p>“Mr. Hamiltion, this antique violin was donated by Suri of the K Group at a charity auction. I thought it was quite rare, so I bought it. If you like it, then it’s all the better.” Thaddeus felt the need to exin the origin of the gift to Cas sius.</p>
-                    
-                    <p>“It must be from Chairman Emeric’s private collection! Chairman Emeric’s antique collection is unmatched in all of Elmsworth!” Hamiltion caressed the box and sighed.</p>
-                    
-                    <p>“If Chairman Emeric knew that his collection was appreciated by Mr. Hamiltion, he would be very pleased.” Cas sius said, with a warm smile in his eyes. Cas sius was that kind of person, a peacemaker, calm and humble, able to defuse conflicts no matter the situation.</p>
-                    
-                    <p>“Mr. Hamiltion, this is my birthday gift for you!” Acacia’s sweet voice suddenly rang out.</p>
-                    
-                    <p>Everyone’s attention was naturally drawn to her, but there was a hint of disdain.</p>
-                    
-                    <p>After all, everyone could see that Mr. Hamiltion didn’t care for Ms. Acacia at all. Her attempt to enter the Abernathy family wasn’t going to be easy.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>There were quite a few of Mr. Hamiltion’s friends from the antique appraisal world present, all eager to get a closer look and admire the beauty of this violin.</p>
+                        
+                        <p>But Hamiltion clung to the box, fearful that these shaky old folks might identally harm his treasure!</p>
+                        
+                        <p>“This is a gift from Thaddeus, hands off everyone!”</p>
+                        
+                        <p>Everyone burst intoughter, and even Evadne couldn’t help but cover her mouth and chuckle.</p>
+                        
+                        <p>“Mr. Hamiltion, this antique violin was donated by Suri of the K Group at a charity auction. I thought it was quite rare, so I bought it. If you like it, then it’s all the better.” Thaddeus felt the need to exin the origin of the gift to Cas sius.</p>
+                        
+                        <p>“It must be from Chairman Emeric’s private collection! Chairman Emeric’s antique collection is unmatched in all of Elmsworth!” Hamiltion caressed the box and sighed.</p>
+                        
+                        <p>“If Chairman Emeric knew that his collection was appreciated by Mr. Hamiltion, he would be very pleased.” Cas sius said, with a warm smile in his eyes. Cas sius was that kind of person, a peacemaker, calm and humble, able to defuse conflicts no matter the situation.</p>
+                        
+                        <p>“Mr. Hamiltion, this is my birthday gift for you!” Acacia’s sweet voice suddenly rang out.</p>
+                        
+                        <p>Everyone’s attention was naturally drawn to her, but there was a hint of disdain.</p>
+                        
+                        <p>After all, everyone could see that Mr. Hamiltion didn’t care for Ms. Acacia at all. Her attempt to enter the Abernathy family wasn’t going to be easy.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1067,21 +1127,25 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>“Acacia has put a lot of thought into her gift. Knowing that you like traditional style paintings, she specifically bought a real piece by a famous artist at an auction for you.” Frederic grinned as he set the stage for Acacia.</p>
-                    
-                    <p>After all, Acacia was Elspeth’s niece, he had to lend her a hand.</p>
-                    
-                    <p>“Oh? A real piece? That’s interesting.” Hamiltion’s eyes lit up, looking very excited.</p>
-                    
-                    <p>Acacia had someone bring over the painting box, even making sure they wore gloves, carefully unrolling the painting in front of everyone.</p>
-                    
-                    <p>A few of the antique lovers crowded around.</p>
-                    
-                    <p>But the next second, Hamiltion’s face dimmed a bit, calmly saying, “Thank you for your thoughtfulness.”</p>
-                    
-                    <p>At this moment, a skeptical voice came from the crowd, “… is this painting really a real piece? Could it be a knockoff?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>“Acacia has put a lot of thought into her gift. Knowing that you like traditional style paintings, she specifically bought a real piece by a famous artist at an auction for you.” Frederic grinned as he set the stage for Acacia.</p>
+                        
+                        <p>After all, Acacia was Elspeth’s niece, he had to lend her a hand.</p>
+                        
+                        <p>“Oh? A real piece? That’s interesting.” Hamiltion’s eyes lit up, looking very excited.</p>
+                        
+                        <p>Acacia had someone bring over the painting box, even making sure they wore gloves, carefully unrolling the painting in front of everyone.</p>
+                        
+                        <p>A few of the antique lovers crowded around.</p>
+                        
+                        <p>But the next second, Hamiltion’s face dimmed a bit, calmly saying, “Thank you for your thoughtfulness.”</p>
+                        
+                        <p>At this moment, a skeptical voice came from the crowd, “… is this painting really a real piece? Could it be a knockoff?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2397,6 +2461,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2523,7 +2667,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2565,32 +2708,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2601,21 +2726,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2648,6 +2763,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2668,20 +2789,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

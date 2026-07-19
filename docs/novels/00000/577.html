@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>She had meant to generalize, but as a particular face flashed through her mind, her words trailed off.</p>
-                    
-                    <p>Looking at Vivian with sudden admiration, Isabella added, &#34;You&#39;re so level-headed. No wonder Sebastian respects you so much.&#34;</p>
-                    
-                    <p>Vivian forced a smile, changing the subject. &#34;Have you eaten? There&#39;s too much here for one person. Join me?&#34;</p>
-                    
-                    <p>Was she truly level-headed? If she were, she wouldn&#39;t have allowed herself to remain in such a precarious, humiliating situation. If she were truly sensible, she wouldn&#39;t have hesitated when their contractual year ended.</p>
-                    
-                    <p>After lunch, Isabella left for work, leaving Vivian alone in the quiet room. Fortunately, the sedative she&#39;d been given was mild, leaving no lasting effects. Between hydration, rest, and a satisfying meal, she quickly regained her usual energy.</p>
-                    
-                    <p>After a revitalizing shower, she changed into a simple yet elegant long-sleeved nightgown. Settling against the headboard, she retrieved the Ambermyst script and began rehearsing her lines with quiet intensity. Seeing the story she&#39;d written through an actress&#39;s perspective brought fresh insights, as if she were uncovering hidden layers within her own creation.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>She had meant to generalize, but as a particular face flashed through her mind, her words trailed off.</p>
+                        
+                        <p>Looking at Vivian with sudden admiration, Isabella added, &#34;You&#39;re so level-headed. No wonder Sebastian respects you so much.&#34;</p>
+                        
+                        <p>Vivian forced a smile, changing the subject. &#34;Have you eaten? There&#39;s too much here for one person. Join me?&#34;</p>
+                        
+                        <p>Was she truly level-headed? If she were, she wouldn&#39;t have allowed herself to remain in such a precarious, humiliating situation. If she were truly sensible, she wouldn&#39;t have hesitated when their contractual year ended.</p>
+                        
+                        <p>After lunch, Isabella left for work, leaving Vivian alone in the quiet room. Fortunately, the sedative she&#39;d been given was mild, leaving no lasting effects. Between hydration, rest, and a satisfying meal, she quickly regained her usual energy.</p>
+                        
+                        <p>After a revitalizing shower, she changed into a simple yet elegant long-sleeved nightgown. Settling against the headboard, she retrieved the Ambermyst script and began rehearsing her lines with quiet intensity. Seeing the story she&#39;d written through an actress&#39;s perspective brought fresh insights, as if she were uncovering hidden layers within her own creation.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Time passed swiftly when immersed in creative work. Before she noticed, daylight had surrendered to twilight&#39;s deep hues. The rhythmic patter of heavy rain outside enveloped the room in cozy isolation, making it feel like a solitary island adrift in a stormy sea.</p>
-                    
-                    <p>Her concentration was broken by a knock at the door. Assuming it was Isabella or perhaps Sebastian bringing dinner, she padded to the door still holding the script, her mind elsewhere. But when she opened it, she was met with an entirely unexpected sight.</p>
-                    
-                    <p>Adrian stood there, rain-drenched and intense. Her brow furrowed as she lowered the script, blurting out, &#34;What are you doing here?&#34;</p>
-                    
-                    <p>Adrian stood bare-chested in the doorway, his damp white shirt clinging to every defined muscle like liquid silk. A single raised eyebrow accentuated his sharp features as his voice cut through the humid air. &#34;Were you expecting someone else?&#34;</p>
-                    
-                    <p>Before the tension could thicken, Ethan materialized in the frame, his broad shoulders nearly filling the space. &#34;Mrs. Hartley, Mr. Blackwood sustained injuries from a falling tree branch and requires medical attention.&#34;</p>
-                    
-                    <p>Vivian&#39;s eyes darted to the streaks of dried mud staining Adrian&#39;s shoulder, her lips thinning into a disapproving line. Without speaking, she pivoted sharply toward the bathroom cabinet, her heels clicking against the hardwood with military precision. Adrian followed uninvited, his presence expanding to fill her private space.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Time passed swiftly when immersed in creative work. Before she noticed, daylight had surrendered to twilight&#39;s deep hues. The rhythmic patter of heavy rain outside enveloped the room in cozy isolation, making it feel like a solitary island adrift in a stormy sea.</p>
+                        
+                        <p>Her concentration was broken by a knock at the door. Assuming it was Isabella or perhaps Sebastian bringing dinner, she padded to the door still holding the script, her mind elsewhere. But when she opened it, she was met with an entirely unexpected sight.</p>
+                        
+                        <p>Adrian stood there, rain-drenched and intense. Her brow furrowed as she lowered the script, blurting out, &#34;What are you doing here?&#34;</p>
+                        
+                        <p>Adrian stood bare-chested in the doorway, his damp white shirt clinging to every defined muscle like liquid silk. A single raised eyebrow accentuated his sharp features as his voice cut through the humid air. &#34;Were you expecting someone else?&#34;</p>
+                        
+                        <p>Before the tension could thicken, Ethan materialized in the frame, his broad shoulders nearly filling the space. &#34;Mrs. Hartley, Mr. Blackwood sustained injuries from a falling tree branch and requires medical attention.&#34;</p>
+                        
+                        <p>Vivian&#39;s eyes darted to the streaks of dried mud staining Adrian&#39;s shoulder, her lips thinning into a disapproving line. Without speaking, she pivoted sharply toward the bathroom cabinet, her heels clicking against the hardwood with military precision. Adrian followed uninvited, his presence expanding to fill her private space.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>She hesitated mid-step when she sensed him crossing the threshold. Protesting now would be pointless - the damage was done. All she wanted was to treat his wounds and send him packing.</p>
-                    
-                    <p>&#34;I&#39;ll retrieve the documents from Mr. Holloway,&#34; Ethan announced from the doorway. Adrian acknowledged with a barely perceptible tilt of his chin. Turning to Vivian, Ethan added, &#34;Please see to Mr. Blackwood&#39;s injuries,&#34; before shutting the door with finality, effectively silencing any objections.</p>
-                    
-                    <p>Adrian made himself at home on the edge of her bed, his sprawling posture radiating entitlement. His long legs stretched casually, as if claiming territory in her sanctuary. Vivian refused to indulge his arrogance.</p>
-                    
-                    <p>With calculated precision, she lobbed the ointment toward him. &#34;Your arms appear functional enough,&#34; she remarked coolly. Dragging a chair to the far side of the room, she immersed herself in script revisions, pointedly ignoring his existence. The pages became her shield, her gaze never wavering from the typed lines.</p>
-                    
-                    <p>A shadow of displeasure darkened Adrian&#39;s striking features. His piercing gaze remained fixed on her as he began undoing his shirt buttons with deliberate slowness - each movement a provocation, each unfastened button a challenge. Shrugging out of the garment, he applied the salve himself, his jaw tightening with barely restrained frustration.</p>
-                    
-                    <p>Out of the corner of her eye, Vivian caught glimpses of his sculpted shoulders and the tantalizing V of muscles leading downward. She jerked her attention back to the script, mentally scolding herself. The world overflowed with attractive men, she reminded herself sharply.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>She hesitated mid-step when she sensed him crossing the threshold. Protesting now would be pointless - the damage was done. All she wanted was to treat his wounds and send him packing.</p>
+                        
+                        <p>&#34;I&#39;ll retrieve the documents from Mr. Holloway,&#34; Ethan announced from the doorway. Adrian acknowledged with a barely perceptible tilt of his chin. Turning to Vivian, Ethan added, &#34;Please see to Mr. Blackwood&#39;s injuries,&#34; before shutting the door with finality, effectively silencing any objections.</p>
+                        
+                        <p>Adrian made himself at home on the edge of her bed, his sprawling posture radiating entitlement. His long legs stretched casually, as if claiming territory in her sanctuary. Vivian refused to indulge his arrogance.</p>
+                        
+                        <p>With calculated precision, she lobbed the ointment toward him. &#34;Your arms appear functional enough,&#34; she remarked coolly. Dragging a chair to the far side of the room, she immersed herself in script revisions, pointedly ignoring his existence. The pages became her shield, her gaze never wavering from the typed lines.</p>
+                        
+                        <p>A shadow of displeasure darkened Adrian&#39;s striking features. His piercing gaze remained fixed on her as he began undoing his shirt buttons with deliberate slowness - each movement a provocation, each unfastened button a challenge. Shrugging out of the garment, he applied the salve himself, his jaw tightening with barely restrained frustration.</p>
+                        
+                        <p>Out of the corner of her eye, Vivian caught glimpses of his sculpted shoulders and the tantalizing V of muscles leading downward. She jerked her attention back to the script, mentally scolding herself. The world overflowed with attractive men, she reminded herself sharply.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Falling for her soon-to-be ex-husband&#39;s charms would be the height of foolishness. Whether from the relentless storm or Adrian&#39;s oppressive presence, irritation prickled beneath her skin. She&#39;d left Seabreeze Villa to sever complicated ties, yet here she stood, entangled once more.</p>
-                    
-                    <p>&#34;I can&#39;t reach my back,&#34; Adrian declared abruptly, shattering the silence. His challenging stare dared her to refuse.</p>
-                    
-                    <p>Her gaze flickered to the angry red marks trailing down his shoulder blades. The wound, caked with mud and haphazardly applied ointment, looked ripe for infection.</p>
-                    
-                    <p>&#34;You didn&#39;t clean it first?&#34; she snapped. &#34;With debris like that, you&#39;re inviting sepsis, not healing.&#34;</p>
-                    
-                    <p>He opened his mouth, likely to argue, but she was already moving. The water dispenser gurgled as she filled a bowl, her every movement radiating irritation. The only sounds were the rain&#39;s relentless patter and her clipped footsteps.</p>
-                    
-                    <p>Kneeling beside the bed, Vivian worked with clinical efficiency, dabbing at his injuries with sterile gauze. Her touch was featherlight yet left trails of warmth wherever it traveled.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Falling for her soon-to-be ex-husband&#39;s charms would be the height of foolishness. Whether from the relentless storm or Adrian&#39;s oppressive presence, irritation prickled beneath her skin. She&#39;d left Seabreeze Villa to sever complicated ties, yet here she stood, entangled once more.</p>
+                        
+                        <p>&#34;I can&#39;t reach my back,&#34; Adrian declared abruptly, shattering the silence. His challenging stare dared her to refuse.</p>
+                        
+                        <p>Her gaze flickered to the angry red marks trailing down his shoulder blades. The wound, caked with mud and haphazardly applied ointment, looked ripe for infection.</p>
+                        
+                        <p>&#34;You didn&#39;t clean it first?&#34; she snapped. &#34;With debris like that, you&#39;re inviting sepsis, not healing.&#34;</p>
+                        
+                        <p>He opened his mouth, likely to argue, but she was already moving. The water dispenser gurgled as she filled a bowl, her every movement radiating irritation. The only sounds were the rain&#39;s relentless patter and her clipped footsteps.</p>
+                        
+                        <p>Kneeling beside the bed, Vivian worked with clinical efficiency, dabbing at his injuries with sterile gauze. Her touch was featherlight yet left trails of warmth wherever it traveled.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Adrian&#39;s gaze shifted downward, settling on Vivian&#39;s leg propped against the bed&#39;s edge. From this angle, the scars that once marred her skin were nearly invisible. A quiet relief washed over him, prompting him to murmur, &#34;You can barely see them anymore.&#34;</p>
-                    
-                    <p>She remained silent, her fingers working the ointment into her skin with clinical precision. When finished, she rose abruptly, thrusting the tube toward him like a challenge. &#34;Done. Take this and have Ethan assist you next time.&#34;</p>
-                    
-                    <p>Before she could retreat, Adrian&#39;s arm snaked out, pulling her against his chest with a force that stole her breath.</p>
-                    
-                    <p>His whisper curled around her like smoke. &#34;Why do you keep running from me?&#34;</p>
-                    
-                    <p>Vivian found herself trapped against Adrian&#39;s rain-dampened shirt, the unexpected warmth of his body sending shockwaves through her system. She tilted her head back, meeting his piercing stare - that same predatory look that once unraveled her defenses, that once coaxed vulnerable confessions from her lips. But no longer.</p>
-                    
-                    <p>What once tethered her to him had eroded, leaving only brittle resistance in its wake.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Adrian&#39;s gaze shifted downward, settling on Vivian&#39;s leg propped against the bed&#39;s edge. From this angle, the scars that once marred her skin were nearly invisible. A quiet relief washed over him, prompting him to murmur, &#34;You can barely see them anymore.&#34;</p>
+                        
+                        <p>She remained silent, her fingers working the ointment into her skin with clinical precision. When finished, she rose abruptly, thrusting the tube toward him like a challenge. &#34;Done. Take this and have Ethan assist you next time.&#34;</p>
+                        
+                        <p>Before she could retreat, Adrian&#39;s arm snaked out, pulling her against his chest with a force that stole her breath.</p>
+                        
+                        <p>His whisper curled around her like smoke. &#34;Why do you keep running from me?&#34;</p>
+                        
+                        <p>Vivian found herself trapped against Adrian&#39;s rain-dampened shirt, the unexpected warmth of his body sending shockwaves through her system. She tilted her head back, meeting his piercing stare - that same predatory look that once unraveled her defenses, that once coaxed vulnerable confessions from her lips. But no longer.</p>
+                        
+                        <p>What once tethered her to him had eroded, leaving only brittle resistance in its wake.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Her voice turned arctic. &#34;Mr. Blackwood, your memory fails you. I&#39;ve made myself clear - I have zero interest in my almost ex-husband.&#34;</p>
-                    
-                    <p>She twisted in his grasp, but his arms tightened like quicksand. The scent of petrichor and something distinctly Adrian - sandalwood and mint - triggered a memory she swiftly crushed. Her irritation flared at how easily he disrupted her equilibrium.</p>
-                    
-                    <p>Adrian&#39;s hands anchored her shoulders and thighs, his voice deceptively calm. &#34;A divorce isn&#39;t some teenage breakup, Vivian. Without my signature, it&#39;s not happening.&#34;</p>
-                    
-                    <p>She went rigid. &#34;Is this amusing to you? Some perverse entertainment?&#34;</p>
-                    
-                    <p>Instead of answering, his gaze swept across her chaotic workspace - scripts strewn like fallen leaves, half-empty coffee cups littering every surface.</p>
-                    
-                    <p>A derisive chuckle escaped him. &#34;This is what you call living? Working yourself to the bone like some indentured servant? You think this is what success looks like?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Her voice turned arctic. &#34;Mr. Blackwood, your memory fails you. I&#39;ve made myself clear - I have zero interest in my almost ex-husband.&#34;</p>
+                        
+                        <p>She twisted in his grasp, but his arms tightened like quicksand. The scent of petrichor and something distinctly Adrian - sandalwood and mint - triggered a memory she swiftly crushed. Her irritation flared at how easily he disrupted her equilibrium.</p>
+                        
+                        <p>Adrian&#39;s hands anchored her shoulders and thighs, his voice deceptively calm. &#34;A divorce isn&#39;t some teenage breakup, Vivian. Without my signature, it&#39;s not happening.&#34;</p>
+                        
+                        <p>She went rigid. &#34;Is this amusing to you? Some perverse entertainment?&#34;</p>
+                        
+                        <p>Instead of answering, his gaze swept across her chaotic workspace - scripts strewn like fallen leaves, half-empty coffee cups littering every surface.</p>
+                        
+                        <p>A derisive chuckle escaped him. &#34;This is what you call living? Working yourself to the bone like some indentured servant? You think this is what success looks like?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Her jaw clenched. &#34;Not your concern.&#34;</p>
-                    
-                    <p>&#34;Oh, it&#39;s absolutely my concern,&#34; Adrian snapped, irritation sharpening his words. &#34;The Mirage Lounge incident, that brawl outside Cascade Residences last week - every mess you&#39;ve stumbled into since leaving required my intervention. When will you stop pretending life&#39;s some reckless game?&#34;</p>
-                    
-                    <p>His words struck like icicles, freezing her momentarily. Then the dam broke.</p>
-                    
-                    <p>&#34;Don&#39;t you dare mention last week!&#34; she seethed, voice trembling. &#34;Do you have any idea how terrified I was? They drugged my drink, dragged me into that car like cargo! I smashed a bottle across someone&#39;s head, fought like hell, and still couldn&#39;t escape!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Her jaw clenched. &#34;Not your concern.&#34;</p>
+                        
+                        <p>&#34;Oh, it&#39;s absolutely my concern,&#34; Adrian snapped, irritation sharpening his words. &#34;The Mirage Lounge incident, that brawl outside Cascade Residences last week - every mess you&#39;ve stumbled into since leaving required my intervention. When will you stop pretending life&#39;s some reckless game?&#34;</p>
+                        
+                        <p>His words struck like icicles, freezing her momentarily. Then the dam broke.</p>
+                        
+                        <p>&#34;Don&#39;t you dare mention last week!&#34; she seethed, voice trembling. &#34;Do you have any idea how terrified I was? They drugged my drink, dragged me into that car like cargo! I smashed a bottle across someone&#39;s head, fought like hell, and still couldn&#39;t escape!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

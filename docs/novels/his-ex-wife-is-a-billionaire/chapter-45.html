@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.304545">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.304545">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.304127">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.304127">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.304545",
-        "dateModified": "2026-07-19T02:47:23.304545",
+        "datePublished": "2026-07-19T13:03:18.304127",
+        "dateModified": "2026-07-19T13:03:18.304127",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,33 +893,37 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Evadne didn’t bat an eyelid.</p>
-                    
-                    <p>She was well aware of Elspeth’s two-faced nature. All the information sent a clear message to Suri: not only was she dumped by Thaddeus, but she was also a poor girl scrambling for a rich man to survive.</p>
-                    
-                    <p>A wicked smirk crept up on Acacia and her mom.</p>
-                    
-                    <p>The Ashbourne and Abernathy families were never on good terms. Cas sius, as the eldest son of Emeric, was of high standing. He could have any woman he wanted with the snap of a finger. Why on earth would he want a divorcee of Thaddeus?</p>
-                    
-                    <p>What a joke!</p>
-                    
-                    <p>Thaddeus frowned, annoyance shing in his eyes. “Elspeth, this is my business, not yours.”</p>
-                    
-                    <p>“Thaddeus, it might be your business, but it also affects the image of both the Abernathy and Ashbourne families. I’m just trying to prevent the revtion of Ms. na being your ex-wife from freaking people out. I have everyone’s best interest at heart!” Elspeth continued her bulls hitting.</p>
-                    
-                    <p>“Didn’t Ms. na divorce Mr. Thaddeus already? Doesn’t that mean they have nothing to do with each other anymore? How could Elspeth still think Ms. na would embarra** the Abernathy family?”</p>
-                    
-                    <p>Suri scoffed, “Is Ms. na not allowed to fall for another man after her divorcè with Mr. Thaddeus? Ms. na marrying Cas sius is nothing to be ashamed of. We, Ashbournes, won’t look down on her just because she’s been divorced. It’s an era of equality, Elspeth. There’s no need to treat Ms. na this way.”</p>
-                    
-                    <p>Jareth was almost pping after hearing Suri’s words. They were so satisfying!</p>
-                    
-                    <p>Acacia, her mom, and even Glynnis were taken aback. They stood there, too embarra**ed to utter a word.</p>
-                    
-                    <p>Was Suri protecting na?</p>
-                    
-                    <p>“Suri, you’re also a rich man’s daughter, so you must understand what I’m saying!”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Evadne didn’t bat an eyelid.</p>
+                        
+                        <p>She was well aware of Elspeth’s two-faced nature. All the information sent a clear message to Suri: not only was she dumped by Thaddeus, but she was also a poor girl scrambling for a rich man to survive.</p>
+                        
+                        <p>A wicked smirk crept up on Acacia and her mom.</p>
+                        
+                        <p>The Ashbourne and Abernathy families were never on good terms. Cas sius, as the eldest son of Emeric, was of high standing. He could have any woman he wanted with the snap of a finger. Why on earth would he want a divorcee of Thaddeus?</p>
+                        
+                        <p>What a joke!</p>
+                        
+                        <p>Thaddeus frowned, annoyance shing in his eyes. “Elspeth, this is my business, not yours.”</p>
+                        
+                        <p>“Thaddeus, it might be your business, but it also affects the image of both the Abernathy and Ashbourne families. I’m just trying to prevent the revtion of Ms. na being your ex-wife from freaking people out. I have everyone’s best interest at heart!” Elspeth continued her bulls hitting.</p>
+                        
+                        <p>“Didn’t Ms. na divorce Mr. Thaddeus already? Doesn’t that mean they have nothing to do with each other anymore? How could Elspeth still think Ms. na would embarra** the Abernathy family?”</p>
+                        
+                        <p>Suri scoffed, “Is Ms. na not allowed to fall for another man after her divorcè with Mr. Thaddeus? Ms. na marrying Cas sius is nothing to be ashamed of. We, Ashbournes, won’t look down on her just because she’s been divorced. It’s an era of equality, Elspeth. There’s no need to treat Ms. na this way.”</p>
+                        
+                        <p>Jareth was almost pping after hearing Suri’s words. They were so satisfying!</p>
+                        
+                        <p>Acacia, her mom, and even Glynnis were taken aback. They stood there, too embarra**ed to utter a word.</p>
+                        
+                        <p>Was Suri protecting na?</p>
+                        
+                        <p>“Suri, you’re also a rich man’s daughter, so you must understand what I’m saying!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -898,33 +938,37 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Elspeth became flustered when Suri ignored her. “Ms. na just left our Thaddeus and is now with Cas sius. If others find out, they’d think she had an affair with Cas sius while still married. It’s disgraceful. As the legal wife of Chairman Emeric, you should care about the Ashbourne family’s reputation!”</p>
-                    
-                    <p>“Enough!”</p>
-                    
-                    <p>Suri frowned, her aura making Elspeth uneasy. “This is the kids’ business. I might be an elder, but I’m not Cas sius’s mom. I don’t have the right to meddle. And Elspeth, you’re not Mr. Thaddeus’s biological mom. Don’t you think you’re not qualified to y the elder role in front of Thaddeus?”</p>
-                    
-                    <p>Elspeth was speechless.</p>
-                    
-                    <p>“And Chairman Emeric and I haven’t signed a marriage contract so he’s just my man. I don’t want to hear ‘legal wife of Chairman Emeric’ from you ever again!”</p>
-                    
-                    <p>Suri’s cold tone left Elspeth pale and her mind nk.</p>
-                    
-                    <p>Evadne bit her l*p, and a wave of sourness rushed up her nose.</p>
-                    
-                    <p>Chairman Emeric’s legal wife-there’s only one, and that’s her mom.</p>
-                    
-                    <p>Thaddeus stayed silent, but he kept an eye on na.</p>
-                    
-                    <p>He never liked na. He was on</p>
-                    
-                    <p>maintaining a friendly facade with her. This woman had been a source of trouble, always poking where it hurt.</p>
-                    
-                    <p>But when Elspeth mocked her with those sharp words, he felt like his own dignity was tainted.</p>
-                    
-                    <p>“Ms. na, do you need to see Cas sius? I can take you to him.” Suri’s friendly gaze was back on Evadne.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Elspeth became flustered when Suri ignored her. “Ms. na just left our Thaddeus and is now with Cas sius. If others find out, they’d think she had an affair with Cas sius while still married. It’s disgraceful. As the legal wife of Chairman Emeric, you should care about the Ashbourne family’s reputation!”</p>
+                        
+                        <p>“Enough!”</p>
+                        
+                        <p>Suri frowned, her aura making Elspeth uneasy. “This is the kids’ business. I might be an elder, but I’m not Cas sius’s mom. I don’t have the right to meddle. And Elspeth, you’re not Mr. Thaddeus’s biological mom. Don’t you think you’re not qualified to y the elder role in front of Thaddeus?”</p>
+                        
+                        <p>Elspeth was speechless.</p>
+                        
+                        <p>“And Chairman Emeric and I haven’t signed a marriage contract so he’s just my man. I don’t want to hear ‘legal wife of Chairman Emeric’ from you ever again!”</p>
+                        
+                        <p>Suri’s cold tone left Elspeth pale and her mind nk.</p>
+                        
+                        <p>Evadne bit her l*p, and a wave of sourness rushed up her nose.</p>
+                        
+                        <p>Chairman Emeric’s legal wife-there’s only one, and that’s her mom.</p>
+                        
+                        <p>Thaddeus stayed silent, but he kept an eye on na.</p>
+                        
+                        <p>He never liked na. He was on</p>
+                        
+                        <p>maintaining a friendly facade with her. This woman had been a source of trouble, always poking where it hurt.</p>
+                        
+                        <p>But when Elspeth mocked her with those sharp words, he felt like his own dignity was tainted.</p>
+                        
+                        <p>“Ms. na, do you need to see Cas sius? I can take you to him.” Suri’s friendly gaze was back on Evadne.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -939,33 +983,37 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>“Thank you, Suri. Then I’ll trouble you.” Evadne smiled like a well-mannereddy.</p>
-                    
-                    <p>“Such a polite and beautiful child.”</p>
-                    
-                    <p>Suri gently took Evadne’s hand, speaking out loud intentionally. “Cas sius has good taste in choosing you as his girlfriend.”</p>
-                    
-                    <p>“Hold on.”</p>
-                    
-                    <p>Thaddeus’s heart filled with rage upon hearing these words. He sternly said, “Ms. na, don’t you owe us an apology?”. Jareth let out a sigh. He wished he could stuff his sock in Thaddeus’s mouth.</p>
-                    
-                    <p>Evadne’s heart ached. She shot him a cold look.</p>
-                    
-                    <p>Thaddeus felt like her disappointing gaze went right through his soul.</p>
-                    
-                    <p>“It wasn’t her! It wasn’t her!”</p>
-                    
-                    <p>A clear and sweet voice intervened, making those with malicious intent uneasy!</p>
-                    
-                    <p>Evadne’s heart lightened as she turned towards the voice.</p>
-                    
-                    <p>“Mari!”</p>
-                    
-                    <p>A girl in a simple white dress with a “cauliflower” hairdo, delicate features, and fair skin was running towards them.</p>
-                    
-                    <p>This ridiculous hairstyle was Glynnis’s “masterpiece”.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“Thank you, Suri. Then I’ll trouble you.” Evadne smiled like a well-mannereddy.</p>
+                        
+                        <p>“Such a polite and beautiful child.”</p>
+                        
+                        <p>Suri gently took Evadne’s hand, speaking out loud intentionally. “Cas sius has good taste in choosing you as his girlfriend.”</p>
+                        
+                        <p>“Hold on.”</p>
+                        
+                        <p>Thaddeus’s heart filled with rage upon hearing these words. He sternly said, “Ms. na, don’t you owe us an apology?”. Jareth let out a sigh. He wished he could stuff his sock in Thaddeus’s mouth.</p>
+                        
+                        <p>Evadne’s heart ached. She shot him a cold look.</p>
+                        
+                        <p>Thaddeus felt like her disappointing gaze went right through his soul.</p>
+                        
+                        <p>“It wasn’t her! It wasn’t her!”</p>
+                        
+                        <p>A clear and sweet voice intervened, making those with malicious intent uneasy!</p>
+                        
+                        <p>Evadne’s heart lightened as she turned towards the voice.</p>
+                        
+                        <p>“Mari!”</p>
+                        
+                        <p>A girl in a simple white dress with a “cauliflower” hairdo, delicate features, and fair skin was running towards them.</p>
+                        
+                        <p>This ridiculous hairstyle was Glynnis’s “masterpiece”.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -980,33 +1028,37 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>In the Abernathy family, Mari was always Glynnis’s rival.</p>
-                    
-                    <p>Glynnis was jealous of her sister’s beauty and bullied Mari every day. Whenever they had public appearances, she’d make sure Mari would make a fool of herself, fearing her sister would steal her thunder.</p>
-                    
-                    <p>Mari was born with autism, which made her even more introverted and antisocial so she was always silent when meeting strangers.</p>
-                    
-                    <p>However, during her three years in the Abernathy family, the only person who had shown warmth to Evadne apart from Alva was this ignored little sister.</p>
-                    
-                    <p>After leaving the Abernathy family, Mari had been thinking about her all the time.</p>
-                    
-                    <p>Evadne was overjoyed to unexpectedly meet her here today.</p>
-                    
-                    <p>“Mari, what are you talking about?”</p>
-                    
-                    <p>12:38</p>
-                    
-                    <p>Glynnis gave her sister a hard re. “Acacia was the only one in the bathroom other than her; if not her, then who else?”</p>
-                    
-                    <p>“It wasn’t her! It wasn’t her!” Mari was frantic and scared; she couldn’t exin clearly.</p>
-                    
-                    <p>“Mari, this isn’t your business; go y by yourself!” Elspeth also looked at her with a cold face.</p>
-                    
-                    <p>Mari clenched her little fists and walked to Thaddeus. She looked up at him with a tense face.</p>
-                    
-                    <p>“Bro, she didn’t do it!”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>In the Abernathy family, Mari was always Glynnis’s rival.</p>
+                        
+                        <p>Glynnis was jealous of her sister’s beauty and bullied Mari every day. Whenever they had public appearances, she’d make sure Mari would make a fool of herself, fearing her sister would steal her thunder.</p>
+                        
+                        <p>Mari was born with autism, which made her even more introverted and antisocial so she was always silent when meeting strangers.</p>
+                        
+                        <p>However, during her three years in the Abernathy family, the only person who had shown warmth to Evadne apart from Alva was this ignored little sister.</p>
+                        
+                        <p>After leaving the Abernathy family, Mari had been thinking about her all the time.</p>
+                        
+                        <p>Evadne was overjoyed to unexpectedly meet her here today.</p>
+                        
+                        <p>“Mari, what are you talking about?”</p>
+                        
+                        <p>12:38</p>
+                        
+                        <p>Glynnis gave her sister a hard re. “Acacia was the only one in the bathroom other than her; if not her, then who else?”</p>
+                        
+                        <p>“It wasn’t her! It wasn’t her!” Mari was frantic and scared; she couldn’t exin clearly.</p>
+                        
+                        <p>“Mari, this isn’t your business; go y by yourself!” Elspeth also looked at her with a cold face.</p>
+                        
+                        <p>Mari clenched her little fists and walked to Thaddeus. She looked up at him with a tense face.</p>
+                        
+                        <p>“Bro, she didn’t do it!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1021,33 +1073,37 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>“Mari, why would you say that?” Thaddeus’s tone softened when he faced Mari.</p>
-                    
-                    <p>“I saw it! I was also in the bathroom! I saw it!”</p>
-                    
-                    <p>Everyone was shocked; Acacia’s face turned pale!</p>
-                    
-                    <p>Evadne was stunned. She had no idea that Mari was also present during her confrontation with Acacia.</p>
-                    
-                    <p>“I saw Ms. Acacia came to argue with you. You wanted to leave, but Ms. Acacia wouldn’t let you. She pulled your diamond bracelet off. Then she broke your diamond bracelet and ran out screaming, but you didn’t touch Ms. Acacia! I saw it all clearly!” Mari exined with her hands gesturing in the air that she was so anxious that tears were about to fall.</p>
-                    
-                    <p>“Mari.” Evadne was deeply touched seeing her like this.</p>
-                    
-                    <p>She knew Mari was timid, but to prove her innocence, she forced herself to speak the truth.</p>
-                    
-                    <p>Thaddeus’s eyes widened; his gaze focused on Acacia’s pale face, as if about to explode.</p>
-                    
-                    <p>He slowly released the hand that had been tightly gripping hers.</p>
-                    
-                    <p>Acacia was like a drowning person who had lost her lifebuoy. She could no longer care about the injury to her hand. She tightly hugged Thaddeus’s waist and said, “No, Thaddeus! She provoked me first! I really didn’t mess with her! Mari is not very smart; don’t listen to her!”</p>
-                    
-                    <p>“Not very smart? I think Mari is just not very pretty, but when she tells the story, she makes it very clear.” Jareth scoffed. Out of respect for Thaddeus, he didn’t directly use Acacia.</p>
-                    
-                    <p>He had never liked Acacia, but Thaddeus insisted on treating this bad woman as his love and always believed in her.</p>
-                    
-                    <p>“She didn’t hurt you, right?” Thaddeus took a deep breath and then asked seriously.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>“Mari, why would you say that?” Thaddeus’s tone softened when he faced Mari.</p>
+                        
+                        <p>“I saw it! I was also in the bathroom! I saw it!”</p>
+                        
+                        <p>Everyone was shocked; Acacia’s face turned pale!</p>
+                        
+                        <p>Evadne was stunned. She had no idea that Mari was also present during her confrontation with Acacia.</p>
+                        
+                        <p>“I saw Ms. Acacia came to argue with you. You wanted to leave, but Ms. Acacia wouldn’t let you. She pulled your diamond bracelet off. Then she broke your diamond bracelet and ran out screaming, but you didn’t touch Ms. Acacia! I saw it all clearly!” Mari exined with her hands gesturing in the air that she was so anxious that tears were about to fall.</p>
+                        
+                        <p>“Mari.” Evadne was deeply touched seeing her like this.</p>
+                        
+                        <p>She knew Mari was timid, but to prove her innocence, she forced herself to speak the truth.</p>
+                        
+                        <p>Thaddeus’s eyes widened; his gaze focused on Acacia’s pale face, as if about to explode.</p>
+                        
+                        <p>He slowly released the hand that had been tightly gripping hers.</p>
+                        
+                        <p>Acacia was like a drowning person who had lost her lifebuoy. She could no longer care about the injury to her hand. She tightly hugged Thaddeus’s waist and said, “No, Thaddeus! She provoked me first! I really didn’t mess with her! Mari is not very smart; don’t listen to her!”</p>
+                        
+                        <p>“Not very smart? I think Mari is just not very pretty, but when she tells the story, she makes it very clear.” Jareth scoffed. Out of respect for Thaddeus, he didn’t directly use Acacia.</p>
+                        
+                        <p>He had never liked Acacia, but Thaddeus insisted on treating this bad woman as his love and always believed in her.</p>
+                        
+                        <p>“She didn’t hurt you, right?” Thaddeus took a deep breath and then asked seriously.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1062,33 +1118,37 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>In the face of the witness, Acacia was sweating profusely and dared not lie anymore.</p>
-                    
-                    <p>“So, you were ndering her?”</p>
-                    
-                    <p>After asking this question, Thaddeus felt it hard to breathe.</p>
-                    
-                    <p>“No, not at all.”</p>
-                    
-                    <p>Acacia was so frightened that she was shaking all over. Suddenly, her vision cked out, and due to excessive tension and blood loss, she fainted.</p>
-                    
-                    <p>A farce ended with Acacia being taken away in an ambnce.</p>
-                    
-                    <p>When Jason arrived, Evadne was apanying Suri to the underground parking lot.</p>
-                    
-                    <p>“Ms. Evadne! I’m sorry I’mte! I wasn’t by your side when such a big thing happened!”</p>
-                    
-                    <p>Seeing the blood on the white handkerchief in Evadne’s hand, Jason felt very uneasy. “How did you get hurt? Who did it? I’ll make them pay!”</p>
-                    
-                    <p>‘It’s fine, Jason. I know you were dealing withpany matters. It’s all minor here.”</p>
-                    
-                    <p>Evadne looked deeply at Suri and said, “Suri has sorted it out for me.”</p>
-                    
-                    <p>“I didn’t really solve anything for you. I, as an elder, only found out today how they treated you.”</p>
-                    
-                    <p>Suri felt a pain in her heart thinking of how Evadne was ganged up on by the Abernathy family: “Evadne, why didn’t you reveal your identity? Why did you endure their nder? You should say you are the daughter of the Ashbourne family; let them know the price of bullying you!”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>In the face of the witness, Acacia was sweating profusely and dared not lie anymore.</p>
+                        
+                        <p>“So, you were ndering her?”</p>
+                        
+                        <p>After asking this question, Thaddeus felt it hard to breathe.</p>
+                        
+                        <p>“No, not at all.”</p>
+                        
+                        <p>Acacia was so frightened that she was shaking all over. Suddenly, her vision cked out, and due to excessive tension and blood loss, she fainted.</p>
+                        
+                        <p>A farce ended with Acacia being taken away in an ambnce.</p>
+                        
+                        <p>When Jason arrived, Evadne was apanying Suri to the underground parking lot.</p>
+                        
+                        <p>“Ms. Evadne! I’m sorry I’mte! I wasn’t by your side when such a big thing happened!”</p>
+                        
+                        <p>Seeing the blood on the white handkerchief in Evadne’s hand, Jason felt very uneasy. “How did you get hurt? Who did it? I’ll make them pay!”</p>
+                        
+                        <p>‘It’s fine, Jason. I know you were dealing withpany matters. It’s all minor here.”</p>
+                        
+                        <p>Evadne looked deeply at Suri and said, “Suri has sorted it out for me.”</p>
+                        
+                        <p>“I didn’t really solve anything for you. I, as an elder, only found out today how they treated you.”</p>
+                        
+                        <p>Suri felt a pain in her heart thinking of how Evadne was ganged up on by the Abernathy family: “Evadne, why didn’t you reveal your identity? Why did you endure their nder? You should say you are the daughter of the Ashbourne family; let them know the price of bullying you!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1103,25 +1163,29 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Evadne lightly shook her head and said, “Suri, I’ve left the Abernathy family; I don’t want them to know anything about me. Those people, no matter how terrible or hateful, will be forever imprinted in na’s life. And in my life as Evadne, they will never appear again, including Thaddeus.”</p>
-                    
-                    <p>Jason was surprised. He only realized that Suri also knew about Ms. Evadne’s marriage.</p>
-                    
-                    <p>“Yeah, your thinking is correct; let the past blow away with the wind.”</p>
-                    
-                    <p>Suri bit her l*p lightly and couldn’t help but smile. “Fortunately, I came today. Otherwise, today’s matter wouldn’t have been so easily resolved.”</p>
-                    
-                    <p>“Aviana is a pa**ionate person and her life is full of enthusiasm.”</p>
-                    
-                    <p>They chatted andughed for a while, and suddenly Suri hugged Evadne, her voice choking.</p>
-                    
-                    <p>“Evadne, I really feel it’s unfair for you.”</p>
-                    
-                    <p>“No, I don’t feel it’s unfair.”</p>
-                    
-                    <p>Evadne’s eyes turned red. She smiled andforted her, saying, “As long as you are here, I don’t feel it’s unfair at all.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Evadne lightly shook her head and said, “Suri, I’ve left the Abernathy family; I don’t want them to know anything about me. Those people, no matter how terrible or hateful, will be forever imprinted in na’s life. And in my life as Evadne, they will never appear again, including Thaddeus.”</p>
+                        
+                        <p>Jason was surprised. He only realized that Suri also knew about Ms. Evadne’s marriage.</p>
+                        
+                        <p>“Yeah, your thinking is correct; let the past blow away with the wind.”</p>
+                        
+                        <p>Suri bit her l*p lightly and couldn’t help but smile. “Fortunately, I came today. Otherwise, today’s matter wouldn’t have been so easily resolved.”</p>
+                        
+                        <p>“Aviana is a pa**ionate person and her life is full of enthusiasm.”</p>
+                        
+                        <p>They chatted andughed for a while, and suddenly Suri hugged Evadne, her voice choking.</p>
+                        
+                        <p>“Evadne, I really feel it’s unfair for you.”</p>
+                        
+                        <p>“No, I don’t feel it’s unfair.”</p>
+                        
+                        <p>Evadne’s eyes turned red. She smiled andforted her, saying, “As long as you are here, I don’t feel it’s unfair at all.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2437,6 +2501,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2563,7 +2707,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2605,32 +2748,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2641,21 +2766,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2688,6 +2803,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2708,20 +2829,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

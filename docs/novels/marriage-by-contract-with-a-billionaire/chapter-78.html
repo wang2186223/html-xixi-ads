@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:29.757899">
-    <meta property="article:modified_time" content="2026-07-19T02:47:29.757899">
+    <meta property="article:published_time" content="2026-07-19T13:03:24.140271">
+    <meta property="article:modified_time" content="2026-07-19T13:03:24.140271">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:29">
+    <meta name="last-modified" content="2026-07-19 13:03:24">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:29.757899",
-        "dateModified": "2026-07-19T02:47:29.757899",
+        "datePublished": "2026-07-19T13:03:24.140271",
+        "dateModified": "2026-07-19T13:03:24.140271",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,31 +893,35 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>While Alexander thought about how to handle his wife for going behind his back and leaving the house afterward, he received a message from her.</p>
-                    
-                    <p>&#34;Sir, there&#39;s a message for you.&#34;</p>
-                    
-                    <p>&#34;Who sent it?&#34;</p>
-                    
-                    <p>&#34;It&#39;s from Madam.&#34;</p>
-                    
-                    <p>Alexander&#39;s eyes narrowed as he looked at the phone. &#34;Hand it over.&#34;</p>
-                    
-                    <p>James passed him the phone, and he read the message from his wife.</p>
-                    
-                    <p>&#34;IF YOU HAD TOLD ME ABOUT YOUR MOTHER, I WOULDN&#39;T HAVE BOTHERED GOING TO THE PRISON TO SEE HER. YOU SHOULDN&#39;T BLAME ME FOR BEING CURIOUS. I&#39;VE LEFT THE HOUSE AND WILL ONLY RETURN WHEN YOU&#39;VE VISITED YOUR MOTHER.SINCE YOU&#39;RE ALREADY IN G CITY,YOU SHOULD TAKE THE OPPORTUNITY TO SEE HER.&#34;</p>
-                    
-                    <p>Alexander&#39;s expression darkened. Was she trying to challenge him?</p>
-                    
-                    <p>He immediately called her, and Lilly answered on the first ring.</p>
-                    
-                    <p>&#34;Alexander,&#34; her voice came through the line.</p>
-                    
-                    <p>&#34;After what you did behind my back, you dare to tell me to visit her!&#34; His anger was palpable.</p>
-                    
-                    <p>&#34;Don&#39;t you want to know what your mother and I talked about?&#34;Alexander stayed silent, wanting to know both what was discussed and how Lilly had found out his mother was in prison. &#34;How did you find out she was in prison?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>While Alexander thought about how to handle his wife for going behind his back and leaving the house afterward, he received a message from her.</p>
+                        
+                        <p>&#34;Sir, there&#39;s a message for you.&#34;</p>
+                        
+                        <p>&#34;Who sent it?&#34;</p>
+                        
+                        <p>&#34;It&#39;s from Madam.&#34;</p>
+                        
+                        <p>Alexander&#39;s eyes narrowed as he looked at the phone. &#34;Hand it over.&#34;</p>
+                        
+                        <p>James passed him the phone, and he read the message from his wife.</p>
+                        
+                        <p>&#34;IF YOU HAD TOLD ME ABOUT YOUR MOTHER, I WOULDN&#39;T HAVE BOTHERED GOING TO THE PRISON TO SEE HER. YOU SHOULDN&#39;T BLAME ME FOR BEING CURIOUS. I&#39;VE LEFT THE HOUSE AND WILL ONLY RETURN WHEN YOU&#39;VE VISITED YOUR MOTHER.SINCE YOU&#39;RE ALREADY IN G CITY,YOU SHOULD TAKE THE OPPORTUNITY TO SEE HER.&#34;</p>
+                        
+                        <p>Alexander&#39;s expression darkened. Was she trying to challenge him?</p>
+                        
+                        <p>He immediately called her, and Lilly answered on the first ring.</p>
+                        
+                        <p>&#34;Alexander,&#34; her voice came through the line.</p>
+                        
+                        <p>&#34;After what you did behind my back, you dare to tell me to visit her!&#34; His anger was palpable.</p>
+                        
+                        <p>&#34;Don&#39;t you want to know what your mother and I talked about?&#34;Alexander stayed silent, wanting to know both what was discussed and how Lilly had found out his mother was in prison. &#34;How did you find out she was in prison?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -896,31 +936,35 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;I&#39;ll tell you once you come to pick us up from the family house,but only after you&#39;ve visited her.&#34;</p>
-                    
-                    <p>&#34;So now you&#39;re giving me ultimatums?&#34;</p>
-                    
-                    <p>&#34;No, I&#39;m not,&#34; she said, feigning innocence.</p>
-                    
-                    <p>&#34;I wish you were here so I could silence you myself.&#34;</p>
-                    
-                    <p>Lilly fell silent.</p>
-                    
-                    <p>&#34;Now you&#39;re quiet?&#34;</p>
-                    
-                    <p>&#34;Will you see her?&#34;</p>
-                    
-                    <p>0</p>
-                    
-                    <p>&#34;Over my dead body.&#34;</p>
-                    
-                    <p>&#34;Please,Alexander, do it for me, I&#39;m begging you. Your mother told me everything she did. It was horrible to hear, and now I understand why you never wanted to talk about her. I&#39;m sorry for going behind your back,but I love you so much. You know I wouldn&#39;t normally do something like this without telling you, but I needed to understand what happened,&#34; she pleaded, hoping to soften his heart and sway him from punishing her.</p>
-                    
-                    <p>Alexander remained silent, knowing his wife had a way of getting out of trouble.</p>
-                    
-                    <p>&#34;Alexander?&#34; she called out when he stayed quiet for too long. &#34;Will you see her? I&#39;m not asking you to forgive her orrelease her from prison.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;I&#39;ll tell you once you come to pick us up from the family house,but only after you&#39;ve visited her.&#34;</p>
+                        
+                        <p>&#34;So now you&#39;re giving me ultimatums?&#34;</p>
+                        
+                        <p>&#34;No, I&#39;m not,&#34; she said, feigning innocence.</p>
+                        
+                        <p>&#34;I wish you were here so I could silence you myself.&#34;</p>
+                        
+                        <p>Lilly fell silent.</p>
+                        
+                        <p>&#34;Now you&#39;re quiet?&#34;</p>
+                        
+                        <p>&#34;Will you see her?&#34;</p>
+                        
+                        <p>0</p>
+                        
+                        <p>&#34;Over my dead body.&#34;</p>
+                        
+                        <p>&#34;Please,Alexander, do it for me, I&#39;m begging you. Your mother told me everything she did. It was horrible to hear, and now I understand why you never wanted to talk about her. I&#39;m sorry for going behind your back,but I love you so much. You know I wouldn&#39;t normally do something like this without telling you, but I needed to understand what happened,&#34; she pleaded, hoping to soften his heart and sway him from punishing her.</p>
+                        
+                        <p>Alexander remained silent, knowing his wife had a way of getting out of trouble.</p>
+                        
+                        <p>&#34;Alexander?&#34; she called out when he stayed quiet for too long. &#34;Will you see her? I&#39;m not asking you to forgive her orrelease her from prison.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -935,31 +979,35 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;I&#39;m sure she contacted you, but I&#39;m still wondering how she managed to do it.&#34; He was baffled by how his mother had reached out to Lilly or if someone had helped her. &#34;We can discuss that later.&#34;</p>
-                    
-                    <p>&#34;Did she tell you she wanted to see me?&#34;</p>
-                    
-                    <p>&#34;Yes, that&#39;s the main reason she wanted me to visit her. She says she regrets everything and just wants to ask for your forgiveness. Even if you don&#39;t forgive her, at least hear her out.&#34;</p>
-                    
-                    <p>&#34;Hmmm.&#34;</p>
-                    
-                    <p>&#34;Will you go?&#34;</p>
-                    
-                    <p>&#34;I&#39;ll decide that.&#34; Alexander hung up the call.</p>
-                    
-                    <p>He turned to James. &#34;Get the private jet ready; we&#39;re going back home.&#34;</p>
-                    
-                    <p>&#34;Right away,sir.&#34;</p>
-                    
-                    <p>There was no way he would visit that woman in prison. She wouldn&#39;t see him again until her dying day.</p>
-                    
-                    <p>At the Blake residence, Lilly sighed as the call ended.</p>
-                    
-                    <p>&#34;Was that Alexander?&#34; Caleb asked as he entered the livingroom.</p>
-                    
-                    <p>&#34;Yes,Grandfather.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;I&#39;m sure she contacted you, but I&#39;m still wondering how she managed to do it.&#34; He was baffled by how his mother had reached out to Lilly or if someone had helped her. &#34;We can discuss that later.&#34;</p>
+                        
+                        <p>&#34;Did she tell you she wanted to see me?&#34;</p>
+                        
+                        <p>&#34;Yes, that&#39;s the main reason she wanted me to visit her. She says she regrets everything and just wants to ask for your forgiveness. Even if you don&#39;t forgive her, at least hear her out.&#34;</p>
+                        
+                        <p>&#34;Hmmm.&#34;</p>
+                        
+                        <p>&#34;Will you go?&#34;</p>
+                        
+                        <p>&#34;I&#39;ll decide that.&#34; Alexander hung up the call.</p>
+                        
+                        <p>He turned to James. &#34;Get the private jet ready; we&#39;re going back home.&#34;</p>
+                        
+                        <p>&#34;Right away,sir.&#34;</p>
+                        
+                        <p>There was no way he would visit that woman in prison. She wouldn&#39;t see him again until her dying day.</p>
+                        
+                        <p>At the Blake residence, Lilly sighed as the call ended.</p>
+                        
+                        <p>&#34;Was that Alexander?&#34; Caleb asked as he entered the livingroom.</p>
+                        
+                        <p>&#34;Yes,Grandfather.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -974,31 +1022,35 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;He must be furious with you for going behind his back,&#34; he said,settling onto a nearby couch. He had been surprised when his granddaughter arrived with Viola and a few pieces of luggage. Initially, he thought Alexander had done something to upset her, but then he learned that Lilly had upset her husband and fled here out of fear of his reaction.</p>
-                    
-                    <p>&#34;He is, but now that I&#39;ve spoken to him, he won&#39;t be as angry.&#34;</p>
-                    
-                    <p>&#34;He&#39;ll come to take you both back home when he returns, you know that,right?&#34;</p>
-                    
-                    <p>&#34;I know he&#39;ll come here, but I&#39;Il only go back with him after I&#39;m sure he&#39;s visited his mother.&#34;</p>
-                    
-                    <p>&#34;From what you&#39;ve told me about that woman, Alexander has every right to treat her as he does. If I were him, I&#39;d do even more.&#34; Caleb couldn&#39;t help but agree with Alexander. He rarely saw eye to eye with the young man, but in this case, he completely supported him.</p>
-                    
-                    <p>&#34;I know, Grandfather, but visiting his mother is also for his own good.&#34;</p>
-                    
-                    <p>&#34;And how is it good for him to see that woman? She&#39;ll only bring up memories of the terrible things she&#39;s done.&#34;</p>
-                    
-                    <p>&#34;Not if he sees how much she regrets her actions and sincerely asks for his forgiveness. Talking to her might ease some of the pain he&#39;s been holding onto for years.&#34;</p>
-                    
-                    <p>Caleb sighed. &#34;Do you think he&#39;ll listen to you and go see her?&#34;</p>
-                    
-                    <p>&#34;I hope so.&#34;</p>
-                    
-                    <p>&#34;And if he doesn&#39;t?&#34; &#34;Then I&#39;ll stay here.&#34; &#34;You should know Alexander by now. There&#39;s no way he&#39;ll leave here without you and Viola.&#34; &#34;Grandfather, won&#39;t you help?&#34; Lilly pouted.</p>
-                    
-                    <p>&#34;Not this time, Lilly. In this situation,you&#39;re in the wrong. So if Alexander comes, I&#39;ll let him take you back home.&#34; Alexander drove straight to the Blake family estate the moment he arrived in Aurora City. He had dismissed al his guards and drove himself to the house.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;He must be furious with you for going behind his back,&#34; he said,settling onto a nearby couch. He had been surprised when his granddaughter arrived with Viola and a few pieces of luggage. Initially, he thought Alexander had done something to upset her, but then he learned that Lilly had upset her husband and fled here out of fear of his reaction.</p>
+                        
+                        <p>&#34;He is, but now that I&#39;ve spoken to him, he won&#39;t be as angry.&#34;</p>
+                        
+                        <p>&#34;He&#39;ll come to take you both back home when he returns, you know that,right?&#34;</p>
+                        
+                        <p>&#34;I know he&#39;ll come here, but I&#39;Il only go back with him after I&#39;m sure he&#39;s visited his mother.&#34;</p>
+                        
+                        <p>&#34;From what you&#39;ve told me about that woman, Alexander has every right to treat her as he does. If I were him, I&#39;d do even more.&#34; Caleb couldn&#39;t help but agree with Alexander. He rarely saw eye to eye with the young man, but in this case, he completely supported him.</p>
+                        
+                        <p>&#34;I know, Grandfather, but visiting his mother is also for his own good.&#34;</p>
+                        
+                        <p>&#34;And how is it good for him to see that woman? She&#39;ll only bring up memories of the terrible things she&#39;s done.&#34;</p>
+                        
+                        <p>&#34;Not if he sees how much she regrets her actions and sincerely asks for his forgiveness. Talking to her might ease some of the pain he&#39;s been holding onto for years.&#34;</p>
+                        
+                        <p>Caleb sighed. &#34;Do you think he&#39;ll listen to you and go see her?&#34;</p>
+                        
+                        <p>&#34;I hope so.&#34;</p>
+                        
+                        <p>&#34;And if he doesn&#39;t?&#34; &#34;Then I&#39;ll stay here.&#34; &#34;You should know Alexander by now. There&#39;s no way he&#39;ll leave here without you and Viola.&#34; &#34;Grandfather, won&#39;t you help?&#34; Lilly pouted.</p>
+                        
+                        <p>&#34;Not this time, Lilly. In this situation,you&#39;re in the wrong. So if Alexander comes, I&#39;ll let him take you back home.&#34; Alexander drove straight to the Blake family estate the moment he arrived in Aurora City. He had dismissed al his guards and drove himself to the house.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1013,31 +1065,35 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>He parked in front of the main building and strode inside,ignoring the guards and Victor, who had come out to greet him. He scanned the living room but didn&#39;t see Lilly or their child, so he headed directly to her room upstairs.</p>
-                    
-                    <p>On his way, he passed some maids who greeted him with bowed heads,but he ignored them. The cold look on his face filled them with fear.</p>
-                    
-                    <p>He reached the room door and pushed it open to find Lilly and Viola sleeping peacefully on the bed. The sight was so serene and beautiful that it momentarily dispelled his anger.It was already 11 PM, so it made sense that they would be asleep.</p>
-                    
-                    <p>He quietly closed the door behind him and walked toward the bed, his eyes fixed on them. They looked adorable as they slept.</p>
-                    
-                    <p>Alexander stood there, watching them for almost 30 minutes.</p>
-                    
-                    <p>Little Viola stirred and opened her eyes, immediately spotting her father.</p>
-                    
-                    <p>Her eyes lit up. &#34;Daddy!&#34;</p>
-                    
-                    <p>Alexander&#39;s cold expression softened into a smile. He picked her up and hugged her. &#34;My baby girl.&#34;</p>
-                    
-                    <p>She placed her tiny hands on his cheeks and kissed his forehead.</p>
-                    
-                    <p>Alexander smiled and kissed her forehead in return. &#34;Did Daddy wake you?&#34;</p>
-                    
-                    <p>She shook her head. &#34;No.&#34;</p>
-                    
-                    <p>&#34;Do you want to go home?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>He parked in front of the main building and strode inside,ignoring the guards and Victor, who had come out to greet him. He scanned the living room but didn&#39;t see Lilly or their child, so he headed directly to her room upstairs.</p>
+                        
+                        <p>On his way, he passed some maids who greeted him with bowed heads,but he ignored them. The cold look on his face filled them with fear.</p>
+                        
+                        <p>He reached the room door and pushed it open to find Lilly and Viola sleeping peacefully on the bed. The sight was so serene and beautiful that it momentarily dispelled his anger.It was already 11 PM, so it made sense that they would be asleep.</p>
+                        
+                        <p>He quietly closed the door behind him and walked toward the bed, his eyes fixed on them. They looked adorable as they slept.</p>
+                        
+                        <p>Alexander stood there, watching them for almost 30 minutes.</p>
+                        
+                        <p>Little Viola stirred and opened her eyes, immediately spotting her father.</p>
+                        
+                        <p>Her eyes lit up. &#34;Daddy!&#34;</p>
+                        
+                        <p>Alexander&#39;s cold expression softened into a smile. He picked her up and hugged her. &#34;My baby girl.&#34;</p>
+                        
+                        <p>She placed her tiny hands on his cheeks and kissed his forehead.</p>
+                        
+                        <p>Alexander smiled and kissed her forehead in return. &#34;Did Daddy wake you?&#34;</p>
+                        
+                        <p>She shook her head. &#34;No.&#34;</p>
+                        
+                        <p>&#34;Do you want to go home?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1052,31 +1108,35 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Viola looked at her sleeping mother. &#34;But Mummy&#39;s sleeping.&#34; Alexander glanced at Lilly, who slept so peacefully, as if she had no worries in the world.</p>
-                    
-                    <p>&#34;Do you know the way to your room here?&#34;</p>
-                    
-                    <p>She nodded. &#34;It&#39;s the room across the hall.&#34; Because of how much her great-grandfather adored her, Viola had her own room in his mansion.</p>
-                    
-                    <p>Alexander took her to her room and tucked her into bed, kissing her forehead. &#34;Go to sleep, okay? Daddy will come later.&#34; She nodded and closed her eyes.</p>
-                    
-                    <p>Alexander returned to Lilly&#39;s room. He shut the door behind him and walked toward her on the bed.</p>
-                    
-                    <p>He removed his shoes, his suit jacket, and his tie, then rolled up his sleeves before sitting on the bed beside her.He gently tapped her shoulder to wake her.Lilly slowly opened her eyes and saw him, his cold gaze fixed on her. &#34;Sit up,&#34; he said sternly. Lilly obediently sat up, folding her hands and legs, then looked at him.</p>
-                    
-                    <p>&#34;I promise I won&#39;t overlook what you did today,&#34; he said, hinting at the consequences he had in mind for her.</p>
-                    
-                    <p>&#34;Get your things ready; we&#39;re going back home.&#34;</p>
-                    
-                    <p>&#34;Did you visit her?&#34; she asked.</p>
-                    
-                    <p>Alexander&#39;s expression darkened. &#34;Over my dead body.&#34;</p>
-                    
-                    <p>&#34;In that case, I&#39;m not going anywhere wwith you.&#34; She turned her face away from him.</p>
-                    
-                    <p>Alexander clenched his fists tightly. &#34;You&#39;re coming home with me,whether you like it or not. Now get up,&#34; he ordered.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Viola looked at her sleeping mother. &#34;But Mummy&#39;s sleeping.&#34; Alexander glanced at Lilly, who slept so peacefully, as if she had no worries in the world.</p>
+                        
+                        <p>&#34;Do you know the way to your room here?&#34;</p>
+                        
+                        <p>She nodded. &#34;It&#39;s the room across the hall.&#34; Because of how much her great-grandfather adored her, Viola had her own room in his mansion.</p>
+                        
+                        <p>Alexander took her to her room and tucked her into bed, kissing her forehead. &#34;Go to sleep, okay? Daddy will come later.&#34; She nodded and closed her eyes.</p>
+                        
+                        <p>Alexander returned to Lilly&#39;s room. He shut the door behind him and walked toward her on the bed.</p>
+                        
+                        <p>He removed his shoes, his suit jacket, and his tie, then rolled up his sleeves before sitting on the bed beside her.He gently tapped her shoulder to wake her.Lilly slowly opened her eyes and saw him, his cold gaze fixed on her. &#34;Sit up,&#34; he said sternly. Lilly obediently sat up, folding her hands and legs, then looked at him.</p>
+                        
+                        <p>&#34;I promise I won&#39;t overlook what you did today,&#34; he said, hinting at the consequences he had in mind for her.</p>
+                        
+                        <p>&#34;Get your things ready; we&#39;re going back home.&#34;</p>
+                        
+                        <p>&#34;Did you visit her?&#34; she asked.</p>
+                        
+                        <p>Alexander&#39;s expression darkened. &#34;Over my dead body.&#34;</p>
+                        
+                        <p>&#34;In that case, I&#39;m not going anywhere wwith you.&#34; She turned her face away from him.</p>
+                        
+                        <p>Alexander clenched his fists tightly. &#34;You&#39;re coming home with me,whether you like it or not. Now get up,&#34; he ordered.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1091,23 +1151,27 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;No,&#34; she responded stubbornly.</p>
-                    
-                    <p>&#34;You know I can carry youout of here,right?&#34;</p>
-                    
-                    <p>&#34;You&#39;re goingto take me home against my will?&#34;</p>
-                    
-                    <p>&#34;Yes.&#34;</p>
-                    
-                    <p>&#34;Just because I&#39;m your wife doesn&#39;t mean you should force me.&#34;</p>
-                    
-                    <p>&#34;You should&#39;ve known what you were getting into when you decided to marry me.&#34;</p>
-                    
-                    <p>&#34;So it&#39;s my fault I&#39;m in this situation with you?&#34; &#34;Who else&#39;s fault could it be?&#34; Lilly continued to look away from him. Alexander grabbed her chin and made her face him. &#34;You&#39;re too stubborn for your own good. What am I going to do with you?&#34; He was exasperated.As much as he wanted to punish his defiant wife, he couldn&#39;t bring himself to do it.</p>
-                    
-                    <p>&#34;Nothing, just forgive me.&#34; She moved closer, wrapped her arms around him. and gave him a passionate kiss.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;No,&#34; she responded stubbornly.</p>
+                        
+                        <p>&#34;You know I can carry youout of here,right?&#34;</p>
+                        
+                        <p>&#34;You&#39;re goingto take me home against my will?&#34;</p>
+                        
+                        <p>&#34;Yes.&#34;</p>
+                        
+                        <p>&#34;Just because I&#39;m your wife doesn&#39;t mean you should force me.&#34;</p>
+                        
+                        <p>&#34;You should&#39;ve known what you were getting into when you decided to marry me.&#34;</p>
+                        
+                        <p>&#34;So it&#39;s my fault I&#39;m in this situation with you?&#34; &#34;Who else&#39;s fault could it be?&#34; Lilly continued to look away from him. Alexander grabbed her chin and made her face him. &#34;You&#39;re too stubborn for your own good. What am I going to do with you?&#34; He was exasperated.As much as he wanted to punish his defiant wife, he couldn&#39;t bring himself to do it.</p>
+                        
+                        <p>&#34;Nothing, just forgive me.&#34; She moved closer, wrapped her arms around him. and gave him a passionate kiss.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2423,6 +2487,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2549,7 +2693,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2591,32 +2734,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2627,21 +2752,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2674,6 +2789,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2694,20 +2815,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

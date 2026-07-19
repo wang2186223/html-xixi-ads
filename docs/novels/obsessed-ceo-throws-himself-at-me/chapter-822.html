@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:20.021137">
-    <meta property="article:modified_time" content="2026-07-19T02:47:20.021137">
+    <meta property="article:published_time" content="2026-07-19T13:03:15.281250">
+    <meta property="article:modified_time" content="2026-07-19T13:03:15.281250">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:20">
+    <meta name="last-modified" content="2026-07-19 13:03:15">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:20.021137",
-        "dateModified": "2026-07-19T02:47:20.021137",
+        "datePublished": "2026-07-19T13:03:15.281250",
+        "dateModified": "2026-07-19T13:03:15.281250",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,17 +893,21 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Chapter 822</p>
-                    
-                    <p>Aaron frowned. “Don’t judge a dish by its appearance!”</p>
-                    
-                    <p>But you didn’t seem to like the dish when it was first served, his assistant mused silently.</p>
-                    
-                    <p>Of course, he dared not say it out loud.</p>
-                    
-                    <p>Aaron gave him a fork. “Try it. You’ll find out why I want to buy the restaurant.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Chapter 822</p>
+                        
+                        <p>Aaron frowned. “Don’t judge a dish by its appearance!”</p>
+                        
+                        <p>But you didn’t seem to like the dish when it was first served, his assistant mused silently.</p>
+                        
+                        <p>Of course, he dared not say it out loud.</p>
+                        
+                        <p>Aaron gave him a fork. “Try it. You’ll find out why I want to buy the restaurant.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -882,17 +922,21 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>His assistant was surprised. In Turlen, the strict social hierarchy meant that a servant would never get to share his or her master’s food.</p>
-                    
-                    <p>He accepted the fork earnestly and picked a slice of meat from the side of the bowl before placing it into his mouth carefully.</p>
-                    
-                    <p>Even though Aaron had praised the food, the assistant still couldn’t bring himself to believe that the bowl of stew was delicious. Mr. Aaron must’ve been starving. Anything would be delicious to him!</p>
-                    
-                    <p>Without warning, the meat melted inside his mouth.</p>
-                    
-                    <p>It was tender and fresh. Though the taste was slightly spicy, it was still acceptable.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>His assistant was surprised. In Turlen, the strict social hierarchy meant that a servant would never get to share his or her master’s food.</p>
+                        
+                        <p>He accepted the fork earnestly and picked a slice of meat from the side of the bowl before placing it into his mouth carefully.</p>
+                        
+                        <p>Even though Aaron had praised the food, the assistant still couldn’t bring himself to believe that the bowl of stew was delicious. Mr. Aaron must’ve been starving. Anything would be delicious to him!</p>
+                        
+                        <p>Without warning, the meat melted inside his mouth.</p>
+                        
+                        <p>It was tender and fresh. Though the taste was slightly spicy, it was still acceptable.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -907,17 +951,21 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>“How was it?” Aaron lifted his chin and inquired, as though he had prepared the dish himself.</p>
-                    
-                    <p>It took the assistant a while to regain his composure. He stuttered, “I-It cannot be described in words.”</p>
-                    
-                    <p>Rising to his feet, he declared, “I shall get the owner right away!”</p>
-                    
-                    <p>“Off you go, then!” Aaron waved him away. When the second dish was served, he continued gulping down the food. His antics soon attracted the other diners’ attention.</p>
-                    
-                    <p>“Maureen’s Kitchen did a good job. Look, a foreigner’s here!”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“How was it?” Aaron lifted his chin and inquired, as though he had prepared the dish himself.</p>
+                        
+                        <p>It took the assistant a while to regain his composure. He stuttered, “I-It cannot be described in words.”</p>
+                        
+                        <p>Rising to his feet, he declared, “I shall get the owner right away!”</p>
+                        
+                        <p>“Off you go, then!” Aaron waved him away. When the second dish was served, he continued gulping down the food. His antics soon attracted the other diners’ attention.</p>
+                        
+                        <p>“Maureen’s Kitchen did a good job. Look, a foreigner’s here!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -932,17 +980,21 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>“That foreigner looks like he had starved for ages. Ha!”</p>
-                    
-                    <p>“Stop laughing. You were the same earlier! Now that you’re full, you’re laughing at him?”</p>
-                    
-                    <p>The diners chatted happily around Aaron. This was the first time he had experienced such a lively meal, for back in his country, everyone ate in silence. It suddenly occurred to Aaron that it would be nice to chat with friends over a meal.</p>
-                    
-                    <p>He was engrossed in his thoughts when his phone suddenly rang.</p>
-                    
-                    <p>Only less than five people had his phone number.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“That foreigner looks like he had starved for ages. Ha!”</p>
+                        
+                        <p>“Stop laughing. You were the same earlier! Now that you’re full, you’re laughing at him?”</p>
+                        
+                        <p>The diners chatted happily around Aaron. This was the first time he had experienced such a lively meal, for back in his country, everyone ate in silence. It suddenly occurred to Aaron that it would be nice to chat with friends over a meal.</p>
+                        
+                        <p>He was engrossed in his thoughts when his phone suddenly rang.</p>
+                        
+                        <p>Only less than five people had his phone number.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -957,17 +1009,21 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>His face darkened as he pulled out his phone. The caller ID made his displeasure heighten.</p>
-                    
-                    <p>After taking a breath, he spoke in Turlenese. “Hello, Grandma.”</p>
-                    
-                    <p>“I heard you’re in Chanaea?” An elderly but terrifying voice rang out.</p>
-                    
-                    <p>“Yes,” Aaron answered. “Father gave me a mission to complete.”</p>
-                    
-                    <p>“I don’t care what he wants you to do. For now, you need to complete the mission I entrust you,” the voice demanded tartly.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>His face darkened as he pulled out his phone. The caller ID made his displeasure heighten.</p>
+                        
+                        <p>After taking a breath, he spoke in Turlenese. “Hello, Grandma.”</p>
+                        
+                        <p>“I heard you’re in Chanaea?” An elderly but terrifying voice rang out.</p>
+                        
+                        <p>“Yes,” Aaron answered. “Father gave me a mission to complete.”</p>
+                        
+                        <p>“I don’t care what he wants you to do. For now, you need to complete the mission I entrust you,” the voice demanded tartly.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -982,17 +1038,21 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Aaron had no choice but to say, “Yes, of course. What is it about?”</p>
-                    
-                    <p>“Head to No. 111 on Sunflower Street. There will be a woman waiting for you there. Arrange for her to leave Chanaea at once. She’s wanted there, so I need you to give her a disguise and a fake identity,” she ordered.</p>
-                    
-                    <p>“Understood.”</p>
-                    
-                    <p>His grandmother urged, “Get going now! Time is of the essence, so I need her to leave Chanaea by tonight.”</p>
-                    
-                    <p>“Got it. I’m on it right now.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Aaron had no choice but to say, “Yes, of course. What is it about?”</p>
+                        
+                        <p>“Head to No. 111 on Sunflower Street. There will be a woman waiting for you there. Arrange for her to leave Chanaea at once. She’s wanted there, so I need you to give her a disguise and a fake identity,” she ordered.</p>
+                        
+                        <p>“Understood.”</p>
+                        
+                        <p>His grandmother urged, “Get going now! Time is of the essence, so I need her to leave Chanaea by tonight.”</p>
+                        
+                        <p>“Got it. I’m on it right now.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1007,13 +1067,17 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>After the call ended, Aaron stood up. He gazed at the third dish that was just served and looked away in frustration</p>
-                    
-                    <p>Grandma’s so annoying. She and Father aren’t on good terms, but I have to carry out both missions. Ugh!</p>
-                    
-                    <p>Right then, his assistant rushed over to him, “Mr. Aaron, they refused to sell the restaurant and gave us the owner’s contact number instead.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>After the call ended, Aaron stood up. He gazed at the third dish that was just served and looked away in frustration</p>
+                        
+                        <p>Grandma’s so annoying. She and Father aren’t on good terms, but I have to carry out both missions. Ugh!</p>
+                        
+                        <p>Right then, his assistant rushed over to him, “Mr. Aaron, they refused to sell the restaurant and gave us the owner’s contact number instead.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2329,6 +2393,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2455,7 +2599,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2497,32 +2640,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2533,21 +2658,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2580,6 +2695,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2600,20 +2721,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

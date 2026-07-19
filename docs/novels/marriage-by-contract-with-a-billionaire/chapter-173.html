@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:29.795972">
-    <meta property="article:modified_time" content="2026-07-19T02:47:29.795972">
+    <meta property="article:published_time" content="2026-07-19T13:03:24.176523">
+    <meta property="article:modified_time" content="2026-07-19T13:03:24.176523">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:29">
+    <meta name="last-modified" content="2026-07-19 13:03:24">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:29.795972",
-        "dateModified": "2026-07-19T02:47:29.795972",
+        "datePublished": "2026-07-19T13:03:24.176523",
+        "dateModified": "2026-07-19T13:03:24.176523",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,21 +893,25 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>As Carolina was driven away into custody,the rain continued to pour down, adding a rhythmic patter to the tense atmosphere outside the warehouse. Alexander, Lily, and Maxwell regrouped near the SUV,each soaked through, but their expressions remained focused. There was a small sense of victory, but it was overshadowed by the escape of The Architect and his cryptic words.</p>
-                    
-                    <p>Maxwell leaned against the car, shaking water off his coat.&#34;We might have Carolina, but The Architect slipped through our fingers again. What do we do now?&#34;</p>
-                    
-                    <p>Alexander ran a hand through his wet hair, looking back at the shadowed warehouse.&#34;We regroup,follow the leads, and find out what his next move is. He&#39;s playing a long game, but he made a mistake tonight by showing himself.&#34;</p>
-                    
-                    <p>Lily&#39;s eyes darted to the darkened alleyways around them, a hint of worry in her voice.&#34;He said this was only the beginning. Whatever he&#39;s planning,it&#39;s bigger than just Carolina. And he&#39;s more confident than ever.&#34;</p>
-                    
-                    <p>Caleb&#39;s voice crackled through the earpiece, cutting into their conversation.“You&#39;re right to be concerned, Lily. I&#39;ve been monitoring police chatter.There&#39;s a new alert going out-unexplained power failures across key city grids, including some connected to high-security systems. He&#39;s already starting the next phase.&#34;</p>
-                    
-                    <p>Alexander&#39;s jaw clenched. &#34;We need to find out what he&#39;s targeting. If he&#39;s hitting power grids, he could bé planning a major blackout to cover up something bigger,”</p>
-                    
-                    <p>Maxwell nodded, the rain running down his face. &#34;I&#39;ll reach out to my</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>As Carolina was driven away into custody,the rain continued to pour down, adding a rhythmic patter to the tense atmosphere outside the warehouse. Alexander, Lily, and Maxwell regrouped near the SUV,each soaked through, but their expressions remained focused. There was a small sense of victory, but it was overshadowed by the escape of The Architect and his cryptic words.</p>
+                        
+                        <p>Maxwell leaned against the car, shaking water off his coat.&#34;We might have Carolina, but The Architect slipped through our fingers again. What do we do now?&#34;</p>
+                        
+                        <p>Alexander ran a hand through his wet hair, looking back at the shadowed warehouse.&#34;We regroup,follow the leads, and find out what his next move is. He&#39;s playing a long game, but he made a mistake tonight by showing himself.&#34;</p>
+                        
+                        <p>Lily&#39;s eyes darted to the darkened alleyways around them, a hint of worry in her voice.&#34;He said this was only the beginning. Whatever he&#39;s planning,it&#39;s bigger than just Carolina. And he&#39;s more confident than ever.&#34;</p>
+                        
+                        <p>Caleb&#39;s voice crackled through the earpiece, cutting into their conversation.“You&#39;re right to be concerned, Lily. I&#39;ve been monitoring police chatter.There&#39;s a new alert going out-unexplained power failures across key city grids, including some connected to high-security systems. He&#39;s already starting the next phase.&#34;</p>
+                        
+                        <p>Alexander&#39;s jaw clenched. &#34;We need to find out what he&#39;s targeting. If he&#39;s hitting power grids, he could bé planning a major blackout to cover up something bigger,”</p>
+                        
+                        <p>Maxwell nodded, the rain running down his face. &#34;I&#39;ll reach out to my</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -886,21 +926,25 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>contacts at the power company and see what I can dig up. If he&#39;s targeting infrastructure, we might be able to predict his next move.&#34;</p>
-                    
-                    <p>Lily added,&#34;And I&#39;ll dig through the data we&#39;ve gathered so far,see if there&#39;s a pattern we missed. He has to leave a trail somewhere, no matter how good he thinks he is.&#34;</p>
-                    
-                    <p>Alexander glanced at Lily, feeling a surge of appreciation for her determination. Despite everything they&#39;d faced, she remained unyielding,always by his side. He reached out, taking her hand for a brief moment.“We&#39;ll get through this, together.”</p>
-                    
-                    <p>Lily squeezed his hand back. “Always.”</p>
-                    
-                    <p>As they prepared to leave the warehouse area, a sleek, black car pulled up,and an unexpected figure stepped out-Carolina&#39;s lawyer, a sharp-looking woman with a no-nonsense demeanor. She approached them,barely flinching at the rain.</p>
-                    
-                    <p>She looked directly at Alexander and Lily, her expression unreadable. “My client has instructed me to deliver a message. Carolina believes that you&#39;ll need her heIp sooner than you think. She&#39;s willing to trade information for a deal.&#34;</p>
-                    
-                    <p>Alexander narrowed his eyes. “She&#39;s bluffing. She&#39;ll say anything to get out of facing justice.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>contacts at the power company and see what I can dig up. If he&#39;s targeting infrastructure, we might be able to predict his next move.&#34;</p>
+                        
+                        <p>Lily added,&#34;And I&#39;ll dig through the data we&#39;ve gathered so far,see if there&#39;s a pattern we missed. He has to leave a trail somewhere, no matter how good he thinks he is.&#34;</p>
+                        
+                        <p>Alexander glanced at Lily, feeling a surge of appreciation for her determination. Despite everything they&#39;d faced, she remained unyielding,always by his side. He reached out, taking her hand for a brief moment.“We&#39;ll get through this, together.”</p>
+                        
+                        <p>Lily squeezed his hand back. “Always.”</p>
+                        
+                        <p>As they prepared to leave the warehouse area, a sleek, black car pulled up,and an unexpected figure stepped out-Carolina&#39;s lawyer, a sharp-looking woman with a no-nonsense demeanor. She approached them,barely flinching at the rain.</p>
+                        
+                        <p>She looked directly at Alexander and Lily, her expression unreadable. “My client has instructed me to deliver a message. Carolina believes that you&#39;ll need her heIp sooner than you think. She&#39;s willing to trade information for a deal.&#34;</p>
+                        
+                        <p>Alexander narrowed his eyes. “She&#39;s bluffing. She&#39;ll say anything to get out of facing justice.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -915,21 +959,25 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>The lawyer&#39;s smirk hinted at some hidden knowledge. &#34;She told me you&#39;d say that. But she also mentioned a specifie account in a Swiss bank-one that might have ties to your investigation. She&#39;s offering proof, in exchange for leniency.”</p>
-                    
-                    <p>Lily&#39;s expression faltered, a glimmer of uncertainty crossing her face.“Why</p>
-                    
-                    <p>would she give us this now?&#34;</p>
-                    
-                    <p>The lawyer shrugged. &#34;Desperation makes strange bedfellows. Think about it. She&#39;s at the central precinct. I&#39;d advise against taking too long.&#34;</p>
-                    
-                    <p>With that, the lawyer returned to her car and drove off, leaving Alexander and Lily to contemplate the new offer. Alexander felt his mind racing with possibilities. Could Carolina be using this as a ploy to manipulate them?Or did she genuinely have a piece of the puzzle that could help them get ahead of The Architect?</p>
-                    
-                    <p>Meanwhile, at a hidden location on the outskirts of the city, The Architect stood in a dimly lit room, surrounded boy banks of monitors and a dozen henchmen working at various stations. He observed the city grid flashing on one screen, showing the areas that were slowly losing power, one by one.</p>
-                    
-                    <p>“Excellent,” he murmured, turning to one of his operatives. “Theblackout will leave the city vulnerable. It&#39;s time to move forward with the next phase. Prepare our operatives for infiltration.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>The lawyer&#39;s smirk hinted at some hidden knowledge. &#34;She told me you&#39;d say that. But she also mentioned a specifie account in a Swiss bank-one that might have ties to your investigation. She&#39;s offering proof, in exchange for leniency.”</p>
+                        
+                        <p>Lily&#39;s expression faltered, a glimmer of uncertainty crossing her face.“Why</p>
+                        
+                        <p>would she give us this now?&#34;</p>
+                        
+                        <p>The lawyer shrugged. &#34;Desperation makes strange bedfellows. Think about it. She&#39;s at the central precinct. I&#39;d advise against taking too long.&#34;</p>
+                        
+                        <p>With that, the lawyer returned to her car and drove off, leaving Alexander and Lily to contemplate the new offer. Alexander felt his mind racing with possibilities. Could Carolina be using this as a ploy to manipulate them?Or did she genuinely have a piece of the puzzle that could help them get ahead of The Architect?</p>
+                        
+                        <p>Meanwhile, at a hidden location on the outskirts of the city, The Architect stood in a dimly lit room, surrounded boy banks of monitors and a dozen henchmen working at various stations. He observed the city grid flashing on one screen, showing the areas that were slowly losing power, one by one.</p>
+                        
+                        <p>“Excellent,” he murmured, turning to one of his operatives. “Theblackout will leave the city vulnerable. It&#39;s time to move forward with the next phase. Prepare our operatives for infiltration.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -944,21 +992,25 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>The operative nodded, his face grim. “What about Carolina? She&#39;s been captured.”</p>
-                    
-                    <p>The Architect waved a hand dismissively. &#34;She was always a pawn. Her role is over. Now, the real players step into the game.&#34;</p>
-                    
-                    <p>He walked over to another monitor, displaying live feeds from various points across thecity. As he watched, a particular feed caught his eye-one showing the central precinct where Carolina was being held. He leaned closer, his smile widening as he noticed a familiar figure leaving the</p>
-                    
-                    <p>building: Alexander, accompanied by Lily. The sight of them stirred something in him-a mix of admiration and disdain.</p>
-                    
-                    <p>“Ah, Alexander... you always were a challenge. But this time, you&#39;re playing in my world.&#34;</p>
-                    
-                    <p>He switched to another screen, showing a live feed of a construction site on the outskirts of town-a place that most people thought had been abandoned for years. But beneath the surface, it housed something far more sinister, a hidden hub for his operations.</p>
-                    
-                    <p>Turning back to his team, The Architect issued new orders. “Activate the sleeper agents in thecity. And send a message to our allies overseas. It&#39;s time to bring in additional resources. We&#39;re going to remind Alexander and his friends that no matter how far they think they&#39;ve come, they&#39;re stiIl playing by my rules.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>The operative nodded, his face grim. “What about Carolina? She&#39;s been captured.”</p>
+                        
+                        <p>The Architect waved a hand dismissively. &#34;She was always a pawn. Her role is over. Now, the real players step into the game.&#34;</p>
+                        
+                        <p>He walked over to another monitor, displaying live feeds from various points across thecity. As he watched, a particular feed caught his eye-one showing the central precinct where Carolina was being held. He leaned closer, his smile widening as he noticed a familiar figure leaving the</p>
+                        
+                        <p>building: Alexander, accompanied by Lily. The sight of them stirred something in him-a mix of admiration and disdain.</p>
+                        
+                        <p>“Ah, Alexander... you always were a challenge. But this time, you&#39;re playing in my world.&#34;</p>
+                        
+                        <p>He switched to another screen, showing a live feed of a construction site on the outskirts of town-a place that most people thought had been abandoned for years. But beneath the surface, it housed something far more sinister, a hidden hub for his operations.</p>
+                        
+                        <p>Turning back to his team, The Architect issued new orders. “Activate the sleeper agents in thecity. And send a message to our allies overseas. It&#39;s time to bring in additional resources. We&#39;re going to remind Alexander and his friends that no matter how far they think they&#39;ve come, they&#39;re stiIl playing by my rules.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -973,21 +1025,25 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Back at the precinct, Alexander and Lily stood outside the interrogation room where Carolina waited, her hands cuffed to the table. As they watched her through the one-way mirror, Lily couldn&#39;t shake theuneasy feeling that lingered in her chest.</p>
-                    
-                    <p>Alexander turned to her, his voice low. “You don&#39;t have to be in there with me. This might get messy.&#34;</p>
-                    
-                    <p>Lily shook her head, determination hardening her features. “We&#39;re doing this together, remember? Let&#39;s hear what she has to say. If she&#39;s lying, we&#39;Il know.&#34;</p>
-                    
-                    <p>They entered the room, and Carolina looked up, a sly smile curling her lips. &#34;Well, well. I knew you couldn&#39;t resist. How about we cut to the</p>
-                    
-                    <p>chase? I have inaformation on The Architect&#39;s next move-something you can&#39;t afford to ignore.”</p>
-                    
-                    <p>Alexander folded his arms, leaning forward. “Start talking, and it better be worth our time.&#34;</p>
-                    
-                    <p>Carolina&#39;s eyes glinted with a dangerous mix of triumph and defiance.“He&#39;s using the blackout to cover his tracks, but that&#39;s not all. There&#39;s a hidden facility beneath the old construction site off the eastern highway. It&#39;s his base of operations. But there&#39;s something else, something even he doesn&#39;t know I&#39;m aware of.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Back at the precinct, Alexander and Lily stood outside the interrogation room where Carolina waited, her hands cuffed to the table. As they watched her through the one-way mirror, Lily couldn&#39;t shake theuneasy feeling that lingered in her chest.</p>
+                        
+                        <p>Alexander turned to her, his voice low. “You don&#39;t have to be in there with me. This might get messy.&#34;</p>
+                        
+                        <p>Lily shook her head, determination hardening her features. “We&#39;re doing this together, remember? Let&#39;s hear what she has to say. If she&#39;s lying, we&#39;Il know.&#34;</p>
+                        
+                        <p>They entered the room, and Carolina looked up, a sly smile curling her lips. &#34;Well, well. I knew you couldn&#39;t resist. How about we cut to the</p>
+                        
+                        <p>chase? I have inaformation on The Architect&#39;s next move-something you can&#39;t afford to ignore.”</p>
+                        
+                        <p>Alexander folded his arms, leaning forward. “Start talking, and it better be worth our time.&#34;</p>
+                        
+                        <p>Carolina&#39;s eyes glinted with a dangerous mix of triumph and defiance.“He&#39;s using the blackout to cover his tracks, but that&#39;s not all. There&#39;s a hidden facility beneath the old construction site off the eastern highway. It&#39;s his base of operations. But there&#39;s something else, something even he doesn&#39;t know I&#39;m aware of.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1002,21 +1058,25 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>She leaned in closer, her voice dropping to a conspiratorial whisper.“There&#39;s a traitor among you. Someone feeding him information,keeping him one step ahead.&#34;</p>
-                    
-                    <p>Lily&#39;s blood ran cold, and she exchanged a look with Alexander. A traitor?It could explain how The Architect always seemed to stay ahead of them.But who could it be?</p>
-                    
-                    <p>Alexander clenched his fists, trying to maintain control. “Give us a name,Carolina. If you&#39;re lying-”</p>
-                    
-                    <p>&#34;I&#39;m not lying,” she interrupted, her tone turning serious. “But I&#39;ll only give you the name once I&#39;m outof here. Consider it insurance.&#34;</p>
-                    
-                    <p>Alexander&#39;s jaw tightened. “We&#39;ll see about that. For now, you&#39;re staying right where you are.&#34;</p>
-                    
-                    <p>Carolina&#39;s smile returned, but there was a new edge to it, a confidence that hinted she still had cards left to play. &#34;You can try to shut me out.Alexander, but you&#39;ll come back. You&#39;ll need me more than you realize.&#34;</p>
-                    
-                    <p>As they left the room, the weight of her words lingered in the air between</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>She leaned in closer, her voice dropping to a conspiratorial whisper.“There&#39;s a traitor among you. Someone feeding him information,keeping him one step ahead.&#34;</p>
+                        
+                        <p>Lily&#39;s blood ran cold, and she exchanged a look with Alexander. A traitor?It could explain how The Architect always seemed to stay ahead of them.But who could it be?</p>
+                        
+                        <p>Alexander clenched his fists, trying to maintain control. “Give us a name,Carolina. If you&#39;re lying-”</p>
+                        
+                        <p>&#34;I&#39;m not lying,” she interrupted, her tone turning serious. “But I&#39;ll only give you the name once I&#39;m outof here. Consider it insurance.&#34;</p>
+                        
+                        <p>Alexander&#39;s jaw tightened. “We&#39;ll see about that. For now, you&#39;re staying right where you are.&#34;</p>
+                        
+                        <p>Carolina&#39;s smile returned, but there was a new edge to it, a confidence that hinted she still had cards left to play. &#34;You can try to shut me out.Alexander, but you&#39;ll come back. You&#39;ll need me more than you realize.&#34;</p>
+                        
+                        <p>As they left the room, the weight of her words lingered in the air between</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1031,9 +1091,13 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>them. The thought of a traitor among their ranks changed everything.casting new shadows over their every move. And somewhere out there.The Architect continued to orchestrate his grand game,knowing he had sown enough seeds of doubt to keep them guessing.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>them. The thought of a traitor among their ranks changed everything.casting new shadows over their every move. And somewhere out there.The Architect continued to orchestrate his grand game,knowing he had sown enough seeds of doubt to keep them guessing.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2349,6 +2413,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2475,7 +2619,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2517,32 +2660,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2553,21 +2678,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2600,6 +2715,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2620,20 +2741,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

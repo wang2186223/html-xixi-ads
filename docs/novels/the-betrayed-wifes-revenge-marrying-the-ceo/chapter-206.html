@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.420528">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.420528">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.420094">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.420094">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.420528",
-        "dateModified": "2026-07-19T02:47:23.420528",
+        "datePublished": "2026-07-19T13:03:18.420094",
+        "dateModified": "2026-07-19T13:03:18.420094",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,21 +893,25 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Philip&#39;s POV</p>
-                    
-                    <p>Damn this headache! I struggled to consciousness through a foggy haze,each heartbeat like someone pounding a drum against my temples. The bitter aftertaste of alcohol lingered in my mouth, my throat as dry as if it had been coated with salt. I kept my eyes tightly shut, trying to block out the harsh sunlight piercing through the blinds.</p>
-                    
-                    <p>Without opening my eyes, I instinctively called out to the empty room,&#34;Annie, why didn&#39;t you make me your hangover soup last night?&#34; My voice was frighteningly hoarse, like sandpaper scraping against metal.</p>
-                    
-                    <p>I rolled over on the sofa, my wrinkled shirt sticking uncomfortably to my back as a wave of nausea washed over me. &#34;My head is killing me.Could you massage my temples a little?&#34;</p>
-                    
-                    <p>Only cold silence answered me. No footsteps, no sighs, no familiar scent of lilac that always surrounded Annie.</p>
-                    
-                    <p>Reality suddenly hit me like a bucket of ice water poured over my head.My eyes snapped open, and the living room spun before me. Empty bottles lay scattered across the floor, reflecting the harsh light. Annie wasn&#39;t here. She had left me. She had chosen Howard Thompson, and all I had left was this mess and endless regret.</p>
-                    
-                    <p>I gripped the sofa and tried to stand, but my legs felt as limp as overcooked pasta. I staggered a couple of steps, nearly tripping over the coffee table. The clock on the wall showed it was already ten in the morning.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Philip&#39;s POV</p>
+                        
+                        <p>Damn this headache! I struggled to consciousness through a foggy haze,each heartbeat like someone pounding a drum against my temples. The bitter aftertaste of alcohol lingered in my mouth, my throat as dry as if it had been coated with salt. I kept my eyes tightly shut, trying to block out the harsh sunlight piercing through the blinds.</p>
+                        
+                        <p>Without opening my eyes, I instinctively called out to the empty room,&#34;Annie, why didn&#39;t you make me your hangover soup last night?&#34; My voice was frighteningly hoarse, like sandpaper scraping against metal.</p>
+                        
+                        <p>I rolled over on the sofa, my wrinkled shirt sticking uncomfortably to my back as a wave of nausea washed over me. &#34;My head is killing me.Could you massage my temples a little?&#34;</p>
+                        
+                        <p>Only cold silence answered me. No footsteps, no sighs, no familiar scent of lilac that always surrounded Annie.</p>
+                        
+                        <p>Reality suddenly hit me like a bucket of ice water poured over my head.My eyes snapped open, and the living room spun before me. Empty bottles lay scattered across the floor, reflecting the harsh light. Annie wasn&#39;t here. She had left me. She had chosen Howard Thompson, and all I had left was this mess and endless regret.</p>
+                        
+                        <p>I gripped the sofa and tried to stand, but my legs felt as limp as overcooked pasta. I staggered a couple of steps, nearly tripping over the coffee table. The clock on the wall showed it was already ten in the morning.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -886,21 +926,25 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Unlike me, Howard Thompson would never appear before Annie</p>
-                    
-                    <p>exhausted and hungover. Howard would never yell at her without reason or blame her for his own mistakes.</p>
-                    
-                    <p>The thought filled me with deep self-loathing. I had always blamed Annie for my self-destructive behavior, accused her of not being attentive enough,not caring enough, when in fact, her kindness toward me had extended far beyond what anyone deserved.</p>
-                    
-                    <p>I collapsed back onto the sofa,feeling my ribs protest. I closed my eyes,and Annie&#39;s face immediately appeared before me, so clearit was as if she were right in front of me.</p>
-                    
-                    <p>Memories came flooding back like a tidal wave: how she would wordlessly help me to bed when I returned home drunk in the middle of the night;how her small but strong hands would precisely adjust the water temperature to make the perfect hangover soup; how her gentle fingers would draw circles on my temples to drive away my migraines; how she always prepared my breakfast in advance, even when she hadn&#39;t slept all night taking care of Brian.</p>
-                    
-                    <p>&#34;Why?&#34; I whispered to the empty room, &#34;Why did I take her for granted when I had her, only to discover she was the most precious thing in my life after I lost her?&#34;</p>
-                    
-                    <p>My voice echoed in this cold apartment, with no one to answer except the lifeless,expensive furniture.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Unlike me, Howard Thompson would never appear before Annie</p>
+                        
+                        <p>exhausted and hungover. Howard would never yell at her without reason or blame her for his own mistakes.</p>
+                        
+                        <p>The thought filled me with deep self-loathing. I had always blamed Annie for my self-destructive behavior, accused her of not being attentive enough,not caring enough, when in fact, her kindness toward me had extended far beyond what anyone deserved.</p>
+                        
+                        <p>I collapsed back onto the sofa,feeling my ribs protest. I closed my eyes,and Annie&#39;s face immediately appeared before me, so clearit was as if she were right in front of me.</p>
+                        
+                        <p>Memories came flooding back like a tidal wave: how she would wordlessly help me to bed when I returned home drunk in the middle of the night;how her small but strong hands would precisely adjust the water temperature to make the perfect hangover soup; how her gentle fingers would draw circles on my temples to drive away my migraines; how she always prepared my breakfast in advance, even when she hadn&#39;t slept all night taking care of Brian.</p>
+                        
+                        <p>&#34;Why?&#34; I whispered to the empty room, &#34;Why did I take her for granted when I had her, only to discover she was the most precious thing in my life after I lost her?&#34;</p>
+                        
+                        <p>My voice echoed in this cold apartment, with no one to answer except the lifeless,expensive furniture.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -915,21 +959,25 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>The harsh ring of the telephone cut through my thoughts like a sharp sword. The vibrating phone jumped on the glass coffee table, making a sound more grating than usual. I looked at the name flashing on the screen: Sarah Johnson.</p>
-                    
-                    <p>I took a deep breath, suppressing my internal resistance, and answered.&#34;</p>
-                    
-                    <p>Hello?&#34;</p>
-                    
-                    <p>Sarah&#39;s voice came through the phone, carrying obvious concern: &#34;Philip,dear,you sound terrible. About what we discussed last night... do you remember?&#34;</p>
-                    
-                    <p>I rubbed my temples, struggling to recall our conversation through the fog of alcohol. Vague fragments, like pieces of a broken puzzle,slowly connected in my mind. Yes, she had mentioned something about stabilizing our relationship, and... a child. I closed my eyes and squeezed a few words through clenched teeth: &#34;Yes, I remember.&#34;</p>
-                    
-                    <p>Her tone became soft and intimate: &#34;Darling, I know you&#39;re not feeling well right now, but we really need to talk about our future.&#34;</p>
-                    
-                    <p>She continued: &#34;I&#39;m worried about our baby. I want him to grow up in a safe, stable family. You know, I&#39;ve been through a failed marriage, and I don&#39;t want history to repeat itself.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>The harsh ring of the telephone cut through my thoughts like a sharp sword. The vibrating phone jumped on the glass coffee table, making a sound more grating than usual. I looked at the name flashing on the screen: Sarah Johnson.</p>
+                        
+                        <p>I took a deep breath, suppressing my internal resistance, and answered.&#34;</p>
+                        
+                        <p>Hello?&#34;</p>
+                        
+                        <p>Sarah&#39;s voice came through the phone, carrying obvious concern: &#34;Philip,dear,you sound terrible. About what we discussed last night... do you remember?&#34;</p>
+                        
+                        <p>I rubbed my temples, struggling to recall our conversation through the fog of alcohol. Vague fragments, like pieces of a broken puzzle,slowly connected in my mind. Yes, she had mentioned something about stabilizing our relationship, and... a child. I closed my eyes and squeezed a few words through clenched teeth: &#34;Yes, I remember.&#34;</p>
+                        
+                        <p>Her tone became soft and intimate: &#34;Darling, I know you&#39;re not feeling well right now, but we really need to talk about our future.&#34;</p>
+                        
+                        <p>She continued: &#34;I&#39;m worried about our baby. I want him to grow up in a safe, stable family. You know, I&#39;ve been through a failed marriage, and I don&#39;t want history to repeat itself.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -944,21 +992,25 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>She paused, then went on: &#34;I just want to make sure our relationship is solid, that our child will receive all your love and attention. Not like Brian..</p>
-                    
-                    <p>Brian&#39;s name pierced my chest like a sharp knife. My gaze fell on the dusty family pòrtrait on the bookshelf-me, Annie, and Brian, still a baby at the time. Thinking about it now, I could barely remember my son&#39;s face.Time had slipped through my fingers like sand, and I hadn&#39;t even realized what I&#39;d lost.</p>
-                    
-                    <p>When I didn&#39;t respond, Sarah raised her voice slightly:&#34;Philip,are you listening?&#34;</p>
-                    
-                    <p>&#34;I&#39;m listening,&#34; I answered softly, my chest compressed by a heavy feeling.</p>
-                    
-                    <p>Sarah continued: &#34;I know you still have feelings for Annie. I can understand that, really.&#34; There was a hint of jealousy in her voice. &#34;But now that we&#39;re going to have our own child, I hope you can make some commitments, to prove to me that this time will be different.&#34;</p>
-                    
-                    <p>&#34;What kind of commitments?&#34; I asked, somewhat confused. In the past,I might have immediately agreed to any of her demands, but now I felt an instinctive hesitation.</p>
-                    
-                    <p>Sarah&#39;s voice turned syrupy sweet: &#34;I want a guarantee that you&#39;ll be one hundred percent committed to our family.&#34; She took a deep breath. &#34;I&#39;ve thought of a way... if you had a vasectomy, it would give me peace of mind.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>She paused, then went on: &#34;I just want to make sure our relationship is solid, that our child will receive all your love and attention. Not like Brian..</p>
+                        
+                        <p>Brian&#39;s name pierced my chest like a sharp knife. My gaze fell on the dusty family pòrtrait on the bookshelf-me, Annie, and Brian, still a baby at the time. Thinking about it now, I could barely remember my son&#39;s face.Time had slipped through my fingers like sand, and I hadn&#39;t even realized what I&#39;d lost.</p>
+                        
+                        <p>When I didn&#39;t respond, Sarah raised her voice slightly:&#34;Philip,are you listening?&#34;</p>
+                        
+                        <p>&#34;I&#39;m listening,&#34; I answered softly, my chest compressed by a heavy feeling.</p>
+                        
+                        <p>Sarah continued: &#34;I know you still have feelings for Annie. I can understand that, really.&#34; There was a hint of jealousy in her voice. &#34;But now that we&#39;re going to have our own child, I hope you can make some commitments, to prove to me that this time will be different.&#34;</p>
+                        
+                        <p>&#34;What kind of commitments?&#34; I asked, somewhat confused. In the past,I might have immediately agreed to any of her demands, but now I felt an instinctive hesitation.</p>
+                        
+                        <p>Sarah&#39;s voice turned syrupy sweet: &#34;I want a guarantee that you&#39;ll be one hundred percent committed to our family.&#34; She took a deep breath. &#34;I&#39;ve thought of a way... if you had a vasectomy, it would give me peace of mind.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -973,21 +1025,25 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;What?&#34; My voice rose an octave, the shock instantly replacing my hangover headache. I jumped up from the sofa, nearly dropping the glass in my hand. &#34;That&#39;s absurd!&#34;</p>
-                    
-                    <p>&#34;Please hear me out,&#34; Sarah quicklysaid,her voice filled with what seemed like genuine pleading, &#34;You already have Brian, and soon you&#39;ll have our baby. I just want to make sure you won&#39;t be distracted in the future,that you won&#39;t leave us for other women and other children.&#34;</p>
-                    
-                    <p>She mentioned Brian, which triggered my guilt: &#34;Look at Brian&#39;s situation now. I don&#39;t want our child to go through the same thing. Think about it,how heartbroken would our baby be if you abandoned him too?&#34;</p>
-                    
-                    <p>I felt a wave of discomfort; this demand was too much. &#34;Sarah, this is an unreasonable request. I don&#39;t think it&#39;s necessary.&#34;</p>
-                    
-                    <p>&#34;Philip,&#34; Sarah&#39;s voice became somewhat tense,though she still tried to maintain patience, &#34;I know this sounds extreme, but please understand my concerns.&#34;</p>
-                    
-                    <p>&#34;I understand your concerns, but a vasectomy? That&#39;s not the way to solve the problem,&#34; I insisted.</p>
-                    
-                    <p>Sarah was silent for a few seconds. When she spoke again, her tone had completely changed: &#34;I thought you would do anything for our child.&#34; Her voice cooled. &#34;I&#39;ve given you a chance, Philip. You&#39;ve seen the consequences of making the wrong life choices. If you can&#39;t prove your commitment to me, then I have no reason to continue this pregnancy.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;What?&#34; My voice rose an octave, the shock instantly replacing my hangover headache. I jumped up from the sofa, nearly dropping the glass in my hand. &#34;That&#39;s absurd!&#34;</p>
+                        
+                        <p>&#34;Please hear me out,&#34; Sarah quicklysaid,her voice filled with what seemed like genuine pleading, &#34;You already have Brian, and soon you&#39;ll have our baby. I just want to make sure you won&#39;t be distracted in the future,that you won&#39;t leave us for other women and other children.&#34;</p>
+                        
+                        <p>She mentioned Brian, which triggered my guilt: &#34;Look at Brian&#39;s situation now. I don&#39;t want our child to go through the same thing. Think about it,how heartbroken would our baby be if you abandoned him too?&#34;</p>
+                        
+                        <p>I felt a wave of discomfort; this demand was too much. &#34;Sarah, this is an unreasonable request. I don&#39;t think it&#39;s necessary.&#34;</p>
+                        
+                        <p>&#34;Philip,&#34; Sarah&#39;s voice became somewhat tense,though she still tried to maintain patience, &#34;I know this sounds extreme, but please understand my concerns.&#34;</p>
+                        
+                        <p>&#34;I understand your concerns, but a vasectomy? That&#39;s not the way to solve the problem,&#34; I insisted.</p>
+                        
+                        <p>Sarah was silent for a few seconds. When she spoke again, her tone had completely changed: &#34;I thought you would do anything for our child.&#34; Her voice cooled. &#34;I&#39;ve given you a chance, Philip. You&#39;ve seen the consequences of making the wrong life choices. If you can&#39;t prove your commitment to me, then I have no reason to continue this pregnancy.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1002,21 +1058,25 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;Are you threatening me?&#34; I asked in surprise.</p>
-                    
-                    <p>&#34;No, I&#39;m just stating facts,&#34; Sarah&#39;s tone was resolute. &#34;If you can&#39;t do this,I&#39;ll terminate the pregnancy. Rather than bringing a child into this world who constantly worries about being abandoned by his father,it&#39;s better not to have this child at all.&#34;</p>
-                    
-                    <p>Her words sank like a stone in water,but the ripples they created were unexpected-instead of the panic and anger I anticipated, I felt a strange sense of relief. It was as if someone had opened a window,letting fresh air rush into a room that had been sealed for too long.</p>
-                    
-                    <p>My voice carried a firmness that surprised even me: &#34;You should think carefully,Sarah.&#34; I paced slowly, my voice growing stronger. &#34;Once you terminate this pregnancy, I won&#39;t give you a penny, ever, regardless of whether you need money in the future.&#34;</p>
-                    
-                    <p>&#34;As for having children...&#34; I said coolly, &#34;If I want children,there are many women willing to help me.&#34;</p>
-                    
-                    <p>&#34;Consider carefully whether you really want to give up this child.&#34; My voice carried a caImness I hadn&#39;t anticipated. &#34;I need to consider whether I really want to have children with someone else.&#34;</p>
-                    
-                    <p>There was silence on the other end, with only faint breathing indicating Sarah was still on the line. This might have been the first time I&#39;d had the upper hand in our verbal exchanges, and I didn&#39;t even need to deliberately strive for it.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;Are you threatening me?&#34; I asked in surprise.</p>
+                        
+                        <p>&#34;No, I&#39;m just stating facts,&#34; Sarah&#39;s tone was resolute. &#34;If you can&#39;t do this,I&#39;ll terminate the pregnancy. Rather than bringing a child into this world who constantly worries about being abandoned by his father,it&#39;s better not to have this child at all.&#34;</p>
+                        
+                        <p>Her words sank like a stone in water,but the ripples they created were unexpected-instead of the panic and anger I anticipated, I felt a strange sense of relief. It was as if someone had opened a window,letting fresh air rush into a room that had been sealed for too long.</p>
+                        
+                        <p>My voice carried a firmness that surprised even me: &#34;You should think carefully,Sarah.&#34; I paced slowly, my voice growing stronger. &#34;Once you terminate this pregnancy, I won&#39;t give you a penny, ever, regardless of whether you need money in the future.&#34;</p>
+                        
+                        <p>&#34;As for having children...&#34; I said coolly, &#34;If I want children,there are many women willing to help me.&#34;</p>
+                        
+                        <p>&#34;Consider carefully whether you really want to give up this child.&#34; My voice carried a caImness I hadn&#39;t anticipated. &#34;I need to consider whether I really want to have children with someone else.&#34;</p>
+                        
+                        <p>There was silence on the other end, with only faint breathing indicating Sarah was still on the line. This might have been the first time I&#39;d had the upper hand in our verbal exchanges, and I didn&#39;t even need to deliberately strive for it.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1031,13 +1091,17 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Philip,&#34; she finally spoke, her voice carrying a hint of surprise I&#39;d never heard before, &#34;You can&#39;t treat me-treat our child-this way. This isn&#39;t like you at all.&#34;</p>
-                    
-                    <p>She tried to regain her usual tone: &#34;I&#39;ve made up my mind. If you don&#39;t agree to my conditions. I&#39;ll schedule the procedure immediately.&#34;</p>
-                    
-                    <p>&#34;The money I transferred to you last tíme should be enough for the procedure,&#34; my tone could only be described as indifferent. &#34;If you don&#39;t mind, you can schedule the surgery for tomorrow morning.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Philip,&#34; she finally spoke, her voice carrying a hint of surprise I&#39;d never heard before, &#34;You can&#39;t treat me-treat our child-this way. This isn&#39;t like you at all.&#34;</p>
+                        
+                        <p>She tried to regain her usual tone: &#34;I&#39;ve made up my mind. If you don&#39;t agree to my conditions. I&#39;ll schedule the procedure immediately.&#34;</p>
+                        
+                        <p>&#34;The money I transferred to you last tíme should be enough for the procedure,&#34; my tone could only be described as indifferent. &#34;If you don&#39;t mind, you can schedule the surgery for tomorrow morning.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2353,6 +2417,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2479,7 +2623,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2521,32 +2664,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2557,21 +2682,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2604,6 +2719,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2624,20 +2745,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

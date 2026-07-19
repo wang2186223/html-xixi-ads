@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:29.759238">
-    <meta property="article:modified_time" content="2026-07-19T02:47:29.759238">
+    <meta property="article:published_time" content="2026-07-19T13:03:24.141445">
+    <meta property="article:modified_time" content="2026-07-19T13:03:24.141445">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:29">
+    <meta name="last-modified" content="2026-07-19 13:03:24">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:29.759238",
-        "dateModified": "2026-07-19T02:47:29.759238",
+        "datePublished": "2026-07-19T13:03:24.141445",
+        "dateModified": "2026-07-19T13:03:24.141445",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,25 +893,29 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>&#34;Max.&#34;</p>
-                    
-                    <p>&#34;Yes,sir?&#34;</p>
-                    
-                    <p>&#34;Is everything prepared?&#34;</p>
-                    
-                    <p>&#34;Yes, sir. Her audio is live, and we&#39;re able totrack her movements.&#34;</p>
-                    
-                    <p>&#34;What about the camera I instructed you to attach to her backpack?&#34;</p>
-                    
-                    <p>&#34;I installed that too, sir. It&#39;s online now, and you can watch and listen to her actions through the tablet.&#34; Max handed the tablet to his superior.</p>
-                    
-                    <p>He powered it on and began watching the footage, noting that she was already approaching the base of the mountain. Max noticed the concern on his boss&#39;s face. Everyone was aware of how much he cared for his wife,making this decision especially difficult for him.</p>
-                    
-                    <p>Alexander remained near the forest, intending to stay close to her. He settled inside the vehicle, observing her progress. Seven hours had passed since she started the climb, and from the sound of her breathing, he could tell how exhausted she was.&#34;You could take a break,&#34; he muttered to himself, as though she could hear him. She had been walking for hours without resting, and her legs must have been aching by now. He checked how far she had left before reaching the other side of the mountain and saw that she was stilI far from halfway. Worry gnawed at him, his heart leaping each time she almost stumbled. Did he make a mistake in choosing this punishment? He began to regret his decision, but it was too late to turn back now.Lost in his thoughts, he didn&#39;t realize when the live feed and audio cut off. When he finally focused back on the tablet, there was no image or sound.Alexander checked the connection, but everything appeared to be in working order. So why couldn&#39;t he see or hear her anymore?</p>
-                    
-                    <p>His anxiety spiked, and he immediately called out, &#34;Max!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>&#34;Max.&#34;</p>
+                        
+                        <p>&#34;Yes,sir?&#34;</p>
+                        
+                        <p>&#34;Is everything prepared?&#34;</p>
+                        
+                        <p>&#34;Yes, sir. Her audio is live, and we&#39;re able totrack her movements.&#34;</p>
+                        
+                        <p>&#34;What about the camera I instructed you to attach to her backpack?&#34;</p>
+                        
+                        <p>&#34;I installed that too, sir. It&#39;s online now, and you can watch and listen to her actions through the tablet.&#34; Max handed the tablet to his superior.</p>
+                        
+                        <p>He powered it on and began watching the footage, noting that she was already approaching the base of the mountain. Max noticed the concern on his boss&#39;s face. Everyone was aware of how much he cared for his wife,making this decision especially difficult for him.</p>
+                        
+                        <p>Alexander remained near the forest, intending to stay close to her. He settled inside the vehicle, observing her progress. Seven hours had passed since she started the climb, and from the sound of her breathing, he could tell how exhausted she was.&#34;You could take a break,&#34; he muttered to himself, as though she could hear him. She had been walking for hours without resting, and her legs must have been aching by now. He checked how far she had left before reaching the other side of the mountain and saw that she was stilI far from halfway. Worry gnawed at him, his heart leaping each time she almost stumbled. Did he make a mistake in choosing this punishment? He began to regret his decision, but it was too late to turn back now.Lost in his thoughts, he didn&#39;t realize when the live feed and audio cut off. When he finally focused back on the tablet, there was no image or sound.Alexander checked the connection, but everything appeared to be in working order. So why couldn&#39;t he see or hear her anymore?</p>
+                        
+                        <p>His anxiety spiked, and he immediately called out, &#34;Max!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -890,25 +930,29 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Yes, sir,&#34; Max responded, rushing over.</p>
-                    
-                    <p>&#34;What happened to the audio and video feed?&#34;</p>
-                    
-                    <p>&#34;Sir, the weather is calm; there shouldn&#39;t be any interference.&#34;</p>
-                    
-                    <p>&#34;Then why isn&#39;t the video or audio working?&#34; Alexander was becoming increasingly agitated.</p>
-                    
-                    <p>&#34;I&#39;ll fix it right away, sir.&#34;</p>
-                    
-                    <p>0</p>
-                    
-                    <p>Max hurried to check the antenna, but it was functioning properly,which could only mean one thing: either the devices had been disconnected, or they were damaged. But how was he going to tell his boss that?</p>
-                    
-                    <p>Alexander exited the car and approached the team. &#34;Have you resolved the issue? Don&#39;t you realize she&#39;s out there all alone?&#34;</p>
-                    
-                    <p>&#34;Sir...&#34; Max hesitated, fear evident in his voice.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Yes, sir,&#34; Max responded, rushing over.</p>
+                        
+                        <p>&#34;What happened to the audio and video feed?&#34;</p>
+                        
+                        <p>&#34;Sir, the weather is calm; there shouldn&#39;t be any interference.&#34;</p>
+                        
+                        <p>&#34;Then why isn&#39;t the video or audio working?&#34; Alexander was becoming increasingly agitated.</p>
+                        
+                        <p>&#34;I&#39;ll fix it right away, sir.&#34;</p>
+                        
+                        <p>0</p>
+                        
+                        <p>Max hurried to check the antenna, but it was functioning properly,which could only mean one thing: either the devices had been disconnected, or they were damaged. But how was he going to tell his boss that?</p>
+                        
+                        <p>Alexander exited the car and approached the team. &#34;Have you resolved the issue? Don&#39;t you realize she&#39;s out there all alone?&#34;</p>
+                        
+                        <p>&#34;Sir...&#34; Max hesitated, fear evident in his voice.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -923,25 +967,29 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Alexander&#39;s concern for anything related to his wife was well-known,and now that they&#39;d lost contact with her, Max knew he was in serious trouble.</p>
-                    
-                    <p>&#34;Speak!&#34; Alexander demanded, his patience thinning. &#34;Sir, we&#39;ve lost the signal. The antenna is still working, so it likely means the audio and video equipment on the backpack was damaged or destroyed.&#34; Alexander&#39;s face paled, his heart pounding in fear of what might have happened to her. In a sudden fit of rage, he grabbed Max by the throat,squeezing as Max struggled for air. But as Alexander realized that if anything happened to her, the blame rested on him, not Max, he released his grip, leaving Max gasping on the ground. The other guards backed away in fear, not wanting to be the next target.</p>
-                    
-                    <p>&#34;Should we head up there to search for her?&#34; one of the bodyguards cautiously suggested.</p>
-                    
-                    <p>&#34;Get the helicopter here, now!&#34; Alexander commanded,cursing himself for letting his pride and anger push him to this point. They could have gone home together peacefully, but now his actions had led to this crisis.</p>
-                    
-                    <p>A few guards immediately drove off to retrieve the helicopter from one of their bases. Alexander gazed anxiously up the mountain.She had climbed far, and if he attempted to scale it himself, he wouldn&#39;t reach her in time.His mind raced with fears of what might have befallen her-perhaps she had slipped and taken a hard fall, given how often she had nearly stumbled. The possibilities tormented him, driving him to the brink of madness.</p>
-                    
-                    <p>When Ethan heard about the situation, he rushed over with the helicopter.He couldn&#39;t believe Alexander had subjected the woman he loved to such a harsh ordeal. He knew what Alexander was capable of, but he never imagined that Lilly would experience the brunt of his ruthlessness. Alexander looked up as the helicopter arrived, the noise of its blades slicing through the air. He walked toward it, bracing against the strong winds generated by the rotors. Max straightened up and trailed closely behind his boss. Alexander climbed into the helicopter, fastening his seatbelt and putting on a helmet. &#34;What were you thinking?&#34; Ethan shouted over the helicopter&#39;s roar.</p>
-                    
-                    <p>What had he been thinking? Alexander asked himself the same question.</p>
-                    
-                    <p>&#34;You left her to tackle that mountain alone. Ifsomething happens to her,she&#39;ll never forgive you, and neither will Viola if anything happens to her mother.&#34;</p>
-                    
-                    <p>&#34;Just get us moving!&#34; Alexander yelled back. Did Ethan think he wasn&#39;t already tortured by those thoughts? Losing his family wasn&#39;t an option.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Alexander&#39;s concern for anything related to his wife was well-known,and now that they&#39;d lost contact with her, Max knew he was in serious trouble.</p>
+                        
+                        <p>&#34;Speak!&#34; Alexander demanded, his patience thinning. &#34;Sir, we&#39;ve lost the signal. The antenna is still working, so it likely means the audio and video equipment on the backpack was damaged or destroyed.&#34; Alexander&#39;s face paled, his heart pounding in fear of what might have happened to her. In a sudden fit of rage, he grabbed Max by the throat,squeezing as Max struggled for air. But as Alexander realized that if anything happened to her, the blame rested on him, not Max, he released his grip, leaving Max gasping on the ground. The other guards backed away in fear, not wanting to be the next target.</p>
+                        
+                        <p>&#34;Should we head up there to search for her?&#34; one of the bodyguards cautiously suggested.</p>
+                        
+                        <p>&#34;Get the helicopter here, now!&#34; Alexander commanded,cursing himself for letting his pride and anger push him to this point. They could have gone home together peacefully, but now his actions had led to this crisis.</p>
+                        
+                        <p>A few guards immediately drove off to retrieve the helicopter from one of their bases. Alexander gazed anxiously up the mountain.She had climbed far, and if he attempted to scale it himself, he wouldn&#39;t reach her in time.His mind raced with fears of what might have befallen her-perhaps she had slipped and taken a hard fall, given how often she had nearly stumbled. The possibilities tormented him, driving him to the brink of madness.</p>
+                        
+                        <p>When Ethan heard about the situation, he rushed over with the helicopter.He couldn&#39;t believe Alexander had subjected the woman he loved to such a harsh ordeal. He knew what Alexander was capable of, but he never imagined that Lilly would experience the brunt of his ruthlessness. Alexander looked up as the helicopter arrived, the noise of its blades slicing through the air. He walked toward it, bracing against the strong winds generated by the rotors. Max straightened up and trailed closely behind his boss. Alexander climbed into the helicopter, fastening his seatbelt and putting on a helmet. &#34;What were you thinking?&#34; Ethan shouted over the helicopter&#39;s roar.</p>
+                        
+                        <p>What had he been thinking? Alexander asked himself the same question.</p>
+                        
+                        <p>&#34;You left her to tackle that mountain alone. Ifsomething happens to her,she&#39;ll never forgive you, and neither will Viola if anything happens to her mother.&#34;</p>
+                        
+                        <p>&#34;Just get us moving!&#34; Alexander yelled back. Did Ethan think he wasn&#39;t already tortured by those thoughts? Losing his family wasn&#39;t an option.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -956,25 +1004,29 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Ethan piloted the helicopter to the top of the mountain, and they began their search for Lilly. They scoured the area until darkness fell.</p>
-                    
-                    <p>&#34;Alexander, she&#39;s nowhere to be found,&#34; Ethan said after they&#39;d searched every possible spot with no sign of her.</p>
-                    
-                    <p>&#34;That can&#39;t be,&#34; Alexander shook his head in denial. His Lilly couldn&#39;t just vanish.</p>
-                    
-                    <p>&#34;Bring the helicopter down,&#34; he ordered.</p>
-                    
-                    <p>&#34;Alexander, it&#39;s too dark-&#34;</p>
-                    
-                    <p>&#34;I said bring it down!&#34; he snapped, his agitation growing.</p>
-                    
-                    <p>Ethan complied, landing the helicopter on the mountainside. Alexander removed his helmet and unbuckled his seatbelt before stepping out. &#34;Are you sure this is wise?&#34; Ethan asked. &#34;There might be caves in this mountain. She could have fallen into one and lost consciousness,&#34; Alexander speculated. Ethan considered this and nodded. &#34;You might be right; we should continue searching.&#34;</p>
-                    
-                    <p>&#34;Get the men ready. Tell Max to assemble a team of about 200 to search this mountain immediately.&#34;</p>
-                    
-                    <p>&#34;I&#39;ll handle it.&#34; Ethan relayed the orders, and soon a large group of men was scouring the mountainside.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Ethan piloted the helicopter to the top of the mountain, and they began their search for Lilly. They scoured the area until darkness fell.</p>
+                        
+                        <p>&#34;Alexander, she&#39;s nowhere to be found,&#34; Ethan said after they&#39;d searched every possible spot with no sign of her.</p>
+                        
+                        <p>&#34;That can&#39;t be,&#34; Alexander shook his head in denial. His Lilly couldn&#39;t just vanish.</p>
+                        
+                        <p>&#34;Bring the helicopter down,&#34; he ordered.</p>
+                        
+                        <p>&#34;Alexander, it&#39;s too dark-&#34;</p>
+                        
+                        <p>&#34;I said bring it down!&#34; he snapped, his agitation growing.</p>
+                        
+                        <p>Ethan complied, landing the helicopter on the mountainside. Alexander removed his helmet and unbuckled his seatbelt before stepping out. &#34;Are you sure this is wise?&#34; Ethan asked. &#34;There might be caves in this mountain. She could have fallen into one and lost consciousness,&#34; Alexander speculated. Ethan considered this and nodded. &#34;You might be right; we should continue searching.&#34;</p>
+                        
+                        <p>&#34;Get the men ready. Tell Max to assemble a team of about 200 to search this mountain immediately.&#34;</p>
+                        
+                        <p>&#34;I&#39;ll handle it.&#34; Ethan relayed the orders, and soon a large group of men was scouring the mountainside.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -989,25 +1041,29 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Alexander was right about the caves in the area, but none led them to Lilly.</p>
-                    
-                    <p>If he combed this entire mnountain and didn&#39;t find her, he would lose his sanity. He would blame himself if anything terrible happened to her. What would he say to Viola if her mother wasn&#39;t found?</p>
-                    
-                    <p>&#34;Lilly, where are you? I&#39;m sorry,&#34; he muttered, his voice thick with emotion. He searched the same cave repeatedly but found no trace of her.</p>
-                    
-                    <p>&#34;Lilly!&#34; he called out, his voice echoing through the mountains.</p>
-                    
-                    <p>He shouted her name over and over, but there was no answer. Ethan watched him sympathetically. &#34;Why are you putting yourself through this?&#34;Ethan asked.</p>
-                    
-                    <p>Alexander suddenly remembered Lilly&#39;s warning that he would end up hurting himself, and she had been right-he was in agony.</p>
-                    
-                    <p>Caleb was furious when he learned what had happened and immediately dispatched his men to join the search. He hadn&#39;t anticipated things spiraling out of control; otherwise, he would have intervened. Alexander sat on a large rock, staringblankly into the distance, wishing he could turn back time. His phone rang, and he quickly answered,hoping for good news. It was Viola. Hearing his daughter&#39;s voice made his heart ache even more. &#34;Daddly,&#34; she said, her sweet voice making his chest tighten.</p>
-                    
-                    <p>Alexander swallowed hard, trying to keep his emotions in check so she wouldn&#39;t sense anything was wrong. &#34;Yes, darling?&#34;</p>
-                    
-                    <p>&#34;Why aren&#39;t you home yet? You promised to read me a bedtime story since Mommy&#39;s away.&#34; Viola blinked her eyes and pouted.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Alexander was right about the caves in the area, but none led them to Lilly.</p>
+                        
+                        <p>If he combed this entire mnountain and didn&#39;t find her, he would lose his sanity. He would blame himself if anything terrible happened to her. What would he say to Viola if her mother wasn&#39;t found?</p>
+                        
+                        <p>&#34;Lilly, where are you? I&#39;m sorry,&#34; he muttered, his voice thick with emotion. He searched the same cave repeatedly but found no trace of her.</p>
+                        
+                        <p>&#34;Lilly!&#34; he called out, his voice echoing through the mountains.</p>
+                        
+                        <p>He shouted her name over and over, but there was no answer. Ethan watched him sympathetically. &#34;Why are you putting yourself through this?&#34;Ethan asked.</p>
+                        
+                        <p>Alexander suddenly remembered Lilly&#39;s warning that he would end up hurting himself, and she had been right-he was in agony.</p>
+                        
+                        <p>Caleb was furious when he learned what had happened and immediately dispatched his men to join the search. He hadn&#39;t anticipated things spiraling out of control; otherwise, he would have intervened. Alexander sat on a large rock, staringblankly into the distance, wishing he could turn back time. His phone rang, and he quickly answered,hoping for good news. It was Viola. Hearing his daughter&#39;s voice made his heart ache even more. &#34;Daddly,&#34; she said, her sweet voice making his chest tighten.</p>
+                        
+                        <p>Alexander swallowed hard, trying to keep his emotions in check so she wouldn&#39;t sense anything was wrong. &#34;Yes, darling?&#34;</p>
+                        
+                        <p>&#34;Why aren&#39;t you home yet? You promised to read me a bedtime story since Mommy&#39;s away.&#34; Viola blinked her eyes and pouted.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1022,25 +1078,29 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Alexander forced a smile, knowing she was pouting. &#34;I&#39;m sorry,sweetheart.Daddy has some late work to finish and won&#39;t be back until tomorrow.&#34;</p>
-                    
-                    <p>Viola sighed in disappointment. &#34;But you promised,&#34; she said, her voice tinged with sadness.</p>
-                    
-                    <p>Hearing her upset voice broke his heart. &#34;Since Daddy broke his promise,</p>
-                    
-                    <p>Daddy will let Viola decide his punishment. Does that sound fair?&#34;</p>
-                    
-                    <p>Viola perked up. &#34;Any punishment?&#34;</p>
-                    
-                    <p>&#34;Yes,darling.&#34;</p>
-                    
-                    <p>&#34;Okay,&#34; she said excitedly, already thinking of something.</p>
-                    
-                    <p>Hearing her cheerful tone brought a small smile to his face. &#34;Daddy needs to go now.Goodnight,sweetheart.&#34;</p>
-                    
-                    <p>&#34;Goodnight, Daddy. I love you.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Alexander forced a smile, knowing she was pouting. &#34;I&#39;m sorry,sweetheart.Daddy has some late work to finish and won&#39;t be back until tomorrow.&#34;</p>
+                        
+                        <p>Viola sighed in disappointment. &#34;But you promised,&#34; she said, her voice tinged with sadness.</p>
+                        
+                        <p>Hearing her upset voice broke his heart. &#34;Since Daddy broke his promise,</p>
+                        
+                        <p>Daddy will let Viola decide his punishment. Does that sound fair?&#34;</p>
+                        
+                        <p>Viola perked up. &#34;Any punishment?&#34;</p>
+                        
+                        <p>&#34;Yes,darling.&#34;</p>
+                        
+                        <p>&#34;Okay,&#34; she said excitedly, already thinking of something.</p>
+                        
+                        <p>Hearing her cheerful tone brought a small smile to his face. &#34;Daddy needs to go now.Goodnight,sweetheart.&#34;</p>
+                        
+                        <p>&#34;Goodnight, Daddy. I love you.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1055,21 +1115,25 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Daddy loves you too,&#34; Alexander replied before ending the call,sinking back into despair. If by tomorrow, Viola didn&#39;t see her mother, what would he tell her? It was already the next afternoon, and Lilly was still missing. Peter stormed over and punched Alexander in the face. &#34;How could you do this?!&#34; he shouted at Alexander,who stood motionless.</p>
-                    
-                    <p>If it had been anyone else, Alexander wouldn&#39;t have stood there and taken the hit. Ethan was shocked-it was the first time he had seen his bosS receive a punch.</p>
-                    
-                    <p>&#34;And you allowed him to carry out this plan?!&#34; Peter yelled at his father,who felt humiliated but remained silent, knowing he was also at fault.Had he stopped Alexander, none of this would have happened.</p>
-                    
-                    <p>They had people searching the entire mountain and surrounding areas. If she wasn&#39;t on the mountain, it meant she had been taken.</p>
-                    
-                    <p>Peter paced anxiously, realizing that he had always trusted his daughter&#39;s safety to Alexander, only to now discover that she wasn&#39;t even safe with her own husband.</p>
-                    
-                    <p>Alexander wiped the blood from the corner of his mouth with a handkerchief. &#34;If there&#39;s nothing else, I&#39;ll continue searching for her,&#34; he said, then left the mansion, got into his car, and sped off, ignoring his assistants who were calling after him.</p>
-                    
-                    <p>He was on the verge of losing his mind. &#34;Lilly, where are you?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Daddy loves you too,&#34; Alexander replied before ending the call,sinking back into despair. If by tomorrow, Viola didn&#39;t see her mother, what would he tell her? It was already the next afternoon, and Lilly was still missing. Peter stormed over and punched Alexander in the face. &#34;How could you do this?!&#34; he shouted at Alexander,who stood motionless.</p>
+                        
+                        <p>If it had been anyone else, Alexander wouldn&#39;t have stood there and taken the hit. Ethan was shocked-it was the first time he had seen his bosS receive a punch.</p>
+                        
+                        <p>&#34;And you allowed him to carry out this plan?!&#34; Peter yelled at his father,who felt humiliated but remained silent, knowing he was also at fault.Had he stopped Alexander, none of this would have happened.</p>
+                        
+                        <p>They had people searching the entire mountain and surrounding areas. If she wasn&#39;t on the mountain, it meant she had been taken.</p>
+                        
+                        <p>Peter paced anxiously, realizing that he had always trusted his daughter&#39;s safety to Alexander, only to now discover that she wasn&#39;t even safe with her own husband.</p>
+                        
+                        <p>Alexander wiped the blood from the corner of his mouth with a handkerchief. &#34;If there&#39;s nothing else, I&#39;ll continue searching for her,&#34; he said, then left the mansion, got into his car, and sped off, ignoring his assistants who were calling after him.</p>
+                        
+                        <p>He was on the verge of losing his mind. &#34;Lilly, where are you?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2385,6 +2449,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2511,7 +2655,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2553,32 +2696,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2589,21 +2714,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2636,6 +2751,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2656,20 +2777,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

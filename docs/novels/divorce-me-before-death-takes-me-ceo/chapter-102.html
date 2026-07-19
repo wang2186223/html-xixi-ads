@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:18.845720">
-    <meta property="article:modified_time" content="2026-07-19T02:47:18.845720">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.147649">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.147649">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:18">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:18.845720",
-        "dateModified": "2026-07-19T02:47:18.845720",
+        "datePublished": "2026-07-19T13:03:14.147649",
+        "dateModified": "2026-07-19T13:03:14.147649",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,33 +893,37 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>James led me into the storage room and took the jewelry case from my hands. He placed it in a cabinet, locking it with a soft click.</p>
-                    
-                    <p>&#34;Tiffany is completely out of line,&#34; he said, frowning. &#34;She&#39;s probably too young to distinguish right from wrong.&#34;</p>
-                    
-                    <p>He turned to me. &#34;Audrey, don&#39;t take it to heart, what she said...&#34;</p>
-                    
-                    <p>&#34;I&#39;m not taking it to heart,&#34; I interrupted. &#34;James, Blake and I are already divorced, it&#39;s all in the past. You don&#39;t need to worry, and you definitely don&#39;t need to get worked up for my sake.&#34;</p>
-                    
-                    <p>His face paled. &#34;Audrey, I...&#34;</p>
-                    
-                    <p>&#34;James,&#34; I pushed my hands into my pockets. &#34;Tiffany was just enjoying the drama. She&#39;s repeating what she sees online. Arguing only shows how much you care.&#34;</p>
-                    
-                    <p>When she entered with James earlier, Tiffany clearly didn&#39;t know who I was. But after their argument... that might change. After the divorce, I wanted to restart life as a designer, not be known as Blake Parker&#39;s ex-wife.</p>
-                    
-                    <p>James paused. &#34;Sorry. I&#39;ll be more careful.&#34;</p>
-                    
-                    <p>&#34;Let&#39;s go.&#34;</p>
-                    
-                    <p>We headed back to the main office. I was planning my exit when Tiffany blocked my path.</p>
-                    
-                    <p>&#34;Miss Sinclair! I&#39;m so sorry!&#34; She grabbed my hands.</p>
-                    
-                    <p>I pulled back, but she held on.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>James led me into the storage room and took the jewelry case from my hands. He placed it in a cabinet, locking it with a soft click.</p>
+                        
+                        <p>&#34;Tiffany is completely out of line,&#34; he said, frowning. &#34;She&#39;s probably too young to distinguish right from wrong.&#34;</p>
+                        
+                        <p>He turned to me. &#34;Audrey, don&#39;t take it to heart, what she said...&#34;</p>
+                        
+                        <p>&#34;I&#39;m not taking it to heart,&#34; I interrupted. &#34;James, Blake and I are already divorced, it&#39;s all in the past. You don&#39;t need to worry, and you definitely don&#39;t need to get worked up for my sake.&#34;</p>
+                        
+                        <p>His face paled. &#34;Audrey, I...&#34;</p>
+                        
+                        <p>&#34;James,&#34; I pushed my hands into my pockets. &#34;Tiffany was just enjoying the drama. She&#39;s repeating what she sees online. Arguing only shows how much you care.&#34;</p>
+                        
+                        <p>When she entered with James earlier, Tiffany clearly didn&#39;t know who I was. But after their argument... that might change. After the divorce, I wanted to restart life as a designer, not be known as Blake Parker&#39;s ex-wife.</p>
+                        
+                        <p>James paused. &#34;Sorry. I&#39;ll be more careful.&#34;</p>
+                        
+                        <p>&#34;Let&#39;s go.&#34;</p>
+                        
+                        <p>We headed back to the main office. I was planning my exit when Tiffany blocked my path.</p>
+                        
+                        <p>&#34;Miss Sinclair! I&#39;m so sorry!&#34; She grabbed my hands.</p>
+                        
+                        <p>I pulled back, but she held on.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -898,33 +938,37 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;I didn&#39;t know you worked here! I didn&#39;t recognize you!&#34; Her words rushed out.</p>
-                    
-                    <p>She glanced between us. &#34;No wonder James was so angry - you were here!&#34;</p>
-                    
-                    <p>&#34;I apologize for calling you a bitch earlier. I won&#39;t watch that stuff at work anymore!&#34;</p>
-                    
-                    <p>I gently freed my hands. &#34;It&#39;s fine. You didn&#39;t know.&#34;</p>
-                    
-                    <p>I moved past her toward the exit.</p>
-                    
-                    <p>&#34;Now that you know. keep your mouth shut!&#34; James snapped.</p>
-                    
-                    <p>Tiffany lowered her voice. &#34;Why are you so protective of her?&#34;</p>
-                    
-                    <p>&#34;Don&#39;t tell me you&#39;re trying to pick up Blake Parker&#39;s leftovers?&#39;</p>
-                    
-                    <p>James&#39;s eyes flashed. &#34;You&#39;re the leftover!&#34;</p>
-                    
-                    <p>&#34;Don&#39;t talk about Audrey like that again, or you&#39;ll regret it.&#34;</p>
-                    
-                    <p>I left, not waiting for their argument to end. My quiet apartment beckoned like a sanctuary after this day.</p>
-                    
-                    <p>The elevator doors opened. I stepped in and pressed the lobby button.Before they closed, James slipped through.</p>
-                    
-                    <p>&#34;Audrey.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;I didn&#39;t know you worked here! I didn&#39;t recognize you!&#34; Her words rushed out.</p>
+                        
+                        <p>She glanced between us. &#34;No wonder James was so angry - you were here!&#34;</p>
+                        
+                        <p>&#34;I apologize for calling you a bitch earlier. I won&#39;t watch that stuff at work anymore!&#34;</p>
+                        
+                        <p>I gently freed my hands. &#34;It&#39;s fine. You didn&#39;t know.&#34;</p>
+                        
+                        <p>I moved past her toward the exit.</p>
+                        
+                        <p>&#34;Now that you know. keep your mouth shut!&#34; James snapped.</p>
+                        
+                        <p>Tiffany lowered her voice. &#34;Why are you so protective of her?&#34;</p>
+                        
+                        <p>&#34;Don&#39;t tell me you&#39;re trying to pick up Blake Parker&#39;s leftovers?&#39;</p>
+                        
+                        <p>James&#39;s eyes flashed. &#34;You&#39;re the leftover!&#34;</p>
+                        
+                        <p>&#34;Don&#39;t talk about Audrey like that again, or you&#39;ll regret it.&#34;</p>
+                        
+                        <p>I left, not waiting for their argument to end. My quiet apartment beckoned like a sanctuary after this day.</p>
+                        
+                        <p>The elevator doors opened. I stepped in and pressed the lobby button.Before they closed, James slipped through.</p>
+                        
+                        <p>&#34;Audrey.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -939,33 +983,37 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>I focused on the floor numbers.</p>
-                    
-                    <p>&#34;Where are you headed? Home? I&#39;m heading there too. Want to go together?&#34;</p>
-                    
-                    <p>I stopped in the lobby. &#34;James. I&#39;d like some time alone.&#34;</p>
-                    
-                    <p>He was quiet for a moment.&#34;Let me drive you home. I&#39;ll stay silent the whole way,okay?&#34;</p>
-                    
-                    <p>I frowned.&#34;I...&#34;</p>
-                    
-                    <p>&#34;Just this once,&#34; he said softly.′′It′Syour first day - let me complete the routine of taking you to work and bringing you home.&#34;</p>
-                    
-                    <p>He shifted his weight.&#34;Tfyou want to be alone tomorrow, I promise I won&#39;t bother you.&#34;</p>
-                    
-                    <p>Despite my reluctance, I nodded. At least James meant well. I just couldn&#39;t figure out why he was acting so strange today.</p>
-                    
-                    <p>True to his word, James stayed completely silent during the drive.Only the engine&#39;s hum and occasional traffic sounds filled the car. I watched the city lights, grateful forthe quiet.</p>
-                    
-                    <p>When we reached my building, he parked and got out.</p>
-                    
-                    <p>&#34;I&#39;ll walk you up,&#34; he said, avoiding my eyes.</p>
-                    
-                    <p>I almost protested, but something in his expression stopped me. He seemed strangely anxious. We entered the building together.</p>
-                    
-                    <p>Our elevator ride was as silent as the drive. At my door, I found my keys.aware of James behind me.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>I focused on the floor numbers.</p>
+                        
+                        <p>&#34;Where are you headed? Home? I&#39;m heading there too. Want to go together?&#34;</p>
+                        
+                        <p>I stopped in the lobby. &#34;James. I&#39;d like some time alone.&#34;</p>
+                        
+                        <p>He was quiet for a moment.&#34;Let me drive you home. I&#39;ll stay silent the whole way,okay?&#34;</p>
+                        
+                        <p>I frowned.&#34;I...&#34;</p>
+                        
+                        <p>&#34;Just this once,&#34; he said softly.′′It′Syour first day - let me complete the routine of taking you to work and bringing you home.&#34;</p>
+                        
+                        <p>He shifted his weight.&#34;Tfyou want to be alone tomorrow, I promise I won&#39;t bother you.&#34;</p>
+                        
+                        <p>Despite my reluctance, I nodded. At least James meant well. I just couldn&#39;t figure out why he was acting so strange today.</p>
+                        
+                        <p>True to his word, James stayed completely silent during the drive.Only the engine&#39;s hum and occasional traffic sounds filled the car. I watched the city lights, grateful forthe quiet.</p>
+                        
+                        <p>When we reached my building, he parked and got out.</p>
+                        
+                        <p>&#34;I&#39;ll walk you up,&#34; he said, avoiding my eyes.</p>
+                        
+                        <p>I almost protested, but something in his expression stopped me. He seemed strangely anxious. We entered the building together.</p>
+                        
+                        <p>Our elevator ride was as silent as the drive. At my door, I found my keys.aware of James behind me.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -980,33 +1028,37 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Thanks for the ride. Good night.&#34;</p>
-                    
-                    <p>I opened the door and froze.</p>
-                    
-                    <p>&#34;Surprise!&#34;</p>
-                    
-                    <p>At least a dozen people filled my small apartment. Streamers hung from the ceiling. and a banner reading &#34;HAPPY BIRTHDAY, AUDREY!&#34;stretched across the wall.</p>
-                    
-                    <p>My birthday! Living with Blake had turned my life upside down so completely that I&#39;d forgotten my own birthday. I never thought Astrid would remember.</p>
-                    
-                    <p>Astrid emerged pushing a cake with lit candles, leading everyone in song.</p>
-                    
-                    <p>&#34;Audrey, happy birthday!&#34;</p>
-                    
-                    <p>My eyes filled with tears. After college, I&#39;d married Blake and lost touch with these friends. Now they were here, crammed into my rented apartment to celebrate.</p>
-                    
-                    <p>&#34;Look, she&#39;s crying!&#34; Astrid teased.</p>
-                    
-                    <p>&#34;Yes, you all moved me to tears,&#34; I admitted.</p>
-                    
-                    <p>My college classmates, design course friends - faces I hadn&#39;t seen in years-all smiled warmly.</p>
-                    
-                    <p>&#34;Don&#39;t cry,&#34; said a college friend, squeezing my arm. &#34;When you graduated and went straight into marriage, we thought it was a waste. You could&#39;ve done amazing things with jewelry design.&#34;</p>
-                    
-                    <p>She handed me a tissue. &#34;We saw the divorce news yesterday.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Thanks for the ride. Good night.&#34;</p>
+                        
+                        <p>I opened the door and froze.</p>
+                        
+                        <p>&#34;Surprise!&#34;</p>
+                        
+                        <p>At least a dozen people filled my small apartment. Streamers hung from the ceiling. and a banner reading &#34;HAPPY BIRTHDAY, AUDREY!&#34;stretched across the wall.</p>
+                        
+                        <p>My birthday! Living with Blake had turned my life upside down so completely that I&#39;d forgotten my own birthday. I never thought Astrid would remember.</p>
+                        
+                        <p>Astrid emerged pushing a cake with lit candles, leading everyone in song.</p>
+                        
+                        <p>&#34;Audrey, happy birthday!&#34;</p>
+                        
+                        <p>My eyes filled with tears. After college, I&#39;d married Blake and lost touch with these friends. Now they were here, crammed into my rented apartment to celebrate.</p>
+                        
+                        <p>&#34;Look, she&#39;s crying!&#34; Astrid teased.</p>
+                        
+                        <p>&#34;Yes, you all moved me to tears,&#34; I admitted.</p>
+                        
+                        <p>My college classmates, design course friends - faces I hadn&#39;t seen in years-all smiled warmly.</p>
+                        
+                        <p>&#34;Don&#39;t cry,&#34; said a college friend, squeezing my arm. &#34;When you graduated and went straight into marriage, we thought it was a waste. You could&#39;ve done amazing things with jewelry design.&#34;</p>
+                        
+                        <p>She handed me a tissue. &#34;We saw the divorce news yesterday.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1021,33 +1073,37 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;Today we&#39;re celebrating your birthday and your rebirth!&#34; Another friend raised her glass.</p>
-                    
-                    <p>&#34;Yes!&#34; I nodded through tears.</p>
-                    
-                    <p>The party buzzed around me. Astrid had planned everything - food.</p>
-                    
-                    <p>drinks, music, games. It felt like our carefree college days again.</p>
-                    
-                    <p>James approached with a gift box. &#34;Happy birthday.&#34;</p>
-                    
-                    <p>I suddenly understood his behavior.</p>
-                    
-                    <p>&#34;Astrid asked me to irritate you today... but I didn&#39;t know how,&#34; he admitted sheepishly. &#34;Maybe I went too far earlier. Sorry.&#34;</p>
-                    
-                    <p>&#34;I&#39;ve beena planning this gift for a while. Hope you like it.&#34;</p>
-                    
-                    <p>&#34;Thank you, James!&#34; I smiled,taking the box.</p>
-                    
-                    <p>Later,we moved to a KTV venue Astrid had booked. Glasses clinked,songs filled the air, and laughter bounced off the walls.</p>
-                    
-                    <p>Astrid grabbed a mic, looking gleeful. &#34;Blake Parker rented a bar for his divorce, so our Audrey gets to party too!&#34;</p>
-                    
-                    <p>She swayed slightly. &#34;We&#39;ve booked this room, and we&#39;re not leaving until we&#39;re wasted!&#34;</p>
-                    
-                    <p>Her tipsy enthusiasm made me smile. It had been too long since I&#39;d felt this happy.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;Today we&#39;re celebrating your birthday and your rebirth!&#34; Another friend raised her glass.</p>
+                        
+                        <p>&#34;Yes!&#34; I nodded through tears.</p>
+                        
+                        <p>The party buzzed around me. Astrid had planned everything - food.</p>
+                        
+                        <p>drinks, music, games. It felt like our carefree college days again.</p>
+                        
+                        <p>James approached with a gift box. &#34;Happy birthday.&#34;</p>
+                        
+                        <p>I suddenly understood his behavior.</p>
+                        
+                        <p>&#34;Astrid asked me to irritate you today... but I didn&#39;t know how,&#34; he admitted sheepishly. &#34;Maybe I went too far earlier. Sorry.&#34;</p>
+                        
+                        <p>&#34;I&#39;ve beena planning this gift for a while. Hope you like it.&#34;</p>
+                        
+                        <p>&#34;Thank you, James!&#34; I smiled,taking the box.</p>
+                        
+                        <p>Later,we moved to a KTV venue Astrid had booked. Glasses clinked,songs filled the air, and laughter bounced off the walls.</p>
+                        
+                        <p>Astrid grabbed a mic, looking gleeful. &#34;Blake Parker rented a bar for his divorce, so our Audrey gets to party too!&#34;</p>
+                        
+                        <p>She swayed slightly. &#34;We&#39;ve booked this room, and we&#39;re not leaving until we&#39;re wasted!&#34;</p>
+                        
+                        <p>Her tipsy enthusiasm made me smile. It had been too long since I&#39;d felt this happy.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1062,33 +1118,37 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>We partied until dawn, when everyone finally headed home with promises to meet again soon.</p>
-                    
-                    <p>Back in my apartment, I sank onto the sofa, still buzzing from the celebration. The simple gifts from my friends meant more than any expensive jewelry Blake had given me.</p>
-                    
-                    <p>I scrolled through my contacts until I found one I hadn&#39;t used in years:&#34;Rachel Hayes.&#34;</p>
-                    
-                    <p>I typed: &#34;Rachel, if only you were here today. It would have been perfuct.&#34;</p>
-                    
-                    <p>I hit send without expecting a reply. Rachel had been gone for four years.but reaching out to her memory felt right on this night of new beginnings</p>
-                    
-                    <p>**Laurel&#39;s POV**</p>
-                    
-                    <p>I watched Blake&#39;s car disappear down the driveway, the cold evening air barely registering.</p>
-                    
-                    <p>*Rachel Hayes. Why would Blake ask about her lately?*</p>
-                    
-                    <p>I walked into the living room, keeping my steps measured despite my boiling anger. My father stood as I entered.</p>
-                    
-                    <p>I removed my coat, frowning. &#34;Where&#39;s mom?&#34;</p>
-                    
-                    <p>He said, &#34;She went to the hospital to see Rachel.&#34;</p>
-                    
-                    <p>Fury surged through me. I threw my coat to the floor. &#34;What&#39;s she visiting her for?&#34;</p>
-                    
-                    <p>My voice echoed in the high-ceilinged room. &#34;That bastard child should have died a long time ago!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>We partied until dawn, when everyone finally headed home with promises to meet again soon.</p>
+                        
+                        <p>Back in my apartment, I sank onto the sofa, still buzzing from the celebration. The simple gifts from my friends meant more than any expensive jewelry Blake had given me.</p>
+                        
+                        <p>I scrolled through my contacts until I found one I hadn&#39;t used in years:&#34;Rachel Hayes.&#34;</p>
+                        
+                        <p>I typed: &#34;Rachel, if only you were here today. It would have been perfuct.&#34;</p>
+                        
+                        <p>I hit send without expecting a reply. Rachel had been gone for four years.but reaching out to her memory felt right on this night of new beginnings</p>
+                        
+                        <p>**Laurel&#39;s POV**</p>
+                        
+                        <p>I watched Blake&#39;s car disappear down the driveway, the cold evening air barely registering.</p>
+                        
+                        <p>*Rachel Hayes. Why would Blake ask about her lately?*</p>
+                        
+                        <p>I walked into the living room, keeping my steps measured despite my boiling anger. My father stood as I entered.</p>
+                        
+                        <p>I removed my coat, frowning. &#34;Where&#39;s mom?&#34;</p>
+                        
+                        <p>He said, &#34;She went to the hospital to see Rachel.&#34;</p>
+                        
+                        <p>Fury surged through me. I threw my coat to the floor. &#34;What&#39;s she visiting her for?&#34;</p>
+                        
+                        <p>My voice echoed in the high-ceilinged room. &#34;That bastard child should have died a long time ago!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1103,21 +1163,25 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>I stormed to my room and slammed the door. Once alone, I went straight to my dresser and opened the bottom drawer.</p>
-                    
-                    <p>Under layers of scarves lay Rachel&#39;s old phone. I took it out, caressing it as I looked out the window. My relationship with Rachel was terrible, That bastard child didn&#39;t deserve to be my sister. She didn&#39;t deserve to speak to me. How could I know which friends she had, which ones knew her secrets? Besides Audrey...</p>
-                    
-                    <p>Rachel, don&#39;t blame me... I just love Blake too much. For my happiness</p>
-                    
-                    <p>you should rest well in your grave.</p>
-                    
-                    <p>The screen lit up with notifications. Most were old, but one had just arrived.</p>
-                    
-                    <p>From Audrey Sinclair: *Rachel, if only you were here today, it wwould have been perfect.*</p>
-                    
-                    <p>A cruel smile curved my lips. Audrey, don&#39;t worry. Rachel Hayes will soon be gone for good!</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>I stormed to my room and slammed the door. Once alone, I went straight to my dresser and opened the bottom drawer.</p>
+                        
+                        <p>Under layers of scarves lay Rachel&#39;s old phone. I took it out, caressing it as I looked out the window. My relationship with Rachel was terrible, That bastard child didn&#39;t deserve to be my sister. She didn&#39;t deserve to speak to me. How could I know which friends she had, which ones knew her secrets? Besides Audrey...</p>
+                        
+                        <p>Rachel, don&#39;t blame me... I just love Blake too much. For my happiness</p>
+                        
+                        <p>you should rest well in your grave.</p>
+                        
+                        <p>The screen lit up with notifications. Most were old, but one had just arrived.</p>
+                        
+                        <p>From Audrey Sinclair: *Rachel, if only you were here today, it wwould have been perfect.*</p>
+                        
+                        <p>A cruel smile curved my lips. Audrey, don&#39;t worry. Rachel Hayes will soon be gone for good!</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2433,6 +2497,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2559,7 +2703,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2601,32 +2744,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2637,21 +2762,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2684,6 +2799,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2704,20 +2825,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

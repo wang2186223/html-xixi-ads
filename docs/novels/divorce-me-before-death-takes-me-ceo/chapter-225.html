@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.047721">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.047721">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.242422">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.242422">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.047721",
-        "dateModified": "2026-07-19T02:47:19.047721",
+        "datePublished": "2026-07-19T13:03:14.242422",
+        "dateModified": "2026-07-19T13:03:14.242422",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,33 +893,37 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>I froze outside the living room door, catching snippets of conversation from inside.</p>
-                    
-                    <p>&#34;Snow,huh? That&#39;s a good name for you. Are you sure Blake really giving her up?&#34;</p>
-                    
-                    <p>My hand stopped mid-air. *Snow?* That name hit me like a physical blow.</p>
-                    
-                    <p>&#34;This is my first time seeing such a beautiful ragdoll cat,&#34; Dr. Clarke continued.&#34;How old is she?&#34;</p>
-                    
-                    <p>&#34;About two and a half,&#34; Rachel answered. &#34;She belonged to my friend when she was alive. She took this cat everywhere with her.&#34;</p>
-                    
-                    <p>&#34;But now she&#39;s gone, and there&#39;s no one to take care of her,&#34; Rachel continued. &#34;Blake and I are both too busy. We thought you&#39;d be perfect since you love cats so much.&#34;</p>
-                    
-                    <p>My mind spun. Ten months ago, when I thought I was dying, I&#39;d given Snow to Ethan. How had Blake ended up with her?</p>
-                    
-                    <p>&#34;Your friend,&#34; Dr. Clarke&#39;s voice turned cautious, &#34;the cat&#39;s original owner...that would be Blake Parker&#39;s ex-wife, Audrey Sinclair?&#34;</p>
-                    
-                    <p>&#34;Yes,&#34; Rachel confirmed. &#34;Audrey had this cat when I was still a vegetative patient, so I didn&#39;t spend much time with her. But from what I heard, this cat got her through a lot of lonely nights.&#34;</p>
-                    
-                    <p>&#34;If Snow meant so much to Audrey,&#34; Dr. Clarke asked,&#34;why give her</p>
-                    
-                    <p>away? Shouldn&#39;t Blake keep her as a reminder?&#34;</p>
-                    
-                    <p>The living room fell into silence.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>I froze outside the living room door, catching snippets of conversation from inside.</p>
+                        
+                        <p>&#34;Snow,huh? That&#39;s a good name for you. Are you sure Blake really giving her up?&#34;</p>
+                        
+                        <p>My hand stopped mid-air. *Snow?* That name hit me like a physical blow.</p>
+                        
+                        <p>&#34;This is my first time seeing such a beautiful ragdoll cat,&#34; Dr. Clarke continued.&#34;How old is she?&#34;</p>
+                        
+                        <p>&#34;About two and a half,&#34; Rachel answered. &#34;She belonged to my friend when she was alive. She took this cat everywhere with her.&#34;</p>
+                        
+                        <p>&#34;But now she&#39;s gone, and there&#39;s no one to take care of her,&#34; Rachel continued. &#34;Blake and I are both too busy. We thought you&#39;d be perfect since you love cats so much.&#34;</p>
+                        
+                        <p>My mind spun. Ten months ago, when I thought I was dying, I&#39;d given Snow to Ethan. How had Blake ended up with her?</p>
+                        
+                        <p>&#34;Your friend,&#34; Dr. Clarke&#39;s voice turned cautious, &#34;the cat&#39;s original owner...that would be Blake Parker&#39;s ex-wife, Audrey Sinclair?&#34;</p>
+                        
+                        <p>&#34;Yes,&#34; Rachel confirmed. &#34;Audrey had this cat when I was still a vegetative patient, so I didn&#39;t spend much time with her. But from what I heard, this cat got her through a lot of lonely nights.&#34;</p>
+                        
+                        <p>&#34;If Snow meant so much to Audrey,&#34; Dr. Clarke asked,&#34;why give her</p>
+                        
+                        <p>away? Shouldn&#39;t Blake keep her as a reminder?&#34;</p>
+                        
+                        <p>The living room fell into silence.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -898,33 +938,37 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Adrian squeezed my elbow. &#34;Let&#39;s go in,&#34; he whispered.</p>
-                    
-                    <p>He pushed the door open and pulled me into the room.</p>
-                    
-                    <p>&#34;Dr. Clarke!&#34; Adrian called. &#34;Look who I&#39;ve brought!&#34;</p>
-                    
-                    <p>Dr. Clarke turned, a white fluffy cat cradled in his arms. When he saw me.his eyes widened.</p>
-                    
-                    <p>&#34;You...&#34;</p>
-                    
-                    <p>&#34;My wife, Evelyn Knox,&#34; AdIrian jumped in. &#34;Remember? You treated her heart condition in Sydney two months ago.&#34;</p>
-                    
-                    <p>Understanding flickered across Dr. Clarke&#39;s face. &#34;Of course! When I saw you last, you were fighting for your life. Multiple organ failure from that infection.&#34;</p>
-                    
-                    <p>He looked me up and down. &#34;Remarkable recovery. This will make an excellent case study.&#34;</p>
-                    
-                    <p>&#34;I owe you my life,&#34; I replied, getting the message. &#34;Without your expertise.</p>
-                    
-                    <p>I wouldn&#39;t be here.&#34;</p>
-                    
-                    <p>My eyes locked on the white bundle of fur in his arms.′′This cat...&#34;</p>
-                    
-                    <p>Snow&#39;s ears perked up. She wiggled in Dr. Clarke&#39;s grasp, then leaped to the floor and darted straight toward me. She rubbed against my legs,purring loudly.</p>
-                    
-                    <p>I stared down, stunned. Despite my determination to cut ties with my past,</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Adrian squeezed my elbow. &#34;Let&#39;s go in,&#34; he whispered.</p>
+                        
+                        <p>He pushed the door open and pulled me into the room.</p>
+                        
+                        <p>&#34;Dr. Clarke!&#34; Adrian called. &#34;Look who I&#39;ve brought!&#34;</p>
+                        
+                        <p>Dr. Clarke turned, a white fluffy cat cradled in his arms. When he saw me.his eyes widened.</p>
+                        
+                        <p>&#34;You...&#34;</p>
+                        
+                        <p>&#34;My wife, Evelyn Knox,&#34; AdIrian jumped in. &#34;Remember? You treated her heart condition in Sydney two months ago.&#34;</p>
+                        
+                        <p>Understanding flickered across Dr. Clarke&#39;s face. &#34;Of course! When I saw you last, you were fighting for your life. Multiple organ failure from that infection.&#34;</p>
+                        
+                        <p>He looked me up and down. &#34;Remarkable recovery. This will make an excellent case study.&#34;</p>
+                        
+                        <p>&#34;I owe you my life,&#34; I replied, getting the message. &#34;Without your expertise.</p>
+                        
+                        <p>I wouldn&#39;t be here.&#34;</p>
+                        
+                        <p>My eyes locked on the white bundle of fur in his arms.′′This cat...&#34;</p>
+                        
+                        <p>Snow&#39;s ears perked up. She wiggled in Dr. Clarke&#39;s grasp, then leaped to the floor and darted straight toward me. She rubbed against my legs,purring loudly.</p>
+                        
+                        <p>I stared down, stunned. Despite my determination to cut ties with my past,</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -939,33 +983,37 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>something in my chest softened. I knelt and stroked her famillar fur.</p>
-                    
-                    <p>&#34;Wow, kitty!&#34; Emma squealed, crouching beside me. Her small hand reached toward Snow.</p>
-                    
-                    <p>&#34;Don&#39;t touch her!&#34; Rachel snapped. &#34;Keep your hands to yourself! She&#39;s skittish!&#34;</p>
-                    
-                    <p>Emma&#39;s hand froze mid-air. Herface crumpled as she looked up at Rachel,eyes filling with tears.</p>
-                    
-                    <p>&#34;Waaah!&#34; Emma burst into sobs. ′′Ijust wanted to pet her! Did Emma do bad?&#34;</p>
-                    
-                    <p>&#34;I didn&#39;t mean - &#34; Rachel stammered.</p>
-                    
-                    <p>&#34;It&#39;s okay, baby,&#34; Adrian cut in, scooping Emma up. &#34;You didn&#39;t do anything wrong.&#34;</p>
-                    
-                    <p>He shot Rachel a cold look.′′Ifyour cat is too precious to be touched,maybe you shouldn&#39;t bring her out in public.&#34;</p>
-                    
-                    <p>&#34;That&#39;s not what I - &#34; Rachel started.</p>
-                    
-                    <p>&#34;Emma,&#34; I sad gently. &#34;Want to pet her? You can if you&#39;re gentle.&#34;</p>
-                    
-                    <p>Emma sniffled, glancing nervously at Rachel.&#34;Really?&#34;</p>
-                    
-                    <p>&#34;Of course. Just use a soft touch.&#34;</p>
-                    
-                    <p>Emma hesitantly reached out and patted Snow&#39;s head. To my surprise,Snow pushed against her hand, clearly enjoying it.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>something in my chest softened. I knelt and stroked her famillar fur.</p>
+                        
+                        <p>&#34;Wow, kitty!&#34; Emma squealed, crouching beside me. Her small hand reached toward Snow.</p>
+                        
+                        <p>&#34;Don&#39;t touch her!&#34; Rachel snapped. &#34;Keep your hands to yourself! She&#39;s skittish!&#34;</p>
+                        
+                        <p>Emma&#39;s hand froze mid-air. Herface crumpled as she looked up at Rachel,eyes filling with tears.</p>
+                        
+                        <p>&#34;Waaah!&#34; Emma burst into sobs. ′′Ijust wanted to pet her! Did Emma do bad?&#34;</p>
+                        
+                        <p>&#34;I didn&#39;t mean - &#34; Rachel stammered.</p>
+                        
+                        <p>&#34;It&#39;s okay, baby,&#34; Adrian cut in, scooping Emma up. &#34;You didn&#39;t do anything wrong.&#34;</p>
+                        
+                        <p>He shot Rachel a cold look.′′Ifyour cat is too precious to be touched,maybe you shouldn&#39;t bring her out in public.&#34;</p>
+                        
+                        <p>&#34;That&#39;s not what I - &#34; Rachel started.</p>
+                        
+                        <p>&#34;Emma,&#34; I sad gently. &#34;Want to pet her? You can if you&#39;re gentle.&#34;</p>
+                        
+                        <p>Emma sniffled, glancing nervously at Rachel.&#34;Really?&#34;</p>
+                        
+                        <p>&#34;Of course. Just use a soft touch.&#34;</p>
+                        
+                        <p>Emma hesitantly reached out and patted Snow&#39;s head. To my surprise,Snow pushed against her hand, clearly enjoying it.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -980,33 +1028,37 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Rachel stared at us, eyes wide with disbelief.</p>
-                    
-                    <p>Dr. Clarke cleared his throat. &#34;Interesting. The cat seems quite taken with you,Mrs.Knox.&#34;</p>
-                    
-                    <p>He stroked his beard. &#34;Miss Hayes, since Blake gave Snow to me, would I be right in assuming I can do with her as I please?&#34;</p>
-                    
-                    <p>Rachel blinked. &#34;In principle,yes,but-&#34;</p>
-                    
-                    <p>&#34;Excellent! Then I&#39;ve decided. This cat goes to Mrs. Knox. They clearly have a connection.&#34;</p>
-                    
-                    <p>&#34;Dr. Clarke, that&#39;s not appropriate,&#34; Rachel protested. &#34;This cat means a lot to Blake. He trusted you specifically-&#34;</p>
-                    
-                    <p>&#34;Are you suggesting my wife would mistreat her?&#34; Adrian&#39;s voice turned icy.</p>
-                    
-                    <p>&#34;Or that our daughter isn&#39;t gentle enough?&#34; He held Emma closer. &#34;You&#39;re giving the cat away while claiming she&#39;s too important to give to just anyone. That&#39;s hypocritical.&#34;</p>
-                    
-                    <p>′′Ijust meant - &#34; Rachel tried again.</p>
-                    
-                    <p>&#34;Miss Hayes,&#34; Dr. Clarke interjected kindly but firmly. &#34;The Knox family will take good care of Snow. And look at that connection. Isn&#39;t that worth respecting?&#34;</p>
-                    
-                    <p>Rachel pressed her lips together, then turned to me. &#34;Mrs. Knox, have you owned pets before? With such a young child, I&#39;m concerned-&#34;</p>
-                    
-                    <p>&#34;My daughter loves animals,&#34; Adrian interrupted. &#34;And my wife is perfectly capable.&#34;</p>
-                    
-                    <p>He stepped closer to Rachel.&#34;We may have demanding schedules, but we</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Rachel stared at us, eyes wide with disbelief.</p>
+                        
+                        <p>Dr. Clarke cleared his throat. &#34;Interesting. The cat seems quite taken with you,Mrs.Knox.&#34;</p>
+                        
+                        <p>He stroked his beard. &#34;Miss Hayes, since Blake gave Snow to me, would I be right in assuming I can do with her as I please?&#34;</p>
+                        
+                        <p>Rachel blinked. &#34;In principle,yes,but-&#34;</p>
+                        
+                        <p>&#34;Excellent! Then I&#39;ve decided. This cat goes to Mrs. Knox. They clearly have a connection.&#34;</p>
+                        
+                        <p>&#34;Dr. Clarke, that&#39;s not appropriate,&#34; Rachel protested. &#34;This cat means a lot to Blake. He trusted you specifically-&#34;</p>
+                        
+                        <p>&#34;Are you suggesting my wife would mistreat her?&#34; Adrian&#39;s voice turned icy.</p>
+                        
+                        <p>&#34;Or that our daughter isn&#39;t gentle enough?&#34; He held Emma closer. &#34;You&#39;re giving the cat away while claiming she&#39;s too important to give to just anyone. That&#39;s hypocritical.&#34;</p>
+                        
+                        <p>′′Ijust meant - &#34; Rachel tried again.</p>
+                        
+                        <p>&#34;Miss Hayes,&#34; Dr. Clarke interjected kindly but firmly. &#34;The Knox family will take good care of Snow. And look at that connection. Isn&#39;t that worth respecting?&#34;</p>
+                        
+                        <p>Rachel pressed her lips together, then turned to me. &#34;Mrs. Knox, have you owned pets before? With such a young child, I&#39;m concerned-&#34;</p>
+                        
+                        <p>&#34;My daughter loves animals,&#34; Adrian interrupted. &#34;And my wife is perfectly capable.&#34;</p>
+                        
+                        <p>He stepped closer to Rachel.&#34;We may have demanding schedules, but we</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1021,33 +1073,37 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>always make time for those we care about.&#34;</p>
-                    
-                    <p>The icy mockery in Adrian&#39;s voice drained the color from Rachel&#39;s face.</p>
-                    
-                    <p>I watched her reaction while cradling Snow, feeling an unexpected pang of sympathy.</p>
-                    
-                    <p>Years ago, Rachel had spent days crying when Scarlett planned to give away one of her dogs. The memory was still clear. I knew she wouldn&#39;t abandon Snow without a good reason.</p>
-                    
-                    <p>And Blake not showing up himself to handle this? That said everything.</p>
-                    
-                    <p>He supposedly mourned his dead ex-wife, but couldn&#39;t even keep my cat around. Instead, he pawned off the task on Rachel.</p>
-                    
-                    <p>Typical Blake. Five years hadn&#39;t changed him one bit.</p>
-                    
-                    <p>At least now Snow would be with me again, where she belonged.</p>
-                    
-                    <p>I took a deep breath and met Rachel&#39;s worried gaze. &#34;Miss Hayes. Snow will be fine.&#34;</p>
-                    
-                    <p>&#34;I&#39;ll take good care of her.&#34;</p>
-                    
-                    <p>&#34;And since we&#39;re working on the collaboration anyway, you can drop by to see her whenever you want.&#34;</p>
-                    
-                    <p>**Rachel&#39;s POV**</p>
-                    
-                    <p>What else could I say? Evelyn had backed me into a corner.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>always make time for those we care about.&#34;</p>
+                        
+                        <p>The icy mockery in Adrian&#39;s voice drained the color from Rachel&#39;s face.</p>
+                        
+                        <p>I watched her reaction while cradling Snow, feeling an unexpected pang of sympathy.</p>
+                        
+                        <p>Years ago, Rachel had spent days crying when Scarlett planned to give away one of her dogs. The memory was still clear. I knew she wouldn&#39;t abandon Snow without a good reason.</p>
+                        
+                        <p>And Blake not showing up himself to handle this? That said everything.</p>
+                        
+                        <p>He supposedly mourned his dead ex-wife, but couldn&#39;t even keep my cat around. Instead, he pawned off the task on Rachel.</p>
+                        
+                        <p>Typical Blake. Five years hadn&#39;t changed him one bit.</p>
+                        
+                        <p>At least now Snow would be with me again, where she belonged.</p>
+                        
+                        <p>I took a deep breath and met Rachel&#39;s worried gaze. &#34;Miss Hayes. Snow will be fine.&#34;</p>
+                        
+                        <p>&#34;I&#39;ll take good care of her.&#34;</p>
+                        
+                        <p>&#34;And since we&#39;re working on the collaboration anyway, you can drop by to see her whenever you want.&#34;</p>
+                        
+                        <p>**Rachel&#39;s POV**</p>
+                        
+                        <p>What else could I say? Evelyn had backed me into a corner.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1062,33 +1118,37 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;Alright,&#34; I sighed, nodding.</p>
-                    
-                    <p>I should never have snuck Snow out behind Blake&#39;s back, If I&#39;d just given</p>
-                    
-                    <p>her to Dr. Clarke like we planned, Blake would&#39;ve been mad, sure, but he would&#39;ve gotten over it.</p>
-                    
-                    <p>Now? I was screwed.</p>
-                    
-                    <p>My phone buzzed in my pocket. Blake. Perfect timing.</p>
-                    
-                    <p>I stepped away to answer. &#34;Hey.&#34;</p>
-                    
-                    <p>&#34;Where&#39;s Snow?&#34; His voice was tight with panic. &#34;She&#39;s gone. Did you take her?&#34;</p>
-                    
-                    <p>I bit my lip, watching Evelyn across the room. She held Snow against her chest, laughing at something Dr. Clarke said.</p>
-                    
-                    <p>Something about her triggered a memory.</p>
-                    
-                    <p>Years ago, after what Laurel did to me. My body had been covered in bruises I couldn&#39;t let anyone see. I&#39;d demanded a female caregiver my own</p>
-                    
-                    <p>age.</p>
-                    
-                    <p>That&#39;s how I met Audrey.</p>
-                    
-                    <p>Our first meeting was behind the hospital in that tiny garden. She was burying a dead cat, and I was a total bitch about it.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;Alright,&#34; I sighed, nodding.</p>
+                        
+                        <p>I should never have snuck Snow out behind Blake&#39;s back, If I&#39;d just given</p>
+                        
+                        <p>her to Dr. Clarke like we planned, Blake would&#39;ve been mad, sure, but he would&#39;ve gotten over it.</p>
+                        
+                        <p>Now? I was screwed.</p>
+                        
+                        <p>My phone buzzed in my pocket. Blake. Perfect timing.</p>
+                        
+                        <p>I stepped away to answer. &#34;Hey.&#34;</p>
+                        
+                        <p>&#34;Where&#39;s Snow?&#34; His voice was tight with panic. &#34;She&#39;s gone. Did you take her?&#34;</p>
+                        
+                        <p>I bit my lip, watching Evelyn across the room. She held Snow against her chest, laughing at something Dr. Clarke said.</p>
+                        
+                        <p>Something about her triggered a memory.</p>
+                        
+                        <p>Years ago, after what Laurel did to me. My body had been covered in bruises I couldn&#39;t let anyone see. I&#39;d demanded a female caregiver my own</p>
+                        
+                        <p>age.</p>
+                        
+                        <p>That&#39;s how I met Audrey.</p>
+                        
+                        <p>Our first meeting was behind the hospital in that tiny garden. She was burying a dead cat, and I was a total bitch about it.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1103,25 +1163,29 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;If you actually cared,&#34; I&#39;d sneered, &#34;you would&#39;ve been kind to it while it was alive instead of putting on this whole sad funeral now that it&#39;s dead.&#34;</p>
-                    
-                    <p>She just looked at me, not saying a word.</p>
-                    
-                    <p>Later I found out it wasn&#39;t even her cat - just some stray she&#39;d found. God,I felt like such an asshole.</p>
-                    
-                    <p>I dragged her to a pet store, determined to buy her a cat to make up for it.</p>
-                    
-                    <p>She held one of the kittens exactly the way Evelyn was holding Snow now.</p>
-                    
-                    <p>&#34;I can&#39;t keep one,&#34; she&#39;d told me, stroking its fur. &#34;Cats need stability.</p>
-                    
-                    <p>They need someone who&#39;s emotionally steady.&#34;</p>
-                    
-                    <p>&#34;They&#39;re like kids - they need someone who&#39;s actually there.&#34;</p>
-                    
-                    <p>&#34;Between school and my jobs... it wouldn&#39;t be fair to the cat.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;If you actually cared,&#34; I&#39;d sneered, &#34;you would&#39;ve been kind to it while it was alive instead of putting on this whole sad funeral now that it&#39;s dead.&#34;</p>
+                        
+                        <p>She just looked at me, not saying a word.</p>
+                        
+                        <p>Later I found out it wasn&#39;t even her cat - just some stray she&#39;d found. God,I felt like such an asshole.</p>
+                        
+                        <p>I dragged her to a pet store, determined to buy her a cat to make up for it.</p>
+                        
+                        <p>She held one of the kittens exactly the way Evelyn was holding Snow now.</p>
+                        
+                        <p>&#34;I can&#39;t keep one,&#34; she&#39;d told me, stroking its fur. &#34;Cats need stability.</p>
+                        
+                        <p>They need someone who&#39;s emotionally steady.&#34;</p>
+                        
+                        <p>&#34;They&#39;re like kids - they need someone who&#39;s actually there.&#34;</p>
+                        
+                        <p>&#34;Between school and my jobs... it wouldn&#39;t be fair to the cat.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2437,6 +2501,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2563,7 +2707,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2605,32 +2748,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2641,21 +2766,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2688,6 +2803,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2708,20 +2829,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

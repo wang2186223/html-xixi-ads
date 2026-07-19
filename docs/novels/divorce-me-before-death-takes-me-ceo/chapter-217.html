@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.040679">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.040679">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.234766">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.234766">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.040679",
-        "dateModified": "2026-07-19T02:47:19.040679",
+        "datePublished": "2026-07-19T13:03:14.234766",
+        "dateModified": "2026-07-19T13:03:14.234766",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,31 +893,35 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV*</p>
-                    
-                    <p>I stared at Adrian, trying to make sense of what he&#39;d just told me. A twin sister? My parents had another daughter they&#39;d abandoned?</p>
-                    
-                    <p>&#34;So I have a twin sister I never knew about, and she had brain death from heart failure...&#34; My voice trailed off.</p>
-                    
-                    <p>&#34;So when you were dying, we found you,&#34; Adrian cut in flatly. &#34;Initially,we planned to perform a brain transplant.&#34;</p>
-                    
-                    <p>&#34;What?&#34; I couldn&#39;t believe what I was hearing.</p>
-                    
-                    <p>&#34;Your healthy brain, her functioning body.&#34; He shrugged like he was discussing a business deal. &#34;You were dying from cancer. She was brain-dead but physically fine. It seemed logical at the time.&#34;</p>
-                    
-                    <p>&#34;Are you insane?&#34; My hands gripped the sheets. &#34;You thought you could just slice me open and take parts like I&#39;m spare machinery?&#34;</p>
-                    
-                    <p>&#34;It would have been groundbreaking.&#34; His tone remained clinical. &#34;But Dr.Clarke refused. Said the tech wasn&#39;t there yet.&#34;</p>
-                    
-                    <p>&#34;So what, you decided to experiment on me some other way?&#34;</p>
-                    
-                    <p>&#34;Not an experiment. Treatment.&#34; He corrected me with a dismissive wave.&#34;Dr. Clarke went with the safer option - surgery followed by his new medication. Your cancer is in remnission.&#34;</p>
-                    
-                    <p>I tried focusing on my breathing.&#34;Why me? Why not anyone else?&#34;</p>
-                    
-                    <p>&#34;Identical twin. Perfect match.&#34; His lips curled into something that wasn&#39;t</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV*</p>
+                        
+                        <p>I stared at Adrian, trying to make sense of what he&#39;d just told me. A twin sister? My parents had another daughter they&#39;d abandoned?</p>
+                        
+                        <p>&#34;So I have a twin sister I never knew about, and she had brain death from heart failure...&#34; My voice trailed off.</p>
+                        
+                        <p>&#34;So when you were dying, we found you,&#34; Adrian cut in flatly. &#34;Initially,we planned to perform a brain transplant.&#34;</p>
+                        
+                        <p>&#34;What?&#34; I couldn&#39;t believe what I was hearing.</p>
+                        
+                        <p>&#34;Your healthy brain, her functioning body.&#34; He shrugged like he was discussing a business deal. &#34;You were dying from cancer. She was brain-dead but physically fine. It seemed logical at the time.&#34;</p>
+                        
+                        <p>&#34;Are you insane?&#34; My hands gripped the sheets. &#34;You thought you could just slice me open and take parts like I&#39;m spare machinery?&#34;</p>
+                        
+                        <p>&#34;It would have been groundbreaking.&#34; His tone remained clinical. &#34;But Dr.Clarke refused. Said the tech wasn&#39;t there yet.&#34;</p>
+                        
+                        <p>&#34;So what, you decided to experiment on me some other way?&#34;</p>
+                        
+                        <p>&#34;Not an experiment. Treatment.&#34; He corrected me with a dismissive wave.&#34;Dr. Clarke went with the safer option - surgery followed by his new medication. Your cancer is in remnission.&#34;</p>
+                        
+                        <p>I tried focusing on my breathing.&#34;Why me? Why not anyone else?&#34;</p>
+                        
+                        <p>&#34;Identical twin. Perfect match.&#34; His lips curled into something that wasn&#39;t</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -896,31 +936,35 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>quite a smile. &#34;Plus, you were dying alone. No family that cared. A husband who&#39;d moved on. Friends busy with their own lives. Nobody who&#39;·d look too hard if you disappeared.&#34;</p>
-                    
-                    <p>I felt a chill. &#34;You researched me?&#34;</p>
-                    
-                    <p>&#34;Everything. Blake Parker&#39;s coldness. Your miscarriage. Your isolation.&#34; He listed off the worst moments of my life like items on a grocery receipt. &#34;You were the perfect candidate.&#34;</p>
-                    
-                    <p>Tears burned behind my eyes, but I refused to let them fall. &#34;You had no right. This is my life.&#34;</p>
-                    
-                    <p>Adrian didn&#39;t answer. Instead, he opened the bedside drawer and pulled out a silver handgun.</p>
-                    
-                    <p>&#34;Your choice remains.&#34; He placed the gun on a stack of newspapers.&#34;Stay here,accept reality, help raise my daughter - or...&#34;</p>
-                    
-                    <p>He pointed at the gun. &#34;Take the easy way out if living seems too hard.&#34;</p>
-                    
-                    <p>With that, he walked out. The door slammed behind him.</p>
-                    
-                    <p>I sat frozen, staring at the doorway. My brain struggled to accept everything he&#39;d said.. I was alive. Somehow, I hadn&#39;t died.</p>
-                    
-                    <p>Eight months ago, I&#39;d accepted death as inevitable. Now I was alive,but facing a different kind of hell.</p>
-                    
-                    <p>My gaze drifted to the gun. Did I have the courage to die on my own terms this time?</p>
-                    
-                    <p>I reached for it but noticed the headlines on the newspapers underneath:</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>quite a smile. &#34;Plus, you were dying alone. No family that cared. A husband who&#39;d moved on. Friends busy with their own lives. Nobody who&#39;·d look too hard if you disappeared.&#34;</p>
+                        
+                        <p>I felt a chill. &#34;You researched me?&#34;</p>
+                        
+                        <p>&#34;Everything. Blake Parker&#39;s coldness. Your miscarriage. Your isolation.&#34; He listed off the worst moments of my life like items on a grocery receipt. &#34;You were the perfect candidate.&#34;</p>
+                        
+                        <p>Tears burned behind my eyes, but I refused to let them fall. &#34;You had no right. This is my life.&#34;</p>
+                        
+                        <p>Adrian didn&#39;t answer. Instead, he opened the bedside drawer and pulled out a silver handgun.</p>
+                        
+                        <p>&#34;Your choice remains.&#34; He placed the gun on a stack of newspapers.&#34;Stay here,accept reality, help raise my daughter - or...&#34;</p>
+                        
+                        <p>He pointed at the gun. &#34;Take the easy way out if living seems too hard.&#34;</p>
+                        
+                        <p>With that, he walked out. The door slammed behind him.</p>
+                        
+                        <p>I sat frozen, staring at the doorway. My brain struggled to accept everything he&#39;d said.. I was alive. Somehow, I hadn&#39;t died.</p>
+                        
+                        <p>Eight months ago, I&#39;d accepted death as inevitable. Now I was alive,but facing a different kind of hell.</p>
+                        
+                        <p>My gaze drifted to the gun. Did I have the courage to die on my own terms this time?</p>
+                        
+                        <p>I reached for it but noticed the headlines on the newspapers underneath:</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -935,31 +979,35 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>[SHOCKINGI Parker Group CEO Blake Parker Attempts Suicide at Ex-Wite&#39;</p>
-                    
-                    <p>s Grave!]</p>
-                    
-                    <p>The photo showed Blake on the ground, surrounded by police and Parker family members. I flipped to another paper.</p>
-                    
-                    <p>[Model Astrid Wilson&#39;s Career Destroyed in Nude Photo Scandal!]</p>
-                    
-                    <p>The images showed Astrid - noticeably thinner - with rotten food on her face.</p>
-                    
-                    <p>I grabbed more papers, my heart racing. James Collins accused of plagiarism. Ethan Davies exposed as a college sugar baby.</p>
-                    
-                    <p>*Bullshit.* I knew Astrid better than anyone. This had to be a setup.</p>
-                    
-                    <p>The papers weren&#39;t random. They showed me everyone I cared about was suffering since my &#34;death.&#34;</p>
-                    
-                    <p>**Adrian&#39;s POV**</p>
-                    
-                    <p>&#34;Adrian, this is too risky.&#34; Eleanor stared at the closed door. &#34;After everything we did to keep her alive...&#34;</p>
-                    
-                    <p>She wrung her hands. &#34;Giving her a gun? What if she uses it?&#34;</p>
-                    
-                    <p>I leaned back on the sofa. &#34;It doesn&#39;t matter.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>[SHOCKINGI Parker Group CEO Blake Parker Attempts Suicide at Ex-Wite&#39;</p>
+                        
+                        <p>s Grave!]</p>
+                        
+                        <p>The photo showed Blake on the ground, surrounded by police and Parker family members. I flipped to another paper.</p>
+                        
+                        <p>[Model Astrid Wilson&#39;s Career Destroyed in Nude Photo Scandal!]</p>
+                        
+                        <p>The images showed Astrid - noticeably thinner - with rotten food on her face.</p>
+                        
+                        <p>I grabbed more papers, my heart racing. James Collins accused of plagiarism. Ethan Davies exposed as a college sugar baby.</p>
+                        
+                        <p>*Bullshit.* I knew Astrid better than anyone. This had to be a setup.</p>
+                        
+                        <p>The papers weren&#39;t random. They showed me everyone I cared about was suffering since my &#34;death.&#34;</p>
+                        
+                        <p>**Adrian&#39;s POV**</p>
+                        
+                        <p>&#34;Adrian, this is too risky.&#34; Eleanor stared at the closed door. &#34;After everything we did to keep her alive...&#34;</p>
+                        
+                        <p>She wrung her hands. &#34;Giving her a gun? What if she uses it?&#34;</p>
+                        
+                        <p>I leaned back on the sofa. &#34;It doesn&#39;t matter.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -974,31 +1022,35 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Those newspapers by her bed showed everyone she cared about in crisis.If she had any feeling for them, she wouldn&#39;t die easily.</p>
-                    
-                    <p>&#34;The gun tests if she wants to live,&#34; I said. &#34;If she chooses death, she wasn&#39;t worth saving anyway.&#34;</p>
-                    
-                    <p>Eleanor frowned. &#34;I hope you know what - &#34;</p>
-                    
-                    <p>A gunshot exploded from the hospital room.</p>
-                    
-                    <p>Eleanor&#39;s face went white. I sprang up and rushed to the door, panic surging through me.</p>
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>I held the smoking gun, a bullet hole in the ceiling. &#34;Just checking it wasn&#39;t a fake. It&#39;s real enough.&#34;</p>
-                    
-                    <p>A middle-aged woman rushed in behind Adrian and grabbed the gun,passing it to someone outside.&#34;Put this away!&#34;</p>
-                    
-                    <p>She turned to me, anxiety written across her face. &#34;Does this mean you&#39;re choosing to live?&#34;</p>
-                    
-                    <p>I studied her carefully. Unlike Adrian, her eyes showed genuine concern.She seemed kind - nothing like the man who&#39;d handed me a loaded gun.</p>
-                    
-                    <p>&#34;Yes, I&#39;m choosing life,&#34; I said firmly. &#34;But not on your terms.&#34;</p>
-                    
-                    <p>I tossed the newspapers toward them. &#34;My friends need help. They&#39;ve been set up.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Those newspapers by her bed showed everyone she cared about in crisis.If she had any feeling for them, she wouldn&#39;t die easily.</p>
+                        
+                        <p>&#34;The gun tests if she wants to live,&#34; I said. &#34;If she chooses death, she wasn&#39;t worth saving anyway.&#34;</p>
+                        
+                        <p>Eleanor frowned. &#34;I hope you know what - &#34;</p>
+                        
+                        <p>A gunshot exploded from the hospital room.</p>
+                        
+                        <p>Eleanor&#39;s face went white. I sprang up and rushed to the door, panic surging through me.</p>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>I held the smoking gun, a bullet hole in the ceiling. &#34;Just checking it wasn&#39;t a fake. It&#39;s real enough.&#34;</p>
+                        
+                        <p>A middle-aged woman rushed in behind Adrian and grabbed the gun,passing it to someone outside.&#34;Put this away!&#34;</p>
+                        
+                        <p>She turned to me, anxiety written across her face. &#34;Does this mean you&#39;re choosing to live?&#34;</p>
+                        
+                        <p>I studied her carefully. Unlike Adrian, her eyes showed genuine concern.She seemed kind - nothing like the man who&#39;d handed me a loaded gun.</p>
+                        
+                        <p>&#34;Yes, I&#39;m choosing life,&#34; I said firmly. &#34;But not on your terms.&#34;</p>
+                        
+                        <p>I tossed the newspapers toward them. &#34;My friends need help. They&#39;ve been set up.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1013,31 +1065,35 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Adrian laughed.′′Inyour condition? What help could you possibly be?&#34;</p>
-                    
-                    <p>&#34;I&#39;m still going back,&#34; I matched his stare.</p>
-                    
-                    <p>The woman sat beside me. &#34;Child, I&#39;m your sister&#39;s mother-Eleanor.I understand how you feel, but you&#39;re nowhere near strong enough for travel.&#34;</p>
-                    
-                    <p>&#34;And you owe me,&#34; Adrian cut in.Ten million in treatment costs. We risked everything bringing you here. Without us, you&#39;d be in the ground.&#34;</p>
-                    
-                    <p>&#34;So that&#39;s it? You saved me just to put mne in your debt?&#34;</p>
-                    
-                    <p>Adrian went silent. For once, his face showed something besides coldness.He stared at me like he was seeing someone else through my features.</p>
-                    
-                    <p>&#34;I owe your sister,&#34; he finally said, his voice lower. &#34;In her final days,finding her lost family was all she talked about. I promised I&#39;d help you.&#34;</p>
-                    
-                    <p>Eleanor took my hand. &#34;We hoped you&#39;d help with Emma because she&#39;s your niece. Adrian travels constantly. She needs a mother figure.&#34;</p>
-                    
-                    <p>Her eyes stayed on mine. &#34;But we won&#39;t force you. Recover first,then decide.&#34;</p>
-                    
-                    <p>I looked between them, understanding dawning. Adrian wasn&#39;t just cold -he was drowning in guilt.</p>
-                    
-                    <p>&#34;Tell me about my sister,&#34; I asked. &#34;What was she like?&#34;</p>
-                    
-                    <p>Adrian gazed out the window. &#34;Strong. Optimistic, even knowing her time was limited. She designed beautiful jewelry. You have her talent.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Adrian laughed.′′Inyour condition? What help could you possibly be?&#34;</p>
+                        
+                        <p>&#34;I&#39;m still going back,&#34; I matched his stare.</p>
+                        
+                        <p>The woman sat beside me. &#34;Child, I&#39;m your sister&#39;s mother-Eleanor.I understand how you feel, but you&#39;re nowhere near strong enough for travel.&#34;</p>
+                        
+                        <p>&#34;And you owe me,&#34; Adrian cut in.Ten million in treatment costs. We risked everything bringing you here. Without us, you&#39;d be in the ground.&#34;</p>
+                        
+                        <p>&#34;So that&#39;s it? You saved me just to put mne in your debt?&#34;</p>
+                        
+                        <p>Adrian went silent. For once, his face showed something besides coldness.He stared at me like he was seeing someone else through my features.</p>
+                        
+                        <p>&#34;I owe your sister,&#34; he finally said, his voice lower. &#34;In her final days,finding her lost family was all she talked about. I promised I&#39;d help you.&#34;</p>
+                        
+                        <p>Eleanor took my hand. &#34;We hoped you&#39;d help with Emma because she&#39;s your niece. Adrian travels constantly. She needs a mother figure.&#34;</p>
+                        
+                        <p>Her eyes stayed on mine. &#34;But we won&#39;t force you. Recover first,then decide.&#34;</p>
+                        
+                        <p>I looked between them, understanding dawning. Adrian wasn&#39;t just cold -he was drowning in guilt.</p>
+                        
+                        <p>&#34;Tell me about my sister,&#34; I asked. &#34;What was she like?&#34;</p>
+                        
+                        <p>Adrian gazed out the window. &#34;Strong. Optimistic, even knowing her time was limited. She designed beautiful jewelry. You have her talent.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1052,31 +1108,35 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>He paused. &#34;Her last wish was to meet you, to ask you to care for Emma.She believed you&#39;d be a good mother.&#34;</p>
-                    
-                    <p>I took a deep breath. &#34;I need time to think.&#34;</p>
-                    
-                    <p>I looked at them both. &#34;But I do know one thing - I&#39;m choosing to live.whatever happens next.&#34;</p>
-                    
-                    <p>I spent the next few days in physical therapy, learning to work with muscles that had atrophied during my coma. Adrian made himself scarce,but Eleanor visited daily. I still didn&#39;t trust him,but I found myself warming to her.</p>
-                    
-                    <p>When Adrian ducked out for a business call one afternoon, I seized my chance.</p>
-                    
-                    <p>&#34;Tell me about my sister,&#34; I said. &#34;The real story. Not his version.&#34;</p>
-                    
-                    <p>Eleanor&#39;s shoulders drooped slightly. &#34;Fair enough.&#34;</p>
-                    
-                    <p>She pulled out a leather album from her tote bagand handed it to me.&#34;This might help.&#34;</p>
-                    
-                    <p>I opened it and froze. The woman staring back at me was... me, but not me. Same face, same features, but her eyes held something mine never had -peace.</p>
-                    
-                    <p>&#34;Weird, right?&#34; Eleanor said.</p>
-                    
-                    <p>I nodded,turning pages.</p>
-                    
-                    <p>&#34;She started Q·elegant when she was twenty-two,&#34; Eleanor said. &#34;Built it from nothing to one of Australia&#39;s top jewelry brands.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>He paused. &#34;Her last wish was to meet you, to ask you to care for Emma.She believed you&#39;d be a good mother.&#34;</p>
+                        
+                        <p>I took a deep breath. &#34;I need time to think.&#34;</p>
+                        
+                        <p>I looked at them both. &#34;But I do know one thing - I&#39;m choosing to live.whatever happens next.&#34;</p>
+                        
+                        <p>I spent the next few days in physical therapy, learning to work with muscles that had atrophied during my coma. Adrian made himself scarce,but Eleanor visited daily. I still didn&#39;t trust him,but I found myself warming to her.</p>
+                        
+                        <p>When Adrian ducked out for a business call one afternoon, I seized my chance.</p>
+                        
+                        <p>&#34;Tell me about my sister,&#34; I said. &#34;The real story. Not his version.&#34;</p>
+                        
+                        <p>Eleanor&#39;s shoulders drooped slightly. &#34;Fair enough.&#34;</p>
+                        
+                        <p>She pulled out a leather album from her tote bagand handed it to me.&#34;This might help.&#34;</p>
+                        
+                        <p>I opened it and froze. The woman staring back at me was... me, but not me. Same face, same features, but her eyes held something mine never had -peace.</p>
+                        
+                        <p>&#34;Weird, right?&#34; Eleanor said.</p>
+                        
+                        <p>I nodded,turning pages.</p>
+                        
+                        <p>&#34;She started Q·elegant when she was twenty-two,&#34; Eleanor said. &#34;Built it from nothing to one of Australia&#39;s top jewelry brands.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1091,25 +1151,29 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Her heart condition was congenital. Doctors warned pregnancy could kill her. When she got pregnant with Emma... we all begged her to consider alternatives.&#34;</p>
-                    
-                    <p>&#34;She refused?&#34;</p>
-                    
-                    <p>&#34;Completely. Said Emma was worth any risk.&#34;</p>
-                    
-                    <p>I glanced up. &#34;And Adrian?&#34;</p>
-                    
-                    <p>Something shifted in Eleanor&#39;s face. &#34;Adrian was... absent. Building his empire. The closest they got was after her diagnosis worsened.&#34;</p>
-                    
-                    <p>I understood the unspoken truth. &#34;He feeIs responsible.&#34;</p>
-                    
-                    <p>&#34;He wasn&#39;t there when she needed him.&#34; Eleanor said simply. &#34;Now he&#39;s trying to fix something that can&#39;t be fixed.&#34;</p>
-                    
-                    <p>I flipped to the last page and noticed an envelope tucked inside the back cover.</p>
-                    
-                    <p>&#34;What&#39;s this?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Her heart condition was congenital. Doctors warned pregnancy could kill her. When she got pregnant with Emma... we all begged her to consider alternatives.&#34;</p>
+                        
+                        <p>&#34;She refused?&#34;</p>
+                        
+                        <p>&#34;Completely. Said Emma was worth any risk.&#34;</p>
+                        
+                        <p>I glanced up. &#34;And Adrian?&#34;</p>
+                        
+                        <p>Something shifted in Eleanor&#39;s face. &#34;Adrian was... absent. Building his empire. The closest they got was after her diagnosis worsened.&#34;</p>
+                        
+                        <p>I understood the unspoken truth. &#34;He feeIs responsible.&#34;</p>
+                        
+                        <p>&#34;He wasn&#39;t there when she needed him.&#34; Eleanor said simply. &#34;Now he&#39;s trying to fix something that can&#39;t be fixed.&#34;</p>
+                        
+                        <p>I flipped to the last page and noticed an envelope tucked inside the back cover.</p>
+                        
+                        <p>&#34;What&#39;s this?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2425,6 +2489,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2551,7 +2695,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2593,32 +2736,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2629,21 +2754,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2676,6 +2791,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2696,20 +2817,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

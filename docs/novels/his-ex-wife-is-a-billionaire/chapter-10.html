@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.291753">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.291753">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.292005">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.292005">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.291753",
-        "dateModified": "2026-07-19T02:47:23.291753",
+        "datePublished": "2026-07-19T13:03:18.292005",
+        "dateModified": "2026-07-19T13:03:18.292005",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,31 +893,35 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Over on the other side, at Windermere Estate.</p>
-                    
-                    <p>Thaddeus was left stunned for several seconds after his ex-wife abruptly hung up on him.</p>
-                    
-                    <p>Her resoluteness made it hard for him to a**ociate her with the feeble wife who had once cried and begged him not to divorce her.</p>
-                    
-                    <p>So, for these three years, she had no feelings for him at all, but had to bear with him just for some unknown purpose.</p>
-                    
-                    <p>Thinking of this. Thaddeus was filled with anger.</p>
-                    
-                    <p>“Mr. Thaddeus, your coffee.”</p>
-                    
-                    <p>Gordon walked in, saw his grave expression, and carefully asked, “Did you manage to get in touch with Mrs. Abernathy? Did you find her new number?”</p>
-                    
-                    <p>Thaddeus rubbed his forehead tiredly. Being busy with anger, he had forgotten about the things he needed to deal with.</p>
-                    
-                    <p>He had thought that everything would go smoothly after na left, but now he was upset because she was with Cas sius.</p>
-                    
-                    <p>What the hell! Why was she affecting his mood?</p>
-                    
-                    <p>“Let’s find another opportunity. I don’t want to talk about that woman right now.”</p>
-                    
-                    <p>Thaddeus picked up his coffee cup and took a sip, then suddenly his brows furrowed.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Over on the other side, at Windermere Estate.</p>
+                        
+                        <p>Thaddeus was left stunned for several seconds after his ex-wife abruptly hung up on him.</p>
+                        
+                        <p>Her resoluteness made it hard for him to a**ociate her with the feeble wife who had once cried and begged him not to divorce her.</p>
+                        
+                        <p>So, for these three years, she had no feelings for him at all, but had to bear with him just for some unknown purpose.</p>
+                        
+                        <p>Thinking of this. Thaddeus was filled with anger.</p>
+                        
+                        <p>“Mr. Thaddeus, your coffee.”</p>
+                        
+                        <p>Gordon walked in, saw his grave expression, and carefully asked, “Did you manage to get in touch with Mrs. Abernathy? Did you find her new number?”</p>
+                        
+                        <p>Thaddeus rubbed his forehead tiredly. Being busy with anger, he had forgotten about the things he needed to deal with.</p>
+                        
+                        <p>He had thought that everything would go smoothly after na left, but now he was upset because she was with Cas sius.</p>
+                        
+                        <p>What the hell! Why was she affecting his mood?</p>
+                        
+                        <p>“Let’s find another opportunity. I don’t want to talk about that woman right now.”</p>
+                        
+                        <p>Thaddeus picked up his coffee cup and took a sip, then suddenly his brows furrowed.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -896,31 +936,35 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>“What’s wrong with this coffee? It tastes off.”</p>
-                    
-                    <p>“I made it ording to the recipe Mrs. Abernathy gave me. How could this be?” Gordon scratched his head in confusion.</p>
-                    
-                    <p>“Recipe?”</p>
-                    
-                    <p>“Before Mrs. Abernathy left, she gave me a notebook detailing your taste preferences, such as what you don’t eat, how you like your coffee, and even what you ate at which year and month, and how many bites you took. All these minor things were clearly recorded.”</p>
-                    
-                    <p>Saying this, Gordon took out the notebook from his pocket and handed it to Thaddeus.</p>
-                    
-                    <p>Thaddeus took it, hesitated for a moment, and slowly opened it.</p>
-                    
-                    <p>What caught his eye were clear and neat handwriting, which was just like na’s.</p>
-                    
-                    <p>-“Add a dash of salt to the coffee to enhance the vor. Thaddeus likes it.”</p>
-                    
-                    <p>-“He had two bowls of seafood vegetable soup made with fresh scallops in the morning. I can make it for him more often.”</p>
-                    
-                    <p>-“Thaddeus doesn’t like overly sweet food. Try making something light like avocado sd. Thaddeus might like it.”</p>
-                    
-                    <p>-“The ties I bought for Thaddeusst year, he didn’t even nce at the ones with red elements. Seems like Thaddeus doesn’t like red…”</p>
-                    
-                    <p>Every sentence was about him.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>“What’s wrong with this coffee? It tastes off.”</p>
+                        
+                        <p>“I made it ording to the recipe Mrs. Abernathy gave me. How could this be?” Gordon scratched his head in confusion.</p>
+                        
+                        <p>“Recipe?”</p>
+                        
+                        <p>“Before Mrs. Abernathy left, she gave me a notebook detailing your taste preferences, such as what you don’t eat, how you like your coffee, and even what you ate at which year and month, and how many bites you took. All these minor things were clearly recorded.”</p>
+                        
+                        <p>Saying this, Gordon took out the notebook from his pocket and handed it to Thaddeus.</p>
+                        
+                        <p>Thaddeus took it, hesitated for a moment, and slowly opened it.</p>
+                        
+                        <p>What caught his eye were clear and neat handwriting, which was just like na’s.</p>
+                        
+                        <p>-“Add a dash of salt to the coffee to enhance the vor. Thaddeus likes it.”</p>
+                        
+                        <p>-“He had two bowls of seafood vegetable soup made with fresh scallops in the morning. I can make it for him more often.”</p>
+                        
+                        <p>-“Thaddeus doesn’t like overly sweet food. Try making something light like avocado sd. Thaddeus might like it.”</p>
+                        
+                        <p>-“The ties I bought for Thaddeusst year, he didn’t even nce at the ones with red elements. Seems like Thaddeus doesn’t like red…”</p>
+                        
+                        <p>Every sentence was about him.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -935,31 +979,35 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Thaddeus turned page after page, his breathing slowed down as if he was afraid to blow away the words on the paper.</p>
-                    
-                    <p>His gaze became deeper and deeper, almost crumpling the paper.</p>
-                    
-                    <p>“If she is so willing to decipher people’s hearts, what else could it be if not for some ulterior motive!”</p>
-                    
-                    <p>Despite the mixed feelings Thaddeus had about the contents of the notebook, he was still angry and threw it into the trash can.</p>
-                    
-                    <p>“Hey, don’t throw it away! Mr. Thaddeus, this is the result of Mrs. Abernathy’s hard work over the past three years. If she didn’t care about you, why would she quietly record all these? Clearly, you are very important to her!” Gordon ran to pick up the notebook, his face showing an expression of heartbreak.</p>
-                    
-                    <p>“Don’t call her Mrs. Abernathy anymore, she doesn’t deserve it!”</p>
-                    
-                    <p>Just then, there was amotion outside the study.</p>
-                    
-                    <p>It seemed, it wasing from the right side of the corridor.</p>
-                    
-                    <p>That room, used to belong to na.</p>
-                    
-                    <p>“Go check what’s going on.” Thaddeus rubbed his temples tiredly.</p>
-                    
-                    <p>Gordon quickly walked out of the study, and soon returned with aplicated look on his face.</p>
-                    
-                    <p>“Mr. Thaddeus, the noise was caused by Ms. Acacia. She… she…”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Thaddeus turned page after page, his breathing slowed down as if he was afraid to blow away the words on the paper.</p>
+                        
+                        <p>His gaze became deeper and deeper, almost crumpling the paper.</p>
+                        
+                        <p>“If she is so willing to decipher people’s hearts, what else could it be if not for some ulterior motive!”</p>
+                        
+                        <p>Despite the mixed feelings Thaddeus had about the contents of the notebook, he was still angry and threw it into the trash can.</p>
+                        
+                        <p>“Hey, don’t throw it away! Mr. Thaddeus, this is the result of Mrs. Abernathy’s hard work over the past three years. If she didn’t care about you, why would she quietly record all these? Clearly, you are very important to her!” Gordon ran to pick up the notebook, his face showing an expression of heartbreak.</p>
+                        
+                        <p>“Don’t call her Mrs. Abernathy anymore, she doesn’t deserve it!”</p>
+                        
+                        <p>Just then, there was amotion outside the study.</p>
+                        
+                        <p>It seemed, it wasing from the right side of the corridor.</p>
+                        
+                        <p>That room, used to belong to na.</p>
+                        
+                        <p>“Go check what’s going on.” Thaddeus rubbed his temples tiredly.</p>
+                        
+                        <p>Gordon quickly walked out of the study, and soon returned with aplicated look on his face.</p>
+                        
+                        <p>“Mr. Thaddeus, the noise was caused by Ms. Acacia. She… she…”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -974,31 +1022,35 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>“What happened to Acacia?”</p>
-                    
-                    <p>“She’s throwing out all the things in your ex-wife’s bedroom.”</p>
-                    
-                    <p>Right now, Acacia was in a state of agitation, rampaging in na’s bedroom.</p>
-                    
-                    <p>11:28</p>
-                    
-                    <p>“na… na! You’re just a country girl who’s only co cky because you have a rich man pampering you, aren’t you? What’s so great about getting a bracelet?! You dare to look down on me!”</p>
-                    
-                    <p>Having signed the divorce agreement, Evadne left without taking anything, giving Acacia space to vent. She threw Evadne’s skincare products on the table and the decorations by the bed on the floor like garbage.</p>
-                    
-                    <p>By the time Thaddeus arrived, the ce was a mess.</p>
-                    
-                    <p>“Acacia! What’re you doing?” He frowned.</p>
-                    
-                    <p>“I hate that there are traces of your life here, the scent of na!”</p>
-                    
-                    <p>Seeing Thaddeus, Acacia started crying again. “If it weren’t for na… why would we have missed each other for three whole years? She stole my ce… why does she act like I’ve hurt her? Making me look like your mistress!”</p>
-                    
-                    <p>“Acacia, you’re not my mistress. Stop overthinking.”</p>
-                    
-                    <p>Thaddeus’ eyes darkened as he bent down to pick up the crystal frog that had been smashed to pleces.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“What happened to Acacia?”</p>
+                        
+                        <p>“She’s throwing out all the things in your ex-wife’s bedroom.”</p>
+                        
+                        <p>Right now, Acacia was in a state of agitation, rampaging in na’s bedroom.</p>
+                        
+                        <p>11:28</p>
+                        
+                        <p>“na… na! You’re just a country girl who’s only co cky because you have a rich man pampering you, aren’t you? What’s so great about getting a bracelet?! You dare to look down on me!”</p>
+                        
+                        <p>Having signed the divorce agreement, Evadne left without taking anything, giving Acacia space to vent. She threw Evadne’s skincare products on the table and the decorations by the bed on the floor like garbage.</p>
+                        
+                        <p>By the time Thaddeus arrived, the ce was a mess.</p>
+                        
+                        <p>“Acacia! What’re you doing?” He frowned.</p>
+                        
+                        <p>“I hate that there are traces of your life here, the scent of na!”</p>
+                        
+                        <p>Seeing Thaddeus, Acacia started crying again. “If it weren’t for na… why would we have missed each other for three whole years? She stole my ce… why does she act like I’ve hurt her? Making me look like your mistress!”</p>
+                        
+                        <p>“Acacia, you’re not my mistress. Stop overthinking.”</p>
+                        
+                        <p>Thaddeus’ eyes darkened as he bent down to pick up the crystal frog that had been smashed to pleces.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1013,31 +1065,35 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>He suddenly found that the little omament actually had its own charm, its little paw even made a scissors gesture.</p>
-                    
-                    <p>The man smirked slightly.</p>
-                    
-                    <p>At this time, Acacia opened the closet and started throwing na’s clothes out recklessly.</p>
-                    
-                    <p>“What’s this?”</p>
-                    
-                    <p>She casually opened arge box, and inside was a set of high-quality, well-tailored men’s suit.</p>
-                    
-                    <p>“Haha… Is this a gift she prepared for President Ashbourne? Was she already nning to find herself a new backer?!”</p>
-                    
-                    <p>Upon hearing this. Thaddeus’ deep ck eyes cast a shadow. He walked over and took the box.</p>
-                    
-                    <p>“Thad, this woman is really cun ny! I thought she married you because she loved you, and would take care of you sincerely. But it turns out she just wanted to climb up the socialdder, treating you like a fool!”</p>
-                    
-                    <p>With tears in her eyes, Acacia picked up the fruit knife on the table and rushed over to sh the suit.</p>
-                    
-                    <p>Thaddeus quickly protected the box with his b*dy.</p>
-                    
-                    <p>As a result, the knife cut through his arm, and the fresh blood soaked through his white shirt!</p>
-                    
-                    <p>“Ah! I’m… I’m sorry, Thad!”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>He suddenly found that the little omament actually had its own charm, its little paw even made a scissors gesture.</p>
+                        
+                        <p>The man smirked slightly.</p>
+                        
+                        <p>At this time, Acacia opened the closet and started throwing na’s clothes out recklessly.</p>
+                        
+                        <p>“What’s this?”</p>
+                        
+                        <p>She casually opened arge box, and inside was a set of high-quality, well-tailored men’s suit.</p>
+                        
+                        <p>“Haha… Is this a gift she prepared for President Ashbourne? Was she already nning to find herself a new backer?!”</p>
+                        
+                        <p>Upon hearing this. Thaddeus’ deep ck eyes cast a shadow. He walked over and took the box.</p>
+                        
+                        <p>“Thad, this woman is really cun ny! I thought she married you because she loved you, and would take care of you sincerely. But it turns out she just wanted to climb up the socialdder, treating you like a fool!”</p>
+                        
+                        <p>With tears in her eyes, Acacia picked up the fruit knife on the table and rushed over to sh the suit.</p>
+                        
+                        <p>Thaddeus quickly protected the box with his b*dy.</p>
+                        
+                        <p>As a result, the knife cut through his arm, and the fresh blood soaked through his white shirt!</p>
+                        
+                        <p>“Ah! I’m… I’m sorry, Thad!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1052,31 +1108,35 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>The knife in Acacia’s hand fell to the ground, and she covered her mouth in shock, her mind went nk.</p>
-                    
-                    <p>“Oh my G od! What happened?”</p>
-                    
-                    <p>Elspeth hurried over with a ser vant following her. Seeing Thaddeus injured and the blood staining the white carpet red, she was also shocked, “Thaddeus! What… what is going on?”</p>
-                    
-                    <p>“Gordon, get a car to send Ms. Acacia home,” Thaddeus held back his pain and huffed in frustration.</p>
-                    
-                    <p>“Thad, I don’t wanna go… I wanna be with you!” Acacia, in a flurry of panic, clung onto him.</p>
-                    
-                    <p>“Yes, Mr. Frederic, it’ste, let Acacia stay here for the night. She can take care of your wounds,” Elspeth chimed in, trying to convince him. From her perspective, she was even hoping Acacia could make it into Thaddeus’ room tonight!</p>
-                    
-                    <p>‘No need, she should go home first,” surprisingly, the man was quite adamant.</p>
-                    
-                    <p>“But sooner orter Acacia is to be your wife…”</p>
-                    
-                    <p>*If she does marry me in the future, we’ll have plenty of time together. It’s best she stays at home before our marriage. Firstly, she can spend more time with her family. Secondly, my divorce with na isn’t finalized yet, it wouldn’t be right for Acacia to stay here.”</p>
-                    
-                    <p>There was not much Elspeth could say to that.</p>
-                    
-                    <p>After sending away a tearful Acacia, Thaddeus looked at the mess around him and heaved a sigh of disappointment, then ordered the ser vants to clean up the room.</p>
-                    
-                    <p>“Mr. Thaddeus, take a look at this!”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>The knife in Acacia’s hand fell to the ground, and she covered her mouth in shock, her mind went nk.</p>
+                        
+                        <p>“Oh my G od! What happened?”</p>
+                        
+                        <p>Elspeth hurried over with a ser vant following her. Seeing Thaddeus injured and the blood staining the white carpet red, she was also shocked, “Thaddeus! What… what is going on?”</p>
+                        
+                        <p>“Gordon, get a car to send Ms. Acacia home,” Thaddeus held back his pain and huffed in frustration.</p>
+                        
+                        <p>“Thad, I don’t wanna go… I wanna be with you!” Acacia, in a flurry of panic, clung onto him.</p>
+                        
+                        <p>“Yes, Mr. Frederic, it’ste, let Acacia stay here for the night. She can take care of your wounds,” Elspeth chimed in, trying to convince him. From her perspective, she was even hoping Acacia could make it into Thaddeus’ room tonight!</p>
+                        
+                        <p>‘No need, she should go home first,” surprisingly, the man was quite adamant.</p>
+                        
+                        <p>“But sooner orter Acacia is to be your wife…”</p>
+                        
+                        <p>*If she does marry me in the future, we’ll have plenty of time together. It’s best she stays at home before our marriage. Firstly, she can spend more time with her family. Secondly, my divorce with na isn’t finalized yet, it wouldn’t be right for Acacia to stay here.”</p>
+                        
+                        <p>There was not much Elspeth could say to that.</p>
+                        
+                        <p>After sending away a tearful Acacia, Thaddeus looked at the mess around him and heaved a sigh of disappointment, then ordered the ser vants to clean up the room.</p>
+                        
+                        <p>“Mr. Thaddeus, take a look at this!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1091,27 +1151,31 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Gordon stood in surprise in front of the wardrobe, pulling out a stunning outfit, like a stage costume.</p>
-                    
-                    <p>Thaddeus went over and looked at the clothing. It was made of a soft pink fabric with exquisite patterns. The sparkling rhinestones were dazzling, it was clearly high-end,</p>
-                    
-                    <p>His long eyshes fluttered slightly, his feelings a bit mixed.</p>
-                    
-                    <p>“Could it be… Mrs. Abernathy still performs songs? Outstanding!” Gordon eximed in admiration. He had been amazed by Mrs. Abernathy several times today.</p>
-                    
-                    <p>Such a strong and beautiful woman, he couldn’t understand why Mr. Thaddeus just couldn’t love her.</p>
-                    
-                    <p>11:28</p>
-                    
-                    <p>“You think she’s outstanding?”</p>
-                    
-                    <p>“Huh?”</p>
-                    
-                    <p>“I, on the other hand, find her more and more unfathomable.”</p>
-                    
-                    <p>Thaddeus’ l*ps pressed together, a wave of indescribable irritation rising in his chest.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Gordon stood in surprise in front of the wardrobe, pulling out a stunning outfit, like a stage costume.</p>
+                        
+                        <p>Thaddeus went over and looked at the clothing. It was made of a soft pink fabric with exquisite patterns. The sparkling rhinestones were dazzling, it was clearly high-end,</p>
+                        
+                        <p>His long eyshes fluttered slightly, his feelings a bit mixed.</p>
+                        
+                        <p>“Could it be… Mrs. Abernathy still performs songs? Outstanding!” Gordon eximed in admiration. He had been amazed by Mrs. Abernathy several times today.</p>
+                        
+                        <p>Such a strong and beautiful woman, he couldn’t understand why Mr. Thaddeus just couldn’t love her.</p>
+                        
+                        <p>11:28</p>
+                        
+                        <p>“You think she’s outstanding?”</p>
+                        
+                        <p>“Huh?”</p>
+                        
+                        <p>“I, on the other hand, find her more and more unfathomable.”</p>
+                        
+                        <p>Thaddeus’ l*ps pressed together, a wave of indescribable irritation rising in his chest.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2427,6 +2491,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2553,7 +2697,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2595,32 +2738,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2631,21 +2756,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2678,6 +2793,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2698,20 +2819,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

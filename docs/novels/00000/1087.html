@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Leonard Blackwood squeezed his wife&#39;s hand, whispering, &#34;Our Adrian couldn&#39;t have chosen better. With Vivian by his side, I&#39;ve no worries about the family&#39;s future.&#34;</p>
-                    
-                    <p>Across the room, Bianca Thornton&#39;s manicured nails dug into her palms. This wasn&#39;t how she&#39;d imagined the evening unfolding. Dominic Sinclair&#39;s earlier praise had set the stage perfectly - for Vivian to steal what should have been her moment.</p>
-                    
-                    <p>Bianca opened her mouth to speak, but the words died in her throat. Music theory had never been her forte.</p>
-                    
-                    <p>Margaret Blackwood remained statuesque beside her daughter. &#34;The introduction is rather elementary,&#34; she remarked coolly, her decades of piano training lending authority to her critique. &#34;Any conservatory student could play it blindfolded.&#34;</p>
-                    
-                    <p>A ripple of agreement spread through the crowd. How could this small-town girl possibly compare to their refined tastes? Vivian&#39;s humble beginnings made their privileged educations seem almost vulgar.</p>
-                    
-                    <p>Then the music changed.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Leonard Blackwood squeezed his wife&#39;s hand, whispering, &#34;Our Adrian couldn&#39;t have chosen better. With Vivian by his side, I&#39;ve no worries about the family&#39;s future.&#34;</p>
+                        
+                        <p>Across the room, Bianca Thornton&#39;s manicured nails dug into her palms. This wasn&#39;t how she&#39;d imagined the evening unfolding. Dominic Sinclair&#39;s earlier praise had set the stage perfectly - for Vivian to steal what should have been her moment.</p>
+                        
+                        <p>Bianca opened her mouth to speak, but the words died in her throat. Music theory had never been her forte.</p>
+                        
+                        <p>Margaret Blackwood remained statuesque beside her daughter. &#34;The introduction is rather elementary,&#34; she remarked coolly, her decades of piano training lending authority to her critique. &#34;Any conservatory student could play it blindfolded.&#34;</p>
+                        
+                        <p>A ripple of agreement spread through the crowd. How could this small-town girl possibly compare to their refined tastes? Vivian&#39;s humble beginnings made their privileged educations seem almost vulgar.</p>
+                        
+                        <p>Then the music changed.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Vivian&#39;s hands became a blur across the keyboard, the melody transforming into something transcendent. Each note carried the weight of lived experience, telling stories no words could capture. The room seemed to brighten, as if the sun had broken through storm clouds.</p>
-                    
-                    <p>This wasn&#39;t mere performance - it was revelation.</p>
-                    
-                    <p>Adrian Blackwood sat motionless, his forgotten cigarette burning to ash between his fingers. The woman at the piano bore little resemblance to the quiet wife he knew. This Vivian burned with artistic fire, her passion igniting something primal in his chest.</p>
-                    
-                    <p>Dominic Sinclair, a virtuoso in his own right, felt his worldview shift. He&#39;d spent his life chasing technical perfection, only to witness true artistry in the most unexpected place.</p>
-                    
-                    <p>As the final chord faded, Vivian rose gracefully. The stunned silence lasted three heartbeats before erupting into thunderous applause.</p>
-                    
-                    <p>She approached Beatrice with quiet dignity. &#34;Happy birthday, Grandmother.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Vivian&#39;s hands became a blur across the keyboard, the melody transforming into something transcendent. Each note carried the weight of lived experience, telling stories no words could capture. The room seemed to brighten, as if the sun had broken through storm clouds.</p>
+                        
+                        <p>This wasn&#39;t mere performance - it was revelation.</p>
+                        
+                        <p>Adrian Blackwood sat motionless, his forgotten cigarette burning to ash between his fingers. The woman at the piano bore little resemblance to the quiet wife he knew. This Vivian burned with artistic fire, her passion igniting something primal in his chest.</p>
+                        
+                        <p>Dominic Sinclair, a virtuoso in his own right, felt his worldview shift. He&#39;d spent his life chasing technical perfection, only to witness true artistry in the most unexpected place.</p>
+                        
+                        <p>As the final chord faded, Vivian rose gracefully. The stunned silence lasted three heartbeats before erupting into thunderous applause.</p>
+                        
+                        <p>She approached Beatrice with quiet dignity. &#34;Happy birthday, Grandmother.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Tears glistened in the older woman&#39;s eyes. &#34;My dear child,&#34; Beatrice whispered, clasping Vivian&#39;s hands. &#34;You&#39;ve given me back a piece of my soul I thought lost forever.&#34; Her voice broke. &#34;The hours you must have sacrificed... the dedication...&#34;</p>
-                    
-                    <p>Vivian simply smiled, the unspoken truth hanging between them - some gifts couldn&#39;t be bought, only earned through love&#39;s quiet labor.</p>
-                    
-                    <p>Vivian&#39;s smile faltered slightly. &#34;I&#39;m just glad you enjoyed it,&#34; she murmured, deftly avoiding any emotional display.</p>
-                    
-                    <p>A pang of guilt twisted in Vivian&#39;s chest. The melody wasn&#39;t truly hers - it had been Eleanor&#39;s favorite lullaby, the one she&#39;d hummed during golden afternoons in their tiny kitchen. Growing up in that provincial town without means for proper lessons, Vivian had clung to this simple tune, repeating it until it became part of her very being.</p>
-                    
-                    <p>She knew its every nuance better than any classical piece. Who could have imagined this childhood comfort would become Adrian Blackwood&#39;s final musical legacy?</p>
-                    
-                    <p>The audience erupted in deafening applause, their cheers reverberating through the grand hall. Even the skeptics couldn&#39;t deny the raw magnetism of Vivian&#39;s performance, their reluctant admiration evident in their thunderous ovation.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Tears glistened in the older woman&#39;s eyes. &#34;My dear child,&#34; Beatrice whispered, clasping Vivian&#39;s hands. &#34;You&#39;ve given me back a piece of my soul I thought lost forever.&#34; Her voice broke. &#34;The hours you must have sacrificed... the dedication...&#34;</p>
+                        
+                        <p>Vivian simply smiled, the unspoken truth hanging between them - some gifts couldn&#39;t be bought, only earned through love&#39;s quiet labor.</p>
+                        
+                        <p>Vivian&#39;s smile faltered slightly. &#34;I&#39;m just glad you enjoyed it,&#34; she murmured, deftly avoiding any emotional display.</p>
+                        
+                        <p>A pang of guilt twisted in Vivian&#39;s chest. The melody wasn&#39;t truly hers - it had been Eleanor&#39;s favorite lullaby, the one she&#39;d hummed during golden afternoons in their tiny kitchen. Growing up in that provincial town without means for proper lessons, Vivian had clung to this simple tune, repeating it until it became part of her very being.</p>
+                        
+                        <p>She knew its every nuance better than any classical piece. Who could have imagined this childhood comfort would become Adrian Blackwood&#39;s final musical legacy?</p>
+                        
+                        <p>The audience erupted in deafening applause, their cheers reverberating through the grand hall. Even the skeptics couldn&#39;t deny the raw magnetism of Vivian&#39;s performance, their reluctant admiration evident in their thunderous ovation.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>One attendee, caught in the moment&#39;s magic, remarked knowingly, &#34;Mr. Blackwood has truly outshone himself with this lavish declaration of love for Mrs. Blackwood.&#34; As guests dissected the evening&#39;s events, they unanimously credited its success to Adrian&#39;s meticulous planning. With his vast resources and connections, particularly his friendship with Dominic, arranging elite coaches to polish Vivian&#39;s skills would have been effortless.</p>
-                    
-                    <p>Yet Adrian merely shrugged, his voice steady, &#34;This had nothing to do with me.&#34;</p>
-                    
-                    <p>His modest denial earned knowing smiles; clearly he was protecting Vivian&#39;s dignity. The event not only silenced rumors of marital discord but also rewrote social narratives, transforming Vivian from Cinderella to undisputed Blackwood matriarch.</p>
-                    
-                    <p>As the celebration wound down, Bianca approached Dominic with disappointment lacing her voice. &#34;Father couldn&#39;t make it tonight,&#34; she said softly, fingers brushing his sleeve. &#34;Could you take me home?&#34; Her eyes held a silent plea for companionship.</p>
-                    
-                    <p>Dominic subtly stepped back, avoiding her touch. &#34;I can&#39;t. I&#39;ve been drinking and shouldn&#39;t drive.&#34;</p>
-                    
-                    <p>Bianca had orchestrated tonight&#39;s scheme to humiliate Vivian, using Dominic as her unwitting pawn. Had this not been Beatrice&#39;s birthday, he would have confronted her directly.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>One attendee, caught in the moment&#39;s magic, remarked knowingly, &#34;Mr. Blackwood has truly outshone himself with this lavish declaration of love for Mrs. Blackwood.&#34; As guests dissected the evening&#39;s events, they unanimously credited its success to Adrian&#39;s meticulous planning. With his vast resources and connections, particularly his friendship with Dominic, arranging elite coaches to polish Vivian&#39;s skills would have been effortless.</p>
+                        
+                        <p>Yet Adrian merely shrugged, his voice steady, &#34;This had nothing to do with me.&#34;</p>
+                        
+                        <p>His modest denial earned knowing smiles; clearly he was protecting Vivian&#39;s dignity. The event not only silenced rumors of marital discord but also rewrote social narratives, transforming Vivian from Cinderella to undisputed Blackwood matriarch.</p>
+                        
+                        <p>As the celebration wound down, Bianca approached Dominic with disappointment lacing her voice. &#34;Father couldn&#39;t make it tonight,&#34; she said softly, fingers brushing his sleeve. &#34;Could you take me home?&#34; Her eyes held a silent plea for companionship.</p>
+                        
+                        <p>Dominic subtly stepped back, avoiding her touch. &#34;I can&#39;t. I&#39;ve been drinking and shouldn&#39;t drive.&#34;</p>
+                        
+                        <p>Bianca had orchestrated tonight&#39;s scheme to humiliate Vivian, using Dominic as her unwitting pawn. Had this not been Beatrice&#39;s birthday, he would have confronted her directly.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;But I—&#34; Bianca stammered.</p>
-                    
-                    <p>Dominic was already walking away without a backward glance.</p>
-                    
-                    <p>Vivian remained engrossed in conversation with the elderly couple, only noticing the emptied courtyard much later. Rising gracefully, she bid them farewell. &#34;Beatrice, Leonard, I should be going now.&#34;</p>
-                    
-                    <p>Beatrice offered a gentle smile. &#34;Adrian&#39;s had rather too much to drink and isn&#39;t feeling well. He&#39;s resting upstairs. Would you mind checking on him?&#34;</p>
-                    
-                    <p>Unsuspecting, Vivian nodded and ascended the grand staircase. The Blackwood estate maintained a permanent suite for them on the second floor, its door slightly ajar.</p>
-                    
-                    <p>&#34;Adrian?&#34; she called softly, rapping lightly on the doorframe.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;But I—&#34; Bianca stammered.</p>
+                        
+                        <p>Dominic was already walking away without a backward glance.</p>
+                        
+                        <p>Vivian remained engrossed in conversation with the elderly couple, only noticing the emptied courtyard much later. Rising gracefully, she bid them farewell. &#34;Beatrice, Leonard, I should be going now.&#34;</p>
+                        
+                        <p>Beatrice offered a gentle smile. &#34;Adrian&#39;s had rather too much to drink and isn&#39;t feeling well. He&#39;s resting upstairs. Would you mind checking on him?&#34;</p>
+                        
+                        <p>Unsuspecting, Vivian nodded and ascended the grand staircase. The Blackwood estate maintained a permanent suite for them on the second floor, its door slightly ajar.</p>
+                        
+                        <p>&#34;Adrian?&#34; she called softly, rapping lightly on the doorframe.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>When no answer came, she pushed the door wider and stepped inside. The expansive foyer concealed the room beyond from immediate view. Moving forward, she found Adrian bent over, rummaging through a cabinet.</p>
-                    
-                    <p>The sudden noise made Adrian jolt upright. His brows furrowed as he demanded, &#34;What are you doing here?&#34; The ominous click of the lock echoed through the room.</p>
-                    
-                    <p>Vivian gave a wry smile. &#34;Looks like Grandma has her own plans...&#34;</p>
-                    
-                    <p>&#34;Hmm?&#34; Confusion flickered across her face.</p>
-                    
-                    <p>Before she could process it, Beatrice&#39;s voice floated through the door. &#34;Ethan already left, and Adrian certainly shouldn&#39;t be driving after drinking. You two should stay the night and leave tomorrow. Get some rest.&#34;</p>
-                    
-                    <p>Determined, Vivian rushed to the door, rattling the knob and pounding urgently. &#34;Beatrice? I just need some water!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>When no answer came, she pushed the door wider and stepped inside. The expansive foyer concealed the room beyond from immediate view. Moving forward, she found Adrian bent over, rummaging through a cabinet.</p>
+                        
+                        <p>The sudden noise made Adrian jolt upright. His brows furrowed as he demanded, &#34;What are you doing here?&#34; The ominous click of the lock echoed through the room.</p>
+                        
+                        <p>Vivian gave a wry smile. &#34;Looks like Grandma has her own plans...&#34;</p>
+                        
+                        <p>&#34;Hmm?&#34; Confusion flickered across her face.</p>
+                        
+                        <p>Before she could process it, Beatrice&#39;s voice floated through the door. &#34;Ethan already left, and Adrian certainly shouldn&#39;t be driving after drinking. You two should stay the night and leave tomorrow. Get some rest.&#34;</p>
+                        
+                        <p>Determined, Vivian rushed to the door, rattling the knob and pounding urgently. &#34;Beatrice? I just need some water!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Only silence answered her. With a resigned sigh, Adrian gently closed the cabinet door and sank onto the edge of the bed. &#34;Grandma tricked me into coming up here under false pretenses.&#34;</p>
-                    
-                    <p>Frustrated yet amused, Vivian collapsed onto the facing couch. &#34;She sent me to keep an eye on you too.&#34;</p>
-                    
-                    <p>Their eyes met, and they burst into laughter, fully appreciating Beatrice&#39;s elaborate scheme.</p>
-                    
-                    <p>Vivian broke the silence first. &#34;I&#39;ll take the sofa tonight.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Only silence answered her. With a resigned sigh, Adrian gently closed the cabinet door and sank onto the edge of the bed. &#34;Grandma tricked me into coming up here under false pretenses.&#34;</p>
+                        
+                        <p>Frustrated yet amused, Vivian collapsed onto the facing couch. &#34;She sent me to keep an eye on you too.&#34;</p>
+                        
+                        <p>Their eyes met, and they burst into laughter, fully appreciating Beatrice&#39;s elaborate scheme.</p>
+                        
+                        <p>Vivian broke the silence first. &#34;I&#39;ll take the sofa tonight.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

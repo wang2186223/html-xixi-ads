@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.098435">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.098435">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.275439">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.275439">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.098435",
-        "dateModified": "2026-07-19T02:47:19.098435",
+        "datePublished": "2026-07-19T13:03:14.275439",
+        "dateModified": "2026-07-19T13:03:14.275439",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,31 +893,35 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV*</p>
-                    
-                    <p>William and I cried together for what felt like forever. I held onto this old man who&#39;d been more family to me than my own blood relatives.</p>
-                    
-                    <p>When our tears finally dried up, William took a deep breath and looked at me with clear eyes. &#34;I heard from Charles that your adoptive parents are Jeffrey and Eleanor Parker from Australia,&#34; he said.</p>
-                    
-                    <p>&#34;Yes.&#34;</p>
-                    
-                    <p>He let out a sigh. &#34;When you go backto Sydney, stay there. Don&#39;t come back to New York.&#34;</p>
-                    
-                    <p>&#34;Between the Australian Parkers and us... there&#39;s bad blood,&#34; he continued.&#34;Twenty years of grudges and conflicts.&#34;</p>
-                    
-                    <p>He squeezed my hand. &#34;It&#39;s already remarkable they took you in despite everything. After I&#39;m gone, cut ties with the New York Parkers. You understand?&#34;</p>
-                    
-                    <p>I bit my lip and nodded. &#34;I understand.&#34;</p>
-                    
-                    <p>Relief washed over his face. &#34;Good.&#34;</p>
-                    
-                    <p>It made sense now. Through Adrian&#39;s earlier explanation, I finally understood the decades-long feud. My adoptive parents had taken me in despite their history with the New York Parkers. Once William passed,I&#39;d have no reason to stay connected to any of them. Clean breaks were best for everyone.</p>
-                    
-                    <p>William looked ready to say more when Thalia&#39;s voice cut through our</p>
-                    
-                    <p>moment.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV*</p>
+                        
+                        <p>William and I cried together for what felt like forever. I held onto this old man who&#39;d been more family to me than my own blood relatives.</p>
+                        
+                        <p>When our tears finally dried up, William took a deep breath and looked at me with clear eyes. &#34;I heard from Charles that your adoptive parents are Jeffrey and Eleanor Parker from Australia,&#34; he said.</p>
+                        
+                        <p>&#34;Yes.&#34;</p>
+                        
+                        <p>He let out a sigh. &#34;When you go backto Sydney, stay there. Don&#39;t come back to New York.&#34;</p>
+                        
+                        <p>&#34;Between the Australian Parkers and us... there&#39;s bad blood,&#34; he continued.&#34;Twenty years of grudges and conflicts.&#34;</p>
+                        
+                        <p>He squeezed my hand. &#34;It&#39;s already remarkable they took you in despite everything. After I&#39;m gone, cut ties with the New York Parkers. You understand?&#34;</p>
+                        
+                        <p>I bit my lip and nodded. &#34;I understand.&#34;</p>
+                        
+                        <p>Relief washed over his face. &#34;Good.&#34;</p>
+                        
+                        <p>It made sense now. Through Adrian&#39;s earlier explanation, I finally understood the decades-long feud. My adoptive parents had taken me in despite their history with the New York Parkers. Once William passed,I&#39;d have no reason to stay connected to any of them. Clean breaks were best for everyone.</p>
+                        
+                        <p>William looked ready to say more when Thalia&#39;s voice cut through our</p>
+                        
+                        <p>moment.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -896,31 +936,35 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Blake, what are you doing?&#34;</p>
-                    
-                    <p>William frowned as her voice grew louder.</p>
-                    
-                    <p>&#34;Have you forgotten that grandfather ended up here because of her? Now you&#39;re letting them be alone? Do you want him dead?&#34;</p>
-                    
-                    <p>1 sighed. &#34;William-&#34;</p>
-                    
-                    <p>&#34;Help me up.&#34; he interrupted. struggling to sit.</p>
-                    
-                    <p>&#34;You should rest.&#34;</p>
-                    
-                    <p>&#34;I have something to say.&#34; The authority in his voice hadn&#39;t diminished with age.</p>
-                    
-                    <p>Charles moved to his side. &#34;Sir-&#34;</p>
-                    
-                    <p>&#34;Since you and Adrian are here, start a livestream,&#34; William instructed me.&#34;I want witnesses.&#34;</p>
-                    
-                    <p>&#34;I heard them fighting over my inheritance,&#34; he saíd. &#34;Might as well read the will in person while I still can.&#34;</p>
-                    
-                    <p>&#34;He knows his body,&#34; Charles said. resignation in his voice. &#34;Let him do what he wants.&#34;</p>
-                    
-                    <p>1 supported William&#39;s shoulders while Charles helped him into a waiting wheelchair. A nurse rushed in to protest, but William dismissed her wíth a wave,</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Blake, what are you doing?&#34;</p>
+                        
+                        <p>William frowned as her voice grew louder.</p>
+                        
+                        <p>&#34;Have you forgotten that grandfather ended up here because of her? Now you&#39;re letting them be alone? Do you want him dead?&#34;</p>
+                        
+                        <p>1 sighed. &#34;William-&#34;</p>
+                        
+                        <p>&#34;Help me up.&#34; he interrupted. struggling to sit.</p>
+                        
+                        <p>&#34;You should rest.&#34;</p>
+                        
+                        <p>&#34;I have something to say.&#34; The authority in his voice hadn&#39;t diminished with age.</p>
+                        
+                        <p>Charles moved to his side. &#34;Sir-&#34;</p>
+                        
+                        <p>&#34;Since you and Adrian are here, start a livestream,&#34; William instructed me.&#34;I want witnesses.&#34;</p>
+                        
+                        <p>&#34;I heard them fighting over my inheritance,&#34; he saíd. &#34;Might as well read the will in person while I still can.&#34;</p>
+                        
+                        <p>&#34;He knows his body,&#34; Charles said. resignation in his voice. &#34;Let him do what he wants.&#34;</p>
+                        
+                        <p>1 supported William&#39;s shoulders while Charles helped him into a waiting wheelchair. A nurse rushed in to protest, but William dismissed her wíth a wave,</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -935,31 +979,35 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>I set up she livestream on my phone as requested, then followed as Charles wheeled William toward the door.</p>
-                    
-                    <p>The hallway conversations died instantly when we emerged. William signaled Charles to stop when they reached Blake, who was sitting in his wheelchair by the door.</p>
-                    
-                    <p>&#34;Blake.&#34; Just his name, but loaded with disappointment.</p>
-                    
-                    <p>Blake looked up, face blank.</p>
-                    
-                    <p>&#34;A man who can&#39;t stand will never win back what he wants,&#34; William said.eyes fixed on Blake&#39;s legs.</p>
-                    
-                    <p>&#34;If you&#39;re content wallowing in self-pity, I have nothing more to say,&#34;William continued. &#34;Whether you stay disabled or stand again is your choice.&#34;</p>
-                    
-                    <p>Blake&#39;s mouth curved slightly. &#34;I don&#39;t want to win anything back.&#34;</p>
-                    
-                    <p>He glanced my way before adding, &#34;Being disabled isn&#39;t so bad.&#34;</p>
-                    
-                    <p>Anger flashed across William&#39;s face. &#34;The Parker family produced someone who&#39;s given up on himself! Your father and I raised you to work for what you want.&#34;</p>
-                    
-                    <p>William&#39;s grip tightened on his armrests. &#34;You&#39;re not worthy of being a Parker.&#34;</p>
-                    
-                    <p>&#34;Your father would be disappointed.&#34; William said, voice shaking.&#34;The son he died protecting turned out like this!&#34;</p>
-                    
-                    <p>I watched Blake carefully. This wasn&#39;t the proud, sharp man I remembered. The Blake Parker I knew would never accept being second to anyone. After his father&#39;s death, he&#39;d built Parker Group into something extraordinary. But this man before me seemed hollow, indifferent to William&#39;s harsh words.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>I set up she livestream on my phone as requested, then followed as Charles wheeled William toward the door.</p>
+                        
+                        <p>The hallway conversations died instantly when we emerged. William signaled Charles to stop when they reached Blake, who was sitting in his wheelchair by the door.</p>
+                        
+                        <p>&#34;Blake.&#34; Just his name, but loaded with disappointment.</p>
+                        
+                        <p>Blake looked up, face blank.</p>
+                        
+                        <p>&#34;A man who can&#39;t stand will never win back what he wants,&#34; William said.eyes fixed on Blake&#39;s legs.</p>
+                        
+                        <p>&#34;If you&#39;re content wallowing in self-pity, I have nothing more to say,&#34;William continued. &#34;Whether you stay disabled or stand again is your choice.&#34;</p>
+                        
+                        <p>Blake&#39;s mouth curved slightly. &#34;I don&#39;t want to win anything back.&#34;</p>
+                        
+                        <p>He glanced my way before adding, &#34;Being disabled isn&#39;t so bad.&#34;</p>
+                        
+                        <p>Anger flashed across William&#39;s face. &#34;The Parker family produced someone who&#39;s given up on himself! Your father and I raised you to work for what you want.&#34;</p>
+                        
+                        <p>William&#39;s grip tightened on his armrests. &#34;You&#39;re not worthy of being a Parker.&#34;</p>
+                        
+                        <p>&#34;Your father would be disappointed.&#34; William said, voice shaking.&#34;The son he died protecting turned out like this!&#34;</p>
+                        
+                        <p>I watched Blake carefully. This wasn&#39;t the proud, sharp man I remembered. The Blake Parker I knew would never accept being second to anyone. After his father&#39;s death, he&#39;d built Parker Group into something extraordinary. But this man before me seemed hollow, indifferent to William&#39;s harsh words.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -974,31 +1022,35 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>William signaled Charles to move on. As they wheeled past, I hesitated.</p>
-                    
-                    <p>**Blake&#39;s POV*</p>
-                    
-                    <p>She stood there between my grandfather&#39;s wheelchair and mine,uncertain which way to go. The hospital lights caught in her hair.</p>
-                    
-                    <p>&#34;Don&#39;t just stand there,&#34; I said flatly.Gwith my grandfather.&#34;</p>
-                    
-                    <p>She studied me, her eyes dropping to my legs. &#34;Your leg... can you really not stand anymore?&#34;</p>
-                    
-                    <p>&#34;That&#39;s not important.&#34;</p>
-                    
-                    <p>&#34;But if the doctors said -&#34;</p>
-                    
-                    <p>&#34;I&#39;m fine like this.&#34; I leaned back, deliberately casual.</p>
-                    
-                    <p>She bit her lip. &#34;If you could stand, you should go through rehabilitation.For your future.&#34;</p>
-                    
-                    <p>I smiled bitterly to myself. When you lose what matters most, nothing else makes a difference. Standing or sitting in this chair - what&#39;s the point?</p>
-                    
-                    <p>Future? Without her, my life was stagnant water. The only thing that still gave me purpose was making sure she was okay. If she found happiness without me, that would be enough - evenif I ended up as nothing.</p>
-                    
-                    <p>&#34;Go.&#34; I said. &#34;They&#39;re waiting.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>William signaled Charles to move on. As they wheeled past, I hesitated.</p>
+                        
+                        <p>**Blake&#39;s POV*</p>
+                        
+                        <p>She stood there between my grandfather&#39;s wheelchair and mine,uncertain which way to go. The hospital lights caught in her hair.</p>
+                        
+                        <p>&#34;Don&#39;t just stand there,&#34; I said flatly.Gwith my grandfather.&#34;</p>
+                        
+                        <p>She studied me, her eyes dropping to my legs. &#34;Your leg... can you really not stand anymore?&#34;</p>
+                        
+                        <p>&#34;That&#39;s not important.&#34;</p>
+                        
+                        <p>&#34;But if the doctors said -&#34;</p>
+                        
+                        <p>&#34;I&#39;m fine like this.&#34; I leaned back, deliberately casual.</p>
+                        
+                        <p>She bit her lip. &#34;If you could stand, you should go through rehabilitation.For your future.&#34;</p>
+                        
+                        <p>I smiled bitterly to myself. When you lose what matters most, nothing else makes a difference. Standing or sitting in this chair - what&#39;s the point?</p>
+                        
+                        <p>Future? Without her, my life was stagnant water. The only thing that still gave me purpose was making sure she was okay. If she found happiness without me, that would be enough - evenif I ended up as nothing.</p>
+                        
+                        <p>&#34;Go.&#34; I said. &#34;They&#39;re waiting.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1013,31 +1065,35 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>She walked away, and I watched until she disappeared around the corner.</p>
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>1 caught up with William just as Thalia and Olivia rushed to his side,</p>
-                    
-                    <p>suddenly all concern.</p>
-                    
-                    <p>&#34;Grandfather!&#34; they cried, grabbing his arms. &#34;Are you alright?&#34;</p>
-                    
-                    <p>William&#39;s expression remained cold. &#34;You really care about me?&#34;</p>
-                    
-                    <p>&#34;Of course I do,&#34; Thalia insisted, kneeling beside him. She glared at me.&#34;If anything happens to you, I won&#39;t let her get away with it!&#34;</p>
-                    
-                    <p>&#34;What does my condition have to do with Mrs. Knox?&#34; William asked. &#34;I heard you all in the hallway.&#34;</p>
-                    
-                    <p>The corridor went silent as William continued. &#34;You&#39;re concerned I might survive and delay your inheritance plans, right?&#34;</p>
-                    
-                    <p>Thalia&#39;s face paled. &#34;Grandfather, what are you saying? We&#39;re worried about you.&#34;</p>
-                    
-                    <p>&#34;Really?&#34; William laughed humorlessly.′′Iheard you fighting over my money.&#34;</p>
-                    
-                    <p>He turned to face Rebecca and Elizabeth. &#34;Grown women with adult children, pretending sophistication in public. Yet here you are, fighting like children in a hospital. Have you no shame?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>She walked away, and I watched until she disappeared around the corner.</p>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>1 caught up with William just as Thalia and Olivia rushed to his side,</p>
+                        
+                        <p>suddenly all concern.</p>
+                        
+                        <p>&#34;Grandfather!&#34; they cried, grabbing his arms. &#34;Are you alright?&#34;</p>
+                        
+                        <p>William&#39;s expression remained cold. &#34;You really care about me?&#34;</p>
+                        
+                        <p>&#34;Of course I do,&#34; Thalia insisted, kneeling beside him. She glared at me.&#34;If anything happens to you, I won&#39;t let her get away with it!&#34;</p>
+                        
+                        <p>&#34;What does my condition have to do with Mrs. Knox?&#34; William asked. &#34;I heard you all in the hallway.&#34;</p>
+                        
+                        <p>The corridor went silent as William continued. &#34;You&#39;re concerned I might survive and delay your inheritance plans, right?&#34;</p>
+                        
+                        <p>Thalia&#39;s face paled. &#34;Grandfather, what are you saying? We&#39;re worried about you.&#34;</p>
+                        
+                        <p>&#34;Really?&#34; William laughed humorlessly.′′Iheard you fighting over my money.&#34;</p>
+                        
+                        <p>He turned to face Rebecca and Elizabeth. &#34;Grown women with adult children, pretending sophistication in public. Yet here you are, fighting like children in a hospital. Have you no shame?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1052,31 +1108,35 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Elizabeth finally broke the silence.&#34;Father,I-&#34;</p>
-                    
-                    <p>Rachel stepped forward. &#34;Grandfather. you&#39;re confused from your treatment. You misheard things.&#34;</p>
-                    
-                    <p>She glanced meaningfully at Rebecca and Elizabeth. &#34;Mother and aunt have always been devoted to you. They were worried sick, not fighting.&#34;</p>
-                    
-                    <p>She smiled. &#34;Right?”</p>
-                    
-                    <p>Elizabeth nodded quickly.&#34;Yes, father. We were upset, not arguing. We&#39;d never wish for your death.&#34;</p>
-                    
-                    <p>She approached his wheelchair. &#34;Your money is yours to give as you please.&#34;</p>
-                    
-                    <p>Rebecca joined them. &#34;That&#39;s right. We won&#39;t interfere with your wishes.&#34;</p>
-                    
-                    <p>William leaned back like an emperor surveying his court. &#34;So my money is mine to give to whoever I want, and you won&#39;t interfere?&#34;</p>
-                    
-                    <p>Rebecca and Elizabeth exchangedI glances before nodding.</p>
-                    
-                    <p>&#34;Good to hear,&#34; William said with satisfaction.</p>
-                    
-                    <p>Rebecca grabbed Rachel&#39;s arm and pulled her forward. &#34;Audrey,give your grandfather a massage. Don&#39;t just stand there while Thalia and Olivia do all the work!&#34;</p>
-                    
-                    <p>Rachel stumbled forward as Rebecca practically threw her behind William&#39;s wheelchair.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Elizabeth finally broke the silence.&#34;Father,I-&#34;</p>
+                        
+                        <p>Rachel stepped forward. &#34;Grandfather. you&#39;re confused from your treatment. You misheard things.&#34;</p>
+                        
+                        <p>She glanced meaningfully at Rebecca and Elizabeth. &#34;Mother and aunt have always been devoted to you. They were worried sick, not fighting.&#34;</p>
+                        
+                        <p>She smiled. &#34;Right?”</p>
+                        
+                        <p>Elizabeth nodded quickly.&#34;Yes, father. We were upset, not arguing. We&#39;d never wish for your death.&#34;</p>
+                        
+                        <p>She approached his wheelchair. &#34;Your money is yours to give as you please.&#34;</p>
+                        
+                        <p>Rebecca joined them. &#34;That&#39;s right. We won&#39;t interfere with your wishes.&#34;</p>
+                        
+                        <p>William leaned back like an emperor surveying his court. &#34;So my money is mine to give to whoever I want, and you won&#39;t interfere?&#34;</p>
+                        
+                        <p>Rebecca and Elizabeth exchangedI glances before nodding.</p>
+                        
+                        <p>&#34;Good to hear,&#34; William said with satisfaction.</p>
+                        
+                        <p>Rebecca grabbed Rachel&#39;s arm and pulled her forward. &#34;Audrey,give your grandfather a massage. Don&#39;t just stand there while Thalia and Olivia do all the work!&#34;</p>
+                        
+                        <p>Rachel stumbled forward as Rebecca practically threw her behind William&#39;s wheelchair.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1091,29 +1151,33 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Charles moved aside without a word.</p>
-                    
-                    <p>I watched as Rachel shot me a panicked glance. Of course she had no clue how to give William his massage - something I&#39;d done countless times over the years.</p>
-                    
-                    <p>William twisted in his chair to look at her. &#34;Well? I&#39;m waiting.&#34;</p>
-                    
-                    <p>The steel in his voice made Rachel freeze. His eyes bored into her, sharp and knowing.</p>
-                    
-                    <p>&#34;What&#39;s the matter, Audrey?&#34; he asked after a long moment, something dangerous hiding behind his smile. &#34;Forgotten how after all those years?&#34;</p>
-                    
-                    <p>Rachel&#39;s teeth dug into her bottom lip. &#34;The illness... it affected my memory.&#34;</p>
-                    
-                    <p>&#34;Is that so?&#34;</p>
-                    
-                    <p>William tugged his hands free from Thalia and Olivia&#39;s grip. &#34;Since you&#39;re all suddenly so reasonable about my inheritance, let&#39;s settle it right now. I&#39;ll tell everyone exactly who gets what when I&#39;m gone.&#34;</p>
-                    
-                    <p>The hallway went dead silent. Everyone seemed to hold their breath at once.</p>
-                    
-                    <p>&#34;Hold on.&#34;</p>
-                    
-                    <p>Blake&#39;s voice cut through the tension before William could continue.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Charles moved aside without a word.</p>
+                        
+                        <p>I watched as Rachel shot me a panicked glance. Of course she had no clue how to give William his massage - something I&#39;d done countless times over the years.</p>
+                        
+                        <p>William twisted in his chair to look at her. &#34;Well? I&#39;m waiting.&#34;</p>
+                        
+                        <p>The steel in his voice made Rachel freeze. His eyes bored into her, sharp and knowing.</p>
+                        
+                        <p>&#34;What&#39;s the matter, Audrey?&#34; he asked after a long moment, something dangerous hiding behind his smile. &#34;Forgotten how after all those years?&#34;</p>
+                        
+                        <p>Rachel&#39;s teeth dug into her bottom lip. &#34;The illness... it affected my memory.&#34;</p>
+                        
+                        <p>&#34;Is that so?&#34;</p>
+                        
+                        <p>William tugged his hands free from Thalia and Olivia&#39;s grip. &#34;Since you&#39;re all suddenly so reasonable about my inheritance, let&#39;s settle it right now. I&#39;ll tell everyone exactly who gets what when I&#39;m gone.&#34;</p>
+                        
+                        <p>The hallway went dead silent. Everyone seemed to hold their breath at once.</p>
+                        
+                        <p>&#34;Hold on.&#34;</p>
+                        
+                        <p>Blake&#39;s voice cut through the tension before William could continue.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2429,6 +2493,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2555,7 +2699,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2597,32 +2740,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2633,21 +2758,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2680,6 +2795,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2700,20 +2821,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

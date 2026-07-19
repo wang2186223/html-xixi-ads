@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Her fingers hovered over the apartment keypad. At the last second, she turned to face Lydia with hesitant eyes. &#34;Would you... come in for coffee?&#34; The unspoken plea in her voice was unmistakable.</p>
-                    
-                    <p>Their eyes met, and in that silent exchange, years of unspoken tensions dissolved. Lydia crossed the threshold, her tone firm yet gentle. &#34;No more walls between us. Whatever comes, we face it together. Promise me?&#34;</p>
-                    
-                    <p>Perched on the edge of her velvet sofa, Vivian unraveled the tangled web surrounding Eleanor. When Adrian&#39;s name surfaced, she hastily labeled him &#34;just an acquaintance.&#34; Her fingers wrestled with a stubborn water bottle cap before she sighed. &#34;I need to repay this... acquaintance. The debt&#39;s become this awkward barrier between us.&#34;</p>
-                    
-                    <p>Lydia&#39;s brow furrowed in thought. &#34;My recent property investment has me cash-strapped...&#34; Suddenly, she snapped her fingers. &#34;Wait! Ivory Phoenix Productions is scrambling for ghostwriters. Their client&#39;s impossible to please, but the pay&#39;s spectacular. Maybe your solution?&#34;</p>
-                    
-                    <p>With practiced ease, Lydia pulled up the production company&#39;s sleek website and the head developer&#39;s LinkedIn profile. Vivian studied the screen, nodding slowly. &#34;This could work.&#34;</p>
-                    
-                    <p>&#34;They&#39;re new but well-funded,&#34; Lydia confirmed, exhaling a thin stream of smoke. &#34;The owner&#39;s an old contact. They haven&#39;t attracted A-list writers yet, but their compensation packages are generous.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Her fingers hovered over the apartment keypad. At the last second, she turned to face Lydia with hesitant eyes. &#34;Would you... come in for coffee?&#34; The unspoken plea in her voice was unmistakable.</p>
+                        
+                        <p>Their eyes met, and in that silent exchange, years of unspoken tensions dissolved. Lydia crossed the threshold, her tone firm yet gentle. &#34;No more walls between us. Whatever comes, we face it together. Promise me?&#34;</p>
+                        
+                        <p>Perched on the edge of her velvet sofa, Vivian unraveled the tangled web surrounding Eleanor. When Adrian&#39;s name surfaced, she hastily labeled him &#34;just an acquaintance.&#34; Her fingers wrestled with a stubborn water bottle cap before she sighed. &#34;I need to repay this... acquaintance. The debt&#39;s become this awkward barrier between us.&#34;</p>
+                        
+                        <p>Lydia&#39;s brow furrowed in thought. &#34;My recent property investment has me cash-strapped...&#34; Suddenly, she snapped her fingers. &#34;Wait! Ivory Phoenix Productions is scrambling for ghostwriters. Their client&#39;s impossible to please, but the pay&#39;s spectacular. Maybe your solution?&#34;</p>
+                        
+                        <p>With practiced ease, Lydia pulled up the production company&#39;s sleek website and the head developer&#39;s LinkedIn profile. Vivian studied the screen, nodding slowly. &#34;This could work.&#34;</p>
+                        
+                        <p>&#34;They&#39;re new but well-funded,&#34; Lydia confirmed, exhaling a thin stream of smoke. &#34;The owner&#39;s an old contact. They haven&#39;t attracted A-list writers yet, but their compensation packages are generous.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Vivian&#39;s lips pressed into a tight line. Noticing her hesitation, Lydia tapped her cigarette against a crystal ashtray. &#34;Let me guess - you&#39;re protective of your Vivian Hartley byline. Not keen on cheapening it for quick cash?&#34;</p>
-                    
-                    <p>&#34;Here&#39;s the play,&#34; Lydia continued, crossing her legs. &#34;Create a fresh alias. I&#39;ll get you an audition script. The rate won&#39;t match your usual, but it&#39;ll cover your immediate needs.&#34;</p>
-                    
-                    <p>Relief washed over Vivian&#39;s features. &#34;Lydia, I don&#39;t know how to thank you.&#34;</p>
-                    
-                    <p>Within minutes, a new WhatsApp account materialized. Lydia waved away the gratitude. &#34;Please, you&#39;re not just my writer - you&#39;re family. Besides,&#34; she added with a wink, &#34;if financial stress delays our shoot, we both lose. These scripts are formulaic - more product than art. With your talent? Child&#39;s play.&#34;</p>
-                    
-                    <p>True to her word, Lydia forwarded Vivian&#39;s contact to Ivory Phoenix. Within the hour, sample materials arrived with surprising instructions: &#34;Study Vivian Hartley&#39;s style - our client adores her work.&#34; The irony wasn&#39;t lost on either woman.</p>
-                    
-                    <p>As Lydia gathered her things, she shot Vivian a look. &#34;Dive into those samples. My phone&#39;s always on.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Vivian&#39;s lips pressed into a tight line. Noticing her hesitation, Lydia tapped her cigarette against a crystal ashtray. &#34;Let me guess - you&#39;re protective of your Vivian Hartley byline. Not keen on cheapening it for quick cash?&#34;</p>
+                        
+                        <p>&#34;Here&#39;s the play,&#34; Lydia continued, crossing her legs. &#34;Create a fresh alias. I&#39;ll get you an audition script. The rate won&#39;t match your usual, but it&#39;ll cover your immediate needs.&#34;</p>
+                        
+                        <p>Relief washed over Vivian&#39;s features. &#34;Lydia, I don&#39;t know how to thank you.&#34;</p>
+                        
+                        <p>Within minutes, a new WhatsApp account materialized. Lydia waved away the gratitude. &#34;Please, you&#39;re not just my writer - you&#39;re family. Besides,&#34; she added with a wink, &#34;if financial stress delays our shoot, we both lose. These scripts are formulaic - more product than art. With your talent? Child&#39;s play.&#34;</p>
+                        
+                        <p>True to her word, Lydia forwarded Vivian&#39;s contact to Ivory Phoenix. Within the hour, sample materials arrived with surprising instructions: &#34;Study Vivian Hartley&#39;s style - our client adores her work.&#34; The irony wasn&#39;t lost on either woman.</p>
+                        
+                        <p>As Lydia gathered her things, she shot Vivian a look. &#34;Dive into those samples. My phone&#39;s always on.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;Will do,&#34; Vivian replied, already reaching for her laptop.</p>
-                    
-                    <p>The soft click of the door marked the beginning of a new chapter.</p>
-                    
-                    <p>With Lydia out of sight, Vivian turned her full attention to crafting the sample screenplay. The story unfolded as a modern love story, a genre she could write in her sleep. Yet the female lead bore an uncanny resemblance to Serena—all angelic smiles masking a viper&#39;s cunning. Vivian couldn&#39;t fathom why such characters were suddenly in vogue among producers.</p>
-                    
-                    <p>Had this been under her Katrina pseudonym days, she&#39;d have rejected the project outright, even for a hundred million. But with bills piling up, she swallowed her pride and tailored the script to their exact specifications.</p>
-                    
-                    <p>Ivory Phoenix Productions reviewed the draft with palpable excitement. &#34;Brilliant work,&#34; the executive said, fingers steepled. &#34;We&#39;ll pay a million for this. Though we don&#39;t usually charge hefty commissions...&#34;</p>
-                    
-                    <p>&#34;Then we&#39;re agreed,&#34; Vivian cut in. &#34;But I require sixty percent upfront. My situation is... pressing. If that&#39;s unacceptable, I&#39;ll take this elsewhere.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;Will do,&#34; Vivian replied, already reaching for her laptop.</p>
+                        
+                        <p>The soft click of the door marked the beginning of a new chapter.</p>
+                        
+                        <p>With Lydia out of sight, Vivian turned her full attention to crafting the sample screenplay. The story unfolded as a modern love story, a genre she could write in her sleep. Yet the female lead bore an uncanny resemblance to Serena—all angelic smiles masking a viper&#39;s cunning. Vivian couldn&#39;t fathom why such characters were suddenly in vogue among producers.</p>
+                        
+                        <p>Had this been under her Katrina pseudonym days, she&#39;d have rejected the project outright, even for a hundred million. But with bills piling up, she swallowed her pride and tailored the script to their exact specifications.</p>
+                        
+                        <p>Ivory Phoenix Productions reviewed the draft with palpable excitement. &#34;Brilliant work,&#34; the executive said, fingers steepled. &#34;We&#39;ll pay a million for this. Though we don&#39;t usually charge hefty commissions...&#34;</p>
+                        
+                        <p>&#34;Then we&#39;re agreed,&#34; Vivian cut in. &#34;But I require sixty percent upfront. My situation is... pressing. If that&#39;s unacceptable, I&#39;ll take this elsewhere.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Meanwhile at the production office, the CEO was weighing Vivian&#39;s terms when a voice startled him. &#34;Working late again?&#34;</p>
-                    
-                    <p>He looked up to find Serena Whitmore framed in the doorway, designer shopping bags dangling from both arms. Oversized Chanel sunglasses obscured half her face, but the downward tilt of her glossed lips spoke volumes.</p>
-                    
-                    <p>&#34;Your visits always extend my workday,&#34; he quipped, hastily relieving her of the bags. &#34;To what do I owe the pleasure?&#34;</p>
-                    
-                    <p>Serena glided to his desk, settling into the leather chair with practiced grace. Removing her sunglasses, she tapped manicured nails against the mahogany surface. &#34;Just passing through the neighborhood.&#34;</p>
-                    
-                    <p>Her expression hardened. &#34;About that script I requested? It&#39;s been seven days with zero updates.&#34;</p>
-                    
-                    <p>Her social media metrics were hemorrhaging followers. She needed a knockout script—one with a protagonist mirroring her own carefully cultivated image—to salvage her crumbling reputation. Established writers refused such transparent vanity projects, forcing her to this fledgling studio desperate for A-list clients.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Meanwhile at the production office, the CEO was weighing Vivian&#39;s terms when a voice startled him. &#34;Working late again?&#34;</p>
+                        
+                        <p>He looked up to find Serena Whitmore framed in the doorway, designer shopping bags dangling from both arms. Oversized Chanel sunglasses obscured half her face, but the downward tilt of her glossed lips spoke volumes.</p>
+                        
+                        <p>&#34;Your visits always extend my workday,&#34; he quipped, hastily relieving her of the bags. &#34;To what do I owe the pleasure?&#34;</p>
+                        
+                        <p>Serena glided to his desk, settling into the leather chair with practiced grace. Removing her sunglasses, she tapped manicured nails against the mahogany surface. &#34;Just passing through the neighborhood.&#34;</p>
+                        
+                        <p>Her expression hardened. &#34;About that script I requested? It&#39;s been seven days with zero updates.&#34;</p>
+                        
+                        <p>Her social media metrics were hemorrhaging followers. She needed a knockout script—one with a protagonist mirroring her own carefully cultivated image—to salvage her crumbling reputation. Established writers refused such transparent vanity projects, forcing her to this fledgling studio desperate for A-list clients.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;Your project is our top priority,&#34; the CEO soothed, handing her a crystal glass of sparkling water before pulling up a file. &#34;But look what I found—a fresh talent whose writing rivals Katrina&#39;s golden era. Given time, she&#39;ll be unstoppable.&#34;</p>
-                    
-                    <p>Serena&#39;s skeptical gaze flickered across the screen. By the final page, her shoulders relaxed. &#34;This... is shockingly good. Miles above that Blazing Horizon trainwreck I&#39;m stuck in.&#34; She leaned forward, eyes gleaming. &#34;Sign her immediately. The industry&#39;s drowning in garbage scripts—I need material like this for my rebrand.&#34;</p>
-                    
-                    <p>The CEO hesitated. &#34;There&#39;s a complication. She&#39;s demanding sixty percent upfront due to... financial constraints.&#34;</p>
-                    
-                    <p>Serena rolled her kohl-rimmed eyes. &#34;Just pay the woman. Real talent&#39;s rarer than ethical producers in this town—why are we even discussing this?&#34;</p>
-                    
-                    <p>Her diamond bracelet clinked against the desk as she reached for her phone. &#34;Transfer the advance from my account if you must. I want this script locked down before sunrise.&#34;</p>
-                    
-                    <p>Outside, the city lights twinkled like scattered diamonds as Vivian&#39;s phone chimed with an incoming wire notification. The numbers made her breath catch. Enough to cover three months of Richard&#39;s medical bills.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;Your project is our top priority,&#34; the CEO soothed, handing her a crystal glass of sparkling water before pulling up a file. &#34;But look what I found—a fresh talent whose writing rivals Katrina&#39;s golden era. Given time, she&#39;ll be unstoppable.&#34;</p>
+                        
+                        <p>Serena&#39;s skeptical gaze flickered across the screen. By the final page, her shoulders relaxed. &#34;This... is shockingly good. Miles above that Blazing Horizon trainwreck I&#39;m stuck in.&#34; She leaned forward, eyes gleaming. &#34;Sign her immediately. The industry&#39;s drowning in garbage scripts—I need material like this for my rebrand.&#34;</p>
+                        
+                        <p>The CEO hesitated. &#34;There&#39;s a complication. She&#39;s demanding sixty percent upfront due to... financial constraints.&#34;</p>
+                        
+                        <p>Serena rolled her kohl-rimmed eyes. &#34;Just pay the woman. Real talent&#39;s rarer than ethical producers in this town—why are we even discussing this?&#34;</p>
+                        
+                        <p>Her diamond bracelet clinked against the desk as she reached for her phone. &#34;Transfer the advance from my account if you must. I want this script locked down before sunrise.&#34;</p>
+                        
+                        <p>Outside, the city lights twinkled like scattered diamonds as Vivian&#39;s phone chimed with an incoming wire notification. The numbers made her breath catch. Enough to cover three months of Richard&#39;s medical bills.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>She saved the transaction receipt as Serena&#39;s latest Instagram post loaded—a pouty selfie captioned &#34;Found my next iconic role ✨&#34;. Vivian&#39;s lips twisted. Little did the star know she&#39;d just bankrolled her own carefully crafted downfall.</p>
-                    
-                    <p>The real performance was only beginning.</p>
-                    
-                    <p>The script company owner forced a tight-lipped smile, his fingers nervously tapping the desk. &#34;It&#39;s... complicated. Our production house hasn&#39;t secured many projects lately. The upfront payment is proving difficult.&#34;</p>
-                    
-                    <p>Vivian&#39;s phone vibrated with a bank notification showing her modest balance. Most of her wealth was tied in long-term investments, leaving little liquid cash. Biting her lip, she quickly typed a message to Adrian on WhatsApp.</p>
-                    
-                    <p>&#34;Adrian, I&#39;ve found an extraordinary screenplay. The writer demands sixty percent advance.&#34;</p>
-                    
-                    <p>Within seconds, three dots appeared. &#34;Amount?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>She saved the transaction receipt as Serena&#39;s latest Instagram post loaded—a pouty selfie captioned &#34;Found my next iconic role ✨&#34;. Vivian&#39;s lips twisted. Little did the star know she&#39;d just bankrolled her own carefully crafted downfall.</p>
+                        
+                        <p>The real performance was only beginning.</p>
+                        
+                        <p>The script company owner forced a tight-lipped smile, his fingers nervously tapping the desk. &#34;It&#39;s... complicated. Our production house hasn&#39;t secured many projects lately. The upfront payment is proving difficult.&#34;</p>
+                        
+                        <p>Vivian&#39;s phone vibrated with a bank notification showing her modest balance. Most of her wealth was tied in long-term investments, leaving little liquid cash. Biting her lip, she quickly typed a message to Adrian on WhatsApp.</p>
+                        
+                        <p>&#34;Adrian, I&#39;ve found an extraordinary screenplay. The writer demands sixty percent advance.&#34;</p>
+                        
+                        <p>Within seconds, three dots appeared. &#34;Amount?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Six hundred thousand sterling.&#34;</p>
-                    
-                    <p>Vivian wasn&#39;t concerned about the inflated price. Her ambitions stretched far beyond petty cash transactions. Becoming Mrs. Blackwood was the real prize.</p>
-                    
-                    <p>Meanwhile, Serena paced her penthouse, checking her watch every thirty seconds. Just as she decided to abandon the deal, her phone pinged with a contract attachment.</p>
-                    
-                    <p>&#34;Review and sign. Funds will transfer immediately upon execution,&#34; the producer&#39;s message read.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Six hundred thousand sterling.&#34;</p>
+                        
+                        <p>Vivian wasn&#39;t concerned about the inflated price. Her ambitions stretched far beyond petty cash transactions. Becoming Mrs. Blackwood was the real prize.</p>
+                        
+                        <p>Meanwhile, Serena paced her penthouse, checking her watch every thirty seconds. Just as she decided to abandon the deal, her phone pinged with a contract attachment.</p>
+                        
+                        <p>&#34;Review and sign. Funds will transfer immediately upon execution,&#34; the producer&#39;s message read.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:31.239066">
-    <meta property="article:modified_time" content="2026-07-19T02:47:31.239066">
+    <meta property="article:published_time" content="2026-07-19T13:03:25.511371">
+    <meta property="article:modified_time" content="2026-07-19T13:03:25.511371">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:31">
+    <meta name="last-modified" content="2026-07-19 13:03:25">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:31.239066",
-        "dateModified": "2026-07-19T02:47:31.239066",
+        "datePublished": "2026-07-19T13:03:25.511371",
+        "dateModified": "2026-07-19T13:03:25.511371",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,15 +893,19 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Seated in a hospital corridor, Katelyn stared out the window at the streaming sunlight, her thoughts heavy with concern.</p>
-                    
-                    <p>Katelyn sent a message, saying, “Monitor Sophia and Brendan closely. Alert me at once if anything out of the ordinary occurs.”</p>
-                    
-                    <p>The stakes were now higher than ever. They needed to be careful with every step they took.</p>
-                    
-                    <p>Vincent responded shortly, “Okay, stay safe.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Seated in a hospital corridor, Katelyn stared out the window at the streaming sunlight, her thoughts heavy with concern.</p>
+                        
+                        <p>Katelyn sent a message, saying, “Monitor Sophia and Brendan closely. Alert me at once if anything out of the ordinary occurs.”</p>
+                        
+                        <p>The stakes were now higher than ever. They needed to be careful with every step they took.</p>
+                        
+                        <p>Vincent responded shortly, “Okay, stay safe.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -880,15 +920,19 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>As they communicated, Mona, still in agony, reached her limit of tolerance. With a voice breaking from desperation, she begged, “Mr. Adams, you must believe me! Please, I need the antidote!”</p>
-                    
-                    <p>Vincent glanced at her briefly before rising. His eyes were cold as he retorted, “Did I promise you an antidote? Did you think you could attack my assistant and get away with it?”</p>
-                    
-                    <p>Vincent appeared as though he were a devil from the depths of hell, poised to take a soul.</p>
-                    
-                    <p>Mona shook with disbelief as she stared at Vincent. “How… how could you do this?” she roared.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>As they communicated, Mona, still in agony, reached her limit of tolerance. With a voice breaking from desperation, she begged, “Mr. Adams, you must believe me! Please, I need the antidote!”</p>
+                        
+                        <p>Vincent glanced at her briefly before rising. His eyes were cold as he retorted, “Did I promise you an antidote? Did you think you could attack my assistant and get away with it?”</p>
+                        
+                        <p>Vincent appeared as though he were a devil from the depths of hell, poised to take a soul.</p>
+                        
+                        <p>Mona shook with disbelief as she stared at Vincent. “How… how could you do this?” she roared.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -903,15 +947,19 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Vincent disregarded Mona and walked purposefully toward the door, determined to retrieve Katelyn.</p>
-                    
-                    <p>However, Mona called out behind him, “Vincent, there’s more I can reveal! Guarantee me the antidote, and I’ll tell you everything.” At her words, Vincent stopped.</p>
-                    
-                    <p>Vincent turned to Mona, his voice icy. “You really think I’d believe you?” He had only brought Mona back today to uncover the mastermind behind the chaos. To him, nothing else mattered. Regardless of these people’s schemes, Vincent had complete confidence in his ability to face whatever challenges lay ahead.</p>
-                    
-                    <p>Mona’s laugh was bitter as her eyes sparkled mockingly. “Oh, really? You don’t care, even if Katelyn is involved?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Vincent disregarded Mona and walked purposefully toward the door, determined to retrieve Katelyn.</p>
+                        
+                        <p>However, Mona called out behind him, “Vincent, there’s more I can reveal! Guarantee me the antidote, and I’ll tell you everything.” At her words, Vincent stopped.</p>
+                        
+                        <p>Vincent turned to Mona, his voice icy. “You really think I’d believe you?” He had only brought Mona back today to uncover the mastermind behind the chaos. To him, nothing else mattered. Regardless of these people’s schemes, Vincent had complete confidence in his ability to face whatever challenges lay ahead.</p>
+                        
+                        <p>Mona’s laugh was bitter as her eyes sparkled mockingly. “Oh, really? You don’t care, even if Katelyn is involved?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -926,15 +974,19 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Suddenly, Vincent was right in front of her, his grip on her jaw firm as his voice grew threatening. “Don’t push me. Or you will regret it.” Despite the fear shaking her, Mona’s smile became more chilling. “Then kill me now, but know this affects Katelyn greatly.”</p>
-                    
-                    <p>Mona’s eyes held a look of defiance as she looked at Vincent, filled with resistance, even as she struggled for breath.</p>
-                    
-                    <p>Before her action, Mona had learned something crucial—Vincent’s deep love for Katelyn had led him to reject a strategic marriage to the princess. Given his deep affection for Katelyn, why not take advantage of it?</p>
-                    
-                    <p>￠ρ g．</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Suddenly, Vincent was right in front of her, his grip on her jaw firm as his voice grew threatening. “Don’t push me. Or you will regret it.” Despite the fear shaking her, Mona’s smile became more chilling. “Then kill me now, but know this affects Katelyn greatly.”</p>
+                        
+                        <p>Mona’s eyes held a look of defiance as she looked at Vincent, filled with resistance, even as she struggled for breath.</p>
+                        
+                        <p>Before her action, Mona had learned something crucial—Vincent’s deep love for Katelyn had led him to reject a strategic marriage to the princess. Given his deep affection for Katelyn, why not take advantage of it?</p>
+                        
+                        <p>￠ρ g．</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -949,15 +1001,19 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Vincent stood, his gaze on Mona cold and detached. He retrieved an antidote Katelyn had given him and threw it at Mona’s feet. “Here’s the antidote. But remember, I can make your life miserable a second time. Consider your next move carefully.” Without another word, he stepped aside and waited silently.</p>
-                    
-                    <p>Seeing the pill on the ground, hope flashed in Mona’s eyes as she scrambled towards it. With her hands and feet tied, Mona was left to pick up the pill with her mouth. She paid no attention to her humiliating situation. The pain she endured was simply too much. Once she ingested the pill, the intense pain and itching began to fade away slowly. For her, as long as there was relief, that was all that mattered.</p>
-                    
-                    <p>Mona rested against the wall, closing her eyes and exhaling deeply. Vincent’s tone was cold as he said, “If you choose not to speak, have another pill right here. Perhaps you’d like to try it?”</p>
-                    
-                    <p>Upon seeing the pill in his hand, Mona trembled uncontrollably and quickly said, “No, please! I’ll tell you everything.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Vincent stood, his gaze on Mona cold and detached. He retrieved an antidote Katelyn had given him and threw it at Mona’s feet. “Here’s the antidote. But remember, I can make your life miserable a second time. Consider your next move carefully.” Without another word, he stepped aside and waited silently.</p>
+                        
+                        <p>Seeing the pill on the ground, hope flashed in Mona’s eyes as she scrambled towards it. With her hands and feet tied, Mona was left to pick up the pill with her mouth. She paid no attention to her humiliating situation. The pain she endured was simply too much. Once she ingested the pill, the intense pain and itching began to fade away slowly. For her, as long as there was relief, that was all that mattered.</p>
+                        
+                        <p>Mona rested against the wall, closing her eyes and exhaling deeply. Vincent’s tone was cold as he said, “If you choose not to speak, have another pill right here. Perhaps you’d like to try it?”</p>
+                        
+                        <p>Upon seeing the pill in his hand, Mona trembled uncontrollably and quickly said, “No, please! I’ll tell you everything.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -972,15 +1028,19 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Seeing Vincent’s patience visibly running thin, she inhaled sharply, knowing she couldn’t delay any longer. “Brendan has dug into everything about Katelyn, including her search for her biological parents.”</p>
-                    
-                    <p>.</p>
-                    
-                    <p>.</p>
-                    
-                    <p>.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Seeing Vincent’s patience visibly running thin, she inhaled sharply, knowing she couldn’t delay any longer. “Brendan has dug into everything about Katelyn, including her search for her biological parents.”</p>
+                        
+                        <p>.</p>
+                        
+                        <p>.</p>
+                        
+                        <p>.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -2298,6 +2358,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2424,7 +2564,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2466,32 +2605,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2502,21 +2623,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2549,6 +2660,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2569,20 +2686,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

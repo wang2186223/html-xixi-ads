@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:35.790650">
-    <meta property="article:modified_time" content="2026-07-19T02:47:35.790650">
+    <meta property="article:published_time" content="2026-07-19T13:03:29.833418">
+    <meta property="article:modified_time" content="2026-07-19T13:03:29.833418">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:35">
+    <meta name="last-modified" content="2026-07-19 13:03:29">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:35.790650",
-        "dateModified": "2026-07-19T02:47:35.790650",
+        "datePublished": "2026-07-19T13:03:29.833418",
+        "dateModified": "2026-07-19T13:03:29.833418",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,15 +893,19 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Chapter 1713</p>
-                    
-                    <p>“You’re right. There is no law prohibiting mixed-gender associations. However, you can probably guess what the consequences will be if Caspian finds out. As your dad, I would never put you in a difficult position. Everything I do is for your safety and wellbeing—”</p>
-                    
-                    <p>“I know, Dad,” Nancy interrupted. “I’m actually here to ask you about—”</p>
-                    
-                    <p>“About Jory,” he finished her sentence with the same certainty as before.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Chapter 1713</p>
+                        
+                        <p>“You’re right. There is no law prohibiting mixed-gender associations. However, you can probably guess what the consequences will be if Caspian finds out. As your dad, I would never put you in a difficult position. Everything I do is for your safety and wellbeing—”</p>
+                        
+                        <p>“I know, Dad,” Nancy interrupted. “I’m actually here to ask you about—”</p>
+                        
+                        <p>“About Jory,” he finished her sentence with the same certainty as before.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -880,15 +920,19 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Nancy nodded hesitantly. “Yeah, I wanted to ask if our family had any special exchange of interests with Alpire Group.”</p>
-                    
-                    <p>Simon fiddled with the fountain pen in his hand as he nervously responded, “There were many business collaborations back then, but they all ended when you refused to marry Jory. Moreover, I heard that Jory fought with his family over this issue and hasn’t been home for many years since. That is why I hope that you’ll cease contact with him… because there’s no telling how much he hates you and if he’ll end up taking revenge.”</p>
-                    
-                    <p>“I don’t think he hates me…” Nancy murmured with a pout. At this, Simon petted her hair and explained, “People are unpredictable. Can you really believe that a mulish boy, who has magically transformed into a capable man, won’t hold a grudge against us?</p>
-                    
-                    <p>Nancy interjected, “One more thing. I heard about how Alpire Group is acquiring Norton Corporation. It’s clear that Alpire Group is making its first move, but why start with Norton Corporation? If the target is our family, then why not attack us head-on instead of choosing to strike against the almighty Norton Corporation?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Nancy nodded hesitantly. “Yeah, I wanted to ask if our family had any special exchange of interests with Alpire Group.”</p>
+                        
+                        <p>Simon fiddled with the fountain pen in his hand as he nervously responded, “There were many business collaborations back then, but they all ended when you refused to marry Jory. Moreover, I heard that Jory fought with his family over this issue and hasn’t been home for many years since. That is why I hope that you’ll cease contact with him… because there’s no telling how much he hates you and if he’ll end up taking revenge.”</p>
+                        
+                        <p>“I don’t think he hates me…” Nancy murmured with a pout. At this, Simon petted her hair and explained, “People are unpredictable. Can you really believe that a mulish boy, who has magically transformed into a capable man, won’t hold a grudge against us?</p>
+                        
+                        <p>Nancy interjected, “One more thing. I heard about how Alpire Group is acquiring Norton Corporation. It’s clear that Alpire Group is making its first move, but why start with Norton Corporation? If the target is our family, then why not attack us head-on instead of choosing to strike against the almighty Norton Corporation?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -903,15 +947,19 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Nancy paused for effect before instinctively continuing with her revelation, “That means that we’re not their target.”</p>
-                    
-                    <p>“You’re still young and inexperienced, Nancy. There are things that you don’t understand,” Simon sighed. He then brought over a teapot and poured a cup of tea for Nancy. “Here, have something to drink.”</p>
-                    
-                    <p>A notification bell suddenly rang from inside her handbag. She opened the zipper and peeked, realizing it was a text from Jory that said: I’m here and am waiting for you.</p>
-                    
-                    <p>Seeing this, Nancy bounced onto her feet and hurriedly bid Simon goodbye. “Dad, I’ve got plans. I’ll be on my way now.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Nancy paused for effect before instinctively continuing with her revelation, “That means that we’re not their target.”</p>
+                        
+                        <p>“You’re still young and inexperienced, Nancy. There are things that you don’t understand,” Simon sighed. He then brought over a teapot and poured a cup of tea for Nancy. “Here, have something to drink.”</p>
+                        
+                        <p>A notification bell suddenly rang from inside her handbag. She opened the zipper and peeked, realizing it was a text from Jory that said: I’m here and am waiting for you.</p>
+                        
+                        <p>Seeing this, Nancy bounced onto her feet and hurriedly bid Simon goodbye. “Dad, I’ve got plans. I’ll be on my way now.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -926,15 +974,19 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Simon’s hand still hung in midair, holding the cup of tea which swayed a little after Nancy had abruptly stood up. “Wait, you haven’t had your drink yet.”</p>
-                    
-                    <p>He hadn’t expected a response from Nancy, nor did he expect her to turn around and snatch the cup in his hands. She then downed the tea in one gulp then returned the cup to him before saying, “I’m off now. Bye, Dad!”</p>
-                    
-                    <p>Simon gawked at the empty cup in his hand. He shook his head affectionately at the thought of how innocent his daughter was. If anyone ever tried to hurt her, he wouldn’t hesitate to employ all of the Barrymore family’s forces to protect her. Jory… if you’re as ambitious as I think you are, then I hope you put a limit on those ambitions of yours. Because if you go after things with force, then you may end up hurting others.</p>
-                    
-                    <p>“Sorry for being late. I was at my dad’s earlier.” Nancy’s hand ran over her fringe, combing them into place.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Simon’s hand still hung in midair, holding the cup of tea which swayed a little after Nancy had abruptly stood up. “Wait, you haven’t had your drink yet.”</p>
+                        
+                        <p>He hadn’t expected a response from Nancy, nor did he expect her to turn around and snatch the cup in his hands. She then downed the tea in one gulp then returned the cup to him before saying, “I’m off now. Bye, Dad!”</p>
+                        
+                        <p>Simon gawked at the empty cup in his hand. He shook his head affectionately at the thought of how innocent his daughter was. If anyone ever tried to hurt her, he wouldn’t hesitate to employ all of the Barrymore family’s forces to protect her. Jory… if you’re as ambitious as I think you are, then I hope you put a limit on those ambitions of yours. Because if you go after things with force, then you may end up hurting others.</p>
+                        
+                        <p>“Sorry for being late. I was at my dad’s earlier.” Nancy’s hand ran over her fringe, combing them into place.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -949,15 +1001,19 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>“Don’t worry about it. The atmosphere here is pleasant, and the service is prompt, so I’m actually enjoying myself whilst waiting,” Jory replied with a humorous tone.</p>
-                    
-                    <p>His heart swelled with joy when he saw Nancy’s message earlier. It was like something had filled up the hole in his heart. He hadn’t felt this child-like happiness in a long time, especially since many in the business realm chased after fame and fortune. The people he had met thus far were often scheming against others whilst under the pretense of caring for them.</p>
-                    
-                    <p>Being around those scheming people had influenced him negatively; he had always felt like he was a man who lived only for the thrill of seeking profit. Being born into an extremely loaded family didn’t help either. He often felt that his life was miserable, even more so after Nancy refused to marry him.</p>
-                    
-                    <p>Sitting before him now was Nancy, whose eyes sparkled. “I have a question for you, but you’ll have to answer honestly.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>“Don’t worry about it. The atmosphere here is pleasant, and the service is prompt, so I’m actually enjoying myself whilst waiting,” Jory replied with a humorous tone.</p>
+                        
+                        <p>His heart swelled with joy when he saw Nancy’s message earlier. It was like something had filled up the hole in his heart. He hadn’t felt this child-like happiness in a long time, especially since many in the business realm chased after fame and fortune. The people he had met thus far were often scheming against others whilst under the pretense of caring for them.</p>
+                        
+                        <p>Being around those scheming people had influenced him negatively; he had always felt like he was a man who lived only for the thrill of seeking profit. Being born into an extremely loaded family didn’t help either. He often felt that his life was miserable, even more so after Nancy refused to marry him.</p>
+                        
+                        <p>Sitting before him now was Nancy, whose eyes sparkled. “I have a question for you, but you’ll have to answer honestly.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -972,11 +1028,15 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Jory answered amusedly, “Go ahead. I’ll tell you everything I know.”</p>
-                    
-                    <p>“Are you S?” she asked tentatively whilst twiddling her thumbs, subconsciously revealing the overwhelming anxiety and tension inside her.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Jory answered amusedly, “Go ahead. I’ll tell you everything I know.”</p>
+                        
+                        <p>“Are you S?” she asked tentatively whilst twiddling her thumbs, subconsciously revealing the overwhelming anxiety and tension inside her.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -2294,6 +2354,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2420,7 +2560,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2462,32 +2601,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2498,21 +2619,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2545,6 +2656,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2565,20 +2682,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

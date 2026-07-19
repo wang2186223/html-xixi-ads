@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.376032">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.376032">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.379527">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.379527">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.376032",
-        "dateModified": "2026-07-19T02:47:23.376032",
+        "datePublished": "2026-07-19T13:03:18.379527",
+        "dateModified": "2026-07-19T13:03:18.379527",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,25 +893,29 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Annie&#39;s POV</p>
-                    
-                    <p>I woke from a deep sleepto find myself in Howard&#39;s bed. The space beside me was empty, but his scent still lingered on the pillow. I ran my fingertips lightly over the spot where he had slept, feeling the lingering warmth and recalling moments of intimacy from the night before.A sweetness spread through me, along with a sense of security that felt entirely different from my time with Philip. Back then, even sharing a bed had often left me feelingprofoundly alone.</p>
-                    
-                    <p>After collecting my thoughts, I got up and dressed, quicklyfreshening up before leaving the bedroom. Standing in the hallway, I took a deep breath,feeling a sense of stability I hadn&#39;t experienced in years. This house was gradually becoming a true home in every sense of the word.</p>
-                    
-                    <p>I wanted to find Lucy, and as I walked down the hallway, I heard voices coming from ahead. Following the sound, I discovered Howard crouching in front of Lucy, telling her a story. Lucy had initially tried to break free from Howard to find me, but as the story progressed to a crucial point, she became completely captivated.</p>
-                    
-                    <p>Only when Howard finished and began extracting the business principles from the story did Lucy&#39;s expression change to one of sudden understanding.Her eyes still filled with curiosity, she asked, &#34;Dad, are there more stories like this one?&#34;</p>
-                    
-                    <p>&#34;Of course,&#34; Howard gently patted her back reassuringly. &#34;Go get ready.and when we take you to school, I&#39;ll tell you another one.&#34;</p>
-                    
-                    <p>&#34;You promise?&#34; Lucy fixed Howard with an intense stare. &#34;No last-minute changes!&#34;</p>
-                    
-                    <p>It was clear Lucy genuinely enjoyed these little stories.</p>
-                    
-                    <p>Howard smiled tenderly: &#34;I promise.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Annie&#39;s POV</p>
+                        
+                        <p>I woke from a deep sleepto find myself in Howard&#39;s bed. The space beside me was empty, but his scent still lingered on the pillow. I ran my fingertips lightly over the spot where he had slept, feeling the lingering warmth and recalling moments of intimacy from the night before.A sweetness spread through me, along with a sense of security that felt entirely different from my time with Philip. Back then, even sharing a bed had often left me feelingprofoundly alone.</p>
+                        
+                        <p>After collecting my thoughts, I got up and dressed, quicklyfreshening up before leaving the bedroom. Standing in the hallway, I took a deep breath,feeling a sense of stability I hadn&#39;t experienced in years. This house was gradually becoming a true home in every sense of the word.</p>
+                        
+                        <p>I wanted to find Lucy, and as I walked down the hallway, I heard voices coming from ahead. Following the sound, I discovered Howard crouching in front of Lucy, telling her a story. Lucy had initially tried to break free from Howard to find me, but as the story progressed to a crucial point, she became completely captivated.</p>
+                        
+                        <p>Only when Howard finished and began extracting the business principles from the story did Lucy&#39;s expression change to one of sudden understanding.Her eyes still filled with curiosity, she asked, &#34;Dad, are there more stories like this one?&#34;</p>
+                        
+                        <p>&#34;Of course,&#34; Howard gently patted her back reassuringly. &#34;Go get ready.and when we take you to school, I&#39;ll tell you another one.&#34;</p>
+                        
+                        <p>&#34;You promise?&#34; Lucy fixed Howard with an intense stare. &#34;No last-minute changes!&#34;</p>
+                        
+                        <p>It was clear Lucy genuinely enjoyed these little stories.</p>
+                        
+                        <p>Howard smiled tenderly: &#34;I promise.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -890,25 +930,29 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Lucy immediately dashed toward her bedroom, her face alight with anticipation. Watching her retreating figure,I couldn&#39;t help remembering Brian at her age, showing the same enthusiasm for the fairy tales I used to tell him. That seemed like a lifetime ago now.</p>
-                    
-                    <p>I approached Howard, silently comparing his parenting style to Philip&#39;s completely different approach. &#34;Your method seems quite effective.&#34;</p>
-                    
-                    <p>&#34;Yes.&#34; Howard nodded, clearly pleased that Lucy was willing to listen to his stories. &#34;I even considered setting up a small shop for Lucy to manage herself.&#34;</p>
-                    
-                    <p>&#34;Do you realize how old she is?&#34; I asked, surprised. For an experienced businessman, the idea of having a five-year-old manage a store seemed startling.</p>
-                    
-                    <p>Howard nodded: &#34;Precisely because I know her age, I abandoned that idea.&#34;</p>
-                    
-                    <p>I sighed in relief and offered my perspective: &#34;It would be more appropriate to let her try when she&#39;s in college. It&#39;s too early now.&#34;</p>
-                    
-                    <p>Howard took my hand: &#34;That&#39;s exactly what I was thinking. Let her explore freely during her first two years of university, then start taking over the company in her final two years. By the time she graduates, we can travel the world together and enjoy life.&#34;</p>
-                    
-                    <p>I looked at him seriously: &#34;That won&#39;t work. Howard, even after she graduates,you can&#39;t retire immediately. You&#39;ll need to stay by her side for at least two more years. Only when she&#39;s fully adjusted can you completely step back. Otherwise. I&#39;m concerned the pressure would be too overwhelming for her.&#34;</p>
-                    
-                    <p>Howard disagreed: &#34;I made my own way when I was young.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Lucy immediately dashed toward her bedroom, her face alight with anticipation. Watching her retreating figure,I couldn&#39;t help remembering Brian at her age, showing the same enthusiasm for the fairy tales I used to tell him. That seemed like a lifetime ago now.</p>
+                        
+                        <p>I approached Howard, silently comparing his parenting style to Philip&#39;s completely different approach. &#34;Your method seems quite effective.&#34;</p>
+                        
+                        <p>&#34;Yes.&#34; Howard nodded, clearly pleased that Lucy was willing to listen to his stories. &#34;I even considered setting up a small shop for Lucy to manage herself.&#34;</p>
+                        
+                        <p>&#34;Do you realize how old she is?&#34; I asked, surprised. For an experienced businessman, the idea of having a five-year-old manage a store seemed startling.</p>
+                        
+                        <p>Howard nodded: &#34;Precisely because I know her age, I abandoned that idea.&#34;</p>
+                        
+                        <p>I sighed in relief and offered my perspective: &#34;It would be more appropriate to let her try when she&#39;s in college. It&#39;s too early now.&#34;</p>
+                        
+                        <p>Howard took my hand: &#34;That&#39;s exactly what I was thinking. Let her explore freely during her first two years of university, then start taking over the company in her final two years. By the time she graduates, we can travel the world together and enjoy life.&#34;</p>
+                        
+                        <p>I looked at him seriously: &#34;That won&#39;t work. Howard, even after she graduates,you can&#39;t retire immediately. You&#39;ll need to stay by her side for at least two more years. Only when she&#39;s fully adjusted can you completely step back. Otherwise. I&#39;m concerned the pressure would be too overwhelming for her.&#34;</p>
+                        
+                        <p>Howard disagreed: &#34;I made my own way when I was young.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -923,25 +967,29 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;But times are different now.&#34; I countered. &#34;Besides, you built your company step by step. You know how massive Howard Technologies has become. If someone had handed you such a large company to manage right after graduation, could you have handled it?&#34;</p>
-                    
-                    <p>Howard was momentarily speechless. In his eyes. I saw a flicker of surprise-he probably hadn&#39;t expected me to so directly point out the flaws in his plan.</p>
-                    
-                    <p>I didn&#39;t push him for an immediate answer, just calmly held his gaze. This was a delicate balance in our relationship: he understood business, while I understood emotions and growth. We complemented each other, rather than one person always leading.</p>
-                    
-                    <p>After consideration, a look of acknowledgment flashed in Howard&#39;s eyes,and he nodded: &#34;All right, we&#39;ll do it your way.&#34;</p>
-                    
-                    <p>I felt relief wash over me,along with a warm sense of being respected.</p>
-                    
-                    <p>When I was with Philip, my suggestions were rarely truly heard: &#34;Good.&#34;</p>
-                    
-                    <p>After breakfast, we took Lucy to school together. Usually, she preferred staying close to me, but today, she was drawn to Howard, captivated by his stories. She looked at him expectantly.</p>
-                    
-                    <p>Howard was clearly pleased with this change. He gently placed his large</p>
-                    
-                    <p>hand on her back and began telling another story.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;But times are different now.&#34; I countered. &#34;Besides, you built your company step by step. You know how massive Howard Technologies has become. If someone had handed you such a large company to manage right after graduation, could you have handled it?&#34;</p>
+                        
+                        <p>Howard was momentarily speechless. In his eyes. I saw a flicker of surprise-he probably hadn&#39;t expected me to so directly point out the flaws in his plan.</p>
+                        
+                        <p>I didn&#39;t push him for an immediate answer, just calmly held his gaze. This was a delicate balance in our relationship: he understood business, while I understood emotions and growth. We complemented each other, rather than one person always leading.</p>
+                        
+                        <p>After consideration, a look of acknowledgment flashed in Howard&#39;s eyes,and he nodded: &#34;All right, we&#39;ll do it your way.&#34;</p>
+                        
+                        <p>I felt relief wash over me,along with a warm sense of being respected.</p>
+                        
+                        <p>When I was with Philip, my suggestions were rarely truly heard: &#34;Good.&#34;</p>
+                        
+                        <p>After breakfast, we took Lucy to school together. Usually, she preferred staying close to me, but today, she was drawn to Howard, captivated by his stories. She looked at him expectantly.</p>
+                        
+                        <p>Howard was clearly pleased with this change. He gently placed his large</p>
+                        
+                        <p>hand on her back and began telling another story.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -956,25 +1004,29 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>I listened alongside them,growing increasingly surprised by Howard&#39;s approach. He was completely different from others. Most people prefer teaching children with abstract principles, but Howard transformed these principles into simple, relatable stories. After hearing them, Lucy felt as though these events had actually happened.&#39;</p>
-                    
-                    <p>She looked up at Howard, curiosity sparkling in her eyes:&#34;Dad,did your friends really experience these things?&#34;</p>
-                    
-                    <p>Howard didn&#39;t deny it: &#34;In a sense,yes.&#34;</p>
-                    
-                    <p>&#34;I&#39;ve noticed many of your stories are about bosses unwilling to pay employees fair wages,&#34; Lucy observed, looking confused. &#34;But if employees received more money, wouldn&#39;t they work harder and create more profit for the company? Don&#39;t they want the company to succeed?&#34;</p>
-                    
-                    <p>Howard gently stroked Lucy&#39;s head: &#34;Not necessarily.&#34;</p>
-                    
-                    <p>Lucy looked even more perplexed.</p>
-                    
-                    <p>Howard smiled as he explained: &#34;Initially, it might be because there isn&#39;t enough startup capital-they don&#39;t have enough money to pay others.Later, when they start making money, they become unwilling to share.Lucy,you need to understand that human nature is inherently greedy.&#34;</p>
-                    
-                    <p>Lucy tilted her head: &#34;Why do you say that?&#34;</p>
-                    
-                    <p>&#34;Let me use you as an example,&#34; Howard said, gently pinching her cheek.&#34;Suppose you received two hundred dollars in allowance each month. You could buy anything you wanted, and no one at home would interfere.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>I listened alongside them,growing increasingly surprised by Howard&#39;s approach. He was completely different from others. Most people prefer teaching children with abstract principles, but Howard transformed these principles into simple, relatable stories. After hearing them, Lucy felt as though these events had actually happened.&#39;</p>
+                        
+                        <p>She looked up at Howard, curiosity sparkling in her eyes:&#34;Dad,did your friends really experience these things?&#34;</p>
+                        
+                        <p>Howard didn&#39;t deny it: &#34;In a sense,yes.&#34;</p>
+                        
+                        <p>&#34;I&#39;ve noticed many of your stories are about bosses unwilling to pay employees fair wages,&#34; Lucy observed, looking confused. &#34;But if employees received more money, wouldn&#39;t they work harder and create more profit for the company? Don&#39;t they want the company to succeed?&#34;</p>
+                        
+                        <p>Howard gently stroked Lucy&#39;s head: &#34;Not necessarily.&#34;</p>
+                        
+                        <p>Lucy looked even more perplexed.</p>
+                        
+                        <p>Howard smiled as he explained: &#34;Initially, it might be because there isn&#39;t enough startup capital-they don&#39;t have enough money to pay others.Later, when they start making money, they become unwilling to share.Lucy,you need to understand that human nature is inherently greedy.&#34;</p>
+                        
+                        <p>Lucy tilted her head: &#34;Why do you say that?&#34;</p>
+                        
+                        <p>&#34;Let me use you as an example,&#34; Howard said, gently pinching her cheek.&#34;Suppose you received two hundred dollars in allowance each month. You could buy anything you wanted, and no one at home would interfere.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -989,25 +1041,29 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Lucy&#39;s eyes brightened: &#34;That would be amazing!&#34;</p>
-                    
-                    <p>.</p>
-                    
-                    <p>&#34;Yes,&#34; Howard continued, &#34;but what if you wanted a toy that cost a thousand dollars, and you didn&#39;t have enough money? What would you do?&#34;</p>
-                    
-                    <p>Lucy couldn&#39;t come up with an answer.</p>
-                    
-                    <p>Howard went on: &#34;You could either save money or earn more. But if you save, it would take five months. If you partnered with Penny to earn money, promising her half of your monthly income as her salary...&#34;</p>
-                    
-                    <p>Lucy carefully calculated using her fingers.</p>
-                    
-                    <p>Howard watched her chubby fingers move back and forth, his eyes radiating a tenderness I&#39;d never seen before. I quietly observed his expression, realizing that Lucy was becoming the bond connecting us-a little angel who could bring out a softer side even in a business elite like Howard.</p>
-                    
-                    <p>&#34;In the first month, you earned four hundred dollars and gave her two hundred. At this point, you still need six hundred dollars to buy the toy you want. In the second month, you earned eight hunadred dollars,&#34;Howard&#39;s voice was deep and powerful, yet without any commanding tone.</p>
-                    
-                    <p>He leaned closer to Lucy, his voice becoming more intimate: &#34;Would you give her just two hundred dollars, keep six hundred for yourself, and immediately buy the toy you want? Or would you give her four hundred dollars and keep four hundred for yourself?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Lucy&#39;s eyes brightened: &#34;That would be amazing!&#34;</p>
+                        
+                        <p>.</p>
+                        
+                        <p>&#34;Yes,&#34; Howard continued, &#34;but what if you wanted a toy that cost a thousand dollars, and you didn&#39;t have enough money? What would you do?&#34;</p>
+                        
+                        <p>Lucy couldn&#39;t come up with an answer.</p>
+                        
+                        <p>Howard went on: &#34;You could either save money or earn more. But if you save, it would take five months. If you partnered with Penny to earn money, promising her half of your monthly income as her salary...&#34;</p>
+                        
+                        <p>Lucy carefully calculated using her fingers.</p>
+                        
+                        <p>Howard watched her chubby fingers move back and forth, his eyes radiating a tenderness I&#39;d never seen before. I quietly observed his expression, realizing that Lucy was becoming the bond connecting us-a little angel who could bring out a softer side even in a business elite like Howard.</p>
+                        
+                        <p>&#34;In the first month, you earned four hundred dollars and gave her two hundred. At this point, you still need six hundred dollars to buy the toy you want. In the second month, you earned eight hunadred dollars,&#34;Howard&#39;s voice was deep and powerful, yet without any commanding tone.</p>
+                        
+                        <p>He leaned closer to Lucy, his voice becoming more intimate: &#34;Would you give her just two hundred dollars, keep six hundred for yourself, and immediately buy the toy you want? Or would you give her four hundred dollars and keep four hundred for yourself?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1022,25 +1078,29 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Lucy fell into deep contemplation: &#34;If I give her four hundred dollars,I&#39;d have to wait another month.&#34;</p>
-                    
-                    <p>Howard didn&#39;t pressure her for a precise answer: &#34;Exactly. When you can overcome greed and appropriately compensate others for what they deserve,</p>
-                    
-                    <p>.you become a qualified businessperson.&#34;</p>
-                    
-                    <p>Lucy nodded seriously: &#34;Dad, don&#39;t worry. I&#39;ll try my best.&#34;</p>
-                    
-                    <p>Howard looked at her with pride.</p>
-                    
-                    <p>After a while, Lucy asked curiously: &#34;By the way, Dad, do I absolutely have to become a businessperson in the future?&#34;</p>
-                    
-                    <p>This question caught Howard off guard. He had hoped to leave the company to Lucy as her inheritance but had apparently never considered whether this was what Lucy actually wanted.</p>
-                    
-                    <p>After a long silence, he asked: &#34;Don&#39;t you want to be in business?&#34;</p>
-                    
-                    <p>Lucy thought carefully: &#34;I don&#39;t know yet.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Lucy fell into deep contemplation: &#34;If I give her four hundred dollars,I&#39;d have to wait another month.&#34;</p>
+                        
+                        <p>Howard didn&#39;t pressure her for a precise answer: &#34;Exactly. When you can overcome greed and appropriately compensate others for what they deserve,</p>
+                        
+                        <p>.you become a qualified businessperson.&#34;</p>
+                        
+                        <p>Lucy nodded seriously: &#34;Dad, don&#39;t worry. I&#39;ll try my best.&#34;</p>
+                        
+                        <p>Howard looked at her with pride.</p>
+                        
+                        <p>After a while, Lucy asked curiously: &#34;By the way, Dad, do I absolutely have to become a businessperson in the future?&#34;</p>
+                        
+                        <p>This question caught Howard off guard. He had hoped to leave the company to Lucy as her inheritance but had apparently never considered whether this was what Lucy actually wanted.</p>
+                        
+                        <p>After a long silence, he asked: &#34;Don&#39;t you want to be in business?&#34;</p>
+                        
+                        <p>Lucy thought carefully: &#34;I don&#39;t know yet.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1055,15 +1115,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>When the car stopped at the kindergarten entrance, Lucy quickly said goodbye to us. Spotting Penny in the distance, she immediately ran over,eager to share Howard&#39;s stories. Penny listened attentively, her head slightly tilted in curiosity.</p>
-                    
-                    <p>I noticed Brian-my son-changing his walking rhythm. Usually, he would hurry past Lucy, but today he slowed his pace. Something in Lucy&#39;s conversation seemed to have caught his attention, making him pause.</p>
-                    
-                    <p>I watched as Brian slowed down, following Lucy and Penny into the school grounds, and felt a spark of hope rise within me. This was the first time he had shown interest in Lucy, perhaps a good sign.</p>
-                    
-                    <p>Maybe someday, our relationship could be repaired.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>When the car stopped at the kindergarten entrance, Lucy quickly said goodbye to us. Spotting Penny in the distance, she immediately ran over,eager to share Howard&#39;s stories. Penny listened attentively, her head slightly tilted in curiosity.</p>
+                        
+                        <p>I noticed Brian-my son-changing his walking rhythm. Usually, he would hurry past Lucy, but today he slowed his pace. Something in Lucy&#39;s conversation seemed to have caught his attention, making him pause.</p>
+                        
+                        <p>I watched as Brian slowed down, following Lucy and Penny into the school grounds, and felt a spark of hope rise within me. This was the first time he had shown interest in Lucy, perhaps a good sign.</p>
+                        
+                        <p>Maybe someday, our relationship could be repaired.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2379,6 +2443,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2505,7 +2649,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2547,32 +2690,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2583,21 +2708,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2630,6 +2745,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2650,20 +2771,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

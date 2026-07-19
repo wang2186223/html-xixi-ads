@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.065925">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.065925">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.260236">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.260236">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.065925",
-        "dateModified": "2026-07-19T02:47:19.065925",
+        "datePublished": "2026-07-19T13:03:14.260236",
+        "dateModified": "2026-07-19T13:03:14.260236",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,29 +893,33 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey/&#39;s POV**</p>
-                    
-                    <p>Victoria Sinclair turned around from the front passenger seat, flashing a bright smile.</p>
-                    
-                    <p>&#34;Astrid, did you see the wedding invitation I made?&#34; She waved her phone screen at us. &#34;The one I put together myself?&#34;</p>
-                    
-                    <p>I stared at the digital invitation displayed on her phone. My stomach tightened - it was identical to what Adrian had shown at dinner last night.</p>
-                    
-                    <p>&#34;I had to dig through so many photos to find one where my sister actually looked happy,&#34; Victoria continued. &#34;The editing took forever.&#34;</p>
-                    
-                    <p>Astrid&#39;s expression hardened, her eyes cooling as she glanced at the screen.&#34;Yeah, I saw it online,&#34; she said flatly. &#34;Didn&#39;t know you were behind it.&#34;</p>
-                    
-                    <p>&#34;You know damn well Blake is marrying Rachel in two days. What&#39;s your angle here, replacing Rachel&#39;s photo with Audrey&#39;s?&#34;</p>
-                    
-                    <p>I studied Victoria silently from behind my mask. What was my supposed&#34;sister&#34; plotting now?</p>
-                    
-                    <p>&#34;To crash the wedding, obviously!&#34; Victoria said with a hint of pride.&#34;Come on, Astrid. Don&#39;t you think it&#39;s wrong? My sister&#39;s barely cold in her grave, and Blake&#39;s already marrying someone else!&#34;</p>
-                    
-                    <p>She leaned forward, voice rising. &#34;Once he&#39;s hitched to Rachel, you think he&#39;Il give a damn about me or theSinclair family?&#34;</p>
-                    
-                    <p>Her hands flew up dramatically. &#34;We can&#39;t let this wedding happen!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey/&#39;s POV**</p>
+                        
+                        <p>Victoria Sinclair turned around from the front passenger seat, flashing a bright smile.</p>
+                        
+                        <p>&#34;Astrid, did you see the wedding invitation I made?&#34; She waved her phone screen at us. &#34;The one I put together myself?&#34;</p>
+                        
+                        <p>I stared at the digital invitation displayed on her phone. My stomach tightened - it was identical to what Adrian had shown at dinner last night.</p>
+                        
+                        <p>&#34;I had to dig through so many photos to find one where my sister actually looked happy,&#34; Victoria continued. &#34;The editing took forever.&#34;</p>
+                        
+                        <p>Astrid&#39;s expression hardened, her eyes cooling as she glanced at the screen.&#34;Yeah, I saw it online,&#34; she said flatly. &#34;Didn&#39;t know you were behind it.&#34;</p>
+                        
+                        <p>&#34;You know damn well Blake is marrying Rachel in two days. What&#39;s your angle here, replacing Rachel&#39;s photo with Audrey&#39;s?&#34;</p>
+                        
+                        <p>I studied Victoria silently from behind my mask. What was my supposed&#34;sister&#34; plotting now?</p>
+                        
+                        <p>&#34;To crash the wedding, obviously!&#34; Victoria said with a hint of pride.&#34;Come on, Astrid. Don&#39;t you think it&#39;s wrong? My sister&#39;s barely cold in her grave, and Blake&#39;s already marrying someone else!&#34;</p>
+                        
+                        <p>She leaned forward, voice rising. &#34;Once he&#39;s hitched to Rachel, you think he&#39;Il give a damn about me or theSinclair family?&#34;</p>
+                        
+                        <p>Her hands flew up dramatically. &#34;We can&#39;t let this wedding happen!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -894,29 +934,33 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>She turned fully to Astrid, her smile turning syrupy sweet. &#34;Don&#39;t you want justice for Audrey? Help me stop this wedding.&#34;</p>
-                    
-                    <p>The car went silent. A laugh bubbled up before I could stop it.</p>
-                    
-                    <p>Victoria&#39;s head snapped toward me. &#34;What&#39;s so funny? I&#39;m talking to Astrid. Mind your own business.&#34;</p>
-                    
-                    <p>Astrid shifted, blocking Victoria&#39;s view of me. &#34;She&#39;s my friend. If she thinks you&#39;re being ridiculous, she can laugh. Got a problem with that?&#34;</p>
-                    
-                    <p>Victoria&#39;s face darkened. &#34;What&#39;s ridiculous about wanting justice for my sister?&#34;</p>
-                    
-                    <p>I leaned forward, my voice turning icy. &#34;Are you after justice for Audrey,or just protecting Sinclair family interests?&#34;</p>
-                    
-                    <p>&#34;When Audrey was alive, neither you nor the Sinclairs showed her an ounce of concern. You skipped her funeral. It&#39;s been over ten months.and not one of you - not you, not Richard, not Elaine - has visited her grave even once.&#34;</p>
-                    
-                    <p>Victoria&#39;s expression soured as she studied me. I could see confusion flickering behind her eyes - something about me seemed familiar, but she couldn&#39;t place it.</p>
-                    
-                    <p>After Victoria repeated her wedding-crashing plan for the fifth time,Astrid&#39;s patience finally snapped.</p>
-                    
-                    <p>&#34;Ethan.&#34; Just his name, nothing more.</p>
-                    
-                    <p>He immediately pulled over. &#34;Miss Sinclair, out you go.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>She turned fully to Astrid, her smile turning syrupy sweet. &#34;Don&#39;t you want justice for Audrey? Help me stop this wedding.&#34;</p>
+                        
+                        <p>The car went silent. A laugh bubbled up before I could stop it.</p>
+                        
+                        <p>Victoria&#39;s head snapped toward me. &#34;What&#39;s so funny? I&#39;m talking to Astrid. Mind your own business.&#34;</p>
+                        
+                        <p>Astrid shifted, blocking Victoria&#39;s view of me. &#34;She&#39;s my friend. If she thinks you&#39;re being ridiculous, she can laugh. Got a problem with that?&#34;</p>
+                        
+                        <p>Victoria&#39;s face darkened. &#34;What&#39;s ridiculous about wanting justice for my sister?&#34;</p>
+                        
+                        <p>I leaned forward, my voice turning icy. &#34;Are you after justice for Audrey,or just protecting Sinclair family interests?&#34;</p>
+                        
+                        <p>&#34;When Audrey was alive, neither you nor the Sinclairs showed her an ounce of concern. You skipped her funeral. It&#39;s been over ten months.and not one of you - not you, not Richard, not Elaine - has visited her grave even once.&#34;</p>
+                        
+                        <p>Victoria&#39;s expression soured as she studied me. I could see confusion flickering behind her eyes - something about me seemed familiar, but she couldn&#39;t place it.</p>
+                        
+                        <p>After Victoria repeated her wedding-crashing plan for the fifth time,Astrid&#39;s patience finally snapped.</p>
+                        
+                        <p>&#34;Ethan.&#34; Just his name, nothing more.</p>
+                        
+                        <p>He immediately pulled over. &#34;Miss Sinclair, out you go.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -931,29 +975,33 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>**Victoria&#39;s POV**</p>
-                    
-                    <p>I stepped out of the car, fuming at being dismissed like some Uber passenger with a bad rating.</p>
-                    
-                    <p>As I reached to slam the door shut, the woman in the back seat pulled down her mask to sip some water. Through the window, I caught her profile in perfect clarity.</p>
-                    
-                    <p>My body froze.</p>
-                    
-                    <p>*Impossible.*</p>
-                    
-                    <p>The car pulled away, but I barelynoticed. I stood rooted to the sidewalk,mind reeling.</p>
-                    
-                    <p>That woman was Audrey. My dead sister-alive.</p>
-                    
-                    <p>With shaking hands. I called Dad.</p>
-                    
-                    <p>&#34;Victoria?&#34; Richard answered. &#34;What&#39;s wrong?&#34;</p>
-                    
-                    <p>&#34;Audrey&#39;s alive,&#34; I blurted. &#34;I just saw her in Astrid&#39;s car!&#34;</p>
-                    
-                    <p>A stretched silence. Then, &#34;Are you certain? Maybe you&#39;re confused...&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>**Victoria&#39;s POV**</p>
+                        
+                        <p>I stepped out of the car, fuming at being dismissed like some Uber passenger with a bad rating.</p>
+                        
+                        <p>As I reached to slam the door shut, the woman in the back seat pulled down her mask to sip some water. Through the window, I caught her profile in perfect clarity.</p>
+                        
+                        <p>My body froze.</p>
+                        
+                        <p>*Impossible.*</p>
+                        
+                        <p>The car pulled away, but I barelynoticed. I stood rooted to the sidewalk,mind reeling.</p>
+                        
+                        <p>That woman was Audrey. My dead sister-alive.</p>
+                        
+                        <p>With shaking hands. I called Dad.</p>
+                        
+                        <p>&#34;Victoria?&#34; Richard answered. &#34;What&#39;s wrong?&#34;</p>
+                        
+                        <p>&#34;Audrey&#39;s alive,&#34; I blurted. &#34;I just saw her in Astrid&#39;s car!&#34;</p>
+                        
+                        <p>A stretched silence. Then, &#34;Are you certain? Maybe you&#39;re confused...&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -968,29 +1016,33 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>I dug my nails into my palm. &#34;Dad, listen to me. I know what I saw.&#34;</p>
-                    
-                    <p>&#34;She&#39;s my sister - well, technically your daughter. How would I mistake her face? They were coming from the airport direction. Astrid must have picked her up!&#34;</p>
-                    
-                    <p>Richard sounded thoughtful. &#34;Interesting. Though it would explain some things. Remember when she was fighting for that divorce? She argued with me on the phone.&#34;</p>
-                    
-                    <p>&#34;If she was truly dying, why bother picking fights with family right before</p>
-                    
-                    <p>the end?&#34;</p>
-                    
-                    <p>I dropped onto a nearby bench. &#34;Exactly! When we heard she&#39;d died from cancer, something felt off. She must have faked her death when she saw Blake getting close to Laurel. She wanted to stop their engagement.&#34;</p>
-                    
-                    <p>I let out a sharp laugh. &#34;And it worked perfectly! Not only did Blake and Laurel never marry, but Laurel ended up in jail and died because of what she did to Audrey.&#34;</p>
-                    
-                    <p>I stared at passing traffic. &#34;And now she&#39;s back... just as Blake&#39;s about to marry Rachel.&#34;</p>
-                    
-                    <p>*No wonder that woman got mad when I mentioned crashing the wedding.She wants to doit herself.*</p>
-                    
-                    <p>Richard sighed. &#34;If Audrey&#39;s back, do we still need to make trouble at the wedding?&#34;</p>
-                    
-                    <p>I shook my head. &#34;Rachel isn&#39;t Laurel. She won&#39;t be as easy to handle. We&#39;re still going. If Audrey can&#39;t handle Rachel on her own, we&#39;ll help.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>I dug my nails into my palm. &#34;Dad, listen to me. I know what I saw.&#34;</p>
+                        
+                        <p>&#34;She&#39;s my sister - well, technically your daughter. How would I mistake her face? They were coming from the airport direction. Astrid must have picked her up!&#34;</p>
+                        
+                        <p>Richard sounded thoughtful. &#34;Interesting. Though it would explain some things. Remember when she was fighting for that divorce? She argued with me on the phone.&#34;</p>
+                        
+                        <p>&#34;If she was truly dying, why bother picking fights with family right before</p>
+                        
+                        <p>the end?&#34;</p>
+                        
+                        <p>I dropped onto a nearby bench. &#34;Exactly! When we heard she&#39;d died from cancer, something felt off. She must have faked her death when she saw Blake getting close to Laurel. She wanted to stop their engagement.&#34;</p>
+                        
+                        <p>I let out a sharp laugh. &#34;And it worked perfectly! Not only did Blake and Laurel never marry, but Laurel ended up in jail and died because of what she did to Audrey.&#34;</p>
+                        
+                        <p>I stared at passing traffic. &#34;And now she&#39;s back... just as Blake&#39;s about to marry Rachel.&#34;</p>
+                        
+                        <p>*No wonder that woman got mad when I mentioned crashing the wedding.She wants to doit herself.*</p>
+                        
+                        <p>Richard sighed. &#34;If Audrey&#39;s back, do we still need to make trouble at the wedding?&#34;</p>
+                        
+                        <p>I shook my head. &#34;Rachel isn&#39;t Laurel. She won&#39;t be as easy to handle. We&#39;re still going. If Audrey can&#39;t handle Rachel on her own, we&#39;ll help.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1005,29 +1057,33 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>After a moment. Richard chuckled. &#34;True. If we assist her, maybe she&#39;ll finally acknowledge her real father&#39;s efforts. And if she gets back with Blake, having her direct influence over the Parker fortune would be quite advantageous.&#34;</p>
-                    
-                    <p>&#34;Just make absolutely sure it&#39;s her,&#34; he cautioned.&#34;What if it&#39;s just a lookalike?&#34;</p>
-                    
-                    <p>I rolled my eyes. &#34;Dad. be serious. Audrey doesn&#39;t have a twin. Who else could possibly look identical to her?&#34;</p>
-                    
-                    <p>**Audrey&#39;s POVw*</p>
-                    
-                    <p>Fresh from our spa treatments, Astrid pulled me towward a designer boutique across the street. This was our first real shopping trip since I&#39;d&#34;returned from the dead&#34; ten months ago, and despite the Victoria incident,I was determined to enjoy it.</p>
-                    
-                    <p>Astrid, dressed in a bold red outfit that turned heads,practically bounced with excitement.</p>
-                    
-                    <p>&#34;Evelyn!&#34; She linked her arm through mine. &#34;To celebrate your second life.I&#39;m buying you that bag you used to love!&#34;</p>
-                    
-                    <p>I smiled, shaking my head. &#34;Honestly, I can&#39;t even remember what it looked like.&#34;</p>
-                    
-                    <p>It wasn&#39;t a lie. My memories of New York had blurred at the edges -maybe because too much had happened since I left, or maybe because I&#39;d trained myself to forget the painful parts. Big events and people remained clear, but the details of my day-to-day life had faded.</p>
-                    
-                    <p>Astrid&#39;s laugh echoed through the boutique. &#34;Doesn&#39;t matter if you don&#39;t remember-I do!&#34;</p>
-                    
-                    <p>She dashed to the counter to speak with a sales associate, then dragged me to view their new collection while they retrieved the reserved bag from storage.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>After a moment. Richard chuckled. &#34;True. If we assist her, maybe she&#39;ll finally acknowledge her real father&#39;s efforts. And if she gets back with Blake, having her direct influence over the Parker fortune would be quite advantageous.&#34;</p>
+                        
+                        <p>&#34;Just make absolutely sure it&#39;s her,&#34; he cautioned.&#34;What if it&#39;s just a lookalike?&#34;</p>
+                        
+                        <p>I rolled my eyes. &#34;Dad. be serious. Audrey doesn&#39;t have a twin. Who else could possibly look identical to her?&#34;</p>
+                        
+                        <p>**Audrey&#39;s POVw*</p>
+                        
+                        <p>Fresh from our spa treatments, Astrid pulled me towward a designer boutique across the street. This was our first real shopping trip since I&#39;d&#34;returned from the dead&#34; ten months ago, and despite the Victoria incident,I was determined to enjoy it.</p>
+                        
+                        <p>Astrid, dressed in a bold red outfit that turned heads,practically bounced with excitement.</p>
+                        
+                        <p>&#34;Evelyn!&#34; She linked her arm through mine. &#34;To celebrate your second life.I&#39;m buying you that bag you used to love!&#34;</p>
+                        
+                        <p>I smiled, shaking my head. &#34;Honestly, I can&#39;t even remember what it looked like.&#34;</p>
+                        
+                        <p>It wasn&#39;t a lie. My memories of New York had blurred at the edges -maybe because too much had happened since I left, or maybe because I&#39;d trained myself to forget the painful parts. Big events and people remained clear, but the details of my day-to-day life had faded.</p>
+                        
+                        <p>Astrid&#39;s laugh echoed through the boutique. &#34;Doesn&#39;t matter if you don&#39;t remember-I do!&#34;</p>
+                        
+                        <p>She dashed to the counter to speak with a sales associate, then dragged me to view their new collection while they retrieved the reserved bag from storage.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1042,29 +1098,33 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>The sales assistant was mid-description of another bag when a familiar voice floated in from outside.</p>
-                    
-                    <p>&#34;Thalia, why are we even at this place? You know I only carry real luxury brands. Since when do I shop at places like this?&#34;</p>
-                    
-                    <p>My body tensed immediately. After all this time, I&#39;d still recognize Olivia Cavendish&#39;s voice anywhere.</p>
-                    
-                    <p>&#34;Just browsing,&#34; A second later, Thalin&#39;s voice sounded, &#34;Even cheap places like this must have fans somewhere.&#34;</p>
-                    
-                    <p>I felt Astrid tense beside me as Thalia&#39;s voice got closer.&#34;Look who&#39;s wearing red.&#34;</p>
-                    
-                    <p>&#34;Well damn, it&#39;s Astrid Wilson.&#34; Olivia approached. &#34;Where&#39;ve you been hiding these days?&#34;</p>
-                    
-                    <p>&#34;Last time we saw her, she threw wine all over us because of Audrey&#39;s stupid cat.&#34; The smugness in Thalia&#39;s voice was obvious. &#34;Then poof-vanished.&#34;</p>
-                    
-                    <p>&#34;Guess she finally realized who she messed with,&#34; Olivia said. &#34;Time to face reality,Astrid.&#34;</p>
-                    
-                    <p>&#34;Your precious Audrey&#39;s been dead almost a year. You ruined our dresses for what? A corpse?&#34; Olivia&#39;s voice grew louder. &#34;What&#39;s she gonna do now,climb out of her grave to save you?&#34;</p>
-                    
-                    <p>&#34;Turn around, Astrid.&#34; Thalia said, &#34;Too scared suddenly? Where&#39;s that attitude from the charity gala?&#34;</p>
-                    
-                    <p>I could practically feel her eyes burning into my back. &#34;And who&#39;s your friend? New model?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>The sales assistant was mid-description of another bag when a familiar voice floated in from outside.</p>
+                        
+                        <p>&#34;Thalia, why are we even at this place? You know I only carry real luxury brands. Since when do I shop at places like this?&#34;</p>
+                        
+                        <p>My body tensed immediately. After all this time, I&#39;d still recognize Olivia Cavendish&#39;s voice anywhere.</p>
+                        
+                        <p>&#34;Just browsing,&#34; A second later, Thalin&#39;s voice sounded, &#34;Even cheap places like this must have fans somewhere.&#34;</p>
+                        
+                        <p>I felt Astrid tense beside me as Thalia&#39;s voice got closer.&#34;Look who&#39;s wearing red.&#34;</p>
+                        
+                        <p>&#34;Well damn, it&#39;s Astrid Wilson.&#34; Olivia approached. &#34;Where&#39;ve you been hiding these days?&#34;</p>
+                        
+                        <p>&#34;Last time we saw her, she threw wine all over us because of Audrey&#39;s stupid cat.&#34; The smugness in Thalia&#39;s voice was obvious. &#34;Then poof-vanished.&#34;</p>
+                        
+                        <p>&#34;Guess she finally realized who she messed with,&#34; Olivia said. &#34;Time to face reality,Astrid.&#34;</p>
+                        
+                        <p>&#34;Your precious Audrey&#39;s been dead almost a year. You ruined our dresses for what? A corpse?&#34; Olivia&#39;s voice grew louder. &#34;What&#39;s she gonna do now,climb out of her grave to save you?&#34;</p>
+                        
+                        <p>&#34;Turn around, Astrid.&#34; Thalia said, &#34;Too scared suddenly? Where&#39;s that attitude from the charity gala?&#34;</p>
+                        
+                        <p>I could practically feel her eyes burning into my back. &#34;And who&#39;s your friend? New model?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1079,17 +1139,21 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Doesn&#39;t matter,&#34; Olivia cut in.&#34;Hey, whoever you are - run while you can.Wilson&#39;s bad luck. One friend was a vegetable for four years. Only lived after ditching her.&#34;</p>
-                    
-                    <p>&#34;And her other bestie? Stomach cancer. Six feet under before thirty. Stick with her and you&#39;ll be nextl&#34;</p>
-                    
-                    <p>I laughed.&#34;What If I want to be her friend &#34;and&#34; keep you both away</p>
-                    
-                    <p>from her?&#34;</p>
-                    
-                    <p>I turned around.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Doesn&#39;t matter,&#34; Olivia cut in.&#34;Hey, whoever you are - run while you can.Wilson&#39;s bad luck. One friend was a vegetable for four years. Only lived after ditching her.&#34;</p>
+                        
+                        <p>&#34;And her other bestie? Stomach cancer. Six feet under before thirty. Stick with her and you&#39;ll be nextl&#34;</p>
+                        
+                        <p>I laughed.&#34;What If I want to be her friend &#34;and&#34; keep you both away</p>
+                        
+                        <p>from her?&#34;</p>
+                        
+                        <p>I turned around.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2405,6 +2469,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2531,7 +2675,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2573,32 +2716,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2609,21 +2734,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2656,6 +2771,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2676,20 +2797,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

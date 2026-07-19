@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:29.775611">
-    <meta property="article:modified_time" content="2026-07-19T02:47:29.775611">
+    <meta property="article:published_time" content="2026-07-19T13:03:24.157833">
+    <meta property="article:modified_time" content="2026-07-19T13:03:24.157833">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:29">
+    <meta name="last-modified" content="2026-07-19 13:03:24">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:29.775611",
-        "dateModified": "2026-07-19T02:47:29.775611",
+        "datePublished": "2026-07-19T13:03:24.157833",
+        "dateModified": "2026-07-19T13:03:24.157833",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,27 +893,31 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Lily rushed into the bathroom, feeling sick, and vomited everything she had eaten. She had been experiencing nausea and dizziness for the past few days.</p>
-                    
-                    <p>&#34;Ma&#39;am, are you alright?&#34; Clara asked, concerned. The other maids nearby also looked worried. They were anxious about their boss&#39;s health, knowing if anything happened to her, their master wouldn&#39;t spare them.</p>
-                    
-                    <p>&#34;I&#39;m okay,&#34; Lily replied, wiping her face as she exited the bathroom.</p>
-                    
-                    <p>“But,Ma&#39;am, this has been going on for two days. Don&#39;t you think we should inform the boss?&#34; Clara insisted.</p>
-                    
-                    <p>&#34;No, I don&#39;t want to worry Alexander,&#34; Lily said firmly. Alexander had been on a business trip for three days, and she didn&#39;t want to distract him from his work.</p>
-                    
-                    <p>“But,Ma&#39;amn...” Clara started again.</p>
-                    
-                    <p>“He&#39;s busy, and he&#39;s out of town. I&#39;ll just have lunch with Viola, put her down for a nap, and then head to the hospital for a checkup,&#34; Lily explained.</p>
-                    
-                    <p>Clara sighed but relented. “Alright, Ma&#39;am.”</p>
-                    
-                    <p>After ensuring Viola was asleep, Lily left for the hospital that Saturday afternoon. She was casually dressed in a simple t-shirt tucked into blue jeans, paired with heels. Despite her simple attire, she still looked graceful.</p>
-                    
-                    <p>When she arrived at Wright Hospital, Lily headed straight for Sophia&#39;s office, flanked by her personal guards. Alexander had made sure she was never without protection whenever she left the house.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Lily rushed into the bathroom, feeling sick, and vomited everything she had eaten. She had been experiencing nausea and dizziness for the past few days.</p>
+                        
+                        <p>&#34;Ma&#39;am, are you alright?&#34; Clara asked, concerned. The other maids nearby also looked worried. They were anxious about their boss&#39;s health, knowing if anything happened to her, their master wouldn&#39;t spare them.</p>
+                        
+                        <p>&#34;I&#39;m okay,&#34; Lily replied, wiping her face as she exited the bathroom.</p>
+                        
+                        <p>“But,Ma&#39;am, this has been going on for two days. Don&#39;t you think we should inform the boss?&#34; Clara insisted.</p>
+                        
+                        <p>&#34;No, I don&#39;t want to worry Alexander,&#34; Lily said firmly. Alexander had been on a business trip for three days, and she didn&#39;t want to distract him from his work.</p>
+                        
+                        <p>“But,Ma&#39;amn...” Clara started again.</p>
+                        
+                        <p>“He&#39;s busy, and he&#39;s out of town. I&#39;ll just have lunch with Viola, put her down for a nap, and then head to the hospital for a checkup,&#34; Lily explained.</p>
+                        
+                        <p>Clara sighed but relented. “Alright, Ma&#39;am.”</p>
+                        
+                        <p>After ensuring Viola was asleep, Lily left for the hospital that Saturday afternoon. She was casually dressed in a simple t-shirt tucked into blue jeans, paired with heels. Despite her simple attire, she still looked graceful.</p>
+                        
+                        <p>When she arrived at Wright Hospital, Lily headed straight for Sophia&#39;s office, flanked by her personal guards. Alexander had made sure she was never without protection whenever she left the house.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -892,27 +932,31 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Upon reaching Sophia&#39;s office, Lily was pleased to find her there.</p>
-                    
-                    <p>“Lily!&#34; Sophia greeted her warmly and gave her a hug.</p>
-                    
-                    <p>They embraced briefly before sitting down.</p>
-                    
-                    <p>“What a nice surprise!&#34; Sophia remarked. The two had become closer after a gathering that Alexander and Lily hosted following a recent court case,but they hadn&#39;t seen each other since.</p>
-                    
-                    <p>Sophia&#39;s smile faded when she noticed how pale Lily looked. “You don&#39;t look well. What&#39;s wrong?”</p>
-                    
-                    <p>&#34;That&#39;s why I&#39;m here,&#34; Lily admitted.</p>
-                    
-                    <p>&#34;Please, sit down.&#34; Sophia said, guiding her to the couch.“What&#39;s going on? You don&#39;t look yourself.&#34;</p>
-                    
-                    <p>&#34;I&#39;ve been feeling nauseous, weak, and dizzy for a while now.&#34; Lily explained.</p>
-                    
-                    <p>&#34;Could you be pregnant?” Sophia asked with a hopeful smile.</p>
-                    
-                    <p>“I came to find that out,&#34; Lily responded.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Upon reaching Sophia&#39;s office, Lily was pleased to find her there.</p>
+                        
+                        <p>“Lily!&#34; Sophia greeted her warmly and gave her a hug.</p>
+                        
+                        <p>They embraced briefly before sitting down.</p>
+                        
+                        <p>“What a nice surprise!&#34; Sophia remarked. The two had become closer after a gathering that Alexander and Lily hosted following a recent court case,but they hadn&#39;t seen each other since.</p>
+                        
+                        <p>Sophia&#39;s smile faded when she noticed how pale Lily looked. “You don&#39;t look well. What&#39;s wrong?”</p>
+                        
+                        <p>&#34;That&#39;s why I&#39;m here,&#34; Lily admitted.</p>
+                        
+                        <p>&#34;Please, sit down.&#34; Sophia said, guiding her to the couch.“What&#39;s going on? You don&#39;t look yourself.&#34;</p>
+                        
+                        <p>&#34;I&#39;ve been feeling nauseous, weak, and dizzy for a while now.&#34; Lily explained.</p>
+                        
+                        <p>&#34;Could you be pregnant?” Sophia asked with a hopeful smile.</p>
+                        
+                        <p>“I came to find that out,&#34; Lily responded.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -927,27 +971,31 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Sophia nodded,“Let&#39;s start with a pregnancy test then.&#34;</p>
-                    
-                    <p>Sophia handed Lily a pregnancy test kit, and she went to the restroom to take the test. After using it, Lily anxiously waited to see if two lines would appear,silently hoping for good news. When she finally looked, there was only one red line.</p>
-                    
-                    <p>Her heart sank, and tears began to roll down her cheeks. She had been trying for another baby for three years but with no success. She and Alexander were often intimate, except when work kept one of them away.</p>
-                    
-                    <p>and she had expected to get pregnant again easily. Yet, despite their efforts,nothing had happened.</p>
-                    
-                    <p>Lily wiped her tears and emerged from the bathroom.</p>
-                    
-                    <p>Sophia, seeing her tear-stained face, rushed over. “Did you take the test?&#34;</p>
-                    
-                    <p>Lily nodded and showed Sophia the result. Sophia immediately embraced her.</p>
-                    
-                    <p>“It&#39;s okay. It&#39;ll happen in time,&#34;Sophia reassured her.</p>
-                    
-                    <p>“But when?” Lily asked,pulling away from the hug.</p>
-                    
-                    <p>&#34;You had Viola, so of course you&#39;ll have another child. You might have as many children as you wish,&#34; Sophia encouraged.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Sophia nodded,“Let&#39;s start with a pregnancy test then.&#34;</p>
+                        
+                        <p>Sophia handed Lily a pregnancy test kit, and she went to the restroom to take the test. After using it, Lily anxiously waited to see if two lines would appear,silently hoping for good news. When she finally looked, there was only one red line.</p>
+                        
+                        <p>Her heart sank, and tears began to roll down her cheeks. She had been trying for another baby for three years but with no success. She and Alexander were often intimate, except when work kept one of them away.</p>
+                        
+                        <p>and she had expected to get pregnant again easily. Yet, despite their efforts,nothing had happened.</p>
+                        
+                        <p>Lily wiped her tears and emerged from the bathroom.</p>
+                        
+                        <p>Sophia, seeing her tear-stained face, rushed over. “Did you take the test?&#34;</p>
+                        
+                        <p>Lily nodded and showed Sophia the result. Sophia immediately embraced her.</p>
+                        
+                        <p>“It&#39;s okay. It&#39;ll happen in time,&#34;Sophia reassured her.</p>
+                        
+                        <p>“But when?” Lily asked,pulling away from the hug.</p>
+                        
+                        <p>&#34;You had Viola, so of course you&#39;ll have another child. You might have as many children as you wish,&#34; Sophia encouraged.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -962,27 +1010,31 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Lily sighed. “But if I&#39;m not pregnant, what&#39;s making me feel like this?&#34;</p>
-                    
-                    <p>&#34;That&#39;s what we&#39;re going to figure out,&#34; Sophia said, guiding her to a hospital bed. She performed several tests, and after a while,the results were ready.</p>
-                    
-                    <p>&#34;What&#39;s wrong with me?&#34; Lily asked.</p>
-                    
-                    <p>&#34;Stress, anxiety, overthinking, and poor eating and sleeping habits,&#34; Sophia explained as she read the report. “You&#39;re not taking care of yourself properly.”</p>
-                    
-                    <p>Lily sighed and nodded. “I have been feeling stressed and anxious lately.”</p>
-                    
-                    <p>&#34;You need to take better care of yourseIf, Lily,&#34; Sophia advised.</p>
-                    
-                    <p>&#34;Mmm, I&#39;ll try,&#34; Lily agreed, standing up. &#34;I should get going. It&#39;s already after 8 PM, and Viola must be waiting for me.&#34;</p>
-                    
-                    <p>&#34;Hold on a second,&#34; Sophia said, catching her hand.</p>
-                    
-                    <p>Lily paused, waiting to hear what Sophia wanted to say.</p>
-                    
-                    <p>“Please, don&#39;t let this weigh too heavily on your mind,&#34; Sophia urged.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Lily sighed. “But if I&#39;m not pregnant, what&#39;s making me feel like this?&#34;</p>
+                        
+                        <p>&#34;That&#39;s what we&#39;re going to figure out,&#34; Sophia said, guiding her to a hospital bed. She performed several tests, and after a while,the results were ready.</p>
+                        
+                        <p>&#34;What&#39;s wrong with me?&#34; Lily asked.</p>
+                        
+                        <p>&#34;Stress, anxiety, overthinking, and poor eating and sleeping habits,&#34; Sophia explained as she read the report. “You&#39;re not taking care of yourself properly.”</p>
+                        
+                        <p>Lily sighed and nodded. “I have been feeling stressed and anxious lately.”</p>
+                        
+                        <p>&#34;You need to take better care of yourseIf, Lily,&#34; Sophia advised.</p>
+                        
+                        <p>&#34;Mmm, I&#39;ll try,&#34; Lily agreed, standing up. &#34;I should get going. It&#39;s already after 8 PM, and Viola must be waiting for me.&#34;</p>
+                        
+                        <p>&#34;Hold on a second,&#34; Sophia said, catching her hand.</p>
+                        
+                        <p>Lily paused, waiting to hear what Sophia wanted to say.</p>
+                        
+                        <p>“Please, don&#39;t let this weigh too heavily on your mind,&#34; Sophia urged.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -997,27 +1049,31 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Lily nodded, grabbed her things, and headed out. Her guards had been waiting for her outside the hospital for hours. Sophia walked her to the elevator,sensing how down Lily felt.</p>
-                    
-                    <p>As they made their way to the underground parking garage, Ariana arrived at the hospital with her mother, Carolina, and her own bodyguards.</p>
-                    
-                    <p>“Really, Ariana, you didn&#39;t need to drag me to the hospital. I just caught a cold last night,&#34; her mother protested.</p>
-                    
-                    <p>“Relax, Mom,” Ariana smirked. She had been looking for a reason to visit this hospital, owned by Richard, a friend of Alexander&#39;s. She knew Alexander often brought Lily here, and now she had an excuse to come more often by registering her mother as a patient.</p>
-                    
-                    <p>As Ariana and her mother approached one of the elevators, Lily and her guards steppoed out of another elevator across the garage. Sophia was walking with her toward their car. Ariana&#39;s eyes lit up as she spotted Lily.</p>
-                    
-                    <p>&#34;Samson,&#34;she called to her bodyguard.</p>
-                    
-                    <p>“Yes,Ma&#39;am?”</p>
-                    
-                    <p>&#34;Take my mother upstairs first,&#34; Ariana instructed.</p>
-                    
-                    <p>“Alright,Ma&#39;am.”</p>
-                    
-                    <p>Her mother, realizing what Ariana was up to, sighed in frustration. &#34;Let&#39;s just go, Ariana. Stop making trouble.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Lily nodded, grabbed her things, and headed out. Her guards had been waiting for her outside the hospital for hours. Sophia walked her to the elevator,sensing how down Lily felt.</p>
+                        
+                        <p>As they made their way to the underground parking garage, Ariana arrived at the hospital with her mother, Carolina, and her own bodyguards.</p>
+                        
+                        <p>“Really, Ariana, you didn&#39;t need to drag me to the hospital. I just caught a cold last night,&#34; her mother protested.</p>
+                        
+                        <p>“Relax, Mom,” Ariana smirked. She had been looking for a reason to visit this hospital, owned by Richard, a friend of Alexander&#39;s. She knew Alexander often brought Lily here, and now she had an excuse to come more often by registering her mother as a patient.</p>
+                        
+                        <p>As Ariana and her mother approached one of the elevators, Lily and her guards steppoed out of another elevator across the garage. Sophia was walking with her toward their car. Ariana&#39;s eyes lit up as she spotted Lily.</p>
+                        
+                        <p>&#34;Samson,&#34;she called to her bodyguard.</p>
+                        
+                        <p>“Yes,Ma&#39;am?”</p>
+                        
+                        <p>&#34;Take my mother upstairs first,&#34; Ariana instructed.</p>
+                        
+                        <p>“Alright,Ma&#39;am.”</p>
+                        
+                        <p>Her mother, realizing what Ariana was up to, sighed in frustration. &#34;Let&#39;s just go, Ariana. Stop making trouble.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1032,27 +1088,31 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;I&#39;m not causing trouble, Mom. I just want to say hello,&#34; Ariana smiled.</p>
-                    
-                    <p>Carolina shook her head,following Samson into the elevator.</p>
-                    
-                    <p>Ariana approached Lily. &#34;Mrs. Kane!&#34; she called out.</p>
-                    
-                    <p>Lily turned toward the voice and frowned when she saw Ariana approaching.</p>
-                    
-                    <p>Ariana stepped in front of her. “Hey, Lily! I haven&#39;t seen you since you were released from prison. I&#39;m so happy you&#39;re free now. I just wanted to let you know I was one of the people who believed in your innocence. I also want to apologize on behalf of my assistant Jamila for what she did to you. Who could have guessed someone so innocent-looking could do such a horrible thing?”</p>
-                    
-                    <p>She placed a hand on her chest as if genuinely shocked.</p>
-                    
-                    <p>“I had no idea Jamila held such hatred toward you. Who knows what she might have been hiding from me as well?” Ariana added dramatically.</p>
-                    
-                    <p>Sophia and Lily exchanged a knowing glance. Sophia felt like saying something to Ariana but held back, allowing Lily to deal with her instead.</p>
-                    
-                    <p>Lily took a step closer to Ariana and slapped her across the face.</p>
-                    
-                    <p>The force of the slap left Ariana staggered and speechless. She instinctively clutched her burning cheek, now red from the blow.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;I&#39;m not causing trouble, Mom. I just want to say hello,&#34; Ariana smiled.</p>
+                        
+                        <p>Carolina shook her head,following Samson into the elevator.</p>
+                        
+                        <p>Ariana approached Lily. &#34;Mrs. Kane!&#34; she called out.</p>
+                        
+                        <p>Lily turned toward the voice and frowned when she saw Ariana approaching.</p>
+                        
+                        <p>Ariana stepped in front of her. “Hey, Lily! I haven&#39;t seen you since you were released from prison. I&#39;m so happy you&#39;re free now. I just wanted to let you know I was one of the people who believed in your innocence. I also want to apologize on behalf of my assistant Jamila for what she did to you. Who could have guessed someone so innocent-looking could do such a horrible thing?”</p>
+                        
+                        <p>She placed a hand on her chest as if genuinely shocked.</p>
+                        
+                        <p>“I had no idea Jamila held such hatred toward you. Who knows what she might have been hiding from me as well?” Ariana added dramatically.</p>
+                        
+                        <p>Sophia and Lily exchanged a knowing glance. Sophia felt like saying something to Ariana but held back, allowing Lily to deal with her instead.</p>
+                        
+                        <p>Lily took a step closer to Ariana and slapped her across the face.</p>
+                        
+                        <p>The force of the slap left Ariana staggered and speechless. She instinctively clutched her burning cheek, now red from the blow.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1067,25 +1127,29 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Ariana glanced around the empty garage. It was already late, and no one else was around to witness the slap. She wished someone had seen it and recorded a video so she could use it to her advantage. But Lily had chosen the perfect time and place to confront her.</p>
-                    
-                    <p>&#34;Alexander told me everything you tried to pull when he was vulnerable.How dare you!&#34; Lily&#39;s voice was sharp with anger.</p>
-                    
-                    <p>Sophia&#39;s eyes widened in surprise. She hadn&#39;t realized Ariana had stooped so low. Even Ariana herself was shocked that Alexander had confided in Lily.</p>
-                    
-                    <p>&#34;Oh, you didn&#39;t think I&#39;d find out, didI you? Alexander told me everything the very next day-how he threw you out of our estate. You&#39;re a shameless woman, Ariana. You&#39;re 33 years old,yet you act without any dignity!”</p>
-                    
-                    <p>Lily grabbed Ariana&#39;s wrist with all her strength. “Let me make this clear:stay away from our lives. If you try to come between me and Alexander again, I will end you. And I mean it,&#34; she warned, her eyes cold and threatening.</p>
-                    
-                    <p>Once she was sure her message had sunk in, Lily released Ariana, who almost fell from the sudden movement.</p>
-                    
-                    <p>Lily climbed into her car and drove away. Sophia, seeing Ariana still standing there in shock, entered the elevator without saying a word.</p>
-                    
-                    <p>Fuming with anger, Ariana&#39;s thoughts raced. It wasn&#39;t the slap that infuriated her the most-it was the fact that Alexander had shared everything with Lily. Their unity, that they shared everything, drove her mad.</p>
-                    
-                    <p>But that would end soon, she promised herself. As Ariana glared after Lily,she murmured under her breath, &#34;It seems the only way to defeat you is to get rid of you. Let&#39;s see who eliminates who first.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Ariana glanced around the empty garage. It was already late, and no one else was around to witness the slap. She wished someone had seen it and recorded a video so she could use it to her advantage. But Lily had chosen the perfect time and place to confront her.</p>
+                        
+                        <p>&#34;Alexander told me everything you tried to pull when he was vulnerable.How dare you!&#34; Lily&#39;s voice was sharp with anger.</p>
+                        
+                        <p>Sophia&#39;s eyes widened in surprise. She hadn&#39;t realized Ariana had stooped so low. Even Ariana herself was shocked that Alexander had confided in Lily.</p>
+                        
+                        <p>&#34;Oh, you didn&#39;t think I&#39;d find out, didI you? Alexander told me everything the very next day-how he threw you out of our estate. You&#39;re a shameless woman, Ariana. You&#39;re 33 years old,yet you act without any dignity!”</p>
+                        
+                        <p>Lily grabbed Ariana&#39;s wrist with all her strength. “Let me make this clear:stay away from our lives. If you try to come between me and Alexander again, I will end you. And I mean it,&#34; she warned, her eyes cold and threatening.</p>
+                        
+                        <p>Once she was sure her message had sunk in, Lily released Ariana, who almost fell from the sudden movement.</p>
+                        
+                        <p>Lily climbed into her car and drove away. Sophia, seeing Ariana still standing there in shock, entered the elevator without saying a word.</p>
+                        
+                        <p>Fuming with anger, Ariana&#39;s thoughts raced. It wasn&#39;t the slap that infuriated her the most-it was the fact that Alexander had shared everything with Lily. Their unity, that they shared everything, drove her mad.</p>
+                        
+                        <p>But that would end soon, she promised herself. As Ariana glared after Lily,she murmured under her breath, &#34;It seems the only way to defeat you is to get rid of you. Let&#39;s see who eliminates who first.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2401,6 +2465,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2527,7 +2671,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2569,32 +2712,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2605,21 +2730,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2652,6 +2767,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2672,20 +2793,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

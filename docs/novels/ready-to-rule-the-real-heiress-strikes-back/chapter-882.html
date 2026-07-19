@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:26.618928">
-    <meta property="article:modified_time" content="2026-07-19T02:47:26.618928">
+    <meta property="article:published_time" content="2026-07-19T13:03:21.206446">
+    <meta property="article:modified_time" content="2026-07-19T13:03:21.206446">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:26">
+    <meta name="last-modified" content="2026-07-19 13:03:21">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:26.618928",
-        "dateModified": "2026-07-19T02:47:26.618928",
+        "datePublished": "2026-07-19T13:03:21.206446",
+        "dateModified": "2026-07-19T13:03:21.206446",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter882</p>
-                    
-                    <p>Garrett blinked in surprise. &#34;Your school&#39;s forum?&#34;</p>
-                    
-                    <p>&#34;Yeah.&#34;</p>
-                    
-                    <p>He shook his head. &#34;Nope.&#34;</p>
-                    
-                    <p>Honestly, Garrett had never bothered to check out the Capital Med School forum.</p>
-                    
-                    <p>Lydia gave him a look. &#34;Maybe you should.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter882</p>
+                        
+                        <p>Garrett blinked in surprise. &#34;Your school&#39;s forum?&#34;</p>
+                        
+                        <p>&#34;Yeah.&#34;</p>
+                        
+                        <p>He shook his head. &#34;Nope.&#34;</p>
+                        
+                        <p>Honestly, Garrett had never bothered to check out the Capital Med School forum.</p>
+                        
+                        <p>Lydia gave him a look. &#34;Maybe you should.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Now he was really confused. Was there actually something about him on there? With a shrug, he pulled out his phone and opened the forum.</p>
-                    
-                    <p>Whoa!</p>
-                    
-                    <p>He scrolled for a second, and his jaw dropped. He had only been at Capital Med School for one morning, but somehow, the whole place was already buzzing with rumors about him. The craziest part was people were actually trying to match him up with the school&#39;s so-called campus queen.</p>
-                    
-                    <p>Seriously?</p>
-                    
-                    <p>He couldn&#39;t believe what he was reading. Garrett felt like his brain had short- circuited. The wildest thing was, he didn&#39;t even know this Yara girl they kept talking about, and now people were comparing her to his sister Lydia? He almost laughed out loud.</p>
-                    
-                    <p>&#34;Hey, Mr. Norwood, isn&#39;t that the girl from last night?   Richard asked, squinting at Yara&#39;s photo.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Now he was really confused. Was there actually something about him on there? With a shrug, he pulled out his phone and opened the forum.</p>
+                        
+                        <p>Whoa!</p>
+                        
+                        <p>He scrolled for a second, and his jaw dropped. He had only been at Capital Med School for one morning, but somehow, the whole place was already buzzing with rumors about him. The craziest part was people were actually trying to match him up with the school&#39;s so-called campus queen.</p>
+                        
+                        <p>Seriously?</p>
+                        
+                        <p>He couldn&#39;t believe what he was reading. Garrett felt like his brain had short- circuited. The wildest thing was, he didn&#39;t even know this Yara girl they kept talking about, and now people were comparing her to his sister Lydia? He almost laughed out loud.</p>
+                        
+                        <p>&#34;Hey, Mr. Norwood, isn&#39;t that the girl from last night?   Richard asked, squinting at Yara&#39;s photo.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Garrett frowned, thinking back. He&#39;d only caught a quick glimpse of her and the lighting had been bad. Honestly, he wasn&#39;t even sure what she looked like. Maybe she kind of resembled that girl from last night?</p>
-                    
-                    <p>&#34;I&#39;m not sure,&#34; he said. &#34;I didn&#39;t really get a good look.&#34;</p>
-                    
-                    <p>Everyone else seemed amazed. How could he forget a girl that pretty after seeing her up close? If Yara ever found out he hadn&#39;t even noticed her, she&#39;d probably be crushed.</p>
-                    
-                    <p>Lydia looked at him in surprise.   You met her last night?&#34;</p>
-                    
-                    <p>Richard nodded.   Yeah, we&#39;d just left the lab. She walked by, said hi to Kevin, and kept going.&#34;</p>
-                    
-                    <p>Lydia nodded, connecting the dots. So Yara had already seen Garrett the night before.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Garrett frowned, thinking back. He&#39;d only caught a quick glimpse of her and the lighting had been bad. Honestly, he wasn&#39;t even sure what she looked like. Maybe she kind of resembled that girl from last night?</p>
+                        
+                        <p>&#34;I&#39;m not sure,&#34; he said. &#34;I didn&#39;t really get a good look.&#34;</p>
+                        
+                        <p>Everyone else seemed amazed. How could he forget a girl that pretty after seeing her up close? If Yara ever found out he hadn&#39;t even noticed her, she&#39;d probably be crushed.</p>
+                        
+                        <p>Lydia looked at him in surprise.   You met her last night?&#34;</p>
+                        
+                        <p>Richard nodded.   Yeah, we&#39;d just left the lab. She walked by, said hi to Kevin, and kept going.&#34;</p>
+                        
+                        <p>Lydia nodded, connecting the dots. So Yara had already seen Garrett the night before.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Garrett remembered that Lydia was a total tech whiz. He really didn&#39;t want all these wild stories about him floating around online it wasnt fair to the girl and he definitely wasn&#39;t looking for a girlfriend right now.</p>
-                    
-                    <p>&#34;Lydia, can you get rid of these posts?</p>
-                    
-                    <p>She arched an eyebrow. &#34;So you&#39;re not interested in her?&#34;</p>
-                    
-                    <p>Garrett sighed. Where did people even get that idea? &#34;Seriously, I&#39;m not. Lydia, I need your help. Please clear all this stuff out.&#34;</p>
-                    
-                    <p>Lydia couldn&#39;t help but grin at how flustered he looked. &#34;Alright. Give me a minute. I&#39;ll take care of it.&#34;</p>
-                    
-                    <p>As soon as she agreed, Garrett let out a huge sigh of relief. &#34;Thanks. I owe you.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Garrett remembered that Lydia was a total tech whiz. He really didn&#39;t want all these wild stories about him floating around online it wasnt fair to the girl and he definitely wasn&#39;t looking for a girlfriend right now.</p>
+                        
+                        <p>&#34;Lydia, can you get rid of these posts?</p>
+                        
+                        <p>She arched an eyebrow. &#34;So you&#39;re not interested in her?&#34;</p>
+                        
+                        <p>Garrett sighed. Where did people even get that idea? &#34;Seriously, I&#39;m not. Lydia, I need your help. Please clear all this stuff out.&#34;</p>
+                        
+                        <p>Lydia couldn&#39;t help but grin at how flustered he looked. &#34;Alright. Give me a minute. I&#39;ll take care of it.&#34;</p>
+                        
+                        <p>As soon as she agreed, Garrett let out a huge sigh of relief. &#34;Thanks. I owe you.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Everyone else went back to their tasks while Lydia hopped onto a lab computer and logged into the forum. The threads were still blowing up, and Yara was getting even more votes. The comments about her and Garrett were everywhere, with people gushing about how perfect they&#39;d be together.</p>
-                    
-                    <p>Meanwhile, the remarks about Lydia were brutal.</p>
-                    
-                    <p>[Lydia&#39;s two-timing and totally shady. How could she ever be good enough for Mr. Norwood?]</p>
-                    
-                    <p>[Seriously, are the people shipping Lydia and Mr. Norwood out of their minds?]</p>
-                    
-                    <p>[Mr. Norwood is basically a living legend. Lydia doesn&#39;t deserve him at all. Vote for</p>
-                    
-                    <p>Mr. Norwood and Yara, let&#39;s make them the top couple!]</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Everyone else went back to their tasks while Lydia hopped onto a lab computer and logged into the forum. The threads were still blowing up, and Yara was getting even more votes. The comments about her and Garrett were everywhere, with people gushing about how perfect they&#39;d be together.</p>
+                        
+                        <p>Meanwhile, the remarks about Lydia were brutal.</p>
+                        
+                        <p>[Lydia&#39;s two-timing and totally shady. How could she ever be good enough for Mr. Norwood?]</p>
+                        
+                        <p>[Seriously, are the people shipping Lydia and Mr. Norwood out of their minds?]</p>
+                        
+                        <p>[Mr. Norwood is basically a living legend. Lydia doesn&#39;t deserve him at all. Vote for</p>
+                        
+                        <p>Mr. Norwood and Yara, let&#39;s make them the top couple!]</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>There were even nastier comments, some almost too harsh to read.</p>
-                    
-                    <p>Lydia just snorted. If people wanted drama, she&#39;d give them more than they could handle. Her fingers flew across the keyboard, moving so fast they blurred. The screen kept</p>
-                    
-                    <p>flickering, flipping between ver</p>
-                    
-                    <p>and blue, almost like she&#39;d hacked the whole thing.</p>
-                    
-                    <p>Five minutes later, Lydia finally leaned back, grinning at the now very different poll</p>
-                    
-                    <p>post.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>There were even nastier comments, some almost too harsh to read.</p>
+                        
+                        <p>Lydia just snorted. If people wanted drama, she&#39;d give them more than they could handle. Her fingers flew across the keyboard, moving so fast they blurred. The screen kept</p>
+                        
+                        <p>flickering, flipping between ver</p>
+                        
+                        <p>and blue, almost like she&#39;d hacked the whole thing.</p>
+                        
+                        <p>Five minutes later, Lydia finally leaned back, grinning at the now very different poll</p>
+                        
+                        <p>post.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>At that exact moment, the entire school forum exploded.</p>
-                    
-                    <p>For Yara, it felt like the world had ended right there. She and Tina were just about to</p>
-                    
-                    <p>leave their dorm for class when suddenly, their roommate let out a scream.</p>
-                    
-                    <p>&#34;Oh my god!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>At that exact moment, the entire school forum exploded.</p>
+                        
+                        <p>For Yara, it felt like the world had ended right there. She and Tina were just about to</p>
+                        
+                        <p>leave their dorm for class when suddenly, their roommate let out a scream.</p>
+                        
+                        <p>&#34;Oh my god!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:26.093641">
-    <meta property="article:modified_time" content="2026-07-19T02:47:26.093641">
+    <meta property="article:published_time" content="2026-07-19T13:03:20.746039">
+    <meta property="article:modified_time" content="2026-07-19T13:03:20.746039">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:26">
+    <meta name="last-modified" content="2026-07-19 13:03:20">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:26.093641",
-        "dateModified": "2026-07-19T02:47:26.093641",
+        "datePublished": "2026-07-19T13:03:20.746039",
+        "dateModified": "2026-07-19T13:03:20.746039",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,17 +893,21 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter315</p>
-                    
-                    <p>Lucinda&#39;s face went blank for a moment, but she quickly pulled herself together.</p>
-                    
-                    <p>&#34;I know, Grandpa. Lydia is amazing. There&#39;s still so much I can learn from her.&#34;</p>
-                    
-                    <p>She shot a look at Garrett. &#34;Garrett, why don&#39;t you read out a few more of the nice things people are saying about her? That&#39;ll make Grandpa even happier.&#34;</p>
-                    
-                    <p>Garrett nodded. &#34;Sure, let me check for some more.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter315</p>
+                        
+                        <p>Lucinda&#39;s face went blank for a moment, but she quickly pulled herself together.</p>
+                        
+                        <p>&#34;I know, Grandpa. Lydia is amazing. There&#39;s still so much I can learn from her.&#34;</p>
+                        
+                        <p>She shot a look at Garrett. &#34;Garrett, why don&#39;t you read out a few more of the nice things people are saying about her? That&#39;ll make Grandpa even happier.&#34;</p>
+                        
+                        <p>Garrett nodded. &#34;Sure, let me check for some more.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -882,17 +922,21 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>He scrolled through the comments, but suddenly stopped when a new topic caught his eye. It read, &#34;Lydia, the Perfect Scorer, Cheated on Her Exam.&#34; His expression changed in an instant. The usual warmth in his eyes was gone, replaced by a cold, angry glare.</p>
-                    
-                    <p>Lydia was a genius. She was only eighteen and already held the highest credentials in medicine. How could anyone accuse her of cheating?</p>
-                    
-                    <p>Without thinking, Garrett clicked on the post. The article was full of details, insisting that at Lakeview Town High, Lydia had always been in the worst class, skipped school all the time, got into fights, and never respected her teachers. According to the post, there was no way someone like that could score perfectly on her exams.</p>
-                    
-                    <p>He forced himself to read the whole thing, jaw tight with anger, then scrolled to the comments.</p>
-                    
-                    <p>The replies were a tidal wave of nastiness.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>He scrolled through the comments, but suddenly stopped when a new topic caught his eye. It read, &#34;Lydia, the Perfect Scorer, Cheated on Her Exam.&#34; His expression changed in an instant. The usual warmth in his eyes was gone, replaced by a cold, angry glare.</p>
+                        
+                        <p>Lydia was a genius. She was only eighteen and already held the highest credentials in medicine. How could anyone accuse her of cheating?</p>
+                        
+                        <p>Without thinking, Garrett clicked on the post. The article was full of details, insisting that at Lakeview Town High, Lydia had always been in the worst class, skipped school all the time, got into fights, and never respected her teachers. According to the post, there was no way someone like that could score perfectly on her exams.</p>
+                        
+                        <p>He forced himself to read the whole thing, jaw tight with anger, then scrolled to the comments.</p>
+                        
+                        <p>The replies were a tidal wave of nastiness.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -907,17 +951,21 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>[I can&#39;t believe this. I thought she was a once-in-a-generation genius, but she just copied? I&#39;m so disappointed.]</p>
-                    
-                    <p>[This is disgusting. People like her should be punished. There&#39;s no excuse for this kind of behavior.]</p>
-                    
-                    <p>[How does someone dare to cheat like that? It&#39;s a slap in the face to everyone who works hard. She needs to be made an example of.]</p>
-                    
-                    <p>[I&#39;m in her class, and when the results came out, even our teachers were shocked She&#39;s the worst student in the worst class How could she possibly get a perfect score? She brought this on herself.]</p>
-                    
-                    <p>[Unbelievable. Does she really think cheating is the way to get ahead? What kind of parents let their kid turn out like this? Cheating just ruins your life forever.]</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>[I can&#39;t believe this. I thought she was a once-in-a-generation genius, but she just copied? I&#39;m so disappointed.]</p>
+                        
+                        <p>[This is disgusting. People like her should be punished. There&#39;s no excuse for this kind of behavior.]</p>
+                        
+                        <p>[How does someone dare to cheat like that? It&#39;s a slap in the face to everyone who works hard. She needs to be made an example of.]</p>
+                        
+                        <p>[I&#39;m in her class, and when the results came out, even our teachers were shocked She&#39;s the worst student in the worst class How could she possibly get a perfect score? She brought this on herself.]</p>
+                        
+                        <p>[Unbelievable. Does she really think cheating is the way to get ahead? What kind of parents let their kid turn out like this? Cheating just ruins your life forever.]</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -932,17 +980,21 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Lucinda noticed Garrett&#39;s face and a hint of satisfaction sparkled in her eyes. The news about Lydia must have spread. Otherwise, Garrett wouldn&#39;t be looking so upset.</p>
-                    
-                    <p>She put on her most innocent voice.   Garrett, what are you so caught up in? We&#39;re</p>
-                    
-                    <p>all waiting to hear more of those nice comments.&#34;</p>
-                    
-                    <p>Cameron and Kylie picked up on Garrett&#39;s mood too.</p>
-                    
-                    <p>&#34;Garrett, is something wrong?&#34; Kylie asked, leaning over to see his phone.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Lucinda noticed Garrett&#39;s face and a hint of satisfaction sparkled in her eyes. The news about Lydia must have spread. Otherwise, Garrett wouldn&#39;t be looking so upset.</p>
+                        
+                        <p>She put on her most innocent voice.   Garrett, what are you so caught up in? We&#39;re</p>
+                        
+                        <p>all waiting to hear more of those nice comments.&#34;</p>
+                        
+                        <p>Cameron and Kylie picked up on Garrett&#39;s mood too.</p>
+                        
+                        <p>&#34;Garrett, is something wrong?&#34; Kylie asked, leaning over to see his phone.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -957,17 +1009,21 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>The second she saw what was on</p>
-                    
-                    <p>the screen, her calm and gentle face turned sharp with anger. &#34;This is ridiculous. They&#39;re just jealous of</p>
-                    
-                    <p>Lydia and making up stories to tear her down.&#34;</p>
-                    
-                    <p>Cameron stepped closer, frowning. As soon as he read the comments, his temper flared.</p>
-                    
-                    <p>&#34;This is outrageous. How dare they slander my daughter?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>The second she saw what was on</p>
+                        
+                        <p>the screen, her calm and gentle face turned sharp with anger. &#34;This is ridiculous. They&#39;re just jealous of</p>
+                        
+                        <p>Lydia and making up stories to tear her down.&#34;</p>
+                        
+                        <p>Cameron stepped closer, frowning. As soon as he read the comments, his temper flared.</p>
+                        
+                        <p>&#34;This is outrageous. How dare they slander my daughter?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -982,15 +1038,19 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Lucinda hurried over, putting on a worried face. &#34;Dad, Mom, Garrett, what&#39;s happening?&#34;</p>
-                    
-                    <p>She craned her neck to see the screen and let out a dramatic gasp. &#34;Wait, they&#39;re saying my sister cheated? That can&#39;t be true... right?&#34;</p>
-                    
-                    <p>Garrett shot her a hard look, his voice steady and sure. &#34;Of course it&#39;s not true. Someone is spreading lies on purpose.&#34;</p>
-                    
-                    <p>Lucinda glanced at her furious parents, looking anxious. &#34;Dad, Mom, we should get someone to take these posts down, or it&#39;ll ruin her reputation.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Lucinda hurried over, putting on a worried face. &#34;Dad, Mom, Garrett, what&#39;s happening?&#34;</p>
+                        
+                        <p>She craned her neck to see the screen and let out a dramatic gasp. &#34;Wait, they&#39;re saying my sister cheated? That can&#39;t be true... right?&#34;</p>
+                        
+                        <p>Garrett shot her a hard look, his voice steady and sure. &#34;Of course it&#39;s not true. Someone is spreading lies on purpose.&#34;</p>
+                        
+                        <p>Lucinda glanced at her furious parents, looking anxious. &#34;Dad, Mom, we should get someone to take these posts down, or it&#39;ll ruin her reputation.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -2308,6 +2368,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2434,7 +2574,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2476,32 +2615,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2512,21 +2633,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2559,6 +2670,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2579,20 +2696,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.352511">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.352511">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.359792">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.359792">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.352511",
-        "dateModified": "2026-07-19T02:47:23.352511",
+        "datePublished": "2026-07-19T13:03:18.359792",
+        "dateModified": "2026-07-19T13:03:18.359792",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,21 +893,25 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Annie&#39;s POV</p>
-                    
-                    <p>I found a letter from Brian in my mailbox. My heart instantly tightened at the sight of that familiar childish handwriting. I stood frozen in the hallway, memories flooding back to that day of betrayal-the &#34;Perfect Family&#34; group chat on the iPad, Brian declaring Sarah was his &#34;real mom,&#34;his small angry face as he screamed that I had ruined everything.</p>
-                    
-                    <p>Part of me wanted to tear it open immediately. But another part-the part that had painstakingly rebuilt my life-hesitated. What could he possibly say that would heal those wounds? What apology could erase him telling me he hated me, that I wasn&#39;t fun like Sarah?</p>
-                    
-                    <p>&#34;Annie?&#34; Lucy called from inside. &#34;Are we going to school soon?&#34;</p>
-                    
-                    <p>Her voice anchored me to the present. This life with Lucy and Howard was my reality now, not the past that Brian&#39;s letter represented.With sudden resolve, I tossed the unopened letter into the corner of my bedroom. It belonged to the past, and I was building a future.</p>
-                    
-                    <p>&#34;Coming, sweetheart,&#34; I called back, composing myself.</p>
-                    
-                    <p>In the car, Lucy sat on my lap, chattering about her plans with Penny &#34;We&#39;re going to be butterfly explorers,&#34; she explained excitedly. &#34;We&#39;ll make maps of the playground and find all the hiding spots.&#34; &#34;Grandpa Edward will heIp us make explorer hats,&#34; she continued, &#34;and Grandma Eleanor promised butterfly patches for our backpacks.&#34; The easy way she mentioned her grandparents warmed my heart.The Parkers had transformed Lucy from a selectively mute child to this expressive little girI who formed connections easily.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Annie&#39;s POV</p>
+                        
+                        <p>I found a letter from Brian in my mailbox. My heart instantly tightened at the sight of that familiar childish handwriting. I stood frozen in the hallway, memories flooding back to that day of betrayal-the &#34;Perfect Family&#34; group chat on the iPad, Brian declaring Sarah was his &#34;real mom,&#34;his small angry face as he screamed that I had ruined everything.</p>
+                        
+                        <p>Part of me wanted to tear it open immediately. But another part-the part that had painstakingly rebuilt my life-hesitated. What could he possibly say that would heal those wounds? What apology could erase him telling me he hated me, that I wasn&#39;t fun like Sarah?</p>
+                        
+                        <p>&#34;Annie?&#34; Lucy called from inside. &#34;Are we going to school soon?&#34;</p>
+                        
+                        <p>Her voice anchored me to the present. This life with Lucy and Howard was my reality now, not the past that Brian&#39;s letter represented.With sudden resolve, I tossed the unopened letter into the corner of my bedroom. It belonged to the past, and I was building a future.</p>
+                        
+                        <p>&#34;Coming, sweetheart,&#34; I called back, composing myself.</p>
+                        
+                        <p>In the car, Lucy sat on my lap, chattering about her plans with Penny &#34;We&#39;re going to be butterfly explorers,&#34; she explained excitedly. &#34;We&#39;ll make maps of the playground and find all the hiding spots.&#34; &#34;Grandpa Edward will heIp us make explorer hats,&#34; she continued, &#34;and Grandma Eleanor promised butterfly patches for our backpacks.&#34; The easy way she mentioned her grandparents warmed my heart.The Parkers had transformed Lucy from a selectively mute child to this expressive little girI who formed connections easily.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -886,21 +926,25 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Lucy suddenly paused, her expression turning serious. &#34;Of course, I love Mommy too.&#34;</p>
-                    
-                    <p>The title no longer stung. Unlike Brian&#39;s conditional love, Lucy&#39;s affection was pure and freely given. I kissed her forehead gently.</p>
-                    
-                    <p>&#34;Mommy loves you too,&#34; I whispered. This unexpected bond had become precious beyond measure.</p>
-                    
-                    <p>From the driver&#39;s seat, Howard turned with curious eyes. &#34;What about Daddy? Don&#39;t you love Daddy too?&#34;</p>
-                    
-                    <p>&#34;Love, love, love,&#34; Lucy replied with obvious reluctance. &#34;Of course I love Daddy very much.&#34;</p>
-                    
-                    <p>I suppressed a smile at Howard&#39;s satisfied expression. For someone with limited emotional experience, his love for Lucy was remarkably transparent.The intimidating CEO completely melted around this little girl.</p>
-                    
-                    <p>At the preschool, Lucy scanned the entrance for Penny. When she spotted her friend, her face lit up completely. She leapt from my lap,running to embrace Penny with uninhibited joy.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Lucy suddenly paused, her expression turning serious. &#34;Of course, I love Mommy too.&#34;</p>
+                        
+                        <p>The title no longer stung. Unlike Brian&#39;s conditional love, Lucy&#39;s affection was pure and freely given. I kissed her forehead gently.</p>
+                        
+                        <p>&#34;Mommy loves you too,&#34; I whispered. This unexpected bond had become precious beyond measure.</p>
+                        
+                        <p>From the driver&#39;s seat, Howard turned with curious eyes. &#34;What about Daddy? Don&#39;t you love Daddy too?&#34;</p>
+                        
+                        <p>&#34;Love, love, love,&#34; Lucy replied with obvious reluctance. &#34;Of course I love Daddy very much.&#34;</p>
+                        
+                        <p>I suppressed a smile at Howard&#39;s satisfied expression. For someone with limited emotional experience, his love for Lucy was remarkably transparent.The intimidating CEO completely melted around this little girl.</p>
+                        
+                        <p>At the preschool, Lucy scanned the entrance for Penny. When she spotted her friend, her face lit up completely. She leapt from my lap,running to embrace Penny with uninhibited joy.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -915,21 +959,25 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>As I turned to leave, a man and woman suddenly blocked my path.I stepped back instinctively, moving closer to Howard. &#34;Who are you?&#34; I askeddirectly. &#34;We&#39;re Brian&#39;s tutor and driver,&#34; they answered, not bothering with names.Typical Philip,treating employees as faceless tools. Despite our fractured relationship, concern flickered through me. &#34;How can I help you?&#34; &#34;This isn&#39;t a conversation for the sidewalk,&#34; the driver said tersely. &#34;Let&#39;s find a café to talk.&#34;</p>
-                    
-                    <p>I glanced at Howard, whose face remained impassive though I could read his silent support.</p>
-                    
-                    <p>&#34;Let&#39;s go,&#34; I decided, curious about their message and grateful for Howard&#39;s presence.</p>
-                    
-                    <p>We sat at a nearby patisserie. They ordered cakes while I requested only tea, my appetite gone at the mention of Brian.</p>
-                    
-                    <p>&#34;Don&#39;t you think you&#39;re being cruel to Brian?&#34; the driver asked bluntly.</p>
-                    
-                    <p>His words pierced my heart. I stared into my teacup, struggling to maintain composure.</p>
-                    
-                    <p>&#34;He&#39;s only five, just a child who doesn&#39;t understand anything,&#34; he continued accusingly. &#34;Every day at school when he sees you with Lucy,he cries silently. He loves you so much...&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>As I turned to leave, a man and woman suddenly blocked my path.I stepped back instinctively, moving closer to Howard. &#34;Who are you?&#34; I askeddirectly. &#34;We&#39;re Brian&#39;s tutor and driver,&#34; they answered, not bothering with names.Typical Philip,treating employees as faceless tools. Despite our fractured relationship, concern flickered through me. &#34;How can I help you?&#34; &#34;This isn&#39;t a conversation for the sidewalk,&#34; the driver said tersely. &#34;Let&#39;s find a café to talk.&#34;</p>
+                        
+                        <p>I glanced at Howard, whose face remained impassive though I could read his silent support.</p>
+                        
+                        <p>&#34;Let&#39;s go,&#34; I decided, curious about their message and grateful for Howard&#39;s presence.</p>
+                        
+                        <p>We sat at a nearby patisserie. They ordered cakes while I requested only tea, my appetite gone at the mention of Brian.</p>
+                        
+                        <p>&#34;Don&#39;t you think you&#39;re being cruel to Brian?&#34; the driver asked bluntly.</p>
+                        
+                        <p>His words pierced my heart. I stared into my teacup, struggling to maintain composure.</p>
+                        
+                        <p>&#34;He&#39;s only five, just a child who doesn&#39;t understand anything,&#34; he continued accusingly. &#34;Every day at school when he sees you with Lucy,he cries silently. He loves you so much...&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -944,21 +992,25 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Each word hammered at my guilt. Brian had once called me &#34;the best mommy in the world.&#34; Where had that child gone? Transformed by Sarah&#39;s poisonous influence and Philip&#39;s indifference.</p>
-                    
-                    <p>&#34;How can you neglect him just because you divorced his father?&#34; &#34;Before you ask these questions,&#34; I replied quietly but firmly,&#34;have you tried to understand what he did to me?&#34; He shook his head. &#34;What terrible thing could a child possibly do?&#34; Memories flooded back-Brian pretending not to know me at school,calling Sarah &#34;mommy&#34; in that secret chat group, the stress causing my miscarriage. A five-year-old might not understand consequences, but the pain was real.</p>
-                    
-                    <p>Looking at this stranger who could never comprehend my experience,I suddenly lost all desire to explain myself.</p>
-                    
-                    <p>&#34;Is that so?&#34; I murmuared, more to myself than him.</p>
-                    
-                    <p>When he tried to speak again, I reached for my bag, ready to leave. He immediately blocked my path and turned to Howard.</p>
-                    
-                    <p>&#34;If she&#39;s this heartless to her own biological son,how dare you employ her?&#34;</p>
-                    
-                    <p>Howard&#39;s voice turned icier than I&#39;d ever heard it. &#34;Because I personally witnessed how her husband, his mistress, and her son worked together to hurt her.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Each word hammered at my guilt. Brian had once called me &#34;the best mommy in the world.&#34; Where had that child gone? Transformed by Sarah&#39;s poisonous influence and Philip&#39;s indifference.</p>
+                        
+                        <p>&#34;How can you neglect him just because you divorced his father?&#34; &#34;Before you ask these questions,&#34; I replied quietly but firmly,&#34;have you tried to understand what he did to me?&#34; He shook his head. &#34;What terrible thing could a child possibly do?&#34; Memories flooded back-Brian pretending not to know me at school,calling Sarah &#34;mommy&#34; in that secret chat group, the stress causing my miscarriage. A five-year-old might not understand consequences, but the pain was real.</p>
+                        
+                        <p>Looking at this stranger who could never comprehend my experience,I suddenly lost all desire to explain myself.</p>
+                        
+                        <p>&#34;Is that so?&#34; I murmuared, more to myself than him.</p>
+                        
+                        <p>When he tried to speak again, I reached for my bag, ready to leave. He immediately blocked my path and turned to Howard.</p>
+                        
+                        <p>&#34;If she&#39;s this heartless to her own biological son,how dare you employ her?&#34;</p>
+                        
+                        <p>Howard&#39;s voice turned icier than I&#39;d ever heard it. &#34;Because I personally witnessed how her husband, his mistress, and her son worked together to hurt her.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -973,21 +1025,25 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;So I never thought her actions were excessive,&#34; he continued with cold precision. &#34;I only thought, if what happened to her had happened to me...my retaliation would have been far more merciless.&#34;</p>
-                    
-                    <p>&#34;She has been far too kind,&#34; he concluded.</p>
-                    
-                    <p>Then Howard extended his hand to me-a rare public gesture of intimacy.When everyone else criticized my motherhood, only he fully understood and supported me. Warmth spread through my chest as I took his hand,drawing strength from his steadiness as he led me away. At Howard Technologies,Catherine Morgan was leaning against the wall,looking bored. Her expression brightened when she spotted us. &#34;You&#39;re late,&#34; she complained, sounding like a stood-up date,&#34;What happened?&#34; &#34;We ran into some trouble,&#34; I explained simply. Catherine immediately linked arms with me. &#34;What&#39;s there to be sorry about?&#34; Her rapid mood shifts always made me smile.</p>
-                    
-                    <p>After checking that no one was watching, she pulled me into my office and shut the door. &#34;I&#39;ve successfully infiltrated the gaming department! I know all the company secrets!&#34;</p>
-                    
-                    <p>&#34;You&#39;re something else, Catherine.&#34; I welcomed this distraction from the morning&#39;s heaviness.</p>
-                    
-                    <p>She shared office gossip efficiently: a secret office romance, an upcoming project delay, embarrassing party incidents. Then she switched topics abruptly.</p>
-                    
-                    <p>&#34;Remember that guy who found a new girlfriend right after I rejected him?It&#39;s ridiculous! These rich kids have nothing better to do but flaunttheir relationship in front of me. They deliberately stand where I can see them being affectionate at gatherings. When I stopped attending events they&#39;d be at, they spread rumors I was jealous!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;So I never thought her actions were excessive,&#34; he continued with cold precision. &#34;I only thought, if what happened to her had happened to me...my retaliation would have been far more merciless.&#34;</p>
+                        
+                        <p>&#34;She has been far too kind,&#34; he concluded.</p>
+                        
+                        <p>Then Howard extended his hand to me-a rare public gesture of intimacy.When everyone else criticized my motherhood, only he fully understood and supported me. Warmth spread through my chest as I took his hand,drawing strength from his steadiness as he led me away. At Howard Technologies,Catherine Morgan was leaning against the wall,looking bored. Her expression brightened when she spotted us. &#34;You&#39;re late,&#34; she complained, sounding like a stood-up date,&#34;What happened?&#34; &#34;We ran into some trouble,&#34; I explained simply. Catherine immediately linked arms with me. &#34;What&#39;s there to be sorry about?&#34; Her rapid mood shifts always made me smile.</p>
+                        
+                        <p>After checking that no one was watching, she pulled me into my office and shut the door. &#34;I&#39;ve successfully infiltrated the gaming department! I know all the company secrets!&#34;</p>
+                        
+                        <p>&#34;You&#39;re something else, Catherine.&#34; I welcomed this distraction from the morning&#39;s heaviness.</p>
+                        
+                        <p>She shared office gossip efficiently: a secret office romance, an upcoming project delay, embarrassing party incidents. Then she switched topics abruptly.</p>
+                        
+                        <p>&#34;Remember that guy who found a new girlfriend right after I rejected him?It&#39;s ridiculous! These rich kids have nothing better to do but flaunttheir relationship in front of me. They deliberately stand where I can see them being affectionate at gatherings. When I stopped attending events they&#39;d be at, they spread rumors I was jealous!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1002,21 +1058,25 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>She took a deep breath. &#34;So starting today, I&#39;m focusing on work to prove my worth!&#34;</p>
-                    
-                    <p>&#34;Then why are you chatting with Annie during work hours?&#34; Howard&#39;s voice came unexpectedly from the doorway. &#34;Is this your idea of working hard?&#34;</p>
-                    
-                    <p>I turned to see him leaning against the doorframe, his eyes containing a hint of amusement despite his cool tone. Catherine straightened immediately. &#34;Mr. Thompson! We were discussing the new children&#39;s book concept.&#34; &#34;And how does office gossip factor into children&#39;s literature?&#34; Howard raised an eyebrow. &#34;Actually,&#34; I interjected, &#34;we were discussing character dynamics. Office relationships make good models for children&#39;s stories... if you simplify the emotions.&#34;</p>
-                    
-                    <p>Howard&#39;s eyes met mine with subtle acknowledgment. &#34;Perhaps Ms.Morgan should observe more and talk less. Wouldn&#39;t you agree?&#34;</p>
-                    
-                    <p>After Catherine&#39;s hasty exit, Howard remained in the doorway.&#34;The concept looks promising,&#34; he said, nodding toward my sketches. &#34;The board has high expectations.&#34;</p>
-                    
-                    <p>He hesitated uncharacteristically. &#34;About this morning...&#34;</p>
-                    
-                    <p>&#34;Thank you,&#34; I said simply. &#34;For understanding.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>She took a deep breath. &#34;So starting today, I&#39;m focusing on work to prove my worth!&#34;</p>
+                        
+                        <p>&#34;Then why are you chatting with Annie during work hours?&#34; Howard&#39;s voice came unexpectedly from the doorway. &#34;Is this your idea of working hard?&#34;</p>
+                        
+                        <p>I turned to see him leaning against the doorframe, his eyes containing a hint of amusement despite his cool tone. Catherine straightened immediately. &#34;Mr. Thompson! We were discussing the new children&#39;s book concept.&#34; &#34;And how does office gossip factor into children&#39;s literature?&#34; Howard raised an eyebrow. &#34;Actually,&#34; I interjected, &#34;we were discussing character dynamics. Office relationships make good models for children&#39;s stories... if you simplify the emotions.&#34;</p>
+                        
+                        <p>Howard&#39;s eyes met mine with subtle acknowledgment. &#34;Perhaps Ms.Morgan should observe more and talk less. Wouldn&#39;t you agree?&#34;</p>
+                        
+                        <p>After Catherine&#39;s hasty exit, Howard remained in the doorway.&#34;The concept looks promising,&#34; he said, nodding toward my sketches. &#34;The board has high expectations.&#34;</p>
+                        
+                        <p>He hesitated uncharacteristically. &#34;About this morning...&#34;</p>
+                        
+                        <p>&#34;Thank you,&#34; I said simply. &#34;For understanding.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1031,19 +1091,23 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>He nodded, accepting my desire to end the topic. &#34;The publishing division needs your input on the cover design.&#34;</p>
-                    
-                    <p>As he turned to leave, I found myself speaking again. &#34;Howard?&#34;</p>
-                    
-                    <p>He paused.</p>
-                    
-                    <p>&#34;The way you described what happened... it helped. Sometimes I wonder if I&#39;m remembering things correctly, if I&#39;m the villain.&#34;</p>
-                    
-                    <p>&#34;You&#39;re not,&#34; he said with characteristic directness. &#34;You&#39;re simply human-reacting to extraordinary pain reasonably.&#34;</p>
-                    
-                    <p>His words felt like permission to exist without constant self-doubt. As Howard left, I noticed my grip on the pencil had relaxed. Like my illustrations taking shape, I too was finding my form in this new life.The unopened letter in my bedroom would have to wait. Today belonged to the present, not the past.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>He nodded, accepting my desire to end the topic. &#34;The publishing division needs your input on the cover design.&#34;</p>
+                        
+                        <p>As he turned to leave, I found myself speaking again. &#34;Howard?&#34;</p>
+                        
+                        <p>He paused.</p>
+                        
+                        <p>&#34;The way you described what happened... it helped. Sometimes I wonder if I&#39;m remembering things correctly, if I&#39;m the villain.&#34;</p>
+                        
+                        <p>&#34;You&#39;re not,&#34; he said with characteristic directness. &#34;You&#39;re simply human-reacting to extraordinary pain reasonably.&#34;</p>
+                        
+                        <p>His words felt like permission to exist without constant self-doubt. As Howard left, I noticed my grip on the pencil had relaxed. Like my illustrations taking shape, I too was finding my form in this new life.The unopened letter in my bedroom would have to wait. Today belonged to the present, not the past.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2359,6 +2423,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2485,7 +2629,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2527,32 +2670,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2563,21 +2688,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2610,6 +2725,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2630,20 +2751,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

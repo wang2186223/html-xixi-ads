@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.080201">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.080201">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.265033">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.265033">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.080201",
-        "dateModified": "2026-07-19T02:47:19.080201",
+        "datePublished": "2026-07-19T13:03:14.265033",
+        "dateModified": "2026-07-19T13:03:14.265033",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,29 +893,33 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Blake&#39;s POV**</p>
-                    
-                    <p>Charles and I stood in the hallway outside Grandfather&#39;s room.His face twisted with concern as he looked at me.</p>
-                    
-                    <p>&#34;Sir, this...&#34; he started, clearly troubled by what we&#39;d just witnessed.</p>
-                    
-                    <p>I sighed. &#34;I should&#39;ve seen this.&#34;</p>
-                    
-                    <p>I hadn&#39;t anticipated this. Like Audrey. I&#39;d only thought about letting the old man see who he missed most before passing. I&#39;d forgotten he&#39;d been failing to recognize people for months now. In his eyes, Rachel was Audrey.and Audrey was just a stranger.</p>
-                    
-                    <p>&#34;Go comfort her a bit,&#34; I said, turning my wheelchair. &#34;With Grandfather&#39;s condition... he probably won&#39;t remember her anytime soon.&#34;</p>
-                    
-                    <p>Just as Charles reached for the door, a loud bang followed by angry shouting came from inside. Medical alarms immediately started blaring through the hallway.</p>
-                    
-                    <p>Charles rushed in. I quickly followed, maneuvering my wheelchair through the doorway.</p>
-                    
-                    <p>The room was in chaos. Grandfather sat upright in bed, throwing whatever he could reach at Audrey. She stood with tears running down her face,dodging objects while trying to explain.</p>
-                    
-                    <p>&#34;You&#39;re not Audrey! Why do you claim you&#39;re Audrey?&#34; Grandfather shouted.</p>
-                    
-                    <p>&#34;When you first came in crying and hugging me. I felt sorry for youl I</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Blake&#39;s POV**</p>
+                        
+                        <p>Charles and I stood in the hallway outside Grandfather&#39;s room.His face twisted with concern as he looked at me.</p>
+                        
+                        <p>&#34;Sir, this...&#34; he started, clearly troubled by what we&#39;d just witnessed.</p>
+                        
+                        <p>I sighed. &#34;I should&#39;ve seen this.&#34;</p>
+                        
+                        <p>I hadn&#39;t anticipated this. Like Audrey. I&#39;d only thought about letting the old man see who he missed most before passing. I&#39;d forgotten he&#39;d been failing to recognize people for months now. In his eyes, Rachel was Audrey.and Audrey was just a stranger.</p>
+                        
+                        <p>&#34;Go comfort her a bit,&#34; I said, turning my wheelchair. &#34;With Grandfather&#39;s condition... he probably won&#39;t remember her anytime soon.&#34;</p>
+                        
+                        <p>Just as Charles reached for the door, a loud bang followed by angry shouting came from inside. Medical alarms immediately started blaring through the hallway.</p>
+                        
+                        <p>Charles rushed in. I quickly followed, maneuvering my wheelchair through the doorway.</p>
+                        
+                        <p>The room was in chaos. Grandfather sat upright in bed, throwing whatever he could reach at Audrey. She stood with tears running down her face,dodging objects while trying to explain.</p>
+                        
+                        <p>&#34;You&#39;re not Audrey! Why do you claim you&#39;re Audrey?&#34; Grandfather shouted.</p>
+                        
+                        <p>&#34;When you first came in crying and hugging me. I felt sorry for youl I</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -894,29 +934,33 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>thought you were just missing your own grandfather!&#34; His face grew redder with each word. &#34;But you kept pretending to be my Audrey! I told you many times I wouldn&#39;t be fooled!&#34;</p>
-                    
-                    <p>He grabbed another item. &#34;I may be dying, but I&#39;m not stupid!&#34;</p>
-                    
-                    <p>&#34;Four years ago, if Laurel Rose hadn&#39;t pretended to be Audrey, Blake and Audrey wouldn&#39;t have missed so many years together!&#34; His voice cracked with emotion.</p>
-                    
-                    <p>&#34;Now you dare to come here pretending to be Audrey too! Do you all think Parkers are so easily deceived?&#34;</p>
-                    
-                    <p>&#34;William, why won&#39;t you believe me...&#34; Audrey sobbed.</p>
-                    
-                    <p>&#34;YouI&#39;re still talking!&#34; Grandfather grabbed his thermos bottle, aiming at her head.</p>
-                    
-                    <p>&#34;Sir!&#34; Charles called out.</p>
-                    
-                    <p>Audrey turned toward the door, not seeing the danger. I pushed myself from my wheelchair,lunging forward.</p>
-                    
-                    <p>The thermos hit my temple. Hot water scalded my face, and blood trickled down my head.</p>
-                    
-                    <p>**Audrey&#39;s POV*</p>
-                    
-                    <p>I turned at the crash. Blake had collapsed beside me, blood streaming from his temple, his face burned red.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>thought you were just missing your own grandfather!&#34; His face grew redder with each word. &#34;But you kept pretending to be my Audrey! I told you many times I wouldn&#39;t be fooled!&#34;</p>
+                        
+                        <p>He grabbed another item. &#34;I may be dying, but I&#39;m not stupid!&#34;</p>
+                        
+                        <p>&#34;Four years ago, if Laurel Rose hadn&#39;t pretended to be Audrey, Blake and Audrey wouldn&#39;t have missed so many years together!&#34; His voice cracked with emotion.</p>
+                        
+                        <p>&#34;Now you dare to come here pretending to be Audrey too! Do you all think Parkers are so easily deceived?&#34;</p>
+                        
+                        <p>&#34;William, why won&#39;t you believe me...&#34; Audrey sobbed.</p>
+                        
+                        <p>&#34;YouI&#39;re still talking!&#34; Grandfather grabbed his thermos bottle, aiming at her head.</p>
+                        
+                        <p>&#34;Sir!&#34; Charles called out.</p>
+                        
+                        <p>Audrey turned toward the door, not seeing the danger. I pushed myself from my wheelchair,lunging forward.</p>
+                        
+                        <p>The thermos hit my temple. Hot water scalded my face, and blood trickled down my head.</p>
+                        
+                        <p>**Audrey&#39;s POV*</p>
+                        
+                        <p>I turned at the crash. Blake had collapsed beside me, blood streaming from his temple, his face burned red.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -931,29 +975,33 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;Blake!&#34; I instinctively wanted to reach for him.</p>
-                    
-                    <p>Charles rushed to help Blake back into his wheelchair, checking his wound.</p>
-                    
-                    <p>William shakily climbed out of bed, pointing at me. &#34;It&#39;s all your fault!Blake got hurt protecting you! You&#39;re just like Laurel Rose, trying to destroy Blake and Audrey&#39;s relationship!&#34;</p>
-                    
-                    <p>He tried to lunge at me but his legs gave out. He nearly fell.</p>
-                    
-                    <p>&#34;William...&#34; I stepped forward to help.</p>
-                    
-                    <p>He pushed my hands away. &#34;Get away!&#34;</p>
-                    
-                    <p>I stumbled back. As I regained my balance, I saw him starting to fall.</p>
-                    
-                    <p>&#34;William - !&#34;I called out.</p>
-                    
-                    <p>&#34;William, are you okay?&#34; Rachel appeared in the doorway, quickly supporting him before I could.</p>
-                    
-                    <p>William&#39;s face instantly relaxed.&#34;I&#39;m fine! Audrey, you&#39;re here just in time!&#34;</p>
-                    
-                    <p>He pointed at me hatefully. &#34;This woman is trying to be like Laurel Rose,pretending to be you! I might be old, but I&#39;m not confused. I saw through her right away!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;Blake!&#34; I instinctively wanted to reach for him.</p>
+                        
+                        <p>Charles rushed to help Blake back into his wheelchair, checking his wound.</p>
+                        
+                        <p>William shakily climbed out of bed, pointing at me. &#34;It&#39;s all your fault!Blake got hurt protecting you! You&#39;re just like Laurel Rose, trying to destroy Blake and Audrey&#39;s relationship!&#34;</p>
+                        
+                        <p>He tried to lunge at me but his legs gave out. He nearly fell.</p>
+                        
+                        <p>&#34;William...&#34; I stepped forward to help.</p>
+                        
+                        <p>He pushed my hands away. &#34;Get away!&#34;</p>
+                        
+                        <p>I stumbled back. As I regained my balance, I saw him starting to fall.</p>
+                        
+                        <p>&#34;William - !&#34;I called out.</p>
+                        
+                        <p>&#34;William, are you okay?&#34; Rachel appeared in the doorway, quickly supporting him before I could.</p>
+                        
+                        <p>William&#39;s face instantly relaxed.&#34;I&#39;m fine! Audrey, you&#39;re here just in time!&#34;</p>
+                        
+                        <p>He pointed at me hatefully. &#34;This woman is trying to be like Laurel Rose,pretending to be you! I might be old, but I&#39;m not confused. I saw through her right away!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -968,29 +1016,33 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Rachel gave me a cold look. &#34;Did this lady tell you she was me?&#34;</p>
-                    
-                    <p>William nodded. &#34;Yes. You and Blake should have remarried ages ago.Once you do, these women with designs on Blake will finally back off!They think because Laurel succeeded, they can too. But no matter how good the disguise, a fake is still fake!&#34;</p>
-                    
-                    <p>Rachel looked uncomfortable. She quickly changed the subject.</p>
-                    
-                    <p>&#34;Grandfather, you shouldn&#39;t get so worked up,&#34; she said gently.&#34;Charles told me you caught a cold. Youir health is really important right now.&#34;</p>
-                    
-                    <p>She guided him back to bed. &#34;Let me help you lie down. If the doctor finds you up, they&#39;ll scold you.&#34;</p>
-                    
-                    <p>William smiled at her. &#34;It&#39;s always Audrey thinking of everything! Just seeing you improves my mood! No other woman compares!&#34;</p>
-                    
-                    <p>He glared at Blake. &#34;Unlike some people who can&#39;t tell when they&#39;re being deceived! That woman is obviously pretending to be Audrey to get close to you both!&#34;</p>
-                    
-                    <p>&#34;You couldn&#39;t even tell the difference, taking a hit for that worthless woman. If I&#39;d known you&#39;d be so stupid, I would&#39;ve thrown a knife instead of a thermos! With judgment that bad, you might as well be dead!&#34;</p>
-                    
-                    <p>The room fell silent. I bit my lip, my hands clenched into fists.</p>
-                    
-                    <p>&#34;Audrey, I helped get rid of a rival for you, didn&#39;t I?&#34; William boasted to Rachel. I&#39;ll fight off this woman every time she shows up! I won&#39;t let history repeat itself!&#34;</p>
-                    
-                    <p>&#34;Blake might be confused, but I&#39;m clear-headed. I&#39;ll make sure your wedding goes smoothly in three days!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Rachel gave me a cold look. &#34;Did this lady tell you she was me?&#34;</p>
+                        
+                        <p>William nodded. &#34;Yes. You and Blake should have remarried ages ago.Once you do, these women with designs on Blake will finally back off!They think because Laurel succeeded, they can too. But no matter how good the disguise, a fake is still fake!&#34;</p>
+                        
+                        <p>Rachel looked uncomfortable. She quickly changed the subject.</p>
+                        
+                        <p>&#34;Grandfather, you shouldn&#39;t get so worked up,&#34; she said gently.&#34;Charles told me you caught a cold. Youir health is really important right now.&#34;</p>
+                        
+                        <p>She guided him back to bed. &#34;Let me help you lie down. If the doctor finds you up, they&#39;ll scold you.&#34;</p>
+                        
+                        <p>William smiled at her. &#34;It&#39;s always Audrey thinking of everything! Just seeing you improves my mood! No other woman compares!&#34;</p>
+                        
+                        <p>He glared at Blake. &#34;Unlike some people who can&#39;t tell when they&#39;re being deceived! That woman is obviously pretending to be Audrey to get close to you both!&#34;</p>
+                        
+                        <p>&#34;You couldn&#39;t even tell the difference, taking a hit for that worthless woman. If I&#39;d known you&#39;d be so stupid, I would&#39;ve thrown a knife instead of a thermos! With judgment that bad, you might as well be dead!&#34;</p>
+                        
+                        <p>The room fell silent. I bit my lip, my hands clenched into fists.</p>
+                        
+                        <p>&#34;Audrey, I helped get rid of a rival for you, didn&#39;t I?&#34; William boasted to Rachel. I&#39;ll fight off this woman every time she shows up! I won&#39;t let history repeat itself!&#34;</p>
+                        
+                        <p>&#34;Blake might be confused, but I&#39;m clear-headed. I&#39;ll make sure your wedding goes smoothly in three days!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1005,29 +1057,33 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Rachel&#39;s eyes lit up. &#34;Blake isn&#39;t confused. He has his reasons.&#34;</p>
-                    
-                    <p>&#34;What reasons? He&#39;s obviously under her spell!&#34; William scowled. He turned to Charles. &#34;What are you waiting for? Get that woman out of here!&#34;</p>
-                    
-                    <p>Charles glanced uncomfortably between me and Blake. &#34;This... I...&#34;</p>
-                    
-                    <p>Blake closed his eyes briefly. &#34;Mrs. Knox, please leave for now.&#34;</p>
-                    
-                    <p>I couldn&#39;t move. I&#39;d only been with William for ten minutes! After a fifteen-hour flight from Sydney, all for this moment! If I left now, I might never</p>
-                    
-                    <p>see him allve again. This could be our final goodbye.</p>
-                    
-                    <p>William grew more agitated at my hesitation. &#34;Get outl Get out now!&#34;</p>
-                    
-                    <p>Rachel frowned at me.&#34;Mrs. Knox,are you staying because you think my grandfather isn&#39;t really that sick? He&#39;s elderly and fragile. If he wants you gone, why aren&#39;t you leaving?&#34;</p>
-                    
-                    <p>&#34;Or maybe grandfather&#39;s right - you&#39;re using your face to bewitch him? Or maybe Blake?&#34;</p>
-                    
-                    <p>I looked up, stunned by the cruelty from someone who used to be my closest friend.</p>
-                    
-                    <p>Our eyes met.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Rachel&#39;s eyes lit up. &#34;Blake isn&#39;t confused. He has his reasons.&#34;</p>
+                        
+                        <p>&#34;What reasons? He&#39;s obviously under her spell!&#34; William scowled. He turned to Charles. &#34;What are you waiting for? Get that woman out of here!&#34;</p>
+                        
+                        <p>Charles glanced uncomfortably between me and Blake. &#34;This... I...&#34;</p>
+                        
+                        <p>Blake closed his eyes briefly. &#34;Mrs. Knox, please leave for now.&#34;</p>
+                        
+                        <p>I couldn&#39;t move. I&#39;d only been with William for ten minutes! After a fifteen-hour flight from Sydney, all for this moment! If I left now, I might never</p>
+                        
+                        <p>see him allve again. This could be our final goodbye.</p>
+                        
+                        <p>William grew more agitated at my hesitation. &#34;Get outl Get out now!&#34;</p>
+                        
+                        <p>Rachel frowned at me.&#34;Mrs. Knox,are you staying because you think my grandfather isn&#39;t really that sick? He&#39;s elderly and fragile. If he wants you gone, why aren&#39;t you leaving?&#34;</p>
+                        
+                        <p>&#34;Or maybe grandfather&#39;s right - you&#39;re using your face to bewitch him? Or maybe Blake?&#34;</p>
+                        
+                        <p>I looked up, stunned by the cruelty from someone who used to be my closest friend.</p>
+                        
+                        <p>Our eyes met.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1042,29 +1098,33 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>I froze. The look on her face - pure anger and disgust - caught me off guard.</p>
-                    
-                    <p>She took a deep breath.′′Wemet on Long Island. I thought you were decent. A woman with a family and goals. Not someone who&#39;d use that face to cause problems.&#34;</p>
-                    
-                    <p>&#34;Guess I was wrong.&#34;</p>
-                    
-                    <p>&#34;You show up alone right before my wedding. First thing you do is fight with the Parkers, then rush to see William and claim you&#39;re Audrey. It&#39;s pretty clear what you&#39;re after.&#34;</p>
-                    
-                    <p>&#34;You&#39;re just like all those desperate women who&#39;d do anything for the Parker name.&#34;</p>
-                    
-                    <p>I couldn&#39;t believe this was Rachel talking to me like this.</p>
-                    
-                    <p>Five years ngo, Rachel had been my first real friend. Before Astrld. Before</p>
-                    
-                    <p>anyone.</p>
-                    
-                    <p>She&#39;d opened doors for me - Introduced me to racing, dancing, taught me how to move in high society. She made me believe I could be more than just a poor girl from a fishing village.</p>
-                    
-                    <p>Now she stood here, stealing my identity, manipulating William,and treating me like garbage.</p>
-                    
-                    <p>&#34;You make me sick,&#34; she added.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>I froze. The look on her face - pure anger and disgust - caught me off guard.</p>
+                        
+                        <p>She took a deep breath.′′Wemet on Long Island. I thought you were decent. A woman with a family and goals. Not someone who&#39;d use that face to cause problems.&#34;</p>
+                        
+                        <p>&#34;Guess I was wrong.&#34;</p>
+                        
+                        <p>&#34;You show up alone right before my wedding. First thing you do is fight with the Parkers, then rush to see William and claim you&#39;re Audrey. It&#39;s pretty clear what you&#39;re after.&#34;</p>
+                        
+                        <p>&#34;You&#39;re just like all those desperate women who&#39;d do anything for the Parker name.&#34;</p>
+                        
+                        <p>I couldn&#39;t believe this was Rachel talking to me like this.</p>
+                        
+                        <p>Five years ngo, Rachel had been my first real friend. Before Astrld. Before</p>
+                        
+                        <p>anyone.</p>
+                        
+                        <p>She&#39;d opened doors for me - Introduced me to racing, dancing, taught me how to move in high society. She made me believe I could be more than just a poor girl from a fishing village.</p>
+                        
+                        <p>Now she stood here, stealing my identity, manipulating William,and treating me like garbage.</p>
+                        
+                        <p>&#34;You make me sick,&#34; she added.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1079,21 +1139,25 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Rachel!&#34; Blake cut in. &#34;Stop it. Mrs. Knox isn&#39;t like that. I asked her to pretend to be Audrey for my grandfather.I-&#34;</p>
-                    
-                    <p>&#34;Why?!&#34; Rachel&#39;s voice cracked. &#34;You know she&#39;s not Audrey! Why bring her to him?&#34;</p>
-                    
-                    <p>&#34;Regretting our arrangement? Testing if she could replace me? If William accepted her as Audrey, would you dump me? Forget our deal and the Rose partnership?&#34;</p>
-                    
-                    <p>&#34;Blake!&#34; She shoved William&#39;s hand away and wheeled on him.&#34;I&#39;ve busted my ass for ten months! Don&#39;t I deserve something? When you were drinking yourself stupid over her, I dragged you back!&#34;</p>
-                    
-                    <p>&#34;When William nearly died hearing about Audrey, I pretended to be her to save him! He&#39;s dying. Blake. All I&#39;m asking is for you to keep your word.Marry me. Give him his last wish.&#34;</p>
-                    
-                    <p>&#34;Instead you bring in this lookalike...&#34;</p>
-                    
-                    <p>She stared at him, a tear sliding down her cheek. Her bitter laugh felt like acid. &#34;What am I to you?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Rachel!&#34; Blake cut in. &#34;Stop it. Mrs. Knox isn&#39;t like that. I asked her to pretend to be Audrey for my grandfather.I-&#34;</p>
+                        
+                        <p>&#34;Why?!&#34; Rachel&#39;s voice cracked. &#34;You know she&#39;s not Audrey! Why bring her to him?&#34;</p>
+                        
+                        <p>&#34;Regretting our arrangement? Testing if she could replace me? If William accepted her as Audrey, would you dump me? Forget our deal and the Rose partnership?&#34;</p>
+                        
+                        <p>&#34;Blake!&#34; She shoved William&#39;s hand away and wheeled on him.&#34;I&#39;ve busted my ass for ten months! Don&#39;t I deserve something? When you were drinking yourself stupid over her, I dragged you back!&#34;</p>
+                        
+                        <p>&#34;When William nearly died hearing about Audrey, I pretended to be her to save him! He&#39;s dying. Blake. All I&#39;m asking is for you to keep your word.Marry me. Give him his last wish.&#34;</p>
+                        
+                        <p>&#34;Instead you bring in this lookalike...&#34;</p>
+                        
+                        <p>She stared at him, a tear sliding down her cheek. Her bitter laugh felt like acid. &#34;What am I to you?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2409,6 +2473,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2535,7 +2679,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2577,32 +2720,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2613,21 +2738,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2660,6 +2775,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2680,20 +2801,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

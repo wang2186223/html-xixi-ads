@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.121963">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.121963">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.295457">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.295457">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.121963",
-        "dateModified": "2026-07-19T02:47:19.121963",
+        "datePublished": "2026-07-19T13:03:14.295457",
+        "dateModified": "2026-07-19T13:03:14.295457",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,25 +893,29 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>William smiled weakly beneath his oxygen mask. He nodded,grateful I understood his worries. His fingers squeezed mine, conveying both relief and a silent plea not to grieve.</p>
-                    
-                    <p>Tears slid down my cheeks. I wanted to tell him I wished he could stay,that I didn&#39;t want him to leave so soon. But death comes for us all. I&#39;d stared it in the face myself, felt illness crushing me day by day.</p>
-                    
-                    <p>*I couldn&#39;t even save myself back then. How could I possibly save an eighty-year-old man?*</p>
-                    
-                    <p>&#34;William,&#34; I whispered, my voice breaking.′′there anything else I can do for you?&#34;</p>
-                    
-                    <p>He didn&#39;t answer. He just looked at me, eyes filled with reluctance to go.After a long silence, his face softened into a smile as he shook his head.Gradually,his eyes closed. His hand slipped from mine, hanging limply.</p>
-                    
-                    <p>The medical equipment shrieked. Charles burst through the door, followed by doctors and nurses. I was pushed aside as they surrounded William,performing CPR and readying the defibrillator.</p>
-                    
-                    <p>&#34;Clear!&#34; A doctor pressed the paddles to William&#39;s chest.</p>
-                    
-                    <p>His body jolted, but the monitor continued its unbroken tone.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>William smiled weakly beneath his oxygen mask. He nodded,grateful I understood his worries. His fingers squeezed mine, conveying both relief and a silent plea not to grieve.</p>
+                        
+                        <p>Tears slid down my cheeks. I wanted to tell him I wished he could stay,that I didn&#39;t want him to leave so soon. But death comes for us all. I&#39;d stared it in the face myself, felt illness crushing me day by day.</p>
+                        
+                        <p>*I couldn&#39;t even save myself back then. How could I possibly save an eighty-year-old man?*</p>
+                        
+                        <p>&#34;William,&#34; I whispered, my voice breaking.′′there anything else I can do for you?&#34;</p>
+                        
+                        <p>He didn&#39;t answer. He just looked at me, eyes filled with reluctance to go.After a long silence, his face softened into a smile as he shook his head.Gradually,his eyes closed. His hand slipped from mine, hanging limply.</p>
+                        
+                        <p>The medical equipment shrieked. Charles burst through the door, followed by doctors and nurses. I was pushed aside as they surrounded William,performing CPR and readying the defibrillator.</p>
+                        
+                        <p>&#34;Clear!&#34; A doctor pressed the paddles to William&#39;s chest.</p>
+                        
+                        <p>His body jolted, but the monitor continued its unbroken tone.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -890,25 +930,29 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>I stood in the corner. watching. Strangely, I felt calm. Not a single tear fell.I&#39;d always thought I&#39;d fall apart when William passed, but I felt oddly detached.</p>
-                    
-                    <p>My fingers clutched the notepad with his final words. I watched with an unusual distance, as if we shared no connection at all.</p>
-                    
-                    <p>Finally,the doctor stepped back, sweat on his forehead. &#34;Time of death:3:42 PM.&#34;</p>
-                    
-                    <p>Charles collapsed to his knees, clutching William&#39;s arm as he sobbed.Through the door,I.heard Elizabeth and Rebecca arguing in the hallway.</p>
-                    
-                    <p>&#34;You okay?&#34; The doctor approached me with concern.</p>
-                    
-                    <p>I sniffed quietly, tucking the notepad away. &#34;I&#39;m fine.&#34;</p>
-                    
-                    <p>He squeezed my shoulder. &#34;You should head out.&#34;</p>
-                    
-                    <p>I followed him into the hallway, where Rebecca and Elizabeth were bickering, each blaming the other for not being at William&#39;s bedside.</p>
-                    
-                    <p>&#34;Doctor!&#34; Elizabeth rushed over.′′Ishe really gone? What happened?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>I stood in the corner. watching. Strangely, I felt calm. Not a single tear fell.I&#39;d always thought I&#39;d fall apart when William passed, but I felt oddly detached.</p>
+                        
+                        <p>My fingers clutched the notepad with his final words. I watched with an unusual distance, as if we shared no connection at all.</p>
+                        
+                        <p>Finally,the doctor stepped back, sweat on his forehead. &#34;Time of death:3:42 PM.&#34;</p>
+                        
+                        <p>Charles collapsed to his knees, clutching William&#39;s arm as he sobbed.Through the door,I.heard Elizabeth and Rebecca arguing in the hallway.</p>
+                        
+                        <p>&#34;You okay?&#34; The doctor approached me with concern.</p>
+                        
+                        <p>I sniffed quietly, tucking the notepad away. &#34;I&#39;m fine.&#34;</p>
+                        
+                        <p>He squeezed my shoulder. &#34;You should head out.&#34;</p>
+                        
+                        <p>I followed him into the hallway, where Rebecca and Elizabeth were bickering, each blaming the other for not being at William&#39;s bedside.</p>
+                        
+                        <p>&#34;Doctor!&#34; Elizabeth rushed over.′′Ishe really gone? What happened?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -923,25 +967,29 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Rebecca pushed past her. &#34;Did he say anything before he died? Did he change his will?&#34;</p>
-                    
-                    <p>The medical team just shook their heads and kept walking. Frustrated by being ignored, the two women finally noticed me.</p>
-                    
-                    <p>Rebecca&#39;s face twvisted with anger. &#34;What are YOU doing here?&#34;</p>
-                    
-                    <p>Her accusation drew everyone&#39;s attention. All eyes turned to me.</p>
-                    
-                    <p>Thalia grabbed my arm roughly. &#34;How&#39;d you get into my grandfather&#39;s room? Did you do something to him? Talk!&#34;</p>
-                    
-                    <p>Olivia seized my other arm. &#34;Explain yourself! He was getting better!Doctors sald he wwas out of danger. Then you show up and suddenly he&#39;s</p>
-                    
-                    <p>dead? What did you do to him?!&#34;</p>
-                    
-                    <p>I looked coldly at them, a mocking smile on my lips. &#34;I asked Charles when I got here. Since William collapsed at the wedding, none of you bothered to visit him even once. Even outsiders like Felix and Henry came to say goodbye. But you, his actual family? Nowhere to be seen.&#34;</p>
-                    
-                    <p>I paused. &#34;If I wasn&#39;t looking after Blake, I&#39;d have come sooner. Even with that delay, I still beat all of you here.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Rebecca pushed past her. &#34;Did he say anything before he died? Did he change his will?&#34;</p>
+                        
+                        <p>The medical team just shook their heads and kept walking. Frustrated by being ignored, the two women finally noticed me.</p>
+                        
+                        <p>Rebecca&#39;s face twvisted with anger. &#34;What are YOU doing here?&#34;</p>
+                        
+                        <p>Her accusation drew everyone&#39;s attention. All eyes turned to me.</p>
+                        
+                        <p>Thalia grabbed my arm roughly. &#34;How&#39;d you get into my grandfather&#39;s room? Did you do something to him? Talk!&#34;</p>
+                        
+                        <p>Olivia seized my other arm. &#34;Explain yourself! He was getting better!Doctors sald he wwas out of danger. Then you show up and suddenly he&#39;s</p>
+                        
+                        <p>dead? What did you do to him?!&#34;</p>
+                        
+                        <p>I looked coldly at them, a mocking smile on my lips. &#34;I asked Charles when I got here. Since William collapsed at the wedding, none of you bothered to visit him even once. Even outsiders like Felix and Henry came to say goodbye. But you, his actual family? Nowhere to be seen.&#34;</p>
+                        
+                        <p>I paused. &#34;If I wasn&#39;t looking after Blake, I&#39;d have come sooner. Even with that delay, I still beat all of you here.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -956,25 +1004,29 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Instead of shame, my words just made them angrier.</p>
-                    
-                    <p>Elizabeth stepped forward, face red. &#34;Whether we vrisit or not is none of your business! You think you&#39;re special because he wanted you for his charity thing? Know your place!&#34;</p>
-                    
-                    <p>She looked me up and down. &#34;Don&#39;t think that face identical to Audrey&#39;s gives you any right to stand here acting high and mighty. Who do you think you are?&#34;</p>
-                    
-                    <p>Rebecca nodded. &#34;Exactly! Even your dead sister wouldn&#39;t talk to us like this. What makes you think you can?&#34;</p>
-                    
-                    <p>Something snapped inside me. I wrenched free from Thalia and Olivia&#39;s grip and lunged at Rebecca, slapping her hard across the face.</p>
-                    
-                    <p>The hallway went silent. A bright red handprint appeared on Rebecca&#39;s cheek as she stood frozen, her hand slowly rising to her face.</p>
-                    
-                    <p>&#34;You,.. you hit me?&#34; she sputtered.</p>
-                    
-                    <p>I laughed. &#34;Not the first time. Why so surprised?&#34;</p>
-                    
-                    <p>I flexed my wrist.&#34;With William and Blake out of commission, I guess I&#39;ll</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Instead of shame, my words just made them angrier.</p>
+                        
+                        <p>Elizabeth stepped forward, face red. &#34;Whether we vrisit or not is none of your business! You think you&#39;re special because he wanted you for his charity thing? Know your place!&#34;</p>
+                        
+                        <p>She looked me up and down. &#34;Don&#39;t think that face identical to Audrey&#39;s gives you any right to stand here acting high and mighty. Who do you think you are?&#34;</p>
+                        
+                        <p>Rebecca nodded. &#34;Exactly! Even your dead sister wouldn&#39;t talk to us like this. What makes you think you can?&#34;</p>
+                        
+                        <p>Something snapped inside me. I wrenched free from Thalia and Olivia&#39;s grip and lunged at Rebecca, slapping her hard across the face.</p>
+                        
+                        <p>The hallway went silent. A bright red handprint appeared on Rebecca&#39;s cheek as she stood frozen, her hand slowly rising to her face.</p>
+                        
+                        <p>&#34;You,.. you hit me?&#34; she sputtered.</p>
+                        
+                        <p>I laughed. &#34;Not the first time. Why so surprised?&#34;</p>
+                        
+                        <p>I flexed my wrist.&#34;With William and Blake out of commission, I guess I&#39;ll</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -989,25 +1041,29 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>have to put you in your place. I&#39;ve got plenty of time.&#34;</p>
-                    
-                    <p>*This woman destroyed Leo and Leonora&#39;s relationship with her fake pregnancy. One killed herself, the other lived with guilt his whole life.She ruined Blake&#39;s life too. If he hadn&#39;t been raised by her, grown up under her toxic influence, everything might&#39;ve been different. And William&#39;s health failing... that&#39;s on her. She&#39;s the root of all this misery.*</p>
-                    
-                    <p>I delivered another slap that sent Rebecca sprawling to the floor. She couldn&#39;t even push herself up.</p>
-                    
-                    <p>&#34;Nobody hits me like this!&#34; she sputtered. &#34;I&#39;ll make sure you end up just like your sister!&#34;</p>
-                    
-                    <p>I raised an eyebrow. &#34;That so?&#34;</p>
-                    
-                    <p>I walked toward her slowly. &#34;So my sister Audrey was killed by you.&#34;</p>
-                    
-                    <p>Rebecca froze, meeting my dangerous gaze.&#34;You...&#34;</p>
-                    
-                    <p>I crouched down, grabbing her chin. &#34;You think bullying Audrey was some big achievement?&#34;</p>
-                    
-                    <p>I leaned closer, whispering in her ear: &#34;Here&#39;s something you don&#39;t know.Blake isn&#39;t your son, but your precious daughter? She&#39;s not Leo&#39;s either.And five years ago. Leo only boarded that ship to meet someone from Leonora&#39;s family.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>have to put you in your place. I&#39;ve got plenty of time.&#34;</p>
+                        
+                        <p>*This woman destroyed Leo and Leonora&#39;s relationship with her fake pregnancy. One killed herself, the other lived with guilt his whole life.She ruined Blake&#39;s life too. If he hadn&#39;t been raised by her, grown up under her toxic influence, everything might&#39;ve been different. And William&#39;s health failing... that&#39;s on her. She&#39;s the root of all this misery.*</p>
+                        
+                        <p>I delivered another slap that sent Rebecca sprawling to the floor. She couldn&#39;t even push herself up.</p>
+                        
+                        <p>&#34;Nobody hits me like this!&#34; she sputtered. &#34;I&#39;ll make sure you end up just like your sister!&#34;</p>
+                        
+                        <p>I raised an eyebrow. &#34;That so?&#34;</p>
+                        
+                        <p>I walked toward her slowly. &#34;So my sister Audrey was killed by you.&#34;</p>
+                        
+                        <p>Rebecca froze, meeting my dangerous gaze.&#34;You...&#34;</p>
+                        
+                        <p>I crouched down, grabbing her chin. &#34;You think bullying Audrey was some big achievement?&#34;</p>
+                        
+                        <p>I leaned closer, whispering in her ear: &#34;Here&#39;s something you don&#39;t know.Blake isn&#39;t your son, but your precious daughter? She&#39;s not Leo&#39;s either.And five years ago. Leo only boarded that ship to meet someone from Leonora&#39;s family.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1022,25 +1078,29 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Rebecca&#39;s eyes widened, her face going white. &#34;Impossible... how could...you&#39;re dead!&#34;</p>
-                    
-                    <p>I released her with a cold laugh. Rebecca remained on the floor, muttering.&#34;Impossible... how could it be...&#34;</p>
-                    
-                    <p>Meanwhile, Thalia had gotten up. Her massive body charged at me. &#34;I&#39;ll kill you!&#34;</p>
-                    
-                    <p>My lips curled into a cold smile. With William gone, the emotions churning inside me needed an outlet. Thalia had perfect timing.</p>
-                    
-                    <p>As she rushed toward me, I sidestepped and moved behind her. Though I could have struck anywhere, I chose to deliver a series of hard slaps across her face.</p>
-                    
-                    <p>Each one echoed through the hallway. For William, for Blake, and for my past self who had endured in silence too long.</p>
-                    
-                    <p>Thalia&#39;s face swelled quickly, the repeated blows making her unrecognizable.</p>
-                    
-                    <p>Elizabeth finally spoke up: &#34;Rebecca, aren&#39;t you going to - &#34;</p>
-                    
-                    <p>She stopped when she saw Rebecca still on the floor, eyes unfocused,muttering: &#34;Impossible... it can&#39;t be...&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Rebecca&#39;s eyes widened, her face going white. &#34;Impossible... how could...you&#39;re dead!&#34;</p>
+                        
+                        <p>I released her with a cold laugh. Rebecca remained on the floor, muttering.&#34;Impossible... how could it be...&#34;</p>
+                        
+                        <p>Meanwhile, Thalia had gotten up. Her massive body charged at me. &#34;I&#39;ll kill you!&#34;</p>
+                        
+                        <p>My lips curled into a cold smile. With William gone, the emotions churning inside me needed an outlet. Thalia had perfect timing.</p>
+                        
+                        <p>As she rushed toward me, I sidestepped and moved behind her. Though I could have struck anywhere, I chose to deliver a series of hard slaps across her face.</p>
+                        
+                        <p>Each one echoed through the hallway. For William, for Blake, and for my past self who had endured in silence too long.</p>
+                        
+                        <p>Thalia&#39;s face swelled quickly, the repeated blows making her unrecognizable.</p>
+                        
+                        <p>Elizabeth finally spoke up: &#34;Rebecca, aren&#39;t you going to - &#34;</p>
+                        
+                        <p>She stopped when she saw Rebecca still on the floor, eyes unfocused,muttering: &#34;Impossible... it can&#39;t be...&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1055,25 +1115,29 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Elizabeth, seeing no help coming, shouted, &#34;Call the police! And what are you all standing around for? Stop her! This place will belong to us soon. If you don&#39;t help now, you&#39;re all fired! That&#39;s the Parker heiress she&#39;s hitting!&#34;</p>
-                    
-                    <p>The security guards reluctantly moved in, calling the police while others restrained me. These tall men quickly overpowered me.</p>
-                    
-                    <p>&#34;Take her to jail!&#34; Elizabeth commanded.</p>
-                    
-                    <p>Thalia blocked the guards. &#34;Wait! That&#39;s too easy! Look what she did to my face - I want her to suffer the same before she goes to prison!&#34;</p>
-                    
-                    <p>She raised her hand to strike me. I struggled but couldn&#39;t break freo. I</p>
-                    
-                    <p>closed my eyes, bracing myself.</p>
-                    
-                    <p>But just as her hand was about to hit me, an urgent voice called from the elevator: &#34;Wait!&#34;</p>
-                    
-                    <p>The voice stopped Thalia&#39;s motion, her hand frozen in mid-air. The guards holding me paused too.</p>
-                    
-                    <p>I didn&#39;t need to turn around to recognize that voice. It was so familiar I could picture the anxious expression on her face without even looking.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Elizabeth, seeing no help coming, shouted, &#34;Call the police! And what are you all standing around for? Stop her! This place will belong to us soon. If you don&#39;t help now, you&#39;re all fired! That&#39;s the Parker heiress she&#39;s hitting!&#34;</p>
+                        
+                        <p>The security guards reluctantly moved in, calling the police while others restrained me. These tall men quickly overpowered me.</p>
+                        
+                        <p>&#34;Take her to jail!&#34; Elizabeth commanded.</p>
+                        
+                        <p>Thalia blocked the guards. &#34;Wait! That&#39;s too easy! Look what she did to my face - I want her to suffer the same before she goes to prison!&#34;</p>
+                        
+                        <p>She raised her hand to strike me. I struggled but couldn&#39;t break freo. I</p>
+                        
+                        <p>closed my eyes, bracing myself.</p>
+                        
+                        <p>But just as her hand was about to hit me, an urgent voice called from the elevator: &#34;Wait!&#34;</p>
+                        
+                        <p>The voice stopped Thalia&#39;s motion, her hand frozen in mid-air. The guards holding me paused too.</p>
+                        
+                        <p>I didn&#39;t need to turn around to recognize that voice. It was so familiar I could picture the anxious expression on her face without even looking.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2389,6 +2453,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2515,7 +2659,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2557,32 +2700,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2593,21 +2718,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2640,6 +2755,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2660,20 +2781,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

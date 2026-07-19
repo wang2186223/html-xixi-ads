@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.372174">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.372174">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.375106">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.375106">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.372174",
-        "dateModified": "2026-07-19T02:47:23.372174",
+        "datePublished": "2026-07-19T13:03:18.375106",
+        "dateModified": "2026-07-19T13:03:18.375106",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,21 +893,25 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Sarah&#39;s POV</p>
-                    
-                    <p>I stood in the underground parking garage of Howard Technologies,gently caressing my protruding belly, my eyes fixed on the sleek black luxury car slowly approaching. Caroline had just texted to inform me that Howard was heading out for a business lunch meeting. As an insider at Howard&#39;s company, Caroline could easily access his schedule-information crucial to our plan.</p>
-                    
-                    <p>My original strategy was to &#34;accidentally&#34; rush in front of Howard&#39;s car as it was leaving the garage, then pretend to be knocked down before the vehicle actually made contact. I would fall to the ground, screaming and clutching my stomach. This &#34;accident&#34; would force Howard to take me to the hospital. Afterward, I&#39;d seize the opportunity to accuse him of hitting a pregnant woman, threatening to expose the incident online if he didn&#39;t take responsibility. Howard Technologies&#39; stock would surely plummet,and Howard would be compelled to visit me daily at the hospital. Through these regular interactions, I was certain we would develop some kind of connection.</p>
-                    
-                    <p>However, things didn&#39;t go according to plan. The black luxury car slowed prematurely, then came to a complete stop. The driver had clearly spotted me in advance. My plan was ruined.</p>
-                    
-                    <p>*Damn it! This isn&#39;t how I imagined this would go.*</p>
-                    
-                    <p>But with Howard right there in the car, I didn&#39;t want to miss this rare opportunity. I immediately adjusted my approach, walking as naturally as possible toward the window. I watched as the window slowly lowered,revealing Howard&#39;s perpetually expressionless face.</p>
-                    
-                    <p>&#34;I want to talk to you about Annie Baker,&#34; I made my voice sound as gentle as possible, hoping to capture his attention. &#34;If I want to know anything about her, I&#39;ll ask her directly. I don&#39;t need you to tell me,&#34; Howard responded coldly, his fingers lightly tapping his knee. &#34;Is there anything else?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Sarah&#39;s POV</p>
+                        
+                        <p>I stood in the underground parking garage of Howard Technologies,gently caressing my protruding belly, my eyes fixed on the sleek black luxury car slowly approaching. Caroline had just texted to inform me that Howard was heading out for a business lunch meeting. As an insider at Howard&#39;s company, Caroline could easily access his schedule-information crucial to our plan.</p>
+                        
+                        <p>My original strategy was to &#34;accidentally&#34; rush in front of Howard&#39;s car as it was leaving the garage, then pretend to be knocked down before the vehicle actually made contact. I would fall to the ground, screaming and clutching my stomach. This &#34;accident&#34; would force Howard to take me to the hospital. Afterward, I&#39;d seize the opportunity to accuse him of hitting a pregnant woman, threatening to expose the incident online if he didn&#39;t take responsibility. Howard Technologies&#39; stock would surely plummet,and Howard would be compelled to visit me daily at the hospital. Through these regular interactions, I was certain we would develop some kind of connection.</p>
+                        
+                        <p>However, things didn&#39;t go according to plan. The black luxury car slowed prematurely, then came to a complete stop. The driver had clearly spotted me in advance. My plan was ruined.</p>
+                        
+                        <p>*Damn it! This isn&#39;t how I imagined this would go.*</p>
+                        
+                        <p>But with Howard right there in the car, I didn&#39;t want to miss this rare opportunity. I immediately adjusted my approach, walking as naturally as possible toward the window. I watched as the window slowly lowered,revealing Howard&#39;s perpetually expressionless face.</p>
+                        
+                        <p>&#34;I want to talk to you about Annie Baker,&#34; I made my voice sound as gentle as possible, hoping to capture his attention. &#34;If I want to know anything about her, I&#39;ll ask her directly. I don&#39;t need you to tell me,&#34; Howard responded coldly, his fingers lightly tapping his knee. &#34;Is there anything else?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -886,21 +926,25 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>*So arrogant! No wonder Philip always complains about him. But you&#39;ll listen to what I have to say-no one can resist the information I&#39;m about to reveal.*</p>
-                    
-                    <p>&#34;I know you love Annie...&#34; I worked hard to control the jealousy in my voice. Looking at him, this high-and-mighty man so protective of Annie,I couldn&#39;t understand it. Why would a woman who couldn&#39;t even keep her own husband now receive all the attention of another man? It wasn&#39;t fair!</p>
-                    
-                    <p>I continued with a light laugh: &#34;And you trust her completely.&#34; I deliberately mnade my tone mysterious, as if I possessed some important secret.</p>
-                    
-                    <p>&#34;You can choose not to listen to me,to remain in the dark forever,&#34; I stared directly into his eyes, &#34;but can you guarantee that when you finally learn the truth... your relationship won&#39;t be affected at all?&#34;</p>
-                    
-                    <p>Howard stared at me, his gaze so piercing it felt like he could see through my soul. I felt a wave of discomfort, but I couldn&#39;t back down now.</p>
-                    
-                    <p>&#34;Even if you truly don&#39;t care, you could at least hear me out,&#34; I added. &#34;After knowing the truth, if you&#39;re certain it won&#39;t trouble you, then you can send me away. Isn&#39;t that fair?&#34;</p>
-                    
-                    <p>To my surprise, Howard signaled his driver to open the passenger door.&#34;Get in and talk,&#34; he commanded briefly.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>*So arrogant! No wonder Philip always complains about him. But you&#39;ll listen to what I have to say-no one can resist the information I&#39;m about to reveal.*</p>
+                        
+                        <p>&#34;I know you love Annie...&#34; I worked hard to control the jealousy in my voice. Looking at him, this high-and-mighty man so protective of Annie,I couldn&#39;t understand it. Why would a woman who couldn&#39;t even keep her own husband now receive all the attention of another man? It wasn&#39;t fair!</p>
+                        
+                        <p>I continued with a light laugh: &#34;And you trust her completely.&#34; I deliberately mnade my tone mysterious, as if I possessed some important secret.</p>
+                        
+                        <p>&#34;You can choose not to listen to me,to remain in the dark forever,&#34; I stared directly into his eyes, &#34;but can you guarantee that when you finally learn the truth... your relationship won&#39;t be affected at all?&#34;</p>
+                        
+                        <p>Howard stared at me, his gaze so piercing it felt like he could see through my soul. I felt a wave of discomfort, but I couldn&#39;t back down now.</p>
+                        
+                        <p>&#34;Even if you truly don&#39;t care, you could at least hear me out,&#34; I added. &#34;After knowing the truth, if you&#39;re certain it won&#39;t trouble you, then you can send me away. Isn&#39;t that fair?&#34;</p>
+                        
+                        <p>To my surprise, Howard signaled his driver to open the passenger door.&#34;Get in and talk,&#34; he commanded briefly.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -915,21 +959,25 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>*Perfect! He took the bait!*</p>
-                    
-                    <p>I had intended to sit next to Howard, but when I opened the door, I found he had deliberately positioned himself on the side furthest from the door,maintaining an obvious distance between us. This small gesture irritated me, but I controlled my expression and gracefully slid into the car.</p>
-                    
-                    <p>This was my first time observing Howard up close. His profile was sharply defined, his jawline angular, exuding an unapproachable, austere quality.He wore a perfectly tailored suit, every detail exuding refinement and power. Though I hated to admit it, he was indeed more masculine than Philip, more reassuring. He radiated a steady strength that didn&#39;t come from his appearance but from his inner confidence and control.</p>
-                    
-                    <p>*No wonder Annie is attracted to him. What a shame-if we had met under different circumstances, perhaps...*</p>
-                    
-                    <p>I quickly adjusted my thoughts, focusing on my plan. &#34;Did you know how promiscuous Annie was before she got together with you?&#34; I began my offensive.</p>
-                    
-                    <p>Howard&#39;s lips curved slightly upward, as if mocking my attempt. &#34;She only dated one man, married him, and eventually divorced him because her husband cheated.&#34; His cold gaze turned toward me, his tone clearly sarcastic. &#34;If such a woman is considered promiscuous... what does that make a woman like you?&#34;</p>
-                    
-                    <p>*Damn him! How dare he belittle me like this?*</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>*Perfect! He took the bait!*</p>
+                        
+                        <p>I had intended to sit next to Howard, but when I opened the door, I found he had deliberately positioned himself on the side furthest from the door,maintaining an obvious distance between us. This small gesture irritated me, but I controlled my expression and gracefully slid into the car.</p>
+                        
+                        <p>This was my first time observing Howard up close. His profile was sharply defined, his jawline angular, exuding an unapproachable, austere quality.He wore a perfectly tailored suit, every detail exuding refinement and power. Though I hated to admit it, he was indeed more masculine than Philip, more reassuring. He radiated a steady strength that didn&#39;t come from his appearance but from his inner confidence and control.</p>
+                        
+                        <p>*No wonder Annie is attracted to him. What a shame-if we had met under different circumstances, perhaps...*</p>
+                        
+                        <p>I quickly adjusted my thoughts, focusing on my plan. &#34;Did you know how promiscuous Annie was before she got together with you?&#34; I began my offensive.</p>
+                        
+                        <p>Howard&#39;s lips curved slightly upward, as if mocking my attempt. &#34;She only dated one man, married him, and eventually divorced him because her husband cheated.&#34; His cold gaze turned toward me, his tone clearly sarcastic. &#34;If such a woman is considered promiscuous... what does that make a woman like you?&#34;</p>
+                        
+                        <p>*Damn him! How dare he belittle me like this?*</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -944,21 +992,25 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>I felt my face burning, as if I&#39;d swallowed fire. I almost lashed back.wanting to tell him he knew nothing about me, that I wasn&#39;t the kind of woman he imagined. But I had to stay calm, for the sake of my ultimate goal. After taking a deep breath, I changed tactics: &#34;Before you defend her, do you know how she lost the baby in her womb?&#34; Howard merely raised an eyebrow: &#34;Oh?&#34; *That&#39;s it, show interest. Now I&#39;ll deliver the fatal blow!* I couldn&#39;t help smiling, certain Howard would soon change his view of Annie. &#34;Because she was unfaithful during her marriage, she had an affair with my husband, slept with him, and that&#39;s what caused her miscarriage!&#34;</p>
-                    
-                    <p>I eagerly observed Howard&#39;s reaction, expecting to see shock,anger,or at least doubt cross his face. I fantasized about him immediately pulling out his phone to confront Annie. However, his expression didn&#39;t change in the slightest.</p>
-                    
-                    <p>&#34;First, you&#39;ve already divorced the man you call your husband,so he should be referred to as your ex-husband,&#34; Howard calmly corrected me.</p>
-                    
-                    <p>*What? Is that all he cares about?*</p>
-                    
-                    <p>&#34;You can&#39;t change your ex-husband&#39;s relationship status just because you seduced someone else and became the other woman,&#34; he continued, his voice infuriatingly steady. &#34;Don&#39;t try to smear Annie by implying she&#39;s the same kind of woman as you, one who seduces another&#39;s husband.&#34;</p>
-                    
-                    <p>*This bastard! How dare he speak to me this way!*</p>
-                    
-                    <p>&#34;Second, her miscarriage occurred before she had any relationship with your husband,&#34; he added.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>I felt my face burning, as if I&#39;d swallowed fire. I almost lashed back.wanting to tell him he knew nothing about me, that I wasn&#39;t the kind of woman he imagined. But I had to stay calm, for the sake of my ultimate goal. After taking a deep breath, I changed tactics: &#34;Before you defend her, do you know how she lost the baby in her womb?&#34; Howard merely raised an eyebrow: &#34;Oh?&#34; *That&#39;s it, show interest. Now I&#39;ll deliver the fatal blow!* I couldn&#39;t help smiling, certain Howard would soon change his view of Annie. &#34;Because she was unfaithful during her marriage, she had an affair with my husband, slept with him, and that&#39;s what caused her miscarriage!&#34;</p>
+                        
+                        <p>I eagerly observed Howard&#39;s reaction, expecting to see shock,anger,or at least doubt cross his face. I fantasized about him immediately pulling out his phone to confront Annie. However, his expression didn&#39;t change in the slightest.</p>
+                        
+                        <p>&#34;First, you&#39;ve already divorced the man you call your husband,so he should be referred to as your ex-husband,&#34; Howard calmly corrected me.</p>
+                        
+                        <p>*What? Is that all he cares about?*</p>
+                        
+                        <p>&#34;You can&#39;t change your ex-husband&#39;s relationship status just because you seduced someone else and became the other woman,&#34; he continued, his voice infuriatingly steady. &#34;Don&#39;t try to smear Annie by implying she&#39;s the same kind of woman as you, one who seduces another&#39;s husband.&#34;</p>
+                        
+                        <p>*This bastard! How dare he speak to me this way!*</p>
+                        
+                        <p>&#34;Second, her miscarriage occurred before she had any relationship with your husband,&#34; he added.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -973,21 +1025,25 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>*How would he know that? Does Annie tell him everything? Even something like this?*</p>
-                    
-                    <p>I felt a pang of jealousy pierce my heart. Philip and I never had that kind of honesty. &#34;And, when she fell down the stairs, I was the one who took her to the emergency room,&#34; Howard&#39;s words felt like a bucket of cold water poured over my head. *What? Him? How is that possible?* I struggled to hide my surprise, hastily countering, &#34;You got her there in time, so the baby was saved! It was only because she was having an affair with my ex-husband that she lost the baby!&#34;</p>
-                    
-                    <p>Howard&#39;s eyes suddenly became sharp and dangerous: &#34;Do you think I&#39;m an idiot? How could a baby survive a fall from that height? Why don&#39;t you try it yourself? If your baby survives such a fall, then I&#39;ll believe what you say.&#34;</p>
-                    
-                    <p>*Is he threatening me and my baby? This cold-blooded bastard!*</p>
-                    
-                    <p>I felt a wave of fear and instinctively shielded my stomach.</p>
-                    
-                    <p>&#34;Stop the car!&#34; Howard suddenly commanded.</p>
-                    
-                    <p>The driver immediately pulled over.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>*How would he know that? Does Annie tell him everything? Even something like this?*</p>
+                        
+                        <p>I felt a pang of jealousy pierce my heart. Philip and I never had that kind of honesty. &#34;And, when she fell down the stairs, I was the one who took her to the emergency room,&#34; Howard&#39;s words felt like a bucket of cold water poured over my head. *What? Him? How is that possible?* I struggled to hide my surprise, hastily countering, &#34;You got her there in time, so the baby was saved! It was only because she was having an affair with my ex-husband that she lost the baby!&#34;</p>
+                        
+                        <p>Howard&#39;s eyes suddenly became sharp and dangerous: &#34;Do you think I&#39;m an idiot? How could a baby survive a fall from that height? Why don&#39;t you try it yourself? If your baby survives such a fall, then I&#39;ll believe what you say.&#34;</p>
+                        
+                        <p>*Is he threatening me and my baby? This cold-blooded bastard!*</p>
+                        
+                        <p>I felt a wave of fear and instinctively shielded my stomach.</p>
+                        
+                        <p>&#34;Stop the car!&#34; Howard suddenly commanded.</p>
+                        
+                        <p>The driver immediately pulled over.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1002,21 +1058,25 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;You need to get out now,&#34; Howard said, the disgust in his voice making me feel a wave of humiliation.</p>
-                    
-                    <p>I wanted to argue, to continue with my plan, but looking at Howard&#39;s icy stare, I realized my attempt had failed. I reluctantly exited the car, the door slamming shut behind me.</p>
-                    
-                    <p>Standing on the sidewalk, watching Howard&#39;s car disappear into the distance, I felt a míxture of frustration and anger.</p>
-                    
-                    <p>*Why didn&#39;t it work? My tactics always worked on Philip.* I bit my lip, thinking. Aren&#39;t all men concerned about whether their women are &#34;pure&#34;? Why was Howard completely unmoved by the suggestion that Annie might have cheated? *Perhaps he truly loves her. Perhaps their relationship is deeper than I imagined.* This thought irritated me even more. My approach must have been flawed. Howard clearly didn&#39;t care about what I mentioned. I needed to reconsider my strategy.</p>
-                    
-                    <p>I took out my phone and dialed Caroline&#39;s number.</p>
-                    
-                    <p>&#34;Did you get the photos?&#34; I asked directly.</p>
-                    
-                    <p>&#34;Of course,&#34; Caroline answered confidently. &#34;Though they&#39;re just scenes of ordinary conversation. I managed to capture some special angles. Even strangers looking at these photos would think there&#39;s something special between you two.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;You need to get out now,&#34; Howard said, the disgust in his voice making me feel a wave of humiliation.</p>
+                        
+                        <p>I wanted to argue, to continue with my plan, but looking at Howard&#39;s icy stare, I realized my attempt had failed. I reluctantly exited the car, the door slamming shut behind me.</p>
+                        
+                        <p>Standing on the sidewalk, watching Howard&#39;s car disappear into the distance, I felt a míxture of frustration and anger.</p>
+                        
+                        <p>*Why didn&#39;t it work? My tactics always worked on Philip.* I bit my lip, thinking. Aren&#39;t all men concerned about whether their women are &#34;pure&#34;? Why was Howard completely unmoved by the suggestion that Annie might have cheated? *Perhaps he truly loves her. Perhaps their relationship is deeper than I imagined.* This thought irritated me even more. My approach must have been flawed. Howard clearly didn&#39;t care about what I mentioned. I needed to reconsider my strategy.</p>
+                        
+                        <p>I took out my phone and dialed Caroline&#39;s number.</p>
+                        
+                        <p>&#34;Did you get the photos?&#34; I asked directly.</p>
+                        
+                        <p>&#34;Of course,&#34; Caroline answered confidently. &#34;Though they&#39;re just scenes of ordinary conversation. I managed to capture some special angles. Even strangers looking at these photos would think there&#39;s something special between you two.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1031,11 +1091,15 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>My mood immediately improving. Although today&#39;s plan hadn&#39;t been completely successful, it was just the beginning. I had more strategies,more methods.</p>
-                    
-                    <p>I would get everything I wanted, and no one could stop me.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>My mood immediately improving. Although today&#39;s plan hadn&#39;t been completely successful, it was just the beginning. I had more strategies,more methods.</p>
+                        
+                        <p>I would get everything I wanted, and no one could stop me.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2351,6 +2415,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2477,7 +2621,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2519,32 +2662,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2555,21 +2680,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2602,6 +2717,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2622,20 +2743,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

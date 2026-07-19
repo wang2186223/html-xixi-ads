@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.087692">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.087692">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.268439">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.268439">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.087692",
-        "dateModified": "2026-07-19T02:47:19.087692",
+        "datePublished": "2026-07-19T13:03:14.268439",
+        "dateModified": "2026-07-19T13:03:14.268439",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,27 +893,31 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV*</p>
-                    
-                    <p>I stared at Rachel, searching for any trace of the friend I once knew.Nothing. The woman standing before me was a stranger wearing my friend&#39;s face.</p>
-                    
-                    <p>&#34;If I remember correctly,&#34; I said, my voice tight, &#34;you and Audrey Sinclair were pretty close.&#34;</p>
-                    
-                    <p>&#34;Since you went through the trouble of stealing my DNA and now believe I&#39;m Audrey.Why aren&#39;t you happy about finding your supposedly dead friend?&#34;</p>
-                    
-                    <p>Rachel swallowed hard.′′I′&#39;m just angry you&#39;d fake youar death and disappear without telling anyone.&#34;</p>
-                    
-                    <p>Her voice lacked conviction. Five years ago, this woman taught me everything about surviving in high society. Now she couldn&#39;t even lie convincingly.</p>
-                    
-                    <p>&#34;Audrey Sinclair.&#34;</p>
-                    
-                    <p>Thalia stepped around Rachel, positioning herself between us. She shot Rachel a dismissive glance before turning her full attention to me.</p>
-                    
-                    <p>&#34;You seriously think she&#39;d still be your friend? You knew she woke up from her coma, but you faked your death and bailed on her. Do you have any idea how devastated she was?&#34;</p>
-                    
-                    <p>&#34;Now you show up right before she marries my brother? Everyone knows what you&#39;re doing.&#34; Thalia leaned in, lowering her voice to a theatrical whisper, &#34;You want to steal her fiancé and expect her to welcome you with</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV*</p>
+                        
+                        <p>I stared at Rachel, searching for any trace of the friend I once knew.Nothing. The woman standing before me was a stranger wearing my friend&#39;s face.</p>
+                        
+                        <p>&#34;If I remember correctly,&#34; I said, my voice tight, &#34;you and Audrey Sinclair were pretty close.&#34;</p>
+                        
+                        <p>&#34;Since you went through the trouble of stealing my DNA and now believe I&#39;m Audrey.Why aren&#39;t you happy about finding your supposedly dead friend?&#34;</p>
+                        
+                        <p>Rachel swallowed hard.′′I′&#39;m just angry you&#39;d fake youar death and disappear without telling anyone.&#34;</p>
+                        
+                        <p>Her voice lacked conviction. Five years ago, this woman taught me everything about surviving in high society. Now she couldn&#39;t even lie convincingly.</p>
+                        
+                        <p>&#34;Audrey Sinclair.&#34;</p>
+                        
+                        <p>Thalia stepped around Rachel, positioning herself between us. She shot Rachel a dismissive glance before turning her full attention to me.</p>
+                        
+                        <p>&#34;You seriously think she&#39;d still be your friend? You knew she woke up from her coma, but you faked your death and bailed on her. Do you have any idea how devastated she was?&#34;</p>
+                        
+                        <p>&#34;Now you show up right before she marries my brother? Everyone knows what you&#39;re doing.&#34; Thalia leaned in, lowering her voice to a theatrical whisper, &#34;You want to steal her fiancé and expect her to welcome you with</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -892,27 +932,31 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>open arms? The fact she&#39;s not treating you like an enemy already shows how much she values your past.&#34;</p>
-                    
-                    <p>I couldn&#39;t deny her logic. Even if Rachel accepted I was Audrey, what difference would it make? We were on opposite sides now. Our friendship was over.</p>
-                    
-                    <p>&#34;Evelyn.&#34;</p>
-                    
-                    <p>Adrian&#39;s voice pulled me back. His hand found mine, squeezing gently.The small gesture steadied me.</p>
-                    
-                    <p>I took a deep breath. &#34;I simply asked a question. I don&#39;t understand why everyone&#39;s so worked up. I&#39;ve already told you, I&#39;m not Audrey Sinclair.&#34;</p>
-                    
-                    <p>My eyes found Rachel&#39;s. &#34;Your reaction makes me wonder about your relationship with this Audrey person.&#34;</p>
-                    
-                    <p>&#34;Are you cold to me because you really see Audrey as a rival?&#34; I asked.&#34;Or because you know I&#39;m not her, and you&#39;re just making things up?&#34;</p>
-                    
-                    <p>Rachel looked down, saying nothing. The reporters pressed closer,hungry for drama.</p>
-                    
-                    <p>&#34;Let&#39;s go,&#34; Adrian said, tugging my hand. &#34;The Sinclair confrontation will settle this. No point wasting time with these people.&#34;</p>
-                    
-                    <p>As we walked toward the hotel entrance, I glanced back. Blake sat in his wheelchair, watching us leave. Our eyes met briefly. His gaze held none of the stubborn determination from before - just longing and something like helplessness I couldn&#39;t quite place.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>open arms? The fact she&#39;s not treating you like an enemy already shows how much she values your past.&#34;</p>
+                        
+                        <p>I couldn&#39;t deny her logic. Even if Rachel accepted I was Audrey, what difference would it make? We were on opposite sides now. Our friendship was over.</p>
+                        
+                        <p>&#34;Evelyn.&#34;</p>
+                        
+                        <p>Adrian&#39;s voice pulled me back. His hand found mine, squeezing gently.The small gesture steadied me.</p>
+                        
+                        <p>I took a deep breath. &#34;I simply asked a question. I don&#39;t understand why everyone&#39;s so worked up. I&#39;ve already told you, I&#39;m not Audrey Sinclair.&#34;</p>
+                        
+                        <p>My eyes found Rachel&#39;s. &#34;Your reaction makes me wonder about your relationship with this Audrey person.&#34;</p>
+                        
+                        <p>&#34;Are you cold to me because you really see Audrey as a rival?&#34; I asked.&#34;Or because you know I&#39;m not her, and you&#39;re just making things up?&#34;</p>
+                        
+                        <p>Rachel looked down, saying nothing. The reporters pressed closer,hungry for drama.</p>
+                        
+                        <p>&#34;Let&#39;s go,&#34; Adrian said, tugging my hand. &#34;The Sinclair confrontation will settle this. No point wasting time with these people.&#34;</p>
+                        
+                        <p>As we walked toward the hotel entrance, I glanced back. Blake sat in his wheelchair, watching us leave. Our eyes met briefly. His gaze held none of the stubborn determination from before - just longing and something like helplessness I couldn&#39;t quite place.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -927,27 +971,31 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>I quickly looked away,</p>
-                    
-                    <p>**Blake&#39;s POV*</p>
-                    
-                    <p>I watched them walk away, Adrian&#39;s hand firmly clasped around Audrey&#39;s.My eyes caught on the green maple leaf preserved in his cufflink-identical to the one Audrey had picked up yesterday at Northern Care Facility.</p>
-                    
-                    <p>She&#39;d stopped to collect it while walking those grounds, twirling it between her fingers during my call. Now Adrian wore it like a trophy.</p>
-                    
-                    <p>So she&#39;d made him a custom gift using something she found after seeing my grandfather. In her eyes, he really mattered. Their relationship had progressed faster than I&#39;d imagined.</p>
-                    
-                    <p>&#34;Blake.&#34; Thalia&#39;s voice cut through my thoughts. &#34;Stop staring at them.&#34;</p>
-                    
-                    <p>She planted herself in front of my wheelchair. &#34;Didn&#39;t you say you were here to back us up? Why are you taking their side?&#34;</p>
-                    
-                    <p>&#34;She&#39;s right,&#34; Rachel added. &#34;You didIn&#39;t have to embarrass Thalia in front of everyone.&#34;</p>
-                    
-                    <p>I gave them both a cold look. &#34;So I should&#39;ve let her slap Adrian with every reporter in New York watching? Smart plan.&#34;</p>
-                    
-                    <p>&#34;Do you understand who Adrian Knox is? Rachel, I thought you were the one who knew how to handle delicate situations. What would happen if videos of Thalia attacking the son-in-law of the Australian Parkers went viral? Want to replay what nearly destroyed Parker Group twenty years ago?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>I quickly looked away,</p>
+                        
+                        <p>**Blake&#39;s POV*</p>
+                        
+                        <p>I watched them walk away, Adrian&#39;s hand firmly clasped around Audrey&#39;s.My eyes caught on the green maple leaf preserved in his cufflink-identical to the one Audrey had picked up yesterday at Northern Care Facility.</p>
+                        
+                        <p>She&#39;d stopped to collect it while walking those grounds, twirling it between her fingers during my call. Now Adrian wore it like a trophy.</p>
+                        
+                        <p>So she&#39;d made him a custom gift using something she found after seeing my grandfather. In her eyes, he really mattered. Their relationship had progressed faster than I&#39;d imagined.</p>
+                        
+                        <p>&#34;Blake.&#34; Thalia&#39;s voice cut through my thoughts. &#34;Stop staring at them.&#34;</p>
+                        
+                        <p>She planted herself in front of my wheelchair. &#34;Didn&#39;t you say you were here to back us up? Why are you taking their side?&#34;</p>
+                        
+                        <p>&#34;She&#39;s right,&#34; Rachel added. &#34;You didIn&#39;t have to embarrass Thalia in front of everyone.&#34;</p>
+                        
+                        <p>I gave them both a cold look. &#34;So I should&#39;ve let her slap Adrian with every reporter in New York watching? Smart plan.&#34;</p>
+                        
+                        <p>&#34;Do you understand who Adrian Knox is? Rachel, I thought you were the one who knew how to handle delicate situations. What would happen if videos of Thalia attacking the son-in-law of the Australian Parkers went viral? Want to replay what nearly destroyed Parker Group twenty years ago?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -962,27 +1010,31 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Rachel bit her lip. &#34;That&#39;s not what I-&#34;</p>
-                    
-                    <p>&#34;You figured that since you&#39;re about to become my wife, you need to</p>
-                    
-                    <p>please Thalia at all costs,&#34; I interrupted. &#34;You&#39;re even manufacturing evidence.You stole Audrey&#39;s DNA to help the Sinclairs prove Evelyn Knox is actually her.&#34;</p>
-                    
-                    <p>I stared her down. &#34;Tell me I&#39;m wrong.&#34;</p>
-                    
-                    <p>Rachel paled. &#34;Blake, I -&#34;</p>
-                    
-                    <p>&#34;Blake!&#34; Thalia pushed between us. &#34;What&#39;s wrong with Rachel getting along with us? I used to hate her because she was friends with Audrey,but she&#39;s nothing like I thought. She&#39;s as likable as Laurel - maybe even easier to get along with!&#34;</p>
-                    
-                    <p>&#34;Ireally like her now! No wonder she and Laurel are sisters!&#34;</p>
-                    
-                    <p>I leaned back in my wheelchair with a cold smile. &#34;Indeed. Sisters through and through. Miss Hayes is truly becoming more and more like Laurel Rose.&#34;</p>
-                    
-                    <p>I didn&#39;t wait for a response, turning my chair and leaving them standing in the chaos.</p>
-                    
-                    <p>**Audrey&#39;s POV*</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Rachel bit her lip. &#34;That&#39;s not what I-&#34;</p>
+                        
+                        <p>&#34;You figured that since you&#39;re about to become my wife, you need to</p>
+                        
+                        <p>please Thalia at all costs,&#34; I interrupted. &#34;You&#39;re even manufacturing evidence.You stole Audrey&#39;s DNA to help the Sinclairs prove Evelyn Knox is actually her.&#34;</p>
+                        
+                        <p>I stared her down. &#34;Tell me I&#39;m wrong.&#34;</p>
+                        
+                        <p>Rachel paled. &#34;Blake, I -&#34;</p>
+                        
+                        <p>&#34;Blake!&#34; Thalia pushed between us. &#34;What&#39;s wrong with Rachel getting along with us? I used to hate her because she was friends with Audrey,but she&#39;s nothing like I thought. She&#39;s as likable as Laurel - maybe even easier to get along with!&#34;</p>
+                        
+                        <p>&#34;Ireally like her now! No wonder she and Laurel are sisters!&#34;</p>
+                        
+                        <p>I leaned back in my wheelchair with a cold smile. &#34;Indeed. Sisters through and through. Miss Hayes is truly becoming more and more like Laurel Rose.&#34;</p>
+                        
+                        <p>I didn&#39;t wait for a response, turning my chair and leaving them standing in the chaos.</p>
+                        
+                        <p>**Audrey&#39;s POV*</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -997,27 +1049,31 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Inside the hotel, reporters continued following us like shadows, cameras flashing constantly. Adrian kept his hand at my back, looking completely unbothered.</p>
-                    
-                    <p>&#34;So this is what being a movie star feels like,&#34; he said.&#39;′′ISydney,reporters wouldn&#39;t dare photograph me this way.&#34;</p>
-                    
-                    <p>&#34;I&#39;m sorry for dragging you into this mess.&#34;</p>
-                    
-                    <p>&#34;Don&#39;t be. I chose to come knowing exactly what would happen,&#34; He</p>
-                    
-                    <p>guided me deeper into the lobby. &#34;A few photos don&#39;t bother me. I just need to expand beyond Australia so I&#39;m not disrespected every time I visit a new city.&#34;</p>
-                    
-                    <p>I glanced at the circling reporters. &#34;They&#39;re not usually this aggressive.</p>
-                    
-                    <p>These people were paid to create a scene.&#34;</p>
-                    
-                    <p>Victoria and the Sinclairs wanted to force me to admit who I was,while Thalia wanted revenge. They needed a public spectacle, and the more attention,the better.</p>
-                    
-                    <p>&#34;Makes sense,&#34; Adrian nodded. &#34;They wouldn&#39;t be this interested in a foreign businessman without incentive.&#34;</p>
-                    
-                    <p>He raised his wrist toward the nearest camera. &#34;Make sure you get my cufflink too. This maple leaf is unique to New York this season.My wife picked it herself as a memento of our first visit.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Inside the hotel, reporters continued following us like shadows, cameras flashing constantly. Adrian kept his hand at my back, looking completely unbothered.</p>
+                        
+                        <p>&#34;So this is what being a movie star feels like,&#34; he said.&#39;′′ISydney,reporters wouldn&#39;t dare photograph me this way.&#34;</p>
+                        
+                        <p>&#34;I&#39;m sorry for dragging you into this mess.&#34;</p>
+                        
+                        <p>&#34;Don&#39;t be. I chose to come knowing exactly what would happen,&#34; He</p>
+                        
+                        <p>guided me deeper into the lobby. &#34;A few photos don&#39;t bother me. I just need to expand beyond Australia so I&#39;m not disrespected every time I visit a new city.&#34;</p>
+                        
+                        <p>I glanced at the circling reporters. &#34;They&#39;re not usually this aggressive.</p>
+                        
+                        <p>These people were paid to create a scene.&#34;</p>
+                        
+                        <p>Victoria and the Sinclairs wanted to force me to admit who I was,while Thalia wanted revenge. They needed a public spectacle, and the more attention,the better.</p>
+                        
+                        <p>&#34;Makes sense,&#34; Adrian nodded. &#34;They wouldn&#39;t be this interested in a foreign businessman without incentive.&#34;</p>
+                        
+                        <p>He raised his wrist toward the nearest camera. &#34;Make sure you get my cufflink too. This maple leaf is unique to New York this season.My wife picked it herself as a memento of our first visit.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1032,27 +1088,31 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>I glanced at Adrian&#39;s wrist, finally noticing the cufflink. It wasn&#39;t some luxury brand piece but clearly handmade, featuring a yellow-green maple leaf identical to those I&#39;d seen yesterday on the path at William&#39;s care facility.</p>
-                    
-                    <p>Once the reporters finished their shots, Adrian lowered his arm.</p>
-                    
-                    <p>&#34;When exactly did I make you cufflinks?&#34; I asked quietly.</p>
-                    
-                    <p>After yesterday&#39;s mess, I&#39;d tossed that leaf without a second thought.</p>
-                    
-                    <p>Adrian smirked.&#34;My assistant got bored while I was talking to Henry yesterday. He wandered off to some airport gift shop and bought New York souvenirs- these maple leaf cufflinks. I grabbed one from him.&#34;</p>
-                    
-                    <p>&#34;So your assistant bought it, and you&#39;re telling everyone I made it?&#34;</p>
-                    
-                    <p>&#34;Just playing the loving husband.&#34; He shrugged. &#34;Those cameras couldn&#39;t capture the details anyway. No one&#39;s questioning its authenticity.&#34;</p>
-                    
-                    <p>I shook my head and dropped it.</p>
-                    
-                    <p>We pushed through the lobby doors into what looked like a full-blown press conference. The Parkers and Sinclairs had clearly rented the entire place.</p>
-                    
-                    <p>Richard and Elaine sat at the central table with Victoria, facing Rebecca and Elizabeth Parker. Olivia stood behind them like a sentinel, with two empty chairs obviously saved for Thalia and Blake.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>I glanced at Adrian&#39;s wrist, finally noticing the cufflink. It wasn&#39;t some luxury brand piece but clearly handmade, featuring a yellow-green maple leaf identical to those I&#39;d seen yesterday on the path at William&#39;s care facility.</p>
+                        
+                        <p>Once the reporters finished their shots, Adrian lowered his arm.</p>
+                        
+                        <p>&#34;When exactly did I make you cufflinks?&#34; I asked quietly.</p>
+                        
+                        <p>After yesterday&#39;s mess, I&#39;d tossed that leaf without a second thought.</p>
+                        
+                        <p>Adrian smirked.&#34;My assistant got bored while I was talking to Henry yesterday. He wandered off to some airport gift shop and bought New York souvenirs- these maple leaf cufflinks. I grabbed one from him.&#34;</p>
+                        
+                        <p>&#34;So your assistant bought it, and you&#39;re telling everyone I made it?&#34;</p>
+                        
+                        <p>&#34;Just playing the loving husband.&#34; He shrugged. &#34;Those cameras couldn&#39;t capture the details anyway. No one&#39;s questioning its authenticity.&#34;</p>
+                        
+                        <p>I shook my head and dropped it.</p>
+                        
+                        <p>We pushed through the lobby doors into what looked like a full-blown press conference. The Parkers and Sinclairs had clearly rented the entire place.</p>
+                        
+                        <p>Richard and Elaine sat at the central table with Victoria, facing Rebecca and Elizabeth Parker. Olivia stood behind them like a sentinel, with two empty chairs obviously saved for Thalia and Blake.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1067,21 +1127,25 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>A massive projection screen dominated one wall, playing a movie about a woman who fakes her death only to lose everything when she returns to her husband. Subtle.</p>
-                    
-                    <p>Every corner was packed with journalists and social media types, phones and cameras ready.</p>
-                    
-                    <p>I almost laughed at the theatrics.</p>
-                    
-                    <p>&#34;They&#39;rehere!&#34; someone shouted.</p>
-                    
-                    <p>Every head turned our way.</p>
-                    
-                    <p>I took Adrian&#39;s arm, straightened my spine, and walked in.</p>
-                    
-                    <p>Showtime.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>A massive projection screen dominated one wall, playing a movie about a woman who fakes her death only to lose everything when she returns to her husband. Subtle.</p>
+                        
+                        <p>Every corner was packed with journalists and social media types, phones and cameras ready.</p>
+                        
+                        <p>I almost laughed at the theatrics.</p>
+                        
+                        <p>&#34;They&#39;rehere!&#34; someone shouted.</p>
+                        
+                        <p>Every head turned our way.</p>
+                        
+                        <p>I took Adrian&#39;s arm, straightened my spine, and walked in.</p>
+                        
+                        <p>Showtime.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2397,6 +2461,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2523,7 +2667,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2565,32 +2708,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2601,21 +2726,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2648,6 +2763,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2668,20 +2789,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

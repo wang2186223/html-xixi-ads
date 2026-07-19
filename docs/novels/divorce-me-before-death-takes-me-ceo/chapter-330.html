@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.127567">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.127567">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.303889">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.303889">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.127567",
-        "dateModified": "2026-07-19T02:47:19.127567",
+        "datePublished": "2026-07-19T13:03:14.303889",
+        "dateModified": "2026-07-19T13:03:14.303889",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,27 +893,31 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>*Thalia&#39;s POV*야</p>
-                    
-                    <p>Three months after my grandfather&#39;s funeral, I stood in the Parker Group office,watching Elizabeth&#39;s face drain of color as she flipped through the files I&#39;d tossed onto her desk.</p>
-                    
-                    <p>&#34;You still don&#39;t get it, do you?&#34; I couldn&#39;t help but smile.</p>
-                    
-                    <p>&#34;My brother&#39;s been awake this whole time.&#34;</p>
-                    
-                    <p>Her fingers tightened on the papers, knuckles turning white.</p>
-                    
-                    <p>&#34;These past three months, while you thought you had everything under control,&#34; I continued, &#34;Blake was actually recovering and teaching me how to run this company.&#34;</p>
-                    
-                    <p>I tapped the file. &#34;Did you really think you could sell our assets for pennies without anyone noticing?&#34;</p>
-                    
-                    <p>Elizabeth frantically flipped through the pages. The first section detailed her illegal sales of company assets. The second contained agreements where she&#39;d secretly sold off subsidiaries. The third showed the equity structure of a company named Sincerity Gems, which had taken over all the assets resold by Elizabeth. And its major shareholder was Blake.</p>
-                    
-                    <p>&#34;This can&#39;t be...&#34; she mumbled, papers slipping from her trembling hands.</p>
-                    
-                    <p>Her phone rang. She answered automatically, still staring at the scattered documents.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>*Thalia&#39;s POV*야</p>
+                        
+                        <p>Three months after my grandfather&#39;s funeral, I stood in the Parker Group office,watching Elizabeth&#39;s face drain of color as she flipped through the files I&#39;d tossed onto her desk.</p>
+                        
+                        <p>&#34;You still don&#39;t get it, do you?&#34; I couldn&#39;t help but smile.</p>
+                        
+                        <p>&#34;My brother&#39;s been awake this whole time.&#34;</p>
+                        
+                        <p>Her fingers tightened on the papers, knuckles turning white.</p>
+                        
+                        <p>&#34;These past three months, while you thought you had everything under control,&#34; I continued, &#34;Blake was actually recovering and teaching me how to run this company.&#34;</p>
+                        
+                        <p>I tapped the file. &#34;Did you really think you could sell our assets for pennies without anyone noticing?&#34;</p>
+                        
+                        <p>Elizabeth frantically flipped through the pages. The first section detailed her illegal sales of company assets. The second contained agreements where she&#39;d secretly sold off subsidiaries. The third showed the equity structure of a company named Sincerity Gems, which had taken over all the assets resold by Elizabeth. And its major shareholder was Blake.</p>
+                        
+                        <p>&#34;This can&#39;t be...&#34; she mumbled, papers slipping from her trembling hands.</p>
+                        
+                        <p>Her phone rang. She answered automatically, still staring at the scattered documents.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -892,27 +932,31 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Elizabeth!&#34; Her husband&#39;s voice blared through the speaker. &#34;Everything&#39;s falling apartl Every partner has canceled their contracts! No one will even</p>
-                    
-                    <p>take my calls!&#34;</p>
-                    
-                    <p>I smirked. Taking down a small company like his would be child&#39;s play for Blake.</p>
-                    
-                    <p>&#34;I&#39;m about to go bankrupt!&#34; he continued. &#34;How much money do you have left?&#34;</p>
-                    
-                    <p>Elizabeth hung up without responding.</p>
-                    
-                    <p>Seconds later, her phone rang again. This time, it was Olivia.</p>
-                    
-                    <p>&#34;Mom. I&#39;m in serious trouble!&#34; Her daughter sounded frantic.</p>
-                    
-                    <p>&#34;What now?&#34; Elizabeth asked weakly.</p>
-                    
-                    <p>&#34;That girl we bullied a few days ago? Someone just told me she&#39;s Henry Hartford&#39;s adopted sister! He&#39;sflying back today to deal with us!&#34;</p>
-                    
-                    <p>Elizabeth&#39;s face went even paler.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Elizabeth!&#34; Her husband&#39;s voice blared through the speaker. &#34;Everything&#39;s falling apartl Every partner has canceled their contracts! No one will even</p>
+                        
+                        <p>take my calls!&#34;</p>
+                        
+                        <p>I smirked. Taking down a small company like his would be child&#39;s play for Blake.</p>
+                        
+                        <p>&#34;I&#39;m about to go bankrupt!&#34; he continued. &#34;How much money do you have left?&#34;</p>
+                        
+                        <p>Elizabeth hung up without responding.</p>
+                        
+                        <p>Seconds later, her phone rang again. This time, it was Olivia.</p>
+                        
+                        <p>&#34;Mom. I&#39;m in serious trouble!&#34; Her daughter sounded frantic.</p>
+                        
+                        <p>&#34;What now?&#34; Elizabeth asked weakly.</p>
+                        
+                        <p>&#34;That girl we bullied a few days ago? Someone just told me she&#39;s Henry Hartford&#39;s adopted sister! He&#39;sflying back today to deal with us!&#34;</p>
+                        
+                        <p>Elizabeth&#39;s face went even paler.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -927,27 +971,31 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;Can you arrange a private jet? I need to leave the country now!&#34; Olivia begged.</p>
-                    
-                    <p>The phone slipped from Elizabeth&#39;s hand, clattering onto the desk.</p>
-                    
-                    <p>Before she could recover, a sharp knock came at the door. Two police officers entered, badges raised.</p>
-                    
-                    <p>&#34;Elizabeth Parker? You&#39;ve been reported for financial crimes. You&#39;ll need to come with us.&#34;</p>
-                    
-                    <p>The handcuffs closed around her wrists with a decisive click. As they led her toward the door, she paused beside me.</p>
-                    
-                    <p>&#34;Where&#39;s Blake? I need to see him.&#34;</p>
-                    
-                    <p>I leaned close.′′NOot happening. Blake and Audrey flew to Sydney this morning.&#34;</p>
-                    
-                    <p>Her eyes widened as I continued, &#34;I&#39;mn running Parker Group now.&#34;</p>
-                    
-                    <p>I whispered in her ear, &#34;Blake told me we&#39;re not blood related, so I don&#39;t have to show you any mercy.&#34;</p>
-                    
-                    <p>I pulled back. &#34;Don&#39;t worry, I&#39;m sure you, your husband, and Olivia will have a lovely family reunion - in prison.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;Can you arrange a private jet? I need to leave the country now!&#34; Olivia begged.</p>
+                        
+                        <p>The phone slipped from Elizabeth&#39;s hand, clattering onto the desk.</p>
+                        
+                        <p>Before she could recover, a sharp knock came at the door. Two police officers entered, badges raised.</p>
+                        
+                        <p>&#34;Elizabeth Parker? You&#39;ve been reported for financial crimes. You&#39;ll need to come with us.&#34;</p>
+                        
+                        <p>The handcuffs closed around her wrists with a decisive click. As they led her toward the door, she paused beside me.</p>
+                        
+                        <p>&#34;Where&#39;s Blake? I need to see him.&#34;</p>
+                        
+                        <p>I leaned close.′′NOot happening. Blake and Audrey flew to Sydney this morning.&#34;</p>
+                        
+                        <p>Her eyes widened as I continued, &#34;I&#39;mn running Parker Group now.&#34;</p>
+                        
+                        <p>I whispered in her ear, &#34;Blake told me we&#39;re not blood related, so I don&#39;t have to show you any mercy.&#34;</p>
+                        
+                        <p>I pulled back. &#34;Don&#39;t worry, I&#39;m sure you, your husband, and Olivia will have a lovely family reunion - in prison.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -962,27 +1010,31 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Elizabeth&#39;s eyes rolled back, and she collapsed.</p>
-                    
-                    <p>After they carried her unconscious form away, I ordered the assistants to clean the office and throw out anything belonging to Elizabeth&#39;s family.</p>
-                    
-                    <p>I snapped a photo of the empty office and texted Blake:*[Got your seat warm. Come back soon.]*</p>
-                    
-                    <p>**Blake&#39;s POV**</p>
-                    
-                    <p>I checked Thalia&#39;s message, feeling a surge of pride. Three months ago,she could barely spell &#34;business.&#34; Now she was running Parker Group.</p>
-                    
-                    <p>Next to me. Audrey slept peacefully, her chest rising and falling with each breath.</p>
-                    
-                    <p>*From that village to a Sydney-bound plane.* Who would&#39;ve thought?</p>
-                    
-                    <p>After my grandfather died, when grief nearly broke me, Audrey had been my anchor. She&#39;d pushed my rehab harder than any doctor recommended.In three months, I&#39;d gone from wheelchair to walking with minimal support,</p>
-                    
-                    <p>Learning I was the son of Leo and Leonora Sterling - that Jeffrey and Eleanor Parker were actually my aunt and uncle - had finally made sense of my life.</p>
-                    
-                    <p>This trip had multiple purposes: reuniting Audrey with Adrian, Emma,and Snow; meeting my biological mother&#39;s family; and investigating the shipwreck that killed my father. After discovering Elizabeth&#39;s involvement in my accidents, I questioned whether the Australian Parkers were really behind the disaster.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Elizabeth&#39;s eyes rolled back, and she collapsed.</p>
+                        
+                        <p>After they carried her unconscious form away, I ordered the assistants to clean the office and throw out anything belonging to Elizabeth&#39;s family.</p>
+                        
+                        <p>I snapped a photo of the empty office and texted Blake:*[Got your seat warm. Come back soon.]*</p>
+                        
+                        <p>**Blake&#39;s POV**</p>
+                        
+                        <p>I checked Thalia&#39;s message, feeling a surge of pride. Three months ago,she could barely spell &#34;business.&#34; Now she was running Parker Group.</p>
+                        
+                        <p>Next to me. Audrey slept peacefully, her chest rising and falling with each breath.</p>
+                        
+                        <p>*From that village to a Sydney-bound plane.* Who would&#39;ve thought?</p>
+                        
+                        <p>After my grandfather died, when grief nearly broke me, Audrey had been my anchor. She&#39;d pushed my rehab harder than any doctor recommended.In three months, I&#39;d gone from wheelchair to walking with minimal support,</p>
+                        
+                        <p>Learning I was the son of Leo and Leonora Sterling - that Jeffrey and Eleanor Parker were actually my aunt and uncle - had finally made sense of my life.</p>
+                        
+                        <p>This trip had multiple purposes: reuniting Audrey with Adrian, Emma,and Snow; meeting my biological mother&#39;s family; and investigating the shipwreck that killed my father. After discovering Elizabeth&#39;s involvement in my accidents, I questioned whether the Australian Parkers were really behind the disaster.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -997,27 +1049,31 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Audrey stirred, pushing up her sleep mask.</p>
-                    
-                    <p>&#34;Why aren&#39;t you resting?&#34; she asked, voice husky from sleep.</p>
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>I felt Blake watching me before I even removed my eye mask. He&#39;d been up all night helping Thalia, yet here he was staring at me instead of resting.</p>
-                    
-                    <p>&#34;You nervous?&#34; I asked, studying his face.</p>
-                    
-                    <p>&#34;A little,&#34; he admitted, eyes fixed on mine.</p>
-                    
-                    <p>&#34;Your adoptive parents are good people,&#34; I said. &#34;You don&#39;t - &#34;</p>
-                    
-                    <p>&#34;I&#39;m not worried about meeting them,&#34; he cut me off.</p>
-                    
-                    <p>&#34;I&#39;m nervous about you.&#34;</p>
-                    
-                    <p>&#34;Me?&#34; I blinked. confused.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Audrey stirred, pushing up her sleep mask.</p>
+                        
+                        <p>&#34;Why aren&#39;t you resting?&#34; she asked, voice husky from sleep.</p>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>I felt Blake watching me before I even removed my eye mask. He&#39;d been up all night helping Thalia, yet here he was staring at me instead of resting.</p>
+                        
+                        <p>&#34;You nervous?&#34; I asked, studying his face.</p>
+                        
+                        <p>&#34;A little,&#34; he admitted, eyes fixed on mine.</p>
+                        
+                        <p>&#34;Your adoptive parents are good people,&#34; I said. &#34;You don&#39;t - &#34;</p>
+                        
+                        <p>&#34;I&#39;m not worried about meeting them,&#34; he cut me off.</p>
+                        
+                        <p>&#34;I&#39;m nervous about you.&#34;</p>
+                        
+                        <p>&#34;Me?&#34; I blinked. confused.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1032,27 +1088,31 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;What I&#39;m about to say might sound cheesy,&#34; Blake said softly,&#34;but once we land, I might not have the right to say it anymore.&#34;</p>
-                    
-                    <p>My heart quickened.</p>
-                    
-                    <p>&#34;I get what you owe your sister and her family,&#34; he continued. &#34;If you stay in Sydney with them, I understand.&#34;</p>
-                    
-                    <p>His gaze held mine. &#34;But after that...we may never meet again.&#34;</p>
-                    
-                    <p>I turned away, staring out at the endless blue sky, unable to hold his gaze.</p>
-                    
-                    <p>These three months had changed everything. Working with Blake during his recovery, standing by him at William&#39;s funeral- I&#39;d finally admitted to myself that I still loved him. And I knew his feelings for me were genuine.</p>
-                    
-                    <p>But I couldn&#39;t break my promise to my sister. Without her sacrifice, I would have died. The least I couald do was honor her memory by caring for her family.</p>
-                    
-                    <p>*When we land, I&#39;ll say goodbye to Blake forever,* I decided. *I&#39;ll run Q·elegant as Evelyn would have. I&#39;ll care for Adrian and Emma. I&#39;ll be the daughter my adoptive parents expect.*</p>
-                    
-                    <p>*And I&#39;ll learn to live without Blake Parker.*</p>
-                    
-                    <p>The aircraft touched down, jolting me from my thoughts. Walking through the arrival gate, I immediately spotted Adrian holding Emma&#39;s hand.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;What I&#39;m about to say might sound cheesy,&#34; Blake said softly,&#34;but once we land, I might not have the right to say it anymore.&#34;</p>
+                        
+                        <p>My heart quickened.</p>
+                        
+                        <p>&#34;I get what you owe your sister and her family,&#34; he continued. &#34;If you stay in Sydney with them, I understand.&#34;</p>
+                        
+                        <p>His gaze held mine. &#34;But after that...we may never meet again.&#34;</p>
+                        
+                        <p>I turned away, staring out at the endless blue sky, unable to hold his gaze.</p>
+                        
+                        <p>These three months had changed everything. Working with Blake during his recovery, standing by him at William&#39;s funeral- I&#39;d finally admitted to myself that I still loved him. And I knew his feelings for me were genuine.</p>
+                        
+                        <p>But I couldn&#39;t break my promise to my sister. Without her sacrifice, I would have died. The least I couald do was honor her memory by caring for her family.</p>
+                        
+                        <p>*When we land, I&#39;ll say goodbye to Blake forever,* I decided. *I&#39;ll run Q·elegant as Evelyn would have. I&#39;ll care for Adrian and Emma. I&#39;ll be the daughter my adoptive parents expect.*</p>
+                        
+                        <p>*And I&#39;ll learn to live without Blake Parker.*</p>
+                        
+                        <p>The aircraft touched down, jolting me from my thoughts. Walking through the arrival gate, I immediately spotted Adrian holding Emma&#39;s hand.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1067,17 +1127,21 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>The moment she saw me, Emma&#39;s face lit up. She broke free and ran toward me, arms outstretched.</p>
-                    
-                    <p>&#34;Mommy!&#34; she cried, launching herself into my arms.</p>
-                    
-                    <p>I caught her small body against mine as her arms wrapped around my neck.</p>
-                    
-                    <p>&#34;Emma missed you so much!&#34; she exclaimed, her tiny hands patting my</p>
-                    
-                    <p>cheeks as if making sure I was real.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>The moment she saw me, Emma&#39;s face lit up. She broke free and ran toward me, arms outstretched.</p>
+                        
+                        <p>&#34;Mommy!&#34; she cried, launching herself into my arms.</p>
+                        
+                        <p>I caught her small body against mine as her arms wrapped around my neck.</p>
+                        
+                        <p>&#34;Emma missed you so much!&#34; she exclaimed, her tiny hands patting my</p>
+                        
+                        <p>cheeks as if making sure I was real.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2393,6 +2457,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2519,7 +2663,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2561,32 +2704,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2597,21 +2722,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2644,6 +2759,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2664,20 +2785,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

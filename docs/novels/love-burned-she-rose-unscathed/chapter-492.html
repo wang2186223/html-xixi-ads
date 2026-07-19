@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:27.302554">
-    <meta property="article:modified_time" content="2026-07-19T02:47:27.302554">
+    <meta property="article:published_time" content="2026-07-19T13:03:21.945169">
+    <meta property="article:modified_time" content="2026-07-19T13:03:21.945169">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:27">
+    <meta name="last-modified" content="2026-07-19 13:03:21">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:27.302554",
-        "dateModified": "2026-07-19T02:47:27.302554",
+        "datePublished": "2026-07-19T13:03:21.945169",
+        "dateModified": "2026-07-19T13:03:21.945169",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,15 +893,19 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter492</p>
-                    
-                    <p>Chapter 492</p>
-                    
-                    <p>?</p>
-                    
-                    <p>The venue was set on the third floor of The Book Nook. Even before the event officially opened, a large crowd of eager readers had already gathered outside. A team of about a dozen security guards worked in unison to maintain order. Near the entrance, a large display stood prominently, neatly stacked with copies of Madge&#39;s new book, Seven Days. Additionally, there was a life-sized standee showcasing the book&#39;s cover alongside several key characters in cartoon form.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter492</p>
+                        
+                        <p>Chapter 492</p>
+                        
+                        <p>?</p>
+                        
+                        <p>The venue was set on the third floor of The Book Nook. Even before the event officially opened, a large crowd of eager readers had already gathered outside. A team of about a dozen security guards worked in unison to maintain order. Near the entrance, a large display stood prominently, neatly stacked with copies of Madge&#39;s new book, Seven Days. Additionally, there was a life-sized standee showcasing the book&#39;s cover alongside several key characters in cartoon form.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -880,15 +920,19 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Wow are there really this many people?&#34; a young woman exclaimed as she stepped inside, visibly taken aback. Her boyfriend followed closely behind, letting out a frustrated sigh. &#34;It&#39;s just a book signing, right? Why does it feel like we&#39;re at a rock star&#39;s fan meet?&#34;</p>
-                    
-                    <p>The girl was a die-hard fan of celebrities, that is, with a rotating roster of pop idols she adored. Despite years of following stars, she&#39;d never been this excited about a novel. That changed last week when she caught her dad engrossed in a rather eerie-looking mystery novel.</p>
-                    
-                    <p>Her phone busted that day, making her bored as hell till they fixed it after lunch. Out of sheer boredom, she picked up the novel... and couldn&#39;t put it down!</p>
-                    
-                    <p>She didn&#39;t even glance at her phone when it was finally repaired. She stayed up all night to finish the book and then went online to scour for information about the elusive author, only to find very little. Frustrated, she texted her boyfriend: &#34;Is the author a hermit or what?! How can they not have any social media?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Wow are there really this many people?&#34; a young woman exclaimed as she stepped inside, visibly taken aback. Her boyfriend followed closely behind, letting out a frustrated sigh. &#34;It&#39;s just a book signing, right? Why does it feel like we&#39;re at a rock star&#39;s fan meet?&#34;</p>
+                        
+                        <p>The girl was a die-hard fan of celebrities, that is, with a rotating roster of pop idols she adored. Despite years of following stars, she&#39;d never been this excited about a novel. That changed last week when she caught her dad engrossed in a rather eerie-looking mystery novel.</p>
+                        
+                        <p>Her phone busted that day, making her bored as hell till they fixed it after lunch. Out of sheer boredom, she picked up the novel... and couldn&#39;t put it down!</p>
+                        
+                        <p>She didn&#39;t even glance at her phone when it was finally repaired. She stayed up all night to finish the book and then went online to scour for information about the elusive author, only to find very little. Frustrated, she texted her boyfriend: &#34;Is the author a hermit or what?! How can they not have any social media?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -903,15 +947,19 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Driven by curiosity about the mind behind such a captivating story, she delved into the author&#39;s other mystery novels. She had low expectations, considering they were a decade old and assumed they would be clich   and poorly written. But she was wrong-hopelessly hooked again!</p>
-                    
-                    <p>In a week, she devoured all of Madge&#39;s novels except for one that was as unappealing as stale bread. The rest, especially the decade-old mysteries, were not only timeless but offered a gritty reflection on society&#39;s underbelly, something that would be controversial if published today. Those books blew her mind, showing all this crazy deep and colorful stuff about people she&#39;d never even thought about.</p>
-                    
-                    <p>When she heard about the book signing clashing with a meet-and-greet for one of her current idols, she was torn. After two days of deliberation, she chose the signing. Yet, as they approached The Book Nook, regret washed over her. Her boyfriend&#39;s quip of &#34;Well, we&#39;re here now,&#34; did little to soothe her.</p>
-                    
-                    <p>They planned to peek in and then dash off to the pop idol&#39;s event. But then... &#34;Holy cow! Look at this crowd! Hahaha-where&#39;s my fan sign? Get it out! Quick!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Driven by curiosity about the mind behind such a captivating story, she delved into the author&#39;s other mystery novels. She had low expectations, considering they were a decade old and assumed they would be clich   and poorly written. But she was wrong-hopelessly hooked again!</p>
+                        
+                        <p>In a week, she devoured all of Madge&#39;s novels except for one that was as unappealing as stale bread. The rest, especially the decade-old mysteries, were not only timeless but offered a gritty reflection on society&#39;s underbelly, something that would be controversial if published today. Those books blew her mind, showing all this crazy deep and colorful stuff about people she&#39;d never even thought about.</p>
+                        
+                        <p>When she heard about the book signing clashing with a meet-and-greet for one of her current idols, she was torn. After two days of deliberation, she chose the signing. Yet, as they approached The Book Nook, regret washed over her. Her boyfriend&#39;s quip of &#34;Well, we&#39;re here now,&#34; did little to soothe her.</p>
+                        
+                        <p>They planned to peek in and then dash off to the pop idol&#39;s event. But then... &#34;Holy cow! Look at this crowd! Hahaha-where&#39;s my fan sign? Get it out! Quick!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -926,15 +974,19 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Didn&#39;t you toss it downstairs a minute ago?&#34; he asked.</p>
-                    
-                    <p>Drat!</p>
-                    
-                    <p>&#34;What are you waiting for? Go get it back, now!&#34; she urged.</p>
-                    
-                    <p>&#34;But... weren&#39;t we just going to</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Didn&#39;t you toss it downstairs a minute ago?&#34; he asked.</p>
+                        
+                        <p>Drat!</p>
+                        
+                        <p>&#34;What are you waiting for? Go get it back, now!&#34; she urged.</p>
+                        
+                        <p>&#34;But... weren&#39;t we just going to</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -949,15 +1001,19 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>look</p>
-                    
-                    <p>head to Abel&#39;s</p>
-                    
-                    <p>meet-and-greet?&#34; Content b</p>
-                    
-                    <p>Sw</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>look</p>
+                        
+                        <p>head to Abel&#39;s</p>
+                        
+                        <p>meet-and-greet?&#34; Content b</p>
+                        
+                        <p>Sw</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -972,15 +1028,19 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>s to</p>
-                    
-                    <p>&#34;Oh, forget that! What&#39;s a little pop idol&#39;s event compared to this? love the buzz here, tee-hee...&#34; Content</p>
-                    
-                    <p>s to en.kikistorie</p>
-                    
-                    <p>&#34;Women...&#34; he thought, bewildered by her sudden change of heart.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>s to</p>
+                        
+                        <p>&#34;Oh, forget that! What&#39;s a little pop idol&#39;s event compared to this? love the buzz here, tee-hee...&#34; Content</p>
+                        
+                        <p>s to en.kikistorie</p>
+                        
+                        <p>&#34;Women...&#34; he thought, bewildered by her sudden change of heart.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -995,11 +1055,15 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;What are you dawdling for? Go get the sign!&#34;</p>
-                    
-                    <p>&#34;Right, right...&#34; he replied.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;What are you dawdling for? Go get the sign!&#34;</p>
+                        
+                        <p>&#34;Right, right...&#34; he replied.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2315,6 +2379,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2441,7 +2585,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2483,32 +2626,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2519,21 +2644,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2566,6 +2681,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2586,20 +2707,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

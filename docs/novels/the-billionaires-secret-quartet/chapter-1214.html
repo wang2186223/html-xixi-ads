@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:46.326839">
-    <meta property="article:modified_time" content="2026-07-19T02:47:46.326839">
+    <meta property="article:published_time" content="2026-07-19T13:03:39.560721">
+    <meta property="article:modified_time" content="2026-07-19T13:03:39.560721">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:46">
+    <meta name="last-modified" content="2026-07-19 13:03:39">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:46.326839",
-        "dateModified": "2026-07-19T02:47:46.326839",
+        "datePublished": "2026-07-19T13:03:39.560721",
+        "dateModified": "2026-07-19T13:03:39.560721",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter1214</p>
-                    
-                    <p>&#34;Alright, I’m in,&#34; Susan blurted out without a second thought.</p>
-                    
-                    <p>She had braced herself for some outrageous demand, and now felt a wave of relief wash over her.</p>
-                    
-                    <p>Even if Callum hadn&#39;t mentioned it, she would&#39;ve moved heaven and earth to sabotage Thalassa and</p>
-                    
-                    <p>Lysander&#39;s relationship and drive a wedge between them!</p>
-                    
-                    <p>Only with Thalassa out of the picture could Susan have a shot at standing by Lysander&#39;s side.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter1214</p>
+                        
+                        <p>&#34;Alright, I’m in,&#34; Susan blurted out without a second thought.</p>
+                        
+                        <p>She had braced herself for some outrageous demand, and now felt a wave of relief wash over her.</p>
+                        
+                        <p>Even if Callum hadn&#39;t mentioned it, she would&#39;ve moved heaven and earth to sabotage Thalassa and</p>
+                        
+                        <p>Lysander&#39;s relationship and drive a wedge between them!</p>
+                        
+                        <p>Only with Thalassa out of the picture could Susan have a shot at standing by Lysander&#39;s side.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Callum&#39;s lips curled into a smirk. &#34;You can go now,&#34; he said to Susan.</p>
-                    
-                    <p>&#34;That&#39;s it? You haven&#39;t even told me how you&#39;re going to help me,&#34; Susan said, her confusion evident.</p>
-                    
-                    <p>Callum, leaning on his cane, rose to his feet and walked away without another glance at Susan. &#34;I only</p>
-                    
-                    <p>work with smart people.&#34;</p>
-                    
-                    <p>Susan was about to follow him, but his words rooted her to the spot. She was afraid that saying</p>
-                    
-                    <p>anything more might make her look foolish in his eyes.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Callum&#39;s lips curled into a smirk. &#34;You can go now,&#34; he said to Susan.</p>
+                        
+                        <p>&#34;That&#39;s it? You haven&#39;t even told me how you&#39;re going to help me,&#34; Susan said, her confusion evident.</p>
+                        
+                        <p>Callum, leaning on his cane, rose to his feet and walked away without another glance at Susan. &#34;I only</p>
+                        
+                        <p>work with smart people.&#34;</p>
+                        
+                        <p>Susan was about to follow him, but his words rooted her to the spot. She was afraid that saying</p>
+                        
+                        <p>anything more might make her look foolish in his eyes.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>But with Callum leaving her without any hints, just a promise to help her win Lysander, she felt lost.</p>
-                    
-                    <p>What was supposed to be her next move?</p>
-                    
-                    <p>...</p>
-                    
-                    <p>Thalassa was getting ready to leave work when her phone rang – it was from Hertha.</p>
-                    
-                    <p>She quickly picked up the call, eager to hear what her friend had to say.</p>
-                    
-                    <p>&#34;Thalassa, guess how my blind date turned out?&#34; Hertha couldn&#39;t wait to tell her as soon as Thalassa</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>But with Callum leaving her without any hints, just a promise to help her win Lysander, she felt lost.</p>
+                        
+                        <p>What was supposed to be her next move?</p>
+                        
+                        <p>...</p>
+                        
+                        <p>Thalassa was getting ready to leave work when her phone rang – it was from Hertha.</p>
+                        
+                        <p>She quickly picked up the call, eager to hear what her friend had to say.</p>
+                        
+                        <p>&#34;Thalassa, guess how my blind date turned out?&#34; Hertha couldn&#39;t wait to tell her as soon as Thalassa</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>answered.</p>
-                    
-                    <p>&#34;No idea,&#34; Thalassa replied. &#34;Just spill it, will you?&#34;</p>
-                    
-                    <p>&#34;Well, I was all set to tell my mom to gently reject Spencer, but before I could even open my mouth,</p>
-                    
-                    <p>she&#39;s telling me how much Spencer likes me. He called her, said he felt a connection, and now he&#39;s</p>
-                    
-                    <p>planning to visit in a few days to formally ask for my hand. My mom&#39;s over the moon, laughing in her</p>
-                    
-                    <p>sleep with joy. How am I supposed to break it to her now?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>answered.</p>
+                        
+                        <p>&#34;No idea,&#34; Thalassa replied. &#34;Just spill it, will you?&#34;</p>
+                        
+                        <p>&#34;Well, I was all set to tell my mom to gently reject Spencer, but before I could even open my mouth,</p>
+                        
+                        <p>she&#39;s telling me how much Spencer likes me. He called her, said he felt a connection, and now he&#39;s</p>
+                        
+                        <p>planning to visit in a few days to formally ask for my hand. My mom&#39;s over the moon, laughing in her</p>
+                        
+                        <p>sleep with joy. How am I supposed to break it to her now?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Hertha was distressed.</p>
-                    
-                    <p>She had intended for her mother to turn Spencer down, but now, Spencer had seized the initiative.</p>
-                    
-                    <p>If she tried to tell her mother now that she wasn&#39;t feeling it and wanted to reject Spencer, her mom</p>
-                    
-                    <p>would probably twist her ear, accuse her of not knowing a good thing when she saw it, and threaten to</p>
-                    
-                    <p>disown her.</p>
-                    
-                    <p>Hertha chickened out and didn&#39;t speak up.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Hertha was distressed.</p>
+                        
+                        <p>She had intended for her mother to turn Spencer down, but now, Spencer had seized the initiative.</p>
+                        
+                        <p>If she tried to tell her mother now that she wasn&#39;t feeling it and wanted to reject Spencer, her mom</p>
+                        
+                        <p>would probably twist her ear, accuse her of not knowing a good thing when she saw it, and threaten to</p>
+                        
+                        <p>disown her.</p>
+                        
+                        <p>Hertha chickened out and didn&#39;t speak up.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;Then what are you going to do? Just wait for Spencer to come asking?&#34; Thalassa asked, trying to</p>
-                    
-                    <p>make her friend understand the gravity of the situation.</p>
-                    
-                    <p>&#34;If you say you&#39;re not into him now, it&#39;s easier to call it quits. But once he&#39;s made an official move, it&#39;s</p>
-                    
-                    <p>much more difficult. Ending it then will cause more gossip and hurt for both of you.&#34;</p>
-                    
-                    <p>&#34;I get it, I do. I want Spencer to be the one to tell my mom it&#39;s not working out and to bow out</p>
-                    
-                    <p>graciously.&#34; Hertha knew the score. She was calling Thalassa to figure out a good plan.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;Then what are you going to do? Just wait for Spencer to come asking?&#34; Thalassa asked, trying to</p>
+                        
+                        <p>make her friend understand the gravity of the situation.</p>
+                        
+                        <p>&#34;If you say you&#39;re not into him now, it&#39;s easier to call it quits. But once he&#39;s made an official move, it&#39;s</p>
+                        
+                        <p>much more difficult. Ending it then will cause more gossip and hurt for both of you.&#34;</p>
+                        
+                        <p>&#34;I get it, I do. I want Spencer to be the one to tell my mom it&#39;s not working out and to bow out</p>
+                        
+                        <p>graciously.&#34; Hertha knew the score. She was calling Thalassa to figure out a good plan.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,19 +1079,23 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Thalassa wanted to be there for her friend, but remembering Lysander&#39;s reaction the day before, she</p>
-                    
-                    <p>hesitated.</p>
-                    
-                    <p>&#34;Hertha, I don&#39;t think I can be there for you today, especially not to meet another guy,&#34; Thalassa said</p>
-                    
-                    <p>with regret but felt compelled to be honest with her friend.</p>
-                    
-                    <p>&#34;What? Why?&#34; Hertha was truly baffled.</p>
-                    
-                    <p>It was clear that Lysander was on a vengeful purpose to make Thalassa to apologize.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Thalassa wanted to be there for her friend, but remembering Lysander&#39;s reaction the day before, she</p>
+                        
+                        <p>hesitated.</p>
+                        
+                        <p>&#34;Hertha, I don&#39;t think I can be there for you today, especially not to meet another guy,&#34; Thalassa said</p>
+                        
+                        <p>with regret but felt compelled to be honest with her friend.</p>
+                        
+                        <p>&#34;What? Why?&#34; Hertha was truly baffled.</p>
+                        
+                        <p>It was clear that Lysander was on a vengeful purpose to make Thalassa to apologize.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2347,6 +2411,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2473,7 +2617,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2515,32 +2658,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2551,21 +2676,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2598,6 +2713,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2618,20 +2739,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

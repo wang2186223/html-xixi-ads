@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.321426">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.321426">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.330069">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.330069">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.321426",
-        "dateModified": "2026-07-19T02:47:23.321426",
+        "datePublished": "2026-07-19T13:03:18.330069",
+        "dateModified": "2026-07-19T13:03:18.330069",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,31 +893,35 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>The next afternoon, Thaddeus finally woke up. He’d been having the same dream all night.</p>
-                    
-                    <p>He was back on the battlefield of Zenithia. He was a**igned a tough mission where he and 50 otherrades snuck into the enemy camp, wiped out the terrorists, and sessfully rescued 10 hostages.</p>
-                    
-                    <p>Those hardened criminals were armed with heavy guns. There were also just-legal teenagers who had started killing and robbing at the tender age of five.</p>
-                    
-                    <p>Blood-soaked sand was like a living hell.</p>
-                    
-                    <p>Originally, Thaddeus wasn’t on the mission list but he volunteered and became a member of the Shadowguard Legion.</p>
-                    
-                    <p>“Young man, are you married?”</p>
-                    
-                    <p>“No.”</p>
-                    
-                    <p>“Why would you want to take on this mission? All of us here have families. If there’s a mishap, there’s someone to carry on.”</p>
-                    
-                    <p>At that time. Thaddeus simplyughed, uncaring about life or death.</p>
-                    
-                    <p>“I have no burdens, so I have nothing to fear.”</p>
-                    
-                    <p>The two most important women in his life had both left him one after the other. His heart was already broken to the point of no return, so he wasn’t afraid of dying.</p>
-                    
-                    <p>In fact, he was more afraid of loneliness.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>The next afternoon, Thaddeus finally woke up. He’d been having the same dream all night.</p>
+                        
+                        <p>He was back on the battlefield of Zenithia. He was a**igned a tough mission where he and 50 otherrades snuck into the enemy camp, wiped out the terrorists, and sessfully rescued 10 hostages.</p>
+                        
+                        <p>Those hardened criminals were armed with heavy guns. There were also just-legal teenagers who had started killing and robbing at the tender age of five.</p>
+                        
+                        <p>Blood-soaked sand was like a living hell.</p>
+                        
+                        <p>Originally, Thaddeus wasn’t on the mission list but he volunteered and became a member of the Shadowguard Legion.</p>
+                        
+                        <p>“Young man, are you married?”</p>
+                        
+                        <p>“No.”</p>
+                        
+                        <p>“Why would you want to take on this mission? All of us here have families. If there’s a mishap, there’s someone to carry on.”</p>
+                        
+                        <p>At that time. Thaddeus simplyughed, uncaring about life or death.</p>
+                        
+                        <p>“I have no burdens, so I have nothing to fear.”</p>
+                        
+                        <p>The two most important women in his life had both left him one after the other. His heart was already broken to the point of no return, so he wasn’t afraid of dying.</p>
+                        
+                        <p>In fact, he was more afraid of loneliness.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -896,31 +936,35 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Later, 49rades fought to the death, leaving less than 10 survivors.</p>
-                    
-                    <p>Thaddeus was shot and stabbed in the leg, shoulder, and waist. Just when he thought he was going to die, then a girl in a white coat saved him like an angel.</p>
-                    
-                    <p>Wearing a thick mask, with a neat short haircut, her white coat was ragged, like an angel in battle.</p>
-                    
-                    <p>Her beautiful eyes shone brightly as if they could outshine the sun and the moon.</p>
-                    
-                    <p>That woman was Paloma, the lifesaver he had been searching for all these years.</p>
-                    
-                    <p>Unexpectedly, after seeing nast night, he dreamed of her again.</p>
-                    
-                    <p>Although na and Paloma were two unrted people, he saw Paloma’s shadow in na’s eyes, which was really puzzling to him.</p>
-                    
-                    <p>Thaddeus rubbed his forehead and found that the headache waspletely gone.</p>
-                    
-                    <p>At that time, Alva came in with a medicine box.</p>
-                    
-                    <p>Seeing Thaddeus awake and looking better, she happily said, “Mr. Thaddeus! Are you awake? How are you feeling today?”</p>
-                    
-                    <p>“I’m okay.”</p>
-                    
-                    <p>Thaddeus tried to sit up and suddenly found out that he had changed into pajamas, which surprised him.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Later, 49rades fought to the death, leaving less than 10 survivors.</p>
+                        
+                        <p>Thaddeus was shot and stabbed in the leg, shoulder, and waist. Just when he thought he was going to die, then a girl in a white coat saved him like an angel.</p>
+                        
+                        <p>Wearing a thick mask, with a neat short haircut, her white coat was ragged, like an angel in battle.</p>
+                        
+                        <p>Her beautiful eyes shone brightly as if they could outshine the sun and the moon.</p>
+                        
+                        <p>That woman was Paloma, the lifesaver he had been searching for all these years.</p>
+                        
+                        <p>Unexpectedly, after seeing nast night, he dreamed of her again.</p>
+                        
+                        <p>Although na and Paloma were two unrted people, he saw Paloma’s shadow in na’s eyes, which was really puzzling to him.</p>
+                        
+                        <p>Thaddeus rubbed his forehead and found that the headache waspletely gone.</p>
+                        
+                        <p>At that time, Alva came in with a medicine box.</p>
+                        
+                        <p>Seeing Thaddeus awake and looking better, she happily said, “Mr. Thaddeus! Are you awake? How are you feeling today?”</p>
+                        
+                        <p>“I’m okay.”</p>
+                        
+                        <p>Thaddeus tried to sit up and suddenly found out that he had changed into pajamas, which surprised him.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -935,31 +979,35 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>“What’s up with these clothes?”</p>
-                    
-                    <p>“You disappearedst night and came back all soaked. I helped you change all your clothes.”</p>
-                    
-                    <p>As Alva spoke, she tidied up the room, “You’re already thirty, howe you still can’t take care of yourself?”</p>
-                    
-                    <p>Thaddeus frowned and touched his hair in annoyance.</p>
-                    
-                    <p>Last night, he remembered having a splitting headache. He went to the study for medicine and that was thest thing he could remember ofst night’s events.</p>
-                    
-                    <p>“Alva, did you change my clothes?”</p>
-                    
-                    <p>“Who else could it be?”</p>
-                    
-                    <p>Thaddeus touched his forehead awkwardly, “Alva, I’m thirty, not thirteen, could you not just change my clothes randomly?”</p>
-                    
-                    <p>“Oh, do you think I took advantage of you? I’m old enough to be your mother!” Alva began to boast, “Do you think I enjoy changing your clothes? I’ve seen you grow from a boy to a man, I’m sick of it!”</p>
-                    
-                    <p>Thaddeus was helpless.</p>
-                    
-                    <p>“How did you drive your wife away? Now there’s no one to take care of you, whose fault is that? If one day I can’t take care of you, you’ll turn into a wild man with no one to look after you, then you’ll be satisfied!”</p>
-                    
-                    <p>Alva began to nag, but Thaddeus didn’t even have a chance to retort.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“What’s up with these clothes?”</p>
+                        
+                        <p>“You disappearedst night and came back all soaked. I helped you change all your clothes.”</p>
+                        
+                        <p>As Alva spoke, she tidied up the room, “You’re already thirty, howe you still can’t take care of yourself?”</p>
+                        
+                        <p>Thaddeus frowned and touched his hair in annoyance.</p>
+                        
+                        <p>Last night, he remembered having a splitting headache. He went to the study for medicine and that was thest thing he could remember ofst night’s events.</p>
+                        
+                        <p>“Alva, did you change my clothes?”</p>
+                        
+                        <p>“Who else could it be?”</p>
+                        
+                        <p>Thaddeus touched his forehead awkwardly, “Alva, I’m thirty, not thirteen, could you not just change my clothes randomly?”</p>
+                        
+                        <p>“Oh, do you think I took advantage of you? I’m old enough to be your mother!” Alva began to boast, “Do you think I enjoy changing your clothes? I’ve seen you grow from a boy to a man, I’m sick of it!”</p>
+                        
+                        <p>Thaddeus was helpless.</p>
+                        
+                        <p>“How did you drive your wife away? Now there’s no one to take care of you, whose fault is that? If one day I can’t take care of you, you’ll turn into a wild man with no one to look after you, then you’ll be satisfied!”</p>
+                        
+                        <p>Alva began to nag, but Thaddeus didn’t even have a chance to retort.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -974,31 +1022,35 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>“Quick, take off your shirt!”</p>
-                    
-                    <p>“What are you up to?” Thaddeus took a step back, as he was surprised to hear that.</p>
-                    
-                    <p>“I need to put ointment on the wound on your back! The medicine won’t work unless you keep applying it, so hurry up and take it off!”</p>
-                    
-                    <p>Alva held the ointment Mrs. Abernathy had given her and urged Thaddeus sternly.</p>
-                    
-                    <p>Thaddeus’s eyes narrowed, “How did you know I got hurt on my back?”</p>
-                    
-                    <p>“That’s because.” Alva all of a sudden remembered Mrs. Abernathy’s instructions and hastily corrected herself, “That’s because I saw it when I was changing your clothesst night! That huge bruise scared me to death!”</p>
-                    
-                    <p>Thaddeus remembered the moment he was movedst night. He was holding na, feeling the warmth of her b*dy, and the softness that seemed to melt in his hand.</p>
-                    
-                    <p>For some reason, he had a strong urge to protect her.</p>
-                    
-                    <p>Thaddeus swallowed and his eyes were filled with uncontroble desire.</p>
-                    
-                    <p>But soon enough, his eyes cooled down.</p>
-                    
-                    <p>After all, Thaddeus was a man with a strong sense of self-esteem. He had already apologized to her, but na not only didn’t ept it, but she also pped him and humiliated him. That was something he couldn’t tolerate.</p>
-                    
-                    <p>Man can be killed but not insulted.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“Quick, take off your shirt!”</p>
+                        
+                        <p>“What are you up to?” Thaddeus took a step back, as he was surprised to hear that.</p>
+                        
+                        <p>“I need to put ointment on the wound on your back! The medicine won’t work unless you keep applying it, so hurry up and take it off!”</p>
+                        
+                        <p>Alva held the ointment Mrs. Abernathy had given her and urged Thaddeus sternly.</p>
+                        
+                        <p>Thaddeus’s eyes narrowed, “How did you know I got hurt on my back?”</p>
+                        
+                        <p>“That’s because.” Alva all of a sudden remembered Mrs. Abernathy’s instructions and hastily corrected herself, “That’s because I saw it when I was changing your clothesst night! That huge bruise scared me to death!”</p>
+                        
+                        <p>Thaddeus remembered the moment he was movedst night. He was holding na, feeling the warmth of her b*dy, and the softness that seemed to melt in his hand.</p>
+                        
+                        <p>For some reason, he had a strong urge to protect her.</p>
+                        
+                        <p>Thaddeus swallowed and his eyes were filled with uncontroble desire.</p>
+                        
+                        <p>But soon enough, his eyes cooled down.</p>
+                        
+                        <p>After all, Thaddeus was a man with a strong sense of self-esteem. He had already apologized to her, but na not only didn’t ept it, but she also pped him and humiliated him. That was something he couldn’t tolerate.</p>
+                        
+                        <p>Man can be killed but not insulted.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1013,31 +1065,35 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>16:45</p>
-                    
-                    <p>At that moment, the butler’s voice came from outside the door.</p>
-                    
-                    <p>“Mr. Thaddeus, Mr. Jareth is here looking for you. He’s waiting for you in the living room.”</p>
-                    
-                    <p>Thaddeus’s l*ps tightened as he ordered, “Tell him to find me in the study.”</p>
-                    
-                    <p>The sudden visit of Jareth made Glynnis’ heart flutter. She was jumping with excitement hearing the news of his visit.</p>
-                    
-                    <p>She quickly changed into her new haute couture dress, touched up her makeup, sprayed on perfume, and happily went to meet her beloved.</p>
-                    
-                    <p>Just as she opened the door, Glynnis saw Mari hugging that annoying teddy bear, hopping around in the hallway as if she was ying a game.</p>
-                    
-                    <p>Glynnis frowned in disgust, walked up to Mari in her high heels, and gave her a hard shove.</p>
-                    
-                    <p>“Ah!” Mari sl*pped and stumbled forward, falling heavily to the ground. It looked very clumsy and pitiful.</p>
-                    
-                    <p>Even so, she still held onto the teddy bear tightly.</p>
-                    
-                    <p>“I told you not to jump around in the hallway. Look, you fell, didn’t you?”</p>
-                    
-                    <p>Glynnis was in a good mood, so she didn’t want to waste any more time with her and straightened her hair and walked past Mari.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>16:45</p>
+                        
+                        <p>At that moment, the butler’s voice came from outside the door.</p>
+                        
+                        <p>“Mr. Thaddeus, Mr. Jareth is here looking for you. He’s waiting for you in the living room.”</p>
+                        
+                        <p>Thaddeus’s l*ps tightened as he ordered, “Tell him to find me in the study.”</p>
+                        
+                        <p>The sudden visit of Jareth made Glynnis’ heart flutter. She was jumping with excitement hearing the news of his visit.</p>
+                        
+                        <p>She quickly changed into her new haute couture dress, touched up her makeup, sprayed on perfume, and happily went to meet her beloved.</p>
+                        
+                        <p>Just as she opened the door, Glynnis saw Mari hugging that annoying teddy bear, hopping around in the hallway as if she was ying a game.</p>
+                        
+                        <p>Glynnis frowned in disgust, walked up to Mari in her high heels, and gave her a hard shove.</p>
+                        
+                        <p>“Ah!” Mari sl*pped and stumbled forward, falling heavily to the ground. It looked very clumsy and pitiful.</p>
+                        
+                        <p>Even so, she still held onto the teddy bear tightly.</p>
+                        
+                        <p>“I told you not to jump around in the hallway. Look, you fell, didn’t you?”</p>
+                        
+                        <p>Glynnis was in a good mood, so she didn’t want to waste any more time with her and straightened her hair and walked past Mari.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1052,31 +1108,35 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>If she was in a bad mood, she might have stepped on Mari.</p>
-                    
-                    <p>After Glynnis left, Mari dared to slowly get up from the ground.</p>
-                    
-                    <p>Over the years, she’de to know Glynnis pretty well. ying the fool and keeping her head down when in Glynnis’s presence meant getting yelled at less.</p>
-                    
-                    <p>“Mari!” Alva spotted the situation and rushed over, propping Mari up with an expression full of concern. “What happened? It’s t ground, how did you hurt yourself?!”</p>
-                    
-                    <p>“I’m okay.” Mari pressed her l*ps together as she described the situation, “I was just being careless.”</p>
-                    
-                    <p>“I saw Glynnis leaving this ce just now, did she push you?!” Alva’s eyes turned red with anger as she wanted the truth.</p>
-                    
-                    <p>“No, no! I’m fine! I need to go!”</p>
-                    
-                    <p>At the mention of Glynnis, Mari instantly hugged her teddy bear, enduring the pain, and hurried away.</p>
-                    
-                    <p>Watching Mari’s pitiful figure leaving, Alva gritted her teeth and sighed.</p>
-                    
-                    <p>Jareth took a stroll around the backyard, and as he walked back into the living room, he ran into a beaming Glynnis.</p>
-                    
-                    <p>“Mr. Jareth!” Glynnis greeted him with a sweet voice, as sugary as candy, “What brings you here? Are you looking for Thaddeus?”</p>
-                    
-                    <p>“Indeed,” Jareth replied casually. He was close to Thaddeus and had an understanding of the environment of the Abernathy family better than anyone else.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>If she was in a bad mood, she might have stepped on Mari.</p>
+                        
+                        <p>After Glynnis left, Mari dared to slowly get up from the ground.</p>
+                        
+                        <p>Over the years, she’de to know Glynnis pretty well. ying the fool and keeping her head down when in Glynnis’s presence meant getting yelled at less.</p>
+                        
+                        <p>“Mari!” Alva spotted the situation and rushed over, propping Mari up with an expression full of concern. “What happened? It’s t ground, how did you hurt yourself?!”</p>
+                        
+                        <p>“I’m okay.” Mari pressed her l*ps together as she described the situation, “I was just being careless.”</p>
+                        
+                        <p>“I saw Glynnis leaving this ce just now, did she push you?!” Alva’s eyes turned red with anger as she wanted the truth.</p>
+                        
+                        <p>“No, no! I’m fine! I need to go!”</p>
+                        
+                        <p>At the mention of Glynnis, Mari instantly hugged her teddy bear, enduring the pain, and hurried away.</p>
+                        
+                        <p>Watching Mari’s pitiful figure leaving, Alva gritted her teeth and sighed.</p>
+                        
+                        <p>Jareth took a stroll around the backyard, and as he walked back into the living room, he ran into a beaming Glynnis.</p>
+                        
+                        <p>“Mr. Jareth!” Glynnis greeted him with a sweet voice, as sugary as candy, “What brings you here? Are you looking for Thaddeus?”</p>
+                        
+                        <p>“Indeed,” Jareth replied casually. He was close to Thaddeus and had an understanding of the environment of the Abernathy family better than anyone else.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1091,19 +1151,23 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>He was well aware that Elspeth was a cun ning woman, hence his cold demeanor towards Glynnis.</p>
-                    
-                    <p>But Glynnis didn’t see it that way. She thought that she had beauty and a good family background. Plus, she was so straightforward. She was sure Mr. Jareth would be eating out of her hand soon.</p>
-                    
-                    <p>So, she pulled her cor lower, straightened her chest, and flirtatiously hung onto Jareth’s sturdy arm, puckering her red l*ps.</p>
-                    
-                    <p>“Mr. Jareth, let’s go, I’ll take you to Thaddeus.”</p>
-                    
-                    <p>However, the next second, Jareth’s eyes turned frosty, his gaze cold as ice.</p>
-                    
-                    <p>“Let go of me. Your perfume is too pungent; don’t d*rty my clothes.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>He was well aware that Elspeth was a cun ning woman, hence his cold demeanor towards Glynnis.</p>
+                        
+                        <p>But Glynnis didn’t see it that way. She thought that she had beauty and a good family background. Plus, she was so straightforward. She was sure Mr. Jareth would be eating out of her hand soon.</p>
+                        
+                        <p>So, she pulled her cor lower, straightened her chest, and flirtatiously hung onto Jareth’s sturdy arm, puckering her red l*ps.</p>
+                        
+                        <p>“Mr. Jareth, let’s go, I’ll take you to Thaddeus.”</p>
+                        
+                        <p>However, the next second, Jareth’s eyes turned frosty, his gaze cold as ice.</p>
+                        
+                        <p>“Let go of me. Your perfume is too pungent; don’t d*rty my clothes.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2419,6 +2483,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2545,7 +2689,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2587,32 +2730,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2623,21 +2748,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2670,6 +2785,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2690,20 +2811,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

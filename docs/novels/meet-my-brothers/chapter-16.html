@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:39.164978">
-    <meta property="article:modified_time" content="2026-07-19T02:47:39.164978">
+    <meta property="article:published_time" content="2026-07-19T13:03:32.522350">
+    <meta property="article:modified_time" content="2026-07-19T13:03:32.522350">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:39">
+    <meta name="last-modified" content="2026-07-19 13:03:32">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:39.164978",
-        "dateModified": "2026-07-19T02:47:39.164978",
+        "datePublished": "2026-07-19T13:03:32.522350",
+        "dateModified": "2026-07-19T13:03:32.522350",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,25 +893,29 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter16</p>
-                    
-                    <p>The young woman was Shelly Barrett, Timothy’s cousin.</p>
-                    
-                    <p>Mia simply ignored Shelly’s sarcastic remarks. Throughout the years, Shelly viewed Mia in contempt. Her comments would always suggest that Mia was only willing to marry a half-dead Timothy for money.</p>
-                    
-                    <p>In the past, Mia kept putting up with Shelly’s ridicule. But now that she had signed the divorce papers, she no longer needed to do so.</p>
-                    
-                    <p>Shelly strutted haughtily over to Mia and snapped, “Why are you just standing there? Hurry over to the kitchen and start cooking. Remember to make my favorite seafood stew.”</p>
-                    
-                    <p>Mia withdrew her gaze and replied, “Grandma Laura invited me over to have dinner. She didn’t ask me to come here as a maid to cook for other people.”</p>
-                    
-                    <p>“What do you mean by that, Mia? You’ve got the nerve, don’t you? You’re even refusing to cook! I’m going to tell Aunt Sharon about this!”</p>
-                    
-                    <p>Mia ignored Shelly and walked into the house. When she entered the living room, she saw two people sitting on the couch.</p>
-                    
-                    <p>One was her ex-mother-in-law, Sharon, while the other was her ex-husband’s first love, Maya.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter16</p>
+                        
+                        <p>The young woman was Shelly Barrett, Timothy’s cousin.</p>
+                        
+                        <p>Mia simply ignored Shelly’s sarcastic remarks. Throughout the years, Shelly viewed Mia in contempt. Her comments would always suggest that Mia was only willing to marry a half-dead Timothy for money.</p>
+                        
+                        <p>In the past, Mia kept putting up with Shelly’s ridicule. But now that she had signed the divorce papers, she no longer needed to do so.</p>
+                        
+                        <p>Shelly strutted haughtily over to Mia and snapped, “Why are you just standing there? Hurry over to the kitchen and start cooking. Remember to make my favorite seafood stew.”</p>
+                        
+                        <p>Mia withdrew her gaze and replied, “Grandma Laura invited me over to have dinner. She didn’t ask me to come here as a maid to cook for other people.”</p>
+                        
+                        <p>“What do you mean by that, Mia? You’ve got the nerve, don’t you? You’re even refusing to cook! I’m going to tell Aunt Sharon about this!”</p>
+                        
+                        <p>Mia ignored Shelly and walked into the house. When she entered the living room, she saw two people sitting on the couch.</p>
+                        
+                        <p>One was her ex-mother-in-law, Sharon, while the other was her ex-husband’s first love, Maya.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -890,25 +930,29 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>She didn’t expect to see Maya at dinner today.</p>
-                    
-                    <p>Shelly rushed into the living room. She purposely bumped into Mia before reporting loudly, “Aunt Sharon, I told Mia to head to the kitchen and cook for us, but she refused! She even said that Grandma invited her over as a</p>
-                    
-                    <p>guest and not as a maid!”</p>
-                    
-                    <p>As soon as Shelly finished speaking, Sharon’s expression turned cold. “Mia, as my daughter-in-law, how can</p>
-                    
-                    <p>you refuse to cook for the family? What’s the point of keeping you around then?</p>
-                    
-                    <p>“What can you do apart from spending the family’s money? You should be honored that we let you cook for us.”</p>
-                    
-                    <p>“Do calm down, Mrs. Barrett. Don’t let this affect your health,” Maya said with a smile.</p>
-                    
-                    <p>“The more I look at her, Maya, the more annoyed I get,” Sharon huffed. “Even though you two have similar</p>
-                    
-                    <p>names, she’s just some poor woman. How can she compare to a young heiress like you? You come from such</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>She didn’t expect to see Maya at dinner today.</p>
+                        
+                        <p>Shelly rushed into the living room. She purposely bumped into Mia before reporting loudly, “Aunt Sharon, I told Mia to head to the kitchen and cook for us, but she refused! She even said that Grandma invited her over as a</p>
+                        
+                        <p>guest and not as a maid!”</p>
+                        
+                        <p>As soon as Shelly finished speaking, Sharon’s expression turned cold. “Mia, as my daughter-in-law, how can</p>
+                        
+                        <p>you refuse to cook for the family? What’s the point of keeping you around then?</p>
+                        
+                        <p>“What can you do apart from spending the family’s money? You should be honored that we let you cook for us.”</p>
+                        
+                        <p>“Do calm down, Mrs. Barrett. Don’t let this affect your health,” Maya said with a smile.</p>
+                        
+                        <p>“The more I look at her, Maya, the more annoyed I get,” Sharon huffed. “Even though you two have similar</p>
+                        
+                        <p>names, she’s just some poor woman. How can she compare to a young heiress like you? You come from such</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -923,25 +967,29 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>a good family, and you even studied abroad.</p>
-                    
-                    <p>“You’re a beautiful and capable young woman. In my eyes, you’re the most perfect daughter-in-law a person</p>
-                    
-                    <p>could have.”</p>
-                    
-                    <p>Maya’s eyes flashed with smugness as she replied, “She’s an orphan, Mrs. Barrett. I can understand her</p>
-                    
-                    <p>circumstances.”</p>
-                    
-                    <p>“Hah! What’s there to understand? As an orphan, she should know her place. She shouldn’t have dreamt of</p>
-                    
-                    <p>soaring up the ranks of society.” Sharon scoffed.</p>
-                    
-                    <p>“My son is such a fine young man. He’s bound to accomplish a great deal more in the future. How can he be</p>
-                    
-                    <p>“They’re not from the same class. I never agreed to their marriage, you know? But his grandmother insisted</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>a good family, and you even studied abroad.</p>
+                        
+                        <p>“You’re a beautiful and capable young woman. In my eyes, you’re the most perfect daughter-in-law a person</p>
+                        
+                        <p>could have.”</p>
+                        
+                        <p>Maya’s eyes flashed with smugness as she replied, “She’s an orphan, Mrs. Barrett. I can understand her</p>
+                        
+                        <p>circumstances.”</p>
+                        
+                        <p>“Hah! What’s there to understand? As an orphan, she should know her place. She shouldn’t have dreamt of</p>
+                        
+                        <p>soaring up the ranks of society.” Sharon scoffed.</p>
+                        
+                        <p>“My son is such a fine young man. He’s bound to accomplish a great deal more in the future. How can he be</p>
+                        
+                        <p>“They’re not from the same class. I never agreed to their marriage, you know? But his grandmother insisted</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -956,25 +1004,29 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>upon it.”</p>
-                    
-                    <p>Mia took it all in. She had heard the same speech numerous times over the last three years.</p>
-                    
-                    <p>However, she was no longer an orphan. She had six brothers who were all accomplished in their various fields.</p>
-                    
-                    <p>She raised her eyes and remarked, “Oh. Based on what you just said, are you implying that Timothy needs to rely on his wife’s and family connections to make something of himself?”</p>
-                    
-                    <p>“What’s this about him needing to rely on his wife? My son has always been talented, even at a young age. Why would he possibly rely on a woman?” Sharon snapped.</p>
-                    
-                    <p>“Wasn’t that what you just said?” Mia reminded her. “You said he should’ve married someone from the same</p>
-                    
-                    <p>class as him so that he can accomplish a great deal more in the future.”</p>
-                    
-                    <p>Sharon was so furious that she couldn’t even speak. When did Mia become so sharp-tongued?</p>
-                    
-                    <p>Mia glanced at the maid who was standing nearby. “Where’s Grandma?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>upon it.”</p>
+                        
+                        <p>Mia took it all in. She had heard the same speech numerous times over the last three years.</p>
+                        
+                        <p>However, she was no longer an orphan. She had six brothers who were all accomplished in their various fields.</p>
+                        
+                        <p>She raised her eyes and remarked, “Oh. Based on what you just said, are you implying that Timothy needs to rely on his wife’s and family connections to make something of himself?”</p>
+                        
+                        <p>“What’s this about him needing to rely on his wife? My son has always been talented, even at a young age. Why would he possibly rely on a woman?” Sharon snapped.</p>
+                        
+                        <p>“Wasn’t that what you just said?” Mia reminded her. “You said he should’ve married someone from the same</p>
+                        
+                        <p>class as him so that he can accomplish a great deal more in the future.”</p>
+                        
+                        <p>Sharon was so furious that she couldn’t even speak. When did Mia become so sharp-tongued?</p>
+                        
+                        <p>Mia glanced at the maid who was standing nearby. “Where’s Grandma?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -989,25 +1041,29 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>The maid finally snapped out of her daze and replied respectfully, “Mrs. Barrett Senior is taking a nap in her</p>
-                    
-                    <p>room. I think she hasn’t woken up yet.”</p>
-                    
-                    <p>Mia frowned. “Has Grandma not been feeling well lately?”</p>
-                    
-                    <p>She was a little concerned about Laura’s health.</p>
-                    
-                    <p>Shelly purposely chimed in, “Mia, look at what Maya brought with her. Not only did she bring a lot of expensive</p>
-                    
-                    <p>supplements and health products, but she even brought a bracelet. They’re all very valuable, you know.</p>
-                    
-                    <p>“Meanwhile, look at you. You came empty-handed. You don’t even know how to behave like a proper guest.</p>
-                    
-                    <p>Don’t you know any etiquette?”</p>
-                    
-                    <p>Maya glanced at the expensive gifts on the table and intentionally said, “You’re too kind, Shelly. These are all just ordinary gifts.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>The maid finally snapped out of her daze and replied respectfully, “Mrs. Barrett Senior is taking a nap in her</p>
+                        
+                        <p>room. I think she hasn’t woken up yet.”</p>
+                        
+                        <p>Mia frowned. “Has Grandma not been feeling well lately?”</p>
+                        
+                        <p>She was a little concerned about Laura’s health.</p>
+                        
+                        <p>Shelly purposely chimed in, “Mia, look at what Maya brought with her. Not only did she bring a lot of expensive</p>
+                        
+                        <p>supplements and health products, but she even brought a bracelet. They’re all very valuable, you know.</p>
+                        
+                        <p>“Meanwhile, look at you. You came empty-handed. You don’t even know how to behave like a proper guest.</p>
+                        
+                        <p>Don’t you know any etiquette?”</p>
+                        
+                        <p>Maya glanced at the expensive gifts on the table and intentionally said, “You’re too kind, Shelly. These are all just ordinary gifts.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1022,25 +1078,29 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>“They’re ordinary to wealthy people like us, Maya, but someone in our midst doesn’t have any money. She would never be able to earn enough money to afford these things, so that’s why she did everything she could</p>
-                    
-                    <p>to marry into the family,” Shelly stated.</p>
-                    
-                    <p>Sharon scoffed. She wholeheartedly agreed with Shelly. Due to her daughter-in-law’s low social status, she had been the brunt of the other wealthy women’s jokes for years now.</p>
-                    
-                    <p>Yet, Timothy never did anything about it. It took him three years before he decided to file for a divorce.</p>
-                    
-                    <p>Mia chuckled. Her gaze was mocking as she retorted, “Do you think Grandma has never seen these things before? She never cared about superficial things and isn’t materialistic.”</p>
-                    
-                    <p>Then, she looked at the maid and said, “I’ll prepare one of Grandma’s favorite soups for her.”</p>
-                    
-                    <p>“That’s wonderful. Mrs. Barrett Senior hasn’t had much of an appetite lately, but she enjoys your cooking very</p>
-                    
-                    <p>much.”</p>
-                    
-                    <p>Mia went to the kitchen. She didn’t want to entertain the three women in the living room anymore.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>“They’re ordinary to wealthy people like us, Maya, but someone in our midst doesn’t have any money. She would never be able to earn enough money to afford these things, so that’s why she did everything she could</p>
+                        
+                        <p>to marry into the family,” Shelly stated.</p>
+                        
+                        <p>Sharon scoffed. She wholeheartedly agreed with Shelly. Due to her daughter-in-law’s low social status, she had been the brunt of the other wealthy women’s jokes for years now.</p>
+                        
+                        <p>Yet, Timothy never did anything about it. It took him three years before he decided to file for a divorce.</p>
+                        
+                        <p>Mia chuckled. Her gaze was mocking as she retorted, “Do you think Grandma has never seen these things before? She never cared about superficial things and isn’t materialistic.”</p>
+                        
+                        <p>Then, she looked at the maid and said, “I’ll prepare one of Grandma’s favorite soups for her.”</p>
+                        
+                        <p>“That’s wonderful. Mrs. Barrett Senior hasn’t had much of an appetite lately, but she enjoys your cooking very</p>
+                        
+                        <p>much.”</p>
+                        
+                        <p>Mia went to the kitchen. She didn’t want to entertain the three women in the living room anymore.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1055,13 +1115,17 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Out of everyone in the Barrett family, Laura was the only one who was nice to her, so she didn’t want to start a major conflict with anyone. It’d only put Laura in a difficult position.</p>
-                    
-                    <p>Mia stayed in the kitchen alone to prepare a healthy soup for Laura.</p>
-                    
-                    <p>She was still pondering how she was going to tell Laura about the divorce.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Out of everyone in the Barrett family, Laura was the only one who was nice to her, so she didn’t want to start a major conflict with anyone. It’d only put Laura in a difficult position.</p>
+                        
+                        <p>Mia stayed in the kitchen alone to prepare a healthy soup for Laura.</p>
+                        
+                        <p>She was still pondering how she was going to tell Laura about the divorce.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2377,6 +2441,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2503,7 +2647,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2545,32 +2688,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2581,21 +2706,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2628,6 +2743,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2648,20 +2769,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

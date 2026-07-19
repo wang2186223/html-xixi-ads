@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Adrian&#39;s laugh held no warmth. &#34;Minor? When you&#39;re bullying my wife?&#34;</p>
-                    
-                    <p>Ethan surveyed the room—Vivian was the only one seated, perfectly composed. He marveled at Adrian&#39;s ability to spin narratives, even when exaggerating.</p>
-                    
-                    <p>With theatrical flourish, Ethan scattered documents across the conference table, sparking chaos among shareholders.</p>
-                    
-                    <p>Vivian skimmed the papers, recognizing their lethal potential instantly. These were smoking guns—proof of Richard&#39;s mismanagement and other shareholders&#39; embezzlement. Dawson Enterprises wasn&#39;t just failing; it was being looted. She&#39;d uncovered most herself, gathering the courage to confront this den of thieves alone today.</p>
-                    
-                    <p>The real game was about to begin.</p>
-                    
-                    <p>Adrian Blackwood&#39;s voice dripped with casual menace as he drawled, &#34;Shall I begin enumerating every single one of your illicit transactions?&#34; His piercing gaze swept across the boardroom, making each shareholder feel like prey caught in a predator&#39;s sight. While Vivian Hartley&#39;s stare could cut glass, Adrian&#39;s was downright murderous. An icy tension settled over the room, as if an executioner&#39;s blade hovered mere centimeters from their throats.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Adrian&#39;s laugh held no warmth. &#34;Minor? When you&#39;re bullying my wife?&#34;</p>
+                        
+                        <p>Ethan surveyed the room—Vivian was the only one seated, perfectly composed. He marveled at Adrian&#39;s ability to spin narratives, even when exaggerating.</p>
+                        
+                        <p>With theatrical flourish, Ethan scattered documents across the conference table, sparking chaos among shareholders.</p>
+                        
+                        <p>Vivian skimmed the papers, recognizing their lethal potential instantly. These were smoking guns—proof of Richard&#39;s mismanagement and other shareholders&#39; embezzlement. Dawson Enterprises wasn&#39;t just failing; it was being looted. She&#39;d uncovered most herself, gathering the courage to confront this den of thieves alone today.</p>
+                        
+                        <p>The real game was about to begin.</p>
+                        
+                        <p>Adrian Blackwood&#39;s voice dripped with casual menace as he drawled, &#34;Shall I begin enumerating every single one of your illicit transactions?&#34; His piercing gaze swept across the boardroom, making each shareholder feel like prey caught in a predator&#39;s sight. While Vivian Hartley&#39;s stare could cut glass, Adrian&#39;s was downright murderous. An icy tension settled over the room, as if an executioner&#39;s blade hovered mere centimeters from their throats.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Their pathetic company wasn&#39;t even fit to partner with a Blackwood Group subsidiary, and under Adrian&#39;s relentless scrutiny, they resembled frightened rabbits, scarcely daring to blink.</p>
-                    
-                    <p>One gray-haired board member summoned his last shred of courage. &#34;Mr. Blackwood, even if there are... irregularities, they&#39;re internal matters. Your wife may be Mr. Dawson&#39;s daughter, but she holds no shares or official position here.&#34;</p>
-                    
-                    <p>&#34;Are you accusing me of interference?&#34; Adrian&#39;s fingers absently traced circles on Vivian&#39;s wrist, her skin like satin beneath his touch. The older man gave a nervous chuckle. &#34;I meant no offense.&#34;</p>
-                    
-                    <p>With a dangerous smile, Adrian countered, &#34;How unfortunate. I rather enjoy interfering.&#34; His gaze flicked to Vivian, brimming with wicked amusement that silently asked for her approval. Vivian marveled at his audacity to flirt so shamelessly in this corporate battlefield, nearly shattering her carefully constructed professional facade.</p>
-                    
-                    <p>Flirting was one thing, but did he have to be so blatant? Heat flooded her cheeks as she discreetly dug her nails into his palm. To Adrian, it felt like a kitten&#39;s playful nip, and he only tightened his grip in response. Fortunately, the other occupants were too preoccupied with the damning financial documents, sweating bullets, to notice their intimate exchange. Only Ethan Caldwell, standing sentinel behind Adrian, caught the entire interaction. A quiet satisfaction warmed him - perhaps his boss was finally learning the art of romance. The notoriously professional Adrian Blackwood had never indulged in such behavior during business negotiations before.</p>
-                    
-                    <p>Vivian regained her composure, voice steady as polished steel. &#34;My offer may not be the highest, but it&#39;s fair. I&#39;m proposing the same valuation for all shares. Aren&#39;t you concerned Richard might sell yours out from under you? His connections run deeper than yours, and by then, your shares would be worthless.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Their pathetic company wasn&#39;t even fit to partner with a Blackwood Group subsidiary, and under Adrian&#39;s relentless scrutiny, they resembled frightened rabbits, scarcely daring to blink.</p>
+                        
+                        <p>One gray-haired board member summoned his last shred of courage. &#34;Mr. Blackwood, even if there are... irregularities, they&#39;re internal matters. Your wife may be Mr. Dawson&#39;s daughter, but she holds no shares or official position here.&#34;</p>
+                        
+                        <p>&#34;Are you accusing me of interference?&#34; Adrian&#39;s fingers absently traced circles on Vivian&#39;s wrist, her skin like satin beneath his touch. The older man gave a nervous chuckle. &#34;I meant no offense.&#34;</p>
+                        
+                        <p>With a dangerous smile, Adrian countered, &#34;How unfortunate. I rather enjoy interfering.&#34; His gaze flicked to Vivian, brimming with wicked amusement that silently asked for her approval. Vivian marveled at his audacity to flirt so shamelessly in this corporate battlefield, nearly shattering her carefully constructed professional facade.</p>
+                        
+                        <p>Flirting was one thing, but did he have to be so blatant? Heat flooded her cheeks as she discreetly dug her nails into his palm. To Adrian, it felt like a kitten&#39;s playful nip, and he only tightened his grip in response. Fortunately, the other occupants were too preoccupied with the damning financial documents, sweating bullets, to notice their intimate exchange. Only Ethan Caldwell, standing sentinel behind Adrian, caught the entire interaction. A quiet satisfaction warmed him - perhaps his boss was finally learning the art of romance. The notoriously professional Adrian Blackwood had never indulged in such behavior during business negotiations before.</p>
+                        
+                        <p>Vivian regained her composure, voice steady as polished steel. &#34;My offer may not be the highest, but it&#39;s fair. I&#39;m proposing the same valuation for all shares. Aren&#39;t you concerned Richard might sell yours out from under you? His connections run deeper than yours, and by then, your shares would be worthless.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Adrian kept one arm draped possessively around Vivian&#39;s shoulders, the other entwined with her fingers. &#34;Several of your activities have crossed into criminal territory. Imagine what might happen if an upstanding citizen were to report them to the authorities...&#34;</p>
-                    
-                    <p>Richard Dawson&#39;s face turned ashen. &#34;You wouldn&#39;t dare!&#34;</p>
-                    
-                    <p>Adrian&#39;s lips curled into a mocking smile. &#34;Dearest Father-in-law, you can either take the money and retain some dignity, or go down with your sinking ship. The choice seems obvious, doesn&#39;t it?&#34;</p>
-                    
-                    <p>The term &#34;Father-in-law&#34; dripped with sarcasm rather than respect. Adrian pulled Vivian closer, his breath warm against her ear as he murmured, &#34;I&#39;ve got you.&#34; The words sent an unexpected jolt through Vivian, making her question whether their fractured relationship might still hold promise. She mentally scolded herself for this weakness - how could a few tender words erase years of pain?</p>
-                    
-                    <p>The shareholders watched, mesmerized, as the lethal duo exchanged flirtatious barbs sharper than any blade. They were a perfectly matched pair of corporate assassins!</p>
-                    
-                    <p>Richard leaned toward Daphne Fairchild, whispering urgently, &#34;Perhaps we should accept her offer and negotiate favorable terms. This ship is sinking fast. We could relocate overseas with Natasha and start fresh.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Adrian kept one arm draped possessively around Vivian&#39;s shoulders, the other entwined with her fingers. &#34;Several of your activities have crossed into criminal territory. Imagine what might happen if an upstanding citizen were to report them to the authorities...&#34;</p>
+                        
+                        <p>Richard Dawson&#39;s face turned ashen. &#34;You wouldn&#39;t dare!&#34;</p>
+                        
+                        <p>Adrian&#39;s lips curled into a mocking smile. &#34;Dearest Father-in-law, you can either take the money and retain some dignity, or go down with your sinking ship. The choice seems obvious, doesn&#39;t it?&#34;</p>
+                        
+                        <p>The term &#34;Father-in-law&#34; dripped with sarcasm rather than respect. Adrian pulled Vivian closer, his breath warm against her ear as he murmured, &#34;I&#39;ve got you.&#34; The words sent an unexpected jolt through Vivian, making her question whether their fractured relationship might still hold promise. She mentally scolded herself for this weakness - how could a few tender words erase years of pain?</p>
+                        
+                        <p>The shareholders watched, mesmerized, as the lethal duo exchanged flirtatious barbs sharper than any blade. They were a perfectly matched pair of corporate assassins!</p>
+                        
+                        <p>Richard leaned toward Daphne Fairchild, whispering urgently, &#34;Perhaps we should accept her offer and negotiate favorable terms. This ship is sinking fast. We could relocate overseas with Natasha and start fresh.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>In his mind&#39;s eye, Richard already saw Natasha&#39;s brilliant future abroad - her beauty and cunning could easily land her a wealthy foreign husband.</p>
-                    
-                    <p>Vivian shot her husband a look dripping with disdain, her lips curling at his proposal. &#34;We&#39;re not handing over all our shares to you,&#34; she declared firmly.</p>
-                    
-                    <p>Every fiber of her being warned that surrendering their stake to Adrian would slam the door on any chance of reclaiming what was rightfully theirs.</p>
-                    
-                    <p>Adrian merely quirked an eyebrow, his expression unreadable. &#34;Liquidating Dawson Enterprises could be your lifeline. Don&#39;t forget - I&#39;m not your only potential buyer.&#34;</p>
-                    
-                    <p>Richard chose that moment to interject. &#34;This isn&#39;t our concern anymore, so we&#39;ll take our leave. Frankly, if not for your mother&#39;s legacy, I&#39;d rather flush this money down the drain than invest it here.&#34;</p>
-                    
-                    <p>He added with deliberate casualness, &#34;Speaking of which, I heard The Mariner&#39;s Catch just got a shipment of fresh bluefin tuna. Let&#39;s grab some before it&#39;s gone.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>In his mind&#39;s eye, Richard already saw Natasha&#39;s brilliant future abroad - her beauty and cunning could easily land her a wealthy foreign husband.</p>
+                        
+                        <p>Vivian shot her husband a look dripping with disdain, her lips curling at his proposal. &#34;We&#39;re not handing over all our shares to you,&#34; she declared firmly.</p>
+                        
+                        <p>Every fiber of her being warned that surrendering their stake to Adrian would slam the door on any chance of reclaiming what was rightfully theirs.</p>
+                        
+                        <p>Adrian merely quirked an eyebrow, his expression unreadable. &#34;Liquidating Dawson Enterprises could be your lifeline. Don&#39;t forget - I&#39;m not your only potential buyer.&#34;</p>
+                        
+                        <p>Richard chose that moment to interject. &#34;This isn&#39;t our concern anymore, so we&#39;ll take our leave. Frankly, if not for your mother&#39;s legacy, I&#39;d rather flush this money down the drain than invest it here.&#34;</p>
+                        
+                        <p>He added with deliberate casualness, &#34;Speaking of which, I heard The Mariner&#39;s Catch just got a shipment of fresh bluefin tuna. Let&#39;s grab some before it&#39;s gone.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Adrian&#39;s lips twisted into a mocking smile as he watched Richard&#39;s reaction.</p>
-                    
-                    <p>Richard&#39;s face cycled through shades of pale to crimson, his entire frame trembling with outrage. &#34;Ungrateful wretch! How did I raise such a disgrace?&#34;</p>
-                    
-                    <p>Adrian tsked in response. &#34;Considering half my DNA comes from questionable sources, is this outcome really so surprising?&#34;</p>
-                    
-                    <p>Richard&#39;s expression darkened instantly. &#34;Mind your tongue. She&#39;s my wife now. Any insult you throw at her, you&#39;re throwing at me.&#34;</p>
-                    
-                    <p>Richard&#39;s hand twitched toward a teacup before thinking better of it and withdrawing.</p>
-                    
-                    <p>Adrian&#39;s presence alone was enough to make most men reconsider their actions. More importantly, everyone knew his threats weren&#39;t empty - he always followed through.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Adrian&#39;s lips twisted into a mocking smile as he watched Richard&#39;s reaction.</p>
+                        
+                        <p>Richard&#39;s face cycled through shades of pale to crimson, his entire frame trembling with outrage. &#34;Ungrateful wretch! How did I raise such a disgrace?&#34;</p>
+                        
+                        <p>Adrian tsked in response. &#34;Considering half my DNA comes from questionable sources, is this outcome really so surprising?&#34;</p>
+                        
+                        <p>Richard&#39;s expression darkened instantly. &#34;Mind your tongue. She&#39;s my wife now. Any insult you throw at her, you&#39;re throwing at me.&#34;</p>
+                        
+                        <p>Richard&#39;s hand twitched toward a teacup before thinking better of it and withdrawing.</p>
+                        
+                        <p>Adrian&#39;s presence alone was enough to make most men reconsider their actions. More importantly, everyone knew his threats weren&#39;t empty - he always followed through.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Richard couldn&#39;t help but regret how things had deteriorated between Vivian and Adrian. When Vivian first married into the Blackwood family, she&#39;d been the envy of Crestwood&#39;s elite. Even the Sterling family, who felt publicly humiliated, could do nothing but swallow their pride.</p>
-                    
-                    <p>Even without direct support from Adrian, Richard&#39;s association with the Blackwoods had opened countless doors. Now there was no going back.</p>
-                    
-                    <p>&#34;I&#39;ll sell my shares. I own five percent.&#34;</p>
-                    
-                    <p>Another shareholder stepped forward cautiously. &#34;What&#39;s your offer?&#34;</p>
-                    
-                    <p>Adrian paused dramatically before holding up three fingers. &#34;Three million?&#34;</p>
-                    
-                    <p>The man&#39;s eyes bulged. Even at peak valuation, the shares barely touched two million and were nearly impossible to sell - this price for a failing company was ludicrous.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Richard couldn&#39;t help but regret how things had deteriorated between Vivian and Adrian. When Vivian first married into the Blackwood family, she&#39;d been the envy of Crestwood&#39;s elite. Even the Sterling family, who felt publicly humiliated, could do nothing but swallow their pride.</p>
+                        
+                        <p>Even without direct support from Adrian, Richard&#39;s association with the Blackwoods had opened countless doors. Now there was no going back.</p>
+                        
+                        <p>&#34;I&#39;ll sell my shares. I own five percent.&#34;</p>
+                        
+                        <p>Another shareholder stepped forward cautiously. &#34;What&#39;s your offer?&#34;</p>
+                        
+                        <p>Adrian paused dramatically before holding up three fingers. &#34;Three million?&#34;</p>
+                        
+                        <p>The man&#39;s eyes bulged. Even at peak valuation, the shares barely touched two million and were nearly impossible to sell - this price for a failing company was ludicrous.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Adrian chuckled darkly. &#34;Three hundred thousand.&#34;</p>
-                    
-                    <p>&#34;Three hundred thousand?&#34; they gasped. &#34;That&#39;s highway robbery!&#34;</p>
-                    
-                    <p>Adrian crossed her legs leisurely. &#34;Beyond the Dawson family&#39;s fifty-five percent, the remaining forty-five is worth maybe two seventy. Sign today, and I pay cash. Plus...&#34; Her voice dropped to a dangerous purr. &#34;I&#39;ll make sure any... creative accounting you&#39;ve participated in stays buried.&#34;</p>
-                    
-                    <p>&#34;You&#39;ll walk away clean with no risk of exposure. Because if I bring these books to light?&#34; She smirked. &#34;You&#39;d be lucky to get thirty grand for your shares.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Adrian chuckled darkly. &#34;Three hundred thousand.&#34;</p>
+                        
+                        <p>&#34;Three hundred thousand?&#34; they gasped. &#34;That&#39;s highway robbery!&#34;</p>
+                        
+                        <p>Adrian crossed her legs leisurely. &#34;Beyond the Dawson family&#39;s fifty-five percent, the remaining forty-five is worth maybe two seventy. Sign today, and I pay cash. Plus...&#34; Her voice dropped to a dangerous purr. &#34;I&#39;ll make sure any... creative accounting you&#39;ve participated in stays buried.&#34;</p>
+                        
+                        <p>&#34;You&#39;ll walk away clean with no risk of exposure. Because if I bring these books to light?&#34; She smirked. &#34;You&#39;d be lucky to get thirty grand for your shares.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

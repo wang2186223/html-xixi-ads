@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:39.339479">
-    <meta property="article:modified_time" content="2026-07-19T02:47:39.339479">
+    <meta property="article:published_time" content="2026-07-19T13:03:32.688472">
+    <meta property="article:modified_time" content="2026-07-19T13:03:32.688472">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:39">
+    <meta name="last-modified" content="2026-07-19 13:03:32">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:39.339479",
-        "dateModified": "2026-07-19T02:47:39.339479",
+        "datePublished": "2026-07-19T13:03:32.688472",
+        "dateModified": "2026-07-19T13:03:32.688472",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,21 +893,25 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter231</p>
-                    
-                    <p>Upon reading those words, a chilling surge coursed through Maya’s body.</p>
-                    
-                    <p>What could “Termination of Adoption Agreement” possibly mean?</p>
-                    
-                    <p>Maya</p>
-                    
-                    <p>ya couldn’t help but feel puzzled, struggling to comprehend the implications behind this unexpected message.</p>
-                    
-                    <p>Why would they contemplate dissolving her adoption agreement?</p>
-                    
-                    <p>Concerned, Sharon cautiously asked, “Maya, what’s wrong? You look so grim!”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter231</p>
+                        
+                        <p>Upon reading those words, a chilling surge coursed through Maya’s body.</p>
+                        
+                        <p>What could “Termination of Adoption Agreement” possibly mean?</p>
+                        
+                        <p>Maya</p>
+                        
+                        <p>ya couldn’t help but feel puzzled, struggling to comprehend the implications behind this unexpected message.</p>
+                        
+                        <p>Why would they contemplate dissolving her adoption agreement?</p>
+                        
+                        <p>Concerned, Sharon cautiously asked, “Maya, what’s wrong? You look so grim!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -886,21 +926,25 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>In response, Maya hastily turned her phone face down on the table, mustering a forced smile.</p>
-                    
-                    <p>“It’s nothing, just a bit of discomfort in my stomach. I probably ate something bad in the afternoon. ” she explained.</p>
-                    
-                    <p>“Let Dr. Levin take a look at you. Fortunately, it’s just a stomachache. I was concerned, thinking Dominic might have said something to upset you!”</p>
-                    
-                    <p>“No, Dominic just mentioned he’s too busy to join for dinner. He asked if I had eaten and advised me to rest early to prepare for tomorrow’s engagement.”</p>
-                    
-                    <p>Suppressing her anger, Maya continued to craft a carefully constructed narrative.</p>
-                    
-                    <p>Holding her phone, she rose from her seat, saying, “Mrs. Barrett, I need to use the restroom.</p>
-                    
-                    <p>Please go ahead and eat. You don’t have to wait for me.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>In response, Maya hastily turned her phone face down on the table, mustering a forced smile.</p>
+                        
+                        <p>“It’s nothing, just a bit of discomfort in my stomach. I probably ate something bad in the afternoon. ” she explained.</p>
+                        
+                        <p>“Let Dr. Levin take a look at you. Fortunately, it’s just a stomachache. I was concerned, thinking Dominic might have said something to upset you!”</p>
+                        
+                        <p>“No, Dominic just mentioned he’s too busy to join for dinner. He asked if I had eaten and advised me to rest early to prepare for tomorrow’s engagement.”</p>
+                        
+                        <p>Suppressing her anger, Maya continued to craft a carefully constructed narrative.</p>
+                        
+                        <p>Holding her phone, she rose from her seat, saying, “Mrs. Barrett, I need to use the restroom.</p>
+                        
+                        <p>Please go ahead and eat. You don’t have to wait for me.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -915,21 +959,25 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>With her phone in hand, Maya headed straight to the bathroom. Once alone, she closed the door. took a seat on the toilet, and reopened the document on her phone.</p>
-                    
-                    <p>She meticulously read through the content, word by word, and her heart sank.</p>
-                    
-                    <p>As it turned out, her initial reading was accurate. The document indeed outlined the termination of</p>
-                    
-                    <p>her adoption agreement.</p>
-                    
-                    <p>Upon signing, she would sever all ties with the Lane family and would no longer be considered part of the family.</p>
-                    
-                    <p>Tears welled up in Maya’s eyes as she dialed Dominic’s number, her voice quivering. “Dominic, did I do something to upset you? Is that why you want to push me away?</p>
-                    
-                    <p>“I’ve</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>With her phone in hand, Maya headed straight to the bathroom. Once alone, she closed the door. took a seat on the toilet, and reopened the document on her phone.</p>
+                        
+                        <p>She meticulously read through the content, word by word, and her heart sank.</p>
+                        
+                        <p>As it turned out, her initial reading was accurate. The document indeed outlined the termination of</p>
+                        
+                        <p>her adoption agreement.</p>
+                        
+                        <p>Upon signing, she would sever all ties with the Lane family and would no longer be considered part of the family.</p>
+                        
+                        <p>Tears welled up in Maya’s eyes as she dialed Dominic’s number, her voice quivering. “Dominic, did I do something to upset you? Is that why you want to push me away?</p>
+                        
+                        <p>“I’ve</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -944,21 +992,25 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>been a part of the Lane family since childhood. If you cast me aside, what will my future hold? I fear everyone will mock me!”</p>
-                    
-                    <p>+15 BONOS</p>
-                    
-                    <p>“Maya, it’s not that you did something wrong. Perhaps it was a mistake on my part from the beginning. I shouldn’t have sought a girl of a similar age to replace my sister.</p>
-                    
-                    <p>“Now that you’ve grown into an adult and are about to marry into the Barrett family, your future is bound to be secure. So, I think it’s time to put an end to all of this.”</p>
-                    
-                    <p>Following an afternoon. phone call with Connor, Dominic decided to inform Maya about this matter</p>
-                    
-                    <p>ahead of time.</p>
-                    
-                    <p>Unexpectedly, Mia had taken charge of the engagement design for Maya and Timothy. As a result, there was a possibility that Mia might be present at tomorrow’s ceremony.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>been a part of the Lane family since childhood. If you cast me aside, what will my future hold? I fear everyone will mock me!”</p>
+                        
+                        <p>+15 BONOS</p>
+                        
+                        <p>“Maya, it’s not that you did something wrong. Perhaps it was a mistake on my part from the beginning. I shouldn’t have sought a girl of a similar age to replace my sister.</p>
+                        
+                        <p>“Now that you’ve grown into an adult and are about to marry into the Barrett family, your future is bound to be secure. So, I think it’s time to put an end to all of this.”</p>
+                        
+                        <p>Following an afternoon. phone call with Connor, Dominic decided to inform Maya about this matter</p>
+                        
+                        <p>ahead of time.</p>
+                        
+                        <p>Unexpectedly, Mia had taken charge of the engagement design for Maya and Timothy. As a result, there was a possibility that Mia might be present at tomorrow’s ceremony.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -973,21 +1025,25 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>This unforeseen development injected an element of unpredictability into the upcoming</p>
-                    
-                    <p>engagement.</p>
-                    
-                    <p>Dominic was determined to prevent Mia from discovering Maya’s true identity during the event.</p>
-                    
-                    <p>With Connor and Nathan also in attendance, Dominic wanted to avoid any potential misunderstandings or conflicts from occurring.</p>
-                    
-                    <p>In light of this, he decided to address the termination of Maya’s adoption agreement beforehand.</p>
-                    
-                    <p>Maya’s expression noticeably darkened as she absorbed Dominic’s explanation.</p>
-                    
-                    <p>In a choked voice, she pleaded, “Dominic, please reconsider terminating my adoption. I started as an orphan, and over the years, the Lane family has truly become my second home!</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>This unforeseen development injected an element of unpredictability into the upcoming</p>
+                        
+                        <p>engagement.</p>
+                        
+                        <p>Dominic was determined to prevent Mia from discovering Maya’s true identity during the event.</p>
+                        
+                        <p>With Connor and Nathan also in attendance, Dominic wanted to avoid any potential misunderstandings or conflicts from occurring.</p>
+                        
+                        <p>In light of this, he decided to address the termination of Maya’s adoption agreement beforehand.</p>
+                        
+                        <p>Maya’s expression noticeably darkened as she absorbed Dominic’s explanation.</p>
+                        
+                        <p>In a choked voice, she pleaded, “Dominic, please reconsider terminating my adoption. I started as an orphan, and over the years, the Lane family has truly become my second home!</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1002,21 +1058,25 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>“Even if I choose to marry Timothy, I will forever be a part of the Lane family. Please, don’t cast me aside!”</p>
-                    
-                    <p>Hearing the sadness and vulnerability in Maya’s voice, Dominic couldn’t help but feel a pang of sympathy.</p>
-                    
-                    <p>Thinking about Mia’s past hardships, he gently refused, stating, “It’s not about pushing you away. If you ever want to come back in the future, you’re always welcome.”</p>
-                    
-                    <p>“Dominic, may I ask why you’ve suddenly decided to terminate my adoption? Is it because of my upcoming marriage?”</p>
-                    
-                    <p>Maya couldn’t shake the feeling that there was something she had overlooked.</p>
-                    
-                    <p>Indeed, her brothers‘ recent actions and behaviors have taken on a somewhat unusual turn.</p>
-                    
-                    <p>During this period, Maya had been residing in Bern City, attempting to sow discord between Timothy and Mia.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>“Even if I choose to marry Timothy, I will forever be a part of the Lane family. Please, don’t cast me aside!”</p>
+                        
+                        <p>Hearing the sadness and vulnerability in Maya’s voice, Dominic couldn’t help but feel a pang of sympathy.</p>
+                        
+                        <p>Thinking about Mia’s past hardships, he gently refused, stating, “It’s not about pushing you away. If you ever want to come back in the future, you’re always welcome.”</p>
+                        
+                        <p>“Dominic, may I ask why you’ve suddenly decided to terminate my adoption? Is it because of my upcoming marriage?”</p>
+                        
+                        <p>Maya couldn’t shake the feeling that there was something she had overlooked.</p>
+                        
+                        <p>Indeed, her brothers‘ recent actions and behaviors have taken on a somewhat unusual turn.</p>
+                        
+                        <p>During this period, Maya had been residing in Bern City, attempting to sow discord between Timothy and Mia.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1031,11 +1091,15 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>+15 BONOS</p>
-                    
-                    <p>Her ultimate goal was to orchestrate their divorce, paving the way for her seamless entrance into the Barrett family.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>+15 BONOS</p>
+                        
+                        <p>Her ultimate goal was to orchestrate their divorce, paving the way for her seamless entrance into the Barrett family.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2351,6 +2415,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2477,7 +2621,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2519,32 +2662,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2555,21 +2680,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2602,6 +2717,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2622,20 +2743,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

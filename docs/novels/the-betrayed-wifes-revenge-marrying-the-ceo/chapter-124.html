@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.385391">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.385391">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.387744">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.387744">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.385391",
-        "dateModified": "2026-07-19T02:47:23.385391",
+        "datePublished": "2026-07-19T13:03:18.387744",
+        "dateModified": "2026-07-19T13:03:18.387744",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,23 +893,27 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Howard&#39;s POV</p>
-                    
-                    <p>Having just escorted Philip from the premises, I returned to my office with a measured stride, my mind already calculating the next necessary steps.Annie had composed herself admirably after Philip&#39;s unwelcome appearance,but I could still detect the lingering strain behind her eyes. It reinforced my resolve to address not just one, but both of today&#39;s disruptions.</p>
-                    
-                    <p>I settled into my chair, reaching for my phone with deliberate calm. The sequence of numbers for Bill White&#39;s father came automatically as I dialed,my expression neutral but my intent anything but.</p>
-                    
-                    <p>When Mr. White answered, his voice carried that practiced cordiality of old money-smooth and devoid of genuine warmth. &#34;Mr. Thompson,to what do I owe this pleasure?&#34;</p>
-                    
-                    <p>&#34;It appears your company doesn&#39;t consider Howard Technologies worthy of respect,&#34; I stated, my tone deliberately cool, stripped of any pretense of politeness. &#34;Your people now feel emboldened enough to come to my company and harass my valuable employees.&#34;</p>
-                    
-                    <p>From the corner of my eye, I saw Annie gathering her sketches, moving toward my desk with a slight weariness still evident in her posture.The sight of her attempting to maintain her composure after Philip&#39;s intrusion only strengthened my determination to resolve the issue with the White family once and for all.</p>
-                    
-                    <p>&#34;That can&#39;t be right,&#34; Mr. White quickly responded,his voice dripping with hollow flattery. &#34;I have nothing but the utmost respect for you, Mr.Thompson.&#34; His casual tone betrayed his lack of sincerity.</p>
-                    
-                    <p>&#34;Whenever I interact with any Howard Technologies employee,&#34; he continued. &#34;I practically treat them like royalty. I&#39;m even afraid to speak too loudly around them.&#34; He concluded with an empty assurance:&#34;This must certainly be a misunderstanding!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Howard&#39;s POV</p>
+                        
+                        <p>Having just escorted Philip from the premises, I returned to my office with a measured stride, my mind already calculating the next necessary steps.Annie had composed herself admirably after Philip&#39;s unwelcome appearance,but I could still detect the lingering strain behind her eyes. It reinforced my resolve to address not just one, but both of today&#39;s disruptions.</p>
+                        
+                        <p>I settled into my chair, reaching for my phone with deliberate calm. The sequence of numbers for Bill White&#39;s father came automatically as I dialed,my expression neutral but my intent anything but.</p>
+                        
+                        <p>When Mr. White answered, his voice carried that practiced cordiality of old money-smooth and devoid of genuine warmth. &#34;Mr. Thompson,to what do I owe this pleasure?&#34;</p>
+                        
+                        <p>&#34;It appears your company doesn&#39;t consider Howard Technologies worthy of respect,&#34; I stated, my tone deliberately cool, stripped of any pretense of politeness. &#34;Your people now feel emboldened enough to come to my company and harass my valuable employees.&#34;</p>
+                        
+                        <p>From the corner of my eye, I saw Annie gathering her sketches, moving toward my desk with a slight weariness still evident in her posture.The sight of her attempting to maintain her composure after Philip&#39;s intrusion only strengthened my determination to resolve the issue with the White family once and for all.</p>
+                        
+                        <p>&#34;That can&#39;t be right,&#34; Mr. White quickly responded,his voice dripping with hollow flattery. &#34;I have nothing but the utmost respect for you, Mr.Thompson.&#34; His casual tone betrayed his lack of sincerity.</p>
+                        
+                        <p>&#34;Whenever I interact with any Howard Technologies employee,&#34; he continued. &#34;I practically treat them like royalty. I&#39;m even afraid to speak too loudly around them.&#34; He concluded with an empty assurance:&#34;This must certainly be a misunderstanding!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -888,23 +928,27 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>I narrowed my eyes, recognizing that despite his many words, Mr. White had offered no actual solution. He was stalling, and I had no patience for such tactics. &#34;Is that so?&#34; I replied with characteristic directness.</p>
-                    
-                    <p>&#34;So you&#39;re saying that your son actively bullied my employee,&#34; I continued,my voice steady but pointed, &#34;and you believe this issue can be resolved through simple denial of intent?&#34;</p>
-                    
-                    <p>I made it clear that such a superficial approach wouldn&#39;t suffice: &#34;If my company&#39;s employees were to forgive you so easily, perhaps employees at other companies might follow suit in the future?&#34;</p>
-                    
-                    <p>The sharp question left Mr. White momentarily speechess. I could almost visualize his practiced smile freezing on his face. &#34;How would you like me to resolve this matter?&#34; he eventually asked.</p>
-                    
-                    <p>I could sense the unspoken tension-Mr. White would unconditionally side with his son rather than with an &#34;insignificant employee&#34; from another company. It reminded me of Philip&#39;s disrespectful behavior toward Annie this afternoon, and of all the times Betty had made Annie&#39;s life difficult. These self-proclaimed elites seemed to have forgotten the most basic principle of respect.</p>
-                    
-                    <p>I let out a cold laugh, noting the irony-though Bill&#39;s family was clearly in the wrong, Mr. White was behaving as if I were the offending party. My patience had reached its limit.</p>
-                    
-                    <p>I never wasted time on such matters, and responded with finality: &#34;I&#39;d</p>
-                    
-                    <p>prefer you handle nothing at all.&#34; Without waiting for a response, I ended the call.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>I narrowed my eyes, recognizing that despite his many words, Mr. White had offered no actual solution. He was stalling, and I had no patience for such tactics. &#34;Is that so?&#34; I replied with characteristic directness.</p>
+                        
+                        <p>&#34;So you&#39;re saying that your son actively bullied my employee,&#34; I continued,my voice steady but pointed, &#34;and you believe this issue can be resolved through simple denial of intent?&#34;</p>
+                        
+                        <p>I made it clear that such a superficial approach wouldn&#39;t suffice: &#34;If my company&#39;s employees were to forgive you so easily, perhaps employees at other companies might follow suit in the future?&#34;</p>
+                        
+                        <p>The sharp question left Mr. White momentarily speechess. I could almost visualize his practiced smile freezing on his face. &#34;How would you like me to resolve this matter?&#34; he eventually asked.</p>
+                        
+                        <p>I could sense the unspoken tension-Mr. White would unconditionally side with his son rather than with an &#34;insignificant employee&#34; from another company. It reminded me of Philip&#39;s disrespectful behavior toward Annie this afternoon, and of all the times Betty had made Annie&#39;s life difficult. These self-proclaimed elites seemed to have forgotten the most basic principle of respect.</p>
+                        
+                        <p>I let out a cold laugh, noting the irony-though Bill&#39;s family was clearly in the wrong, Mr. White was behaving as if I were the offending party. My patience had reached its limit.</p>
+                        
+                        <p>I never wasted time on such matters, and responded with finality: &#34;I&#39;d</p>
+                        
+                        <p>prefer you handle nothing at all.&#34; Without waiting for a response, I ended the call.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -919,23 +963,27 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Annie stood by my desk, having obviously overheard my conversation and sensed my negative energy. She set down her sketches and asked with genuine concern, &#34;What&#39;s wrong?&#34;</p>
-                    
-                    <p>Seeing Annie, my expression immediately softened. Despite enduring Philip&#39;s harassment, she still cared about my emotional state, which sent a wave of warmth through me. &#34;Bill&#39;s father,&#34; I explained. &#34;His son comes to my company to harass employees, but he doesn&#39;t seem to think it&#39;s a serious issue.&#34;</p>
-                    
-                    <p>&#34;Perhaps having a social status far above the average person has created an illusion of superiority,&#34; I continued thoughtfully, unconsciously connecting today&#39;s two incidents. &#34;But in today&#39;s society, aren&#39;t all people equal? Whether they&#39;re from the White family or the Baker family.&#34;</p>
-                    
-                    <p>I looked directly into Annie&#39;s eyes, seeking her perspective and also wanting to confirm she had fully recovered from her encounter with Philip.</p>
-                    
-                    <p>Annie nodded without hesitation: &#34;Absolutely. They&#39;re just like Philip,always thinking they&#39;re above everyone else.&#34;</p>
-                    
-                    <p>I felt a surge of satisfaction, appreciating her clear insight. I gently patted her arm,saying with quiet confidence, &#34;It&#39;s fine. The principles they don&#39;t,understand-I&#39;ll teach them. Just like I did with Philip today.&#34;</p>
-                    
-                    <p>Annie looked at me with concern: &#34;What are you planning to do?&#34;</p>
-                    
-                    <p>I was already contacting Susan: &#34;Some of our contracts with the White family are expiring soon, correct?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Annie stood by my desk, having obviously overheard my conversation and sensed my negative energy. She set down her sketches and asked with genuine concern, &#34;What&#39;s wrong?&#34;</p>
+                        
+                        <p>Seeing Annie, my expression immediately softened. Despite enduring Philip&#39;s harassment, she still cared about my emotional state, which sent a wave of warmth through me. &#34;Bill&#39;s father,&#34; I explained. &#34;His son comes to my company to harass employees, but he doesn&#39;t seem to think it&#39;s a serious issue.&#34;</p>
+                        
+                        <p>&#34;Perhaps having a social status far above the average person has created an illusion of superiority,&#34; I continued thoughtfully, unconsciously connecting today&#39;s two incidents. &#34;But in today&#39;s society, aren&#39;t all people equal? Whether they&#39;re from the White family or the Baker family.&#34;</p>
+                        
+                        <p>I looked directly into Annie&#39;s eyes, seeking her perspective and also wanting to confirm she had fully recovered from her encounter with Philip.</p>
+                        
+                        <p>Annie nodded without hesitation: &#34;Absolutely. They&#39;re just like Philip,always thinking they&#39;re above everyone else.&#34;</p>
+                        
+                        <p>I felt a surge of satisfaction, appreciating her clear insight. I gently patted her arm,saying with quiet confidence, &#34;It&#39;s fine. The principles they don&#39;t,understand-I&#39;ll teach them. Just like I did with Philip today.&#34;</p>
+                        
+                        <p>Annie looked at me with concern: &#34;What are you planning to do?&#34;</p>
+                        
+                        <p>I was already contacting Susan: &#34;Some of our contracts with the White family are expiring soon, correct?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -950,23 +998,27 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Susan confirmed: &#34;Yes, but because their products are so outdated, they&#39;re</p>
-                    
-                    <p>currently unpopular in the market...&#34;</p>
-                    
-                    <p>She continued, &#34;We were planning not to renew with them, but couldn&#39;t find a suitable reason.&#34;</p>
-                    
-                    <p>&#34;Now we have a reason,&#34; I said calmly. &#34;You recently mentioned that other companies&#39; products are noticeably better than theirs, right?&#34;</p>
-                    
-                    <p>Susan confirmed: &#34;Yes.&#34;</p>
-                    
-                    <p>&#34;Then find the most suitable company among them for cooperation,&#34;I instructed decisively. &#34;We simply need to change partners.&#34;</p>
-                    
-                    <p>Susan expressed concern: &#34;Suddenly changing partners after years of cooperation will certainly cause resentment.&#34;</p>
-                    
-                    <p>I slowed my speech, radiating confidence: &#34;Leave it to me. I&#39;ll handle it.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Susan confirmed: &#34;Yes, but because their products are so outdated, they&#39;re</p>
+                        
+                        <p>currently unpopular in the market...&#34;</p>
+                        
+                        <p>She continued, &#34;We were planning not to renew with them, but couldn&#39;t find a suitable reason.&#34;</p>
+                        
+                        <p>&#34;Now we have a reason,&#34; I said calmly. &#34;You recently mentioned that other companies&#39; products are noticeably better than theirs, right?&#34;</p>
+                        
+                        <p>Susan confirmed: &#34;Yes.&#34;</p>
+                        
+                        <p>&#34;Then find the most suitable company among them for cooperation,&#34;I instructed decisively. &#34;We simply need to change partners.&#34;</p>
+                        
+                        <p>Susan expressed concern: &#34;Suddenly changing partners after years of cooperation will certainly cause resentment.&#34;</p>
+                        
+                        <p>I slowed my speech, radiating confidence: &#34;Leave it to me. I&#39;ll handle it.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -981,23 +1033,27 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Consider it the second task after dealing with Philip today.&#34;</p>
-                    
-                    <p>This reassured Susan: &#34;Very well, sir.&#34;</p>
-                    
-                    <p>I continued my strategic breakdown: &#34;We&#39;re optimistic about several other projects and plan to collaborate with them, correct?&#34;</p>
-                    
-                    <p>After a moment&#39;s consideration, Susan reported these projects to me.</p>
-                    
-                    <p>&#34;Cancel all of these projects,&#34; I commanded coolly. &#34;Find other partners.&#34;</p>
-                    
-                    <p>Susan wanted to ask if such extreme measures were necessary,but remembering that my decisions, even when initially questioned,typically proved wise in the long run, she decided to trust my judgment:&#34;Understood,sir.&#34;</p>
-                    
-                    <p>After ending the call, I took Annie&#39;s hand and led her to the private lounge area.</p>
-                    
-                    <p>Having heard my conversation, Annie expressed surprise: &#34;You&#39;re canceling all cooperation with them? Just as decisively as when you told Philip never to come back?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Consider it the second task after dealing with Philip today.&#34;</p>
+                        
+                        <p>This reassured Susan: &#34;Very well, sir.&#34;</p>
+                        
+                        <p>I continued my strategic breakdown: &#34;We&#39;re optimistic about several other projects and plan to collaborate with them, correct?&#34;</p>
+                        
+                        <p>After a moment&#39;s consideration, Susan reported these projects to me.</p>
+                        
+                        <p>&#34;Cancel all of these projects,&#34; I commanded coolly. &#34;Find other partners.&#34;</p>
+                        
+                        <p>Susan wanted to ask if such extreme measures were necessary,but remembering that my decisions, even when initially questioned,typically proved wise in the long run, she decided to trust my judgment:&#34;Understood,sir.&#34;</p>
+                        
+                        <p>After ending the call, I took Annie&#39;s hand and led her to the private lounge area.</p>
+                        
+                        <p>Having heard my conversation, Annie expressed surprise: &#34;You&#39;re canceling all cooperation with them? Just as decisively as when you told Philip never to come back?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1012,23 +1068,27 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;Yes.&#34; I confirmed without hesitation. My hand gently stroked the back of hers as I explained my reasoning: &#34;His son&#39;s lawless behavior is already beyond help, just like Philip&#39;s, and doesn&#39;t deserve a second chance.&#34;</p>
-                    
-                    <p>&#34;If he truly intends to pass his company to his son, their company will be bankrupt within a few years,&#34; I analyzed. &#34;I called him earlier to confirm his attitude.&#34;</p>
-                    
-                    <p>&#34;If his mind were still functioning properly, he could have better disciplined his son. I could have pointed out the problem for him to fix,and we could have continued cooperating.&#34;</p>
-                    
-                    <p>&#34;But clearly his thinking aligns with his son&#39;s...&#34; My voice carried a hint of contempt. &#34;He believes only he himself matters, while others are insignificant...exactly how Philip treated you.&#34;</p>
-                    
-                    <p>I methodically explained my reasoning: &#34;Continuing to cooperate with such people would ultimately drag us down.&#34;</p>
-                    
-                    <p>&#34;So my thinking is, it&#39;s better to sever ties early,&#34; I concluded. &#34;This gives the company sufficient time to find new partners.&#34;</p>
-                    
-                    <p>Annie looked at me with admiration: &#34;You really consider everything so thoroughly. Unlike Philip, who only sees immediate benefits.&#34;</p>
-                    
-                    <p>&#34;This is an essential ability for someone at the highest level of a company,&#34;I replied, accustomed to this mode of thinking. &#34;Otherwise, if we only focused on immediate situations...&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;Yes.&#34; I confirmed without hesitation. My hand gently stroked the back of hers as I explained my reasoning: &#34;His son&#39;s lawless behavior is already beyond help, just like Philip&#39;s, and doesn&#39;t deserve a second chance.&#34;</p>
+                        
+                        <p>&#34;If he truly intends to pass his company to his son, their company will be bankrupt within a few years,&#34; I analyzed. &#34;I called him earlier to confirm his attitude.&#34;</p>
+                        
+                        <p>&#34;If his mind were still functioning properly, he could have better disciplined his son. I could have pointed out the problem for him to fix,and we could have continued cooperating.&#34;</p>
+                        
+                        <p>&#34;But clearly his thinking aligns with his son&#39;s...&#34; My voice carried a hint of contempt. &#34;He believes only he himself matters, while others are insignificant...exactly how Philip treated you.&#34;</p>
+                        
+                        <p>I methodically explained my reasoning: &#34;Continuing to cooperate with such people would ultimately drag us down.&#34;</p>
+                        
+                        <p>&#34;So my thinking is, it&#39;s better to sever ties early,&#34; I concluded. &#34;This gives the company sufficient time to find new partners.&#34;</p>
+                        
+                        <p>Annie looked at me with admiration: &#34;You really consider everything so thoroughly. Unlike Philip, who only sees immediate benefits.&#34;</p>
+                        
+                        <p>&#34;This is an essential ability for someone at the highest level of a company,&#34;I replied, accustomed to this mode of thinking. &#34;Otherwise, if we only focused on immediate situations...&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1043,17 +1103,21 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;The company would eventually go bankrupt. Then what would happen</p>
-                    
-                    <p>to the employees?&#34; I felt the weight of responsibility on my shoulders.&#34;I must consider their wellbeing,just as I must protect you and Lucy.&#34;</p>
-                    
-                    <p>Annie leaned into my embrace: &#34;Indeed. That&#39;s the biggest difference between you and Philip.&#34;</p>
-                    
-                    <p>Just then, my phone rang again. I answered casually: &#34;Hello?&#34;</p>
-                    
-                    <p>It was Catherine&#39;s father, Mr. Morgan. &#34;I was just about to bring the evidence to you when Mr. White suddenly called, saying that if I&#39;m willing to tell you that Bill has already apologized to Catherine...&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;The company would eventually go bankrupt. Then what would happen</p>
+                        
+                        <p>to the employees?&#34; I felt the weight of responsibility on my shoulders.&#34;I must consider their wellbeing,just as I must protect you and Lucy.&#34;</p>
+                        
+                        <p>Annie leaned into my embrace: &#34;Indeed. That&#39;s the biggest difference between you and Philip.&#34;</p>
+                        
+                        <p>Just then, my phone rang again. I answered casually: &#34;Hello?&#34;</p>
+                        
+                        <p>It was Catherine&#39;s father, Mr. Morgan. &#34;I was just about to bring the evidence to you when Mr. White suddenly called, saying that if I&#39;m willing to tell you that Bill has already apologized to Catherine...&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2369,6 +2433,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2495,7 +2639,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2537,32 +2680,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2573,21 +2698,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2620,6 +2735,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2640,20 +2761,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

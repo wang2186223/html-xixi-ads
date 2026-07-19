@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:15.726817">
-    <meta property="article:modified_time" content="2026-07-19T02:47:15.726817">
+    <meta property="article:published_time" content="2026-07-19T13:03:11.087138">
+    <meta property="article:modified_time" content="2026-07-19T13:03:11.087138">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:15">
+    <meta name="last-modified" content="2026-07-19 13:03:11">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:15.726817",
-        "dateModified": "2026-07-19T02:47:15.726817",
+        "datePublished": "2026-07-19T13:03:11.087138",
+        "dateModified": "2026-07-19T13:03:11.087138",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,15 +893,19 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter266</p>
-                    
-                    <p>Nearly a week later, Shannon finally emerged from the prosecutor’s office, looking visibly fatigued. Stripped of the high-end cosmetics, she appeared pale and haggard, as if she had aged a decade. Several strands of white hair had even appeared.</p>
-                    
-                    <p>To avoid the swarm of reporters, Shannon could not bring herself to return home in this ghostly state. She feared that Gregory might catch sight of her like this, causing her carefully maintained image to fall apart.</p>
-                    
-                    <p>Sensing her concern, Bethany accompanied Shannon to a beauty salon first, where she washed up before venturing out to face the world.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter266</p>
+                        
+                        <p>Nearly a week later, Shannon finally emerged from the prosecutor’s office, looking visibly fatigued. Stripped of the high-end cosmetics, she appeared pale and haggard, as if she had aged a decade. Several strands of white hair had even appeared.</p>
+                        
+                        <p>To avoid the swarm of reporters, Shannon could not bring herself to return home in this ghostly state. She feared that Gregory might catch sight of her like this, causing her carefully maintained image to fall apart.</p>
+                        
+                        <p>Sensing her concern, Bethany accompanied Shannon to a beauty salon first, where she washed up before venturing out to face the world.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -880,15 +920,19 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>As they left the salon, Shannon said, “Let’s not go home just yet. Let’s go see Rosalind.”</p>
-                    
-                    <p>She adjusted her hair in the mirror with a gloomy expression and continued, “After all, she is my niece. Having risked half her life, I can’t afford not to care. I must uphold my kind and benevolent image for your father.”</p>
-                    
-                    <p>Shannon thought to herself, ‘A meticulously crafted persona for 25 years-it absolutely must not unravel!’</p>
-                    
-                    <p>Bethany said, “Mom! Rosalind actually resorted to suicide!”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>As they left the salon, Shannon said, “Let’s not go home just yet. Let’s go see Rosalind.”</p>
+                        
+                        <p>She adjusted her hair in the mirror with a gloomy expression and continued, “After all, she is my niece. Having risked half her life, I can’t afford not to care. I must uphold my kind and benevolent image for your father.”</p>
+                        
+                        <p>Shannon thought to herself, ‘A meticulously crafted persona for 25 years-it absolutely must not unravel!’</p>
+                        
+                        <p>Bethany said, “Mom! Rosalind actually resorted to suicide!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -903,15 +947,19 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Although Bethany harbored a dislike for Rosalind, the memory of that blood-soaked bathroom still haunted her. “Let’s not even talk about whether Justin will fall for her fake suffering. If her scheme went awry and nobody discovered it in time, she might lose her life. She’s truly ruthless, even to herself!”</p>
-                    
-                    <p>“Heh, how could anyone not discover it in time?” Shannon said with a playful smile as she put away her mirror.</p>
-                    
-                    <p>Bethany was momentarily stunned before a sudden realization dawned on her. She gasped. ” Mom! Did you already know…”</p>
-                    
-                    <p>Shannon immediately lifted her index finger to her lips, signaling for Bethany to not say another word.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Although Bethany harbored a dislike for Rosalind, the memory of that blood-soaked bathroom still haunted her. “Let’s not even talk about whether Justin will fall for her fake suffering. If her scheme went awry and nobody discovered it in time, she might lose her life. She’s truly ruthless, even to herself!”</p>
+                        
+                        <p>“Heh, how could anyone not discover it in time?” Shannon said with a playful smile as she put away her mirror.</p>
+                        
+                        <p>Bethany was momentarily stunned before a sudden realization dawned on her. She gasped. ” Mom! Did you already know…”</p>
+                        
+                        <p>Shannon immediately lifted her index finger to her lips, signaling for Bethany to not say another word.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -926,15 +974,19 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>It was Shannon’s idea to arouse Justin’s sympathy by attempting suicide. Back then, she had used a similar strategy, leveraging it to evoke Gregory’s sympathy. It granted her entry into the Salvador family, paving the way for the life she enjoys today.</p>
-                    
-                    <p>Justin had also suffered from depression, and it was Rosalind who supported him through that challenging period. Triggering the past trauma would naturally bring back memories of Rosalind’s virtues. Despite the significant risk involved, the potential rewards were even more considerable.</p>
-                    
-                    <p>“Even if Rosalind isn’t an ideal candidate, I can’t allow any possibility of a reunion between Justin and that wretched woman, Bella!”</p>
-                    
-                    <p>Shannon had endured a lot these past few days dealing with the prosecution, and the mere thought of Bella made her clench her fists. “Bella, how dare you play games with me? I swear, I will fight you to the end! I won’t let you get away with it!”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>It was Shannon’s idea to arouse Justin’s sympathy by attempting suicide. Back then, she had used a similar strategy, leveraging it to evoke Gregory’s sympathy. It granted her entry into the Salvador family, paving the way for the life she enjoys today.</p>
+                        
+                        <p>Justin had also suffered from depression, and it was Rosalind who supported him through that challenging period. Triggering the past trauma would naturally bring back memories of Rosalind’s virtues. Despite the significant risk involved, the potential rewards were even more considerable.</p>
+                        
+                        <p>“Even if Rosalind isn’t an ideal candidate, I can’t allow any possibility of a reunion between Justin and that wretched woman, Bella!”</p>
+                        
+                        <p>Shannon had endured a lot these past few days dealing with the prosecution, and the mere thought of Bella made her clench her fists. “Bella, how dare you play games with me? I swear, I will fight you to the end! I won’t let you get away with it!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -949,15 +1001,19 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Shannon added, “The Thompson family might be formidable in Hatchbay, but that’s just a small town. In Savrow, the Salvador family has the final say.”</p>
-                    
-                    <p>Bethany said with resentment, “We’ll have plenty of chances in the future to deal with that wretched woman!” She was determined to take revenge on Bella for throwing the slippers in her face that day.</p>
-                    
-                    <p>Just as Shannon approached the hospital room’s door, she learned that both Gregory and Justin were inside. Shannon put on a facade of a virtuous wife and loving mother. She entered the room as tears streamed down her face.</p>
-                    
-                    <p>“Rosalind! My dearest Rosalind! Why would you contemplate something so drastic and do such a foolish thing?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Shannon added, “The Thompson family might be formidable in Hatchbay, but that’s just a small town. In Savrow, the Salvador family has the final say.”</p>
+                        
+                        <p>Bethany said with resentment, “We’ll have plenty of chances in the future to deal with that wretched woman!” She was determined to take revenge on Bella for throwing the slippers in her face that day.</p>
+                        
+                        <p>Just as Shannon approached the hospital room’s door, she learned that both Gregory and Justin were inside. Shannon put on a facade of a virtuous wife and loving mother. She entered the room as tears streamed down her face.</p>
+                        
+                        <p>“Rosalind! My dearest Rosalind! Why would you contemplate something so drastic and do such a foolish thing?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -972,15 +1028,19 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>In the presence of the two men, Shannon embraced Rosalind and sobbed uncontrollably.” Why must the women in our family endure such misfortune? Framed and tormented by others… If this continues, I won’t be able to endure it any longer.”</p>
-                    
-                    <p>“Aunt Shannon, please don’t be like this…” Rosalind wept and skillfully played the role of a distressed victim.</p>
-                    
-                    <p>Jean, who was in the room, joined in on their act. The hospital turned into a scene reminiscent of a funeral.</p>
-                    
-                    <p>Meanwhile, Justin silently observed them. His face was devoid of any emotion. Rosalind sneakily glanced at him, but the man’s indifference sent shivers down her spine. In the past, whenever she cried, he would always be the first to come and comfort her with soothing words.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>In the presence of the two men, Shannon embraced Rosalind and sobbed uncontrollably.” Why must the women in our family endure such misfortune? Framed and tormented by others… If this continues, I won’t be able to endure it any longer.”</p>
+                        
+                        <p>“Aunt Shannon, please don’t be like this…” Rosalind wept and skillfully played the role of a distressed victim.</p>
+                        
+                        <p>Jean, who was in the room, joined in on their act. The hospital turned into a scene reminiscent of a funeral.</p>
+                        
+                        <p>Meanwhile, Justin silently observed them. His face was devoid of any emotion. Rosalind sneakily glanced at him, but the man’s indifference sent shivers down her spine. In the past, whenever she cried, he would always be the first to come and comfort her with soothing words.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -995,15 +1055,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>But now, all that tenderness seemed to have vanished. The affection that once belonged to her was gradually slipping away, and all this was thanks to Bella!</p>
-                    
-                    <p>The three women embraced each other in tears, and Gregory’s brow remained deeply furrowed.</p>
-                    
-                    <p>Gregory said solemnly, “Shannon, Justin, come over here. I have something to say.”</p>
-                    
-                    <p>A few moments later, in the reception room, Shannon gasped, “Greg!”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>But now, all that tenderness seemed to have vanished. The affection that once belonged to her was gradually slipping away, and all this was thanks to Bella!</p>
+                        
+                        <p>The three women embraced each other in tears, and Gregory’s brow remained deeply furrowed.</p>
+                        
+                        <p>Gregory said solemnly, “Shannon, Justin, come over here. I have something to say.”</p>
+                        
+                        <p>A few moments later, in the reception room, Shannon gasped, “Greg!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2319,6 +2383,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2445,7 +2589,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2487,32 +2630,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2523,21 +2648,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2570,6 +2685,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2590,20 +2711,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

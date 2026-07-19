@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:42.739035">
-    <meta property="article:modified_time" content="2026-07-19T02:47:42.739035">
+    <meta property="article:published_time" content="2026-07-19T13:03:35.822250">
+    <meta property="article:modified_time" content="2026-07-19T13:03:35.822250">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:42">
+    <meta name="last-modified" content="2026-07-19 13:03:35">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:42.739035",
-        "dateModified": "2026-07-19T02:47:42.739035",
+        "datePublished": "2026-07-19T13:03:35.822250",
+        "dateModified": "2026-07-19T13:03:35.822250",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Fiona couldn’t reconcile what was happening with the Kristine she knew—the kind-hearted woman who was generous with everyone. Why did she pointedly accuse her of theft today? Kristine didn’t look at Fiona. Nothing could be allowed to obstruct her ambitions.</p>
-                    
-                    <p>Fiona’s hope dimmed as she felt the weight of the accusation against her. Meanwhile, Madisyn seemed engrossed in her phone. Lynda, having lost her patience with Madisyn, voiced her displeasure sharply. “Madisyn, since you can’t prove Fiona didn’t steal the necklace, you should apologize to your sister!”</p>
-                    
-                    <p>Was Madisyn using her phone as an escape, avoiding the confrontation due to lack of evidence? This fueled Lynda’s anger.</p>
-                    
-                    <p>Suddenly, Madisyn looked up. “I’ve restored the surveillance footage,” she announced, holding up her phone to show everyone the screen.</p>
-                    
-                    <p>Kristine nearly scoffed at the claim. Restored the surveillance footage? Huh? Did Madisyn think it was merely a child’s plaything to be fixed at will? But her smirk faded quickly as she caught sight of the video playing on Madisyn’s phone. The color drained from her face when she realized it was the footage from their living room. How was this possible?</p>
-                    
-                    <p>Everyone in the room turned to watch as the footage began to reveal the truth. The surveillance footage showed Fiona diligently working in the living room. At some point, Madisyn descended the stairs and engaged Fiona in conversation before Fiona eventually left. With this new information, it was obvious—Fiona couldn’t have been responsible for the theft.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Fiona couldn’t reconcile what was happening with the Kristine she knew—the kind-hearted woman who was generous with everyone. Why did she pointedly accuse her of theft today? Kristine didn’t look at Fiona. Nothing could be allowed to obstruct her ambitions.</p>
+                        
+                        <p>Fiona’s hope dimmed as she felt the weight of the accusation against her. Meanwhile, Madisyn seemed engrossed in her phone. Lynda, having lost her patience with Madisyn, voiced her displeasure sharply. “Madisyn, since you can’t prove Fiona didn’t steal the necklace, you should apologize to your sister!”</p>
+                        
+                        <p>Was Madisyn using her phone as an escape, avoiding the confrontation due to lack of evidence? This fueled Lynda’s anger.</p>
+                        
+                        <p>Suddenly, Madisyn looked up. “I’ve restored the surveillance footage,” she announced, holding up her phone to show everyone the screen.</p>
+                        
+                        <p>Kristine nearly scoffed at the claim. Restored the surveillance footage? Huh? Did Madisyn think it was merely a child’s plaything to be fixed at will? But her smirk faded quickly as she caught sight of the video playing on Madisyn’s phone. The color drained from her face when she realized it was the footage from their living room. How was this possible?</p>
+                        
+                        <p>Everyone in the room turned to watch as the footage began to reveal the truth. The surveillance footage showed Fiona diligently working in the living room. At some point, Madisyn descended the stairs and engaged Fiona in conversation before Fiona eventually left. With this new information, it was obvious—Fiona couldn’t have been responsible for the theft.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>v.co for more reading</p>
-                    
-                    <p>Kristine’s mind raced as she watched the screen. Fiona left? Then who danced in the living room? Her eyes flicked to Madisyn, suspicion mounting. The footage continued, capturing Madisyn moving towards the window…</p>
-                    
-                    <p>Kristine’s anxiety escalated, her heart pounding as a startling possibility dawned on her. Madisyn? Was she the one dancing? At this critical juncture in her career, with Lynda about to recommend her to be the youngest senior executive in the National Dance Association, Kristine knew that she couldn’t let the truth come out now. As these thoughts flooded her mind, her face drained of color.</p>
-                    
-                    <p>But the next second, the footage abruptly ended. Fiona, gathering herself quicker than the others, made a desperate plea. “Mrs. Johns, please believe me! I really didn’t steal the necklace!”</p>
-                    
-                    <p>Elaine took Fiona’s hand, her expression turning steely as she turned to Kristine. “Kristine, what exactly is happening here?”</p>
-                    
-                    <p>Kristine snapped out of her shock, a hint of color returning to her complexion. “Mom, I’m not sure what’s going on, but I’ll have it investigated immediately.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>v.co for more reading</p>
+                        
+                        <p>Kristine’s mind raced as she watched the screen. Fiona left? Then who danced in the living room? Her eyes flicked to Madisyn, suspicion mounting. The footage continued, capturing Madisyn moving towards the window…</p>
+                        
+                        <p>Kristine’s anxiety escalated, her heart pounding as a startling possibility dawned on her. Madisyn? Was she the one dancing? At this critical juncture in her career, with Lynda about to recommend her to be the youngest senior executive in the National Dance Association, Kristine knew that she couldn’t let the truth come out now. As these thoughts flooded her mind, her face drained of color.</p>
+                        
+                        <p>But the next second, the footage abruptly ended. Fiona, gathering herself quicker than the others, made a desperate plea. “Mrs. Johns, please believe me! I really didn’t steal the necklace!”</p>
+                        
+                        <p>Elaine took Fiona’s hand, her expression turning steely as she turned to Kristine. “Kristine, what exactly is happening here?”</p>
+                        
+                        <p>Kristine snapped out of her shock, a hint of color returning to her complexion. “Mom, I’m not sure what’s going on, but I’ll have it investigated immediately.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Lynda was visibly shaken by the revelations from the footage. She gazed at Fiona’s tear-stained face and felt a deep sense of shame. “Fiona, I’m truly sorry. We should have been more thorough. I’ll make sure you are compensated,” Elaine said, her tone laden with genuine regret. In fact, she had always been fond of Fiona.</p>
-                    
-                    <p>Fiona dabbed away her tears, saying, “Mrs. Johns, it’s clear someone in this house was trying to frame me. I can’t stay under these circumstances. All I ask is that you take care of yourself. I will pack my belongings and leave today.”</p>
-                    
-                    <p>“Fiona…” Elaine’s voice broke, her heart heavy with sorrow. Over the years, Fiona’s dedication and warmth had woven her deeply into the fabric of the household, creating a bond that transcended her role as merely a maid.</p>
-                    
-                    <p>Madisyn’s gaze, icy and pointed, shifted to Kristine. “Kristine, don’t you think you should apologize now?”</p>
-                    
-                    <p>Kristine’s posture stiffened under the scrutiny, but she managed to muster an apologetic tone. “I’m sorry, Madisyn. I should have investigated properly.”</p>
-                    
-                    <p>“You shouldn’t be apologizing to me,” Madisyn retorted sharply. “Apologize to Fiona? But she was just a maid… Was that really necessary?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Lynda was visibly shaken by the revelations from the footage. She gazed at Fiona’s tear-stained face and felt a deep sense of shame. “Fiona, I’m truly sorry. We should have been more thorough. I’ll make sure you are compensated,” Elaine said, her tone laden with genuine regret. In fact, she had always been fond of Fiona.</p>
+                        
+                        <p>Fiona dabbed away her tears, saying, “Mrs. Johns, it’s clear someone in this house was trying to frame me. I can’t stay under these circumstances. All I ask is that you take care of yourself. I will pack my belongings and leave today.”</p>
+                        
+                        <p>“Fiona…” Elaine’s voice broke, her heart heavy with sorrow. Over the years, Fiona’s dedication and warmth had woven her deeply into the fabric of the household, creating a bond that transcended her role as merely a maid.</p>
+                        
+                        <p>Madisyn’s gaze, icy and pointed, shifted to Kristine. “Kristine, don’t you think you should apologize now?”</p>
+                        
+                        <p>Kristine’s posture stiffened under the scrutiny, but she managed to muster an apologetic tone. “I’m sorry, Madisyn. I should have investigated properly.”</p>
+                        
+                        <p>“You shouldn’t be apologizing to me,” Madisyn retorted sharply. “Apologize to Fiona? But she was just a maid… Was that really necessary?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Yet, with the eyes of everyone in the room upon her, pride had to be swallowed. “Fiona, I’m sorry for wrongly accusing you.”</p>
-                    
-                    <p>“The bet?” Madisyn interjected, a reminder hanging in the air.</p>
-                    
-                    <p>Kristine remembered her rash wager. Her entire collection of jewelry was now Fiona’s. The collection of jewelry, amassed over the years and worth millions of dollars, was now a token of her costly mistake. Reluctantly, she instructed someone to bring her jewelry pieces to Fiona.</p>
-                    
-                    <p>Fiona accepted the jewelry pieces without hesitation. Having been wrongly accused, she felt no obligation to decline the gesture. As she rose to leave, Madisyn interjected, “Just a moment.”</p>
-                    
-                    <p>She stepped forward, a proposition ready. “Fiona, would you like to stay and be my personal maid?”</p>
-                    
-                    <p>Surprised, Fiona looked at Madisyn. The first time she saw Madisyn, she had found her endearing. After a brief consideration, Fiona agreed. “Sure!”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Yet, with the eyes of everyone in the room upon her, pride had to be swallowed. “Fiona, I’m sorry for wrongly accusing you.”</p>
+                        
+                        <p>“The bet?” Madisyn interjected, a reminder hanging in the air.</p>
+                        
+                        <p>Kristine remembered her rash wager. Her entire collection of jewelry was now Fiona’s. The collection of jewelry, amassed over the years and worth millions of dollars, was now a token of her costly mistake. Reluctantly, she instructed someone to bring her jewelry pieces to Fiona.</p>
+                        
+                        <p>Fiona accepted the jewelry pieces without hesitation. Having been wrongly accused, she felt no obligation to decline the gesture. As she rose to leave, Madisyn interjected, “Just a moment.”</p>
+                        
+                        <p>She stepped forward, a proposition ready. “Fiona, would you like to stay and be my personal maid?”</p>
+                        
+                        <p>Surprised, Fiona looked at Madisyn. The first time she saw Madisyn, she had found her endearing. After a brief consideration, Fiona agreed. “Sure!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Madisyn’s slight smile was mirrored by Elaine’s pleased expression. “Fiona, you are attentive and considerate. We’d hate to see you go. So from now on, you’ll look after Madisyn.”</p>
-                    
-                    <p>“Thank you, Mrs. Johns,” Fiona responded gratefully.</p>
-                    
-                    <p>Elaine then turned a stern gaze on Lynda. “Lynda, I know you’re close with Kristine, but I treat all my children equally. I have full confidence that Madisyn isn’t the type of person to harm another.”</p>
-                    
-                    <p>“I understand,” Lynda, embarrassed, murmured.</p>
-                    
-                    <p>While Elaine resolved to uncover the true thief, Kristine immediately volunteered, “Mom, let me make things right by doing the investigation personally.”</p>
-                    
-                    <p>“Very well!” Elaine agreed.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Madisyn’s slight smile was mirrored by Elaine’s pleased expression. “Fiona, you are attentive and considerate. We’d hate to see you go. So from now on, you’ll look after Madisyn.”</p>
+                        
+                        <p>“Thank you, Mrs. Johns,” Fiona responded gratefully.</p>
+                        
+                        <p>Elaine then turned a stern gaze on Lynda. “Lynda, I know you’re close with Kristine, but I treat all my children equally. I have full confidence that Madisyn isn’t the type of person to harm another.”</p>
+                        
+                        <p>“I understand,” Lynda, embarrassed, murmured.</p>
+                        
+                        <p>While Elaine resolved to uncover the true thief, Kristine immediately volunteered, “Mom, let me make things right by doing the investigation personally.”</p>
+                        
+                        <p>“Very well!” Elaine agreed.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Feeling the weight of awkwardness, Lynda made a quick exit. As the tension in the room dissipated, Madisyn headed toward the exit.</p>
-                    
-                    <p>Elaine, noticing her departure, inquired with a touch of curiosity, “Sweetheart, where are you off to? Would you like me to come with you?”</p>
-                    
-                    <p>Madisyn’s voice softened. “I’m going to see a friend. Would you like to join me, Mom?”</p>
-                    
-                    <p>“No, dear, go ahead. I’ll stay here,” Elaine responded, her voice carrying a note of understanding. “Just make sure to take the driver.”</p>
-                    
-                    <p>“Alright!”</p>
-                    
-                    <p>Soon, Madisyn arrived at a skincare store where her friend, Susan Riggs, worked as a saleswoman.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Feeling the weight of awkwardness, Lynda made a quick exit. As the tension in the room dissipated, Madisyn headed toward the exit.</p>
+                        
+                        <p>Elaine, noticing her departure, inquired with a touch of curiosity, “Sweetheart, where are you off to? Would you like me to come with you?”</p>
+                        
+                        <p>Madisyn’s voice softened. “I’m going to see a friend. Would you like to join me, Mom?”</p>
+                        
+                        <p>“No, dear, go ahead. I’ll stay here,” Elaine responded, her voice carrying a note of understanding. “Just make sure to take the driver.”</p>
+                        
+                        <p>“Alright!”</p>
+                        
+                        <p>Soon, Madisyn arrived at a skincare store where her friend, Susan Riggs, worked as a saleswoman.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,17 +1079,21 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Susan’s face lit up at her arrival, and she handed Madisyn some new product samples. “Try these out. They are from our latest line,” she suggested enthusiastically.</p>
-                    
-                    <p>In front of her friend, Madisyn’s usual reserve melted away, revealing a side of her that was seldom seen—a softer, more genuine Madisyn.</p>
-                    
-                    <p>.</p>
-                    
-                    <p>.</p>
-                    
-                    <p>.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Susan’s face lit up at her arrival, and she handed Madisyn some new product samples. “Try these out. They are from our latest line,” she suggested enthusiastically.</p>
+                        
+                        <p>In front of her friend, Madisyn’s usual reserve melted away, revealing a side of her that was seldom seen—a softer, more genuine Madisyn.</p>
+                        
+                        <p>.</p>
+                        
+                        <p>.</p>
+                        
+                        <p>.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2345,6 +2409,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2471,7 +2615,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2513,32 +2656,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2549,21 +2674,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2596,6 +2711,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2616,20 +2737,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

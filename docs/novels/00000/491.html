@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>The words barely left his mouth before Adrian&#39;s foot connected with a nearby bench. Where his previous punches had been restrained, this kick held nothing back. The heavy wooden bench screeched across the polished floor, leaving a jagged scar in the linoleum.</p>
-                    
-                    <p>Julian hissed as pain exploded through his chest - definitely a broken rib - yet his smirk never wavered. &#34;That guilt eating at you? The truth you&#39;ve buried so deep is finally surfacing.&#34;</p>
-                    
-                    <p>Flames of intensity burned in his eyes as he continued, &#34;If you hadn&#39;t severed ties with my family years ago, I wouldn&#39;t have been forced to study abroad. Vivian and I could have been together by now. I knew her long before you ever darkened her doorstep.&#34; He wiped blood from his lip. &#34;We both crawled out of the same darkness, Adrian. Of course we&#39;d both be drawn to someone like Vivian - her light&#39;s impossible to ignore. But you had her and threw her away. If you two ever split again, remember this conversation. I&#39;ll make sure she comes back to me.&#34;</p>
-                    
-                    <p>Adrian&#39;s scoff was ice-cold. &#34;Don&#39;t project your filth onto me. However complicated my past may be, I&#39;ll never let Vivian be tainted by it. She&#39;ll always be protected from that world.&#34;</p>
-                    
-                    <p>Adrian rose to his full height, the overhead lights casting half his face in shadow, accentuating the sharp angles of his features.</p>
-                    
-                    <p>Julian&#39;s mocking laugh turned into a pained cough. He pressed a hand to his ribs but continued, &#34;Yet you&#39;re the one hurting her most. All for Serena. What hold does that witch have over you that you&#39;d go to such lengths?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>The words barely left his mouth before Adrian&#39;s foot connected with a nearby bench. Where his previous punches had been restrained, this kick held nothing back. The heavy wooden bench screeched across the polished floor, leaving a jagged scar in the linoleum.</p>
+                        
+                        <p>Julian hissed as pain exploded through his chest - definitely a broken rib - yet his smirk never wavered. &#34;That guilt eating at you? The truth you&#39;ve buried so deep is finally surfacing.&#34;</p>
+                        
+                        <p>Flames of intensity burned in his eyes as he continued, &#34;If you hadn&#39;t severed ties with my family years ago, I wouldn&#39;t have been forced to study abroad. Vivian and I could have been together by now. I knew her long before you ever darkened her doorstep.&#34; He wiped blood from his lip. &#34;We both crawled out of the same darkness, Adrian. Of course we&#39;d both be drawn to someone like Vivian - her light&#39;s impossible to ignore. But you had her and threw her away. If you two ever split again, remember this conversation. I&#39;ll make sure she comes back to me.&#34;</p>
+                        
+                        <p>Adrian&#39;s scoff was ice-cold. &#34;Don&#39;t project your filth onto me. However complicated my past may be, I&#39;ll never let Vivian be tainted by it. She&#39;ll always be protected from that world.&#34;</p>
+                        
+                        <p>Adrian rose to his full height, the overhead lights casting half his face in shadow, accentuating the sharp angles of his features.</p>
+                        
+                        <p>Julian&#39;s mocking laugh turned into a pained cough. He pressed a hand to his ribs but continued, &#34;Yet you&#39;re the one hurting her most. All for Serena. What hold does that witch have over you that you&#39;d go to such lengths?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Adrian&#39;s gaze could have frozen hell over. &#34;That&#39;s none of your business.&#34;</p>
-                    
-                    <p>&#34;Some graves are better left unopened. Push further, and I&#39;ll personally escort your entire family to the afterlife.&#34;</p>
-                    
-                    <p>The nurse who&#39;d stepped out earlier burst back into the room, her gasp audible as she took in Julian&#39;s blood-soaked state. &#34;Dear God! What happened here?&#34;</p>
-                    
-                    <p>Julian&#39;s vision tunneled to black as his body finally gave out, collapsing onto the sterile hospital floor in an ungainly heap.</p>
-                    
-                    <p>Adrian spared one last glacial look at the scene before striding toward the exit. Outside, he pulled out his phone and sent a voice message to Vivian: &#34;He&#39;s been dealt with. Want me to pick up anything for you on my way back?&#34;</p>
-                    
-                    <p>When Vivian returned home, the mansion was immaculate - no signs of disturbance. The housekeeper had clearly retired for the night. She turned to study Ethan Caldwell, who immediately averted his eyes, shoulders tense. His guilt was written plainly across his face.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Adrian&#39;s gaze could have frozen hell over. &#34;That&#39;s none of your business.&#34;</p>
+                        
+                        <p>&#34;Some graves are better left unopened. Push further, and I&#39;ll personally escort your entire family to the afterlife.&#34;</p>
+                        
+                        <p>The nurse who&#39;d stepped out earlier burst back into the room, her gasp audible as she took in Julian&#39;s blood-soaked state. &#34;Dear God! What happened here?&#34;</p>
+                        
+                        <p>Julian&#39;s vision tunneled to black as his body finally gave out, collapsing onto the sterile hospital floor in an ungainly heap.</p>
+                        
+                        <p>Adrian spared one last glacial look at the scene before striding toward the exit. Outside, he pulled out his phone and sent a voice message to Vivian: &#34;He&#39;s been dealt with. Want me to pick up anything for you on my way back?&#34;</p>
+                        
+                        <p>When Vivian returned home, the mansion was immaculate - no signs of disturbance. The housekeeper had clearly retired for the night. She turned to study Ethan Caldwell, who immediately averted his eyes, shoulders tense. His guilt was written plainly across his face.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;Mrs. Blackwood, it&#39;s getting late. I should head home,&#34; he mumbled before practically bolting out the door.</p>
-                    
-                    <p>Vivian watched as Ethan&#39;s car peeled away into the night, taillights disappearing around the bend. She didn&#39;t bother calling Audrey for confirmation. She wasn&#39;t foolish - this reeked of Adrian&#39;s classic misdirection tactics.</p>
-                    
-                    <p>To her surprise, Vivian didn&#39;t feel angry at all. She completely understood why Adrian would be jealous when she went out to meet Julian Montclair in the middle of the night.</p>
-                    
-                    <p>Stretching her arms, she slipped her feet into plush velvet slippers and made her way upstairs. The day had drained every ounce of her energy, and now fatigue crashed over her like a tidal wave. Secretly, she was grateful Adrian had tricked her into coming home early. At least now she could finally collapse into bed.</p>
-                    
-                    <p>She changed into silk pajamas, slid beneath the satin sheets, and fell into a dreamless sleep almost instantly.</p>
-                    
-                    <p>When Adrian returned, the mansion was bathed in golden light from strategically placed lamps. The warm glow created an inviting atmosphere despite the late hour. He&#39;d always preferred cooler, more clinical lighting - but Vivian had insisted warm tones made their house feel lived-in.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;Mrs. Blackwood, it&#39;s getting late. I should head home,&#34; he mumbled before practically bolting out the door.</p>
+                        
+                        <p>Vivian watched as Ethan&#39;s car peeled away into the night, taillights disappearing around the bend. She didn&#39;t bother calling Audrey for confirmation. She wasn&#39;t foolish - this reeked of Adrian&#39;s classic misdirection tactics.</p>
+                        
+                        <p>To her surprise, Vivian didn&#39;t feel angry at all. She completely understood why Adrian would be jealous when she went out to meet Julian Montclair in the middle of the night.</p>
+                        
+                        <p>Stretching her arms, she slipped her feet into plush velvet slippers and made her way upstairs. The day had drained every ounce of her energy, and now fatigue crashed over her like a tidal wave. Secretly, she was grateful Adrian had tricked her into coming home early. At least now she could finally collapse into bed.</p>
+                        
+                        <p>She changed into silk pajamas, slid beneath the satin sheets, and fell into a dreamless sleep almost instantly.</p>
+                        
+                        <p>When Adrian returned, the mansion was bathed in golden light from strategically placed lamps. The warm glow created an inviting atmosphere despite the late hour. He&#39;d always preferred cooler, more clinical lighting - but Vivian had insisted warm tones made their house feel lived-in.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Now, returning at this ungodly hour, he appreciated her choice. He carried a takeout box of Vivian&#39;s favorite late-night comfort food upstairs.</p>
-                    
-                    <p>Pushing open the bedroom door, he found the bedside lamp still glowing, illuminating Vivian&#39;s sleeping form curled under the duvet. A faint smile touched his lips. Normally Vivian couldn&#39;t sleep with any lights on. She must have been completely exhausted.</p>
-                    
-                    <p>The faint coppery scent of blood clung stubbornly to his leather jacket. Though the dark material hid any stains, the metallic tang lingered in the air.</p>
-                    
-                    <p>Adrian placed the food container on the nightstand and headed straight for the ensuite bathroom. After scrubbing away the day&#39;s events under scalding water, he changed into fresh sleepwear. He considered discarding the jacket but remembered it was part of a set Vivian had lovingly picked out. Instead, he buried it at the bottom of the hamper, covering it with a bathrobe for good measure. Satisfied, he emerged from the bathroom.</p>
-                    
-                    <p>The sound of the door clicking shut stirred Vivian from sleep. She blinked up at him with heavy-lidded eyes, her expression soft with lingering drowsiness.</p>
-                    
-                    <p>Adrian approached, retrieving the takeout box before perching on the edge of their king-sized bed. Vivian&#39;s hand slipped out from under the covers to brush against his. Her fingers were warm and delicate against his skin, grounding him in the present.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Now, returning at this ungodly hour, he appreciated her choice. He carried a takeout box of Vivian&#39;s favorite late-night comfort food upstairs.</p>
+                        
+                        <p>Pushing open the bedroom door, he found the bedside lamp still glowing, illuminating Vivian&#39;s sleeping form curled under the duvet. A faint smile touched his lips. Normally Vivian couldn&#39;t sleep with any lights on. She must have been completely exhausted.</p>
+                        
+                        <p>The faint coppery scent of blood clung stubbornly to his leather jacket. Though the dark material hid any stains, the metallic tang lingered in the air.</p>
+                        
+                        <p>Adrian placed the food container on the nightstand and headed straight for the ensuite bathroom. After scrubbing away the day&#39;s events under scalding water, he changed into fresh sleepwear. He considered discarding the jacket but remembered it was part of a set Vivian had lovingly picked out. Instead, he buried it at the bottom of the hamper, covering it with a bathrobe for good measure. Satisfied, he emerged from the bathroom.</p>
+                        
+                        <p>The sound of the door clicking shut stirred Vivian from sleep. She blinked up at him with heavy-lidded eyes, her expression soft with lingering drowsiness.</p>
+                        
+                        <p>Adrian approached, retrieving the takeout box before perching on the edge of their king-sized bed. Vivian&#39;s hand slipped out from under the covers to brush against his. Her fingers were warm and delicate against his skin, grounding him in the present.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;Want to keep sleeping or have a midnight snack?&#34; he murmured, his voice low.</p>
-                    
-                    <p>&#34;What&#39;d you bring?&#34; Vivian&#39;s words came out thick with sleep, the question ending in a sleepy little whimper.</p>
-                    
-                    <p>He tested the temperature of the container before opening it. &#34;Those crispy chicken wings from that place you love near the studio.&#34;</p>
-                    
-                    <p>The rich aroma of perfectly fried chicken filled the air between them. Vivian&#39;s stomach betrayed her with an audible growl. She gave an embarrassed chuckle, pushing herself up against the tufted headboard. &#34;Just a couple bites.&#34;</p>
-                    
-                    <p>Adrian selected the plumpest wing and offered it to her. Vivian hesitated for a heartbeat.</p>
-                    
-                    <p>In the past, she would have taken the food and eaten it herself, maintaining careful boundaries even in their most intimate moments. But their relationship had evolved - she&#39;d learned that love wasn&#39;t about independence, but interdependence. These small acts of care were the threads weaving their lives together.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;Want to keep sleeping or have a midnight snack?&#34; he murmured, his voice low.</p>
+                        
+                        <p>&#34;What&#39;d you bring?&#34; Vivian&#39;s words came out thick with sleep, the question ending in a sleepy little whimper.</p>
+                        
+                        <p>He tested the temperature of the container before opening it. &#34;Those crispy chicken wings from that place you love near the studio.&#34;</p>
+                        
+                        <p>The rich aroma of perfectly fried chicken filled the air between them. Vivian&#39;s stomach betrayed her with an audible growl. She gave an embarrassed chuckle, pushing herself up against the tufted headboard. &#34;Just a couple bites.&#34;</p>
+                        
+                        <p>Adrian selected the plumpest wing and offered it to her. Vivian hesitated for a heartbeat.</p>
+                        
+                        <p>In the past, she would have taken the food and eaten it herself, maintaining careful boundaries even in their most intimate moments. But their relationship had evolved - she&#39;d learned that love wasn&#39;t about independence, but interdependence. These small acts of care were the threads weaving their lives together.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>She leaned forward to take a delicate bite, her gaze lingering on Adrian&#39;s sharp jawline. &#34;Perfect,&#34; she murmured, her lips curving into a genuine smile.</p>
-                    
-                    <p>Seeing her pleasure sent unexpected warmth spreading through Adrian&#39;s chest. For the first time, he understood that caring for someone wasn&#39;t an obligation - it could be profoundly fulfilling. He brought the chicken to her lips again, coaxing her to take another bite.</p>
-                    
-                    <p>Vivian took two more delicate bites before leaning back with a satisfied sigh, rubbing her stomach. &#34;I&#39;m completely stuffed. Such a shame to waste this.&#34;</p>
-                    
-                    <p>Without missing a beat, Adrian picked up the half-eaten drumstick and took a generous bite of her leftovers.</p>
-                    
-                    <p>Vivian&#39;s breath caught in her throat. Adrian—the man who insisted on separate towels for hands and face, who alphabetized his spice rack—was casually finishing her meal without hesitation. It wasn&#39;t the action itself that shocked her, but the profound intimacy it represented. This simple act felt more vulnerable than any passionate embrace they&#39;d shared.</p>
-                    
-                    <p>It spoke of unspoken trust and devotion—something Vivian had always struggled to give or receive. Even parents stopped eating their children&#39;s leftovers once they grew past toddler age.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>She leaned forward to take a delicate bite, her gaze lingering on Adrian&#39;s sharp jawline. &#34;Perfect,&#34; she murmured, her lips curving into a genuine smile.</p>
+                        
+                        <p>Seeing her pleasure sent unexpected warmth spreading through Adrian&#39;s chest. For the first time, he understood that caring for someone wasn&#39;t an obligation - it could be profoundly fulfilling. He brought the chicken to her lips again, coaxing her to take another bite.</p>
+                        
+                        <p>Vivian took two more delicate bites before leaning back with a satisfied sigh, rubbing her stomach. &#34;I&#39;m completely stuffed. Such a shame to waste this.&#34;</p>
+                        
+                        <p>Without missing a beat, Adrian picked up the half-eaten drumstick and took a generous bite of her leftovers.</p>
+                        
+                        <p>Vivian&#39;s breath caught in her throat. Adrian—the man who insisted on separate towels for hands and face, who alphabetized his spice rack—was casually finishing her meal without hesitation. It wasn&#39;t the action itself that shocked her, but the profound intimacy it represented. This simple act felt more vulnerable than any passionate embrace they&#39;d shared.</p>
+                        
+                        <p>It spoke of unspoken trust and devotion—something Vivian had always struggled to give or receive. Even parents stopped eating their children&#39;s leftovers once they grew past toddler age.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>When Adrian finished, Vivian rested her head against his thigh and gazed up at him with sleepy eyes. &#34;I need to brush my teeth.&#34;</p>
-                    
-                    <p>Her bedtime rituals were non-negotiable—pitch darkness, absolute silence, the thermostat set precisely to 68°F, weighted blankets, and only 800-thread-count Egyptian cotton sheets. The faintest hint of food residue in her mouth would keep her awake all night.</p>
-                    
-                    <p>Adrian set the empty wonton bowl aside. &#34;Shall I carry you to the bathroom?&#34;</p>
-                    
-                    <p>Vivian pouted adorably. &#34;No, I don&#39;t want to move. Can&#39;t I just brush here in bed?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>When Adrian finished, Vivian rested her head against his thigh and gazed up at him with sleepy eyes. &#34;I need to brush my teeth.&#34;</p>
+                        
+                        <p>Her bedtime rituals were non-negotiable—pitch darkness, absolute silence, the thermostat set precisely to 68°F, weighted blankets, and only 800-thread-count Egyptian cotton sheets. The faintest hint of food residue in her mouth would keep her awake all night.</p>
+                        
+                        <p>Adrian set the empty wonton bowl aside. &#34;Shall I carry you to the bathroom?&#34;</p>
+                        
+                        <p>Vivian pouted adorably. &#34;No, I don&#39;t want to move. Can&#39;t I just brush here in bed?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:17.495954">
-    <meta property="article:modified_time" content="2026-07-19T02:47:17.495954">
+    <meta property="article:published_time" content="2026-07-19T13:03:12.734472">
+    <meta property="article:modified_time" content="2026-07-19T13:03:12.734472">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:17">
+    <meta name="last-modified" content="2026-07-19 13:03:12">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:17.495954",
-        "dateModified": "2026-07-19T02:47:17.495954",
+        "datePublished": "2026-07-19T13:03:12.734472",
+        "dateModified": "2026-07-19T13:03:12.734472",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,23 +893,27 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter1537</p>
-                    
-                    <p>Nigel furrowed his brows deeply, &#34;Grant...&#34;</p>
-                    
-                    <p>Grant&#39;s eyes carried a hint of sorrow, and his smile was bitter. &#34;I&#39;m sorry, Grandpa. It&#39;s my fault. I couldn&#39;t help you and Dad or fulfill my duties to the Salvador family. I also ended up becoming a burden. For many years, I&#39;ve always thought about one thing-how different things would be if I didn&#39;t get kidnapped, if I had been the one to escape from the kidnappers. If I could&#39;ve been a bit more selfish... Would everything have turned out differently then?&#34;</p>
-                    
-                    <p>With a complicated mix of emotions, Nigel tried to console him. &#34;Grant, don&#39;t think about it that way. I know you&#39;ve suffered a lot over the years. That was an accident. You&#39;re my grandson, too. Why wouldn&#39;t my heart ache for you, too? Whether it&#39;s you or Justin, I love both of you deeply.&#34;</p>
-                    
-                    <p>&#34;Then do you love me more, or Justin more?&#34;</p>
-                    
-                    <p>This was undoubtedly a soul-searching question.</p>
-                    
-                    <p>Nigel was momentarily at a loss for words, while Grant smiled faintly. &#34;You don&#39;t have to answer. I understand. But it&#39;s okay. I won&#39;t be angry. After all, I&#39;m Justin&#39;s older brother, the eldest son of the Salvador family. Even at the cost of my life, it&#39;s my duty to protect my younger brother. Though I&#39;ve missed you and Dad and have felt sorry for myself, I&#39;ve never regretted risking my life to save Justin during that kidnapping incident.&#34;</p>
-                    
-                    <p>A heavy shadow clouded Nigel&#39;s brow, and he pressed his lips together.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter1537</p>
+                        
+                        <p>Nigel furrowed his brows deeply, &#34;Grant...&#34;</p>
+                        
+                        <p>Grant&#39;s eyes carried a hint of sorrow, and his smile was bitter. &#34;I&#39;m sorry, Grandpa. It&#39;s my fault. I couldn&#39;t help you and Dad or fulfill my duties to the Salvador family. I also ended up becoming a burden. For many years, I&#39;ve always thought about one thing-how different things would be if I didn&#39;t get kidnapped, if I had been the one to escape from the kidnappers. If I could&#39;ve been a bit more selfish... Would everything have turned out differently then?&#34;</p>
+                        
+                        <p>With a complicated mix of emotions, Nigel tried to console him. &#34;Grant, don&#39;t think about it that way. I know you&#39;ve suffered a lot over the years. That was an accident. You&#39;re my grandson, too. Why wouldn&#39;t my heart ache for you, too? Whether it&#39;s you or Justin, I love both of you deeply.&#34;</p>
+                        
+                        <p>&#34;Then do you love me more, or Justin more?&#34;</p>
+                        
+                        <p>This was undoubtedly a soul-searching question.</p>
+                        
+                        <p>Nigel was momentarily at a loss for words, while Grant smiled faintly. &#34;You don&#39;t have to answer. I understand. But it&#39;s okay. I won&#39;t be angry. After all, I&#39;m Justin&#39;s older brother, the eldest son of the Salvador family. Even at the cost of my life, it&#39;s my duty to protect my younger brother. Though I&#39;ve missed you and Dad and have felt sorry for myself, I&#39;ve never regretted risking my life to save Justin during that kidnapping incident.&#34;</p>
+                        
+                        <p>A heavy shadow clouded Nigel&#39;s brow, and he pressed his lips together.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -888,23 +928,27 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Back then, if I hadn&#39;t helped Justin escape, the kidnappers would&#39;ve tortured us to death. One of us had to survive to inherit the Salvador family business and fulfill our filial duties to you and Dad. Isn&#39;t that right?&#34;</p>
-                    
-                    <p>&#34;Grant, about that incident... I&#39;ll always feel indebted to you. I just hope you don&#39;t hold a grudge against Justin. Don&#39;t blame him for it. Justin was just a child then. He was too young to understand anything.&#34; Nigel set aside his elder&#39;s pride, almost pleading with Grant.</p>
-                    
-                    <p>A subtle, mysterious smile appeared on Grant&#39;s pale and handsome face on the screen.</p>
-                    
-                    <p>That smile was like a snake&#39;s cold and slender tongue, probing Nigel&#39;s heart with eerie and hidden intent.</p>
-                    
-                    <p>&#34;Grandpa, who are you talking to?&#34;</p>
-                    
-                    <p>Justin walked in with his arm around Bella&#39;s waist. His face beamed with happiness.</p>
-                    
-                    <p>Nigel froze, holding his phone mid-air, unsure of what to do.</p>
-                    
-                    <p>&#34;Justin? You&#39;re here.&#34; Grant&#39;s warm voice came from the phone.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Back then, if I hadn&#39;t helped Justin escape, the kidnappers would&#39;ve tortured us to death. One of us had to survive to inherit the Salvador family business and fulfill our filial duties to you and Dad. Isn&#39;t that right?&#34;</p>
+                        
+                        <p>&#34;Grant, about that incident... I&#39;ll always feel indebted to you. I just hope you don&#39;t hold a grudge against Justin. Don&#39;t blame him for it. Justin was just a child then. He was too young to understand anything.&#34; Nigel set aside his elder&#39;s pride, almost pleading with Grant.</p>
+                        
+                        <p>A subtle, mysterious smile appeared on Grant&#39;s pale and handsome face on the screen.</p>
+                        
+                        <p>That smile was like a snake&#39;s cold and slender tongue, probing Nigel&#39;s heart with eerie and hidden intent.</p>
+                        
+                        <p>&#34;Grandpa, who are you talking to?&#34;</p>
+                        
+                        <p>Justin walked in with his arm around Bella&#39;s waist. His face beamed with happiness.</p>
+                        
+                        <p>Nigel froze, holding his phone mid-air, unsure of what to do.</p>
+                        
+                        <p>&#34;Justin? You&#39;re here.&#34; Grant&#39;s warm voice came from the phone.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -919,23 +963,27 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Bella heard the deep, mellow voice, which immediately caught her attention.</p>
-                    
-                    <p>Justin&#39;s expression stiffened. &#34;Grant...?&#34;</p>
-                    
-                    <p>Grant&#39;s voice was gentle as he pleaded, &#34;Grandpa, can I please speak with Justin? I haven&#39;t seen him in a long time. I miss him.&#34;</p>
-                    
-                    <p>&#34;Justin, your brother wants to talk to you.&#34; Nigel deliberately called Justin over alone.</p>
-                    
-                    <p>He did it to ensure that Bella would not appear on the call.</p>
-                    
-                    <p>Justin walked over to his grandfather, his handsome face composed. &#34;Hey, Grant.”</p>
-                    
-                    <p>&#34;You look just as spirited and handsome as ever, unlike me... Cough, cough.&#34;</p>
-                    
-                    <p>Grant tried to suppress his cough, smiling with relief. &#34;I&#39;m sure you and Ms. Thompson must be laughing at me.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Bella heard the deep, mellow voice, which immediately caught her attention.</p>
+                        
+                        <p>Justin&#39;s expression stiffened. &#34;Grant...?&#34;</p>
+                        
+                        <p>Grant&#39;s voice was gentle as he pleaded, &#34;Grandpa, can I please speak with Justin? I haven&#39;t seen him in a long time. I miss him.&#34;</p>
+                        
+                        <p>&#34;Justin, your brother wants to talk to you.&#34; Nigel deliberately called Justin over alone.</p>
+                        
+                        <p>He did it to ensure that Bella would not appear on the call.</p>
+                        
+                        <p>Justin walked over to his grandfather, his handsome face composed. &#34;Hey, Grant.”</p>
+                        
+                        <p>&#34;You look just as spirited and handsome as ever, unlike me... Cough, cough.&#34;</p>
+                        
+                        <p>Grant tried to suppress his cough, smiling with relief. &#34;I&#39;m sure you and Ms. Thompson must be laughing at me.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -950,23 +998,27 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Justin&#39;s dark eyes narrowed slightly, and Bella clearly heard everything.</p>
-                    
-                    <p>&#34;Grandpa, your house must&#39;ve been lively tonight, right? With Justin, Ms. Thompson, and Uncle Matt having dinner and setting off fireworks with you. Just thinking about it makes me envious of such a warm scene.&#34;</p>
-                    
-                    <p>Nigel&#39;s jaw clenched slightly.</p>
-                    
-                    <p>His eldest grandson had always been sensitive and thoughtful. He was just as sharp and intelligent as Justin.</p>
-                    
-                    <p>But he lacked Justin&#39;s straightforward and genuine nature. Though he always wore a smile, one could never tell if it was sincere.</p>
-                    
-                    <p>Every word Grant spoke would leave one feeling uneasy and compelled to search for hidden meanings.</p>
-                    
-                    <p>Justin looked at Grant warmly. &#34;Grant, I&#39;ll schedule a time to visit you in Meridan with Grandpa. We can have a reunion then.&#34;</p>
-                    
-                    <p>&#34;Will you bring Ms. Thompson with you to meet me then?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Justin&#39;s dark eyes narrowed slightly, and Bella clearly heard everything.</p>
+                        
+                        <p>&#34;Grandpa, your house must&#39;ve been lively tonight, right? With Justin, Ms. Thompson, and Uncle Matt having dinner and setting off fireworks with you. Just thinking about it makes me envious of such a warm scene.&#34;</p>
+                        
+                        <p>Nigel&#39;s jaw clenched slightly.</p>
+                        
+                        <p>His eldest grandson had always been sensitive and thoughtful. He was just as sharp and intelligent as Justin.</p>
+                        
+                        <p>But he lacked Justin&#39;s straightforward and genuine nature. Though he always wore a smile, one could never tell if it was sincere.</p>
+                        
+                        <p>Every word Grant spoke would leave one feeling uneasy and compelled to search for hidden meanings.</p>
+                        
+                        <p>Justin looked at Grant warmly. &#34;Grant, I&#39;ll schedule a time to visit you in Meridan with Grandpa. We can have a reunion then.&#34;</p>
+                        
+                        <p>&#34;Will you bring Ms. Thompson with you to meet me then?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -981,23 +1033,27 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>The room suddenly fell silent.</p>
-                    
-                    <p>As someone who was usually reserved, Justin frowned at Grant&#39;s question, feeling bitter.</p>
-                    
-                    <p>Justin could not tell if Grant wanted to see him or his woman.</p>
-                    
-                    <p>&#34;Well, there&#39;s no need to complicate it. Isn&#39;t Ms. Thompson right beside you? There&#39;s no time like the</p>
-                    
-                    <p>vel.?</p>
-                    
-                    <p>present. Meeting through the screen is just as good.&#34;</p>
-                    
-                    <p>As he finished his sentence, Nigel waved Bella over. &#34;Come, Anna. Come meet my eldest grandson, Justin&#39;s brother.&#34;</p>
-                    
-                    <p>Bella hesitated but then walked to Justin&#39;s side, the striking couple now in Grant&#39;s view.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>The room suddenly fell silent.</p>
+                        
+                        <p>As someone who was usually reserved, Justin frowned at Grant&#39;s question, feeling bitter.</p>
+                        
+                        <p>Justin could not tell if Grant wanted to see him or his woman.</p>
+                        
+                        <p>&#34;Well, there&#39;s no need to complicate it. Isn&#39;t Ms. Thompson right beside you? There&#39;s no time like the</p>
+                        
+                        <p>vel.?</p>
+                        
+                        <p>present. Meeting through the screen is just as good.&#34;</p>
+                        
+                        <p>As he finished his sentence, Nigel waved Bella over. &#34;Come, Anna. Come meet my eldest grandson, Justin&#39;s brother.&#34;</p>
+                        
+                        <p>Bella hesitated but then walked to Justin&#39;s side, the striking couple now in Grant&#39;s view.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1012,23 +1068,27 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;Justin is so lucky to have such a beautiful companion like Ms. Thompson by his side.&#34;</p>
-                    
-                    <p>Grant&#39;s smile widened as he gazed at Bella&#39;s stunning face. &#34;Oh, no, I should call you my sister-in-law now.&#34;</p>
-                    
-                    <p>His tone was sincere as he admired the couple.</p>
-                    
-                    <p>Justin pressed his lips together, staying silent.</p>
-                    
-                    <p>&#34;Nice to meet you, Young Master Grant,&#34; Bella said with a polite smile, addressing him formally as &#34;Young Master Grant&#34; instead of &#34;Grant&#34;.</p>
-                    
-                    <p>Her choice of words was deliberate and calculated.</p>
-                    
-                    <p>&#34;We have met before. This isn&#39;t our first time meeting each other,&#34; Grant said, his eyebrows arching slightly and shadows playing across his refined face. Justin&#39;s heart inexplicably tightened, and his fingers clenched.</p>
-                    
-                    <p>&#34;If I&#39;m not mistaken, this should be our first meeting,&#34; Bella responded calmly.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;Justin is so lucky to have such a beautiful companion like Ms. Thompson by his side.&#34;</p>
+                        
+                        <p>Grant&#39;s smile widened as he gazed at Bella&#39;s stunning face. &#34;Oh, no, I should call you my sister-in-law now.&#34;</p>
+                        
+                        <p>His tone was sincere as he admired the couple.</p>
+                        
+                        <p>Justin pressed his lips together, staying silent.</p>
+                        
+                        <p>&#34;Nice to meet you, Young Master Grant,&#34; Bella said with a polite smile, addressing him formally as &#34;Young Master Grant&#34; instead of &#34;Grant&#34;.</p>
+                        
+                        <p>Her choice of words was deliberate and calculated.</p>
+                        
+                        <p>&#34;We have met before. This isn&#39;t our first time meeting each other,&#34; Grant said, his eyebrows arching slightly and shadows playing across his refined face. Justin&#39;s heart inexplicably tightened, and his fingers clenched.</p>
+                        
+                        <p>&#34;If I&#39;m not mistaken, this should be our first meeting,&#34; Bella responded calmly.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1043,11 +1103,15 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;It may be the first time you&#39;re meeting me, but I&#39;ve seen you before.&#34;</p>
-                    
-                    <p>Grant smiled faintly. &#34;In the past few years, and even further back, I&#39;ve met you. Ms. Thompson, you&#39;re far more famous than you&#39;re aware of Even though I reside in Meridan, I&#39;ve visited your jewelry exhibitions several times and had the privilege of purchasing a few pieces to add to my collection. To put it bluntly, I am one of your fans.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;It may be the first time you&#39;re meeting me, but I&#39;ve seen you before.&#34;</p>
+                        
+                        <p>Grant smiled faintly. &#34;In the past few years, and even further back, I&#39;ve met you. Ms. Thompson, you&#39;re far more famous than you&#39;re aware of Even though I reside in Meridan, I&#39;ve visited your jewelry exhibitions several times and had the privilege of purchasing a few pieces to add to my collection. To put it bluntly, I am one of your fans.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2363,6 +2427,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2489,7 +2633,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2531,32 +2674,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2567,21 +2692,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2614,6 +2729,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2634,20 +2755,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

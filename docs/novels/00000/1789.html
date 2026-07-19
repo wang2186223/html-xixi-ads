@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Vivian&#39;s breath caught. So it hadn&#39;t been a dream after all.</p>
-                    
-                    <p>The maid entered with a silver tray, her steps measured and her lips curled in undisguised disdain. &#34;Mr. Blackwood ordered me to tend to you,&#34; she declared, her voice laced with thinly veiled contempt.</p>
-                    
-                    <p>Vivian blinked at the servant&#39;s brazen disrespect toward the lady of the house. Adrian&#39;s loathing for her ran so deep that even newly hired staff felt entitled to treat her with such open disregard. This wasn&#39;t care - it was damage control, like assigning someone to babysit an inconvenient problem. While Serena had mastered the art of feigning illness for attention - and Adrian would move heaven and earth for her - he&#39;d casually palmed off his own wife&#39;s care to a servant during her fever.</p>
-                    
-                    <p>&#34;Leave. I need to shower,&#34; Vivian said dismissively, throwing back the silk sheets.</p>
-                    
-                    <p>The maid stood rooted to the spot.</p>
-                    
-                    <p>&#34;Mr. Blackwood insisted you take medication after breakfast.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Vivian&#39;s breath caught. So it hadn&#39;t been a dream after all.</p>
+                        
+                        <p>The maid entered with a silver tray, her steps measured and her lips curled in undisguised disdain. &#34;Mr. Blackwood ordered me to tend to you,&#34; she declared, her voice laced with thinly veiled contempt.</p>
+                        
+                        <p>Vivian blinked at the servant&#39;s brazen disrespect toward the lady of the house. Adrian&#39;s loathing for her ran so deep that even newly hired staff felt entitled to treat her with such open disregard. This wasn&#39;t care - it was damage control, like assigning someone to babysit an inconvenient problem. While Serena had mastered the art of feigning illness for attention - and Adrian would move heaven and earth for her - he&#39;d casually palmed off his own wife&#39;s care to a servant during her fever.</p>
+                        
+                        <p>&#34;Leave. I need to shower,&#34; Vivian said dismissively, throwing back the silk sheets.</p>
+                        
+                        <p>The maid stood rooted to the spot.</p>
+                        
+                        <p>&#34;Mr. Blackwood insisted you take medication after breakfast.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Vivian&#39;s voice turned glacial. &#34;Adrian asked you to assist me, not command me.&#34;</p>
-                    
-                    <p>The maid&#39;s expression faltered. &#34;Excuse me?&#34; Without missing a beat, Vivian countered, &#34;I remain his wife. Basic courtesy would be appreciated.&#34;</p>
-                    
-                    <p>When the maid remained silent, Vivian added with finality, &#34;Enough. You&#39;re dismissed. I won&#39;t ask again.&#34;</p>
-                    
-                    <p>The maid flushed but didn&#39;t dare argue, eventually turning on her heel. Alone at last, Vivian exhaled and headed for the ensuite. After showering and changing into fresh clothes, she grabbed her purse and phone, pausing to check the hallway - empty.</p>
-                    
-                    <p>Perfect.</p>
-                    
-                    <p>She quickly summoned a ride and slipped out like a fugitive. The crisp morning air revived her, but her brief respite shattered when her phone began vibrating incessantly. Sliding into the waiting cab, she fished out her phone, her stomach dropping at the caller ID. Richard.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Vivian&#39;s voice turned glacial. &#34;Adrian asked you to assist me, not command me.&#34;</p>
+                        
+                        <p>The maid&#39;s expression faltered. &#34;Excuse me?&#34; Without missing a beat, Vivian countered, &#34;I remain his wife. Basic courtesy would be appreciated.&#34;</p>
+                        
+                        <p>When the maid remained silent, Vivian added with finality, &#34;Enough. You&#39;re dismissed. I won&#39;t ask again.&#34;</p>
+                        
+                        <p>The maid flushed but didn&#39;t dare argue, eventually turning on her heel. Alone at last, Vivian exhaled and headed for the ensuite. After showering and changing into fresh clothes, she grabbed her purse and phone, pausing to check the hallway - empty.</p>
+                        
+                        <p>Perfect.</p>
+                        
+                        <p>She quickly summoned a ride and slipped out like a fugitive. The crisp morning air revived her, but her brief respite shattered when her phone began vibrating incessantly. Sliding into the waiting cab, she fished out her phone, her stomach dropping at the caller ID. Richard.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Vivian&#39;s jaw tightened as unwanted memories surfaced. In the early days of her marriage to Adrian, Richard had hounded her relentlessly, exploiting their blood ties to demand favors - insider stock tips, business connections, high-society invitations for Natasha to land a rich husband. But Vivian had never been one to be manipulated, least of all by Richard. Her refusals were absolute. When it became clear she wouldn&#39;t play along, he&#39;d dropped the charade of fatherly affection.</p>
-                    
-                    <p>Two years of radio silence. And now this. The timing was obvious - their recent encounter combined with divorce rumors had reignited his interest. The phone vibrated again, about to disconnect. Against her better judgment, she answered, her voice arctic. &#34;What do you want?&#34;</p>
-                    
-                    <p>Richard launched into his trademark guilt trip, his words barbed with accusation. &#34;Two years without visiting your own father, and now that you&#39;ve climbed the social ladder, you&#39;ve forgotten your family. You truly are heartless—&#34;</p>
-                    
-                    <p>As Richard&#39;s tirade continued, Vivian subtly held the phone away, her gaze drifting to the cab window.</p>
-                    
-                    <p>On the sidewalk, an elderly gentleman approached a young woman exiting a boutique, her arms laden with shopping bags. With tender care, he offered her an ice cream cone and relieved her of the bags, letting her enjoy the treat as they strolled side by side. Their striking resemblance left no doubt about their relationship. Though the daughter appeared to be Vivian&#39;s age, her father&#39;s eyes still saw the little girl needing protection.</p>
-                    
-                    <p>The contrast stung.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Vivian&#39;s jaw tightened as unwanted memories surfaced. In the early days of her marriage to Adrian, Richard had hounded her relentlessly, exploiting their blood ties to demand favors - insider stock tips, business connections, high-society invitations for Natasha to land a rich husband. But Vivian had never been one to be manipulated, least of all by Richard. Her refusals were absolute. When it became clear she wouldn&#39;t play along, he&#39;d dropped the charade of fatherly affection.</p>
+                        
+                        <p>Two years of radio silence. And now this. The timing was obvious - their recent encounter combined with divorce rumors had reignited his interest. The phone vibrated again, about to disconnect. Against her better judgment, she answered, her voice arctic. &#34;What do you want?&#34;</p>
+                        
+                        <p>Richard launched into his trademark guilt trip, his words barbed with accusation. &#34;Two years without visiting your own father, and now that you&#39;ve climbed the social ladder, you&#39;ve forgotten your family. You truly are heartless—&#34;</p>
+                        
+                        <p>As Richard&#39;s tirade continued, Vivian subtly held the phone away, her gaze drifting to the cab window.</p>
+                        
+                        <p>On the sidewalk, an elderly gentleman approached a young woman exiting a boutique, her arms laden with shopping bags. With tender care, he offered her an ice cream cone and relieved her of the bags, letting her enjoy the treat as they strolled side by side. Their striking resemblance left no doubt about their relationship. Though the daughter appeared to be Vivian&#39;s age, her father&#39;s eyes still saw the little girl needing protection.</p>
+                        
+                        <p>The contrast stung.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Vivian abruptly ended the call, cutting off Richard mid-sentence. She stared at her darkened phone screen, the reflection showing eyes shimmering with unshed tears. The cab turned onto the highway, carrying her away from the gilded cage and toward an uncertain future. Somewhere in the city, Adrian was probably relieved by her absence. And Richard? He&#39;d already moved on to plotting his next scheme.</p>
-                    
-                    <p>The city skyline blurred as the cab accelerated. Vivian squared her shoulders. This time, she wouldn&#39;t look back.</p>
-                    
-                    <p>The tender scene outside the car window stood in stark contrast to Richard Dawson&#39;s complete lack of paternal warmth. Vivian Hartley averted her gaze, her expression carefully blank.</p>
-                    
-                    <p>On the phone, Richard&#39;s tone shifted slightly, the edge of mockery softening though the calculating undertone remained. &#34;Natasha mentioned you and Adrian had a rather public disagreement about the divorce. Is this because of his ex?&#34;</p>
-                    
-                    <p>He paused briefly before continuing, more to himself than to her. &#34;You know, I&#39;ve been thinking... Marrying into wealth isn&#39;t all it&#39;s cracked up to be. Blood is thicker than water, after all. We&#39;re your real family. You must be getting a decent settlement, right? Speaking of which, Natasha has her eye on a Porsche 911. It&#39;s not unreasonable. If you bought it for her, she&#39;d be very appreciative.&#34;</p>
-                    
-                    <p>Vivian&#39;s jaw tightened, a bitter taste flooding her mouth. She&#39;d expected this call to be unpleasant, but not this brazen. Her family&#39;s greed knew no limits - already counting money they assumed she&#39;d get from the divorce. Richard&#39;s fake concern, wrapped in the pretense of family loyalty, was nothing but manipulation. Disgusting. Hypocritical.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Vivian abruptly ended the call, cutting off Richard mid-sentence. She stared at her darkened phone screen, the reflection showing eyes shimmering with unshed tears. The cab turned onto the highway, carrying her away from the gilded cage and toward an uncertain future. Somewhere in the city, Adrian was probably relieved by her absence. And Richard? He&#39;d already moved on to plotting his next scheme.</p>
+                        
+                        <p>The city skyline blurred as the cab accelerated. Vivian squared her shoulders. This time, she wouldn&#39;t look back.</p>
+                        
+                        <p>The tender scene outside the car window stood in stark contrast to Richard Dawson&#39;s complete lack of paternal warmth. Vivian Hartley averted her gaze, her expression carefully blank.</p>
+                        
+                        <p>On the phone, Richard&#39;s tone shifted slightly, the edge of mockery softening though the calculating undertone remained. &#34;Natasha mentioned you and Adrian had a rather public disagreement about the divorce. Is this because of his ex?&#34;</p>
+                        
+                        <p>He paused briefly before continuing, more to himself than to her. &#34;You know, I&#39;ve been thinking... Marrying into wealth isn&#39;t all it&#39;s cracked up to be. Blood is thicker than water, after all. We&#39;re your real family. You must be getting a decent settlement, right? Speaking of which, Natasha has her eye on a Porsche 911. It&#39;s not unreasonable. If you bought it for her, she&#39;d be very appreciative.&#34;</p>
+                        
+                        <p>Vivian&#39;s jaw tightened, a bitter taste flooding her mouth. She&#39;d expected this call to be unpleasant, but not this brazen. Her family&#39;s greed knew no limits - already counting money they assumed she&#39;d get from the divorce. Richard&#39;s fake concern, wrapped in the pretense of family loyalty, was nothing but manipulation. Disgusting. Hypocritical.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>For a moment, she questioned whether she truly shared DNA with this man. Sunlight streamed through the car window, warm and golden, yet an icy chill spread through her veins. Her thoughts drifted to Adrian, and an unbidden memory surfaced - him standing between her and her family&#39;s constant demands, shielding her from their relentless greed. Once, she&#39;d seen him as her sanctuary after her mother&#39;s death. Now even that had turned to dust.</p>
-                    
-                    <p>Vivian took a deep breath, locking away the surge of emotion. When she spoke, her voice was as sharp and cold as shattered glass. &#34;Yes, Adrian and I are divorcing. And I&#39;m leaving with nothing. So don&#39;t waste your time on me.&#34;</p>
-                    
-                    <p>Richard&#39;s voice immediately rose in pitch. &#34;What? Nothing? Have you lost your mind? Two years of marriage and you walk away empty-handed? Do you think I&#39;ll let him get away with this? I&#39;ll go to the Blackwoods myself and demand what&#39;s rightfully yours!&#34;</p>
-                    
-                    <p>A sharp pain lanced through Vivian&#39;s temples as she cut him off. &#34;Do you honestly believe Adrian would overlook your motives? Go ahead, chase your money. But when Adrian retaliates, don&#39;t come crying to me. Remember what happened to the Seymours?&#34;</p>
-                    
-                    <p>The mention of the Seymour family effectively silenced Richard. The Seymours and Dawsons had been acquaintances, having once collaborated with the powerful Blackwood Group through their connection to the Dawson family. But when the Seymours tried to extort more money from Adrian, they found themselves bankrupt and exiled from Crestwood overnight - a brutal demonstration of Adrian&#39;s reach and ruthlessness.</p>
-                    
-                    <p>Before Richard could respond, Vivian ended the call, immediately blocking his number. The moment she did, her phone rang again with an unknown number. Warily, she answered, &#34;Hello?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>For a moment, she questioned whether she truly shared DNA with this man. Sunlight streamed through the car window, warm and golden, yet an icy chill spread through her veins. Her thoughts drifted to Adrian, and an unbidden memory surfaced - him standing between her and her family&#39;s constant demands, shielding her from their relentless greed. Once, she&#39;d seen him as her sanctuary after her mother&#39;s death. Now even that had turned to dust.</p>
+                        
+                        <p>Vivian took a deep breath, locking away the surge of emotion. When she spoke, her voice was as sharp and cold as shattered glass. &#34;Yes, Adrian and I are divorcing. And I&#39;m leaving with nothing. So don&#39;t waste your time on me.&#34;</p>
+                        
+                        <p>Richard&#39;s voice immediately rose in pitch. &#34;What? Nothing? Have you lost your mind? Two years of marriage and you walk away empty-handed? Do you think I&#39;ll let him get away with this? I&#39;ll go to the Blackwoods myself and demand what&#39;s rightfully yours!&#34;</p>
+                        
+                        <p>A sharp pain lanced through Vivian&#39;s temples as she cut him off. &#34;Do you honestly believe Adrian would overlook your motives? Go ahead, chase your money. But when Adrian retaliates, don&#39;t come crying to me. Remember what happened to the Seymours?&#34;</p>
+                        
+                        <p>The mention of the Seymour family effectively silenced Richard. The Seymours and Dawsons had been acquaintances, having once collaborated with the powerful Blackwood Group through their connection to the Dawson family. But when the Seymours tried to extort more money from Adrian, they found themselves bankrupt and exiled from Crestwood overnight - a brutal demonstration of Adrian&#39;s reach and ruthlessness.</p>
+                        
+                        <p>Before Richard could respond, Vivian ended the call, immediately blocking his number. The moment she did, her phone rang again with an unknown number. Warily, she answered, &#34;Hello?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>The voice on the other end was smooth and cultured. &#34;Ms. Hartley? Damien Vaughn, CEO of Ivory Phoenix Productions. I understand you have someone in mind for our leading lady. Would you be available to meet with us and your candidate? What time works for you?&#34;</p>
-                    
-                    <p>Damien&#39;s direct yet sincere approach cut through Vivian&#39;s swirling thoughts. She pushed aside her emotional turmoil and responded with renewed purpose, &#34;I&#39;m available now.&#34;</p>
-                    
-                    <p>With neither family nor love to anchor her, Vivian understood one thing clearly - life would go on.</p>
-                    
-                    <p>The steady rhythm of work became Vivian&#39;s sanctuary, a fortress built with the bricks of financial independence. Never again would she chain herself to someone else&#39;s promises for security.</p>
-                    
-                    <p>Damien&#39;s response came without pretense. &#34;Perfect. I&#39;ll be waiting.&#34;</p>
-                    
-                    <p>The navigation led Vivian to Hazelnut Time Coffee Shop, a hidden gem that whispered of old-world charm. Stone pathways wound through a courtyard where a wooden bridge arched over a babbling brook, flanked by corridors that seemed to hold centuries of secrets. Inside, the walls displayed museum-worthy paintings while delicate porcelain figurines watched from their shelves.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>The voice on the other end was smooth and cultured. &#34;Ms. Hartley? Damien Vaughn, CEO of Ivory Phoenix Productions. I understand you have someone in mind for our leading lady. Would you be available to meet with us and your candidate? What time works for you?&#34;</p>
+                        
+                        <p>Damien&#39;s direct yet sincere approach cut through Vivian&#39;s swirling thoughts. She pushed aside her emotional turmoil and responded with renewed purpose, &#34;I&#39;m available now.&#34;</p>
+                        
+                        <p>With neither family nor love to anchor her, Vivian understood one thing clearly - life would go on.</p>
+                        
+                        <p>The steady rhythm of work became Vivian&#39;s sanctuary, a fortress built with the bricks of financial independence. Never again would she chain herself to someone else&#39;s promises for security.</p>
+                        
+                        <p>Damien&#39;s response came without pretense. &#34;Perfect. I&#39;ll be waiting.&#34;</p>
+                        
+                        <p>The navigation led Vivian to Hazelnut Time Coffee Shop, a hidden gem that whispered of old-world charm. Stone pathways wound through a courtyard where a wooden bridge arched over a babbling brook, flanked by corridors that seemed to hold centuries of secrets. Inside, the walls displayed museum-worthy paintings while delicate porcelain figurines watched from their shelves.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>A waiter materialized with a bow. &#34;This way, please.&#34;</p>
-                    
-                    <p>She followed him to the Azure Room, where misty blue walls created an atmosphere of serene sophistication. With each step, Damien&#39;s voice replayed in her mind, painting him as someone who appreciated both beauty and substance.</p>
-                    
-                    <p>The private rooms stood like islands of privacy, separated only by strands of antique crystal beads. Parting the strands, Vivian froze mid-step. A silver-haired man in a fitted black tee and artfully ripped designer jeans was pouring coffee with theatrical precision. His modern edge clashed deliciously with the room&#39;s classical decor.</p>
-                    
-                    <p>The clinking beads made him look up. &#34;Ms. Hartley?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>A waiter materialized with a bow. &#34;This way, please.&#34;</p>
+                        
+                        <p>She followed him to the Azure Room, where misty blue walls created an atmosphere of serene sophistication. With each step, Damien&#39;s voice replayed in her mind, painting him as someone who appreciated both beauty and substance.</p>
+                        
+                        <p>The private rooms stood like islands of privacy, separated only by strands of antique crystal beads. Parting the strands, Vivian froze mid-step. A silver-haired man in a fitted black tee and artfully ripped designer jeans was pouring coffee with theatrical precision. His modern edge clashed deliciously with the room&#39;s classical decor.</p>
+                        
+                        <p>The clinking beads made him look up. &#34;Ms. Hartley?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.032896">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.032896">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.226716">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.226716">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.032896",
-        "dateModified": "2026-07-19T02:47:19.032896",
+        "datePublished": "2026-07-19T13:03:14.226716",
+        "dateModified": "2026-07-19T13:03:14.226716",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,29 +893,33 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>The car stopped, and I looked through the window at Lunar Mansion.Weeds had overrun the garden, making it clear nobody had touched it for at least a month.</p>
-                    
-                    <p>&#34;You want me to hide here?&#34; I asked, still holding Snow against my chest.</p>
-                    
-                    <p>Blake got out and opened my door. &#34;Nobody would think you&#39;d return to our old house after the divorce. It&#39;s the safest option.&#34;</p>
-                    
-                    <p>His eyes softened when he looked at Snow. &#34;Plus, Snow knows this place.He won&#39;t run off.&#34;</p>
-                    
-                    <p>I hesitated before stepping out. As much as I hated to admit it, Blake was right. This was probably the best place to hide. Not only was Snow familiar with it, but I knew every corner too. If I needed to escape later, at least I&#39;d know my way around.</p>
-                    
-                    <p>The moment we stepped inside, Snow squirmed free and raced across the living room, rediscovering his old territory with excited meows.</p>
-                    
-                    <p>&#34;Yóu can see how much he&#39;s missed this place,&#34; Blake said, watching Snow dart under furniture. Then he turned to me. &#34;That apartment couldn&#39;t have been good for either of you.&#34;</p>
-                    
-                    <p>&#34;Now that you&#39;re back, don&#39;t leave again. We can remarry in a few months.&#34;</p>
-                    
-                    <p>I laughed. &#34;Aren&#39;t you engaged to Laurel?&#34;</p>
-                    
-                    <p>&#34;Laurel and I won&#39;t end up together.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>The car stopped, and I looked through the window at Lunar Mansion.Weeds had overrun the garden, making it clear nobody had touched it for at least a month.</p>
+                        
+                        <p>&#34;You want me to hide here?&#34; I asked, still holding Snow against my chest.</p>
+                        
+                        <p>Blake got out and opened my door. &#34;Nobody would think you&#39;d return to our old house after the divorce. It&#39;s the safest option.&#34;</p>
+                        
+                        <p>His eyes softened when he looked at Snow. &#34;Plus, Snow knows this place.He won&#39;t run off.&#34;</p>
+                        
+                        <p>I hesitated before stepping out. As much as I hated to admit it, Blake was right. This was probably the best place to hide. Not only was Snow familiar with it, but I knew every corner too. If I needed to escape later, at least I&#39;d know my way around.</p>
+                        
+                        <p>The moment we stepped inside, Snow squirmed free and raced across the living room, rediscovering his old territory with excited meows.</p>
+                        
+                        <p>&#34;Yóu can see how much he&#39;s missed this place,&#34; Blake said, watching Snow dart under furniture. Then he turned to me. &#34;That apartment couldn&#39;t have been good for either of you.&#34;</p>
+                        
+                        <p>&#34;Now that you&#39;re back, don&#39;t leave again. We can remarry in a few months.&#34;</p>
+                        
+                        <p>I laughed. &#34;Aren&#39;t you engaged to Laurel?&#34;</p>
+                        
+                        <p>&#34;Laurel and I won&#39;t end up together.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -894,29 +934,33 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Really? You two seem perfect for each other.&#34; I crossed my arms. &#34;Or maybe you both just enjoy cheating.&#34;</p>
-                    
-                    <p>&#34;It&#39;s not what you think,&#34; Blake said, his face hardening. &#34;And I never cheated on you.&#34;</p>
-                    
-                    <p>Snow darted under the sofa, then backed out dragging something in his mouth.</p>
-                    
-                    <p>&#34;Snow, stop! What did you find under the -&#34; My words died as I realized what it was - a torn black stocking.</p>
-                    
-                    <p>I grabbed gloves from a nearby drawer and picked up the stocking,examining it before tossing it in the trash. I peeled off the gloves and threw them away too.</p>
-                    
-                    <p>&#34;So Mr. Parker likes black stockings,&#34; I said with a cold smile.</p>
-                    
-                    <p>&#34;What are you talking about?&#34;</p>
-                    
-                    <p>&#34;Seems you two had quite the passionate time on this sofa.&#34; I turned toward the door. &#34;If you&#39;re making me stay here, find somewhere else for your hookups with Miss Rose. Snow and I don&#39;t need to see that.&#34;</p>
-                    
-                    <p>&#34;I told you, we&#39;re not like that!&#34; Blake&#39;s voice rose with frustration.</p>
-                    
-                    <p>&#34;No? Then who else has been staying here?&#34;</p>
-                    
-                    <p>Before Blake could answer, his phone rang.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Really? You two seem perfect for each other.&#34; I crossed my arms. &#34;Or maybe you both just enjoy cheating.&#34;</p>
+                        
+                        <p>&#34;It&#39;s not what you think,&#34; Blake said, his face hardening. &#34;And I never cheated on you.&#34;</p>
+                        
+                        <p>Snow darted under the sofa, then backed out dragging something in his mouth.</p>
+                        
+                        <p>&#34;Snow, stop! What did you find under the -&#34; My words died as I realized what it was - a torn black stocking.</p>
+                        
+                        <p>I grabbed gloves from a nearby drawer and picked up the stocking,examining it before tossing it in the trash. I peeled off the gloves and threw them away too.</p>
+                        
+                        <p>&#34;So Mr. Parker likes black stockings,&#34; I said with a cold smile.</p>
+                        
+                        <p>&#34;What are you talking about?&#34;</p>
+                        
+                        <p>&#34;Seems you two had quite the passionate time on this sofa.&#34; I turned toward the door. &#34;If you&#39;re making me stay here, find somewhere else for your hookups with Miss Rose. Snow and I don&#39;t need to see that.&#34;</p>
+                        
+                        <p>&#34;I told you, we&#39;re not like that!&#34; Blake&#39;s voice rose with frustration.</p>
+                        
+                        <p>&#34;No? Then who else has been staying here?&#34;</p>
+                        
+                        <p>Before Blake could answer, his phone rang.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -931,29 +975,33 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>**Blake&#39;s POV**</p>
-                    
-                    <p>I pulled my phone out and checked the screen. After a moment.I answered and hit speaker.</p>
-                    
-                    <p>&#34;Blake darling,&#34; Laurel&#39;s voice sounded weak. &#34;Why aren&#39;t you here yet?My mother&#39;s gone, and Dr. Evans says I shouldn&#39;t be alone...&#34;</p>
-                    
-                    <p>I glanced coldly at Audrey. &#34;Laurel, I found a torn black stocking under the sofa at Lunar Mansion. Is it yours?&#34;</p>
-                    
-                    <p>A pause. &#34;What about the stocking?&#34;</p>
-                    
-                    <p>&#34;Just answer the question.&#34; My patience was thinning.</p>
-                    
-                    <p>&#34;Yes, it&#39;s mine,&#34; she said casually.</p>
-                    
-                    <p>&#34;When did you leave it here?&#34;</p>
-                    
-                    <p>&#34;When Thalia and I went hiking,&#34; she explained. &#34;I tore it and took it off at your place. Must have fallen under the sofa.&#34;</p>
-                    
-                    <p>&#34;Blake darling, is something wrong?&#34;</p>
-                    
-                    <p>I loosened my tie, irritated. &#34;Nothing. The cleaning staff found it. I was worried Thalia brought strangers to my house.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>**Blake&#39;s POV**</p>
+                        
+                        <p>I pulled my phone out and checked the screen. After a moment.I answered and hit speaker.</p>
+                        
+                        <p>&#34;Blake darling,&#34; Laurel&#39;s voice sounded weak. &#34;Why aren&#39;t you here yet?My mother&#39;s gone, and Dr. Evans says I shouldn&#39;t be alone...&#34;</p>
+                        
+                        <p>I glanced coldly at Audrey. &#34;Laurel, I found a torn black stocking under the sofa at Lunar Mansion. Is it yours?&#34;</p>
+                        
+                        <p>A pause. &#34;What about the stocking?&#34;</p>
+                        
+                        <p>&#34;Just answer the question.&#34; My patience was thinning.</p>
+                        
+                        <p>&#34;Yes, it&#39;s mine,&#34; she said casually.</p>
+                        
+                        <p>&#34;When did you leave it here?&#34;</p>
+                        
+                        <p>&#34;When Thalia and I went hiking,&#34; she explained. &#34;I tore it and took it off at your place. Must have fallen under the sofa.&#34;</p>
+                        
+                        <p>&#34;Blake darling, is something wrong?&#34;</p>
+                        
+                        <p>I loosened my tie, irritated. &#34;Nothing. The cleaning staff found it. I was worried Thalia brought strangers to my house.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -968,29 +1016,33 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Laurel laughed. &#34;Don&#39;t worry, she knows better. When are you coming over?&#34;</p>
-                    
-                    <p>&#34;Soon,&#34; I said after a pause.</p>
-                    
-                    <p>I hung up and looked around, only to find Audrey gone. All I could see was her back as she carried Snow upstairs.</p>
-                    
-                    <p>I stared at the empty hallway,feeling oddly hollow. I&#39;d asked Laurel about the stocking to clear things up, but Audrey hadn&#39;t even stayed to listen.</p>
-                    
-                    <p>*Maybe she really doesn&#39;t care anymore. But if that&#39;s true, why pretend to be the woman who saved me five years ago? Why try to get close to me</p>
-                    
-                    <p>again?*</p>
-                    
-                    <p>I shook my head and walked out to my car. Still puzzled by the Rose family situation, I called Michael as Istarted the engine.</p>
-                    
-                    <p>&#34;Get security at Lunar Mansion. Every exit covered. Nobody in or out without my say-so.&#34;</p>
-                    
-                    <p>&#34;Yes, sir,&#34; Michael replied. &#34;Sir, our investigation found something.The truck driver in Miss Sinclair&#39;s accident was following orders.&#34;</p>
-                    
-                    <p>&#34;Whose?&#34;</p>
-                    
-                    <p>&#34;After his death, his family received two large transfers from Miss Rose&#39;s account.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Laurel laughed. &#34;Don&#39;t worry, she knows better. When are you coming over?&#34;</p>
+                        
+                        <p>&#34;Soon,&#34; I said after a pause.</p>
+                        
+                        <p>I hung up and looked around, only to find Audrey gone. All I could see was her back as she carried Snow upstairs.</p>
+                        
+                        <p>I stared at the empty hallway,feeling oddly hollow. I&#39;d asked Laurel about the stocking to clear things up, but Audrey hadn&#39;t even stayed to listen.</p>
+                        
+                        <p>*Maybe she really doesn&#39;t care anymore. But if that&#39;s true, why pretend to be the woman who saved me five years ago? Why try to get close to me</p>
+                        
+                        <p>again?*</p>
+                        
+                        <p>I shook my head and walked out to my car. Still puzzled by the Rose family situation, I called Michael as Istarted the engine.</p>
+                        
+                        <p>&#34;Get security at Lunar Mansion. Every exit covered. Nobody in or out without my say-so.&#34;</p>
+                        
+                        <p>&#34;Yes, sir,&#34; Michael replied. &#34;Sir, our investigation found something.The truck driver in Miss Sinclair&#39;s accident was following orders.&#34;</p>
+                        
+                        <p>&#34;Whose?&#34;</p>
+                        
+                        <p>&#34;After his death, his family received two large transfers from Miss Rose&#39;s account.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1005,29 +1057,33 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>I slammed the brakes and pulled over. Leaning back, I lit a cigarette and let the information sink in.</p>
-                    
-                    <p>Three cigarettes later, my mind was clearer. I picked up the phone again.</p>
-                    
-                    <p>&#34;Have someone watch Dr. Clarke&#39;s team. Everyone, down to the janitors.&#34;</p>
-                    
-                    <p>Since Dr. Clarke said Rachel had been drugged into her vegetative state,they must be hiding her. I still couldn&#39;t make sense of everything, but I&#39;d wait. Once Rachel woke up in a couple weeks, the truth would come out.</p>
-                    
-                    <p>&#34;Yes, sir,&#34; Michael said. &#34;About the accident... are you going to step in? If we connected Miss Rose to it, others might too. Don&#39;t you want to protect her?&#34;</p>
-                    
-                    <p>I laughed coldly. &#34;Why would I protect her?&#34;</p>
-                    
-                    <p>&#34;When she plotted against Audrey and Rachel, she must have considered the consequences. She did it anyway.&#34;</p>
-                    
-                    <p>I took another drag. &#34;We&#39;re staying out of it. If the Thompsons or Audrey trace it back to her, let them take her to court. I won&#39;t help her.&#34;</p>
-                    
-                    <p>I hung up without waiting for Michael&#39;s response.</p>
-                    
-                    <p>Maybe I&#39;d given Laurel too much leeway over the years. That would explain why she kept pulling stunts like this. Well, not this time. She made her choice, now she could deal with the fallout herself.</p>
-                    
-                    <p>I crushed out my cigarette and started the car, heading to Mayo Clinic.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>I slammed the brakes and pulled over. Leaning back, I lit a cigarette and let the information sink in.</p>
+                        
+                        <p>Three cigarettes later, my mind was clearer. I picked up the phone again.</p>
+                        
+                        <p>&#34;Have someone watch Dr. Clarke&#39;s team. Everyone, down to the janitors.&#34;</p>
+                        
+                        <p>Since Dr. Clarke said Rachel had been drugged into her vegetative state,they must be hiding her. I still couldn&#39;t make sense of everything, but I&#39;d wait. Once Rachel woke up in a couple weeks, the truth would come out.</p>
+                        
+                        <p>&#34;Yes, sir,&#34; Michael said. &#34;About the accident... are you going to step in? If we connected Miss Rose to it, others might too. Don&#39;t you want to protect her?&#34;</p>
+                        
+                        <p>I laughed coldly. &#34;Why would I protect her?&#34;</p>
+                        
+                        <p>&#34;When she plotted against Audrey and Rachel, she must have considered the consequences. She did it anyway.&#34;</p>
+                        
+                        <p>I took another drag. &#34;We&#39;re staying out of it. If the Thompsons or Audrey trace it back to her, let them take her to court. I won&#39;t help her.&#34;</p>
+                        
+                        <p>I hung up without waiting for Michael&#39;s response.</p>
+                        
+                        <p>Maybe I&#39;d given Laurel too much leeway over the years. That would explain why she kept pulling stunts like this. Well, not this time. She made her choice, now she could deal with the fallout herself.</p>
+                        
+                        <p>I crushed out my cigarette and started the car, heading to Mayo Clinic.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1042,29 +1098,33 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>When I got there, I stepped into an elevator and hit the button for Laurel&#39;s floor. Just as the doors were closing, a woman supporting what looked like her daughter slipped in beside me.</p>
-                    
-                    <p>Noticing we were headed to the same floor, she smiled. &#34;Visiting someone too?&#34;</p>
-                    
-                    <p>I never liked chatting with strangers, but ignoring her completely seemed rude.</p>
-                    
-                    <p>&#34;Yeah,&#34; I muttered with a short nod.</p>
-                    
-                    <p>Before she could say anything else, the daughter doubled over and vomited. Not just stomach contents - bright red blood splattered across the elevator floor and onto my sleeve.</p>
-                    
-                    <p>&#34;I&#39;m so sorry,&#34; the woman said, steadying her daughter while offering me a tissue. &#34;Late-stage gastric cancer. She doesn&#39;t have much time left.&#34;</p>
-                    
-                    <p>The doors opened and I stepped out. &#34;Don&#39;t worry about it.&#34;</p>
-                    
-                    <p>As I walked away, I heard her calling for a nurse to clean up the mess.I glanced back at the daughter now slumped in a waiting room chair,face</p>
-                    
-                    <p>ghost-white after the episode.</p>
-                    
-                    <p>Late-stage gastric cancer-same as Laurel supposedly had.</p>
-                    
-                    <p>Except Laurel had never once vomited blood.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>When I got there, I stepped into an elevator and hit the button for Laurel&#39;s floor. Just as the doors were closing, a woman supporting what looked like her daughter slipped in beside me.</p>
+                        
+                        <p>Noticing we were headed to the same floor, she smiled. &#34;Visiting someone too?&#34;</p>
+                        
+                        <p>I never liked chatting with strangers, but ignoring her completely seemed rude.</p>
+                        
+                        <p>&#34;Yeah,&#34; I muttered with a short nod.</p>
+                        
+                        <p>Before she could say anything else, the daughter doubled over and vomited. Not just stomach contents - bright red blood splattered across the elevator floor and onto my sleeve.</p>
+                        
+                        <p>&#34;I&#39;m so sorry,&#34; the woman said, steadying her daughter while offering me a tissue. &#34;Late-stage gastric cancer. She doesn&#39;t have much time left.&#34;</p>
+                        
+                        <p>The doors opened and I stepped out. &#34;Don&#39;t worry about it.&#34;</p>
+                        
+                        <p>As I walked away, I heard her calling for a nurse to clean up the mess.I glanced back at the daughter now slumped in a waiting room chair,face</p>
+                        
+                        <p>ghost-white after the episode.</p>
+                        
+                        <p>Late-stage gastric cancer-same as Laurel supposedly had.</p>
+                        
+                        <p>Except Laurel had never once vomited blood.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1079,21 +1139,25 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Sir?&#34;</p>
-                    
-                    <p>The woman approached me again, trembling as she pulled two wrinkled bills from a worn wallet. &#34;For your suit cleaning. It&#39;s all we can spare right now with her treatments, but-&#34;</p>
-                    
-                    <p>&#34;Keep it,&#34; I cut her off. I pulled out my business card and handed it to her.&#34;Call my assistant. He&#39;ll arrange financial help for your daughter&#39;s treatment.&#34;</p>
-                    
-                    <p>She stared at the card. &#34;Why would you - &#34;</p>
-                    
-                    <p>&#34;Just do me one favor. When your daughter has episodes like this -vomiting, fainting, whatever - let my assistant know the details.&#34;</p>
-                    
-                    <p>Her confusion was obvious, but she nodded anyway.</p>
-                    
-                    <p>I turned and walked toward Laurel&#39;s room.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Sir?&#34;</p>
+                        
+                        <p>The woman approached me again, trembling as she pulled two wrinkled bills from a worn wallet. &#34;For your suit cleaning. It&#39;s all we can spare right now with her treatments, but-&#34;</p>
+                        
+                        <p>&#34;Keep it,&#34; I cut her off. I pulled out my business card and handed it to her.&#34;Call my assistant. He&#39;ll arrange financial help for your daughter&#39;s treatment.&#34;</p>
+                        
+                        <p>She stared at the card. &#34;Why would you - &#34;</p>
+                        
+                        <p>&#34;Just do me one favor. When your daughter has episodes like this -vomiting, fainting, whatever - let my assistant know the details.&#34;</p>
+                        
+                        <p>Her confusion was obvious, but she nodded anyway.</p>
+                        
+                        <p>I turned and walked toward Laurel&#39;s room.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2409,6 +2473,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2535,7 +2679,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2577,32 +2720,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2613,21 +2738,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2660,6 +2775,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2680,20 +2801,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

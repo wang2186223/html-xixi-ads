@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.037234">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.037234">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.230301">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.230301">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.037234",
-        "dateModified": "2026-07-19T02:47:19.037234",
+        "datePublished": "2026-07-19T13:03:14.230301",
+        "dateModified": "2026-07-19T13:03:14.230301",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,27 +893,31 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>When I turned around, all three women screamed like they&#39;d seen a ghost.</p>
-                    
-                    <p>Thalia jumped back, nearly tripping over herself. &#34;Audrey Sinclair? But...you&#39;re supposed to be dead!&#34;</p>
-                    
-                    <p>Olivia&#39;s face went pale. &#34;This can&#39;t be happening. Not in broad daylight...&#34;</p>
-                    
-                    <p>Only Laurel kept her cool. After a moment of shock, a smile spread across her face. &#34;So this is Blake&#39;s little secret. His caged canary.&#34;</p>
-                    
-                    <p>She walked toward me, eyes gleaming. &#34;No wonder Blake suddenly stopped searching for you. All those days dragging the river, then nothing.He told everyone you were shark food.&#34;</p>
-                    
-                    <p>&#34;But he was hiding you here the whole time. Playing both sides - the grieving ex-husband in public while keeping his pet safely tucked away.&#34;</p>
-                    
-                    <p>She grabbed my wrist, nails digging into my skin. &#34;Does it feel good?Being the other woman now? After al that righteous talk about me destroying your marriage, look at you - the secret mistress.&#34;</p>
-                    
-                    <p>I yanked my arm free, anger burning through me. &#34;You think I want to be here? Blake Parker isn&#39;t important enough for that. I wanted the divorce.I walked away. I&#39;m the last person who&#39;d take him back.&#34;</p>
-                    
-                    <p>I gestured toward the window where guards stood watch. &#34;You got past security. You think those men are protecting me? They&#39;re my jailers. Blake&#39;s keeping me prisoner until I die!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>When I turned around, all three women screamed like they&#39;d seen a ghost.</p>
+                        
+                        <p>Thalia jumped back, nearly tripping over herself. &#34;Audrey Sinclair? But...you&#39;re supposed to be dead!&#34;</p>
+                        
+                        <p>Olivia&#39;s face went pale. &#34;This can&#39;t be happening. Not in broad daylight...&#34;</p>
+                        
+                        <p>Only Laurel kept her cool. After a moment of shock, a smile spread across her face. &#34;So this is Blake&#39;s little secret. His caged canary.&#34;</p>
+                        
+                        <p>She walked toward me, eyes gleaming. &#34;No wonder Blake suddenly stopped searching for you. All those days dragging the river, then nothing.He told everyone you were shark food.&#34;</p>
+                        
+                        <p>&#34;But he was hiding you here the whole time. Playing both sides - the grieving ex-husband in public while keeping his pet safely tucked away.&#34;</p>
+                        
+                        <p>She grabbed my wrist, nails digging into my skin. &#34;Does it feel good?Being the other woman now? After al that righteous talk about me destroying your marriage, look at you - the secret mistress.&#34;</p>
+                        
+                        <p>I yanked my arm free, anger burning through me. &#34;You think I want to be here? Blake Parker isn&#39;t important enough for that. I wanted the divorce.I walked away. I&#39;m the last person who&#39;d take him back.&#34;</p>
+                        
+                        <p>I gestured toward the window where guards stood watch. &#34;You got past security. You think those men are protecting me? They&#39;re my jailers. Blake&#39;s keeping me prisoner until I die!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -892,27 +932,31 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>My words hung in the air. Thalia looked me up and down, her fear</p>
-                    
-                    <p>turning to rage as she processed that I was flesh and blood, not some ghost.</p>
-                    
-                    <p>Without warning, she kicked me hard in the stomach. &#34;Why not speed things up then?&#34;</p>
-                    
-                    <p>Before all this, her kick would&#39;ve barely fazed me. But cancer had hollowed me out, leaving behind a skeleton wrapped in skin.</p>
-                    
-                    <p>I crashed to the floor, pain radiating through my body. The impact knocked the wind from me, and I couldn&#39;t even push myself up.</p>
-                    
-                    <p>&#34;What happened to you?&#34; Olivia pressed her foot on my shoulder,grinding down. &#34;The mighty Mrs. Parker, crawling like a bug. Stand up.&#34;</p>
-                    
-                    <p>&#34;Enough.&#34; Laurel stepped in, pulling Olivia back. &#34;Don&#39;t get physical. Did you forget what happened with Hannah?&#34;</p>
-                    
-                    <p>Thalia and Olivia froze.</p>
-                    
-                    <p>Laurel took their hands, voice dripping with fake sweetness. &#34;Don&#39;t upset Blake because of mne. Besides, we didn&#39;t come here for this. Remember what we planned? Some toilet water and a nice bath?&#34;</p>
-                    
-                    <p>I forced myself onto. my elbows, a harsh laugh escaping my lips. &#34;Look at you two,jumping when she snaps her fingers.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>My words hung in the air. Thalia looked me up and down, her fear</p>
+                        
+                        <p>turning to rage as she processed that I was flesh and blood, not some ghost.</p>
+                        
+                        <p>Without warning, she kicked me hard in the stomach. &#34;Why not speed things up then?&#34;</p>
+                        
+                        <p>Before all this, her kick would&#39;ve barely fazed me. But cancer had hollowed me out, leaving behind a skeleton wrapped in skin.</p>
+                        
+                        <p>I crashed to the floor, pain radiating through my body. The impact knocked the wind from me, and I couldn&#39;t even push myself up.</p>
+                        
+                        <p>&#34;What happened to you?&#34; Olivia pressed her foot on my shoulder,grinding down. &#34;The mighty Mrs. Parker, crawling like a bug. Stand up.&#34;</p>
+                        
+                        <p>&#34;Enough.&#34; Laurel stepped in, pulling Olivia back. &#34;Don&#39;t get physical. Did you forget what happened with Hannah?&#34;</p>
+                        
+                        <p>Thalia and Olivia froze.</p>
+                        
+                        <p>Laurel took their hands, voice dripping with fake sweetness. &#34;Don&#39;t upset Blake because of mne. Besides, we didn&#39;t come here for this. Remember what we planned? Some toilet water and a nice bath?&#34;</p>
+                        
+                        <p>I forced myself onto. my elbows, a harsh laugh escaping my lips. &#34;Look at you two,jumping when she snaps her fingers.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -927,27 +971,31 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;Shut your mouth!&#34; Thalia grabbed my arm, dragging me toward the bathroom. &#34;Laurel&#39;s right - your head needs clearing.&#34;</p>
-                    
-                    <p>She yanked me to the toilet, lifting the lid and shoving my head down.I grabbed the rim, fighting with what little strength I had left, but couldn&#39;t break free.</p>
-                    
-                    <p>&#34;You forgot to flush,&#34; Laurel called out.</p>
-                    
-                    <p>The toilet flushed, water rushing past my face. Some splashed into my mouth, and the smell hit my cancer-ravaged system like a punch. My stomach convulsed, and I started dry heaving uncontrollably.</p>
-                    
-                    <p>The three of them burst into laughter.</p>
-                    
-                    <p>&#34;Morning sickness?&#34; Olivia taunted.</p>
-                    
-                    <p>Laurel leaned against the doorframe. &#34;Pregnant again? Let&#39;s hope this one doesn&#39;t die inside you.&#34;</p>
-                    
-                    <p>&#34;Some women are just poison,&#34; Thalia added. &#34;Everything that grows in them dies.&#34;</p>
-                    
-                    <p>Their words about my lost baby cut deeper than any physical pain. That child had been my greatest hope, my deepest loss. I&#39;d felt my entire world collapse when I learned my baby had died in my womb.</p>
-                    
-                    <p>And here they were, turning that wound into a joke.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;Shut your mouth!&#34; Thalia grabbed my arm, dragging me toward the bathroom. &#34;Laurel&#39;s right - your head needs clearing.&#34;</p>
+                        
+                        <p>She yanked me to the toilet, lifting the lid and shoving my head down.I grabbed the rim, fighting with what little strength I had left, but couldn&#39;t break free.</p>
+                        
+                        <p>&#34;You forgot to flush,&#34; Laurel called out.</p>
+                        
+                        <p>The toilet flushed, water rushing past my face. Some splashed into my mouth, and the smell hit my cancer-ravaged system like a punch. My stomach convulsed, and I started dry heaving uncontrollably.</p>
+                        
+                        <p>The three of them burst into laughter.</p>
+                        
+                        <p>&#34;Morning sickness?&#34; Olivia taunted.</p>
+                        
+                        <p>Laurel leaned against the doorframe. &#34;Pregnant again? Let&#39;s hope this one doesn&#39;t die inside you.&#34;</p>
+                        
+                        <p>&#34;Some women are just poison,&#34; Thalia added. &#34;Everything that grows in them dies.&#34;</p>
+                        
+                        <p>Their words about my lost baby cut deeper than any physical pain. That child had been my greatest hope, my deepest loss. I&#39;d felt my entire world collapse when I learned my baby had died in my womb.</p>
+                        
+                        <p>And here they were, turning that wound into a joke.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -962,27 +1010,31 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Something snapped inside me. With a surge of strength I didn&#39;t know I still had, I pushed back against Thalia, catching her off guard. She tumbled backward, landing hard on the bathroom floor.</p>
-                    
-                    <p>&#34;You bitch!&#34; Olivia lunged forward.</p>
-                    
-                    <p>I grabbed the hammer I&#39;d left by the sink and pulled myself upright.&#34;Want to try me?&#34; My voice came out surprisingly steady as I raised the hammer. &#34;Let&#39;s see who drops first -you or me with this.&#34;</p>
-                    
-                    <p>Olivia backpedaled. &#34;You&#39;re insane!&#34;</p>
-                    
-                    <p>Laurel disappeared from the doorway. Only Thalia remained, scrambling</p>
-                    
-                    <p>to get up until she saw the hammer in my hand.</p>
-                    
-                    <p>Her courage evaporated. &#34;Wait, Audrey... I&#39;m Blake&#39;s sister. You can&#39;t -&#34;</p>
-                    
-                    <p>**Blake&#39;s POV**</p>
-                    
-                    <p>I grabbed the security guard by his collar.&#39;&#34;What the hell? Didn&#39;t I make myself clear? No one in or out without my direct orders!&#34;</p>
-                    
-                    <p>The man couldn&#39;t meet my eyes. &#34;Sir, it was your sister, your cousin, and Miss Rose. We couldn&#39;t just -&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Something snapped inside me. With a surge of strength I didn&#39;t know I still had, I pushed back against Thalia, catching her off guard. She tumbled backward, landing hard on the bathroom floor.</p>
+                        
+                        <p>&#34;You bitch!&#34; Olivia lunged forward.</p>
+                        
+                        <p>I grabbed the hammer I&#39;d left by the sink and pulled myself upright.&#34;Want to try me?&#34; My voice came out surprisingly steady as I raised the hammer. &#34;Let&#39;s see who drops first -you or me with this.&#34;</p>
+                        
+                        <p>Olivia backpedaled. &#34;You&#39;re insane!&#34;</p>
+                        
+                        <p>Laurel disappeared from the doorway. Only Thalia remained, scrambling</p>
+                        
+                        <p>to get up until she saw the hammer in my hand.</p>
+                        
+                        <p>Her courage evaporated. &#34;Wait, Audrey... I&#39;m Blake&#39;s sister. You can&#39;t -&#34;</p>
+                        
+                        <p>**Blake&#39;s POV**</p>
+                        
+                        <p>I grabbed the security guard by his collar.&#39;&#34;What the hell? Didn&#39;t I make myself clear? No one in or out without my direct orders!&#34;</p>
+                        
+                        <p>The man couldn&#39;t meet my eyes. &#34;Sir, it was your sister, your cousin, and Miss Rose. We couldn&#39;t just -&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -997,27 +1049,31 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;So you disobeyed me because they dropped some names?&#34; I released him,disgusted.</p>
-                    
-                    <p>For the past week, I&#39;d had Michael tracking Dr. Clarke&#39;s team. We finally located them on an island near Long Island, where they were treating Rachel Hayes.</p>
-                    
-                    <p>I&#39;d been playing along with Laurel, pretending everything was normal while investigating her past activities. My main goal was waiting for Rachel to wake up and tell me what really happened during her &#34;accident.&#34;</p>
-                    
-                    <p>This morning&#39;s news was exactly what I&#39;d been waiting for- Rachel was awake and speaking-short phrases. I&#39;d made up a business trip to visit her when Michael called with news about Laurel, Thalia, and Olivia showing up at Lunar Mansion.</p>
-                    
-                    <p>After what they did to Hannah, I couldn&#39;t risk them getting near Audrey. I abandoned my plans and raced back.</p>
-                    
-                    <p>&#34;Let&#39;s go.&#34; Michael urged. &#39;′′Wneed to get inside.&#34;</p>
-                    
-                    <p>I pushed past the guard and strode toward the house. What I found</p>
-                    
-                    <p>inside was nothing like I expected.</p>
-                    
-                    <p>Thalia and Olivia were tied to the coffee table, completely soaked, with towels stuffed in their mouths. They looked like hostages in a bad movie.</p>
-                    
-                    <p>Michael rushed over, pulling the gag from Thalia&#39;s mouth. &#34;Miss Parker!What happened?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;So you disobeyed me because they dropped some names?&#34; I released him,disgusted.</p>
+                        
+                        <p>For the past week, I&#39;d had Michael tracking Dr. Clarke&#39;s team. We finally located them on an island near Long Island, where they were treating Rachel Hayes.</p>
+                        
+                        <p>I&#39;d been playing along with Laurel, pretending everything was normal while investigating her past activities. My main goal was waiting for Rachel to wake up and tell me what really happened during her &#34;accident.&#34;</p>
+                        
+                        <p>This morning&#39;s news was exactly what I&#39;d been waiting for- Rachel was awake and speaking-short phrases. I&#39;d made up a business trip to visit her when Michael called with news about Laurel, Thalia, and Olivia showing up at Lunar Mansion.</p>
+                        
+                        <p>After what they did to Hannah, I couldn&#39;t risk them getting near Audrey. I abandoned my plans and raced back.</p>
+                        
+                        <p>&#34;Let&#39;s go.&#34; Michael urged. &#39;′′Wneed to get inside.&#34;</p>
+                        
+                        <p>I pushed past the guard and strode toward the house. What I found</p>
+                        
+                        <p>inside was nothing like I expected.</p>
+                        
+                        <p>Thalia and Olivia were tied to the coffee table, completely soaked, with towels stuffed in their mouths. They looked like hostages in a bad movie.</p>
+                        
+                        <p>Michael rushed over, pulling the gag from Thalia&#39;s mouth. &#34;Miss Parker!What happened?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1032,27 +1088,31 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Thalia gasped for air. &#34;Brother! Help Laurel! That psycho Audrey&#39;s trying to kill her!&#34;</p>
-                    
-                    <p>I headed straight for the bathroom, pushing the door open.</p>
-                    
-                    <p>The scene froze me in place. Audrey had Laurel bent over the toilet,repeatedly dunking her head while water splashed everywhere.</p>
-                    
-                    <p>&#34;Having fun?&#34; Audrey&#39;s voice was unrecognizable with rage. &#34;Let&#39;s see how you like it!&#34;</p>
-                    
-                    <p>Laurel spotted me from the corner of her eye and immediately went limp,turning her frantic struggling into pathetic sobs.</p>
-                    
-                    <p>Audrey didn&#39;t notice me, still focused on Laurel. I studied them for a moment, then put on my best outraged face.</p>
-                    
-                    <p>&#34;Audrey Sinclair! What the hell are you doing?&#34; I pulled her away,pinning her against the wall. &#34;This is too far!&#34;</p>
-                    
-                    <p>I helped Laurel up, cradling her gently. &#34;Are you hurt?&#34;</p>
-                    
-                    <p>She buried her face in my shirt. &#34;I&#39;ll be okay...&#34;</p>
-                    
-                    <p>′′Γ&#39;m taking you to Dr. Clarke.&#34; I lifted her into my arms and headed for the door. &#34;Michael, bring the others. We&#39;re leaving.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Thalia gasped for air. &#34;Brother! Help Laurel! That psycho Audrey&#39;s trying to kill her!&#34;</p>
+                        
+                        <p>I headed straight for the bathroom, pushing the door open.</p>
+                        
+                        <p>The scene froze me in place. Audrey had Laurel bent over the toilet,repeatedly dunking her head while water splashed everywhere.</p>
+                        
+                        <p>&#34;Having fun?&#34; Audrey&#39;s voice was unrecognizable with rage. &#34;Let&#39;s see how you like it!&#34;</p>
+                        
+                        <p>Laurel spotted me from the corner of her eye and immediately went limp,turning her frantic struggling into pathetic sobs.</p>
+                        
+                        <p>Audrey didn&#39;t notice me, still focused on Laurel. I studied them for a moment, then put on my best outraged face.</p>
+                        
+                        <p>&#34;Audrey Sinclair! What the hell are you doing?&#34; I pulled her away,pinning her against the wall. &#34;This is too far!&#34;</p>
+                        
+                        <p>I helped Laurel up, cradling her gently. &#34;Are you hurt?&#34;</p>
+                        
+                        <p>She buried her face in my shirt. &#34;I&#39;ll be okay...&#34;</p>
+                        
+                        <p>′′Γ&#39;m taking you to Dr. Clarke.&#34; I lifted her into my arms and headed for the door. &#34;Michael, bring the others. We&#39;re leaving.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1067,23 +1127,27 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Michael nodded. &#34;Ladies?&#34;</p>
-                    
-                    <p>Thalia and Olivia, now freed, shot venomous looks at Audrey as they followed us out.</p>
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>They left without noticing what happened when Blake shoved me against the wall.</p>
-                    
-                    <p>The nail - half-hammered in for the painting - stuck out from the exact spot my head hit.</p>
-                    
-                    <p>I felt it pierce the back of my skull.</p>
-                    
-                    <p>White-hot pain exploded through my head as the metal drove into my flesh. My vision blurred, darkness creeping in from the edges.</p>
-                    
-                    <p>I couldn&#39;t even scream.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Michael nodded. &#34;Ladies?&#34;</p>
+                        
+                        <p>Thalia and Olivia, now freed, shot venomous looks at Audrey as they followed us out.</p>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>They left without noticing what happened when Blake shoved me against the wall.</p>
+                        
+                        <p>The nail - half-hammered in for the painting - stuck out from the exact spot my head hit.</p>
+                        
+                        <p>I felt it pierce the back of my skull.</p>
+                        
+                        <p>White-hot pain exploded through my head as the metal drove into my flesh. My vision blurred, darkness creeping in from the edges.</p>
+                        
+                        <p>I couldn&#39;t even scream.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2399,6 +2463,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2525,7 +2669,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2567,32 +2710,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2603,21 +2728,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2650,6 +2765,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2670,20 +2791,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

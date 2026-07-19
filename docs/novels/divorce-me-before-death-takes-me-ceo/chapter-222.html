@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.045117">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.045117">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.240336">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.240336">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.045117",
-        "dateModified": "2026-07-19T02:47:19.045117",
+        "datePublished": "2026-07-19T13:03:14.240336",
+        "dateModified": "2026-07-19T13:03:14.240336",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,27 +893,31 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV*</p>
-                    
-                    <p>I sat at the dining table, eating quietly while the voices from the living room drifted toward me. Though I tried to focus on my meal, I couldn&#39;t help but listen to the ongoing conversation between Blake, Rachel, and Adrian.</p>
-                    
-                    <p>I hadn&#39;t expected their collaboration discussion would involve the Q·elegant jewelry brand. This jewelry brand... was created entirely by my sister.</p>
-                    
-                    <p>Blake had just met us yesterday at the airport, and today he was already pushing for a collaboration?</p>
-                    
-                    <p>If Parker Group partners with Q·elegant, I&#39;d have to work directly with Blake. The thought made my stomach twist. Was he pursuing this deal because he genuinely valued the brand, or because of my face?</p>
-                    
-                    <p>I glanced toward the living room where Blake sat leaning forward,hands clasped together, completely focused.</p>
-                    
-                    <p>&#34;Mr.Knox,&#34; Rachel said, her voice carrying clearly into the dining area.&#34;Blake and I noticed Q·elegant about three months ago. Something about the design philosophy reminded me of a friend I once knew.&#34;</p>
-                    
-                    <p>&#34;We wouldn&#39;t have personally picked you up yesterday if we weren&#39;t serious,&#34; she continued. &#34;Q·elegant has done well in Australia, but Parker Group can help you break into international markets.&#34;</p>
-                    
-                    <p>Rachel turned and spotted me. &#34;Mrs. Knox, would you like to join us? As the creator of Q&#39;elegant, your input would be valuable.&#34;</p>
-                    
-                    <p>It hurt hearing her speak to me so formally. Five years of friendship,and now she looked at me like a stranger. I swallowed the lump in my throat and forced a smile.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV*</p>
+                        
+                        <p>I sat at the dining table, eating quietly while the voices from the living room drifted toward me. Though I tried to focus on my meal, I couldn&#39;t help but listen to the ongoing conversation between Blake, Rachel, and Adrian.</p>
+                        
+                        <p>I hadn&#39;t expected their collaboration discussion would involve the Q·elegant jewelry brand. This jewelry brand... was created entirely by my sister.</p>
+                        
+                        <p>Blake had just met us yesterday at the airport, and today he was already pushing for a collaboration?</p>
+                        
+                        <p>If Parker Group partners with Q·elegant, I&#39;d have to work directly with Blake. The thought made my stomach twist. Was he pursuing this deal because he genuinely valued the brand, or because of my face?</p>
+                        
+                        <p>I glanced toward the living room where Blake sat leaning forward,hands clasped together, completely focused.</p>
+                        
+                        <p>&#34;Mr.Knox,&#34; Rachel said, her voice carrying clearly into the dining area.&#34;Blake and I noticed Q·elegant about three months ago. Something about the design philosophy reminded me of a friend I once knew.&#34;</p>
+                        
+                        <p>&#34;We wouldn&#39;t have personally picked you up yesterday if we weren&#39;t serious,&#34; she continued. &#34;Q·elegant has done well in Australia, but Parker Group can help you break into international markets.&#34;</p>
+                        
+                        <p>Rachel turned and spotted me. &#34;Mrs. Knox, would you like to join us? As the creator of Q&#39;elegant, your input would be valuable.&#34;</p>
+                        
+                        <p>It hurt hearing her speak to me so formally. Five years of friendship,and now she looked at me like a stranger. I swallowed the lump in my throat and forced a smile.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -892,27 +932,31 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;I&#39;ll be right there,&#34; I sad,taking a final bite of bread.</p>
-                    
-                    <p>I started eating faster, suddenly aware of all three of them watching me.The bread seemed.to expand in my mouth as I tried to swallow too quickly.</p>
-                    
-                    <p>&#34;Hic!&#34; The hiccup caught me by surprise, making me cough as I tried to clear my throat.</p>
-                    
-                    <p>Adrian came over with a glass of water, frowning slightly. &#34;Slow down.Nobody&#39;s rushing you.&#34;</p>
-                    
-                    <p>I took the water with an apologetic smile, feeling my face heat up with embarrassment.</p>
-                    
-                    <p>&#34;Sorry about that,&#34; I managed after a few sips.</p>
-                    
-                    <p>I glanced at Blake and Rachel, instantly recognizing their surprised expressions. The daughter of Australia&#39;s financial elite should have impeccable table manners. I&#39;d just blown that image to pieces.</p>
-                    
-                    <p>&#34;My mother spoiled me,&#34; I said quickly, looking away. &#34;Bad habits die hard.&#34;</p>
-                    
-                    <p>It was a weak excuse, but better than nothing.</p>
-                    
-                    <p>Adrian placed his hand on my shoulder. &#34;She was pampered by her parents, and I haven&#39;t helped matters.&#34; He shook his head with a fond smile.&#34;We need to work on your company manners.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;I&#39;ll be right there,&#34; I sad,taking a final bite of bread.</p>
+                        
+                        <p>I started eating faster, suddenly aware of all three of them watching me.The bread seemed.to expand in my mouth as I tried to swallow too quickly.</p>
+                        
+                        <p>&#34;Hic!&#34; The hiccup caught me by surprise, making me cough as I tried to clear my throat.</p>
+                        
+                        <p>Adrian came over with a glass of water, frowning slightly. &#34;Slow down.Nobody&#39;s rushing you.&#34;</p>
+                        
+                        <p>I took the water with an apologetic smile, feeling my face heat up with embarrassment.</p>
+                        
+                        <p>&#34;Sorry about that,&#34; I managed after a few sips.</p>
+                        
+                        <p>I glanced at Blake and Rachel, instantly recognizing their surprised expressions. The daughter of Australia&#39;s financial elite should have impeccable table manners. I&#39;d just blown that image to pieces.</p>
+                        
+                        <p>&#34;My mother spoiled me,&#34; I said quickly, looking away. &#34;Bad habits die hard.&#34;</p>
+                        
+                        <p>It was a weak excuse, but better than nothing.</p>
+                        
+                        <p>Adrian placed his hand on my shoulder. &#34;She was pampered by her parents, and I haven&#39;t helped matters.&#34; He shook his head with a fond smile.&#34;We need to work on your company manners.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -927,27 +971,31 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>The fake affection in his voice made my skin crawl,but I understood what he was doing. I played along, giving him my best adoring-wife smile.</p>
-                    
-                    <p>&#34;Blake and Rachel aren&#39;t outsiders anymore,&#34; I said. &#34;They&#39;re going to be our partners. They won&#39;t mind my little quirks, right?”&#34;</p>
-                    
-                    <p>Rachel&#39;s smile didn&#39;t reach her eyes. &#34;Of course not! We&#39;re here for your designs, not your dining etiquette.&#34;</p>
-                    
-                    <p>She handed me a folder. &#34;These are our proposed terms. Take your time reviewing them.&#34;</p>
-                    
-                    <p>Just as I reached for the documents, Rachel&#39;s phone rang. She stood close enough that I could clearly see the caller ID: Astrid Wilson.</p>
-                    
-                    <p>My heart skipped. The last time I&#39;d seen that name was in those hospital newspapers...</p>
-                    
-                    <p>&#34;Astrid, what&#39;s up?&#34; Rachel answered.</p>
-                    
-                    <p>Through the receiver came Astrid&#39;s unmistakable voice, loud enough that I could hear every word despite Rachel&#39;s attempt to muffle it.</p>
-                    
-                    <p>&#34;Are you seriously at Clarke&#39;s party trying to work with that Knox woman&#39;s jewelry brand?&#34; Astrid demanded. &#34;What the hell, Rachel? Audrey&#39;s designs belong to James now. He&#39;s the one developing her portfolio.&#34;</p>
-                    
-                    <p>Rachel turned away, but Astrid&#39;s voice only got louder.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>The fake affection in his voice made my skin crawl,but I understood what he was doing. I played along, giving him my best adoring-wife smile.</p>
+                        
+                        <p>&#34;Blake and Rachel aren&#39;t outsiders anymore,&#34; I said. &#34;They&#39;re going to be our partners. They won&#39;t mind my little quirks, right?”&#34;</p>
+                        
+                        <p>Rachel&#39;s smile didn&#39;t reach her eyes. &#34;Of course not! We&#39;re here for your designs, not your dining etiquette.&#34;</p>
+                        
+                        <p>She handed me a folder. &#34;These are our proposed terms. Take your time reviewing them.&#34;</p>
+                        
+                        <p>Just as I reached for the documents, Rachel&#39;s phone rang. She stood close enough that I could clearly see the caller ID: Astrid Wilson.</p>
+                        
+                        <p>My heart skipped. The last time I&#39;d seen that name was in those hospital newspapers...</p>
+                        
+                        <p>&#34;Astrid, what&#39;s up?&#34; Rachel answered.</p>
+                        
+                        <p>Through the receiver came Astrid&#39;s unmistakable voice, loud enough that I could hear every word despite Rachel&#39;s attempt to muffle it.</p>
+                        
+                        <p>&#34;Are you seriously at Clarke&#39;s party trying to work with that Knox woman&#39;s jewelry brand?&#34; Astrid demanded. &#34;What the hell, Rachel? Audrey&#39;s designs belong to James now. He&#39;s the one developing her portfolio.&#34;</p>
+                        
+                        <p>Rachel turned away, but Astrid&#39;s voice only got louder.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -962,27 +1010,31 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;That woman&#39;s work is a total ripoff of Audrey&#39;s designs! Are you blind?&#34;</p>
-                    
-                    <p>Despite everything, hearing Astrid&#39;s fierce, protective voice made me smile inside. The scandaIs hadn&#39;t broken her spirit. She was still my fierce, loyal friend.</p>
-                    
-                    <p>&#34;Mrs.Knox.&#34;</p>
-                    
-                    <p>I jumped, not realizing Blake had approached. He stood a few feet away.hands in his pockets, studying me with that penetrating gaze I knew too well.</p>
-                    
-                    <p>&#34;You heard what was said on that call,&#34; he stated rather than asked.</p>
-                    
-                    <p>&#34;Pretty hard not to,&#34; I replied, raising an eyebrow.</p>
-                    
-                    <p>With Astrid&#39;s volume, pretending otherwise would&#39;ve been ridiculous.</p>
-                    
-                    <p>Blake narrowed his eyes. &#34;The similarities between your designs and my late wife&#39;s work are striking. Care to explain?&#34;</p>
-                    
-                    <p>&#34;Explain what, exactly?&#34; I countered.</p>
-                    
-                    <p>The similarities had shocked me too when I first saw Evelyn&#39;s designs.What she created mirrored my own style in so many ways,yet with distinct differences in the details. It was as though we&#39;d shared the same creative instincts despite never meeting.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;That woman&#39;s work is a total ripoff of Audrey&#39;s designs! Are you blind?&#34;</p>
+                        
+                        <p>Despite everything, hearing Astrid&#39;s fierce, protective voice made me smile inside. The scandaIs hadn&#39;t broken her spirit. She was still my fierce, loyal friend.</p>
+                        
+                        <p>&#34;Mrs.Knox.&#34;</p>
+                        
+                        <p>I jumped, not realizing Blake had approached. He stood a few feet away.hands in his pockets, studying me with that penetrating gaze I knew too well.</p>
+                        
+                        <p>&#34;You heard what was said on that call,&#34; he stated rather than asked.</p>
+                        
+                        <p>&#34;Pretty hard not to,&#34; I replied, raising an eyebrow.</p>
+                        
+                        <p>With Astrid&#39;s volume, pretending otherwise would&#39;ve been ridiculous.</p>
+                        
+                        <p>Blake narrowed his eyes. &#34;The similarities between your designs and my late wife&#39;s work are striking. Care to explain?&#34;</p>
+                        
+                        <p>&#34;Explain what, exactly?&#34; I countered.</p>
+                        
+                        <p>The similarities had shocked me too when I first saw Evelyn&#39;s designs.What she created mirrored my own style in so many ways,yet with distinct differences in the details. It was as though we&#39;d shared the same creative instincts despite never meeting.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -997,27 +1049,31 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Twin connection, perhaps? We&#39;d both independently fallen in love with jewelry design, both developed similar aesthetic principles. To an outsider,it might look like plagiarism, but I knew better. Neither of us had copied the other.</p>
-                    
-                    <p>Adrian stepped between us before I could say more. &#34;You show up here talking collaboration, then accuse my wife of plagiarism? Is this how Parker Group conducts business?&#34;</p>
-                    
-                    <p>The hostility between the men was palpable.′′Tfyou question my wife&#39;s integrity, perhaps we should end this discussion now.&#34;</p>
-                    
-                    <p>Blake looked past Adrian to me.′′I′r interested in your work, Mrs. Knox.But you can&#39;t deny the resemblance to Audrey Sinclair&#39;s designs. All I&#39;m asking for is your design philosophy. If your work is original, you should have no problem explaining it.&#34;</p>
-                    
-                    <p>I met his stare head-on. &#34;I can absolutely explain my process. But here&#39;s my question for you, Mr. Parker - your ex-wife is dead. Even if I explain everything, how would you know if I&#39;ve plagiarized her work or not?&#34;</p>
-                    
-                    <p>&#34;How well did you understand your wife&#39;s design process? Do you know what inspired her? Her techniques? Her creative philosophy? Because if you don&#39;t, you have no basis for comparison.&#34;</p>
-                    
-                    <p>The color drained from Blake&#39;s face. His arrogance shattered in an instant.</p>
-                    
-                    <p>His mouth opened, closed, then opened again. No words came out.</p>
-                    
-                    <p>I&#39;d struck a nerve.</p>
-                    
-                    <p>As my husband for three years, he never once noticed how much I loved designing jewelry. Never asked about my process or what inspired me. He&#39;d lived with me but hadn&#39;t seen me at all.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Twin connection, perhaps? We&#39;d both independently fallen in love with jewelry design, both developed similar aesthetic principles. To an outsider,it might look like plagiarism, but I knew better. Neither of us had copied the other.</p>
+                        
+                        <p>Adrian stepped between us before I could say more. &#34;You show up here talking collaboration, then accuse my wife of plagiarism? Is this how Parker Group conducts business?&#34;</p>
+                        
+                        <p>The hostility between the men was palpable.′′Tfyou question my wife&#39;s integrity, perhaps we should end this discussion now.&#34;</p>
+                        
+                        <p>Blake looked past Adrian to me.′′I′r interested in your work, Mrs. Knox.But you can&#39;t deny the resemblance to Audrey Sinclair&#39;s designs. All I&#39;m asking for is your design philosophy. If your work is original, you should have no problem explaining it.&#34;</p>
+                        
+                        <p>I met his stare head-on. &#34;I can absolutely explain my process. But here&#39;s my question for you, Mr. Parker - your ex-wife is dead. Even if I explain everything, how would you know if I&#39;ve plagiarized her work or not?&#34;</p>
+                        
+                        <p>&#34;How well did you understand your wife&#39;s design process? Do you know what inspired her? Her techniques? Her creative philosophy? Because if you don&#39;t, you have no basis for comparison.&#34;</p>
+                        
+                        <p>The color drained from Blake&#39;s face. His arrogance shattered in an instant.</p>
+                        
+                        <p>His mouth opened, closed, then opened again. No words came out.</p>
+                        
+                        <p>I&#39;d struck a nerve.</p>
+                        
+                        <p>As my husband for three years, he never once noticed how much I loved designing jewelry. Never asked about my process or what inspired me. He&#39;d lived with me but hadn&#39;t seen me at all.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1032,27 +1088,31 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;Wow,&#34;I said, the word sharp with disbelief. &#34;You supposedly loved your ex-wife enough to try killing yourself after she died.&#34;</p>
-                    
-                    <p>I shook my head, not bothering to hide my disgust. &#34;But you can&#39;t even tell me what she was passionate about. You don&#39;t know the first thing about her designs.&#34;</p>
-                    
-                    <p>&#34;You&#39;re accusing me of stealing from someone you never bothered to understand. That&#39;s rich, Mr.Parker,&#34;</p>
-                    
-                    <p>**Blake&#39;s POV*</p>
-                    
-                    <p>I closed my eyes.</p>
-                    
-                    <p>Normally, any woman who spoke to me this way would be out of my life before she finished her sentence.</p>
-                    
-                    <p>But with Evelyn Knox - this woman with Audrey&#39;s face - I just stood there taking it. Like a scolded kid with nothing to say back.</p>
-                    
-                    <p>Because she was right.</p>
-                    
-                    <p>I hadn&#39;t known Audrey at all.</p>
-                    
-                    <p>For three years, I lived with her while chasing Laurel&#39;s shadow. If Audrey hadn&#39;t filed for divorce, I wouldn&#39;t have even realized she cared about jewelry design.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;Wow,&#34;I said, the word sharp with disbelief. &#34;You supposedly loved your ex-wife enough to try killing yourself after she died.&#34;</p>
+                        
+                        <p>I shook my head, not bothering to hide my disgust. &#34;But you can&#39;t even tell me what she was passionate about. You don&#39;t know the first thing about her designs.&#34;</p>
+                        
+                        <p>&#34;You&#39;re accusing me of stealing from someone you never bothered to understand. That&#39;s rich, Mr.Parker,&#34;</p>
+                        
+                        <p>**Blake&#39;s POV*</p>
+                        
+                        <p>I closed my eyes.</p>
+                        
+                        <p>Normally, any woman who spoke to me this way would be out of my life before she finished her sentence.</p>
+                        
+                        <p>But with Evelyn Knox - this woman with Audrey&#39;s face - I just stood there taking it. Like a scolded kid with nothing to say back.</p>
+                        
+                        <p>Because she was right.</p>
+                        
+                        <p>I hadn&#39;t known Audrey at all.</p>
+                        
+                        <p>For three years, I lived with her while chasing Laurel&#39;s shadow. If Audrey hadn&#39;t filed for divorce, I wouldn&#39;t have even realized she cared about jewelry design.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1067,17 +1127,21 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Her creative process? Her inspiration? Her passion?</p>
-                    
-                    <p>I knew none of it.</p>
-                    
-                    <p>What right did I have to stand here talking about her work?</p>
-                    
-                    <p>&#34;Mrs. Knox.&#34; Rachel was back. She stepped in front of me with a tight smile.</p>
-                    
-                    <p>&#34;So if we don&#39;t understand Audrey&#39;s design concepts, we can&#39;t question your work?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Her creative process? Her inspiration? Her passion?</p>
+                        
+                        <p>I knew none of it.</p>
+                        
+                        <p>What right did I have to stand here talking about her work?</p>
+                        
+                        <p>&#34;Mrs. Knox.&#34; Rachel was back. She stepped in front of me with a tight smile.</p>
+                        
+                        <p>&#34;So if we don&#39;t understand Audrey&#39;s design concepts, we can&#39;t question your work?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2393,6 +2457,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2519,7 +2663,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2561,32 +2704,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2597,21 +2722,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2644,6 +2759,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2664,20 +2785,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

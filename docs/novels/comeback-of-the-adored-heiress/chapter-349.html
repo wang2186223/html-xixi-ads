@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:43.062755">
-    <meta property="article:modified_time" content="2026-07-19T02:47:43.062755">
+    <meta property="article:published_time" content="2026-07-19T13:03:36.171357">
+    <meta property="article:modified_time" content="2026-07-19T13:03:36.171357">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:43">
+    <meta name="last-modified" content="2026-07-19 13:03:36">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:43.062755",
-        "dateModified": "2026-07-19T02:47:43.062755",
+        "datePublished": "2026-07-19T13:03:36.171357",
+        "dateModified": "2026-07-19T13:03:36.171357",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Sarai’s statement swiftly evoked sympathy from everyone in the hospital room. A few hours later, the reporters wrapped up their coverage and exited the hospital, leaving Courtney and Sarai alone.</p>
-                    
-                    <p>Once Sarai shut the door behind them, Courtney let out a sigh of relief. “Mom, could you get me some water? My throat is dry from all that crying.” Sarai handed Courtney a glass of water, which she drank in one gulp. Eagerly, she checked her phone to follow the unfolding situation online. As she scrolled through the posts, a smile spread across her face. “Mom, Dora’s plan is harsh, but it is incredibly effective. I’ve never seen one issue capture the public’s attention like this before.”</p>
-                    
-                    <p>“Dora certainly lives up to the Klein family’s reputation,” Sarai agreed, though she looked at Courtney with a hint of concern. “It’s unfortunate that this has affected your health. But once you marry Andrew, you must take extra care of yourself to recover.”</p>
-                    
-                    <p>“Don’t worry about it, Mom. If I get to Andrew, it’ll all be worth it,” Courtney replied casually. She had become obsessed with joining the Klein family and was prepared to do whatever it took. After her father was imprisoned, she realized that making her own way up the social ladder was her only option.</p>
-                    
-                    <p>Just then, Dora’s call came through. “You did a great job. The Klein Group is facing serious trouble now. Damari has already been inundated with calls,” Dora said approvingly. “Damari has asked Andrew to come home tomorrow, and you should join him.”</p>
-                    
-                    <p>“Got it,” Sarai responded. However, she remained uneasy. “Do you really think Damari will agree to the marriage?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Sarai’s statement swiftly evoked sympathy from everyone in the hospital room. A few hours later, the reporters wrapped up their coverage and exited the hospital, leaving Courtney and Sarai alone.</p>
+                        
+                        <p>Once Sarai shut the door behind them, Courtney let out a sigh of relief. “Mom, could you get me some water? My throat is dry from all that crying.” Sarai handed Courtney a glass of water, which she drank in one gulp. Eagerly, she checked her phone to follow the unfolding situation online. As she scrolled through the posts, a smile spread across her face. “Mom, Dora’s plan is harsh, but it is incredibly effective. I’ve never seen one issue capture the public’s attention like this before.”</p>
+                        
+                        <p>“Dora certainly lives up to the Klein family’s reputation,” Sarai agreed, though she looked at Courtney with a hint of concern. “It’s unfortunate that this has affected your health. But once you marry Andrew, you must take extra care of yourself to recover.”</p>
+                        
+                        <p>“Don’t worry about it, Mom. If I get to Andrew, it’ll all be worth it,” Courtney replied casually. She had become obsessed with joining the Klein family and was prepared to do whatever it took. After her father was imprisoned, she realized that making her own way up the social ladder was her only option.</p>
+                        
+                        <p>Just then, Dora’s call came through. “You did a great job. The Klein Group is facing serious trouble now. Damari has already been inundated with calls,” Dora said approvingly. “Damari has asked Andrew to come home tomorrow, and you should join him.”</p>
+                        
+                        <p>“Got it,” Sarai responded. However, she remained uneasy. “Do you really think Damari will agree to the marriage?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Dora pondered the question. “Based on what I know about Damari, it’s possible. Even if the marriage doesn’t happen, the Klein family will owe you a favor. Damari will ensure you’re compensated.”</p>
-                    
-                    <p>“I’ll try to convince him to agree to the marriage tomorrow,” Sarai said with determination.</p>
-                    
-                    <p>Courtney’s eyes gleamed as she looked at her mother. “Mom, you have to make this work! I’ve sacrificed so much—I need to make it count!”</p>
-                    
-                    <p>“Of course, dear,” Sarai agreed, affectionately stroking Courtney’s hair, though a sharp, calculating glint flashed in her eyes.</p>
-                    
-                    <p>It continued to drizzle through the night, and the next day broke with a gray, somber sky. Madisyn woke early and accompanied Andrew to the Klein Manor.</p>
-                    
-                    <p>During the drive, Elaine called to check on Madisyn. She reassured her that she was fine and there was nothing to worry about.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Dora pondered the question. “Based on what I know about Damari, it’s possible. Even if the marriage doesn’t happen, the Klein family will owe you a favor. Damari will ensure you’re compensated.”</p>
+                        
+                        <p>“I’ll try to convince him to agree to the marriage tomorrow,” Sarai said with determination.</p>
+                        
+                        <p>Courtney’s eyes gleamed as she looked at her mother. “Mom, you have to make this work! I’ve sacrificed so much—I need to make it count!”</p>
+                        
+                        <p>“Of course, dear,” Sarai agreed, affectionately stroking Courtney’s hair, though a sharp, calculating glint flashed in her eyes.</p>
+                        
+                        <p>It continued to drizzle through the night, and the next day broke with a gray, somber sky. Madisyn woke early and accompanied Andrew to the Klein Manor.</p>
+                        
+                        <p>During the drive, Elaine called to check on Madisyn. She reassured her that she was fine and there was nothing to worry about.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Elaine couldn’t shake her anxiety. “Courtney is incredibly manipulative—she sacrificed her own baby just to set you both up! Unbelievable!”</p>
-                    
-                    <p>“Mom, don’t stress. In the end, their schemes will only come back to haunt them.”</p>
-                    
-                    <p>“But with the baby gone, we can’t do a paternity test. How are we supposed to prove that the baby wasn’t Andrew’s?” Elaine was still worried.</p>
-                    
-                    <p>Madisyn looked at Andrew and remarked, “He must have been ready for this.”</p>
-                    
-                    <p>Andrew replied calmly, “Tell your mother that we’ll sort everything out today.”</p>
-                    
-                    <p>Andrew had initially intended to postpone matters, but with Madisyn now facing criticism, he felt he could no longer remain passive. He resolved to put an end to it all today.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Elaine couldn’t shake her anxiety. “Courtney is incredibly manipulative—she sacrificed her own baby just to set you both up! Unbelievable!”</p>
+                        
+                        <p>“Mom, don’t stress. In the end, their schemes will only come back to haunt them.”</p>
+                        
+                        <p>“But with the baby gone, we can’t do a paternity test. How are we supposed to prove that the baby wasn’t Andrew’s?” Elaine was still worried.</p>
+                        
+                        <p>Madisyn looked at Andrew and remarked, “He must have been ready for this.”</p>
+                        
+                        <p>Andrew replied calmly, “Tell your mother that we’ll sort everything out today.”</p>
+                        
+                        <p>Andrew had initially intended to postpone matters, but with Madisyn now facing criticism, he felt he could no longer remain passive. He resolved to put an end to it all today.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Madisyn passed on Andrew’s message to Elaine, who sighed in response. “Okay, let’s hope things turn out well.”</p>
-                    
-                    <p>At the Klein Manor, Madisyn trailed closely behind Andrew as they entered the living room. Just as they stepped through the door, something shattered at their feet.</p>
-                    
-                    <p>“You bastard!” Damari roared from the sofa, his anger palpable.</p>
-                    
-                    <p>Courtney was nearby, dabbing at her face and looking completely distraught, while Dora stood quietly to one side.</p>
-                    
-                    <p>Madisyn’s heart raced. She hadn’t expected Damari’s anger to be so intense. It was evident that Courtney’s scheme had hit a nerve, tapping into Damari’s deep sense of justice.</p>
-                    
-                    <p>Damari’s rage subsided slightly when he saw Madisyn. His previously fierce expression softened as he said, “Madisyn, come here and sit.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Madisyn passed on Andrew’s message to Elaine, who sighed in response. “Okay, let’s hope things turn out well.”</p>
+                        
+                        <p>At the Klein Manor, Madisyn trailed closely behind Andrew as they entered the living room. Just as they stepped through the door, something shattered at their feet.</p>
+                        
+                        <p>“You bastard!” Damari roared from the sofa, his anger palpable.</p>
+                        
+                        <p>Courtney was nearby, dabbing at her face and looking completely distraught, while Dora stood quietly to one side.</p>
+                        
+                        <p>Madisyn’s heart raced. She hadn’t expected Damari’s anger to be so intense. It was evident that Courtney’s scheme had hit a nerve, tapping into Damari’s deep sense of justice.</p>
+                        
+                        <p>Damari’s rage subsided slightly when he saw Madisyn. His previously fierce expression softened as he said, “Madisyn, come here and sit.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Madisyn and Andrew took their seats, and Damari looked at Madisyn with a look of regret. “Madisyn, I’m deeply sorry. I must not have raised Andrew properly; otherwise, we wouldn’t be dealing with this now.”</p>
-                    
-                    <p>“Mr. Klein, please don’t say that,” Madisyn responded soothingly. “I believe Andrew would never do anything so dishonorable.”</p>
-                    
-                    <p>Her composed manner gained her some favor in Damari’s eyes. He then turned to Andrew and asked, “Andrew, did you cause the miscarriage?”</p>
-                    
-                    <p>“I had nothing to do with it,” Andrew replied coolly.</p>
-                    
-                    <p>Hearing that, Sarai began to weep, even dropping to her knees in front of Damari. “Mr. Klein, I had no option but to come to you. Courtney was just making her way down the stairs when someone pushed her. By the time I reached her, she was lying in a pool of blood.”</p>
-                    
-                    <p>Sarai’s display of despair was so convincing that anyone who heard her might feel a pang of sympathy. Madisyn interjected, “You mentioned Courtney was going down the stairs—where exactly did this happen?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Madisyn and Andrew took their seats, and Damari looked at Madisyn with a look of regret. “Madisyn, I’m deeply sorry. I must not have raised Andrew properly; otherwise, we wouldn’t be dealing with this now.”</p>
+                        
+                        <p>“Mr. Klein, please don’t say that,” Madisyn responded soothingly. “I believe Andrew would never do anything so dishonorable.”</p>
+                        
+                        <p>Her composed manner gained her some favor in Damari’s eyes. He then turned to Andrew and asked, “Andrew, did you cause the miscarriage?”</p>
+                        
+                        <p>“I had nothing to do with it,” Andrew replied coolly.</p>
+                        
+                        <p>Hearing that, Sarai began to weep, even dropping to her knees in front of Damari. “Mr. Klein, I had no option but to come to you. Courtney was just making her way down the stairs when someone pushed her. By the time I reached her, she was lying in a pool of blood.”</p>
+                        
+                        <p>Sarai’s display of despair was so convincing that anyone who heard her might feel a pang of sympathy. Madisyn interjected, “You mentioned Courtney was going down the stairs—where exactly did this happen?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Sarai sobbed as she said, “We were at a restaurant.”</p>
-                    
-                    <p>Madisyn scoffed. “There are so many restaurants in town. It’s quite a coincidence you chose one with stairs.” The sarcasm in Madisyn’s voice made Sarai sob even more.</p>
-                    
-                    <p>“We just wanted to have a simple meal. If I had known this would happen, I would have avoided the place. Madisyn, how can you still mock us now? Courtney is your cousin!”</p>
-                    
-                    <p>Or were you also behind this because you didn’t want Andrew to marry Courtney?”</p>
-                    
-                    <p>.</p>
-                    
-                    <p>.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Sarai sobbed as she said, “We were at a restaurant.”</p>
+                        
+                        <p>Madisyn scoffed. “There are so many restaurants in town. It’s quite a coincidence you chose one with stairs.” The sarcasm in Madisyn’s voice made Sarai sob even more.</p>
+                        
+                        <p>“We just wanted to have a simple meal. If I had known this would happen, I would have avoided the place. Madisyn, how can you still mock us now? Courtney is your cousin!”</p>
+                        
+                        <p>Or were you also behind this because you didn’t want Andrew to marry Courtney?”</p>
+                        
+                        <p>.</p>
+                        
+                        <p>.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,9 +1079,13 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2337,6 +2401,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2463,7 +2607,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2505,32 +2648,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2541,21 +2666,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2588,6 +2703,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2608,20 +2729,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

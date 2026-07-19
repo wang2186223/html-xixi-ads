@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:23.289471">
-    <meta property="article:modified_time" content="2026-07-19T02:47:23.289471">
+    <meta property="article:published_time" content="2026-07-19T13:03:18.288083">
+    <meta property="article:modified_time" content="2026-07-19T13:03:18.288083">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:23">
+    <meta name="last-modified" content="2026-07-19 13:03:18">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:23.289471",
-        "dateModified": "2026-07-19T02:47:23.289471",
+        "datePublished": "2026-07-19T13:03:18.288083",
+        "dateModified": "2026-07-19T13:03:18.288083",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,27 +893,31 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Located in Silveke Harbor at the grand estate of the Ashbourne family was Skyrim.</p>
-                    
-                    <p>An elegant Rolls Royce parked right on the red carpet in front of the ancient mansion. Arnold Ashbourne, the second son of the Ashbourne family, personally came out to wee his sister and open the car door for her.-</p>
-                    
-                    <p>“Wee home, your highness!”</p>
-                    
-                    <p>Evadne’s beautiful face was even more stunning under the night lights. She had already changed Into her pointy high heels in the car, looking all graceful and aloof, just like a queen.</p>
-                    
-                    <p>“Amold, is everything fine at home?”</p>
-                    
-                    <p>“Everything’s dandy, but we’ve been eagerly waiting for your return. Did you like the fireworks disy? My birthday gift caused quite a stir, it even made the trending topics!” Amold’s handsome face was full of excitement.</p>
-                    
-                    <p>“Yes, I saw that. Everyone’s saying some rich dude sshed the cash to woo his love, and that you’re a shy rich kid. Congrats on unlocking a new life achievement.” Evadne pped in amusement.</p>
-                    
-                    <p>Arnold wasn’t fazed by her teasing, instead, he excitedly hugged his sister.</p>
-                    
-                    <p>“Evadne, you won’t leave again after this return, right?”</p>
-                    
-                    <p>“I’m not going anywhere. I’m divorced, where else would I go?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Located in Silveke Harbor at the grand estate of the Ashbourne family was Skyrim.</p>
+                        
+                        <p>An elegant Rolls Royce parked right on the red carpet in front of the ancient mansion. Arnold Ashbourne, the second son of the Ashbourne family, personally came out to wee his sister and open the car door for her.-</p>
+                        
+                        <p>“Wee home, your highness!”</p>
+                        
+                        <p>Evadne’s beautiful face was even more stunning under the night lights. She had already changed Into her pointy high heels in the car, looking all graceful and aloof, just like a queen.</p>
+                        
+                        <p>“Amold, is everything fine at home?”</p>
+                        
+                        <p>“Everything’s dandy, but we’ve been eagerly waiting for your return. Did you like the fireworks disy? My birthday gift caused quite a stir, it even made the trending topics!” Amold’s handsome face was full of excitement.</p>
+                        
+                        <p>“Yes, I saw that. Everyone’s saying some rich dude sshed the cash to woo his love, and that you’re a shy rich kid. Congrats on unlocking a new life achievement.” Evadne pped in amusement.</p>
+                        
+                        <p>Arnold wasn’t fazed by her teasing, instead, he excitedly hugged his sister.</p>
+                        
+                        <p>“Evadne, you won’t leave again after this return, right?”</p>
+                        
+                        <p>“I’m not going anywhere. I’m divorced, where else would I go?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -892,27 +932,31 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Evadneforted Arnold by patting his back, “I really let everyone down. I tried my best for three years, but I couldn’t even keep a man. I’ve failedpletely.”</p>
-                    
-                    <p>G od knows, her mood at the moment was like swallowing bitter medicine, so bitter it made her want to cry, but she held it in.</p>
-                    
-                    <p>She swore that after she left the gates of the Abernathy family’s mansion, she would never shed a tear for Thaddeus again because he wasn’t worth it!</p>
-                    
-                    <p>“That ba stard Thaddeus! How dare he betray my sister! I’ll start investigating the Abernathy group tomorrow, and then I’ll have him dealt with!*</p>
-                    
-                    <p>Upon hearing this, Cas sius could only mutter, “Oh, G od.”</p>
-                    
-                    <p>‘Cas sius, stay out of it! You’re a public se rvant.”</p>
-                    
-                    <p>Evadne gave a bitter smile, “Arnold, can you be more like Cas sius? More peaceful and loving?”</p>
-                    
-                    <p>“No way! Cas sius is peaceful because he let go of his struggles.”</p>
-                    
-                    <p>Amold angrily adjusted his tie, “Anyway, I won’t let it go! They can mess with me, but if they mess with my sister, the Abernathy group will always be in my sight!”</p>
-                    
-                    <p>Evadne, with Cas sius on her left and Arnold on her right, the three siblings walked into their long-missed homeughing.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Evadneforted Arnold by patting his back, “I really let everyone down. I tried my best for three years, but I couldn’t even keep a man. I’ve failedpletely.”</p>
+                        
+                        <p>G od knows, her mood at the moment was like swallowing bitter medicine, so bitter it made her want to cry, but she held it in.</p>
+                        
+                        <p>She swore that after she left the gates of the Abernathy family’s mansion, she would never shed a tear for Thaddeus again because he wasn’t worth it!</p>
+                        
+                        <p>“That ba stard Thaddeus! How dare he betray my sister! I’ll start investigating the Abernathy group tomorrow, and then I’ll have him dealt with!*</p>
+                        
+                        <p>Upon hearing this, Cas sius could only mutter, “Oh, G od.”</p>
+                        
+                        <p>‘Cas sius, stay out of it! You’re a public se rvant.”</p>
+                        
+                        <p>Evadne gave a bitter smile, “Arnold, can you be more like Cas sius? More peaceful and loving?”</p>
+                        
+                        <p>“No way! Cas sius is peaceful because he let go of his struggles.”</p>
+                        
+                        <p>Amold angrily adjusted his tie, “Anyway, I won’t let it go! They can mess with me, but if they mess with my sister, the Abernathy group will always be in my sight!”</p>
+                        
+                        <p>Evadne, with Cas sius on her left and Arnold on her right, the three siblings walked into their long-missed homeughing.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -927,27 +971,31 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Meanwhile, Emeric Ashbourne, the chairman of the K Group, was pacing around his study with a joyful expression on his stern face when he heard his daughter had returned.</p>
-                    
-                    <p>“Dad, I’m back!”</p>
-                    
-                    <p>Evadne and her two brothers walked into the study. She plopped down on the couch, kicked up her feet, and promptly sent her high heels flying.</p>
-                    
-                    <p>Cas sius also sat down and naturally began ma**aging his sister’s feet.</p>
-                    
-                    <p>“What are you doing? Act like ady! Don’t carry yourself like a teenage boy.”</p>
-                    
-                    <p>Emeric tried to maintain a stern face, he and his daughter were like a pair of squabblers. He would miss her when she was away, but they would bicker the moment they saw each other.</p>
-                    
-                    <p>“Did you forget? I’ve always been like this, remember?”</p>
-                    
-                    <p>Evadne looked at the wall and spoke to her father.</p>
-                    
-                    <p>On the wall hung a painting she had drawn over a decade ago, which her father had inexplicably found and even had framed.</p>
-                    
-                    <p>The painting was from when she was young, and it had won a prize in a paintingpetition.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Meanwhile, Emeric Ashbourne, the chairman of the K Group, was pacing around his study with a joyful expression on his stern face when he heard his daughter had returned.</p>
+                        
+                        <p>“Dad, I’m back!”</p>
+                        
+                        <p>Evadne and her two brothers walked into the study. She plopped down on the couch, kicked up her feet, and promptly sent her high heels flying.</p>
+                        
+                        <p>Cas sius also sat down and naturally began ma**aging his sister’s feet.</p>
+                        
+                        <p>“What are you doing? Act like ady! Don’t carry yourself like a teenage boy.”</p>
+                        
+                        <p>Emeric tried to maintain a stern face, he and his daughter were like a pair of squabblers. He would miss her when she was away, but they would bicker the moment they saw each other.</p>
+                        
+                        <p>“Did you forget? I’ve always been like this, remember?”</p>
+                        
+                        <p>Evadne looked at the wall and spoke to her father.</p>
+                        
+                        <p>On the wall hung a painting she had drawn over a decade ago, which her father had inexplicably found and even had framed.</p>
+                        
+                        <p>The painting was from when she was young, and it had won a prize in a paintingpetition.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -962,27 +1010,31 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>The head of the Ashbourne family, having had four wives, often became the topic of conversation during people’s leisure time.</p>
-                    
-                    <p>Unhappy with this family environment, Evadne left at an early age for other countries and became a Doctors Without Borders volunteer, helping those in need.</p>
-                    
-                    <p>nauwich unur father to h o cirk upon returning. What a thoughtful daughter!” Emeric yelled in</p>
-                    
-                    <p>“Thanks for thepliment, dad!” Evadneughed, looking sweet.</p>
-                    
-                    <p>“Dad, now that Evadne is back, there are some things we should discuss.”</p>
-                    
-                    <p>After tying his sister’s shoces, Cas sius said seriously. “I’ve decided to step down from the position of K Group’s president and let Evadne take over.”</p>
-                    
-                    <p>Evadne’s gaze tightened as she intently looked at Cas sius’ determined side profile.</p>
-                    
-                    <p>“What?!” Emeric was so angry he was momentarily speechless.</p>
-                    
-                    <p>“I only agreed to help you manage thepany for three years, and now that time is up, I’m going back to the church. You know, my aspiration isn’t here, I want to be a priest.” At this moment, Cas sius seemed to radiate a holy light, his attitude firm.</p>
-                    
-                    <p>“If you won’t manage it, let Arnold do it!” Emeric, helpless, had to settle for his second choice.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>The head of the Ashbourne family, having had four wives, often became the topic of conversation during people’s leisure time.</p>
+                        
+                        <p>Unhappy with this family environment, Evadne left at an early age for other countries and became a Doctors Without Borders volunteer, helping those in need.</p>
+                        
+                        <p>nauwich unur father to h o cirk upon returning. What a thoughtful daughter!” Emeric yelled in</p>
+                        
+                        <p>“Thanks for thepliment, dad!” Evadneughed, looking sweet.</p>
+                        
+                        <p>“Dad, now that Evadne is back, there are some things we should discuss.”</p>
+                        
+                        <p>After tying his sister’s shoces, Cas sius said seriously. “I’ve decided to step down from the position of K Group’s president and let Evadne take over.”</p>
+                        
+                        <p>Evadne’s gaze tightened as she intently looked at Cas sius’ determined side profile.</p>
+                        
+                        <p>“What?!” Emeric was so angry he was momentarily speechless.</p>
+                        
+                        <p>“I only agreed to help you manage thepany for three years, and now that time is up, I’m going back to the church. You know, my aspiration isn’t here, I want to be a priest.” At this moment, Cas sius seemed to radiate a holy light, his attitude firm.</p>
+                        
+                        <p>“If you won’t manage it, let Arnold do it!” Emeric, helpless, had to settle for his second choice.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -997,27 +1049,31 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>“No… I’m a government official, I absolutely can’t have any ties with big conglomerates. I’ll be suspended and investigated!” Arnold quickly dodged the suggestion, his face pale.</p>
-                    
-                    <p>Emeric felt very frustrated. What’s the use of having so many sons? They’re all very capable when they’re out there, but when there’s a problem at home, they can’t help at all.</p>
-                    
-                    <p>His health was deteriorating with each pa**ing year, and he had long nned to enjoy his old age. However, there wasn’t anyone in the entire family who could take over his “business empire”.</p>
-                    
-                    <p>It’s not that he didn’t like his daughter, he just insisted that his son should be the one to inherit thepany.</p>
-                    
-                    <p>“Who said women are inferior to men, I’m willing to be the president!” Evadne smiled and lifted her chin proudly.</p>
-                    
-                    <p>“You think just because you say you want to be the president, I’ll let you be the president? Do you think the K Group is a toy? Do you think you, a little girl, can earn everyone’s respect? Do you understand business?”</p>
-                    
-                    <p>Emeric’s aged face couldn’t hide his anger and sadness, “And you always do whatever you want, disappearing over trifles. If something doesn’t suit your taste, you run off to other countries, noting home for three years. Do you know how worried I was? How worried your mothers were? I thought you were blown to pieces while practicing medicine at the border!”</p>
-                    
-                    <p>Evadne felt a pang in her heart, her eyes slightly red.</p>
-                    
-                    <p>Even though she thought her father owed her mother too much, even though she had resentment towards him, she had secretly married Thaddeus and hadn’t returned home for three years. This time, she was indeed the one who was wrong, she was the one who owed her father.</p>
-                    
-                    <p>“Dad, Evadne knows as much about business as I do.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>“No… I’m a government official, I absolutely can’t have any ties with big conglomerates. I’ll be suspended and investigated!” Arnold quickly dodged the suggestion, his face pale.</p>
+                        
+                        <p>Emeric felt very frustrated. What’s the use of having so many sons? They’re all very capable when they’re out there, but when there’s a problem at home, they can’t help at all.</p>
+                        
+                        <p>His health was deteriorating with each pa**ing year, and he had long nned to enjoy his old age. However, there wasn’t anyone in the entire family who could take over his “business empire”.</p>
+                        
+                        <p>It’s not that he didn’t like his daughter, he just insisted that his son should be the one to inherit thepany.</p>
+                        
+                        <p>“Who said women are inferior to men, I’m willing to be the president!” Evadne smiled and lifted her chin proudly.</p>
+                        
+                        <p>“You think just because you say you want to be the president, I’ll let you be the president? Do you think the K Group is a toy? Do you think you, a little girl, can earn everyone’s respect? Do you understand business?”</p>
+                        
+                        <p>Emeric’s aged face couldn’t hide his anger and sadness, “And you always do whatever you want, disappearing over trifles. If something doesn’t suit your taste, you run off to other countries, noting home for three years. Do you know how worried I was? How worried your mothers were? I thought you were blown to pieces while practicing medicine at the border!”</p>
+                        
+                        <p>Evadne felt a pang in her heart, her eyes slightly red.</p>
+                        
+                        <p>Even though she thought her father owed her mother too much, even though she had resentment towards him, she had secretly married Thaddeus and hadn’t returned home for three years. This time, she was indeed the one who was wrong, she was the one who owed her father.</p>
+                        
+                        <p>“Dad, Evadne knows as much about business as I do.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1032,27 +1088,31 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Cas sius elegantly picked up his coffee cup and took a sip, “Remember the financial crisis the Ashbourne group went through four years ago? Those effective group control measures were all Evadne’s suggestions.</p>
-                    
-                    <p>And the acquisition n for the Farley group two years ago, it was Evadne who stayed upte to make it.”</p>
-                    
-                    <p>Hearing this, Emeric looked surprised.</p>
-                    
-                    <p>“Dad, you don’t really know your daughter. She is the most patient and shrewd among us.</p>
-                    
-                    <p>You’ve always been known for your keen eye and talent in the outside world, and now there’s a female prodigy right in front of you. Why won’t you let her give it a try?” Arnold also actively advised from the side.</p>
-                    
-                    <p>After mulling it over for a moment, Emeric said seriously, “Alright, girl, if you want to manage the Ashbourne family, I’ll give you a test. Consider this opportunity a birthday present!”</p>
-                    
-                    <p>Evadne straightened up, her eyes sparkling.</p>
-                    
-                    <p>“Take a few days off. Next week, report to the K Orld Hotel in Elmsworth. If you can refurbish the ce within six months and reverse the hotel’s dire financial situation, I’ll consider letting you be president of the K Group!”</p>
-                    
-                    <p>Upon leaving the study, both Cas sius and Arnoldid their hands on Evadne’s shoulders.</p>
-                    
-                    <p>“Looks like you’ve got your work cut out for you, little one.” said Cas sius.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Cas sius elegantly picked up his coffee cup and took a sip, “Remember the financial crisis the Ashbourne group went through four years ago? Those effective group control measures were all Evadne’s suggestions.</p>
+                        
+                        <p>And the acquisition n for the Farley group two years ago, it was Evadne who stayed upte to make it.”</p>
+                        
+                        <p>Hearing this, Emeric looked surprised.</p>
+                        
+                        <p>“Dad, you don’t really know your daughter. She is the most patient and shrewd among us.</p>
+                        
+                        <p>You’ve always been known for your keen eye and talent in the outside world, and now there’s a female prodigy right in front of you. Why won’t you let her give it a try?” Arnold also actively advised from the side.</p>
+                        
+                        <p>After mulling it over for a moment, Emeric said seriously, “Alright, girl, if you want to manage the Ashbourne family, I’ll give you a test. Consider this opportunity a birthday present!”</p>
+                        
+                        <p>Evadne straightened up, her eyes sparkling.</p>
+                        
+                        <p>“Take a few days off. Next week, report to the K Orld Hotel in Elmsworth. If you can refurbish the ce within six months and reverse the hotel’s dire financial situation, I’ll consider letting you be president of the K Group!”</p>
+                        
+                        <p>Upon leaving the study, both Cas sius and Arnoldid their hands on Evadne’s shoulders.</p>
+                        
+                        <p>“Looks like you’ve got your work cut out for you, little one.” said Cas sius.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1067,15 +1127,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>“You’ve been away for so long, now that you’re back, it’s only right we give you a mess to clean up.” sighed Arnold.</p>
-                    
-                    <p>“I know, Dad is trying to make me back down, but unfortunately, that won’t work on me. I’m like a spring, the more you press me down, the higher I’ll bounce back.” Evadne clenched her fist, the ambition that had been dormant in her heart for three years was finally stirring.</p>
-                    
-                    <p>The two brothers exchanged a smile.</p>
-                    
-                    <p>“Girl, the bright future we’ve been dreaming of is now in your hands.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>“You’ve been away for so long, now that you’re back, it’s only right we give you a mess to clean up.” sighed Arnold.</p>
+                        
+                        <p>“I know, Dad is trying to make me back down, but unfortunately, that won’t work on me. I’m like a spring, the more you press me down, the higher I’ll bounce back.” Evadne clenched her fist, the ambition that had been dormant in her heart for three years was finally stirring.</p>
+                        
+                        <p>The two brothers exchanged a smile.</p>
+                        
+                        <p>“Girl, the bright future we’ve been dreaming of is now in your hands.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2391,6 +2455,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2517,7 +2661,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2559,32 +2702,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2595,21 +2720,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2642,6 +2757,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2662,20 +2783,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

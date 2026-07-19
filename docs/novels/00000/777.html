@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>&#34;Vivian outshines Serena in every performance! How does someone with Serena&#39;s mediocre skills get this much hype? She never truly becomes her characters. Modern fans really have no standards.&#34;</p>
-                    
-                    <p>&#34;Vivian is absolutely radiant. Is that really her natural face? No filters? No makeup? I need to see more of her work immediately!&#34;</p>
-                    
-                    <p>&#34;Vivian holds her own against Julian Montoya in their scenes together. That&#39;s incredible for a newcomer! Serena&#39;s fans - open your eyes! Maybe your idol should stick to modeling and leave acting to real talents.&#34;</p>
-                    
-                    <p>&#34;How did the Blazing Horizon producers ever consider Serena for the lead? As a diehard fan of the original novel, I know Vivian was born for this role.&#34;</p>
-                    
-                    <p>&#34;Could it be that Serena, knowing she lacked talent, demanded a second audition? Using connections is one thing, but sabotaging a rising star like Vivian? That&#39;s crossing the line.&#34;</p>
-                    
-                    <p>Vivian scrolled through the comments, warmth spreading through her chest. She&#39;d trended before, but never with this level of genuine support. A pang of regret hit her - if only she&#39;d worked harder in previous years, she might not be fighting so hard to prove herself now.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>&#34;Vivian outshines Serena in every performance! How does someone with Serena&#39;s mediocre skills get this much hype? She never truly becomes her characters. Modern fans really have no standards.&#34;</p>
+                        
+                        <p>&#34;Vivian is absolutely radiant. Is that really her natural face? No filters? No makeup? I need to see more of her work immediately!&#34;</p>
+                        
+                        <p>&#34;Vivian holds her own against Julian Montoya in their scenes together. That&#39;s incredible for a newcomer! Serena&#39;s fans - open your eyes! Maybe your idol should stick to modeling and leave acting to real talents.&#34;</p>
+                        
+                        <p>&#34;How did the Blazing Horizon producers ever consider Serena for the lead? As a diehard fan of the original novel, I know Vivian was born for this role.&#34;</p>
+                        
+                        <p>&#34;Could it be that Serena, knowing she lacked talent, demanded a second audition? Using connections is one thing, but sabotaging a rising star like Vivian? That&#39;s crossing the line.&#34;</p>
+                        
+                        <p>Vivian scrolled through the comments, warmth spreading through her chest. She&#39;d trended before, but never with this level of genuine support. A pang of regret hit her - if only she&#39;d worked harder in previous years, she might not be fighting so hard to prove herself now.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>At least the public could see through the industry&#39;s dirty politics. Suddenly, her doorbell rang.</p>
-                    
-                    <p>She froze as Lydia started pounding on the door, voice frantic. &#34;Vivian! You won&#39;t believe this! The Blackwood Group is calling! Do you think they&#39;re trying to silence us?&#34;</p>
-                    
-                    <p>Vivian&#39;s fury reignited. She threw off her blanket and stormed barefoot to the door. She&#39;d blocked Adrian&#39;s and Ethan&#39;s numbers, but hadn&#39;t anticipated them contacting Lydia instead. The audacity - first they tried to ruin her, now they wanted to control the narrative? Her hands trembled with rage.</p>
-                    
-                    <p>She yanked the door open and snatched the phone from Lydia. &#34;Give me that!&#34; Lydia complied instantly, whispering, &#34;Just hear them out, okay? Stay calm.&#34;</p>
-                    
-                    <p>Vivian clenched her jaw but said nothing. Fine. She&#39;d listen. After a steadying breath, she spoke in an icy tone: &#34;What do you want?&#34;</p>
-                    
-                    <p>&#34;Mrs. Blackwood,&#34; Ethan&#39;s polite voice came through. &#34;Mr. Blackwood saw the trending topics. He&#39;s instructed me to handle the situation. It&#39;ll be resolved shortly without causing you further distress.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>At least the public could see through the industry&#39;s dirty politics. Suddenly, her doorbell rang.</p>
+                        
+                        <p>She froze as Lydia started pounding on the door, voice frantic. &#34;Vivian! You won&#39;t believe this! The Blackwood Group is calling! Do you think they&#39;re trying to silence us?&#34;</p>
+                        
+                        <p>Vivian&#39;s fury reignited. She threw off her blanket and stormed barefoot to the door. She&#39;d blocked Adrian&#39;s and Ethan&#39;s numbers, but hadn&#39;t anticipated them contacting Lydia instead. The audacity - first they tried to ruin her, now they wanted to control the narrative? Her hands trembled with rage.</p>
+                        
+                        <p>She yanked the door open and snatched the phone from Lydia. &#34;Give me that!&#34; Lydia complied instantly, whispering, &#34;Just hear them out, okay? Stay calm.&#34;</p>
+                        
+                        <p>Vivian clenched her jaw but said nothing. Fine. She&#39;d listen. After a steadying breath, she spoke in an icy tone: &#34;What do you want?&#34;</p>
+                        
+                        <p>&#34;Mrs. Blackwood,&#34; Ethan&#39;s polite voice came through. &#34;Mr. Blackwood saw the trending topics. He&#39;s instructed me to handle the situation. It&#39;ll be resolved shortly without causing you further distress.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Vivian stiffened, momentarily stunned. Adrian was actually trying to remove the hateful hashtags about her? A crack formed in the icy wall around her heart, her grip tightening on the doorknob. For the briefest moment, that frozen heart showed signs of thawing. But just as quickly, she suppressed the feeling.</p>
-                    
-                    <p>Vivian shook her head vehemently. In her heart, she knew this wasn&#39;t truly about her wellbeing. They remained legally bound, and as Adrian&#39;s wife, she still represented the Blackwood family&#39;s dignity to the world. She suspected his actions stemmed from protecting the family&#39;s reputation rather than genuine concern for her.</p>
-                    
-                    <p>Her hands trembled slightly as she fought to maintain composure, forcing rationality to prevail over the unwelcome warmth creeping into her chilled heart. After hanging up, she checked Instagram. True to Ethan&#39;s word, the relentless negative trend had disappeared completely, as if it never existed. A faint smile tugged at Vivian&#39;s lips before she could stop it.</p>
-                    
-                    <p>Lydia noticed it too, letting out a dry chuckle. &#34;Would you look at that? Even the great Adrian Blackwood has a conscience. Pity it took a scandal of this magnitude to surface it. But let&#39;s be clear - he orchestrated this entire mess. Without his backing, Serena would never have dared behave so shamelessly. Of course he could erase those trends instantly. This is the bare minimum he owes us, so don&#39;t go thinking he&#39;s some knight in shining armor. We were handling it just fine ourselves. He still owes you that role!&#34;</p>
-                    
-                    <p>As Lydia spoke, cold clarity settled over Vivian. The truth was undeniable - Adrian had caused this turmoil. Had he not interfered, Vivian wouldn&#39;t have been cheated out of a role she&#39;d rightfully earned. Serena wouldn&#39;t have had the opportunity to crush her ambitions so effortlessly. Every thread led back to Adrian, and his cleanup efforts likely served only to protect the Blackwood name.</p>
-                    
-                    <p>Vivian knew gratitude was misplaced for him doing what was expected, yet a bitter laugh escaped her. Suddenly, Lydia, scrolling through her phone, erupted in frustration.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Vivian stiffened, momentarily stunned. Adrian was actually trying to remove the hateful hashtags about her? A crack formed in the icy wall around her heart, her grip tightening on the doorknob. For the briefest moment, that frozen heart showed signs of thawing. But just as quickly, she suppressed the feeling.</p>
+                        
+                        <p>Vivian shook her head vehemently. In her heart, she knew this wasn&#39;t truly about her wellbeing. They remained legally bound, and as Adrian&#39;s wife, she still represented the Blackwood family&#39;s dignity to the world. She suspected his actions stemmed from protecting the family&#39;s reputation rather than genuine concern for her.</p>
+                        
+                        <p>Her hands trembled slightly as she fought to maintain composure, forcing rationality to prevail over the unwelcome warmth creeping into her chilled heart. After hanging up, she checked Instagram. True to Ethan&#39;s word, the relentless negative trend had disappeared completely, as if it never existed. A faint smile tugged at Vivian&#39;s lips before she could stop it.</p>
+                        
+                        <p>Lydia noticed it too, letting out a dry chuckle. &#34;Would you look at that? Even the great Adrian Blackwood has a conscience. Pity it took a scandal of this magnitude to surface it. But let&#39;s be clear - he orchestrated this entire mess. Without his backing, Serena would never have dared behave so shamelessly. Of course he could erase those trends instantly. This is the bare minimum he owes us, so don&#39;t go thinking he&#39;s some knight in shining armor. We were handling it just fine ourselves. He still owes you that role!&#34;</p>
+                        
+                        <p>As Lydia spoke, cold clarity settled over Vivian. The truth was undeniable - Adrian had caused this turmoil. Had he not interfered, Vivian wouldn&#39;t have been cheated out of a role she&#39;d rightfully earned. Serena wouldn&#39;t have had the opportunity to crush her ambitions so effortlessly. Every thread led back to Adrian, and his cleanup efforts likely served only to protect the Blackwood name.</p>
+                        
+                        <p>Vivian knew gratitude was misplaced for him doing what was expected, yet a bitter laugh escaped her. Suddenly, Lydia, scrolling through her phone, erupted in frustration.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;This is unbelievable! I celebrated too soon. They removed your trending topic, yes, but they also deleted all the audition footage I posted! Now we&#39;ve lost all evidence comparing you and Serena. Even that cringe-worthy clip of her terrible acting got wiped! I worked tirelessly to obtain that video. It would have showcased your talent perfectly, and now it&#39;s gone! Thousands of fans missed seeing it!&#34;</p>
-                    
-                    <p>Curious, Vivian grabbed her phone and scrolled through Instagram. Lydia&#39;s prediction proved accurate once more. Every mention of Vivian and Serena had vanished into digital oblivion. It wasn&#39;t just the negative trend that disappeared. The hashtags #SerenaCantAct and #SerenaTrainwreck, which had gained traction thanks to Lydia&#39;s uploaded clips, had been meticulously erased. Even the supportive comments highlighting Vivian&#39;s superior talent were nowhere to be found.</p>
-                    
-                    <p>Her jaw tightened as she desperately searched for any trace of herself and Serena. Searches for Serena still yielded older discussions and content. But searches for Vivian? A digital void. Every previous mention had been scrubbed clean.</p>
-                    
-                    <p>Lydia&#39;s face twisted in fury as she spat out, &#34;So Adrian was never on our side. He&#39;s been protecting Serena all along. Terrified she&#39;ll face ridicule, so he sanitized the entire internet. Now there&#39;s nothing left for people to even discuss.&#34;</p>
-                    
-                    <p>Her voice rose with each word, hands clenching into fists. &#34;What&#39;s more infuriating is he didn&#39;t stop at hiding her mess - he obliterated everything about you too. Just as people started recognizing your talent, he snuffed it out like it meant nothing!&#34; The injustice made Lydia&#39;s chest heave with barely contained rage.</p>
-                    
-                    <p>Vivian calmly locked her phone, a frosty, mocking smile curving her lips. The absurdity of it all struck her. She&#39;d endured a torrent of cruel comments all night without a shred of support from Adrian. Yet the moment Serena faced criticism for her audition, he&#39;d rushed to clean up the mess. A bitter sneer twisted her features. The priority was clear - Serena always came first.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;This is unbelievable! I celebrated too soon. They removed your trending topic, yes, but they also deleted all the audition footage I posted! Now we&#39;ve lost all evidence comparing you and Serena. Even that cringe-worthy clip of her terrible acting got wiped! I worked tirelessly to obtain that video. It would have showcased your talent perfectly, and now it&#39;s gone! Thousands of fans missed seeing it!&#34;</p>
+                        
+                        <p>Curious, Vivian grabbed her phone and scrolled through Instagram. Lydia&#39;s prediction proved accurate once more. Every mention of Vivian and Serena had vanished into digital oblivion. It wasn&#39;t just the negative trend that disappeared. The hashtags #SerenaCantAct and #SerenaTrainwreck, which had gained traction thanks to Lydia&#39;s uploaded clips, had been meticulously erased. Even the supportive comments highlighting Vivian&#39;s superior talent were nowhere to be found.</p>
+                        
+                        <p>Her jaw tightened as she desperately searched for any trace of herself and Serena. Searches for Serena still yielded older discussions and content. But searches for Vivian? A digital void. Every previous mention had been scrubbed clean.</p>
+                        
+                        <p>Lydia&#39;s face twisted in fury as she spat out, &#34;So Adrian was never on our side. He&#39;s been protecting Serena all along. Terrified she&#39;ll face ridicule, so he sanitized the entire internet. Now there&#39;s nothing left for people to even discuss.&#34;</p>
+                        
+                        <p>Her voice rose with each word, hands clenching into fists. &#34;What&#39;s more infuriating is he didn&#39;t stop at hiding her mess - he obliterated everything about you too. Just as people started recognizing your talent, he snuffed it out like it meant nothing!&#34; The injustice made Lydia&#39;s chest heave with barely contained rage.</p>
+                        
+                        <p>Vivian calmly locked her phone, a frosty, mocking smile curving her lips. The absurdity of it all struck her. She&#39;d endured a torrent of cruel comments all night without a shred of support from Adrian. Yet the moment Serena faced criticism for her audition, he&#39;d rushed to clean up the mess. A bitter sneer twisted her features. The priority was clear - Serena always came first.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Adrian&#39;s world revolved exclusively around Serena, relegating Vivian to the shadows, barely an afterthought. Vivian realized the fire&#39;s agony hadn&#39;t been enough to fully shatter her heart. Reflecting on their two-year marriage, she wondered what it had truly meant to him. He wasn&#39;t emotionless - he simply reserved all his care and concern for Serena, as if Vivian were merely a ghost haunting their shared existence.</p>
-                    
-                    <p>Vivian had never felt such profound disillusionment with Adrian.</p>
-                    
-                    <p>&#34;It&#39;s alright,&#34; she murmured, her throat tight as she tried to soothe Lydia. &#34;We didn&#39;t win this time. The next opportunity will come.&#34;</p>
-                    
-                    <p>Lydia kept pacing, her designer heels clicking angrily against the marble floor. &#34;This is unbearable! With anyone else, I could pull some strings using my family connections. But we&#39;re dealing with Mr. Blackwood! The most powerful CEO in the nation. Serena has no idea how lucky she is to have his backing. I&#39;d give anything to have him supporting you instead!&#34;</p>
-                    
-                    <p>Vivian turned slowly, emotions warring within her. The idea was absurd. Serena was the one who held Adrian&#39;s heart. He would never stand by Vivian&#39;s side with the same fierce loyalty he showed Serena. But Vivian shook her head sharply. She wasn&#39;t some fragile damsel needing rescue.</p>
-                    
-                    <p>&#34;Isn&#39;t it all about power plays anyway?&#34; Vivian gave a wry smile, meeting Lydia&#39;s gaze head-on. &#34;I don&#39;t need to cling to anyone&#39;s coattails. I&#39;ll build my own influence, carve my own path.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Adrian&#39;s world revolved exclusively around Serena, relegating Vivian to the shadows, barely an afterthought. Vivian realized the fire&#39;s agony hadn&#39;t been enough to fully shatter her heart. Reflecting on their two-year marriage, she wondered what it had truly meant to him. He wasn&#39;t emotionless - he simply reserved all his care and concern for Serena, as if Vivian were merely a ghost haunting their shared existence.</p>
+                        
+                        <p>Vivian had never felt such profound disillusionment with Adrian.</p>
+                        
+                        <p>&#34;It&#39;s alright,&#34; she murmured, her throat tight as she tried to soothe Lydia. &#34;We didn&#39;t win this time. The next opportunity will come.&#34;</p>
+                        
+                        <p>Lydia kept pacing, her designer heels clicking angrily against the marble floor. &#34;This is unbearable! With anyone else, I could pull some strings using my family connections. But we&#39;re dealing with Mr. Blackwood! The most powerful CEO in the nation. Serena has no idea how lucky she is to have his backing. I&#39;d give anything to have him supporting you instead!&#34;</p>
+                        
+                        <p>Vivian turned slowly, emotions warring within her. The idea was absurd. Serena was the one who held Adrian&#39;s heart. He would never stand by Vivian&#39;s side with the same fierce loyalty he showed Serena. But Vivian shook her head sharply. She wasn&#39;t some fragile damsel needing rescue.</p>
+                        
+                        <p>&#34;Isn&#39;t it all about power plays anyway?&#34; Vivian gave a wry smile, meeting Lydia&#39;s gaze head-on. &#34;I don&#39;t need to cling to anyone&#39;s coattails. I&#39;ll build my own influence, carve my own path.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Lydia froze mid-step, startled by the sudden fire in Vivian&#39;s eyes. That unexpected blaze of determination left her momentarily speechless.</p>
-                    
-                    <p>Ever practical, Lydia laid out the harsh truth. &#34;Dreams are beautiful, but let&#39;s be realistic - the industry doesn&#39;t play fair. With Serena&#39;s unexplained vendetta against you, if you land a role she wants, she&#39;ll destroy it. That kind of sabotage could ruin your reputation permanently.&#34;</p>
-                    
-                    <p>&#34;That won&#39;t happen,&#34; Vivian stated with unshakable conviction. &#34;Don&#39;t worry about roles. Adrian may be powerful, but he doesn&#39;t control everything. Not everyone bows to him. Just getting one significant role will put me on the map, ensure I&#39;m not forgotten. What I need from you is help choosing the right scripts.&#34;</p>
-                    
-                    <p>Vivian&#39;s steel resolve ignited Lydia&#39;s fighting spirit. &#34;Alright then, let&#39;s make this happen!&#34;</p>
-                    
-                    <p>The next morning, outside the florist shop, a sleek Rolls Royce idled at the curb. Inside, Adrian lounged in the backseat, his sharp features half-hidden in shadow. His eyes snapped open when he spotted the vibrant display of fuchsia Freud roses near the entrance. &#34;Get me ninety-nine of those,&#34; he commanded.</p>
-                    
-                    <p>Ethan hesitated under Adrian&#39;s piercing stare before venturing, &#34;Mrs. Blackwood usually prefers the blush pink roses.&#34; Adrian, determined to make amends, couldn&#39;t risk any missteps - not even with flowers.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Lydia froze mid-step, startled by the sudden fire in Vivian&#39;s eyes. That unexpected blaze of determination left her momentarily speechless.</p>
+                        
+                        <p>Ever practical, Lydia laid out the harsh truth. &#34;Dreams are beautiful, but let&#39;s be realistic - the industry doesn&#39;t play fair. With Serena&#39;s unexplained vendetta against you, if you land a role she wants, she&#39;ll destroy it. That kind of sabotage could ruin your reputation permanently.&#34;</p>
+                        
+                        <p>&#34;That won&#39;t happen,&#34; Vivian stated with unshakable conviction. &#34;Don&#39;t worry about roles. Adrian may be powerful, but he doesn&#39;t control everything. Not everyone bows to him. Just getting one significant role will put me on the map, ensure I&#39;m not forgotten. What I need from you is help choosing the right scripts.&#34;</p>
+                        
+                        <p>Vivian&#39;s steel resolve ignited Lydia&#39;s fighting spirit. &#34;Alright then, let&#39;s make this happen!&#34;</p>
+                        
+                        <p>The next morning, outside the florist shop, a sleek Rolls Royce idled at the curb. Inside, Adrian lounged in the backseat, his sharp features half-hidden in shadow. His eyes snapped open when he spotted the vibrant display of fuchsia Freud roses near the entrance. &#34;Get me ninety-nine of those,&#34; he commanded.</p>
+                        
+                        <p>Ethan hesitated under Adrian&#39;s piercing stare before venturing, &#34;Mrs. Blackwood usually prefers the blush pink roses.&#34; Adrian, determined to make amends, couldn&#39;t risk any missteps - not even with flowers.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Perplexed, Adrian&#39;s brows drew together. &#34;Aren&#39;t they all just roses? What difference does the color make?&#34;</p>
-                    
-                    <p>Floral arrangements were far outside his expertise. He vaguely recalled Serena mentioning her preference for fuchsia Freud roses during a walk past a florist, where the shopkeeper had emphasized their exorbitant price. To Adrian, flowers&#39; worth was measured solely by their cost. Rubbing his temples, he refused to get bogged down in such trivialities.</p>
-                    
-                    <p>With an impatient wave, he ordered, &#34;Just get ninety-nine of whatever you think is appropriate.&#34;</p>
-                    
-                    <p>&#34;Understood,&#34; Ethan replied, visibly relieved as he exited the car. Meanwhile, Adrian remained seated, absently checking the time on his exclusive luxury watch. The hour hand pointed precisely to ten on the meteorite-encrusted moon dial - a rare masterpiece from a world-renowned brand.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Perplexed, Adrian&#39;s brows drew together. &#34;Aren&#39;t they all just roses? What difference does the color make?&#34;</p>
+                        
+                        <p>Floral arrangements were far outside his expertise. He vaguely recalled Serena mentioning her preference for fuchsia Freud roses during a walk past a florist, where the shopkeeper had emphasized their exorbitant price. To Adrian, flowers&#39; worth was measured solely by their cost. Rubbing his temples, he refused to get bogged down in such trivialities.</p>
+                        
+                        <p>With an impatient wave, he ordered, &#34;Just get ninety-nine of whatever you think is appropriate.&#34;</p>
+                        
+                        <p>&#34;Understood,&#34; Ethan replied, visibly relieved as he exited the car. Meanwhile, Adrian remained seated, absently checking the time on his exclusive luxury watch. The hour hand pointed precisely to ten on the meteorite-encrusted moon dial - a rare masterpiece from a world-renowned brand.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

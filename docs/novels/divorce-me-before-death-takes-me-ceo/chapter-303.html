@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.112182">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.112182">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.286610">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.286610">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.112182",
-        "dateModified": "2026-07-19T02:47:19.112182",
+        "datePublished": "2026-07-19T13:03:14.286610",
+        "dateModified": "2026-07-19T13:03:14.286610",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,25 +893,29 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>I bit my lip and wiped away the tears streaming down my face as we left the morgue room. Relief that the body wasn&#39;t Astrid&#39;s had hit me like a tidal wave, but now fear was creeping back in.</p>
-                    
-                    <p>&#34;But where&#39;s Astrid gone?&#34; I asked, my voice cracking.</p>
-                    
-                    <p>*If she&#39;s not the accident victim, where the hell is she? No calls, no texts,not even coming back for her favorite necklace... Something&#39;s wrong.*</p>
-                    
-                    <p>Blake shifted his weight on his crutches. &#34;Henry Hartford&#39;s flying back already. Astrid&#39;s his employee - he&#39;ll turn over every stone looking for her.She&#39;ll turn up soon.&#34;</p>
-                    
-                    <p>He held my gaze. &#34;I&#39;ve got people watching my mother and sister too. If they know anything about Astrid. you&#39;ll be the first to hear.&#34;</p>
-                    
-                    <p>I nodded. swiping at another tear. &#34;Thanks.&#34;</p>
-                    
-                    <p>&#34;Don&#39;t thank me,&#34; Blake said. the corner of his mouth lifting slightly.He turned and made his way toward the exit, navigating carefully on his crutches.</p>
-                    
-                    <p>My phone rang, cutting through the silence. I answered without checking,desperate for any news.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>I bit my lip and wiped away the tears streaming down my face as we left the morgue room. Relief that the body wasn&#39;t Astrid&#39;s had hit me like a tidal wave, but now fear was creeping back in.</p>
+                        
+                        <p>&#34;But where&#39;s Astrid gone?&#34; I asked, my voice cracking.</p>
+                        
+                        <p>*If she&#39;s not the accident victim, where the hell is she? No calls, no texts,not even coming back for her favorite necklace... Something&#39;s wrong.*</p>
+                        
+                        <p>Blake shifted his weight on his crutches. &#34;Henry Hartford&#39;s flying back already. Astrid&#39;s his employee - he&#39;ll turn over every stone looking for her.She&#39;ll turn up soon.&#34;</p>
+                        
+                        <p>He held my gaze. &#34;I&#39;ve got people watching my mother and sister too. If they know anything about Astrid. you&#39;ll be the first to hear.&#34;</p>
+                        
+                        <p>I nodded. swiping at another tear. &#34;Thanks.&#34;</p>
+                        
+                        <p>&#34;Don&#39;t thank me,&#34; Blake said. the corner of his mouth lifting slightly.He turned and made his way toward the exit, navigating carefully on his crutches.</p>
+                        
+                        <p>My phone rang, cutting through the silence. I answered without checking,desperate for any news.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -890,25 +930,29 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Astrid? Where are you?&#34; I blurted out.</p>
-                    
-                    <p>&#34;Still haven&#39;t found your friend?&#34; Adrian&#39;s cold voice hit me like ice water.</p>
-                    
-                    <p>I pressed my lips together, gripping my phone tighter.</p>
-                    
-                    <p>&#34;Don&#39;t worry too much,&#34; he said dismissively. &#34;She&#39;s a grown woman,not a lost puppy.&#34;</p>
-                    
-                    <p>I nodded to Blake anad Felix before walking to a bench away from them.This conversation didn&#39;t need an audience.</p>
-                    
-                    <p>&#34;I&#39;ve got a European investor asking for Q·elegant specifically,&#34; Adrian continued. &#34;Pack up. We&#39;re heading back to Sydney tomorrow.&#34;</p>
-                    
-                    <p>My jaw tightened. &#34;Adrian, I already told you I&#39;m staying in New York until William passes. I just reconnected with him - &#34;</p>
-                    
-                    <p>&#34;Audrey,&#34; he cut me off. &#34;Emma was kidnapped today. Who knows what&#39;1l happen if we stay?&#34;</p>
-                    
-                    <p>&#34;This isn&#39;t Sydney. Hartford&#39;s people can&#39;t protect us the same way here.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Astrid? Where are you?&#34; I blurted out.</p>
+                        
+                        <p>&#34;Still haven&#39;t found your friend?&#34; Adrian&#39;s cold voice hit me like ice water.</p>
+                        
+                        <p>I pressed my lips together, gripping my phone tighter.</p>
+                        
+                        <p>&#34;Don&#39;t worry too much,&#34; he said dismissively. &#34;She&#39;s a grown woman,not a lost puppy.&#34;</p>
+                        
+                        <p>I nodded to Blake anad Felix before walking to a bench away from them.This conversation didn&#39;t need an audience.</p>
+                        
+                        <p>&#34;I&#39;ve got a European investor asking for Q·elegant specifically,&#34; Adrian continued. &#34;Pack up. We&#39;re heading back to Sydney tomorrow.&#34;</p>
+                        
+                        <p>My jaw tightened. &#34;Adrian, I already told you I&#39;m staying in New York until William passes. I just reconnected with him - &#34;</p>
+                        
+                        <p>&#34;Audrey,&#34; he cut me off. &#34;Emma was kidnapped today. Who knows what&#39;1l happen if we stay?&#34;</p>
+                        
+                        <p>&#34;This isn&#39;t Sydney. Hartford&#39;s people can&#39;t protect us the same way here.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -923,25 +967,29 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>His voice rose. &#34;Emma&#39;s traumatized! And this deal was something Evelyn wanted when she was alive. It&#39;s finally happening.&#34;</p>
-                    
-                    <p>He softened his tone. &#34;Can&#39;t you just come back with me? Is that so much to ask?&#34;</p>
-                    
-                    <p>I took a deep breath, glancing at Blake and Felix waiting by the car.&#34;Adrían, business can wait. When I left Sydney, it was because William was dying. I want to be with him till the end, or at least attend his funeral.You understood that before,so-&#34;</p>
-                    
-                    <p>&#34;What about Emma and me?&#34; he snapped.&#34;You said you&#39;d treat Emma like your own daughter. But what happened?&#34;</p>
-                    
-                    <p>&#34;She was in danger today, and you cared more about Blake Parker than</p>
-                    
-                    <p>her.&#34;</p>
-                    
-                    <p>&#34;Now I&#39;m asking you to return to Sydney for Emma&#39;s sake, and you&#39;re making excuses about the Parkers being more important.&#34;</p>
-                    
-                    <p>His voice turned bitter. &#34;What matters more to you - that old man, or Blake Parker himself? You&#39;ve disappointed me too much! If I&#39;d known you&#39;d be this confused, I never would&#39;ve saved you! For your sake, I sent the woman I loved most to hell, and you can&#39;t even play her role properly.Instead,you&#39;re tangled up with people who hurt you!&#34;</p>
-                    
-                    <p>Every word stabbed my heart. My face burned with either anger or shame -I couldn&#39;t tell which. My head spun so badly that if I hadn&#39;t been sitting,I might&#39;ve blacked out.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>His voice rose. &#34;Emma&#39;s traumatized! And this deal was something Evelyn wanted when she was alive. It&#39;s finally happening.&#34;</p>
+                        
+                        <p>He softened his tone. &#34;Can&#39;t you just come back with me? Is that so much to ask?&#34;</p>
+                        
+                        <p>I took a deep breath, glancing at Blake and Felix waiting by the car.&#34;Adrían, business can wait. When I left Sydney, it was because William was dying. I want to be with him till the end, or at least attend his funeral.You understood that before,so-&#34;</p>
+                        
+                        <p>&#34;What about Emma and me?&#34; he snapped.&#34;You said you&#39;d treat Emma like your own daughter. But what happened?&#34;</p>
+                        
+                        <p>&#34;She was in danger today, and you cared more about Blake Parker than</p>
+                        
+                        <p>her.&#34;</p>
+                        
+                        <p>&#34;Now I&#39;m asking you to return to Sydney for Emma&#39;s sake, and you&#39;re making excuses about the Parkers being more important.&#34;</p>
+                        
+                        <p>His voice turned bitter. &#34;What matters more to you - that old man, or Blake Parker himself? You&#39;ve disappointed me too much! If I&#39;d known you&#39;d be this confused, I never would&#39;ve saved you! For your sake, I sent the woman I loved most to hell, and you can&#39;t even play her role properly.Instead,you&#39;re tangled up with people who hurt you!&#34;</p>
+                        
+                        <p>Every word stabbed my heart. My face burned with either anger or shame -I couldn&#39;t tell which. My head spun so badly that if I hadn&#39;t been sitting,I might&#39;ve blacked out.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -956,25 +1004,29 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>I gripped the phone until my knuckles went white. &#34;Adrian, I&#39;ve told you</p>
-                    
-                    <p>repeatedly that Blake and I are done. You&#39;re the one who won&#39;t believe me.I already explained why I checked on Blake - after making sure Emma was safe. And now Astrid&#39;s missing while William&#39;s still alive. I&#39;m not</p>
-                    
-                    <p>leaving New York.&#34;</p>
-                    
-                    <p>I took a breath.′′fyou&#39;re that worried about Emma, take her back to Sydney yourself.&#34;</p>
-                    
-                    <p>My voice steadied. &#34;After I find who I&#39;m looking for and do what I need to do... if you still regret saving me...&#34;</p>
-                    
-                    <p>I sníffed. &#34;I&#39;ll kill myself. This life should have ended ten months ago anyway.&#34;</p>
-                    
-                    <p>Silence stretched between us.</p>
-                    
-                    <p>&#34;When did I say I wanted you dead?&#34; Adrian finally replied, his voice strange, &#34;You&#39;re supposed to live on for Evelyn, taking care of Emma.&#34;</p>
-                    
-                    <p>&#34;But you said you regretted it,&#34; I replied flatly. &#34;Whatever, Adrian. If New York&#39;s too dangerous, take Emma and go tomorrow. When I&#39;m done here,I&#39;ll come back to Sydney, and you can do whatever you want with me.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>I gripped the phone until my knuckles went white. &#34;Adrian, I&#39;ve told you</p>
+                        
+                        <p>repeatedly that Blake and I are done. You&#39;re the one who won&#39;t believe me.I already explained why I checked on Blake - after making sure Emma was safe. And now Astrid&#39;s missing while William&#39;s still alive. I&#39;m not</p>
+                        
+                        <p>leaving New York.&#34;</p>
+                        
+                        <p>I took a breath.′′fyou&#39;re that worried about Emma, take her back to Sydney yourself.&#34;</p>
+                        
+                        <p>My voice steadied. &#34;After I find who I&#39;m looking for and do what I need to do... if you still regret saving me...&#34;</p>
+                        
+                        <p>I sníffed. &#34;I&#39;ll kill myself. This life should have ended ten months ago anyway.&#34;</p>
+                        
+                        <p>Silence stretched between us.</p>
+                        
+                        <p>&#34;When did I say I wanted you dead?&#34; Adrian finally replied, his voice strange, &#34;You&#39;re supposed to live on for Evelyn, taking care of Emma.&#34;</p>
+                        
+                        <p>&#34;But you said you regretted it,&#34; I replied flatly. &#34;Whatever, Adrian. If New York&#39;s too dangerous, take Emma and go tomorrow. When I&#39;m done here,I&#39;ll come back to Sydney, and you can do whatever you want with me.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -989,25 +1041,29 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>I hung up before he could answer.</p>
-                    
-                    <p>**Adrian&#39;s POV**</p>
-                    
-                    <p>I stared at my phone as the busy signal echoed in my ear, my forehead creasing into deep lines.</p>
-                    
-                    <p>Emma lay on her stomach in front of me, looking up with eyes too wise for a four-year-old.</p>
-                    
-                    <p>&#34;Daddy,&#34; she sighed. &#34;I keep telling you, that&#39;s not how you get Mommy to come back.&#34;</p>
-                    
-                    <p>She shook her head. &#34;You just said all those mean things...&#34;</p>
-                    
-                    <p>Her smaIl shoulders slumped. &#34;I don&#39;t think Mommy&#39;s coming back with us now...&#34;</p>
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>I made my way back to Felix&#39;s car. Blake was already settled in the back seat.and Felix had taken the front passenger seat. Great- I had to sit next to Blake.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>I hung up before he could answer.</p>
+                        
+                        <p>**Adrian&#39;s POV**</p>
+                        
+                        <p>I stared at my phone as the busy signal echoed in my ear, my forehead creasing into deep lines.</p>
+                        
+                        <p>Emma lay on her stomach in front of me, looking up with eyes too wise for a four-year-old.</p>
+                        
+                        <p>&#34;Daddy,&#34; she sighed. &#34;I keep telling you, that&#39;s not how you get Mommy to come back.&#34;</p>
+                        
+                        <p>She shook her head. &#34;You just said all those mean things...&#34;</p>
+                        
+                        <p>Her smaIl shoulders slumped. &#34;I don&#39;t think Mommy&#39;s coming back with us now...&#34;</p>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>I made my way back to Felix&#39;s car. Blake was already settled in the back seat.and Felix had taken the front passenger seat. Great- I had to sit next to Blake.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1022,25 +1078,29 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>As I buckled up, Felix twisted around. &#34;Audrey. Adrian wants you back in Sydney?&#34;</p>
-                    
-                    <p>&#34;Yeah.&#34; I replied flatly. &#34;Some European client wants to work with Q elegant.&#34;</p>
-                    
-                    <p>I paused, then smiled without humor.&#39;′′Mysister&#39;s Q&#39;elegant. Adrian</p>
-                    
-                    <p>thinks it&#39;s important because it was Evelyn&#39;s dream, so he&#39;s in a rush.&#34;</p>
-                    
-                    <p>&#34;So... are you going?&#34; Felix asked hesitantly.</p>
-                    
-                    <p>I shook my head firmly. &#34;No. With Astrid missing and William&#39;s situation..</p>
-                    
-                    <p>. I&#39;m staying in New York. Sticking to my original plan.&#34;</p>
-                    
-                    <p>Felix exhaled loudly. &#34;You scared me! Thought you were actually leaving!&#34;</p>
-                    
-                    <p>He glanced at Blake with a knowing look. &#34;Feel better now, Blake?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>As I buckled up, Felix twisted around. &#34;Audrey. Adrian wants you back in Sydney?&#34;</p>
+                        
+                        <p>&#34;Yeah.&#34; I replied flatly. &#34;Some European client wants to work with Q elegant.&#34;</p>
+                        
+                        <p>I paused, then smiled without humor.&#39;′′Mysister&#39;s Q&#39;elegant. Adrian</p>
+                        
+                        <p>thinks it&#39;s important because it was Evelyn&#39;s dream, so he&#39;s in a rush.&#34;</p>
+                        
+                        <p>&#34;So... are you going?&#34; Felix asked hesitantly.</p>
+                        
+                        <p>I shook my head firmly. &#34;No. With Astrid missing and William&#39;s situation..</p>
+                        
+                        <p>. I&#39;m staying in New York. Sticking to my original plan.&#34;</p>
+                        
+                        <p>Felix exhaled loudly. &#34;You scared me! Thought you were actually leaving!&#34;</p>
+                        
+                        <p>He glanced at Blake with a knowing look. &#34;Feel better now, Blake?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1055,21 +1115,25 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;It has nothing to do with me,&#34; Blake muttered, turning to look out the window.</p>
-                    
-                    <p>Silence filled the car. I felt Blake watching me even as I stared straight ahead,my face frozen.</p>
-                    
-                    <p>*I should help him with rehab if I have time*, I thought, my eyes dropping to his legs. *If I could help him stand again, I&#39;d feel less guilty...less indebted. I don&#39;t want to owe him any more than I already do.*</p>
-                    
-                    <p>Sitting this close, I could smell his cologne - that scent I once knew so well.There was a time when being this close to Blake would&#39;ve made my heart race. Now I just felt awkward.</p>
-                    
-                    <p>The car arrived at the Thompson mansion. Felix jumped out to help Blake.</p>
-                    
-                    <p>I reached for my door handle, but someone outside pulled it open first.</p>
-                    
-                    <p>&#34;Get out. I&#39;ll help Blake,&#34; a deep, magnetic voice said from outside the car.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;It has nothing to do with me,&#34; Blake muttered, turning to look out the window.</p>
+                        
+                        <p>Silence filled the car. I felt Blake watching me even as I stared straight ahead,my face frozen.</p>
+                        
+                        <p>*I should help him with rehab if I have time*, I thought, my eyes dropping to his legs. *If I could help him stand again, I&#39;d feel less guilty...less indebted. I don&#39;t want to owe him any more than I already do.*</p>
+                        
+                        <p>Sitting this close, I could smell his cologne - that scent I once knew so well.There was a time when being this close to Blake would&#39;ve made my heart race. Now I just felt awkward.</p>
+                        
+                        <p>The car arrived at the Thompson mansion. Felix jumped out to help Blake.</p>
+                        
+                        <p>I reached for my door handle, but someone outside pulled it open first.</p>
+                        
+                        <p>&#34;Get out. I&#39;ll help Blake,&#34; a deep, magnetic voice said from outside the car.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2385,6 +2449,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2511,7 +2655,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2553,32 +2696,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2589,21 +2714,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2636,6 +2751,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2656,20 +2777,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

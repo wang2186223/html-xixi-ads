@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:35.727189">
-    <meta property="article:modified_time" content="2026-07-19T02:47:35.727189">
+    <meta property="article:published_time" content="2026-07-19T13:03:29.770237">
+    <meta property="article:modified_time" content="2026-07-19T13:03:29.770237">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:35">
+    <meta name="last-modified" content="2026-07-19 13:03:29">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:35.727189",
-        "dateModified": "2026-07-19T02:47:35.727189",
+        "datePublished": "2026-07-19T13:03:29.770237",
+        "dateModified": "2026-07-19T13:03:29.770237",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,13 +893,17 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Chapter 1672</p>
-                    
-                    <p>Larry had never seen the coast at night. When he was young, he only strolled along the beach with his mother in the afternoon or early morning. Back then, he was always morose and griped that he had no dom and rights, so his mother coaxed him by saying, “Everything you’re learning now is helping you lay your path to make it easier in the future.”</p>
-                    
-                    <p>Having heard that too many times, he naturally found it irritating and couldn’t be bothered to listen to her anymore. Thus, his mother came up with an idea—whenever he was downcast, she would bring him here to look at the sea and amble along the beach with him, leaving rows of neat footprints.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Chapter 1672</p>
+                        
+                        <p>Larry had never seen the coast at night. When he was young, he only strolled along the beach with his mother in the afternoon or early morning. Back then, he was always morose and griped that he had no dom and rights, so his mother coaxed him by saying, “Everything you’re learning now is helping you lay your path to make it easier in the future.”</p>
+                        
+                        <p>Having heard that too many times, he naturally found it irritating and couldn’t be bothered to listen to her anymore. Thus, his mother came up with an idea—whenever he was downcast, she would bring him here to look at the sea and amble along the beach with him, leaving rows of neat footprints.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -878,13 +918,17 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>“There are many things in this world, but there is only one sea. Regardless of whether it’s the present or the future, the sea we behold will be the same sea. Everything in this world will change, but not the sea. As long as you want to see it, it’ll always be here.”</p>
-                    
-                    <p>His mother’s words had been keeping him company for many years, bringing him through the barren desert and biting winter… leading him to the oasis time and again. She had grown old and could no longer walk the beach with him, but the sea she spoke of had always remained here.</p>
-                    
-                    <p>Avoidance was never the answer to any problem. Nevertheless, he hadn’t been in contact with Caspian and Nancy these few days though they were the ones who dragged him back from the bar in the middle of the night. As for Joan, he hadn’t seen her in a long time either. At that time, I said I was going to the office to handle some matters, but I haven’t gone back to see her in ages. What would she think?</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>“There are many things in this world, but there is only one sea. Regardless of whether it’s the present or the future, the sea we behold will be the same sea. Everything in this world will change, but not the sea. As long as you want to see it, it’ll always be here.”</p>
+                        
+                        <p>His mother’s words had been keeping him company for many years, bringing him through the barren desert and biting winter… leading him to the oasis time and again. She had grown old and could no longer walk the beach with him, but the sea she spoke of had always remained here.</p>
+                        
+                        <p>Avoidance was never the answer to any problem. Nevertheless, he hadn’t been in contact with Caspian and Nancy these few days though they were the ones who dragged him back from the bar in the middle of the night. As for Joan, he hadn’t seen her in a long time either. At that time, I said I was going to the office to handle some matters, but I haven’t gone back to see her in ages. What would she think?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -899,13 +943,17 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>And there’s Leslie as well. With so many things happening, he’s the person I owe most. As a child with both parents alive and he should be loved and pampered by all having been born in a harmonious family. But no thanks to the conflict between his parents, he was placed in a child care center. It was a compromise that Joan proposed, but no one ever considered whether it was fair or otherwise to him.</p>
-                    
-                    <p>He’s merely a child who still doesn’t understand the world, but he’s now paying the price for the conflict between his parents. Actually, neither Joan nor I am good parents. We can’t even handle our own problems, so how are we going to raise a child? How are we going to make him happy when we ourselves aren’t happy?</p>
-                    
-                    <p>Joan, on the other hand, had been mulling over the meaning of Dustin’s remark. Dustin said that Larry won’t allow me to find him easily. He also claimed that Larry merely wants to clear his head, but I’ve already searched all the places in Marsingfill that he might go to, yet I didn’t see any sign of him.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>And there’s Leslie as well. With so many things happening, he’s the person I owe most. As a child with both parents alive and he should be loved and pampered by all having been born in a harmonious family. But no thanks to the conflict between his parents, he was placed in a child care center. It was a compromise that Joan proposed, but no one ever considered whether it was fair or otherwise to him.</p>
+                        
+                        <p>He’s merely a child who still doesn’t understand the world, but he’s now paying the price for the conflict between his parents. Actually, neither Joan nor I am good parents. We can’t even handle our own problems, so how are we going to raise a child? How are we going to make him happy when we ourselves aren’t happy?</p>
+                        
+                        <p>Joan, on the other hand, had been mulling over the meaning of Dustin’s remark. Dustin said that Larry won’t allow me to find him easily. He also claimed that Larry merely wants to clear his head, but I’ve already searched all the places in Marsingfill that he might go to, yet I didn’t see any sign of him.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -920,13 +968,17 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>At a loss, she went to Finnick and Vivian. She purposely bought supplements for them both so that her visit this time would appear sincere.</p>
-                    
-                    <p>Actually, Finnick and Vivian were very fond of Joan. But ever since she and Larry got into a row, she rarely came over to visit them. For that reason, her visit this time came as a surprise to them.</p>
-                    
-                    <p>Thinking that they had already made up, Finnick asked, “Why didn’t Larry come with you, Joan?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>At a loss, she went to Finnick and Vivian. She purposely bought supplements for them both so that her visit this time would appear sincere.</p>
+                        
+                        <p>Actually, Finnick and Vivian were very fond of Joan. But ever since she and Larry got into a row, she rarely came over to visit them. For that reason, her visit this time came as a surprise to them.</p>
+                        
+                        <p>Thinking that they had already made up, Finnick asked, “Why didn’t Larry come with you, Joan?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -941,13 +993,17 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>At that, Joan flashed him an awkward smile. “He’s swamped with work recently, so he can’t make it.” As she said that, she stepped forward and tugged at Vivian’s arm affectionately. “Vivian, he’s too busy recently, so I’m thinking of taking him on a trip. But then, we’ve basically explored all of Marsingfill, so I simply can’t think of any good places…”</p>
-                    
-                    <p>In the end, that was the excuse she came up with to surreptitiously inquire about the places Larry loved to visit in the past without arousing their suspicions.</p>
-                    
-                    <p>Meanwhile, Gabriella’s fruit stall business was still booming, and she was busy like a bee. Ever since she went to the café with Joan back then, she had been working harder than before. On the one hand, she indeed needed the money to better support the son she had with Carl. On the other hand, the server’s contempt toward her that day and Joan’s disdain motivated her to do the best she could.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>At that, Joan flashed him an awkward smile. “He’s swamped with work recently, so he can’t make it.” As she said that, she stepped forward and tugged at Vivian’s arm affectionately. “Vivian, he’s too busy recently, so I’m thinking of taking him on a trip. But then, we’ve basically explored all of Marsingfill, so I simply can’t think of any good places…”</p>
+                        
+                        <p>In the end, that was the excuse she came up with to surreptitiously inquire about the places Larry loved to visit in the past without arousing their suspicions.</p>
+                        
+                        <p>Meanwhile, Gabriella’s fruit stall business was still booming, and she was busy like a bee. Ever since she went to the café with Joan back then, she had been working harder than before. On the one hand, she indeed needed the money to better support the son she had with Carl. On the other hand, the server’s contempt toward her that day and Joan’s disdain motivated her to do the best she could.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -2267,6 +2323,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2393,7 +2529,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2435,32 +2570,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2471,21 +2588,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2518,6 +2625,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2538,20 +2651,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

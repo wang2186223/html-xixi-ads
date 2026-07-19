@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>But the memory of that almost-kiss burned in her mind.</p>
-                    
-                    <p>Did something that almost happened even count?</p>
-                    
-                    <p>Audrey, oblivious to the shift in Vivian’s voice, brightened. &#34;Let’s go shopping and grab lunch today. No bars, just us. Emerald Pizzeria? My treat.&#34;</p>
-                    
-                    <p>Vivian agreed absently. &#34;Fine. See you there.&#34;</p>
-                    
-                    <p>She didn’t notice Gwendolyn watching from the shadows.</p>
-                    
-                    <p>Not yet.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>But the memory of that almost-kiss burned in her mind.</p>
+                        
+                        <p>Did something that almost happened even count?</p>
+                        
+                        <p>Audrey, oblivious to the shift in Vivian’s voice, brightened. &#34;Let’s go shopping and grab lunch today. No bars, just us. Emerald Pizzeria? My treat.&#34;</p>
+                        
+                        <p>Vivian agreed absently. &#34;Fine. See you there.&#34;</p>
+                        
+                        <p>She didn’t notice Gwendolyn watching from the shadows.</p>
+                        
+                        <p>Not yet.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>As Vivian left, Gwendolyn remained by the window, picking up the phone with practiced deference. &#34;Everything went exactly as planned. She seemed quite shaken. Didn&#39;t even think to verify with Mr. Blackwood before rushing off to Emerald Pizzeria, according to her phone conversation.&#34;</p>
-                    
-                    <p>The Opal Galleria buzzed with midday energy as Audrey and Vivian emerged from a confectionery shop, arms linked and laughter bright.</p>
-                    
-                    <p>Audrey&#39;s attention suddenly caught on a luxury boutique&#39;s display window. Her fingers tightened around Vivian&#39;s arm. &#34;That dress! It&#39;s made for you!&#34; She pointed at an ivory creation with intricate lace detailing and daring side cutouts. &#34;Let me get it for you - consider it a belated birthday gift!&#34;</p>
-                    
-                    <p>Vivian shook her head, fingers brushing the price tag. &#34;It&#39;s too much, really. Besides, where would I even wear something like this?&#34;</p>
-                    
-                    <p>&#34;Nonsense!&#34; Audrey tugged her toward the entrance. &#34;Trying costs nothing. And look -&#34; She gestured to her own designer bag. &#34;We&#39;ve got the credentials to warrant their attention.&#34;</p>
-                    
-                    <p>The sales associate perked up immediately at Audrey&#39;s confident approach. &#34;The VIP fitting room is occupied, but you may use this one here,&#34; she offered, already unhooking the gown.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>As Vivian left, Gwendolyn remained by the window, picking up the phone with practiced deference. &#34;Everything went exactly as planned. She seemed quite shaken. Didn&#39;t even think to verify with Mr. Blackwood before rushing off to Emerald Pizzeria, according to her phone conversation.&#34;</p>
+                        
+                        <p>The Opal Galleria buzzed with midday energy as Audrey and Vivian emerged from a confectionery shop, arms linked and laughter bright.</p>
+                        
+                        <p>Audrey&#39;s attention suddenly caught on a luxury boutique&#39;s display window. Her fingers tightened around Vivian&#39;s arm. &#34;That dress! It&#39;s made for you!&#34; She pointed at an ivory creation with intricate lace detailing and daring side cutouts. &#34;Let me get it for you - consider it a belated birthday gift!&#34;</p>
+                        
+                        <p>Vivian shook her head, fingers brushing the price tag. &#34;It&#39;s too much, really. Besides, where would I even wear something like this?&#34;</p>
+                        
+                        <p>&#34;Nonsense!&#34; Audrey tugged her toward the entrance. &#34;Trying costs nothing. And look -&#34; She gestured to her own designer bag. &#34;We&#39;ve got the credentials to warrant their attention.&#34;</p>
+                        
+                        <p>The sales associate perked up immediately at Audrey&#39;s confident approach. &#34;The VIP fitting room is occupied, but you may use this one here,&#34; she offered, already unhooking the gown.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Audrey settled onto a velvet chaise lounge, idly scanning the nearly empty store. Her gaze snagged on a man&#39;s silhouette partially visible behind a decorative screen. Even in profile, his aristocratic bearing was unmistakable - the kind of man who belonged in tailored suits and boardrooms rather than waiting outside dressing rooms.</p>
-                    
-                    <p>She smirked to herself. Probably some wealthy husband enduring his wife&#39;s shopping spree.</p>
-                    
-                    <p>The fitting room curtain swished open.</p>
-                    
-                    <p>Audrey&#39;s breath caught. The dress transformed Vivian - the delicate fabric clinging to her curves, the strategic cutouts drawing attention to her slender waist. &#34;My God, Viv, you look-&#34;</p>
-                    
-                    <p>&#34;Adrian, what do you think of this one?&#34; A honeyed voice interrupted as Serena Whitmore emerged from the adjacent fitting room wearing the identical gown.</p>
-                    
-                    <p>The screen shifted. Adrian Blackwood rose to his full height, his gaze locking onto Vivian.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Audrey settled onto a velvet chaise lounge, idly scanning the nearly empty store. Her gaze snagged on a man&#39;s silhouette partially visible behind a decorative screen. Even in profile, his aristocratic bearing was unmistakable - the kind of man who belonged in tailored suits and boardrooms rather than waiting outside dressing rooms.</p>
+                        
+                        <p>She smirked to herself. Probably some wealthy husband enduring his wife&#39;s shopping spree.</p>
+                        
+                        <p>The fitting room curtain swished open.</p>
+                        
+                        <p>Audrey&#39;s breath caught. The dress transformed Vivian - the delicate fabric clinging to her curves, the strategic cutouts drawing attention to her slender waist. &#34;My God, Viv, you look-&#34;</p>
+                        
+                        <p>&#34;Adrian, what do you think of this one?&#34; A honeyed voice interrupted as Serena Whitmore emerged from the adjacent fitting room wearing the identical gown.</p>
+                        
+                        <p>The screen shifted. Adrian Blackwood rose to his full height, his gaze locking onto Vivian.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Audrey nearly choked on her tongue. So much for the devoted husband theory. Those Mirage Lounge cocktails must have addled her brain to mistake Adrian Blackwood for anyone&#39;s doting spouse.</p>
-                    
-                    <p>The air thickened as Adrian&#39;s dark eyes traveled the length of Vivian&#39;s body. The dress hugged every curve, the high slit revealing toned legs that seemed to go on forever.</p>
-                    
-                    <p>Vivian stood frozen, the color draining from her face as recognition dawned. The boutique&#39;s lights caught the subtle tremble of her fingers where they gripped the delicate fabric.</p>
-                    
-                    <p>Serena&#39;s painted lips curved into something sharp. &#34;Well, isn&#39;t this... interesting.&#34;</p>
-                    
-                    <p>The crimson scar stood out starkly against Vivian&#39;s otherwise flawless skin.</p>
-                    
-                    <p>Adrian&#39;s mind wandered to his grandmother&#39;s famous healing balm, remembering how it had miraculously faded his cousin Bianca&#39;s deep laceration from a skiing accident within weeks.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Audrey nearly choked on her tongue. So much for the devoted husband theory. Those Mirage Lounge cocktails must have addled her brain to mistake Adrian Blackwood for anyone&#39;s doting spouse.</p>
+                        
+                        <p>The air thickened as Adrian&#39;s dark eyes traveled the length of Vivian&#39;s body. The dress hugged every curve, the high slit revealing toned legs that seemed to go on forever.</p>
+                        
+                        <p>Vivian stood frozen, the color draining from her face as recognition dawned. The boutique&#39;s lights caught the subtle tremble of her fingers where they gripped the delicate fabric.</p>
+                        
+                        <p>Serena&#39;s painted lips curved into something sharp. &#34;Well, isn&#39;t this... interesting.&#34;</p>
+                        
+                        <p>The crimson scar stood out starkly against Vivian&#39;s otherwise flawless skin.</p>
+                        
+                        <p>Adrian&#39;s mind wandered to his grandmother&#39;s famous healing balm, remembering how it had miraculously faded his cousin Bianca&#39;s deep laceration from a skiing accident within weeks.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Yet Vivian&#39;s scar remained vivid, a cruel reminder of the injury&#39;s severity.</p>
-                    
-                    <p>Noticing Adrian&#39;s gaze, Vivian instinctively shifted behind a chair, using it as a shield for her leg.</p>
-                    
-                    <p>That scar always made her feel inadequate, especially around him. She wished she could vanish.</p>
-                    
-                    <p>She feared nothing more than Adrian seeing her imperfections - both the visible ones and those hidden in her past.</p>
-                    
-                    <p>As Adrian moved toward her, Serena tugged at his sleeve with honeyed sweetness. &#34;Adrian?&#34;</p>
-                    
-                    <p>He turned with a questioning look. &#34;Yes?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Yet Vivian&#39;s scar remained vivid, a cruel reminder of the injury&#39;s severity.</p>
+                        
+                        <p>Noticing Adrian&#39;s gaze, Vivian instinctively shifted behind a chair, using it as a shield for her leg.</p>
+                        
+                        <p>That scar always made her feel inadequate, especially around him. She wished she could vanish.</p>
+                        
+                        <p>She feared nothing more than Adrian seeing her imperfections - both the visible ones and those hidden in her past.</p>
+                        
+                        <p>As Adrian moved toward her, Serena tugged at his sleeve with honeyed sweetness. &#34;Adrian?&#34;</p>
+                        
+                        <p>He turned with a questioning look. &#34;Yes?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Serena did a playful spin in her dress, eyes bright with expectation. &#34;How do I look?&#34;</p>
-                    
-                    <p>&#34;You look lovely,&#34; Adrian assured, making her face light up.</p>
-                    
-                    <p>With a triumphant smile, Serena approached Vivian. &#34;Ms. Hartley, what a surprise seeing you here! I spilled coffee earlier and Adrian insisted on buying me something new. Hope you don&#39;t mind!&#34;</p>
-                    
-                    <p>She stood beside Vivian, youthful yet provocative. &#34;So Adrian, who wears it better - me or Ms. Hartley?&#34;</p>
-                    
-                    <p>Adrian hesitated, then remembered how that man had caressed Vivian&#39;s leg last night. Had she been wearing this dress, his hands would have touched bare skin.</p>
-                    
-                    <p>Irritation flared. &#34;You wear it far better than she ever could.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Serena did a playful spin in her dress, eyes bright with expectation. &#34;How do I look?&#34;</p>
+                        
+                        <p>&#34;You look lovely,&#34; Adrian assured, making her face light up.</p>
+                        
+                        <p>With a triumphant smile, Serena approached Vivian. &#34;Ms. Hartley, what a surprise seeing you here! I spilled coffee earlier and Adrian insisted on buying me something new. Hope you don&#39;t mind!&#34;</p>
+                        
+                        <p>She stood beside Vivian, youthful yet provocative. &#34;So Adrian, who wears it better - me or Ms. Hartley?&#34;</p>
+                        
+                        <p>Adrian hesitated, then remembered how that man had caressed Vivian&#39;s leg last night. Had she been wearing this dress, his hands would have touched bare skin.</p>
+                        
+                        <p>Irritation flared. &#34;You wear it far better than she ever could.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,13 +1079,17 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Vivian had no interest in this petty competition. She turned toward the fitting room to change.</p>
-                    
-                    <p>Adrian noted her indifference, realizing he&#39;d been too soft. His voice turned sharp. &#34;What even is this dress? It barely covers anything. Can&#39;t you choose something decent?&#34;</p>
-                    
-                    <p>Vivian froze as her old scar throbbed. From Adrian&#39;s focus on her legs, she inferred he found her scars repulsive, needing concealment.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Vivian had no interest in this petty competition. She turned toward the fitting room to change.</p>
+                        
+                        <p>Adrian noted her indifference, realizing he&#39;d been too soft. His voice turned sharp. &#34;What even is this dress? It barely covers anything. Can&#39;t you choose something decent?&#34;</p>
+                        
+                        <p>Vivian froze as her old scar throbbed. From Adrian&#39;s focus on her legs, she inferred he found her scars repulsive, needing concealment.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2341,6 +2405,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2467,7 +2611,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2509,32 +2652,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2545,21 +2670,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2592,6 +2707,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2612,20 +2733,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

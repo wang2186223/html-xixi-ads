@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:45.005168">
-    <meta property="article:modified_time" content="2026-07-19T02:47:45.005168">
+    <meta property="article:published_time" content="2026-07-19T13:03:37.960978">
+    <meta property="article:modified_time" content="2026-07-19T13:03:37.960978">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:45">
+    <meta name="last-modified" content="2026-07-19 13:03:37">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:45.005168",
-        "dateModified": "2026-07-19T02:47:45.005168",
+        "datePublished": "2026-07-19T13:03:37.960978",
+        "dateModified": "2026-07-19T13:03:37.960978",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,23 +893,27 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter14</p>
-                    
-                    <p>“Well, I see. You should get back to your things. I’m off* Thalassa waved to him and then walked to the other side of the road to wait for the bus.</p>
-                    
-                    <p>Man, she almost thought David was slack in work, talk about a facepalm moment.</p>
-                    
-                    <p>Thalassa got home, pushed the door open and a cozy family scene greeted her.</p>
-                    
-                    <p>There was a young woman sitting on the sofa She was petite, with a round face and a pair of lively big eyes. Her dark hair was tied in a ponytail and she looked downright bubbly</p>
-                    
-                    <p>This lady was Thalassa’s good friend. Hertha. Four kids were huddled around Hertha, hanging on every word of her story. Their eyes were filled with curiosity, fixated on her, listening to her tell the tale of the little bunny and the big bad wolf in her playful voice.</p>
-                    
-                    <p>“The bunny thought its mom was back and opened the door. But surprise, the person outside removed the mask to reveal the fierce fangs of the big bad wolf and, Grrrr, it lunged at the bunny.” Hertha’s voice was sometimes high, sometimes low, and she spoke in an animated and interesting manner. She even opened her mouth wide, imitating the appearance of the big bad wolf</p>
-                    
-                    <p>“Don’t eat me. Don’t eat me!” Elowen, who was closest to her, buried her head in her arms, her voice trembling with fear.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter14</p>
+                        
+                        <p>“Well, I see. You should get back to your things. I’m off* Thalassa waved to him and then walked to the other side of the road to wait for the bus.</p>
+                        
+                        <p>Man, she almost thought David was slack in work, talk about a facepalm moment.</p>
+                        
+                        <p>Thalassa got home, pushed the door open and a cozy family scene greeted her.</p>
+                        
+                        <p>There was a young woman sitting on the sofa She was petite, with a round face and a pair of lively big eyes. Her dark hair was tied in a ponytail and she looked downright bubbly</p>
+                        
+                        <p>This lady was Thalassa’s good friend. Hertha. Four kids were huddled around Hertha, hanging on every word of her story. Their eyes were filled with curiosity, fixated on her, listening to her tell the tale of the little bunny and the big bad wolf in her playful voice.</p>
+                        
+                        <p>“The bunny thought its mom was back and opened the door. But surprise, the person outside removed the mask to reveal the fierce fangs of the big bad wolf and, Grrrr, it lunged at the bunny.” Hertha’s voice was sometimes high, sometimes low, and she spoke in an animated and interesting manner. She even opened her mouth wide, imitating the appearance of the big bad wolf</p>
+                        
+                        <p>“Don’t eat me. Don’t eat me!” Elowen, who was closest to her, buried her head in her arms, her voice trembling with fear.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -888,23 +928,27 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Their oldest, Atticus, said aloofly. “This is so childish and boring. That’s not how a wolf howls”</p>
-                    
-                    <p>Their second son, Dorian, had teary eyes and clenched fists in front of his chest, looking helpless and pitiful. He pouted and said, “Poor little bunny”</p>
-                    
-                    <p>Their little daughter, Sophia’s eyes sparkled with determination as she waved her tiny fists, “If the big bad wolf comes, I’ll beat it!”</p>
-                    
-                    <p>Hearing the innocent words of the four kids, Hertha was laughing her head off.</p>
-                    
-                    <p>Thalassa walked in with a bright smile, “Hertha, how come you have time to drop by today?”</p>
-                    
-                    <p>Upon seeing her mom, Elowen quickly covered her face with her hands. The big bad wolf is pretending to be mom. If I can’t see her, she can’t see me…”</p>
-                    
-                    <p>Her reaction sent Hertha into another fit of laughter. She removed Elowen’s hands and pinched her cheeks, “You’re so cute, I could just eat you up. That’s your mom, not the big bad wolf I was just telling a story”</p>
-                    
-                    <p>Elowen’s eyes lit up and she immediately ran into Thalassa’s arms, “Mom, I was so scared.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Their oldest, Atticus, said aloofly. “This is so childish and boring. That’s not how a wolf howls”</p>
+                        
+                        <p>Their second son, Dorian, had teary eyes and clenched fists in front of his chest, looking helpless and pitiful. He pouted and said, “Poor little bunny”</p>
+                        
+                        <p>Their little daughter, Sophia’s eyes sparkled with determination as she waved her tiny fists, “If the big bad wolf comes, I’ll beat it!”</p>
+                        
+                        <p>Hearing the innocent words of the four kids, Hertha was laughing her head off.</p>
+                        
+                        <p>Thalassa walked in with a bright smile, “Hertha, how come you have time to drop by today?”</p>
+                        
+                        <p>Upon seeing her mom, Elowen quickly covered her face with her hands. The big bad wolf is pretending to be mom. If I can’t see her, she can’t see me…”</p>
+                        
+                        <p>Her reaction sent Hertha into another fit of laughter. She removed Elowen’s hands and pinched her cheeks, “You’re so cute, I could just eat you up. That’s your mom, not the big bad wolf I was just telling a story”</p>
+                        
+                        <p>Elowen’s eyes lit up and she immediately ran into Thalassa’s arms, “Mom, I was so scared.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -919,23 +963,27 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Thalassa gently hugged her and patted her back, “Don’t be scared, mom and your brothers will protect you.”</p>
-                    
-                    <p>“Okay” Elowen nodded</p>
-                    
-                    <p>The other kids also came over wanting a hug from Thalassa. Her smile was warm as she hugged each of them, feeling their softness and baby smell. At that moment, she felt like the luckiest woman in the world.</p>
-                    
-                    <p>“Thalassa, I missed the kids. I had some free time today, so I thought I’d come by,” Hertha told Thalassa.</p>
-                    
-                    <p>“Let’s have dinner together tonight. It’s been a while since we last had a meal together, Thalassa said.</p>
-                    
-                    <p>“Sure, I’d love to. By the way. I heard from Evelyn that you’re now working at the Sinclair Group. That’s the best company in our city. You must be pretty kick–ass to get in Hertha’s eyes were sparkling with joy as she felt happy for her friend.</p>
-                    
-                    <p>Thalassa smiled, “Yes, I worked hard I don’t want anyone looking down on me.”</p>
-                    
-                    <p>A confident woman was the most beautifull Thalassa’s pretty face seemed to glow.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Thalassa gently hugged her and patted her back, “Don’t be scared, mom and your brothers will protect you.”</p>
+                        
+                        <p>“Okay” Elowen nodded</p>
+                        
+                        <p>The other kids also came over wanting a hug from Thalassa. Her smile was warm as she hugged each of them, feeling their softness and baby smell. At that moment, she felt like the luckiest woman in the world.</p>
+                        
+                        <p>“Thalassa, I missed the kids. I had some free time today, so I thought I’d come by,” Hertha told Thalassa.</p>
+                        
+                        <p>“Let’s have dinner together tonight. It’s been a while since we last had a meal together, Thalassa said.</p>
+                        
+                        <p>“Sure, I’d love to. By the way. I heard from Evelyn that you’re now working at the Sinclair Group. That’s the best company in our city. You must be pretty kick–ass to get in Hertha’s eyes were sparkling with joy as she felt happy for her friend.</p>
+                        
+                        <p>Thalassa smiled, “Yes, I worked hard I don’t want anyone looking down on me.”</p>
+                        
+                        <p>A confident woman was the most beautifull Thalassa’s pretty face seemed to glow.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -950,23 +998,27 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>“Yes, our Thalassa is very strong. Raising four kids on her own, she’s a very brave woman. How could she be anything less? The key point is that she’s been supporting four kids single–handedly, without ever complaining about being tired. This great achievement is enough to surpass many people,” Hertha praised her from the bottom of her heart.</p>
-                    
-                    <p>She and Thalassa were friends from college. They used to live and eat together. Their friendship was rock solid.</p>
-                    
-                    <p>“Yes, her achievements are indeed commendable, but I’m about to drop dead, Evelyn emerged from the kitchen and plopped the plate heavily on the table, giving Thalassa a slight frown, “Please eat this popcorn chicken quickly. Your kids might not finish it.”</p>
-                    
-                    <p>With that, Evelyn went back to the kitchen to get busy.</p>
-                    
-                    <p>Thalassa and Hertha exchanged glances, and she playfully stuck her tongue out, sitting down to eat the freshly made popcorn chicken.</p>
-                    
-                    <p>The smell was mouthwatepng, and the popcorn chicken was crunchy and delicious. Thalassa had missed lunch, so she was feeling pretty hungry. This was perfect for filling her stomach</p>
-                    
-                    <p>“Mom, I’ll help you eat. Elowen, the foodie, climbed onto the chair to help her mom solve the “problem“.</p>
-                    
-                    <p>With the joint effort of Thalassa and Elowen, the plate of popcorn chicken was quickly wiped clean. Elowen had oil stains at the corners of her mouth, and she looked up at Thalassa with a smile, her eyes curved into crescents, “Mom, I love you the most, can I get a kiss?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“Yes, our Thalassa is very strong. Raising four kids on her own, she’s a very brave woman. How could she be anything less? The key point is that she’s been supporting four kids single–handedly, without ever complaining about being tired. This great achievement is enough to surpass many people,” Hertha praised her from the bottom of her heart.</p>
+                        
+                        <p>She and Thalassa were friends from college. They used to live and eat together. Their friendship was rock solid.</p>
+                        
+                        <p>“Yes, her achievements are indeed commendable, but I’m about to drop dead, Evelyn emerged from the kitchen and plopped the plate heavily on the table, giving Thalassa a slight frown, “Please eat this popcorn chicken quickly. Your kids might not finish it.”</p>
+                        
+                        <p>With that, Evelyn went back to the kitchen to get busy.</p>
+                        
+                        <p>Thalassa and Hertha exchanged glances, and she playfully stuck her tongue out, sitting down to eat the freshly made popcorn chicken.</p>
+                        
+                        <p>The smell was mouthwatepng, and the popcorn chicken was crunchy and delicious. Thalassa had missed lunch, so she was feeling pretty hungry. This was perfect for filling her stomach</p>
+                        
+                        <p>“Mom, I’ll help you eat. Elowen, the foodie, climbed onto the chair to help her mom solve the “problem“.</p>
+                        
+                        <p>With the joint effort of Thalassa and Elowen, the plate of popcorn chicken was quickly wiped clean. Elowen had oil stains at the corners of her mouth, and she looked up at Thalassa with a smile, her eyes curved into crescents, “Mom, I love you the most, can I get a kiss?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -981,23 +1033,27 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>The little one had her mouth full of food, her cheeks puffed out and lips puckered, looking like a little goldfish.</p>
-                    
-                    <p>Thalassa’s heart was melting. “Of course, my Elowen is the best.” She planted a kiss on the little girl’s face.</p>
-                    
-                    <p>Elowen ran off satisfied to play</p>
-                    
-                    <p>Hertha was sitting across from her, her face held in her hands, watching her with envy.</p>
-                    
-                    <p>People thought that Thalassa, raising four kids on her own, would be worn out and may look forty before she even turned thirty. But in reality, it was the exact opposite</p>
-                    
-                    <p>Thalassa was 27 this year, but she looked young and beautiful, just like a girl who had just turned twenty. This was not only because she took care of herself, but also because she had a positive mindset, always optimistic and full of energy</p>
-                    
-                    <p>Also, she was living a happy life every day, which made her look particularly young. Her four kids were also very well–behaved, which made her feel very</p>
-                    
-                    <p>relieved. Having these four little treasures was like having the world’s treasures.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>The little one had her mouth full of food, her cheeks puffed out and lips puckered, looking like a little goldfish.</p>
+                        
+                        <p>Thalassa’s heart was melting. “Of course, my Elowen is the best.” She planted a kiss on the little girl’s face.</p>
+                        
+                        <p>Elowen ran off satisfied to play</p>
+                        
+                        <p>Hertha was sitting across from her, her face held in her hands, watching her with envy.</p>
+                        
+                        <p>People thought that Thalassa, raising four kids on her own, would be worn out and may look forty before she even turned thirty. But in reality, it was the exact opposite</p>
+                        
+                        <p>Thalassa was 27 this year, but she looked young and beautiful, just like a girl who had just turned twenty. This was not only because she took care of herself, but also because she had a positive mindset, always optimistic and full of energy</p>
+                        
+                        <p>Also, she was living a happy life every day, which made her look particularly young. Her four kids were also very well–behaved, which made her feel very</p>
+                        
+                        <p>relieved. Having these four little treasures was like having the world’s treasures.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1012,23 +1068,27 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>“Why are you looking at me like that, do I have something on my face?” Thalassa was curious about Hertha’s gaze and touched her face.</p>
-                    
-                    <p>1 envy you, being loved by four adorable kids every day What a bliss, Hertha said, wishing for the same happiness</p>
-                    
-                    <p>Haha, you could pop out a bunch of kiddos after you get hitched too, Thalassa chuckled, welcoming her admiration.</p>
-                    
-                    <p>“Why do you have to get married before having children? I can be like you Wait until the kids are four or five years old and still not tell them who their dad Is, as long as they don’t need their dad around Hertha said something shocking</p>
-                    
-                    <p>Thalassa quickly clamped her mouth shut, casting a wary glance towards the kitchen, worried that Evelyn might overhear. She lowered her voice. “Shush it, lady It’s not like I’m purposely keeping it under wraps I genuinely have no clue who their dad is.”</p>
-                    
-                    <p>She had thought about tracking down the guy before, but how was she supposed to do that? There were so many people in the whole wide world, she can’t possibly go around asking every single one, can she?</p>
-                    
-                    <p>“Seriously, not a single clue?‘ Hertha leaned in closer, her eyes brimming with curiosity.</p>
-                    
-                    <p>The four kids are so cute, they don’t particularly resemble Thalassa, they must have gotten their good looks from their old man. Hertha was dying to see. just what kind of guy was the father of these little munchkins.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>“Why are you looking at me like that, do I have something on my face?” Thalassa was curious about Hertha’s gaze and touched her face.</p>
+                        
+                        <p>1 envy you, being loved by four adorable kids every day What a bliss, Hertha said, wishing for the same happiness</p>
+                        
+                        <p>Haha, you could pop out a bunch of kiddos after you get hitched too, Thalassa chuckled, welcoming her admiration.</p>
+                        
+                        <p>“Why do you have to get married before having children? I can be like you Wait until the kids are four or five years old and still not tell them who their dad Is, as long as they don’t need their dad around Hertha said something shocking</p>
+                        
+                        <p>Thalassa quickly clamped her mouth shut, casting a wary glance towards the kitchen, worried that Evelyn might overhear. She lowered her voice. “Shush it, lady It’s not like I’m purposely keeping it under wraps I genuinely have no clue who their dad is.”</p>
+                        
+                        <p>She had thought about tracking down the guy before, but how was she supposed to do that? There were so many people in the whole wide world, she can’t possibly go around asking every single one, can she?</p>
+                        
+                        <p>“Seriously, not a single clue?‘ Hertha leaned in closer, her eyes brimming with curiosity.</p>
+                        
+                        <p>The four kids are so cute, they don’t particularly resemble Thalassa, they must have gotten their good looks from their old man. Hertha was dying to see. just what kind of guy was the father of these little munchkins.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1043,11 +1103,15 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>As Hertha was grilling Thalassa, the four little ones sneaked to the wall, poking their heads out, eavesdropping on their conversation.</p>
-                    
-                    <p>They too, wanted to know, who their daddy was.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>As Hertha was grilling Thalassa, the four little ones sneaked to the wall, poking their heads out, eavesdropping on their conversation.</p>
+                        
+                        <p>They too, wanted to know, who their daddy was.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2363,6 +2427,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2489,7 +2633,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2531,32 +2674,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2567,21 +2692,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2614,6 +2729,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2634,20 +2755,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

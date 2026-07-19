@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>A warm glow spread through her chest as she realized this extraordinary man was truly hers. Vivian, long accustomed to being the most admired woman in any room, found greater pride in seeing her classmates awestruck by her husband than she&#39;d ever felt from personal compliments.</p>
-                    
-                    <p>There was a time she&#39;d felt like mere dust at Adrian&#39;s feet, only notable through reflected glory. But now she understood - she belonged beside him at the summit, not beneath it.</p>
-                    
-                    <p>Vivian shook her head slightly, trying to clear her thoughts as she sipped the hotel&#39;s complimentary tea. It was passable but had an unpleasant bitterness that made her wrinkle her nose. She set the cup down with a quiet sigh.</p>
-                    
-                    <p>Giselle had arranged this reunion dinner at the Blackwood Group&#39;s Harbor Grand Hotel, flaunting her connections while being surprisingly stingy with the food and drinks. When Adrian paused at the doorway, whispers immediately rippled through the room. &#34;Is Mr. Blackwood here for us?&#34; someone murmured. Another glanced at Dominic and speculated, &#34;Maybe he&#39;s here because of Mr. Sinclair?&#34;</p>
-                    
-                    <p>&#34;Don&#39;t be ridiculous,&#34; another scoffed. &#34;The CEO attending his uncle&#39;s girlfriend&#39;s class reunion? That&#39;s a stretch.&#34;</p>
-                    
-                    <p>A more plausible theory emerged: &#34;Since Giselle is dating Mr. Thornton and this is a Blackwood property, maybe he sent Adrian to comp our meal.&#34; This explanation seemed to satisfy the group, and they turned to Giselle with excited chatter. &#34;Giselle, we&#39;re so lucky tonight! Having Mr. Blackwood join us is like winning the lottery!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>A warm glow spread through her chest as she realized this extraordinary man was truly hers. Vivian, long accustomed to being the most admired woman in any room, found greater pride in seeing her classmates awestruck by her husband than she&#39;d ever felt from personal compliments.</p>
+                        
+                        <p>There was a time she&#39;d felt like mere dust at Adrian&#39;s feet, only notable through reflected glory. But now she understood - she belonged beside him at the summit, not beneath it.</p>
+                        
+                        <p>Vivian shook her head slightly, trying to clear her thoughts as she sipped the hotel&#39;s complimentary tea. It was passable but had an unpleasant bitterness that made her wrinkle her nose. She set the cup down with a quiet sigh.</p>
+                        
+                        <p>Giselle had arranged this reunion dinner at the Blackwood Group&#39;s Harbor Grand Hotel, flaunting her connections while being surprisingly stingy with the food and drinks. When Adrian paused at the doorway, whispers immediately rippled through the room. &#34;Is Mr. Blackwood here for us?&#34; someone murmured. Another glanced at Dominic and speculated, &#34;Maybe he&#39;s here because of Mr. Sinclair?&#34;</p>
+                        
+                        <p>&#34;Don&#39;t be ridiculous,&#34; another scoffed. &#34;The CEO attending his uncle&#39;s girlfriend&#39;s class reunion? That&#39;s a stretch.&#34;</p>
+                        
+                        <p>A more plausible theory emerged: &#34;Since Giselle is dating Mr. Thornton and this is a Blackwood property, maybe he sent Adrian to comp our meal.&#34; This explanation seemed to satisfy the group, and they turned to Giselle with excited chatter. &#34;Giselle, we&#39;re so lucky tonight! Having Mr. Blackwood join us is like winning the lottery!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Giselle sat frozen, her usual confidence shaken by Adrian&#39;s unexpected appearance. She&#39;d convinced herself he&#39;d come specifically for her. The possibility made her pulse race. &#34;Maybe he&#39;s just passing through,&#34; she muttered weakly.</p>
-                    
-                    <p>Audrey rolled her eyes dramatically. &#34;Some people will claim connections anywhere. Know your place - you&#39;re just the girlfriend of Adrian&#39;s uncle. The Blackwoods wouldn&#39;t even acknowledge you. And you think Adrian would attend a class reunion for you? Keep dreaming - it&#39;s already nighttime.&#34;</p>
-                    
-                    <p>Dominic gave Audrey an affectionate look and took her hand, ignoring everyone else. Though Giselle shot Audrey a venomous glare, she held her tongue because of Dominic&#39;s presence and redirected her anger toward Vivian instead. Her eyes darted between the two women. &#34;If Mr. Blackwood isn&#39;t here for me, then who? Surely not for Vivian?&#34;</p>
-                    
-                    <p>&#34;Actually, I&#39;m here for my wife,&#34; Adrian declared before striding confidently into the room.</p>
-                    
-                    <p>&#34;Wife?&#34; A stunned silence fell as everyone exchanged confused glances, scanning the room to identify who among them could possibly be Adrian Blackwood&#39;s wife.</p>
-                    
-                    <p>Audrey&#39;s eyes gleamed with satisfaction as she surveyed the shocked faces around her. A knowing smirk played on her lips as she turned to the man sitting beside Vivian. &#34;Hey, don&#39;t you see her husband&#39;s arrived? Maybe you should make some space for him.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Giselle sat frozen, her usual confidence shaken by Adrian&#39;s unexpected appearance. She&#39;d convinced herself he&#39;d come specifically for her. The possibility made her pulse race. &#34;Maybe he&#39;s just passing through,&#34; she muttered weakly.</p>
+                        
+                        <p>Audrey rolled her eyes dramatically. &#34;Some people will claim connections anywhere. Know your place - you&#39;re just the girlfriend of Adrian&#39;s uncle. The Blackwoods wouldn&#39;t even acknowledge you. And you think Adrian would attend a class reunion for you? Keep dreaming - it&#39;s already nighttime.&#34;</p>
+                        
+                        <p>Dominic gave Audrey an affectionate look and took her hand, ignoring everyone else. Though Giselle shot Audrey a venomous glare, she held her tongue because of Dominic&#39;s presence and redirected her anger toward Vivian instead. Her eyes darted between the two women. &#34;If Mr. Blackwood isn&#39;t here for me, then who? Surely not for Vivian?&#34;</p>
+                        
+                        <p>&#34;Actually, I&#39;m here for my wife,&#34; Adrian declared before striding confidently into the room.</p>
+                        
+                        <p>&#34;Wife?&#34; A stunned silence fell as everyone exchanged confused glances, scanning the room to identify who among them could possibly be Adrian Blackwood&#39;s wife.</p>
+                        
+                        <p>Audrey&#39;s eyes gleamed with satisfaction as she surveyed the shocked faces around her. A knowing smirk played on her lips as she turned to the man sitting beside Vivian. &#34;Hey, don&#39;t you see her husband&#39;s arrived? Maybe you should make some space for him.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>The man blinked in confusion, his gaze darting between the women before landing on Vivian with utter disbelief. &#34;You mean... Vivian? She&#39;s Mrs. Blackwood?&#34;</p>
-                    
-                    <p>&#34;Vivian? His wife?&#34; Every head swiveled between Vivian and Adrian like spectators at a tennis match. The revelation hit like lightning, leaving the crowd momentarily speechless. But when they objectively compared all the women present, the conclusion was inescapable - Vivian was clearly the only possible candidate.</p>
-                    
-                    <p>No one looked more shocked than Giselle, whose voice rose an octave as she blurted, &#34;That&#39;s impossible! I thought Vivian&#39;s husband was just some low-level Blackwood Group employee!&#34;</p>
-                    
-                    <p>Adrian, completely unfazed by the whispers, approached Vivian with the effortless confidence of a man who owned every room he entered. The man beside her practically leapt from his chair, nearly knocking over a glass in his haste. He grabbed a napkin and frantically wiped down the seat as if preparing a throne before bowing slightly. &#34;Mr. Blackwood, please, have a seat.&#34;</p>
-                    
-                    <p>Adrian&#39;s lips quirked in amusement at the napkin display before settling gracefully beside Vivian. Leaning close, he flicked her nose playfully, his warm smile laced with teasing. &#34;So this is how you introduce me to your old friends? As a low-level employee?&#34;</p>
-                    
-                    <p>The air in the luxurious hotel suite grew thick with tension as Adrian Blackwood&#39;s voice cut through the murmurs. &#34;At Blackwood Group? Is that truly how you see me?&#34; His words dripped with playful charm, yet carried an undercurrent of feigned hurt that made several women clutch their champagne flutes tighter. This was a dance they&#39;d performed countless times before, and Adrian executed it with the effortless grace of a man born to command attention.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>The man blinked in confusion, his gaze darting between the women before landing on Vivian with utter disbelief. &#34;You mean... Vivian? She&#39;s Mrs. Blackwood?&#34;</p>
+                        
+                        <p>&#34;Vivian? His wife?&#34; Every head swiveled between Vivian and Adrian like spectators at a tennis match. The revelation hit like lightning, leaving the crowd momentarily speechless. But when they objectively compared all the women present, the conclusion was inescapable - Vivian was clearly the only possible candidate.</p>
+                        
+                        <p>No one looked more shocked than Giselle, whose voice rose an octave as she blurted, &#34;That&#39;s impossible! I thought Vivian&#39;s husband was just some low-level Blackwood Group employee!&#34;</p>
+                        
+                        <p>Adrian, completely unfazed by the whispers, approached Vivian with the effortless confidence of a man who owned every room he entered. The man beside her practically leapt from his chair, nearly knocking over a glass in his haste. He grabbed a napkin and frantically wiped down the seat as if preparing a throne before bowing slightly. &#34;Mr. Blackwood, please, have a seat.&#34;</p>
+                        
+                        <p>Adrian&#39;s lips quirked in amusement at the napkin display before settling gracefully beside Vivian. Leaning close, he flicked her nose playfully, his warm smile laced with teasing. &#34;So this is how you introduce me to your old friends? As a low-level employee?&#34;</p>
+                        
+                        <p>The air in the luxurious hotel suite grew thick with tension as Adrian Blackwood&#39;s voice cut through the murmurs. &#34;At Blackwood Group? Is that truly how you see me?&#34; His words dripped with playful charm, yet carried an undercurrent of feigned hurt that made several women clutch their champagne flutes tighter. This was a dance they&#39;d performed countless times before, and Adrian executed it with the effortless grace of a man born to command attention.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Vivian Hartley&#39;s lips curved into a knowing smirk as her gaze slid toward Giselle like a dagger finding its mark. &#34;I never made such claims. She came up with that all on her own.&#34;</p>
-                    
-                    <p>An icy chill swept through the gathering as realization dawned on the assembled guests. Before Vivian&#39;s dramatic entrance, many had ingratiated themselves with Giselle by making snide remarks about Vivian. Now, their palms grew clammy as they mentally reviewed every word, praying they hadn&#39;t crossed invisible lines. Those who decided they&#39;d stayed within bounds exhaled in relief, edging closer to Adrian as if drawn by magnetic force.</p>
-                    
-                    <p>Giselle looked as though she&#39;d been slapped. She collapsed into a chair, her humiliation painting stark lines across her carefully made-up face. But no one spared her a glance - all attention had shifted to the power couple dominating the room.</p>
-                    
-                    <p>The class president, ever the opportunist, seized the most expensive champagne bottle on the table - a vintage that retailed for three thousand Sterling but carried a six-thousand-Sterling price tag at the hotel. Just moments ago, it had been the center of admiration, but now, in Adrian&#39;s presence, it might as well have been tap water.</p>
-                    
-                    <p>A classmate whose family owned a manufacturing plant snapped his fingers at a waiter. &#34;Bring us a bottle of &#39;89 Margaux!&#34; Adrian barely flicked a glance his way. His voice remained casually dismissive as he addressed the server. &#34;Just bring three bottles from my private reserve.&#34; His intense gaze never left Vivian, as if the rest of the room had faded into irrelevance.</p>
-                    
-                    <p>The factory heir practically vibrated with eagerness. &#34;Yes, absolutely! Whatever Mr. Blackwood prefers!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Vivian Hartley&#39;s lips curved into a knowing smirk as her gaze slid toward Giselle like a dagger finding its mark. &#34;I never made such claims. She came up with that all on her own.&#34;</p>
+                        
+                        <p>An icy chill swept through the gathering as realization dawned on the assembled guests. Before Vivian&#39;s dramatic entrance, many had ingratiated themselves with Giselle by making snide remarks about Vivian. Now, their palms grew clammy as they mentally reviewed every word, praying they hadn&#39;t crossed invisible lines. Those who decided they&#39;d stayed within bounds exhaled in relief, edging closer to Adrian as if drawn by magnetic force.</p>
+                        
+                        <p>Giselle looked as though she&#39;d been slapped. She collapsed into a chair, her humiliation painting stark lines across her carefully made-up face. But no one spared her a glance - all attention had shifted to the power couple dominating the room.</p>
+                        
+                        <p>The class president, ever the opportunist, seized the most expensive champagne bottle on the table - a vintage that retailed for three thousand Sterling but carried a six-thousand-Sterling price tag at the hotel. Just moments ago, it had been the center of admiration, but now, in Adrian&#39;s presence, it might as well have been tap water.</p>
+                        
+                        <p>A classmate whose family owned a manufacturing plant snapped his fingers at a waiter. &#34;Bring us a bottle of &#39;89 Margaux!&#34; Adrian barely flicked a glance his way. His voice remained casually dismissive as he addressed the server. &#34;Just bring three bottles from my private reserve.&#34; His intense gaze never left Vivian, as if the rest of the room had faded into irrelevance.</p>
+                        
+                        <p>The factory heir practically vibrated with eagerness. &#34;Yes, absolutely! Whatever Mr. Blackwood prefers!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>The waiter, unfazed by the sycophantic display, nodded professionally before disappearing. When he returned with three unassuming bottles, a wine connoisseur among the guests leaned forward, his eyes widening. &#34;My God... each of these is worth nearly a million Sterling. Extraordinary.&#34;</p>
-                    
-                    <p>At this revelation, the women abandoned their wistful glances at Adrian, redirecting their envy toward Vivian. Phones appeared like magic, snapping photos of the rare vintages as if capturing unicorns. Even if Adrian remained unattainable, these images would be social media gold - tangible proof they&#39;d brushed against true luxury. Perhaps the right person might notice.</p>
-                    
-                    <p>The men weren&#39;t far behind, though their motivations leaned more toward networking than social climbing. The class president, sensing an opportunity, poured two glasses from the priceless bottle and approached Adrian with the reverence of a pilgrim approaching a shrine. &#34;Mr. Blackwood, it&#39;s an honor beyond words. Thanks to our class beauty here, I have this chance to toast with you. Would you do me the honor?&#34;</p>
-                    
-                    <p>Adrian&#39;s attention shifted from the offered glass to Vivian. &#34;Darling,&#34; he murmured, the endearment sending ripples through the room, &#34;may I have a drink?&#34;</p>
-                    
-                    <p>The sudden silence was so complete one could hear a pin drop. Even Dominic Sinclair, normally unflappable, sat up straighter. The cigarette between his fingers burned unnoticed to ash as he struggled to reconcile the Adrian he knew - the man he&#39;d practically worshipped - with this besotted version currently seeking his wife&#39;s permission for a drink. It felt like witnessing the laws of physics rewrite themselves.</p>
-                    
-                    <p>Audrey Winslow shot a pointed look at Giselle, whose face had frozen into a mask of humiliation, then nudged Vivian with a conspiratorial grin. &#34;Mrs. Blackwood, don&#39;t leave our poor class rep hanging! He&#39;s been holding that glass so long his arm must be numb. If you don&#39;t give the okay, I doubt your husband will even consider that toast.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>The waiter, unfazed by the sycophantic display, nodded professionally before disappearing. When he returned with three unassuming bottles, a wine connoisseur among the guests leaned forward, his eyes widening. &#34;My God... each of these is worth nearly a million Sterling. Extraordinary.&#34;</p>
+                        
+                        <p>At this revelation, the women abandoned their wistful glances at Adrian, redirecting their envy toward Vivian. Phones appeared like magic, snapping photos of the rare vintages as if capturing unicorns. Even if Adrian remained unattainable, these images would be social media gold - tangible proof they&#39;d brushed against true luxury. Perhaps the right person might notice.</p>
+                        
+                        <p>The men weren&#39;t far behind, though their motivations leaned more toward networking than social climbing. The class president, sensing an opportunity, poured two glasses from the priceless bottle and approached Adrian with the reverence of a pilgrim approaching a shrine. &#34;Mr. Blackwood, it&#39;s an honor beyond words. Thanks to our class beauty here, I have this chance to toast with you. Would you do me the honor?&#34;</p>
+                        
+                        <p>Adrian&#39;s attention shifted from the offered glass to Vivian. &#34;Darling,&#34; he murmured, the endearment sending ripples through the room, &#34;may I have a drink?&#34;</p>
+                        
+                        <p>The sudden silence was so complete one could hear a pin drop. Even Dominic Sinclair, normally unflappable, sat up straighter. The cigarette between his fingers burned unnoticed to ash as he struggled to reconcile the Adrian he knew - the man he&#39;d practically worshipped - with this besotted version currently seeking his wife&#39;s permission for a drink. It felt like witnessing the laws of physics rewrite themselves.</p>
+                        
+                        <p>Audrey Winslow shot a pointed look at Giselle, whose face had frozen into a mask of humiliation, then nudged Vivian with a conspiratorial grin. &#34;Mrs. Blackwood, don&#39;t leave our poor class rep hanging! He&#39;s been holding that glass so long his arm must be numb. If you don&#39;t give the okay, I doubt your husband will even consider that toast.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Laughter filled the private dining room as Vivian&#39;s former classmates joined in the playful banter. &#34;Come on, Vivian! You remember us from Crestwood High, don&#39;t you? We weren&#39;t all that terrible! We helped you with cleaning duty, covered for you sometimes - give us some credit here!&#34; A particularly bold woman winked. &#34;We&#39;re not trying to steal your husband. Just let us toast to his success - maybe some of that Blackwood magic will rub off on us!&#34;</p>
-                    
-                    <p>Vivian&#39;s lips curved as she glanced at Adrian, her chest swelling with quiet pride. She gave a subtle nod, her voice barely above a whisper yet carrying undeniable authority. &#34;One drink.&#34;</p>
-                    
-                    <p>That single permission sent the entire table scrambling to their feet. Crystal glasses clinked as everyone except Giselle raised their drinks with eager smiles. They downed their champagne in one go while Adrian merely touched the rim to his lips, the liquid barely diminishing. The unspoken message wasn&#39;t lost on anyone present. Very few people in Crestwood - or anywhere in the world, for that matter - could claim to have persuaded Adrian Blackwood to finish an entire glass.</p>
-                    
-                    <p>As the toasting continued, waiters began circulating with dish after extravagant dish - none of which had been on the original menu. Towering seafood platters with rare delicacies, truffle-infused appetizers, and bottles of vintage Dom Pérignon appeared as if by magic. Everyone knew the sudden upgrade came courtesy of Adrian&#39;s presence - a privilege Vivian had effortlessly commanded. And it had absolutely nothing to do with Giselle.</p>
-                    
-                    <p>Giselle, who had arrived as the undisputed queen of this reunion, now sat stiffly in her chair, her manicured nails digging into the tablecloth. The lavish spread before her - delicacies she could never afford on her sugar daddy&#39;s allowance - only twisted the knife deeper. Each glance at Vivian and her perfect life sent waves of bitter resentment crashing through her. She stared at her untouched plate, appetite completely gone.</p>
-                    
-                    <p>The cheerful chatter around her might as well have been happening in another universe. Audrey, noticing Giselle&#39;s miserable expression, couldn&#39;t help but smirk. Even Adrian - whom she normally found intimidating - seemed almost pleasant tonight.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Laughter filled the private dining room as Vivian&#39;s former classmates joined in the playful banter. &#34;Come on, Vivian! You remember us from Crestwood High, don&#39;t you? We weren&#39;t all that terrible! We helped you with cleaning duty, covered for you sometimes - give us some credit here!&#34; A particularly bold woman winked. &#34;We&#39;re not trying to steal your husband. Just let us toast to his success - maybe some of that Blackwood magic will rub off on us!&#34;</p>
+                        
+                        <p>Vivian&#39;s lips curved as she glanced at Adrian, her chest swelling with quiet pride. She gave a subtle nod, her voice barely above a whisper yet carrying undeniable authority. &#34;One drink.&#34;</p>
+                        
+                        <p>That single permission sent the entire table scrambling to their feet. Crystal glasses clinked as everyone except Giselle raised their drinks with eager smiles. They downed their champagne in one go while Adrian merely touched the rim to his lips, the liquid barely diminishing. The unspoken message wasn&#39;t lost on anyone present. Very few people in Crestwood - or anywhere in the world, for that matter - could claim to have persuaded Adrian Blackwood to finish an entire glass.</p>
+                        
+                        <p>As the toasting continued, waiters began circulating with dish after extravagant dish - none of which had been on the original menu. Towering seafood platters with rare delicacies, truffle-infused appetizers, and bottles of vintage Dom Pérignon appeared as if by magic. Everyone knew the sudden upgrade came courtesy of Adrian&#39;s presence - a privilege Vivian had effortlessly commanded. And it had absolutely nothing to do with Giselle.</p>
+                        
+                        <p>Giselle, who had arrived as the undisputed queen of this reunion, now sat stiffly in her chair, her manicured nails digging into the tablecloth. The lavish spread before her - delicacies she could never afford on her sugar daddy&#39;s allowance - only twisted the knife deeper. Each glance at Vivian and her perfect life sent waves of bitter resentment crashing through her. She stared at her untouched plate, appetite completely gone.</p>
+                        
+                        <p>The cheerful chatter around her might as well have been happening in another universe. Audrey, noticing Giselle&#39;s miserable expression, couldn&#39;t help but smirk. Even Adrian - whom she normally found intimidating - seemed almost pleasant tonight.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,13 +1079,17 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Leaning toward Vivian, she murmured with mock seriousness, &#34;You know, fate works in mysterious ways. Seeing how Adrian&#39;s changed for you, I&#39;m almost glad I failed to convince you to divorce him that year.&#34;</p>
-                    
-                    <p>Vivian&#39;s eyes softened as she squeezed Audrey&#39;s hand. &#34;Dominic treats you wonderfully too,&#34; she replied quietly. Their shared glance spoke volumes - beneath the teasing lay genuine happiness for each other&#39;s good fortune.</p>
-                    
-                    <p>Adrian, having spent the evening subtly doting on Vivian, had clearly earned her affection. She decided to reciprocate by playing the attentive wife, reaching for a crab to peel for him. But before she could get her fingers messy, Audrey slid a small bowl toward her - already filled with perfectly shelled crab meat and shrimp, courtesy of Dominic&#39;s meticulous efforts.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Leaning toward Vivian, she murmured with mock seriousness, &#34;You know, fate works in mysterious ways. Seeing how Adrian&#39;s changed for you, I&#39;m almost glad I failed to convince you to divorce him that year.&#34;</p>
+                        
+                        <p>Vivian&#39;s eyes softened as she squeezed Audrey&#39;s hand. &#34;Dominic treats you wonderfully too,&#34; she replied quietly. Their shared glance spoke volumes - beneath the teasing lay genuine happiness for each other&#39;s good fortune.</p>
+                        
+                        <p>Adrian, having spent the evening subtly doting on Vivian, had clearly earned her affection. She decided to reciprocate by playing the attentive wife, reaching for a crab to peel for him. But before she could get her fingers messy, Audrey slid a small bowl toward her - already filled with perfectly shelled crab meat and shrimp, courtesy of Dominic&#39;s meticulous efforts.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2341,6 +2405,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2467,7 +2611,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2509,32 +2652,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2545,21 +2670,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2592,6 +2707,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2612,20 +2733,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

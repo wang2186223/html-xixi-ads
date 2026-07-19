@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.017318">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.017318">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.203112">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.203112">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.017318",
-        "dateModified": "2026-07-19T02:47:19.017318",
+        "datePublished": "2026-07-19T13:03:14.203112",
+        "dateModified": "2026-07-19T13:03:14.203112",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,27 +893,31 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Blake&#39;s POV**</p>
-                    
-                    <p>I watched Laurel&#39;s face pale in the moonlight as my proposal sank in.She swallowed hard before speaking.</p>
-                    
-                    <p>&#34;Blake darling, I don&#39;t want this,&#34; she said, voice barely above a whisper.</p>
-                    
-                    <p>&#34;I know,&#34; I cut in.&#34;You don&#39;t want people finding out the Rose family lied for four years.&#34;</p>
-                    
-                    <p>I kept my voice level. &#34;But my medical team is already on their way.These specialists aren&#39;t just coming for you. They&#39;re experts in waking vegetative patients- the same team that woke me.&#34;</p>
-                    
-                    <p>&#34;With them, your condition will improve, and Rachel will likely wake up too. Better to acknowledge her existence now than have her suddenly reappear later.&#34;</p>
-                    
-                    <p>I softened my tone. &#34;Rachel&#39;s situation is unique. The Rose family has taken care of her these past four years. People will understand.&#34;</p>
-                    
-                    <p>&#34;Besides,&#34; I added, &#34;you and Rachel are sisters. When I was blind and you couldn&#39;t speak, Rachel helped us connect. We might never have found each other without her.&#34;</p>
-                    
-                    <p>&#34;She was our matchmaker. She deserves to be at our engagement.&#34;</p>
-                    
-                    <p>Laurel remained silent, weighing her options. Finally, she looked up.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Blake&#39;s POV**</p>
+                        
+                        <p>I watched Laurel&#39;s face pale in the moonlight as my proposal sank in.She swallowed hard before speaking.</p>
+                        
+                        <p>&#34;Blake darling, I don&#39;t want this,&#34; she said, voice barely above a whisper.</p>
+                        
+                        <p>&#34;I know,&#34; I cut in.&#34;You don&#39;t want people finding out the Rose family lied for four years.&#34;</p>
+                        
+                        <p>I kept my voice level. &#34;But my medical team is already on their way.These specialists aren&#39;t just coming for you. They&#39;re experts in waking vegetative patients- the same team that woke me.&#34;</p>
+                        
+                        <p>&#34;With them, your condition will improve, and Rachel will likely wake up too. Better to acknowledge her existence now than have her suddenly reappear later.&#34;</p>
+                        
+                        <p>I softened my tone. &#34;Rachel&#39;s situation is unique. The Rose family has taken care of her these past four years. People will understand.&#34;</p>
+                        
+                        <p>&#34;Besides,&#34; I added, &#34;you and Rachel are sisters. When I was blind and you couldn&#39;t speak, Rachel helped us connect. We might never have found each other without her.&#34;</p>
+                        
+                        <p>&#34;She was our matchmaker. She deserves to be at our engagement.&#34;</p>
+                        
+                        <p>Laurel remained silent, weighing her options. Finally, she looked up.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -892,27 +932,31 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Is having Audrey wheel Rachel to our engagement a condition?&#34; Her voice grew firmer. &#34;If I refuse, you won&#39;t go through with it?&#34;</p>
-                    
-                    <p>I looked away.&#34;Ifyou reject this, I&#39;ll wait until you&#39;re ready.&#34;</p>
-                    
-                    <p>Her body stiffened, hands clenching into fists, knuckles white.</p>
-                    
-                    <p>&#34;Is this Audrey&#39;s idea?&#34; she asked bitterly.′′Does she want to take care of Rachel?&#34;</p>
-                    
-                    <p>&#34;This has nothing to do with her,&#34; I said firmly.</p>
-                    
-                    <p>&#34;Really?&#34; Laurel forced a smile through obvious pain. &#34;Blake darling, I&#39;ve been waiting to marry you five years ago.&#34;</p>
-                    
-                    <p>Her voice trembled. &#34;Now I&#39;m dying, and I know you probably don&#39;t want to marry me. I just wanted our engagement. Even for that simple wish,you&#39;re using it to please Audrey.&#34;</p>
-                    
-                    <p>She took a deep breath. &#34;Fine! I agree! Rachel&#39;s existence will become public eventually. Maybe announcing it at our engagement will minimize the damage.&#34;</p>
-                    
-                    <p>Her expression turned serious. &#34;But you need to promise me something.From today on, you can&#39;t meet Audrey alone anymore. Can you do that?&#34;</p>
-                    
-                    <p>I frowned, considering briefly before nodding.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Is having Audrey wheel Rachel to our engagement a condition?&#34; Her voice grew firmer. &#34;If I refuse, you won&#39;t go through with it?&#34;</p>
+                        
+                        <p>I looked away.&#34;Ifyou reject this, I&#39;ll wait until you&#39;re ready.&#34;</p>
+                        
+                        <p>Her body stiffened, hands clenching into fists, knuckles white.</p>
+                        
+                        <p>&#34;Is this Audrey&#39;s idea?&#34; she asked bitterly.′′Does she want to take care of Rachel?&#34;</p>
+                        
+                        <p>&#34;This has nothing to do with her,&#34; I said firmly.</p>
+                        
+                        <p>&#34;Really?&#34; Laurel forced a smile through obvious pain. &#34;Blake darling, I&#39;ve been waiting to marry you five years ago.&#34;</p>
+                        
+                        <p>Her voice trembled. &#34;Now I&#39;m dying, and I know you probably don&#39;t want to marry me. I just wanted our engagement. Even for that simple wish,you&#39;re using it to please Audrey.&#34;</p>
+                        
+                        <p>She took a deep breath. &#34;Fine! I agree! Rachel&#39;s existence will become public eventually. Maybe announcing it at our engagement will minimize the damage.&#34;</p>
+                        
+                        <p>Her expression turned serious. &#34;But you need to promise me something.From today on, you can&#39;t meet Audrey alone anymore. Can you do that?&#34;</p>
+                        
+                        <p>I frowned, considering briefly before nodding.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -927,27 +971,31 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Relief crossed her features. &#34;Then it&#39;s settled.&#34;</p>
-                    
-                    <p>Her face brightened. &#34;Tomorrow we&#39;ll shop for wedding dresses and rings and start preparing for the ceremony, okay?&#34;</p>
-                    
-                    <p>I made a short sound of agreement, then started walking toward the mansíon. &#34;Which floor is Rachel on?&#34;</p>
-                    
-                    <p>Laurel hurried to catch up, linking her arm through mine. &#34;Third floor! T&#39;ll take you to her!&#34;</p>
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>I stared at the ceiling in darkness, unable to sleep. My mind kept shifting between memories of caring for Blake with Rachel by my side five years ago and the bitter present where Laurel stood smugly at his side.</p>
-                    
-                    <p>A gentle knock interrupted my thoughts. Astrid entered with a glass of water and pills,switching on the wall light.</p>
-                    
-                    <p>&#34;Still up, huh?&#34; she asked, voice slightly hoarse.</p>
-                    
-                    <p>She sat beside me. &#34;Ethan got these from Dr. Evans through his roommate.&#34;</p>
-                    
-                    <p>&#34;They won&#39;t hurt your stomach, but they&#39;ll help you sleep.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Relief crossed her features. &#34;Then it&#39;s settled.&#34;</p>
+                        
+                        <p>Her face brightened. &#34;Tomorrow we&#39;ll shop for wedding dresses and rings and start preparing for the ceremony, okay?&#34;</p>
+                        
+                        <p>I made a short sound of agreement, then started walking toward the mansíon. &#34;Which floor is Rachel on?&#34;</p>
+                        
+                        <p>Laurel hurried to catch up, linking her arm through mine. &#34;Third floor! T&#39;ll take you to her!&#34;</p>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>I stared at the ceiling in darkness, unable to sleep. My mind kept shifting between memories of caring for Blake with Rachel by my side five years ago and the bitter present where Laurel stood smugly at his side.</p>
+                        
+                        <p>A gentle knock interrupted my thoughts. Astrid entered with a glass of water and pills,switching on the wall light.</p>
+                        
+                        <p>&#34;Still up, huh?&#34; she asked, voice slightly hoarse.</p>
+                        
+                        <p>She sat beside me. &#34;Ethan got these from Dr. Evans through his roommate.&#34;</p>
+                        
+                        <p>&#34;They won&#39;t hurt your stomach, but they&#39;ll help you sleep.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -962,27 +1010,31 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>I managed a weak smile. &#34;Thanks.&#34;</p>
-                    
-                    <p>After taking the medicine, I watched as Astrid walked to the door.</p>
-                    
-                    <p>&#34;Try not to overthink,&#34; she said, sighing. &#34;I talked to my boss. He has connections with Rose enterprises.&#34;</p>
-                    
-                    <p>&#34;If Laurel and Mrs. Rose won&#39;t help, I&#39;ll try Mr. Rose directly. Maybe he&#39;ll let us see Rachel.&#34;</p>
-                    
-                    <p>She turned off the light. &#34;I want to see her just as much as you do.&#34;</p>
-                    
-                    <p>After she left, I wiped away my tears in the darkness. The medication gradually took effect, and I finally slept deeply.</p>
-                    
-                    <p>The next morning, urgent knocking jolted me awake. Astrid burst in before I could fully come to my senses.</p>
-                    
-                    <p>&#34;Audrey, big news!&#34; she shouted, dressed in bright red, her hair wild.</p>
-                    
-                    <p>I sat up groggily、&#34;What now?&#34;</p>
-                    
-                    <p>&#34;Look!&#34; She thrust her phone into my hands.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>I managed a weak smile. &#34;Thanks.&#34;</p>
+                        
+                        <p>After taking the medicine, I watched as Astrid walked to the door.</p>
+                        
+                        <p>&#34;Try not to overthink,&#34; she said, sighing. &#34;I talked to my boss. He has connections with Rose enterprises.&#34;</p>
+                        
+                        <p>&#34;If Laurel and Mrs. Rose won&#39;t help, I&#39;ll try Mr. Rose directly. Maybe he&#39;ll let us see Rachel.&#34;</p>
+                        
+                        <p>She turned off the light. &#34;I want to see her just as much as you do.&#34;</p>
+                        
+                        <p>After she left, I wiped away my tears in the darkness. The medication gradually took effect, and I finally slept deeply.</p>
+                        
+                        <p>The next morning, urgent knocking jolted me awake. Astrid burst in before I could fully come to my senses.</p>
+                        
+                        <p>&#34;Audrey, big news!&#34; she shouted, dressed in bright red, her hair wild.</p>
+                        
+                        <p>I sat up groggily、&#34;What now?&#34;</p>
+                        
+                        <p>&#34;Look!&#34; She thrust her phone into my hands.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -997,27 +1049,31 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>My breath caught as I saw photos of Blake and Laurel at a bridal boutique that morning. Bold headlines announced:</p>
-                    
-                    <p>**&#34;BREAKING! Blake Parker and Laurel Rose&#39;s engagement date confirmed! Couple spotted shopping for wedding dresses!&#34;**</p>
-                    
-                    <p>**&#34;Blake Parker and Laurel Rose announce engagement date,revealing special mystery guest will attend ceremony!&#34;**</p>
-                    
-                    <p>**&#34;Laurel Rose claims her &#34;dearest sister&#34; will attend the event!&#34;**</p>
-                    
-                    <p>My heart raced as a theory formed. Could the mystery guest and Laurel&#39;s &#34;dearest sister&#34; be Rachel? Was the Rose family finally revealing her existence?</p>
-                    
-                    <p>Hope sparked in my eyes as I looked up at Astrid. Our shared glance confirmed we&#39;d reached the same conclusion.</p>
-                    
-                    <p>&#34;If these leaks are true,&#34; Astrid said, grabbing my hands excitedly, &#34;we don&#39;t need to struggle to see Rachel anymore!&#34;</p>
-                    
-                    <p>&#34;We can attend the ceremony legitimately!&#34;</p>
-                    
-                    <p>Her eyes glistened. &#34;I knew things weren&#39;t hopeless! You didn&#39;t need to take any risks!&#34;</p>
-                    
-                    <p>&#34;The problem we worried about last night has fixed itself!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>My breath caught as I saw photos of Blake and Laurel at a bridal boutique that morning. Bold headlines announced:</p>
+                        
+                        <p>**&#34;BREAKING! Blake Parker and Laurel Rose&#39;s engagement date confirmed! Couple spotted shopping for wedding dresses!&#34;**</p>
+                        
+                        <p>**&#34;Blake Parker and Laurel Rose announce engagement date,revealing special mystery guest will attend ceremony!&#34;**</p>
+                        
+                        <p>**&#34;Laurel Rose claims her &#34;dearest sister&#34; will attend the event!&#34;**</p>
+                        
+                        <p>My heart raced as a theory formed. Could the mystery guest and Laurel&#39;s &#34;dearest sister&#34; be Rachel? Was the Rose family finally revealing her existence?</p>
+                        
+                        <p>Hope sparked in my eyes as I looked up at Astrid. Our shared glance confirmed we&#39;d reached the same conclusion.</p>
+                        
+                        <p>&#34;If these leaks are true,&#34; Astrid said, grabbing my hands excitedly, &#34;we don&#39;t need to struggle to see Rachel anymore!&#34;</p>
+                        
+                        <p>&#34;We can attend the ceremony legitimately!&#34;</p>
+                        
+                        <p>Her eyes glistened. &#34;I knew things weren&#39;t hopeless! You didn&#39;t need to take any risks!&#34;</p>
+                        
+                        <p>&#34;The problem we worried about last night has fixed itself!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1032,27 +1088,31 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>I squeezed her hands, though confusion showed on my face. &#34;The Rose family treated Rachel&#39;s existence as shameful for four years, Why go public now?&#34;</p>
-                    
-                    <p>Astrid shrugged. &#34;Maybe they realized they couldn&#39;t keep it secret anymore.</p>
-                    
-                    <p>&#34;</p>
-                    
-                    <p>&#34;Mrs. Rose bought that villa to care for Rachel. All of high society thinks she&#39;s keeping a lover there,&#34; she explained. &#34;MIr. Rose endures those rumors without denying themn. The men mock him for being cheated on.&#34;</p>
-                    
-                    <p>&#34;Maybe he&#39;s tired of.being ridiculed.&#34;</p>
-                    
-                    <p>Her expression brightened. &#34;But whatever their reasons, we can see Rachel openly now!&#34;</p>
-                    
-                    <p>She checked the time and tensed. &#34;Their engagement is next week! We need to prepare!&#34;</p>
-                    
-                    <p>&#34;Even with Rachel in a vegetative state, we should look our best,right?&#34;</p>
-                    
-                    <p>I nodded, though doubt lingered in my eyes. *Could this be coincidence?Last night Blake lectured me about not sneaking in to see Rachel, and today they announce she&#39;ll attend the ceremony?*</p>
-                    
-                    <p>&#34;I&#39;m late!&#34; Astrid exclaimed, checking the time again. &#34;Gotta run!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>I squeezed her hands, though confusion showed on my face. &#34;The Rose family treated Rachel&#39;s existence as shameful for four years, Why go public now?&#34;</p>
+                        
+                        <p>Astrid shrugged. &#34;Maybe they realized they couldn&#39;t keep it secret anymore.</p>
+                        
+                        <p>&#34;</p>
+                        
+                        <p>&#34;Mrs. Rose bought that villa to care for Rachel. All of high society thinks she&#39;s keeping a lover there,&#34; she explained. &#34;MIr. Rose endures those rumors without denying themn. The men mock him for being cheated on.&#34;</p>
+                        
+                        <p>&#34;Maybe he&#39;s tired of.being ridiculed.&#34;</p>
+                        
+                        <p>Her expression brightened. &#34;But whatever their reasons, we can see Rachel openly now!&#34;</p>
+                        
+                        <p>She checked the time and tensed. &#34;Their engagement is next week! We need to prepare!&#34;</p>
+                        
+                        <p>&#34;Even with Rachel in a vegetative state, we should look our best,right?&#34;</p>
+                        
+                        <p>I nodded, though doubt lingered in my eyes. *Could this be coincidence?Last night Blake lectured me about not sneaking in to see Rachel, and today they announce she&#39;ll attend the ceremony?*</p>
+                        
+                        <p>&#34;I&#39;m late!&#34; Astrid exclaimed, checking the time again. &#34;Gotta run!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1067,25 +1127,29 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>She rushed out of the apartment like a whirlwind.</p>
-                    
-                    <p>Alone, I browsed more engagement news on my phone. Just as I was about to set it down, I received messages from Michael.</p>
-                    
-                    <p>When I opened them, I froze. Tears welled up uncontrollably.</p>
-                    
-                    <p>Michael had sent four photos of Rachel, taken from different angles. She lay pale on a hospital bed, looking peacefully asleep.</p>
-                    
-                    <p>I covered my mouth, silently sobbing, my other hand reaching toward the screen, *After four years, Rachel... I finally know how you&#39;re doing.&#34;</p>
-                    
-                    <p>Through my tears, I could see Rachel hadn&#39;t been well-cared for. She&#39;d lost so much weight. Having cared for Blake as a vegetative patient, I knew exactly how someone properly cared for should look. Rachel clearly hadn&#39;t received proper attention.</p>
-                    
-                    <p>I examined each photo carefully, then read Michael&#39;s messages: *&#34;These are from Mr. Parker. He&#39;s kept his promise and hopes you&#39;ll keep yours with William.&#34;*</p>
-                    
-                    <p>As I prepared to reply, Michael sent a voice message. I frowned and played it.</p>
-                    
-                    <p>&#34;Miss Sinclair,&#34; his slightly troubled voice said, &#34;Mr. Parker has one more thing he needs your help with...&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>She rushed out of the apartment like a whirlwind.</p>
+                        
+                        <p>Alone, I browsed more engagement news on my phone. Just as I was about to set it down, I received messages from Michael.</p>
+                        
+                        <p>When I opened them, I froze. Tears welled up uncontrollably.</p>
+                        
+                        <p>Michael had sent four photos of Rachel, taken from different angles. She lay pale on a hospital bed, looking peacefully asleep.</p>
+                        
+                        <p>I covered my mouth, silently sobbing, my other hand reaching toward the screen, *After four years, Rachel... I finally know how you&#39;re doing.&#34;</p>
+                        
+                        <p>Through my tears, I could see Rachel hadn&#39;t been well-cared for. She&#39;d lost so much weight. Having cared for Blake as a vegetative patient, I knew exactly how someone properly cared for should look. Rachel clearly hadn&#39;t received proper attention.</p>
+                        
+                        <p>I examined each photo carefully, then read Michael&#39;s messages: *&#34;These are from Mr. Parker. He&#39;s kept his promise and hopes you&#39;ll keep yours with William.&#34;*</p>
+                        
+                        <p>As I prepared to reply, Michael sent a voice message. I frowned and played it.</p>
+                        
+                        <p>&#34;Miss Sinclair,&#34; his slightly troubled voice said, &#34;Mr. Parker has one more thing he needs your help with...&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2401,6 +2465,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2527,7 +2671,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2569,32 +2712,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2605,21 +2730,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2652,6 +2767,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2672,20 +2793,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

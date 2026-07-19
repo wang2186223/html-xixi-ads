@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.067357">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.067357">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.261189">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.261189">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.067357",
-        "dateModified": "2026-07-19T02:47:19.067357",
+        "datePublished": "2026-07-19T13:03:14.261189",
+        "dateModified": "2026-07-19T13:03:14.261189",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,25 +893,29 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>&#34;What the hell do you want to do?&#34; Astrid shouted, throwing her arms out in front of me as the security guards closed in.</p>
-                    
-                    <p>The guards circled us, cutting off our escape route. Their faces might have been blank, but their intentions couldn&#39;t have been clearer.</p>
-                    
-                    <p>Rachel lunged forward and grabbed Thalia&#39;s arm. &#34;Are you insane? This is Mrs. Knox from the Australian Parker family! Her husband Adrian Knox is a major player in Australian business, and they&#39;re partnering with Parker Group&#39;s jewelry division!&#34;</p>
-                    
-                    <p>Her voice cracked with urgency. &#34;You&#39;re not just wrecking the deal your brother fought for - you&#39;re pushing Parker Group closer to bankruptcy!&#34;</p>
-                    
-                    <p>Thalia jerked away with a disgusted look. &#34;So what if she&#39;s connected? She can&#39;t just hit me! Since when does having money mean you can slap people whenever you feel like it?&#34;</p>
-                    
-                    <p>&#34;Exactly!&#34; Olivia piped up, her hand still pressed against her cheek. &#34;My own mother wouldn&#39;t dare hit me like that!&#34;</p>
-                    
-                    <p>&#34;Please,&#34; Olivia rolled her eyes. &#34;If this Knox woman is such hot shit,why&#39;s she here cosplaying a dead girl?&#34;</p>
-                    
-                    <p>&#34;Right.&#34; Thalia nodded. &#34;No self-respecting heiress would stoop to being someone&#39;s stand-in - especially not for garbage like Audrey. That nobody who grew up in the sticks because her own parents couldn&#39;t stand her!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>&#34;What the hell do you want to do?&#34; Astrid shouted, throwing her arms out in front of me as the security guards closed in.</p>
+                        
+                        <p>The guards circled us, cutting off our escape route. Their faces might have been blank, but their intentions couldn&#39;t have been clearer.</p>
+                        
+                        <p>Rachel lunged forward and grabbed Thalia&#39;s arm. &#34;Are you insane? This is Mrs. Knox from the Australian Parker family! Her husband Adrian Knox is a major player in Australian business, and they&#39;re partnering with Parker Group&#39;s jewelry division!&#34;</p>
+                        
+                        <p>Her voice cracked with urgency. &#34;You&#39;re not just wrecking the deal your brother fought for - you&#39;re pushing Parker Group closer to bankruptcy!&#34;</p>
+                        
+                        <p>Thalia jerked away with a disgusted look. &#34;So what if she&#39;s connected? She can&#39;t just hit me! Since when does having money mean you can slap people whenever you feel like it?&#34;</p>
+                        
+                        <p>&#34;Exactly!&#34; Olivia piped up, her hand still pressed against her cheek. &#34;My own mother wouldn&#39;t dare hit me like that!&#34;</p>
+                        
+                        <p>&#34;Please,&#34; Olivia rolled her eyes. &#34;If this Knox woman is such hot shit,why&#39;s she here cosplaying a dead girl?&#34;</p>
+                        
+                        <p>&#34;Right.&#34; Thalia nodded. &#34;No self-respecting heiress would stoop to being someone&#39;s stand-in - especially not for garbage like Audrey. That nobody who grew up in the sticks because her own parents couldn&#39;t stand her!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -890,25 +930,29 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>A guard grabbed Rachel&#39;s arm and yanked her backward. She twisted against his grip, fighting to break free.</p>
-                    
-                    <p>&#34;Let go of mel&#34; she snapped.&#34;T&#34;m Blake Parker&#39;s finncée!&#34;</p>
-                    
-                    <p>Two more guards moved in, seizing her shoulders and forcing her to her knees.</p>
-                    
-                    <p>Looking at Rachel pinned down like that made my stomach clench.barely recognized the carefree girl I once knew. Maybe this was what four years as a vegetative patient did to you. Maybe it taught you that life was too short not to grab whatever happiness you could find, even if it meant clawing your way into a famlly that would never fully accept you.</p>
-                    
-                    <p>&#34;Hold them down and slap them!&#34; Thalia barked, leaning against a display counter with a smirk. &#34;Make them kneel!&#34;</p>
-                    
-                    <p>Olivia clapped like she was at a show. &#34;Yeah! Beat their faces until you can&#39;t recognize them! I&#39;m sick of looking at Audrey&#39;s face on this one - makes me want to puke!&#34;</p>
-                    
-                    <p>&#34;You&#39;re right,&#34; Thalia&#39;s eyes lit up. &#34;Smash her face!&#34;</p>
-                    
-                    <p>&#34;I don&#39;t care whose body double you are,&#34; Olivia sneered my way, &#34;but in New York, you mess with us, you pay the price!&#34;</p>
-                    
-                    <p>Rachel struggled harder. &#34;Stop this right now! I&#39;m about to be a Parker myself! You need to listen to me!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>A guard grabbed Rachel&#39;s arm and yanked her backward. She twisted against his grip, fighting to break free.</p>
+                        
+                        <p>&#34;Let go of mel&#34; she snapped.&#34;T&#34;m Blake Parker&#39;s finncée!&#34;</p>
+                        
+                        <p>Two more guards moved in, seizing her shoulders and forcing her to her knees.</p>
+                        
+                        <p>Looking at Rachel pinned down like that made my stomach clench.barely recognized the carefree girl I once knew. Maybe this was what four years as a vegetative patient did to you. Maybe it taught you that life was too short not to grab whatever happiness you could find, even if it meant clawing your way into a famlly that would never fully accept you.</p>
+                        
+                        <p>&#34;Hold them down and slap them!&#34; Thalia barked, leaning against a display counter with a smirk. &#34;Make them kneel!&#34;</p>
+                        
+                        <p>Olivia clapped like she was at a show. &#34;Yeah! Beat their faces until you can&#39;t recognize them! I&#39;m sick of looking at Audrey&#39;s face on this one - makes me want to puke!&#34;</p>
+                        
+                        <p>&#34;You&#39;re right,&#34; Thalia&#39;s eyes lit up. &#34;Smash her face!&#34;</p>
+                        
+                        <p>&#34;I don&#39;t care whose body double you are,&#34; Olivia sneered my way, &#34;but in New York, you mess with us, you pay the price!&#34;</p>
+                        
+                        <p>Rachel struggled harder. &#34;Stop this right now! I&#39;m about to be a Parker myself! You need to listen to me!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -923,25 +967,29 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Thalia laughed - a cold, harsh sound. &#34;Don&#39;t buy that bullshit. That wedding&#39;s just theater for my dying grandfather. Even if it happens, my brother&#39;s never given a damn about her.&#34;</p>
-                    
-                    <p>&#34;You think being his wife gives you power? Do what I said -beat them!And If she keeps getting in the way, ddrag her over and beat her too!&#34;</p>
-                    
-                    <p>She turned to Rachel with lake sweetness, &#34;Weren&#39;t Audrey and Astrid</p>
-                    
-                    <p>your besties back in the day? Getting beaten alongalde them - how poetlel You must be thrilled to share their fate!&#34;</p>
-                    
-                    <p>Thalia&#39;s laughter echoed as Rachel&#39;s face drained of color. The guard holding her tightened his grip,yanking her head back by her halr.</p>
-                    
-                    <p>&#34;What a joke you are,&#34; Astrid called out to Rachel, &#34;Ever since you woke up、you&#39;ve been killing yourselfto please Blake and his family. And what&#39;s it gotten you?&#34;</p>
-                    
-                    <p>&#34;Look at yourself. No matter how hard you try, to the Parkers,you&#39;ll always be less than their dogs!&#34;</p>
-                    
-                    <p>I watched Rachel crumble under Astrid&#39;s wwords. Harsh,but true.</p>
-                    
-                    <p>&#34;Astrid.&#34; I squeezed her shoulder. &#34;I got this.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Thalia laughed - a cold, harsh sound. &#34;Don&#39;t buy that bullshit. That wedding&#39;s just theater for my dying grandfather. Even if it happens, my brother&#39;s never given a damn about her.&#34;</p>
+                        
+                        <p>&#34;You think being his wife gives you power? Do what I said -beat them!And If she keeps getting in the way, ddrag her over and beat her too!&#34;</p>
+                        
+                        <p>She turned to Rachel with lake sweetness, &#34;Weren&#39;t Audrey and Astrid</p>
+                        
+                        <p>your besties back in the day? Getting beaten alongalde them - how poetlel You must be thrilled to share their fate!&#34;</p>
+                        
+                        <p>Thalia&#39;s laughter echoed as Rachel&#39;s face drained of color. The guard holding her tightened his grip,yanking her head back by her halr.</p>
+                        
+                        <p>&#34;What a joke you are,&#34; Astrid called out to Rachel, &#34;Ever since you woke up、you&#39;ve been killing yourselfto please Blake and his family. And what&#39;s it gotten you?&#34;</p>
+                        
+                        <p>&#34;Look at yourself. No matter how hard you try, to the Parkers,you&#39;ll always be less than their dogs!&#34;</p>
+                        
+                        <p>I watched Rachel crumble under Astrid&#39;s wwords. Harsh,but true.</p>
+                        
+                        <p>&#34;Astrid.&#34; I squeezed her shoulder. &#34;I got this.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -956,25 +1004,29 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>She turned, confused, but I was already moving. I took a breath, balled my fist, and slammed it into the face of the guard almost touching Astrid.</p>
-                    
-                    <p>He staggered back, blood streaming from his nose, eyes wide with shock.Guess he didn&#39;t expect someone my size to hit that hard.</p>
-                    
-                    <p>&#34;Don&#39;t worry,&#34; I handed Astrid my bag. &#34;I said I&#39;d protect you, didn&#39;t I?&#34;</p>
-                    
-                    <p>The other guards froze, like they couldn&#39;t process what just happened.</p>
-                    
-                    <p>&#34;Fair warning,&#34; I announced, my voice calm. &#34;I&#39;ve been trainíng in Australia with three instructors - two former world champions in boxing and MMA, plus an ex-special forces soldier.&#34;</p>
-                    
-                    <p>&#34;Before you try anything, think about whatever training you&#39;ve had, and whether you stand a chance.&#34;</p>
-                    
-                    <p>One guard found his voice, &#34;You&#39;re just a woman, even if - &#34;</p>
-                    
-                    <p>I shut him up with a kick to the face. His body hit the floor with a loud crack, and the store went dead silent.</p>
-                    
-                    <p>&#34;Evelyn...&#34; Astrid stared at me, stunned.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>She turned, confused, but I was already moving. I took a breath, balled my fist, and slammed it into the face of the guard almost touching Astrid.</p>
+                        
+                        <p>He staggered back, blood streaming from his nose, eyes wide with shock.Guess he didn&#39;t expect someone my size to hit that hard.</p>
+                        
+                        <p>&#34;Don&#39;t worry,&#34; I handed Astrid my bag. &#34;I said I&#39;d protect you, didn&#39;t I?&#34;</p>
+                        
+                        <p>The other guards froze, like they couldn&#39;t process what just happened.</p>
+                        
+                        <p>&#34;Fair warning,&#34; I announced, my voice calm. &#34;I&#39;ve been trainíng in Australia with three instructors - two former world champions in boxing and MMA, plus an ex-special forces soldier.&#34;</p>
+                        
+                        <p>&#34;Before you try anything, think about whatever training you&#39;ve had, and whether you stand a chance.&#34;</p>
+                        
+                        <p>One guard found his voice, &#34;You&#39;re just a woman, even if - &#34;</p>
+                        
+                        <p>I shut him up with a kick to the face. His body hit the floor with a loud crack, and the store went dead silent.</p>
+                        
+                        <p>&#34;Evelyn...&#34; Astrid stared at me, stunned.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -989,25 +1041,29 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>She kept staring at me, finally noticing the muscle definition visible under my clothes. What she didn&#39;t know was that since returning to Sydney,when I wasn&#39;t running Q·elegant, I was training. No one would always be there to protect me, but I could damn well learn to protect myself.</p>
-                    
-                    <p>&#34;After being sick so long, I needed to build my strength back,&#34; I shrugged.&#34;See? Told you I could handle this.&#34;</p>
-                    
-                    <p>I turned to the remaining guards. &#34;Anyone else? I only ever spar with my trainers, and they&#39;re too good for me to beat. Been wanting some real practice...&#34;</p>
-                    
-                    <p>They exchanged panicked looks and bolted for the door, leaving Thalia standing alone.</p>
-                    
-                    <p>&#34;Get back here!&#34; she screamed after them, face twisted with fear. &#34;Don&#39;t you dare leave!&#34;</p>
-                    
-                    <p>&#34;So,&#34; I walked toward Thalia as she backed against the counter.&#34;What were you just ordering those guards to do to us?&#34;</p>
-                    
-                    <p>Olivia dropped to her knees. &#34;I didn&#39;t say anything! It was all her idea!&#34;She pointed at Thalia, frantic. &#34;Take it up with her - I had nothing to do with this!&#34;</p>
-                    
-                    <p>&#34;Olivia!&#34; Thalia gasped. &#34;What the hell?&#34;</p>
-                    
-                    <p>&#34;What do you expect me to say?&#34; Olivia&#39;s voice rose. &#34;I told you I didn&#39;t want to go out today! You dragged me here to mess with Astrid! You</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>She kept staring at me, finally noticing the muscle definition visible under my clothes. What she didn&#39;t know was that since returning to Sydney,when I wasn&#39;t running Q·elegant, I was training. No one would always be there to protect me, but I could damn well learn to protect myself.</p>
+                        
+                        <p>&#34;After being sick so long, I needed to build my strength back,&#34; I shrugged.&#34;See? Told you I could handle this.&#34;</p>
+                        
+                        <p>I turned to the remaining guards. &#34;Anyone else? I only ever spar with my trainers, and they&#39;re too good for me to beat. Been wanting some real practice...&#34;</p>
+                        
+                        <p>They exchanged panicked looks and bolted for the door, leaving Thalia standing alone.</p>
+                        
+                        <p>&#34;Get back here!&#34; she screamed after them, face twisted with fear. &#34;Don&#39;t you dare leave!&#34;</p>
+                        
+                        <p>&#34;So,&#34; I walked toward Thalia as she backed against the counter.&#34;What were you just ordering those guards to do to us?&#34;</p>
+                        
+                        <p>Olivia dropped to her knees. &#34;I didn&#39;t say anything! It was all her idea!&#34;She pointed at Thalia, frantic. &#34;Take it up with her - I had nothing to do with this!&#34;</p>
+                        
+                        <p>&#34;Olivia!&#34; Thalia gasped. &#34;What the hell?&#34;</p>
+                        
+                        <p>&#34;What do you expect me to say?&#34; Olivia&#39;s voice rose. &#34;I told you I didn&#39;t want to go out today! You dragged me here to mess with Astrid! You</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1022,25 +1078,29 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>called the guards over, you told them to slap them! I just agreed with you -why should I get the same punishment as you?&#34;</p>
-                    
-                    <p>She scrambled to her feet and backed away, not stopping until she reached the store entrance. Then she turned and ran, her heels clicking rapidly down the hall until the sound faded completely.</p>
-                    
-                    <p>&#34;Looks like the princess just got dumped by her sidekick,&#34; Astrid smirked.&#34;Tough break.&#34;</p>
-                    
-                    <p>Thalia&#39;s hands curled into fists, her knuckles white. &#34;You already hit me,and my guys never even touched you. I didn&#39;t do anything to deserve more.&#34;</p>
-                    
-                    <p>Her voice shook slightly, but she lifted her chin.&#34;If you touch me again,my brother will destroy you. I don&#39;t care how big you are in Australia-this is New York, and Parkers run this city. Unless you want to be trapped here, unable to go home, you&#39;d better back off!&#34;</p>
-                    
-                    <p>I bit back a smile. In all my years with Blake, I&#39;d never seen his sister actually afraid of me. The mighty Parker princess looked a lot less intimidating without her bodyguards backing her up.</p>
-                    
-                    <p>&#34;Mrs. Knox.&#34; Rachel stepped between us, her hand lightly touching Thalia&#39;s arm. &#34;Let&#39;s not make this worse. The partnership - &#34;</p>
-                    
-                    <p>&#34;Wow.&#34; Astrid shook her head. &#34;You&#39;re seriously defending her? The same girl who just ordered guards to rough us up - including you?&#34;</p>
-                    
-                    <p>&#34;What happened to you? You used to race cars with us at midnight. Party till sunrise. Never cared what anyone thought.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>called the guards over, you told them to slap them! I just agreed with you -why should I get the same punishment as you?&#34;</p>
+                        
+                        <p>She scrambled to her feet and backed away, not stopping until she reached the store entrance. Then she turned and ran, her heels clicking rapidly down the hall until the sound faded completely.</p>
+                        
+                        <p>&#34;Looks like the princess just got dumped by her sidekick,&#34; Astrid smirked.&#34;Tough break.&#34;</p>
+                        
+                        <p>Thalia&#39;s hands curled into fists, her knuckles white. &#34;You already hit me,and my guys never even touched you. I didn&#39;t do anything to deserve more.&#34;</p>
+                        
+                        <p>Her voice shook slightly, but she lifted her chin.&#34;If you touch me again,my brother will destroy you. I don&#39;t care how big you are in Australia-this is New York, and Parkers run this city. Unless you want to be trapped here, unable to go home, you&#39;d better back off!&#34;</p>
+                        
+                        <p>I bit back a smile. In all my years with Blake, I&#39;d never seen his sister actually afraid of me. The mighty Parker princess looked a lot less intimidating without her bodyguards backing her up.</p>
+                        
+                        <p>&#34;Mrs. Knox.&#34; Rachel stepped between us, her hand lightly touching Thalia&#39;s arm. &#34;Let&#39;s not make this worse. The partnership - &#34;</p>
+                        
+                        <p>&#34;Wow.&#34; Astrid shook her head. &#34;You&#39;re seriously defending her? The same girl who just ordered guards to rough us up - including you?&#34;</p>
+                        
+                        <p>&#34;What happened to you? You used to race cars with us at midnight. Party till sunrise. Never cared what anyone thought.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1055,13 +1115,17 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Astrid nodded toward Thalia. &#34;Now you&#39;re apologizing to people who treat you like dirt?&#34;</p>
-                    
-                    <p>Rachel pulled away. &#34;People change. What we did as kids doesn&#39;t work in the real world.&#34;</p>
-                    
-                    <p>She glanced my way. &#34;Mrs. Knox. please consider the business between your husband and-&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Astrid nodded toward Thalia. &#34;Now you&#39;re apologizing to people who treat you like dirt?&#34;</p>
+                        
+                        <p>Rachel pulled away. &#34;People change. What we did as kids doesn&#39;t work in the real world.&#34;</p>
+                        
+                        <p>She glanced my way. &#34;Mrs. Knox. please consider the business between your husband and-&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2377,6 +2441,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2503,7 +2647,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2545,32 +2688,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2581,21 +2706,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2628,6 +2743,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2648,20 +2769,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

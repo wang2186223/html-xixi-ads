@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -857,19 +893,23 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Beatrice shot him a warning glance before turning back to Bianca. &#34;What sort of stir?&#34;</p>
-                    
-                    <p>Bianca swallowed hard under Adrian&#39;s glare. &#34;It&#39;s not my fault, Adrian! Listen, Beatrice—Vivian auditioned against Adrian&#39;s ex-girlfriend for the same role. When Vivian didn&#39;t get it, she became social media&#39;s favorite punching bag. Thank heavens their marriage isn&#39;t public knowledge, or Blackwood Group&#39;s stocks might have suffered.&#34;</p>
-                    
-                    <p>Beatrice&#39;s expression darkened like gathering storm clouds.</p>
-                    
-                    <p>She turned to Adrian, frustration coloring her tone. &#34;Adrian, that woman is your past. Vivian is your present—your wife. Can&#39;t you see where your loyalty should lie?&#34;</p>
-                    
-                    <p>Leonard, silent until now, added his measured voice. &#34;Even if your marriage isn&#39;t public, our family and friends know. Don&#39;t make this mistake again.&#34;</p>
-                    
-                    <p>Bianca shrank back, unprepared for the united front defending Vivian.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Beatrice shot him a warning glance before turning back to Bianca. &#34;What sort of stir?&#34;</p>
+                        
+                        <p>Bianca swallowed hard under Adrian&#39;s glare. &#34;It&#39;s not my fault, Adrian! Listen, Beatrice—Vivian auditioned against Adrian&#39;s ex-girlfriend for the same role. When Vivian didn&#39;t get it, she became social media&#39;s favorite punching bag. Thank heavens their marriage isn&#39;t public knowledge, or Blackwood Group&#39;s stocks might have suffered.&#34;</p>
+                        
+                        <p>Beatrice&#39;s expression darkened like gathering storm clouds.</p>
+                        
+                        <p>She turned to Adrian, frustration coloring her tone. &#34;Adrian, that woman is your past. Vivian is your present—your wife. Can&#39;t you see where your loyalty should lie?&#34;</p>
+                        
+                        <p>Leonard, silent until now, added his measured voice. &#34;Even if your marriage isn&#39;t public, our family and friends know. Don&#39;t make this mistake again.&#34;</p>
+                        
+                        <p>Bianca shrank back, unprepared for the united front defending Vivian.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -884,19 +924,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Adrian exhaled slowly, picking up the serving utensils to place a delicate piece of fish on Beatrice&#39;s plate. &#34;Understood,&#34; he murmured.</p>
-                    
-                    <p>&#34;Words are easy, Adrian,&#34; Beatrice retorted, tapping his hand sharply. The red mark bloomed instantly. &#34;Stop fussing over me and tend to your wife. Her favorite beef dish sits untouched across the table.&#34;</p>
-                    
-                    <p>Following her pointed instruction, Adrian served Vivian a slice of beef. Watching his uncharacteristic compliance, Vivian couldn&#39;t suppress an amused smile.</p>
-                    
-                    <p>Noticing her expression, Adrian added a plump shrimp to her plate, his gaze softening. &#34;Find my scolding entertaining?&#34; he teased.</p>
-                    
-                    <p>Vivian took a delicate bite, her lips curving. &#34;The shrimp is particularly delicious tonight.&#34;</p>
-                    
-                    <p>The tension between them had finally begun to ease when Adrian felt an unexpected impulse to bridge the distance. &#34;Tonight, I want to—&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Adrian exhaled slowly, picking up the serving utensils to place a delicate piece of fish on Beatrice&#39;s plate. &#34;Understood,&#34; he murmured.</p>
+                        
+                        <p>&#34;Words are easy, Adrian,&#34; Beatrice retorted, tapping his hand sharply. The red mark bloomed instantly. &#34;Stop fussing over me and tend to your wife. Her favorite beef dish sits untouched across the table.&#34;</p>
+                        
+                        <p>Following her pointed instruction, Adrian served Vivian a slice of beef. Watching his uncharacteristic compliance, Vivian couldn&#39;t suppress an amused smile.</p>
+                        
+                        <p>Noticing her expression, Adrian added a plump shrimp to her plate, his gaze softening. &#34;Find my scolding entertaining?&#34; he teased.</p>
+                        
+                        <p>Vivian took a delicate bite, her lips curving. &#34;The shrimp is particularly delicious tonight.&#34;</p>
+                        
+                        <p>The tension between them had finally begun to ease when Adrian felt an unexpected impulse to bridge the distance. &#34;Tonight, I want to—&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -911,19 +955,23 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>His words were abruptly cut off by the shrill ringing of his phone—an unusual breach of etiquette for someone who always kept his devices silent during meals. The sudden interruption made everyone at the table turn toward him.</p>
-                    
-                    <p>Vivian&#39;s eyes flickered to the glowing screen where the name &#34;Serena&#34; flashed prominently.</p>
-                    
-                    <p>Adrian answered with his usual composure, but as the call progressed, his expression hardened into unreadable stone. Whatever news came through the line carried palpable weight. &#34;Understood,&#34; was all he said before ending the call.</p>
-                    
-                    <p>Standing abruptly, he addressed the table. &#34;I need to go to the office immediately.&#34;</p>
-                    
-                    <p>Margaret&#39;s sharp gaze darted between him and Vivian. &#34;Must it be now? Can&#39;t this wait until after dinner? You&#39;re just going to leave Vivian here alone?&#34;</p>
-                    
-                    <p>His decision was already made. Finishing his meal in three efficient bites, Adrian rose. &#34;Ethan will take you home,&#34; he told Vivian in a tone that brooked no argument.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>His words were abruptly cut off by the shrill ringing of his phone—an unusual breach of etiquette for someone who always kept his devices silent during meals. The sudden interruption made everyone at the table turn toward him.</p>
+                        
+                        <p>Vivian&#39;s eyes flickered to the glowing screen where the name &#34;Serena&#34; flashed prominently.</p>
+                        
+                        <p>Adrian answered with his usual composure, but as the call progressed, his expression hardened into unreadable stone. Whatever news came through the line carried palpable weight. &#34;Understood,&#34; was all he said before ending the call.</p>
+                        
+                        <p>Standing abruptly, he addressed the table. &#34;I need to go to the office immediately.&#34;</p>
+                        
+                        <p>Margaret&#39;s sharp gaze darted between him and Vivian. &#34;Must it be now? Can&#39;t this wait until after dinner? You&#39;re just going to leave Vivian here alone?&#34;</p>
+                        
+                        <p>His decision was already made. Finishing his meal in three efficient bites, Adrian rose. &#34;Ethan will take you home,&#34; he told Vivian in a tone that brooked no argument.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -938,19 +986,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Drive safely,&#34; Vivian replied softly, her smile serene but her eyes turning glacial. Her grip on the fork tightened almost imperceptibly—just enough for her knuckles to whiten. The mere appearance of Serena&#39;s name had shattered whatever fragile peace they&#39;d begun to build.</p>
-                    
-                    <p>The moment Adrian&#39;s car disappeared down the driveway, Bianca broke the silence. &#34;That was Serena, wasn&#39;t it?&#34; Her voice dripped with faux concern.</p>
-                    
-                    <p>Vivian&#39;s retort was razor-sharp. &#34;Since when did you become a gossip columnist?&#34;</p>
-                    
-                    <p>Bianca&#39;s lips curled into a condescending smirk. &#34;Just looking out for you, cousin. Lose your husband&#39;s attention, and you&#39;ll regret it.&#34;</p>
-                    
-                    <p>Margaret, who had been quietly observing, set down her utensils with deliberate precision. &#34;Bianca isn&#39;t wrong,&#34; she said, her piercing gaze locking onto Vivian. &#34;A wife&#39;s priority should be her husband and family. Chasing fame at your age is foolish. A child would secure your position.&#34;</p>
-                    
-                    <p>Her eyes dropped meaningfully to Vivian&#39;s abdomen. &#34;Two years of marriage with no pregnancy suggests you might need medical intervention.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Drive safely,&#34; Vivian replied softly, her smile serene but her eyes turning glacial. Her grip on the fork tightened almost imperceptibly—just enough for her knuckles to whiten. The mere appearance of Serena&#39;s name had shattered whatever fragile peace they&#39;d begun to build.</p>
+                        
+                        <p>The moment Adrian&#39;s car disappeared down the driveway, Bianca broke the silence. &#34;That was Serena, wasn&#39;t it?&#34; Her voice dripped with faux concern.</p>
+                        
+                        <p>Vivian&#39;s retort was razor-sharp. &#34;Since when did you become a gossip columnist?&#34;</p>
+                        
+                        <p>Bianca&#39;s lips curled into a condescending smirk. &#34;Just looking out for you, cousin. Lose your husband&#39;s attention, and you&#39;ll regret it.&#34;</p>
+                        
+                        <p>Margaret, who had been quietly observing, set down her utensils with deliberate precision. &#34;Bianca isn&#39;t wrong,&#34; she said, her piercing gaze locking onto Vivian. &#34;A wife&#39;s priority should be her husband and family. Chasing fame at your age is foolish. A child would secure your position.&#34;</p>
+                        
+                        <p>Her eyes dropped meaningfully to Vivian&#39;s abdomen. &#34;Two years of marriage with no pregnancy suggests you might need medical intervention.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -965,19 +1017,23 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Adrian hadn&#39;t touched her since their wedding night—if she conceived now, it would be nothing short of divine intervention.</p>
-                    
-                    <p>Vivian&#39;s response was measured. &#34;Conception requires participation from both parties.&#34;</p>
-                    
-                    <p>Margaret&#39;s eyes flashed with disbelief. The meek girl who used to absorb every barbed comment had just thrown one back. The shift was as startling as a slap.</p>
-                    
-                    <p>Turning to Beatrice, Margaret&#39;s voice trembled with indignation. &#34;Are you hearing this? I barely said anything, and she&#39;s talking back!&#34;</p>
-                    
-                    <p>Beatrice patted Margaret&#39;s hand with the gentle finality of a sunset. &#34;Times change, dear. Remember, you didn&#39;t have Adrian until five years into your marriage.&#34;</p>
-                    
-                    <p>&#34;That was different,&#34; Margaret muttered, but the fight had left her voice.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Adrian hadn&#39;t touched her since their wedding night—if she conceived now, it would be nothing short of divine intervention.</p>
+                        
+                        <p>Vivian&#39;s response was measured. &#34;Conception requires participation from both parties.&#34;</p>
+                        
+                        <p>Margaret&#39;s eyes flashed with disbelief. The meek girl who used to absorb every barbed comment had just thrown one back. The shift was as startling as a slap.</p>
+                        
+                        <p>Turning to Beatrice, Margaret&#39;s voice trembled with indignation. &#34;Are you hearing this? I barely said anything, and she&#39;s talking back!&#34;</p>
+                        
+                        <p>Beatrice patted Margaret&#39;s hand with the gentle finality of a sunset. &#34;Times change, dear. Remember, you didn&#39;t have Adrian until five years into your marriage.&#34;</p>
+                        
+                        <p>&#34;That was different,&#34; Margaret muttered, but the fight had left her voice.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -992,19 +1048,23 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Vivian shifted her gaze toward Beatrice with a welcoming smile. &#34;Vivian, have you eaten enough?&#34;</p>
-                    
-                    <p>&#34;Yes, thank you,&#34; Vivian answered with a courteous nod. &#34;Did you need something from me?&#34;</p>
-                    
-                    <p>Beatrice rose from her seat, her voice warm and encouraging. &#34;I have a special salve for scars that might help you. Come to my chambers, and I&#39;ll demonstrate its application.&#34;</p>
-                    
-                    <p>Vivian stood immediately to assist. &#34;Certainly, Beatrice. I&#39;d be delighted.&#34;</p>
-                    
-                    <p>Margaret observed their departure with a disapproving sniff before turning her maternal attention to Bianca. &#34;Bianca, you must stay the night. I want to hear all about your recent endeavors,&#34; she said, her tone noticeably softening now that Vivian was no longer present.</p>
-                    
-                    <p>Vivian caught a fleeting glimpse of their affectionate exchange before carefully guiding Beatrice up the staircase, each step measured and deliberate.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Vivian shifted her gaze toward Beatrice with a welcoming smile. &#34;Vivian, have you eaten enough?&#34;</p>
+                        
+                        <p>&#34;Yes, thank you,&#34; Vivian answered with a courteous nod. &#34;Did you need something from me?&#34;</p>
+                        
+                        <p>Beatrice rose from her seat, her voice warm and encouraging. &#34;I have a special salve for scars that might help you. Come to my chambers, and I&#39;ll demonstrate its application.&#34;</p>
+                        
+                        <p>Vivian stood immediately to assist. &#34;Certainly, Beatrice. I&#39;d be delighted.&#34;</p>
+                        
+                        <p>Margaret observed their departure with a disapproving sniff before turning her maternal attention to Bianca. &#34;Bianca, you must stay the night. I want to hear all about your recent endeavors,&#34; she said, her tone noticeably softening now that Vivian was no longer present.</p>
+                        
+                        <p>Vivian caught a fleeting glimpse of their affectionate exchange before carefully guiding Beatrice up the staircase, each step measured and deliberate.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1019,15 +1079,19 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Inside Beatrice&#39;s intimate bedchamber, the older woman secured the door before approaching an antique mahogany table. She lifted an exquisitely carved wooden box containing an assortment of delicate glass vials that seemed to hold centuries of wisdom.</p>
-                    
-                    <p>&#34;These were formulated by a renowned herbalist in Frostholm,&#34; Beatrice explained, her voice carrying quiet reverence. &#34;While modern medicine has its merits, these ancient remedies preserve our ancestors&#39; knowledge.&#34; She meticulously explained each ointment&#39;s purpose before returning them to their velvet-lined compartments.</p>
-                    
-                    <p>Vivian accepted the box with both hands, its physical weight mirroring the emotional burden in her chest. &#34;Thank you, Beatrice,&#34; she murmured, her gratitude laced with underlying tension.</p>
-                    
-                    <p>Beatrice&#39;s kindness felt simultaneously soothing and painful. Vivian knew this generosity stemmed from her position as Adrian&#39;s wife - a role she was preparing to relinquish. Accepting such genuine care while concealing her plans filled her with leaden guilt.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Inside Beatrice&#39;s intimate bedchamber, the older woman secured the door before approaching an antique mahogany table. She lifted an exquisitely carved wooden box containing an assortment of delicate glass vials that seemed to hold centuries of wisdom.</p>
+                        
+                        <p>&#34;These were formulated by a renowned herbalist in Frostholm,&#34; Beatrice explained, her voice carrying quiet reverence. &#34;While modern medicine has its merits, these ancient remedies preserve our ancestors&#39; knowledge.&#34; She meticulously explained each ointment&#39;s purpose before returning them to their velvet-lined compartments.</p>
+                        
+                        <p>Vivian accepted the box with both hands, its physical weight mirroring the emotional burden in her chest. &#34;Thank you, Beatrice,&#34; she murmured, her gratitude laced with underlying tension.</p>
+                        
+                        <p>Beatrice&#39;s kindness felt simultaneously soothing and painful. Vivian knew this generosity stemmed from her position as Adrian&#39;s wife - a role she was preparing to relinquish. Accepting such genuine care while concealing her plans filled her with leaden guilt.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2343,6 +2407,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2469,7 +2613,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2511,32 +2654,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2547,21 +2672,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2594,6 +2709,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2614,20 +2735,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

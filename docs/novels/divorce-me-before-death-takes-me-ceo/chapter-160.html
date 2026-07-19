@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:19.007069">
-    <meta property="article:modified_time" content="2026-07-19T02:47:19.007069">
+    <meta property="article:published_time" content="2026-07-19T13:03:14.182637">
+    <meta property="article:modified_time" content="2026-07-19T13:03:14.182637">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:19">
+    <meta name="last-modified" content="2026-07-19 13:03:14">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:19.007069",
-        "dateModified": "2026-07-19T02:47:19.007069",
+        "datePublished": "2026-07-19T13:03:14.182637",
+        "dateModified": "2026-07-19T13:03:14.182637",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,29 +893,33 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>**Audrey&#39;s POV**</p>
-                    
-                    <p>I studied Scarlett Rose, seeing her in a completely new light.</p>
-                    
-                    <p>Until today. I&#39;d dismissed her as just another bitchy socialite like Rebecca Parker - the kind who looked down on anyone they considered beneath them. But hearing her claim Rachel as her daughter changed everything.</p>
-                    
-                    <p>*How ridiculous*, I thought. This woman who had neglected Rachel her entire life now pretending to grieve.</p>
-                    
-                    <p>&#34;Rachel Hayes is still alive,&#34; I said, my voice sharp, &#34;yet here you are, her supposed mother, talking about her belongings like she&#39;s already dead.&#34;I locked eyes with her. &#34;Seems like you&#39;re eager for her to die.&#34;</p>
-                    
-                    <p>Scarlett stared at me, frozen. After several seconds, anger flashed across her face.</p>
-                    
-                    <p>&#34;How dare you!&#34; she snapped. &#34;I carried Rachel for nine months! I want nothing more than for her to live a long life!&#34;</p>
-                    
-                    <p>She jabbed a finger at me. &#34;No mother wishes death on her child. No mother!&#34;</p>
-                    
-                    <p>Her words might have been convincing if I hadn&#39;t been there for Rachel. If I hadn&#39;t held her while she cried about how her mother always chose Laurel over her.</p>
-                    
-                    <p>As Scarlett&#39;s tirade continued, she suddenly turned vicious.</p>
-                    
-                    <p>&#34;Don&#39;t forget you had a miscarríage!&#34; she spat. &#34;Youar baby died inside you.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>**Audrey&#39;s POV**</p>
+                        
+                        <p>I studied Scarlett Rose, seeing her in a completely new light.</p>
+                        
+                        <p>Until today. I&#39;d dismissed her as just another bitchy socialite like Rebecca Parker - the kind who looked down on anyone they considered beneath them. But hearing her claim Rachel as her daughter changed everything.</p>
+                        
+                        <p>*How ridiculous*, I thought. This woman who had neglected Rachel her entire life now pretending to grieve.</p>
+                        
+                        <p>&#34;Rachel Hayes is still alive,&#34; I said, my voice sharp, &#34;yet here you are, her supposed mother, talking about her belongings like she&#39;s already dead.&#34;I locked eyes with her. &#34;Seems like you&#39;re eager for her to die.&#34;</p>
+                        
+                        <p>Scarlett stared at me, frozen. After several seconds, anger flashed across her face.</p>
+                        
+                        <p>&#34;How dare you!&#34; she snapped. &#34;I carried Rachel for nine months! I want nothing more than for her to live a long life!&#34;</p>
+                        
+                        <p>She jabbed a finger at me. &#34;No mother wishes death on her child. No mother!&#34;</p>
+                        
+                        <p>Her words might have been convincing if I hadn&#39;t been there for Rachel. If I hadn&#39;t held her while she cried about how her mother always chose Laurel over her.</p>
+                        
+                        <p>As Scarlett&#39;s tirade continued, she suddenly turned vicious.</p>
+                        
+                        <p>&#34;Don&#39;t forget you had a miscarríage!&#34; she spat. &#34;Youar baby died inside you.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -894,29 +934,33 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Should I say you wanted your child to die? That you made It sick untll it became a stillbirth?&#34;</p>
-                    
-                    <p>I stood perfectly still, rage building inside me.</p>
-                    
-                    <p>&#34;Mrs. Rose,&#34; I said slowly, &#34;Let me remind you of something.&#34;</p>
-                    
-                    <p>I kept my voice steady. &#34;My baby became a stillbirth because my health was poor. But I did everything possible to save him. Three Injections daily for over a month.&#34;</p>
-                    
-                    <p>I swallowed hard. &#34;I couldn&#39;t save him, but I know I tried my best.&#34;</p>
-                    
-                    <p>I looked directly into her eyes.&#34;What about you?&#34;</p>
-                    
-                    <p>Scarlett flinched.</p>
-                    
-                    <p>&#34;Since Rachel became a vegetative patient...&#34; I paused, correcting myself.&#34;No,even before that. Since Laurel was born, have you ever been a real mother to Rachel?&#34;</p>
-                    
-                    <p>Every word seemed to physically hurt Scarlett. Her face had gone completely pale.</p>
-                    
-                    <p>Before I could continue. Laurel stepped between us.</p>
-                    
-                    <p>&#34;Miss Sinclair, direct any complaints at me, not my mother,&#34; she said. &#34;Mom&#39;s Just upset because I lost my sister&#39;s things.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Should I say you wanted your child to die? That you made It sick untll it became a stillbirth?&#34;</p>
+                        
+                        <p>I stood perfectly still, rage building inside me.</p>
+                        
+                        <p>&#34;Mrs. Rose,&#34; I said slowly, &#34;Let me remind you of something.&#34;</p>
+                        
+                        <p>I kept my voice steady. &#34;My baby became a stillbirth because my health was poor. But I did everything possible to save him. Three Injections daily for over a month.&#34;</p>
+                        
+                        <p>I swallowed hard. &#34;I couldn&#39;t save him, but I know I tried my best.&#34;</p>
+                        
+                        <p>I looked directly into her eyes.&#34;What about you?&#34;</p>
+                        
+                        <p>Scarlett flinched.</p>
+                        
+                        <p>&#34;Since Rachel became a vegetative patient...&#34; I paused, correcting myself.&#34;No,even before that. Since Laurel was born, have you ever been a real mother to Rachel?&#34;</p>
+                        
+                        <p>Every word seemed to physically hurt Scarlett. Her face had gone completely pale.</p>
+                        
+                        <p>Before I could continue. Laurel stepped between us.</p>
+                        
+                        <p>&#34;Miss Sinclair, direct any complaints at me, not my mother,&#34; she said. &#34;Mom&#39;s Just upset because I lost my sister&#39;s things.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -931,29 +975,33 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Laurel pulled out my phone. &#34;You have my sister&#39;s phone. It has so many memorles of our time together.&#34;</p>
-                    
-                    <p>She held it out. &#34;Let&#39;s exchange them.&#34;</p>
-                    
-                    <p>I glanced at the phone. a cold smile forming. &#34;Why should I give It back?&#34;</p>
-                    
-                    <p>I grabbed my phone from her hand. &#34;Both phones should belong to me.I won&#39;t leave either with you.&#34;</p>
-                    
-                    <p>A strong grip caught my wrist.</p>
-                    
-                    <p>&#34;Ithought Laurel&#39;s accusations were false,&#34; Blake said coldly,&#34;but you really are keeping somnething that isn&#39;t yours.&#34;</p>
-                    
-                    <p>His eyes narrowed. &#34;Give Rachel&#39;s phone to Laurel.&#34;</p>
-                    
-                    <p>I glared up at him. &#34;Why should I?&#34;</p>
-                    
-                    <p>&#34;Because she&#39;s Laurel&#39;s sister!&#34; he shot back.</p>
-                    
-                    <p>&#34;Sister?&#34; I laughed bitterly. &#34;Do you have.any idea what Laurel did to Rachel?&#34;</p>
-                    
-                    <p>My voice rose. &#34;She&#39;s not Rachel&#39;s sister - she&#39;s Rachel&#39;s enemy!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Laurel pulled out my phone. &#34;You have my sister&#39;s phone. It has so many memorles of our time together.&#34;</p>
+                        
+                        <p>She held it out. &#34;Let&#39;s exchange them.&#34;</p>
+                        
+                        <p>I glanced at the phone. a cold smile forming. &#34;Why should I give It back?&#34;</p>
+                        
+                        <p>I grabbed my phone from her hand. &#34;Both phones should belong to me.I won&#39;t leave either with you.&#34;</p>
+                        
+                        <p>A strong grip caught my wrist.</p>
+                        
+                        <p>&#34;Ithought Laurel&#39;s accusations were false,&#34; Blake said coldly,&#34;but you really are keeping somnething that isn&#39;t yours.&#34;</p>
+                        
+                        <p>His eyes narrowed. &#34;Give Rachel&#39;s phone to Laurel.&#34;</p>
+                        
+                        <p>I glared up at him. &#34;Why should I?&#34;</p>
+                        
+                        <p>&#34;Because she&#39;s Laurel&#39;s sister!&#34; he shot back.</p>
+                        
+                        <p>&#34;Sister?&#34; I laughed bitterly. &#34;Do you have.any idea what Laurel did to Rachel?&#34;</p>
+                        
+                        <p>My voice rose. &#34;She&#39;s not Rachel&#39;s sister - she&#39;s Rachel&#39;s enemy!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -968,29 +1016,33 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Everything Rachel had suffered at the Rose family&#39;s hands came rushing back. I&#39;d become friends with Rachel precisely because I couldn&#39;t stand seeing her pain.</p>
-                    
-                    <p>They were complete opposites: Laurel with her perfect life but cold heart;Rachel struggling but with inner strength. We&#39;d found comfort in each other when we needed it most.</p>
-                    
-                    <p>And because of our friendship, I knew exactly how the Roses had treated Rachel all those years.</p>
-                    
-                    <p>Blake&#39;s grip tightened on my wrist.</p>
-                    
-                    <p>&#34;What do you know about their relationship?&#34; he demanded. &#34;Return the phone to Laurel, and I&#39;ll forget about you pretending to be Rachel. We&#39;ll still work together.&#34;</p>
-                    
-                    <p>&#34;In your dreams!&#34; I shot back.</p>
-                    
-                    <p>Now I knew the truth - Blake never valued my designs. Since cooperation was out of the question, Ihad no reason to give Laurel what she wanted.</p>
-                    
-                    <p>James touched my sleeve. &#34;The collaboration is important... And this is their family business...&#34;</p>
-                    
-                    <p>I yanked free from Blake&#39;s grip.</p>
-                    
-                    <p>&#34;If it&#39;s family business, fine,&#34; I said, turning to Scarlett and Laurel.</p>
-                    
-                    <p>&#34;Rachel and I were close. She considered me her sister. Doesn&#39;t that make me family too?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Everything Rachel had suffered at the Rose family&#39;s hands came rushing back. I&#39;d become friends with Rachel precisely because I couldn&#39;t stand seeing her pain.</p>
+                        
+                        <p>They were complete opposites: Laurel with her perfect life but cold heart;Rachel struggling but with inner strength. We&#39;d found comfort in each other when we needed it most.</p>
+                        
+                        <p>And because of our friendship, I knew exactly how the Roses had treated Rachel all those years.</p>
+                        
+                        <p>Blake&#39;s grip tightened on my wrist.</p>
+                        
+                        <p>&#34;What do you know about their relationship?&#34; he demanded. &#34;Return the phone to Laurel, and I&#39;ll forget about you pretending to be Rachel. We&#39;ll still work together.&#34;</p>
+                        
+                        <p>&#34;In your dreams!&#34; I shot back.</p>
+                        
+                        <p>Now I knew the truth - Blake never valued my designs. Since cooperation was out of the question, Ihad no reason to give Laurel what she wanted.</p>
+                        
+                        <p>James touched my sleeve. &#34;The collaboration is important... And this is their family business...&#34;</p>
+                        
+                        <p>I yanked free from Blake&#39;s grip.</p>
+                        
+                        <p>&#34;If it&#39;s family business, fine,&#34; I said, turning to Scarlett and Laurel.</p>
+                        
+                        <p>&#34;Rachel and I were close. She considered me her sister. Doesn&#39;t that make me family too?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -1005,29 +1057,33 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>I looked between them, &#34;You claim Rachel&#39;s phone matters to you. Tell me then, what did you do for her birthdays all those years?&#34;</p>
-                    
-                    <p>Color drained from both women&#39;s faces. Their expressions confirmed what Rachel had told me - neither had ever celebrated her birthday properly.</p>
-                    
-                    <p>&#34;Don&#39;t remember?&#34; I smiled coldly. &#34;I do.&#34;</p>
-                    
-                    <p>&#34;Five years ago, Rachel celebrated her birthday with me. I saved money and gave her an action figure model that she&#39;d been wanting for months...&#34;</p>
-                    
-                    <p>**Blake&#39;s POV**</p>
-                    
-                    <p>Action figure model? My pupils contracted sharply at the words.</p>
-                    
-                    <p>I remembered that gift. According to Rachel. it was a Transformers figure-something most girls wouldn&#39;t be Interested in.</p>
-                    
-                    <p>She&#39;d mentioned that only her sister knew about her love for Transformers,despite it being unusual for a girl.</p>
-                    
-                    <p>I turned to Laurel.</p>
-                    
-                    <p>Her eyes showed nothing but confusion.</p>
-                    
-                    <p>My suspicions deepened.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>I looked between them, &#34;You claim Rachel&#39;s phone matters to you. Tell me then, what did you do for her birthdays all those years?&#34;</p>
+                        
+                        <p>Color drained from both women&#39;s faces. Their expressions confirmed what Rachel had told me - neither had ever celebrated her birthday properly.</p>
+                        
+                        <p>&#34;Don&#39;t remember?&#34; I smiled coldly. &#34;I do.&#34;</p>
+                        
+                        <p>&#34;Five years ago, Rachel celebrated her birthday with me. I saved money and gave her an action figure model that she&#39;d been wanting for months...&#34;</p>
+                        
+                        <p>**Blake&#39;s POV**</p>
+                        
+                        <p>Action figure model? My pupils contracted sharply at the words.</p>
+                        
+                        <p>I remembered that gift. According to Rachel. it was a Transformers figure-something most girls wouldn&#39;t be Interested in.</p>
+                        
+                        <p>She&#39;d mentioned that only her sister knew about her love for Transformers,despite it being unusual for a girl.</p>
+                        
+                        <p>I turned to Laurel.</p>
+                        
+                        <p>Her eyes showed nothing but confusion.</p>
+                        
+                        <p>My suspicions deepened.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1042,29 +1098,33 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;You don&#39;t know, do you?&#34; Audrey asked after a pause, looking at the two pale-faced women.</p>
-                    
-                    <p>She smiled mockingly. &#34;What happened to all that mother-daughter love and sisterly affection?&#34;</p>
-                    
-                    <p>&#34;Can&#39;t remember something as basic as her birthday or what toys she liked?Where does this supposed concern for Rachel come from?&#34;</p>
-                    
-                    <p>James laughed coldly. &#34;Some people don&#39;t care about their family at all,yet pretend they do just to look good.&#34;</p>
-                    
-                    <p>&#34;But genuine relationships can&#39;t be faked.&#34;</p>
-                    
-                    <p>&#34;Thanks,James,&#34; Audrey said gratefully.</p>
-                    
-                    <p>&#34;Don&#39;t mention it,&#34; he replied, then turned to Laurel and Scarlett.&#34;I&#39;ve seen plenty of disgusting people like this before.&#34;</p>
-                    
-                    <p>At the word &#34;disgusting,&#34; Scarlett looked up, face white as paper. She opened her mouth but found no words.</p>
-                    
-                    <p>Laurel remained composed. She tilted her head, blinking innocently at Audrey.</p>
-                    
-                    <p>&#34;Isn&#39;t it normal that I don&#39;t know what action figures my sister liked?&#34; she asked. &#34;Who says sisters must know all of each other&#39;s preferences?&#34;</p>
-                    
-                    <p>She smiled. &#34;Besides, Rachel is gone. You claim you knew her,but there&#39;s</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;You don&#39;t know, do you?&#34; Audrey asked after a pause, looking at the two pale-faced women.</p>
+                        
+                        <p>She smiled mockingly. &#34;What happened to all that mother-daughter love and sisterly affection?&#34;</p>
+                        
+                        <p>&#34;Can&#39;t remember something as basic as her birthday or what toys she liked?Where does this supposed concern for Rachel come from?&#34;</p>
+                        
+                        <p>James laughed coldly. &#34;Some people don&#39;t care about their family at all,yet pretend they do just to look good.&#34;</p>
+                        
+                        <p>&#34;But genuine relationships can&#39;t be faked.&#34;</p>
+                        
+                        <p>&#34;Thanks,James,&#34; Audrey said gratefully.</p>
+                        
+                        <p>&#34;Don&#39;t mention it,&#34; he replied, then turned to Laurel and Scarlett.&#34;I&#39;ve seen plenty of disgusting people like this before.&#34;</p>
+                        
+                        <p>At the word &#34;disgusting,&#34; Scarlett looked up, face white as paper. She opened her mouth but found no words.</p>
+                        
+                        <p>Laurel remained composed. She tilted her head, blinking innocently at Audrey.</p>
+                        
+                        <p>&#34;Isn&#39;t it normal that I don&#39;t know what action figures my sister liked?&#34; she asked. &#34;Who says sisters must know all of each other&#39;s preferences?&#34;</p>
+                        
+                        <p>She smiled. &#34;Besides, Rachel is gone. You claim you knew her,but there&#39;s</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1079,23 +1139,27 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>no way to verify that.&#34;</p>
-                    
-                    <p>&#34;You&#39;ve had her phone. You could easíly have checked what she liked. She recorded everything in her memos.&#34;</p>
-                    
-                    <p>&#34;During your disappearance,you probably memorized everything, didn&#39;t you? So of course you seem to know her better than we do.&#34;</p>
-                    
-                    <p>Laurel sighed. &#34;How absurd. A woman who never met Rachel when she was alive claims to be her friend just fromreading memos.&#34;</p>
-                    
-                    <p>&#34;Once I get the phone back, I should memorize everything too, so no one can say Rachel and I weren&#39;t close.&#34;</p>
-                    
-                    <p>She turned to me. &#34;Blake darling,don&#39;t you agree?&#34;</p>
-                    
-                    <p>I frowned, turning to Audrey with a cold look.</p>
-                    
-                    <p>&#34;Do you really know Rachel Hayes?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>no way to verify that.&#34;</p>
+                        
+                        <p>&#34;You&#39;ve had her phone. You could easíly have checked what she liked. She recorded everything in her memos.&#34;</p>
+                        
+                        <p>&#34;During your disappearance,you probably memorized everything, didn&#39;t you? So of course you seem to know her better than we do.&#34;</p>
+                        
+                        <p>Laurel sighed. &#34;How absurd. A woman who never met Rachel when she was alive claims to be her friend just fromreading memos.&#34;</p>
+                        
+                        <p>&#34;Once I get the phone back, I should memorize everything too, so no one can say Rachel and I weren&#39;t close.&#34;</p>
+                        
+                        <p>She turned to me. &#34;Blake darling,don&#39;t you agree?&#34;</p>
+                        
+                        <p>I frowned, turning to Audrey with a cold look.</p>
+                        
+                        <p>&#34;Do you really know Rachel Hayes?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2411,6 +2475,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2537,7 +2681,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2579,32 +2722,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2615,21 +2740,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2662,6 +2777,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2682,20 +2803,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

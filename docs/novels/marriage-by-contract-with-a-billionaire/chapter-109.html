@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-19T02:47:29.771036">
-    <meta property="article:modified_time" content="2026-07-19T02:47:29.771036">
+    <meta property="article:published_time" content="2026-07-19T13:03:24.152923">
+    <meta property="article:modified_time" content="2026-07-19T13:03:24.152923">
     <meta name="date" content="2026-07-19">
-    <meta name="last-modified" content="2026-07-19 02:47:29">
+    <meta name="last-modified" content="2026-07-19 13:03:24">
     
     
     <!-- Open Graph Meta Tags -->
@@ -712,6 +712,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -777,6 +779,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -791,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-19T02:47:29.771036",
-        "dateModified": "2026-07-19T02:47:29.771036",
+        "datePublished": "2026-07-19T13:03:24.152923",
+        "dateModified": "2026-07-19T13:03:24.152923",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -857,27 +893,31 @@
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>After the meeting concluded, Ariana stormed out of the company,seething with anger and returned home in a fury.</p>
-                    
-                    <p>&#34;Welcome home, my dear. How was the meeting?&#34; Carolina inquired,but upon seeing the furious expression on her daughter&#39;s face, she immediately realized that things hadn&#39;t gone well.</p>
-                    
-                    <p>&#34;What&#39;s wrong, sweetheart? Did something happen?”</p>
-                    
-                    <p>Ariana tossed her handbag onto the couch with force. &#34;It&#39;s that insufferable woman!&#34;</p>
-                    
-                    <p>&#34;What woman are you talking about?&#34;</p>
-                    
-                    <p>Ariana glared at her mother. &#34;You know exactly who I&#39;m talking about-the woman who&#39;s a constant thorn in my side.&#34;</p>
-                    
-                    <p>“Oh,you mean Lily?” Carolina sat down on one of the couches and crossed her legs.</p>
-                    
-                    <p>&#34;Yes, it&#39;s her! Stop pretending you don&#39;t know who I mean! That woman went too far today!&#34; she raged.</p>
-                    
-                    <p>&#34;What did she do? Or rather, what did you say to her? Because I know you very well.&#34;</p>
-                    
-                    <p>Ariana clenched her fists and gritted her teeth. &#34;You&#39;re already taking her side before knowing what happened!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>After the meeting concluded, Ariana stormed out of the company,seething with anger and returned home in a fury.</p>
+                        
+                        <p>&#34;Welcome home, my dear. How was the meeting?&#34; Carolina inquired,but upon seeing the furious expression on her daughter&#39;s face, she immediately realized that things hadn&#39;t gone well.</p>
+                        
+                        <p>&#34;What&#39;s wrong, sweetheart? Did something happen?”</p>
+                        
+                        <p>Ariana tossed her handbag onto the couch with force. &#34;It&#39;s that insufferable woman!&#34;</p>
+                        
+                        <p>&#34;What woman are you talking about?&#34;</p>
+                        
+                        <p>Ariana glared at her mother. &#34;You know exactly who I&#39;m talking about-the woman who&#39;s a constant thorn in my side.&#34;</p>
+                        
+                        <p>“Oh,you mean Lily?” Carolina sat down on one of the couches and crossed her legs.</p>
+                        
+                        <p>&#34;Yes, it&#39;s her! Stop pretending you don&#39;t know who I mean! That woman went too far today!&#34; she raged.</p>
+                        
+                        <p>&#34;What did she do? Or rather, what did you say to her? Because I know you very well.&#34;</p>
+                        
+                        <p>Ariana clenched her fists and gritted her teeth. &#34;You&#39;re already taking her side before knowing what happened!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 1/7 -->
@@ -892,27 +932,31 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Carolina sighed in exasperation. &#34;You just got home, and you&#39;re already wearing me out. Just tell me what happened, Ariana.&#34;</p>
-                    
-                    <p>Ariana recounted the events to her mother.</p>
-                    
-                    <p>&#34;Is that all?&#34; Carolina asked.</p>
-                    
-                    <p>&#34;What do you mean by &#39;Is that all?&#39;”</p>
-                    
-                    <p>&#34;From what you told me, it seems like you failed to stay updated with recent developments. She even gave you the file to review before the meeting started, but you didn&#39;t go through it, so that&#39;s on you.”</p>
-                    
-                    <p>“Really?!&#34; Ariana exclaimed.</p>
-                    
-                    <p>&#34;Yes, my dear,&#34; Carolina said honestly. “But as for her publicly declaring that she won&#39;t work with our company after this project, that was pretty bold. She could have told you privately, but since you two aren&#39;t friends or even close,that&#39;s likely why she said it.&#34;</p>
-                    
-                    <p>Ariana tried to calm herself. “By the time I&#39;m done with her, she&#39;ll regret daring to cross me and stealing the man I love!&#34;</p>
-                    
-                    <p>Carolina sighed wearily. &#34;She didn&#39;t steal Alexander from you, Ariana.&#34;</p>
-                    
-                    <p>“She did!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Carolina sighed in exasperation. &#34;You just got home, and you&#39;re already wearing me out. Just tell me what happened, Ariana.&#34;</p>
+                        
+                        <p>Ariana recounted the events to her mother.</p>
+                        
+                        <p>&#34;Is that all?&#34; Carolina asked.</p>
+                        
+                        <p>&#34;What do you mean by &#39;Is that all?&#39;”</p>
+                        
+                        <p>&#34;From what you told me, it seems like you failed to stay updated with recent developments. She even gave you the file to review before the meeting started, but you didn&#39;t go through it, so that&#39;s on you.”</p>
+                        
+                        <p>“Really?!&#34; Ariana exclaimed.</p>
+                        
+                        <p>&#34;Yes, my dear,&#34; Carolina said honestly. “But as for her publicly declaring that she won&#39;t work with our company after this project, that was pretty bold. She could have told you privately, but since you two aren&#39;t friends or even close,that&#39;s likely why she said it.&#34;</p>
+                        
+                        <p>Ariana tried to calm herself. “By the time I&#39;m done with her, she&#39;ll regret daring to cross me and stealing the man I love!&#34;</p>
+                        
+                        <p>Carolina sighed wearily. &#34;She didn&#39;t steal Alexander from you, Ariana.&#34;</p>
+                        
+                        <p>“She did!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 2/7 -->
@@ -927,27 +971,31 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Carolina found it hard to comprehend how the conversation had suddenly shifted to another topic. &#34;For crying out loud, Ariana, the whole world thought you were dead. Besides, you betrayed Alexander, so whatever you had between you two ended even before your accident.&#34;</p>
-                    
-                    <p>&#34;Stop it, Mother!&#34; Ariana shouted, loathing the truth she didn&#39;t want to accept.&#34;May I remind you, Mother, that if it weren&#39;t for what I did, our family&#39;s company wouldn&#39;t exist today? I did what I had to do for our family, and because of that, I lost Alexander. If I don&#39;t get him back.everyone will pay the price for my pain, including you, Mother!&#34; Ariana</p>
-                    
-                    <p>declared before storming upstairs to her room.</p>
-                    
-                    <p>Tears welled up in Carolina&#39;s eyes at her daughter&#39;s words. The truth was that she and her husband had resigned themselves to the fate of their family&#39;s company, but 19-year-old Ariana refused to let their family name fall into ruin or allow them to become poor and be ridiculed. She went to Alexander for help, but he, being young and without an established company, couldn&#39;t do much. Out of desperation, she stole Alexander&#39;s business plan and sought help to save their family.</p>
-                    
-                    <p>Carolina would have stopped her daughter, but she didn&#39;t, and perhaps she was to blame as well. She felt terrified of what her daughter might do or plan to do.</p>
-                    
-                    <p>The following day, Ariana asked her new assistant, Emily, to update her on all the news that might interest her.</p>
-                    
-                    <p>&#34;I also want you to send some people to keep an eye on Lily and the other projects she&#39;s handling in the company. I want every detail about those projects.”</p>
-                    
-                    <p>“Is there a specific reason you want this, ma&#39;am?” Emily asked, but the icy glare from Ariana made her swallow in fear. Sometimes, her boss could be terrifying.</p>
-                    
-                    <p>“You dare to ask such a foolish question?&#34;</p>
-                    
-                    <p>“Please forgive me, ma&#39;am.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Carolina found it hard to comprehend how the conversation had suddenly shifted to another topic. &#34;For crying out loud, Ariana, the whole world thought you were dead. Besides, you betrayed Alexander, so whatever you had between you two ended even before your accident.&#34;</p>
+                        
+                        <p>&#34;Stop it, Mother!&#34; Ariana shouted, loathing the truth she didn&#39;t want to accept.&#34;May I remind you, Mother, that if it weren&#39;t for what I did, our family&#39;s company wouldn&#39;t exist today? I did what I had to do for our family, and because of that, I lost Alexander. If I don&#39;t get him back.everyone will pay the price for my pain, including you, Mother!&#34; Ariana</p>
+                        
+                        <p>declared before storming upstairs to her room.</p>
+                        
+                        <p>Tears welled up in Carolina&#39;s eyes at her daughter&#39;s words. The truth was that she and her husband had resigned themselves to the fate of their family&#39;s company, but 19-year-old Ariana refused to let their family name fall into ruin or allow them to become poor and be ridiculed. She went to Alexander for help, but he, being young and without an established company, couldn&#39;t do much. Out of desperation, she stole Alexander&#39;s business plan and sought help to save their family.</p>
+                        
+                        <p>Carolina would have stopped her daughter, but she didn&#39;t, and perhaps she was to blame as well. She felt terrified of what her daughter might do or plan to do.</p>
+                        
+                        <p>The following day, Ariana asked her new assistant, Emily, to update her on all the news that might interest her.</p>
+                        
+                        <p>&#34;I also want you to send some people to keep an eye on Lily and the other projects she&#39;s handling in the company. I want every detail about those projects.”</p>
+                        
+                        <p>“Is there a specific reason you want this, ma&#39;am?” Emily asked, but the icy glare from Ariana made her swallow in fear. Sometimes, her boss could be terrifying.</p>
+                        
+                        <p>“You dare to ask such a foolish question?&#34;</p>
+                        
+                        <p>“Please forgive me, ma&#39;am.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 3/7 -->
@@ -962,27 +1010,31 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Ariana stared at her coldly.′′Pay some insiders working under Lily. I want them to help me monitor her and report everything she does.&#34;</p>
-                    
-                    <p>&#34;I&#39;ll get on it right away, ma&#39;am. Is there anything else you need?&#34;</p>
-                    
-                    <p>“Yes, I also want you to place someone among Alexander Kane&#39;s top employees. I want daily reports on his every activity.&#34;</p>
-                    
-                    <p>“Ma&#39;am, it will be difficult to get an insider since Mr. Kane constantly evaluates his close employees and keeps a tight watch on them.&#34;</p>
-                    
-                    <p>“Do whatever it takes. I want results, not excuses!&#34; Ariana shouted.</p>
-                    
-                    <p>Emily stepped back in fear. “I&#39;m sorry, ma&#39;am. I&#39;ll do everything I can to make it happen.&#34; She bowed her head as she spoke.</p>
-                    
-                    <p>Ariana smiled. “Good,you&#39;re dismissed.”</p>
-                    
-                    <p>Emily left the office as quickly as possible. Ariana sat down in her executive chair, opened a folder on her computer, and stared at the image on the screen with anger. It was a picture of Alexander and Lily enjoying a romantic dinner at an upscale restaurant reserved for the wealthy.The way Alexander held her in the image and kissed her filled Ariana with so much rage that she shoved her PC off the table, sending it crashing to the floor with a loud thud.</p>
-                    
-                    <p>This photo had been sent to her that morning by the people she hadhired to keep an eye on them. Just looking at the photo made her seethe with jealousy and fury.</p>
-                    
-                    <p>&#34;Enjoy your last dinner with him, because soon you&#39;ll experience hell,&#34;Ariana murmured. She was determined to get Alexander back, no matter what.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Ariana stared at her coldly.′′Pay some insiders working under Lily. I want them to help me monitor her and report everything she does.&#34;</p>
+                        
+                        <p>&#34;I&#39;ll get on it right away, ma&#39;am. Is there anything else you need?&#34;</p>
+                        
+                        <p>“Yes, I also want you to place someone among Alexander Kane&#39;s top employees. I want daily reports on his every activity.&#34;</p>
+                        
+                        <p>“Ma&#39;am, it will be difficult to get an insider since Mr. Kane constantly evaluates his close employees and keeps a tight watch on them.&#34;</p>
+                        
+                        <p>“Do whatever it takes. I want results, not excuses!&#34; Ariana shouted.</p>
+                        
+                        <p>Emily stepped back in fear. “I&#39;m sorry, ma&#39;am. I&#39;ll do everything I can to make it happen.&#34; She bowed her head as she spoke.</p>
+                        
+                        <p>Ariana smiled. “Good,you&#39;re dismissed.”</p>
+                        
+                        <p>Emily left the office as quickly as possible. Ariana sat down in her executive chair, opened a folder on her computer, and stared at the image on the screen with anger. It was a picture of Alexander and Lily enjoying a romantic dinner at an upscale restaurant reserved for the wealthy.The way Alexander held her in the image and kissed her filled Ariana with so much rage that she shoved her PC off the table, sending it crashing to the floor with a loud thud.</p>
+                        
+                        <p>This photo had been sent to her that morning by the people she hadhired to keep an eye on them. Just looking at the photo made her seethe with jealousy and fury.</p>
+                        
+                        <p>&#34;Enjoy your last dinner with him, because soon you&#39;ll experience hell,&#34;Ariana murmured. She was determined to get Alexander back, no matter what.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 4/7 -->
@@ -997,27 +1049,31 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Two weeks later, Lily and Alexander were abruptly awakened by the loud ringing of their phones. They both got up, surprised that their phones were ringing at the same time, and even someone was knocking on their</p>
-                    
-                    <p>room door.</p>
-                    
-                    <p>They exchanged glances.</p>
-                    
-                    <p>&#34;Why don&#39;t you answer yours? It might be more important. I&#39;ll go see who&#39;s at the door,&#34; Lily suggested.</p>
-                    
-                    <p>Alexander nodded.</p>
-                    
-                    <p>Lily got up and went to open the door while Alexander answered his call.When Lily opened the door, she saw that it was Clara.</p>
-                    
-                    <p>“Sorry to disturb you, ma&#39;am, but there&#39;s a serious problem,&#34; Clara said,panic evident in her voice.</p>
-                    
-                    <p>&#34;What&#39;s wrong, Clara?” Lily noticed how distressed she looked and became alarmed. &#34;Is Viola okay?&#34; She was about to rush to Viola&#39;s room when Clara stopped her.</p>
-                    
-                    <p>&#34;Viola is fine. The problem is about you, ma&#39;am.”</p>
-                    
-                    <p>“Me?How?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Two weeks later, Lily and Alexander were abruptly awakened by the loud ringing of their phones. They both got up, surprised that their phones were ringing at the same time, and even someone was knocking on their</p>
+                        
+                        <p>room door.</p>
+                        
+                        <p>They exchanged glances.</p>
+                        
+                        <p>&#34;Why don&#39;t you answer yours? It might be more important. I&#39;ll go see who&#39;s at the door,&#34; Lily suggested.</p>
+                        
+                        <p>Alexander nodded.</p>
+                        
+                        <p>Lily got up and went to open the door while Alexander answered his call.When Lily opened the door, she saw that it was Clara.</p>
+                        
+                        <p>“Sorry to disturb you, ma&#39;am, but there&#39;s a serious problem,&#34; Clara said,panic evident in her voice.</p>
+                        
+                        <p>&#34;What&#39;s wrong, Clara?” Lily noticed how distressed she looked and became alarmed. &#34;Is Viola okay?&#34; She was about to rush to Viola&#39;s room when Clara stopped her.</p>
+                        
+                        <p>&#34;Viola is fine. The problem is about you, ma&#39;am.”</p>
+                        
+                        <p>“Me?How?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 5/7 -->
@@ -1032,27 +1088,31 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Clara tried to steady her nerves, but the situation was too overwhelming for her to remain calm. “Ma&#39;am, as I speak, reporters and the police are outside,waiting to come in and arrest you,&#34;</p>
-                    
-                    <p>Lily raised an eyebrow. &#34;Arrest me?” She found it hard to believe, but with the way Clara was acting, it seemed true.</p>
-                    
-                    <p>Lily remembered the relentless phone calls she and Alexander had received that woke them up.</p>
-                    
-                    <p>“Wait here.”</p>
-                    
-                    <p>She went back into the room and saw that Alexander was still on the phone. When he saw her come in, he ended the call and walked toward her.</p>
-                    
-                    <p>“Are you okay?&#34; He placed his hand on her face.</p>
-                    
-                    <p>“Yes, I&#39;m fine, but Clara just told me something about the police and reporters outside the house.&#34;</p>
-                    
-                    <p>By the look on Alexander&#39;s face, she knew he was already aware of it.</p>
-                    
-                    <p>“Yes, I know. James just informed me about everything that&#39;s happening.Don&#39;t worry, I won&#39;t let anything happen to you. Whoever is involved in this will pay.&#34;</p>
-                    
-                    <p>&#34;Involved in what?” Lily was still confused, completely clueless about what had transpired overnight. She was unaware that the entire internet was ablaze with news.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Clara tried to steady her nerves, but the situation was too overwhelming for her to remain calm. “Ma&#39;am, as I speak, reporters and the police are outside,waiting to come in and arrest you,&#34;</p>
+                        
+                        <p>Lily raised an eyebrow. &#34;Arrest me?” She found it hard to believe, but with the way Clara was acting, it seemed true.</p>
+                        
+                        <p>Lily remembered the relentless phone calls she and Alexander had received that woke them up.</p>
+                        
+                        <p>“Wait here.”</p>
+                        
+                        <p>She went back into the room and saw that Alexander was still on the phone. When he saw her come in, he ended the call and walked toward her.</p>
+                        
+                        <p>“Are you okay?&#34; He placed his hand on her face.</p>
+                        
+                        <p>“Yes, I&#39;m fine, but Clara just told me something about the police and reporters outside the house.&#34;</p>
+                        
+                        <p>By the look on Alexander&#39;s face, she knew he was already aware of it.</p>
+                        
+                        <p>“Yes, I know. James just informed me about everything that&#39;s happening.Don&#39;t worry, I won&#39;t let anything happen to you. Whoever is involved in this will pay.&#34;</p>
+                        
+                        <p>&#34;Involved in what?” Lily was still confused, completely clueless about what had transpired overnight. She was unaware that the entire internet was ablaze with news.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 6/7 -->
@@ -1067,21 +1127,25 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Her question made Alexander realize that she had no idea what was going on.</p>
-                    
-                    <p>Alexander sighed.“All the orphanages and foundations under your family&#39;s company were demolished with people inside. A large number of kids and staff are dead.”</p>
-                    
-                    <p>&#34;Oh my God!&#34; Lily screamed, covering her mouth in shock. She couldn&#39;t believe what she was hearing. Her hands started trembling, and Alexander had to hold them. “Who could have done this? How... how?&#34; Tears streamed down her face.</p>
-                    
-                    <p>“It&#39;s okay, I&#39;ll findI out who&#39;s behind this and also who has framed you as the culprit,&#34; Alexander assured her.</p>
-                    
-                    <p>His words made her step back and look at him. “What do you mean.Alexander? I don&#39;t understand. Why are the police here?”</p>
-                    
-                    <p>&#34;Some documents containing your signature indicate that you approved the demolition of the orphanages and foundation houses a week ago and instructed the demolition to take place at night. The police are here to arrest you as the responsible party for what happened.&#34;</p>
-                    
-                    <p>Lily was dumbfounded.“What documents? I never signed any documents or gave such instructions.&#34; She shook her head. utterly confused. What was happening?</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Her question made Alexander realize that she had no idea what was going on.</p>
+                        
+                        <p>Alexander sighed.“All the orphanages and foundations under your family&#39;s company were demolished with people inside. A large number of kids and staff are dead.”</p>
+                        
+                        <p>&#34;Oh my God!&#34; Lily screamed, covering her mouth in shock. She couldn&#39;t believe what she was hearing. Her hands started trembling, and Alexander had to hold them. “Who could have done this? How... how?&#34; Tears streamed down her face.</p>
+                        
+                        <p>“It&#39;s okay, I&#39;ll findI out who&#39;s behind this and also who has framed you as the culprit,&#34; Alexander assured her.</p>
+                        
+                        <p>His words made her step back and look at him. “What do you mean.Alexander? I don&#39;t understand. Why are the police here?”</p>
+                        
+                        <p>&#34;Some documents containing your signature indicate that you approved the demolition of the orphanages and foundation houses a week ago and instructed the demolition to take place at night. The police are here to arrest you as the responsible party for what happened.&#34;</p>
+                        
+                        <p>Lily was dumbfounded.“What documents? I never signed any documents or gave such instructions.&#34; She shook her head. utterly confused. What was happening?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 
                 <!-- AdSense Block Ad 7/7 -->
@@ -2397,6 +2461,86 @@
     })();
     </script>
 
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -2523,7 +2667,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -2565,32 +2708,14 @@
         });
       });
 
-      /* ① 检测 block 内是否已有谷歌自动广告（google-auto-placed）*/
-      var autoAd   = block.querySelector('.google-auto-placed');
-      var adRelTop = 0, adSlotH = 0;
-      if (autoAd) {
-        var adR  = autoAd.getBoundingClientRect();
-        adRelTop = Math.max(0, adR.top - rect.top); /* 相对 block 顶部的偏移 */
-        adSlotH  = adR.height;
-      }
+      /* ① 先算 canvas 需要的高度（Supabase 文字总高 + 安全边距） */
+      var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
+      var canvasH = Math.ceil(textH + lineH + pGap);
 
-      /* ② 高度策略：有自动广告 → 用 block 自然高度；无 → 按 Supabase 文字算 */
-      var canvasH, ratio;
-      if (autoAd) {
-        canvasH = Math.ceil(blockH); /* block 自然高度已包含广告高度 */
-        ratio   = 1;
-        /* 不设 overflow/height，广告保持可见 */
-      } else {
-        var textH = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
-        canvasH   = Math.ceil(textH + lineH + pGap);
-        ratio     = canvasH / blockH;
-        block.style.height     = canvasH + 'px';
-        block.style.overflow   = 'hidden';
-        block.style.lineHeight = (lineH * ratio) + 'px';
-        Array.from(block.querySelectorAll('p')).forEach(function (p) {
-          p.style.marginBottom = (pGap * ratio) + 'px';
-        });
-      }
+      /* ② 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW    * curDpr);
       canvas.height       = Math.ceil(canvasH * curDpr);
@@ -2601,21 +2726,11 @@
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, maxW, canvasH);
 
-      /* ③ 有自动广告：清除广告区域像素 → 广告透过 canvas 显示，不被遮挡 */
-      if (autoAd && adSlotH > 0) {
-        ctx.clearRect(0, adRelTop, maxW, adSlotH);
-      }
-
       ctx.font = font; ctx.fillStyle = txColor; ctx.textBaseline = 'top';
 
-      var y = 1, passedAd = false;
+      var y = 1;
       lines.forEach(function (l) {
-        /* 文字行即将进入广告区域时，跳到广告下方继续绘制 */
-        if (autoAd && adSlotH > 0 && !passedAd && y + lineH > adRelTop) {
-          y = adRelTop + adSlotH + 2;
-          passedAd = true;
-        }
-        if (y + lineH > canvasH) return; /* 超出 canvas 高度则停止 */
+        if (y + lineH > canvasH) return;
         var ws = l.text.split(' ');
         if (!l.lastInPara && ws.length > 1) {
           var wW = ws.reduce(function (a, w) { return a + ctx.measureText(w).width; }, 0);
@@ -2648,6 +2763,12 @@
     setInterval(syncCanvasPositions, 5000);
   }
 
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
+  }
+
   /* 延迟 2 秒后再开始执行，等待页面和广告充分加载完成 */
   /* Canvas 完成后统一触发 AdSense 广告加载（配合 pauseAdRequests 使用）*/
   function loadAds() {
@@ -2668,20 +2789,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();
