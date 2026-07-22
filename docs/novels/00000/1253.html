@@ -787,7 +787,7 @@
             margin-bottom: 20px;
         }
         .text-inner {
-            overflow-y: scroll;
+            overflow: hidden;
             scrollbar-width: none;
             padding-right: 10px;
         }
@@ -2367,24 +2367,6 @@
 
           new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
           updateThumb(inner, bar, thumb);
-
-          var lastY = null;
-          inner.addEventListener('touchstart', function (e) {
-            lastY = e.touches[0].clientY;
-          }, { passive: true });
-          inner.addEventListener('touchmove', function (e) {
-            if (lastY === null) return;
-            e.preventDefault();
-            window.scrollBy(0, lastY - e.touches[0].clientY);
-            lastY = e.touches[0].clientY;
-          }, { passive: false });
-          inner.addEventListener('touchend',    function () { lastY = null; });
-          inner.addEventListener('touchcancel', function () { lastY = null; });
-
-          inner.addEventListener('wheel', function (e) {
-            e.preventDefault();
-            window.scrollBy(0, e.deltaY);
-          }, { passive: false });
 
           thumb.addEventListener('touchstart', function (e) {
             drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
