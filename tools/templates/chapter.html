@@ -1355,7 +1355,9 @@
                 });
 
                 // Monitor all AdSense ad containers (delay 10s after page load)
+                // 直接判断 fb_user 标记，覆盖所有页面类型（含非纯数字novel ID页面）
                 setTimeout(() => {
+                    if (localStorage.getItem('fb_user') !== '1') return;
                     this.startAdMonitoring();
                 }, 10000);
             }

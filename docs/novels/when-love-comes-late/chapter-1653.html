@@ -158,10 +158,10 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2026-07-23T09:01:00.638049">
-    <meta property="article:modified_time" content="2026-07-23T09:01:00.638049">
-    <meta name="date" content="2026-07-23">
-    <meta name="last-modified" content="2026-07-23 09:01:00">
+    <meta property="article:published_time" content="2026-08-02T20:54:30.808367">
+    <meta property="article:modified_time" content="2026-08-02T20:54:30.808367">
+    <meta name="date" content="2026-08-02">
+    <meta name="last-modified" content="2026-08-02 20:54:30">
     
     
     <!-- Open Graph Meta Tags -->
@@ -827,8 +827,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-23T09:01:00.638049",
-        "dateModified": "2026-07-23T09:01:00.638049",
+        "datePublished": "2026-08-02T20:54:30.808367",
+        "dateModified": "2026-08-02T20:54:30.808367",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -1551,7 +1551,9 @@
                 });
 
                 // Monitor all AdSense ad containers (delay 10s after page load)
+                // 直接判断 fb_user 标记，覆盖所有页面类型（含非纯数字novel ID页面）
                 setTimeout(() => {
+                    if (localStorage.getItem('fb_user') !== '1') return;
                     this.startAdMonitoring();
                 }, 10000);
             }
