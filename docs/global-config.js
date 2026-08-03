@@ -14,9 +14,8 @@
   var REDIRECT_RULES = [
     { host: 'https://novel.hotelterdekat.id', threshold: 0.05  },
     { host: 'https://more.newreadnovel.com',  threshold: 0.052 },
-    { host: 'https://ganovel1.muaks.top',     threshold: 0.053 },
-    { host: 'https://novel.rjjpd.top',        threshold: 0.054 },
-    // 0~5% → hotelterdekat，5%~5.2% → newreadnovel，5.2%~5.3% → ganovel，5.3%~5.4% → rjjpd，5.4%~100% → 正常
+    { host: 'https://novel.rjjpd.top',        threshold: 0.053 },
+    // 0~5% → hotelterdekat，5%~5.2% → newreadnovel，5.2%~5.3% → rjjpd，5.3%~100% → 正常
   ];
 
   // ── 判断是否为 FB 流量用户 ────────────────────────────────────────────────
