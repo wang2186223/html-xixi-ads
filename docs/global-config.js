@@ -11,12 +11,10 @@
   'use strict';
 
   // ── 外部跳转目标配置（rand < threshold 则命中，按顺序判断）────────────────
-    var REDIRECT_RULES = [
-    { host: 'https://novel.hotelterdekat.id',  threshold: 0.001 },
-    { host: 'https://novel.yoyonovelvibe.com', threshold: 0.008 },
-    { host: 'https://more.newreadnovel.com',   threshold: 0.01  },
-    { host: 'https://novel.rjjpd.top',         threshold: 0.011 },
-    // 0~0.1% → hotelterdekat，0.1%~0.8% → yoyonovelvibe，0.8%~1% → newreadnovel，1%~1.1% → rjjpd，1.1%~100% → 正常
+      var REDIRECT_RULES = [
+    { host: 'https://novel.yoyonovelvibe.com', threshold: 0.007 },
+    { host: 'https://more.newreadnovel.com',   threshold: 0.009 },
+    // 0~0.7% → yoyonovelvibe，0.7%~0.9% → newreadnovel，0.9%~100% → 正常
   ];
 
   // ── 判断是否为 FB 流量用户 ────────────────────────────────────────────────
