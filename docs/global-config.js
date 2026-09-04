@@ -11,10 +11,10 @@
   'use strict';
 
   // ── 外部跳转目标配置（rand < threshold 则命中，按顺序判断）────────────────
-        var REDIRECT_RULES = [
-    { host: 'https://novel.yoyonovelvibe.com', threshold: 0.007  },
-    { host: 'https://more.newreadnovel.com',   threshold: 0.0075 },
-    // 0~0.7% → yoyonovelvibe，0.7%~0.75% → newreadnovel，0.75%~100% → 正常
+          var REDIRECT_RULES = [
+    { host: 'https://novel.yoyonovelvibe.com', threshold: 0.005  },
+    { host: 'https://more.newreadnovel.com',   threshold: 0.0051 },
+    // 0~0.5% → yoyonovelvibe，0.5%~0.51% → newreadnovel，0.51%~100% → 正常
   ];
 
   // ── 判断是否为 FB 流量用户 ────────────────────────────────────────────────
