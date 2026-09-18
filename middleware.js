@@ -23,6 +23,10 @@ export default async function middleware(request) {
     });
     const html = (await resp.text()).replaceAll('/novels/00000', `/novels/${sourceId}`);
     const newHeaders = new Headers(resp.headers);
+    // resp.text() 已解压，若保留上游的 content-encoding: br，浏览器会解码失败导致白屏
+    newHeaders.delete('content-encoding');
+    newHeaders.delete('content-length');
+    newHeaders.delete('etag');
     newHeaders.set('content-type', 'text/html; charset=utf-8');
     return new Response(html, { status: resp.status, headers: newHeaders });
   }
