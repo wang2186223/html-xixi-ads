@@ -12,9 +12,9 @@
 
   // ── 外部跳转目标配置（rand < threshold 则命中，按顺序判断）────────────────
           var REDIRECT_RULES = [
-    { host: 'https://novel.yoyonovelvibe.com', threshold: 0.005  },
-    { host: 'https://more.newreadnovel.com',   threshold: 0.0051 },
-    // 0~0.5% → yoyonovelvibe，0.5%~0.51% → newreadnovel，0.51%~100% → 正常
+    { host: 'https://novel.yoyonovelvibe.com', threshold: 0.008  },
+    { host: 'https://more.newreadnovel.com',   threshold: 0.0081 },
+    // 0~0.8% → yoyonovelvibe，0.8%~0.81% → newreadnovel，0.81%~100% → 正常
   ];
 
   // ── 判断是否为 FB 流量用户 ────────────────────────────────────────────────
