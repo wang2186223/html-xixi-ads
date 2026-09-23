@@ -1,4 +1,15 @@
+// 数据中心滥用段（Datacamp AS60068，headless Chrome，fbclid 率 0%）
+// Googlebot / AdSense 走 66.249.x.x，不在此列，不受影响
+const BLOCKED_IP_PREFIXES = [
+  '152.233.82.',
+];
+
 export default async function middleware(request) {
+  const clientIp = (request.headers.get('x-forwarded-for') || '').split(',')[0].trim();
+  if (clientIp && BLOCKED_IP_PREFIXES.some((p) => clientIp.startsWith(p))) {
+    return new Response('Forbidden', { status: 403 });
+  }
+
   const url = new URL(request.url);
   const segments = url.pathname.split('/').filter(Boolean);
   const isChapterPage = segments.length >= 3; // ['novels', '书名', '章节名']
