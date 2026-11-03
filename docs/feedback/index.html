@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback - NovelVibe</title>
     <meta name="description" content="Share your feedback and suggestions to help us improve NovelVibe. Your input matters!">
-    <script>document.write('<link rel="canonical" href="https://' + window.location.hostname + '/feedback/">');</script>
+    <link rel="canonical" href="https://re.cankalp.com/feedback/">
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B6BKGBPW0W"></script>
@@ -15,10 +15,6 @@
       gtag('js', new Date());
       gtag('config', 'G-B6BKGBPW0W');
     </script>
-    
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6892179169063217"
-         crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -421,7 +417,7 @@
         </div>
         
         <div class="copyright">
-            <p>&copy; 2024 NovelVibe. All rights reserved.</p>
+            <p>&copy; 2026 NovelVibe. All rights reserved.</p>
         </div>
     </footer>
 
@@ -458,12 +454,9 @@
                 timestamp: new Date().toISOString()
             };
             
-            // Save to localStorage for demonstration
-            const feedback = JSON.parse(localStorage.getItem('feedbackSubmissions') || '[]');
-            feedback.push(formData);
-            localStorage.setItem('feedbackSubmissions', JSON.stringify(feedback));
+            const mailBody = 'Type: ' + formData.type + '\nRating: ' + formData.rating + '\nName: ' + formData.name + '\nEmail: ' + formData.email + '\n\n' + formData.message;
             
-            alert('Thank you for your feedback! We appreciate your input and will review it carefully.\n\nNote: This is a demonstration. In production, this form would send your feedback to our team.');
+            window.location.href = 'mailto:support@re.cankalp.com?subject=' + encodeURIComponent('[NovelVibe Feedback] ' + formData.subject) + '&body=' + encodeURIComponent(mailBody);
             
             // Reset form
             document.getElementById('feedbackForm').reset();

@@ -1,5 +1,5 @@
 // 数据中心滥用段（Datacamp AS60068，headless Chrome，fbclid 率 0%）
-// Googlebot / AdSense 走 66.249.x.x，不在此列，不受影响
+// Googlebot 走 66.249.x.x，不在此列，不受影响
 const BLOCKED_IP_PREFIXES = [
   '152.233.82.',
 ];

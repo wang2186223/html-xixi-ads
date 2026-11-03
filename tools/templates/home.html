@@ -5,9 +5,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('consent', 'default', {
-    'ad_storage': 'granted',
-    'ad_user_data': 'granted',
-    'ad_personalization': 'granted',
     'analytics_storage': 'granted'
   });
 </script>
@@ -40,54 +37,6 @@
       gtag('js', new Date());
       gtag('config', 'G-YKK2QRZ5GC');
     </script>
-    
-    <!-- Google AdSense
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5678834518894660"
-         crossorigin="anonymous"></script> -->
-    
-
-
-    <!-- Facebook Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-
-    fbq('init', '9481513911889537');
-    
-    // Natural 72-hour event tracking prevention (resets every 3 days)
-    function shouldTrackEvent(eventName) {
-        const now = new Date();
-        const threeDaysAgo = new Date(now.getTime() - (3 * 24 * 60 * 60 * 1000));
-        const currentPeriod = Math.floor(now.getTime() / (3 * 24 * 60 * 60 * 1000));
-        const storageKey = `fb_event_${eventName}`;
-        const lastTrackedPeriod = localStorage.getItem(storageKey);
-        
-        if (!lastTrackedPeriod || parseInt(lastTrackedPeriod) !== currentPeriod) {
-            localStorage.setItem(storageKey, currentPeriod.toString());
-            return true;
-        }
-        
-        return false;
-    }
-    
-    // Track PageView with 72-hour prevention
-    if (shouldTrackEvent('PageView_Home')) {
-        fbq('track', 'PageView');
-        console.log('Facebook事件已发送: PageView (首页浏览)');
-    } else {
-        console.log('Facebook事件已跳过: PageView_Home (本72小时内已发送)');
-    }
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=9481513911889537&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Facebook Pixel Code -->
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -807,18 +756,9 @@
                     <li><a href="/contact/">Contact</a></li>
                 </ul>
             </div>
-            <div class="footer-section">
-                <h3>Stay Connected</h3>
-                <ul>
-                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-                    <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
-                </ul>
-            </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2024 MoonPack Novels. All rights reserved. | Free werewolf romance novels for passionate readers.</p>
+            <p>&copy; 2026 MoonPack Novels. All rights reserved. | Free werewolf romance novels for passionate readers.</p>
         </div>
     </footer>
 

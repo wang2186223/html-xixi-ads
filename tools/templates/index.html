@@ -5,9 +5,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('consent', 'default', {
-    'ad_storage': 'granted',
-    'ad_user_data': 'granted',
-    'ad_personalization': 'granted',
     'analytics_storage': 'granted'
   });
 </script>
@@ -49,55 +46,7 @@
       gtag('config', 'G-YKK2QRZ5GC');
     </script>
     
-    <!-- Google AdSense
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5678834518894660"
-         crossorigin="anonymous"></script> -->
-    
 
-
-
-    <!-- Facebook Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-
-    fbq('init', '9481513911889537');
-    
-    // Natural 72-hour event tracking prevention (resets every 3 days)
-    function shouldTrackEvent(eventName) {
-        const now = new Date();
-        const threeDaysAgo = new Date(now.getTime() - (3 * 24 * 60 * 60 * 1000));
-        const currentPeriod = Math.floor(now.getTime() / (3 * 24 * 60 * 60 * 1000));
-        const storageKey = `fb_event_${eventName}`;
-        const lastTrackedPeriod = localStorage.getItem(storageKey);
-        
-        if (!lastTrackedPeriod || parseInt(lastTrackedPeriod) !== currentPeriod) {
-            localStorage.setItem(storageKey, currentPeriod.toString());
-            return true;
-        }
-        
-        return false;
-    }
-    
-    // Track PageView with 72-hour prevention
-    if (shouldTrackEvent('PageView_Index')) {
-        fbq('track', 'PageView');
-        console.log('Facebook事件已发送: PageView (索引页浏览)');
-    } else {
-        console.log('Facebook事件已跳过: PageView_Index (本72小时内已发送)');
-    }
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=9481513911889537&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Facebook Pixel Code -->
-    
     <!-- 页面访问统计代码 -->
     <script>
     // 页面访问数据收集
@@ -848,6 +797,7 @@
         </section>
 
         <!-- Categories Section -->
+        {% if categories %}
         <section class="categories">
             <div class="section-header">
                 <h2 class="section-title">Browse by Category</h2>
@@ -869,6 +819,7 @@
                 {% endfor %}
             </div>
         </section>
+        {% endif %}
     </div>
 
     <!-- 隐藏的小说数据，供JavaScript使用 -->
@@ -904,128 +855,14 @@
                 </ul>
             </div>
             
-            <div class="footer-links">
-                <h3>Connect With Us</h3>
-                <ul>
-                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-                    <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
-                </ul>
-            </div>
         </div>
         
         <div class="copyright">
-            <p>&copy; 2024 NovelVibe. All rights reserved.</p>
+            <p>&copy; 2026 NovelVibe. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
-        // ===== Facebook Tracking Parameters Preservation System =====
-        
-        // Facebook 和其他渠道的追踪参数列表
-        const TRACKING_PARAMS = [
-            'fbclid', 'utm_source', 'utm_medium', 'utm_campaign', 
-            'utm_term', 'utm_content', 'utm_id', 'gclid', 'msclkid', 'ttclid'
-        ];
-        
-        function extractTrackingParams(url) {
-            const urlObj = new URL(url, window.location.origin);
-            const params = {};
-            let hasParams = false;
-            
-            TRACKING_PARAMS.forEach(param => {
-                const value = urlObj.searchParams.get(param);
-                if (value) {
-                    params[param] = value;
-                    hasParams = true;
-                }
-            });
-            
-            return hasParams ? params : null;
-        }
-        
-        function saveCurrentTrackingParams() {
-            const currentParams = extractTrackingParams(window.location.href);
-            
-            if (currentParams) {
-                localStorage.setItem('trackingParams', JSON.stringify(currentParams));
-                localStorage.setItem('trackingParamsTimestamp', Date.now().toString());
-                console.log('📊 [首页] 保存新的追踪参数:', currentParams);
-                return true;
-            }
-            
-            return false;
-        }
-        
-        function getStoredTrackingParams() {
-            try {
-                const paramsStr = localStorage.getItem('trackingParams');
-                const timestamp = localStorage.getItem('trackingParamsTimestamp');
-                
-                if (!paramsStr || !timestamp) return null;
-                
-                const age = Date.now() - parseInt(timestamp);
-                const twentyFourHours = 24 * 60 * 60 * 1000;
-                
-                if (age > twentyFourHours) {
-                    localStorage.removeItem('trackingParams');
-                    localStorage.removeItem('trackingParamsTimestamp');
-                    return null;
-                }
-                
-                return JSON.parse(paramsStr);
-            } catch (error) {
-                return null;
-            }
-        }
-        
-        function addTrackingParams(url) {
-            try {
-                const urlObj = new URL(url, window.location.origin);
-                
-                const hasExistingParams = TRACKING_PARAMS.some(param => 
-                    urlObj.searchParams.has(param)
-                );
-                
-                if (hasExistingParams) {
-                    return url;
-                }
-                
-                const storedParams = getStoredTrackingParams();
-                
-                if (storedParams) {
-                    Object.keys(storedParams).forEach(key => {
-                        urlObj.searchParams.set(key, storedParams[key]);
-                    });
-                    return urlObj.toString();
-                }
-                
-                return url;
-            } catch (error) {
-                return url;
-            }
-        }
-        
-        function initTrackingSystem() {
-            saveCurrentTrackingParams();
-            
-            // 为所有小说链接添加追踪参数
-            document.querySelectorAll('a[href*="/novels/"]').forEach(link => {
-                if (link.href) {
-                    const originalHref = link.href;
-                    link.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        window.location.href = addTrackingParams(originalHref);
-                    });
-                }
-            });
-            
-            console.log('📊 [首页] 追踪参数系统已初始化');
-        }
-        
-        document.addEventListener('DOMContentLoaded', initTrackingSystem);
-        
         // Simulate loading effect
         document.addEventListener('DOMContentLoaded', function() {
             const cards = document.querySelectorAll('.novel-card');

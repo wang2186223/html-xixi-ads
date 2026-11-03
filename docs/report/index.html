@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Report Issue - NovelVibe</title>
     <meta name="description" content="Report technical issues, bugs, or problems you've encountered on NovelVibe. We're here to help!">
-    <script>document.write('<link rel="canonical" href="https://' + window.location.hostname + '/report/">');</script>
+    <link rel="canonical" href="https://re.cankalp.com/report/">
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B6BKGBPW0W"></script>
@@ -15,10 +15,6 @@
       gtag('js', new Date());
       gtag('config', 'G-B6BKGBPW0W');
     </script>
-    
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6892179169063217"
-         crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -364,10 +360,6 @@
                     <i class="fas fa-link"></i>
                     <h3>Broken Link</h3>
                 </div>
-                <div class="issue-type" onclick="selectIssue(this, 'ads')">
-                    <i class="fas fa-ad"></i>
-                    <h3>Ad Issue</h3>
-                </div>
                 <div class="issue-type" onclick="selectIssue(this, 'other')">
                     <i class="fas fa-question"></i>
                     <h3>Other</h3>
@@ -385,7 +377,7 @@
 
                 <div class="form-group">
                     <label for="url"><i class="fas fa-link"></i> Page URL Where Issue Occurred</label>
-                    <input type="url" id="url" name="url" placeholder="https://www.freekingbook.com/...">
+                    <input type="url" id="url" name="url" placeholder="https://re.cankalp.com/...">
                     <small>The web address of the page where you encountered the issue</small>
                 </div>
 
@@ -491,7 +483,7 @@
         </div>
         
         <div class="copyright">
-            <p>&copy; 2024 NovelVibe. All rights reserved.</p>
+            <p>&copy; 2026 NovelVibe. All rights reserved.</p>
         </div>
     </footer>
 
@@ -529,12 +521,9 @@
                 timestamp: new Date().toISOString()
             };
             
-            // Save to localStorage for demonstration
-            const reports = JSON.parse(localStorage.getItem('issueReports') || '[]');
-            reports.push(formData);
-            localStorage.setItem('issueReports', JSON.stringify(reports));
+            const mailBody = 'Type: ' + formData.type + '\nEmail: ' + formData.email + '\nURL: ' + formData.url + '\nBrowser: ' + formData.browser + '\nScreen: ' + formData.screenResolution + '\n\n' + formData.description + '\n\n' + formData.screenshot;
             
-            alert('Thank you for reporting this issue!\n\nWe have received your report and will investigate it as soon as possible. If you provided an email address, we\'ll follow up with you if we need more information.\n\nNote: This is a demonstration. In production, this form would send your report to our technical team.');
+            window.location.href = 'mailto:support@re.cankalp.com?subject=' + encodeURIComponent('[NovelVibe Issue] ' + formData.subject) + '&body=' + encodeURIComponent(mailBody);
             
             // Reset form
             document.getElementById('reportForm').reset();
